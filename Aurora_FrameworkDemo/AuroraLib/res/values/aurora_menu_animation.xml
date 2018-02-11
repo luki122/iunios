@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+<resources>     
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/aurora_menu_enter</item>  
+        <item name="android:windowExitAnimation">@anim/aurora_menu_exit</item>   
+    </style> 
+    
+    <style name="PopupAnimationForNavi" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/aurora_menu_navi_enter</item>  
+        <item name="android:windowExitAnimation">@anim/aurora_menu_navi_exit</item>   
+    </style>
+</resources> 

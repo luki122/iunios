@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_frame"
+    android:paddingTop="@dimen/aurora_callcard_padding_top"
+    android:background="@color/aurora_dialpad_bg" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dip"
+        android:background="@color/aurora_dialpad_bg" >
+        
+        <EditText
+            android:id="@+id/aurora_digits"
+            style="@style/AuroraDigitsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:editable="false"
+            android:focusableInTouchMode="false"     
+            android:maxLength="10"       
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/aurora_dialpad_text_color"
+            android:textSize="48sp" 
+            android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/aurora_emergency_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dip"
+            android:focusable="false"
+            android:text="@string/emergencyDialerIconLabel"
+            android:textSize="18sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/aurora_dialpad_text_color"/>
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/aurora_dialpad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/aurora_dial_digit_keyboard" />
+    </LinearLayout>
+
+</LinearLayout>

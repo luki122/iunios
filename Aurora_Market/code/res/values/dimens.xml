@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公有设置 不要随便修改 -->
+    <dimen name="button_size">18sp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="small_textsize">12sp</dimen>
+    <dimen name="textsize_8">8sp</dimen>
+    <dimen name="textsize_9">9sp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_11">11sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_22">22sp</dimen>
+    <dimen name="textsize_24">24sp</dimen>
+    <dimen name="textsize_28">28sp</dimen>
+    <dimen name="textsize_16pt">11sp</dimen>
+    <dimen name="textsize_20pt">13sp</dimen>
+    <dimen name="textsize_22pt">15sp</dimen>
+    <dimen name="textsize_25pt">17sp</dimen>
+    <dimen name="textsize_28pt">19sp</dimen>
+    <dimen name="textsize_18pt">12sp</dimen>
+
+    <!-- 全局 偏移量 padding和magin 不能随便改动 -->
+    <dimen name="padding_0">0dip</dimen>
+    <dimen name="padding_1">1dip</dimen>
+    <dimen name="padding_2">2dip</dimen>
+    <dimen name="padding_3">3dip</dimen>
+    <dimen name="padding_4">4dip</dimen>
+    <dimen name="padding_5">5dip</dimen>
+    <dimen name="padding_6">6dip</dimen>
+    <dimen name="padding_7">7dip</dimen>
+    <dimen name="padding_8">8dip</dimen>
+    <dimen name="padding_9">9dip</dimen>
+    <dimen name="padding_10">10dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- pull to refresh -->
+    <dimen name="pull_to_refresh_top">10dip</dimen>
+    <dimen name="pull_to_refresh_bottom">15dip</dimen>
+    <dimen name="pull_to_refresh_left">30dip</dimen>
+    <dimen name="pull_to_refresh_right">20dip</dimen>
+    <dimen name="pull_to_refresh_head_left">100dip</dimen>
+    <dimen name="pull_to_refresh_head_right">10dip</dimen>
+    <dimen name="footer_to_refresh_bottom">20dip</dimen>
+    <!-- title bar -->
+    <dimen name="title_bar_height">45dip</dimen>
+    <dimen name="title_bar_image_height">15dip</dimen>
+    <dimen name="title_bar_button_width">38dip</dimen>
+    <dimen name="title_bar_button_height">38dip</dimen>
+    <dimen name="title_bar_button_left">10dip</dimen>
+    <dimen name="title_bar_pro_bar_width">16dip</dimen>
+    <dimen name="title_bar_pro_bar_height">16dip</dimen>
+
+    <!-- DateTimePickerView -->
+    <dimen name="aurora_time_picker_margin_left">19dip</dimen>
+    <dimen name="aurora_time_picker_margin_right">19dip</dimen>
+
+    <!-- 备忘主界面 -->
+    <dimen name="note_list_item_padding_top">17.3dp</dimen>
+    <dimen name="note_list_item_padding_bottom">17.3dp</dimen>
+    <dimen name="note_list_item_padding_left">21dp</dimen>
+    <dimen name="note_list_item_padding_right">21dp</dimen>
+    <dimen name="note_list_item_title_size">16sp</dimen>
+    <dimen name="note_list_item_time_size">11sp</dimen>
+    <dimen name="note_list_item_time_padding_top">2.3dp</dimen>
+    <dimen name="note_list_item_pic_padding_top">5dp</dimen>
+    <dimen name="note_list_item_pic_padding_right">9dp</dimen>
+    <dimen name="note_list_item_pic_height">67dp</dimen>
+    <dimen name="note_list_item_pics_height">69dp</dimen>
+    <dimen name="note_list_item_pic_width">94dp</dimen>
+    <dimen name="note_main_empty_text_padding_top">176dp</dimen>
+    <dimen name="note_main_empty_text_size">24sp</dimen>
+
+    <!-- 搜索界面 -->
+    <dimen name="search_view_no_match_text_padding_top">176dp</dimen>
+    <dimen name="label_margin_left">21dp</dimen>
+    <dimen name="label_margin_right">21dp</dimen>
+    <dimen name="label_horizontal_space">12dp</dimen>
+    <dimen name="label_vertical_space">8.3dp</dimen>
+    <dimen name="label_title_padding_top">17dp</dimen>
+    <dimen name="label_padding_left">7dp</dimen>
+    <dimen name="label_padding_top">5dp</dimen>
+    <dimen name="label_padding_right">7dp</dimen>
+    <dimen name="label_padding_bottom">5dp</dimen>
+
+    <!-- 大图浏览 -->
+    <dimen name="picbrowser_bottom_tools">5dip</dimen>
+    <dimen name="picbrowser_bottom">35dip</dimen>
+    <dimen name="picbrowser_bottom_text_padding">18.6dip</dimen>
+    <dimen name="picbrowser_top_tool_height">55dip</dimen>
+
+    <!-- 播放界面 -->
+    <dimen name="text_playing_left">5dp</dimen>
+    <dimen name="video_playtime_text">10sp</dimen>
+    <dimen name="video_alltime_text">10sp</dimen>
+
+    <!-- 添加提醒界面 -->
+    <dimen name="selected_date_time_margin_top">65dp</dimen>
+    <dimen name="date_time_picker_margin_top">57.5dp</dimen>
+    <dimen name="date_time_picker_margin_left">10dp</dimen>
+    <dimen name="date_time_picker_margin_right">10dp</dimen>
+    <dimen name="delete_reminder_btn_margin_bottom">84dip</dimen>
+
+    <!-- 搜索框 -->
+    <dimen name="search_view_text_padding_left">36dp</dimen>
+
+    <!-- 新建备忘界面 -->
+    <dimen name="new_note_menu_bar_height">44.3dp</dimen>
+    <dimen name="new_note_content_padding_left">21dp</dimen>
+    <dimen name="new_note_content_padding_right">21dp</dimen>
+    <dimen name="new_note_content_padding_top">17dp</dimen>
+    <dimen name="new_note_reminder_label_container_height">38.3dp</dimen>
+    <dimen name="new_note_reminder_label_container_margin_left">30.5dp</dimen>
+    <dimen name="new_note_reminder_label_container_margin_right">21dp</dimen>
+    <dimen name="new_note_reminder_margin_left">8.3dp</dimen>
+    <dimen name="new_note_reminder_textsize">10.3sp</dimen>
+    <dimen name="new_note_content_textsize">16sp</dimen>
+    <dimen name="new_note_label_icon_margin_left">15dp</dimen>
+    <dimen name="new_note_label_icon_margin_right">8.3dp</dimen>
+    <dimen name="new_note_reminder_icon_width">16.3dp</dimen>
+    <dimen name="new_note_reminder_icon_height">14.3dp</dimen>
+    <dimen name="new_note_reminder_label_vertical_line_width">0.6dp</dimen>
+    <dimen name="new_note_reminder_label_vertical_line_height">10.6dp</dimen>
+    <dimen name="new_note_label_icon_width">15.3dp</dimen>
+    <dimen name="new_note_label_icon_height">14.3dp</dimen>
+    <dimen name="new_note_reminder_label_hor_line_height">1dp</dimen>
+    <dimen name="new_note_menu_ver_line_height">14.3dp</dimen>
+    <dimen name="new_note_shadow_height">200px</dimen>
+
+    <!-- 录音界面 -->
+    <dimen name="record_activity_height">55dp</dimen>
+    <dimen name="record_animation_view_height">40dp</dimen>
+    <dimen name="record_time_padding_left">21dp</dimen>
+    <dimen name="record_time_padding_right">20dp</dimen>
+    <dimen name="record_complete_padding_left">20dp</dimen>
+    <dimen name="record_complete_padding_right">21dp</dimen>
+
+    <!-- 录音播放界面 -->
+    <!--
+    <dimen name="play_start_width">32dp</dimen>
+    <dimen name="play_start_height">18.3dp</dimen>
+    -->
+    <dimen name="play_start_width">42dp</dimen>
+    <dimen name="play_start_height">28.3dp</dimen>
+    <dimen name="play_activity_height">55dp</dimen>
+    <dimen name="play_start_margin_left">21dp</dimen>
+    <dimen name="play_start_margin_right">21dp</dimen>
+    <dimen name="play_complete_padding_left">27dp</dimen>
+    <dimen name="play_complete_padding_right">21dp</dimen>
+    <dimen name="play_progress_padding_top">14.6dp</dimen>
+    <dimen name="play_progress_padding_bottom">17dp</dimen>
+    <dimen name="play_seekbar_height">18dp</dimen>
+    <dimen name="play_seekbar_thumb_offset">10.5dp</dimen>
+    <dimen name="play_text_size">8.6sp</dimen>
+
+    <!-- 公用 -->
+    <dimen name="list_item_btn_width">48dp</dimen>
+    <dimen name="list_item_btn_height">28dp</dimen>
+    <dimen name="common_btn_width">248dp</dimen>
+    <dimen name="common_btn_height">48dp</dimen>
+    <dimen name="common_btn_testsize">54sp</dimen>
+    <dimen name="page_loading_img_margintop">130dp</dimen>
+    <dimen name="page_loading_text_margintop">22dp</dimen>
+    <dimen name="page_loading_button_margintop">70dp</dimen>
+    <dimen name="page_loading_padding_left_right">17dp</dimen>
+    <dimen name="tag_viewpage_margin_top">-0.1dp</dimen>
+    <dimen name="app_icon_displayer">12dp</dimen>
+
+    <!-- 首页 -->
+    <dimen name="homepage_header_height">185dp</dimen>
+    <dimen name="homepgae_bannerview_height">140dp</dimen>
+    <dimen name="homepage_banner_dot_margin_rigth">10dp</dimen>
+    <dimen name="homepage_banner_dot_margin_bottom">5dp</dimen>
+    <dimen name="homepage_tabview_height">45dp</dimen>
+    <dimen name="homepage_tabview_text_margin_img">10dp</dimen>
+    <dimen name="homgpage_tabview_line_margin_topbottom">8dp</dimen>
+    <dimen name="homepage_main_tab_height_max">76.3dp</dimen>
+    <dimen name="homepage_main_tab_height_min">45dp</dimen>
+    <dimen name="homepage_name_tab_range">36.3dp</dimen>
+    <dimen name="homepage_main_tab_item_padding_top">15dp</dimen>
+    <dimen name="homepage_main_tab_item_hor_padding_top">13.3dp</dimen>
+    <dimen name="homepage_main_tab_item_hor_text_padding_top">1.5dp</dimen>
+    <dimen name="homepage_main_tab_item_hor_text_margin_left">13dp</dimen>
+    <dimen name="homepage_main_tab_item_trans_left">16dp</dimen>
+    <dimen name="homepage_main_tab_temp_top">3dp</dimen>
+    <dimen name="homepage_app_name_maxwidth">70dp</dimen>
+	<dimen name="homepage_item_padding_top">6dp</dimen>
+	<dimen name="homepage_item_title_padding_bottom">4dp</dimen>
+    <dimen name="homepage_four_app_name_padding_top">7dp</dimen>
+    <dimen name="homepage_four_download_count_padding_top">2dp</dimen>
+
+    <!-- 软件列表 -->
+    <dimen name="app_item_height">80dp</dimen>
+    <dimen name="app_item_padding_left_and_right">17dp</dimen>
+    <dimen name="app_item_padding_top_and_bottom">10dp</dimen>
+    <dimen name="app_item_icon_width_and_height">60dp</dimen>
+    <dimen name="app_item_icon_margin_right">12dp</dimen>
+    <dimen name="app_item_btn_textsize">16sp</dimen>
+    <dimen name="app_item_name_margin_top">12dp</dimen>
+    <dimen name="app_item_ratingbar_margin_top">5dp</dimen>
+    <dimen name="app_item_ratingbar_margin_bottom">6dp</dimen>
+    <dimen name="app_item_down_btn_width">48dp</dimen>
+    <dimen name="app_item_down_btn_height">28dp</dimen>
+    <dimen name="app_item_down_btn_container_width">82dp</dimen>
+    <dimen name="app_item_appname_height">18dp</dimen>
+    <dimen name="app_item_count_height">14dp</dimen>
+    <dimen name="app_item_ratingbar_height">10dp</dimen>
+
+    <!-- 分类页 -->
+    <dimen name="category_item_padding_left_right">17dp</dimen>
+    <dimen name="category_item_padding_top">14.5dp</dimen>
+    <dimen name="category_item_padding_bottom">15dp</dimen>
+    <dimen name="category_item_padding_top_bottom">15dp</dimen>
+    <dimen name="category_item_name_to_info">15dp</dimen>
+    <dimen name="category_item_icon_width_and_height">20dp</dimen>
+    <dimen name="category_item_name_margin_left">5dp</dimen>
+    <dimen name="category_item_info_margin">12dp</dimen>
+    <dimen name="category_item_info_linespacingextra">5dp</dimen>
+    <dimen name="category_item_length_155">155dp</dimen>
+    <dimen name="category_item_length_60">60dp</dimen>
+    <dimen name="category_item_length_40">40dp</dimen>
+    <dimen name="category_item_img_width">42.6dp</dimen>
+
+    <!-- 应用排行页 -->
+    <dimen name="app_ranking_tab_bottomline_height">2dp</dimen>
+
+    <!-- App Detail Page -->
+    <dimen name="app_detail_page_header_height">84dp</dimen>
+    <dimen name="app_detail_page_footer_height">72dp</dimen>
+    <dimen name="app_detail_page_margin_0">0dp</dimen>
+    <dimen name="app_detail_page_margin_4">4dp</dimen>
+    <dimen name="app_detail_page_margin_5">5dp</dimen>
+    <dimen name="app_detail_page_margin_6">6dp</dimen>
+    <dimen name="app_detail_page_margin_7">7dp</dimen>
+    <dimen name="app_detail_page_margin_9">9dp</dimen>
+    <dimen name="app_detail_page_margin_10">10dp</dimen>
+    <dimen name="app_detail_page_margin_12">12dp</dimen>
+    <dimen name="app_detail_page_margin_13">13dp</dimen>
+    <dimen name="app_detail_page_margin_15">15dp</dimen>
+    <dimen name="app_detail_page_margin_17">17dp</dimen>
+    <dimen name="app_detail_page_margin_20">20dp</dimen>
+    <dimen name="app_detail_page_margin_22">22dp</dimen>
+    <dimen name="app_detail_page_margin_31">31dp</dimen>
+    <dimen name="app_detail_page_margin_34">34.3dp</dimen>
+    <dimen name="app_detail_page_margin_56">56dp</dimen>
+    <dimen name="app_detail_page_margin_180">180dp</dimen>
+    <dimen name="app_detail_page_padding_17">17dp</dimen>
+    <dimen name="app_detail_page_length_22">22dp</dimen>
+    <dimen name="app_detail_page_length_60">60dp</dimen>
+    <dimen name="app_detail_page_length_72">72dp</dimen>
+    <dimen name="app_detail_page_length_240">240dp</dimen>
+    <dimen name="app_detail_page_pic_width">180dp</dimen>
+    <dimen name="app_detail_page_pic_height">320dp</dimen>
+    <dimen name="app_detail_page_textview_length">100dp</dimen>
+    <dimen name="app_detail_page_line_divider">0.5dp</dimen>
+    <dimen name="app_detail_page_pic_divider">12dp</dimen>
+    <dimen name="page_title_length_35">35dp</dimen>
+    <dimen name="app_detail_pic_browse">214dp</dimen>
+
+    <!-- App Update Page -->
+    <dimen name="app_update_padding_8">8dp</dimen>
+    <dimen name="app_update_length_28">28dp</dimen>
+    <dimen name="app_update_length_48">48dp</dimen>
+    <dimen name="app_update_length_12">12dp</dimen>
+    <dimen name="app_update_length_17">17dp</dimen>
+    <dimen name="app_update_list_item_height">84dp</dimen>
+    <dimen name="app_update_empty_text_width">326dp</dimen>
+
+    <!-- ProgressBtn view -->
+    <dimen name="progressRoundWidth">1dp</dimen>
+    <dimen name="progressLineWidth">0.66dp</dimen>
+    <dimen name="progressBtnWidth">28dp</dimen>
+    <dimen name="progressBtnHeight">28dp</dimen>
+    <dimen name="progressBtnTextSize">14sp</dimen>
+    <dimen name="progressBtnBigRadius">13dp</dimen>
+    <dimen name="progressBtnDotRadius">0.8dp</dimen>
+
+    <!-- 下载管理 -->
+    <dimen name="down_man_nodata_uxiaobei_margintop">130dp</dimen>
+    <dimen name="down_man_nodata_text_margintop">22dp</dimen>
+    <dimen name="down_man_nodata_button_margintop">70dp</dimen>
+
+    <!-- 下载管理item -->
+    <dimen name="down_man_item_height">67dp</dimen>
+    <dimen name="down_man_item_padding_left_and_right">17dp</dimen>
+    <dimen name="down_man_item_padding_top_and_bottom">12dp</dimen>
+    <dimen name="down_man_item_padding_top">15dp</dimen>
+    <dimen name="down_man_item_icon_width_and_height">43dp</dimen>
+    <dimen name="down_man_item_center_margin">12dp</dimen>
+    <dimen name="down_man_item_progress_margin">3dp</dimen>
+    <dimen name="down_man_item_progress_height">2dp</dimen>
+    <dimen name="down_man_item_status_margin_top">4dp</dimen>
+    <dimen name="down_man_item_speedtext_width">85dp</dimen>
+    <dimen name="down_man_item_appname_height">18dp</dimen>
+    <dimen name="down_man_item_status_height">14dp</dimen>
+    <dimen name="down_man_header_height">35dp</dimen>
+    <dimen name="down_man_header_padding_left_and_right">17dp</dimen>
+    <dimen name="down_man_header_padding_top_and_bottom">10dp</dimen>
+    <dimen name="down_man_header_clean_padding">30dp</dimen>
+    <dimen name="down_man_dlg_content_padding_bottom">15dp</dimen>
+    <dimen name="down_man_dlg_content_padding_top">18dp</dimen>
+    <dimen name="down_man_dlg_content_msg_linespacingextra">5dp</dimen>
+    <dimen name="down_man_dlg_checkbox_margin_top">15dp</dimen>
+
+    <!-- Search Page -->
+    <dimen name="search_page_textview_height">47dp</dimen>
+    <dimen name="search_page_margin_19">19dp</dimen>
+    <dimen name="search_page_margin_20">20dp</dimen>
+    <dimen name="search_page_margin_24">24dp</dimen>
+    <dimen name="search_page_margin_left">30dp</dimen>
+    <dimen name="search_page_grid_item_height_45">45dp</dimen>
+    <dimen name="search_page_list_item_height_40">40dp</dimen>
+    <dimen name="search_page_list_item_height_47">47dp</dimen>
+    <dimen name="search_page_margin_10">10dp</dimen>
+    <dimen name="search_page_margin_14">14dp</dimen>
+    <dimen name="search_page_margin_23">23dp</dimen>
+    <dimen name="search_page_height_20">20dp</dimen>
+    <dimen name="search_page_width_20">20dp</dimen>
+    <dimen name="search_rec_text_width_64">64dp</dimen>
+    <dimen name="search_page_height_32">32dp</dimen>
+    <dimen name="search_page_margin_5">5dp</dimen>
+    <dimen name="search_page_margin_12">12dp</dimen>
+    <dimen name="search_page_margin_9">9dp</dimen>
+    <dimen name="search_item_text1_height">18.6dp</dimen>
+    <dimen name="search_item_text2_height">14.3dp</dimen>
+
+    <!-- 通知 -->
+    <dimen name="notification_paddingleft">11dp</dimen>
+    <dimen name="notification_marginleft">13dp</dimen>
+    <dimen name="notification_marginright">12dp</dimen>
+    <dimen name="notification_text_title">16sp</dimen>
+    <dimen name="notification_text_content">14sp</dimen>
+    <dimen name="notification_installed_top">3dp</dimen>
+    <dimen name="notification_downloading_right">0dp</dimen>
+    <dimen name="notification_downloading_right1">0dp</dimen>
+    <dimen name="notificaiont_install_progress_width">280dp</dimen>
+
+    <!-- 专题页 -->
+    <dimen name="special_item_height">392dp</dimen>
+    <dimen name="special_item_image_height">140dp</dimen>
+    <dimen name="special_item_tip_text_height">35dp</dimen>
+    <dimen name="special_item_tip_text_width">150dp</dimen>
+    <dimen name="special_item_tip_text_padding_leftright">17dp</dimen>
+    <dimen name="special_item_tip_text_arrow_margin_left">3dp</dimen>
+    <dimen name="special_item_tip_text_textsize">16sp</dimen>
+    <dimen name="special_item_tip_text_showall_textsize">14sp</dimen>
+    <dimen name="special_item_tip_text_showall_width">65dp</dimen>
+    <dimen name="special_item_tip_arrow_margin_left">3dp</dimen>
+    <dimen name="special_item_divider_height">14dp</dimen>
+    
+    <dimen name="apps_item_padding_top">8dp</dimen>
+    <dimen name="apps_item_banner_width">175dp</dimen>
+    <dimen name="apps_item_banner_height">69dp</dimen>
+
+</resources>

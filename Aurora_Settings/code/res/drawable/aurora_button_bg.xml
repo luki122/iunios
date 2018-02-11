@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-10-17 created for aurora's new feature -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true"
+        android:state_pressed="false" android:drawable="@drawable/aurora_button_nor" />
+    <item android:state_enabled="true"
+        android:state_pressed="true" android:drawable="@drawable/aurora_button_pre" />
+</selector>

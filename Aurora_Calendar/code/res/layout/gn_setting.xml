@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-05-06> modify for CR00000000 begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+        android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+        android:orientation="vertical"
+        android:padding="@dimen/gn_sliding_content_margin_left_or_right">
+    
+
+
+
+        <LinearLayout
+            android:id="@+id/gn_setting_show_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_top_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gn_sliding_content_margin_left_or_right" >
+
+            <TextView
+                android:id="@+id/gn_setting_show_calendar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:gravity="center_vertical"
+                android:text="@string/select_visible_calendars_title"
+                style="@style/GNAllInOneSlidingContentText" />
+            <!-- 
+                android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+                android:textSize="@dimen/gn_sliding_content_text_size"
+             -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gn_setting_synecd_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_middle_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gn_sliding_content_margin_left_or_right" >
+            
+            <TextView
+                android:id="@+id/gn_setting_synecd_calendar_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/select_synced_calendars_title"
+                style="@style/GNAllInOneSlidingContentText" />
+            <!-- 
+                android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+                android:textSize="@dimen/gn_sliding_content_text_size"
+             -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gn_setting_general"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_middle_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gn_sliding_content_margin_left_or_right" >
+
+            <TextView
+                android:id="@+id/gn_setting_general_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/preferences_general_title"
+                style="@style/GNAllInOneSlidingContentText" />
+            <!-- 
+            
+                android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+                android:textSize="@dimen/gn_sliding_content_text_size"
+             -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gn_setting_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_middle_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gn_sliding_content_margin_left_or_right" >
+
+            <TextView
+                android:id="@+id/gn_setting_reminder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/preferences_reminder_title"
+                style="@style/GNAllInOneSlidingContentText" />
+            <!-- 
+            
+                android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+                android:textSize="@dimen/gn_sliding_content_text_size"
+             -->
+        </LinearLayout>
+
+     <LinearLayout
+            android:id="@+id/gn_setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_bottom_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/gn_sliding_content_margin_left_or_right" >
+
+            <TextView
+                android:id="@+id/gn_setting_about_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/menu_about_preferences"
+                style="@style/GNAllInOneSlidingContentText" />
+            <!-- 
+            
+                android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+                android:textSize="@dimen/gn_sliding_content_text_size"
+             -->
+        </LinearLayout>
+
+</LinearLayout>
+<!-- Gionee <jiating> <2013-05-06> modify for CR00000000 end -->

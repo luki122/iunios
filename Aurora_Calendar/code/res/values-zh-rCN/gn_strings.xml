@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000  begin -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <string name="gn_all_in_one_action_bar_today">回今天</string>
+     <string name="gn_all_in_one_system">系统</string>
+     <string name="gn_all_in_one_all_activities">全部活动</string>
+     <!--  Gionee <pengwei>  <2013-04-12> modify for DayView begin-->
+     <string name="gn_day_lunar">农历</string>
+     <string name="gn_day_no_content">无内容</string>
+     <string name="gn_day_no_content_alert">添加实用工具了解今日运程</string>
+     <string name="gn_day_Monday">星期一</string>
+     <string name="gn_day_Tuesday">星期二</string>
+     <string name="gn_day_Wednesday">星期三</string>
+   	 <string name="gn_day_Thursday">星期四</string>
+   	 <string name="gn_day_Friday">星期五</string>
+   	 <string name="gn_day_Saturday">星期六</string>
+   	 <string name="gn_day_Sunday">星期天</string>
+   	 <string name="gn_day_January">一月</string>
+     <string name="gn_day_February">二月</string>
+     <string name="gn_day_March">三月</string>
+   	 <string name="gn_day_April">四月</string>
+   	 <string name="gn_day_May">五月</string>
+   	 <string name="gn_day_June">六月</string>
+   	 <string name="gn_day_July">七月</string>
+   	 <string name="gn_day_August">八月</string>
+   	 <string name="gn_day_September">九月</string>
+   	 <string name="gn_day_October">十月</string>
+   	 <string name="gn_day_November">十一月</string>
+   	 <string name="gn_day_December">十二月</string>
+   	 <string name="gn_day_event_view">查看活动</string>
+   	 <string name="gn_day_event_edit">编辑活动</string>
+   	 <string name="gn_day_event_del">删除活动</string>
+   	 <string name="gn_day_event_share">分享活动</string>
+   	 <string name="gn_day_time_out_of_range">"无法切换日期，时间己超出范围[1970~2036]"</string>
+   	 <string name="gn_day_constellation_comprehensive_luck">综合运势</string>
+   	 <string name="gn_day_constellation_health_index">健"&#160;""&#160;""&#160;""&#160;"康</string>
+   	 <string name="gn_day_constellation_work_index">工"&#160;""&#160;""&#160;""&#160;"作</string>
+     <string name="gn_day_constellation_love_index">爱"&#160;""&#160;""&#160;""&#160;"情</string>
+   	 <string name="gn_day_constellation_wealth_index">财"&#160;""&#160;""&#160;""&#160;"运</string>
+   	 <string name="gn_day_constellation_lucky_color">幸运色</string>
+   	 <string name="gn_day_constellation_lucky_numbers">幸运数</string>
+   	 <string name="gn_day_constellation_speed_dating_constellation">速"&#160;""&#160;""&#160;""&#160;"配</string>
+     <string name="gn_week_saturday">周六</string>
+     <string name="gn_week_sunday">周日</string>
+     <!-- Gionee <pengwei>  <2013-05-17> modify for CR00813681 begin -->
+     <string name="gn_week_text_holiday">假</string>
+     <string name="gn_week_text_work">班</string>
+    <!-- Gionee <pengwei>  <2013-05-17> modify for CR00813681 end -->
+   	 <!--  Gionee <pengwei>  <2013-04-12> modify for DayView end-->
+     <string name="gn_edit_event_title_cancle">舍弃</string>
+     <string name="gn_edit_event_title_save">保存</string>
+     <string name="gn_edit_event_hint_activity_name">请输入活动名称</string>
+     <string name="gn_edit_event_time_name">时间</string>
+     <!-- Gionee <jiating><2013-07-03> modify for  CR00830388 begin-->
+     <string name="gn_edit_event_start_time">开始:</string>
+     <string name="gn_edit_event_end_time">结束:</string>
+     <!-- Gionee <jiating><2013-07-03> modify for  CR00830388 end-->
+     <string name="gn_edit_event_more">更多</string>
+     <string name="gn_edit_event_select_account_name">选择帐号</string>
+     <string name="gn_edit_event_account_name">帐号</string>
+     <string name="gn_edit_event_date_time_set">设置</string>
+     <string name="gn_edit_event_date_time_cancel">取消</string>
+     <string name="gn_edit_event_date_time_dialog_title">设置时间</string>
+     <string name="gn_hint_search_event">搜索活动</string>
+     <string name="gn_agenda_search_nothing">没有搜索到活动</string>
+     <string name="gn_agenda_get_events_failed">获取日程列表失败</string>
+     <string name="gn_agenda_no_event">没有活动.</string>
+     <string name="more_string">"以及其他 <xliff:g id="c">%1$s</xliff:g> 个..."</string>
+     <string name="copy">"复制电子邮件地址"</string>
+     <string name="gn_voice_add_event">语音添加日程</string>
+     
+     <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  begin -->
+     <string name="gn_about_title">日历</string>
+     <string name="gn_about_version">版本号:</string>
+     <string name="gn_about_new_function">新增功能:</string>
+     
+     
+     <string name="gn_about_add_day_view">全新UI界面</string>
+     <string name="gn_about_add_alarm">简化活动添加流程</string>
+     <string name="gn_about_add_widget">新增语音添加活动</string>
+     <string name="gn_about_add_4">优化日历widget</string>
+     <string name="gn_about_content_source">内容来源：</string>
+     <string name="about_update">版本更新</string>
+    
+     <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  end -->
+     
+     <!-- Gionee <lilg><2013-05-02> modify for Gionee widget begin -->
+     <string name="app_name">桌面日历</string>
+     <string name="choose_date">选择日期</string>
+     <string name="no_target_activity">日历已被停用，请先启用该应用</string>
+     <string name="no_account_title">无日历帐户</string>
+     <string name="no_account_content">您必须向设备中至少添加一个日历帐户并显示一个日历，然后才能请求同步。您可以触摸“添加帐户”以添加帐户（如果您​​刚刚添加过帐户，请等待该帐户完成同步，然后重试）。您也可以触摸“取消”，并确保至少显示了一个日历。</string>
+	
+     <string name="monday">周一</string>
+     <string name="tuesday">周二</string>
+     <string name="wednesday">周三</string>
+     <string name="thursday">周四</string>
+     <string name="friday">周五</string>
+     <string name="saturday">周六</string>
+     <string name="sunday">周日</string>
+     <!-- Gionee <lilg><2013-05-02> modify for Gionee widget end -->
+    
+    <!-- Gionee <jiangxiao><2013-05-02> add for CR000000 begin -->
+    <string name="time_out_of_range">无法切换月份，时间己超出范围[1970~2036]</string>
+    <string name="week_number_unit">周</string>
+    
+    <string name="legal_holiday">假</string>
+    <string name="legal_work_shift">班</string>
+    
+    <string name="no_agenda_prompt">今日无安排</string>
+    <!-- Gionee <jiangxiao><2013-05-02> add for CR000000 end -->
+    
+    <!-- Gionee <jiangxiao><2013-05-31> add for CR000000 begin -->
+    <!-- add strings for astro feature -->
+
+    <string name="gn_astro_name_aries">白羊座</string>
+    <string name="gn_astro_name_taurus">金牛座</string>
+    <string name="gn_astro_name_gemini">双子座</string>
+    <string name="gn_astro_name_cancer">巨蟹座</string>
+    <string name="gn_astro_name_leo">狮子座</string>
+    <string name="gn_astro_name_virgo">处女座</string>
+    <string name="gn_astro_name_libra">天秤座</string>
+    <string name="gn_astro_name_scorpio">天蝎座</string>
+    <string name="gn_astro_name_sagittarius">射手座</string>
+    <string name="gn_astro_name_capricorn">摩羯座</string>
+    <string name="gn_astro_name_aquarius">水瓶座</string>
+    <string name="gn_astro_name_pisces">双鱼座</string>
+    
+    <!-- Gionee <jiangxiao><2013-05-31> add for CR000000 end -->
+    
+    <string name="horoscope">星座运势</string>
+    <string name="horoscope_today">今日</string>
+    <string name="horoscope_tomorow">明日</string>
+    <string name="horoscope_week">本周</string>
+    <string name="gn_tools_title">实用工具</string>
+    <string name="gn_day_constellation">综"&#160;""&#160;""&#160;""&#160;"合</string>
+    <string name="gn_tools_content_horoscope">星座</string>
+    <string name="get_horoscope_failed">获取数据失败.</string>
+    
+    <!-- Gionee <jiangxiao><2013-05-31> add for CR000000 end -->
+    <!-- Gionee <pengwei><2013-06-07> add for CR00824087 begin -->  
+    <string name="gn_day_astro_name_aries">白羊座</string>
+    <string name="gn_day_astro_name_taurus">金牛座</string>
+    <string name="gn_day_astro_name_gemini">双子座</string>
+    <string name="gn_day_astro_name_cancer">巨蟹座</string>
+    <string name="gn_day_astro_name_leo">狮子座</string>
+    <string name="gn_day_astro_name_virgo">处女座</string>
+    <string name="gn_day_astro_name_libra">天秤座</string>
+    <string name="gn_day_astro_name_scorpio">天蝎座</string>
+    <string name="gn_day_astro_name_sagittarius">射手座</string>
+    <string name="gn_day_astro_name_capricorn">摩羯座</string>
+    <string name="gn_day_astro_name_aquarius">水瓶座</string>
+    <string name="gn_day_astro_name_pisces">双鱼座</string>
+    <!-- Gionee <pengwei><2013-06-07> add for CR00824087 end -->  
+    
+     <!-- Gionee <jiating><2013-07-01> modify for CR00819533 begin -->
+    <string name="gn_agenda_time_noon">中午</string>
+    <string name="gn_agenda_time_noon_replace">下午 12:00</string>
+    <!-- Gionee <jiating><2013-07-01> modify for CR00819533 end -->
+    
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+    
+    <string name="gn_tools_name_almanac">"黄历"</string>
+    <string name="gn_get_lunar_fail">获取阴历失败</string>
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+     
+</resources>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000  end -->

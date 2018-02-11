@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Padding on left margin of PIN text entry field to center it when del button is showing -->
+    <dimen name="keyguard_lockscreen_pin_margin_left">40dip</dimen>
+    
+    <!-- Size of the generic status lines keyguard's status view  -->
+    <dimen name="kg_status_line_font_size">26.5px</dimen>
+    
+    <dimen name="lock_screen_bg_wallpaper">543dp</dimen>
+    
+    <dimen name="lock_screen_bg_color_view">97dp</dimen>
+    
+    <!-- Clock Date Week font size -->
+    <dimen name="lock_screen_clock_size">164.5px</dimen>
+    <dimen name="lock_screen_date_size">36.5px</dimen>
+    <dimen name="lock_screen_week_size">32.5px</dimen>
+    <dimen name="lock_screen_week_width">50dip</dimen>
+    
+    <dimen name="lock_pwd_digit_entry_width">222.0dip</dimen>
+    <dimen name="lock_pwd_digit_entry_height">51.0dip</dimen>
+    <dimen name="lock_pwd_digit_entry_margin_top">156.0dip</dimen>
+    <dimen name="lock_pwd_digit_entry_margin_left">69.0dip</dimen>
+    <dimen name="lock_pwd_digit_entry_text_size">24.0dip</dimen>
+    <dimen name="lock_pwd_digit_pwd_dot_icon_padding">4.0dip</dimen>
+</resources>

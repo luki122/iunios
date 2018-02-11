@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee zhouyj 2012-05-28 modify for CR00607938 start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/item_list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="1.0"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <!-- 
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        style="?android:attr/buttonBarStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <aurora.widget.AuroraButton
+            android:id="@+id/exportImportBtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+ -->
+</LinearLayout>
+<!-- gionee zhouyj 2012-05-28 modify for CR00607938 end -->

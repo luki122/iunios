@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--      Gionee <zhangxx> <2013-06-20> add for auroraframework. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="aurora_capital_on">开</string>
+    <string name="aurora_capital_off">关</string>
+    <string name="aurora_time_picker_dialog_title">"设置时间"</string>
+    <string name="aurora_date_picker_dialog_title">"设置日期"</string>
+    <string name="aurora_date_time_done">"完成"</string>
+    <string name="aurora_copy">复制</string>
+    <string name="aurora_paste">粘贴</string>
+    <string name="aurora_cut">剪切</string>
+    <string name="aurora_selectAll">全选</string>
+    <string name="aurora_select">选择</string>
+    <string name="aurora_inputMethod">输入法</string>
+
+    <!-- Strings for possible PreferenceActivity Back/Next buttons -->
+    <string name="aurora_back_button_label">上一步</string>
+    <string name="aurora_next_button_label">下一步</string>
+    <!-- Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] -->
+    <string name="aurora_skip_button_label">跳过</string>
+    <string name="aurora_ok">确定</string>
+    <string name="aurora_cancel">取消</string>
+    <string name="aurora_yes">确定</string>
+    <string name="aurora_no">取消</string>
+    <string name="aurora_action_mode_done">完成</string>
+    <string name="aurora_action_bar_home_description">"导航首页"</string>
+    <string name="aurora_action_bar_up_description">"向上导航"</string>
+
+    <!-- Gionee <xuhz> <2013-07-19> add for CR00838236 begin -->
+    <!-- String for Smart Guider -->
+    <string name="aurora_smart_full_btn_label">我知道了</string>
+    <!-- Gionee <xuhz> <2013-07-19> add for CR00838236 end -->
+
+    <string name="aurora_datepicker_done">确定</string>
+    <string name="aurora_datepicker_cancel">取消</string>
+    <string name="aurora_datepicker_year_label">年</string>
+    <string name="aurora_datepicker_month_lebel">月</string>
+    <string name="aurora_datepicker_day_label">日</string>
+
+    <!-- Aurora <luofu> <2013-10-23> add for timepicker begin -->
+    <string name="aurora_time_picker_hour_lebel">时</string>
+    <string name="aurora_time_picker_m_label">分</string>
+    
+    <string name="lockscreen_carrier_default" msgid="8963839242565653192">"无服务"</string>
+    <string name="share" msgid="1778686618230011964">"分享"</string>
+    <string name="usb_storage_stop_notification_title" msgid="2336058396663516017">"关闭 USB 存储设备"</string>
+    <string name="usb_storage_stop_notification_message" msgid="1656852098555623822">"触摸可关闭 USB 存储设备。"</string>
+    <string name="ext_media_checking_notification_title" msgid="3449816005351468560" product="nosdcard">"正在准备 USB 存储设备"</string>
+    <string name="ext_media_checking_notification_title" msgid="5457603418970994050" product="default">"正在准备<xliff:g id="storage_description">%s</xliff:g>"</string>
+    <string name="ext_media_checking_notification_message" msgid="8287319882926737053">"正在检查是否有错误。"</string>
+    <string name="ext_media_nofs_notification_title" msgid="7788040745686229307" product="nosdcard">"USB 存储设备中无文件"</string>
+    <string name="ext_media_nofs_notification_title" msgid="780477838241212997" product="default">"空<xliff:g id="storage_description">%s</xliff:g>"</string>
+    <string name="ext_media_nofs_notification_message" msgid="7840121067427269500" product="nosdcard">"USB 存储设备中没有任何文件或使用了不支持的文件系统。"</string>
+    <string name="ext_media_nofs_notification_message" msgid="8641065641786923604" product="default">"<xliff:g id="storage_description">%s</xliff:g>中没有任何文件或使用了不支持的文件系统。"</string>
+    <string name="ext_media_unmountable_notification_title" msgid="2090046769532713563" product="nosdcard">"USB 存储设备已损坏"</string>
+    <string name="ext_media_unmountable_notification_title" msgid="6410723906019100189" product="default">"<xliff:g id="storage_description">%s</xliff:g>受损"</string>
+    <string name="ext_media_unmountable_notification_message" msgid="1795917578395333280" product="nosdcard">"USB 存储设备已损坏，请尝试重新格式化。"</string>
+    <string name="ext_media_unmountable_notification_message" msgid="1753898567525568253" product="default">"<xliff:g id="storage_description">%s</xliff:g>已损坏，请尝试重新格式化。"</string>
+    <string name="ext_media_badremoval_notification_title" msgid="1661683031330951073" product="nosdcard">"USB 存储设备已意外移除"</string>
+    <string name="ext_media_badremoval_notification_title" msgid="6872152882604407837" product="default">"<xliff:g id="storage_description">%s</xliff:g>未正常移除"</string>
+    <string name="ext_media_badremoval_notification_message" msgid="4329848819865594241" product="nosdcard">"请先卸载 USB 存储设备，再将其移除，以防数据丢失。"</string>
+    <string name="ext_media_badremoval_notification_message" msgid="7260183293747448241" product="default">"请先卸载<xliff:g id="storage_description">%s</xliff:g>，再将其移除，以防数据丢失。"</string>
+    <string name="ext_media_safe_unmount_notification_title" msgid="3967973893270360230" product="nosdcard">"USB 存储设备已安全移除"</string>
+    <string name="ext_media_safe_unmount_notification_title" msgid="6729801130790616200" product="default">"<xliff:g id="storage_description">%s</xliff:g>已安全移除"</string>
+    <string name="ext_media_safe_unmount_notification_message" msgid="6142195361606493530" product="nosdcard">"您可以安全地移除 USB 存储设备。"</string>
+    <string name="ext_media_safe_unmount_notification_message" msgid="568841278138377604" product="default">"您现在可以安全移除<xliff:g id="storage_description">%s</xliff:g>。"</string>
+    <string name="ext_media_nomedia_notification_title" msgid="4486377230140227651" product="nosdcard">"USB 存储设备已移除"</string>
+    <string name="ext_media_nomedia_notification_title" msgid="8902518030404381318" product="default">"已移除<xliff:g id="storage_description">%s</xliff:g>"</string>
+    <string name="ext_media_nomedia_notification_message" msgid="6921126162580574143" product="nosdcard">"USB 存储设备已移除。请插入新媒体。"</string>
+    <string name="ext_media_nomedia_notification_message" msgid="3870120652983659641" product="default">"<xliff:g id="storage_description">%s</xliff:g>已移除。请插入新的。"</string>
+    <string name="usb_storage_notification_title" msgid="8175892554757216525">"USB 已连接"</string>
+    <string name="usb_storage_notification_message" msgid="939822783828183763">"触摸可将文件复制到计算机或从计算机复制到存储设备。"</string>
+    <string name="usb_storage_stop_title" msgid="660129851708775853">"USB 存储设备正在使用中"</string>
+    <string name="usb_storage_stop_message" product="nosdcard" msgid="4264025280777219521">"在关闭 USB 存储设备前，请从计算机中卸载（“弹出”）Android 设备的 USB 存储设备。"</string>
+    <string name="usb_storage_stop_message" product="default" msgid="8043969782460613114">"在关闭 USB 存储设备前，请从计算机中卸载（“弹出”）Android 设备的 SD 卡。"</string>
+    <string name="usb_storage_title" msgid="5901459041398751495">"USB 已连接"</string>
+    <string name="usb_storage_message" product="nosdcard" msgid="3308538094316477839">"您已通过 USB 连接至计算机。如果您要在计算机和 Android 设备之间复制文件，请触摸下面的按钮。"</string>
+    <string name="usb_storage_message" product="default" msgid="805351000446037811">"您已通过 USB 连接至计算机。如果您要在计算机和 Android 设备之间复制文件，请触摸下面的按钮。"</string>
+    <string name="chooseUsbActivity" msgid="6894748416073583509">"为 USB 设备选择一个应用"</string>
+    
+    <string name="clearDefaultHintMsg" msgid="4815455344600932173">"通过主屏幕上的“设置”&gt;“应用程序”&gt;“管理应用程序”清除默认设置。"</string>
+
+    
+    <string name="usb_storage_button_mount" msgid="1052259930369508235">"打开 USB 存储设备"</string>
+    <string name="usb_storage_stop_button_mount" msgid="7060218034900696029">"关闭 USB 存储设备"</string>
+        
+     <string name="aurora_shutdown">关机</string>
+     <string name="aurora_reboot">重启</string>
+     <string name="aurora_airmode">关闭飞行模式</string>
+     
+     <string name="aurora_airmode_open">开启飞行模式</string>
+     
+     
+     
+     <string name="usb_storage_activity_title" >"USB 大容量存储设备"</string>
+     <string name="description_target_search" >"搜索"</string>
+     <string name="description_direction_up" >"向上滑动以<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>。"</string>
+     <string name="description_direction_left" >"向左滑动以<xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>。"</string>
+     
+     <string name="aurora_dialog_default_title">提示</string>
+     
+     
+      
+     
+     <string name="reboot_alert_title">重启</string>
+     <string name="reboot_alert_message">设备即将重启</string>
+     <string name="reboot_ok">确定</string>
+     <string name="reboot_cancel">取消</string>
+     
+     <string name="aurora_activity_resolver_use_always">"始终"</string>
+     <string name="aurora_activity_resolver_use_once">"仅此一次"</string>
+     
+  
+     <string name="aurora_custom_action_bar_search_hint_text">搜索输入</string>
+     
+     <string name="aurora_no_application_can_perform_this_operation">没有应用可执行此操作</string> 
+   
+             
+     <string name="aurora_date_appwidget_day">日  </string>
+     <string name="aurora_date_appwidget_mon">月</string>
+     
+     
+     
+     
+     
+     <!-- add for volume panel begin -->
+    <string name="volume_ringtone" msgid="6885421406845734650">"铃声音量"</string>
+    <string name="volume_music" msgid="5421651157138628171">"媒体音量"</string>
+    <string name="volume_music_hint_playing_through_bluetooth" msgid="9165984379394601533">"正通过蓝牙播放"</string>
+    <string name="volume_music_hint_silent_ringtone_selected" msgid="8310739960973156272">"已设置静音铃声"</string>
+    <string name="volume_call" msgid="3941680041282788711">"通话音量"</string>
+    <string name="volume_bluetooth_call" msgid="2002891926351151534">"使用蓝牙时的通话音量"</string>
+    <string name="volume_alarm" msgid="1985191616042689100">"闹钟音量"</string>
+    <string name="volume_notification" msgid="2422265656744276715">"通知音量"</string>
+    <string name="volume_unknown" msgid="1400219669770445902">"音量"</string>
+    <string name="volume_icon_description_bluetooth" msgid="6538894177255964340">"蓝牙音量"</string>
+    <string name="volume_icon_description_ringer" msgid="3326003847006162496">"铃声音量"</string>
+    <string name="volume_icon_description_incall" msgid="8890073218154543397">"通话音量"</string>
+    <string name="volume_icon_description_media" msgid="4217311719665194215">"媒体音量"</string>
+    <string name="volume_icon_description_notification" msgid="7044986546477282274">"通知音量"</string>
+     
+     <!-- add for volume panel end -->
+     
+     <string name="aurora_save">保存</string>
+     
+      <string name="safe_media_volume_warning" product="default" >"将音量调高到推荐级别以上？\n长时间聆听高音量可能会损伤听力。"</string>
+     
+      <string name="aurora_login_user_name">帐号:</string>
+      <string name="aurora_login_user_password">密码:</string>
+      <string name="aurora_login_submit">登录</string>
+      <string name="aurora_login_user_name_hint">电话号码/邮箱</string>
+     <string name="aurora_login_password_hint">请输入6位以上的密码</string>
+      <string name="aurora_forget_password">忘记密码?</string>
+      <string name="whichApplication" >"选择要使用的应用："</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+ -->
+ <resources>
+    <string name="app_name_ux10">声纹管理</string>
+    <string name="home_menu_version">版本号</string>
+    <string name="home_menu_settings">设置</string>
+    <string name="home_soundmodel">语音模板</string>
+    <string name="home_startvoiceactivation">激活声纹</string>
+    <string name="home_stopvoiceactivation">停止声纹</string>
+    <string name="home_advanceddetail">详情</string>
+    <string name="home_advanceddetail_keyword">关键字:</string>
+    <string name="home_advanceddetail_user">使用者:</string>
+    <string name="home_advanceddetail_initialdetections">0</string>
+    <string name="home_advanceddetail_initialscore">0</string>
+    <string name="home_advanceddetail_scorepossible">/100</string>
+    <string name="home_dialog_startingvoiceactivation">激活声纹</string>
+    <string name="home_dialog_stoppingvoiceactivation">停止声纹</string>
+    <string name="home_dialog_pleasewait">请稍等...</string>
+    <string name="home_dialog_badlibs_title">Missing/Incompatible listenlib(s)</string>
+    <string name="home_dialog_badlibs_message">程序终止，请点击“确定”退出程序，重新进入。</string> <!-- Cannot proceed. Please click "OK" to close the app. -->
+    <string name="soundmodels_top_title">语音模板</string>
+    <string name="soundmodels_dialog_adduser_title">添加新用户</string>
+    <string name="soundmodels_dialog_rename_title">重命名</string>
+    <string name="soundmodels_dialog_adduser_user">用户名：</string>
+    <string name="dialog_error">警告</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_save">保存</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_del">删除</string>
+    <string name="soundmodels_dialog_deletesoundmodel_title">删除语音模板</string>
+    <string name="soundmodels_dialog_train_title">训练声纹</string>
+    <string name="soundmodels_dialog_train_content">创建新的声纹时用户名不能为空。</string>
+    <string name="soundmodels_dialog_option_deletesoundmodel">删除语音模板</string>
+    <string name="soundmodels_dialog_option_starttrain">开始训练</string>
+    <string name="soundmodels_dialog_selectkeyword_title">Select keyword</string>
+    <string name="soundmodels_dialog_duplicate_title">语音模板已经存在</string>
+    <string name="soundmodels_dialog_duplicate_content">语音模板已经存在，请重新创建。</string>
+    <string name="soundmodels_dialog_invalid_title">训练声纹</string>
+    <string name="soundmodels_dialog_invalid_content">创建新的声纹时用户名不能为空。</string>
+    <string name="soundmodels_dialog_update_content">修改声纹名称时用户名不能为空。</string>
+    <string name="soundmodel_listitem_keyword">Sound Model Text</string>
+    <string name="soundmodel_listitem_username">User Name Text</string>
+    <string name="training_welcome_unkownuser">Unknown User</string>
+    <string name="training_welcome_notice">To help me learn to recognize your voice, please record yourself saying the keyword five times.</string>
+    <string name="training_welcome_recording_tip_title">RECORDING TIPS</string>
+    
+    <string name="training_recording_recording">RECORDING...</string>
+    <string name="training_recording_processing">PROCESSING...</string>
+    <string name="training_recording_complete">COMPLETE!</string>
+    
+    <string name="training_recording_notice_bad">There was a problem with your recording. Please try again.</string>
+    <string name="training_recording_continue">Continue</string>
+    <string name="training_dialog_createsoundmodel">正在创建个性声纹</string>
+    <string name="training_dialog_infor_title">信息</string>
+    <string name="training_dialog_close_title">提示</string>
+    <string name="training_dialog_close_message">All current training recordings will be erased.</string>
+    <string name="training_dialog_smcreatefailed_title">Sound Model Creation Failed</string>
+    <string name="training_dialog_smcreatefailed_message">We were unable to create your personalized sound model. Please try again.</string>
+    <string name="settings_top_title">Settings</string>
+    <string name="settings_thresholds">THRESHOLDS</string>
+    <string name="settings_threshold_keyword">KEYWORD CONFIDENCE THRESHOLD</string>
+    <string name="settings_threshold_speaker">SPEAKER CONFIDENCE THRESHOLD</string>
+    <string name="settings_moreoptions">MORE OPTIONS</string>
+    <string name="settings_moreoption_listen">Listen</string>
+    <string name="settings_moreoption_listen_desc">Enable/Disable Listen</string>
+    <string name="settings_moreoption_voiceactivation">Voice Activation</string>
+    <string name="settings_moreoption_voiceactivation_desc">Enable/Disable Voice Activation</string>
+    <string name="settings_moreoption_userverification">User Verification</string>
+    <string name="settings_moreoption_userverification_desc">Enable/Disable User Verification</string>
+    <string name="settings_moreoption_failurefeedback">Detection Failure Feedback</string>
+    <string name="settings_moreoption_failurefeedback_desc">Enable/Disable Detection Failure Feedback</string>
+    <string name="settings_moreoption_tone">Detect, Non-Detect Tone</string>
+    <string name="settings_moreoption_tone_desc">Enable/Disable Tone For Detections</string>
+    <string name="settings_moreoption_voiceqna">Voice Q/A</string>
+    <string name="settings_moreoption_voiceqna_desc">Launch Voice Q/A upon detection</string>
+    <string name="settings_moreoption_voiceqna_error">No voice recognition apps installed. Regular build required instead of HY11 build.</string>
+    
+    <string name="settings_moreoption_advanced">详情</string>
+    <string name="settings_moreoption_advanced_desc">显示更多细节</string>
+    <string name="settings_toast_smdependentcheckbox">请重新注册声纹模板，以启用该功能。</string>
+    <string name="none"/>
+
+    <string name="app_name">声纹唤醒服务</string>
+    
+    
+    <!-- HT Recording_tips-->
+	<string name="instruction">唤醒服务标识</string>	
+	
+	<string name="training_tipn1">1.</string>
+	<string name="training_tip1">请确保在安静的环境下录制</string>
+	<string name="training_tipn2">2.</string>
+	<string name="training_tip2">正脸与手机保持一段距离后，正常说出</string>
+	<string name="training_tip2_keywd">“Hello IUNI”</string>
+	<string name="training_tipn3">3.</string>
+	<string name="training_tip3">需成功录制五次才能创建一个新的声纹</string>
+
+	<string name="wakeup_recording">声纹唤醒录制</string>
+	<string name="sketch_img">示意图</string>
+	<string name="ready_to_recording">准备好了，开始录音</string>
+	
+	<!-- HT Ready_recording -->
+	<string name="please_speak">请说</string>    
+	<string name="recording_keywords">Hello IUNI</string>
+	<string name="recording_animation">录音动画</string>
+	<string name="training_record1">录音成功一</string>
+	<string name="training_record2">录音成功二</string>
+	<string name="training_record3">录音成功三</string>
+	<string name="training_record4">录音成功四</string>
+	<string name="training_record5">录音成功五</string>
+	
+	<string name="training_recording_error">注：录音异常或者请到安静环境下录音</string>
+	<string name="training_recording_notice_good">表现完美，请继续</string>
+	<string name="fail_to_recording_again">录制失败，再来一遍</string>
+	<string name="stop_to_recording_again">请点击，继续录制</string>
+	<string name="compound_fail_to_again">创建失败，请重新录制</string>
+	<string name="recording">正在录音...</string>
+	<string name="saving">正在保存文件...</string>
+	<string name="saved">保存成功！</string>
+	
+	<!-- HT 首页 -->
+	<string name="wakeup">声纹管理</string>
+	<string name="more">更多</string>
+	<string name="unselect_model">请选择一个声音模板</string>
+	
+	<string name="no_soundmodel">暂无语音模板</string>
+	<string name="recording_onbackpress">退出后所有操作将被清空，是否终止本次录制？</string>
+	
+	<string name="add_soundmodel">创建一个新的声纹</string>
+	<string name="wakeup_intro">声纹唤醒功能，使用者可以录制自己的声纹模板，录制成功并激活后，即可在灭屏的情况下，通过呼叫关键字，打开屏幕，进入语音助手，与手机进行智能交互。</string>
+	
+	<string name="the">用户</string>
+	<string name="will_del">的个性声纹将被删除</string>
+	<string name="register_soundmodel_fail">声纹注册失败。</string>
+	<string name="deregister_soundmodel_fail">注销声纹失败。</string>
+	
+	<string name="vs_wakeup_recording_word">请说</string>
+	<string name="vs_wakeup_register_cause_fail">声纹注册失败：当启用用户验证时，只能使用客户自己录制的声纹模板。</string>
+	<string name="wakeup_tips">小贴士：长按某项可进行重命名。</string>
+
+	<string name="enabling">正在启用...</string>
+	<string name="enabled">已启用</string>
+	
+	<string name="vs_wakeup_recording_user">声纹用户A</string>
+	<string name="vs_wakeup_recording_iscreating">录制成功，正在创建...</string>
+	<string name="vs_wakeup_recording_success">创建成功</string>
+	<string name="vs_wakeup_recording_fail">创建失败</string>
+			
+</resources>

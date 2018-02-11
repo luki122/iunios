@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest android:versionCode="40001"
+        android:versionName="1.519"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.gallery3d">
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/windowLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/aurora_action_bar_host"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <aurora.lib.widget.AuroraCustomActionBar
+            android:id="@+id/aurora_custom_action_bar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/aurora_custom_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="horizontalSpace" format="dimension" />
+    <attr name="verticalSpace" format="dimension" />
+    
+    <declare-styleable name="LabelList">
+        <attr name="horizontalSpace"/>
+        <attr name="verticalSpace" />
+    </declare-styleable>
+    
+    <declare-styleable name="RoundProgressView">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="glass_view">
+        <attr name="big_radius" format="dimension" />
+        <attr name="dot_radius" format="dimension" />
+        <attr name="dark_color" format="color" />
+        <attr name="light_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="main_tab_item">
+        <attr name="tab_img" format="reference" />
+        <attr name="tab_text" format="string" />
+        <attr name="tab_text_hor" format="string" />
+    </declare-styleable>
+</resources>

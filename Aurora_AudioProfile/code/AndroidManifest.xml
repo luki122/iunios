@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+        Copyright (c) 2011, QUALCOMM Incorporated.
+        All Rights Reserved.
+        QUALCOMM Proprietary and Confidential.
+        Developed by QRD Engineering team.
+-->
+<!-- android:sharedUserId="android.uid.system" -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        package="gn.com.android.audioprofile"
+        
+        android:sharedUserId="android.uid.system"
+        android:versionCode="50002001"
+		android:versionName="1.728" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <!-- Gionee zengxuanhui 20120122 add for CR00746051 begin -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Gionee zengxuanhui 20120122 add for CR00746051 end -->
+
+	<application android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		
+        
+       >		
+	    
+            <!--android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:theme="@com.aurora:style/Theme.aurora.Light"
+            -->
+	    
+		<activity android:name=".AudioProfileActivity"
+			
+			android:theme="@style/AuroraPreferenceSoundTheme"
+			android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+			android:screenOrientation="portrait"
+			android:parentActivityName="com.android.settings.Settings"
+			android:process="com.android.settings"
+			android:launchMode="singleTask"
+			android:label="" >
+			<!-- android:label="@string/sound_settings_title" > -->
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name= "gn.com.android.audioprofile.action.AUDIO"/>
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+		
+		<activity android:name=".AuroraSongRingPickerActivity"
+                android:theme="@style/AuroraPreferenceSoundTheme"
+                android:screenOrientation="portrait"
+                android:taskAffinity="com.android.settings"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+                >	
+		    
+                         
+        </activity>	
+        	
+        <activity android:name=".AuroraRingPickerActivity"
+                android:theme="@style/AuroraPreferenceSoundTheme"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+				android:screenOrientation="portrait"
+				android:taskAffinity="com.android.settings"
+                android:label="test">
+                <intent-filter>
+                    <action android:name="gn.com.android.audioprofile.action.RINGTONE_PICKER" />
+                    <action android:name="android.intent.action.RINGTONE_PICKER"/>
+                    <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+            </activity>
+			
+
+
+	</application>
+
+</manifest>

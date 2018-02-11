@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2014-05-08 created for wallpaper crop -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:background="@color/button_dark_transparent_background">
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/cropimage_bottom_control_portrait"
+	                android:src="@drawable/bottom_menu_portrait"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/cropimage_bottom_control_landscape"
+	                android:src="@drawable/bottom_menu_land"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+</LinearLayout>

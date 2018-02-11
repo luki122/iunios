@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+     Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+
+     Not a Contribution.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+        aurora:auroratitle="@string/mobile_networks">
+
+   <AuroraCheckBoxPreference
+        aurora:aurorakey="button_data_enabled_key"
+        aurora:auroratitle="@string/data_enabled"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/data_enable_summary"/>
+
+    <AuroraCheckBoxPreference
+        aurora:aurorakey="button_roaming_key"
+        aurora:auroratitle="@string/roaming"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummaryOn="@string/roaming_enable"
+        aurora:aurorasummaryOff="@string/roaming_disable"/>
+
+    <AuroraListPreference
+        aurora:aurorakey="preferred_network_mode_key"
+        aurora:auroratitle="@string/preferred_network_mode_title"
+        aurora:aurorasummary="@string/preferred_network_mode_summary"
+        aurora:auroraentries="@array/preferred_network_mode_choices"
+        aurora:auroraentryValues="@array/preferred_network_mode_values"
+        aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle" />
+    
+    <AuroraPreferenceScreen
+        aurora:aurorakey="preferred_network_mode_key2"
+        aurora:auroratitle="@string/preferred_network_mode_title"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.MSimPreferNetworkSettings" />
+
+    </AuroraPreferenceScreen>
+
+</AuroraPreferenceScreen>

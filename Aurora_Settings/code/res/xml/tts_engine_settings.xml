@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+       xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" 
+       aurora:auroratitle="">
+    <aurora.preference.AuroraListPreference
+        aurora:aurorakey="tts_default_lang"
+        aurora:auroratitle="@string/tts_default_lang_title"
+        aurora:aurorasummary="@string/tts_default_lang_summary"
+        aurora:aurorapersistent="false"
+        aurora:auroraorder="100" />
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="tts_engine_settings"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/tts_engine_settings_title"
+        aurora:auroraorder="200" />
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="tts_install_data"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/tts_install_data_title"
+        aurora:aurorasummary="@string/tts_install_data_summary"
+        aurora:auroraorder="300" />
+</aurora.preference.AuroraPreferenceScreen>

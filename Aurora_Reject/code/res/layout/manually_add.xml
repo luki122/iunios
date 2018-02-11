@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="phone"
+        android:digits="1234567890+- "
+        android:paddingLeft="15dip"
+        android:layout_marginTop="12dip"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:background="@drawable/manually_number_bg">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"
+        android:ems="10"
+        android:hint="@string/name" 
+        android:paddingLeft="15dip"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:background="@drawable/manually_name_bg"/>
+
+   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="14dip"
+        >
+        <aurora.widget.AuroraCheckBox
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="14sp"
+        android:textColor="#b7b7b7"
+        android:paddingLeft="12dip"
+        android:text="@string/intercept_phone" 
+        android:layout_marginLeft="60dip"/>
+    
+        <aurora.widget.AuroraCheckBox
+        android:id="@+id/sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/intercept_sms"
+        android:textSize="14sp"
+        android:textColor="#b7b7b7"
+        android:paddingLeft="12dip"
+        android:layout_marginRight="60dip"/>
+    </RelativeLayout>
+
+</LinearLayout>

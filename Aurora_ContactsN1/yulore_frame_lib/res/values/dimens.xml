@@ -1,0 +1,56 @@
+<resources>
+
+    <dimen name="yulore_superyellowpage_dial_title_height">50dp</dimen>
+    <dimen name="yulore_superyellowpage_dial_detail_order_fontsize">18sp</dimen>
+    <dimen name="yulore_superyellowpage_home_search_height">40dp</dimen>
+    <dimen name="yulore_superyellowpage_home_city_fontsize">16sp</dimen>
+    <dimen name="yulore_superyellowpage_fontsize_14">14sp</dimen>
+    <dimen name="yulore_superyellowpage_fontsize_12">12sp</dimen>
+    <dimen name="yulore_superyellowpage_fontsize_16">16sp</dimen>
+    <dimen name="yulore_superyellowpage_list_topbar_height">45dp</dimen>
+    <dimen name="yulore_superyellowpage_backbtn_margin_left">0dp</dimen>
+    <dimen name="yulore_superyellowpage_backbtn_padding">10dp</dimen>
+    <dimen name="yulore_superyellowpage_home_grid_hot_img_size">32dp</dimen>
+    <dimen name="yulore_superyellowpage_list_logo_size">40dp</dimen>
+    <dimen name="yulore_superyellowpage_list_shop_name_fontsize">15sp</dimen>
+    <dimen name="yulore_superyellowpage_list_shop_subname_fontsize">13sp</dimen>
+    <dimen name="yulore_superyellowpage_list_item_height">60dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_icon_size">30dp</dimen>
+    <dimen name="yulore_superyellowpage_search_history_item_height">50dp</dimen>
+    <dimen name="yulore_superyellowpage_search_history_padding">15dp</dimen>
+    <dimen name="yulore_superyellowpage_search_divider_margin">8dp</dimen>
+    <dimen name="yulore_superyellowpage_indicator_padding_left">12dp</dimen>
+    <dimen name="yulore_superyellowpage_letter_list_margin_top">5dp</dimen>
+    <dimen name="yulore_superyellowpage_navigation_fontsize">11sp</dimen>
+    <dimen name="yulore_superyellowpage_home_search_margin">10dp</dimen>
+    <dimen name="yulore_superyellowpage_more_info_margin">15dp</dimen>
+    <dimen name="yulore_superyellowpage_topbar_margin">10dp</dimen>
+    <dimen name="yulore_superyellowpage_selection_header_height">25dp</dimen>
+    <dimen name="yulore_superyellowpage_topbar_image_height">30dp</dimen>
+    <dimen name="yulore_superyellowpage_suggestion_icon_size">20dp</dimen>
+    <dimen name="yulore_superyellowpage_group_item_height">30dp</dimen>
+    <dimen name="yulore_superyellowpage_popup_content_margin">25dp</dimen>
+    <dimen name="yulore_superyellowpage_window_btn_height">40dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_img_height">250dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_little_img_height">80dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_margin">20dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_margin_ver">10dp</dimen>
+    <dimen name="yulore_superyellowpage_title_size">18sp</dimen>
+    <dimen name="yulore_superyellowpage_tg_width">100dp</dimen>
+    <dimen name="yulore_superyellowpage_tg_height">60dp</dimen>
+    <dimen name="yulore_superyellowpage_tuan_icon_size">15dp</dimen>
+    <dimen name="yulore_superyellowpage_detail_list_item_text">16sp</dimen>
+    <dimen name="yulore_superyellowpage_detail_list_item_subtext">14sp</dimen>
+	<dimen name="yulore_superyellowpage_home_grid_common_img_height">40dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_padding">10dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_margin_left">10dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_image_size">35dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_margin_right">20dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_margin_top">5dp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_shop_name_fontsize">16sp</dimen>
+	<dimen name="yulore_superyellowpage_search_header_segmentation_height">25dp</dimen>
+	<dimen name="yulore_superyellowpage_list_logo_bigsize">50dp</dimen>
+	<dimen name="yulore_superyellowpage_mark_margin">10dp</dimen>
+	<dimen name="yulore_superyellowpage_tips_icon_size">60dp</dimen>
+	
+</resources>

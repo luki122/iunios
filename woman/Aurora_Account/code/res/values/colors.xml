@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="progressRoundProgressColor">#ff9999</color>
+	<color name="register_info_tip_text">#ff9999</color>
+	<color name="account_info_top_bg">#ff9999</color>
+	<color name="register_verify_phonenum_tips">#ff9999</color>
+	<color name="register_link_color">#ff9999</color>
+</resources>

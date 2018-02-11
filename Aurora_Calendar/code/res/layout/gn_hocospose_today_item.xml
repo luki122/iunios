@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Gionee <jiating><2013-05-29> modify for CR00000000 begin -->
+<!-- Gionee <jiating><2013-06-20> modify for CR00827812 begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hocospose_info_loading_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/hocospose_info_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hocospose_info_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:text="@string/loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_content"
+        style="@style/GNHocosposeTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/get_horoscope_failed"
+        android:textColor="@color/gn_agenda_title_color" />
+
+
+
+    <ScrollView
+        android:id="@+id/gn_hocospose_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/hocospose_up_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal"
+                android:layout_alignLeft="@+id/gn_deit_reminder_item_diver"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/constellation_comprehensive_luck_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <RatingBar
+                            android:id="@+id/constellation_comprehensive_luck_ratingbar"
+                            style="@style/GNHocosposeTodayRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14.5dp"
+                            android:layout_marginLeft="6dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_work_index_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_work_index"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <RatingBar
+                            android:id="@+id/gn_day_constellation_work_index_ratingbar"
+                            style="@style/GNHocosposeTodayRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14.5dp"
+                            android:layout_marginLeft="6dp"
+                            android:isIndicator="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_health_index_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_health_index"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <RatingBar
+                            android:id="@+id/gn_day_constellation_health_index_ratingbar"
+                            style="@style/GNHocosposeTodayRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14.5dp"
+                            android:layout_marginLeft="6dp"
+                            android:isIndicator="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_lucky_color_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_lucky_color"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_lucky_color_view"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:textColor="@color/gn_agenda_title_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="right"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_love_index_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_love_index"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <RatingBar
+                            android:id="@+id/gn_day_constellation_love_index_ratingbar"
+                            style="@style/GNHocosposeTodayRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14.5dp"
+                            android:layout_marginLeft="6dp"
+                            android:isIndicator="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_wealth_index_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_wealth_index"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <RatingBar
+                            android:id="@+id/gn_day_constellation_wealth_index_ratingbar"
+                            style="@style/GNHocosposeTodayRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="14.5dp"
+                            android:layout_marginLeft="6dp"
+                            android:isIndicator="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_speed_dating_constellation_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_speed_dating_constellation"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_speed_dating_constellation_view"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:textColor="@color/gn_agenda_title_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_lucky_numbers_text"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gn_day_constellation_lucky_numbers"
+                            android:textColor="@color/gn_agenda_title_color" />
+
+                        <TextView
+                            android:id="@+id/gn_day_constellation_lucky_numbers_view"
+                            style="@style/GNHocosposeTextAppearance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:textColor="@color/gn_agenda_title_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gn_deit_reminder_item_diver"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/hocospose_up_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:background="@drawable/gn_listdiver"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hocospose_content"
+                style="@style/GNHocosposeTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gn_deit_reminder_item_diver"
+                android:layout_marginTop="20dp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:textColor="@color/gn_agenda_title_color"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/tengxun_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/hocospose_content"
+                android:layout_marginTop="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="18dp"
+                android:scaleType="matrix"
+                android:src="@drawable/gn_hocospose_tengxun_image_on_off"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout> 
+<!-- Gionee <jiating><2013-06-20> modify for CR00827812 end -->
+<!-- Gionee <jiating><2013-05-29> modify for CR00000000 end -->

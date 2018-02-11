@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	coreApp="true"
+	package="com.aurora.settings.providers"
+	android:sharedUserId="android.uid.system"
+	android:versionCode="1"
+	android:versionName="1.693" >
+
+	<application
+		android:allowClearUserData="false"
+		android:icon="@drawable/ic_launcher_settings"
+		android:killAfterRestore="false"
+		android:label="@string/app_label"
+		android:process="system" >
+		
+		<provider
+			android:name=".AuroraProvider"
+			android:authorities="aurorasettings"
+			android:exported="true"
+			android:multiprocess="false"
+			android:writePermission="android.permission.WRITE_SETTINGS" />
+
+	</application>
+
+</manifest>

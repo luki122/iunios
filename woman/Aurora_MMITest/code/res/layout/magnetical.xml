@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--Gionee <Nancy><2012-06-02> modify for MagneticFieldTest begin -->
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/viewObj"
+  android:orientation="vertical"
+  android:paddingTop="10dp"
+  android:paddingBottom="10dp"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <ImageView 
+   android:id="@+id/calibration8"
+   android:src="@drawable/calibration_8"
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:scaleType="fitCenter"
+   android:layout_above="@+id/test_content"/> 
+ <TextView 
+    android:id="@+id/test_content"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:text="@string/magnetic_field_test"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="#EE2C2C"
+    android:layout_above="@+id/right_wrong_btn"/>
+       
+ <include layout="@layout/right_wrong_restart"
+        android:id="@+id/right_wrong_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+<!--Gionee <Nancy><2012-06-02> modify for MagneticFieldTest end -->  
+</RelativeLayout>

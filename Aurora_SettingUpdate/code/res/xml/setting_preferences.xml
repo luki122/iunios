@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="auto_download_only_wlan"
+        aurora:auroratitle="@string/auto_download_when_wlan" />
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:auroradefaultValue="false"
+        aurora:aurorakey="pre_auto_check_enable"
+        aurora:aurorasummary="@string/auto_check_when_3g"
+        aurora:auroratitle="@string/automatic_check_update" />
+
+    <aurora.preference.AuroraListPreference
+        aurora:auroradefaultValue="@string/def_auto_check_round"
+        aurora:auroradependency="pre_auto_check_enable"
+        aurora:auroradialogTitle="@string/title"
+        aurora:auroraentries="@array/round_time"
+        aurora:auroraentryValues="@array/round_time_values"
+        aurora:aurorakey="pre_round"
+        aurora:auroratitle="@string/round_autoCheck" />
+
+
+    </aurora.preference.AuroraPreferenceScreen>

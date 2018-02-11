@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-03-04 created for aurora's new feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_attachment_pick"
+        android:title="@string/aurora_attachments_picks">
+    </item>
+</menu>

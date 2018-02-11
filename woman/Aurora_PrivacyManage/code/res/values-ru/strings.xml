@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_1">1</string>
+    <string name="sign_2">2</string>
+    <string name="sign_3">3</string>
+    <string name="sign_4">4</string>
+    <string name="sign_5">5</string>
+    <string name="sign_6">6</string>
+    <string name="sign_sharp">#</string>
+    <string name="info_send_fail">Неудачно отправить, попробуйте позже</string>
+    <string name="info_send_success">Пароль отправлен в почту защиты паролем</string>
+    <string name="app_name">Личность</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="test_string">Тест строки</string>
+    <string name="null_description">null description</string>
+    <string name="create_privacy_account">Создать личное пространство</string>
+    <string name="how_enter">Как войти в личное пространство</string>
+    <string name="how_protect">Как защитить личное пространство</string>
+    <string name="how_exit">Как войти из личного пространства</string>
+    <string name="enter_method"><Data><![CDATA[В нормальном пространстве, введите на диске набора <font color="#ff9999"># личный пароль#</font>, и переходит на личное пространство.Это единственный вход, запомните ]]></Data></string>
+    <string name="exit_method"><Data><![CDATA[<font color="#ff9999">авто. блокировки </font> и <font color="#ff9999">ручные блокировки</font>，можно сразу выйти из личного пространства]]></Data></string>
+    <string name="protect_method">Только на личном пространстве можно показать личные кантакты, сообщения, список вызова, приложения,видео и изображения</string>
+    <string name="how_delete">Как удалить личное пространство</string>
+    <string name="delete_method">После входа на личное пространство, нажать значок личности на экране, и нажать удаление личного пространства в настройке</string>
+    <string name="how_getback_password">Как найти пароль</string>
+    <string name="getback_password_method">Нажать значок личности на экране, и нажать слов “невозможно войти на личное пространство”, потом выполнять по процессу</string>
+    <string name="next_step">Следующий</string>
+    <string name="creator_info_password_struct">Пароль личного пространства=случайные цифры +ваш пароль</string>
+    <string name="creator_hint_input_password">Введите 4-10 цифровых паролей </string>
+    <string name="creator_hint_password_again">Повторно введите пароль</string>
+    <string name="creator_info_input_email">Пользуйтесь более личной почтой, чтобы найти пароль</string>
+    <string name="creator_hint_input_email">Введите адрес пароля</string>
+    <string name="finish">Готово</string>
+    <string name="password_again">Повторно введите пароль</string>
+    <string name="confirm">ОK</string>
+    <string name="password_protection">Защита паролем</string>
+    <string name="create_finish">Завершение создания</string>
+    <string name="info_three_step_teach">Защитить личность тремя этапами</string>
+    <string name="lock_note">&quot;Защита личности;&quot;</string>
+    <string name="shield_note">&quot;Достаточная скрытность;&quot;</string>
+    <string name="switching_note">&quot;Быстрое переключение.&quot;</string>
+    <string name="get_back_password">Найти пароль</string>
+    <string name="cant_enter_privacy_space">Невозможно войти на личное пространство?</string>
+    <string name="sign_plus">&quot;+&quot;</string>
+    <string name="password_length_not_good">&quot;Количество пароля неправильно&quot;</string>
+    <string name="password_different">&quot;Пароли не совпадают&quot;</string>
+    <string name="email_addr_not_good">&quot;Адрес почты неправилен&quot;</string>
+    <string name="email_addr_not_complete">&quot;Адрес почты не полон&quot;</string>
+    <string name="email_addr_not_exist">&quot;Не существует этой почты защиты паролем&quot;</string>
+    <string name="open_privacy_space">Открыть личное пространство</string>
+    <string name="info_send_password_to_me">Метод и пароль входа в личное пространство отправится в почту защиты паролем</string>
+    <string name="error_net_not_available">Сеть недоступна</string>
+    <string name="set">Настройка</string>
+    <string name="help">Помощь</string>
+    <string name="password_protect">Защита паролем</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="nom_space_notify_way">Уведомления на нормальном пространстве</string>
+    <string name="privacy_call_msg">Личные вызовы и сообщения</string>
+    <string name="privacy_app_msg">Сообщения личных приложений</string>
+    <string name="delete_privacy_space">Удалить личное пространство</string>
+    <string name="sure_delete_privacy_space">Подтвердите удалить?</string>
+    <string name="delete_privacy_content_at_same_time">И удалить все личные содержания</string>
+    <string name="sure">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="undelete_privacy_content_hint">Если не удалить личные содержания, оно восстановят в общие. личные изображения и видео сохраняются в  файле “личного документа” под коренным содержанием </string>
+    <string name="wait_sending">Отправление, подождите</string>
+    <string name="work_at_non_space">нижеследующие настройки действуют на не-личное пространство</string>
+    <string name="privacy_ring">Личные вызовы</string>
+    <string name="privacy_msg_notify">Уведомление личных сообщений</string>
+    <string name="switch_notify_hint">Открыть или закрыть уведомление на панели уведомлений</string>
+    <string name="notify_word">Слова уведомлений на панели уведомлений</string>
+    <string name="have_new_system_msg">Новая новость системы</string>
+    <string name="must_enter_word">Необходимо ввести слова</string>
+    <string name="can_not_export_20_word">Слова уведомлений не более 20</string>
+    <string name="enter_privacy_space">Вошли на личное пространство</string>
+    <string name="no_keep_privacy_space">Не держать личное пространство</string>
+    <string name="lock_screen_quit_privacy_space">При блокировке экрана будет выходить из личного пространства</string>
+    <string name="keep_privacy_space">Держало личное пространство</string>
+    <string name="lock_screen_not_quit_privacy_space">При блокировке экрана не будет выходить</string>
+    <string name="keep">Держать</string>
+    <string name="no_keep">Снимать</string>
+    <string name="safe_keeping_privacy_content_days">Защита вашей личности на %1$s&quot;дней</string>
+    <string name="deleted_privacy_space">Удалено личное пространство</string>
+    <string name="change_password_success">Удачно изменен пароль</string>
+    <string name="change_email_success">Удачно изменен адрес почты</string>
+    <string name="this_function_is_unavailable">Функция недоступна!</string>
+    <string name="privacy_manage">Управление личностью</string>
+    <string name="email_charset">._-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@</string>
+    <string name="password_no_change">Не изменен пароль</string>
+    <string name="null_string">&quot;&quot;</string>
+    <!-- [20141215] new requirement -->
+    <string name="input_password_in_dialing_pad">去拨号盘输入密码</string>
+    <string name="i_see">我知道了</string>
+
+</resources>

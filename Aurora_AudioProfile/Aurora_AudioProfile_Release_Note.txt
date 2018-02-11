@@ -1,0 +1,28 @@
+==================
+Build Notes
+==================
+1.版本目的:
+修改BUG
+2.功能变更:
+修改BUG
+3.重点测试的问题:
+验证BUG
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/Amigo_AudioProfile/Amigo_AudioProfile_01_V2.6.2.e.zip
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_AudioProfile/trunk
+CR00863515	Coded	GBW192A	chenml	修改 振动界面无顶栏	svn revision(15)
+Tag url: http://192.168.110.97/svn/Amigo_AudioProfile/tags/Amigo_AudioProfile_01_V2.6.2.e
+Previous tag: Amigo_AudioProfile_01_V2.6.2.d
+Code difference: svn diff -r 15:14 http://192.168.110.97/svn/Amigo_AudioProfile/trunk
+==================
+make sonar URL:
+http://ss.alm.gionee.com/sonar/dashboard/index/gionee.app:Amigo_AudioProfile 
+==================

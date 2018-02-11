@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_project_item">
+        <item>@string/auto_test</item>
+        <item>@string/single_test</item>
+        <item>@string/test_result</item>
+        <item>@string/master_clear</item>
+        <item>@string/auto_test_2</item>
+        <item>@string/auto_test_3</item>
+    </string-array>
+    
+    <string-array name="single_test_items">
+        <item>@string/sw_version</item>
+        <item>@string/keys</item>
+        <item>@string/touch_priv_pad</item>
+        <item>@string/touch_pad</item>
+        <item>@string/color</item>
+        <item>@string/screen_brightness</item>
+        <item>@string/vibrate</item>
+        <item>@string/phone_loopback1</item>
+        <item>@string/phone_loopback2</item>
+        <item>@string/phone_loopback3</item>
+        <item>@string/phone_loopback4</item>
+        <item>@string/earphone_loopback</item>
+        <item>@string/tone</item>
+        <item>@string/receiver2</item>
+        <item>@string/receiver</item>
+        <item>@string/RecevierAndAlsTest</item>
+        <item>@string/acceleration</item>
+        <item>@string/magnetic_field</item>
+        <item>@string/PsTest</item>
+        <item>@string/light_proximity</item>
+        <item>@string/pressure</item>
+        <item>@string/front_camera</item>
+        <item>@string/back_camera</item>
+        <item>@string/gps</item>
+        <item>@string/fm</item>
+        <item>@string/bluetooth</item>
+        <item>@string/wifi</item>
+        <item>@string/nfc</item>
+        <item>@string/otg</item>
+        <item>@string/battery</item>
+        <item>@string/clock</item>
+        <item>@string/gyroscope</item>
+        <item>@string/FlashLight</item>
+    </string-array>
+    
+    <string-array name="single_test_keys">
+        <item>"SoftWareVersion"</item>
+        <item>"KeysTest"</item>
+        <item>"TouchPadPrivTest"</item>
+        <item>"TouchPadTest"</item>
+        <item>"ColorTest"</item>
+        <item>"ScreenBrightnessTest"</item>
+        <item>"VibrateTest"</item>
+        <item>"PhoneLoopbackTest1"</item>
+        <item>"PhoneLoopbackTest2"</item>
+        <item>"PhoneLoopbackTest3"</item>
+        <item>"PhoneLoopbackTest4"</item>
+        <item>"EarphoneLoopbackTest"</item>
+        <item>"ToneTest"</item>
+        <item>"ReceiverTest2"</item>
+        <item>"ReceiverTest"</item>
+        <item>"RecevierAndAlsTest"</item>
+        <item>"AccelerationTest"</item>
+        <item>"MagneticFieldTest"</item>
+        <item>"PsTest"</item>
+        <item>"AlsAndPsTest"</item>
+        <item>"PressureTest"</item>
+        <item>"FrontCameraTest"</item>
+        <item>"BackCameraTest"</item>
+        <item>"GPSTest"</item>
+        <item>"FMTest"</item>
+        <item>"BluetoothTest"</item>
+        <item>"WIFITest"</item>
+         <item>"NFCTest"</item>
+         <item>"OTGTest"</item>
+        <item>"BatteryTest"</item>
+        <item>"ClockTest"</item>
+        <item >"GyroscopeTest"</item>
+	     <item>"FlashLight"</item>
+    </string-array>
+
+    <string-array name="auto_test_keys">
+        <item>"SoftWareVersion"</item>
+        <item>"ScreenBrightnessTest"</item>
+        <item>"ColorTest"</item>
+        <item>"KeysTest"</item>
+        <item>"ToneTest"</item>
+        <item>"ReceiverTest2"</item>
+        <item>"ReceiverTest"</item>
+        <item>"RecevierAndAlsTest"</item>
+        <item>"PhoneLoopbackTest1"</item>
+        <item>"PhoneLoopbackTest2"</item>
+        <item>"PhoneLoopbackTest3"</item>
+        <item>"PhoneLoopbackTest4"</item>
+        <item>"FMTest"</item>
+        <item>"EarphoneLoopbackTest"</item>
+        <item>"VibrateTest"</item>
+        <item>"TouchPadPrivTest"</item>
+        <item>"TouchPadTest"</item>
+        <item>"AccelerationTest"</item>
+        <item >"GyroscopeTest"</item>
+        <item>"MagneticFieldTest"</item>
+        <item>"PsTest"</item>
+         <item>"AlsAndPsTest"</item>
+         <item>"PressureTest"</item>
+        <item>"FrontCameraTest"</item>
+        <item>"BackCameraTest"</item>
+        <item>"BluetoothTest"</item>
+        <item>"WIFITest"</item>
+        <item>"NFCTest"</item>
+         <item>"OTGTest"</item>
+        <item>"GPSTest"</item>
+        <item>"BatteryTest"</item>
+    </string-array>
+    <string-array name="auto_test_keys_2">
+        <item>"KeysTest"</item>
+        <item>"TouchPadTest"</item>
+        <item>"ColorTest"</item>
+        <item>"ScreenBrightnessTest"</item>
+        <item>"ReceiverTest2"</item>
+        <item>"AlsAndPsTest"</item>
+        <item>"FrontCameraTest"</item>
+        <item>"PhoneLoopbackTest4"</item>
+	    <item>"FlashLight"</item>
+    </string-array>
+    <string-array name="auto_test_items_2">
+        <item>@string/keys</item>
+        <item>@string/touch_pad</item>
+        <item>@string/color</item>
+        <item>@string/screen_brightness</item>
+        <item>@string/receiver2</item>
+        <item>@string/light_proximity</item>
+        <item>@string/front_camera</item>
+        <item>@string/phone_loopback4</item>
+	    <item>@string/FlashLight</item>
+    </string-array>
+     <string-array name="auto_test_keys_3">
+        <item>"KeysTest"</item>
+        <item>"TouchPadTest"</item>
+        <item>"ColorTest"</item>
+    </string-array>
+    <string-array name="auto_test_items_3">
+        <item>@string/keys</item>
+        <item>@string/touch_pad</item>
+         <item>@string/color</item>
+    </string-array>
+    <string-array name="auto_test_items">
+        <item>@string/sw_version</item>
+        <item>@string/screen_brightness</item>
+        <item>@string/color</item>
+        <item>@string/keys</item>
+        <item>@string/tone</item>
+        <item>@string/receiver2</item>
+        <item>@string/receiver</item>
+         <item>@string/RecevierAndAlsTest</item>
+        <item>@string/phone_loopback1</item>
+        <item>@string/phone_loopback2</item>
+        <item>@string/phone_loopback3</item>
+        <item>@string/phone_loopback4</item>
+        <item>@string/fm</item>
+        <item>@string/earphone_loopback</item>
+        <item>@string/vibrate</item>
+         <item>@string/touch_priv_pad</item>
+        <item>@string/touch_pad</item>
+        <item>@string/acceleration</item>
+        <item>@string/gyroscope</item>
+        <item>@string/magnetic_field</item>
+        <item>@string/PsTest</item>
+         <item>@string/light_proximity</item>
+         <item>@string/pressure</item>
+        <item>@string/front_camera</item>
+        <item>@string/back_camera</item>
+        <item>@string/bluetooth</item>
+        <item>@string/wifi</item>
+        <item>@string/nfc</item>
+        <item>@string/otg</item>
+        <item>@string/gps</item>
+        <item>@string/battery</item>
+    </string-array>
+    
+    <string-array name="key_test_keys">
+        <item>"26"</item>
+        <item>"24"</item>
+        <item>"25"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"187"</item>
+        <item>"82"</item>
+        <item >"250"</item>
+        <item>"251"</item>
+        <item>"27"</item>
+        <item>"84"</item>
+    </string-array>
+    
+    <string-array name="key_test_items">
+        <item>@string/power_key</item>
+        <item>@string/volume_up_key</item>
+        <item>@string/volume_down_key</item>
+        <item>@string/back_key</item>
+        <item>@string/home_key</item>
+        <item>@string/app_key</item>
+        <item>@string/menu_key</item>
+        <item>@string/hall_o_key</item>                  
+        <item>@string/hall_c_key</item>                   
+        <item>@string/camera_key</item>                 
+        <item>@string/search_key</item>                               
+    </string-array>
+    
+</resources>

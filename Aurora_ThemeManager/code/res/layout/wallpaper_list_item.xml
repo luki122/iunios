@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="@dimen/wallpaper_item_preview_height"
+	android:maxHeight="@dimen/wallpaper_item_preview_height"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:layout_gravity="center">
+    <com.aurora.internetimage.NetworkImageView 
+	    android:id="@+id/theme_item_preview1"
+	    android:layout_width="@dimen/wallpaper_item_preview_width"
+	    android:layout_height="fill_parent"
+	    android:minHeight="@dimen/wallpaper_item_preview_height"
+	    android:maxHeight="@dimen/wallpaper_item_preview_height"
+	    android:scaleType="fitXY" />
+    <com.aurora.internetimage.NetworkImageView 
+	    android:id="@+id/theme_item_preview2"
+	    android:layout_width="@dimen/wallpaper_item_preview_width"
+	    android:layout_height="fill_parent"
+	    android:minHeight="@dimen/wallpaper_item_preview_height"
+	    android:maxHeight="@dimen/wallpaper_item_preview_height"
+	    android:scaleType="fitXY"
+	    android:layout_marginLeft="1dp" />
+    <com.aurora.internetimage.NetworkImageView 
+	    android:id="@+id/theme_item_preview3"
+	    android:layout_width="@dimen/wallpaper_item_preview_width"
+	    android:layout_height="fill_parent"
+	    android:minHeight="@dimen/wallpaper_item_preview_height"
+	    android:maxHeight="@dimen/wallpaper_item_preview_height"
+	    android:scaleType="fitXY" 
+	    android:layout_marginLeft="1dp"/>
+</LinearLayout>
+

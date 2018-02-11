@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<!-- gionee zhouyj 2012-05-03 modified for CR00588621 start-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <aurora.widget.AuroraListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_weight="1.0"
+        android:layout_marginBottom="1dip"
+        android:footerDividersEnabled="false" 
+        android:scrollbarStyle="outsideOverlay"></aurora.widget.AuroraListView>
+
+    <!-- gionee zhouyj 2012-05-03 annotate for CR00588621 start
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@android:id/list"
+        android:paddingTop="4dip">
+       <aurora.widget.AuroraButton android:id="@+id/attachement_sel_all_button"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="5dip"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/select_all" />
+       <aurora.widget.AuroraButton android:id="@+id/attachement_done_button"
+               android:layout_marginLeft="5dip"
+               android:layout_gravity="center_vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/gn_selected" />
+      <aurora.widget.AuroraButton android:id="@+id/attachement_cancel_button"
+                android:layout_gravity="center_vertical"
+               android:layout_marginLeft="5dip"
+               android:layout_marginRight="5dip"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/cancel" />
+    </LinearLayout>
+    -->
+</LinearLayout>
+<!-- gionee zhouyj 2012-05-03 modified for CR00588621 end-->

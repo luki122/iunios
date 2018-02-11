@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/device_status_activity_title">
+
+    <aurora.preference.AuroraPreference aurora:aurorakey="battery_status"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/battery_status_title"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="battery_level"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/battery_level_title"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="operator_name"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_operator"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="signal_strength"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_signal_strength"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="network_type"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_network_type"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="service_state"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_service_state"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="roaming_state"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_roaming"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="data_state"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_data_state"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="number"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_number"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <!-- This menu item is only for CDMA phone -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="min_number"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_min_number"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <!-- This menu item is only for CDMA phone -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="prl_version"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_prl_version"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <!-- This menu item is only for CDMA phone -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="meid_number"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_meid_number"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="imei"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_imei"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="imei_sv"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_imei_sv"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="icc_id"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_icc_id"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="wifi_ip_address"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/wifi_advanced_ip_address_title"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="wifi_mac_address"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_wifi_mac_address"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="bt_address"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_bt_address"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="serial_number"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_serial_number"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="up_time"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_up_time"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="wimax_mac_address"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/status_wimax_mac_address"
+        aurora:aurorasummary="@string/device_info_not_available"
+        aurora:aurorapersistent="false" />
+</aurora.preference.AuroraPreferenceScreen>

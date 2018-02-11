@@ -1,0 +1,35 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/aurora_shutdown_normal" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0016" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0017" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0018" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0019" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0020" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_shutdown0021" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0022" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0023" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0024" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0025" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_shutdown0026" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0027" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0028" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0029" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0030" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_shutdown0031" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0032" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0033" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0034" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0035" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_shutdown0036" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0037" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0038" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0039" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_shutdown0040" android:duration="10"/>
+    
+
+</animation-list>

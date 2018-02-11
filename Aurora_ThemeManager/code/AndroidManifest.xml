@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.aurora.thememanager"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:sharedUserId="android.uid.system"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- WallpaperManager.suggestDesiredDimensions() 必须需要加上此权限，才能匹配单屏壁纸和滑动壁纸 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    
+    <application
+        android:name=".ThemeManagerApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- register activity for theme apply page -->
+        <activity android:name=".activity.ThemeDetailActivity" >
+            <intent-filter>
+                <action android:name="com.aurora.thememamager.ACTION_APPLY_THEME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LocalThemeActivity" >
+        </activity>
+        
+        
+        <activity android:name=".activity.ThemePickerActivity" >
+            <intent-filter>
+                <action android:name="com.aurora.thememamager.ACTION_PICK_THEME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        
+         <!-- Aurora liugj 2014-09-25 modified for bug-8654 -->
+        <activity
+            android:name="com.aurora.change.activities.WallpaperManagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="aurora.intent.action.wallpaper_set" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.WallpaperLocalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.WallpaperPreviewActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme_aurora" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.WallpaperSourceSelectActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.WallpaperCropActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lockscreen_wallpaper"
+            android:theme="@style/Theme_aurora">
+            <intent-filter>
+                <action android:name="android.intent.action.ATTACH_DATA" />
+                <data android:mimeType="image/*" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.DesktopWallpaperActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.DesktopWallpaperLocalActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleInstance"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+	<activity
+            android:name="com.aurora.change.activities.DesktopWallpaperPreviewActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme_aurora" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.DesktopWallpaperSourceSelectActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.change.activities.SetWallpaperCropActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/desktop_wallpaper"
+            android:theme="@style/Theme_aurora">
+            <intent-filter>
+                <action android:name="android.intent.action.ATTACH_DATA" />
+                <!-- <action android:name="com.android.camera.action.CROP" /> -->
+                <data android:mimeType="image/*" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- shigq add start -->
+        <activity
+            android:name="com.aurora.change.activities.NextDayPreviewActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme_aurora">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <data android:mimeType="image/*" /> -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- shigq add end -->
+        <activity android:name="com.aurora.thememanager.activity.DownloadedThemeActivity"/>
+        <activity android:name="com.aurora.thememanager.activity.DownloadedRingTongActivity"/>
+        <!-- 显示预览图片的详情 -->
+        <activity android:name="com.aurora.thememanager.activity.ThemePreviewsShowActivity">
+        	<intent-filter>
+        	    <action android:name="com.aurora.thememanager.ACTION_SHOW_PREVIEW_PICTURE_PAGER"/>
+        	    <category android:name="android.intent.category.DEFAULT" />
+        	</intent-filter>
+        </activity>
+        
+          <activity android:name="com.aurora.thememanager.activity.TimeWallPapgerPreviewActivity"
+              android:theme="@style/Theme_Time_Wallpaper_Preview"
+              >
+              <intent-filter>
+                  <action android:name="com.aurora.thememamager.ACTION_PREVIEW_TIME_WALLPAPER"/>
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+        </activity>
+        
+        <activity android:name="com.aurora.thememanager.activity.WallPaperPreviewActivity"
+            android:screenOrientation="portrait" >
+              <intent-filter>
+                  <action android:name="com.aurora.thememamager.ACTION_PREVIEW_WALLPAPER"/>
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+        </activity>
+        
+		
+        <provider android:name="com.aurora.change.data.WallpaperProvider"
+                android:grantUriPermissions="true"
+                android:multiprocess="true"
+                android:exported="true"
+                android:authorities="com.aurora.change.provider" />
+        
+        <receiver android:name="com.aurora.change.receiver.ChangeReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.aurora.change.CHMOD_FILE" />
+                <action android:name="com.aurora.change.RESET_ALARM" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
+                <action android:name="com.aurora.action.WALLPAPER_SET" />
+                <action android:name="com.aurora.change.COPY" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.aurora.change.receiver.AlarmReceiver">
+            <intent-filter android:priority="100" >
+                <action android:name="com.aurora.change.alarm.action" />
+            </intent-filter>
+        </receiver>
+        
+         <!-- 下载服务 -->
+        <service android:name="com.aurora.thememanager.utils.download.DownloadService" >
+        </service>
+        
+         <service android:name="com.aurora.thememanager.utils.download.RingtongDownloadService" >
+        </service>
+        
+         
+          <service android:name="com.aurora.thememanager.utils.download.TimeWallpaperDownloadService" >
+        </service>
+        
+          
+           <service android:name="com.aurora.thememanager.utils.download.WallpaperDownloadService" >
+        </service>
+         
+        
+        <!-- 自动更新服务 -->
+        <service android:name="com.aurora.thememanager.utils.download.AutoUpdateService" >
+        </service>
+        <!-- 网络改变接收器 -->
+        <receiver android:name="com.aurora.thememanager.receiver.NetWorkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </application>
+
+</manifest>

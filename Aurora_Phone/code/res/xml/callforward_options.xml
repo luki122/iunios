@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/call_forwarding_settings">
+
+
+    <!-- Note for all com.android.phone.EditPreference objects
+
+         The last several attributes are for use with the EditText field
+         in the dialog.  These attributes are forwarded to that field
+         when the edittext is created.  The attributes include:
+           1. android:singleLine
+           2. android:autoText
+           3. android:background -->
+
+    <com.android.phone.CallForwardEditPreference
+        aurora:aurorakey="button_cfu_key"
+        aurora:auroratitle="@string/labelCFU"
+        aurora:aurorapersistent="false"
+        android:summaryOn="@string/sum_cfu_enabled"
+        android:summaryOff="@string/sum_cfu_disabled"
+        aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+        android:dialogMessage="@string/messageCFU"
+        phone:confirmMode="activation"
+        phone:serviceClass="voice"
+        phone:reason="unconditional"
+        android:singleLine="true"
+        android:autoText="false"
+        aurora:auroraenabled="false" />
+
+    <!-- See note on com.android.phone.EditPreference above -->
+    <com.android.phone.CallForwardEditPreference
+        aurora:aurorakey="button_cfb_key"
+        aurora:auroratitle="@string/labelCFB"
+        aurora:aurorapersistent="false"
+        android:summaryOn="@string/sum_cfb_enabled"
+        android:summaryOff="@string/sum_cfb_disabled"
+        aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+        android:dialogMessage="@string/messageCFB"
+        phone:confirmMode="activation"
+        phone:serviceClass="voice"
+        phone:reason="busy"
+        aurora:auroradependency="button_cfu_key"
+        android:singleLine="true"
+        android:autoText="false"
+        aurora:auroraenabled="false" />
+
+    <!-- See note on com.android.phone.EditPreference above -->
+    <com.android.phone.CallForwardEditPreference
+        aurora:aurorakey="button_cfnry_key"
+        aurora:auroratitle="@string/labelCFNRy"
+        aurora:aurorapersistent="false"
+        android:summaryOn="@string/sum_cfnry_enabled"
+        android:summaryOff="@string/sum_cfnry_disabled"
+        aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+        android:dialogMessage="@string/messageCFNRy"
+        phone:confirmMode="activation"
+        phone:serviceClass="voice"
+        phone:reason="no_reply"
+        aurora:auroradependency="button_cfu_key"
+        android:singleLine="true"
+        android:autoText="false"
+        aurora:auroraenabled="false" />
+
+    <!-- See note on com.android.phone.EditPreference above -->
+    <com.android.phone.CallForwardEditPreference
+        aurora:aurorakey="button_cfnrc_key"
+        aurora:auroratitle="@string/labelCFNRc"
+        aurora:aurorapersistent="false"
+        android:summaryOn="@string/sum_cfnrc_enabled"
+        android:summaryOff="@string/sum_cfnrc_disabled"
+        aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+        android:dialogMessage="@string/messageCFNRc"
+        phone:confirmMode="activation"
+        phone:serviceClass="voice"
+        phone:reason="not_reachable"
+        aurora:auroradependency="button_cfu_key"
+        android:singleLine="true"
+        android:autoText="false"
+        aurora:auroraenabled="false" />
+</AuroraPreferenceScreen>

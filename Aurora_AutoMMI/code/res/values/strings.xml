@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">AutoMMI</string>
+    <string name="title_wifi">WifiTest</string>
+    <string name="title_bluetooth">BlueToothTest</string>
+    <string name="title_SoftwareVersion">SoftwareVersionTest</string> 
+    <string name="title_Vibrator">VibratorTest</string>
+    <string name="title_PSensor">ProximitySensorTest</string>
+    <string name="title_LSensor">LightSensorTest</string>
+    <string name="title_Battery">BatteryTest</string>
+    <string name="title_BackCamera">BackCameraTest</string>
+    <string name="title_FrontCamera">FrontCameraTest</string>
+    <string name="Capture">Capture</string>
+    <string name="title_Color">ColorTest</string>
+    <string name="title_TouchPad">TouchPadTest</string>
+    <string name="title_keyTest">keyTest</string>
+    <string name="title_AudioLoop">AudioLoopTest</string>
+    <string name="title_HeadSetLoop">HeadSetLoopTest</string>
+    <string name="title_fm">FMTest</string>
+    <string name="title_Flash">FlashTest</string>
+    <string name="screen_brightness">ScreenBrightness</string>
+    <string name="title_Speaker">SpeakerTest</string>
+    <string name="title_Receiver">ReceiverTest</string>
+    <string name="title_AuxiliaryMic">AuxiliaryMicTest</string>
+    <string name="title_MagneticField">MagneticFieldTest</string>
+    <string name="title_Acceleration">AccelerationTest</string>
+    <string name="title_SimCard">SimCardTest</string>
+    <string name="tilte_Call">CallTest</string>
+    <string name="tilte_SdCard">SdCardTest</string>
+    <string name="tilte_AccVib">Acceleration  , Vibrator</string>
+    <string name="title_SdSimTp">sd, sim, touchpad</string>
+    <string name="title_KeysWifi">Keys, Wifi</string>
+    <string name="title_PsRec">Psensor, Receiver</string>
+    <string name="title_BtSpeaker">Bluetooth, Speaker</string>
+    <string name="title_FCamHeadSet">FrontCamera, HeadSet</string>
+    <string name="title_BCamAudio">BackCamera, Audio</string>
+    <string name="title_MagFm">Magnetic,  FM</string>
+    <string name="title_ScrFlashBat">Brightess, Flash, Battery</string>
+    <string name="title_LightReceiver">LightSensor, Receiver</string>
+    <string name="title_Gyro">Gyrosope</string>
+    <string name="title_GPS">GPS</string>
+    <string name="title_Mic_3">Mic_3 Test</string>
+    <string name="title_Pressure">Pressure</string>
+    <string name="test_right_nfc">"--------测试通过"</string>
+    <string name="nfc">nfc</string>
+    <string name="info">扫描中。。。</string>
+    <string name="nfc_test_title">"NFC功能已打开，请将卡片靠近手机以便读取卡片内容"</string>
+    
+    <string name="acceleration">加速仪</string>
+    <string name="get_acceleration_fail">初始化加速仪传感器失败</string>
+    <string name="magnetic_field">"地磁感应"</string>
+    <string name="get_magnetic_field_fail">"初始化地磁失败"</string>
+    
+    <string name ="wifi5GTest">"5G测试"</string>
+</resources>

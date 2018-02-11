@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2006, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+-->
+<resources>
+  	<!-- for orientation portrait, all this value for 1080 -->
+  	<!-- for orientation portrait, height is 208dp, the width is match parent -->
+	<dimen name="recents_container_width">360dp</dimen>
+	<dimen name="recents_container_height">208dp</dimen>
+
+	<dimen name="recents_view_width">@dimen/recents_container_width</dimen>
+	<dimen name="recents_view_height">104dp</dimen>
+	<!-- for orientation portrait, this value use recents_view_height -->
+	<dimen name="recents_view_width_or_height">@dimen/recents_view_height</dimen>
+
+    <dimen name="recent_clearview_width">90dp</dimen>
+    <dimen name="recent_clearview_height">@dimen/recents_container_height</dimen>
+
+    <dimen name="recent_rubbishview_width">90dp</dimen>
+    <dimen name="recent_rubbishview_height">@dimen/recents_view_height</dimen>
+
+    <dimen name="recent_pagenormal_width">@dimen/recents_container_width</dimen>
+    <dimen name="recent_pagenormal_height">@dimen/recents_container_height</dimen>
+
+	<dimen name="recent_cell_width">87.5dp</dimen>
+	<dimen name="recent_cell_height">@dimen/recents_view_height</dimen>
+
+	<dimen name="recents_app_icon_max_width">66dp</dimen>
+	<dimen name="recents_app_icon_max_height">66dp</dimen>
+
+	<dimen name="recents_iconview_top_padding">114dp</dimen>
+	<dimen name="recents_iconview_left_padding">5dp</dimen>
+	<dimen name="aurora_normal_item_label_height">13.5dp</dimen>
+
+	<dimen name="recent_page_padding">@dimen/recents_view_height</dimen>
+
+	<!-- for orientation land, start (0, 360dp) -->
+	<dimen name="recent_page_land_startY">360dp</dimen>
+	<dimen name="recent_page_land_padding_start">4dp</dimen>
+
+
+	<!-- for orientation portrait, quick settings -->
+	<dimen name="quick_settings_width">307dp</dimen>
+	<!-- for orientation portrait, should larger than 308 -->
+	<dimen name="quick_settings_height">310dp</dimen>
+
+	<dimen name="quick_settings_margintop">21dp</dimen>
+	<dimen name="quick_settings_marginleft">0dp</dimen>
+
+	<dimen name="quick_settings_nine_two_margintop">35dp</dimen>
+	<dimen name="quick_settings_nine_three_margintop">35dp</dimen>
+	<dimen name="quick_settings_nine_bri_margintop">40dp</dimen>
+
+	<dimen name="quick_settings_scroll_start">67dp</dimen>
+	<dimen name="quick_settings_scroll_end">86dp</dimen>
+
+
+	<dimen name="toolbar_icon_text_size">12sp</dimen>
+	<dimen name="toolbar_icon_text_margintop">12sp</dimen>
+
+
+	<!-- for orientation land -->
+	<dimen name="recents_container_height_land">360dp</dimen>
+	<dimen name="recents_container_width_land">208dp</dimen>
+
+	<dimen name="recents_view_height_land">@dimen/recents_container_height_land</dimen>
+	<dimen name="recents_view_width_land">104dp</dimen>
+	<!-- for orientation land, this value use recents_view_width -->
+	<dimen name="recents_view_width_or_height_land">@dimen/recents_view_width_land</dimen>
+  
+    <dimen name="recent_clearview_width_land">@dimen/recents_container_width_land</dimen>
+    <dimen name="recent_clearview_height_land">90dp</dimen>
+
+    <dimen name="recent_rubbishview_width_land">@dimen/recents_view_width_land</dimen>
+    <dimen name="recent_rubbishview_height_land">90dp</dimen>
+	
+    <dimen name="recent_pagenormal_width_land">@dimen/recents_container_width_land</dimen>
+    <dimen name="recent_pagenormal_height_land">@dimen/recents_container_height_land</dimen>
+
+	<dimen name="recent_cell_width_land">88dp</dimen>
+	<dimen name="recent_cell_height_land">86.75dp</dimen>
+
+	<dimen name="recents_app_icon_max_width_land">62.75dp</dimen>
+	<dimen name="recents_app_icon_max_height_land">62.75dp</dimen>
+
+	<dimen name="recents_iconview_top_padding_land">4dp</dimen>
+	<dimen name="recents_iconview_left_padding_land">112dp</dimen>
+	<dimen name="aurora_normal_item_label_height_land">15dp</dimen>	
+
+	<dimen name="recent_page_padding_land">@dimen/recents_view_width_land</dimen>
+
+	<!-- for orientation land, quick settings -->
+	<dimen name="quick_settings_width_land">306dp</dimen>
+	<dimen name="quick_settings_height_land">302dp</dimen>
+
+	<dimen name="quick_settings_margintop_land">0dp</dimen>
+	<dimen name="quick_settings_marginleft_land">34dp</dimen>
+
+	<dimen name="quick_settings_nine_two_margintop_land">32dp</dimen>
+	<dimen name="quick_settings_nine_three_margintop_land">32dp</dimen>
+	<dimen name="quick_settings_nine_bri_margintop_land">51dp</dimen>
+
+	<dimen name="quick_settings_scroll_start_land">67dp</dimen>
+	<dimen name="quick_settings_scroll_end_land">86dp</dimen>
+
+
+
+</resources>

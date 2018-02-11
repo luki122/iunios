@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/aurora_notification_row_ex_width_land"
+    android:layout_height="wrap_content"
+    >
+		
+    <View
+        android:id="@+id/top_glow"
+        android:alpha="0"
+        android:visibility="invisible"
+        android:layout_width="@dimen/aurora_notification_row_width_land"
+        android:layout_height="@dimen/notification_divider_height"
+        android:layout_gravity="top|left"
+        android:background="@drawable/top_divider_glow"
+        />
+
+    <Button
+        android:id="@+id/veto"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:layout_marginRight="-80dp"
+        android:background="@null"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        />
+
+    <com.android.systemui.statusbar.LatestItemView android:id="@+id/content"
+        android:layout_width="@dimen/aurora_notification_row_width_land"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/notification_divider_height"
+        android:layout_marginTop="@dimen/notification_divider_height"
+        android:focusable="true"
+        android:clickable="true"
+        >
+
+        <com.android.internal.widget.SizeAdaptiveLayout android:id="@+id/adaptive"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    </com.android.systemui.statusbar.LatestItemView>
+
+    <View
+        android:id="@+id/bottom_glow"
+        android:alpha="0"
+        android:visibility="invisible"
+        android:layout_width="@dimen/aurora_notification_row_width_land"
+        android:layout_height="@dimen/notification_divider_height"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/bottom_divider_glow"
+        />
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_notification_line_height"
+	    android:background="#0AFFFFFF"
+	    android:layout_gravity="bottom"
+    />
+
+    <TextView
+        android:id="@+id/debug_info"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:textColor="#00A040"
+        android:padding="2dp"
+        />
+
+    <Button
+        android:id="@+id/statusbar_notification_row_stop"
+        android:layout_width="@dimen/aurora_notification_row_add_size"
+        android:visibility="gone"
+        android:background="@color/aurora_warning_color"
+        android:text="@string/do_not_notify"
+        android:textColor="@color/white"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/aurora_notification_row_width_land"
+        />
+   
+</FrameLayout>

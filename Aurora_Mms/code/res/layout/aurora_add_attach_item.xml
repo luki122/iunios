@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2015-09-17 created for aurora's new feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/aurora_add_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/aurora_attach_menu_textcolor"
+        android:textSize="@com.aurora:dimen/aurora_menu_item_textsize"
+        android:minHeight="@com.aurora:dimen/aurora_list_singleline_height"
+        android:background="@com.aurora:drawable/aurora_menu_item_select" />
+
+</LinearLayout>

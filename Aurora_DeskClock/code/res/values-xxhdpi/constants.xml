@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <integer name="item_num">4</integer>
+     <integer name="time_water_translation">8</integer>
+     <integer name="lettertoast_ofy">586</integer>
+     <integer name="worldtime_sidebar_text_height">0</integer>
+    
+</resources>

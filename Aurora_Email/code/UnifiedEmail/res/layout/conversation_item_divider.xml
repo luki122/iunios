@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mail.ui.ConversationDividerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="13dp"
+    android:background="@android:color/white" >
+
+    <!--
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/time_divider"
+        android:layout_height="15dp" />
+    -->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeable_content"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/listview_divider_linear" >
+
+        </View>
+
+        <TextView
+            android:id="@+id/earlier_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/earlier"
+            android:textColor="@color/earlier_color"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/listview_divider_linear" >
+           
+        </View>
+    </RelativeLayout>
+
+</com.android.mail.ui.ConversationDividerView>

@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">    		    
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="29.33dp" 
+        android:background="@drawable/title_bg" android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/memorySizeLayout"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <TextView
+	            android:id="@+id/phoneMemoryAvailSize"
+	            android:layout_width="wrap_content" android:layout_height="fill_parent"
+	            android:gravity="center_vertical" android:lines="1" 
+	            android:layout_alignParentLeft="true" android:paddingLeft="17dp"
+	            android:textColor="#333333" android:textSize="12sp"
+	            android:text="@string/phone_memory"/>
+	        <TextView
+	            android:id="@+id/sdMemoryAvailSize"
+	            android:layout_width="wrap_content" android:layout_height="fill_parent" 
+	            android:gravity="center" android:lines="1"
+	            android:layout_alignParentRight="true" android:paddingRight="17dp"
+	            android:textColor="#333333" android:textSize="12sp"
+	            android:text="@string/sd_card"/>   
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/canSaveMemorySize" android:visibility="gone"
+            android:layout_width="fill_parent" android:layout_height="fill_parent" 
+            android:gravity="left|center_vertical" android:lines="1" android:paddingLeft="17dp"
+            android:textColor="#333333" android:textSize="15sp"/>   
+    </LinearLayout>
+    
+    <Button
+	    android:id="@+id/changeSortBtn" 
+	    android:layout_width="fill_parent" android:layout_height="38.6dp" 
+	    android:layout_marginTop="9.4dp"
+	    android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+		android:text="@string/sort_by_cache_size"
+        android:textColor="@color/btn_text_title_selector_color" android:textSize="16sp"
+        android:background="@drawable/change_sort_btn"/>
+                 
+    <com.secure.view.CacheManageListView
+		android:id="@+id/ListView" 
+		android:layout_width="fill_parent"  android:layout_height="fill_parent"
+		android:layout_marginTop="9.4dp"
+		android:focusable="false" android:fadingEdge="none"
+		android:listSelector="@drawable/list_selector"
+		android:divider="@drawable/line" android:dividerHeight="1px"  />
+</LinearLayout>

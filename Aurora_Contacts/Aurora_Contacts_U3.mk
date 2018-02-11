@@ -1,0 +1,5 @@
+GN_APK_PLATFORM_VERSION=4.4
+GN_APK_PLATFORM_VENDOR=google
+GN_APK_VERSION=1.0
+GN_APK_RESOLUTION = hdpi,nodpi,xhdpi,xxhdpi,xxxhdpi
+GN_APK_LANGUAGE = zh_CN,en_US,ru_RU

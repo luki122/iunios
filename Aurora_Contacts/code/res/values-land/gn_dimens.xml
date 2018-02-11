@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gn_action_bar_title_size_primary">16sp</dimen>    
+</resources>

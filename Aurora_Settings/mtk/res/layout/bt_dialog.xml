@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+        <!--Gionee <wangguojing> <2013-08-24> modify for CR00873125 begin-->
+        <fragment android:name="com.android.settings.bluetooth.BluetoothSettings"
+            android:id="@+id/bt_dialog_custom"
+            android:layout_marginTop="20dp"            
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="3"/>
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"            
+            android:orientation="horizontal">
+            <Button
+            android:id="@+id/cancel_custom"
+            android:layout_marginLeft="6dp"            
+            android:layout_marginRight="3dp"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel_custom" />
+            <Button
+            android:id="@+id/scan_custom"
+            android:layout_marginRight="6dp"            
+            android:layout_marginLeft="3dp"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop_custom"/>
+        <!--Gionee <wangguojing> <2013-08-24> modify for CR00873125 end-->
+        </LinearLayout>        
+</LinearLayout>

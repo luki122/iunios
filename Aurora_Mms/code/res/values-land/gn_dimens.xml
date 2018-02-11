@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <dimen name="gn_action_bar_title_text_size">30sp</dimen> 
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <!-- Aurora liugj 2013-09-13 added for aurora's new feature start -->
+    <dimen name="aurora_from_text_max_width">500dp</dimen> 
+    <!-- Aurora liugj 2013-09-13 added for aurora's new feature end -->
+</resources>

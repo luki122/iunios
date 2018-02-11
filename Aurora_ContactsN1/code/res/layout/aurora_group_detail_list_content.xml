@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/no_contacts"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:paddingTop="@dimen/aurora_empty_contact_text_padding_top"
+    	android:gravity="center_horizontal"
+    	android:textSize="@dimen/aurora_empty_contact_text_size"
+    	android:textColor="@color/aurora_empty_contact_text_color"
+    	android:text="@string/aurora_empty_contact_text"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/wait_cursor" />
+
+        <FrameLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <view
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                class="com.android.contacts.widget.PinnedHeaderListView"
+                android:fadingEdge="none" />
+
+            <include layout="@layout/aurora_alphbet_indexer" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

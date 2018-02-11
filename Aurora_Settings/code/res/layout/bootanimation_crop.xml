@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.android.settings.bootanimation.CropImageView
+        android:id="@+id/cropImg"
+        android:layout_width="match_parent"    
+		android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/mask_bg"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        />
+<!--             android:src="@drawable/bootanimation_cut_bg" -->
+    <View
+    	android:layout_width="match_parent"
+    	android:layout_height="105dp"
+    	android:background="#a0ffffff"
+    	android:layout_gravity="bottom"
+        />
+	<Button 
+		android:id="@+id/crop_image"
+		android:layout_width="60dp"
+	 	android:layout_height="60dp"
+	 	android:layout_gravity="bottom"
+	 	android:layout_marginBottom="23dp"
+		android:layout_marginLeft="150dp"
+		android:background="@drawable/bootanimation_crop"
+		/>
+</FrameLayout>

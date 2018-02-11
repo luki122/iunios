@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-22 created for aurora's new feature -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/wifi_section">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dip" />
+    <LinearLayout
+            android:id="@+id/type"
+            style="@style/wifi_section"
+            android:visibility="gone">
+
+            <LinearLayout
+                style="@style/aurora_wifi_item">
+                <TextView
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_ssid"
+                    android:textDirection="locale" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <aurora.widget.AuroraEditText
+                    android:id="@+id/ssid"
+                    style="@style/aurora_wifi_item_widget"
+                    android:background="@null"
+                    android:maxLength="32"
+                    android:singleLine="true"
+                    android:inputType="textNoSuggestions" />
+            </LinearLayout>
+
+            <View
+                style="@style/aurora_baseline_horizontal" />
+
+            <LinearLayout
+                style="@style/aurora_wifi_item" >
+                <TextView
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_security" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <!-- aurora:auroraspinnerMode="dialog" -->
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/security"
+                    style="@style/aurora_wifi_item_widget"
+                    aurora:changeArrowDirection="true"
+                    android:prompt="@string/wifi_security"
+                    android:entries="@array/wifi_ap_security" />
+            </LinearLayout>
+
+            <View
+                style="@style/aurora_baseline_horizontal" />
+
+        </LinearLayout>
+	<LinearLayout
+            android:id="@+id/security_fields"
+            style="@style/wifi_section"
+            android:visibility="gone">
+            <LinearLayout
+                android:id="@+id/aurora_wifi_password_fields"
+                style="@style/wifi_section">
+
+                <LinearLayout
+                    style="@style/aurora_wifi_item">
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_password" />
+
+                    <View style="@style/aurora_baseline_vertical" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/password"
+                        style="@style/aurora_wifi_item_widget"
+                        android:background="@null"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+		<View
+                style="@style/aurora_baseline_horizontal" />
+	</LinearLayout>
+	     
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64dip" />
+    </LinearLayout>
+</ScrollView>

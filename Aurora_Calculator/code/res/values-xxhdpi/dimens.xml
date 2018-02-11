@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2014-04-22 modified for ui -->
+<!-- Aurora liugj 2014-01-17 created for aurora's new feature -->
+<resources>
+    <dimen name="view_item_margin_v">3dp</dimen> 
+    <dimen name="view_item_margin_h">1.4dp</dimen> 
+    <dimen name="layout_item_padding">2dp</dimen>
+    <dimen name="layout_item_padding_h">1dp</dimen>
+    <dimen name="display_bottom_padding">3dp</dimen> 
+    <dimen name="drawable_left_padding">29.8dp</dimen>
+    <dimen name="drawable_left_padding_2">30dp</dimen>
+    <dimen name="zero_btn_right_padding">90dp</dimen> 
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+
+ 
+    <style name="Time_wallpaper_title_radio" parent="com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraActionBarItemBackground">@color/theme_main_color</item>
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</resources>

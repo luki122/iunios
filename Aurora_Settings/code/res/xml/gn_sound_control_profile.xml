@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466  -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/gn_sound_control_title">
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="sound_control"
+        aurora:auroratitle="@string/gn_sound_control_title">
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="sound_control_calling"
+            aurora:auroratitle="@string/gn_sound_control_calling"
+            aurora:aurorasummary="@string/gn_sound_control_calling_summary"
+            aurora:aurorapersistent="false" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="sound_control_message"
+            aurora:auroratitle="@string/gn_sound_control_message"
+            aurora:aurorasummary="@string/gn_sound_control_message_summary"
+            aurora:aurorapersistent="false" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="sound_control_lockscreen"
+            aurora:auroratitle="@string/gn_sound_control_lockscreen"
+            aurora:aurorasummary="@string/gn_sound_control_lockscreen_summary"
+            aurora:aurorapersistent="false" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="sound_control_alarmclock"
+            aurora:auroratitle="@string/gn_sound_control_alarmclock"
+            aurora:aurorasummary="@string/gn_sound_control_alarmclock_summary"
+            aurora:aurorapersistent="false" /> 
+            
+    </aurora.preference.AuroraPreferenceCategory>
+    
+</aurora.preference.AuroraPreferenceScreen>

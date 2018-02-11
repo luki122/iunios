@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+ -->
+
+<animation-list 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+	
+    <item android:drawable="@drawable/e01" android:duration="30"/>
+    <item android:drawable="@drawable/e02" android:duration="30"/>
+    <item android:drawable="@drawable/e03" android:duration="30"/>
+    <item android:drawable="@drawable/e04" android:duration="30"/>
+    <item android:drawable="@drawable/e05" android:duration="30"/>
+    <item android:drawable="@drawable/e06" android:duration="30"/>
+    <item android:drawable="@drawable/e07" android:duration="30"/>
+    <item android:drawable="@drawable/e08" android:duration="30"/>
+    <item android:drawable="@drawable/e09" android:duration="30"/>
+    <item android:drawable="@drawable/e10" android:duration="30"/>
+	<item android:drawable="@drawable/e11" android:duration="30"/>
+	<item android:drawable="@drawable/e12" android:duration="30"/>
+	<item android:drawable="@drawable/e13" android:duration="30"/>
+	<item android:drawable="@drawable/e14" android:duration="30"/>
+	<item android:drawable="@drawable/e15" android:duration="30"/>
+    
+</animation-list>

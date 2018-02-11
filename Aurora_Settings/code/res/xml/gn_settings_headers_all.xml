@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+
+    <!-- WIRELESS and NETWORKS -->
+    <header aurora:auroratitle="@string/header_category_wireless_networks" />
+    
+    <!-- Airplane_mode -->
+    <header
+        aurora:auroraid="@+id/gn_toggle_airplane"
+        aurora:auroraicon="@drawable/gn_ic_settings_airplanemode"
+        aurora:auroratitle="@string/airplane_mode" />
+    
+    <!-- Sim management -->
+    <header
+        aurora:auroraid="@+id/sim_settings"
+        aurora:auroraicon="@drawable/ic_settings_dualsim"
+        aurora:auroratitle="@string/gemini_sim_management_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.gionee.settings.adapter.SimManagermentActivity" />
+   </header>
+    
+    <!-- Mobile network -->
+    <header
+        aurora:auroraid="@+id/gn_ic_settings_mobile_network"
+        aurora:auroraicon="@drawable/gn_ic_settings_mobile_network"
+        aurora:auroratitle="@string/network_settings_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.MobileNetworkSettings" />
+    </header>
+    
+    <!-- Wifi -->
+    <header
+        aurora:auroraid="@+id/wifi_settings"
+        aurora:aurorafragment="com.android.settings.wifi.WifiSettings"
+        aurora:auroratitle="@string/wifi_settings_title"
+        aurora:auroraicon="@drawable/ic_settings_wireless" />
+
+    <!-- Bluetooth -->
+    <header
+        aurora:auroraid="@+id/bluetooth_settings"
+        aurora:aurorafragment="com.android.settings.bluetooth.BluetoothSettings"
+        aurora:auroratitle="@string/bluetooth_settings_title"
+        aurora:auroraicon="@drawable/ic_settings_bluetooth2" />
+
+    <!-- Data Usage -->
+    <header
+        aurora:auroraid="@+id/data_usage_settings"
+        aurora:aurorafragment="com.android.settings.DataUsageSummary"
+        aurora:auroratitle="@string/data_usage_summary_title"
+        aurora:auroraicon="@drawable/ic_settings_data_usage" />
+
+    <!-- Operator hook -->
+    <header
+        aurora:aurorafragment="com.android.settings.WirelessSettings"
+        aurora:auroraid="@+id/operator_settings">
+        <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
+    </header>
+
+    <!-- Manufacturer hook -->
+    <header
+        aurora:aurorafragment="com.android.settings.WirelessSettings"
+        aurora:auroraid="@+id/manufacturer_settings">
+        <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
+    </header>
+
+    <!-- Other wireless and network controls -->
+    <header
+        aurora:auroraid="@+id/wireless_settings"
+        aurora:auroratitle="@string/radio_controls_title"
+        aurora:aurorabreadCrumbTitle="@string/wireless_networks_settings_title"
+        aurora:aurorafragment="com.android.settings.WirelessSettings"
+        aurora:auroraicon="@drawable/gn_ic_settings_morewireless" />
+    
+    <!-- PERSONAL -->
+    <header aurora:auroratitle="@string/header_category_personal" />
+
+    <!-- Manage users -->
+    <header
+        aurora:aurorafragment="com.android.settings.users.UserSettings"
+        aurora:auroraicon="@drawable/ic_settings_sync"
+        aurora:auroratitle="@string/user_settings_title"
+        aurora:auroraid="@+id/user_settings" />
+    
+    <!-- Audio Profile -->
+    <header
+        aurora:auroraid="@+id/sound_settings"
+        aurora:auroraicon="@drawable/ic_settings_profiles"
+        aurora:auroratitle="@string/gn_sound_and_vibrate" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="gn.com.android.audioprofile"
+            android:targetClass="gn.com.android.audioprofile.AudioProfileActivity" />
+    </header>
+
+    <!-- Display -->
+    <header
+        aurora:auroraid="@+id/display_settings"
+        aurora:auroraicon="@drawable/ic_settings_display"
+        aurora:aurorafragment="com.android.settings.DisplaySettings"
+        aurora:auroratitle="@string/display_settings" />
+    
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 begin  -->
+    <header
+        aurora:auroraid="@+id/gn_single_hand_operation"
+        aurora:auroraicon="@drawable/gn_single_hand_operation"
+        aurora:auroratitle="@string/gn_single_hand_operation" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.GnSingleHandOperation"
+            android:targetPackage="com.android.settings" />
+    </header>
+    
+    <header 
+        aurora:auroraid="@+id/gn_suspend_button"
+        aurora:auroraicon="@drawable/gn_suspend_button"
+        aurora:auroratitle="@string/gn_suspend_button"/>
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 end  -->
+    <!-- Security -->
+    <header
+        aurora:aurorafragment="com.android.settings.SecuritySettings"
+        aurora:auroraicon="@drawable/ic_settings_security"
+        aurora:auroratitle="@string/security_settings_title"
+        aurora:auroraid="@+id/security_settings" />
+
+    <!-- Location -->
+    <header
+        aurora:aurorafragment="com.android.settings.LocationSettings"
+        aurora:auroraicon="@drawable/ic_settings_location"
+        aurora:auroratitle="@string/location_settings_title"
+        aurora:auroraid="@+id/location_settings" />
+
+    <header
+        aurora:auroraid="@+id/location_settings_mtk"
+        aurora:auroraicon="@drawable/ic_settings_location"
+        aurora:auroratitle="@string/location_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.gionee.settings.adapter.LocationSettingsActivity" />
+    </header>
+
+    <!-- notification && push -->
+    <header
+        aurora:aurorafragment="com.android.settings.NotifyPushSettings"
+        aurora:auroraicon="@drawable/ic_settings_notify_push"
+        aurora:auroratitle="@string/notify_push"
+        aurora:auroraid="@+id/notify_push_settings" />
+
+    <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 begin -->
+    <!-- a widget morning and evening auto push -->
+    <header
+        aurora:auroraid="@+id/gn_fanfan_widget"
+        aurora:auroraicon="@drawable/gn_ic_settings_fanfanwidget"
+        aurora:auroratitle="@string/gn_fanfan_widget_auto_push" />
+    <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 end -->
+
+    <!-- ACCOUNTS section -->
+    <header
+            aurora:auroraid="@+id/account_settings"
+            aurora:auroratitle="@string/account_settings" />
+
+    <!-- ACCOUNTS Add -->
+    <header
+            aurora:auroraid="@+id/account_add"
+            aurora:auroratitle="@string/add_account_label"
+            aurora:auroraicon="@drawable/ic_menu_add_account">
+        <intent
+            android:action="android.settings.ADD_ACCOUNT_SETTINGS"/>
+    </header>
+
+    <!-- DEVICE -->
+    <header aurora:auroratitle="@string/header_category_device" />
+
+    <!-- Battery -->
+    <header
+        aurora:auroraid="@+id/battery_settings"
+        aurora:aurorafragment="com.android.settings.fuelgauge.PowerUsageSummary"
+        aurora:auroraicon="@drawable/ic_settings_battery"
+        aurora:auroratitle="@string/power_usage_summary_title" />
+
+    <!-- Storage -->
+    <header
+        aurora:auroraid="@+id/storage_settings"
+        aurora:auroraicon="@drawable/ic_settings_storage"
+        aurora:auroratitle="@string/storage_settings" >
+    <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.gionee.settings.adapter.memory.GnMemoryActivity" />
+    </header>
+    <!-- Application Settings -->
+    <header
+        aurora:aurorafragment="com.android.settings.applications.ManageApplications"
+        aurora:auroraicon="@drawable/ic_settings_applications"
+        aurora:auroratitle="@string/applications_settings"
+        aurora:auroraid="@+id/application_settings" />
+
+
+    <!-- Respiration Lamp Settings -->
+    <header
+        aurora:auroraicon="@drawable/ic_settings_led"
+        aurora:auroratitle="@string/gn_respirationlamp_settings"
+        aurora:auroraid="@+id/gn_respirationlamp_settings" >        
+    <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.gionee.settings.adapter.respirationlamp.GnRespirationLampSettingsActivity" />
+    </header>
+	
+    <!-- SYSTEM -->
+    <header aurora:auroratitle="@string/header_category_system" />
+
+    <!-- Dock -->
+  <!--  <header
+        aurora:auroraid="@+id/dock_settings"
+        aurora:aurorafragment="com.android.settings.DockSettings"
+        aurora:auroraicon="@drawable/ic_settings_dock"
+        aurora:auroratitle="@string/dock_settings" /> -->
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466 begin -->        
+    <header
+        aurora:auroraid="@+id/gn_sound_control"
+        aurora:auroraicon="@drawable/gn_ic_settings_sound_control"
+        aurora:auroratitle="@string/gn_sound_control_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.GnSoundControlProfile" />
+    </header>        
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466 end -->
+    <!-- Smart gesture -->
+    <!-- Gionee zengxuanhui 20130328 add for CR00788417 begin -->
+    <header
+        aurora:auroraid="@+id/smart_gesture_settings"
+        aurora:auroraicon="@drawable/gn_ic_settings_gesture"
+        aurora:auroratitle="@string/gn_smart_gesture" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.gionee.settings.adapter.gesture.SomatosensoryGestureActivity" />
+    </header>
+    <!-- Gionee zengxuanhui 20130328 add for CR00788417 end -->
+    
+    <!-- Date & Time -->
+    <header
+        aurora:auroraid="@+id/date_time_settings"
+        aurora:aurorafragment="com.android.settings.DateTimeSettings"
+        aurora:auroraicon="@drawable/ic_settings_date_time"
+        aurora:auroratitle="@string/date_and_time_settings_title" />
+
+    <!--Scheduled power on&off-->
+    <!-- Gionee <wangyaohui><2013-03-13> modify for CR00779668 begin:
+        use intent to jump to schpwronoff apk
+    -->
+ 	<header
+        aurora:auroraid="@+id/power_settings"
+        aurora:auroraicon="@drawable/ic_settings_schpwronoff"
+        aurora:auroratitle="@string/schedule_power_on_off_settings_title" > 
+        <intent
+            android:action="com.android.settings.SCHEDULE_POWER_ON_OFF_SETTING"
+	    />
+	</header>
+    <!-- Gionee <wangyaohui><2013-03-13> modify for CR00779668 end -->
+
+    <!--Scheduled airplane on&off-->
+    <header
+        aurora:auroraid="@+id/schedule_on_off_airplane"
+        aurora:auroraicon="@drawable/gn_ic_settings_schairplaneonoff"
+        aurora:auroratitle="@string/schedule_airplane_on_off_settings_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="gn.com.android.schairplaneonoff.AirPlaneClock"
+            android:targetPackage="gn.com.android.schairplaneonoff" />
+    </header>
+
+    <!-- Language -->
+    <header
+        aurora:auroraid="@+id/language_settings"
+        aurora:aurorafragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings"
+        aurora:auroraicon="@drawable/ic_settings_language"
+        aurora:auroratitle="@string/language_settings" />
+
+    <!--BackupRestore-->
+    <header
+        aurora:auroraid="@+id/backup_restore_settings"        
+        aurora:auroraicon="@drawable/gn_ic_settings_backuprestore"
+        aurora:auroratitle="@string/backup_restore_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="gn.com.android.backuprestore"
+            android:targetClass="gn.com.android.backuprestore.WelcomeActivity" />
+    </header>
+
+    <!-- Backup and reset -->
+    <header
+        aurora:aurorafragment="com.android.settings.PrivacySettings"
+        aurora:auroraicon="@drawable/ic_settings_backup"
+        aurora:auroratitle="@string/privacy_settings"
+        aurora:auroraid="@+id/privacy_settings" />
+
+    <!-- Accessibility feedback -->
+    <header
+        aurora:auroraid="@+id/accessibility_settings"
+        aurora:aurorafragment="com.android.settings.AccessibilitySettings"
+        aurora:auroraicon="@drawable/ic_settings_accessibility"
+        aurora:auroratitle="@string/accessibility_settings" />
+
+    <!-- Development -->
+    <header
+        aurora:auroraid="@+id/development_settings"
+        aurora:aurorafragment="com.android.settings.DevelopmentSettingsUserMode"
+        aurora:auroraicon="@drawable/ic_settings_development"
+        aurora:auroratitle="@string/development_settings_title" />
+
+    <!-- About Device -->
+    <header
+        aurora:auroraid="@+id/about_settings"
+        aurora:aurorafragment="com.android.settings.DeviceInfoSettings"
+        aurora:auroraicon="@drawable/ic_settings_about"
+        aurora:auroratitle="@string/about_settings" />
+</preference-headers>

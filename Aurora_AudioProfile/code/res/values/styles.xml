@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--  <style name="GnSettingsLightTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+    <style name="GnSettingsLightTheme" parent="@amigo:style/Theme.Amigo.Light">
+        <item name="amigo:amigoactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+    </style>
+ -->
+ 
+<!-- <style name="GnSettingsDarkTheme" parent="@android:style/Theme.Holo"> 
+    <style name="GnSettingsDarkTheme" parent="@amigo:style/Theme.Amigo.Light">
+        <item name="android:actionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+    </style>
+
+   <style name="LightActionBarStyle" parent="@amigo:style/Widget.Amigo.Light.ActionBar.Solid.Inverse">
+         <item name="amigo:amigobackground">@drawable/gn_tab_light_bg</item>
+        <item name="amigo:amigobackgroundStacked">@drawable/gn_tab_light_bg</item>
+-->          
+        <!-- <item name="android:backgroundSplit">@drawable/gn_menu_light_bg</item> 
+    </style>
+
+    <style name="LightActionBarTabView" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/gn_action_bar_item_back</item>
+    </style>
+
+    <style name="DarkActionBarStyle" parent="@amigo:style/Widget.Amigo.Light.ActionBar">
+ -->     
+<!--         <item name="android:background">@drawable/gn_tab_dark_bg</item>
+        <item name="android:backgroundSplit">@drawable/gn_menu_dark_bg</item>
+        <item name="android:backgroundStacked">@drawable/gn_tab_dark_bg</item> 
+    </style>
+
+    <style name="GnEmptyTheme"></style>
+-->
+
+</resources>

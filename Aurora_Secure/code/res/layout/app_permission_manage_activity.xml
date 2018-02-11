@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">       
+    <com.secure.view.AppDetailInfoView
+        android:id="@+id/appDetailInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"/>
+   	          
+    <com.secure.stickylistheaders.StickyListHeadersListView
+		android:id="@+id/permissionListView" 
+		android:layout_width="fill_parent"  android:layout_height="fill_parent"
+		android:layout_below="@id/appDetailInfoLayout"
+		android:layout_marginTop="17dp"
+		android:focusable="false" android:fadingEdge="none"
+		android:divider="@color/listDivider" android:dividerHeight="0dp" />
+</RelativeLayout>

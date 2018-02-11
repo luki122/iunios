@@ -1,0 +1,238 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+    
+    <style name="CustomWindowTitleBackground">
+       	<item name="android:background">#565656</item>
+	</style>
+
+	<style name="vs_main_activity_style" parent="android:Theme">
+	       <item name="android:windowBackground">@color/vs_transparent</item>  
+           <item name="android:windowIsTranslucent">true</item>  
+           <item name="android:windowNoTitle">true</item>       
+           <item name="android:windowFullscreen">false</item>
+	</style>
+	
+	 <style name="vs_shopRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">10.5dip</item>
+        <item name="android:progressDrawable">@drawable/vs_rating_star_style</item>
+        <item name="android:minHeight">10.5dip</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    
+	  <style name="vs_flight_number_title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/vs_black</item>
+        <item name="android:textStyle">bold</item>
+<!--         shigq add name="android:textStyle">bold-->
+<!--         <item name="android:textSize">16.0sp</item> -->
+<!-- 		<item name="android:textColor">@color/vs_news_content</item> -->
+    </style>
+    
+	  <style name="vs_flight_number_table_actical_time">
+        <item name="android:textSize">12.0sp</item>
+<!--         shigq -->
+<!--         <item name="android:textColor">#ff468cc7</item> -->
+        <item name="android:textColor">#ff3da0fd</item>
+    </style>
+    
+    <style name="vs_train_type_divider">
+        <item name="android:background">@drawable/vs_interest_divider_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+    </style>
+    <style name="vs_flight_number_table_root">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffa8a8a8</item>
+    </style>
+    
+    <style name="vs_train_s2s_station">
+        <item name="android:textSize">17.0sp</item>
+<!--         shigq -->
+<!--         <item name="android:textColor">@color/vs_news_content</item> -->
+		<item name="android:textColor">@color/vs_black</item>
+		
+    </style>
+    
+    <style name="vs_train_s2s_divider">
+<!--         <item name="android:background">#ffe2e2e2</item> -->
+        <item name="android:layout_width">fill_parent</item>
+<!--         <item name="android:layout_height">0.6dip</item> -->
+<!--         shigq -->
+        <item name="android:layout_height">0.3dip</item>
+        <item name="android:background">#ffcfcfcf</item>
+    </style>
+    
+     <style name="vs_train_time_text">
+        <item name="android:textSize">14.0sp</item>
+<!--         shigq -->
+<!--         <item name="android:textColor">#ff468cc7</item> -->
+        <item name="android:textColor">#ff3da0fd</item>
+    </style>
+    
+     <style name="Theme.Translucent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@drawable/vs_speed_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    
+<!--      shigq add -->
+<!-- 	<style name="vs_input_hint_string"> -->
+<!-- 	    <item name=a -->
+<!-- 	</style> -->
+	<style name="vs_weather_textview">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ff8d8d8d</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:layout_marginTop">5dp</item>
+	</style>
+	<style name="vs_weather_date">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ff8d8d8d</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:layout_marginTop">3dp</item>
+	</style>
+	<style name="vs_weather_week">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ff8d8d8d</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:layout_marginTop">4dp</item>
+	    <item name="android:layout_marginBottom">9dp</item>
+	</style>
+	<style name="vs_weather_temperature">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:textColor">#ff000000</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:layout_marginTop">4dp</item>
+	    <item name="android:layout_marginBottom">4dp</item>
+	</style>
+	
+	<style name="vs_weather_imageview">
+	    <item name="android:layout_width">47dp</item>
+	    <item name="android:layout_height">47dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:scaleType">centerInside</item>
+	    <item name="android:src">@drawable/vs_weather_xiaoyu_alarm</item>
+	</style>
+	<style name="vs_weather_divider">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">110dp</item>
+	    <item name="android:src">@drawable/vs_weather_6day_vline</item>
+	    <item name="android:layout_marginTop">8dp</item>
+	    <item name="android:layout_marginBottom">7dp</item>
+	</style>
+<!--      shigq add -->
+    <style name="CutomEditText">
+        <item name="android:textSelectHandleLeft">@drawable/aurora_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/aurora_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/aurora_text_select_handle_middle</item>
+        <item name="android:textCursorDrawable">@drawable/aurora_text_cursor_light</item>
+	</style>
+	
+    <!-- voice wake up switching animation -->
+    <!-- applicationA transfer to applicationB  HT -->
+    <style name="AnimationAuroraActivity">
+        <item name="android:activityOpenEnterAnimation">@com.aurora:anim/aurora_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@com.aurora:anim/aurora_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@com.aurora:anim/aurora_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@com.aurora:anim/aurora_activity_close_exit</item>
+       
+        <item name="android:taskOpenEnterAnimation">@com.aurora:anim/aurora_activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@com.aurora:anim/aurora_activity_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@com.aurora:anim/aurora_activity_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@com.aurora:anim/aurora_activity_close_exit</item>  
+    </style>
+    <style name="appTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowAnimationStyle">@style/AnimationAuroraActivity</item>
+    </style>
+    
+    
+    <!-- barcode -->
+    <style name="vs_barcode_main_activity_style" parent="@com.aurora:style/Theme.Aurora.Dark.Transparent">
+<!--         <item name="android:windowBackground">@color/black</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    
+    <style name="vs_barcode_scanning_tips_style">
+        <item name="android:text">@string/vs_barcode_scanning_tips</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:layout_marginTop">364.6dp</item>
+	    <item name="android:textColor">@color/vs_barcode_scanning_tips_white</item>
+	    <item name="android:textSize">@dimen/vs_barcode_scanning_tips_size</item>
+	    <item name="android:layout_gravity">top|center_horizontal</item>
+    </style>
+    <style name="vs_barcode_scanning_getphotos_style">
+        <item name="android:text">@string/vs_barcode_getphotos</item>
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">29.3dp</item>
+	    <item name="android:layout_marginTop">455.6dp</item>
+	    <item name="android:textColor">@color/vs_barcode_scanning_tips_white</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_gravity">top|center_horizontal</item>
+    </style>
+
+    <style name="vs_barcode_result_layout_text_style">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_alignParentBottom">true</item>
+	    <item name="android:layout_centerInParent">true</item>
+	    <item name="android:layout_marginLeft">17dp</item>
+	    <item name="android:layout_marginRight">17dp</item>
+	    <item name="android:textColor">@color/vs_font_style_colors</item>
+	    <item name="android:textSize">18sp</item>
+	    <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="vs_barcode_vcard_item_style">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">center_vertical</item>	  
+	    <item name="android:layout_alignParentLeft">true</item>
+	    <item name="android:textColor">@color/vs_barcode_vcard_item</item>
+	    <item name="android:textSize">16sp</item>
+    </style>
+    <style name="vs_barcode_vcard_item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">center_vertical</item>	    
+	    <item name="android:textColor">@color/vs_black</item>
+	    <item name="android:textSize">16sp</item>
+	    <item name="android:lineSpacingExtra">5dp</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<ImageView 
+    android:id="@+id/item_iv_photo"
+    android:layout_width="@dimen/item_collection_of_postdetail_item_iv_photo_layout_width"
+    android:layout_height="@dimen/item_collection_of_postdetail_item_iv_photo_layout_height"
+    android:scaleType="centerCrop"
+    />
+<ImageView 
+    android:id="@+id/item_iv_selected"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="centerInside"
+    android:layout_gravity="top|right"
+
+    />
+</FrameLayout>

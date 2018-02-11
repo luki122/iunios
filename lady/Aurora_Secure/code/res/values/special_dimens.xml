@@ -1,0 +1,6 @@
+<resources>
+    <!-- 应用列表弹出菜单到顶部的间距 -->
+    <dimen name="all_app_popup_window_margin_top">65dp</dimen>
+        <dimen name="def_soft_manage_grid_item_sysAppFlag_paddingLeft">9dp</dimen>
+<dimen name="def_soft_manage_grid_item_sysAppFlag_paddingBottom">1.5dp</dimen>
+</resources>

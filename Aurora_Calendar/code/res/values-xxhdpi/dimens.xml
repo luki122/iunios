@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <dimen name="day_label_text_size">11sp</dimen>
+    <dimen name="all_day_bottom_margin">8dip</dimen>
+    <dimen name="one_day_header_height">0dip</dimen>
+    <dimen name="day_header_bottom_margin">4dip</dimen>
+    <dimen name="date_header_text_size">12sp</dimen>
+    <dimen name="hours_text_size">12sp</dimen>
+    <dimen name="allday_text_size">12sp</dimen>
+    <dimen name="ampm_text_size">10sp</dimen>
+    <dimen name="day_view_event_text_size">12sp</dimen>
+    <dimen name="week_view_event_text_size">12sp</dimen>
+    <dimen name="event_text_vertical_margin">2dp</dimen>
+    <dimen name="event_text_horizontal_margin">4dp</dimen>
+    <dimen name="event_min_height">24dip</dimen>
+    <!-- minimum size of hours column in day/week view -->
+    <dimen name="min_hours_width">24dip</dimen>
+    <!-- margins size of hours column in day/week view -->
+    <dimen name="hours_left_margin">20dip</dimen>
+    <dimen name="hours_right_margin">4dip</dimen>
+    <!-- size of day header in day and week views  -->
+    <dimen name="day_header_height">16dip</dimen>
+    <dimen name="widget_day_num_size">36sp</dimen>
+    <dimen name="widget_day_num_top_padding">-4dip</dimen>
+    <dimen name="action_bar_date_text_size">22sp</dimen>
+    <dimen name="new_event_hint_text_size">12sp</dimen>
+    <dimen name="edit_event_view_width">800dip</dimen>
+    <dimen name="edit_event_view_padding_left">80dip</dimen>
+    <dimen name="edit_event_view_padding_right">80dip</dimen>
+    <dimen name="edit_reminder_min_size">36dip</dimen>
+    <dimen name="event_info_text_size">14dip</dimen>
+    <dimen name="event_info_desc_margin_left">0dip</dimen>
+    <dimen name="event_info_desc_margin_right">0dip</dimen>
+    <dimen name="event_info_padding">0dip</dimen>
+    <dimen name="calendar_controls_width">280dip</dimen>
+    <dimen name="min_portrait_calendar_controls_width">300dip</dimen>
+    <dimen name="max_portrait_calendar_controls_width">350dip</dimen>
+    <dimen name="calendar_controls_height">300dip</dimen>
+    <dimen name="agenda_item_right_margin">4dip</dimen>
+    <dimen name="today_icon_text_size">14sp</dimen>
+    <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 add text size begin -->
+    <dimen name="gn_all_in_one_action_select_Date_size">34sp</dimen>
+    <dimen name="gn_sliding_content_margin_left_or_right">8dp</dimen>
+    <dimen name="gn_sliding_content_margin_top_or_bottom">8dp</dimen>
+    <!--Gionee <jiating><2013-06-22> modify for CR00828906 begin  -->
+    <dimen name="gn_sliding_content_image_margin_left_or_right">8dp</dimen>
+    <dimen name="gn_sliding_content_image_margin_right">12dp</dimen>
+    <!--Gionee <jiating><2013-06-22> modify for CR00828906 end  -->
+    <dimen name="gn_sliding_title_text_size">16sp</dimen>
+    <dimen name="gn_sliding_content_text_size">20sp</dimen>
+    <dimen name="gn_agenda_second_time">12sp</dimen>
+    <!--  Gionee <pengwei>  <2013-04-12> modify for DayView begin-->
+    <dimen name="gn_text_day_date_size">142sp</dimen>
+    <dimen name="gn_text_day_week_size">28sp</dimen>
+    <dimen name="gn_text_day_no_plan_size">24sp</dimen>
+    <dimen name="gn_text_day_no_content_alert">12sp</dimen>
+    <dimen name="gn_text_week_header_week_size">12sp</dimen>
+    <dimen name="gn_text_week_header_month_size">20sp</dimen>
+    <dimen name="gn_text_week_header_lunar_size">16sp</dimen>
+    <!--  Gionee <pengwei>  <2013-06-13> modify for CR00819549 begin-->
+	<dimen name="gn_text_week_am_pm">1dip</dimen>
+    <dimen name="gn_text_week_am_pm_space_v">2dip</dimen>
+	<dimen name="gn_text_week_am_pm_margin_top">2dip</dimen>
+	<!--  Gionee <pengwei>  <2013-06-13> modify for CR00819549 end-->	
+    <!--  Gionee <pengwei>  <2013-04-12> modify for DayView end-->
+    <!-- Gionee jiating 2013-03-05 modify add text size end -->
+    <dimen name="gn_edit_event_item_margion_bottom">8dp</dimen>
+    <dimen name="gn_edit_event_item_margion_top">10dp</dimen>
+    <dimen name="chip_padding">8dip</dimen>
+    <dimen name="chip_height">32dip</dimen>
+    <dimen name="chip_text_size">14sp</dimen>
+    <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 add text size end -->
+    
+    <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  begin -->
+    <dimen name="medium_text_size">16sp</dimen>
+    <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  end -->
+    
+    <!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  begin -->
+    <!-- define constants for E6 merge back -->
+    <dimen name="min_height_agenda_item">68dp</dimen>
+    <dimen name="min_height_gn_event_info_title">48dp</dimen>
+    <dimen name="min_height_gn_event_info_when_repeat">48dp</dimen>
+    <dimen name="min_height_gn_event_info_description">48dp</dimen>
+    
+    <dimen name="text_size_edit_event_time">17sp</dimen>
+    <!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  end -->
+    
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+    <dimen name="gn_almanac_text_size_lunar_date">24sp</dimen>
+    <dimen name="gn_almanac_text_size_greg_date">12sp</dimen>
+    <dimen name="gn_almanac_text_size_week_day">12sp</dimen>
+    <dimen name="gn_almanac_text_size_chinese_era">12sp</dimen>
+    <dimen name="gn_almanac_text_size_good_and_bad">14sp</dimen>
+    <dimen name="gn_almanac_text_size_more_info_title">16sp</dimen>
+    <dimen name="gn_almanac_text_size_more_info_content">14sp</dimen>
+    <dimen name="gn_almanac_text_size_almanac_title">20sp</dimen>
+    
+    <dimen name="gn_almanac_gap_date_field_switch_date_button">8dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_lunar_date_top">16dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_lunar_date_bottom">18dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_greg_date_top">12dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_datepicker_indicate_top">15dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_datepicker_indicate_distance_to_date">58dp</dimen>  
+    <dimen name="gn_almanac_gap_almanac_info_field_border">12dp</dimen>
+    <dimen name="gn_almanac_gap_date_field_internal">6dp</dimen>
+    <dimen name="gn_almanac_gap_chinese_era_chinese_horoscope_top">10dp</dimen>
+    <dimen name="gn_almanac_gap_chinese_era_chinese_horoscope_bottom">10dp</dimen>
+    <dimen name="gn_almanac_gap_fitted_and_unfitted">6dp</dimen>
+	<dimen name="gn_almanac_gap_fitted_and_unfitted_for_big_font">0dp</dimen>
+    <dimen name="gn_almanac_gap_icon_and_text">8dp</dimen>
+    <dimen name="gn_almanac_gap_top_more_info_first_item">18dp</dimen>
+    <dimen name="gn_almanac_gap_top_more_info_items">3dp</dimen>
+    <dimen name="gn_almanac_gap_top_more_info_items_for_big_font">1dp</dimen>
+    <dimen name="gn_almanac_gap_left_more_info_items">0dp</dimen>
+    <dimen name="gn_almanac_gap_more_info_title_and_content">4dp</dimen>
+    <dimen name="gn_almanac_gap_more_info_birth_god_and_five_elements">48dp</dimen>
+    <dimen name="gn_almanac_gap_top_back_today_button">12dp</dimen>
+    <dimen name="gn_almanac_gap_right_back_today_button">12dp</dimen>
+    <dimen name="gn_almanac_gap_internal_back_today_button">4dp</dimen>
+    <dimen name="gn_almanac_gap_back_button">0dp</dimen>
+    
+    <dimen name="gn_almanac_separator_height">1dp</dimen>
+    <dimen name="gn_almanac_separator_lr_margin">12dp</dimen>
+    <dimen name="gn_almanac_separator_icon_margin">3dp</dimen>
+    <dimen name="gn_almanac_separator_icon_margin_for_big_font">3dp</dimen>
+    <dimen name="gn_almanac_separator_content_margin">5dp</dimen>
+    <dimen name="gn_almanac_good_and_bad_icon_top_margin">6dp</dimen>
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+    
+</resources>

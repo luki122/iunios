@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.ToolBarLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar_height"
+    android:background="@drawable/toolbar_bg"
+    android:baselineAligned="false" >
+
+    <ImageView
+        android:id="@+id/toolbar_backward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/toolbar_selector_tab_backward" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/toolbar_forward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/toolbar_selector_tab_forward" >
+    </ImageView>
+    
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <ImageView
+    		android:id="@+id/toolbar_bookmark"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="center"
+	        android:src="@drawable/toolbar_selector_tab_bookmark"
+	        >
+   		</ImageView>
+    </LinearLayout>
+
+ 	
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/toolbar_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/toolbar_selector_tab_switcher" >
+        </ImageView>
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+         	android:layout_alignTop="@id/toolbar_switcher"
+         	android:layout_alignLeft="@id/toolbar_switcher"
+            android:text="@string/toolbar_text"
+            android:textSize="9sp"
+            android:textColor="@color/toolbar_switcher_text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/toolbar_setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="center"
+        android:src="@drawable/toolbar_selector_tab_setting" >
+    </ImageView>
+
+</com.android.browser.ToolBarLinearLayout>

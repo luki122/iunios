@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/leftColor"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/leftColor"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/item_word_big"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/right_occu"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/dayTime"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/right_occu"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dayHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_word_white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aurora_remember_day_1"
+                android:textColor="@color/item_word_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemHint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/dayTime"
+            android:gravity="center_vertical"
+            android:textColor="@color/item_word_small"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

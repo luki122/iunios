@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <chenml> <2013-05-29> add for CR00821135  -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/gn_single_hand_operation">
+ <!--   <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="=gn_keyboard">  --> 
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="phone_keyboard"
+            aurora:auroratitle="@string/gn_phone_keyboard"
+            aurora:aurorasummary="@string/gn_phone_keyboard_summary"/>
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="input_method_keyboard"
+            aurora:auroratitle="@string/gn_input_method_keyboard"
+            aurora:aurorasummary="@string/gn_input_method_keyboard_summary"
+            aurora:aurorapersistent="false" />
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="pattern_unlockscreen"
+            aurora:auroratitle="@string/gn_pattern_unlockscreen"
+            aurora:aurorasummary="@string/gn_pattern_unlockscreen_summary"
+            aurora:aurorapersistent="false" />
+ <!--   </aurora.preference.AuroraPreferenceCategory>  --> 
+    
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="advance_setting"
+        aurora:auroratitle="@string/gn_advance_setting" >
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="small_screen_mode"
+            aurora:auroratitle="@string/gn_small_screen_mode"
+            aurora:aurorasummary="@string/gn_small_screen_mode_summary" />
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="screen_size"
+            aurora:auroratitle="@string/gn_screen_size"
+            aurora:aurorasummary="@string/gn_screen_size_summary" 
+            aurora:aurorapersistent="false" 
+            aurora:auroraentries="@array/gn_screen_size_entries"
+            aurora:auroraentryValues="@array/gn_screen_size_values"/>
+
+</aurora.preference.AuroraPreferenceCategory>     
+</aurora.preference.AuroraPreferenceScreen>

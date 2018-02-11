@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content" 
+      android:layout_height="fill_parent">
+      <TextView
+          android:id="@+id/sureText"
+          android:gravity="center_vertical" 
+          android:paddingLeft="10dp" android:paddingRight="10dp"
+          android:layout_width="wrap_content" 
+          android:layout_height="@com.aurora:dimen/aurora_action_bar_height"
+          android:textColor="@com.aurora:color/aurora_action_bar_button_change_color" 
+          android:textSize="@com.aurora:dimen/aurora_action_bar_btn_size"
+          android:background="@com.aurora:drawable/aurora_action_bar_widget_right_selector"/> 
+</FrameLayout>

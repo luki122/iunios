@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Aurora <likai> add begin -->
+<string name="aurora_advanced_settings_title">Расширенные параметры</string>
+    <string name="aurora_wifi_settings_title">WLAN</string>
+    <string name="aurora_wifi_connect_ssid">Подключено <xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+	<string name="aurora_no_connect_ssid">Отключено</string>
+    <string name="aurora_wifi_list">Список WLAN</string>
+    <string name="tether_settings_title_wifi_header">&quot;Точки разделения&quot;</string>
+    <string name="aurora_wifi_success_forget_message">Игнорировано <xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+    <string name="aurora_wifi_notify_open_networks">Сообщать при обнаружении открытой сети</string>
+    <string name="aurora_wifi_sleep_policy_title">Метод включения  WLAN в режиме сна</string>
+    <string name="aurora_proxy_hostname_label">Название главного ЭВМ</string>
+    <string name="aurora_proxy_port_label">Порт</string>
+    <string name="aurora_proxy_exclusionlist_label">Сайта без прокси-сервера</string>
+    <string name="aurora_display_brightness">Настраивать в соответствии с освещенностью</string>
+    <string name="aurora_display_screen_timeout">Спящий режим</string>
+    <string name="aurora_display_screen_timeout_summary">После <xliff:g id="TIMEOUT_DESCRIPTION">%1$s бездействия</xliff:g></string>
+    <string name="aurora_display_screen_timeout_one">15 секунд</string>
+    <string name="aurora_display_screen_timeout_two">30 секунд</string>
+    <string name="aurora_display_screen_timeout_three">1 минута</string>
+    <string name="aurora_display_screen_timeout_four">2 минуты</string>
+    <string name="aurora_display_screen_timeout_five">5 минут</string>
+    <string name="aurora_display_screen_timeout_six">10 минут</string>
+    <string name="aurora_display_screen_timeout_seven">30 минут</string>
+    <string name="aurora_display_font_size">Размер шрифта</string>
+    <string name="aurora_display_font_size_small">Небольшой</string>
+    <string name="aurora_display_font_size_normal">Обычный</string>
+    <string name="aurora_display_font_size_medium">Средний</string>
+    <string name="aurora_display_font_size_large">Большой</string>
+    <string name="aurora_display_button_light">Подсветка</string>
+    <string name="aurora_language_settings">Язык и ввод</string>
+    <string name="aurora_language_title">Язык системы</string>
+    <string name="aurora_language_category_title">Язык</string>
+    <string name="aurora_language_picker_title">Выбирать язык системы</string>
+    <string name="aurora_inputmethod_picker_title">Выбирать ввод по умолчанию</string>
+    <string name="aurora_wireless_settings_title">Расширенные параметры подключения</string>
+    <string name="aurora_location_settings_title">Службы местоположения</string>
+	<string name="aurora_sim_settings_title">Приложения на SIM карте</string>
+    <string name="aurora_application_settings_title">Управление приложениями</string>
+    <string name="aurora_battery_settings_title">Управление питанием</string>
+    <string name="aurora_account_settings_title">Аккаунт</string>
+    <string name="aurora_add_account_title">Добавить аккаунт</string>
+    <string name="aurora_tether_settings_title">Разделение сети</string>
+    <string name="aurora_usb_tether_text">Разделение через USB</string>
+    <string name="aurora_bluetooth_tether_text">Разделение через bluetooth</string>
+    <string name="aurora_wifi_tether_text">Портативные точки доступа WLAN</string>
+    <string name="aurora_wifi_tether_configure_ap">Настроить точку доступа WLAN</string>
+<!-- Aurora <likai> add end -->
+<!-- Aurora <likai> <2013-10-31> com.android.internal.R.string begin -->
+<string name="aurora_report">Доклад</string>
+    <string name="aurora_megabyteShort">MB</string>
+    <string name="aurora_gigabyteShort">GB</string>
+    <string name="aurora_wifi_tether_configure_ssid_default" translatable="false">AndroidAP</string>
+    <string name="clearDefaultHintMsg">Очистить настройки по умолчанию в “настройки системы ” &gt; “приложение” &gt; “загруженные”.</string>
+    <string name="bugreport_title">Take bug report</string>
+    <string name="bugreport_message">Это собирает информацию о состоянии устройства, и отправляет в форме электропочты. Формирование доклад ошибки и отправление занимает несколько времени, подождите с терпением.</string>
+    <string name="ringtone_silent">Нет</string>
+    <string name="ringtone_unknown">Неизвестная мелодия</string>
+    <string name="ssl_certificate">Сертификация безопасности</string>
+    <string name="fast_scroll_alphabet"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+<!-- Aurora <likai> <2013-10-31> com.android.internal.R.string end -->
+<string name="wifi_proxy_settings_none" >Нет</string>
+    <string name="wifi_proxy_settings_manual" >Ручной</string>
+    <string name="wifi_ip_settings_dhcp" >DHCP</string>
+    <string name="wifi_ip_settings_static" >Статика</string>
+    <string name="wifi_info_modify" >Отменить</string>
+    <string name="wifi_info_modify_message" >Отменить изменные？</string>
+    <string name="ignore_wifi_ap" >Игнорировать данную сеть</string>
+    <string name="accessibility_twice_click_screen_awake_prerefence_title" >Дважды щелкните на экране для пробуждения</string>
+    <string name="accessibility_screen_pick_take_prerefence_title" >Быстрые откровенные снимки</string>
+    <string name="accessibility_screen_music_control_prerefence_title" >Управление музыкой при спящем режиме</string>
+    <string name="accessibility_screen_somatosensory_smart_pause" >Разумная остановка самотоменсорным чувством</string>
+    <string name="accessibility_screen_three_fingers_screenshots" >Сделать снимок экрана тремя пальцами</string>
+    <string name="accessibility_glove_title">Режим перчатки</string>
+    <string name="screen_pick_take_summary" >При блокировке экрана, рисовать С-форме для запуска откровенных снимок</string>
+    <string name="screen_music_control_summary" >При блокировке экрана, вдвиньте налево и направо для переключения музык, и рисовать кольцо для остановки/начала музык</string>
+    <string name="set_bootanimation_success">Завершение настройки изображения включения </string>
+    <string name="set_bootanimation_first">Настроите изображение включения</string> 
+    <string name="photograph_bootanimation">Снимать</string>
+    <string name="album_bootanimation">Альбом</string>
+    <string name="share_bootanimation">Разделение</string>
+    <string name="scan_bootanimation">Превью</string>   
+    <string name="change_bootanimation">Замена</string>
+    <string name="set_bootanimation">Сразу настроить</string> 
+    <string name="reset_bootanimation">Переустановка</string> 
+    <string name="bootanimation_settings">Изображение включения</string>
+    <string name="bootanimation_reset">Переустановлено изображение включения</string>
+    <string name="set_bootanimation_settings">Редактировать изображение</string>  
+    <string name="input_exceed_limit" >Число слов превышает предела!</string>
+    <string name="input_type_limit" >Пароль содержит только цифры и буквы!</string>
+<!--  Aurora liugj 2013-10-22 modified for aurora's new feature start -->
+<string name="bluetooth_open_scan" >&quot;Отображать&quot;</string>
+    <string name="bluetooth_turned_on" >&quot;Включено&quot;</string>
+    <string name="bluetooth_paired" >&quot;Спаренные&quot;</string>
+    <string name="bluetooth_name_save" >&quot;Сохранить&quot;</string>
+    <string name="bluetooth_title_device_name" >&quot;Название моего устройства&quot;</string>
+    <string name="bluetooth_device_name_not_empty" >&quot;Название устройства не должен быть пустым&quot;</string>
+    <string name="bluetooth_device_name_not_space" >&quot;Название устройства не должен быть пробелом&quot;</string>
+    <string name="bluetooth_title_unpair" >&quot;Отменить спаривание bluetooth&quot;</string>
+    <string name="bluetooth_unpair_dialog_text">&quot;Отменить спаривание bluetooth  с “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”？&quot;</string>
+    <string name="bluetooth_unpair_toast_ok">&quot;Отменено спаривание bluetooth  с “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”&quot;</string>
+    <string name="bluetooth_unpair_toast_fail">&quot;Неудачно отменить спаривание bluetooth  с “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”&quot;</string>
+<!--  Aurora liugj 2013-10-22 modified for aurora's new feature end -->
+<string name="internal_storage_format">&quot;Очистить внутреннюю память&quot;</string>
+    <string name="internal_storage_format_summary">&quot;Очистить все данные на внутреннем накопителе&quot;</string>
+
+
+    <string name="apn_add">Добавить точку подключения</string>
+    <string name="apn_add_message">&quot;Отменить добавление точки подключения？&quot;</string>
+    <string name="apn_edit_message">&quot;Отменить изменение добавление точки подключения？&quot;</string>
+    <string name="remove_apn_label">Удалить точки подключения</string>
+    <string name="apn_ok">ОК</string>
+    <string name="apn_cancel">Отмена</string>
+
+
+    <string name="master_clear_confirm">&quot;Возвращения к заводским настройкам, невозможно отменить, подтвердите! &quot;</string>
+
+
+    <string name="aurora_internal_storage">&quot;Внутренняя память&quot;</string>
+    <string name="testing_log_onoff">&quot;Дневник&quot;</string>
+    <string name="battery_usage_hint">Аккумулятор используется</string>
+
+
+
+    <string name="factory_settings_title">&quot;Заводские настройки Самсунг&quot;</string>
+    <string name="smart_screen_settings_title">&quot;Интеллигентный экран&quot;</string>
+    <string name="smart_screen_settings_summary">&quot;Использовать распознавание лица&quot;</string>
+    <string name="screen_mode_settings_title">&quot;Режим экрана&quot;</string>
+    <string name="screen_mode_settings_summary">&quot;Выбрать режим экрана&quot;</string>
+    <string name="power_save_mode_settings_title">&quot;Энергосберегающий режим&quot;</string>
+
+
+    
+    <string name="select_save_data_title">&quot;Выбрать удаленные данные&quot;</string>
+    <string name="delete_app_title">&quot;Удалить приложения&quot;</string>
+    <string name="delete_app_summary">&quot;Удалить все установленные приложения.&quot;</string>
+    <string name="format_sdcard_title">&quot;Очистить внутренний накопитель&quot;</string>
+    <string name="start_factory_alterdlg_summary_none">&quot;Удалить данные пользователя？ Внимание, невозможно отменить  эту операцию после утверждения!&quot;</string>
+    <string name="start_factory_alterdlg_summary_delapp">&quot;Очистить данные  пользователя, и удалить все приложения？ Внимание, невозможно отменить  эту операцию после утверждения!&quot;</string>
+    <string name="start_factory_alterdlg_summary_sdcard">&quot;Очистить данные  пользователя, и удалить накопительную память? Внимание, невозможно отменить  эту операцию после утверждения!&quot;</string>
+    <string name="start_factory_alterdlg_summary_delappandsdcard">&quot;Очистить все данные в телефоне？ Внимание, невозможно отменить  эту операцию после утверждения!&quot;</string>
+    <string name="format_sdcard_summary">&quot;Очистить все данные на SD-карте, например музыка и изображения.&quot;</string>
+<!-- qy <b>"内存设备"</b>-->
+<string name="factory_defalut_tip" >&quot;Эта операция удалит все данные на вашем внутреннем накопителе, включая：&quot;</string>
+    <string name="factory_defalut_tip_2" >&quot;Выбрать &quot;удалить данные пользователя медиа&quot; и удалить изображения, музыка, медиа и другие данные медиа, включая：&quot;</string>
+    <string name="factory_defalut_tip_account"><li>&quot;Ваш аккаунт Google&quot;</li> </string>
+    <string name="factory_defalut_system_applay_tip"><li>&quot;Система, данные приложения, настройки&quot;</li></string>
+    <string name="factory_defalut_download_tip"><li>&quot;Установленные приложения&quot;</li></string>
+    <string name="clear_multi_user_data_tip">&quot;Удалить данные пользователя медиа&quot;</string>
+    <string name="factory_defalut_music_tip"><li>&quot;Музыка&quot;</li></string>
+    <string name="factory_defalut_photo_tip"><li>&quot;Изображения&quot;</li></string>
+    <string name="factory_defalut_vedio_tip"><li>&quot;Видео&quot;</li></string>    
+    <string name="factory_defalut_others_tip"><li>&quot;Другие данные пользователя медиа&quot;</li></string>
+    <string name="factory_defalut_others_use_tip"><li>&quot;Вводные другие данные  во время использования телефона&quot;</li></string>
+    
+    <string name="start_factory_defalut_title">&quot;Восстановить&quot;</string>
+    <string name="start_factory_alterdlg_title">&quot;Сброс？&quot;</string>
+    <string name="start_factory_alterdlg_summary">Удалить все личные информации  и загруженные приложения？ Внимание, невозможно отменить  эту операцию после утверждения!&quot;</string>
+
+
+    <string name="total_size">&quot;Всего&quot;</string>
+    <string name="avail_size">&quot;Итог&quot;</string>
+    
+    <string name="lock_screen_notifications_title">Уведомление блокировки экрана</string>
+    <string name="lock_screen_notifications_summary">На экране  показать пропущенные вызовы и сообщения</string>
+<!-- Aurora <zhang_xin> <2013-12-10> add for choose password begin -->
+<string name="unlock_set_unlock_mode_digit">&quot;Упрощённый пароль&quot;</string>
+    <string name="unlock_set_unlock_digit_title">&quot;Упрощённый пароль&quot;</string>
+    <string name="unlock_set_unlock_digit_summary">&quot;Введите 4 цифры для разблокировки&quot;</string>
+    <string name="lockpassword_choose_your_digit_header">&quot;Введите пароль&quot;</string>
+    <string name="lockpassword_confirm_your_digit_header">&quot;Повторно введите пароль&quot;</string>
+    <string name="lockpassword_choose_your_digit_title">&quot;Выбрать выш упрощённый пароль&quot;</string>
+    <string name="lockpassword_confirm_digit_title">&quot;Подтвердить выш упрощённый пароль&quot;</string>
+    <string name="lockpassword_confirm_digit_header">&quot;Введите старый пароль&quot;</string>
+    <string name="lockpassword_digit_recently_used">&quot;Управляющий устройства не разрешён использовать упрощённый пароль, использованный в последнее время&quot;</string>
+    <string name="lockscreen_access_pattern_start">&quot;Начать начертить график&quot;</string>
+    <string name="lockscreen_access_pattern_cleared">&quot;График очищен&quot;</string>
+    <string name="lockscreen_access_pattern_cell_added">&quot;Уже добавлена ячейка&quot;</string>
+    <string name="lockscreen_access_pattern_detected">&quot;Закончено рисование графика&quot;</string>
+    <string name="lockpassword_again_confirm_passwords_dont_match">&quot;Пароли не совпадают&quot;</string>
+<!-- Aurora <zhang_xin> <2013-12-10> add for choose password end -->
+<!-- qy begin-->
+<string name="format_title">&quot;Очистить&quot;</string>
+    <string name="format_message">&quot;Чистка внутренней памяти будет очищать все файлы, операцию невозможно отменить, продолжать？&quot;</string>
+    <string name="clear_sd_card_message">&quot;Будет очищать все файлы, операцию невозможно отменить, продолжать?&quot;</string>
+    <string name="format_cancel">&quot;Отмена&quot;</string>
+    <string name="format_continue">Продолжить</string>
+    <string name="format_ok">Очистить</string>
+    <string name="clear_ok">Удалить </string>
+    <string name="clear_complete">Выполнять удаление</string>
+    <string name="format_confirm_message">&quot;Повторно подтвердите очистку, невозможно остановить после начала.&quot;</string>
+    <string name="clear_sd_card_confirm_message">&quot;Повторно подтвердите удаление, невозможно остановить после начала.&quot;</string>
+    <string name = "aurora_no_add_account">Нет аккаунта, который может добавить</string>
+    <string name = "font_bold_pref_title">Полужирный шрифт</string>
+    <string name = "font_bold_message">Нужно перезапустить систему после регулирования  полужирного шрифта, перезапустить？</string>
+    <string name = "ok_font_bold_bt">Ок</string>
+    <string name = "cancel_font_bold_bt">Отмена</string>
+    <string name = "font_bold_dlg_title">Загрузка…</string>
+    <string name = "font_bold_dlg_msg">Подождите…</string>
+    <string name = "start_serivce_pref_title">&quot;Запуск службы&quot;</string>
+
+
+    <string name = "enable_com">Регулирование порта COM</string>
+    <string name = "enable_com_summary">Запуск регулирования порта COM после подключения USB </string>
+    <string name = "usb_adb">Отладка по USB</string>   
+
+    <string name = "virtual_key_setting_pref_title">&quot;Настройки виртуальной клавиатуры&quot;</string>
+    <string name = "virtual_key_setting_mode_left_pref_title">&quot;Клавиша возврата налево&quot;</string>
+    <string name = "virtual_key_setting_mode_left_pref_summary">&quot;Клавиша возврата на левой стороне клавиши Home, на правой стороне Меню&quot;</string>
+    <string name = "virtual_key_setting_mode_right_pref_title">&quot;Клавиша возврата направо&quot;</string>
+    <string name = "virtual_key_setting_mode_right_pref_summary">&quot;Клавиша возврата на левой стороне Меню, на правой стороне клавиши Home&quot;</string>
+<!-- qy end-->
+<!--Aurora <gary.gou> <2014-05-09>add for third application NotifierPro (bug4568)-->
+<string name="manage_notification_access" >&quot;Право доступа чтения и уведомления&quot;</string>
+<!--Aurora <gary.gou> <2014-05-09>add for third application NotifierPro (bug 456)-->
+<!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. start -->
+<string name="aurora_settings_sim_card_management">Управление SIM-картой</string>
+    <string name="sim01_lock_settings_category">&quot;Настроить блокировки SIM- карты 1&quot;</string>
+    <string name="sim02_lock_settings_category">&quot;Настроить блокировки SIM- карты 2 &quot;</string>
+    <string name="sim01_lock_settings_title">&quot;Настройки блокировки SIM- карты 1&quot;</string>
+    <string name="sim02_lock_settings_title">&quot;Настройки блокировки SIM- карты 2 &quot;</string>
+    <string name="aurora_sim_01_settings_title">Приложения SIM- карты 1</string>
+    <string name="aurora_sim_02_settings_title">Приложения SIM- карты 2</string>
+<!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. end -->
+<!-- add by steve.tang 2014-06-09 add for art mode. start -->
+<string name="enable_art_invalid">Режим ART</string>
+    <string name="select_runtime_warning_message_invalid">&quot;Перезапустить и превратить операционную среду с “<xliff:g id="OLD">%1$s</xliff:g>” в “<xliff:g id="NEW">%2$s</xliff:g>”？&quot;</string>
+<!-- add by steve.tang 2014-06-09 add for art mode. start -->
+<!-- add by hanpingjiang 2014-07-01 add for volume -->
+<string name="otg_progress_unmounting" >&quot;Удаление устройства хранения OTG...&quot;</string>
+    <string name="sd_progress_unmounting" >&quot;Удаление SD-карты…&quot;</string>
+    <string name="in_progress_unmounting" >&quot;Удаление карты внутреннего накопителя…&quot;</string>
+    <string name="progress_nomediapresent" >No removable media present</string>
+    <string name="otg_progress_erasing" >&quot;Очистка данных устройства хранения OTG… &quot;</string>
+    <string name="sd_progress_erasing" >&quot;Очистка данных SD- карты…&quot;</string>
+    <string name="in_progress_erasing" >&quot;Очистка данных внутренней памяти…&quot;</string>
+    <string name="media_bad_removal" >&quot;Удалено устройство перед очисткой.&quot;</string>
+    <string name="otg_media_checking" >&quot;Система проверяет устройство хранения OTG.&quot;</string>
+    <string name="sd_media_checking" >&quot;Сейчас проверяет SD-карту.&quot;</string>
+    <string name="in_media_checking" >&quot;Сейчас проверяет внутренний накопитель.&quot;</string>
+    <string name="media_removed" >&quot;Удалено устройство.&quot;</string>
+    <string name="otg_media_shared" >&quot;Некий компьютер использует внутренний накопитель.&quot;</string>
+    <string name="sd_media_shared" >&quot;Сейчас компьютер использует SD-карту.&quot;</string>
+    <string name="in_media_shared" >&quot;Сейчас компьютер использует внутренний накопитель.&quot;</string>
+    <string name="media_unknown_state" >&quot;Внешнее медиа в неизвестном состоянии.&quot;</string>
+    <string name="format_error" >&quot;Невозможно очистить.&quot;</string>
+<!-- add by hanpingjiang 2014-07-17 add for DefaultSMSDialog -->
+<string name="sms_application_title" translatable="true">Приложение сообщения по умолчанию</string>
+    <string name="sms_change_default_dialog_title" translatable="true">Изменить приложение сообщения по умолчанию？</string>
+    <string name="sms_change_default_dialog_text" translatable="true">В заме“ <xliff:g id="current_app">%s</xliff:g> ”, использовать “ <xliff:g id="new_app">%s</xliff:g> ”как приложение сообщения по умолчанию？</string>
+    <string name="sms_change_default_no_previous_dialog_text" translatable="true">Использовать <xliff:g id="new_app">%s</xliff:g>как приложение сообщения по умолчанию？</string>
+
+    <string name="art_title" >&quot;Переключить режимы работы&quot;</string>
+<!-- add by hanpingjiang 2014-08-24 add for Storage -->
+<string name="clear_sd_card">Очистить SD карту</string>  
+    <string name="otg_card_title">OTG  память</string> 
+    <string name="clear_otg_card">Очистить OTG память</string>
+<!--add by gary.gou-->
+<string name="usage_type_data_wifi_send" msgid="7178327382353096029">&quot;Отправленные данные сети WLAN&quot;</string>
+    <string name="usage_type_data_wifi_recv" msgid="7822328607564241372">&quot;Полученные данные сети WLAN &quot;</string>
+    <string name="aurora_factory_settings_title">&quot;Заводская функция&quot;</string>
+    <string name="aurora_oneplus_factory_settings_title">&quot;1+заводская функция&quot;</string>
+    <string name="aurora_find7_factory_settings_title">&quot; Find7 заводская функция&quot;</string>
+    <string name="smart_apperceive_control_settings">Жесты и самотоменсорное чувство</string>
+    
+    <string name="breathing_LED_settings_title">дыхательная лампа </string>
+    <string name="breathing_LED_settings_inform_title">Уведомление</string>
+    <string name="breathing_LED_settings_inform_summary">После выключения экрана, когда у все пропущенные вызовы, сообщения или уведомления , дыхательная лампа горит</string>
+    <string name="breathing_LED_settings_low_power_title">Низкий заряд</string>
+    <string name="breathing_LED_settings_low_power_summary">После выключения экрана, когда заряд менее 10%,дыхательная лампа горит</string>
+    <string name="breathing_LED_settings_charge_title">Зарядить</string>
+    <string name="breathing_LED_settings_charge_summary">После выключения экрана, при зарядке дыхательная лампа горит</string>
+
+    <string name="aurora_light_calibration">&quot;Выверка света&quot;</string>
+    <string name="aurora_calibration_title">&quot;Выверка&quot;</string>
+    <string name="aurora_calibration_summary">&quot;Не выверить на улице(под сильным светом)&quot;</string>
+    <string name="aurora_calibration_dialog_tip">&quot;Выверка компонентов света&quot;</string>
+    <string name="aurora_calibration_failed">&quot;Неудачно выверить, повторно выверить?&quot;</string>
+    <string name="unlock_set_unlock_off_title_summary">Нажать Power кнопку для прямой разблокировки</string>
+<!-- add begin by aurora.jiangmx -->
+<string name="virtual_keyboard_switch_title">Функция скрытия клавиши</string>
+    <string name="virtual_keyboard_switch_summary">Вдвинуть виртуальную клавишу вниз для скрытия ее, и вдвинуть вверх с дна экрана для вывода её</string>
+    
+    <string name="manage_notification_access_summary_zero" >&quot;Приложениям невозможно читать уведомление&quot;</string>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="one" >&quot;%d  приложений можно читать уведомление&quot;</item>
+        <item quantity="other" >&quot;%d  приложений можно читать уведомление&quot;</item>
+    </plurals>
+    
+    <string name="notification_listener_security_warning_summary">
+    &quot;“<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g> 
+    ” будет читать уведомления установленных приложений или системы(может включать имя контактов, сообщения и т.д.), и возможно закрыть эти уведомления или коснись кнопки операции.&quot;
+    </string>
+    
+    <string name="no_notification_listeners" >&quot;Не установлен перехватчик уведомления.&quot;</string>
+    
+    <string name="enable_art">ART модель</string>
+    <string name="select_runtime_warning_message">Будет перезапускать телефон и переключить в ART модель, продолжить?</string>
+    <string name="leave_art_runtime_warning_message">Будет перезапускать телефон и переключить в ART модель, продолжить?</string>
+    
+    <string name="personal_space">Личный центр</string>
+    <string name="login_status_yes">Вошли</string>
+    <string name="login_status_no">Не войти</string>
+<!-- add end -->
+
+    <string name="theme_preview">Предварительный просмотр </string>
+    <string name="kitty_str">Hello Kitty</string>
+    <string name="her_str">IUNI для неё</string>
+    <string name="back">Выйти </string>
+    <string name="theme_dialog_title">Сменить тему </string>
+    <string name="theme_dialog_msg">Новая тема будет применена после перезагрузки, перезагрузить мобильный телефон немедленно? </string>
+    <string name="theme_dialog_negative">Пока не перезагружать </string>
+    <string name="theme_dialog_positive">Перезагрузить немедленно </string>
+    <!-- lsscreen settings   penggangding-->
+    <!-- add begin by aurora penggangding -->
+    <string name="action_settings">Настройки </string>
+    <string name="check_all">Выбрать все </string>
+    <string name="no_user_app">Нет личных приложений</string> 
+    <string name="necessary_app">Необходимые приложения </string>
+    <string name="phone_memory">Телефон </string>
+    <string name="sd_card">SD-карт </string>
+    <string name="init">Инициализация </string>
+    <string name="please_wait_init">Идёт инициализация, подождите </string>
+    <string name="no_set_item">Нет заданных пунктов </string> 
+    <string name="add_privacy_app">Добавить приложения экрана блокировки </string>
+    <string name="privacy_app">Приложения экрана блокировки </string>
+    <string name="can_see_only_in_privacy">Приложения экрана блокировки можно просмотреть только при заблокированном экране</string>
+    <string name="sure_num">Подтвердить (%1$s)</string>
+    <string name="cancel_privacy">Удалить отображение приложений экрана блокировки </string>
+    <string name="choice_sort_way">Выбрать способ сортировки </string>
+    <string name="cancel_privacy_app">Удалить скрытые приложения </string>
+    <string name="sure_no_hint_choice_app">Подтвердить не скрыть выбранные приложения?</string>
+    <string name="uninstall_choice_app_at_same_time"></string>
+    <string name="sure">Ок</string>
+    <string name="during_cancel_privacy_app">Отменяются скрытые приложения, пожалуйста, подождите…</string>
+    <string name="un_choice">Не выбрано </string>
+    <string name="no_longer_hint">Не напоминать </string>
+    <string name="system">Система </string>
+    <!-- add end by aurora penggangding -->
+
+</resources>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_and_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/aurora_group_entrance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:background="@com.aurora:drawable/aurora_list_selector_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/aurora_enter_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin"
+            android:background="@drawable/aurora_group_icon" />
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/aurora_enter_group"
+            android:gravity="center_vertical"
+            android:text="@string/aurora_group_title"
+            android:textColor="@com.aurora:color/aurora_list_textcolor"
+            android:textSize="@com.aurora:dimen/aurora_list_singleline_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_list_item_driver_hight"
+        android:background="@drawable/h_diver" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorakey="preference_screen_key" >
+
+    <aurora.preference.AuroraPreferenceCategory 
+        aurora:aurorakey="general_vibration"
+        aurora:auroratitle="@string/routine_vibrate_title" >
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="routine_vibration"
+            aurora:aurorasummary="@string/Phone_vibrate_summary"
+            aurora:auroratitle="@string/routine_vibrate_title" />
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="vibrate_profile"
+            aurora:aurorasummary="@string/vibrate_basecall"
+            aurora:auroratitle="@string/vibrate_profile" />
+        
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="ring_vibration"
+            aurora:auroratitle="@string/ring_vibrate_title" />
+                
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="notification_vibration"
+            aurora:aurorasummary="@string/notification_vibrate_summary"
+            aurora:auroratitle="@string/notification_vibrate_title" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="specially_vibration"
+        aurora:auroratitle="@string/haptic_vibration_title" >
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="haptic_feedback"
+            aurora:auroratitle="@string/haptic_feedback_title" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="dialpad_vibration"
+            aurora:auroratitle="@string/dialpad_vibration_title" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="lockscreen_vibration"
+            aurora:auroratitle="@string/lockscreen_vibration_title" />
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="selectapp_vibration"
+            aurora:auroratitle="@string/selectapp_vibration_title" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

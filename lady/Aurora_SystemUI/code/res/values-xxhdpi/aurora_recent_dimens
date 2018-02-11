@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aurora_normal_item_label_height">17dp</dimen>
+</resources>

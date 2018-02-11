@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="privacy_protection_category"
+        aurora:auroratitle="@string/secrets_keep_title"
+        aurora:aurorapersistent="false">
+
+        <aurora.preference.AuroraCheckBoxPreference aurora:aurorakey="guest_mode"
+                aurora:auroratitle="@string/guest_mode"
+                aurora:aurorasummary="@string/guest_mode_summary"
+                aurora:aurorapersistent="false"/>
+        <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 begin -->
+        <aurora.preference.AuroraCheckBoxPreference aurora:aurorakey="password_enable"
+            aurora:auroratitle="@string/need_password"
+            aurora:aurorasummary="@string/need_password_summary"
+            aurora:aurorapersistent="false"/>
+        <aurora.preference.AuroraPreference aurora:aurorakey="alter_password"
+            aurora:auroratitle="@string/alter_password"
+            />
+        <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 end -->
+        
+        <!-- Gionee <qiuxd> <2013-04-26> add for CR00809610 begin -->
+        <!-- 
+        <aurora.preference.AuroraPreference aurora:aurorakey="hide_app"
+            aurora:auroratitle="@string/hide_app"
+            aurora:aurorasummary="@string/hide_app_summry"
+            aurora:aurorawidgetLayout="@layout/gn_pref_image"/>
+        -->
+        <!-- Gionee <qiuxd> <2013-04-26> add for CR00809610 end -->
+    </aurora.preference.AuroraPreferenceCategory>
+    
+</aurora.preference.AuroraPreferenceScreen>

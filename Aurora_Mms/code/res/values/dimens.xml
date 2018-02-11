@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc.
+All Rights Reserved. -->
+<resources>
+    <dimen name="message_item_text_padding_left_right">12dip</dimen>
+    <dimen name="message_item_text_padding_top">5dip</dimen>
+
+    <dimen name="avatar_width_height">54dip</dimen>
+
+    <dimen name="input_text_height">48dip</dimen>
+    <dimen name="input_text_height_adjusted">8dip</dimen>
+    
+    <!--gionee gaoj 2013-3-11 added for CR00782858 start -->
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_bottom">6dip</dimen>
+    <!--gionee gaoj 2013-3-11 added for CR00782858 end -->
+    <dimen name="aurora_send_huge_leftpadding">10dip</dimen>
+    <dimen name="aurora_send_huge_rightpadding">4.25dip</dimen>
+    <dimen name="aurora_send_small_leftpadding">13dip</dimen>
+    <dimen name="aurora_send_small_rightpadding">7dip</dimen>
+    <dimen name="aurora_message_content_margin_top">13dip</dimen>
+    <dimen name="aurora_message_content_margin_bottom">13.6dip</dimen>
+    <!-- Aurora xuyong 2015-01-31 added for aurora's new feature start -->
+    <dimen name="aurora_ipop_bt_width">62dip</dimen>
+    <!-- Aurora xuyong 2015-01-31 added for aurora's new feature end -->
+    <dimen name="aurora_cl_top_padding">6.5dip</dimen>
+    <dimen name="aurora_cl_bottom_padding">10.1dip</dimen>
+    <dimen name="aurora_cl_batch_bottom_padding">26.1dip</dimen>
+    <dimen name="aurora_msg_left_margin">9dip</dimen>
+    <dimen name="aurora_attach_item_height">186dip</dimen>
+    <dimen name="aurora_attach_item_width">150dip</dimen>
+    <!-- Aurora xuyong 2015-12-11 added for N1 CTS test start -->
+    <dimen name="sys_auth_dlg_content_padding_bottom">15dp</dimen>
+    <dimen name="sys_auth_dlg_content_padding_top">18dp</dimen>
+    <dimen name="sys_auth_dlg_content_msg_linespacingextra">5dp</dimen>
+    <dimen name="sys_auth_dlg_checkbox_margin_top">15dp</dimen>
+    <!-- Aurora xuyong 2015-12-11 added for N1 CTS test end -->
+</resources>

@@ -1,0 +1,353 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="myTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+
+    <style name="icon_pic" parent="LeftGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_picture_light</item>
+    </style>
+
+    <style name="icon_video" parent="RightGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_video_light</item>
+    </style>
+
+    <style name="icon_doc" parent="LeftGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_document_light</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="icon_apk" parent="RightGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_apk_light</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="icon_music" parent="LeftGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_music_light</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="icon_download" parent="RightGnCategoryStyle">
+        <item name="android:background">@drawable/category_icon_download_light</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="LeftGnCategoryStyle">
+        <item name="android:layout_width">163.3dp</item>
+        <item name="android:layout_height">96.6dp</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="CategoryButtonIconStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="LightCategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_text_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">27dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+    </style>
+
+    <style name="NumberLightCategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_text_color</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="RightGnCategoryStyle">
+        <item name="android:layout_width">163.3dp</item>
+        <item name="android:layout_height">96.6dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <!--
+    <style name="GnCategoryStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    -->
+
+
+    <!--
+    <style name="StorageLightCategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/storage_category_text_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">7dp</item>
+    </style>
+    -->
+
+
+    <!--
+    <style name="LightInformationTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/storage_info_text_color</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    -->
+    <!-- operation stytle start -->
+    <style name="OperationButtonStytle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="OperationMoveButtonStytle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@drawable/remote_button_bg</item>
+    </style>
+
+    <style name="BottomButtonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@com.aurora:dimen/aurora_action_bottom_bar_height</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BottomButtonBar_operation" parent="BottomButtonBar">
+        <item name="android:background">@com.aurora:drawable/aurora_bottombarback</item>
+    </style>
+    <!-- operation stytle end -->
+
+    <style name="aurora_file_name_select">
+        <item name="android:maxWidth">@dimen/aurora_file_manager_title_max_size</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="aurora_file_other_select">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#7b7b7b</item>
+    </style>
+
+    <style name="aurora_file_name_normal">
+        <item name="android:maxWidth">@dimen/aurora_file_manager_title_max_size</item>
+        <item name="android:textColor">@color/aurora_operation_more_title_change_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="aurora_file_other_normal">
+        <item name="android:textColor">@color/aurora_file_item_change_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="aurora_file_detail_select">
+        <item name="android:textColor">@color/aurora_file_item_change_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="aurora_file_detail_normal">
+        <item name="android:textColor">@color/aurora_file_item_detail_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AuroraStorageDetailTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/aurora_storage_title_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AuroraStorageDetailLayoutStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/aurora_storage_title_layout_margin_top</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AuroraStorageDetailLayoutStyle_s" parent="AuroraStorageDetailLayoutStyle">
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="AuroraStorageDetailLayoutStyleSingle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="AuroraStorageCenterTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/aurora_storage_text_color</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="AuroraStorageCenterTextStyle_free" parent="AuroraStorageCenterTextStyle"></style>
+
+    <style name="AuroraStorageCenterTextStyle_sd" parent="AuroraStorageCenterTextStyle"></style>
+
+    <style name="AuroraStorageDetailTextStyleSingle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/aurora_storage_text_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AuroraStorageDetailTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/aurora_storage_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="BottomButton">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="BottomButton.Left">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="BottomButton.Right">
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="aurora_file_name_select.rlayout">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="singlepie_rele">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="strong_free">
+        <item name="android:layout_marginBottom">13dp</item>
+    </style>
+
+    <style name="strong_imag_phone">
+        <item name="android:src">@drawable/phone_s</item>
+    </style>
+
+    <style name="strong_imag_sd">
+        <item name="android:src">@drawable/sd_s</item>
+    </style>
+
+    <style name="storageDetail">
+        <item name="android:layout_marginTop">@dimen/storagedetail_linear</item>
+        <item name="android:layout_marginLeft">28dp</item>
+    </style>
+
+    <style name="imag_free">
+        <item name="android:background">@drawable/aurora_detail_free</item>
+    </style>
+
+    <!-- 储存详情图标 begin -->
+    <style name="aurora_detail_pic">
+        <item name="android:background">@drawable/aurora_detail_pic</item>
+    </style>
+
+    <style name="aurora_detail_video">
+        <item name="android:background">@drawable/aurora_detail_video</item>
+    </style>
+
+    <style name="aurora_detail_music">
+        <item name="android:background">@drawable/aurora_detail_music</item>
+    </style>
+
+    <style name="aurora_detail_doc">
+        <item name="android:background">@drawable/aurora_detail_doc</item>
+    </style>
+
+    <style name="aurora_detail_apk">
+        <item name="android:background">@drawable/aurora_detail_apk</item>
+    </style>
+
+    <style name="aurora_detail_other">
+        <item name="android:background">@drawable/aurora_detail_other</item>
+    </style>
+    <!-- 储存详情图标 end -->
+
+    <style name="more_pic_select">
+        <item name="android:textColor">@com.aurora:color/aurora_action_bar_button_change_color</item>
+    </style>
+    <!-- <item name="android:textColor">@color/aurora_action_bar_title_color_1</item>  aurora_action_bar_button_change_color -->
+    <style name="more_pic_no_select">
+        <item name="android:textColor">#9e9e9e</item>
+    </style>
+
+    <!-- 操作style主要是换图标 begin -->
+    <!--
+    <style name="operation_copy">
+        <item name="android:background">@drawable/aurora_bottom_bar_copy</item>
+    </style>
+
+    <style name="operation_move">
+        <item name="android:icon">@drawable/aurora_bottom_bar_move</item>
+    </style>
+
+    <style name="operation_del">
+        <item name="android:src">@drawable/aurora_bottom_bar_delete</item>
+    </style>
+
+    <style name="operation_more">
+        <item name="android:icon">@drawable/aurora_bottom_bar_more</item>
+    </style>
+
+    <style name="operation_share">
+        <item name="android:icon">@drawable/aurora_bottom_bar_send</item>
+    </style>
+    -->
+
+    <style name="hs_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="hs_l">
+        <item name="android:layout_height">@dimen/list_top_navigation_scroll_pane</item>
+    </style>
+
+</resources>

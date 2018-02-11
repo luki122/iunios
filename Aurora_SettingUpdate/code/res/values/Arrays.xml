@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="round_time" translatable="false">
+        <item>7 天</item>
+        <item>14 天</item>
+        <item>30 天</item>
+        <item>90 天</item>
+    </string-array>
+    
+    <string-array name="round_time_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

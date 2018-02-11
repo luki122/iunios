@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-05-30 created for multisim feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_new_dail_sim1"
+        android:title="@string/aurora_dail_sim1f">
+    </item>
+    <item
+        android:id="@+id/aurora_new_dail_sim2"
+        android:title="@string/aurora_dail_sim2">
+    </item>
+    <item
+        android:id="@+id/aurora_new_create"
+        android:title="@string/aurora_created_contact">
+    </item>
+    <item
+        android:id="@+id/aurora_new_patch"
+        android:title="@string/aurora_add_to_contact">
+    </item>
+</menu>

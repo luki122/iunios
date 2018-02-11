@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:title="@string/factory_settings_title">
+        
+
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="smart_screen_settings"
+        aurora:auroratitle="@string/smart_screen_settings_title" />
+
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="screen_mode_settings"
+        aurora:auroratitle="@string/screen_mode_settings_title" />
+
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="power_save_mode_settings"
+        aurora:auroratitle="@string/power_save_mode_settings_title" />
+
+</aurora.preference.AuroraPreferenceScreen>

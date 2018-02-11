@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cityoptionviewheight" >
+
+    <views.OptionView
+        android:id="@+id/optionview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/refreshrela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="13dp"
+        android:alpha="0" >
+        
+        <ImageView
+            android:id="@+id/refreshimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refresh_animlist"
+            android:scaleType="center"
+            android:layout_centerVertical="true" />
+        
+        <TextView
+            android:id="@+id/refresh_text" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/refreshimage"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/dateandtimesize"
+            android:textColor="@android:color/white"
+            android:text="@string/refreshing"/>
+
+    </RelativeLayout>
+
+    <views.CityDateView
+        android:id="@+id/citydateview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

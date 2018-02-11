@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_upload_download_list_height"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:animateLayoutChanges="true">
+    
+    <!-- android:animateLayoutChanges="true" -->
+
+    <com.android.gallery3d.xcloudalbum.uploaddownload.MaskImageView android:id="@+id/thumbnail" 
+        		android:layout_width="33dp"
+        		android:layout_height="33dp"
+        		android:contentDescription="@null"
+        		android:layout_alignParentLeft="true"
+        		android:layout_centerVertical="true"
+        		android:scaleType="centerCrop"
+        		android:background="@drawable/upload_download_list_default">
+        
+    </com.android.gallery3d.xcloudalbum.uploaddownload.MaskImageView>
+    
+    <!-- 
+    <Button android:id="@+id/control_btn"
+        	android:layout_width="40dp"
+        	android:layout_height="30dp"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginRight="12dp"
+        	android:textSize="14sp"
+        	android:visibility="invisible"
+        	/>
+     -->
+     
+    <com.android.gallery3d.ui.AuroraRoundProgressBar
+                android:id="@+id/control_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+               	android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        		android:layout_marginRight="12dp"
+                android_custom:roundMargin="3dp"
+                android_custom:roundProgressColor="#039C73"
+                android_custom:roundWidth="1dp" 
+                android:visibility="invisible"
+                 	/>
+    
+    <LinearLayout android:id="@+id/progress_container"
+       			  android:layout_width="match_parent"
+    			  android:layout_height="match_parent"
+    			  android:orientation="vertical"
+    			  android:layout_toRightOf="@id/thumbnail"
+    			  android:layout_toLeftOf="@id/control_btn"
+    			  android:layout_centerVertical="true"
+    			  android:gravity="left|center"
+    			  android:layout_marginLeft="12dp"
+    			  android:layout_marginRight="12dp">
+        
+        <TextView android:id="@+id/file_name"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"
+            	  android:textSize="12sp"
+        		  android:textColor="@color/aurora_upload_download_file_name"/>
+        
+        <!-- android:secondaryProgress="10"  -->
+        <ProgressBar android:id="@+id/progress_bar"
+            		android:layout_width="match_parent"
+    			  	android:layout_height="2dp"
+    			  	style="?android:attr/progressBarStyleHorizontal"
+    			  	android:max="100"
+    			  	android:progress="0"
+    			  	android:indeterminate="false"
+    			  	android:indeterminateOnly="false"
+    			  	android:progressDrawable="@drawable/aurora_progress_bar_style"
+    			  	android:layout_marginTop="3dp"
+    			  	android:layout_marginBottom="2dp"
+    			  	android:visibility="invisible"
+    			  	/> <!-- android:progressDrawable="@drawable/aurora_progress_bar_style" -->
+        
+        <TextView android:id="@+id/progress_text"
+            	  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="left|center"
+        		  android:textSize="12sp"
+        		  android:textColor="@color/aurora_upload_download_progress_text"/>
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

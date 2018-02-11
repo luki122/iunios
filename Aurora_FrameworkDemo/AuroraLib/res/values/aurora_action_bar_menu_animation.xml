@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+<resources>     
+    <style name="ActionBarPopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/aurora_action_bar_menu_enter</item>  
+        <item name="android:windowExitAnimation">@anim/aurora_action_bar_menu_exit</item>   
+    </style>  
+</resources> 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_list_doubleline_height"
+    android:orientation="vertical" >
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="@dimen/aurora_list_view_left_margin"
+        android:layout_marginTop="13.6dp"
+        android:singleLine="true"
+        android:textColor="@com.aurora:color/aurora_list_textcolor"
+        android:textSize="@com.aurora:dimen/aurora_list_singleline_text_size" />
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aurora_list_view_left_margin"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:textColor="@com.aurora:color/aurora_list_subtext_explain_textcolor"
+        android:textSize="@com.aurora:dimen/aurora_list_subtext_text_size" />
+
+</LinearLayout>

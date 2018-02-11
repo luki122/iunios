@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Author: jialf
+    Description: added for CR00798010
+    Date:2013-04-16
+-->
+
+<!-- Note: padding might be controlled programatically -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <com.android.contacts.detail.ActionsViewContainer
+        android:id="@+id/actions_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"        
+        android:nextFocusRight="@+id/secondary_action_view_container"
+        android:minHeight="@dimen/detail_min_line_item_height">
+
+        <!-- Note: padding might be controlled programatically -->
+        <LinearLayout
+            android:id="@+id/primary_action_view"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dip"
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                
+                <com.android.contacts.widget.GnTextView
+                    android:id="@+id/type"
+                    style="@style/GnContactDetailItemType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/gn_contact_detail_list_item_max_type_width"
+                    android:paddingRight="7dip" />
+
+	            <com.android.contacts.widget.GnTextView
+	                android:id="@+id/data"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingRight="1dip" />
+            </LinearLayout>
+			
+            <TextView
+                android:id="@+id/gn_number_area"
+                style="@style/ContactDetailItemType"
+                android:paddingLeft="45dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />            
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </com.android.contacts.detail.ActionsViewContainer>
+    
+    <View
+        android:id="@+id/vertical_divider_vtcall"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gn_horizontal_divider_height"
+        android:background="?android:attr/dividerVertical" />
+    
+	<LinearLayout
+	    android:id="@+id/gn_actions_view_container"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/detail_min_line_item_height">
+        <!-- Note: padding might be controlled programatically -->
+        <FrameLayout
+            android:id="@+id/dial_action_view_container"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <LinearLayout
+                android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:gravity="center" >
+	            <ImageView
+	                android:id="@+id/dial_action_button"
+	                android:layout_width="32dip"
+	                android:layout_height="32dip"
+	                android:layout_gravity="center_vertical"
+	                android:duplicateParentState="false" />
+	            <com.android.contacts.widget.GnTextView
+                    android:text="@string/gn_dial_desciption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+	                android:singleLine="true"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingLeft="4dip"/> 
+            </LinearLayout>
+        </FrameLayout>
+        <View
+            android:id="@+id/vertical_divider"
+            android:layout_width="@dimen/gn_vertical_divider_width"
+            android:layout_height="match_parent"
+            android:background="?android:attr/dividerVertical" />
+
+        <!-- Note: padding might be controlled programatically -->
+        <FrameLayout
+            android:id="@+id/secondary_action_view_container"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <LinearLayout
+                android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:gravity="center"  >
+	            <ImageView
+	                android:id="@+id/secondary_action_button"
+	                android:layout_width="32dip"
+	                android:layout_height="32dip"
+	                android:layout_gravity="center_vertical"
+	                android:duplicateParentState="false" />
+	            <com.android.contacts.widget.GnTextView
+                    android:text="@string/gn_send_msg_desciption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+	                android:singleLine="true"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingLeft="4dip"/> 
+	        </LinearLayout>
+        </FrameLayout>
+        
+        <View
+            android:id="@+id/gn_vertical_divider"
+            android:layout_width="@dimen/gn_vertical_divider_width"
+            android:layout_height="match_parent"
+            android:background="?android:attr/dividerVertical" />
+        
+        <FrameLayout
+            android:id="@+id/vtcall_action_view_container"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <LinearLayout
+                android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:gravity="center"  >
+	            <ImageView
+	                android:id="@+id/vtcall_action_button"
+	                android:layout_width="32dip"
+	                android:layout_height="32dip"
+	                android:layout_gravity="center_vertical"
+	                android:duplicateParentState="false" />
+	            <com.android.contacts.widget.GnTextView
+                    android:text="@string/gn_video_dial_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+	                android:singleLine="true"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:paddingLeft="4dip"/> 
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+

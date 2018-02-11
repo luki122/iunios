@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="2dip">
+<!-- gionee wangyanyi 2011-11-10 modify for CR00423912 begin -->
+     
+    <RelativeLayout 
+        android:id="@+id/layout_usb"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zzzzz_gn_usb_view_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zzzzz_gn_usb_item_select_background">
+	<!--Gionee xiaolin 20121216 modify for CR00746871 start -->
+        <aurora.widget.AuroraSwitch android:id="@+id/check_usb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:layout_centerVertical="true"/>
+
+	<!--Gionee xiaolin 20121216 modify for CR00746871 end -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <TextView 
+                android:id="@+id/text_usb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dip"
+                android:layout_marginLeft="6dip"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/zzzzz_turn_on_usb_storage"/>
+            <TextView      
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_usb"
+                android:layout_marginLeft="6dip"
+                android:textSize="12sp"
+                android:paddingTop="5dip"
+                android:text="@string/zzzzz_usb_storage_content"/>      
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView android:id="@+id/divider"
+        android:layout_above="@id/layout_usb"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/zzzzz_gn_usb_divider"/>
+
+    <RelativeLayout 
+        android:id="@+id/layout_debug"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/zzzzz_gn_usb_view_height"
+        android:layout_above="@id/divider"
+        android:background="@drawable/zzzzz_gn_usb_item_select_background">
+	<!--Gionee xiaolin 20121216 modify for CR00746871 start -->
+        <aurora.widget.AuroraSwitch android:id="@+id/check_debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:layout_centerVertical="true"/>
+	<!--Gionee xiaolin 20121216 modify for CR00746871 end -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/check_debug"
+            android:layout_centerVertical="true">
+            <TextView android:id="@+id/text_debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:paddingTop="1dip"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/zzzzz_open_debug_mode"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_debug"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:layout_marginLeft="6dip"
+                android:textSize="12sp"
+                android:paddingTop="5dip"
+                android:text="@string/zzzzz_debug_mode_message"/>
+        </RelativeLayout> 
+    </RelativeLayout> 
+
+    <ImageView
+        android:id="@+id/diver_debug"
+        android:layout_above="@id/layout_debug"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/zzzzz_gn_usb_divider"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/diver_debug">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+        <ImageView android:id="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zzzzz_gn_usb_android" />
+        <TextView android:id="@+id/banner"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_below="@id/icon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dip"
+            android:text="@string/zzzzz_usb_storage_title" /> 
+        </RelativeLayout>
+    </RelativeLayout>
+<!-- gionee wangyanyi 2011-11-10 modify for CR00423912 end -->   
+</RelativeLayout>

@@ -1,0 +1,1 @@
+../Aurora_MMITest/Aurora_MMITest_U3.mk

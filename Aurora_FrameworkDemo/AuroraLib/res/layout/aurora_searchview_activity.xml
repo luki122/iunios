@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_activity_searchview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+    
+    <FrameLayout
+        android:id="@+id/aurora_activity_searchview_background"
+        android:paddingTop="49dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aurora_activity_search_bg"/>
+	
+    <LinearLayout android:id="@+id/aurora_activity_searchviewbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="false"
+        android:visibility="visible"
+        
+        android:gravity="center_vertical">
+
+        <aurora.lib.widget.AuroraSearchView
+            android:id="@+id/aurora_activity_searchviewwidget"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:background="#00000000" />
+        
+       <LinearLayout android:id="@+id/cancelbuttonlinear"
+		   android:layout_width="wrap_content"
+		   android:layout_height="match_parent"
+		   android:gravity="center_vertical">
+
+	       <Button
+	          android:id="@+id/aurora_activity_searchviewcancelbtn"
+	          android:layout_width="wrap_content"
+	          android:paddingLeft="3dp"
+	          android:paddingRight="3dp"
+	          android:maxLength="10"
+	          android:layout_height="28dp"
+	          android:layout_gravity="center_vertical"
+	          android:layout_marginRight="@dimen/aurora_title_padding_right"
+	          android:background="@drawable/aurora_search_button"
+	          android:gravity="center"
+	          android:singleLine="true"
+	          android:text="@string/aurora_activity_searchviewcancelbtnttext"
+	          android:textColor="@android:color/white"
+	          android:textSize="15sp" />
+    	</LinearLayout>
+
+	</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/colors.xml
+**
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <array name="navbar_search_targets">
+        <item>@null</item>
+        <item>@com.aurora:drawable/ic_action_assist_generic</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+
+    <array name="navbar_search_target_descriptions">
+        <item>@null</item>
+        <item>@com.aurora:string/description_target_search</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+
+    <array name="navbar_search_direction_descriptions">
+        <item>@null</item>
+        <item>@com.aurora:string/description_direction_up</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+ 
+    <!-- Aurora <Felix.Duan> <2014-9-3> <BEGIN> Reference app kill policy from auto-start   -->
+    <array name="aurora_blacklist">
+    <!-- Aurora <Felix.Duan> <2014-9-3> <END> Reference app kill policy from auto-start   -->
+        <item>音乐</item>
+        <item>视频</item>
+        <item>影音</item>
+        <item>FM</item>
+        <item>Radio</item>
+        <item>铃声</item>
+        <item>播放器</item>
+        <item>TV</item>
+        <item>KTV</item>
+        <item>Music</item>
+        <item>电影</item>
+        <item>Player</item>
+        <item>收音机</item>
+		<item>云播</item>
+		<item>听书</item>
+		
+		<item>YouTube</item>
+		<item>直播吧</item>
+		<item>天天动听</item>
+		<item>麦唱</item>
+		<item>看片神器</item>
+		<item>风云直播</item>
+		<item>迅雷看看</item>
+		<item>360影视大全</item>
+		<item>云图电视直播</item>
+		<item>优酷</item>
+		<item>直播吧</item>
+		<item>火花影视</item>
+		<item>天天点歌</item>
+		<item>千千静听</item>
+		<item>玩转彩铃</item>
+		<item>唱作魔方</item>
+		<item>爱吼K歌</item>
+		<item>音悦台</item>
+		<item>SoundHound</item>
+		<item>猜歌王</item>
+		<item>唱吧</item>
+		<item>咪咕爱唱</item>
+		<item>沃·音悦台</item>
+		<item>胎教盒子</item>
+		<item>Simple Tuner</item>
+		<item>ViPER4Android FX</item>
+		<item>云乐</item>
+		<item>K米</item>
+		<item>七色追新助手</item>
+		<item>快播</item>
+		<item>央视悦动</item>
+		<item>多屏看看</item>
+		<item>看片助手</item>
+		<item>鹏保宝</item>
+		<item>爱唱</item>
+		<item>土豆</item>
+		<item>美乐时光</item>
+		<item>爱唱K</item>
+		<item>天翼视讯</item>
+		<item> 故事口袋听听</item>
+		<item>快手看片</item>
+    </array>
+    
+    <!--// Aurora <tongyh> <2014-04-09> add CarrierLabel begin-->
+        <string-array translateable="false" name="origin_carrier_names">
+        <item>CHINA\u0020\u0020MOBILE</item>
+        <item>CHN-UNICOM</item>
+        <item>China Mobile</item>
+        <item>China Unicom</item>
+        <item>China Telecom</item>
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+        <item>CMCC</item>
+        <item>CMCC \u2014 CMCC</item>
+		<item>46003</item>
+        <item>Searching for Service</item>
+    </string-array>
+
+    <string-array translatable="false" name="locale_carrier_names">
+        <item>China_Mobile</item>
+        <item>China_Unicom</item>
+        <item>China_Mobile</item>
+        <item>China_Unicom</item>
+        <item>China_Telecom</item>
+        <item>China_Mobile</item>
+        <item>China_Unicom</item>
+        <item>China_Telecom</item>
+        <item>China_Mobile</item>
+        <item>China_Mobile</item>
+		<item>China_Telecom</item>
+        <item>roamingTextSearching</item>
+    </string-array>
+    <!--// Aurora <tongyh> <2014-04-09> add CarrierLabel end-->
+
+</resources>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@color/white" android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/scanAnimLayout"
+        android:layout_width="fill_parent" android:layout_height="361.33dp" 
+        android:background="@drawable/ad_scan_bg">
+        <FrameLayout
+            android:layout_width="250dp" android:layout_height="65dp" 
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:layerType="software">
+            <com.secure.view.NoSlitherViewPager
+		        android:id="@+id/view_pager"
+		        android:layout_width="100dp"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center"
+		        android:clipChildren="false" />
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/scanAnimView"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ad_scan_anim_img"/>
+        <ImageView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ad_scan_anim_cover"/>
+    </FrameLayout>    
+    <FrameLayout
+        android:id="@+id/scanInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="37.3dp">
+        <TextView
+            android:id="@+id/scanAppName"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="12dp" 
+            android:lines="1" android:ellipsize="end"
+            android:textColor="#525252" android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/scanAppNum"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="12dp"
+            android:textColor="#525252" android:textSize="12sp"/>
+        <View
+	        android:layout_width="fill_parent" android:layout_height="1px"
+	        android:background="@drawable/line" android:layout_gravity="bottom"/>  
+    </FrameLayout>
+    <FrameLayout 
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_gravity="center">
+            <TextView
+                android:id="@+id/adAppNum"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/black" android:textSize="34sp"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/black" android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp" android:text="@string/have_ad_app_num"/>
+        </LinearLayout>
+    </FrameLayout>   
+</LinearLayout>

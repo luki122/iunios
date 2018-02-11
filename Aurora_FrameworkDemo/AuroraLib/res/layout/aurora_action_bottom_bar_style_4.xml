@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aurora_action_bottom_bar_background_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/aurora_action_bottom_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:gravity="center" >
+
+        <aurora.lib.widget.AuroraAnimationImageView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            aurora:playAnim="true"
+            android:scaleType="center" >
+        </aurora.lib.widget.AuroraAnimationImageView>
+
+        <aurora.lib.widget.AuroraAnimationImageView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            aurora:playAnim="true"
+            android:scaleType="center" >
+        </aurora.lib.widget.AuroraAnimationImageView>
+
+        <aurora.lib.widget.AuroraAnimationImageView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            aurora:playAnim="true"
+            android:scaleType="center" >
+        </aurora.lib.widget.AuroraAnimationImageView>
+
+        <aurora.lib.widget.AuroraAnimationImageView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            aurora:playAnim="true"
+            android:scaleType="center" >
+        </aurora.lib.widget.AuroraAnimationImageView>
+    </LinearLayout>
+
+</LinearLayout>

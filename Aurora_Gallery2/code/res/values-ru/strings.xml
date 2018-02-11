@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="1928079047368929634">&quot;Альбом&quot;</string>
+    <string name="gadget_title" msgid="259405922673466798">&quot;Рамка&quot;</string>
+    <string name="details_ms" msgid="940634969189855292">&quot;%1$02d:%2$02d&quot;</string>
+    <string name="details_hms" msgid="3215779248094151255">&quot;%1$d:%2$02d:%3$02d&quot;</string>
+<!-- //Aurora <SQF> <2014-04-15>  for NEW_UI begin -->
+<!-- <string name="movie_view_label" msgid="3526526872644898229">"视频播放器"</string> -->
+<string name="movie_view_label" msgid="3526526872644898229">&quot;IUNI плейер&quot;</string>
+<!-- //Aurora <SQF> <2014-04-15>  for NEW_UI end -->
+<string name="loading_video" msgid="4013492720121891585">&quot;Загрузка видео...&quot;</string>
+    <string name="loading_image" msgid="1200894415793838191">&quot;Загрузка изображений&quot;...</string>
+    <string name="loading_account" msgid="928195413034552034">&quot;Загрузка аккаунта...&quot;</string>
+    <string name="resume_playing_title" msgid="8996677350649355013">&quot;Продолжить передавать видео&quot;</string>
+    <string name="resume_playing_message" msgid="5184414518126703481">&quot;Передавать с %s?&quot;</string>
+    <string name="resume_playing_resume" msgid="3847915469173852416">&quot;Продолжить передавать&quot;</string>
+    <string name="loading" msgid="7038208555304563571">&quot;Загрузка...&quot;</string>
+    <string name="fail_to_load" msgid="8394392853646664505">&quot;Невозможно загрузить&quot;</string>
+    <string name="fail_to_load_image" msgid="6155388718549782425">&quot;Невозможно загрузить изображение&quot;</string>
+    <string name="no_thumbnail" msgid="284723185546429750">&quot;Нет сокращённых&quot;</string>
+    <string name="resume_playing_restart" msgid="5471008499835769292">&quot;Возобновлять&quot;</string>
+    <string name="crop_save_text" msgid="152200178986698300">&quot;Да&quot;</string>
+    <string name="ok" msgid="5296833083983263293">&quot;Да&quot;</string>
+    <string name="multiface_crop_help" msgid="2554690102655855657">&quot;Трогать лицо для обрезания&quot;</string>
+    <string name="saving_image" msgid="7270334453636349407">&quot;Сохранение изображений...&quot;</string>
+    <string name="filtershow_saving_image" msgid="6659463980581993016">&quot;Изображения сохраняются в “<xliff:g id="ALBUM_NAME">%1$s</xliff:g>”…&quot;</string>
+    <string name="save_error" msgid="6857408774183654970">&quot;Невозможно сохранить обрезанные изображения.&quot;</string>
+    <string name="crop_label" msgid="521114301871349328">&quot;Обрезать изображение&quot;</string>
+    <string name="trim_label" msgid="274203231381209979">&quot;Монтаж видео&quot;</string>
+    <string name="select_image" msgid="7841406150484742140">&quot;Выбирать фото&quot;</string>
+    <string name="select_video" msgid="4859510992798615076">&quot;Выбирать видео&quot;</string>
+    <string name="select_item" msgid="2816923896202086390">&quot;Выбирать пункт&quot;</string>
+    <string name="select_album" msgid="1557063764849434077">&quot;Выбирать альбом&quot;</string>
+    <string name="select_group" msgid="6744208543323307114">&quot;Выбирать группу&quot;</string>
+    <string name="set_image" msgid="2331476809308010401">&quot;Установить фото как&quot;</string>
+    <string name="set_wallpaper" msgid="8491121226190175017">&quot;Установить фон&quot;</string>
+    <string name="wallpaper" msgid="140165383777262070">&quot;Установление фона…&quot;</string>
+<!-- //Aurora <SQF> <2014-04-11>  for NEW_UI begin -->
+<!-- ORIGINALLY: -->
+<!-- <string name="camera_setas_wallpaper" msgid="797463183863414289">"壁纸"</string> -->
+<!-- SQF MODIFIED TO: -->
+<string name="camera_setas_wallpaper" msgid="797463183863414289">&quot;IUNI фон&quot;</string>
+<!-- //Aurora <SQF> <2014-04-11>  for NEW_UI end -->
+<string name="delete" msgid="2839695998251824487">&quot;Удалить&quot;</string>
+  <plurals name="delete_selection">
+    <item quantity="one" msgid="6453379735401083732">&quot;Удалить избранное?&quot;</item>
+    <item quantity="other" msgid="5874316486520635333">&quot;Удалить избранное?&quot;</item>
+  </plurals>
+    <string name="confirm" msgid="8646870096527848520">&quot;Да&quot;</string>
+    <string name="cancel" msgid="3637516880917356226">&quot;Отмена&quot;</string>
+    <string name="share" msgid="3619042788254195341">&quot;Поделить&quot;</string>
+    <string name="share_panorama" msgid="2569029972820978718">&quot;Поделить панорамный чертёж&quot;</string>
+    <string name="share_as_photo" msgid="8959225188897026149">&quot;Поделить в форме фото&quot;</string>
+    <string name="deleted" msgid="6795433049119073871">&quot;Удалено&quot;</string>
+    <string name="undo" msgid="2930873956446586313">&quot;Отмена&quot;</string>
+    <string name="select_all" msgid="3403283025220282175">&quot;Выбирать всё&quot;</string>
+    <string name="deselect_all" msgid="5758897506061723684">&quot;Отменить&quot;</string>
+    <string name="slideshow" msgid="4355906903247112975">&quot;Передать слайд&quot;</string>
+    <string name="details" msgid="8415120088556445230">&quot;Подробная информация&quot;</string>
+    <string name="details_title" msgid="2611396603977441273">&quot;%1$d пункт（всего  %2$d пунктов）:&quot;</string>
+    <string name="close" msgid="5585646033158453043">&quot;Закрыть&quot;</string>
+    <string name="switch_to_camera" msgid="7280111806675169992">&quot;Переходить на камеру&quot;</string>
+  <plurals name="number_of_items_selected">
+    <item quantity="zero" msgid="2142579311530586258">&quot;Выбран %1$d пункт&quot;</item>
+    <item quantity="one" msgid="2478365152745637768">&quot;Выбраны %1$d пункта&quot;</item>
+    <item quantity="other" msgid="754722656147810487">&quot;Выбраны %1$d пунктов&quot;</item>
+  </plurals>
+  <plurals name="number_of_albums_selected">
+    <item quantity="zero" msgid="749292746814788132">&quot;Выбран %1$d альбом&quot;</item>
+    <item quantity="one" msgid="6184377003099987825">&quot;Выбраны %1$d альбома&quot;</item>
+    <item quantity="other" msgid="53105607141906130">&quot;Выбраны %1$d альбомов&quot;</item>
+  </plurals>
+  <plurals name="number_of_groups_selected">
+    <item quantity="zero" msgid="3466388370310869238">&quot;Выбрана %1$d группа&quot;</item>
+    <item quantity="one" msgid="5030162638216034260">&quot;Выбраны %1$d группы&quot;</item>
+    <item quantity="other" msgid="3512041363942842738">&quot;Выбраны %1$d групп&quot;</item>
+  </plurals>
+    <string name="show_on_map" msgid="6157544221201750980">&quot;Показать на карте&quot;</string>
+    <string name="rotate_left" msgid="5888273317282539839">&quot;Повернуть налево&quot;</string>
+    <string name="rotate_right" msgid="6776325835923384839">&quot;Повернуть направо&quot;</string>
+    <string name="no_such_item" msgid="5315144556325243400">&quot;Не нашёлся указанный пункт.&quot;</string>
+    <string name="edit" msgid="1502273844748580847">&quot;Редактировать&quot;</string>
+    <string name="simple_edit" msgid="2792835918347498211">&quot;Простое редактирование&quot;</string>
+    <string name="process_caching_requests" msgid="8722939570307386071">&quot;Обработка просьбы буферной памяти&quot;</string>
+    <string name="caching_label" msgid="4521059045896269095">&quot;Кэширование...&quot;</string>
+    <string name="crop_action" msgid="3427470284074377001">&quot;Кройка&quot;</string>
+    <string name="trim_action" msgid="703098114452883524">&quot;Обрезать&quot;</string>
+    <string name="mute_action" msgid="5296241754753306251">&quot;Беззвучно&quot;</string>
+    <string name="set_as" msgid="3636764710790507868">&quot;Установить как&quot;</string>
+    <string name="video_mute_err" msgid="6392457611270600908">&quot;Видео не может быть бесшумным.&quot;</string>
+    <string name="video_err" msgid="7003051631792271009">&quot;Невозможно передать видео.&quot;</string>
+    <string name="group_by_location" msgid="316641628989023253">&quot;Группирование по местам&quot;</string>
+    <string name="group_by_time" msgid="9046168567717963573">&quot;Группирование по времени&quot;</string>
+    <string name="group_by_tags" msgid="3568731317210676160">&quot;Группирование по заметкам&quot;</string>
+    <string name="group_by_faces" msgid="1566351636227274906">&quot;По человекам&quot;</string>
+    <string name="group_by_album" msgid="1532818636053818958">&quot;Группирование по альбомам&quot;</string>
+    <string name="group_by_size" msgid="153766174950394155">&quot;Группирование по размерам&quot;</string>
+    <string name="untagged" msgid="7281481064509590402">&quot;Н е добавить заметку&quot;</string>
+    <string name="no_location" msgid="4043624857489331676">&quot;Нет информации о месте&quot;</string>
+    <string name="no_connectivity" msgid="7164037617297293668">&quot;Проблема сети, система не может распознать несколько места.&quot;</string>
+    <string name="sync_album_error" msgid="1020688062900977530">&quot;Невозможно загрузит фото на альбоме, попробуйте позже.&quot;</string>
+    <string name="show_images_only" msgid="7263218480867672653">&quot;Только фото&quot;</string>
+    <string name="show_videos_only" msgid="3850394623678871697">&quot;Только видео&quot;</string>
+    <string name="show_all" msgid="6963292714584735149">&quot;Фото и видео&quot;</string>
+    <string name="appwidget_title" msgid="6410561146863700411">&quot;Фото&quot;</string>
+    <string name="appwidget_empty_text" msgid="1228925628357366957">&quot;Документов пока нету&quot;</string>
+    <string name="crop_saved" msgid="1595985909779105158">&quot;Обрезанные фото сохраняются в “<xliff:g id="FOLDER_NAME">%s</xliff:g>”.&quot;</string>
+    <string name="no_albums_alert" msgid="4111744447491690896">&quot;Нет доступного альбома&quot;</string>
+    <string name="empty_album" msgid="4542880442593595494">&quot;Нет альбома/видео.&quot;</string>
+    <string name="picasa_posts" msgid="1497721615718760613">&quot;Сообщение&quot;</string>
+    <string name="make_available_offline" msgid="5157950985488297112">&quot;Доступно осмотр оффлайн&quot;</string>
+    <string name="sync_picasa_albums" msgid="8522572542111169872">&quot;Обновление&quot;</string>
+    <string name="done" msgid="217672440064436595">&quot;Исполнение&quot;</string>
+    <string name="sequence_in_set" msgid="7235465319919457488">&quot;%1$d пункт（всего  %2$d пунктов）:&quot;</string>
+    <string name="title" msgid="7622928349908052569">&quot;Тема&quot;</string>
+    <string name="description" msgid="3016729318096557520">&quot;Описание&quot;</string>
+    <string name="time" msgid="1367953006052876956">&quot;Время&quot;</string>
+    <string name="location" msgid="3432705876921618314">&quot;Места&quot;</string>
+    <string name="path" msgid="4725740395885105824">&quot;Директория&quot;</string>
+    <string name="width" msgid="9215847239714321097">&quot;Широта&quot;</string>
+    <string name="height" msgid="3648885449443787772">&quot;Высота&quot;</string>
+    <string name="orientation" msgid="4958327983165245513">&quot;Режим просмотра&quot;</string>
+    <string name="duration" msgid="8160058911218541616">&quot;Продолжительность&quot;</string>
+    <string name="mimetype" msgid="8024168704337990470">&quot;MIME  тип&quot;</string>
+    <string name="file_size" msgid="8486169301588318915">&quot;Размер файла&quot;</string>
+    <string name="maker" msgid="7921835498034236197">&quot;Производитель&quot;</string>
+    <string name="model" msgid="8240207064064337366">&quot;Модель&quot;</string>
+    <string name="flash" msgid="2816779031261147723">&quot;Вспышка&quot;</string>
+    <string name="aperture" msgid="5920657630303915195">&quot;Бленда&quot;</string>
+    <string name="focal_length" msgid="1291383769749877010">&quot;Фокусное расстояние&quot;</string>
+    <string name="white_balance" msgid="1582509289994216078">&quot;Белый баланс&quot;</string>
+    <string name="exposure_time" msgid="3990163680281058826">&quot;Время экспозиции&quot;</string>
+    <string name="iso" msgid="5028296664327335940">&quot;ISO&quot;</string>
+    <string name="unit_mm" msgid="1125768433254329136">&quot;mm&quot;</string>
+    <string name="manual" msgid="6608905477477607865">&quot;Ручной&quot;</string>
+    <string name="auto" msgid="4296941368722892821">&quot;Авто.&quot;</string>
+    <string name="flash_on" msgid="7891556231891837284">&quot;С использованием вспышки&quot;</string>
+    <string name="flash_off" msgid="1445443413822680010">&quot;Без вспышки&quot;</string>
+    <string name="unknown" msgid="3506693015896912952">&quot;Неизвестно&quot;</string>
+    <string name="ffx_original" msgid="372686331501281474">&quot;Бывшее фото&quot;</string>
+    <string name="ffx_vintage" msgid="8348759951363844780">&quot;Винтаж&quot;</string>
+    <string name="ffx_instant" msgid="726968618715691987">&quot;Немедленное фото&quot;</string>
+    <string name="ffx_bleach" msgid="8946700451603478453">&quot;Чистить тень&quot;</string>
+    <string name="ffx_blue_crush" msgid="6034283412305561226">&quot;Голубой&quot;</string>
+    <string name="ffx_bw_contrast" msgid="517988490066217206">&quot;Чёрно-белый&quot;</string>
+    <string name="ffx_punch" msgid="1343475517872562639">&quot;Штамп&quot;</string>
+    <string name="ffx_x_process" msgid="4779398678661811765">&quot;Отрицательный удар&quot;</string>
+    <string name="ffx_washout" msgid="4594160692176642735">&quot;Латте&quot;</string>
+    <string name="ffx_washout_color" msgid="8034075742195795219">&quot;Версия для печати&quot;</string>
+  <plurals name="make_albums_available_offline">
+    <item quantity="one" msgid="2171596356101611086">&quot;Доступно осмотреть альбом оффлайн.&quot;</item>
+    <item quantity="other" msgid="4948604338155959389">&quot;Доступно осмотреть альбом оффлайн.&quot;</item>
+  </plurals>
+    <string name="try_to_set_local_album_available_offline" msgid="2184754031896160755">&quot;Этот пункт сохраняется местным, можно пользоваться оффлайн.&quot;</string>
+    <string name="set_label_all_albums" msgid="4581863582996336783">&quot;Все альбом&quot;</string>
+    <string name="set_label_local_albums" msgid="6698133661656266702">&quot;Местный альбом&quot;</string>
+    <string name="set_label_mtp_devices" msgid="1283513183744896368">&quot;MTP устройство&quot;</string>
+    <string name="set_label_picasa_albums" msgid="5356258354953935895">&quot;Picasa альбом&quot;</string>
+    <string name="free_space_format" msgid="8766337315709161215">&quot;Доступное пространство：<xliff:g id="BYTES">%s</xliff:g>&quot;</string>
+    <string name="size_below" msgid="2074956730721942260">&quot;<xliff:g id="SIZE">%1$s</xliff:g> или меньше&quot;</string>
+    <string name="size_above" msgid="5324398253474104087">&quot;<xliff:g id="SIZE">%1$s</xliff:g> или больше&quot;</string>
+    <string name="size_between" msgid="8779660840898917208">&quot;<xliff:g id="MIN_SIZE">%1$s</xliff:g> до <xliff:g id="MAX_SIZE">%2$s</xliff:g>&quot;</string>
+    <string name="Import" msgid="3985447518557474672">&quot;Импорт&quot;</string>
+    <string name="import_complete" msgid="3875040287486199999">&quot;Исполнение импорта&quot;</string>
+    <string name="import_fail" msgid="8497942380703298808">&quot;Импорт неуспешно&quot;</string>
+    <string name="camera_connected" msgid="916021826223448591">&quot;Камера подключена.&quot;</string>
+    <string name="camera_disconnected" msgid="2100559901676329496">&quot;Камера отключена.&quot;</string>
+    <string name="click_import" msgid="6407959065464291972">&quot;Трогать и импортировать&quot;</string>
+    <string name="widget_type_album" msgid="6013045393140135468">&quot;Выбирать альбом&quot;</string>
+    <string name="widget_type_shuffle" msgid="8594622705019763768">&quot;Показать все изображения случайно&quot;</string>
+    <string name="widget_type_photo" msgid="6267065337367795355">&quot;Выбирать фото&quot;</string>
+    <string name="widget_type" msgid="1364653978966343448">&quot;Выбирать фото&quot;</string>
+    <string name="slideshow_dream_name" msgid="6915963319933437083">&quot;Слайд&quot;</string>
+    <string name="albums" msgid="7320787705180057947">&quot;Альбом&quot;</string>
+    <string name="times" msgid="2023033894889499219">&quot;Время&quot;</string>
+    <string name="locations" msgid="6649297994083130305">&quot;Место&quot;</string>
+    <string name="people" msgid="4114003823747292747">&quot;Персонал&quot;</string>
+    <string name="tags" msgid="5539648765482935955">&quot;Заметка&quot;</string>
+    <string name="group_by" msgid="4308299657902209357">&quot;Основание группирования&quot;</string>
+    <string name="settings" msgid="1534847740615665736">&quot;Настройки&quot;</string>
+    <string name="add_account" msgid="4271217504968243974">&quot;Добавить аккаунт&quot;</string>
+    <string name="folder_camera" msgid="4714658994809533480">&quot;Камера&quot;</string>
+    <string name="folder_download" msgid="7186215137642323932">&quot;Загрузка&quot;</string>
+    <string name="folder_edited_online_photos" msgid="6278215510236800181">&quot;Редактированные фото он-лайн&quot;</string>
+    <string name="folder_imported" msgid="2773581395524747099">&quot;Импортное&quot;</string>
+    <string name="folder_screenshot" msgid="7200396565864213450">&quot;Сделать снимок экрана&quot;</string>
+    <string name="help" msgid="7368960711153618354">&quot;Помощь&quot;</string>
+    <string name="no_external_storage_title" msgid="2408933644249734569">&quot;Нет накопительных устройств&quot;</string>
+    <string name="no_external_storage" msgid="95726173164068417">&quot;Нет доступных внешних накопительных&quot;</string>
+    <string name="switch_photo_filmstrip" msgid="8227883354281661548">&quot;Вид слайда&quot;</string>
+    <string name="switch_photo_grid" msgid="3681299459107925725">&quot;Вид решётки&quot;</string>
+    <string name="switch_photo_fullscreen" msgid="8360489096099127071">&quot;Вид полноэкранного режима&quot;</string>
+    <string name="trimming" msgid="9122385768369143997">&quot;Редактирование&quot;</string>
+    <string name="muting" msgid="5094925919589915324">&quot;Бесшумно&quot;</string>
+    <string name="please_wait" msgid="7296066089146487366">&quot;Подождите&quot;</string>
+    <string name="save_into" msgid="9155488424829609229">&quot;Видео сохраняется в “<xliff:g id="ALBUM_NAME">%1$s</xliff:g>”…&quot;</string>
+    <string name="trim_too_short" msgid="751593965620665326">&quot;Невозможно редактировать：целевое видео коротко&quot;</string>
+    <string name="pano_progress_text" msgid="1586851614586678464">&quot;Ре́ндеринг панорамного чертёжа&quot;</string>
+</resources>

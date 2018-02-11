@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vs_offline_search_contact_more"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/vs_offline_pressed_bg_center_style">
+    <ImageView 
+        android:id="@+id/vs_offline_contacts_more_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_gravity="center"
+        android:background="@drawable/vs_help_arrows_normal"/>
+    <ImageView 
+        android:id="@+id/vs_offline_contacts_more_pressed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_gravity="center"
+        android:background="@drawable/vs_help_arrows_pressed"
+        android:visibility="gone"/>
+    <TextView 
+        android:id="@+id/vs_offline_contacts_more_text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/vs_offline_contact_item_height"
+        android:gravity="center"
+        android:text="@string/vs_offline_contacts_search_more_normal"
+        android:textColor="@color/vs_half_white"
+        android:textSize="14sp"/>
+    <TextView 
+        android:id="@+id/vs_offline_contacts_more_text_pressed"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/vs_offline_contact_item_height"
+        android:gravity="center"
+        android:text="@string/vs_offline_contacts_search_more_pressed"
+        android:textColor="@color/vs_half_white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

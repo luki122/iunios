@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+       android:layout_width="fill_parent" android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:id="@+id/appSizeTitleLayout"
+           android:layout_width="fill_parent" android:layout_height="50dp" >           
+           <Button
+		        android:id="@+id/moveBtn" android:visibility="invisible"
+		        android:layout_width="wrap_content" android:layout_height="30dp"
+		        android:layout_alignParentRight="true" android:layout_centerVertical="true"
+		        android:paddingLeft="10dp" android:paddingRight="10dp"
+		        android:textColor="@color/btn_text_title_selector_color" android:textSize="16sp"
+				android:background="@drawable/button"/>	
+				
+           <TextView
+		       android:id="@+id/topSizeText"
+		       android:layout_width="wrap_content" android:layout_height="wrap_content"
+		       android:layout_alignParentLeft="true" android:layout_alignBottom="@id/moveBtn"
+		       android:textColor="@color/app_size_layout_topsizetext_textcolor"  android:textSize="@dimen/list_header_text_size"
+		       android:text="@string/total_size"/>
+				
+           <TextView
+		        android:id="@+id/movingText" android:visibility="invisible"
+		        android:layout_width="wrap_content" android:layout_height="30dp"
+		        android:layout_alignParentRight="true" android:layout_centerVertical="true"
+		        android:gravity="center_vertical"
+		        android:paddingLeft="10dp" android:paddingRight="10dp"
+		        android:text="@string/moving"
+		        android:textColor="@color/black" android:textSize="16sp" />	
+       </RelativeLayout>
+	          
+	   <Button
+		   android:id="@+id/appMemoryText"
+		   style="@style/preferences_item"
+		   android:background="@drawable/item_of_up"
+		   android:clickable="false"
+		   android:text="@string/app_size"/>
+	   	   
+	   <RelativeLayout
+	       android:id="@+id/useDataLayout"
+	       android:layout_width="fill_parent" android:layout_height="wrap_content">
+	       <Button
+				android:id="@+id/useDataText"
+				style="@style/preferences_item" android:clickable="false"
+				android:background="@drawable/item_of_middle"
+				android:text="@string/user_data"/>    
+	       <Button
+				android:id="@+id/clearUseDataBtn" 
+				android:layout_width="52dp" android:layout_height="27dp"
+				android:layout_alignParentRight = "true" android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"
+				android:text="@string/clear" 
+				android:textColor="@color/btn_text_title_selector_color" 
+				android:textSize="16sp"
+				android:background="@drawable/button"/> 
+	   </RelativeLayout>
+	   	    
+	   <RelativeLayout
+	       android:id="@+id/cacheDataLayout"
+	       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+	       android:background="@drawable/item_of_bottom_bg">
+	       <TextView
+				android:id="@+id/cacheDataText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				style="@style/text_of_preferences_item" android:paddingLeft="15dp"
+				android:text="@string/app_cache"/>    
+	       <Button
+				android:id="@+id/clearCacheBtn"
+				android:layout_width="52dp" android:layout_height="27dp"
+				android:layout_alignParentRight = "true" android:layout_marginRight="15dp"
+				android:layout_centerVertical="true"
+				android:text="@string/clear" 
+				android:textColor="@color/btn_text_title_selector_color" 
+				android:textSize="16sp"
+				android:background="@drawable/button"/> 
+	   </RelativeLayout>	
+   			   
+</LinearLayout> 	

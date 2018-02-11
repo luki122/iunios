@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_input_method"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#CCCCCC"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/input_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/char_q"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_w"
+            style="@style/AuroraInputMethodbutton0" 
+            />
+
+        <Button
+            android:id="@+id/char_e"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_r"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_t"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_y"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_u"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_i"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_o"
+            style="@style/AuroraInputMethodbutton0" />
+
+        <Button
+            android:id="@+id/char_p"
+            style="@style/AuroraInputMethodbutton0" 
+            android:layout_marginRight="1.5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="1.0dp" 
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <Button
+            android:id="@+id/char_a"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_s"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_d"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_f"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_g"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_h"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_j"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_k"
+            style="@style/AuroraInputMethodbutton" />
+
+        <Button
+            android:id="@+id/char_l"
+            style="@style/AuroraInputMethodbutton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="1.0dp" 
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/char_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:background="@drawable/aurora_inputmethod_btn_normal"
+            android:textColor="@color/aurora_inputmethod_button_text_color"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/char_z"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_x"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_c"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_v"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_b"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_n"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_m"
+            style="@style/AuroraInputMethodbutton2" />
+
+        <Button
+            android:id="@+id/char_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0.5dp"
+            android:paddingRight="0.5dp"
+            android:layout_marginLeft="1.5dp"
+            android:background="@drawable/aurora_inputmethod_btn_normal"
+            android:textColor="@color/aurora_inputmethod_button_text_color"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

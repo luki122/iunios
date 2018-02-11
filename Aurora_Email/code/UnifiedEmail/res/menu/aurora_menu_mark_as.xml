@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/aurora_menu_set_as_read"
+        android:title="@string/aurora_menu_set_as_read">
+    </item>
+
+    <item android:id="@+id/aurora_menu_set_as_unread"
+        android:title="@string/aurora_menu_set_as_unread">
+    </item>
+    
+    <item android:id="@+id/aurora_menu_set_as_starred"
+        android:title="@string/aurora_menu_set_as_starred">
+    </item>
+
+    <item android:id="@+id/aurora_menu_set_as_nonstarred"
+        android:title="@string/aurora_menu_set_as_nonstarred">
+    </item>
+</menu>

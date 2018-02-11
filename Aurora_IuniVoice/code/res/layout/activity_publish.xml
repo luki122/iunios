@@ -1,0 +1,174 @@
+<com.aurora.iunivoice.widget.OnSizeChangeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_ly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_forum"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp" >
+
+            <TextView
+                android:id="@+id/tv_forum_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/publish_forum"
+                android:textColor="#9d9d9f"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_forum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_toLeftOf="@+id/iv_arrow"
+                android:layout_toRightOf="@+id/tv_forum_title"
+                android:singleLine="true"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/publish_subject"
+                android:textColor="#9d9d9f"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:background="@color/transparent"
+                android:singleLine="true"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f0f0f0" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/transparent"
+            android:gravity="top|left"
+            android:textColor="#9d9d9f"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#f0f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="22dp" >
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/icon_camera" />
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/icon_img" />
+
+                <ImageView
+                    android:id="@+id/iv_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/icon_face" />
+            </LinearLayout>
+
+            <com.aurora.iunivoice.widget.GridViewGallery
+                android:id="@+id/gvGallery_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/publich_imgbox_height"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/gv_face"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/publich_imgbox_height"
+                android:horizontalSpacing="3dp"
+                android:numColumns="7"
+                android:paddingBottom="22dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="22dp"
+                android:verticalSpacing="20dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.aurora.iunivoice.widget.OnSizeChangeLinearLayout>

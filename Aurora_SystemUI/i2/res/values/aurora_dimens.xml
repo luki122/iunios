@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2006, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+-->
+<resources>
+  
+	<dimen name="aurora_notification_row_width">360dp</dimen>
+	<dimen name="aurora_notification_row_add_size">85dp</dimen>
+	<dimen name="aurora_notification_row_ex_width">445dp</dimen>
+   
+	<dimen name="aurora_notification_row_width_land">640dp</dimen>
+	<dimen name="aurora_notification_row_ex_width_land">725dp</dimen>    
+	
+	<dimen name="aurora_notification_u3_row_width_land">600dp</dimen>
+	<dimen name="aurora_notification_u3_row_ex_width_land">685dp</dimen>
+    
+	<dimen name="aurora_notification_line_height">1px</dimen>
+    
+	<dimen name="quick_setting_height">100dp</dimen>
+    
+	<dimen name="aurora_close_handle_height">33dp</dimen>
+	<dimen name="aurora_close_handle_width">38dp</dimen>
+	<dimen name="aurora_close_handle_margin_bottom">0dp</dimen>
+    
+	<dimen name="aurora_status_bar_num_font_size">10sp</dimen>
+	<dimen name="aurora_status_bar_doublenum_font_size">8.5sp</dimen>
+		
+	<dimen name="quick_setting_view_height">87dp</dimen>
+	<!-- <dimen name="quick_setting_view_height">83dp</dimen> -->
+	<dimen name="aurora_usb_view_height">71dp</dimen>	
+
+	<dimen name="aurora_recents_clear_width">160dp</dimen>	
+
+	<dimen name="quick_recent_panel_padding_top">15dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_width">25dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_height">25dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_text_padding_top">10dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_text_size">10sp</dimen>	
+	<dimen name="aurora_normal_item_label_padding_top">-1dp</dimen>	
+	    
+    <dimen name="status_bar_clock_padding_left">6dp</dimen>
+    <dimen name="status_bar_clock_padding_top">-2.5dp</dimen>
+    <dimen name="status_bar_clock_padding_u3_left">4dp</dimen>
+    <dimen name="status_bar_clock_padding_hua_wei_top">-1dp</dimen>
+
+	<!-- Aurora <SteveTang> 2014-12-11. add judgement for diff navigationbar height. start -->
+    <dimen name="navigationbar_height_48dp">48dp</dimen>
+    <dimen name="navigationbar_height_40dp">40dp</dimen>
+	<!-- Aurora <SteveTang> 2014-12-11. add judgement for diff navigationbar height. end -->
+
+</resources>

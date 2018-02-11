@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">声音和振动</string>
+    <string name="gn_audio_profile_message_invalid_name_wrong">名字中包含无效字符</string>
+<!-- for Profile -->
+	<string name="sound_category_sound_title">常规</string>
+	<string name="sound_category_calls_title" msgid="3688531959256239012">"铃声"</string>
+    <string name="sound_category_notification_title" msgid="3502115998790286943">"通知"</string>
+    <string name="sound_and_system_feedback_category_title" msgid="4399742321363475393">"音效与系统反馈"</string>
+    <string name="Phone_vibrate_summary">"在来电话、短信和通知时振动"</string>
+    <string name="voice_call_title">"来电铃声"</string>
+    <string name="voice_call_summary">"设置默认的语音来电铃声"</string>
+    <string name="alarm_ring_title">闹钟铃声</string>
+    <string name="video_call_summary">设置默认的视频来电铃声</string>
+    <string name="audio_profile_settings_title">"情景模式"</string>
+    <string name="audio_profile_settings">"个性化情景模式"</string>
+    <string name="audio_profile_settings_Edit">个性化情景模式</string>
+    <string name="audio_profile_category_predefine_title">预设模式</string>
+    <string name="audio_profile_category_custom_title">自定义模式</string>
+    <string name="audio_profile_reset">重设</string>
+    <string name="audio_profile_add">添加</string>
+    <string name="audio_profile_enable">"启用"</string>
+    <string name="audio_profile_rename">重命名</string>
+    <string name="audio_profile_delete">删除</string>
+    <string name="audio_profile_error">错误</string>
+    <string name="audio_profile_message_reset">所有情景模式将被恢复为默认值</string>
+    <string name="audio_profile_message_rename">请输入情景模式名称</string>
+    <string name="audio_profile_message_name_error">该情景模式已存在</string>
+    <string name="audio_profile_message_name_length_wrong">名称中必须至少包含一个字符</string>
+    <string name="audio_profile_message_delete">情景模式 %1$s 将被删除</string>
+    <string name="audio_profile_message_overflow">只允许添加6个自定义情景模式</string>
+    <string name="restore_defaults">"恢复默认设置"</string>
+    <string name="enable">"启用"</string>
+    <string name="format_ok">格式化 SD 卡成功!</string>
+    <string name="format_notok">格式化 SD 卡失败!</string>
+	<string name="ringtone_tab_title">选择铃声</string>
+    <!-- Sound and alerts settings -->
+    <string name="sound_settings_title" msgid="8735891486683305886">"声音和振动"</string>
+    <string name="display_settings_title" msgid="1708697328627382561">"显示"</string>
+    <string name="sound_settings" msgid="5007659014828162881">"声音设置"</string>
+    <string name="silent_mode_title" msgid="3181479108593217704">"静音模式"</string>
+    <string name="silent_mode_summary" msgid="3309650676072917899">"除媒体和闹钟以外，所有声音均设为静音"</string>
+    <string name="silent_mode_incl_alarm_summary" msgid="2088830834182228458">"对所有非多媒体声音进行静音处理"</string>
+    <string name="ringtone_title" msgid="5379026328015343686">"手机铃声"</string>
+    <string name="ringtone_summary" msgid="2630023412632683493">"设置默认的来电铃声"</string>
+    <string name="all_volume_title" msgid="8741571721868253103">"音量"</string>
+    <string name="ring_volume_title" msgid="7938706566797464165">"铃声音量"</string>
+    <string name="ring_volume_summary" msgid="7055497624193116879">设置来电、闹钟和通知音量"</string>
+    <string name="vibrate_in_silent_title" msgid="3897968069156767036">"静音时振动"</string>
+    <string name="vibrate_in_silent_summary" msgid="3312600513070076281">"静音模式下允许振动反馈"</string>
+    <string name="vibrate_title" msgid="6045820877942801599">"振动"</string>
+    <string name="vibrate_summary" msgid="7378130397830790458">"在接到电话和通知时发出振动反馈"</string>
+    <string name="notification_sound_title" msgid="6316316069880531693">"通知铃声"</string>
+    <string name="notification_sound_summary" msgid="2953599929394109819">"设置默认的通知铃声"</string>
+    <string name="notification_pulse_title" msgid="1247988024534030629">"闪动通知指示灯"</string>
+    <string name="notification_pulse_summary" msgid="6899220780534617152">"在收到新通知时，跟踪球指示灯会不断闪动"</string>
+    <string name="incoming_call_volume_title" msgid="8073714801365904099">"铃声"</string>
+    <string name="notification_volume_title" msgid="2012640760341080408">"通知"</string>
+    <string name="alarm_title">闹铃</string>
+    <string name="sms_sound_title">短信铃声</string>
+    <string name="checkbox_notification_same_as_incoming_call" msgid="1073644356290338921">"将来电音量用作通知音量"</string>
+    <string name="notification_sound_dialog_title" msgid="7057274209079144726">"选择通知铃声"</string>
+    <string name="media_volume_title" msgid="3576565767317118106">"媒体"</string>
+    <string name="media_volume_summary" msgid="5363248930648849974">"设置音乐和视频的音量"</string>
+    <string name="alarm_volume_title" msgid="2285597478377758706">"闹钟"</string>
+    <string name="dock_settings_summary" msgid="455802113668982481">"附加底座的音频设置"</string>
+    <string name="dts_pref_title">"DTS音效"</string>
+    <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"拨号键盘音"</string>
+    <string name="touch_vibrate_feedback_title">触摸振动反馈</string>
+    <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"使用拨号键盘时播放按键音效"</string>
+    <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"使用拨号键盘时播放按键音效"</string>
+    <string name="sound_effects_enable_title" msgid="3197313718929122833">"触摸提示音"</string>
+    <string name="sound_effects_enable_summary_on" msgid="6154141289879491329">"进行屏幕选取时播放音效"</string>
+    <string name="sound_effects_enable_summary_off" msgid="3447739581759560125">"进行屏幕选取时播放音效"</string>
+    <string name="lock_sounds_enable_title" msgid="1575990840389107141">"锁屏提示音"</string>
+    <string name="lock_sounds_enable_summary_on" msgid="145741024028391473">"锁定和解锁屏幕时播放声音"</string>
+    <string name="lock_sounds_enable_summary_off" msgid="8481243116223542804">"锁定和解锁屏幕时播放声音"</string>
+    <string name="haptic_feedback_enable_title" msgid="6311736559245411290">"触感"</string>
+    <string name="haptic_feedback_enable_summary_on" msgid="1875779656524793053">"按软键以及进行某些 UI 交互时振动"</string>
+    <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"按软键以及进行某些 UI 交互时振动"</string>
+    <string name="flip_sounds_enable_title">翻盖操作音</string>
+    <string name="flip_sounds_enable_summary_on">开盖解锁时播放音效</string>
+    <string name="flip_sounds_enable_summary_off">开盖解锁时播放音效</string>
+    <string name="lock_settings_picker_title">选择锁屏</string>
+	<string name="volume_ring_description">铃声和通知</string>
+	<string name="volume_notification_description">通知</string>
+    <string name="general_settings_title">响铃</string>
+    <string name="silent_settings_title">静音</string>
+    
+    <string name="other_ringtone_title">其他铃声</string>
+    <string name="meeting_settings_title">振动</string>
+    <string name="outdoor_settings_title">户外</string>
+    <string name="ring_summary">铃声</string>  
+    <string name="ring_vibrate_summary">铃声与振动</string> 
+    <string name="silent_summary">仅静音</string>  
+    <string name="meeting_summary">仅振动</string>  
+    <string name="outdoor_summary">最大铃声与振动</string> 
+    <string name="gn_ringtone_notif">来电铃声</string> 
+    <string name="gn_mms_ringtone">短信铃声</string> 
+    <string name="volume_alarm_description">闹钟</string>
+    <string name="loading_ringtone">加载中</string>
+    <string name="ringtone_silent_summary">静音</string> 
+    <string name="sim1_ringtone_title">卡槽1</string>
+    <string name="sim2_ringtone_title">卡槽2</string>
+    <!-- Gionee Jingjc 20121122 add for CR00722601 start -->
+    <string name="haptic_vibration_title">系统振动</string>
+    <string name="haptic_feedback_title">触摸时振动</string>
+    <string name="routine_vibrate_title">常规振动</string>
+    <string name="dialpad_vibration_title">拨号键盘触摸振动</string>
+    <string name="lockscreen_vibration_title">锁屏振动</string>
+    <string name="selectapp_vibration_title">选中或删除应用振动</string>
+    <!-- Gionee Jingjc 20121122 add for CR00722601 end -->
+    <string name="ringtone_select_summary">铃声用于响铃模式和户外模式</string>
+    <!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 begin -->
+    <string name="vibrate_profile">振动样式</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="vibrate_basecall">Basecall</string>
+    <string name="vibrate_heartbeat">Heartbeat</string>
+    <string name="vibrate_jinglebell">Jinglebell</string>
+    <string name="vibrate_ticktock">Ticktock</string>
+    <string name="vibrate_path_error">振动模式配置文件异常</string>
+    <string name="general_vibrate_title">常规振动</string>
+    <string name="ring_vibrate_title">来电振动</string>
+    <string name="mms_vibrate_title">短信振动</string>
+    <string name="notification_vibrate_title">通知振动</string>
+    <string name="notification_vibrate_summary">"包括短信、邮件和其他通知振动"</string>
+    <!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 end -->
+    <string name="gn_vc_dlg_title">关闭音控模式？</string>
+    <string name="gn_vc_dlg_message">关闭音控模式后可设置声音和振动，确定要关闭音控模式吗？</string>
+    <string name="gn_vc_dlg_check">下次不再提醒</string>
+    
+    <!-- Choice in the ringtone picker.  If chosen, the default ringtone will be used. -->
+    <string name="ringtone_default">默认铃声</string>
+
+    <!-- Choice in the notification sound picker.  If chosen, the default notification sound will be
+         used. -->
+    <string name="notification_sound_default">默认通知铃声</string>
+
+    <!-- Choice in the alarm sound picker.  If chosen, the default alarm sound will be used. -->
+    <string name="alarm_sound_default">默认闹钟铃声</string>
+    <string name="Add_More_Ringtones">更多铃声 ...</string>
+    <string name="aurora_empty_other_ringtone_text">暂无其他铃声</string>
+    <string name="internal_storage_disable">内部存储暂不可用</string>
+    
+      <string name="none_select">未选择</string>
+      <string name="set_ringtone">设置铃声</string>
+      
+    
+</resources>

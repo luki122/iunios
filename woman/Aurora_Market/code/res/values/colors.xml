@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="category_new_normal">#a3cc52</color>
+    <color name="aurora_green_text_color">#a3cc52</color>
+    <color name="aurora_green_press_text_color">#7fa3cc52</color>
+    <color name="pop_query_text_color">#a3cc52</color>
+    <color name="app_update_page_num_text_color">#a3cc52</color>
+    <color name="progressRoundColor">#a3cc52</color>
+    <color name="progressRoundGreenColor">#a3cc52</color>
+    <color name="main_tab_text_color_press">#d1e6a9</color>
+    <color name="tab_bottom_linecolor">#a3cc52</color> <!-- Tab底部线颜色 -->
+    <color name="down_man_item_speed_text">#a3cc52</color>
+ 
+</resources>

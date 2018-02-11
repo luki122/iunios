@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+
+    <!-- WIRELESS and NETWORKS -->
+    <!-- <header aurora:auroratitle="@string/header_category_wireless_networks" /> -->
+    
+    <!-- Wifi -->
+    <header
+        aurora:auroraid="@+id/gn_wifi_settings"
+        aurora:aurorafragment="com.android.settings.wifi.WifiSettings"
+        aurora:auroratitle="@string/wifi_settings_title"
+        aurora:auroraicon="@drawable/ic_settings_wireless" />
+
+    <!-- Mobile network -->
+    <!--Gionee <wangguojing> 2013-06-28 modify for CR00831786 begin-->
+    <header
+        aurora:auroraid="@+id/gn_mobile_network_settings"
+        aurora:auroraicon="@drawable/gemini_data_connection"
+        aurora:auroratitle="@string/gemini_data_connection" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.gionee.settings.adapter"
+            android:targetClass="com.mediatek.gemini.GnMobileNetWorkActivity" />
+    </header>
+    <!--Gionee <wangguojing> 2013-06-28 modify for CR00831786 begin-->
+    
+    <!-- Bluetooth -->
+    <header
+        aurora:auroraid="@+id/gn_bluetooth_settings"
+        aurora:aurorafragment="com.android.settings.bluetooth.BluetoothSettings"
+        aurora:auroratitle="@string/bluetooth_settings_title"
+        aurora:auroraicon="@drawable/ic_settings_bluetooth2" />
+
+    <!-- PERSONAL -->
+    <!-- <header aurora:auroratitle="@string/header_category_personal" /> -->
+
+    <!-- Audio Profile -->
+    <header
+        aurora:auroraid="@+id/gn_sound_settings"
+        aurora:auroraicon="@drawable/ic_settings_profiles"
+        aurora:auroratitle="@string/incoming_call_volume_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="gn.com.android.audioprofile"
+            android:targetClass="gn.com.android.audioprofile.RingtonesSelectPreference" />
+    </header>
+
+    <!-- Display -->
+    <header
+        aurora:auroraid="@+id/gn_display_settings"
+        aurora:auroraicon="@drawable/ic_settings_display"
+        aurora:aurorafragment="com.android.settings.DisplaySettings"
+        aurora:auroratitle="@string/display_settings" />
+
+    <!-- Security -->
+    <header
+        aurora:aurorafragment="com.android.settings.ChooseLockGeneric$ChooseLockGenericFragment"
+        aurora:auroraicon="@drawable/ic_settings_security"
+        aurora:auroratitle="@string/unlock_set_unlock_launch_picker_title"
+        aurora:auroraid="@+id/gn_choose_lock" />
+
+    <!-- SYSTEM -->
+    <!-- <header aurora:auroratitle="@string/header_category_system" /> -->
+
+    <!-- Gionee jingjc 2013-02-02 add for CR00770865 start -->
+    <header
+        aurora:auroraid="@+id/gn_power_saving_settings"
+        aurora:auroratitle="@string/powerprofile_settings_title"
+        aurora:auroraicon="@drawable/power_profile_icon">
+        <intent
+            android:action="gionee.intent.action.PowerSaving" />
+    </header>
+    <!-- Gionee jingjc 2013-02-02 add for CR00770865 end -->
+    
+    <!-- Gionee OTA -->
+    <header 
+        aurora:auroraid="@+id/gn_ota_system_update_settings"
+        aurora:auroraicon="@drawable/gn_ic_settings_ota"
+        aurora:auroratitle="@string/system_update_settings_list_item_title" >
+        <intent android:action="android.settings.GN_OTA_SYSTEM_UPDATE_SETTINGS"/>
+    </header>
+    
+</preference-headers>

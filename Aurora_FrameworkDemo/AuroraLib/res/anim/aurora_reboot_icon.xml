@@ -1,0 +1,35 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/aurora_reboot_normal" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0016" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0017" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0018" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0019" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0020" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_reboot0021" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0022" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0023" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0024" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0025" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_reboot0026" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0027" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0028" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0029" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0030" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_reboot0031" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0032" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0033" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0034" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0035" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_reboot0036" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0037" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0038" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0039" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_reboot0040" android:duration="10"/>
+    
+
+</animation-list>

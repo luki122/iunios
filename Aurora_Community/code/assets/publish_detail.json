@@ -1,0 +1,87 @@
+{
+    "publishOfPostDetail": {
+        "userIconUrl": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+        "publishContent": "the detail conent of publish",
+        "screenName": "screen name",
+        "publishTime": "2015/5/6",
+        "collectionCount": "20",
+        "commentCount": "50",
+        "publishImageUrls": [
+            "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg"
+        ]
+    },
+    "comments": [
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        },
+        {
+            "headIconOfCommentUser": "http://img.my.csdn.net/uploads/201309/01/1378037235_7476.jpg",
+            "contentOfComment": "content of comment",
+            "timeOfComment": "2014/5/7",
+            "screenNameOfCommentUser": "bird",
+            "replyUserName": ""
+        }
+    ]
+}

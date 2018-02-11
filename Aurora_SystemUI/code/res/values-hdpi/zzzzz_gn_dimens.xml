@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zzzzz_gn_usb_title_padding_bottom">25dip</dimen>
+    <dimen name="zzzzz_gn_usb_view_height">64dip</dimen>
+</resources>

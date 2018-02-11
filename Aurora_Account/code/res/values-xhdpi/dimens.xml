@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="account_sync_progressview_margin">2dp</dimen>
+    
+</resources>

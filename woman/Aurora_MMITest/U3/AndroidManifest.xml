@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gn.com.android.mmitest"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.phone">
+   
+    
+    
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+     <uses-permission android:name="android.permission.NFC" /> 
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+   <uses-feature android:name="android.hardware.nfc" android:required="true" /> 
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission> 
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.hardware.sensor.gyroscope"/>
+    <uses-permission android:name="android.hardware.sensor.compass"/>
+    <uses-permission android:name="android.hardware.sensor.light"/>
+    <uses-permission android:name="android.hardware.sensor.proximity"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"></uses-permission>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_ORIENTATION"/>
+    
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
+       <uses-library android:name="com.qualcomm.qcrilhook" />
+        <uses-library android:name="com.qualcomm.qcnvitems" />
+        
+        
+        
+        
+        <activity android:name=".GnMMITest"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="gn.com.android.mmitest.MAIN"/>
+                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleTestGridView"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:label="@string/single_test">
+        </activity>
+        
+        <activity android:name=".item.KeysTest"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:label="@string/keys">
+        </activity>
+        <activity android:name=".item.TouchPadTest"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:label="@string/touch_pad">
+        </activity>
+        <activity android:name=".item.ColorTest"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:label="@string/color">
+        </activity>
+        <activity android:name=".item.ScreenBrightnessTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/screen_brightness">
+        </activity>                          
+                  
+        <activity android:name=".item.VibrateTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/vibrate">
+        </activity>                         
+        <activity android:name=".item.LightTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/light">
+        </activity>                             
+        <activity android:name=".item.PhoneLoopbackTest1"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/phone_loopback1">
+        </activity>  
+         <activity android:name=".item.PhoneLoopbackTest3"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/phone_loopback3">
+        </activity>  
+         <activity android:name=".item.PhoneLoopbackTest4"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/phone_loopback4">
+        </activity>                             
+        <activity android:name=".item.EarphoneLoopbackTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/earphone_loopback">
+        </activity>   
+        <activity android:name=".item.PhoneLoopbackTest2"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/phone_loopback2">
+        </activity>                      
+        <activity android:name=".item.ToneTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/tone">
+        </activity>                  
+        <activity android:name=".item.ReceiverTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/receiver">
+        </activity>
+        <activity android:name=".item.ReceiverTest2"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/receiver2">
+        </activity>
+        <activity android:name=".item.RecevierAndAlsTest"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Fullscreen"
+                  android:label="@string/RecevierAndAlsTest">
+        </activity>
+       
+
+        <activity android:name=".item.GyroscopeTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/gyroscope">
+        </activity>
+    
+        <activity android:name=".item.PsTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/PsTest"> 
+       </activity>
+
+        <activity android:name=".item.AlsAndPsTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/light_proximity">
+        </activity>
+        <activity android:name=".item.PressureTest"
+                android:screenOrientation="portrait"
+                android:theme="@style/Fullscreen"
+                android:label="@string/pressure">
+        </activity>
+        <activity android:name=".item.BackCameraTest"
+                 android:theme="@style/Fullscreen"
+                 android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:label="@string/back_camera">
+        </activity>
+        <activity android:name=".item.FrontCameraTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:label="@string/front_camera">
+        </activity>
+        <!-- android:process="com.android.phone" -->
+        <activity android:name=".item.GPSTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/gps">
+            <intent-filter>
+                <action android:name="gn.com.android.mmitest.GPS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".item.FMTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/fm">
+        </activity>
+        <activity android:name=".item.BluetoothTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/bluetooth">
+        </activity>
+        <activity android:name=".item.WIFITest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/wifi">
+        </activity>
+           <activity android:name=".item.NFCTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/nfc">
+             <intent-filter>  
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />  
+            </intent-filter>  
+                <meta-data  
+                android:name="android.nfc.action.TECH_DISCOVERED"  
+                android:resource="@xml/nfc_tech_filter"/> 
+        </activity>
+            <activity android:name=".item.OTGTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/otg">
+            </activity>
+        <activity android:name=".item.BatteryTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/battery">
+        </activity>
+        <activity android:name=".item.ClockTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/clock">
+        </activity>
+        <activity android:name=".item.SoftWareVersion"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/sw_version">
+        </activity>
+        <activity android:name=".item.AccelerationTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/acceleration">
+        </activity>
+        <activity android:name=".item.MagneticFieldTest"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/magnetic_field">
+        </activity>
+	<activity android:name=".item.FlashLight"
+                 android:theme="@style/Fullscreen"
+                 android:excludeFromRecents="true"
+                 android:screenOrientation="portrait"
+                 android:label="@string/FlashLight">
+        </activity>
+	
+        
+        <activity android:name=".item.Cpufreq"
+            	   android:theme="@style/Fullscreen"
+                   android:screenOrientation="portrait"
+                   android:label="@string/Cpufreq">   
+        </activity>
+        
+        <activity android:name=".TestResult"
+                android:theme="@style/Fullscreen"
+                android:screenOrientation="portrait"
+                android:label="@string/test_result">
+        </activity>
+   
+    
+           <activity android:name=".item.InternalVersion"
+                android:theme="@android:style/Theme.Translucent"
+                android:screenOrientation="portrait">
+           <intent-filter>
+                <action android:name="gn.com.android.mmitest.internalversion"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+         </activity>
+   
+       <receiver android:name=".item.FDDReceiver">
+            <intent-filter>
+                 <action android:name="android.provider.Telephony.SECRET_CODE" />
+                 <data android:scheme="android_secret_code" android:host="000" />
+            </intent-filter>
+       </receiver>    
+ 
+        <activity android:name=".item.FDDSettings" 
+                  android:label="@string/fdd_settings"
+                  android:theme="@style/SettingsLightTheme"
+                  android:excludeFromRecents="true"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+    </application>
+</manifest>

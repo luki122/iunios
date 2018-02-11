@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2015-01-31 created for aurora's new feature -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" 
+        android:state_pressed="false"
+        android:drawable="@drawable/aurora_send_bt_normal" />
+    <item android:state_enabled="true" 
+        android:state_pressed="true"
+        android:drawable="@drawable/aurora_send_bt_pressed" />
+    <item android:state_enabled="false"
+        android:drawable="@drawable/aurora_cp_bt_disable" />
+
+</selector>

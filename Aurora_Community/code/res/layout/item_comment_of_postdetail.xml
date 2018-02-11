@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divider" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/item_collection_of_postdetail_rl_padding_bottom"
+        android:paddingTop="@dimen/item_collection_of_postdetail_rl_padding_top" 
+        android:paddingLeft="@dimen/item_collection_of_postdetail_rl_padding_left"
+        android:paddingRight="@dimen/item_collection_of_postdetail_rl_padding_right">
+
+        <com.aurora.community.view.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/item_collection_of_postdetail_cimg_layout_width"
+            android:layout_height="@dimen/item_collection_of_postdetail_cimg_layout_height" />
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/postdetail_light_color"
+            android:textSize="@dimen/item_collection_of_postdetail_comment_time_text_size" />
+
+        <TextView
+            android:id="@+id/screen_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/user_icon"
+            android:layout_marginLeft="@dimen/item_collection_of_postdetail_screen_name_margin_right"
+            android:layout_marginRight="@dimen/item_collection_of_postdetail_screen_name_margin_right"
+            android:layout_toLeftOf="@id/comment_time"
+            android:layout_toRightOf="@id/user_icon"
+            android:singleLine="true"
+            android:textColor="@color/postdetail_light_color"
+            android:textSize="@dimen/item_collection_of_postdetail_screen_name_text_size" />
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/screen_name"
+            android:layout_marginLeft="@dimen/item_collection_of_postdetail_comment_content_margin_left"
+            android:layout_marginRight="@dimen/item_collection_of_postdetail_comment_content_margin_right"
+            android:layout_marginTop="@dimen/item_collection_of_postdetail_comment_content_margin_top"
+            android:layout_toRightOf="@id/user_icon"
+            android:textColor="@color/gloab_title_color"
+            android:textSize="@dimen/item_collection_of_postdetail_comment_content_text_size" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divider" 
+        android:id="@+id/line_bottom"/>
+</LinearLayout>

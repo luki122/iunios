@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/delete"
+        android:icon="?attr/gn_ic_menu_trash"
+        android:title="@string/delete"
+        android:showAsAction="always" />
+    
+    <!-- <item
+        android:id="@+id/selection_all"
+        android:icon="@drawable/ic_menu_contact_select_all"
+        android:showAsAction="ifRoom"
+        android:visible="false"
+        android:title="@string/select_all" />
+    <item
+        android:id="@+id/de_selection_all"
+        android:icon="@drawable/ic_menu_contact_clear_select"
+        android:showAsAction="ifRoom"
+        android:title="@string/unselect_all" /> -->
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="33dp"
+    android:orientation="vertical"
+    android:paddingTop="7dp">
+
+    <TextView
+        android:id="@+id/addressitem_button"
+        android:layout_width="wrap_content"
+        android:layout_height="	26dp"
+        android:singleLine="true"
+        android:background="@drawable/aurora_compose_address_itemerro_btn_selector"
+        android:textColor="@color/aurora_error_address_color"
+        android:gravity="center"
+        android:textSize="15sp" 
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_marginRight="10dp"/>
+
+</FrameLayout>

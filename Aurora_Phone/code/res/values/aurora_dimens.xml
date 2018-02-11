@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="aurora_dtmf_dialpad_text_margin_top">0dp</dimen>
+    <dimen name="aurora_callcard_padding_top">0dp</dimen>
+    <dimen name="aurora_point_radius_not_touch">114.25dp</dimen>
+    <dimen name="aurora_point_radius_touch">42.5dp</dimen>
+    <dimen name="aurora_point_touch_gap">8dp</dimen>
+    <dimen name="aurora_point_radius">7dp</dimen>
+    <dimen name="aurora_glowpadview_inner_radius">30.75dip</dimen>
+    <dimen name="aurora_glowpadview_target_placement_radius">124.25dip</dimen>
+    <dimen name="aurora_glowpadview_out_ringer_diameter">248.5dip</dimen>
+    <dimen name="aurora_glowpadview_target_radius_differ">10dip</dimen>
+    <dimen name="incoming_call_photo_height_real_v2">100dp</dimen>
+    <dimen name="incoming_call_photo_height_v2">128dp</dimen>
+    <dimen name="incoming_call_photo_top_magin_v2">31dp</dimen>
+    <dimen name="aurora_call_name_text_size">23sp</dimen>
+    <dimen name="aurora_call_area_text_size">12sp</dimen>
+    <dimen name="glowpadview_glow_radius">35dip</dimen>
+    <dimen name="glowpadview_snap_margin">40dp</dimen>    
+    <dimen name="name_move_distance_v2">-64dp</dimen>
+    <dimen name="photo_move_distance_v2">-28.5dp</dimen>       
+    <integer name="aurora_animation_duration">300</integer>
+
+</resources>

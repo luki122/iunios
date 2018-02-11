@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@com.aurora:dimen/aurora_action_bar_height"
+    android:orientation="vertical"
+    android:gravity="left|center">
+    <TextView android:id="@+id/actionbar_account_text_view"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:drawableLeft="@drawable/aurora_select_folder_actionbar_left"
+        		android:gravity="left|center"/>
+</LinearLayout>

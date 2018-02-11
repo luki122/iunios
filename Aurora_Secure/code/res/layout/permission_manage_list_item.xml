@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/item_of_listview"
+    android:descendantFocusability= "blocksDescendants" >
+    <ImageView
+		  android:id="@+id/appIcon"
+		  style="@style/app_icon_of_listview"
+		  android:layout_centerVertical="true"/> 
+		    
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"		       
+        android:layout_toRightOf="@id/appIcon"
+        android:paddingLeft="15dp"
+        android:orientation="vertical">
+        <TextView
+              android:id="@+id/appName"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:gravity="left" android:lines="1" android:ellipsize="end"
+              android:textColor="@color/list_text_title_selector_color"
+              android:textSize="15sp"/>
+        <!-- android:layout_marginTop of TextView subText changed from 7dp to 3dp.(2014-1-9, Vulcan Yang) -->
+        <TextView
+              android:id="@+id/subText"
+              android:layout_width="fill_parent" android:layout_height="wrap_content" 
+              android:layout_marginTop="3dp" android:layout_marginRight="25dp"
+              android:ellipsize="end"
+              android:gravity="left" android:lines="1" 
+              android:textColor="@color/list_text_sub_selector_color"
+              android:textSize="11.3sp"/>     
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/img_set_go"
+	    android:layout_width="wrap_content"  android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"  android:layout_centerVertical="true"
+	    android:layout_marginRight="15dp"
+	    android:src="@drawable/right_arrow"/>
+</RelativeLayout>

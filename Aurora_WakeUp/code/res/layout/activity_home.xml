@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vs_wake_top_bg" >
+              
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+        <!-- 正在使用的声闻==> 显示 -->
+        <LinearLayout
+            android:id="@+id/layout_home_soundmodel"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_main_users"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/home_mic_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <!-- MIC -->
+                <ImageView
+                    android:id="@+id/home_mic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/instruction"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mic_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <!-- 关键字 -->
+                <TextView
+                    android:id="@+id/home_keyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!-- 使用者 -->
+                <TextView
+                    android:id="@+id/home_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/home_keyword"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <!-- More -->
+            <RelativeLayout
+                android:id="@+id/home_triangle_dropdown_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <ImageView
+                    android:id="@+id/home_triangle_dropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/more"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- ####### Start/Stop voice Activation ####### -->
+        <ToggleButton
+            android:id="@+id/home_start_voice_wakeup"
+            style="@style/VoiceWakeup.Layout.Score.Button1"
+            android:layout_below="@id/layout_home_soundmodel"
+            android:textOff="@string/home_startvoiceactivation"
+            android:textOn="@string/home_stopvoiceactivation" />
+        </LinearLayout> 
+    </RelativeLayout>
+
+    
+    <!-- android:visibility="invisible" -->
+    <RelativeLayout
+		android:id="@+id/listlayout"        
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg.content"
+        android:visibility="visible"
+        android:layout_marginBottom="5dp"
+        >    
+		<!-- ListView -->
+	    <aurora.widget.AuroraListView
+	        android:id="@+id/soundmodel_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="295dp"
+	        >
+	    </aurora.widget.AuroraListView>    
+    
+	    <TextView 
+	        android:id="@+id/wakeup_tips"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center_horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/wakeup_tips"
+	        android:textSize="12sp"
+	        android:textColor="#aa000000"
+	        android:visibility="invisible"
+	        />
+    </RelativeLayout>
+    
+    
+    <!-- 没有声纹时显示宣传 -->
+    <RelativeLayout
+        android:layout_below="@id/top"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/wakeup_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg.content"
+        android:visibility="invisible"
+        >
+        <!-- 介绍文字 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/wakeup_intro"
+            android:textSize="12sp"
+            android:textColor="@color/wakeup_intro"
+            android:textStyle="normal" 
+            android:lineSpacingExtra="8dp"
+            />
+
+        <aurora.widget.AuroraButton
+            android:id="@+id/add_soundmodel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:text="@string/add_soundmodel"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-25 created for aurora's new feature start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        android:id="@+id/aurora_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature start -->
+    <ListView
+        android:id="@+id/aurora_group_call_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1px"
+        android:divider="@drawable/aurora_divider_lan"
+        android:background="#ffffff"/>
+    <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature end -->
+</LinearLayout>

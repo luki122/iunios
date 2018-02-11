@@ -1,0 +1,88 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+<style name="aurora_switch">	
+	     <item name="android:layout_width">wrap_content</item>
+	     <item name="android:layout_height">wrap_content</item>
+   </style>
+   
+<style name="text_of_preferences_item">	
+	     <item name="android:textColor">@color/black</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+   </style>
+   
+<style name="item_of_listview">	     
+	     <item name="android:layout_width">fill_parent</item>
+	     <item name="android:layout_height">wrap_content</item>
+	     <item name="android:minHeight">57dp</item>
+   </style>
+   
+<style name="app_icon_of_listview">	     
+	     <item name="android:layout_width">43.3dp</item>
+	     <item name="android:layout_height">43.3dp</item>
+	     <item name="android:layout_marginLeft">17dp</item>
+	     <item name="android:layout_marginTop">10dp</item>
+	     <item name="android:layout_marginBottom">10dp</item>
+	</style>
+	
+<style name="Dialog" parent="android:style/Theme.Dialog">  
+       <item name="android:windowBackground">@android:color/transparent</item>  
+       <item name="android:windowNoTitle">true</item> 
+       <item name="android:windowIsFloating">true</item>  
+    </style>
+    
+<style name="button_text">				
+	     <item name="android:textColor">@color/btn_text_title_selector_color</item>
+	     <item name="android:textSize">18sp</item>     
+   </style>
+   
+<style name="text_selector_of_preferences_item">	
+	     <item name="android:textColor">@color/prefer_text_title_selector_color</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+    </style>
+    
+ <style name="item_right_arrow">	
+         <item name="android:layout_width">wrap_content</item>
+	     <item name="android:layout_height">wrap_content</item>
+	     <item name="android:layout_alignParentRight">true</item>
+	     <item name="android:layout_marginRight">15dp</item>
+	     <item name="android:layout_centerVertical">true</item>
+	     <item name="android:scaleType">center</item>
+	     <item name="android:src">@drawable/right_arrow</item>
+   </style>
+   
+ <!-- item button的属性 -->
+   <style name="preferences_item">				
+	     <item name="android:layout_width">fill_parent</item>
+	     <item name="android:layout_height">@dimen/preferences_item_height</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+	     <item name="android:paddingLeft">15dp</item>
+	     <item name="android:gravity">center_vertical|left</item>
+	     <item name="android:textColor">@color/black</item>
+   </style>
+   
+   <style name="text_title_big">	
+	     <item name="android:textColor">@color/black</item>
+	     <item name="android:textSize">18sp</item>
+   </style>
+   
+   <style name="text_sub">	
+	     <item name="android:textColor">#7b7b7b</item>
+	     <item name="android:textSize">14sp</item>
+   </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * File Description: Define all string resources add by Gionee engineer
+ * Author: huyuke
+ * Create Date: 2011/09/07
+ *
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 start-->
+    <string name="zzzzz_usb_storage_notification_message">Select to file storage or to turn on/off Debug mode.</string>
+    <string name="zzzzz_turn_on_usb_storage">Usb storage</string>
+    <string name="zzzzz_usb_storage_content">To view local storage on PC</string>
+    <string name="zzzzz_open_debug_mode">Interim USB debugging</string>
+    <string name="zzzzz_debug_mode_message">Debug mode when USB is connected</string>
+    <string name="zzzzz_usb_storage_title">USB connected</string>
+    <string name="zzzzz_no_sdcard_title">No SD Card</string>
+    <string name="zzzzz_no_sdcard_message">There is no SD card, please mount a SD card before your operation!</string>
+    <string name="zzzzz_adb_warning_title">Temporarily turn on USB debugging</string>
+    <string name="zzzzz_adb_warning_message">Temporarily enable USB debugging,Allows the PC client management software to copy data between your computer and device, the installer</string>
+    <!-- gionee guozj 20130130 modified for CR00769470 start -->
+    <string name="zzzzz_mount_sdcard_dialog_title">Please do not unplug the usb cable now, may cause error to the sd card！Before turning off USB storage, make sure you have unmounted (\u201cejected\u201d) your Android\u2018s USB storage from your computer!</string>
+    <!-- gionee guozj 20130130 modified for CR00769470 end -->
+    <string name="zzzzz_dlg_confirm_kill_storage_users_text">If you turn on USB storage, some applications you are using will stop and may be unavailable until you turn off USB storage.</string>
+    <string name="zzzzz_cancel">Cancel</string>
+    <string name="zzzzz_dlg_ok">OK</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_title">Turn on USB storage</string>
+    <string name="zzzzz_usb_storage_error_message" product="nosdcard">There is a problem using your USB storage for USB mass storage.</string>
+    <string name="zzzzz_usb_storage_error_message" product="default">There is a problem using your SD card for USB mass storage.</string>
+    <string name="zzzzz_dlg_error_title">USB operation failed</string>
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 end-->
+    
+    <!-- Gionee fengjianyi 2012-12-27 add for CR00754831 start -->
+    <string name="zzzzz_gn_battery_low_why">"Battery use"</string>
+    <!-- Gionee fengjianyi 2012-12-27 add for CR00754831 end -->
+    
+    <!-- Gionee fengjianyi 2012-12-28 add for CR00751916 start -->
+    <string name="zzzzz_gn_data_usage_disabled_dialog_enable">Re-enable</string>
+    <!-- Gionee fengjianyi 2012-12-28 add for CR00751916 end -->
+   <!-- Gionee zengxuanhui 20130328 add for CR00788327 begin -->
+   <string name="gn_ssg_dlg_title">Disable smart dial</string>
+   <string name="gn_ssg_dlg_message">Disable smart gesture when select "Alaways ask", please set a sim as default if you want to use smart gesture</string>
+   <string name="gn_ssg_dlg_check">"Don't show next time"</string>
+   <!-- Gionee zengxuanhui 20130328 add for CR00788327 end -->        
+   
+    <!-- Gionee fengjianyi 2013-04-24 add for CR00800567 start -->
+    <string name="bugreport_title">Take bug report</string>
+    <string name="zzzzz_gn_more_title">More</string>
+    <string name="zzzzz_gn_title_sort_tool_icon">Tools preference</string>
+    <string name="zzzzz_gn_showed_in_notification_bar">Showed in notification bar</string>
+    <string name="zzzzz_gn_not_showed_in_notification_bar">Not showed in notification bar</string>
+    <string name="zzzzz_gn_abbrev_wday_month_day_no_year">EEE\nMMMM d</string>
+    <string name="zzzzz_gn_radio_notification">Notifications</string>
+    <string name="zzzzz_gn_radio_switch">Switches</string>
+    <!-- Gionee fengjianyi 2013-04-24 add for CR00800567 end -->
+    
+     <!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog begin -->
+    <string name="zzzzz_gn_warn_title">Fail charging</string>
+    <string name="zzzzz_gn_charging_over_voltage">Fail to charge for OVER VOLTAGE.\n Please select the appropriate power.</string>
+    <string name="zzzzz_gn_charging_over_heat">Fail to charge for OVER HEAT.\n Please cool before charging.</string>
+    <string name="zzzzz_gn_warn_title_unplug">System tip</string>
+    <string name="zzzzz_gn_charging_over_heat_unplug">Battery temperature is too high, please stop using</string>
+    <string name="zzzzz_gn_charging_cold">Temperature is too low, it is recommended not to charge at this time.\n otherwise it will cause the battery to swell.</string>
+    <string name="zzzzz_gn_charging_cold_unplug">Battery temperature is too low, please stop using</string>
+     <!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog end -->
+</resources>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    
+    <LinearLayout
+        android:id="@+id/about_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/gn_about_icon" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/gn_about_title"
+            android:textColor="@color/note_title"
+            android:textSize="@dimen/medium_text_size" />
+
+
+        <TextView
+            android:id="@+id/tv_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/note_content"
+            android:text="@string/gn_about_version"
+            android:textSize="11sp" />
+        
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/gn_about_new_function"
+            android:textColor="@color/note_content"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/gn_about_add_day_view"
+            android:textColor="@color/note_content"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gn_about_add_alarm"
+            android:textColor="@color/note_content"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gn_about_add_widget"
+            android:textColor="@color/note_content"
+            android:textSize="11sp" />
+        
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/gn_about_add_4"
+            android:textColor="@color/note_content"
+            android:textSize="11sp" />
+		<TextView 
+		   	android:id="@+id/tv_content_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/gn_about_content_source"
+            android:textColor="@color/note_content"
+            android:textSize="12sp"
+		    />
+    </LinearLayout>
+    <aurora.widget.AuroraButton
+    	android:id="@+id/about_update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+        android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+        android:layout_marginBottom="@dimen/gn_sliding_content_margin_left_or_right"        
+        android:clickable="true"
+        android:text="@string/about_update"
+        android:textSize="20sp" />
+    <LinearLayout 
+             	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_below="@id/about_content"
+            	android:layout_above="@id/about_update_button"
+            	android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/tengxun_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+                android:src="@drawable/gn_hocospose_tengxun_image_on_off"
+                />
+            <View
+                android:layout_width="12dp"
+               	android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/chinese_lunar_calendar_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+                android:src="@drawable/gn_chinese_lunar_calendar_image_on_off"
+                />            
+   	</LinearLayout>
+
+    
+
+</RelativeLayout>

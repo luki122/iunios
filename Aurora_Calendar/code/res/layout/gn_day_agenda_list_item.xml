@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <pengwei><2013-05-21> modify for CR00817892 begin -->
+<!-- Gionee <pengwei><2013-04-12> modify for DayView begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_month_agenda_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@drawable/gn_day_listview_item" >
+    
+    <View 
+        android:id="@+id/day_agenda_start_line"
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        
+        android:background="@color/gn_bg_day_agenda_start_line"
+        />
+    <LinearLayout 
+        android:id="@+id/day_agenda_title_and_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/day_agenda_start_line"
+        android:orientation="vertical"
+        >
+        
+
+    <TextView 
+        android:id="@+id/day_agenda_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@color/gn_day_listview_item_title"
+
+        />
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        />
+    <TextView
+        android:id="@+id/day_agenda_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/gn_day_listview_item_time"
+        />
+        </LinearLayout>
+</RelativeLayout>
+<!-- Gionee <pengwei><2013-04-12> modify for DayView end -->
+<!-- Gionee <pengwei><2013-05-21> modify for CR00817892 end -->

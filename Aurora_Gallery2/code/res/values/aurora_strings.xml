@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="crop_picture">Clip Image</string>
+    <string name="wallpaper_set">Wallpaper has been changed</string>
+    <string name="goto_filemanager">Other Files</string>
+    <string name="action_title">%1$d Photos</string>
+    <string name="date_day">Date</string>
+    <string name="date_month">Month</string>
+    <string name="myselect_all">Select All</string>
+    <string name="unmyselect_all">Unselect</string>
+    <string name="delete_finish">%1$d files deleted.</string>
+    <string name="update_pic">Updating pictures...</string>
+    <string name="appwidget_empty_video">No video file</string>
+    <string name="aurora_wallpaper">IUNI Album</string>
+    <string name="aurora_storage_root">Phone Storage</string>
+    <string name="aurora_storage_external">SD Card</string>
+    <string name="aurora_storage_internal">Internal Storage</string>
+    
+    
+    <!-- //Aurora <SQF> <2014-06-05>  for NEW_UI begin -->
+    <string name="photo_edit_action_bar_save">"Save"</string>
+    <string name="photo_edit_action_bar_cancel">"Cancel"</string>
+    <string name="photo_edit_action_bar_confirm_crop">"Confirm Cropping"</string>
+    <string name="photo_edit_action_bar_confirm_filter">"Save"</string> <!-- Confirm Filter -->
+    <string name="photo_edit_action_bar_return">"Return"</string>
+    
+    <string name="photo_edit_cancel_current_edit">"Really cancel current editing?"</string>
+    <string name="photo_edit_cancel_filter">"Cancel filter?"</string>
+    <string name="photo_edit_cancel_crop">"Cancel crop?"</string>
+    <string name="photo_edit_cancel_tip_title">"Tip"</string>
+    
+    <!-- //Aurora <SQF> <2014-06-05>  for NEW_UI end -->
+    
+    <!-- //Aurora <SQF> <2014-09-12>  for NEW_UI begin -->
+    <string name="aurora_effects">"Aurora Filters Effects"</string>
+    
+    <string name="aurora_effects_normal">"Normal"</string>
+    <string name="aurora_effects_reversal">"Reversal"</string>
+    <string name="aurora_effects_crayon">"Crayon"</string>
+    <string name="aurora_effects_fleeting_time">"FleetingTime"</string>
+    <string name="aurora_effects_cosmetology_backlight">"Cosmetology"</string>
+    <string name="aurora_effects_japan_backlight">"Backlight"</string>
+    <string name="aurora_effects_cold_lomo">"ColdLomo"</string>
+    <string name="aurora_effects_sunset">"Sunset"</string>
+    <string name="aurora_effects_softpink">"SoftPink"</string>
+    
+    <string name="aurora_effects_warm_lomo">"WarmLomo"</string>
+    <string name="aurora_effects_reflection">"Reflection"</string>
+    <string name="aurora_effects_light_beam">"LightBeam"</string>
+    <string name="aurora_effects_snowflakes">"SnowFlakes"</string>
+    <!-- //Aurora <SQF> <2014-09-12>  for NEW_UI end -->
+    
+    <!-- //Aurora <SQF> <2015-01-05>  for NEW_UI begin -->
+    <string name="aurora_pitu_not_installed_tip_title">"TTPic"</string>
+    <string name="aurora_pitu_not_installed_tip_message">"TTPic not installed."</string>
+    
+    <string name="aurora_pitu_installing_tip_title">"TTPic"</string>
+    <string name="aurora_pitu_installing_tip_message">"TTPic is installing"</string>
+    <string name="aurora_pitu_install">"Install"</string>
+    <!-- //Aurora <SQF> <2014-01-05>  for NEW_UI end -->
+    
+    <string name="aurora_error_notice_title">"Notice"</string>  
+    <string name="aurora_error_notice">&quot;No external storage device available currently, please open the album again.&quot;</string><!-- JXH add for cloud album 20150408 begin -->
+    <string name="aurora_cloud_album">Cloud album</string>
+    <string name="aurora_local_album">Local album</string>
+    <string name="aurora_album">Album</string>
+    <string name="aurora_system_album">System album</string>
+    <string name="aurora_system_screenshot">Screenshot</string>
+    <string name="aurora_cloud_no_picture">No picture</string><!-- JXH add for cloud album 20150408 end -->
+    
+    
+    
+    <!-- share -->
+    <string name="aurora_share_short_video_share">"Share"</string>
+    <string name="aurora_share_short_video_cancel_share">"Cancel"</string>
+    
+    <!-- upload download list -->
+    <string name="aurora_upload_download_list_act_title">"Transfer List"</string>
+    <string name="aurora_upload_download_list_act_upload">"Upload"</string>
+    <string name="aurora_upload_download_list_act_download">"Download"</string>
+    
+    <string name="aurora_test_string_download">"Download"</string>
+    <string name="aurora_test_string_upload">"Upload"</string>
+    <string name="aurora_test_string_get_list">"Get list"</string>
+    <string name="aurora_test_string_login">"Login"</string>
+    <string name="aurora_test_string_mkdir">"MkDir"</string>
+    
+    <string name="aurora_string_progress_text_format">"%1$s/%2$s"</string>
+    
+    
+   	<string name="long_format_to_string_b">%1$sB</string>
+	<string name="long_format_to_string_kb">%1$sKB</string>
+	<string name="long_format_to_string_mb">%1$sMB</string>
+	<string name="long_format_to_string_gb">%1$sGB</string>
+	
+	<string name="aurora_upload_download_no_task">"No tasks"</string>
+	
+	<string name="aurora_upload_download_pause_task">"Pause"</string>
+	<string name="aurora_upload_download_continue_task">"Continue"</string>
+	<string name="aurora_upload_download_retry_task">"Retry"</string>
+	<string name="aurora_upload_download_waiting_task">"Waiting"</string>
+	<string name="aurora_upload_download_failed_task">"Failed"</string>
+	<string name="aurora_upload_download_creating_task">"Creating"</string>
+	<string name="aurora_upload_download_creating_failed_task">"Create failed"</string>
+	<string name="aurora_upload_download_getting_task_info">"Getting infos"</string>
+	<string name="aurora_upload_download_task_completed">"Completed"</string>
+	<string name="aurora_upload_download_task_upload_completed">"Uploaded"</string>
+    <string name="aurora_upload_download_task_download_completed">"Downloaded"</string>
+	
+	<plurals name="upload_to_xcloud_confirm_string">
+        <item quantity="one">Upload selected item?</item>
+        <item quantity="other">Upload selected items?</item>
+    </plurals>
+    
+	<string name="aurora_upload_to_xcloud">"upload to XCloud"</string>
+	
+	<string name="aurora_local_photos">"Local Photos"</string>
+	<string name="aurora_baidu_cloud_album">"Baidu Cloud"</string>
+	
+	<string name="baidu_cloud_login_failed">"Baidu Cloud Login failed"</string>
+	
+	<string name="baidu_cloud_login_progress_tip">"Login Baidu Cloud"</string>
+	
+	<string name="aurora_album_upload_status">Uploading&#8230;</string>
+	
+	<string name="aurora_not_support_uplaod_video">Uploading videos not supported currently.</string>
+	
+	<string name="aurora_upload_sum_string_format">Upload selected %s photos to</string>
+	
+	<string name="aurora_network_not_available">Network not available. Please check.</string>
+	<string name="aurora_network_not_wifi">Not under wifi network. Parts of functions are unavailable.</string>
+	<string name="aurora_uploaddownload_clear_list">Clear list</string>
+	<string name="aurora_not_support_upload_under_data_network">Not under wifi network.</string>
+	<string name="aurora_not_support_file_format">Currently not support webp, wbpm file format</string>
+	
+	<string name="aurora_clear_upload_list">Clear upload list?</string>
+	<string name="aurora_clear_download_list">Clear list will not delete photos.</string>
+	<string name="aurora_upload_download_list_delete_task_confirm">Delete this task?</string>
+    <!-- aurora SQF -->
+    
+     <!-- wenyongzeh 2015.9.15 -->
+    <string name="aurora_move_ok">Images move successfully！</string>
+    <string name="aurora_move_error">Mobile failure</string>
+    <string name="aurora_move_error_file_already_exist">Target album has been in existence that file, mobile failure</string>
+    <string name="aurora_move_new_album">Pictures will be moved to the new album</string>
+      <string name="aurora_new_album">Create a new album.</string>
+    <string name="aurora_download_complete">Download is successful, please go to the local photo album view</string>
+   <!-- wenyongzeh 2015.9.24 -->
+   
+     <string name="aurora_album_no_picture">No photo album is very lonely\nClick "+" to add photos</string>
+      <string name="aurora_album_wifi_refash">Your WIFI is like running away from home，\nClick to refresh.</string>
+      <string name="aurora_max_album_name">Name up to 30 words</string>
+      <string name="aurora_album_rename">rename</string>
+    <string name="aurora_create_album">The new album</string>
+    <string name="aurora_create">new</string>
+    <string name="aurora_upload_complete">Uploaded successfully, please check to the cloud photo album</string>
+       
+	<!-- wenyongzhe 2015.9.1 dialog -->
+	<string name="aurora_actionbar_upload_to">Uploaded to</string>
+	<string name="aurora_upload_download_lists_delete_task_confirm">Delete</string>
+	<string name="aurora_upload_download_button">Transmission</string>
+	<string name="aurora_upload_download_lists_delete_task_confirm_tip">Sure you want to delete the selected task？</string>
+	 <string name="aurora_actionbar_move_to">Move to</string>
+	 <string name="aurora_cloud_download_dialog_message">Is currently in the wi-fi environment, transfer photos will consume your data traffic, whether or not to continue？</string>
+    <string name="aurora_album_cannot_char">Can not create this photo album.</string>
+  <!-- <string name="aurora_album_screenshots">截图</string>
+       <string name="aurora_album_local">相册</string> -->  
+	
+    <string name="aurora_album_name_repeat">Album name cannot be repeated.</string>
+    <string name="aurora_del_album">Deleted from the cloud photo album phase images will not be able to restore, please careful operation.Sure you want to delete the selected you %1$d photo？</string>
+    <string name="aurora_del_error">Delete failed.</string>
+    <string name="aurora_del_ok">Delete the success.</string>
+    <string name="aurora_rename_error">Rename the failure.</string>
+    <string name="aurora_del_picture">Deleted from the cloud photo album phase images will not be able to restore, please careful operation.Sure you want to delete you selected %1$d photo？</string>
+    <string name="aurora_checkbox_string">While maintaining the original of the photos in the album.</string>
+    <string name="aurora_move_picture">Move the selected %1$d picture.</string>
+    <string name="aurora_album_login_failed">Login cloud albums failure.</string>
+    <string name="aurora_album_download_status">In the download&#8230;</string>
+    <string name="aurora_album_error_char">Including illegal characters.</string>
+    <string name="aurora_album_login_cloud">Using the cloud photo album must login first personal center</string>
+    <string name="aurora_album_network_fail">The network is not available</string>
+    <string name="aurora_xcloud_move">Please click on the upper right corner of the "+" new cloud photo album</string>
+    
+    	<!-- paul add -->
+        <string name="aurora_load_fail">Decode error or can\'t find the file</string>
+</resources>

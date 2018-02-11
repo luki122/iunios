@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/cloud_operation_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector">
+    </item>
+    <item
+        android:id="@+id/cloud_operation_downlaod"
+        android:icon="@drawable/aurora_bottom_cloud_download">
+    </item>
+    <item
+        android:id="@+id/cloud_operation_move"
+        android:icon="@com.aurora:drawable/aurora_bottombar_cut_selector">
+    </item>
+
+</menu>

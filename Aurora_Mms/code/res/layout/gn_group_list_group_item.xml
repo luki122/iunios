@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-4-24 added for GIUI4.0 start
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/list_item_right_margin_gn"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_weight="1"
+        android:layout_marginLeft="35dip"
+        android:orientation="horizontal">
+        <com.gionee.mms.ui.GnTextView
+            android:id="@+id/groupName"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- Gionee wangpf 2011-11-22 changed for CR00447546 start -->
+    <CheckBox android:id="@+id/group_item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:layout_marginLeft="@dimen/list_item_left_margin_gn"
+        android:gravity="right|center_vertical"
+        android:focusableInTouchMode="false"
+        android:clickable="true"/>
+    <!-- Gionee wangpf 2011-11-22 changed for CR00447546 end -->
+</LinearLayout>

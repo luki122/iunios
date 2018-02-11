@@ -1,0 +1,12 @@
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:title="@string/development_settings_title">
+        <!-- aurora:auroratitle="@string/usb_adb" -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="usb_adb"
+        />
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="enable_adb" 
+        aurora:auroratitle="@string/enable_adb" 
+        />
+ </aurora.preference.AuroraPreferenceScreen>

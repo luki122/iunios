@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="17dp"
+    android:layout_marginTop="97dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/today"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:textColor="#ccffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:includeFontPadding="false"
+        android:layout_below="@id/today"
+        android:layout_height="55dp"
+        android:layout_marginRight="17dp"
+        android:layout_width="wrap_content"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="@string/aurora_remember_title_hint"
+        android:textColor="#ccffffff"
+        android:textSize="35sp" />
+
+    <aurora.widget.AuroraEditText
+        android:background="#0d000000"
+        android:gravity="center_vertical"
+        android:hint="@string/aurora_remember_title_hint"
+        android:id="@+id/title_edit"
+        android:includeFontPadding="false"
+        android:layout_below="@id/today"
+        android:layout_height="55dp"
+        android:layout_marginRight="17dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#66ffffff"
+        android:textSize="35sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:background="#0d000000"
+        android:id="@+id/time_picker"
+        android:layout_below="@id/title_edit"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="215dp"
+        android:paddingLeft="8dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/choose_time"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:id="@+id/info"
+        android:layout_below="@id/title"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:ems="1"
+            android:id="@+id/to_from"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:text="@string/aurora_remember_past"
+            android:textColor="#ccffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:background="@null"
+            android:id="@+id/day"
+            android:includeFontPadding="false"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:text="@string/aurora_remember_day"
+            android:textColor="#ccffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

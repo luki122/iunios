@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ListFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/add_auto_start_noapplayout"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/all_app_list_noapptext_margintop"
+            android:text="@string/no_user_app"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/hint_big_text_size" />
+
+        <Button
+            android:id="@+id/gotoMarketBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/preferences_item_height"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/all_app_list_gotomarketbtn_marginbottom"
+            android:layout_marginLeft="@dimen/add_auto_start_addbtn_margin_right"
+            android:layout_marginRight="@dimen/add_auto_start_addbtn_margin_right"
+            android:background="@drawable/button"
+            android:text="@string/necessary_app"
+            android:textColor="@color/btn_text_title_selector_color"
+            android:textSize="@dimen/list_header_text_size" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/memorySizeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/all_app_list_memorysizelayout_height"
+            android:background="@drawable/title_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/MemorySizeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="@dimen/add_auto_start_addbtn_margin_right"
+                android:text="@string/phone_memory"
+                android:textColor="@color/all_app_list_memorysizetext_color"
+                android:textSize="@dimen/main_activity_memory_text_size" />
+
+            <TextView
+                android:id="@+id/percentTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingRight="@dimen/add_auto_start_addbtn_margin_right"
+                android:text="@string/sd_card"
+                android:textColor="@color/all_app_list_memorysizetext_color"
+                android:textSize="@dimen/main_activity_memory_text_size" />
+        </RelativeLayout>
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/appListview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/line"
+            android:dividerHeight="@dimen/listview_dividerheight"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:listSelector="@drawable/item_of_middle"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/FastIndexingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@com.aurora:dimen/aurora_alphabetlist_height"
+        android:layout_marginTop="@com.aurora:dimen/aurora_alphabetlist_paddingtop"
+        android:visibility="gone" >
+
+        <com.aurora.puremanager.view.LetterSideBar
+            android:id="@+id/letterSideBar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right" />
+
+        <LinearLayout
+            android:id="@+id/toastLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/all_app_list_toastlayout_margin_right"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tvLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/show_head_toast_bg_left"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/all_app_list_item_tvletter_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/main_activity_grid_item_text_margin"
+                android:background="@drawable/show_head_toast_bg_right"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

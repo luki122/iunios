@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-7-10 added for CR00640592 start
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="?android:attr/textColorAlertDialogListItem"
+    android:gravity="center_vertical"
+    android:paddingLeft="14dip"
+    android:paddingRight="15dip"
+    android:ellipsize="marquee"
+/>

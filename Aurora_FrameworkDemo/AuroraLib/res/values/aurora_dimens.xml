@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     Gionee <zhangxx> <2013-06-20> add for auroraframework.
+ -->
+<resources>
+    <!-- animation time -->
+    <integer name="aurora_shortAnimTime">200</integer>
+    <integer name="aurora_mediumAnimTime">300</integer>
+    <integer name="aurora_longAnimTime">300</integer>
+    <integer name="aurora_halfLargeAnimTime">400</integer>    
+    <integer name="aurora_largeAnimTime">500</integer>
+    <!-- Dialog title height -->
+    <dimen name="aurora_alert_dialog_title_height">48dip</dimen>
+    <dimen name="aurora_alert_dialog_button_bar_height">48dip</dimen>    
+    <!-- RecycleListView max height -->
+    <dimen name="aurora_recyclelistview_maxheight">270dip</dimen>
+    <!-- Quick Contact Badge -->
+    <dimen name="aurora_quickcontact_padding_left">6dip</dimen>
+    <dimen name="aurora_quickcontact_padding_right">6dip</dimen>
+    <dimen name="aurora_quickcontact_padding_top">4dip</dimen>
+    <dimen name="aurora_quickcontact_padding_bottom">8dip</dimen>
+    <!-- Preference fragment padding, sides -->
+    <dimen name="aurora_preference_child_padding_side">16dip</dimen>
+    <dimen name="aurora_preference_icon_minWidth">0dp</dimen>
+    <dimen name="aurora_preference_item_padding_inner">15dip</dimen>
+    <dimen name="aurora_preference_item_padding_side">15dip</dimen>
+    <dimen name="aurora_preference_fragment_padding_left">17dp</dimen>
+    <dimen name="aurora_preference_fragment_padding_right">17dp</dimen>
+    <dimen name="aurora_preference_fragment_padding_top">2dp</dimen>
+    <dimen name="aurora_preference_fragment_padding_bottom">4dp</dimen>
+    <dimen name="aurora_preference_title_padding">4dp</dimen>
+    <dimen name="aurora_preference_category_title_padding_bottom">10dp</dimen>
+    <dimen name="aurora_preference_single_line_height">43dp</dimen>	
+    <dimen name="aurora_preference_icon_size">19dp</dimen>
+    <!-- toast default offset y -->
+    <dimen name="aurora_toast_y_offset">60dip</dimen>
+    <!-- aurora_action_bar_title_text_size -->
+    <dimen name="aurora_action_bar_title_text_size">20dp</dimen>
+    <!-- switch dimens -->
+    <dimen name="aurora_switch_thumb_Text_Padding">8dip</dimen>
+    <dimen name="aurora_switch_minwidth">64dip</dimen>
+    
+    <dimen name="aurora_dropdownitem_icon_width">32dip</dimen>
+    <dimen name="aurora_dropdownitem_text_padding_left">8dip</dimen>
+    <dimen name="aurora_dropdownitem_text_padding_right">8dip</dimen>
+    <dimen name="aurora_search_view_preferred_width">320dip</dimen>
+    <dimen name="aurora_search_view_text_min_width">160dip</dimen>
+
+    <!-- Weight of the left pane in a multi-pane preference layout. -->
+    <integer name="aurora_preferences_left_pane_weight">4</integer>
+    <!-- Weight of the right pane in a multi-pane preference layout. So the split is 40:60 -->
+    <integer name="aurora_preferences_right_pane_weight">6</integer>    
+    <integer name="aurora_preference_screen_header_scrollbarStyle">0x02000000</integer> <!-- outsideOverlay -->    
+    <integer name="aurora_preference_fragment_scrollbarStyle">0x02000000</integer> <!-- outsideOverlay -->
+    <!-- Preference fragment padding, sides -->
+    <dimen name="aurora_preference_fragment_padding_side">16dp</dimen>
+    <!-- Preference widget area width (to the left of the text) -->
+    <dimen name="aurora_preference_widget_width">48dp</dimen> 
+
+     <!-- Gionee <daizhimin> <2013-07-04> add for CR00833379 begin --> 
+    <dimen name="aurora_magicbar_icon_height">32dp</dimen>
+    <dimen name="aurora_magicbar_title_size">16sp</dimen>
+    <dimen name="aurora_magicbar_item_height">52dp</dimen>
+    <dimen name="aurora_magicbar_item_padding">20dp</dimen>
+    <dimen name="aurora_magicbar_item_padding_land">76dp</dimen>
+    <dimen name="aurora_magicbar_item1_padding">26dp</dimen>
+    <dimen name="aurora_magicbar_item2_padding">118dp</dimen>
+    <dimen name="aurora_magicbar_item2_text_padding">108dp</dimen>
+    <dimen name="aurora_magicbar_item3_padding">82dp</dimen>
+    <dimen name="aurora_magicbar_item3_padding_land">166dp</dimen>
+    <dimen name="aurora_magicbar_text_width">72dp</dimen>
+    <dimen name="aurora_magicbar_title_mode_height">73dp</dimen>
+    <dimen name="aurora_magicbar_list_item_height">54dp</dimen>  
+    <dimen name="aurora_temp_pading">2dp</dimen> 
+    <dimen name="aurora_magicbar_max_listview_height">240dp</dimen> 
+    <dimen name="aurora_magicbar_listview_left_right_margin">10dp</dimen> 
+    <dimen name="aurora_magicbar_listview_bottom_margin">6dp</dimen>  
+    <!-- Gionee <daizhimin> <2013-07-04> add for CR00833379 end --> 
+
+    <!-- for ActionBar -->
+    <dimen name="aurora_action_bar_stacked_tab_max_width">180dp</dimen>
+    <dimen name="aurora_action_bar_icon_vertical_padding">8dip</dimen>
+    <dimen name="aurora_action_bar_subtitle_top_margin">-3dip</dimen>
+    
+    <!-- Gionee <xuhz> <2013-07-19> add for CR00838236 begin -->
+	<!-- String for Smart Guider -->
+    <dimen name="aurora_smart_full_btn_bottom_margin">60dip</dimen>
+	<!-- Gionee <xuhz> <2013-07-19> add for CR00838236 end -->
+    <dimen name="aurora_loading_button_small_size">14dp</dimen>
+
+    <!-- Aurora <jackycheng> 2013.9.11 add for system dimen begin-->
+    <dimen name="aurora_subtitle_text_size">18sp</dimen>
+
+    <dimen name="aurora_title_padding_left">12dp</dimen>
+    <dimen name="aurora_title_padding_right">12dp</dimen>
+
+    <dimen name="aurora_subtitle_padding_left">17dp</dimen>
+    <dimen name="aurora_subtitle_padding_right">17dp</dimen>
+
+    <dimen name="aurora_search_view_hight">32dp</dimen>
+    <dimen name="aurora_search_view_padding_left">12dp</dimen>
+    <dimen name="aurora_search_view_padding_right">12dp</dimen>
+    <dimen name="aurora_search_view_padding_top">8.5dp</dimen>
+    <dimen name="aurora_search_view_padding_bottom">8.5dp</dimen>
+    <dimen name="aurora_search_view_text_size">18sp</dimen>
+    <dimen name="aurora_search_view_hint_icon_padding_left">9dp</dimen>
+    <dimen name="aurora_search_view_hint_icon_padding_top">9dp</dimen>
+    <dimen name="aurora_search_view_hint_icon_padding_bottom">8dp</dimen>
+    <dimen name="aurora_search_view_hint_text_padding_left">17dp</dimen>
+   
+
+    <dimen name="aurora_listview_oneline_hight">46dp</dimen>
+    <dimen name="aurora_listview_twoline_hight">85dp</dimen>
+    <dimen name="aurora_listview_twoline_space">17dp</dimen>
+
+    <dimen name="aurora_navigation_bar_title_text_size">30sp</dimen>
+    <dimen name="aurora_navigation_bar_button_text_size">24sp</dimen>
+    <dimen name="aurora_mumu_button_text_size">20sp</dimen>
+    <dimen name="aurora_listview_button_text_size">18sp</dimen>
+    <dimen name="aurora_normal_button_text_size">16sp</dimen>
+    <dimen name="aurora_mms_context_text_size">15sp</dimen>
+    <!-- Aurora <jackycheng> 2013.9.11 add for system dimen end-->
+    
+    
+    
+     <!-- Aurora <luofu> 2013.9.17 add for alert dialog dimen begin-->
+    <dimen name="aurora_alert_dialog_width">313dp</dimen>
+    <dimen name="aurora_alert_dialog_height">142dp</dimen>
+    <dimen name="aurora_alert_dialog_title_margin_top">24dp</dimen>
+    <dimen name="aurora_alert_dialog_title_margin_bottom">12dp</dimen>
+
+    <dimen name="aurora_alert_dialog_btn_panel_height">47dp</dimen>
+    <dimen name="aurora_alert_dialog_btn_width">156dp</dimen>
+    <dimen name="aurora_alert_dialog_title_text_size">19sp</dimen>
+    <dimen name="aurora_alert_dialog_msg_text_size">18sp</dimen>
+    <dimen name="aurora_alert_dialog_btn_text_size">19sp</dimen>
+    <!-- Aurora <luofu> 2013.9.17 add for alert dialog dimen end-->
+    
+    
+    
+    <dimen name="status_bar_icon_size">19dip</dimen>
+    
+     <dimen name="status_bar_height">25dip</dimen>
+     
+     <dimen name="app_icon_size">48dip</dimen>
+     
+     <dimen name="navigation_bar_height">48dp</dimen>
+      <dimen name="system_bar_icon_size">32dip</dimen>
+      
+      
+      <!-- Aurora <luofu> 2013.11.15 add for system ui dimen begin-->
+     <dimen name="navigation_bar_width">42dp</dimen>
+     <dimen name="glowpadview_inner_radius">15dip</dimen>
+     <dimen name="glowpadview_glow_radius">75dip</dimen>
+     
+     <dimen name="system_bar_height">48dp</dimen>
+     
+     
+     <!-- flash  add  start-->
+     <integer name="aurora_list_cb_anim_time">300</integer>
+     <dimen name="aurora_list_cb_width">29.3dp</dimen>
+     <dimen name="aurora_list_paddingleft">17dp</dimen>
+     <dimen name="aurora_list_cb_margintop">14.5dp</dimen>
+     <!-- flash  add  end-->
+     
+     <!-- flash add resolver_activity styles start-->
+     <integer name="auroraSharedGridViewMaxColumns">3</integer>
+     <integer name="auroraSharedWindowPaddings">141</integer>
+     <dimen name="auroraSharedGridViewPaddingLeft">19dp</dimen>
+     <dimen name="auroraSharedGridViewPaddingRight">19dp</dimen>
+     <dimen name="auroraSharedGridViewPaddingTop">25dp</dimen>
+     <dimen name="auroraSharedGridViewPaddingBottom">25dp</dimen>
+     <!-- flash add resolver_activity styles end-->
+     
+     
+     
+     <dimen name="aurora_custom_action_bar_search_icon_margin_left">5dp</dimen>
+     <dimen name="aurora_custom_action_bar_search_view_margin_left">12dp</dimen>
+     <dimen name="aurora_custom_action_bar_search_hint_text_margin_left">40dp</dimen>
+     <dimen name="aurora_custom_action_bar_icon_margin_top">5dp</dimen>
+     <dimen name="aurora_custom_action_bar_icon_margin_right">30dp</dimen>
+     <dimen name="aurora_custom_action_bar_search_icon_padding_top">10dp</dimen>
+     <dimen name="aurora_custom_action_bar_search_icon_padding_right">15dp</dimen>
+     
+     
+     
+     <dimen name="aurora_number_picker_label_padding_right">5dp</dimen>
+     
+     <!-- add for preference -->
+     <dimen name="aurora_preference_title_text_size">18sp</dimen>
+     <dimen name="aurora_preference_summary_text_size">14sp</dimen>
+     <dimen name="aurora_preference_summary_margin_top">5dp</dimen>
+     <dimen name="aurora_preference_padding_top">12.1dp</dimen>
+     <dimen name="aurora_preference_padding_bottom">12.1dp</dimen>
+     <dimen name="aurora_action_bar_search_view_height">47dp</dimen>
+       <!-- add by xxj -->
+     <dimen name="aurora_list_singleline_height">47dp</dimen>
+     <dimen name="aurora_list_singleline_text_size">18sp</dimen>     
+     <dimen name="aurora_list_doubleline_height">71dp</dimen>    
+     <dimen name="aurora_list_content_layout_paddingtop">13.6dp</dimen>
+     <dimen name="aurora_list_content_layout_paddingbottom">13.6dp</dimen>
+     <dimen name="aurora_list_maintext_text_size">18sp</dimen>
+     <dimen name="aurora_list_gap_height_maintext_and_subtext">5dp</dimen>
+     <dimen name="aurora_list_subtext_text_size">15sp</dimen>
+    
+     
+     <integer name="searchviewhosttranslate">126</integer>
+     <integer name="searchviewhosttranslatereverse">-126</integer>
+    
+     <dimen name="aurora_dialog_title_divider_margintop">18dp</dimen>
+     <dimen name="aurora_resolver_window_max_height">406dp</dimen>
+     
+     <dimen name="aurora_alphabetlist_paddingtop">53dp</dimen>
+     <dimen name="aurora_alphabetlist_paddingright">9dp</dimen>
+     <dimen name="aurora_alphabetlist_height">449dp</dimen>
+     <dimen name="aurora_alphabetlist_textsize">13.3sp</dimen>
+     <dimen name="aurora_alphabetlist_showcirclepaddingtop">265dp</dimen>
+     
+     <!-- luofu add for settings page 2014.8.1 begin -->
+     <dimen name="aurora_settings_padding_top">13dp</dimen>
+     <dimen name="aurora_settings_padding_left">17dp</dimen>
+     <dimen name="aurora_settings_padding_right">17dp</dimen>
+     <dimen name="aurora_settings_item_divider_height">13dp</dimen>
+     
+     
+     
+     <!-- luofu add for settings page 2014.8.1 end -->
+     
+     <dimen name="aurora_prompt_button_size">18sp</dimen>
+     <dimen name="aurora_prompt_button_minwidth">43dp</dimen>
+     
+     
+     
+     
+     
+     
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- add by chenhl 20140428 start -->
+    <string name="my_music">Мои музыки</string>
+    <string name="find_music">Обнаружить музыки</string>
+    <string name="song">Песни</string>
+    <string name="singer">Певцы</string>
+    <string name="folder">Папка</string>
+    <string name="new_singer">Новый список</string>
+    <string name="my_favorite_songs">Любимые песни</string>
+    <string name="recently_added_songs">Добавленные песни</string>
+    <string name="search_for_singer">Поиск песен или певцы</string>
+    <string name="song_size"><xliff:g id="songsize">%d</xliff:g></string>
+    <string name="aurora_rename">Переименование</string>
+    <string name="aurora_delete_message">Удалить список?</string>
+    <string name="aurora_song_single">Список песен</string>
+    <string name="aurora_num_songs_of_single">Всего<xliff:g id="songs">%d</xliff:g>песен</string>
+    <string name="aurora_add_playlist_song_num">Добавить ( <xliff:g id="playlist_songs_add">%d</xliff:g> )</string>
+    <string name="aurora_input_playlist_name">Введите название списка</string>
+    <string name="aurora_playlist_total_songs"><xliff:g id="playlist_total_songs">%d</xliff:g>песен</string>
+    <string name="aurora_playlist_total_singer"><xliff:g id="playlist_total_singer">%d</xliff:g>певцы</string>
+    <string name="aurora_playlist_total_fold"><xliff:g id="playlist_total_fold">%d</xliff:g>папки</string>
+    <string name="aurora_fold_num"><xliff:g id="foldnum">%s</xliff:g>папки, всего<xliff:g id="foldsongs">%s</xliff:g>песен</string>
+    <string name="aurora_songs_to_remove">Удалены<xliff:g id="songs_to_remove">%d</xliff:g>песен</string>
+    <string name="aurora_remove">Удалить</string>
+    <string name="aurora_remove_message">Удалить выбранные<xliff:g id="numsongs">%s</xliff:g>песен?</string>
+    <string name="aurora_ignor_scan">Пропускать сканирование</string>
+    <string name="aurora_ignoer_scan_message">Подтвердите пропускать сканирование?</string>
+    <string name="aurora_not_scan_the_fold">Не будет сканировать папку</string>
+    <string name="aurora_playlist_no_songs">Нет песен в списке</string>
+    <string name="aurora_online_new_album">Добавлен новый альбом</string>
+    <string name="aurora_more">Больше</string>
+    <string name="aurora_ranking">Рейтинг</string>
+    <string name="aurora_no_network">Нет сети</string>
+    <string name="aurora_setting_network">Установить сеть</string>
+    <string name="aurora_network_error">Аномальное подключение или нет сети</string>
+    <string name="aurora_retry">Попробуйте ещё раз</string>
+    <string name="aurora_collect_playlist">Собирать список</string>
+    <string name="aurora_collect_playlist2">Собирать список</string>
+    <string name="aurora_collect_size"><xliff:g id="songsize">%d</xliff:g></string>
+    <string name="aurora_collect_time">yyyy год MM месяц dd день</string>
+    <string name="aurora_collect_show_time">Время собирания:</string>
+    <string name="aurora_download_manager">Загрузка</string>
+    <string name="aurora_player_share">Разделение в</string>
+    <string name="aurora_player_shareinfo">Поделенные песни:</string>
+    <string name="player_albums">Сборник</string>
+    <string name="player_downs">Загрузка</string>
+    <string name="remove_download">Отменить загрузки</string>
+    <string name="remove_download_message">Подтвердите отменить загрузки?</string>
+    <string name="aurora_all_pause">Остановить всё</string>
+    <string name="aurora_all_download">Загрузить всё</string>
+    <string name="aurora_exit">Выйти</string>
+    <string name="aurora_exit_tips">Песни загрузят, выйти?</string>
+    <string name="aurora_no_songs">Нет песен</string>
+    <string name="aurora_no_singers">Нету певцы</string>
+    <string name="aurora_no_playlist">Нет списка</string>
+    <string name="aurora_no_download_task">Нет загрузки</string>
+    <string name="aurora_add_playlist">Добавить песни</string>
+    <string name="aurora_edit_playlist">Редактировать список</string>
+    <string name="aurora_delete_playlist">Удалить список</string>
+    <string name="aurora_clear_search_history">Очистить данные</string>
+    <string name="aurora_search_lyric">Поиск слов песни</string>
+    <string name="aurora_search_lyric_name">Название песни:</string>
+    <string name="aurora_search_lyric_artist">Имя певцы:</string>
+    <string name="aurora_now_playing">Передаёт</string>
+    <string name="aurora_lyricsize">Подбираются <xliff:g id="lyricsize">%d</xliff:g> слов песен</string>
+    <string name="aurora_search_img_size">Подбираются <xliff:g id="imgsize">%d</xliff:g> изображений</string>
+    <string name="aurora_is_ignored">Упущено</string>
+    <string name="aurora_ignore">Упустить</string>
+    <string name="aurora_all_regain">Возобновить всё</string>
+    <string name="aurora_ignore_info">Нет упущенных развёртывающих  файлов, скользить налево список папки для упущения.</string>
+    <string name="aurora_regain">Возобновлено</string>
+    <string name="aurora_clean_space">Недостаточное пространство в телефоне, очистите вовремя.</string>
+    <string name="aurora_modify_id3_info">Исправить id3 информации</string>
+    <string name="aurora_baidu_version">Подведомственное авторское право музыки baidu</string>
+    <string name="player_baidu_logo">Подведомственное авторское право музыки baidu</string>
+    <string name="player_sound">&quot;Звуковые эффекты&quot;</string>
+    <string name="aurora_noise_down">Шумоподавление</string>
+    <string name="aurora_match_sound">Подбирать индивидуальные эффекты</string>
+    <string name="aurora_null">Нет</string>
+    <string name="aurora_defualt">По умолчанию</string>
+    <string name="aurora_pop">Популярный</string>
+    <string name="aurora_live">Концертный</string>
+    <string name="aurora_rock">Рок</string>
+    <string name="aurora_bass">Бас</string>
+    <string name="aurora_jazz">Сэр</string>
+    <string name="aurora_electri">Электронный</string>
+    <string name="aurora_classical">Классический</string>
+    <string name="aurora_rock_headset">IUNI динамичные наушники рока</string>
+    <string name="aurora_iuni_twist_tone">IUNI наушники-twist</string>
+    <string name="aurora_iuni_roise_headset">IUNI наушники с шумоподавлением</string>
+    <string name="aurora_earpods">iPhone Earpods</string>
+    <string name="aurora_akg450">AKG 450</string>
+    <string name="aurora_urbeats">urBeats</string>
+    <string name="aurora_headset_select">Модель наушников</string>
+    <string name="aurora_close_on_time">Закрыть установленным времени</string>
+    <string name="aurora_not_open">Не открыть</string>
+    <string name="aurora_10_min">Через 10 минут</string>
+    <string name="aurora_15_min">Через 15 минут</string>
+    <string name="aurora_30_min">Через 30 минут</string>
+    <string name="aurora_45_min">Через 45 минут</string>
+    <string name="aurora_60_min">Через 60 минут</string>
+    <string name="aurora_defualt_lyric">Закрыть слов </string>
+    <string name="aurora_share_failed">Не завершена функция разделения</string>
+    <string name="aurora_net_setting">Настройки сети </string>
+    <string name="aurora_only_connected_in_wifi">Подключатся только по Wi-Fi</string>
+    <string name="aurora_close_wifi_tips">Отключив подключение только по Wi-Fi, воспроизведение и скачивание песен приведет к расходу вашего трафика. </string>
+    <string name="aurora_continue_play_tips">Если вы продолжите прослушивание, это приведет к автоматическому выключению режима подключения только по Wi-Fi, воспроизведение приведет к расходу вашего трафика.</string>
+    <string name="aurora_continue_download_tips">Скачивание приведет к автоматическому выключению режима подключения только по Wi-Fi, скачивание приведет к расходу вашего трафика.</string>
+    <string name="aurora_flow_tips">Напоминание о трафике </string>
+    
+    <!-- add by chenhl 20140428 end -->
+    <!-- ukiliu add 2014-07-30 begin -->
+    <string name="img_desc_tens_of_hour">Разряд десятков часов</string>
+    <string name="img_desc_units_of_hour">Разряд единиц часов</string>
+    <string name="img_desc_tens_of_min">Разряд десятков минут</string>
+    <string name="img_desc_units_of_min">Разряд единиц минут</string>
+    <string name="img_desc_time_splite"> ： </string>
+    <!-- ukiliu add 2014-07-30 end -->
+    <!-- lory add 2014.5.14 start -->
+    <string name="open_fail">&quot;Открыть неудачно&quot;</string>
+    <string name="song_name">&quot;xxxx&quot;</string>
+    <string name="song_album">&quot;yyy.yyyy&quot;</string>
+    <string name="loading_lyric">&quot;Загрузка слов&quot;</string>
+    <string name="no_lyric">&quot;Нет слов&quot;</string>
+    <string name="new_songlist">&quot;Создать новый список&quot;</string>
+    <string name="songlist_cancel">&quot;Отменить&quot;</string>
+    <string name="songlist_ok">&quot;Да&quot;</string>
+    <string name="playlist_songs">&quot;Песни&quot;</string>
+    <string name="playlist_artist">&quot;Певцы&quot;</string>
+    <string name="playlist_files">&quot;Папки&quot;</string>
+    <string name="playlist_addsongs">&quot;Добавить песни&quot;</string>
+    <string name="playlist_selectsongs">&quot;Выбраны <xliff:g id="SELECT_SONG">%d</xliff:g> песен&quot;</string>
+    <string name="player_songs">&quot;Список песен&quot;</string>
+    <string name="player_ringer">&quot;Мелодия&quot;</string>
+    <string name="player_nofile">&quot;Привет, не существующих файлов&quot;</string>
+    <string name="player_filefailed">&quot;Привет, неудачно, переделайте!&quot;</string>
+    <string name="player_failed">&quot;Привет, файл не поддерживает эту операцию&quot;</string>
+    <string name="player_download_exist">&quot;Загружены файлы!&quot;</string>
+    <string name="player_download_start">Добавлено в очередь загрузки!</string>
+    <string name="player_download_failed">Загрузка неудачно!</string>
+    <string name="search_failed">Поиск аномально!</string>
+    <string name="play_failed_nofiles">&quot;Нет прикладных файл песен&quot;</string>
+    <string name="no_effects">&quot;Нет звуковых эффектов&quot;</string>
+    <string name="xlweibosdk_share_success">Разделение успешно</string>
+    <string name="xlweibosdk_share_failed">Разделение неудачно</string>
+    <string name="xlweibosdk_share_canceled">Отменить разделение</string>
+    <string name="xlweibosdk_not_support_api">Клиент микроблока не поддерживает SDK  разделение, или не установлен клиент, или клиент не- официальная версия.</string>
+    <string name="xlweibosdk_token_format">Token:%1$s \n срок действия：%2$s</string>
+    <string name="xlweibosdk_token_existed">Token в строек действия, не нужно войти повторно.</string>
+    <string name="weibosdk_auth_success">Уполномочие успешно</string>
+    <string name="weibosdk_auth_failed">Уполномочие неудачно</string>
+    <string name="weibosdk_auth_canceled">Отменить уполномочие</string>
+    <string name="aurora_playerdialog_share">Поделить</string>
+    <string name="aurora_wx_not_installed">Привет, терминал wechat не установлен!</string>
+    <!-- lory add 2014.5.14 end -->
+    <!-- add by tangjie start -->
+    <string name="appwidget_songtitle">&quot;Песни&quot;</string>
+    <string name="appwidget_artisttitle">Певцы</string>
+    <string name="playmode">&quot;Передавать случайно&quot;</string>
+    <string name="action_titlenum">1</string>
+    <string name="delete">Удалить</string>
+    <string name="deleteMessage">Удалить выбранные <xliff:g id="numsongs">%s</xliff:g> песен?</string>
+    <string name="ok">Да</string>
+    <string name="search_hint_input">Поиск песен и певцы</string>
+    <string name="search_hint_input2">Поиск песен, певцы и сборников</string>
+    <string name="search_hint_input3">Поиск песен</string>
+    <string name="search_hint_input4">Поиск певцы</string>
+    <string name="selectAll">Выбирать всё</string>
+    <string name="addSong">Добавить в список</string>
+    <string name="selectAllNot">Выбирать обратно</string>
+    <string name="unknown_artist">Неизвестные певцы</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="unknown_time">Неизвестно</string>
+    <string name="menu_back">&quot;Назад&quot;</string>
+    <string name="addsong_tomyplaylist"></string>
+    <string name="menu_continue">Продолжать</string>
+    <string name="addsong_selectsongs">&quot;Выбраны <xliff:g id="ADD_SELECTED_SONG">%d</xliff:g> песни&quot;</string>
+    <string name="delete_songfiles">Удалить песни</string>
+    <string name="num_songs_and_album"><xliff:g id="numalbums">%s</xliff:g> сборников, всего <xliff:g id="numsongs">%s</xliff:g> песен</string>
+    <string name="number_track">всего <xliff:g id="numsongs">%s</xliff:g> песен</string>
+    <string name="number_track2"><xliff:g id="numsongs">%s</xliff:g> песен</string>
+    <string name="aurora_recommend_playlist">Рекомендуемый список</string>
+    <string name="unknown_track">Неизвестные песни</string>
+    <string name="aurora_select_bitrate">Выберите качество загрузки</string>
+    <string name="aurora_all">Все</string>
+    <string name="aurora_cancel_collection">Отменить собирание</string>
+    <string name="aurora_cancel_collection_message">&quot;Подтвердите отменить собирание список?&quot;</string>
+    <string name="aurora_collection_suceess">Удачно собирать!</string>
+    <string name="aurora_status_url_not_found">Не существует адреса загрузки</string>
+    <string name="aurora_search_result">Результат поиска</string>
+    <string name="aurora_search">Поиск</string>
+    <string name="aurora_online_hot_songs">Популярные песни</string>
+    <string name="num_songs_num_albums"><xliff:g id="numsongs">%s</xliff:g> сборников, всего <xliff:g id="numalbums">%s</xliff:g> песен</string>
+    <string name="aurora_albums">Сборник</string>
+    <string name="aurora_update_time">Время обновления: <xliff:g id="releasedate">%s</xliff:g></string>
+    <string name="aurora_loading">&quot;Загрузка...&quot;</string>
+    <string name="aurora_netshare">Поделить список песен</string>
+    <string name="aurora_download_permission">Не имеет право загрузить</string>
+    <string name="aurora_baidu_permission">Подведомственное авторское право музыки Baidu</string>
+    <string name="aurora_search_none">Нет результатов поиска </string>
+    <string name="aurora_decription">Подробность о списке песен </string>
+    <string name="aurora_shutdown">Закрыть </string>
+    <!-- add by tangjie end -->
+    <!-- mxliu add start -->
+    <string name="img_desc_album_cover">Обложка сборников</string>
+    <string name="dialog_delete_track_con_message">Удалить песню?</string>
+    <string name="dialog_delete_tracks_con_message">Удалить выбранные песни?</string>
+    <string name="dialog_delete_album_con_message">Удалить сборник?</string>
+    <string name="dialog_delete_albums_con_message">Удалить выбранный сборник?</string>
+    <string name="num_albums_num_songs"><xliff:g id="numalbums">%s</xliff:g> сборников, всего <xliff:g id="numsongs">%s</xliff:g> песен</string>
+    <string name="num_songs_of_album"><xliff:g id="numsongs">%s</xliff:g> песня</string>
+    <string name="release_date_of_album">Время выпуска：<xliff:g id="releasedate">%s</xliff:g></string>
+    <!-- -mxliu add end -->
+    <!-- 状态栏 -->
+    <string name="aurora_notification_artist_album">&quot;<xliff:g id="ARTIST">%1$s</xliff:g>&quot;·&quot;<xliff:g id="ALBUM">%2$s</xliff:g>&quot;</string>
+
+</resources>

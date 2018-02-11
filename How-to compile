@@ -1,0 +1,4 @@
+$cd apk_build_env
+$./apk ../Aurora_SystemUI/Aurora_SystemUI_U3.mk
+
+Copy out/Aurora_SystemUI/Aurora_SystemUI.apk to your baseline /aurora_data/system/app/U3/Aurora_SystemUI.apk

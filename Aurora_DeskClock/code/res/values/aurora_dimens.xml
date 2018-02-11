@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2011, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+     <dimen name="stopwatch_main_scrollbarsize">3dp</dimen>
+     <dimen name="iv_set_margin_size">12dp</dimen>
+     <dimen name="stopwatch_mark_btn_margin">8dp</dimen>
+     <dimen name="stopwatch_mark_item_padding">5dp</dimen>
+     <dimen name="alignBottom_margin_bottom_size">10sp</dimen>
+     <dimen name="aurora_stopwatch_mark_item_margin">66.3dp</dimen>
+     <dimen name="aurora_stopwatch_mark_item_margin2">31.3dp</dimen>
+     <dimen name="aurora_stopwatch_mark_item_margin3">42dp</dimen>
+     <dimen name="aurora_stopwatch_mark_list_bottom_margin">26dp</dimen>
+     <dimen name="aurora_btn_margin">51dp</dimen>       
+     <integer name="common_anim_duration">300</integer>
+     <integer name="longer_anim_duration">400</integer>
+     <integer name="center_button_show_delay_duration">250</integer>
+     <dimen name="round_button_text_size">17.6sp</dimen> 
+</resources>
+    

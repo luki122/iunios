@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_action_bar_height"
+    android:background="@color/yulore_superyellowpage_list_bg" >
+    
+    <RelativeLayout
+        android:id="@id/yulore_superyellowpage_rl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@com.aurora:dimen/aurora_action_bar_height"
+        android:layout_alignParentBottom="true"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@id/yulore_superyellowpage_tv_topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:gravity="center"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:text="@string/yulore_superyellowpage_yellowpage_home"
+            android:textColor="@color/yulore_superyellowpage_black"
+            android:textSize="@dimen/yulore_superyellowpage_title_size" />
+        
+        <ImageView
+            android:id="@id/yulore_superyellowpage_iv_personal_center"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:background="@drawable/yulore_superyellowpage_top_personal_center_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

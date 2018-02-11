@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_17" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_check_finish"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_email_verification" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/Account.TextView.RegisterNormalLabel"
+            android:layout_below="@+id/iv1"
+            android:layout_marginTop="33dp"
+            android:lineSpacingExtra="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true" />
+        
+        <TextView
+            style="@style/Account.TextView.RegisterNormalLabel"
+            android:layout_below="@id/tv_email"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/padding_10"
+            android:text="@string/email_tips" />
+        
+        <TextView
+            android:id="@+id/tv_re_registration"
+            style="@style/Account.TextView.RegisterNormalLabel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/register_re_registration"
+            android:textColor="@color/register_link_grey"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_check_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_re_send"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/verifycode_btn_selector"
+        android:text="@string/register_check_email_finish"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_re_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/verifycode_btn_selector"
+        android:text="@string/register_re_send_email_verify"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

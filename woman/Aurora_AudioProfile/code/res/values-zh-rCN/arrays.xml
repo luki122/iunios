@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="profile_title_list">
+        <item>响铃</item>
+        <item>静音</item>
+        <item>振动</item>
+        <item>户外</item>
+    </string-array>
+
+    <string-array name="entries_list_profile">
+        <item>响铃</item>
+        <item>静音</item>
+        <item>振动</item>
+        <item>户外</item>  
+    </string-array>
+</resources>

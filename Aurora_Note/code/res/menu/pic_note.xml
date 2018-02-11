@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_take_photo"
+        android:title="@string/menu_take_photo"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_select_photo"
+        android:title="@string/menu_select_photo"
+        android:showAsAction="always|withText" />
+
+</menu>

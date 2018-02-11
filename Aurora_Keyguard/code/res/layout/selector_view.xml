@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.view.AuroraSelectorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selector_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:duplicateParentState="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!--
+         <com.android.keyguard.view.AlphaLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    -->
+
+    <!-- <include layout="@layout/alpha_background_view"/> -->
+
+   <!-- Aurora liugj 2014-07-01 modified for bug-6149 -->
+   <!--  <android.support.v4.view.ViewPager -->
+   <com.android.keyguard.view.MyViewPager
+        android:id="@+id/selector_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!-- </com.android.keyguard.view.AlphaLayout> -->
+
+</com.android.keyguard.view.AuroraSelectorView>

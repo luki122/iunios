@@ -1,0 +1,96 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- add by SQF start -->
+    <string name="aurora_actionbar_menu_delete">删除</string>
+    <string name="aurora_actionbar_menu_mark_as">标记为</string>
+    <string name="aurora_actionbar_menu_move_to">移动到</string>
+    <string name="aurora_actionbar_menu_archive">存档</string>
+    <string name="aurora_listitem_slide_right_read_or_unread">已读未读</string>
+    <string name="aurora_listitem_slide_right_move_to">移动到&#8230;</string>
+    <string name="aurora_send_failed">发送失败</string>
+    <string name="aurora_send_success">发送成功</string>
+    <string name="aurora_select_all">全选</string>
+    <string name="aurora_reverse_select">反选</string>
+    <string name="aurora_menu_set_as_read">已读</string>
+    <string name="aurora_menu_set_as_unread">未读</string>
+    <string name="aurora_menu_set_as_starred">星标</string>
+    <string name="aurora_menu_set_as_nonstarred">非星标</string>
+    <string name="aurora_actionbar_menu_setting">设置</string>
+    <string name="mark_as_unread">标记为未读</string>
+    <string name="mark_as_read">标记为已读</string>
+    <string name="aurora_list_footer_view_loading_text">加载中&#8230;</string>
+    <string name="aurora_list_delete_item_tip_title">提示</string>
+    <string name="aurora_list_delete_item_tip_message">要删除这封邮件吗?</string>
+    <string name="aurora_list_delete_item_tip_messages">要删除这些邮件吗?</string>
+    <string name="aurora_update_at_time">上次刷新: %s</string>
+    <string name="aurora_one_year_ago">去年今日</string>
+    <string name="aurora_listview_empty_tip">暂无邮件</string>
+
+    <!-- add by SQF end -->
+
+
+    <!-- add by chenhl start -->
+    <string name="aurora_compose_title">写邮件</string>
+    <string name="aurora_send">发送</string>
+    <string name="aurora_signature">\n\n\n\n\n"<xliff:g id="SIGNATURE">%s</xliff:g>"\n</string>
+    <string name="string_newly_contact">最近联系人</string>
+    <string name="aurora_sender">发件人</string>
+    <string name="aurora_recipients">收件人</string>
+    <string name="aurora_cc">抄送</string>
+    <string name="aurora_bcc">密送</string>
+    <string name="aurora_theme">主题</string>
+    <string name="aurora_signature_defualt">发自 IUNI OS</string>
+    <string name="aurora_body_hint">输入正文</string>
+    <string name="aurora_attachment_info"><xliff:g id="attach">%s</xliff:g>个附件，共 <xliff:g id="attach_size">%s</xliff:g></string>
+    <string name="aurora_attachment_donwload_info"><xliff:g id="attach">%s</xliff:g>个附件，下载完成</string>
+    <string name="aurora_attachment_donwload_percent"><xliff:g id="attach">%s</xliff:g>个附件，下载<xliff:g id="percent">%s</xliff:g></string>
+    <string name="aurora_add">add</string>
+    <string name="aurora_show">show</string>
+    <string name="aurora_send_email_tips">邮件发送提示</string>
+    <string name="aurora_send_fail_view">发送失败，点击查看</string>
+    <string name="aurora_resend_email">重新发送</string>
+    <string name="aurora_network_fail">网络已断开，请连接网络！</string>
+    <!-- add by chenhl end -->
+    <!-- add by lory start -->
+    <string name="aurora_savedraft">"保存草稿?"</string>
+    <string name="aurora_save">"保存"</string>
+    <string name="aurora_cancel">"取消"</string>
+    <!-- add by lory end -->
+
+
+    <!-- paul add start -->
+    <string name="aurora_confirm_delete_conversation">删除邮件？</string>
+    <string name="aurora_confirm_delete">删除</string>
+    <string name="aurora_recipients_detail">详情</string>
+    <string name="aurora_hide_detail">隐藏</string>
+    <string name="aurora_empty_search_result">没有符合条件的搜索结果</string>
+    <!-- paul add end -->
+    <!-- add by tangjie start -->
+    <string name="aurora_num_sender">等<xliff:g id="senders">%d</xliff:g>人</string>
+    <!-- add by tangjie end -->
+
+
+    <!-- listview time divider add by JXh -->
+    <string name="earlier">较早</string>
+    <string name="yesterday">昨天</string>
+    <string name="file_overflow">%1$d个附件,已超上限%2$s &#033;</string>
+    <string name="file_overflow_single">1个附件,已超上限%s &#033;</string>
+    <string name="file_normal">%1$d个附件</string>
+    <string name="file_normal_single">1个附件</string>
+    <!-- listview time divider add by JXh  end -->
+
+	<!-- shihao add for Conversation_detail_more popupWindow -->
+    <string name="aurora_backup_to_calendar">备份到日程</string>
+    <string name="aurora_newemail_notification">新邮件提醒</string>
+    
+    <string name="aurora_add_picture">图片</string>
+    <string name="aurora_add_camera">拍照</string>
+    <string name="aurora_choose_file">存储器</string>
+    
+    <string name="aurora_longclick_delete">删除</string>
+    <string name="aurora_longclick_markas">标记</string>
+    <string name="aurora_longclick_moveto">移动到</string>
+    
+    <string name="seleted">"已选择 <xliff:g id="SELETED">%d</xliff:g> 项"</string>
+    <string name="nosubject">"无标题"</string>
+</resources>

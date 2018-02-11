@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"  
+    
+    >
+
+        <ImageView
+            android:id="@+android:id/icon"
+            android:layout_alignParentLeft="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"            
+             />
+        
+        <TextView
+                android:id="@android:id/title"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+android:id/icon"
+                android:gravity="center_vertical"
+				android:layout_centerVertical="true"                
+                android:layout_marginLeft="14dp" 
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"                
+                android:textColor="@android:color/black"                
+                
+                />
+        
+        <aurora.widget.AuroraSwitch 
+			    android:id="@com.aurora:id/aurora_switchWidget"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginRight="15dp"
+			    android:layout_gravity="center_vertical"
+			    android:focusable="false" 
+			    android:clickable="true"/> 	            
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- android:title="@string/aurora_actionbar_menu_delete" -->
+
+
+    <!-- android:title="@string/aurora_actionbar_menu_mark_as" -->
+    <item
+        android:id="@+id/aurora_actionbar_menu_mark_as"
+        android:icon="@drawable/aurora_actionbar_menu_mark_as"
+        android:title="@string/aurora_longclick_markas">
+    </item>
+    
+
+    <!-- android:title="@string/aurora_actionbar_menu_move_to" -->
+    <item
+        android:id="@+id/aurora_actionbar_menu_move_to"
+        android:icon="@drawable/aurora_actionbar_menu_move_to"
+        android:title="@string/aurora_longclick_moveto">
+    </item>
+    <item
+        android:id="@+id/aurora_actionbar_menu_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/aurora_longclick_delete">
+    </item>
+    
+    <!-- android:icon="@drawable/aurora_actionbar_menu_delete" -->
+
+    <!--
+    <item
+	android:icon="@drawable/aurora_actionbar_menu_archive"
+        android:id="@+id/aurora_actionbar_menu_archive"
+        android:title="@string/aurora_actionbar_menu_archive">
+    </item>
+    -->
+
+</menu>

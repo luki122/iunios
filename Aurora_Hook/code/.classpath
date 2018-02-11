@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="/home/alexluo/luofu/projects/app_compile/apk_build_env/jars/google/4.4/aurora-framework/classes.jar"/>
+	<classpathentry kind="lib" path="/home/alexluo/luofu/projects/app_compile/apk_build_env/jars/google/4.4/framework/classes.jar"/>
+	<classpathentry kind="lib" path="/home/alexluo/luofu/android_source/xposed/XposedAppSettings-master/XposedAppSettings-master/lib/XposedBridgeApi-52.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

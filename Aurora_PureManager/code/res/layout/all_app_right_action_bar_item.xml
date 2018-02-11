@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/changeSortBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/all_app_change_sort_btn"
+        android:gravity="right|bottom"
+        android:paddingBottom="@dimen/all_app_right_action_bar_chg_btn_padding_bottom"
+        android:paddingRight="@dimen/all_app_right_actionbar_changesortbtn_paddingright"
+        android:textColor="@color/all_app_right_action_bar_item_textcolor"
+        android:textSize="@dimen/add_auto_start_addbtn_text_size" />
+
+</FrameLayout>

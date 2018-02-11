@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:id="@+id/long_bus_list_item_linearlayout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14.5dip"
+                android:layout_marginTop="14.5dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:id="@+id/list_item_station_layout" >
+
+                    <TextView
+                        android:id="@+id/list_item_station_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxLength="12"
+                        android:padding="2.0dip"
+                        android:singleLine="true"
+                        android:textColor="#ff000000"
+                        android:textSize="13.829987dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_item_departure_time_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/list_item_departure_time_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center"
+                        android:padding="2.0dip"
+                        android:singleLine="true"
+                        android:textColor="#ff000000"
+                        android:textSize="12.5dip" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center"
+                        android:orientation="vertical"
+                        android:id="@+id/list_item_price_layout" >
+
+                        <TextView
+                            android:id="@+id/list_item_ticket_price_textview"
+                            android:layout_width="55.5dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.5dip"
+                            android:gravity="right|center"
+                            android:padding="2.0dip"
+                            android:singleLine="true"
+                            android:textColor="#ff000000"
+                            android:textSize="12.5dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/long_bus_divider"
+                style="@style/vs_train_s2s_divider"
+            	android:layout_marginLeft="9dp"
+            	android:layout_marginRight="9dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

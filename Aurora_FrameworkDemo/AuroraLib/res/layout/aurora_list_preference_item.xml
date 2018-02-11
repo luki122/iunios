@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Layout for a Preference in a PreferenceActivity. The
+     Preference is able to place a specific widget for its particular
+     type in the "widget_frame" layout.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:layout_marginLeft="33dp"
+    android:layout_marginRight="4dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@null"
+   >
+
+   <RadioButton 
+       android:id="@+id/aurora_list_preference_radio"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:focusable="false"
+       android:clickable="false"
+       />
+   <TextView 
+       android:id="@android:id/text1"
+       android:layout_width="wrap_content"
+       android:layout_height="47dp"
+       android:singleLine="true"
+       android:layout_marginLeft="20dp"
+       android:gravity="center_vertical"
+       android:maxLines="1"
+       android:textColor="@color/aurora_text_color_selector"
+       android:textSize="18sp"
+       />
+
+</LinearLayout>

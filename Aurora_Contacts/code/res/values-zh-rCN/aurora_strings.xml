@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="aurora_group_title">分组</string>
+    <string name="aurora_starred_contacts_header">星标联系人</string>
+    <string name="aurora_menu_import">导入联系人</string>
+    <string name="aurora_menu_export">导出联系人</string>
+    <string name="aurora_menu_sync">从云朵朵同步</string>
+    <string name="aurora_searchview_hint">搜索联系人</string>
+
+    <string name="aurora_group_no_group">未分组</string>
+    <string name="aurora_group_family">家人</string>
+    <string name="aurora_group_friend">朋友</string>
+    <string name="aurora_group_classmate">同学</string>
+    <string name="aurora_group_colleague">同事</string>
+    <string name="aurora_group_attribution">归属地</string>
+    <string name="aurora_group_company">公司</string>
+    <string name="aurora_group_recently_added">最近添加</string>
+    <string name="aurora_left_kuohao">(</string>
+    <string name="aurora_right_kuohao">)</string>
+
+    <string name="aurora_edit_group_name_title">分组名称</string>
+    <string name="aurora_edit_group_name_hint">请输名称</string>
+    <string name="aurora_edit_group_ring_title">分组铃声</string>
+    <string name="aurora_edit_group_ring_hint">默认</string>
+    <string name="aurora_group_detail_send_mms">群发短信</string>
+    <string name="aurora_group_detail_add_member">添加成员</string>
+
+    <string name="aurora_add_star">星标已添加</string>
+    <string name="aurora_remove_star">星标已取消</string>
+    
+    <string name="aurora_address_hint">地址</string>
+    
+    <!-- 电话号类型 -->
+    <string name="telType_Moblie">手机</string>
+    <string name="telType_Home">家庭</string>
+    <string name="telType_Work">办公</string>
+    <string name="telType_Fax">公司传真</string>
+    <string name="telType_Main">主机</string>
+    <string name="telType_FaxHome">家庭传真</string>
+    <string name="telType_Pager">寻呼机</string>
+
+    <string name="telType_custom">自定义</string>
+    <string name="othertype">其他</string>
+
+    <!--IM-->
+    <string name="imType_Aim">AIM</string>
+    <string name="imType_Yahoo">Yahoo</string>
+    <string name="imType_Skype">Skype</string>
+    <string name="imType_Qq">QQ</string>
+    <string name="imType_GooleTalk">Google Talk</string>
+    <string name="imType_Icq">ICQ</string>
+    <string name="imType_Jabber">Jabber</string>
+    <string name="imType_Msn">MSN</string>
+
+    <!--关系-->
+    <string name="relation_assitant">助理</string>
+    <string name="relation_brother">兄弟</string>
+    <string name="relation_child">子女</string>
+    <string name="relation_dom_partner">同居伴侣</string>
+    <string name="relation_father">父亲</string>
+    <string name="relation_mother">母亲</string>
+    <string name="relation_friend">朋友</string>
+    <string name="relation_manager">经理</string>
+    <string name="relation_parent">父母</string>
+    <string name="relation_partner">合作伙伴</string>
+    <string name="relation_referred">介绍人</string>
+    <string name="relation_relative">亲属</string>
+    <string name="relation_sistert">姐妹</string>
+    <string name="relation_spouse">配偶</string>
+
+    <!-- 邮箱地址类型 -->
+    <string name="emailType_Work">单位</string>
+    <string name="emailType_Private">家庭</string>
+    
+    <!-- 地址类型 -->
+    <string name="addressType_Company">公司</string>
+    <string name="addressType_Home">住宅</string>
+    
+    <string name="add_fields_more">添加更多信息</string>
+    
+    <string name="aurora_phone_hint_text">请输入号码</string>
+    <string name="aurora_email_hint_text">请输入邮箱</string>
+    <string name="aurora_address_hint_text">请输入地址</string>
+    <string name="aurora_company_hint_text">请输入公司</string>
+    <string name="aurora_position_hint_text">请输入职位</string>
+    <string name="aurora_note_hint_text">请输入备注</string>
+    <string name="aurora_group_create">新增分组</string>
+    
+    <!-- contact detail -->
+    <string name="aurora_menu_edit">编辑</string>
+    <string name="aurora_menu_delete">删除</string>
+    <string name="aurora_menu_share_contact">发送此名片</string>
+    
+    <!-- call log -->
+    <string name="aurora_recentCallsLabel">"最近通话"</string>
+    
+    <!-- call detail -->
+    <string name="aurora_unknow_source_calllog">来自火星</string>
+    <string name="aurora_menu_delete_calllog">删除通话记录</string>
+    <string name="aurora_menu_add_exist_contact">添加到已有联系人</string>
+    
+    <!-- contact import export -->
+    <string name="aurora_import_export">导入/导出联系人</string>
+    <string name="aurora_import_title">导入</string>
+    <string name="aurora_export_title">导出</string>
+
+    <string name="aurora_menu_sim_contacts">SIM卡联系人</string>
+    <string name="aurora_menu_sim1_contacts">SIM1联系人</string>
+    <string name="aurora_menu_sim2_contacts">SIM2联系人</string>
+    <string name="aurora_loading_sim_contacts_title">"正在读取SIM卡联系人"</string>
+    <string name="aurora_empty_contact_text">暂无联系人</string>
+
+    <string name="aurora_sd_not_ready">内部存储不可用！</string>
+    <string name="aurora_sd_is_full">内部存储已满！</string>
+    <string name="aurora_sim_not_ready_tip">未检测到SIM卡</string>
+    
+    <string name="aurora_import_sim_title">从SIM卡导入</string>
+    <string name="aurora_import_sd_title">从内部存储导入</string>   
+    <string name="aurora_import_sd_subtitle">导入存储设备上的vCard文件</string>
+    
+    <string name="aurora_export_sim_title">导出到SIM卡</string>
+    <string name="aurora_export_sd_title">导出到内部存储</string>
+    <string name="aurora_export_sd_subtitle">将联系人导出为内部存储上的vCard文件</string>
+    
+    <string name="aurora_export_contact_to_sim">正在导出SIM卡</string>
+    <string name="aurora_import_confirm_message">已找到<xliff:g id="VCARD_FILENAME">%s</xliff:g>，是否导入？</string>
+
+    <plurals name="aurora_import_contact">
+    <item quantity="one" msgid="5517063038754171134">"正在导入1个联系人"</item>
+    <item quantity="other" msgid="3852668542926965042">"正在导入<xliff:g id="COUNT">%d</xliff:g>个联系人"</item>
+    </plurals>
+
+    <string name="aurora_delete_group_dialog_message">"是否删除分组 “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” ？"</string>
+    <string name="aurora_delete_group_toast">"分组 “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” 已删除"</string>
+    <string name="aurora_remove_group_member_message">"是否从 “<xliff:g id="GROUP_LABEL">%s</xliff:g>” 移除 “<xliff:g id="MEMBER_NAME">%s</xliff:g>” ？"</string>
+    <string name="aurora_remove_group_member_message_multi">"是否从 “<xliff:g id="GROUP_LABEL">%s</xliff:g>” 移除 <xliff:g id="MEMBER_NAME">%s</xliff:g> 名联系人？"</string>
+    <string name="aurora_remove_group_one_toast">"“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” 已经移除"</string>
+    <string name="aurora_remove_star_message">"是否取消星标 “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” ？"</string>
+    <string name="aurora_remove_star_title">取消星标</string>
+    <string name="aurora_removeing">正在移除</string>
+    <string name="aurora_remove_group_member_toast">"已从分组 “<xliff:g id="GROUP_LABEL">%s</xliff:g>” 移除 <xliff:g id="MEMBER_NAME">%s</xliff:g> 名联系人"</string>
+    <string name="aurora_add_group_member_toast"><xliff:g id="MEMBER_NAME">%s</xliff:g> 名联系人已添加到分组 “<xliff:g id="GROUP_LABEL">%s</xliff:g>”</string>
+
+    <plurals name="aurora_delete_contact">
+    <item quantity="one" msgid="5517063038754171134">"正在删除1个联系人"</item>
+    <item quantity="other" msgid="3852668542926965042">"正在删除<xliff:g id="COUNT">%d</xliff:g>个联系人"</item>
+    </plurals>
+
+    <string name="aurora_sim_no_contact_message">sim卡上无联系人记录</string>
+    <string name="aurora_find_sim_contacts_message">"搜索到sim卡有 <xliff:g id="GROUP_LABEL">%1$s</xliff:g> 个联系人，是否导入？"</string>
+    <string name="aurora_sim_contact_import_start_toast">sim卡联系人将在稍候导入</string>
+    <string name="aurora_sim_contact_import_end_toast">联系人已成功导入</string>
+    <string name="aurora_delete_one_contact_message">"是否删除 “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” ？"</string>
+    <string name="aurora_delete_one_contact_toast">"“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” 已删除"</string>
+    <string name="aurora_remove_starred_toast">"星标已取消"</string>
+
+    <string name="aurora_rename_group_toast">"已有同名分组，请使用新分组名称"</string>
+    <string name="aurora_add_group_more_toast">"选择上限100人，请减少勾选人数"</string>
+    <string name="aurora_save_group_dialog_title">"正在保存"</string>
+
+    <string name="aurora_search_continue">"继续"</string>
+    <string name="aurora_search_continue_mutil">"继续(<xliff:g id="CON_LABEL">%s</xliff:g>)</string>
+    
+    <string name="aurora_start_daoru">正在后台导入联系人</string>
+    <string name="aurora_end_daoru">联系人导入成功</string>
+    <string name="aurora_start_daochu">正在后台导出联系人</string>
+    <string name="aurora_end_daochu">全部联系人已导出</string>
+    <string name="aurora_daochu_dao_sim">已导出<xliff:g id="GROUP_LABEL">%1$s</xliff:g>个联系人到sim卡</string>
+    <string name="aurora_daochu_sim_full">SIM卡已满,无法导出到SIM卡</string>
+    <string name="aurora_daochu_sim_full2">sim卡已满，导出联系人结束</string>
+    <string name="aurora_daochu_sim_full3">sim卡已满</string>
+    <string name="aurora_daochu_sim_error">导出到SIM卡出错,无法导出到SIM卡</string>
+    <string name="aurora_daochu_daoru_ing">当前正在导入/导出联系人，请导入/导出完成后再操作</string>
+    <string name="aurora_contacts_setting">联系人设置</string>
+    <string name="aurora_sim_no_contacts">SIM卡上无联系人</string>
+    
+    <string name="aurora_import_sd2_title">从SD卡导入</string>   
+    <string name="aurora_import_sd2_subtitle">导入SD卡上的vCard文件</string>
+    <string name="aurora_export_sd2_title">导出到SD卡</string>
+    <string name="aurora_export_sd2_subtitle">将联系人导出为SD卡上的vCard文件</string>
+    <string name="aurora_no_sd2_insert">未检测到SD卡</string>
+    <string name="aurora_sd2_name">SD卡</string>
+    <string name="aurora_sim_nocontacts_notice">提示</string>
+
+    <string name="aurora_contacts_accounts">联系人帐号组</string>
+    <string name="aurora_show_contacts_accounts">要显示的联系人组</string>
+    <string name="aurora_contacts_account_phone">本地联系人</string>
+    
+    <string name="aurora_local_group_show">本地分组</string>
+    <string name="aurora_no_group_show">没有可显示的分组</string>
+    <string name="aurora_no_contacts_show">暂无可显示联系人</string>
+    <string name="aurora_to_contacts_accounts">设置联系人帐号</string>
+
+    <string name="aurora_export_to_sim_meg">是否导出所有联系人到SIM卡?</string>
+    <string name="aurora_export_no_contact">没有联系人可以导出</string>
+    <string name="aurora_export_to_sim_error">无法导出到SIM卡</string>
+    
+    <string name="aurora_deleting_contacts_toast">后台正在删除联系人，请稍候</string>
+
+    <string name="aurora_save_to">位置</string>
+    <string name="aurora_save_to_local">本地</string>
+    <string name="aurora_save_to_sim">SIM卡</string>
+    <string name="aurora_save_to_google">google</string>
+    <string name="aurora_daoru_confirm_gaddsa">是否导入<xliff:g id="VCARD_FILENAME">%s</xliff:g>?</string>
+    <string name="aurora_edit_name_hint">请输入姓名</string>    
+    <string name="aurora_service_number">服务号码</string>
+
+    <string name="aurora_add_mms_more_toast">"已超出群发上限100人，请减少勾选人数"</string>
+
+    <string name="aurora_group_mms_more_toast">"分组总数已超出群发上限100人"</string>
+
+    <string name="aurora_add_mms_attachment_more_toast">"已超出上限1000人，请减少勾选人数"</string>
+    
+    <string name="aurora_no_contacts_to_sim">"当前无联系人可导出到SIM卡"</string>
+    <string name="aurora_cannot_importcontacts">"无法导入联系人"</string>
+
+    <string name="aurora_call_record">"通话录音"</string>
+    <string name="aurora_auto_record">"自动录音"</string>
+    <string name="aurora_record_history">"历史录音"</string>
+    <string name="aurora_record_close">"关闭"</string>
+    <string name="aurora_record_all_contacts">"全部通话"</string>
+    <string name="aurora_record_select_contact">"指定联系人"</string>
+    <string name="aurora_record_select_contact_toast"><xliff:g id="count">%s</xliff:g>名联系人已添加到自动录音</string>
+    <string name="aurora_auto_recording">"正在添加，请稍候"</string>
+    <string name="aurora_auto_recording_remove">"正在移除，请稍候"</string>
+    <string name="aurora_remove_auto_record_message">"是否移除“<xliff:g id="MEMBER_NAME">%s</xliff:g>”？"</string>
+    <string name="aurora_remove_auto_record_message_multi">"是否移除所选联系人？"</string>
+    <string name="aurora_remove_auto_record_toast_multi">"已移除 <xliff:g id="MEMBER_NAME">%s</xliff:g> 名联系人"</string>
+
+    <string name="aurora_recent_call">"(最近)"</string>
+    <string name="aurora_sim_not_ready">"SIM卡未准备好，请检查后重试"</string>
+
+    <string name="aurora_add_blackname_more_toast">"选择上限100人，请减少勾选人数"</string>
+
+    <string name="aurora_reject_call_detail_title">"来电拦截详情"</string>
+    <string name="aurora_reject_marks">"人标记"</string>
+    <string name="aurora_reject_from_sogou">"来自搜狗号码通"</string>
+    <string name="aurora_reject_user_mark">"已被您标记"</string>
+    <string name="aurora_add_to_black">"加入黑名单"</string>
+    <string name="aurora_remove_from_black">"移出黑名单"</string>
+    <string name="black_remove">移出黑名单</string>
+    <string name="black_remove_all">全部移出黑名单</string>
+    <string name="confirm_remove">确定将此号码移出黑名单吗？</string>
+    <string name="confirm_remove_all">确定将所有号码移出黑名单吗？</string>
+    <string name="recover_black_phone">同时恢复拦截记录</string>
+    <string name="add_number_mark">标记陌生号码</string>
+    <string name="edit_number_mark">修改号码标记</string>
+    <string name="up_mark">标记将上传，帮助其他人识别号码</string>
+    <string name="new_mark">新增标记词</string>
+    <string name="mark_content_exist">您所添加的标记词已存在！</string>
+    <string name="aurora_no_mark">无标记</string>
+    <string name="aurora_mark_error">名称格式异常</string>
+    <string name="aurora_calllog_loading">向下滑动加载更多记录</string>
+
+    <string name="no_call_record_history">暂无通话录音</string>
+    <string name="call_record_detail_title">录音详情</string>
+    <string name="call_record_message_time">时间：</string>
+    <string name="call_record_message_size">文件大小：</string>
+    <string name="call_record_message_path">路径：手机存储/内部存储器/CallRecording/</string>
+    <string name="call_record_delete_title">删除所选录音</string>
+    <string name="call_record_delete_message">您确定要删除所选通话录音吗？</string>
+
+    <string name="aurora_privacy_contacts_lable">隐私联系人</string>
+    <string name="aurora_privacy_contacts">隐私联系人</string>
+    <string name="aurora_no_privacy_contacts">添加隐私联系人,保护短信和通话</string>
+    <string name="aurora_add_privacy_contacts_from_exists">从已有联系人添加</string>
+    <string name="aurora_new_privacy_contacts">手动添加</string>
+    <string name="aurora_remove_privacy_contact_title">移除隐私联系人</string>
+    <string name="aurora_remove_one_privacy_contact_message">"确定将“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>”及其隐私通信内容恢复为常规内容吗？"</string>
+    <string name="aurora_remove_privacy_contact_check_box_text">同时删除此联系人及通信内容</string>
+    <string name="aurora_privacy_contacts_tixing_title">提醒</string>
+    <string name="aurora_privacy_contacts_tixing_message">设置隐私联系人的来电和短信提醒方式，可以让隐私更加安全。</string>
+    <string name="aurora_privacy_contacts_tixing_cancle">暂不设置</string>
+    <string name="aurora_privacy_contacts_ok">去设置</string>
+    
+    <string name="private_incoming_call">隐私来电</string>
+    <string name="private_sms_notification">隐私短信通知</string>
+    <string name="private_sms_notification_summary">打开或者关闭通知栏提示</string>
+    <string name="private_notification_text">通知栏提示文字</string>
+    <string name="private_notification_text_summary">有新的系统消息</string>
+    <string name="private_incoming_call_title">隐私来电与短信</string>
+    <string name="private_incoming_noti1_title">来电：</string>
+    <string name="private_incoming_noti1_summary">联系人名称显示为“未知号码”</string>
+    <string name="private_miss_noti1_title">漏接：</string>
+    <string name="private_miss_noti1_summary">以设置的提示文字，在通知栏提示</string>
+    <string name="private_calllog_noti1_title">通话记录：</string>
+    <string name="private_calllog_noti1_summary">不显示隐私联系人的通话记录</string>
+    <string name="private_incoming_noti2_summary">不响铃，自动挂断</string>
+    <string name="private_incoming_noti2_title">通知栏提示：</string>
+    <string name="private_noti_radio1_title">自动挂断+通知栏提示</string>
+    <string name="private_noti_radio2_title">正常接听+漏接时通知栏提示</string>
+    <string name="aurora_remove_private_calllog_message_multi">是否移除所选通话记录？</string>
+    <string name="aurora_remove_private_calllog_toast_multi">已移除 %s 条通话记录</string>
+    <string name="aurora_remove_private_calllog_title">移除通话记录</string>
+    <string name="aurora_remove_private_calllog_contact_message">是否将所选隐私联系人的通话记录恢复为常规内容？</string>
+    <string name="aurora_remove_privacy_calllog_check_box_text">同时删除通话记录？</string>
+    <string name="aurora_remove_private_calllog_over_toast">通话记录已经移除</string>
+    <string name="aurora_private_removing_title">正在移除</string>
+    <string name="aurora_no_privacy_calllog">无通话记录</string>
+    <string name="aurora_no_privacy_call_contacts">无隐私联系人</string>
+    <string name="private_call_log">隐私通话</string>
+    <string name="private_call_log_lable">隐私通话</string>
+
+    <string name="aurora_input_continue">请继续输入</string>
+    <!-- The previous lines are provided and maintained by Mediatek Inc. -->
+    <string name="aurora_local_number">本地号码</string>
+    <string name="aurora_ready_searching_vcard">准备扫描存储，可能需要等待一些时间</string>
+</resources>

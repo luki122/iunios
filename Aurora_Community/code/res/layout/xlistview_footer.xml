@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp" >
+
+        <LinearLayout
+            android:id="@+id/xlistview_footer_load"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xlistview_footerview_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp" >
+
+            <ProgressBar
+                android:id="@+id/xlistview_footer_progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" 
+                android:indeterminateDrawable="@drawable/progressbar_small"/>
+
+            <TextView
+                android:id="@+id/xlistview_footer_load_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="@string/xlistview_footer_hint_loading" 
+                android:textColor="@color/mainpage_category_title_tv_color"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xlistview_footer_finish_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xlistview_footerview_height"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/xlistview_footer_hint_load_finish"
+            android:visibility="invisible" 
+            android:textColor="@color/mainpage_category_title_tv_color"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/xlistview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xlistview_footerview_height"
+            android:layout_centerInParent="true"
+            android:text="@string/xlistview_footer_hint_normal"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

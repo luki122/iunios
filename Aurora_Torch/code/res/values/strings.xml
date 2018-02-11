@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IUNI Light</string>
+    <string name="camera_open_error">can not connect device, please make sure you camera idle.</string>
+    
+</resources>

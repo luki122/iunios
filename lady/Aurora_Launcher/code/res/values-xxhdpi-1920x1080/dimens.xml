@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="custommenu_item_fontsize">18sp</dimen>
+    <dimen name="folder_preview_size">55dp</dimen>
+    <dimen name="folder_preview_padding">12.3dp</dimen>
+    <dimen name="folder_icon_tv_padding">6.6dp</dimen>
+    <item name="moving_traffic_digit_text_size" format="integer" type="dimen">36</item>
+    <item name="moving_traffic_unit_text_size" format="integer" type="dimen">15</item>
+    <item name="moving_traffic_unit_padding_top" format="integer" type="dimen">10</item>
+    <dimen name="folder_icon_preview_item_padding">6dp</dimen>
+    <integer name="calendar_icon_dynamic_workspace">65</integer>
+    <integer name="calendar_icon_dynamic_folder">68</integer>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+/**
+ * @auther Linfeng Jia
+ * @time 20110815
+ * @version 1.0.0
+ * history
+ * name                              date                                      description
+ * lanwzh                           20110820                             CR00340870
+ */
+ -->
+<resources>
+    <string-array name="default_quick_texts">
+      <item>Bạn đang ở đâu?</item>
+      <item>Bạn đang làm gì?</item>
+      <item>Hãy gọi lại!</item>
+      <item>Xin lỗi, tôi đang họp</item>
+      <item>Sẽ gọi lại!</item>
+      <item>Ok, tôi vẫn khỏe.</item>
+      <item>Đang trên đường về.</item>
+      <item>Đến sớm.</item>
+      <item>Sẽ đến !</item>
+    </string-array>
+</resources>

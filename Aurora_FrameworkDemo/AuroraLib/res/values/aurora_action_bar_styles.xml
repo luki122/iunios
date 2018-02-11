@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="aurora" />
+
+    <style name="aurora.Widget" />
+
+    <!-- ActionBar related styles -->
+    <style name="aurora.Widget.ActionBar">
+        <item name="android:background">?attr/auroraActionBarBackground</item>
+        <item name="android:layout_height">@dimen/aurora_action_bar_height</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="dividerDrawable">?attr/auroraActionBarDividerDrawable</item>
+        <item name="dividerWidth">?attr/auroraActionBarDividerWidth</item>
+        <item name="homeDrawable">?attr/auroraActionBarHomeDrawable</item>
+        <item name="maxItems">?attr/auroraActionBarMaxItems</item>
+    </style>
+
+    <style name="aurora.Widget.ActionBar.Dashboard">
+        <item name="type">dashboard</item>
+    </style>
+
+    <style name="aurora.Widget.ActionBar.Empty">
+        <item name="type">empty</item>
+    </style>
+    
+    <style name="aurora.Widget.ActionBar.Custom">
+        <item name="type">custom</item>
+    </style>
+
+    <style name="aurora.Widget.ActionBar.Item" parent="@style/aurora.Widget">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="aurora.Widget.ActionBar.Title" parent="@style/aurora.Widget">
+        <item name="android:textColor">?attr/auroraActionBarTitleColor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <!--Gionee zjy 20120321 add for CR00555135 start -->  
+    <string name="internal_version">Versione interna</string>  
+    <string name="external_version">Versione</string>  
+    <string name="isnull">Sconosciuto</string>  
+    <string name="close">Chiudi</string>  
+    <string name="buildtime">Build Time</string>  
+    <string name="gn_gbw_internal_v">Versione GN</string>  
+    <string name="gn_ft_bt_result_success">PASS</string>  
+    <string name="gn_ft_bt_result_fail">FAIL</string>  
+    <string name="gn_ft_bt_result_no">NO</string>  
+    <!--Gionee zjy 20120321 add for CR00555135 start -->  
+    <string name="gn_phone_text">Telefono</string>  
+    <!-- Gionee:wangth 20120420 add for CR00576392 begin -->  
+    <string name="gn_usb_storage_text">Memoria interna</string>  
+    <!-- Gionee:wangth 20120420 add end -->  
+    <!-- Gionee baorui 2012-04-26 aad for CR00582516 begin -->  
+    <string name="gn_exportDirectoryName"></string>  
+    <!-- Gionee baorui 2012-04-26 aad for CR00582516 end -->  
+    <!--Gionee lich 20120420 add for CR00576475 start -->  
+    <string name="gn_yes">Si</string>  
+    <string name="gn_no">No</string>  
+    <!--Gionee lich 20120420 add for CR00576475 end -->  
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" begin-->  
+    <string name="zzzzz_gn_group_phone">Telefono</string>  
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" end-->  
+    <!-- Gionee:wangth 20120423 add for CR00577037 begin -->  
+    <string name="gn_contact_name_too_long">Il nome è troppo lungo</string>  
+    <!-- Gionee:wangth 20120423 add end -->  
+    <string name="slotA_signal">1</string>  
+    <string name="slotB_signal">2</string>  
+    <string name="slot_a">Slot1</string>  
+    <string name="slot_b">Slot2</string>  
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 start-->  
+    <string name="user_agent">Utente</string>  
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 end-->  
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 start-->  
+    <string name="unicom_version">Versione software</string>  
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 end-->  
+    <!--Gionee hzy start -->  
+    <string name="gn_dialer_suggest_show">Ricerca intelligente: La digitazione viene ricercata nel nome dei contatti in rubrica.</string>  
+    <string name="gn_no_conditioned_contacts">Nessun contatto con condizione</string>  
+    <string name="gn_dialpad_new_contact_item">Nuovo contatto</string>  
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 start -->  
+    <string name="gn_dialpad_add_exist_contact_item">Contatto esistente</string>  
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 end -->  
+    <string name="gn_dialpad_send_message_item">Invio messaggio</string>  
+    <string name="gn_allcall_tab_label">Tutte le chiamate</string>  
+    <string name="gn_misscall_tab_label">Chiamate perse</string>  
+    <string name="gn_clearCallLogConfirmation_title">Rimuovi registro chiamate</string>  
+    <string name="gn_clearAllCallLogConfirmation">Eliminare tutti i dettagli?</string>  
+    <string name="gn_clearSingleCallLogConfirmation">Eliminare questo dettaglio?</string>  
+    <!--gionee xuhz 20120728 add for CR00658189 start  -->  
+    <string name="gn_clearSingleCallLogConfirmation_title">Rimuovi da registro chiamate</string>  
+    <string name="gn_clearSelectedCallLogConfirmation_title">Elimina i dettagli selezionati</string>  
+    <string name="gn_clearSelectedCallLogConfirmation">Eliminare i record selezionati?</string>  
+    <!--gionee xuhz 20120728 add for CR00658189 end  -->  
+    <string name="gn_hint_findContacts">Cerca %d contatti</string>  
+    <string name="gn_listCustomView">Personalizzato</string>  
+    <string name="gn_contactsFavoritesLabel">Preferiti</string>  
+    <string name="gn_no_visible_contacts">Nessun contatto</string>  
+    <string name="gn_new_contact_item">Nuovo contatto</string>  
+    <string name="gn_exchange_contacts">Backup</string>  
+    <string name="gn_menu_merge_contacts">Unisci contatti</string>  
+    <string name="gn_mergeContactsConfirmation">Unisci i contatti separati che sono salvati sul tuo telefono in un unico contatto</string>  
+    <string name="gn_mergeContactsConfirmation_title">Unisci contatti</string>  
+    <string name="gn_searchContactsForMerge_msg">Scansionamento contatti separati\nAttendere prego…</string>  
+    <string name="gn_mergable_query_stop_msg">Scansionamento contatti separati</string>  
+    <string name="gn_noMergableConfirmation_title">Nessun duplicato</string>  
+    <string name="gn_noMergableContacts_msg">Nessun contatto duplicato</string>  
+    <string name="gn_mergingSameContacts_msg">Unione contatti duplicati\nAttendere prego…</string>  
+    <string name="gn_expected_merge">Unisci attesi</string>  
+    <string name="gn_mergeble">Trovati (%d) contatti duplicati</string>  
+    <string name="gn_manual_combine">Combina</string>  
+    <string name="gn_combine_contacts_title">Unisci contatti</string>  
+    <string name="gn_combine_contacts_sub_title">Trovati %1$d gruppi di contatti con lo stesso nome</string>  
+    <string name="gn_start_merge">Avvia unione</string>  
+    <string name="gn_merge_stop_title">Unione interrotta</string>  
+    <string name="gn_merge_finish_title">Unione terminata</string>  
+    <string name="gn_merged_sum_msg">%1$d contatti uniti</string>  
+    <string name="gn_type_im_other">IM</string>  
+    <string name="gn_member_already_in_group">Il contatto è gia in questo gruppo</string>  
+    <string name="gn_dialog_new_group_account" msgid="2318032089273496830">Crea gruppo sotto un account</string>  
+    <string name="gn_account_phone" product="default">Solo telefono</string>  
+    <string name="gn_menu_ringtone_set_batch">Imposta sequenza di suonerie</string>  
+    <string name="gn_people_count"> 
+        <xliff:g id="count">%1$d</xliff:g> contatti
+    </string>  
+    <plurals name="gn_searchFoundContacts"> 
+        <item quantity="one" msgid="4826918429708286628">1 trovato</item>  
+        <item quantity="other" msgid="7988132539476575389">" 
+            <xliff:g id="COUNT">%d</xliff:g> trovati
+        </item> 
+    </plurals>  
+    <string name="gn_add_to_favorite">Aggiungi a Preferiti</string>  
+    <string name="gn_remove_from_favorite">Rimuovi da Preferiti</string>  
+    <string name="gn_edit_number_before_call">Modifica prima di comporre</string>  
+    <string name="gn_menu_ip_dial_setting">Impostazione composizione IP</string>  
+    <!-- gionee xuhz 20120806 modify for CR00667589 start -->  
+    <string name="gn_menu_gemini_sim_management">Gestione SIM</string>  
+    <!-- gionee xuhz 20120806 modify for CR00667589 end -->  
+    <string name="gn_menu_clear_frequent_contacted">Rimuovi numeri frequenti</string>  
+    <string name="gn_clear_frequent_contacted_title">Rimuovi numeri frequenti</string>  
+    <string name="gn_clearFrequentContactedConfirmation">Vuoi rimuovere numeri frequenti?</string>  
+    <string name="gn_phone_label">Telefono</string>  
+    <string name="gn_only_save_local_label">Salva solo su telefono</string>  
+    <string name="gn_phone_call_record_tile">Recording</string>  
+    <string name="gn_outgoingcall_tab_label">Chiamate in uscita</string>  
+    <string name="gn_incomingcall_tab_label">Chiamate ricevute</string>  
+    <!-- Gionee:huangzy 20120806 add for CR00667827 start -->  
+    <string name="gn_add_blacklist">Aggiungi a BlackList</string>  
+    <string name="gn_show_intercept_call">Mostra chiamate intercettate</string>  
+    <!-- Gionee:huangzy 20120806 add for CR00667827 end -->  
+    <string name="gn_menu_delete_contact">Elimina contatti</string>  
+    <string name="gn_call_outgoing_type">In uscita</string>  
+    <string name="gn_call_incoming_type">In entrata</string>  
+    <string name="gn_call_ring_times">Suoneria</string>  
+    <string name="gn_call_ring_unit">squillo</string>  
+    <string name="gn_call_unconnected">Disconnesso</string>  
+    <string name="gn_hour">o</string>  
+    <string name="gn_minute">m</string>  
+    <string name="gn_second">s</string>  
+    <string name="gn_unknow_contact">Contatto sconosciuto</string>  
+    <string name="gn_contacts_sms_tip">Suggerimento</string>  
+    <string name="gn_calldetails_add_black_confirm">Do you want to add number to the blacklist？</string>  
+    <!-- Gionee:huangzy 20120604 add for CR00616160 start -->  
+    <string name="unselect_all">Deseleziona tutto</string>  
+    <string name="select_all">Seleziona tutto</string>  
+    <string name="gn_set_star">Aggiungi a Preferiti</string>  
+    <string name="gn_remove_star">Rimuovi da Preferiti</string>  
+    <string name="gn_add_to_group">Aggiungi a gruppo</string>  
+    <string name="gn_move_from_group">sposta fuori da gruppo</string>  
+    <string name="gn_add">Aggiungi</string>  
+    <string name="gn_remove">Rimuovi</string>  
+    <!-- Gionee:huangzy 20120604 add for CR00616160 end -->  
+    <!-- Gionee:huangzy 20120612 modify for CR00614326 start -->  
+    <string name="gn_hidden_number">Numero nascosto</string>  
+    <!-- Gionee:huangzy 20120612 modify for CR00614326 end -->  
+    <!-- Gionee:huangzy 20120621 add for CR00624998 start -->  
+    <string name="gn_max_add_num">Un massimo di %d contatti alla volta</string>  
+    <string name="gn_max_remove_num">Un massimo di %d contatti alla volta</string>  
+    <!-- Gionee:huangzy 20120621 add for CR00624998 end -->  
+    <!-- Gionee:huangzy 20120815 add for CR00664358 start -->  
+    <string name="gn_max_move_num">Un massimo di %d contatti alla volta</string>  
+    <!-- Gionee:huangzy 20120815 add for CR00664358 end -->  
+    <string name="gn_save">Salva</string>  
+    <!-- Gionee:huangzy 20120802 modify for CR00663548 start -->  
+    <string-array name="gn_call_log_type"> 
+        <item>Tutte le chiamate</item>  
+        <item>Chiamate in uscita</item>  
+        <item>Chiamate ricevute</item>  
+        <item>Chiamate perse</item> 
+    </string-array>  
+    <string-array name="gn_call_log_type_empty"> 
+        <item>Nessuna chiamata</item>  
+        <item>Nessuna chiamata in uscita</item>  
+        <item>Nessuan chiamata ricevuta</item>  
+        <item>Nessuna chiamata persa</item> 
+    </string-array>  
+    <!-- Gionee:huangzy 20120802 modify for CR00663548 end -->  
+    <string name="gn_paste">Incolla</string>  
+    <string name="gn_dialpad">Mostra tastiera</string>  
+    <string name="gn_video_dial">Videochiamata</string>  
+    <string name="gn_selected_count">%1$s selezionato</string>  
+    <string name="gn_menu_dialpad_title">Attiva tastiera</string>  
+    <!-- Gionee:huangzy 20120823 add for CR00614805 start -->  
+    <string name="gn_hot_lines_label">Hot Lines</string>  
+    <!-- Gionee:huangzy 20120823 add for CR00614805 end -->  
+    <!--Gionee hzy end -->  
+    <!--GIONEE xuhz 20120522 add for CR00575945 start-->  
+    <string name="gn_midnight">AM</string>  
+    <string name="gn_dawn">AM</string>  
+    <string name="gn_am">AM</string>  
+    <string name="gn_noon">PM</string>  
+    <string name="gn_pm">PM</string>  
+    <string name="gn_dusk">PM</string>  
+    <string name="gn_night">PM</string>  
+    <!--GIONEE xuhz 20120522 add for CR00575945 end-->  
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 begin -->  
+    <string name="gn_contactSavedNoNameError_Toast">Inserisci nome</string>  
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 end -->  
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 begin -->  
+    <string name="delete_call_log">Elimina registro chiamate</string>  
+    <string name="gn_select_conversation_one">Scelto 1</string>  
+    <string name="gn_select_conversation_more">Scelto %1$s</string>  
+    <string name="delete">Elimina</string>  
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 end -->  
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 start -->  
+    <string name="contact_tel">Tel</string>  
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 end -->  
+    <!-- Gionee qiuxd 20120612 add for CR00623811 start -->  
+    <string name="gn_lcd_type">Tipologia di LCD</string>  
+    <string name="gn_gtl_type">Tipologia di dispositivo</string>  
+    <string name="gn_type">Tipologia</string>  
+    <!-- Gionee qiuxd 20120612 add for CR00623811 end -->  
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->  
+    <string name="gn_sms">SMS</string>  
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->  
+    <!-- Gionee:wangth 20120702 add for CR00632662 begin -->  
+    <string name="gn_email_2g_invalid">Impossibile salvare la mail in SIM 2G</string>  
+    <!-- Gionee:wangth 20120702 add end -->  
+    <!-- gionee xuhz 20120613 add for CR00614793 start -->  
+    <string name="gn_favorite_widget_label">Contatti preferiti e frequenti</string>  
+    <string name="gn_widget_favorite_title">Contatti preferiti e frequenti</string>  
+    <string name="gn_widget_favorite_empty">Nessun contatto preferito o frequente</string>  
+    <string name="gn_widget_loading">Caricamento\u2026</string>  
+    <!-- gionee xuhz 20120613 add for CR00614793 end -->  
+    <!-- Gionee:wangth 20120709 add for CR00640337 begin -->  
+    <string name="gn_share_contact_label">Memoria</string>  
+    <!-- Gionee:wangth 20120709 add end -->  
+    <!-- Gionee:wangth 20120716 add for CR00647568 begin -->  
+    <string name="gn_contact_delete_all_tips">Eliminazione di un contatto gia in esecuzione in background. Per procedere, annullare prima il processo in corso.</string>  
+    <!-- Gionee:wangth 20120716 add for CR00647568 end -->  
+    <!-- gionee xuhz 20120728 add for CR00658189 start -->  
+    <string name="gn_confirm_export_title">Esporta contatti</string>  
+    <string name="gn_confirm_export_message">Esportare la tua lista contatti sul file: 
+        <xliff:g id="vcard_filename">%s</xliff:g> ?
+    </string>  
+    <!-- gionee xuhz 20120728 add for CR00658189 end -->  
+    <!-- gionee xuhz 20120803 modify for CR00663697 start -->  
+    <string-array name="gn_gionee_number"> 
+        <item>4007796666</item>  
+        <item>076982781000</item>  
+        <item>076982782000</item>  
+        <item>076982784000</item>  
+        <item>076982785000</item>  
+        <item>076982786000</item>  
+        <item>076982787000</item> 
+    </string-array>  
+    <string name="gn_customer_service">Servizio assistenza</string>  
+    <!-- gionee xuhz 20120803 modify for CR00663697 end -->  
+    <string-array name="gn_alphbet_index"> 
+        <item>#</item>  
+        <item>A</item>  
+        <item>B</item>  
+        <item>C</item>  
+        <item>D</item>  
+        <item>E</item>  
+        <item>F</item>  
+        <item>G</item>  
+        <item>H</item>  
+        <item>I</item>  
+        <item>J</item>  
+        <item>K</item>  
+        <item>L</item>  
+        <item>M</item>  
+        <item>N</item>  
+        <item>O</item>  
+        <item>P</item>  
+        <item>Q</item>  
+        <item>R</item>  
+        <item>S</item>  
+        <item>T</item>  
+        <item>U</item>  
+        <item>V</item>  
+        <item>W</item>  
+        <item>X</item>  
+        <item>Y</item>  
+        <item>Z</item> 
+    </string-array>  
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 start -->  
+    <string-array name="gn_alphbet_index_fly"> 
+        <item>#</item>  
+        <item>A</item>  
+        <item>C</item>  
+        <item>E</item>  
+        <item>G</item>  
+        <item>I</item>  
+        <item>K</item>  
+        <item>M</item>  
+        <item>O</item>  
+        <item>R</item>  
+        <item>T</item>  
+        <item>V</item>  
+        <item>X</item>  
+        <item>Z</item>  
+        <item>А</item>  
+        <item>В</item>  
+        <item>Е</item>  
+        <item>Ж</item>  
+        <item>И</item>  
+        <item>М</item>  
+        <item>П</item>  
+        <item>Ф</item>  
+        <item>Ц</item>  
+        <item>Ш</item>  
+        <item>Ы</item>  
+        <item>Э</item>  
+        <item>Я</item> 
+    </string-array>  
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 end -->  
+    <!-- gionee xuhz 20120812 add for GIUI4.3 start -->  
+    <string name="gn_gallery_title">Galleria</string>  
+    <string name="gn_pick_photo_from_other_app">Acquisisci foto da altre applicazioni</string>  
+    <string name="gn_gallery_photo_view_title">Immagine contatto</string>  
+    <string name="gn_the_first_picture">La prima immagine</string>  
+    <string name="gn_the_last_picture">L\'ultima immagine</string>  
+    <string name="gn_apply">Applica</string>  
+    <string name="gn_set_picture_success">Impostazione immagine contatto riuscita</string>  
+    <!-- gionee xuhz 20120912 add for GIUI4.3 end -->  
+    <!-- GIONEE huyuke 20120824 add for CR00680819 begin -->  
+    <string name="gn_device_status_dlg_title">Stato del dispositivo</string>  
+    <string name="gn_x_misc_status_normal">Normale</string>  
+    <string name="gn_x_misc_status_locked">Bloccato</string>  
+    <string name="gn_x_misc_status_unkown">Sconosciuto</string>  
+    <!-- GIONEE huyuke 20120824 add for CR00680819 end --> 
+    <string name="gn_sales_num">Numero</string>  
+    <string name="gn_sales_time">Tempo (min)</string>  
+    <string name="gn_sales_switch">Cambia</string>  
+    <string name="gn_sales_save">Salva</string>  
+    <string name="gn_sales_exit">Esci</string>
+    <string name="gn_call_ring_units">squilli</string>
+    
+    <string name="crop_picture">Taglia immagine</string>  
+    <string name="cancel">Annulla</string>  
+    <string name="crop_save_text">Taglia</string>  
+    <string name="crop_label">Taglia immagine</string>  
+    <string name="reset">Ripristina</string>  
+    <string name="load_failed">Caricamento non riuscito</string>  
+    <!-- Gionee fangbin 20120716 added for CR00636040 start -->  
+    <string name="crop_failed">Spazio insufficiente, impossibile tagliare</string>  
+    <!-- Gionee fangbin 20120716 added for CR00636040 end -->  
+    <string name="croping_dialog">Taglio dell\'immagine in corso, attendere…</string> 
+</resources>

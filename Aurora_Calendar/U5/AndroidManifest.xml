@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/* //device/apps/Calendar/AndroidManifest.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.calendar"
+
+    android:sharedUserLabel="@string/app_label"
+    android:versionCode="20101008"
+    android:versionName="2.718">
+
+    <!--
+       NOTE: and original-package cannot be used, since the Eclair
+       version was using a shared user ID with the provider.
+    -->
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail" />
+
+    <!--M:#unread message#add one permission to write setting.  -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <!-- M:NFC. -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Gionee <lilg> <2013-05-02> add for gionee widget begin -->
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <!-- Gionee <lilg> <2013-05-02> add for gionee widget end -->
+
+    <!--Gionee <pengwei> <2013-05-20> modify for CR00813693 begin -->
+    <uses-permission android:name="gn.com.android.Statistics.permission.RECEIVE" />
+    <!--Gionee <pengwei> <2013-05-20> modify for CR00813693 end-->
+
+    <!-- Gionee <jiating> <2013-05-31> modify for CR00819108  begin-->
+    <uses-permission android:name="com.gionee.alarm.permission.SET_ACCURATE_WAKE_ALARM" />
+    <!-- Gionee <jiating> <2013-05-31> modify for CR00819108  end-->
+
+    <!-- Gionee <jiangxiao> <2013-06-21> modify for CR00828816  begin-->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <!-- Gionee <jiangxiao> <2013-06-21> modify for CR00828816  end-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+     
+
+    <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 forbde begin -->
+    <application
+        android:name="com.android.calendar.CalendarApp"
+        android:backupAgent="com.android.calendar.CalendarBackupAgent"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_calendar"
+        android:label="@string/app_label"
+        android:taskAffinity="android.task.calendar">
+
+        <provider
+            android:name="com.youju.statistics.database.MyContentProvider"
+            android:authorities="C33FE784277FDF1D" />
+
+        <meta-data
+            android:name="YJ_APP_ID"
+            android:value="C33FE784277FDF1D" />
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIM256oVOGnuSel5QKDpL8je_T65ZI8rFnDinssA" />
+
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 begin -->
+        <activity
+            android:name="AllInOneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarAllInIneTheme.WithNoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 end -->
+            <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 forbde end -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_CALENDAR" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="time/epoch" />
+                <data android:host="com.android.calendar" />
+                <data android:scheme="content" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="LaunchActivity"
+            android:exported="true"
+            android:targetActivity=".AllInOneActivity">
+        </activity-alias>
+
+        <activity
+            android:name="com.aurora.calendar.period.AuroraPeriodExplanationActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@com.aurora:style/Theme.aurora.Light"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name="com.aurora.calendar.AuroraBirthdayReceicer">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.aurora.calendar.AuroraBirthdayService" />
+
+        <activity
+            android:name="com.aurora.calendar.AuroraBirthdayInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="com.android.calendar.AllInOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.EventinfoWithActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.calendar.AllInOneActivity" />
+        </activity>
+
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 begin -->
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 actionBar show bottom begin -->
+        <activity
+            android:name="EventInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName="com.android.calendar.AllInOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.EventinfoWithActionBar"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 actionBar show bottom end -->
+            <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 end -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/event" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.calendar.AllInOneActivity" />
+        </activity>
+
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 begin -->
+        <activity
+            android:name=".event.EditEventActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar"
+            android:windowSoftInputMode="stateVisible" />
+
+        <activity
+            android:name=".event.AuroraEditEventActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar"
+            android:windowSoftInputMode="stateVisible" />
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 end -->
+
+        <activity-alias
+            android:name="EditEventActivity"
+            android:exported="true"
+            android:targetActivity=".event.AuroraEditEventActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/event" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/event" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name="GoogleCalendarUriIntentFilter"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay">
+
+            <intent-filter android:priority="50">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.google.com"
+                    android:pathPrefix="/calendar/event"
+                    android:scheme="http" />
+                <data
+                    android:host="www.google.com"
+                    android:pathPrefix="/calendar/event"
+                    android:scheme="https" />
+                <data
+                    android:host="www.google.com"
+                    android:pathPattern="/calendar/hosted/.*/event"
+                    android:scheme="http" />
+                <data
+                    android:host="www.google.com"
+                    android:pathPattern="/calendar/hosted/.*/event"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aurora.calendar.AuroraSelectCalendarsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 use @style/CalendarTheme.WithActionBar 
+                instead of @android:style/Theme.Holo.Light begin-->
+        <activity
+            android:name=".selectcalendars.SelectVisibleCalendarsActivity"
+            android:label="@string/select_visible_calendars_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+
+        <activity
+            android:name=".selectcalendars.SelectSyncedCalendarsMultiAccountActivity"
+            android:label="@string/select_synced_calendars_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+        <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 use @style/CalendarTheme.WithActionBar 
+                instead of @android:style/Theme.Holo.Light end-->
+
+        <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 use @style/CalendarTheme.WithActionBar 
+                instead of @android:style/Theme.Holo.Light begin-->
+        <activity
+            android:name="CalendarSettingsActivity"
+            android:label="@string/preferences_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+        <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 use @style/CalendarTheme.WithActionBar 
+                instead of @android:style/Theme.Holo.Light end-->
+
+        <!-- Declarations for search -->
+        <!-- Make all activities a searchable context -->
+        <!-- 
+        <meta-data android:name="android.app.default_searchable"
+            android:value="com.android.calendar.SearchActivity" />
+
+        <activity android:name="SearchActivity" android:label="@string/app_label"
+            android:launchMode="singleTask" android:theme="@style/CalendarTheme.WithActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity> -->
+
+        <provider
+            android:name=".CalendarRecentSuggestionsProvider"
+            android:authorities="com.android.calendar.CalendarRecentSuggestionsProvider"
+            android:exported="true" />
+
+        <!-- Declarations for alerts/reminders -->
+        <activity
+            android:name=".alerts.AlertActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@com.aurora:style/Theme.Aurora.Light.Dialog" />
+
+        <activity
+            android:name=".alerts.QuickResponseActivity"
+            android:label="@string/quick_response_dialog_title"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <receiver android:name=".alerts.AlertReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.EVENT_REMINDER" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+
+                <data android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+
+                <data android:scheme="content" />
+                <data android:host="com.android.calendar" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".alerts.AlertService" />
+
+        <service android:name=".alerts.DismissAlarmsService" />
+
+        <service android:name=".alerts.SnoozeAlarmsService" />
+
+        <!-- Declarations for the widget -->
+        <!-- Gionee <lilg><2013-05-07> modify for not need previous widget begin -->
+        <!--  
+        <receiver android:name=".widget.CalendarAppWidgetProvider" android:label="@string/gadget_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info" />
+        </receiver>
+		-->
+        <!-- Gionee <lilg><2013-05-07> modify for not need previous widget end -->
+
+        <!--
+        <receiver android:name=".widget.CalendarAppWidgetService$CalendarFactory">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+                <data android:scheme="content" />
+                <data android:host="com.android.calendar" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE" />
+                <data android:scheme="content" />
+                <data android:host="com.android.calendar" />
+                <data android:mimeType="vnd.android.data/update" />
+            </intent-filter>
+        </receiver>-->
+
+        <service
+            android:name=".widget.CalendarAppWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"></service>
+
+        <service android:name=".AsyncQueryServiceHelper" />
+
+        <!-- #ClearAllEvents# -->
+        <activity
+            android:name="com.mediatek.calendar.clearevents.SelectClearableCalendarsActivity"
+            android:configChanges="orientation|screenSize|mnc|mcc|fontScale"
+            android:label="@string/select_clear_calendars_title"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000  Theme begin -->
+        <!-- M: add it to let other application can choice a event from agenda activity. @{-->
+        <activity
+            android:name="com.mediatek.calendar.selectevent.AgendaChoiceActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_calendar"
+            android:label="@string/app_label"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.CALENDARCHOICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/x-vcalendar" />
+            </intent-filter>
+        </activity>
+        <!-- @}-->
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000  Theme end -->
+
+        <!-- M: add receiver to clear #unread message# when package manager cleared data @{ -->
+        <receiver android:name="com.mediatek.calendar.ClearDataReceiver">
+            <intent-filter>
+                <action android:name="com.mediatek.intent.action.SETTINGS_PACKAGE_DATA_CLEARED" />
+            </intent-filter>
+        </receiver>
+        <!-- @} -->
+        <!-- M: for NFC. @{ -->
+        <!-- 
+        <activity android:name="com.mediatek.calendar.nfc.NfcImportVCalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            
+            android:launchMode="singleInstance"
+            android:theme="@style/BackgroundOnlyTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <data android:mimeType="text/x-vcalendar" />
+                <data android:mimeType="text/calendar" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- @} -->
+
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000  add GNAgendaActivity begin -->
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 begin -->
+        <activity
+            android:name="com.gionee.calendar.agenda.GNAgendaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/gn_all_in_one_all_activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar">
+            <intent-filter>
+                <action android:name="com.gionee.calendar.GNAgendaActivity" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee <jiating> <2013-06-25> modify for CR00829225 end -->
+
+        <activity
+            android:name="com.gionee.calendar.setting.GNCalendarSettingViewActivity"
+            android:label="@string/gn_all_in_one_all_activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.AuroraCalendarSettingActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+
+        <!-- Gionee <jiating> <2013-05-30> modify for CR00000000 begin -->
+        <activity
+            android:name="com.gionee.horoscope.GNHoroscopeActivity"
+            android:configChanges="orientation|screenSize|mnc|mcc|fontScale"
+            android:label="@string/horoscope"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+        <!-- Gionee <jiating> <2013-05-30> modify for CR00000000 end -->
+
+        <!-- Gionee <Author: lihongyu> <2013-05-07> add for CR000000 begin -->
+        <activity
+            android:name="com.gionee.calendar.setting.GNCalendarAboutActivity"
+            android:label="@string/gn_all_in_one_all_activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+        <!-- Gionee <Author: lihongyu> <2013-05-07> add for CR000000 end -->
+
+        <activity
+            android:name="com.gionee.calendar.setting.GNCalendarSettingActivity"
+            android:label="@string/gn_all_in_one_all_activities"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarSettingTheme.WithActionBar" />
+
+        <activity
+            android:name="com.gionee.calendar.clearevent.GNSelectClearableCalendarsActivity"
+            android:configChanges="orientation|screenSize|mnc|mcc|fontScale"
+            android:label="@string/select_clear_calendars_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithActionBar" />
+        <!-- Gionee <jiating> <2013-04-11> modify for CR00000000 add GNAgendaActivity end -->
+
+        <!-- Gionee <Author: lihongyu> <2013-04-11> add for CR000000 begin -->
+        <!-- 
+        <receiver android:name="com.android.calendar.UpdateReceiver" >
+            <intent-filter>
+                <action android:name="com.android.calendar.action_appupgrade_check_update_result" />
+                <category android:name="com.gionee.appupgrade" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- Gionee <Author: lihongyu> <2013-04-11> add for CR000000 end -->
+
+        <!-- Gionee <lilg><2013-05-02> add for gionee widget begin -->
+        <activity
+            android:name="com.gionee.widget.ChooseDateActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+
+        <activity
+            android:name="com.gionee.widget.NoAccountAlert"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name="com.aurora.commemoration.sina.weibo.ShareSinaWeiboActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.android.calendar.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 
+        <receiver android:name="com.gionee.widget.CalendarWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="com.qualcomm.calendarwidget.goto_today" />
+                <action android:name="com.qualcomm.calendarwidget.date_changed" />
+                <action android:name="com.qualcomm.calendarwidget.refresh" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/gn_widget_info" />
+        </receiver>
+        -->
+       <receiver android:name="com.aurora.commemoration.alarm.CalendarAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.aurora.calendar.CALENDAR_ALARM" />
+                <action android:name="com.aurora.calendar.CALENDAR_ALARM_CANCEL" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+        </receiver>
+        <service
+            android:name="com.gionee.widget.CalendarWidget$DateService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"></service>
+
+        <service
+            android:name="com.gionee.widget.CalendarWidget$CommonService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+            <intent-filter>
+                <!-- Gionee <lilg> <2013-04-22> modify for Gionee widget begin -->
+                <action android:name="com.qualcomm.calendarwidget.goto_last_month" />
+                <action android:name="com.qualcomm.calendarwidget.goto_next_month" />
+                <!-- Gionee <lilg> <2013-04-22> modify for Gionee widget end -->
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.gionee.widget.CalendarWidget$WeekNumberService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <!-- Gionee <lilg><2013-05-02> add for gionee widget end -->
+
+        <!-- gionee <jiangxiao> <2013-05-31> add for CR000000 begin -->
+        <activity
+            android:name="com.gionee.astro.GNAstroPickerActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/GNCalendar.Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.gionee.astro.GNAstroPickerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- gionee <jiangxiao> <2013-05-31> add for CR000000 end -->
+
+        <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+        <activity
+            android:name="com.gionee.almanac.GNAlmanacActivity"
+            android:configChanges="orientation|screenSize|mnc|mcc|fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.event.AuroraEventRepeatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.AuroraCalendarViewFilterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.period.AuroraPeriodSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.period.PeriodTimeChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.calendar.period.PeriodCycleChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.commemoration.activity.RememberDayListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <activity
+            android:name="com.aurora.commemoration.activity.AddOrEditReminderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CalendarTheme.WithNoActionBar" />
+
+        <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+        <!-- 腾讯QQ分享sdk要求配置的 begin -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104520657" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 腾讯QQ分享sdk要求配置的 end -->
+
+        <activity
+            android:name="com.aurora.commemoration.share.PictureViewActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+    </application>
+</manifest>

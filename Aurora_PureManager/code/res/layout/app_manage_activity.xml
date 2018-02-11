@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="322dp"
+        android:background="#ff3cc6b2" >
+
+        <TextView
+            android:id="@+id/app_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="66dp"
+            android:textColor="#ffffff"
+            android:textSize="88sp" />
+
+        <TextView
+            android:id="@+id/app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/app_num"
+            android:layout_alignBottom="@+id/app_num"
+            android:layout_toRightOf="@+id/app_num"
+            android:text="@string/app_num"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/app_text"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="@dimen/all_app_right_action_bar_chg_btn_padding_bottom"
+            android:layout_toRightOf="@+id/app_num"
+            android:src="@drawable/app_num_triangle" />
+
+        <!-- 无SD卡时内存显示 -->
+
+        <LinearLayout
+            android:id="@+id/storager_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/my_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="230dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:max="100"
+                android:progress="40"
+                android:progressDrawable="@drawable/progressbar_color" />
+
+            <TextView
+                android:id="@+id/storager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- 有SD卡时内存显示 -->
+
+        <LinearLayout
+            android:id="@+id/internal_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/app_num"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="38dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/internal_storager"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/in_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="132dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_color" />
+
+            <TextView
+                android:id="@+id/in_storager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/app_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:background="@color/storager_view_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/sd_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/app_num"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@+id/view"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sd_storager"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/sd_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="132dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar_color" />
+
+            <TextView
+                android:id="@+id/sd_storager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/app_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@drawable/list_selector"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="0dp" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <!--
+    android:paddingRight="@com.aurora:dimen/aurora_search_view_padding_right"
+    android:paddingLeft="@com.aurora:dimen/aurora_search_view_padding_left" 
+    android:layout_height="@com.aurora:dimen/aurora_search_view_hight"
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:background="@drawable/note_main_search_view_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/search_view_text_padding_left"
+            android:gravity="center_vertical"
+            android:text="@string/note_searchview_hint_text"
+            android:textColor="#dfd4c7"
+            android:textSize="@dimen/textsize_15" />
+
+    </LinearLayout>
+</LinearLayout>

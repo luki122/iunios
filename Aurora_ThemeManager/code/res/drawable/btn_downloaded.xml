@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/btn_downloaded_height"
+    android:width="@dimen/btn_downloaded_width"
+    android:viewportHeight="66"
+    android:viewportWidth="66"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="12.48"
+        android:translateY="12.48" >
+        <path
+            android:name="aurora_actionbar_back"
+            android:fillColor="?com.aurora:attr/auroraActionBarItemBackground"
+            android:pathData="M36.431,-0.000 L4.345,-0.000 C1.796,-0.000 0.033,2.067 0.033,4.593 L0.010,36.430 C0.010,38.957 1.796,41.023 4.345,41.023 L36.431,41.023 C38.957,41.023 41.024,38.957 41.024,36.430 L41.024,4.593 C41.024,2.067 38.957,-0.000 36.431,-0.000 ZM37.024,28.028 L27.333,28.028 C27.333,31.841 24.233,34.448 20.444,34.448 C16.654,34.448 13.554,31.841 13.554,28.028 L4.031,28.028 L4.031,3.966 L37.024,3.966 L37.024,28.028 ZM29.630,15.987 L25.037,15.987 L25.037,9.009 L16.028,9.009 L16.028,15.987 L11.258,15.987 L20.444,25.262 L29.630,15.987 Z"/>
+    </group>
+
+</vector>

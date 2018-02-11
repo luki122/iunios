@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">       
+    <com.secure.view.AppDetailInfoView
+        android:id="@+id/appDetailInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout 
+	    android:id="@+id/btnLayout"
+		android:layout_height="91dp" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:gravity="center_vertical"
+		android:paddingLeft="17dp" android:paddingRight="17dp"
+		android:layout_alignParentBottom="true">
+		<Button
+		    android:id="@+id/appDetailBtn" 
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/app_detail"
+            style="@style/button_text"
+            android:background="@drawable/button"/>
+		<Button 
+		    android:id="@+id/uninstallBtn" android:layout_marginLeft="10dp"
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/uninstall"
+			style="@style/button_text"
+			android:background="@drawable/button"/>
+	</LinearLayout>
+	          
+    <com.secure.stickylistheaders.StickyListHeadersListView
+		android:id="@+id/permissionListView" 
+		android:layout_width="fill_parent"  android:layout_height="fill_parent"
+		android:layout_below="@id/appDetailInfoLayout" android:layout_above="@id/btnLayout"
+		android:layout_marginTop="17dp"
+		android:focusable="false" android:fadingEdge="none"
+		android:divider="@color/listDivider" android:dividerHeight="0dp" />
+    
+    <View
+        android:layout_width="fill_parent" android:layout_height="1px"
+        android:background="@drawable/line" android:layout_above="@id/btnLayout"/>
+</RelativeLayout>

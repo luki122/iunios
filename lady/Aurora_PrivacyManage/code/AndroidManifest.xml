@@ -1,0 +1,142 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.privacymanage"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:name="com.privacymanage.activity.CustomApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@com.aurora:style/Theme.aurora.Light" >
+
+        <activity
+            android:name="com.privacymanage.activity.PrivacyEntrance"
+            android:theme="@android:style/Theme.NoDisplay" 
+            android:icon="@drawable/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name="com.privacymanage.activity.PageWelcome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.PageCreateAccount"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.PagePasswordAgain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.PagePasswordProtection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name="com.privacymanage.activity.PageCreateDone"
+            android:label="PageDone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="locale"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:name="com.privacymanage.activity.UserGuide"
+            android:label="UserGuide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.GetbackPassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.ChangeEmail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.ChangePassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateUnchanged"
+            android:name="com.privacymanage.activity.ChangePassword2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.privacymanage.activity.PrivacyManageActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/PrivacyManageActivityStyle" />
+        <activity
+            android:name="com.privacymanage.activity.SetActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+        <activity
+            android:name="com.privacymanage.activity.PrivacyRingMsgActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@com.aurora:style/Theme.aurora.Light" 
+            android:exported="true"/>
+        
+
+
+        <service
+            android:name="com.privacymanage.service.PrivacyManageService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.privacymanage.service.IPrivacyManageService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.privacymanage.service.WatchDogService" />
+
+        <provider
+            android:name="com.privacymanage.provider.AccountProvider"
+            android:authorities="com.privacymanage.provider.AccountProvider" />
+        <provider
+            android:name="com.privacymanage.provider.ConfigProvider"
+            android:authorities="com.privacymanage.provider.ConfigProvider" />
+        <provider
+            android:name="com.privacymanage.provider.ModuleInfoProvider"
+            android:authorities="com.privacymanage.provider.ModuleInfoProvider" />
+
+        <receiver android:name="com.privacymanage.receive.EnterPrivacySpaceReceiver" >
+            <intent-filter>
+                <action android:name="com.aurora.privacymanage.ENTER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.privacymanage.receive.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+</manifest>

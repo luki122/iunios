@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/item_of_listview"
+    android:descendantFocusability= "blocksDescendants" >
+    <ImageView
+		  android:id="@+id/appIcon"
+		  style="@style/app_icon_of_listview"
+		  android:layout_centerVertical="true"/> 
+		  
+    <ImageView
+        android:id="@+id/netSwitch"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" android:layout_marginRight="14.7dp"
+        android:layout_centerVertical="true"/>
+		    
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/appIcon" android:layout_toLeftOf="@id/netSwitch"
+        android:layout_marginLeft="15dp" android:layout_marginRight="14.3dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent" android:layout_height="wrap_content">       
+            <TextView
+		        android:id="@+id/networkTraffic"
+		        android:layout_marginTop="5dp"
+			    android:layout_width="wrap_content" android:layout_height="wrap_content"
+			    android:textColor="@color/list_text_sub_selector_color"
+                android:textSize="10sp"
+			    android:layout_alignParentRight="true" android:gravity="bottom"/>
+            
+            <TextView
+               android:id="@+id/appName" 
+               android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:layout_toLeftOf="@id/networkTraffic" android:layout_marginRight="10dp"
+               android:lines="1" android:ellipsize="end"
+               android:textColor="@color/list_text_title_selector_color"
+               android:textSize="15sp"/>
+        </RelativeLayout>
+        
+        <ProgressBar
+             android:id="@+id/netProgressBar" 
+             android:layout_width="fill_parent" android:layout_height="4dp"
+             android:layout_marginTop="7.6dp"
+             style="?android:attr/progressBarStyleHorizontal"/>      
+    </LinearLayout>
+</RelativeLayout>

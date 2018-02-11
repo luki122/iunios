@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen aurora:auroratitle="@string/call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+  <AuroraPreferenceCategory aurora:aurorapersistent="false" >
+        <AuroraPreferenceScreen
+            aurora:aurorakey="private_ring_call"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/private_incoming_call" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.contacts.activities.AuroraPrivateSettingListActivity"
+                android:targetPackage="com.android.contacts" />
+        </AuroraPreferenceScreen>
+
+        <AuroraSwitchPreference
+            aurora:auroradefaultValue="@bool/aurora_private_sms_notification"
+            aurora:aurorakey="private_sms_notification"
+            aurora:aurorasummary="@string/private_sms_notification_summary"
+            aurora:auroratitle="@string/private_sms_notification" />
+    </AuroraPreferenceCategory>
+    <AuroraPreferenceCategory aurora:aurorapersistent="false" >
+        <AuroraEditTextPreference
+            aurora:aurorakey="private_notification_text"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/private_notification_text_summary"
+            aurora:auroratitle="@string/private_notification_text" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

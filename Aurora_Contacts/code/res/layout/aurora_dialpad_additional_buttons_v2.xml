@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/additional_buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/gn_dial_additions_bg" >
+    
+    <ImageButton
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:src="@drawable/gn_dial_ic_see_contacts"
+    	android:background="@drawable/gn_dial_btn_addition_bg"
+    	android:minWidth="70dip"
+    	 />
+    
+    <LinearLayout 
+        android:layout_width="0dip"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:layout_weight="1" >
+    	
+        <ImageButton
+	   	    android:id="@+id/dialButton"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:src="@drawable/gn_dial_ic_call"
+	    	android:background="@drawable/gn_dial_btn_call_bg" />
+    </LinearLayout>
+    
+   <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:minWidth="70dip"
+    	android:orientation="vertical" >
+        
+        <ImageButton
+	        android:id="@+id/deleteButton"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:src="@drawable/gn_dial_ic_delete"
+	    	android:background="@drawable/gn_dial_btn_addition_bg" /> 
+        
+    </LinearLayout>
+</LinearLayout>

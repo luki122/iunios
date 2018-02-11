@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+   
+  xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:aurorapersistent = "false" 
+        aurora:auroraorderingFromXml = "true">
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey = "custom"    
+                        aurora:auroratitle = "@string/audio_profile_category_custom_title"/>
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey = "predefine"    
+                        aurora:auroratitle = "@string/audio_profile_category_predefine_title"/>
+        <gn.com.android.audioprofile.AudioProfilePreference 
+            aurora:aurorakey = "mtk_audioprofile_general"
+            aurora:auroratitle = "@string/general_settings_title"
+            aurora:aurorasummary = "@string/ring_summary"/>
+        <gn.com.android.audioprofile.AudioProfilePreference 
+            aurora:aurorakey = "mtk_audioprofile_silent" 
+            aurora:auroratitle = "@string/silent_settings_title"
+            aurora:aurorasummary = "@string/silent_summary"/>
+        <gn.com.android.audioprofile.AudioProfilePreference 
+            aurora:aurorakey = "mtk_audioprofile_meeting" 
+            aurora:auroratitle = "@string/meeting_settings_title"
+            aurora:aurorasummary = "@string/meeting_summary"/>
+        <gn.com.android.audioprofile.AudioProfilePreference 
+            aurora:aurorakey = "mtk_audioprofile_outdoor" 
+            aurora:auroratitle = "@string/outdoor_settings_title"
+            aurora:aurorasummary = "@string/outdoor_summary"/> 
+</aurora.preference.AuroraPreferenceScreen>

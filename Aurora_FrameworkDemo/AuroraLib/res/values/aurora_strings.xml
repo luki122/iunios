@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <zhangxx> <2013-06-20> add for auroraframework. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="aurora_capital_on">On</string>
+    <string name="aurora_capital_off">Off</string>
+    <string name="aurora_time_picker_dialog_title">&quot;Set Time&quot;</string>
+    <string name="aurora_date_picker_dialog_title">&quot;Set Date&quot;</string>
+    <string name="aurora_date_time_done">&quot;Done&quot;</string>
+    <string name="aurora_copy">Copy</string>
+    <string name="aurora_paste">Paste</string>
+    <string name="aurora_cut">Cut</string>
+    <string name="aurora_selectAll">Select All</string>
+    <string name="aurora_select">Select</string>
+    <string name="aurora_inputMethod">Input Method</string>
+ <!-- Strings for possible PreferenceActivity Back/Next buttons -->
+    <string name="aurora_back_button_label">Back</string>
+    <string name="aurora_next_button_label">Next</string>
+ <!-- Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] -->
+    <string name="aurora_skip_button_label">Skip</string>
+    <string name="aurora_ok">OK</string>
+    <string name="aurora_cancel">Cancel</string>
+    <string name="aurora_yes">Yes</string>
+    <string name="aurora_no">No</string>
+    <string name="aurora_action_mode_done">Done</string>
+    <string name="aurora_action_bar_home_description">&quot;Home page of the navigation&quot;</string>
+    <string name="aurora_action_bar_up_description">&quot;Upward navigation&quot;</string>
+ <!-- Gionee <xuhz> <2013-07-19> add for CR00838236 begin -->
+    <!-- String for Smart Guider -->
+    <string name="aurora_smart_full_btn_label">I see</string>
+ <!-- Gionee <xuhz> <2013-07-19> add for CR00838236 end -->
+    <string name="aurora_datepicker_done">OK</string>
+    <string name="aurora_datepicker_cancel">Cancel</string>
+    <string name="aurora_datepicker_year_label">Y</string>
+    <string name="aurora_datepicker_month_lebel">M</string>
+    <string name="aurora_datepicker_day_label">D</string>
+ <!-- Aurora <luofu> <2013-10-23> add for timepicker begin -->
+    <string name="aurora_time_picker_hour_lebel">H</string>
+    <string name="aurora_time_picker_m_label">M</string>
+    <string name="lockscreen_carrier_default" msgid="8963839242565653192">&quot;No Service&quot;</string>
+    <string name="share" msgid="1778686618230011964">&quot;Share&quot;</string>
+    <string name="usb_storage_stop_notification_title" msgid="2336058396663516017">&quot;Turn off USB storage device&quot;</string>
+    <string name="usb_storage_stop_notification_message" msgid="1656852098555623822">&quot;Tap to turn off USB storage.&quot;</string>
+    <string name="ext_media_checking_notification_title" msgid="3449816005351468560" product="nosdcard">&quot;Preparing a USB storage device&quot;</string>
+    <string name="ext_media_checking_notification_title" msgid="5457603418970994050" product="default">&quot;Preparing <xliff:g id="storage_description">%s</xliff:g>&quot;</string>
+    <string name="ext_media_checking_notification_message" msgid="8287319882926737053">&quot;Checking for errors.&quot;</string>
+    <string name="ext_media_nofs_notification_title" msgid="7788040745686229307" product="nosdcard">&quot;No file in USB storage device&quot;</string>
+    <string name="ext_media_nofs_notification_title" msgid="780477838241212997" product="default">&quot;Empty <xliff:g id="storage_description">%s</xliff:g>&quot;</string>
+    <string name="ext_media_nofs_notification_message" msgid="7840121067427269500" product="nosdcard">&quot;There is no file in the USB storage device or the file system is not supported.&quot;</string>
+    <string name="ext_media_nofs_notification_message" msgid="8641065641786923604" product="default">&quot;There is no file in <xliff:g id="storage_description">%s</xliff:g> or the file system is not supported.&quot;</string>
+    <string name="ext_media_unmountable_notification_title" msgid="2090046769532713563" product="nosdcard">&quot;USB storage device damaged&quot;</string>
+    <string name="ext_media_unmountable_notification_title" msgid="6410723906019100189" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> damaged&quot;</string>
+    <string name="ext_media_unmountable_notification_message" msgid="1795917578395333280" product="nosdcard">&quot;The USB storage device is damaged. Try reformatting it.&quot;</string>
+    <string name="ext_media_unmountable_notification_message" msgid="1753898567525568253" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> is damaged. Try reformatting it.&quot;</string>
+    <string name="ext_media_badremoval_notification_title" msgid="1661683031330951073" product="nosdcard">&quot;USB storage device is removed unexpectedly&quot;</string>
+    <string name="ext_media_badremoval_notification_title" msgid="6872152882604407837" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> is not properly removed&quot;</string>
+    <string name="ext_media_badremoval_notification_message" msgid="4329848819865594241" product="nosdcard">&quot;To prevent data loss, unmount the USB storage device before removing it.&quot;</string>
+    <string name="ext_media_badremoval_notification_message" msgid="7260183293747448241" product="default">&quot;To prevent data loss, unmount <xliff:g id="storage_description">%s</xliff:g> before removing it.&quot;</string>
+    <string name="ext_media_safe_unmount_notification_title" msgid="3967973893270360230" product="nosdcard">&quot;USB storage device has been removed safely&quot;</string>
+    <string name="ext_media_safe_unmount_notification_title" msgid="6729801130790616200" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> has been removed safely&quot;</string>
+    <string name="ext_media_safe_unmount_notification_message" msgid="6142195361606493530" product="nosdcard">&quot;You can safely remove the USB storage device.&quot;</string>
+    <string name="ext_media_safe_unmount_notification_message" msgid="568841278138377604" product="default">&quot;You can now safely remove <xliff:g id="storage_description">%s</xliff:g>.&quot;</string>
+    <string name="ext_media_nomedia_notification_title" msgid="4486377230140227651" product="nosdcard">&quot;USB storage device has been removed&quot;</string>
+    <string name="ext_media_nomedia_notification_title" msgid="8902518030404381318" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> has been removed&quot;</string>
+    <string name="ext_media_nomedia_notification_message" msgid="6921126162580574143" product="nosdcard">&quot;USB storage device has been removed. Please insert a new media.&quot;</string>
+    <string name="ext_media_nomedia_notification_message" msgid="3870120652983659641" product="default">&quot;<xliff:g id="storage_description">%s</xliff:g> has been removed, please insert a new one.&quot;</string>
+    <string name="usb_storage_notification_title" msgid="8175892554757216525">&quot;USB storage device connected&quot;</string>
+    <string name="usb_storage_notification_message" msgid="939822783828183763">&quot;Tap to copy files to a computer or copy files from a computer to the storage device.&quot;</string>
+    <string name="usb_storage_stop_title" msgid="660129851708775853">&quot;USB storage device is in use&quot;</string>
+    <string name="usb_storage_stop_message" msgid="4264025280777219521" product="nosdcard">&quot;Before turning off a USB storage device, unmount (&quot;eject&quot;) the USB storage device of an Android device from your computer.&quot;</string>
+    <string name="usb_storage_stop_message" msgid="8043969782460613114" product="default">&quot;Before turning off a USB storage device, unmount (&quot;eject&quot;) the SD card of an Android device from your computer.&quot;</string>
+    <string name="usb_storage_title" msgid="5901459041398751495">&quot;USB storage device connected&quot;</string>
+    <string name="usb_storage_message" msgid="3308538094316477839" product="nosdcard">&quot;The Android device has been connected to the computer via USB. If you want to copy files between your computer and Android device, tap the button below.&quot;</string>
+    <string name="usb_storage_message" msgid="805351000446037811" product="default">&quot;The Android device has been connected to the computer via USB. If you want to copy files between your computer and Android device, tap the button below.&quot;</string>
+    <string name="chooseUsbActivity" msgid="6894748416073583509">&quot;Select an application for the USB device&quot;</string>
+    <string name="clearDefaultHintMsg" msgid="4815455344600932173">&quot;Tap &quot;Settings&quot;&gt;&quot;Applications&quot;&gt;&quot;Manage Applications&quot; to clear the default settings.&quot;</string>
+    <string name="usb_storage_button_mount" msgid="1052259930369508235">&quot;Turn on USB storage device&quot;</string>
+    <string name="usb_storage_stop_button_mount" msgid="7060218034900696029">&quot;Turn off USB storage device&quot;</string>
+    <string name="aurora_shutdown">Shutdown</string>
+    <string name="aurora_reboot">Restart</string>
+    <string name="aurora_airmode">Turn off flight mode</string>
+    <string name="aurora_airmode_open">Turn on flight mode</string>
+    <string name="usb_storage_activity_title">&quot;USB mass storage device&quot;</string>
+    <string name="description_target_search">&quot;Search&quot;</string>
+    <string name="description_direction_up">&quot;Slide up to <xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>.&quot;</string>
+    <string name="description_direction_left">&quot;Slide to the left to <xliff:g id="TARGET_DESCRIPTION">%s</xliff:g>.&quot;</string>
+    <string name="aurora_dialog_default_title">Prompt</string>
+    <string name="reboot_alert_title">Restart</string>
+    <string name="reboot_alert_message">The system will restart soon</string>
+    <string name="reboot_ok">OK</string>
+    <string name="reboot_cancel">Cancel</string>
+    <string name="aurora_activity_resolver_use_always">&quot;Always&quot;</string>
+    <string name="aurora_activity_resolver_use_once">&quot;Just once&quot;</string>
+    <string name="aurora_custom_action_bar_search_hint_text">Input</string>
+    <string name="aurora_no_application_can_perform_this_operation">No application can perform this operation</string>
+   
+    <string name="aurora_date_appwidget_day">Day </string>
+    <string name="aurora_date_appwidget_mon">Month</string>
+
+    <!-- add for volume panel begin -->
+    <!-- Title of the dialog where the user is adjusting the phone ringer volume -->
+    <string name="volume_ringtone">Ringer volume</string>
+    <!-- Title of the dialog where the user is adjusting the music volume -->
+    <string name="volume_music">Media volume</string>
+    <!-- Hint shown in the volume toast to inform the user that the media audio is playing through Bluetooth. -->
+    <string name="volume_music_hint_playing_through_bluetooth">Playing through Bluetooth</string>
+    <!-- Hint shown in the volume toast to inform the user that the current ringtone is the silent ringtone. -->
+    <string name="volume_music_hint_silent_ringtone_selected">Silent ringtone set</string>
+    <!-- Title of the dialog where the user is adjusting the phone call volume -->
+    <string name="volume_call">In-call volume</string>
+    <!-- Title of the dialog where the user is adjusting the phone call volume when connected on bluetooth-->
+    <string name="volume_bluetooth_call">Bluetooth in-call volume</string>
+    <!-- Title of the dialog where the user is adjusting the audio volume for alarms -->
+    <string name="volume_alarm">Alarm volume</string>
+    <!-- Title of the dialog where the user is adjusting the audio volume for notifications -->
+    <string name="volume_notification">Notification volume</string>
+    <!-- Title of the dialog where the user is adjusting the general audio volume -->
+    <string name="volume_unknown">Volume</string>
+
+    <!-- Content description for bluetooth volume icon [CHAR LIMIT=100] -->
+    <string name="volume_icon_description_bluetooth">Bluetooth volume</string>
+    <!-- Content description for ringer volume icon [CHAR LIMIT=100] -->
+    <string name="volume_icon_description_ringer">Ringtone volume</string>
+    <!-- Content description for in-call volume icon [CHAR LIMIT=100] -->
+    <string name="volume_icon_description_incall">Call volume</string>
+    <!-- Content description for media volume icon [CHAR LIMIT=100] -->
+    <string name="volume_icon_description_media">Media volume</string>
+    <!-- Content description for notification volume icon [CHAR LIMIT=100] -->
+    <string name="volume_icon_description_notification">Notification volume</string>
+    
+     <!-- add for volume panel end -->
+     
+     <string name="aurora_save">保存</string>
+     
+      <string name="safe_media_volume_warning" product="default">
+       "Raise volume above recommended level?\nListening at high volume for long periods may damage your hearing."
+    </string>
+     
+      <string name="aurora_login_user_name">UserName:</string>
+      <string name="aurora_login_user_password">Password:</string>
+      <string name="aurora_login_submit">Submit</string>
+      <string name="aurora_login_user_name_hint">Email</string>
+     <string name="aurora_login_password_hint">At least 6 character</string>
+     <string name="aurora_forget_password">Forget Password?</string>
+     <string name="whichApplication">Complete action using</string>
+     
+</resources>

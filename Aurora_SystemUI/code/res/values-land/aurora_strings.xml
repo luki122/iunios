@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2010, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0 
+ *
+ * Unless required by applicable law or agreed to in writing, software 
+ * distributed under the License is distributed on an "AS IS" BASIS, 
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and 
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Aurora <Felix.Duan> <2014-8-19> <BEGIN> Add guidance on hiding navigation bar -->
+    <string name="aurora_dialog_title_notice">Notice</string>
+    <string name="aurora_nav_bar_hidden_msg">To hide navigation bar in landscape mode, swipe to right on it .\nTo restore, swipe back from screen edge.\nThis feature can be turned off in the Settings-Advanced-Accessibility.</string>
+    <!-- Aurora <Felix.Duan> <2014-8-19> <END> Add guidance on hiding navigation bar -->
+</resources>

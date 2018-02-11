@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+    
+  <string name="menu_print">列印</string>
+  <string name="printContact">列印聯絡人方式</string>
+    <string name="no_way_to_print">無應用程式可用於列印此一聯絡人。</string>
+  
+   
+    <!-- M: TODO for migration, duplicate string -->
+    <string name="call_speed_dial_title">快速撥號</string>
+    <string name="dialog_no_speed_dial_number_message">無簡碼，現在設定？</string>
+    <string name="icc_phone_book_invalid">電話簿目前無法使用，請稍後再試。</string>
+    <string name="error_edit_join_group">這是一個加入的聯絡人，請在編輯模式修改群組資訊。</string>
+    <string name="local_phone_account" product="tablet">平板電腦</string>
+    <string name="local_phone_account" product="default">﻿手機</string>
+    <string name="imsCallLabelsGroup">IMS 通話</string>
+    <string name="sip_url">SIP 位址</string>
+    <string name="ims_call_disabled">IMS 通話目前無法使用</string>
+    <string name="vcs_menu_voice_contacts_search" product="default">語音聯絡人搜尋</string>
+    <string name="vcs_msg_no_voice_contacts">抱歉，找不到聯絡人。</string>
+
+    <string name="contact_import_export_tips">匯入/匯出聯絡人中，請稍後再試</string>
+</resources>

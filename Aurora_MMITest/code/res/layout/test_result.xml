@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<Button 
+        android:id="@+id/quit_btn"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/quit"/>
+    <TextView 
+        android:id="@+id/test_title"
+        android:text="@string/test_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:background="@color/test_blue"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/quit_btn"
+        android:layout_below="@id/test_title"
+        android:fillViewport="true"
+        android:layout_weight="1">
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+  			android:orientation="vertical">
+		    <TextView 
+		         android:id="@+id/snlog"
+		         android:layout_width="match_parent"
+			     android:layout_height="wrap_content"
+			     android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    <TextView 
+		        android:id="@+id/test_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+	    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

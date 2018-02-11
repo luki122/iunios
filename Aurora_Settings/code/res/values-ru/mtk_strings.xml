@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="bluetooth_advanced_settings">&quot;Дополнительные настройки Bluetooth&quot;</string>
+    <string name="bluetooth_profile_ftp">&quot;Передача файлов&quot;</string>
+    <string name="bluetooth_ftp_profile_summary_use_for">&quot;Для передачи файлов&quot;</string>
+    <string name="bluetooth_ftp_profile_summary_connected">&quot;Подключено к передаче файлов&quot;</string>
+<!--<string name="lock_screen_notifications_title">锁定屏幕通知</string>
+    <string name="lock_screen_notifications_summary">在滑动锁定屏幕上显示未接来电和未接短信通知</string> -->
+<string name="lock_screen_style_title">Блокировать стиль экрана</string>
+    <string name="battery_percent">Процент заряда</string> 
+    <string name="cpu_dtm_title">Энергосберегающий режим CPU</string>
+    <string name="cpu_dtm_summary">Ограничить максимальную производительность CPU для экономии энергии и снижения температуры.</string>
+    <string name="usb_sharing_title">Интернет USB</string>  
+    <string name="usb_sharing_summary">Разделить интернет Windows PC через USB</string>  
+    <string name="usb_sharing_info_title">Сеть</string>  
+    <string name="usb_sharing_info_step_1">&quot;1. Открыть сеть Windows PC.&quot;</string>  
+    <string name="usb_sharing_info_step_2">&quot;2.Щелкните правой кнопкой мыши в разделенной сети и выберите Свойства.&quot;</string>  
+    <string name="usb_sharing_info_step_3">&quot;3.Нажмите кнопку дополнительные параметры, выберите \ &quot;Разрешить другим пользователям разделить интернет- соединения этого компьютера \&quot; (Если появляется вариант домашней сети, выберите новое сетевое USB-соединение) &quot;.&quot;</string>
+<!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 begin -->
+<string name="apn_port_warning">Значение порта должно быть 1-65535!</string>
+    <string name="usb_tethering_select_version">Выбирать версию системы компьютера</string>
+<!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 end -->
+</resources>

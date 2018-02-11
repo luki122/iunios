@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/aurora_dialog_griditem_ll_layout_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <ImageView android:id="@+id/girdview_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    <TextView android:id="@+id/girdview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/aurora_dialog_griditem_tv_gridview_text_padding_top"
+        android:textColor="@color/aurora_dialog_griditem_tv_gridview_text_color"
+        android:textSize="@dimen/aurora_dialog_griditem_tv_gridview_text_size"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

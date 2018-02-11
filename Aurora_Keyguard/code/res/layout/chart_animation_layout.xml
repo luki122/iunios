@@ -1,0 +1,53 @@
+<com.android.keyguard.charge.ChartAnimationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chartAnimationView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center" >
+
+        <com.android.keyguard.charge.ProgressView
+            android:id="@+id/progressWaveImg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/charge_progress_wave_bg"
+            android:visibility="invisible" />
+        <RelativeLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16.6sp"
+                 />
+            <TextView
+                android:id="@+id/progressPercentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/progressText"
+                android:layout_toRightOf="@+id/progressText"
+                android:layout_marginLeft="1.6dip"
+                android:layout_marginTop="1.3dip"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.android.keyguard.charge.ArcView
+        android:id="@+id/arcView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</com.android.keyguard.charge.ChartAnimationView>

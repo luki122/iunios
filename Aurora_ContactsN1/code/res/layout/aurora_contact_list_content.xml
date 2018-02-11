@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pinned_header_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/no_contacts_fra"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ProgressBar
+            android:id="@+id/progress_loading_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <view
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.android.contacts.widget.PinnedHeaderListView"
+            android:fadingEdge="none" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/footer_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_tab_height"
+        android:background="#FFFFFF" >
+    </ImageView>
+
+</LinearLayout>

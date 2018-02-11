@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee lwzh 20130227 added for CR00774362 start -->
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-24 modified for aurora;s new feature start -->
+<!-- Aurora xuyong 2013-10-18 modified for aurora's new feature start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_recipients_area"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Aurora xuyong 2013-09-24 modified for aurora;s new feature end -->
+<!-- Aurora xuyong 2013-10-24 modified for aurora's new feature start -->
+    <ScrollView 
+        android:id="@+id/aurora_container_scroll"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        android:scrollbarSize="0.1dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/aurora_detail_scrollbar"
+        android:orientation="vertical">
+<!-- Aurora xuyong 2013-10-24 modified for aurora's new feature end -->
+            <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+        <com.android.mms.ui.ContactContainer 
+            android:id="@+id/aurora_recipients_editor"
+            android:paddingTop="13dip"
+            android:paddingBottom="13dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+<!-- Aurora xuyong 2013-10-18 modified for aurora's new feature end -->
+        <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+        </com.android.mms.ui.ContactContainer>
+    </ScrollView>
+</LinearLayout>
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->

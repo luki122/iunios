@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:id="@+id/train_station_to_station_header_linearlayout"
+    android:background="@drawable/vs_question_structure_item_bg">
+
+    <LinearLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="9.0dip"
+        android:paddingRight="9.0dip" >
+<!--         android:paddingLeft="18.0dip" -->
+<!--         android:paddingRight="18.0dip" -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.0dip"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+<!--             android:layout_marginTop="16.0dip" -->
+<!-- 			shigq add android:layout_marginBottom="9dp" -->
+
+            <RelativeLayout
+                android:id="@+id/departure_station_view"
+                android:layout_width="fill_parent"
+                android:layout_height="38.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/vs_long_bus_station_bg" >
+<!--                 android:layout_height="48.0dip" -->
+
+                <TextView
+                    android:id="@+id/departure_station_textview"
+                    style="@style/vs_train_s2s_station"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true" />
+
+                <!-- <ImageView
+                    android:id="@+id/departure_station_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/vs_arrow" /> -->
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="36.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/vs_flight_train_normal" />
+
+            <RelativeLayout
+                android:id="@+id/arrival_station_view"
+                android:layout_width="fill_parent"
+                android:layout_height="38.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/vs_long_bus_station_bg" >
+<!--                 android:layout_height="48.0dip" -->
+
+                <TextView
+                    android:id="@+id/arrival_station_textview"
+                    style="@style/vs_train_s2s_station"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+<!--                 android:layout_height="48.0dip" -->
+
+                <!-- <ImageView
+                    android:id="@+id/arrival_station_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/vs_arrow" /> -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/train_type_view"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/vs_long_bus_station_bg" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/train_type_textview"
+                style="@style/vs_train_s2s_station"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/train_type_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:src="@drawable/vs_question_structure_down_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/train_query_imagebutton"
+                android:layout_width="fill_parent"
+                android:layout_height="38.5dip"
+                android:layout_gravity="center"
+                android:background="@drawable/vs_button_bg_main_voice"
+                android:textColor="@color/vs_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:shadowColor="#ff0079ac"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:textColor="#ffffffff"
+                android:textSize="17.169983dip" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/TrainNumber_vHDivider"
+            style="@style/vs_train_s2s_divider"
+            android:layout_marginTop="16.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        	android:id="@+id/cxlc_item"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+        
+    </LinearLayout>
+    
+    <!-- 抱歉，没有找到相关车次 -->
+    <TextView
+        android:id="@+id/no_long_bus_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18.5dip"
+        android:layout_marginLeft="18.5dip"
+        android:layout_marginRight="18.5dip"
+        android:layout_marginTop="8.5dip"
+        android:gravity="center"
+        android:text="@string/vs_s_not_found"
+        android:textColor="#ffa8a8a8"
+        android:textSize="12.5dip"
+        android:visibility="gone" />
+        
+    <RelativeLayout
+        android:id="@+id/vr_train_search_more_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone">
+<!--         android:layout_height="46.0dip" -->
+<!-- shiqg add android:layout_marginBottom="11dp" -->
+
+        <TextView
+            android:id="@+id/vr_train_search_more_info_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_toLeftOf="@+id/vr_train_search_more_info_imageview"
+            android:paddingLeft="18.0dip"
+            android:textColor="@color/vs_gray"
+            android:textSize="15sp" 
+            android:text="@string/vs_viewmore"
+            android:clickable="true"/>
+<!--         android:layout_marginTop="10.0dip" -->
+<!--         android:textSize="16.0dip"  -->
+        <ImageView
+            android:id="@+id/vr_train_search_more_info_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5.1999817dip"
+            android:layout_marginTop="18dip"
+            android:paddingRight="18.0dip"
+            android:src="@drawable/vs_arrow" />
+<!--         android:layout_marginTop="14.0dip" -->
+    </RelativeLayout>
+</LinearLayout>

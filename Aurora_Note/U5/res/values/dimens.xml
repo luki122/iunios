@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公有设置 不要随便修改 -->
+    <dimen name="button_size">18sp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="small_textsize">12sp</dimen>
+    <dimen name="textsize_8">8sp</dimen>
+    <dimen name="textsize_9">9sp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_11">11sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_22">22sp</dimen>
+    <dimen name="textsize_24">24sp</dimen>
+    <dimen name="textsize_28">28sp</dimen>
+    <dimen name="textsize_30">30sp</dimen>
+    <dimen name="textsize_16pt">11sp</dimen>
+    <dimen name="textsize_20pt">13sp</dimen>
+    <dimen name="textsize_22pt">15sp</dimen>
+    <dimen name="textsize_25pt">17sp</dimen>
+    <dimen name="textsize_28pt">19sp</dimen>
+    <dimen name="textsize_18pt">12sp</dimen>
+
+    <!-- 全局 偏移量 padding和magin 不能随便改动 -->
+    <dimen name="padding_0">0dip</dimen>
+    <dimen name="padding_1">1dip</dimen>
+    <dimen name="padding_2">2dip</dimen>
+    <dimen name="padding_3">3dip</dimen>
+    <dimen name="padding_4">4dip</dimen>
+    <dimen name="padding_5">5dip</dimen>
+    <dimen name="padding_6">6dip</dimen>
+    <dimen name="padding_7">7dip</dimen>
+    <dimen name="padding_8">8dip</dimen>
+    <dimen name="padding_9">9dip</dimen>
+    <dimen name="padding_10">10dip</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- pull to refresh -->
+    <dimen name="pull_to_refresh_top">10dip</dimen>
+    <dimen name="pull_to_refresh_bottom">15dip</dimen>
+    <dimen name="pull_to_refresh_left">30dip</dimen>
+    <dimen name="pull_to_refresh_right">20dip</dimen>
+    <dimen name="pull_to_refresh_head_left">100dip</dimen>
+    <dimen name="pull_to_refresh_head_right">10dip</dimen>
+
+    <!-- title bar -->
+    <dimen name="title_bar_image_height">15dip</dimen>
+    <dimen name="title_bar_button_width">38dip</dimen>
+    <dimen name="title_bar_button_height">38dip</dimen>
+    <dimen name="title_bar_button_left">10dip</dimen>
+
+    <!-- DateTimePickerView -->
+    <dimen name="aurora_time_picker_margin_left">19dip</dimen>
+    <dimen name="aurora_time_picker_margin_right">19dip</dimen>
+
+    <!-- 备忘主界面 -->
+    <dimen name="note_list_item_total_height">110dp</dimen>
+    <dimen name="note_list_item_padding_top">14dp</dimen>
+    <dimen name="note_list_item_padding_left">17dp</dimen>
+    <dimen name="note_list_item_padding_right">17dp</dimen>
+    <dimen name="note_list_item_title_size">16sp</dimen>
+    <dimen name="note_list_item_summary_size">12sp</dimen>
+    <dimen name="note_list_item_summary_padding_top">7.3dp</dimen>
+    <dimen name="note_list_item_time_size">9sp</dimen>
+    <dimen name="note_list_item_time_padding_top">7.3dp</dimen>
+    <dimen name="note_list_item_pic_width">101dp</dimen>
+    <dimen name="note_main_empty_text_padding_top">176dp</dimen>
+    <dimen name="note_main_empty_text_size">20sp</dimen>
+
+    <dimen name="note_list2_padding">8dp</dimen>
+    <dimen name="note_list2_padding_left">4dp</dimen>
+    <dimen name="note_list2_padding_top">8dp</dimen>
+    <dimen name="note_list2_item_padding">9.3dp</dimen>
+    <dimen name="note_list2_item_pic_height">128dp</dimen>
+    <dimen name="note_list2_item_pic_min_height">105dp</dimen>
+    <dimen name="note_list2_item_pic_max_height">230dp</dimen>
+    <dimen name="note_list2_item_title_padding_top">17dp</dimen>
+    <dimen name="note_list2_item_summary_padding_top">7dp</dimen>
+    <dimen name="note_list2_item_time_padding_top">10.3dp</dimen>
+    <dimen name="note_list2_item_space_height">2.3dp</dimen>
+    <dimen name="note_list2_item_images_height">38dp</dimen>
+    <dimen name="note_list2_item_image_margin">14dp</dimen>
+
+    <!-- 更换纸张界面 -->
+    <dimen name="note_paper_list_padding">7dp</dimen>
+    <dimen name="note_paper_list_padding_left">5dp</dimen>
+    <dimen name="note_paper_list_padding_top">10dp</dimen>
+
+    <!-- 搜索界面 -->
+    <dimen name="search_view_no_match_text_padding_top">176dp</dimen>
+    <dimen name="label_margin_left">17dp</dimen>
+    <dimen name="label_margin_right">17dp</dimen>
+    <dimen name="label_horizontal_space">12dp</dimen>
+    <dimen name="label_vertical_space">8.3dp</dimen>
+    <dimen name="label_title_padding_top">17dp</dimen>
+    <dimen name="label_padding_left">7dp</dimen>
+    <dimen name="label_padding_top">5dp</dimen>
+    <dimen name="label_padding_right">7dp</dimen>
+    <dimen name="label_padding_bottom">4.5dp</dimen>
+
+    <!-- 大图浏览 -->
+    <dimen name="picbrowser_top_tool_height">64dp</dimen>
+
+    <!-- 生成图片预览界面 -->
+    <dimen name="picbrowser_bottom_tool_height">47dp</dimen>
+    <dimen name="picbrowser_padding_left">10dp</dimen>
+
+    <!-- 添加提醒界面 -->
+    <dimen name="selected_date_time_margin_top">65dp</dimen>
+    <dimen name="date_time_picker_margin_top">57.5dp</dimen>
+    <dimen name="date_time_picker_margin_left">10dp</dimen>
+    <dimen name="date_time_picker_margin_right">10dp</dimen>
+    <dimen name="delete_reminder_btn_margin_bottom">84dip</dimen>
+    <dimen name="delete_reminder_btn_margin_left">17dip</dimen>
+    <dimen name="delete_reminder_btn_margin_right">17dip</dimen>
+
+    <!-- 搜索框 -->
+    <dimen name="search_view_text_padding_left">38.6dp</dimen>
+
+    <!-- 新建备忘界面 -->
+    <dimen name="new_note_menu_bar_height">40dp</dimen>
+    <dimen name="new_note_line_padding_right">17.5dp</dimen>
+    <dimen name="new_note_content_padding_left">21dp</dimen>
+    <dimen name="new_note_content_padding_right">21dp</dimen>
+    <dimen name="new_note_content_padding_top">7.25dp</dimen>
+    <dimen name="new_note_content_padding_bottom">10dp</dimen>
+    <dimen name="new_note_content_textsize">16.5sp</dimen>
+    <dimen name="new_note_reminder_label_container_height">43dp</dimen>
+    <dimen name="new_note_reminder_label_container_margin_left">20dp</dimen>
+    <dimen name="new_note_reminder_label_container_margin_right">80dp</dimen>
+    <dimen name="new_note_reminder_textsize">10.5sp</dimen>
+    <dimen name="new_note_reminder_icon_width">15.5dp</dimen>
+    <dimen name="new_note_reminder_icon_height">11dp</dimen>
+    <dimen name="new_note_reminder_label_vertical_line_width">33.3dp</dimen>
+    <dimen name="new_note_reminder_label_vertical_line_height">11dp</dimen>
+    <dimen name="new_note_label_icon_width">15.5dp</dimen>
+    <dimen name="new_note_label_icon_height">11dp</dimen>
+    <dimen name="new_note_menu_ver_line_height">14.3dp</dimen>
+    <dimen name="new_note_content_line_spacing_extra">14.5dp</dimen>
+    <dimen name="new_note_content_cursor_padding_bottom">-14.5dp</dimen>
+    <dimen name="new_note_content_line_offset">7.25dp</dimen>
+    <dimen name="new_note_image_span_offset">1.5dp</dimen>
+    <dimen name="new_note_image_group_hoffset">4dp</dimen>
+    <dimen name="new_note_image_group_voffset">4dp</dimen>
+    <dimen name="new_note_image_height">200dp</dimen>
+    <dimen name="new_note_two_image_left_width">183dp</dimen>
+    <dimen name="new_note_two_image_right_width">133dp</dimen>
+    <dimen name="new_note_three_image_left_width">200dp</dimen>
+    <dimen name="new_note_three_image_right_width">116dp</dimen>
+    <dimen name="new_note_four_image_top_height">150dp</dimen>
+    <dimen name="new_note_four_image_bottom_height">81dp</dimen>
+    <dimen name="new_note_title_bar_margin_top">12dp</dimen>
+    <dimen name="new_note_title_bar_margin_bottom">0dp</dimen>
+    <dimen name="new_note_gen_picture_width">43dp</dimen>
+    <dimen name="new_note_gen_picture_height">46dp</dimen>
+    <dimen name="new_note_gen_picture_iv_margin_right">12dp</dimen>
+    <dimen name="new_note_gen_picture_iv_margin_top">15dp</dimen>
+    <dimen name="new_note_title_textsize">11sp</dimen>
+    <dimen name="new_note_record_text_padding_left">11.3dp</dimen>
+    <dimen name="new_note_record_name_y">36.3dp</dimen>
+    <dimen name="new_note_record_time_y">24dp</dimen>
+    <dimen name="new_note_gen_picture_padding_top">67dp</dimen>
+    <dimen name="new_note_gen_picture_padding_bottom">118dp</dimen>
+    <dimen name="new_note_gen_picture_padding_left">37dp</dimen>
+    <dimen name="new_note_record_name_font_size">8.6sp</dimen>
+    <dimen name="new_note_record_time_font_size">15.3sp</dimen>    
+    
+    <!-- 录音界面 -->
+    <dimen name="record_activity_height">55dp</dimen>
+    <dimen name="record_animation_view_height">40dp</dimen>
+    <dimen name="record_time_padding_left">21dp</dimen>
+    <dimen name="record_time_padding_right">20dp</dimen>
+    <dimen name="record_complete_padding_left">20dp</dimen>
+    <dimen name="record_complete_padding_right">21dp</dimen>
+    
+    <!-- 新录音界面 -->
+    <dimen name="record_button_bar_padding_left">12dp</dimen>
+    <dimen name="record_button_bar_padding_right">12dp</dimen>
+    <dimen name="record_button_bar_margin_bottom">50dp</dimen>
+    <dimen name="record_pause_or_start_btn_height">85dp</dimen>
+    <dimen name="record_mark_or_stop_btn_height">55.3dp</dimen>
+    <dimen name="record_duration_text_size">42sp</dimen>
+    <dimen name="record_duration_margin_top">52dp</dimen>
+    <dimen name="record_duration_margin_bottom">38dp</dimen>
+    <dimen name="wave_form_view_width">360dip</dimen>
+    <!--
+    <dimen name="wave_form_view_height">357dip</dimen>
+    <dimen name="wave_form_view_body_height">320dip</dimen>
+    -->
+    <dimen name="wave_form_header_height">31dip</dimen>
+    <dimen name="wave_form_size">1.0dip</dimen>
+    <dimen name="time_line_cell_width">50.0dip</dimen>
+    <dimen name="time_padding_left">5.0dip</dimen>
+    <dimen name="time_text_size">10.5dip</dimen>
+    <dimen name="time_string_need_updated_width_main">-32.5dip</dimen>
+    <dimen name="time_string_need_updated_width_play">-20dip</dimen>
+    <dimen name="time_line_offset_scale">0.5dip</dimen>
+    
+    <!-- 录音播放界面 -->
+    <dimen name="play_start_width">42dp</dimen>
+    <dimen name="play_start_height">28.3dp</dimen>
+    <dimen name="play_activity_height">55dp</dimen>
+    <dimen name="play_start_margin_left">21dp</dimen>
+    <dimen name="play_start_margin_right">12dp</dimen>
+    <dimen name="play_complete_padding_left">24dp</dimen>
+    <dimen name="play_complete_padding_right">21dp</dimen>
+    <dimen name="play_seekbar_thumb_offset">11dp</dimen>
+    <dimen name="play_text_size">8.6sp</dimen>
+    <dimen name="play_time_tv_margin_top">30dp</dimen>
+    
+    <!-- 新录音播放界面 -->
+    <dimen name="play_file_info_padding_left">10dp</dimen>
+    <dimen name="play_time_margin_bottom">35.6dp</dimen>
+    <!--
+    <dimen name="play_wave_form_view_height">362.5dip</dimen>
+    -->
+    <dimen name="play_waveform_margin_bottom">8.5dp</dimen>
+    <dimen name="play_seekbar_thumb_width">26dp</dimen>
+    <dimen name="play_seekbar_height">26dp</dimen>
+    <dimen name="play_duration_margin_top">45dp</dimen>
+    <dimen name="play_button_bar_padding_left">12dp</dimen>
+    <dimen name="play_button_bar_padding_right">12dp</dimen>
+    <dimen name="play_button_bar_margin_bottom">43dp</dimen>
+    
+    <!-- 新浪微博分享界面 -->
+    <dimen name="share_pic_width">215dp</dimen>
+    <dimen name="share_pic_max_height">350dp</dimen>
+    <dimen name="share_send_right_margin">12dp</dimen>
+    <dimen name="share_content_padding_top">12dp</dimen>
+    <dimen name="share_content_padding_bottom">12dp</dimen>
+    <dimen name="share_content_padding_left">21dp</dimen>
+    <dimen name="share_content_padding_right">21dp</dimen>
+    <dimen name="share_content_line_spacing_extra">3.2dp</dimen>
+    <dimen name="share_content_cursor_padding_bottom">-3.2dp</dimen>
+</resources>

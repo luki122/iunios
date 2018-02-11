@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- //Aurora <SQF> <2014-6-3>  for NEW_UI begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+    			android:id="@+id/main_view_with_action_bar"
+    			android:orientation="vertical">
+
+ 
+ <include android:id="@+id/custom_action_bar"
+     	  layout="@layout/custom_action_bar"/>
+<!-- //Aurora <SQF> <2014-6-3>  for NEW_UI end -->
+
+<FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/mainView"
+             >
+	<!--paul del-->
+	<!--android:background="@drawable/filtershow_tiled_background"-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/image_show_bg_color">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+			
+
+
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <FrameLayout
+                        android:id="@+id/central_panel_container"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone"/>
+
+                <FrameLayout
+                        android:id="@+id/editorContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                <com.android.gallery3d.filtershow.imageshow.ImageShow
+                        android:id="@+id/imageShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+
+            </LinearLayout>
+            
+            <!-- @android:style/Widget.Holo.ProgressBar.Large -->
+            <ProgressBar
+                    android:id="@+id/loading"
+                    style="@android:style/Widget.ProgressBar.Inverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:indeterminateOnly="true"
+                    android:background="@null"/>
+
+        </FrameLayout>
+
+        <com.android.gallery3d.filtershow.CenteredLinearLayout
+                xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+                android:id="@+id/mainPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                custom:max_width="650dip"
+                android:orientation="vertical">
+
+			<!--whole bottom tools -->
+            <FrameLayout android:id="@+id/main_panel_container"
+                         android:layout_gravity="center"
+                         android:layout_width="match_parent"
+                         android:layout_height="48dip"
+                         android:background="@android:color/black"/>
+
+        </com.android.gallery3d.filtershow.CenteredLinearLayout>
+		
+    </LinearLayout>
+    
+    
+    
+    <!-- //Aurora <SQF> <2014-09-15>  for NEW_UI begin -->
+	<RelativeLayout android:id="@+id/filters_sub_panel_container"
+                         android:layout_gravity="bottom"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:visibility="invisible"/>
+	
+    <!-- //Aurora <SQF> <2014-09-15>  for NEW_UI end -->
+    
+    <!-- //Aurora <SQF> <2014-12-25>  for NEW_UI begin -->
+	<RelativeLayout android:id="@+id/beauty_shot_sub_panel_container"
+                         android:layout_gravity="bottom"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:visibility="invisible"/>
+	
+    <!-- //Aurora <SQF> <2014-12-25>  for NEW_UI end -->
+
+    <com.android.gallery3d.filtershow.category.CategorySelected
+            android:layout_width="@dimen/category_panel_icon_size"
+            android:layout_height="@dimen/category_panel_icon_size"
+            android:id="@+id/categorySelectedIndicator"
+            android:visibility="invisible"/>
+
+</FrameLayout>
+
+<!-- //Aurora <SQF> <2014-6-3>  for NEW_UI begin -->
+</LinearLayout>
+<!-- //Aurora <SQF> <2014-6-3>  for NEW_UI end -->

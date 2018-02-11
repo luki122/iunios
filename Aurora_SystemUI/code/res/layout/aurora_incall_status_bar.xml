@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.android.systemui.statusbar.phone.AuroraGreenStatusBarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+    android:id="@+id/incall_status_bar"
+    android:background="@color/calling_bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    >
+
+            <TextView
+            		android:id="@+id/show_calling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/back_to_call"
+                android:textSize="15sp"
+                android:textColor="@color/font_color3"
+                android:singleLine="true"
+                />
+</com.android.systemui.statusbar.phone.AuroraGreenStatusBarView>

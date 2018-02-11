@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/mail_login_email_dropdownlist_item_bottom_pressed" />
+    <item android:state_focused="true"  android:drawable="@drawable/mail_login_email_dropdownlist_item_bottom_pressed" />
+</selector>

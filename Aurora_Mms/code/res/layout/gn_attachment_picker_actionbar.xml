@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- author zhouyj 2012-05-03 created for CR00588621-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:attr/dividerVertical"
+        android:dividerPadding="12dip"
+        android:orientation="horizontal"
+         >
+        <ImageButton android:id="@+id/back_button"
+            android:focusable="true"
+            style="?android:attr/actionModeCloseButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+            android:clickable="true"/>
+        
+        <CheckBox
+            android:id="@+id/gn_msg_select_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dip"
+            android:paddingRight="@dimen/gn_checkbox_right"
+            android:focusable="false"
+            android:clickable="false"/>
+        
+        <TextView
+            android:id="@+id/select_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/back_button"
+            android:layout_toLeftOf="@id/gn_msg_select_check_box"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/gn_color_white"
+            android:text="@string/gn_select_conversation_zore"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+</FrameLayout>

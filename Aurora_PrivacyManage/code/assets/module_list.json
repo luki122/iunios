@@ -1,0 +1,10 @@
+{
+  "list":[
+       {"pkgName":"com.android.contacts","className":"com.android.contacts.activities.AuroraPrivacyContactListActivity","needShow":1},
+       {"pkgName":"com.android.contacts","className":"com.android.contacts.activities.AuroraPrivateCallLogActivity","needShow":1},
+       {"pkgName":"com.android.mms","className":"com.aurora.mms.ui.AuroraPrivConvActivity","needShow":1},
+       {"pkgName":"com.aurora.filemanager","className":"com.aurora.filemanager.Images","needShow":1},
+       {"pkgName":"com.aurora.filemanager","className":"com.aurora.filemanager.Videos","needShow":1},
+       {"pkgName":"com.aurora.secure","className":"com.secure.activity.PrivacyAppActivity","needShow":1}
+   ]
+}

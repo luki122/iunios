@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="@dimen/action_bar_margin_in_item"
+    android:paddingRight="@dimen/action_bar_margin_in_item"
+    android:paddingTop="@dimen/action_bar_padding_top_bottom"
+    android:paddingBottom="@dimen/action_bar_padding_top_bottom"
+    android:textSize="@dimen/action_bar_text_size"
+    android:textColor="@color/actionbar_item_sel"
+    android:gravity="center"
+    />

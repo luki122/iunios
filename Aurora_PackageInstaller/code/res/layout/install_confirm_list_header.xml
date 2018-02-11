@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!-- 标签项 区域  begin -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+ 	android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 	android:orientation="vertical">
+    <View
+        android:id="@+id/spaceView" android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="14dp"
+        android:background="#00ffffff"/>
+    <RelativeLayout 
+	    android:id="@+id/labelLayout" xmlns:android="http://schemas.android.com/apk/res/android" 
+	 	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	    <TextView  
+		    android:id="@+id/labelText"   
+		    android:layout_width="wrap_content" android:layout_height="47dp" 
+		    android:textColor="@drawable/text_title_selector_color"  android:textSize="18sp"		    		    
+		    android:gravity="center_vertical" android:paddingLeft="10dp"/>  
+		    
+		<TextView
+		    android:id="@+id/numText"
+		    android:layout_toRightOf="@id/labelText"
+		    android:layout_width="wrap_content" android:layout_height="47dp"
+		    android:textColor="@drawable/text_title_selector_color"  android:textSize="14sp"		    		    
+		    android:gravity="center_vertical" />     
+			    
+	    <ImageView
+	        android:id="@+id/arrowImg"
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:layout_centerVertical="true" 
+	        android:layout_alignParentRight="true" android:layout_marginRight="17dp"
+	        android:src="@drawable/down_arrow" />
+	</RelativeLayout> 
+</LinearLayout>
+<!-- 标签项 区域  end -->

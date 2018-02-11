@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+ -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_interpolator">
+   
+    <!-- 隐现 -->
+    <alpha 
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:duration="500"
+        />
+    
+	<!-- 缩放 -->    
+    <scale 
+        android:fromXScale="0.0"
+        android:toXScale="1.0"
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="500"
+        />
+
+    <!-- 旋转 -->
+    <rotate 
+        android:fromDegrees="0"
+        android:toDegrees="+633.8"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="500"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:repeatCount="-1"
+        />
+    
+</set>

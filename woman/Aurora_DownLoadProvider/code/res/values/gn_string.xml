@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="notification_download_pausetext">Download Paused</string>
+    
+    <!-- Phrase describing a time duration using seconds [CHAR LIMIT=16] -->
+    <string name="duration_seconds"> %d seconds</string>
+    <!-- Phrase describing a time duration using minutes [CHAR LIMIT=16] -->
+    <string name="duration_minutes"> %d minutes</string>
+    <!-- Phrase describing a time duration using hours [CHAR LIMIT=16] -->
+    <string name="duration_hours">%d hours</string>
+
+</resources>

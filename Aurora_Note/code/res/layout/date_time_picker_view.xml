@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <aurora.widget.AuroraNumberPicker
+        android:id="@+id/aurora_week"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/aurora_time_picker_margin_left"
+        android:layout_marginRight="@dimen/aurora_time_picker_margin_right"
+        android:background="@drawable/date_time_picker_vertical_line" />
+
+    <aurora.widget.AuroraTimePicker
+        android:id="@+id/aurora_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:spinnersShown="true" />
+</LinearLayout>

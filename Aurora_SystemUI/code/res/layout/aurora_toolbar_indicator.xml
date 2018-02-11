@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.ToolBarIndicator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|bottom"
+    android:clickable="false"
+    android:focusable="false"
+    android:paddingBottom="8dip" 
+    android:visibility="gone">
+
+</com.android.systemui.recent.ToolBarIndicator>

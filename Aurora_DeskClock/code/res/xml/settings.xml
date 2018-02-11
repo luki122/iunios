@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/settings" >
+    
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="favorite"
+        aurora:auroratitle="@string/empty" >
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="alarm_in_silent_mode"
+            aurora:aurorasummary="@string/alarm_in_silent_mode_summary"
+            aurora:auroratitle="@string/alarm_in_silent_mode_title"
+            aurora:auroradependency="dontdisturb"/>
+		<!--  
+        <aurora.preference.AuroraVolumePreference
+            aurora:auroradialogTitle="@string/alarm_volume_title"
+            aurora:aurorapersistent="false"
+            aurora:aurorastreamType="alarm"
+            aurora:aurorasummary="@string/alarm_volume_summary"
+            aurora:auroratitle="@string/alarm_volume_title"
+            aurora:auroradependency="dontdisturb" />
+        -->
+        <com.android.deskclock.AuroraAlarmVolumePreference
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/alarm_volume_title"
+            aurora:auroradependency="dontdisturb"
+            aurora:aurorakey="alarm_volume" />
+
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="10"
+            aurora:auroradialogTitle="@string/snooze_duration_title"
+            aurora:auroraentries="@array/snooze_duration_entries"
+            aurora:auroraentryValues="@array/snooze_duration_values"
+            aurora:aurorakey="snooze_duration"
+            aurora:auroratitle="@string/snooze_duration_title" />
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="1"
+            aurora:auroradialogTitle="@string/auto_silence_title"
+            aurora:auroraentries="@array/auto_silence_entries"
+            aurora:auroraentryValues="@array/auto_silence_values"
+            aurora:aurorakey="auto_silence"
+            aurora:auroratitle="@string/auto_silence_title" />
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="1"
+            aurora:auroradialogTitle="@string/volume_button_dialog_title"
+            aurora:auroraentries="@array/volume_button_setting_entries"
+            aurora:auroraentryValues="@array/volume_button_setting_values"
+            aurora:aurorakey="volume_button_setting"
+            aurora:aurorasummary="@string/volume_button_setting_summary"
+            aurora:auroratitle="@string/volume_button_setting_title" />
+
+<!--         <com.android.deskclock.AlarmPreference
+            aurora:aurorakey="default_ringtone"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/default_ringtone_setting_title"
+            aurora:aurorawidgetLayout="@layout/gn_pref_image_white"
+            aurora:auroradependency="dontdisturb" 
+            /> -->
+        
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="default_vibrate"
+            aurora:aurorasummary="@string/empty"
+            aurora:auroratitle="@string/alarm_vibrate"
+            aurora:auroradependency="dontdisturb" />
+    </aurora.preference.AuroraPreferenceCategory>
+    
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="dontdisturbcate"
+        aurora:auroratitle="">
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="dontdisturb"
+            aurora:aurorasummary="@string/dontdisturb2"
+            aurora:auroratitle="@string/dontdisturb1"
+            aurora:auroradisableDependentsState="true" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

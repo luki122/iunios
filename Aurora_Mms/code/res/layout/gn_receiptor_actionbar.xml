@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-5-16 added for GIUI4.1 start-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:attr/dividerVertical"
+        android:dividerPadding="12dip"
+        android:orientation="horizontal"
+         >
+        <ImageButton android:id="@+id/gn_back_button"
+            style="?android:attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/gn_attach_count"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gn_back_button"
+            android:layout_centerVertical="true"
+            android:text="@string/gn_select_conversation_zore"
+            android:textColor="@color/gn_color_white"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"/>
+        <ImageButton
+            android:id="@+id/gn_selallbtn"
+            android:layout_alignParentRight="true"
+            android:padding="5dip"
+            android:layout_marginRight="5dip"
+            android:background="?android:attr/actionBarItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+          <aurora.widget.AuroraSpinner
+            android:id="@+id/gn_receiptor_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/gn_selallbtn"
+            android:layout_marginRight="5dip"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</FrameLayout>

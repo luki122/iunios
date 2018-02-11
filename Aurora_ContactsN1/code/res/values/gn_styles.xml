@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="GN_DialtactsTheme"
+           parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="com.aurora:auroraactionBarStyle">@style/GN_actionBarStyle</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/gn_dialpad_activity_bg_light</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="activated_background">@drawable/list_item_activated_background</item>
+        <item name="section_header_background">@drawable/list_title_holo</item>
+        <item name="list_section_header_height">32dip</item>
+        <item name="list_item_divider">?android:attr/listDivider</item>
+        <item name="list_item_padding_top">0dip</item>
+        <item name="list_item_padding_right">0dip</item>
+        <item name="list_item_padding_bottom">0dip</item>
+        <item name="list_item_padding_left">0dip</item>
+        <item name="list_item_gap_between_image_and_text">4dip</item>
+        <item name="list_item_gap_between_label_and_data">5dip</item>
+        <item name="list_item_call_button_padding">14dip</item>
+        <item name="list_item_vertical_divider_margin">5dip</item>
+        <item name="list_item_presence_icon_margin">4dip</item>
+        <item name="list_item_presence_icon_size">16dip</item>
+        <item name="list_item_photo_size">@dimen/gn_contact_photo_size</item>
+        <item name="list_item_profile_photo_size">70dip</item>
+        <item name="list_item_prefix_highlight_color">@color/gn_search_matched_highlight</item>
+        <item name="list_item_header_text_indent">0dip</item>
+        <item name="list_item_header_text_color">@color/people_app_theme_color</item>
+        <item name="list_item_header_text_size">16sp</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        <item name="list_item_header_underline_color">@color/people_app_theme_color</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="contact_browser_list_padding_left">@dimen/gn_contact_list_item_left_margin</item>
+        <item name="contact_browser_list_padding_right">@dimen/gn_contact_list_item_right_margin</item>
+        <item name="contact_browser_background">@android:color/transparent</item>
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <!-- CallLog -->
+        <item name="call_log_primary_text_color">#FFFFFF</item>
+        <item name="call_log_primary_background_color">#000000</item>
+        <item name="call_log_secondary_text_color">?android:attr/textColorSecondary</item>
+        <item name="call_log_secondary_background_color">#333333</item>
+        <item name="call_log_header_color">#33b5e5</item>
+        
+        <!-- VoicemailStatus -->
+        <item name="call_log_voicemail_status_height">48dip</item>
+        <item name="call_log_voicemail_status_background_color">#262626</item>
+        <item name="call_log_voicemail_status_text_color">#888888</item>
+        <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
+            <!-- Favorites -->
+        <item name="favorites_padding_bottom">?android:attr/actionBarSize</item>
+        
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item> 
+        <item name="android:actionBarWidgetTheme">@style/ContactsActionBarTheme</item>
+        
+        <item name="android:alertDialogTheme">@style/GN_alert_dialog_theme</item>
+        
+        <item name="android:dropDownListViewStyle">@style/GN_dropDownListViewStyle</item>
+        <item name="android:popupMenuStyle">@style/GN_popupMenuStyle</item>
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Inverse</item>    
+        <item name="android:textAppearanceLarge">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:checkboxStyle">@style/Gn_DialogCheckboxStyle</item>
+        
+        <!-- gionee xuhz 20120705 add for CR00637559 start -->
+        <item name="promptBgRes">@drawable/gn_show_window_light</item>
+        <item name="promptSectionColor">@color/alphbetIndexView_prompt_section_light</item>
+        <item name="enableSectionColor">@color/alphbetIndexView_enable_section_light</item>
+        <item name="disableSectionColor">@color/alphbetIndexView_disable_section_light</item>
+        <item name="showingLetterColor">@color/alphbetIndexView_showing_section_light</item>
+        <!-- gionee xuhz 20120705 add for CR00637559 end -->
+        
+        <!-- DialPad -->
+        <item name="gn_dial_digits_text_color">@color/gn_dial_digits_text_color_dark</item>
+        <item name="gn_dial_digits_text_color_hint">@color/gn_dial_digits_hint_color_dark</item>  //CR00773863
+        <item name="gn_dial_qwert_text_color">@color/gn_dial_qwert_text_color_light</item>
+        <item name="gn_ic_menu_trash">@drawable/gn_ic_menu_trash_light</item>
+        <item name="gn_ic_add_existing_contact">@drawable/gn_add_existing_contact_light</item>
+        <item name="gn_ic_add_contact">@drawable/gn_new_contact_light</item>
+        <item name="gn_ic_send_message">@drawable/gn_send_message_light</item>
+        <item name="gn_dial_qwert_key_bg">@drawable/gn_dial_qwert_key_bg_light</item>
+        <item name="gn_dial_qwert_keyboard_bg">@drawable/gn_dial_qwert_keyboard_bg</item>
+        <item name="gn_split_bar_bg">@drawable/gn_split_bar_bg_gray</item>
+        <item name="gn_dial_btn_call_small_bg">@drawable/gn_dial_btn_call_small_bg_light</item>
+        <item name="gn_dial_btn_detail_bg">@drawable/gn_dial_btn_detail_bg_light</item>
+        <!-- DialPad -->
+        
+        <item name="empty_view_text_color">@color/gn_empty_view_text_color_light</item>
+    </style>
+    
+    <style name="GN_popupMenuStyle" parent="@android:style/Widget.Holo.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>        
+    </style>
+    
+    <style name="GN_dropDownListViewStyle" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <!-- Light background for the list in menus, so the divider for bright themes -->
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+    </style>
+    
+    <style name="GN_alert_dialog_theme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textAppearanceListItem">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceListItemSmall">@android:style/TextAppearance.Large.Inverse</item>
+
+        <item name="android:actionModeBackground">@drawable/gn_cab_background_top_holo_dark</item>
+        <item name="android:actionModeCloseDrawable">@drawable/gn_ic_cab_done_holo_dark</item>
+        <item name="android:actionModeCloseButtonStyle">@android:style/Widget.Holo.ActionButton.CloseMode</item>
+    </style>     
+
+    <style name="GN_actionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="com.aurora:aurorabackground">@drawable/gn_actionbar_top_divider</item>
+        <item name="com.aurora:aurorabackgroundSplit">@drawable/gn_actionbar_under_divider</item>
+        <item name="com.aurora:aurorabackgroundStacked">@drawable/gn_actionbar_top_divider</item>
+        <item name="com.aurora:auroradisplayOptions"></item>
+    </style>
+    
+    
+    <style name="GN_ContactListSeparatorTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- See comments for @dimen/list_section_divider_min_height -->
+        <item name="android:minHeight">@dimen/list_section_divider_min_height</item>
+        <!-- <item name="android:background">@drawable/list_section_divider_holo_custom</item> -->
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <!-- <item name="android:paddingLeft">8dip</item> -->
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    
+    <style name="Gn_DialogCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/gn_btn_check_holo_light</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverseDisableOnly</item>
+    </style>
+
+    <style name="Gn_actionBarTabTextStyle" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/gn_tab_textcolor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+	<style name="Gn_ActionBarTitleStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/gn_action_bar_title_size_primary</item>
+        <item name="android:textColor">@color/gn_tab_textcolor</item>
+	</style>
+    
+    
+
+    
+    <!-- gionee xuhz add for light theme start-->
+    <style name="GN_DialtactsTheme_light" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowBackground">@drawable/gn_dialpad_activity_bg_light</item>
+        <item name="com.aurora:auroraactionBarStyle">@style/GnDialtactsV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:actionModeStyle">@style/GnActionMode</item>
+        <item name="android:actionModeBackground">@drawable/gn_title_bar_bg_dusty_blue</item>
+        <item name="android:actionModeCloseDrawable">@drawable/gn_ic_action_back</item>
+        
+        <!-- DialPad -->
+        <item name="gn_dial_digits_text_color">@color/gn_dial_digits_text_color_light</item>
+        <item name="gn_dial_digits_text_color_hint">@color/gn_dial_digits_hint_color_light</item>
+        <item name="gn_dial_qwert_text_color">@color/gn_dial_qwert_text_color_light</item>
+        <item name="gn_ic_add_existing_contact">@drawable/gn_add_existing_contact_light</item>
+        <item name="gn_ic_add_contact">@drawable/gn_new_contact_light</item>
+        <item name="gn_ic_send_message">@drawable/gn_send_message_light</item>
+        <item name="gn_ic_menu_trash">@drawable/gn_ic_menu_trash_light</item>
+        <item name="gn_dial_qwert_key_bg">@drawable/gn_dial_qwert_key_bg_light</item>
+        <item name="gn_dial_qwert_keyboard_bg">@drawable/gn_dial_qwert_keyboard_bg</item>
+        <item name="gn_dial_btn_call_small_bg">@drawable/gn_dial_btn_call_small_bg_light</item>
+        <item name="gn_dial_btn_detail_bg">@drawable/gn_dial_btn_detail_bg_light</item>
+        <item name="gn_dial_num_area_bg">@drawable/gn_dial_num_area_bg_light</item>
+        <!-- DialPad -->
+        <item name="gn_split_bar_bg">@drawable/gn_split_bar_bg_gray</item>
+        <item name="kind_editors_bg">@drawable/gn_dial_buttons_bar_bg_light</item>
+        
+        <item name="activated_background">@drawable/list_item_activated_background</item>
+        <item name="section_header_background">@drawable/list_title_holo</item>
+        <item name="list_section_header_height">32dip</item>
+        <item name="list_item_divider">?android:attr/listDivider</item>
+        <item name="list_item_padding_top">0dip</item>
+        <item name="list_item_padding_right">0dip</item>
+        <item name="list_item_padding_bottom">0dip</item>
+        <item name="list_item_padding_left">0dip</item>
+        <item name="list_item_gap_between_image_and_text">4dip</item>
+        <item name="list_item_gap_between_label_and_data">5dip</item>
+        <item name="list_item_call_button_padding">14dip</item>
+        <item name="list_item_vertical_divider_margin">5dip</item>
+        <item name="list_item_presence_icon_margin">4dip</item>
+        <item name="list_item_presence_icon_size">16dip</item>
+        <item name="list_item_photo_size">@dimen/gn_contact_photo_size</item>
+        <item name="list_item_profile_photo_size">70dip</item>
+        <item name="list_item_prefix_highlight_color">@color/gn_search_matched_highlight</item>
+        <item name="list_item_header_text_indent">0dip</item>
+        <item name="list_item_header_text_color">@color/people_app_theme_color</item>
+        <item name="list_item_header_text_size">16sp</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        <item name="list_item_header_underline_color">@color/people_app_theme_color</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="contact_browser_list_padding_left">@dimen/gn_contact_list_item_left_margin</item>
+        <item name="contact_browser_list_padding_right">@dimen/gn_contact_list_item_right_margin</item>
+        <item name="contact_browser_background">@android:color/transparent</item>
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <!-- CallLog -->
+        <item name="call_log_primary_text_color">#ff444444</item>
+        <item name="call_log_primary_background_color">#000000</item>
+        <item name="call_log_secondary_text_color">#ff666666</item>
+        <item name="gn_super_call_log_primary_text_color">@color/gn_call_log_text_color_primary_light</item>
+        <item name="gn_super_call_log_secondary_text_color">@color/gn_call_log_text_color_secondary_light</item>
+        <item name="gn_icon_text_text_color">@color/gn_icon_text_text_color_light</item>
+        <item name="call_log_secondary_background_color">#333333</item>
+        <item name="call_log_header_color">#33b5e5</item>
+        <!-- VoicemailStatus -->
+        <item name="call_log_voicemail_status_height">48dip</item>
+        <item name="call_log_voicemail_status_background_color">#262626</item>
+        <item name="call_log_voicemail_status_text_color">#888888</item>
+        <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
+        
+        <item name="empty_view_text_color">@color/gn_empty_view_text_color_light</item>
+    </style>
+    <!-- gionee xuhz add for light theme end-->    
+    
+    <style name="GN_DetailActivityTheme_light" parent="@com.aurora:style/Theme.aurora.Light">
+        <!-- <item name="android:actionBarWidgetTheme">@style/GN_ActionBarThemeDark</item> -->
+        
+        <item name="com.aurora:auroraactionBarStyle">@style/GnPeopleV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="star_btn_bg">@drawable/aurora_btn_star_icon</item>
+        <item name="edit_menu_item_bg">@drawable/ic_menu_compose_holo_dark</item>
+        <item name="add_menu_item_bg">@drawable/ic_add_contact_holo_dark</item>
+        <item name="overflow_menu_item_bg">@drawable/gn_ic_overflow_menu_holo_dark</item>
+        <item name="empty_view_text_color">@color/gn_empty_view_text_color_light</item>
+    </style>
+
+    <style name="GN_EditorActivityTheme_light" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/GnPeopleV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item>
+        <item name="android:actionBarWidgetTheme">@style/GN_ActionBarThemeDark</item>
+        <item name="android:windowBackground">@drawable/gn_people_activity_bg_light</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="gn_ic_arrow_right">@drawable/gn_ic_navigation_next</item>
+        <item name="kind_editors_bg">@drawable/aurora_editor_item_view_bg</item>
+    </style>
+    
+    
+    <style name="GN_PeopleTheme_light" parent="@style/GnPeopleTheme">
+        <item name="com.aurora:auroraactionBarStyle">@style/GnPeopleV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        
+        <item name="list_item_header_text_indent">0dip</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        
+        <item name="contact_browser_list_padding_left">@dimen/gn_contact_list_item_left_margin</item>
+        <item name="contact_browser_list_padding_right">@dimen/gn_contact_list_item_right_margin</item>
+        
+        <item name="list_item_photo_size">@dimen/gn_contact_photo_size</item>
+        <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
+        
+        <item name="promptSectionColor">@color/alphbetIndexView_prompt_section_light</item>
+        <item name="enableSectionColor">@color/alphbetIndexView_enable_section_light</item>
+        <item name="disableSectionColor">@color/alphbetIndexView_disable_section_light</item>
+        <item name="showingLetterColor">@color/alphbetIndexView_showing_section_light</item>
+
+        <item name="promptBgRes">@drawable/gn_show_window_light</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    
+    <style name="AnimationActivity">
+        <item name="android:activityOpenEnterAnimation">@com.aurora:anim/aurora_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@com.aurora:anim/aurora_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@com.aurora:anim/aurora_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@com.aurora:anim/aurora_activity_close_exit</item>
+        
+        <item name="android:taskOpenEnterAnimation">@com.aurora:anim/aurora_activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@com.aurora:anim/aurora_activity_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@com.aurora:anim/aurora_activity_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@com.aurora:anim/aurora_activity_close_exit</item>
+        
+        <item name="android:taskToFrontEnterAnimation">@anim/otheractivity_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/otheractivity_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/otheractivity_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/otheractivity_exit</item>
+    </style>
+
+    <style name="GN_ContactPickerTheme_light" parent="@style/GN_PeopleTheme_light" />
+
+    
+    <style name="GN_ContactListFilterTheme_light" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/GnPeopleV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:windowBackground">@drawable/gn_people_activity_bg_light</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>        
+    </style>
+
+    <!-- <style name="GN_AccountFilterTheme_light" parent="@android:style/Theme.GioneeView.Light.Dialog">
+    </style>-->
+    
+    <style name="GN_CallDetailActivityTheme_light" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:gravity">top</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <!-- CallLog -->
+        <item name="call_log_primary_text_color">?android:attr/textColorPrimary</item>
+        <item name="call_log_primary_background_color">#000000</item>
+        <item name="call_log_secondary_text_color">?android:attr/textColorSecondary</item>
+        <item name="call_log_secondary_background_color">#dddddd</item>
+        <item name="call_log_header_color">#33b5e5</item>
+        <!-- VoicemailStatus -->
+        <item name="call_log_voicemail_status_height">48dip</item>
+        <item name="call_log_voicemail_status_background_color">#262626</item>
+        <item name="call_log_voicemail_status_text_color">#888888</item>
+        <item name="call_log_voicemail_status_action_text_color">#33b5e5</item>
+        
+        <item name="com.aurora:auroraactionBarStyle">@style/GnDialtactsV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:windowBackground">@drawable/gn_people_activity_bg_light</item>
+
+        <item name="kind_editors_bg">@drawable/gn_dial_buttons_bar_bg_light</item>
+        <item name="gn_ic_add_contact">@drawable/gn_new_contact_light</item>
+        <item name="gn_ic_add_existing_contact">@drawable/gn_add_existing_contact_light</item>
+        <item name="gn_call_detail_controls_background">@color/gn_call_detail_controls_background_light</item>
+        <item name="gn_call_detail_history_primary_text_color">#444444</item>
+        <item name="gn_call_detail_history_secondary_text_color">#666666</item>
+        <item name="gn_phone_record_play_icon">@drawable/gn_play_call_record_light</item>
+        
+        <item name="gn_ic_arrow_right">@drawable/gn_ic_navigation_next</item>
+    </style>
+    
+    <style name="GN_ActionBarThemeDark" parent="@style/ContactsActionBarTheme">
+        <item name="android:itemTextAppearance">@android:style/TextAppearance.Inverse</item>
+    </style>
+    
+    
+<!-- gionee xuhz add for light theme end-->
+
+    <style name="GN_actionButtonStyle" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:minWidth">30dip</item>
+    </style>    
+
+    
+    <style name="GnDialtactsDialpadButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">0dip</item>
+    </style>
+    
+    <!-- ggkj2.0 -->
+    <style name="GnPeopleTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:actionBarTabStyle">@style/GnActionBarV3TabView</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
+        <item name="list_section_header_height">24dip</item>
+        <item name="list_item_divider">?android:attr/listDivider</item>
+        <item name="list_item_padding_top">0dip</item>
+        <item name="list_item_padding_right">0dip</item>
+        <item name="list_item_padding_bottom">0dip</item>
+        <item name="list_item_padding_left">0dip</item>
+        <item name="list_item_gap_between_image_and_text">4dip</item>
+        <item name="list_item_gap_between_label_and_data">5dip</item>
+        <item name="list_item_call_button_padding">14dip</item>
+        <item name="list_item_vertical_divider_margin">5dip</item>
+        <item name="list_item_presence_icon_margin">4dip</item>
+        <item name="list_item_presence_icon_size">16dip</item>
+        <item name="list_item_photo_size">@dimen/contact_browser_list_item_photo_size</item>
+        <item name="list_item_profile_photo_size">70dip</item>
+        <item name="list_item_prefix_highlight_color">@color/gn_search_matched_highlight</item>
+        <item name="list_item_header_text_color">@color/people_app_theme_color</item>
+        <item name="list_item_header_text_size">16sp</item>
+        <item name="list_item_header_height">26dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        <item name="list_item_header_underline_color">@color/people_app_theme_color</item>
+        <item name="list_item_data_width_weight">5</item>
+        <item name="list_item_label_width_weight">3</item>
+        <item name="list_item_contacts_count_text_color">@color/contact_count_text_color</item>
+        <item name="list_item_header_text_indent">8dip</item>
+        <item name="contact_browser_list_padding_left">16dip</item>
+        <item name="contact_browser_list_padding_right">0dip</item>
+        
+        <item name="list_item_text_indent">@dimen/contact_browser_list_item_text_indent</item>
+        <item name="list_item_contacts_count_text_size">12sp</item>
+        
+        <!-- Favorites -->
+        <item name="favorites_padding_bottom">0dip</item>
+        <item name="contacts_collect_icon">@drawable/gn_ic_contact_picture_collect</item>
+        <item name="contact_tile_push_state_bg">@drawable/gn_contact_title_push_stat_background</item>
+
+        <item name="add_menu_item_bg">@drawable/ic_add_contact_holo_dark</item>
+        <item name="search_menu_item_bg">@drawable/ic_ab_search_holo_dark</item>
+        <item name="overflow_menu_item_bg">@drawable/gn_ic_overflow_menu_holo_dark</item>
+        <item name="kind_editors_bg">@drawable/gn_dial_buttons_bar_bg_light</item>
+        <item name="empty_view_text_color">@color/gn_empty_view_text_color_light</item>
+    </style>
+       
+    
+    
+    <style name="GnDialtactsV3ActionBarStyleLight" parent="com.aurora:Widget.Aurora.Light.ActionBar.Solid.Inverse">
+        <item name="com.aurora:aurorabackground">@drawable/gn_title_bar_bg_dusty_blue</item>
+        <item name="com.aurora:aurorabackgroundSplit">@drawable/gn_split_bar_bg_gray</item>
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="com.aurora:auroratitleTextStyle">@style/Gn_ActionBarTitleStyle</item>
+    </style> 
+    
+    <style name="GnDialtactsV3ActionBarStyleDark" parent="com.aurora:Widget.Aurora.Light.ActionBar">
+        <item name="com.aurora:aurorabackground">@drawable/gn_title_bar_bg_black</item>        
+        <item name="com.aurora:aurorabackgroundSplit">@drawable/gn_split_bar_bg_black</item>
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="com.aurora:auroratitleTextStyle">@style/Gn_ActionBarTitleStyle</item>
+    </style>
+    
+    <style name="GnPeopleV3ActionBarStyleLight" parent="com.aurora:Widget.Aurora.Light.ActionBar.Solid.Inverse">
+        <item name="com.aurora:aurorabackground">@drawable/gn_title_bar_bg_brown_not_divider</item>
+        <item name="com.aurora:aurorabackgroundStacked">@drawable/gn_title_bar_bg_brown</item>
+        <item name="com.aurora:aurorabackgroundSplit">@drawable/gn_split_bar_bg_gray</item>
+        <item name="com.aurora:auroratitleTextStyle">@style/Gn_ActionBarTitleStyle</item>
+    </style>
+    
+    <style name="GnPeopleV3ActionBarStyleDark" parent="com.aurora:Widget.Aurora.Light.ActionBar">
+        <item name="com.aurora:aurorabackground">@drawable/gn_title_bar_bg_brown_not_divider_for_dark</item>
+        <item name="com.aurora:aurorabackgroundStacked">@drawable/gn_title_bar_bg_brown_for_dark</item>
+        <item name="com.aurora:auroratitleTextStyle">@style/Gn_ActionBarTitleStyle</item>
+    </style> 
+    
+    <style name="GnActionModeV3TextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Title">
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>    
+    <style name="GnActionBarV3TabView" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/gn_action_bar_tab</item>
+    </style>
+
+    <style name="GnQuickContactLight" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        
+        <item name="quickcontact_activity_bg">@drawable/gn_quickcontact_activity_background</item>
+        <item name="quickcontact_bottom_bg">@drawable/gn_quickcontact_background_bottom</item>
+        <item name="quickcontact_top_bg">@drawable/gn_quickcontact_background_top</item>
+        <item name="quickcontact_middle_bg">@drawable/gn_quickcontact_background_middle</item>
+        <item name="quickcontact_list_bg">@drawable/gn_dial_buttons_bar_bg_light</item>
+        <item name="quickcontact_photo_bg">@drawable/gn_selectable_item_bg_light</item>
+        <item name="quickcontact_track_button_bg">@drawable/gn_quickcontact_track_button_bg_light</item>
+    </style>
+    
+        
+    <style name="GnQuickContactListItemTextWrapperStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    
+    <style name="GnContactListFilterTheme" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/GnPeopleV3ActionBarStyleLight</item>
+        <item name="android:actionBarTabTextStyle">@style/Gn_actionBarTabTextStyle</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+    </style>
+    
+    <style name="GnBackgroundOnlyTheme" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="GnConfirmAddDetailDialogThemeLight" parent="@com.aurora:style/Theme.Aurora.Light.Dialog">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>     
+    
+    <style name="GnActionMode">
+        <!-- <item name="android:background">?android:attr/actionModeBackground</item>
+        <item name="android:backgroundSplit">?android:attr/actionModeSplitBackground</item> -->
+        <item name="android:titleTextStyle">@style/GnActionModeV3TextStyle</item>
+    </style>
+    
+    
+    <style name="GnImportVCardActivityLight" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+    <style name="GnQuickContactBadge" >
+        <item name="android:width">56dip</item>
+        <item name="android:height">56dip</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:focusable">false</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    
+    <!-- Gionee <jialf> <2013-05-02> added for CR00803878 begin -->
+    <style name="GnContactsEditPhoto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:alpha">255</item>
+        <item name="android:textColor">@color/gn_call_log_text_color_primary_light</item>
+    </style>
+    <!-- Gionee <jialf> <2013-05-02> added for CR00803878 end -->
+    
+</resources>

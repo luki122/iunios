@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_of_listview"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/appIcon"
+        style="@style/app_icon_of_listview"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="@dimen/add_auto_start_addbtn_width"
+        android:layout_height="@dimen/add_auto_start_addbtn_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/add_auto_start_addbtn_margin_right"
+        android:background="@drawable/button"
+        android:text="@string/stop"
+        android:textColor="@color/btn_text_title_selector_color"
+        android:textSize="@dimen/pernission_list_text_size" />
+
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/stopBtn"
+        android:layout_toRightOf="@id/appIcon"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/add_auto_start_list_item_text_paddingleft" >
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:textColor="@color/list_text_title_selector_color"
+            android:textSize="@dimen/add_auto_start_list_item_text_size" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_app_list_subtext_margin_top"
+            android:gravity="left"
+            android:lines="1"
+            android:textColor="@color/list_text_sub_selector_color"
+            android:textSize="@dimen/main_activity_memory_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

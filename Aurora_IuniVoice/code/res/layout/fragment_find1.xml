@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/find_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/find_item_h"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/find_icon_w"
+            android:layout_height="@dimen/find_icon_h"
+            android:layout_marginLeft="@dimen/find_icon_margin_left"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/find_iuni_shop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/find_text_margin_left"
+            android:text="@string/find_iuni_shop"
+            android:textColor="@color/find_text_color"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/find_item_h"
+        android:layout_marginTop="@dimen/find_item_juli"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/find_icon_w"
+            android:layout_height="@dimen/find_icon_h"
+            android:layout_marginLeft="@dimen/find_icon_margin_left"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/find_callphone_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/find_text_margin_left"
+            android:text="@string/find_call_phone"
+            android:textColor="@color/find_text_color"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/find_item_h"
+        android:layout_marginTop="@dimen/find_item_juli"
+        android:background="@android:color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/find_icon_w"
+            android:layout_height="@dimen/find_icon_h"
+            android:layout_marginLeft="@dimen/find_icon_margin_left"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/find_feedback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/find_text_margin_left"
+            android:text="@string/find_feedback"
+            android:textColor="@color/find_text_color"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+</LinearLayout>

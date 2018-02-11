@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <com.android.systemui.recent.QuickRecentPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#22000000"
+    >
+    <ImageView
+        android:id="@+id/popviewtop"
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff000000"/>
+    
+    <ImageView
+        android:id="@+id/popview"
+        android:layout_marginTop="610dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff000000"/>
+</com.android.systemui.recent.QuickRecentPanel>-->
+<com.android.systemui.recent.RecentsPanelView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+    android:id="@+id/recents_root"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    systemui:recentItemLayout="@layout/aurora_normal_item"
+    android:background="#BF000000"
+    > 
+    <com.android.systemui.recent.RecentsLayout
+        android:id="@+id/upbgview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#FF000000"
+        >
+        <com.android.systemui.recent.DragLayer
+            android:id="@+id/recents_bg_protect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:id="@+id/recents_no_apps"
+                android:background="@color/recent_bg"
+                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="@dimen/recents_view_height"
+                android:gravity="center">
+                <TextView 
+                    android:id="@+id/no_app_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent_no_task"
+                    android:textColor="#33e6e6e6"
+                    android:textSize="19sp"
+                    />
+            </LinearLayout>        
+            <com.android.systemui.recent.AuroraRecentPage
+                android:id="@+id/recents_container"
+                android:layout_gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>    
+            </com.android.systemui.recent.DragLayer>
+    </com.android.systemui.recent.RecentsLayout>
+    <FrameLayout
+        android:id="@+id/quick_setting"
+        android:background="@color/transparent"
+        android:layout_gravity="center|top"
+        android:layout_alignParentTop="true"
+        android:layout_width="@dimen/quick_settings_width"
+        android:layout_height="@dimen/quick_settings_height"
+        android:alpha="0"> 
+        <include layout="@layout/aurora_toolbar_view"/>
+        <!-- <include layout="@layout/aurora_toolbar_indicator"/> -->
+    </FrameLayout>
+
+</com.android.systemui.recent.RecentsPanelView>

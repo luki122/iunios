@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="aurora_go_home">Go home</string>
+    <string name="aurora_info">Info</string>
+    <string name="aurora_back">Back</string>
+    <string name="aurora_more">More</string>
+    <string name="aurora_add">Add</string>
+    <string name="aurora_edit">Edit</string>
+    <string name="aurora_divier_line">divier line</string>
+    
+    <string name="aurora_actionbar_image_button_content">actionbar button</string>
+    <string name="aurora_action_bar_ok_btn">Confirm</string>
+    <string name="aurora_action_bar_cancel_btn">Cancel</string>
+    <string name="aurora_action_bar_select_all_btn">Select all</string>
+    <string name="aurora_action_bar_cancel_all_btn">Invert selection</string>
+    
+    <string name="empty"></string>
+    
+    <string name="aurora_activity_searchviewcancelbtnttext">Cancel</string>
+
+</resources>

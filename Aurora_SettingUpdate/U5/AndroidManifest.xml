@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gn.com.android.update"
+    android:versionCode="20201003"
+    android:versionName="1.695" >
+
+    <!-- <uses-sdk android:minSdkVersion="15" /> -->
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+    <application
+        android:name=".UpgradeApp"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/setting"
+        android:persistent="true" >
+        <meta-data
+            android:name="YJ_APP_ID"
+            android:value="08670E90488452E4" />
+       <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a6042871ae0ea0d0ffa35de436f96043" />
+
+        <activity
+            android:name="gn.com.android.update.ui.UpdateUiActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuroraSettingUpdateTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.settings.GN_OTA_SYSTEM_UPDATE_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="gn.com.android.update.action.start" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="gn.com.android.update.ui.UpdateSettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gn.com.android.update.ui.DetailsInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingUpdateLightTheme" >
+            <intent-filter>
+                <action android:name="gn.com.android.update.action.detail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="gn.com.android.update.ui.ConfirmDownloadWithMobileNetDialog"
+                  android:theme="@com.aurora:style/Theme.Aurora.Light.Dialog"
+            />
+
+        <service android:name="gn.com.android.update.business.OtaUpgradeService" >
+        </service>
+        
+        <service
+            android:name="gn.com.android.update.UpdateDaemonService"
+            android:permission="gn.com.android.permission.UPGRADE" 
+             
+            >
+            <intent-filter>
+                <action android:name="gn.com.android.ation.OTA" />
+            </intent-filter>
+        </service>
+        
+        <service android:name="com.aurora.ota.reporter.ReporterService"
+            />
+          <provider
+            android:name="com.aurora.ota.database.RepoterProvider"
+            android:authorities="com.iuni.reporter"
+            android:exported="true"
+            android:multiprocess="true" >
+        </provider>
+        
+        <receiver
+            android:name="gn.com.android.update.business.OtaReceiver"
+            android:label="@string/setting" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gionee.intent.action.APPSTART" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="gn.com.android.update.push.PushReceiver"
+            android:permission="com.gionee.cloud.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.gionee.cloud.intent.REGISTRATION" />
+
+                <category android:name="com.gionee.cloud" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gionee.cloud.intent.RECEIVE" />
+
+                <category android:name="com.gionee.cloud" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.youju.statistics.database.MyContentProvider"
+            android:authorities="08670E90488452E4" />
+        
+    
+    </application>
+
+    <permission
+        android:name="gn.com.android.update.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="gn.com.android.update.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.gionee.cloud.permission.RECEIVE" />
+    <uses-permission android:name="gn.com.android.update.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.gionee.cloud.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- Aurora <likai> <2013-10-22> add begin -->
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.RECOVERY" />
+    
+    
+    <!-- Aurora <likai> <2013-10-22> add end -->
+    
+    <!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<!-- 这个权限用于获取wifi的获取权限,wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+	<!-- SD卡读取权限，用户写入离线定位数据-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	
+	<!-- 允许应用读取低级别的系统日志文件-->
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+
+
+
+
+
+
+</manifest>

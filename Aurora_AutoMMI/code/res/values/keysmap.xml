@@ -1,0 +1,29 @@
+<resources>
+
+    <string-array name="key_test_keys">
+        <item>"26"</item>
+        <item>"24"</item>
+        <item>"25"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"82"</item>
+        <item>"85"</item>
+        <item >"27"</item>
+        <item >"250"</item>
+        <item>"251"</item>
+    </string-array>
+    
+    <string-array name="key_test_values">
+        <item>"电源键"</item>
+        <item>"音量上"</item>
+        <item>"音量下"</item>
+        <item>"返回键"</item>
+        <item>"HOME键"</item>
+        <item>"菜单键"</item>
+        <item >"耳机键"</item>
+        <item >"拍照键"</item>
+        <item>"翻盖"</item>                  
+        <item>"合盖"</item>   
+    </string-array>
+
+</resources>

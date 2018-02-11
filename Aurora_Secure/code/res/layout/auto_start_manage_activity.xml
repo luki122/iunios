@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"> 
+    <LinearLayout 
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#f6f6f6" android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="167.3dp" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_big_text_size" android:textColor="@color/hint_text_color"
+            android:text="@string/no_auto_start_app_hint_title"/>
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hint_small_text_margin_top" 
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_small_text_size" android:textColor="@color/hint_text_color"
+            android:text="@string/no_auto_start_app_hint_text"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/HaveAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:visibility="gone">  			      
+	    <LinearLayout
+	        android:id="@+id/textInfoLayout"
+	        android:layout_width="fill_parent" android:layout_height="29.33dp" 
+            android:background="@drawable/title_bg"  android:orientation="horizontal" >
+	        <TextView
+	            android:id="@+id/autoStartAppNum"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical" android:gravity="left" 
+	            android:layout_marginLeft="17dp"
+	            android:textColor="@color/black" android:textSize="15sp" android:lines="1"
+	            android:text="@string/auto_start_app_num"/>
+	        <TextView
+	            android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1"
+	            android:layout_gravity="center_vertical" 
+	            android:textColor="@color/black" android:textSize="15sp" android:lines="1"
+	            android:text="@string/auto_start_app_num"/>
+	        <ImageView
+	            android:id="@+id/exclamationImg" 
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:src="@drawable/exclamation_icon"
+	            android:layout_gravity="right|center_vertical" android:layout_marginRight="17dp"/>
+	    </LinearLayout>
+	          
+	    <aurora.widget.AuroraListView
+			android:id="@+id/ListView" 
+			android:layout_width="fill_parent"  android:layout_height="fill_parent"
+			android:layout_below="@id/textInfoLayout"
+			android:focusable="false"  android:fadingEdge="none"
+			android:divider="@drawable/line" android:dividerHeight="1px"  />
+    </RelativeLayout> 
+</RelativeLayout>

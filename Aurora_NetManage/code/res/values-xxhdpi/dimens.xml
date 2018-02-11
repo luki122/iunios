@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="main_activity_grid_item_text_margin">6dp</dimen>
+    <dimen name="preferences_item_height">47dp</dimen>
+    <dimen name="preferences_item_text_size">17sp</dimen>
+    <dimen name="list_header_padding_top">10dp</dimen>
+    <dimen name="list_header_padding_bottom">3.3dp</dimen>
+    <dimen name="list_header_text_size">18sp</dimen>
+    <dimen name="package_set_activity_title_text_size">18sp</dimen> 
+    <dimen name="main_act_big_text_size">18.5sp</dimen> 
+    <dimen name="main_act_small_text_size">16sp</dimen> 
+</resources>

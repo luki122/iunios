@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <aurora.widget.AuroraListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="16dip"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/calllog_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="176dip"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/no_calllog"
+        android:textColor="#ffe6e6e6"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+</FrameLayout>

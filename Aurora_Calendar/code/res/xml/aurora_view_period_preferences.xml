@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="period_time"
+        aurora:auroratitle="@string/period_time_title" />
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="period_circle"
+        aurora:auroratitle="@string/period_cycle_title" />
+
+</aurora.preference.AuroraPreferenceScreen>

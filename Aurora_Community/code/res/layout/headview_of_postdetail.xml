@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/headview_of_postdetail_ll_padding_bottom"
+    android:paddingLeft="@dimen/headview_of_postdetail_ll_padding_left"
+    android:paddingRight="@dimen/headview_of_postdetail_ll_padding_right"
+    android:paddingTop="@dimen/headview_of_postdetail_ll_padding_top" 
+    android:id="@+id/postdetail_headview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/headview_of_postdetail_ll_child_one_padding_bottom"
+        android:paddingTop="@dimen/headview_of_postdetail_ll_child_one_padding_top" >
+
+        <com.aurora.community.view.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/headview_of_postdetail_civ_user_icon_layout_width"
+            android:layout_height="@dimen/headview_of_postdetail_civ_user_icon_layout_height" />
+
+        <TextView
+            android:id="@+id/screen_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/headview_of_postdetail_tv_screen_name_layout_margin_left"
+            android:textColor="@color/gloab_title_color"
+            android:textSize="@dimen/headview_of_postdetail_tv_screen_name_layout_width" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/postdetail_time_icon"
+        android:drawablePadding="@dimen/headview_of_postdetail_tv_publish_time_drawable_padding"
+        android:gravity="center_vertical"
+        android:textColor="@color/postdetail_light_color"
+        android:textSize="@dimen/headview_of_postdetail_tv_publish_time_text_size" />
+
+    <LinearLayout
+        android:id="@+id/publish_images_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.aurora.community.widget.AuroraEditText
+        android:id="@+id/publish_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/headview_of_postdetail_aet_publish_content_margin_top"
+        android:textColor="@color/gloab_title_color"
+        android:textSize="@dimen/headview_of_postdetail_aet_publish_content_text_size" 
+        android:background="@android:color/transparent"
+        android:editable="false"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="17dp"
+                  >
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/labelpic"
+                   android:layout_marginRight="4dp"
+                   android:paddingTop="2dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="12sp"
+                  android:textColor="@color/label_text_color"
+                  android:id="@+id/label_content"
+                  />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" 
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/collection_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/collection_icon"
+            android:drawablePadding="@dimen/headview_of_postdetail_tv_collection_count_drawable_padding"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_deep_blue_color"
+            android:textSize="@dimen/headview_of_postdetail_tv_collection_count_text_size" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/headview_of_postdetail_tv_comment_count_margin_left"
+            android:drawableLeft="@drawable/comment_icon"
+            android:drawablePadding="@dimen/headview_of_postdetail_tv_comment_count_drawble_padding"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_blue_color"
+            android:textSize="@dimen/headview_of_postdetail_tv_comment_count_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

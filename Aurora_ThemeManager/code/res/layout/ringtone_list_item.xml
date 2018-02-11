@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="68dp"
+    android:minHeight="68dp" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ringtone_name"
+            android:textColor="@color/local_theme_item_name_title_color"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ringtone_duration"
+            android:layout_marginTop="6dp"
+            android:textColor="#99414142"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:focusable="false" >
+
+        <com.aurora.thememanager.widget.ProgressBtn
+            android:id="@+id/ringtone_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/ringtone_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/item_apply"
+            android:textColor="@color/theme_main_color"
+            android:textSize="@dimen/theme_list_item_download_btn_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

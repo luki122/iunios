@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/bg_button_dark"
+	>
+
+	<!--
+	###############################################################
+	### Top Title
+	############################################################### -->
+	<FrameLayout
+	    style="@style/VoiceWakeup.Layout.TopTitleBar"
+	    android:id="@+id/settings_layout_focus"
+		android:focusableInTouchMode="true"
+	    >
+
+	    <TextView
+	    	style="@style/VoiceWakeup.Layout.TopTitleBar.Content"
+	    	android:text="@string/settings_top_title"
+	    	/>
+	</FrameLayout>
+
+	<!--
+	###############################################################
+	### CONTENTS
+	############################################################### -->
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/bg.content"
+		>
+
+		<LinearLayout
+		    style="@style/VoiceWakeup.Layout.Section"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+
+			<!--
+			###############################################################
+			### THRESHOLDS SETTING
+			############################################################### -->
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    >
+
+				<!--
+				###############################################################
+				### TITLE
+				############################################################### -->
+			    <TextView
+			        style="@style/VoiceWakeup.Layout.Settings.Title"
+			        android:text="@string/settings_thresholds"
+			        />
+			    <View style="@style/VoiceWakeup.Layout.SeperatorH.bold"
+			        />
+
+				<!--
+				###############################################################
+				### KEYWORD CONFIDENCE THRESHOLD
+				############################################################### -->
+				<TextView
+			        style="@style/VoiceWakeup.Layout.Settings.Name"
+			        android:text="@string/settings_threshold_keyword"
+			        android:layout_marginTop="10dp"
+                    />
+			    <EditText
+			        android:id="@+id/settings_keyword_threshold"
+			        style="@style/VoiceWakeup.Layout.Settings.Editable"
+			        android:inputType="numberSigned|textUri"
+                    />
+
+				<!--
+				###############################################################
+				### SPEAKER CONFIDENCE THRESHOLD
+				############################################################### -->
+			    <TextView
+                    style="@style/VoiceWakeup.Layout.Settings.Name"
+                    android:text="@string/settings_threshold_speaker"
+                    android:layout_marginTop="10dp"
+                    />
+                <EditText
+			        android:id="@+id/settings_speaker_threshold"
+			        style="@style/VoiceWakeup.Layout.Settings.Editable"
+			        android:inputType="numberSigned|textUri"
+                    />
+			</LinearLayout>
+
+			<!--
+			###############################################################
+			### MORE OPTIONS SETTING
+			############################################################### -->
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:layout_marginTop="20dp"
+			    >
+
+			    <TextView
+			        style="@style/VoiceWakeup.Layout.Settings.Title"
+			        android:text="@string/settings_moreoptions" />
+			    <View
+			        style="@style/VoiceWakeup.Layout.SeperatorH.bold" />
+
+
+                <!--
+                ###############################################################
+                ### Enable/Disable Listen
+                ############################################################### -->
+                <RelativeLayout
+                    android:id="@+id/settings_layout_listen"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/selector_list_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_listen"
+                            />
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_listen_desc"
+                            />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/settings_listen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_userlist_checkbox"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+                <View
+                    style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+                <!--
+                ###############################################################
+                ### Enable/Disable Voice Wakeup
+                ############################################################### -->
+                <RelativeLayout
+                    android:id="@+id/settings_layout_voicewakeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/selector_list_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_voiceactivation"
+                            />
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_voiceactivation_desc"
+                            />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/settings_voicewakeup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_userlist_checkbox"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+                <View
+                    style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+                <!--
+                ###############################################################
+                ### Enable/Disable User Verification
+                ############################################################### -->
+                <RelativeLayout
+                    android:id="@+id/settings_layout_userverification"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/selector_list_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_userverification"
+                            />
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_userverification_desc"
+                            />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/settings_userverification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_userlist_checkbox"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+                <View
+                    style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+                <!--
+                ###############################################################
+                ### Enable/Disable Keyword Detection Failure Feedback
+                ############################################################### -->
+                <RelativeLayout
+                    android:id="@+id/settings_layout_failurefeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/selector_list_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_failurefeedback"
+                            />
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_failurefeedback_desc"
+                            />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/settings_failurefeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_userlist_checkbox"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+
+                <View
+                    style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+                <!--
+                ###############################################################
+                ### Enable/Disable Detection, Non-Detection Tone
+                ############################################################### -->
+                <RelativeLayout
+                    android:id="@+id/settings_layout_tone"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:clickable="true"
+                    android:background="@drawable/selector_list_item"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_tone"
+                            />
+                        <TextView
+                            style="@style/VoiceWakeup.Layout.Settings.description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_moreoption_tone_desc"
+                            />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/settings_tone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/selector_userlist_checkbox"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+                <View
+                    style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+
+			    <!--
+				###############################################################
+				### voice Q/A
+				############################################################### -->
+			    <RelativeLayout
+			        android:id="@+id/settings_layout_voiceqna"
+			        android:layout_width="match_parent"
+			        android:layout_height="70dp"
+			        android:clickable="true"
+			        android:background="@drawable/selector_list_item"
+			        >
+
+			        <LinearLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_alignParentLeft="true"
+				        android:layout_centerVertical="true"
+			            >
+
+			            <TextView
+			                style="@style/VoiceWakeup.Layout.Settings.Name2"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="@string/settings_moreoption_voiceqna"
+			                />
+			            <TextView
+			                style="@style/VoiceWakeup.Layout.Settings.description"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="@string/settings_moreoption_voiceqna_desc"
+			                />
+			        </LinearLayout>
+
+			        <CheckBox
+			            android:id="@+id/settings_voiceqna"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+		                android:button="@drawable/selector_userlist_checkbox"
+		                android:clickable="false"
+			            />
+			    </RelativeLayout>
+			    <View
+			        style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+
+				<!--
+				###############################################################
+				### Advanced Detail
+				############################################################### -->
+			    <RelativeLayout
+			        android:id="@+id/settings_layout_advanced"
+			        android:layout_width="match_parent"
+			        android:layout_height="70dp"
+			        android:clickable="true"
+			        android:background="@drawable/selector_list_item"
+			        >
+
+			        <LinearLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_alignParentLeft="true"
+				        android:layout_centerVertical="true"
+			            >
+
+			            <TextView
+			                style="@style/VoiceWakeup.Layout.Settings.Name2"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="@string/settings_moreoption_advanced"
+			                />
+			            <TextView
+			                style="@style/VoiceWakeup.Layout.Settings.description"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:text="@string/settings_moreoption_advanced_desc"
+			                />
+			        </LinearLayout>
+
+			        <CheckBox
+			            android:id="@+id/settings_detail"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+				        android:layout_alignParentRight="true"
+				        android:layout_centerVertical="true"
+		                android:button="@drawable/selector_userlist_checkbox"
+		                android:clickable="false"
+			            />
+			    </RelativeLayout>
+			    <View
+			        style="@style/VoiceWakeup.Layout.SeperatorH"
+                    />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

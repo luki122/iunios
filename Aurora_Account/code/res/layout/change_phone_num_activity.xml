@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingStart="@dimen/padding_15"
+    android:paddingEnd="@dimen/padding_15"
+    android:paddingTop="@dimen/padding_20"
+    android:paddingBottom="@dimen/padding_17"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_countryCode"
+        style="@style/Account_Layout_Item"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/register_layout_item_min_height"
+        android:layout_marginBottom="@dimen/padding_14"
+        android:background="@drawable/common_bg_alone_selector" >
+
+        <TextView
+            android:id="@+id/tv_countryCode"
+            style="@style/Account_Layout_Item_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_arrow_right" />
+    </LinearLayout>
+
+    <com.aurora.account.widget.ClearableEditText
+        android:id="@+id/new_phone_et"
+        style="@style/Account.TextView.Login"
+        android:background="@drawable/common_edittext_bg_alone_selector"
+        android:hint="@string/change_phone_new_phone_hint"
+        android:inputType="phone"
+        android:maxLength="20" />
+    
+    <include layout="@layout/error_info_layout" />
+
+    <!--
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button style="@style/Account.Button.Next"
+        android:id="@+id/btn_next" />
+    -->
+
+</LinearLayout>

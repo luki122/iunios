@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info_more"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/download_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+         >
+
+        <ProgressBar
+            android:id="@+id/progress_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/progress_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@id/progress_webview"
+            android:text="@string/progress_info"
+            android:textSize="@dimen/check_update_textSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_and_download_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/ready_webview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+
+      <ScrollView
+            android:id="@+id/version_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:scrollbars="none"
+            android:layout_weight="1" 
+            android:visibility="gone"/>
+	    
+        <LinearLayout
+            android:id="@+id/download_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="125dip"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/download_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/aurora_download_button"
+                android:text="@string/start_update"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/network_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/network_error_big"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/no_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="#ececec"
+        android:text="@string/kown_more_no_info_content"
+        android:visibility="gone" />
+
+</FrameLayout>

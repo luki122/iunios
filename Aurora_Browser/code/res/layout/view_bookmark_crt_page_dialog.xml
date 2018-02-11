@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="23dp" >
+
+        <ImageView
+            android:id="@+id/iv_add_to_bookmarks_thumb"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_icon_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <aurora.widget.AuroraEditText
+                android:id="@+id/et_add_to_bookmarks_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <aurora.widget.AuroraEditText
+                android:id="@+id/et_add_to_bookmarks_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:textColor="#7b7b7b"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#DDDDDD" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_to_bookmarks_save_foler"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/btn_bookmark_new_folder_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/tv_add_to_bookmarks_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_add_to_bookmarks_save_foler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#7b7b7b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_to_bookmarks_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/list_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

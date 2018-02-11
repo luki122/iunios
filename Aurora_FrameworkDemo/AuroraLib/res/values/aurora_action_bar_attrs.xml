@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ActionBar related attributes -->
+    <attr name="auroraActionBarTitleColor" format="color" />
+    <attr name="auroraActionBarBackground" format="reference|color" />
+    <attr name="auroraActionBarItemBackground" format="reference|color" />
+    <attr name="auroraActionBarDividerDrawable" format="reference" />
+    <attr name="auroraActionBarDividerWidth" format="dimension" />
+    <attr name="auroraActionBarApplicationDrawable" format="reference" />
+    <attr name="auroraActionBarHomeDrawable" format="reference" />
+    <attr name="auroraActionBarItemColorNormal" format="reference|color" />
+    <attr name="auroraActionBarItemColorAlt" format="reference|color" />
+    <attr name="auroraActionBarMaxItems" format="integer" />
+    <attr name="auroraActionBarStyle" format="reference" />
+    <attr name="auroraActionBarTitleStyle" format="reference" />
+    <attr name="auroraActionBarDividerStyle" format="reference" />
+    <attr name="auroraActionBarItemStyle" format="reference" />
+
+    <attr name="actionBarLeftWidgetBackground" format="reference"/>
+    <attr name="actionBarRightWidgetBackground" format="reference"/>
+    <!-- ActionBar related attributes -->
+    <declare-styleable name="AuroraActionBar">
+        <attr name="title" format="string" />
+        <attr name="type">
+            <enum name="normal" value="0" />
+            <enum name="dashboard" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="custom" value="3" />
+        </attr>
+        <attr name="dividerDrawable" format="reference" />
+        <attr name="dividerWidth" format="integer" />
+        <attr name="homeDrawable" format="reference" />
+        <attr name="maxItems" format="integer" />
+        <attr name="titleBackground" format="reference"/>
+    </declare-styleable>
+
+</resources>

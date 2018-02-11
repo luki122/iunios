@@ -1,0 +1,15 @@
+//进入一个activity A
+07-25 11:01:40.326 I/huangbin( 6135): onCreate()
+07-25 11:01:40.326 I/huangbin( 6135): onStart()
+07-25 11:01:40.326 I/huangbin( 6135): onResume()
+
+//按home键回到桌面
+07-25 11:01:43.696 I/huangbin( 6135): onPause()
+07-25 11:01:44.136 I/huangbin( 6135): onStop()
+
+//进入设置更换语言，语言更换完毕后再次进入activity A
+07-25 11:02:08.316 I/huangbin( 6135): onDestroy()
+07-25 11:02:08.396 I/huangbin( 6135): onCreate()
+07-25 11:02:08.396 I/huangbin( 6135): onStart()
+07-25 11:02:08.396 I/huangbin( 6135): onResume()
+

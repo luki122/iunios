@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/activity_main_background_color"
+    >
+
+    <com.aurora.community.activity.HackyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+    </com.aurora.community.activity.HackyViewPager>
+
+    <CheckBox
+        android:id="@+id/iv_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/activity_image_preview_layout_cb_margin_bottom"
+        android:button="@drawable/aurora_img_select_selector" 
+        android:visibility="gone"
+        />
+
+</FrameLayout>

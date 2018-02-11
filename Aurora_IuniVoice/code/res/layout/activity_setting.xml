@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/mine_application_setting_text"
+            android:textColor="#262626"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/mine_wifi_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+
+            <com.aurora.iunivoice.widget.AuroraSwitch
+                android:id="@+id/wifi_net_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/mine_notification_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+
+            <com.aurora.iunivoice.widget.AuroraSwitch
+                android:id="@+id/notification_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" 
+            android:id="@+id/rl_clear_cache">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_clear_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="16sp" 
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/mine_other_text"
+            android:textColor="#262626"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/mine_check_update_text"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            android:id="@+id/btn_check_update" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/mine_about_text"
+            android:textColor="#262626"
+            android:textSize="16sp" 
+            android:id="@+id/btn_about_bbs"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/sure_bg"
+            android:gravity="center"
+            android:text="@string/mine_exit_login_text"
+            android:textColor="#ff0000"
+            android:textSize="18sp" 
+            android:id="@+id/btn_exit"/>
+    </LinearLayout>
+
+</ScrollView>

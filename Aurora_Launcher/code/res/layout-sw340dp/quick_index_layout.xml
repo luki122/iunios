@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="0dp"
+    android:layout_height="match_parent"
+    >
+    <!-- android:layout_height="552dp" -->
+    
+    <com.aurora.view.QuickIndexLayout 
+        android:id="@+id/quick_index_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:visibility="visible">
+    	
+         <LinearLayout
+            android:id="@+id/quick_index_drop_target_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:visibility="invisible"
+            >
+
+            <com.aurora.launcher.QuickDropUninstall
+                android:id="@+id/uninstall_drop_target"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                 android:background="@drawable/quick_delete_normal"
+               />
+
+            <com.aurora.launcher.QuickDropLocate
+                 android:id="@+id/quicklocate_drop_target"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:background="@drawable/quick_locate_normal"
+                 />
+        </LinearLayout>
+        
+        <com.aurora.view.SearchFrameLayout 
+            android:id="@+id/quick_search_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+	        <TextView 
+	            android:id="@+id/quick_index_title"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/quick_index_title_margin_top"
+	            android:paddingLeft="@dimen/quick_index_title_padding_left"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/quick_index_title_text_size"/>
+	        <EditText
+                android:id="@+id/quick_index_search_edit_text"
+                style="@style/CutomEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/quick_index_search_edit_padding_left_top"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/quick_index_edit_left_icon"
+                android:background="@drawable/quick_index_edit_bg_icon"
+                android:paddingLeft="@dimen/quick_index_search_edit_padding_left_right"
+                android:paddingRight="@dimen/quick_index_search_edit_padding_left_right"
+                android:textColor="@color/white"
+                android:imeOptions="actionSearch"
+                android:ellipsize="end"
+                android:inputType="text|textAutoComplete|textNoSuggestions"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="@dimen/quick_index_edittext_text_size"        
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:visibility="gone" >
+                <requestFocus />
+             </EditText>
+	   </com.aurora.view.SearchFrameLayout> 
+        
+	    <FrameLayout
+	        android:id="@+id/list_frame_layout"
+	        android:layout_below="@id/quick_search_header"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	        
+	        <TextView
+	            android:id="@+id/quick_search_empty"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="#66FFFFFF"
+	            android:text="@string/no_search_result"
+	            android:textSize="@dimen/quick_index_search_empty_text_size"
+	            android:visibility="gone"
+	            android:layout_marginTop="120dp"
+	            android:gravity="center_horizontal" />
+	        
+	        <com.aurora.stickylistheaders.StickyListHeadersListView
+				android:id="@+id/quick_index_search_list_view"
+				android:layout_width="fill_parent"  
+				android:layout_height="fill_parent"		
+				android:paddingTop="@dimen/quick_index_stickylistview_padding_top"
+				android:focusable="false" 
+				android:fadingEdge="none"
+				android:scrollbars="none"
+				android:fastScrollEnabled="false" 
+				android:divider="@null"
+				android:dividerHeight="0dp"
+				android:paddingBottom="@dimen/quick_index_stickylistheaders_listview_padding_bottom"
+				android:visibility="invisible"
+				/> 	
+	        
+			<com.aurora.stickylistheaders.StickyListHeadersListView
+				android:id="@+id/quick_index_list_view"
+				android:layout_width="fill_parent"  
+				android:layout_height="fill_parent"		
+				android:paddingTop="@dimen/quick_index_stickylistview_padding_top"
+				android:focusable="false" 
+				android:fadingEdge="none"
+				android:scrollbars="none"
+				android:fastScrollEnabled="false"
+				android:divider="@null"
+				android:dividerHeight="0dp"
+				android:paddingBottom="1dp"
+				/> 
+			
+			<com.aurora.view.SearchFrameLayout 
+            	android:layout_width="@dimen/quick_index_search_framelayout_width"
+            	android:layout_height="fill_parent"
+            	android:paddingRight="@dimen/quick_index_alphabet_search_layout_padding_right"
+            	android:layout_marginBottom="@dimen/quick_index_alphabet_margin_bottom" 
+		        android:layout_gravity="right"
+		         >
+	             <!-- 29dp 4dp -->
+	             
+	             <com.aurora.view.AlphbetSideBar
+		        android:id="@+id/letterSideBar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:paddingTop="@dimen/quick_index_alphbetSideBar_padding_top"
+		        android:paddingRight="@dimen/quick_index_alphbetSideBar_padding_right"
+		        android:gravity="right" 
+		        android:background="@drawable/right_alphabet_bg"
+		         />
+            </com.aurora.view.SearchFrameLayout>
+	        
+		</FrameLayout>
+    </com.aurora.view.QuickIndexLayout>
+</FrameLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+<resources>
+        <string-array name="gn_timeout_close_torch_options">    
+        <item>Don\'t close</item>    
+        <item>1 minute</item>    
+        <item>2 minutes</item>    
+        <item>3 minutes</item>  
+        <item>4 minutes</item>    
+    </string-array>    
+    <string-array name="gn_timeout_close_torch_values">    
+        <item>0</item>    
+        <item>1</item>    
+        <item>2</item> 
+        <item>3</item>    
+        <item>4</item>     
+    </string-array>   
+
+    <!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+    <string-array name="gn_entries_buttonlight">
+        <item>2 seconds</item>
+        <item>Always on</item>
+        <item>Always off</item>
+        <item>From external light</item>
+    </string-array>
+
+    <string-array name="gn_entryvalues_buttonlight">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <!-- Do not translate. -->
+        <item>3</item>
+    </string-array>
+    <!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+
+    <!-- gionee wangyaohui 20130201 add for CR00769135 begin -->
+    <string-array name="unicom_disabled_apns">
+        <item>沃3G连接互联网</item>
+        <item>沃3G手机上网</item>
+        <item>中国联通 3g 彩信 (China Unicom)</item>
+    </string-array>
+    <!-- gionee wangyaohui 20130201 add for CR00769135 end-->
+    
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+    <string-array name="gn_entries_font_size">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Medium</item>
+    </string-array>
+    
+    <string-array name="gn_entryvalues_font_size" translatable="false">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+    </string-array>
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+    
+<!-- Gionee <chenml> <2013-05-29> add for CR00821135 begin  -->    
+    <string-array name="gn_screen_size_entries" translatable="false">
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </string-array>
+    
+    <string-array name="gn_screen_size_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+<!-- Gionee <chenml> <2013-05-29> add for CR00821135 end  -->    
+<!-- qy add 2014 07 29 begin -->
+    <string-array name="usb_conn_title_entries">
+        
+        <item >Media Storage(MTP)</item>
+        <item >Camera(PTP)</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_entries">
+        
+        <item >Using data and storage at the same time</item>
+        <item >Transfer pictures via software</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_title_compa_entries">
+        
+        <item >Media Storage(MTP)</item>
+        <item >Camera(PTP)</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_compa_entries">
+        
+        <item >Using data and storage at the same time</item>
+        <item >Transfer pictures via software</item>
+        
+    </string-array> 
+<!-- qy add 2014 07 29 end -->
+
+</resources>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 end-->

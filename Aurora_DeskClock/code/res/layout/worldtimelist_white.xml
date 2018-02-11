@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+     <ImageView
+            android:id="@+id/iv_world_time_sort_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/world_time_grabber_white"
+            android:layout_centerVertical="true"
+            android:visibility="gone" 
+            android:layout_alignParentRight="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@id/iv_world_time_sort_hot">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dip"
+            android:layout_centerVertical="true" >
+
+            <com.aurora.worldtime.AnalogClocks
+                android:id="@+id/anologclock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" /> 
+<!-- gionee jiating 20120614 begin -->
+          <CheckBox
+                android:id="@+id/select_world_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusable="false"
+                android:visibility="gone" /> 
+<!-- gionee jiating 20120614 end -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- Gionee <baorui><2013-06-03> modify for CR00820829 begin -->
+            <TextView
+                android:id="@+id/tv_world_city"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textSize="18sp"                         
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textColor="@color/gn_black"/>
+            <!-- Gionee <baorui><2013-06-03> modify for CR00820829 end -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_world_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:textAppearance="?android:attr/textAppearanceSmall" 
+                    android:textColor="@color/fontcolor_enabled_white"/>
+
+                <TextView
+                    android:id="@+id/tv_world_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/fontcolor_enabled_white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_world_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall" 
+                android:textColor="@color/fontcolor_enabled_white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

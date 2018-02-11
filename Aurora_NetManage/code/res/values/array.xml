@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dates">
+        <item></item>
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item></item>
+        <item></item>
+    </string-array><!-- 流量单位 --><string-array name="flow_unit">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array><!-- 中国移动套餐类型 --><string-array name="package_type_cm">
+        <item>M-Zone</item>
+        <item>GoTone</item>
+        <item>Easyown</item>
+    </string-array><!-- 中国联通套餐类型 --><string-array name="package_type_cu">
+        <item>2G</item>
+        <item>3G</item>
+    </string-array><!-- 省份 --><string-array name="province">
+         <item>Beijing</item>
+         <item>Tianjin</item>
+		 <item>Shanghai</item>
+		 <item>Chongqing</item>
+		 <item>Hebei Province</item>
+		 <item>Henan Province</item> 
+		 <item>Yunnan Province</item>
+		 <item>Liaoning Province</item>
+		 <item>Heilongjiang Province</item> 
+		 <item>Hunan Province</item>
+		 <item>Anhui Province</item> 
+		 <item>Shandong Province</item>
+		 <item>Xinjiang Uygur</item>
+		 <item>Jiangsu Province</item>
+		 <item>Zhejiang Province</item>
+		 <item>Jiangxi Province</item>
+		 <item>Hubei Province</item>
+		 <item>Guangxi Zhuang Autonomous Region</item>
+		 <item>Gansu Province</item>
+		 <item>Shanxi Province</item> 
+		 <item>Inner Mongolia</item> 
+		 <item>Shaanxi Province</item>
+		 <item>Jilin Province</item> 
+		 <item>Fujian Province</item>
+		 <item>Guizhou Province</item>
+		 <item>Guangdong Province</item>
+		 <item>Qinghai Province</item>
+		 <item>Tibet</item>
+		 <item>Sichuan Province</item>
+		 <item>Ningxia Hui Autonomous Region</item>
+		 <item>Hainan Province</item>
+		 <item>Hong Kong Special Administrative Region</item>
+		 <item>Macao Special Administrative Region</item>
+    </string-array>
+    
+
+ 
+
+</resources>

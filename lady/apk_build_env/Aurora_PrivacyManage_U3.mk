@@ -1,0 +1,1 @@
+../Aurora_PrivacyManage/Aurora_PrivacyManage_U3.mk

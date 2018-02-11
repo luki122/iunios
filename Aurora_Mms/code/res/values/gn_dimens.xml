@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-5-10 added for GIUI4.0 start
+-->
+
+<resources>
+
+
+    <!-- The height of the ScrollingTabWidget -->
+
+    <dimen name="list_item_padding_top">@dimen/gn_list_item_top_margin</dimen>
+    <dimen name="list_item_padding_right">@dimen/list_item_right_margin_gn</dimen>
+    <dimen name="list_item_padding_bottom">@dimen/gn_list_item_bottom_margin</dimen>
+    <dimen name="list_item_padding_left">@dimen/list_item_left_margin_gn</dimen>
+    <dimen name="list_item_gap_between_image_and_text">@dimen/list_item_left_margin_gn</dimen>
+    <dimen name="list_item_gap_between_label_and_data">@dimen/list_item_left_margin_gn</dimen>
+    <dimen name="list_item_call_button_padding">14dip</dimen>
+    <dimen name="list_item_vertical_divider_margin">5dip</dimen>
+    <dimen name="list_item_presence_icon_margin">@dimen/list_item_left_margin_gn</dimen>
+    <dimen name="list_item_header_text_width">56dip</dimen>
+    <dimen name="mms_attachment_pic_width">60.0dip</dimen>
+    <dimen name="mms_attachment_pic_height">60.0dip</dimen>
+
+    <dimen name="edit_text_min_width">5dip</dimen>
+    <dimen name="edit_drop_down_vertical_offset">5dip</dimen>
+
+    <dimen name="gn_list_item_left_margin">8dip</dimen>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <dimen name="gn_list_item_right_margin">10dip</dimen>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <dimen name="gn_list_item_top_margin">6dip</dimen>
+    <dimen name="gn_list_item_bottom_margin">10dip</dimen>
+
+    <!-- i will use @android:dimen/...    in the later version -->    
+    <dimen name="list_item_left_margin_gn">5dp</dimen>
+    <dimen name="list_item_right_margin_gn">6dp</dimen>
+    <dimen name="text_size_default">16sp</dimen>
+
+    <dimen name="list_item_padding_right_nophoto">6dip</dimen>  
+    <dimen name="status_bar_height">25dip</dimen>
+    
+    <!-- gionee zhouyj 2012-05-10 add for CR00588925 start -->
+    <dimen name="list_item_vertical_top_gap">2dip</dimen>
+    <dimen name="list_item_contact_left_margin">3dip</dimen>
+    <dimen name="gn_list_item_height">64dip</dimen>
+    <!-- gionee zhouyj 2012-05-10 add for CR00588925 end -->
+    
+    <!-- gionee zhouyj 2012-05-22 add for CR00607938 start -->
+    <dimen name="exportBtn_top">50dip</dimen>
+    <dimen name="exportBtn_height">60dip</dimen>
+    <dimen name="exportBtn_magin">40dip</dimen>
+    <!-- gionee zhouyj 2012-05-22 add for CR00607938 end -->
+    
+    <!--gionee gaoj 2012-6-23 added for CR00627799 start  -->
+    <dimen name="gn_action_bar_tab_textsize">16sp</dimen>
+    <dimen name="gn_checkbox_right">8dip</dimen>
+    <dimen name="gn_spinner_height">30dip</dimen>
+    <!--gionee gaoj 2012-6-23 added for CR00627799 end  -->
+
+    <!-- gionee gaoj 2012-7-9 modified for CR00640407 start -->
+    <dimen name="gn_list_margin_top_size">8dip</dimen>
+    <dimen name="gn_list_margin_bottom_size">8dip</dimen>
+    <!-- gionee gaoj 2012-7-9 modified for CR00640407 end -->
+    <dimen name="gn_select_sim_name_width">82dip</dimen>
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 start -->
+    <dimen name="gn_padding_alphbet_index">11dip</dimen>
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 end -->
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <dimen name="gn_action_bar_title_text_size">30sp</dimen> 
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+</resources>

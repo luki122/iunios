@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="zzzzz_gn_slotA">A</string>
+    <string name="zzzzz_gn_slotB">B</string>
+    <string name="zzzzz_slot_a">Slot A </string>
+    <string name="zzzzz_slot_b">Slot B </string>
+
+    <!-- Gionee dingwen 20120509 modify for CR00596474 start -->
+    <string name="zzzzz_remind_next_time">Not remind me next time</string>
+    <!-- Gionee dingwen 20120509 modify for CR00596474 end -->
+    <!-- Gionee huangyc 2012-7-6 add for CR00622045 start -->
+    <string name="zzzzz_gnlauncher">Gionee launcher</string>
+    <!-- Gionee huangyc 2012-7-6 add for CR00622045 end -->
+    <!-- GIONEE huangwenting 2012-9-6 add for CR00688643 start -->
+    <!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 start -->
+    <!-- string name="zzzzz_gnpowerprofile">Power saving</string -->
+    <string name="zzzzz_gnpowerprofile">Quick power saving</string>
+    <!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 end -->
+    <!-- GIONEE huangwenting 2012-9-6 add for CR00688643 end -->
+    <!-- Gionee zengxuanhui 20120712 modify for CR00560331 begin -->
+    <string name="switch_to_internal_storage">Switch to internal storage</string>
+    <string name="switch_to_external_storage">Switch to external storage</string>
+    <string name="storage_has_no_space">storage has no space</string>
+    <!-- Gionee zengxuanhui 20120712 modify for CR00560331 end -->
+
+    <!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 start -->
+    <!-- Dual sim settings mode enter airplanemode WiFi and Bt will both close confirm message string -->
+    <string name="airlinemode_confirm_message">Phone will enter Airplane mode. All wireless connections will be disabled. Continue?</string>
+    <!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 end -->
+    
+        <!-- Gionee qiuxd 20121017 add for CR00714767 start -->
+    <string name="zzzzz_gnguestmode">Guest Mode</string>
+    <!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 begin -->
+    <!-- Gionee fengjianyi 2012-10-22 add for CR00705430 start -->
+    <!--<string name="goto_guest_mode_warning">It will hide call logs, messages, albums, notes and lock desktop, are you sure to enter the guest mode?</string>-->
+    <string name="goto_guest_mode_warning">It will hide call logs, messages, albums, notes and prevent editing desktop, and can set password protection in "Settings" - "Security" ,are you sure to enter the guest mode?</string>
+    <!-- Gionee fengjianyi 2012-10-22 add for CR00705430 end -->
+    <!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 end -->
+    <!-- Gionee qiuxd 20121017 add for CR00714767 end -->
+</resources>

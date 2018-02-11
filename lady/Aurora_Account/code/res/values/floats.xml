@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="account_sync_name_text_alpha" format="float" type="string">0.7</item>  
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="preferences_week_start_day_labels">
+        <item>Воскресенье</item>
+        <item>Понедельник</item>
+    </string-array>
+
+    <string-array name="reminder_minutes_labels">
+        <item>Напоминание</item>
+        <item>На 1 минуту раньше</item>
+        <item>На 5 минут раньше</item>
+        <item>На 10 минут раньше</item>
+        <item>На 15 минут раньше</item>
+        <item>На 20 минут раньше</item>
+        <item>На 25 минут раньше</item>
+        <item>На 30 минут раньше</item>
+        <item>На 45 минут раньше</item>
+        <item>На 1 час раньше</item>
+        <item>На 2 часа раньше</item>
+        <item>На 3 часа раньше</item>
+        <item>На 12 часов раньше</item>
+        <item>На 24 часов раньше</item>
+        <item>На 2 дня раньше</item>
+        <item>На 1 неделю раньше</item>
+    </string-array>
+
+    <string-array name="constellation_labels">
+        <item>Козерог</item>
+        <item>Водолей</item>
+        <item>Рыбы</item>
+        <item>Овен </item>
+        <item>Телец</item>
+        <item>Близнецы</item>
+        <item>Рак</item>
+        <item>Лев</item>
+        <item>Дева</item>
+        <item>Весы</item>
+        <item>Скорпилон</item>
+        <item>Стрелец</item>
+    </string-array>
+
+    <string-array name="day_labels">
+        <item>вс.</item>
+        <item>пн.</item>
+        <item>вт.</item>
+        <item>ср.</item>
+        <item>чт.</item>
+        <item>пт.</item>
+        <item>сб.</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_sun">
+        <item>Первое вс. каждого месяца</item>
+        <item>Второе вс. каждого месяца</item>
+        <item>Третье вс. каждого месяца</item>
+        <item>Четвёртое вс. каждого месяца</item>
+        <item>Последнее вс. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_mon">
+        <item>Первый пн. каждого месяца</item>
+        <item>Второй пн. каждого месяца</item>
+        <item>Третий пн. каждого месяца</item>
+        <item>Четвёртый пн.каждого месяца</item>
+        <item>Последний пн. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_tues">
+        <item>Первый вт. каждого месяца</item>
+        <item>Второй вт. каждого месяца</item>
+        <item>Третий вт. каждого месяца</item>
+        <item>Четвёртый вт. каждого месяца</item>
+        <item>Последний вт. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_wed">
+        <item>Первая ср. каждого месяца</item>
+        <item>Вторая ср. каждого месяца</item>
+        <item>Третья ср. каждого месяца</item>
+        <item>Четвёртая ср. каждого месяца</item>
+        <item>Последняя ср. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_thurs">
+        <item>Первый чт. каждого месяца</item>
+        <item>Второй чт. каждого месяца</item>
+        <item>Третий чт. каждого месяца</item>
+        <item>Четвёртый чт. каждого месяца</item>
+        <item>Последний чт. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_fri">
+        <item>Первая пт. каждого месяца</item>
+        <item>Вторая пт. каждого месяца</item>
+        <item>Третья пт. каждого месяца</item>
+        <item>Четвёртая пт. каждого месяца</item>
+        <item>Последняя пт. каждого месяца</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_sat">
+        <item>Первая сб. каждого месяца</item>
+        <item>Вторая сб. каждого месяца</item>
+        <item>Третья сб. каждого месяца</item>
+        <item>Четвёртая сб. каждого месяца</item>
+        <item>Последняя сб. каждого месяца</item>
+    </string-array>
+
+</resources>

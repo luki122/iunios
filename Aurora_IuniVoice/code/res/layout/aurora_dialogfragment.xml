@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:minWidth="313dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/aurora_contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/aurora_dialog_bg_top"
+        android:orientation="vertical"
+        android:paddingLeft="31dp"
+        android:paddingRight="28dp" >
+
+        <TextView
+            android:id="@+id/aurora_alertTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/dialog_prompt"
+            android:textColor="@android:color/black"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <GridView
+            android:id="@+id/my_dialog_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/aurora_dialog_fragment_gv_listselector"
+            android:numColumns="3"
+            android:paddingBottom="@dimen/aurora_dialog_fragment_gv_padding_bottom"
+            android:paddingTop="@dimen/aurora_dialog_fragment_gv_padding_top"
+            android:verticalSpacing="@dimen/aurora_dialog_fragment_gv_vertical_spacing" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aurora_buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aurora_alert_dialog_btn_panel_divider_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/aurora_alert_dialog_btn_panel_divider_v"
+            android:measureWithLargestChild="true"
+            android:orientation="horizontal"
+            android:showDividers="middle" >
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:background="@drawable/aurora_alert_dialog_btn_selector_left"
+                android:maxLines="2"
+                android:text="@string/dialog_confirm"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

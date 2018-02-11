@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Gionee:jialinfeng 20110624 added for message box begin -->
+    <!-- Gionee jialf 20110907 modified for CR00362165 -->
+    <string name="add_to_favorite">Mesaje favorite</string>
+    <string name="cancel_favorite">Anulare favorite</string>
+
+    <!-- main tab string -->
+    <string name="tab_message">Mesaje</string>
+    <string name="tab_favorites">Favorite</string>
+    <string name="tab_recommend">Recomandat</string>
+    <string name="tab_draft">Schițe</string>
+
+    <string name="tab_favorites_common_words">Cuvinte comune</string>
+    <string name="tab_favorites_msg_fav">Mesaje favorite</string>
+
+    <!-- Gionee time format -->
+    <string name="gn_today">Azi</string>
+    <string name="gn_yesterday">Ieri</string>
+
+    <string name="gn_am">AM</string>
+    <string name="gn_pm">PM</string>
+
+    <string name="dial_dialog_title">Alegeți numărul de apelat:</string>
+
+    <string name="delete_all_threads">Ștergere totală</string>
+
+    <string name="repeat_send_msg">Retrimitere</string>
+    <string name="gn_send_msg_failed">Eșuat</string>
+    <!-- gionee lanwzh modify for  CR00396868 20111015 begin -->
+    <string name="gn_send_msg_received">Trimis</string>
+    <!-- gionee lanwzh modify for  CR00396868 20111015 end -->
+    <string name="gn_send_msg_sending">Se trimite</string>
+
+    <!-- Gionee:jialinfeng 20110624 added for message box end -->
+
+    <!-- Gionee lanwzh 20110714 add for feature_add_contact CR00291840 begin -->
+    <string name="add_recent_contacts">Adăgare contact</string>
+    <string name="insert_contacts">Inserare contact</string>
+    <string name="no_contacts">Nici-un contact</string>
+    <string name="no_recent_contacts">Nici-un contact recent</string>
+    <string name="title_add_receipents">Adăugare contacte</string>
+    <string name="group_list_empty">Nici-un grup.</string>
+    <string name="select_group_contact_dlg_title">Selectare grup de contacte</string>
+    <string name="no_mobile_numbers">Fără număr de mobil</string>
+    <string name="contact_has_no_info">Informații contact lipsă</string>
+    <string name="no_phone_numbers">Fără număre de mobil</string>
+    <string name="video_call_not_enabled">Apel video nu este activat</string>
+    <string name="unsaved">Nesalvat</string>
+    <string name="tab_recent_contact">Mesaj</string>
+    <string name="tab_contact">Contacte</string>
+    <string name="tab_group_contact">Grup</string>
+    <string name="cancel">Anulare</string>
+    <string name="contacts_notes">Notițe:</string>
+    <string name="contacts_website">Website:</string>
+    <string name="contacts_name">Nume:</string>
+    <!-- Gionee lanwzh modified for CR00385257 20111010 begin -->
+    <string name="delete_recent_contact">Ștergere</string>
+    <!-- Gionee lanwzh modified for CR00385257 20111010 end -->
+    <string name="calllog">Jurnal apeluri</string>
+    <string name="groups_coworker">Coleg servici</string>
+    <string name="groups_family">Familie</string>
+    <string name="groups_friends">Prieteni</string>
+    <string name="groups_schoolmate">Coleg școală</string>
+    <string name="groups_vip">VIP</string>
+    <string name="showAllGroups">Toate contactele</string>
+    <string name="sim">SIM</string>
+    <!-- Gionee lanwzh 20110714 add for feature_add_contact CR00291840 end -->
+
+    <!-- Gionee jialf 20110720 add for recommend messages -->
+    <string name="recommend_humor_joke">Glumă de groază</string>
+    <string name="recommend_love_joke">Glumă de dragoste</string>
+    <string name="recommend_school_joke">Glumă de școală</string>
+    <string name="recommend_birthday_message">Mesaj onomastică</string>
+
+    <!-- Gionee lanwzh 20110801 add for CR00303983  begin -->
+    <string name="insert_sd_card">Introduceți SD card!</string>
+    <!-- Gionee lanwzh 20110801 add for CR00303983  end -->
+
+    <string name="repeat_send_msg_btn_text">Repetare</string>
+    <string name="quick_text_header_text">Text nou rapid</string>
+    <string name="quick_text_header_text_edit">Editare text rapid</string>
+    <string name="quick_text_edit_hint">Introducere text rapid</string>
+    <string name="quick_text_menu_forward">Înaintare</string>
+    <string name="quick_text_menu_edit">Editare</string>
+    <string name="quick_text_menu_delete">Ștergere</string>
+    <string name="add_quick_text_ok">OK</string>
+    <string name="add_quick_text_cancel">Anulare</string>
+    <string name="delete_quick_text_title">Ștergere</string>
+    <string name="delete_quick_text_confirm">Sunteți sigur că doriți să ștergeți ?</string>
+    <string name="favorite_display_name">Eu</string>
+
+    <!-- Gionee lanwzh 20110803 add for CR00319810  begin -->
+    <!-- gionee:gaojt 2011-11-07 modify CR00413105 start -->
+    <string name="confirm_delete_all_dratfs">Sunteți sigur că doriți să ștergeți toate schițele?</string>
+    <string name="confirm_delete_dratf">Sunteți sigur că doriți să ștergeți această schiță ?</string>
+    <!-- gionee:gaojt 2011-11-07 modify CR00413105 end -->
+    <string name="delete_all_dratfs">Ștergere totală</string>
+    <string name="delete_dratf">Ștergere schiță</string>
+    <!-- Gionee lanwzh 20110803 add for CR00319810  end -->
+
+    <!-- Gionee jipengfei 20110806 add for CR00324849 begin -->
+    <string name="gn_select_attachment_contacts">Contacte</string>
+    <string name="gn_select_attachment_quick_text">Texte rapide</string>
+    <string name="gn_select_attachment_smiley">Emoticon</string>
+    <string name="gn_select_attachment_subject">Subiect</string>
+    <string name="gn_select_attachment_gallery">Imagini</string>
+    <string name="gn_select_attachment_camera">Captură imagini</string>
+    <string name="gn_select_attachment_video">Video</string>
+    <string name="gn_select_attachment_record_video">Captură video</string>
+    <string name="gn_select_attachment_sound">Audio</string>
+    <string name="gn_select_attachment_record_audio">Înregistrare audio</string>
+    <string name="gn_select_attachment_slideshow">Prezentare</string>
+    <!-- Gionee jipengfei 20110806 add for CR00324849 end -->
+
+    <!-- Gionee lanwzh 20110808 add for CR00327520 end -->
+    <string name="gn_select_attach_picture">Imagini</string>
+    <string name="gn_select_attach_take_photo">Captură imagine</string>
+    <!-- Gionee jipengfei 20110808 add for CR00327520 end -->
+
+    <!-- Gionee lanwzh 20110809 add for CR00319970  begin -->
+    <string name="search_bar_hint">Căutare contacte</string>
+    <!-- Gionee lanwzh 20110809 add for CR00319970  end -->
+
+    <!-- Gionee lanwzh 20110810 add for CR00320012  begin -->
+    <string name="title_attachments"> Atașamente </string>
+    <string name="attach_size"> dimensiune: </string>
+    <string name="save_att_failed"> Salvare atașament eșuată!</string>
+    <string name="save_att_success"> Atașament salvat</string>
+    <string name="attachmentpicker">Alegere atașament</string>
+    <!-- Gionee lanwzh 20110810 add for CR00320012  end -->
+
+    <!-- Gionee liuran 20110810 add for CR00344553  start -->
+    <string name="add_to_contact"> Adăugare la contacte </string>
+    <string name="check_contact"> Verificare contact </string>
+    <!-- Gionee liuran 20110810 add for CR00344553  start -->
+    <!-- Gionee jialf 20110822 added for CR00344530 start -->
+    <string name="wait_connecting">Se conectează la rețea...</string>
+    <string name="wait_init">Inițializare date , așteptați...</string>
+    <string name="gn_no_conversations">Conversația este goală</string>
+    <string name="gn_no_contacts">Nici-un contact</string>
+    <string name="gn_no_recent_contacts">Nici-un contact recent</string>
+    <string name="gn_no_calllog">Nici-un apel în jurnal</string>
+    <string name="gn_no_draft">Nici-o schiță</string>
+    <!-- Gionee jialf 20110822 added for CR00344530 end -->
+
+    <!-- Gionee jialf 20110823 added for CR00344655 start-->
+    <string name="gn_cancel_all_favorite">Anulare toate din favorite</string>
+    <string name="gn_cancel_all_favorite_title">Anulare toate din favorite</string>
+    <string name="gn_cancel_all_favorite_content">Sunteți sigur că doriți să ștergeți toate favoritele ?</string>
+    <string name="gn_cancel_all_favorite_ok">OK</string>
+    <string name="gn_cancel_all_favorite_cancel_btn">Anulare</string>
+    <string name="gn_confirm_delete_conversation">Această conversație va fi ștearsă.</string>
+    <string name="gn_confirm_delete_message">Tot mesajul va fi șters.</string>
+    <string name="gn_delete_unfavotite">Ștergere mesaje favorite</string>
+    <!-- Gionee jialf 20110823 added for CR00344655 end-->
+
+     <!-- Gionee lanwzh 20110822 add for CR00344579  begin -->
+     <string name="gn_selected">Selectat</string>
+     <!-- Gionee lanwzh 20110822 add for CR00344579  end -->
+
+     <!-- Gionee lanwzh 20110824 add for CR00345010  begin -->
+     <string name="gn_copy_text">Copiere text</string>
+     <!-- Gionee lanwzh 20110824 add for CR00345010  end -->
+     <!-- Gionee fangbin 2011.8.24 added for CR00346739 start -->
+     <string name="gnSms_sim_management_title">Setări dual SIM</string>
+     <!-- Gionee fangbin 2011.8.24 added for CR00346739 end -->
+     <!-- Gionee fangbin 2011.8.26 modified for CR00353574 start -->
+     <string name="gn_prevent_disturb">Prevenire deranjamente</string>
+     <!-- Gionee fangbin 2011.8.26 modified for CR00353574 end -->
+     <!-- Gionee fangbin 2011.8.27 modified for CR00353574 start -->
+     <!-- Gionee lidw change for CR00466863 start -->
+     <string name="gn_dail">Apel</string>
+     <!-- Gionee lidw change for CR00466863 end -->
+     <string name="gn_send_message">Expediere mesaj</string>
+     <string name="gn_new_contact">Contact nou</string>
+     <string name="gn_visit">Vizită</string>
+     <string name="gn_add_to_bookmarks">Adăugare la marcaje</string>
+     <string name="gn_send_email">Expediere e-mail</string>
+     <!-- Gionee fangbin 2011.8.27 modified for CR00353574 end -->
+
+     <!-- Gionee lanwzh 20110829 add for CR00319810 begin -->
+     <string name="gn_draft_operation">Schițe</string>
+     <string name="gn_draft_operation_reason">Doriți să salvați în schițe?</string>
+     <string name="gn_draft_save">Salvare</string>
+     <string name="gn_draft_unknow_name">necunoscut</string>
+     <!-- Gionee lanwzh 20110829 add for CR00319810 end -->
+     <!-- Gionee fangbin 2011.8.31 added for CR00357401 start -->
+     <string name="menu_gn_firewall_setting">Protecție</string>
+     <!-- Gionee fangbin 2011.8.31 added for CR00357401 end -->
+
+    <!-- Gionee jipengfei 20110903 add for CR00361478 begin -->
+    <string name="gn_contact_unit_name"> contact(e)</string>
+    <!-- Gionee jipengfei 20110903 add for CR00361478 end -->
+
+    <!-- Gionee lanwzh 20110909 add for CR00362174 begin -->
+    <string name="gn_to_hint">Către</string>
+    <!-- Gionee lanwzh 20110903 add for CR00362174 end -->
+
+    <!-- Gionee fangbin 2011.9.9 added for CR00327774 start -->
+    <string name="gn_from">De la </string>
+    <!-- Gionee fangbin 2011.9.9 added for CR00327774 end -->
+
+    <!-- Gionee lanwzh 20110913 add for CR00301798 begin -->
+    <string name="mms_deliver_success_with_address">Mesaj expediat prin %s</string>
+    <string name="mms_deliver_success">Mesajul a fost trimis </string>
+    <string name="mms_read_success_with_address">Mesaj citit prin %s</string>
+    <string name="mms_read_success">Mesajul a fost citit </string>
+    <!-- Gionee lanwzh 20110913 add for CR00301798 begin -->
+
+    <!-- Gionee liuran 20110919 added for CR00368419 start -->
+    <string name="freeze_format_with_bracket">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+    <string name="freeze_format">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+    <!-- Gionee liuran 20110919 added for CR00368419 end -->
+
+    <!--  Gionee jialf 20110923 added for CR00377289 start -->
+    <string name="gn_midnight">AM</string>
+    <string name="gn_dawn">AM</string>
+    <string name="gn_noon">PM</string>
+    <string name="gn_dusk">PM</string>
+    <string name="gn_night">PM</string>
+    <!--  Gionee jialf 20110923 added for CR00377289 end -->
+
+    <!-- gionee zhouyj 2012-07-2 modify for CR00632672 start -->
+    <string name="gn_exchange">eBackup</string>
+    <!-- gionee zhouyj 2012-07-2 modify for CR00632672 end -->
+
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 start -->
+    <string name="gn_add_to_contact"> Adăugare </string>
+    <string name="gn_check_contact"> Verificare </string>
+    <string name="gn_edit_contact"> Editare </string>
+    <string name="gn_copy_contact"> Copiere </string>
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 end -->
+
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 begin-->
+    <string name="gn_confirm_delete_favorited_message">Sunteți sigur că doriți să ștergeți acest mesaj favorit?</string>
+    <string name="gn_confirm_delete_locked_favorited_message">Sunteți sigur că doriți să ștergeți acest mesaj blocat și favorit?</string>
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 end-->
+
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 start-->
+    <string name="message_too_big_for_recording">Acest mesaj este prea mare pentru a fi înregistrat.</string>
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 end-->
+
+    <!-- gionee tianyr 2011-11-07 added for CR00427015 start-->
+    <!-- gionee tianyr 2011-11-07 added for CR00427015 end-->
+
+    <!-- Gionee fangbin 20111108 added for CR00423903 start -->
+    <string name="gn_import_export_menu">Import/Export</string>
+    <string name="gn_sim_sms">SIM card SMS</string>
+    <!-- Gionee fangbin 20111108 added for CR00423903 end -->
+
+    <!-- Gionee fangbin 20111108 added for CR00423907 start -->
+    <string name="gn_import_export_file_path">/backup/Sms/</string>
+    <string name="gn_export_text">Export</string>
+    <string name="gn_import_text">Import</string>
+    <string name="gn_sure_export">Confirmare Export</string>
+    <string name="gn_sure_export_front">Sunteți sigur că doriți exportul către </string>
+    <string name="gn_sure_export_back"> din ?</string>
+    <string name="gn_sms_importing">Se importă SMS</string>
+    <string name="gn_sms_exporting">Se exportă SMS</string>
+    <string name="gn_exporting_front">Este la </string>
+    <string name="gn_exporting_back"> export SMS</string>
+    <string name="gn_export_sms_to_sdcard2">Export SMS către SD card</string>
+    <string name="gn_import_sms_from_sdcard">Import SMS din SD card</string>
+    <string name="gn_no_import_file">Nu există fișier text care poate fi importat!</string>
+    <string name="gn_no_export_sms">Nu există fișier text care poate fi exportat!</string>
+    <string name="gn_import_file_count">Selectat</string>
+    <string name="gn_import_current_file">Se importă secțiune </string>
+    <string name="gn_export_current_session">Se exportă secțiune  </string>
+    <string name="gn_export_item"> sesiune</string>
+    <string name="gn_import_item"> fișier</string>
+    <string name="gn_import_export_sum">(Total din </string>
+    <string name="gn_import_export_piece">)</string>
+    <string name="gn_import_cancel">Anulare importare!</string>
+    <string name="gn_import_failed">Import eșuat！</string>
+    <string name="gn_import_success">Import complet！</string>
+    <string name="gn_import_file">Import fișier </string>
+    <string name="gn_import_file_path_error"> eroare cale！</string>
+    <string name="gn_import_file_content_error"> eroare format conținut！</string>
+    <string name="gn_import_file_no_exists"> nu există！</string>
+    <string name="gn_import_file_empty"> este gol！</string>
+    <string name="gn_no_sdcard">Nici-un SD card！</string>
+    <string name="gn_unkonw_error">Eroare necunsocută！</string>
+    <string name="gn_imported_file_names">Fișiere importate:</string>
+    <string name="gn_export_failed">Export eșuat！</string>
+    <string name="gn_export_success">Export complet！</string>
+    <string name="gn_importing">Se importă SMS, așteptați...</string>
+    <!-- Gionee fangbin 20111108 added for CR00423907 end -->
+
+    <!-- Gionee fangbin 20111114 added for CR00432868 start -->
+    <string name="gn_import_export">Import/Export SMS</string>
+    <string name="gn_export_btn_text">Export pe SD card</string>
+    <string name="gn_import_btn_text">Import din SD card</string>
+    <string name="gn_last">Ultimul </string>
+    <!-- Gionee fangbin 20111114 added for CR00432868 end -->
+
+    <!-- Gionee wangxin 20111122 added for CR00385359 start -->
+    <string name = "gn_date_format">yyyy年MM月dd日</string>
+    <!-- Gionee wangxin 20111122 added for CR00385359 end -->
+    <!-- Gionee fangbin 20111124 added for CR00451398 start -->
+    <string name="gn_sdcard_no_space">Spațiul liber din SD card nu e suficient!</string>
+    <!-- Gionee fangbin 20111124 added for CR00451398 end -->
+    <!-- Gionee fangbin 20111128 added for CR00448323 start -->
+    <string name="gn_import_cancel_title">Anulare</string>
+    <string name="gn_import_cancel_msg">Acest import va fi anulat</string>
+    <!-- Gionee fangbin 20111128 added for CR00448323 end -->
+
+    <!-- Gionee jialf 20111201 added for CR00459866 start -->
+    <string name="gn_forward_prefix">Fwd:\u0020</string>
+    <!-- Gionee jialf 20111201 added for CR00459866 end -->
+
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 start -->
+    <string name="gn_copying">se copiază... </string>
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 end -->
+
+    <!-- Gionee fangbin 20111206 added for CR00459773 start -->
+    <string name="gn_no_sim_card">Imposibil de expediat ,nici-un SIM!</string>
+    <!-- Gionee fangbin 20111206 added for CR00459773 end -->
+
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 begin -->
+    <string name="gn_loading">se încarcă...</string>
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 end -->
+
+    <!-- Gionee fangbin 20120201 added for CR00504516 start -->
+    <string name="gn_mms_pop_view">Vizualizare</string>
+    <string name="gn_mms_pop_delete">Ștergere</string>
+    <string name="gn_mms_pop_send">Expediere</string>
+    <string name="gn_mms_pop_read">Citire</string>
+    <string name="gn_mms_pop_input">Introducere mesaj</string>
+    <string name="gn_mms_pop_cv">Apăsare pentru vizualizare</string>
+    <string name="gn_mms_pop_setting_title">Notificare pop-up</string>
+    <string name="gn_mms_pop_setting_summary">Pop-ul va afișa automat informațiile de notificare</string>
+    <!-- Gionee fangbin 20120201 added for CR00504516 end -->
+
+    <!--gionee gaoj 2012-2-22 add for CR00527686 start  -->
+    <string name="lockpassword_choose_your_password_header">Alegeți parola </string>
+    <string name="lockpassword_confirm_your_password_header">Confirmare parolă</string>
+    <string name="lockpassword_ok_label">Confirmare</string>
+    <string name="lockpassword_confirm_passwords_dont_match">Parola nu se potrivește </string>
+    <string name="lockpassword_continue_label">Continuare la </string>
+    <string name="lockpassword_cancel_label">Anulare</string>
+    <string name="lockpassword_password_too_short">Parola trebuie să fie din cel puțin %d caractere</string>
+    <string name="lockpassword_password_too_long">Parola nu poate avea mai mult de %d caractere</string>
+    <string name="lockpassword_illegal_character">Parola conține caractere nepermise</string>
+    <string name="lockpassword_password_requires_alpha">Parola trebuie să conțină cel puțin 1 caracter</string>
+    <string name="lockpassword_press_continue">Apăsați Continuare când e gata</string>
+    <string name="lockpattern_need_to_unlock_wrong">Mai incercați:</string>
+    <string name="menu_encryption">Codificare</string>
+    <string name="menu_decryption">Anulare codificare </string>
+    <string name="lockpassword_input_your_password">Introduceți parolă </string>
+    <string name="gn_call">apel </string>
+    <string name="gn_encryption">codificare</string>
+    <string name="gn_confirm_encryption">Numărul conversațiilor a fost codificat </string>
+    <string name="gn_confirm_dncryption">Numărul conversațiilor codificat a fost anulat</string>
+
+    <string name="pref_security_settings_title">Setări securitate </string>
+    <string name="pref_title_mms_encryption_setting">Setări codificare sesiune </string>
+    <string name="pref_summary_mms_encryption_setting">Utilizare parolă sesiune codificată</string>
+    <string name="pref_title_mms_encryption_change">Schimbare codificare conversație</string>
+    <string name="pref_summary_mms_encryption_change">Schimbare sau terminare protecție parolă </string>
+
+    <string name="pref_title_mms_password_visible">Parolă vizibilă </string>
+    <string name="pref_summary_mms_password_visible">Parolă vizibilă la introducere</string>
+
+    <string name="pref_title_mms_password_clear">Ștergere parolă </string>
+    <string name="pref_summary_mms_password_clear">Protecție parolă discontinuă</string>
+    <string name="pref_title_mms_password_change">Schimbare parolă </string>
+    <string name="pref_summary_mms_password_change">Schimbare parolă protecție </string>
+    <string name="pref_summary_mms_password_change_succeed">Parolă schimbată cu succes</string>
+    <string name="pref_summary_mms_password_clear_succeed">Parolă ștearsă cu succes </string>
+    <string name="pref_summary_mms_password_setting_succeed">Parolă setată cu succes </string>
+    <!--gionee gaoj 2012-2-22 add for CR00527686 end  -->
+
+        <!-- Gionee fangbin 20120223 addded for CR00527995 start -->
+    <string name="gn_phone_msg_count">Informație statistice despre celulă</string>
+    <string name="gn_unread_msg_count">Nu a fost citit numărul informațiilor : </string>
+    <string name="gn_session_count">Numărul total al conversațiilor: </string>
+    <string name="gn_totle_msg_count">Numărul total al informațiilor: </string>
+    <!-- Gionee fangbin 20120223 addded for CR00527995 end -->
+
+    <!--gionee gaoj 2012-4-10 added for CR00555790 start  -->
+    <string name="pick_contacts">Alegere contacte </string>
+    <string name="recipient_title">destinatari（%1$s） </string>
+    <string name="new_contact">Contact nou </string>
+    <string name="add_contact">Adăugare la unul existent </string>
+    <string name="view_contact">vizualizare </string>
+    <string name="edit_contact">editare </string>
+    <string name="copy_contact">copiere </string>
+    <string name="set_top">setare cap </string>
+    <string name="gn_select_conversation_one">aleasă o conversație </string>
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 start  -->
+    <string name="gn_select_conversation_more">alese %1$s </string>
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 end  -->
+    <string name="gn_pref_title_sms_delivery_reports">Raport livrare </string>
+    <string name="gn_pref_title_mms_read_reports">Raport citire</string>
+    <string name="gn_pref_title_mms_delivery_reports">Raport citire </string>
+    <!--gionee gaoj 2012-4-10 added for CR00555790 end  -->
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 start -->
+    <string name="gn_pref_title_other">Altele</string>
+    <string name="gn_pref_title_accessories_signature">Semnătură</string>
+    <string name="gn_pref_summary_accessories_signature">Adăugare automată a semnăturii</string>
+    <string name="gn_pref_title_edit_accessories_signature">Editare semnătură</string>
+    <string name="gn_pref_summary_edit_accessories_signature">Apăsați pentru editare</string>
+    <string name="gn_signature_dlg_title">Editare semnăturp</string>
+    <string name="gn_signature_dlg_hint">Introducere semnătură</string>
+    <string name="gn_delete_drafts_message">Toate mesajele din schițe vor fi șterse.</string>
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 end -->
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 start -->
+    <string name="gn_select_conversation_zore">nici-o conversație aleasă</string>
+    <string-array name="gn_receiptors">
+        <item >Contacte recente</item>
+        <item >Contacte</item>
+        <item >Grup</item>
+        <!--  not use star
+        <item >Star</item>-->
+    </string-array>
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 end -->
+
+    <!-- Gionee fangbin 20120518 added for CR00596563 start -->
+    <string name="gn_mms_pop_close">Închidere</string>
+    <string name="gn_mms_pop_response">Răspunde</string>
+    <string name="gn_mms_pop_no_response"> Introduceți un răspuns! </string>
+    <!-- Gionee fangbin 20120518 added for CR00596563 end -->
+
+    <!--gionee gaoj 2012-5-24 added for CR00588933 start  -->
+    <string name="gn_card_a_out">SIM 1 </string>
+    <string name="gn_card_b_out">SIM 2 </string>
+    <!-- Gionee guoxiaotian 20120926 modified for CR00704266 begin -->
+    <string name="gn_card_a_in">Mesaj primit pe SIM1</string>
+    <string name="gn_card_b_in">Mesaj primit pe SIM2</string>
+    <string name="gn_card_1_out">SIM 1</string>
+    <string name="gn_card_2_out">SIM 2</string>
+    <string name="gn_card_1_in">Mesaj primit pe SIM1</string>
+    <string name="gn_card_2_in">Mesaj primit pe SIM2</string>
+     <!-- Gionee guoxiaotian 20120926 modified for CR00704266 end -->
+    <string name="gn_card_unknow_out">...card credibil</string>
+    <string name="gn_card_unknow_in">...se primește mesaj pe SIM</string>
+    <string name="gn_menu_edit">Editor </string>
+    <string name="gn_menu_edit_msg">Editor mesaj</string>
+    <string name="gn_unload_mms">MMS nu este descărcat complet, înaintați mai târziu. </string>
+    <string name="gn_search_hint">Căutare mesaj</string>
+    <!--gionee gaoj 2012-5-24 added for CR00588933 end  -->
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 start -->
+    <string name="gn_sim_slot_a">1</string>
+    <string name="gn_sim_slot_b">2</string>
+    <string name="gn_sim_slot_1">1</string>
+    <string name="gn_sim_slot_2">2</string>
+    <string name="import_export_tip">export SMS pe</string>
+    <string name="import_export_next">următorul</string>
+    <string name="gn_chooser_external_sdcard">SD Card</string>
+    <string name="gn_chooser_internal_sdcard">Memoria internă</string>
+    <string name="gn_export_sms_to_external_sdcard">export sms pe SD Card</string>
+    <string name="gn_export_sms_to_internal_sdcard">export sms pe memoria internă </string>
+    <string name="copy_attachment_to">copiere atașament pe </string>
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 end -->
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->
+    <string name="gn_mms">MMS</string>
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->
+    <!-- gionee gaoj 2012-6-14 added for CR00623383 CR00623396 start -->
+    <!-- gionee songganggang 2012-10-22 modify for CR00716914 start -->
+    <string-array name="gn_conv_spinner_list">
+        <item >Toate SMS-urile</item>
+        <item >Codare</item>
+    </string-array>
+    <!-- gionee songganggang 2012-10-22 modify for CR00716914 end -->
+    <string name="no_encryption_conversations">"No encryption conversations"</string>
+    <string name="gn_no_star_contacts">Star contacts is empty</string>
+    <!-- gionee gaoj 2012-6-14 added for CR00623383 CR00623396 end -->
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 start -->
+    <string name="gn_multi_encryption">the select sms were encryption</string>
+    <string name="gn_multi_dncryption">the select sms were dncryption</string>
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 end -->
+    
+    <!--gionee gaoj 2012-7-17 added for CR00628364 start   -->
+    <string name="gn_menu_delete">ștergere</string>
+    <string name="gn_menu_star">stea</string>
+    <string name="gn_menu_copy">copiere</string>
+    <string name="gn_menu_forward">înaintare</string>
+    <!-- gionee gaoj 2012-7-17 added for CR00628364 end -->
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 start -->
+    <string name="gn_selected_count">Select %1$s </string>
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 end -->
+
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 start -->
+    <string name="gn_menu_doctoran">Prevent Disturb</string>
+    <string name="gn_menu_blacklist">Join blacklist</string>
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 end -->
+    
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 start -->
+    <string name="gn_internal_sdcard_no_space">The remaining space of Internal Storage is not enough!</string>
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 end -->
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 start -->
+    <string name="storage_has_no_space">"Storage is full, please release storage space"</string>
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 end -->
+    
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 begin -->
+    <string name="sim1_notification_title">Sim1 Notification sound</string>
+    <string name="sim1_notification_summary">Default sound</string>
+    <string name="sim2_notification_title">Sim2 Notification sound</string>
+    <string name="sim2_notification_summary">Default sound</string>
+    <string name="notification_summary_silent">silent</string>
+    <string name="loading_ringtone">Loading the bell</string>
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+
+    <!-- gionee gaoj 2012-8-8 added for CR00623375  start -->
+    <string name="gn_select_regularly_send_msg">Timing</string>
+    <string name="gn_dialog_title">Set a time</string>
+    <string name="date_time_set">Set</string>
+    <string name="gn_will_send_time">Will be send on %1$s</string>
+    <string name="gn_time_early">Time before now, please reinstall</string>
+    <!-- gionee gaoj 2012-8-8 added for  CR00623375 end -->
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 start -->
+    <string name="gn_select_attachment_geo_location">Geographical position</string>
+    <string name="gn_location_nonet">No connection avilable，set network please！</string>
+    <string name="gn_location_loading">Loading...please wait</string>
+    <string name="gn_location_nogps_tip">GPS doesnot open, open GPS will more accurate</string>
+    <string name="gn_location_tip_title">GPRS hint</string>
+    <string name="gn_location_tip_body">You are now using the online network, to continue the operation may produce HTTP traffic fee which need you pay for the cost, specific costs please consult the local operators</string>
+    <string name="gn_location_without_tip">Donot ask again</string>
+    <string name="gn_location_know_it">Know it</string>
+    <string name="gn_location_others_poi">Point of interest</string>
+    <string name="gn_location_error">Sorry，not loading your location</string>
+    <string name="gn_location_no_others_poi">There is no point of interest</string>
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 end -->
+</resources>

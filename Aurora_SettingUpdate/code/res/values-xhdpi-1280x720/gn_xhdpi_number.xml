@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="download_button_insideinterval">19</integer>
+    <integer name="download_button_max">100</integer>
+    <integer name="download_button_paintwidth">9</integer>
+    <integer name="new_version_filesize_textsize">20</integer>
+    <integer name="new_version_popup_speed">18</integer>
+</resources>

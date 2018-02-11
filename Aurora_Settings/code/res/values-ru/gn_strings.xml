@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!--        //Gionee zjy 20120406 add for CR00564459 start   -->
+<string name="gn_status_imei_slot">IMEI</string>  
+    <string name="gn_status_imei_sv_slot">IMEI SV</string>
+<!--        //Gionee zjy 20120406 add for CR00564459 end   -->
+<!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 begin -->
+<string name="schedule_airplane_on_off_settings_title">&quot;Режим полёта с часовым механизмом&quot;</string>
+    <string name="schedule_airplane_on_off_set">&quot;Настроить режим полёта с часовым механизмом&quot;</string>
+    <string name="schedule_airplane_on_set">&quot;Настроить включение режима полёта с часовым механизмом&quot;</string>
+    <string name="schedule_airplane_off_set">&quot;Настроить выключение режима полёта с часовым механизмом&quot;</string>
+    <string-array name="alarm_set_airplane">
+        <item>&quot;Включить режим полёта после менее 1 минуты.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="HOURS" example="2 hours">%1$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="MINUTES" example="2 minutes">%1$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="HOURS" example="2 hours">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%2$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>.<xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.&quot;</item>
+        <item>&quot;Выключить режим полёта после менее 1 минуты.&quot;</item>
+        <item>&quot;Выключить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>.&quot;</item>
+        <item>&quot;Выключить режим полёта после <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>.&quot;</item>
+        <item>&quot;Выключить режим полёта после <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после<xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.&quot;</item>
+        <item>&quot;Включить режим полёта после <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g><xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>.&quot;</item>
+    </string-array>
+<!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 end -->
+<!-- Gionee:niejn 20120523 add for CR00605063 begin -->
+<string name="gn_title_font_category">Стиль письма телефона</string>
+<!-- Gionee:niejn 20120523 add for CR00605063 end -->
+<!-- Gionee:wangyaohui 20120522 modify for CR00607863 begin-->
+<string name="okay_action">ОК</string> 
+    <string name="okay_continue">&quot;Продолжить&quot;</string>
+    <string name="okay_restore">&quot;Возврат к заводским настройкам&quot;</string>
+    <string name="cancel_action">Отмена</string>  
+    <string name="reset_warning">Предупреждение</string>
+<!-- Gionee:wangyaohui 20120522 modify for CR00607863 end-->
+<!-- Gionee dengm 2012-05-03 added for CR00581649 start-->
+<string name="gn_lockscreen_settings_title">Блокировки экран</string>
+    <string name="gn_music_player_setting">Блокировки плеера музыки</string>
+    <string name="gn_lunar_setting">Показывать лунный календарь</string>
+    <string name="gn_missed_setting">Показывать пропущенные вызовы и сообщения</string>
+    <string name="gn_torch_setting">Включить ручной фонарик</string>
+    <string name="gn_lockscreen_enable">Включить</string>
+<!-- Gionee dengm 2012-07-30 changed for CR00658924 start-->
+<string name="gn_open_torch">При ярком экране долговременно нажать кнопу уменьшения громкости для включения ручного фонарика</string>
+<!-- Gionee dengm 2012-07-30 changed for CR00658924 end-->
+<!-- Gionee dengm 2012-05-03 added for CR00581649 end-->
+<!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+<string name="gn_timeout_close_torch">Авто. Выключить ручной фонарик</string>
+<!-- Gionee dengm 2012-08-08 added for CR00672630 start-->
+<string name="gn_not_close">0</string>
+<!-- Gionee dengm 2012-08-08 added for CR00672630 end-->
+<!-- Gionee dengm 2012-05-03 added for CR00622042 end-->
+<!-- Gionee:wangyaohui 20120620 add for CR00625357 begin -->
+<string name="password_null">Пароль пустой, повторно введите!</string>
+<!-- Gionee:wangyaohui 20120620 add for CR00625357 end-->
+<!-- Gionee fangbin 20120629 added for CR00622030 start -->
+<string name="gn_mms_ringtone">Звук сообщений</string>
+    <string name="gn_ringtone_notif">Звук и уведомления</string>
+<!-- Gionee fangbin 20120629 added for CR00622030 end -->
+<!-- Gionee Jingjc 20120629 modify for CR00632151 start-->
+<string name="gn_date_and_time_settings_title">Дата и время</string>
+    <string name="gn_zone_settings_title">Часовой пояс</string>
+<!-- Gionee Jingjc 20120629 modify for CR00632151 end-->
+<!-- Gionee zengxuanhui 20120809 add for CR00672106 start -->
+<string name="default_ringtone">Вызов по умолчанию</string>
+    <string name="sim1_ringtone_title">Слот 1</string>
+    <string name="sim1_ringtone_summary">Мелодия по умолчанию</string>
+    <string name="sim2_ringtone_title">Слот 2</string>
+    <string name="sim2_ringtone_summary">Мелодия по умолчанию</string>
+    <string name="loading_ringtone">Загрузка мелодии</string>
+    <string name="ringtone_silent_summary">Без звука</string>
+<!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+<!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push start  -->
+<string name="notify_push">Панель уведомления</string>
+    <string name="pref_push_title">Панель уведомления</string>
+    <string name="notify_push_dlg_message">“%1$s” отправляет вам сообщения, вы можете настроить в“настройки-уведомления</string>
+    <string name="notify_push_dlg_title">Отправить напоминание</string>
+    <string name="notify_push_dlg_confirm">Разрешить</string>
+    <string name="notify_push_dlg_deny">Запретить</string>
+    
+    
+    <string name="pref_push_summary">Закрыть или открыть уведомления следующих приложений</string>
+    <string name="pref_push_notify">Панель состояния</string>
+    <string name="pref_push_network_speed_display">Показывать скорость сети</string>
+    <string name="pref_push_noapp_summary">Нет приложений с отправлением уведомления.</string>
+    <string name="pref_app_category">Приложения</string>
+    <string name="pref_app_on">Включено</string>
+    <string name="pref_app_off">Выключено</string>
+    
+    <string name="pref_empty_promp">Пустой</string>
+<!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push end  -->
+<!-- Gionee zengxuanhui 20120825 add for CR00680570 begin -->
+<string name="flip_sounds_enable_title">Звук раскладушки</string>
+<!-- Gionee zengxuanhui 20120825 add for CR00680570 end -->
+<!-- Gionee liuyanbo 2012-08-23 add for CR00680327 start -->
+<string name="wifi_auto_notify">Авто. Уведомление WLAN</string>
+<!-- Checkbox summary for option to notify user when open networks are nearby -->
+<string name="wifi_auto_notify_summary">При подключении к сети, авто. Показать список настройки WLAN</string>
+<!-- Gionee liuyanbo 2012-08-23 add for CR00680327 end -->
+<!--Gionee lihq add for CR00682401 start-->
+<string name="backup_restore_settings_title">Копирование системы</string>
+<!--Gionee lihq add for CR00682401 end-->
+<!-- GIONEE licheng Aug 23, 2012 add for CR00683085 start -->
+<string name="powerprofile_settings_title">Энергосберегающий режим </string>
+<!-- GIONEE licheng Sep 3, 2012 add for CR00683085 end -->
+<!-- Gionee zengxuanhui 20120907 add for CR00688800 begin -->
+<string name="data_usage_disable_mobile_title">Остановить трафик данных</string>
+<!-- Gionee zengxuanhui 20120907 add for CR00688800 end -->
+<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+<string name="lcm_acl_title">Авто. регулировать заряд экрана</string>
+	<string name="lcm_acl_summary">Экономить электроэнергию с помощью анализа изображений и регулирования яркости экрана</string>
+<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+<!-- Gionee fengjianyi 2012-09-28 add for CR00705430 start -->
+<string name="secrets_keep_title">Защита личностью</string>
+    <string name="guest_mode">Режим визита</string>
+    <string name="guest_mode_summary"></string>
+    <string name="goto_guest_mode_warning">Будут скрыты список вызовов, сообщений, альбом, заметки, запрещены редактировать экран, можно включить защиту паролем в настройки- безопасность, подтвердите войти в режим визита？</string>
+<!-- Gionee fengjianyi 2012-09-28 add for CR00705430 end -->
+<!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 begin -->
+<string name="need_password">Запустить пароль</string>
+    <string name="need_password_summary">Введите пароль для выключения режима визита</string>
+    <string name="alter_password">Изменить пароль</string>
+    <string name="set_pass">Настроить пароль</string>
+    <string name="guest_pass_confirm">Выйти из режима визита</string>
+    <string name="guest_password_too_short">&quot;Пароль должен не менее %d &quot;</string>
+    <string name="guest_password_too_long">&quot;Пароль должен не более <xliff:g id="NUMBER">%d</xliff:g>.&quot;</string>
+    <string name="comfirm_password">Подтверждение пароля визита</string>
+    <string name="choose_new_password_header">Выберите новый пароль</string>
+    <string name="lockpassword_press_ok">&quot; После завершения нажать“ ОК ”&quot;</string>
+    <string name="input_pass_wrong">Вводный пароль неправилен</string>
+    <string name="exit_pass">Остановить пароль визита</string>
+    <string name="open_pass">Включить пароль визита</string>
+<!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 end -->
+<!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 begin -->
+<string name="hide_app">Скрыть приложения</string>
+    <string name="hide_app_summry">Во время включения режима визита будет скрывать выбранные приложения </string>
+    <string name="hide_app_toast">Во время включения режима визита невозможно войти</string>
+    <string name="hide_app_title">Во время включения режима визита будет скрывать выбранные</string>
+<!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 end -->
+<!-- Gionee zengxuanhui 20121022 add for CR00716758 begin -->
+<string name="haptic_vibration_title">Вибрация спецэффектов</string>
+<!-- Gionee zengxuanhui 20121022 add for CR00716758 end -->
+<!--Gionee Jingjc 20121101 add for CR00722601 start-->
+<string name="routine_vibrate_title">Нормальная вибрация </string>
+    <string name="dialpad_vibration_title">Вибрация при касании клавиш</string>
+    <string name="lockscreen_vibration_title">Вибрация блокировки экрана</string>
+    <string name="selectapp_vibration_title">Вибрация при выборе или удалении приложений</string>
+<!--Gionee Jingjc 20121101 add for CR00722601 end-->
+<!-- Gionee zengxuanhui 20121123 add for CR00724044 begin -->
+<string name="gn_rom_version">Версия системы Цзин Ли</string>
+<!-- Gionee zengxuanhui 20121123 add for CR00724044 end -->
+<!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 start -->
+<string name="gn_settings_warning">Уведомления</string>
+<!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 end -->
+<!-- Gionee zengxuanhui 20130107 add for CR00755682 begin -->
+<string name="sd_card_title">SD-карта</string>
+    <string name="phone_title">Память телефона</string>
+    <string name="setup_sd_card">Установка SD-карты</string>
+    <string name="no_sd_card">Не установлена SD-карта</string>
+    <string name="setup_sd_card_summary">Вставите SD-карту для установки</string>
+    <string name="sd_card_capacity">Память SD-карты</string>
+    <string name="sd_card_free">Остальная память</string>
+    <string name="format_sd_card">Очистить SD-карту</string>
+    <string name="clear_waiting">Чистка, подождите…</string>  
+    
+    <string name="system_capacity">Память системы</string>
+    <string name="system_free">Остальная память системы</string>
+    <string name="internal_capacity">Внутренний накопитель</string>
+    <string name="internal_free">Остальная память внутреннего накопителя</string>
+    <string name="format_phone_capacity">Очистить внутренний накопитель</string>
+    <string name="total_capacity">Total capacity</string>
+    <string name="phone_free_title">Остальная память телефона</string>
+<!-- Gionee zengxuanhui 20130107 add for CR00755682 end -->
+<!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 start -->
+<string name="gn_settings_common">Общие настройки</string>
+    <string name="gn_settings_all">Все настройки</string>
+<!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 end -->
+<!-- Gionee chenml 2013-04-10 add for CR00795467 begin-->
+<string name="gn_button_light">Выключить лампу кнопки</string>
+<!-- Gionee chenml 2013-04-10 add for CR00795467 end-->
+<!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 begin -->
+<string name="gn_devices_title">Информация о материальном обеспечении</string>
+    <string name="gn_devices_summary">Модель, количество ядра и т.д. CPU</string>
+    <string name="gn_devices_cpu_title">Модель CPU</string>
+    <string name="gn_devices_cpu_core_title">Количество ядра CPU</string>
+    <string name="gn_devices_cpu_core_summary_single">Одноядерный</string>
+    <string name="gn_devices_cpu_core_summary_dual">Двухъядерный</string>
+    <string name="gn_devices_cpu_core_summary_quad">Четырёхъядерный</string>
+    <string name="gn_devices_cpu_core_summary_six">Шестиядерный</string>
+    <string name="gn_devices_cpu_core_summary_eight">Восьмиядерный</string>
+    <string name="gn_devices_cpu_maxhz_title">Частота CPU</string>
+    <string name="gn_devices_cpu_maxhz_summary">%1$s Mhz</string>
+    <string name="gn_devices_phone_rom_memory_title">Объём ROM телефона</string>
+    <string name="gn_devices_phone_ram_memory_title">Объём RAM телефона</string>
+    <string name="gn_devices_screen_pixel_title">Коэффициент различения экрана</string>
+    <string name="gn_devices_screen_size_title">Размер экрана</string>
+    <string name="gn_devices_screen_size_summary">%1$s дюйм</string>
+<!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 end -->
+<!-- Gionee <chenml> <2013-04-26> add for CR00803315 begin -->
+<string name="illustration">Большой и огромный размер шрифт только используются для диска набора, сообщений, контактов и других приложений</string>
+<!-- Gionee <chenml> <2013-04-26> add for CR00803315 end -->
+<!-- Gionee <chenml> <2013-05-20> add for CR00817466 begin -->
+<string name="gn_sound_control_title">Режим управления голоса</string>
+    <string name="gn_sound_control_calling">Вызов</string>
+    <string name="gn_sound_control_calling_summary">Голосовое уведомление, голосовой ответ или отказ</string>    
+    <string name="gn_sound_control_message">Сообщения</string>
+    <string name="gn_sound_control_message_summary">Голосовое уведомление, голосовые чтение или вызов</string>   
+    <string name="gn_sound_control_lockscreen">Включить приложение при блокировке экрана</string>
+    <string name="gn_sound_control_lockscreen_summary">На экране блокировки, голосовое включение приложений, например“включить контакты“</string>   
+    <string name="gn_sound_control_alarmclock">Будильник</string>
+    <string name="gn_sound_control_alarmclock_summary">Когда будильник сработает, голосовое выключение или повторный звук через несколько минут</string>      
+    <string name="gn_sound_control_dialog">Включить режим управления голоса</string> 
+    <string name="gn_sound_control_dialog_message">При включении режима управления голоса появится голос, мелодия  профиля превращается в голосовое уведомление.</string>
+    <string name="not_alert_again">Больше не напоминать</string>
+<!-- Gionee <chenml> <2013-05-20> add for CR00817466 end -->
+<!-- Gionee chenml 2013-05-29 add for CR00821135 begin  -->
+<!--<string name="gn_suspend_button">悬浮按钮</string> -->
+<string name="gn_suspend_button">Взвешенный контакт</string>
+    <string name="gn_single_hand_operation">Операция одной руки</string>
+    <string name="gn_phone_keyboard">Диск набора и клавиатура во время вызова</string>
+    <string name="gn_phone_keyboard_summary">Регулировать место клавиатуры согласно привычке рук</string>
+    <string name="gn_input_method_keyboard">Клавиатура ввода</string>
+    <string name="gn_input_method_keyboard_summary">Регулировать место клавиатуры согласно привычке рук</string>
+    <string name="gn_pattern_unlockscreen">График разблокировки</string>
+    <string name="gn_pattern_unlockscreen_summary">Регулировать масштаб графика разблокировки</string>  
+    <string name="gn_advance_setting">Дополнительные настройки</string>  
+    <string name="gn_small_screen_mode">Режим маленького экрана</string>
+    <string name="gn_small_screen_mode_summary">Долговременно нажать меню для включения и выключения</string>    
+    <string name="gn_screen_size">Размер экрана</string>
+    <string name="gn_screen_size_summary"><xliff:g id="SCREENSIZE_DESCRIPTION">%1$s</xliff:g></string>
+<!-- Gionee chenml 2013-05-29 add for CR00821135 end  -->
+<!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 begin -->
+<string name="gn_fanfan_widget_auto_push">Отправление блокировки экрана</string>
+<!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 end -->
+<!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+<string name="gn_respirationlamp_settings">Указательная лампа LED</string>
+    <string name="gn_respirationlamp_low_power">Уведомление о низком заряде</string>
+    <string name="gn_respirationlamp_low_power_summary">Мигает красный цвет при низком заряде</string>
+    <string name="gn_respirationlamp_in_charge">Уведомления заряда</string>
+    <string name="gn_respirationlamp_in_charge_summary">При зарядке лампа светит</string>
+    <string name="gn_respirationlamp_notification">Уведомления сообщений</string>
+    <string name="gn_respirationlamp_notification_summary">Дыхательная лампа мигает, когда имеет пропущенные вызовы/сообщения/ другие уведомления приложений</string>
+    <string name="gn_respirationlamp_music">Играет музыка</string>
+    <string name="gn_respirationlamp_music_summary">Разная музыка - разный цвет </string>
+    <string name="gn_respirationlamp_call">Вызов</string>
+    <string name="gn_respirationlamp_call_summary">Мигает подсветка при вызове</string>
+<!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+<!-- Gionee tangzepeng 2012-10-11 add for CR00710113 start -->
+<string name="gn_timezone_indonesia">Стандартное время в середине Индонезии</string>
+<!-- Gionee tangzepeng 2012-10-11 add for CR00710113 end -->
+<!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+<string name="gn_buttonlight_settings">Лампа кнопки показывает</string>
+    <string name="gn_summary_buttonlight">%1$s</string>
+<!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+<!-- Gionee zengxuanhui 20130322 add for CR00786392 begin -->
+<string name="gn_sound_and_vibrate">Звук и вибрация</string>
+<!-- Gionee zengxuanhui 20130322 add for CR00786392 end -->
+<!-- Gionee zengxuanhui 20130328 add for CR00788327 begin -->
+<string name="gn_smart_gesture">Действие и жест</string>
+    <string name="gn_ssg_dlg_title">Невозможно использовать вызов телесных ощущений,</string>
+    <string name="gn_ssg_dlg_message">Если открыть “всегда спрашивать”, то невозможно использовать вызов телесных ощущений, выберите одну карту для использования его</string>
+    <string name="gn_ssg_dlg_check">Больше не напоминать</string>
+<!-- Gionee zengxuanhui 20130328 add for CR00788327 end -->
+<string name="gemini_data_connection">Трафик данных</string>
+    <string name="gemini_sim_management_title">Настройки двойной карты</string>
+<!-- Main Settings screen setting option name to go into the power on&amp;off settings-->
+<string name="schedule_power_on_off_settings_title">Включить и выключить питание с часовым механизмом</string>
+    
+    <string name="sim_status_summary">Соответствующие информации SIM-карты</string>
+    <string name="sim_status_title">Состояние SIM-карты</string>
+<!-- About phone slot info -->
+<string name="slot_status_title">&quot;Информация IMEI&quot;</string>
+    <string name="slot_status_summary">&quot;Соответствующие информации IMEI&quot;</string>
+<!--Gionee <xiaolin><2013-05-30> add for CR00820865 start -->
+<string name="scan_custom">Сканировать</string>
+    <string name="stop_custom">Остановить </string>
+    <string name="cancel_custom">Отмена</string>
+<!--Gionee <xiaolin><2013-05-30> add for CR00820865 end -->
+<string name="gn_bluetooth_stop_scan">&quot;Остановить поиск&quot;</string>    
+    <string name="aurora_log_onoff_title">Переключатель IUNI Log</string>
+    <string name= "aurora_dump_onoff_pref_title">Функциональный переключатель DUMP</string>
+<!-- Gionee <wangguojing> <2013-08-10> add for CR00854573 begin -->
+<string name="gn_enable_debug_title">Переключатель Log</string>
+    <string name="gn_enable_debug_dialog_title">Выбирать переключатель</string>
+    <string name="gn_log_master_switch">Общий переключатель</string>
+    <string name="gn_log_verbose_switch">Переключатель уровня VERBOSE</string>
+    <string name="gn_log_debug_switch">Переключатель уровня DEBUG</string>
+    <string name="gn_log_info_switch">Переключатель уровня INFO</string>
+    <string name="gn_log_warn_switch">Переключатель уровня WARN</string>
+    <string name="gn_log_error_switch">Переключатель уровня ERROR</string>
+<!-- Gionee <wangyaohui> <2013-05-30> add for CR00854573 end -->
+<!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 begin -->
+<!-- Gionee <baorui><2013-08-08> modify for CR00850704 begin -->
+<!-- <string name="zzzzz_gn_conv_popup_text1">锁屏界面双手上滑</string> -->
+<string name="gn_conv_popup_text1">Сдвиньте вверх тремя пальцами в экране блокировки</string>
+<!-- Gionee <baorui><2013-08-08> modify for CR00850704 end -->
+<string name="gn_conv_popup_text2">Вход в режим визита</string>
+<!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 end -->
+</resources>

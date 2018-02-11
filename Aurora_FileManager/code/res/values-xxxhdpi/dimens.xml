@@ -1,0 +1,14 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="chartUsb_image_icon">7.8dp</dimen>
+    <dimen name="chartUsb_linear">28dp</dimen>
+    <dimen name="storagedetail_linear">15.4dp</dimen>
+    <dimen name="f_bottom">10dp</dimen>
+    <dimen name="f_bg">0dp</dimen>
+    <dimen name="f_pic">0dp</dimen>
+    <dimen name="frist_bottom">495dp</dimen>
+    <dimen name="list_top_navigation_scroll_pane">34dp</dimen>
+
+</resources>

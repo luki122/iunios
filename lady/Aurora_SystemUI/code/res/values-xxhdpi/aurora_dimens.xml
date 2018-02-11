@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="aurora_recent_icon_zoom_percent">100</integer>
+    <dimen name="aurora_normal_item_label_padding_top">3dp</dimen>
+</resources>

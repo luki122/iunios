@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_strange_num_add_to_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:minWidth="90dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="?attr/gn_ic_add_existing_contact" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/gn_dialpad_add_exist_contact_item"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/gn_drawable_text_button_textsize" />
+
+</LinearLayout>

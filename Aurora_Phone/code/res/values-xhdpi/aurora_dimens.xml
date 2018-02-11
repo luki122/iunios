@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="callStateLabel_padding_top">0dp</dimen>
+    <dimen name="note_margin_top">6dp</dimen>
+    <dimen name="call_time_size">22sp</dimen>
+    <dimen name="aurora_photo_size">109dp</dimen>
+    <dimen name="aurora_photo_circle_size_1">113dp</dimen>
+    <dimen name="aurora_photo_circle_size_2">123dp</dimen>
+    <dimen name="aurora_photo_area_height">137dp</dimen>
+    <dimen name="labelAndNumber_margin_top">6dp</dimen>
+    
+    <dimen name="aurora_dtmf_dialpad_text_margin_top">0dp</dimen>
+    <dimen name="aurora_callcard_padding_top">34dp</dimen>
+    <dimen name="aurora_call_name_text_size">24sp</dimen>
+    <dimen name="aurora_call_area_text_size">14sp</dimen>
+    <dimen name="other_call_callcard_height">309dp</dimen>
+    <dimen name="aurora_slidedowntext_margin_bottom">14dp</dimen>
+    <dimen name="aurora_glowview_margin_bottom">59dp</dimen>
+</resources>
+

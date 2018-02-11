@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StickyListHeadersListView">
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SettingItem">
+        <attr name="info" format="string"></attr>
+        <attr name="infoSize" format="dimension"></attr>
+        <attr name="infoMarginLeft" format="dimension"></attr>
+        <attr name="right_info" format="string"></attr>
+        <attr name="s_icon" format="reference"></attr>
+        <attr name="right_icon" format="reference"></attr>
+        <attr name="news" format="string"></attr>
+        <attr name="s_divider" format="boolean"></attr>
+        <attr name="news_isShow" format="boolean"></attr>
+        <attr name="s_icon_isShow" format="boolean"></attr>
+        <attr name="right_info_isShow" format="boolean"></attr>
+        <attr name="right_icon_isShow" format="boolean"></attr>
+        <attr name="switch_isShow" format="boolean"></attr>
+    </declare-styleable>
+
+    <!-- auroradialog -->
+    <attr name="auroratextAppearanceMediumSecondInverse" format="reference" />
+    <attr name="auroratextAppearanceMediumSecond" format="reference" />
+    <attr name="auroralayout" format="reference" />
+
+    <!-- The set of attributes that describe a AlertDialog's theme. -->
+    <declare-styleable name="AuroraAlertDialog">
+        <attr name="aurorafullDark" format="reference|color" />
+        <attr name="auroratopDark" format="reference|color" />
+        <attr name="auroracenterDark" format="reference|color" />
+        <attr name="aurorabottomDark" format="reference|color" />
+        <attr name="aurorafullBright" format="reference|color" />
+        <attr name="auroratopBright" format="reference|color" />
+        <attr name="auroracenterBright" format="reference|color" />
+        <attr name="aurorabottomBright" format="reference|color" />
+        <attr name="aurorabottomMedium" format="reference|color" />
+        <attr name="auroracenterMedium" format="reference|color" />
+        <attr name="auroralayout" />
+        <attr name="auroralistLayout" format="reference" />
+        <attr name="auroramultiChoiceItemLayout" format="reference" />
+        <attr name="aurorasingleChoiceItemLayout" format="reference" />
+        <attr name="auroralistItemLayout" format="reference" />
+        <attr name="auroraprogressLayout" format="reference" />
+        <attr name="aurorahorizontalProgressLayout" format="reference" />
+    </declare-styleable>
+    <!-- aurora checkbox -->
+    <declare-styleable name="AuroraCheckBox">
+        <attr name="auroraRoundDrawable" format="boolean" />
+    </declare-styleable>
+
+</resources>

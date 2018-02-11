@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white"     
+    android:orientation="vertical">
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/aurora_search_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/line2"
+        />
+	<aurora.widget.AuroraListView
+        android:id="@+id/aurora_sustion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:divider="@drawable/line2"
+        />
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1px"
+	    android:background="@drawable/line2"/>
+</LinearLayout>

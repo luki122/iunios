@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+
+      This code is deprecated. This screen is no longer used in Settings.
+      The ApplicationSettings class is kept in case an external app references it directly.
+
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/applications_settings_header"
+        aurora:aurorasummary="@string/applications_settings_summary"
+        aurora:aurorakey="applications_settings">
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.applications.ManageApplications"
+            aurora:auroratitle="@string/manageapplications_settings_title"
+            aurora:aurorasummary="@string/manageapplications_settings_summary">
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.applications.ManageApplications"
+            aurora:auroratitle="@string/runningservices_settings_title"
+            aurora:aurorasummary="@string/runningservices_settings_summary">
+        <extra android:name="classname" android:value="com.android.settings.Settings$RunningServicesActivity" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.applications.ManageApplications"
+            aurora:auroratitle="@string/storageuse_settings_title"
+            aurora:aurorasummary="@string/storageuse_settings_summary">
+        <extra android:name="classname"
+                android:value="com.android.settings.Settings$StorageUseActivity" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="toggle_advanced_settings"
+            aurora:auroratitle="@string/advanced_settings"
+            aurora:aurorasummaryOff="@string/advanced_settings_summary"
+            aurora:aurorasummaryOn="@string/advanced_settings_summary"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraListPreference
+        aurora:aurorakey="app_install_location"
+        aurora:auroratitle="@string/app_install_location_title"
+        aurora:aurorasummary="@string/app_install_location_summary"
+        aurora:aurorapersistent="false"
+        aurora:auroraentries="@array/app_install_location_entries"
+        aurora:auroraentryValues="@array/app_install_location_values"/>
+
+    <!-- Disabled quick launch settings pending UI redesign.
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="quick_launch"
+            aurora:auroratitle="@string/quick_launch_title"
+            aurora:aurorasummary="@string/quick_launch_summary">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.quicklaunch.QuickLaunchSettings" />
+    </aurora.preference.AuroraPreferenceScreen>
+    -->
+
+</aurora.preference.AuroraPreferenceScreen>
+

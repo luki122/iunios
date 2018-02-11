@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/image_collection"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/stickylist_item_height_for_column_more"
+            android:layout_marginBottom="@dimen/item_collection_of_usercenter_image_collection_margin_bottom"
+            android:scaleType="centerCrop" />
+
+        <include
+            android:layout_width="@dimen/item_collection_of_usercenter_usericon_width_height"
+            android:layout_height="@dimen/item_collection_of_usercenter_usericon_width_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/item_collection_of_usercenter_usericon_margin_left"
+            layout="@layout/layout_user_head_icon" 
+            android:id="@+id/layout_user_icon"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/item_collection_of_usercenter_user_name_margin_bottom"
+            android:layout_marginLeft="@dimen/item_collection_of_usercenter_user_name_margin_left"
+            android:layout_marginTop="@dimen/item_collection_of_usercenter_user_name_margin_top"
+            android:layout_toRightOf="@id/layout_user_icon"
+            android:textColor="@color/item_collection_of_usercenter_user_name_text_color"
+            android:textSize="@dimen/item_collection_of_usercenter_user_name_text_size" 
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/publish_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

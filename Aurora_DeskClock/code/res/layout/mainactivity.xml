@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+     <View 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mengban"/>
+
+    <RelativeLayout
+        android:id="@+id/addimageview_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/transparent" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/gn_white"
+            android:textSize="@com.aurora:dimen/aurora_action_bar_text_size" 
+            />
+
+        <ImageView
+            android:id="@+id/addimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="?com.aurora:attr/actionBarRightWidgetBackground"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="center"
+            android:src="@drawable/aurora_action_bar_add" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tablinear"
+        android:layout_width="match_parent"
+        android:layout_height="47.3dp"
+        android:background="@drawable/tab"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false" >
+      
+
+        <ImageView
+            android:id="@+id/alarmclock_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="center"
+            android:src="@drawable/tab_alarm_normal" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/worldtime_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="center"
+            android:src="@drawable/tab_worldtime_normal" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/stopwatch_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="center"
+            android:src="@drawable/tab_stopwatch_normal" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/timer_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_settings"
+            android:scaleType="center"
+            android:src="@drawable/tab_timer_normal" >
+        </ImageView>
+   
+   </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tablinear"
+        android:layout_below="@id/addimageview_container" >
+    </FrameLayout>
+</RelativeLayout>

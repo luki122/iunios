@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:id="@+id/doubleline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingTop="@dimen/aurora_detail_organization_padding_top"
+        android:paddingBottom="@dimen/aurora_detail_organization_padding_bottom"
+        android:minHeight="49dip"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="?android:attr/listChoiceBackgroundIndicator" >
+
+        <TextView
+            android:id="@+id/primary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip"
+            android:singleLine="true"
+            android:textColor="@com.aurora:color/aurora_list_textcolor"
+            android:textSize="@dimen/aurora_group_entrance_title_size" />
+
+        <TextView
+            android:id="@+id/secondary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip"
+            android:singleLine="true"
+            android:textColor="@color/aurora_group_edit_ringtone_text_color"
+            android:textSize="@com.aurora:dimen/aurora_list_subtext_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/simpleline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/aurora_detail_organization_padding_top"
+        android:paddingBottom="@dimen/aurora_detail_organization_padding_bottom"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" 
+        android:clickable="true"
+        android:background="@drawable/aurora_entrance_group_bg" >
+
+        <TextView
+            android:id="@+id/primary_text_only_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip"
+            android:singleLine="true"
+            android:textColor="@com.aurora:color/aurora_list_textcolor"
+            android:textSize="@dimen/aurora_group_entrance_title_size" />
+
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_list_item_driver_hight"
+        android:background="@drawable/h_diver" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical" >
+
+        <TextView
+            android:id="@+id/feedback_the_problem"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            style="@style/text_info_style"
+             android:text="@string/feedback_the_problem"
+            />
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/star"
+            />
+    </LinearLayout>
+
+    <!--  android:gray="top"; -->
+    <EditText
+        android:id="@+id/feedback_description_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:maxLength="100"
+        android:hint="@string/pro_discrible_detail"
+        style="@style/edittext_info_style"
+         />
+
+    <TextView
+        android:id="@+id/contact_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        style="@style/text_info_style"
+        android:text="@string/coms_contact"
+         />
+
+    <EditText
+        android:id="@+id/contact_infor_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:maxLength="50"
+        android:hint="@string/contact_detail"
+        style="@style/edittext_info_style"/>
+
+    <TextView
+        android:id="@+id/recommend_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        style="@style/text_info_style"
+        android:text="@string/recommend_drawings"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="97dp"
+        style="@style/layout_inter"
+        android:orientation="horizontal" >
+
+        <GridView
+            android:id="@+id/brief_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@color/g"
+            android:gravity="center|fill_vertical"
+            android:numColumns="3" >
+        </GridView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        style="@style/note_info_style"
+        android:text="@string/note" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/commit"
+            style="@style/btn_info_style"
+             />
+    </LinearLayout>
+</LinearLayout>

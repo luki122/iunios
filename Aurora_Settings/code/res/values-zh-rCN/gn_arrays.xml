@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+<resources>
+        <string-array name="gn_timeout_close_torch_options">    
+        <item>不关闭</item>    
+        <item>1 分钟</item>    
+        <item>2 分钟</item>    
+        <item>3 分钟</item>  
+        <item>4 分钟</item>    
+    </string-array>    
+    <string-array name="gn_timeout_close_torch_values">    
+        <item>0</item>    
+        <item>1</item>    
+        <item>2</item> 
+        <item>3</item>    
+        <item>4</item>     
+    </string-array>   
+
+    <!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+    <string-array name="gn_entries_buttonlight">
+        <item>2 秒</item>
+        <item>始终打开</item>
+        <item>始终关闭</item>
+        <item>由外部亮度决定</item>
+    </string-array>
+
+    <string-array name="gn_entryvalues_buttonlight">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <!-- Do not translate. -->
+        <item>3</item>
+    </string-array>
+    <!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+    <string-array name="gn_entries_font_size">
+        <item>小号</item>
+        <item>标准</item>
+        <item>中号</item>
+        <item>大号</item>
+        <item>超大</item>
+    </string-array>
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+    
+    <!-- Gionee <chenml> <2013-05-29> add for CR00821135 begin  -->    
+    <string-array name="gn_screen_size_entries" translatable="false">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+    <!-- Gionee <chenml> <2013-05-29> add for CR00821135 end  -->  
+    <!-- qy 2014 03 27 
+    <item >U盘模式</item>
+    <item >把手机作为U盘使用</item>
+    -->  
+    <string-array name="usb_conn_title_entries">
+        
+        <item >媒体设备（MTP）</item>
+        <item >相机模式（PTP）</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_entries">
+        
+        <item >可同时存储和使用数据</item>
+        <item >可以使用相机软件传输照片</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_title_compa_entries">
+        
+        <item >媒体设备（MTP）</item>
+        <item >相机模式（PTP）</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_compa_entries">
+        
+        <item >可同时存储和使用数据</item>
+        <item >可以使用相机软件传输照片</item>
+        
+    </string-array>   
+</resources>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 end-->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background_color">
+     <se.emilsjolander.stickylistheaders.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:dividerHeight="1px"
+        android:divider="@drawable/action_bar_transparent"
+        android:listSelector="@drawable/action_bar_transparent"
+        android:cacheColorHint="#00000000"
+        />
+
+     <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_no_publish"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="184dp"
+                android:visibility="gone"
+                android:id="@+id/iv_no_msg_tip"/>
+     <include layout="@layout/loading_layout"
+              android:layout_centerHorizontal="true"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              />
+     <include layout="@layout/network_error_layout"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              />
+</RelativeLayout>

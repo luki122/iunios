@@ -1,0 +1,171 @@
+# view res/layout/edit_label_dialog.xml #generated:24
+# view res/layout/note_share_activity.xml #generated:9
+# view res/layout/share_sina_weibo_activity.xml #generated:13
+-keep class aurora.widget.AuroraEditText { <init>(...); }
+
+# view res/layout/label_tab_activity.xml #generated:33
+# view res/layout/note_recommend_list_view.xml #generated:12
+-keep class aurora.widget.AuroraListView { <init>(...); }
+
+# view res/layout/note_progress_dialog_layout_2.xml #generated:7
+-keep class aurora.widget.AuroraLoadingView { <init>(...); }
+
+# view res/layout/date_time_picker_view.xml #generated:9
+-keep class aurora.widget.AuroraNumberPicker { <init>(...); }
+
+# view res/layout/note_manage_activity.xml #generated:27
+-keep class aurora.widget.AuroraSwitch { <init>(...); }
+
+# view res/layout/date_time_picker_view.xml #generated:24
+-keep class aurora.widget.AuroraTimePicker { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.aurora.note.NoteApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.aurora.note.NoteMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.aurora.note.activity.AddOrEditReminderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.aurora.note.activity.LabelTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.aurora.note.activity.LabelTabActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.aurora.note.activity.NewNoteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.aurora.note.activity.NotePaperChangeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class com.aurora.note.activity.NotePaperViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.aurora.note.activity.manager.NoteAboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class com.aurora.note.activity.manager.NoteManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.aurora.note.activity.manager.NoteShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.aurora.note.activity.picbrowser.PicturePreviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.aurora.note.activity.picbrowser.PictureViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.aurora.note.activity.record.PlayActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class com.aurora.note.activity.record.ProtectService { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.aurora.note.activity.record.QuickRecordEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.aurora.note.activity.record.RecordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.aurora.note.activity.record.RecordActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:234
+-keep class com.aurora.note.alarm.NoteAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.aurora.note.crop.CropImageActivity { <init>(...); }
+
+# view res/layout/crop_image_activity.xml #generated:8
+-keep class com.aurora.note.crop.CropImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.aurora.note.sina.weibo.ShareSinaWeiboActivity { <init>(...); }
+
+# view res/layout/note_list_item.xml #generated:59
+# view res/layout/note_list_item_2.xml #generated:90
+-keep class com.aurora.note.ui.AuroraTextViewSnippet { <init>(...); }
+
+# view res/layout/note_list_item_2.xml #generated:79
+-keep class com.aurora.note.ui.AuroraTextViewSnippet2 { <init>(...); }
+
+# view res/layout/new_note.xml #generated:177
+-keep class com.aurora.note.ui.CopyNoSpaceEditText { <init>(...); }
+
+# view res/layout/label_tab_activity_2.xml #generated:33
+# view res/layout/note_paper_change_activity.xml #generated:6
+-keep class com.aurora.note.ui.MultiColumnListView { <init>(...); }
+
+# view res/layout/note_main_2.xml #generated:32
+-keep class com.aurora.note.ui.PLA_PullListview { <init>(...); }
+
+# view res/layout/picture_preview_activity.xml #generated:9
+# view res/layout/picture_view_activity.xml #generated:8
+-keep class com.aurora.note.ui.PicViewPager { <init>(...); }
+
+# view res/layout/note_main.xml #generated:33
+-keep class com.aurora.note.ui.PullToRefreshListview { <init>(...); }
+
+# view res/layout/picture_preview_activity.xml #generated:101
+# view res/layout/picture_preview_activity.xml #generated:108
+# view res/layout/picture_preview_activity.xml #generated:115
+# view res/layout/picture_preview_activity.xml #generated:80
+# view res/layout/picture_preview_activity.xml #generated:87
+# view res/layout/picture_preview_activity.xml #generated:94
+-keep class com.aurora.note.widget.BottomToolItem { <init>(...); }
+
+# view res/layout/picture_preview_activity.xml #generated:69
+-keep class com.aurora.note.widget.BottomToolLayout { <init>(...); }
+
+# view res/layout/play_activity_2.xml #generated:76
+# view res/layout/record_activity_2.xml #generated:26
+-keep class com.aurora.note.widget.ClockView { <init>(...); }
+
+# view res/layout/add_reminder_activity.xml #generated:15
+-keep class com.aurora.note.widget.DateTimePickerView { <init>(...); }
+
+# view res/layout/new_note.xml #generated:61
+-keep class com.aurora.note.widget.LabelLinearLayout { <init>(...); }
+
+# view res/layout/search_view_background.xml #generated:26
+-keep class com.aurora.note.widget.LabelList { <init>(...); }
+
+# view res/layout/new_note.xml #generated:1
+-keep class com.aurora.note.widget.NewNoteRelativeLayout { <init>(...); }
+
+# view res/layout/play_activity_2.xml #generated:19
+-keep class com.aurora.note.widget.PlaySeekBar { <init>(...); }
+
+# view res/layout/record_activity_2.xml #generated:8
+-keep class com.aurora.note.widget.WaveformView { <init>(...); }
+
+# view res/layout/play_activity_2.xml #generated:13
+-keep class com.aurora.note.widget.WaveformViewForPlay { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.aurora.note.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# onClick res/layout/new_note.xml #generated:139
+-keepclassmembers class * { *** onMark_Click(...); }
+
+# onClick res/layout/new_note.xml #generated:147
+-keepclassmembers class * { *** onPic_Click(...); }
+
+# onClick res/layout/new_note.xml #generated:131
+-keepclassmembers class * { *** onSign_Click(...); }
+
+# onClick res/layout/new_note.xml #generated:154
+-keepclassmembers class * { *** onSound_Click(...); }
+
+# onClick res/layout/new_note.xml #generated:162
+-keepclassmembers class * { *** onVideo_Click(...); }
+

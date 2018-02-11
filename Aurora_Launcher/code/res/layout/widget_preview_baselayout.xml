@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.aurora.launcher"
+    android:id="@+id/widget_preview_baselayout"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:layout_gravity="center_horizontal"
+	>
+	<ImageView
+		    android:id="@+id/widgetframeleft"
+	        android:layout_width="20dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginBottom="@dimen/customize_widget_frame_left_margin_bottom"
+	        android:src="@drawable/arrowleft" />
+	<com.aurora.launcher.AppsCustomizePagedView
+	             android:id="@+id/customize_widget_content"
+	             android:layout_width="320dp"
+	             android:layout_height="match_parent"
+	             android:layout_gravity="center"
+	             launcher:maxAppCellCountX="@integer/apps_customize_maxCellCountX"
+	             launcher:maxAppCellCountY="@integer/apps_customize_maxCellCountY"
+	             launcher:pageLayoutWidthGap="@dimen/apps_customize_pageLayoutWidthGap"
+	             launcher:pageLayoutHeightGap="@dimen/apps_customize_pageLayoutHeightGap"
+	             launcher:pageLayoutPaddingTop="@dimen/apps_customize_pageLayoutPaddingTop"
+	             launcher:pageLayoutPaddingBottom="@dimen/apps_customize_pageLayoutPaddingBottom"
+	             launcher:pageLayoutPaddingLeft="@dimen/apps_customize_pageLayoutPaddingLeft"
+	             launcher:pageLayoutPaddingRight="@dimen/apps_customize_pageLayoutPaddingRight"
+	             launcher:widgetCellWidthGap="@dimen/apps_customize_widget_cell_width_gap"
+	             launcher:widgetCellHeightGap="@dimen/apps_customize_widget_cell_height_gap"
+	             launcher:widgetCountX="@integer/apps_customize_widget_cell_count_x"
+	             launcher:widgetCountY="@integer/apps_customize_widget_cell_count_y"
+	             launcher:clingFocusedX="@integer/apps_customize_cling_focused_x"
+	             launcher:clingFocusedY="@integer/apps_customize_cling_focused_y"
+	             launcher:maxGap="@dimen/workspace_max_gap"
+	              />
+    <ImageView
+        android:id="@+id/widgetframeright"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/customize_widget_frame_right_margin_bottom"
+        android:src="@drawable/arrowright" />
+</LinearLayout>

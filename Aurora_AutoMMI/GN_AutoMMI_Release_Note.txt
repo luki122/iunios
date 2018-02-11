@@ -1,0 +1,25 @@
+==================
+Build Notes
+==================
+1.版本目的:
+添加LTE 标志位检测
+2.功能变更:
+添加LTE 标志位检测
+3.重点测试的问题:
+LTE 标志位检测
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/GN_AutoMMI/GN_AutoMMI_qcom4.3_V1.0.0.d.zip
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/GN_AutoMMI/trunk
+svn: warning: W170000: URL 'http://192.168.110.97/svn/GN_AutoMMI/tags/GN_AutoMMI_qcom4.3_V1.0.0.c' non-existent in revision 15
+
+svn: E200009: Could not display info for all targets because some targets don't exist
+svn: E205000: Syntax error in revision argument '15:'
+File does not exist:  at getAppChangeSet.pl line 47

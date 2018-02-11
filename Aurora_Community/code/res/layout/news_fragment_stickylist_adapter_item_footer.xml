@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stickylist_adapter_item_footer_height" >
+
+    <TextView
+        android:id="@+id/tv_twitter_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/stickylist_adapter_item_footer_twitter_time_tv_margin_left"
+        android:textColor="@color/stickylist_adapter_item_footer_twitter_time_tv_color"
+        android:textSize="@dimen/stickylist_adapter_item_footer_tv_size" />
+
+    <TextView
+        android:id="@+id/tv_twitter_comment_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/stickylist_adapter_item_footer_twitter_comment_tv_margin_right"
+        android:textColor="@color/common_blue_color"
+        android:textSize="@dimen/stickylist_adapter_item_footer_tv_size" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/stickylist_adapter_item_footer_twitter_comment_iv_margin_right"
+        android:layout_toLeftOf="@+id/tv_twitter_comment_num"
+        android:src="@drawable/comment" />
+
+    <TextView
+        android:id="@+id/tv_twitter_collect_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/stickylist_adapter_item_footer_twitter_collect_tv_margin_right"
+        android:layout_toLeftOf="@+id/iv_comment"
+        android:textColor="@color/common_deep_blue_color"
+        android:textSize="@dimen/stickylist_adapter_item_footer_tv_size" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/stickylist_adapter_item_footer_twitter_collect_iv_margin_right"
+        android:layout_toLeftOf="@+id/tv_twitter_collect_num"
+        android:src="@drawable/collect" />
+
+</RelativeLayout>

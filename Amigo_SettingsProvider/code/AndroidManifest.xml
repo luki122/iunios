@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	coreApp="true"
+	package="com.amigo.settings.providers"
+	android:sharedUserId="android.uid.system"
+	android:versionCode="20000025"
+	android:versionName="2.0.0.ai" >
+ <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+	<application
+		android:allowClearUserData="false"
+		android:icon="@drawable/ic_launcher_settings"
+		android:killAfterRestore="false"
+		android:label="@string/app_label"
+		android:process="system" >
+		
+		<provider
+			android:name=".AmigoProvider"
+			android:authorities="amigosettings"
+			android:exported="true"
+			android:multiprocess="false"
+			android:writePermission="android.permission.WRITE_SETTINGS" />
+        
+         <!-- GIONEE qiuxd 20121015 add for CR00711865 start -->
+         <provider android:name="com.amigo.settings.permission.PermissionProvider" 
+             android:authorities="com.amigo.settings.PermissionProvider" android:exported="true" />
+         <!-- GIONEE qiuxd 20121015 add for CR00711865 end -->
+         
+         <!-- Gionee <qiuxd> <2013-04-08> modify for CR00809610 begin -->
+         <provider android:name="com.amigo.settings.hideapp.HideAppProvider"
+             android:authorities="com.amigo.settings.HideAppProvider" android:exported="true"/>
+         <!-- Gionee <qiuxd> <2013-04-08> modify for CR00809610 end -->
+         
+         <!-- Gionee <liuyb> <2013-11-7> add for CR00948264 begin -->
+         <provider android:name="com.amigo.settings.roster.RosterProvider"
+             android:authorities="com.amigo.settings.RosterProvider" android:exported="true" />
+         <!-- Gionee <liuyb> <2013-11-7> add for CR00948264 end -->
+	</application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="play_seek_bar_start_color">#fffeb6b7</color>
+    <color name="play_seek_bar_end_color">#fffdcb00</color>
+    <color name="play_seek_bar_mark_color">#ff4bcadd</color>
+
+</resources>

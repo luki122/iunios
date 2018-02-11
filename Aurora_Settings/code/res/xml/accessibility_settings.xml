@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/accessibility_settings_title">
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="services_category"
+            aurora:auroratitle="@string/accessibility_services_title">
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <!-- add begin by aurora.jiangmx -->
+    
+   <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="device_admin_category"
+            aurora:aurorapersistent="false"
+            >
+    
+    <aurora.preference.AuroraPreference 
+            aurora:aurorakey="manage_notification_access"
+            aurora:auroratitle="@string/manage_notification_access"
+            aurora:aurorapersistent="false"
+            aurora:aurorafragment="com.android.settings.NotificationAccessSettings"/>
+    
+    </aurora.preference.AuroraPreferenceCategory>
+    <!-- add end -->
+    
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="system_category"
+            aurora:auroratitle="@string/accessibility_system_title">
+            
+
+        
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.AccessibilitySettings$ToggleScreenMagnificationPreferenceFragment"
+            aurora:aurorakey="screen_magnification_preference_screen"
+            aurora:auroratitle="@string/accessibility_screen_magnification_title"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_large_text_preference"
+                aurora:auroratitle="@string/accessibility_toggle_large_text_preference_title"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_power_button_ends_call_preference"
+                aurora:auroratitle="@string/accessibility_power_button_ends_call_prerefence_title"
+                aurora:aurorapersistent="false"/>
+        
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_twice_click_screen_awake_preference"
+                aurora:auroratitle="@string/accessibility_twice_click_screen_awake_prerefence_title"
+                aurora:aurorapersistent="false"/>
+        
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_screen_pick_take_preference"
+                aurora:auroratitle="@string/accessibility_screen_pick_take_prerefence_title"
+                aurora:aurorasummary="@string/screen_pick_take_summary"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_music_control_preference"
+                aurora:auroratitle="@string/accessibility_screen_music_control_prerefence_title"
+                aurora:aurorasummary="@string/screen_music_control_summary"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_lock_screen_rotation_preference"
+                aurora:auroratitle="@string/accelerometer_title"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_speak_password_preference"
+                aurora:auroratitle="@string/accessibility_toggle_speak_password_preference_title"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorafragment="com.android.settings.AccessibilitySettings$ToggleGlobalGesturePreferenceFragment"
+                aurora:aurorakey="enable_global_gesture_preference_screen"
+                aurora:auroratitle="@string/accessibility_global_gesture_preference_title"/>
+
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="tts_settings_preference"
+                aurora:aurorafragment="com.android.settings.tts.TextToSpeechSettings"
+                aurora:auroratitle="@string/tts_settings_title"/>
+
+        <aurora.preference.AuroraListPreference aurora:aurorakey="select_long_press_timeout_preference"
+                aurora:auroratitle="@string/accessibility_long_press_timeout_preference_title"
+                aurora:auroraentries="@array/long_press_timeout_selector_titles"
+                aurora:auroraentryValues="@array/long_press_timeout_selector_values"
+                aurora:aurorapersistent="false"/>
+
+        <!-- We want a dialog with no title, so use an empty string to avoid a fall back to the preference title. -->
+        <com.android.settings.AccessibilityEnableScriptInjectionPreference
+                aurora:aurorakey="toggle_script_injection_preference"
+                aurora:auroratitle="@string/accessibility_toggle_script_injection_preference_title"
+                aurora:auroradialogTitle=""
+                aurora:auroradialogIcon="@android:drawable/ic_dialog_alert"
+                aurora:auroradialogMessage="@string/accessibility_script_injection_security_warning_summary"
+                aurora:aurorapositiveButtonText="@string/accessibility_script_injection_button_allow"
+                aurora:auroranegativeButtonText="@string/accessibility_script_injection_button_disallow"
+                aurora:aurorapersistent="false"/>
+        
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="somatosensory_smart_pause"
+            aurora:auroratitle="@string/accessibility_screen_somatosensory_smart_pause"
+            aurora:aurorapersistent="false" />
+        
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="three_fingers_screenshots"
+            aurora:auroratitle="@string/accessibility_screen_three_fingers_screenshots"
+            aurora:aurorapersistent="false" />
+        
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

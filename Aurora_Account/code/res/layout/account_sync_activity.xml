@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/sync_personal"
+            style="@style/Account.LinearLayout.AccountSyncContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/account_sync_logo_container_height"
+            android:background="@color/account_info_top_bg" >
+
+            <ImageView
+                android:id="@+id/account_icon_iv"
+                android:layout_width="@dimen/account_sync_icon_width"
+                android:layout_height="@dimen/account_sync_icon_width"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/sync_account_icon" />
+
+            <TextView
+                android:id="@+id/nick_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/account_icon"
+                android:layout_toRightOf="@+id/account_icon_iv"
+                android:paddingLeft="@dimen/padding_15"
+                android:textColor="@color/account_sync_name_text_color" />
+
+            <ImageView
+                android:id="@+id/account_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/list_arrow_right_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_yunduoduo"
+            style="@style/Account.LinearLayout.AccountSyncContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/account_sync_textview_header_height"
+            android:layout_below="@+id/sync_personal"
+            android:background="@color/account_info_item_header_bg"
+            android:paddingRight="@dimen/padding_0" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/account_sync_yunduoduo"
+                android:textColor="@color/account_sync_data_text_color"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:id="@+id/account_sync_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding_8"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:src="@drawable/account_sync_start_selector" />
+        </RelativeLayout>
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/lv_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_yunduoduo" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/lv_app"
+            android:background="@color/line_grey" />
+
+        <RelativeLayout
+            android:id="@+id/rl_mypage"
+            style="@style/Account.LinearLayout.AccountSyncContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/account_sync_textview_header_height"
+            android:layout_below="@+id/line"
+            android:background="@color/account_info_item_header_bg"
+            android:paddingRight="@dimen/padding_0"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/account_sync_mypage"
+                android:textColor="@color/account_sync_data_text_color"
+                android:textSize="@dimen/textsize_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/padding_20"
+                android:paddingRight="@dimen/padding_20"
+                android:src="@drawable/list_arrow_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

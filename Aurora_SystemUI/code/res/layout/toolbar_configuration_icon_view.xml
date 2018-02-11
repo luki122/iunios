@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aurora.systemui.toolbar.ConfigurationIconView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="9dip" >
+
+    <FrameLayout
+        android:id="@+id/config_icon_view"
+        android:layout_width="42dip"
+        android:layout_height="40dip"
+         >
+
+        <ImageView
+            android:id="@+id/config_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/panel_switch_btn"
+            android:scaleType="fitCenter" >
+        </ImageView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/config_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:maxLines="2"
+        android:paddingTop="3dip"
+        android:textColor="@color/white"
+        android:textSize="13sp" >
+    </TextView>
+
+</com.aurora.systemui.toolbar.ConfigurationIconView>

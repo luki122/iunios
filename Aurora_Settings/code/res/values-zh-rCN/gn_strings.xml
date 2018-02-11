@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <!--        //Gionee zjy 20120406 add for CR00564459 start   -->
+    <string name="gn_status_imei_slot">IMEI</string>  
+    <string name="gn_status_imei_sv_slot">IMEI SV</string>  
+    <!--        //Gionee zjy 20120406 add for CR00564459 end   -->
+
+    <!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 begin -->
+    <string name="schedule_airplane_on_off_settings_title">"定时飞行模式"</string>
+    <string name="schedule_airplane_on_off_set">"设置定时飞行模式"</string>
+    <string name="schedule_airplane_on_set">"设置定时开启飞行模式"</string>
+    <string name="schedule_airplane_off_set">"设置定时关闭飞行模式"</string>
+    <string-array name="alarm_set_airplane">
+        <item>"已将定时开启飞行模式设为不到 1 分钟后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时开启飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为不到 1 分钟后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+        <item>"已将定时关闭飞行模式设为 <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g>后启动。"</item>
+    </string-array>
+    <!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 end -->
+    <!-- Gionee:niejn 20120523 add for CR00605063 begin -->
+    <string name="gn_title_font_category">手机字体</string>
+    <!-- Gionee:niejn 20120523 add for CR00605063 end -->
+
+    <!-- Gionee:wangyaohui 20120522 modify for CR00607863 begin-->
+    <string name="okay_action">确定</string> 
+    <string name="okay_continue">"继续"</string>
+    <string name="okay_restore">"恢复出厂状态"</string>
+    <string name="cancel_action">取消</string>  
+    <string name="reset_warning">警告</string>
+    <!-- Gionee:wangyaohui 20120522 modify for CR00607863 end-->
+
+    <!-- Gionee dengm 2012-05-03 added for CR00581649 start-->
+    <string name="gn_lockscreen_settings_title">锁屏</string>
+    <string name="gn_music_player_setting">锁屏音乐播放器</string>
+    <string name="gn_lunar_setting">显示农历</string>
+    <string name="gn_missed_setting">显示未接来电未读信息</string>
+    <string name="gn_torch_setting">开启手电筒</string>
+    <string name="gn_lockscreen_enable">开启</string>
+    <!-- Gionee dengm 2012-07-30 changed for CR00658924 start-->
+    <string name="gn_open_torch">亮屏且长按音量下键开启手电筒</string>
+    <!-- Gionee dengm 2012-07-30 changed for CR00658924 end-->
+    <!-- Gionee dengm 2012-05-03 added for CR00581649 end-->
+    <!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+    <string name="gn_timeout_close_torch">自动关闭手电筒</string>
+    <!-- Gionee dengm 2012-08-08 added for CR00672630 start-->
+    <string name="gn_not_close">0</string>
+    <!-- Gionee dengm 2012-08-08 added for CR00672630 end-->
+    <!-- Gionee dengm 2012-05-03 added for CR00622042 end-->
+    
+    <!-- Gionee:wangyaohui 20120620 add for CR00625357 begin -->
+    <string name="password_null">密码为空，请重新输入!</string>
+    <!-- Gionee:wangyaohui 20120620 add for CR00625357 end-->
+    
+    <!-- Gionee fangbin 20120629 added for CR00622030 start -->
+    <string name="gn_mms_ringtone">短信铃声</string>
+    <string name="gn_ringtone_notif">铃声和通知</string>
+    <!-- Gionee fangbin 20120629 added for CR00622030 end -->
+
+	<!-- Gionee Jingjc 20120629 modify for CR00632151 start-->
+	<string name="gn_date_and_time_settings_title">日期和时间</string>
+    <string name="gn_zone_settings_title">时区</string>
+	<!-- Gionee Jingjc 20120629 modify for CR00632151 end-->
+    
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 start -->
+    <string name="default_ringtone">默认来电</string>
+    <string name="sim1_ringtone_title">卡槽1</string>
+    <string name="sim1_ringtone_summary">默认铃声</string>
+    <string name="sim2_ringtone_title">卡槽2</string>
+    <string name="sim2_ringtone_summary">默认铃声</string>
+    <string name="loading_ringtone">正在载入铃声</string>
+    <string name="ringtone_silent_summary">静音</string>
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+
+    <!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push start  -->
+    <string name="notify_push">通知栏</string>
+    <string name="pref_push_title">通知栏</string>
+    <string name="notify_push_dlg_message">“%1$s”会向您发送推送消息，您可以在“设置-通知”里配置</string>
+    <string name="notify_push_dlg_title">推送提醒</string>
+    <string name="notify_push_dlg_confirm">允许</string>
+    <string name="notify_push_dlg_deny">拒绝</string>
+    
+    
+    <string name="pref_push_summary">打开或关闭以下应用通知</string>
+    <string name="pref_push_notify">状态栏</string>
+    <string name="pref_lscreen">锁屏显示</string>
+    <string name="pref_push_network_speed_display">显示网速</string>
+    <string name="pref_push_noapp_summary">无推送通知应用。</string>
+    <string name="pref_app_category">应用</string>
+    <string name="pref_app_on">已开启</string>
+    <string name="pref_app_off">已关闭</string>
+    
+    <string name="pref_empty_promp">空</string>
+    <!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push end  -->
+    <!-- Gionee zengxuanhui 20120825 add for CR00680570 begin -->   
+    <string name="flip_sounds_enable_title">翻盖操作音</string>
+    <!-- Gionee zengxuanhui 20120825 add for CR00680570 end -->
+    <!-- Gionee liuyanbo 2012-08-23 add for CR00680327 start -->
+    <string name="wifi_auto_notify">WLAN 自动提醒</string>
+    <!-- Checkbox summary for option to notify user when open networks are nearby -->
+    <string name="wifi_auto_notify_summary">使用数据连接网络时，自动弹出WLAN设置列表</string>
+    <!-- Gionee liuyanbo 2012-08-23 add for CR00680327 end -->
+    <!--Gionee lihq add for CR00682401 start-->
+    <string name="backup_restore_settings_title">系统备份</string>
+    <!--Gionee lihq add for CR00682401 end-->
+
+    <!-- GIONEE licheng Aug 23, 2012 add for CR00683085 start -->
+    <string name="powerprofile_settings_title">省电模式</string>
+    <!-- GIONEE licheng Sep 3, 2012 add for CR00683085 end -->
+
+    <!-- Gionee zengxuanhui 20120907 add for CR00688800 begin -->
+    <string name="data_usage_disable_mobile_title">停用移动数据</string>
+    <!-- Gionee zengxuanhui 20120907 add for CR00688800 end -->
+
+	<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+	<string name="lcm_acl_title">自动调节屏幕耗电量</string>
+	<string name="lcm_acl_summary">通过分析图像和调节显示屏亮度以节省用电</string>
+	<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+    
+    <!-- Gionee fengjianyi 2012-09-28 add for CR00705430 start -->
+    <string name="secrets_keep_title">隐私保护</string>
+    <string name="guest_mode">访客模式</string>
+    <string name="guest_mode_summary"></string>
+    <string name="goto_guest_mode_warning">将会隐藏通话记录、信息、图库、便签数据并禁止编辑桌面，也可在设置-安全中开启密码保护，确定进入访客模式吗？</string>
+    <!-- Gionee fengjianyi 2012-09-28 add for CR00705430 end -->
+    <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 begin -->
+    <string name="need_password">启用密码</string>
+    <string name="need_password_summary">输入密码以关闭访客模式</string>
+    <string name="alter_password">修改密码</string>
+    <string name="set_pass">设置密码</string>
+    <string name="guest_pass_confirm">退出访客模式</string>
+    <string name="guest_password_too_short">"密码至少有 %d "位</string>
+    <string name="guest_password_too_long">"密码必须少于 <xliff:g id="NUMBER">%d</xliff:g> 位。"</string>
+    <string name="comfirm_password">确认访客密码</string>
+    <string name="choose_new_password_header">选择您的新密码</string>
+    <string name="lockpassword_press_ok">"完成后触摸“确认”"</string>
+    <string name="input_pass_wrong">您输入的密码错误</string>
+    <string name="exit_pass">停用访客密码</string>
+    <string name="open_pass">开启访客密码</string>
+    <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 end -->
+    
+    <!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 begin -->
+    <string name="hide_app">隐藏应用</string>
+    <string name="hide_app_summry">启用访客模式时将隐藏勾选的应用</string>
+    <string name="hide_app_toast">访客模式开启时不可进入</string>
+    <string name="hide_app_title">开启访客模式将隐藏勾选项</string>
+    <!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 end -->
+    
+    <!-- Gionee zengxuanhui 20121022 add for CR00716758 begin -->
+    <string name="haptic_vibration_title">特效振动</string>
+    <!-- Gionee zengxuanhui 20121022 add for CR00716758 end -->
+
+    <!--Gionee Jingjc 20121101 add for CR00722601 start-->
+    <string name="routine_vibrate_title">常规振动</string>
+    <string name="dialpad_vibration_title">拨号键盘触摸振动</string>
+    <string name="lockscreen_vibration_title">锁屏振动</string>
+    <string name="selectapp_vibration_title">选中或删除应用振动</string>
+    <!--Gionee Jingjc 20121101 add for CR00722601 end-->
+    
+    <!-- Gionee zengxuanhui 20121123 add for CR00724044 begin -->
+    <string name="gn_rom_version">金立系统版本</string>
+    <!-- Gionee zengxuanhui 20121123 add for CR00724044 end -->
+    
+    <!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 start -->
+    <string name="gn_settings_warning">提醒</string>
+    <!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 end -->
+    
+    <!-- Gionee zengxuanhui 20130107 add for CR00755682 begin -->
+    <string name="sd_card_title">SD卡</string>
+    <string name="phone_title">手机空间</string>
+    <string name="setup_sd_card">安装SD卡</string>
+    <string name="no_sd_card">未安装SD卡</string>
+    <string name="setup_sd_card_summary">插入SD卡进行安装</string>
+    <string name="sd_card_capacity">SD卡空间</string>
+    <string name="sd_card_free">剩余空间</string>
+    <string name="format_sd_card">格式化 SD 卡</string>
+    <string name="clear_waiting">正在清空,请等待...</string>  
+    
+    <string name="system_capacity">系统空间</string>
+    <string name="system_free">系统剩余空间</string>
+    <string name="internal_capacity">内部存储器</string>
+    <string name="internal_free">内部存储器剩余空间</string>
+    <string name="format_phone_capacity">格式化内部存储器</string>
+    <string name="total_capacity">Total capacity</string>
+    <string name="phone_free_title">手机剩余空间</string>
+    <!-- Gionee zengxuanhui 20130107 add for CR00755682 end -->
+
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 start -->
+    <string name="gn_settings_common">常用设置</string>
+    <string name="gn_settings_all">全部设置</string>
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 end -->
+    <!-- Gionee chenml 2013-04-10 add for CR00795467 begin-->
+    <string name="gn_button_light">关闭按键灯</string>
+    <!-- Gionee chenml 2013-04-10 add for CR00795467 end-->
+
+    <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 begin -->
+    <string name="gn_devices_title">硬件信息</string>
+    <string name="gn_devices_summary">CPU 型号、核心数等</string>
+    <string name="gn_devices_cpu_title">CPU 型号</string>
+    <string name="gn_devices_cpu_core_title">CPU 核心数</string>
+    <string name="gn_devices_cpu_core_summary_single">单核</string>
+    <string name="gn_devices_cpu_core_summary_dual">双核</string>
+    <string name="gn_devices_cpu_core_summary_quad">四核</string>
+    <string name="gn_devices_cpu_core_summary_six">六核</string>
+    <string name="gn_devices_cpu_core_summary_eight">八核</string>
+    <string name="gn_devices_cpu_maxhz_title">CPU 频率</string>
+    <string name="gn_devices_cpu_maxhz_summary">%1$s Mhz</string>
+    <string name="gn_devices_phone_rom_memory_title">手机 ROM 容量</string>
+    <string name="gn_devices_phone_ram_memory_title">手机 RAM 容量</string>
+    <string name="gn_devices_screen_pixel_title">屏幕分辨率</string>
+    <string name="gn_devices_screen_size_title">屏幕尺寸</string>
+    <string name="gn_devices_screen_size_summary">%1$s 英寸</string>
+    <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 end -->
+    <!-- Gionee <chenml> <2013-04-26> add for CR00803315 begin -->
+    <string name="illustration">大和超大字体仅用于拨号盘，短信和联系人等应用</string>
+    <!-- Gionee <chenml> <2013-04-26> add for CR00803315 end -->
+
+     <!-- Gionee <chenml> <2013-05-20> add for CR00817466 begin -->
+    <string name="gn_sound_control_title">音控模式</string>
+    <string name="gn_sound_control_calling">来电</string>
+    <string name="gn_sound_control_calling_summary">语音播报，语音接听或挂断</string>    
+    <string name="gn_sound_control_message">来短信</string>
+    <string name="gn_sound_control_message_summary">语音播报，语音朗读或回拨</string>   
+    <string name="gn_sound_control_lockscreen">锁屏打开应用</string>
+    <string name="gn_sound_control_lockscreen_summary">锁屏界面，语音打开界面，如说“打开联系人”</string>   
+    <string name="gn_sound_control_alarmclock">闹铃</string>
+    <string name="gn_sound_control_alarmclock_summary">闹铃响，语音关闭或延时再响</string>      
+    <string name="gn_sound_control_dialog">开启音控模式？</string> 
+    <string name="gn_sound_control_dialog_message">开启音控模式时将会出现声音，情景模式的铃声将会切换成音控模式的语音播报。</string>
+    <string name="not_alert_again">下次不再提醒</string>
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466 end -->
+
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 begin  -->
+   <!--<string name="gn_suspend_button">悬浮按钮</string> -->
+    <string name="gn_suspend_button">悬浮触点</string>
+    <string name="gn_single_hand_operation">单手操作</string>
+    <string name="gn_phone_keyboard">拨号盘和通话中的键盘</string>
+    <string name="gn_phone_keyboard_summary">可根据左右手习惯调整键盘的位置</string>
+    <string name="gn_input_method_keyboard">输入法键盘</string>
+    <string name="gn_input_method_keyboard_summary">可根据左右手习惯调整键盘的位置</string>
+    <string name="gn_pattern_unlockscreen">图案解锁</string>
+    <string name="gn_pattern_unlockscreen_summary">调整解锁图案的比例</string>  
+    <string name="gn_advance_setting">高级设置</string>  
+    <string name="gn_small_screen_mode">小屏模式</string>
+    <string name="gn_small_screen_mode_summary">可通过长按menu键开启和关闭</string>    
+    <string name="gn_screen_size">屏幕尺寸</string>
+    <string name="gn_screen_size_summary"><xliff:g id="SCREENSIZE_DESCRIPTION">%1$s</xliff:g></string>
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 end  -->
+    
+      <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 begin -->
+    <string name="gn_fanfan_widget_auto_push">锁屏推送</string>
+    <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 end -->
+    
+	<!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+    <string name="gn_respirationlamp_settings">LED 指示灯</string>
+    <string name="gn_respirationlamp_low_power">低电提醒</string>
+    <string name="gn_respirationlamp_low_power_summary">电量低时闪烁红色灯</string>
+    <string name="gn_respirationlamp_in_charge">充电提醒</string>
+    <string name="gn_respirationlamp_in_charge_summary">充电时灯长亮</string>
+    <string name="gn_respirationlamp_notification">通知提醒</string>
+    <string name="gn_respirationlamp_notification_summary">有未接来电/未读信息/其它应用通知时呼吸灯闪烁</string>
+    <string name="gn_respirationlamp_music">音乐播放</string>
+    <string name="gn_respirationlamp_music_summary">每首歌曲闪烁不同颜色</string>
+    <string name="gn_respirationlamp_call">来电</string>
+    <string name="gn_respirationlamp_call_summary">来电时呼吸灯闪烁</string>
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+    
+    <!-- Gionee tangzepeng 2012-10-11 add for CR00710113 start -->
+    <string name="gn_timezone_indonesia">印度尼西亚中部标准时间</string>
+    <!-- Gionee tangzepeng 2012-10-11 add for CR00710113 end -->
+    <!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+    <string name="gn_buttonlight_settings">按键灯显示</string>
+    <string name="gn_summary_buttonlight">%1$s</string>
+    <!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+    <!-- Gionee zengxuanhui 20130322 add for CR00786392 begin -->
+    <string name="gn_sound_and_vibrate">声音和振动</string>
+    <!-- Gionee zengxuanhui 20130322 add for CR00786392 end -->
+    <!-- Gionee zengxuanhui 20130328 add for CR00788327 begin -->
+    <string name="gn_smart_gesture">动作手势</string>
+    <string name="gn_ssg_dlg_title">无法使用体感拨号</string>
+    <string name="gn_ssg_dlg_message">开启“总是询问”时无法使用体感拨号功能，如需使用请默认一张卡</string>
+    <string name="gn_ssg_dlg_check">下次不再提示</string>
+    <!-- Gionee zengxuanhui 20130328 add for CR00788327 end -->
+
+    <string name="gemini_data_connection">数据连接</string>
+    <string name="gemini_sim_management_title">双卡设置</string>
+
+    <!-- Main Settings screen setting option name to go into the power on&amp;off settings-->
+    <string name="schedule_power_on_off_settings_title">定时开关机</string>
+    
+    <string name="sim_status_summary">SIM 卡相关信息</string>
+    <string name="sim_status_title">SIM 卡状态</string>
+    <!-- About phone slot info -->
+    <string name="slot_status_title">"IMEI 信息"</string>
+    <string name="slot_status_summary">"IMEI 相关信息"</string> 
+    <!--Gionee <xiaolin><2013-05-30> add for CR00820865 start -->  
+    <string name="scan_custom">扫描</string>
+    <string name="stop_custom">停止</string>
+    <string name="cancel_custom">取消</string>
+    <!--Gionee <xiaolin><2013-05-30> add for CR00820865 end --> 
+    <string name="gn_bluetooth_stop_scan">"停止搜索"</string>    
+    <string name="aurora_log_onoff_title">IUNI Log 开关</string>
+    <string name= "aurora_dump_onoff_pref_title">DUMP 功能开关</string>
+    <!-- Gionee <wangguojing> <2013-08-10> add for CR00854573 begin -->
+    <string name="gn_enable_debug_title">Log 开关</string>
+    <string name="gn_enable_debug_dialog_title">选择开关</string>
+    <string name="gn_log_master_switch">总开关</string>
+    <string name="gn_log_verbose_switch">VERBOSE 级开关</string>
+    <string name="gn_log_debug_switch">DEBUG 级开关</string>
+    <string name="gn_log_info_switch">INFO 级开关</string>
+    <string name="gn_log_warn_switch">WARN 级开关</string>
+    <string name="gn_log_error_switch">ERROR 级开关</string>
+    <!-- Gionee <wangyaohui> <2013-05-30> add for CR00854573 end -->
+    
+    <!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 begin -->
+    <!-- Gionee <baorui><2013-08-08> modify for CR00850704 begin -->
+    <!-- <string name="zzzzz_gn_conv_popup_text1">锁屏界面双手上滑</string> -->
+    <string name="gn_conv_popup_text1">锁屏界面三指上滑</string>
+    <!-- Gionee <baorui><2013-08-08> modify for CR00850704 end -->
+    <string name="gn_conv_popup_text2">进入访客模式</string>
+    <!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 end -->  
+
+
+
+
+</resources>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View begin -->
+<com.gionee.calendar.view.GNEditEventRelativelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_event"
+    style="@style/EditEvent_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/loading_message"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#FFFFFFFF"
+        android:gravity="center"
+        android:text="@string/loading" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gn_voice_add_activity_layout"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/two_pane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+            <!-- TOP HALF -->
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/aurora_edit_event" />
+
+            <!-- BOTTOM HALF GUESTS/ATTENDEES -->
+
+            <include
+                android:id="@+id/attendees_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/aurora_edit_event_2" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.gionee.calendar.view.GNEditEventRelativelayout>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View end -->

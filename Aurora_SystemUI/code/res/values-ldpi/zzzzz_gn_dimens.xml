@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zzzzz_gn_usb_title_padding_bottom">10dip</dimen>
+    <dimen name="zzzzz_gn_usb_view_height">65dip</dimen>
+    <!-- Gionee huyuke 2012-4-26 modify for CR00561006 begin -->
+    <dimen name="toggle_item_text_size">16sp</dimen>
+    <dimen name="latest_event_item_heigh">75sp</dimen>
+    <dimen name="latest_item_view_heigh">74sp</dimen>
+    <!-- Gionee huyuke 2012-4-26 modify for CR00561006 end -->
+ 
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true" >
+
+	    <TextView
+	        android:id="@+id/timedisplay"
+	        style="@style/StyleTextShadow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:textSize="70sp"
+	        android:paddingTop="4dp"
+	        android:gravity="center" />
+
+        <TextView
+	        android:id="@+id/ampm"
+	        style="@style/StyleTextShadow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#ffffff"
+	        android:textSize="17sp"
+	        android:layout_alignBaseline="@id/timedisplay"
+            android:paddingLeft="4dip"
+            android:layout_toRightOf="@id/timedisplay"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtAll"
+        style="@style/StyleTextShadow"
+        android:layout_marginTop="-3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</LinearLayout>

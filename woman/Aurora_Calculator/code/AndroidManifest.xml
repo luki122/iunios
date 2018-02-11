@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2014-01-16 modified for aurora's new feature -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.calculator2">
+</manifest> 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Gionee <chenml> <2013-08-09> add for CR00845957 begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gn_tab_indicator_dark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.NoTitleBar" >
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="48sp"
+        android:textColor="@color/gn_tabwidget_text_color"   
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+         />
+</LinearLayout>
+<!--  Gionee <chenml> <2013-08-09> add for CR00845957 end -->

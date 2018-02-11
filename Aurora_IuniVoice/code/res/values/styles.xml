@@ -1,0 +1,391 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AuroraTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="AuroraTheme_no_line" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="android:actionModeBackground">@drawable/aurora_titlebar_bg</item>
+        <item name="android:actionModeSplitBackground">@drawable/aurora_menu_click_bg</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionModeCloseDrawable">@null</item>
+        <item name="android:actionModeCloseButtonStyle">@style/MyActionModeCloseButtonStyle</item>
+        <item name="android:actionMenuTextColor">@color/global_text_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="MyActionModeCloseButtonStyle">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="dialog_style" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="bottom_menu_style">
+        <item name="@android:windowEnterAnimation">@anim/bottom_menu_show</item>
+        <item name="@android:windowExitAnimation">@anim/bottom_menu_dissmiss</item>
+    </style>
+
+    <!-- 账户相关 -->
+
+    <style name="Account"></style>
+
+    <style name="Account.Line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/account_info_line</item>
+    </style>
+
+    <style name="Account.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Account.TextView.Error">
+        <item name="android:textSize">@dimen/textsize_10</item>
+        <item name="android:textColor">@color/textview_error_color</item>
+        <item name="android:layout_marginTop">@dimen/padding_6</item>
+    </style>
+
+    <style name="Account.TextView.Login">
+        <item name="android:paddingLeft">@dimen/padding_15</item>
+        <item name="android:paddingRight">@dimen/padding_15</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/login_account_height</item>
+        <!-- <item name="android:background">@null</item> -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Account.TextView.LoginRegister">
+        <item name="android:textColor">#c6c6c6</item>
+    </style>
+
+    <style name="Account.TextView.Header">
+        <item name="android:paddingLeft">@dimen/padding_15</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/account_info_textview_header_height</item>
+        <!-- <item name="android:background">@null</item> -->
+        <item name="android:textColor">#6e6f70</item>
+    </style>
+
+    <style name="Account.TextView.AccountInfoItemLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- <item name="android:background">@null</item> -->
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Account.TextView.AccountInfoItemContent">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">fill_parent</item>
+        <!-- <item name="android:background">@null</item> -->
+        <item name="android:textColor">#5d5d5d</item>
+        <item name="android:textSize">@dimen/small_font_size</item>
+    </style>
+
+    <style name="Account.TextView.RegisterNormalLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/padding_10</item>
+        <item name="android:paddingEnd">@dimen/padding_10</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <style name="Account.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_focus_selector</item>
+        <item name="android:textColor">@color/button_text_color_normal</item>
+    </style>
+
+    <style name="Account.Button.Logout">
+        <item name="android:background">@drawable/button_logout_selector</item>
+        <item name="android:textColor">@color/button_logout_text_color_normal</item>
+    </style>
+
+    <style name="Account.VerifyCodeView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/login_account_height</item>
+        <item name="android:layout_marginStart">@dimen/padding_8</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">@dimen/login_vc_code_height</item>
+        <item name="android:minWidth">@dimen/login_vc_code_width</item>
+    </style>
+
+    <style name="Account.LinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="Account.LinearLayout.AccountInfoContainer">
+        <item name="android:layout_height">@dimen/account_info_item_height</item>
+        <item name="android:paddingLeft">@dimen/padding_15</item>
+        <item name="android:paddingRight">@dimen/padding_15</item>
+        <item name="android:background">@drawable/account_info_item_selector</item>
+    </style>
+
+    <style name="Detail_Arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/padding_12</item>
+        <item name="android:src">@drawable/list_arrow_right</item>
+    </style>
+
+    <style name="Detail_Arrow.Invisible">
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Account_Layout_Item">
+        <item name="android:paddingLeft">@dimen/padding_15</item>
+        <item name="android:paddingRight">@dimen/padding_15</item>
+        <item name="android:minHeight">@dimen/register_layout_item_min_height</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Account_Layout_Item_TextView">
+        <item name="android:textSize">@dimen/textsize_18</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Account_TextView_Tips">
+        <item name="android:textSize">@dimen/textsize_12</item>
+        <item name="android:textColor">#9e9e9e</item>
+    </style>
+
+    <style name="Account_ClearableEditText">
+        <item name="android:textSize">@dimen/textsize_18</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 账户相关 -->
+
+
+    <!-- 用户反馈 -->
+    <style name="edittext_info_style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:minLines">7</item>
+        <item name="android:textColorHint">#a9a9a9</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:background">@drawable/feedback_edittext_styles</item>
+    </style>
+
+    <style name="text_info_style">
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <style name="layout_inter">
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <style name="note_info_style">
+        <item name="android:textColor">#50000000</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <style name="btn_info_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:text">@string/commit</item>
+        <item name="android:background">@drawable/feedback_btn_selector_bg</item>
+    </style>
+
+
+
+    <!-- 上传ProgressDialog的样式 -->
+    <style name="upload_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="upload_progressDialog" parent="@style/upload_Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--  -->
+    <attr name="auroraswitchStyle" format="reference" />
+
+    <declare-styleable name="AuroraSwitch">
+        <attr name="track" format="reference" />
+        <attr name="switchTextAppearance" format="reference" />
+        <attr name="switchMinWidth" format="dimension" />
+        <attr name="switchPadding" format="dimension" />
+    </declare-styleable>
+
+    <style name="AuroraAlertDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AuroraDialogExit</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item> <!--  -->
+
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:textColorPrimary">@color/aurora_primary_text_light</item>
+        <item name="android:textColorSecondary">@color/aurora_secondary_text_light</item>
+        <item name="android:textColorTertiary">@color/aurora_tertiary_text_light</item>
+        <item name="android:textColorPrimaryInverse">@color/aurora_primary_text_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/aurora_secondary_text_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/aurora_tertiary_text_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/aurora_primary_text_disable_only_light</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/aurora_primary_text_disable_only_dark</item>
+        <item name="android:textColorPrimaryNoDisable">@color/aurora_primary_text_nodisable_light</item>
+        <item name="android:textColorSecondaryNoDisable">@color/aurora_secondary_text_nodisable_light</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/aurora_primary_text_nodisable_dark</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/aurora_secondary_text_nodisable_dark</item>
+        <item name="android:textColorHint">@color/aurora_hint_foreground_light</item>
+        <item name="android:textColorHintInverse">@color/aurora_hint_foreground_dark</item>
+        <item name="android:textColorHighlight">@color/aurora_highlighted_text_light</item>
+        <item name="android:textColorLink">@color/aurora_bright_foreground_yellow</item>
+        <!-- @hide android 2.3 have not these attrs -->
+        <item name="android:textColorHighlightInverse">@color/aurora_highlighted_text_dark</item>
+        <item name="android:textColorLinkInverse">@color/aurora_bright_foreground_yellow</item>
+        <item name="android:textColorAlertDialogListItem">@color/aurora_primary_text_light</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Aurora.Light.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Aurora.Light.Medium</item>
+        <item name="auroratextAppearanceMediumSecond">@style/TextAppearance.Aurora.Light.MediumSecond</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Aurora.Light.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.Aurora.Light.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Aurora.Light.Medium.Inverse</item>
+        <item name="auroratextAppearanceMediumSecondInverse">@style/TextAppearance.Aurora.Light.MediumSecond.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Aurora.Light.Small.Inverse</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:editTextBackground">@drawable/aurora_dialog_edit_text_bg</item>
+        <item name="android:editTextColor">@color/aurora_edit_text</item>
+        <item name="android:textSelectHandleLeft">@drawable/aurora_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/aurora_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/aurora_text_select_handle_middle</item>
+        <item name="android:textCursorDrawable">@drawable/aurora_text_cursor_light</item>
+        <item name="android:selectableItemBackground">@drawable/aurora_item_background_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/aurora_list_selector_light</item>
+    </style>
+
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Large" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Large.Inverse" parent="@android:style/TextAppearance.Holo.Large.Inverse">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Medium.Inverse" parent="@android:style/TextAppearance.Holo.Medium.Inverse">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.MediumSecond.Inverse" parent="@style/TextAppearance.Aurora.Light.Medium.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Small.Inverse" parent="@android:style/TextAppearance.Holo.Small.Inverse">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.TextView.SpinnerItem" parent="@android:style/TextAppearance.Holo.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_dark</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/aurora_alert_dialog_title_light</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/aurora_preference_text_disable_color</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Small" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/aurora_preference_summary_disable_color</item>
+    </style>
+
+    <style name="AuroraDialogExit">
+        <item name="android:windowExitAnimation">@anim/aurora_dialog_exit</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.MediumSecond" parent="@style/TextAppearance.Aurora.Light.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- aurora checkbox -->
+    <style name="AuroraCheckBoxStyle">
+        <item name="auroraRoundDrawable">true</item>
+    </style>
+    <!-- find style -->
+    <style name = "Find_text">
+        
+    </style>
+
+</resources>

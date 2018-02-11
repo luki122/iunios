@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/icon_content"
+        android:gravity="center"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+    	android:layout_alignParentLeft="true">
+        <ImageView
+            android:id="@+id/iv_toolicon"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+
+	<TextView
+		android:id="@+id/tv_toolicon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/icon_content"
+        android:layout_toLeftOf="@+id/iv_toolicon_sort_hot"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+    <ImageView
+    	android:id="@id/iv_toolicon_sort_hot"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="16dip"
+    	android:layout_marginRight="8dip"
+    	android:src="@drawable/zzzzz_gn_toolicon_grabber_default"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"/>
+     
+</RelativeLayout>

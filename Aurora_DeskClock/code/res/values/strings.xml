@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Clock</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Contact Details 12333</string>
+    <string name="name">Contact Details</string>
+    <string name="quxiao">Cancel</string>
+    <string name="setup">Alarm Setting</string>
+    <string name="sure">OK</string>
+    <string name="fullscreenbg">Closing</string>
+    
+    <string name="txtday">th</string>
+    <string name="app_widget_label">Date</string> 
+    <string name="app_widget_label_time">Time</string> 
+    <string name="app_widget_label_analogclock">Clock</string> 
+    <string name="app_widget_title">Updates</string>  
+    <string name="app_widget_error_message">No messages. Please check to login.</string>
+    <string name="onlyonce">Does not repeat</string>
+    <string name="weekend">Weekend</string>
+    <string name="dontdisturb1">"Don't Disturb Roommate"</string>
+    <string name="dontdisturb2">Turn off sound and strengthen the vibration intensity</string>
+    <string name="weekday">Weekday</string>
+    <string name="selfdefine">Custom</string>
+    <string name="officialweekday">Statutory Weekdays (Skip holidays Intelligently)</string>
+    <string name="officialweekday2">Statutory Weekdays</string>
+    <string name="choosealarm">Select Alarm Tone</string>
+    <string name="nativitime">Local Standard Time</string>
+    
+   	<string name="dayseven">Sunday</string>  
+	<string name="dayone">Monday</string>  
+	<string name="daytwo">Tuesday</string>
+	<string name="daythree">Wednesday</string>  
+	<string name="dayfour">Thursday</string>   
+	<string name="dayfive">Friday</string>  
+	<string name="daysix">Saturday</string>  
+	
+	<string name="notify_wakeup_notalarm">Well done to wake up early</string>
+	<string name="notify_clicktoclosewakeupalarm">"Click to turn off today's upcoming alarm"</string>
+	<string name="selfdefinecycle">Custom Repeat</string>
+	<string name="stillsleepfirst">Shake the phone to snooze 10 minutes</string>
+	<string name="stillsleepsecond">Shake again to snooze 10 minutes more</string>
+	<string name="stillsleepthird">Cannot snooze any more. Get up now.</string>
+	
+	<string name="currenttimetext">Current Time</string>
+	<string name="deletealarm">Delete Alarm</string>
+	<string name="suretodeletealarm">Are you sure you want to delete this alarm?</string>
+	<string name="hint">Note</string>
+	<string name="ifgiveupchange">Discard the changes?</string>
+	
+	
+	<string name="worldtimeearly1" >&quot;<xliff:g id="HOUR">%d</xliff:g> hours <xliff:g id="MINUTE">%d</xliff:g> minutes fast&quot;</string>
+	<string name="worldtimeearly2" >&quot;<xliff:g id="HOUR">%d</xliff:g> hours fast&quot;</string>
+	<string name="worldtimelate1" >&quot;<xliff:g id="HOUR">%d</xliff:g> hours <xliff:g id="MINUTE">%d</xliff:g> minutes slow&quot;</string>
+	<string name="worldtimelate2" >&quot;<xliff:g id="HOUR">%d</xliff:g> hours slow&quot;</string>
+	<string name="worldtimesame" >&quot;Same as our time&quot;</string>
+    
+    <string-array name="auto_silence_values" translatable="false">
+        <item>-1</item> <!-- Off --><item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+     </string-array>
+     
+     <string name="app_label" msgid="6674495003718166674">&quot;Clock&quot;</string>
+    <string name="alarm_list_title" msgid="7589940465292950600">&quot;Alarm&quot;</string>
+    <string name="add_alarm" msgid="5976616107390962899">&quot;Add alarm&quot;</string>
+    <string name="menu_desk_clock" msgid="3241995064554071588">&quot;Desk Clock&quot;</string>
+    <string name="menu_edit_alarm" msgid="7204602994918829751">&quot;Modifying Alarm Settings&quot;</string>
+    <string name="delete_alarm" msgid="3457780990646206817">&quot;Cancel Alarm&quot;</string>
+    <string name="enable_alarm" msgid="1834599140632142536">&quot;Enable Alarm&quot;</string>
+    <string name="disable_alarm" msgid="5889378670229554109">&quot;Disable Alarm&quot;</string>
+    <string name="delete_alarm_confirm" msgid="4237696873219106907">&quot;You will cancel the alarm.&quot;</string>
+    <string name="show_clock" msgid="8358759982675616915">&quot;Show Clock&quot;</string>
+    <string name="hide_clock" msgid="3217727306480505694">&quot;Hide Clock&quot;</string>
+    <string name="label" msgid="162189613902857319">&quot;Label&quot;</string>
+    <string name="default_label" msgid="5590025289805630372">&quot;Alarm&quot;</string>
+    <string name="set_alarm" msgid="9148359866152726808">&quot;Set Alarm&quot;</string>
+    <string name="alarm_vibrate" msgid="3476686921490362230">&quot;Vibration&quot;</string>
+    <string name="alarm_repeat" msgid="7242985466344233206">&quot;Repeat&quot;</string>
+    <string name="alarm_remarks" msgid="9542985466344233206">&quot;Remarks&quot;</string>
+    <string name="empty_label" msgid="5590025211805638872">&quot;Empty&quot;</string>
+    <string name="set_alarm_remarks" msgid="9542985466355233206">&quot;Setting Remarks&quot;</string>
+     <string name="input_alarm_remarks_hint" msgid="9542452566355233206">&quot;Input Remarks&quot;</string>
+    <string name="alert" msgid="6539852766423700221">&quot;Ringtone&quot;</string>
+    <string name="time" msgid="8067216534232296518">&quot;Time&quot;</string>
+    <string name="alarm_alert_dismiss_text" msgid="4942914605480888820">&quot;Cancel&quot;</string>
+    <string name="alarm_alert_alert_silenced" msgid="7918075929961104202">&quot;Alarm ringing duration is <xliff:g id="MINUTES">%d</xliff:g> minutes.&quot;</string>
+    <string name="alarm_alert_snooze_text" msgid="1774416052207651584">&quot;Snooze&quot;</string><!-- Gionee baorui 2013-01-17 modify for CR00765213 begin --><!-- 
+    <string name="alarm_alert_snooze_set" msgid="656470966696912087">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟。"</string>
+    --><string name="alarm_alert_snooze_set" msgid="656470966696912087">&quot;Snooze for <xliff:g id="MINUTES">%d</xliff:g> minute(s)&quot;</string><!-- Gionee baorui 2013-01-17 modify for CR00765213 begin --><!-- Gionee baorui 2013-01-17 modify for CR00764967 begin --><!-- 
+    <string-array name="alarm_set">
+        <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+        <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+        <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+    --><string-array name="alarm_set">
+        <item msgid="5163476010406761625">&quot;Ring in less than one minute&quot;</item>
+        <item msgid="7110525731259629055">&quot;Ring after <xliff:g id="DAYS">%1$s</xliff:g>&quot;</item>
+        <item msgid="7003982794086186185">&quot;Ring after <xliff:g id="HOURS">%2$s</xliff:g>&quot;</item>
+        <item msgid="7311021123230077742">&quot;Ring after <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g>&quot;</item>
+        <item msgid="8431715191823114872">&quot;Ring after <xliff:g id="MINUTES">%3$s</xliff:g>&quot;</item>
+        <item msgid="3244151088673185428">&quot;Ring after <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>&quot;</item>
+        <item msgid="3663661342600168814">&quot;Ring after <xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>&quot;</item>
+        <item msgid="7779544127785487304">&quot;Ring after <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>&quot;</item>
+    </string-array><!-- Gionee baorui 2013-01-17 modify for CR00764967 end -->
+    <string name="day" msgid="7984755014526510295">&quot;1 d &quot;</string>
+    <string name="days" msgid="2070509222727852210">&quot;<xliff:g id="DAYS">%s</xliff:g> d &quot;</string>
+    <string name="hour" msgid="2546819039651509323">&quot;1 h &quot;</string>
+    <string name="hours" msgid="2071487018566991613">&quot;<xliff:g id="HOURS">%s</xliff:g> h &quot;</string>
+    <string name="minute" msgid="2486157997434653710">&quot;1 m &quot;</string>
+    <string name="minutes" msgid="6115838729146292526">&quot;<xliff:g id="MINUTES">%s</xliff:g> m &quot;</string>
+    <string name="every_day" msgid="1058994798884544691">&quot;Daily&quot;</string>
+    <string name="never" msgid="54104287800571769">&quot;Never&quot;</string>
+    <string name="day_concat" msgid="971998564991636532">&quot;, &quot;</string>
+    <string name="clock_instructions" msgid="3118560284915857690">&quot;Select the clock to be displayed.&quot;</string>
+    <string name="analog_gadget" msgid="1670505720837152766">&quot;Analog Clock&quot;</string>
+    <string name="settings" msgid="5849739030579520686">&quot;Settings&quot;</string>
+    <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">&quot;Alarm Rings In Silent Mode&quot;</string>
+    <string name="alarm_in_silent_mode_summary" msgid="6042500263899922832">&quot;Alarm still rings when the phone is in silent mode&quot;</string><!-- android jiating 20120528 begin --><!--            <string name="snooze_duration_title" msgid="1471249885139952670">"再响间隔"</string> --><string name="snooze_duration_title" msgid="1471249885139952670">&quot;Snooze&quot;</string><!-- android jiating 20120528 end --><string-array name="snooze_duration_entries">
+        <item msgid="8337408933053603125">&quot;5 Minutes&quot;</item>
+        <item msgid="5294206441496024610">&quot;10 Minutes&quot;</item>
+        <item msgid="2165904039211935470">&quot;15 Minutes&quot;</item>
+        <item msgid="7248236967714374250">&quot;20 Minutes&quot;</item>
+        <item msgid="738394723625179423">&quot;25 Minutes&quot;</item>
+        <item msgid="1180222611308391616">&quot;30 Minutes&quot;</item>
+    </string-array>
+    <string-array name="snooze_duration_values">
+        <item msgid="3655014754453084122">&quot;5&quot;</item>
+        <item msgid="8939029597449573449">&quot;10&quot;</item>
+        <item msgid="3922647341176353315">&quot;15&quot;</item>
+        <item msgid="5821804105985044459">&quot;20&quot;</item>
+        <item msgid="6048861883552402852">&quot;25&quot;</item>
+        <item msgid="2740866721232379791">&quot;30&quot;</item>
+    </string-array>
+
+    <string name="auto_silence_title" msgid="8000666766495360928">&quot;Pause alarm automatically&quot;</string>
+    <string name="auto_silence_summary" msgid="5757272454196171758">&quot;Alarm ringing will be paused after <xliff:g id="MINUTES">%d</xliff:g> minute (s)&quot;</string>
+    <string name="auto_silence_never" msgid="4302257878142130807">&quot;Off&quot;</string>
+
+    <string-array name="auto_silence_entries">
+        <item msgid="7718972982871612080">&quot;Off&quot;</item>
+        <item >&quot;1 Minute&quot;</item>
+        <item msgid="5431906692406316549">&quot;5 Minutes&quot;</item>
+        <item msgid="7742728812068919959">&quot;10 Minutes&quot;</item>
+        <item msgid="2855948657259647629">&quot;15 Minutes&quot;</item>
+        <item msgid="6330196381284475079">&quot;20 Minutes&quot;</item>
+        <item msgid="7809240121716151904">&quot;25 Minutes&quot;</item>
+        <item msgid="2807487305575255986">&quot;30 Minutes&quot;</item>
+    </string-array>
+
+    <string name="done" msgid="6509722361933858451">&quot;Done&quot;</string>
+    <string name="revert" msgid="9100911171235162926">&quot;Restore&quot;</string>
+    <string name="delete" msgid="5732434972457000541">&quot;Delete Alarm&quot;</string>
+    <string name="alarm_volume_title" msgid="8506245173912428522">&quot;Volume&quot;</string>
+    <string name="alarm_volume_summary" msgid="8957440373896242438">&quot;Set Alarm Volume&quot;</string>
+    <string name="silent_alarm_summary" msgid="8605302849408279221">&quot;Mute&quot;</string>
+    <string name="alarm_notify_text" msgid="4146350965933990093">&quot;Choose to pause or turn off the alarm.&quot;</string>
+    <string name="alarm_notify_snooze_label" msgid="5404083762646377829">&quot;<xliff:g id="LABEL">%s</xliff:g> (paused)&quot;</string>
+    <string name="alarm_notify_snooze_text" msgid="8004830999152609519">&quot;Rings again at <xliff:g id="TIME">%s</xliff:g>, click to stop&quot;</string><!--     <string name="volume_button_setting_title" msgid="6937131248843413357">"音量按钮"</string> --><string name="volume_button_setting_title" msgid="6937131248843413357">&quot;Functions of Volume Buttons&quot;</string>
+    <string name="volume_button_dialog_title" msgid="8768042543750036853">&quot;Functions of Buttons&quot;</string>
+    <string name="volume_button_setting_summary" msgid="4776447991226047070">&quot;Set the functions of these buttons when the alarm is activated.&quot;</string>
+
+    <string-array name="volume_button_setting_entries">
+        <item msgid="4520420953175098625">&quot;None&quot;</item>
+        <item msgid="7111908302622811168">&quot;Pause&quot;</item>
+        <item msgid="8573552194573068996">&quot;Off&quot;</item>
+    </string-array>
+    <string-array name="volume_button_setting_values">
+        <item msgid="4851033050639608752">&quot;0&quot;</item>
+        <item msgid="3204893476515513084">&quot;1&quot;</item>
+        <item msgid="7687709558968154577">&quot;2&quot;</item>
+    </string-array>
+
+    <string name="default_ringtone_setting_title" msgid="4549726190682964245">&quot;Set Default Ringtone&quot;</string>
+    <string name="alarm_button_description" msgid="740283647046258651">&quot;Alarm&quot;</string>
+    <string name="gallery_button_description" msgid="1151743663255257668">&quot;Photo Gallery&quot;</string>
+    <string name="music_button_description" msgid="1626593420810117999">&quot;Music&quot;</string>
+    <string name="nightmode_button_description" msgid="990894208217576381">&quot;Dim&quot;</string>
+    <string name="home_button_description" msgid="3383859096809056157">&quot;Launcher&quot;</string>
+    <string name="desk_clock_button_description" msgid="968868045496561043">&quot;Clock Display&quot;</string>
+    <string name="battery_charging_level" msgid="4391767951302394083">&quot;<xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>&quot;</string>
+    <string name="weather_fetch_failure" msgid="7517010911981312358">&quot;Currently unable to provide weather information.&quot;</string>
+    <string name="menu_item_dock_settings" msgid="3524235151132971114">&quot;Dock Settings&quot;</string>
+    <string name="alarm_klaxon_service_desc" msgid="2153290655559916468">&quot;Alarm ringtone playback service set in Desk Clock&quot;</string>
+    <string name="loading_ringtone" msgid="6523322777415268044">&quot;Loading ringtones...&quot;</string>
+    <string name="control_set_alarm" msgid="2194676418924016327">&quot;Set Alarm&quot;</string>
+    <string name="control_set_alarm_with_existing" msgid="1128169496817859490">&quot;Alarm time: <xliff:g id="TIME">%s</xliff:g>&quot;</string><!-- android jiating 20120528 begin --><string name="isDelete_select_alarm" msgid="2153290655559916468">Are you sure you want to delete the selected alarm?</string>
+    <string name="alarm_delete_sure" msgid="2153290655559916468">Yes</string>
+    <string name="show_info_for_select" msgid="2153290655559916468">Selected</string>
+    <string name="show_info_for_select_count" msgid="2153290655559916468">Count of selected alarms</string>
+    <string name="show_info_for_select_all" msgid="2153290655559916468">All</string>
+    <string name="create_alarm" msgid="2153290655559916468">Create Alarm</string>
+    <string name="all_selected" msgid="2153290655559916468">Select All</string>
+    <string name="no_alarm" msgid="2153290655559916468">You have no alarm clock. Add one now!</string>
+    <string name="edite_alarm" msgid="2153290655559916468">Edit Alarm</string>
+    <string name="android_delete_alarm" msgid="2153290655559916468">Delete Alarm</string>
+    <string name="all_unselected" msgid="2153290655559916468">Unselect All</string><!-- android jiating 20120528 end --><!-- android lilg 20120601 add for stopwatch, chronometer start --><string name="stopwatch">Stopwatch</string>
+    <string name="btnMark">Count</string>
+    <string name="lightInfo">Screen always on during timing</string>
+    <string name="chronometer">Timer</string>
+    <string name="btnStart">Start</string>
+    <string name="btnPause">Pause</string>
+    <string name="btnGoon">Resume</string>
+    <string name="btnReset">Reset</string>
+    <string name="etHint">Enter the countdown time:</string>
+    <string name="tvRing">Ringtone reminder: Good morning!</string>
+    <string name="timeOut">Time is up</string>
+    <string name="chronometer_alarm_alert_dismiss_text">OK</string>
+    <string name="chronometer_alarm_alert_title">Note</string>
+    <string name="world_time" msgid="2153290655559916468">World Clock</string><!-- android lilg 20120601 add for stopwatch, chronometer end --><!-- android yuchunfei 20120601 add start --><string name="exists_already">Already exists</string>
+    <string name="add_city">Add City</string>
+    <string name="search_city">Enter a city</string>
+    <string name="delete_city">Delete</string>
+    <string name="delete_all_city">Are you sure you want to delete the selected city?</string>
+    <string name="no_city">There is no city. Add one now!</string>
+    <string name="world_search_no_city">No matching results</string>
+    <string name="default_ringtone">Default Ringtone</string>
+    <string name="world_time_morning">a.m.</string>
+    <string name="world_time_afernoon">p.m.</string><!-- android yuchunfei 20120601 add end --><string name="chronometer_start_chronometer">Turn clockwise for timing</string>
+    <string name="chronometer_notify_alarm">Reminder Ringtone</string>
+    <string name="chronometer_alarm">Ringtone</string>
+    <string name="chronometer_screen_always_on">Screen always on during timing</string>
+    
+    <string name="btnContinue">Start</string>
+
+    <string name="power_on">&quot;Cancel and Start Up&quot;</string>
+	<string name="power_off">&quot;Cancel and Shut Down&quot;</string>
+	
+	<string name="alarm_upadate_data_menu">System Time</string><!-- gionee huangxiaochuan 20120719 add start --><string name="stopWatchNotiTitle">Stopwatch</string>
+	<string name="stopWatchNotiText">Stopwatch is running</string>
+	<string name="chronometerNotiTitle">Timer</string>
+	<string name="chronometerNotiText">Timer is running</string>
+	<string name="toastAddalarm">Create Alarm</string>
+	<string name="toastDeleteAlarm">Delete Alarm</string>
+	<string name="toastAddCity">Add City</string>
+	<string name="toastDeleteCity">Delete City</string>
+	<string name="toastSortCity">Sort</string>
+	<string name="toastSortCityOk">OK</string>
+	<string name="toastSortCityCancel">Cancel</string>
+	<string name="titleSortCityBack">Change the order of cities</string>
+	
+	<string name="alarm_notify_delay_text" >&quot;The alarm is set to snooze <xliff:g id="TIME">%s</xliff:g> by default&quot;</string>
+  	<string name="alarm_alert_delay_set" > &quot;Snooze <xliff:g id="MINUTES">%d</xliff:g> minute (s) by default&quot;</string>
+   	<string name="alarm_notify_delay_label" >&quot;<xliff:g id="LABEL">%s</xliff:g> (default snooze)&quot;</string>
+
+   	
+   	<string name="chronometer_alart_title">Timing</string>
+   	<string name="chronometer_alart_title_hour">Hour</string>
+   	<string name="chronometer_alart_title_minute">Minute</string>
+   	<string name="chronometer_alart_title_second">Second</string><!-- gionee huangxiaochuan 20120719 add end --><!-- Gionee baorui 2012-11-15 modify for CR00732943 begin --><string name="no_set">Not set</string><!-- Gionee baorui 2012-11-15 modify for CR00732943 end --><!-- Gionee baorui 2012-12-16 modify for CR00733082 begin -->
+   	<string name="daysOfWeek">Sun Mon Tue Wed Thu Fri Sat</string>
+    <string name="btnOff">Turn Off</string>
+    <string name="off_power_on">Turn Off and Start Up</string>
+    <string name="option">Options</string>
+    <string name="remove_alarm">Delete</string>
+    <string name="alarms_remove">Batch Delete</string>
+    <string name="isDelete_the_alarm">Are you sure you want to delete this alarm?</string>
+    <string name="delete_alarm_title">Delete</string>
+    <string name="delete_the_city">Are you sure you want to delete this city?</string>
+    <string name="vibrate_in_silent_mode_summary">Vibration is unavailable when the phone is in silent mode</string>
+    <string name="gn_chronometer_alarm_alert_title">Count to</string><!-- Gionee baorui 2012-12-16 modify for CR00733082 end --><!-- Gionee baorui 2013-01-15 modify for CR00762851 begin --><string name="favorite_title">Favorite</string>
+    <string name="menu_discard">Discard</string>
+    <string name="menu_done">Save</string>
+    <string name="empty"></string><!-- Gionee baorui 2013-01-15 modify for CR00762851 end --><!-- Gionee <baorui><2013-03-15> modify for CR00784986 begin --><string name="digital_gadget" msgid="2326954556720571358">&quot;Digital Clock&quot;</string>
+    <string name="alarm_deleted" msgid="5017075127290219443">&quot;Alarm has been deleted.&quot;</string><!-- Gionee <baorui><2013-03-15> modify for CR00784986 end -->
+       <string-array name="weeked">
+     <item >"Su"</item>
+      <item >"M"</item>
+      <item >"T"</item>
+      <item >"W"</item>
+      <item >"Th"</item>
+      <item >"F"</item>  
+      <item >"S"</item>  
+    </string-array>
+    <string name="alarmalertclose">Slide up to stop the alarm</string>
+    <string name="isshowofficeday">no</string>
+    <string name="airplanemodeoff">Flight mode has been shut down automatically</string>
+    <string name="appwidget_month">M</string>
+    <string name="appwidget_date">D&#160;&#160;&#160;</string>
+    
+
+</resources>

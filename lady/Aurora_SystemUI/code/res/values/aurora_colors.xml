@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="quick_setting_font">#4bcadd</color>
+    <color name="seekbar_start_color">#79e2ef</color>
+    <color name="seekbar_end_color">#75f0d4</color>
+    <color name="calling_bg">#4bcadd</color>
+</resources>

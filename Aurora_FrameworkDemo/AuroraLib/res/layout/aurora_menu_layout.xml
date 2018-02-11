@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/aurora_custom_menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="middle"
+            android:minHeight="@dimen/aurora_menu_item_height"
+            android:background="@drawable/aurora_menu_item_select"
+            android:divider="@drawable/aurora_menu_divider_line"
+            android:dividerPadding="1dp"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</FrameLayout>

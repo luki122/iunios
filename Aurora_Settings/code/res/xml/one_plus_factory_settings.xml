@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:title="@string/aurora_oneplus_factory_settings_title">
+        
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="smart_apperceive_control"
+        aurora:auroratitle="@string/smart_apperceive_control_settings" />
+    
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="breathing_led"
+        aurora:auroratitle="@string/breathing_LED_settings_title" 
+        aurora:aurorafragment="com.android.settings.OnePulsBreathLed"/>
+
+</aurora.preference.AuroraPreferenceScreen>

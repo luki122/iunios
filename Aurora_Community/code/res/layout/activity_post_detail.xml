@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_main_background_color"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/loading_layout"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_input_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/activity_post_detail_input_reply_color" >
+
+            <LinearLayout
+                android:id="@+id/ll_input_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_post_detail_input_common_padding" >
+                
+                <com.aurora.community.widget.AuroraEditText
+                    android:id="@+id/input_reply_common"
+                    android:layout_width="@dimen/activity_post_detail_et_layout_width"
+                    android:layout_height="@dimen/activity_post_detail_et_layout_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_comment_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/comment_reply_hint"
+                    android:padding="@dimen/activity_post_detail_et_padding"
+                    android:textColor="@color/gloab_title_color"
+                    android:textColorHint="@color/postdetail_light_color"
+                    android:textSize="@dimen/activity_post_detail_et_text_size" />
+
+                <Button
+                    android:id="@+id/btn_send_reply_common"
+                    android:layout_width="@dimen/activity_post_detail_bt_send_reply_layout_width"
+                    android:layout_height="@dimen/activity_post_detail_bt_send_reply_layout_height"
+                    android:layout_marginLeft="@dimen/activity_post_detail_bt_send_reply_margin_left"
+                    android:background="@drawable/send_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/send_reply"
+                    android:textColor="@color/activity_post_detail_bt_send_reply_text_color"
+                    android:textSize="@dimen/activity_post_detail_bt_send_reply_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_input_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_post_detail_ll_input_reply_padding"
+                android:visibility="gone" >
+
+                <com.aurora.community.widget.AuroraEditText
+                    android:id="@+id/input_reply"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/activity_post_detail_aet_input_reply_layout_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_comment_bg"
+                    android:gravity="left"
+                    android:maxLength="100"
+                    android:padding="@dimen/activity_post_detail_aet_input_padding"
+                    android:textColor="@color/gloab_title_color"
+                    android:textColorHint="@color/postdetail_light_color"
+                    android:textSize="@dimen/activity_post_detail_aet_input_text_size" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/activity_post_detail_ll_layout_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_post_detail_ll_margin_left"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/comment_input_text_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_post_detail_comment_input_text_count_margin_bottom"
+                        android:textColor="@color/gloab_title_color"
+                        android:textSize="@dimen/activity_post_detail_comment_input_text_count_size" />
+
+                    <Button
+                        android:id="@+id/btn_send_reply"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_post_detail_comment_btn_send_reply_layout_height"
+                        android:background="@drawable/send_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/send_reply"
+                        android:textColor="@color/activity_post_detail_comment_btn_send_reply_text_color"
+                        android:textSize="@dimen/activity_post_detail_comment_btn_send_reply_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_input_reply" >
+
+            <se.emilsjolander.stickylistheaders.pulltorefresh.PullToRefreshListView
+                android:id="@+id/lv_post_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/activity_post_detail_comment_lv_post_detail_background_color"
+                android:cacheColorHint="@color/activity_post_detail_comment_lv_post_detail_cache_color_hint"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="none" 
+                android:divider="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/hide_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/activity_post_detail_comment_iv_hide_bg"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/network_error_layout" />
+
+</RelativeLayout>

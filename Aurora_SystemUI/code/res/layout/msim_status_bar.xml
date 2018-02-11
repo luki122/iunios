@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* apps/common/assets/default/default/skins/StatusBar.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<!--    android:background="@drawable/status_bar_closed_default_background" -->
+<com.android.systemui.statusbar.phone.PhoneStatusBarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui"
+    android:id="@+id/msim_status_bar"
+    android:background="@drawable/status_bar_background"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:descendantFocusability="afterDescendants"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:id="@+id/notification_lights_out"
+        android:layout_width="@dimen/aurora_systemui_status_bar_icon_size"
+        android:layout_height="match_parent"
+        android:paddingLeft="6dip"
+        android:paddingBottom="2dip"
+        android:src="@drawable/ic_sysbar_lights_out_dot_small"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:alpha="0.8"
+        />
+
+    <LinearLayout android:id="@+id/status_bar_contents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:orientation="horizontal"
+        android:alpha="0.75"
+        >
+	<!-- Aurora Steve.Tang 2014-09-23, add for cta, show voice network name. start -->
+        <LinearLayout
+            android:id="@+id/network_oper_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:alpha="0.8"
+			android:gravity="center_vertical|left"
+            >
+            <TextView android:id="@+id/cta_network_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="10sp"
+				android:textColor="#FFFFFF"
+				android:visibility="gone"
+                android:alpha="0.8"
+                />
+
+        </LinearLayout>
+	<!-- Aurora Steve.Tang 2014-09-23, add for cta, show voice network name. end -->
+	
+        <LinearLayout
+            android:id="@+id/notification_icon_area"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:alpha="0.8"
+            >
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@+id/moreIcon"
+                android:layout_width="@dimen/aurora_systemui_status_bar_icon_size"
+                android:layout_height="match_parent"
+                android:src="@drawable/stat_notify_more"
+                android:visibility="gone"
+                android:alpha="0.8"
+                />
+
+            <com.android.systemui.statusbar.phone.IconMerger android:id="@+id/notificationIcons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:alpha="0.8"/>  
+        </LinearLayout>
+        <LinearLayout android:id="@+id/system_icon_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:alpha="0.8">
+<!-- Aurora <tongyh> <2014-06-28> add network speed monitoring begin --> 
+    		<com.android.systemui.statusbar.policy.AuroraNetworkSpeedMonitoring
+                android:id="@+id/network_speed_monitoring"
+                android:textAppearance="@style/TextAppearance.StatusBar.NetworkSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:paddingRight="3dip"
+                android:gravity="center_vertical|right"
+                />
+    <!-- Aurora <tongyh> <2014-06-28> add network speed monitoring end --> 
+            <LinearLayout android:id="@+id/statusIcons"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+                
+                
+    		<!-- Aurora <zhanggp> <2013-11-16> modified for systemui begin --> 
+            <LinearLayout
+                android:id="@+id/signal_battery_cluster"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="3dp"
+                android:gravity="center"
+                >
+                <!--android:paddingLeft="2dp"-->
+            <!-- Aurora <zhanggp> <2013-11-16> modified for systemui end --> 
+                
+                    <include layout="@layout/msim_signal_cluster_view" 
+                        android:id="@+id/msim_signal_cluster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+<!-- Aurora <zhanggp> <2013-11-01> modified for systemui begin -->              
+                    <FrameLayout
+                        android:id="@+id/battery_percentage"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        >
+                           <!-- M: Support "SystemUI - Battery Percentage". @{ -->
+                      		<ImageView
+                                android:id="@+id/battery_bg"
+                                android:layout_height="wrap_content"
+								android:background="@drawable/stat_sys_battery_bg"
+                                android:layout_width="wrap_content"
+                                />
+                           <TextView
+                               android:id="@+id/percentage"
+                               android:layout_height="12dp"
+                               android:layout_width="18dp"
+                               android:visibility = "gone"
+                               android:textSize="7.5sp"
+                               android:textColor="@color/white"
+		                       android:layout_gravity="center"
+		                       android:gravity="center"
+		                       android:background="@drawable/stat_sys_battery_bg"
+		                       android:paddingLeft="1.5dp"
+		                       android:paddingTop="1dp"
+		                       android:includeFontPadding="false"
+                               />
+                       <!-- M: Support "SystemUI - Battery Percentage". }@ -->
+                            <ImageView
+                                android:id="@+id/battery"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                />
+                    </FrameLayout>
+            </LinearLayout>
+    
+            <com.android.systemui.statusbar.policy.Clock
+                android:id="@+id/clock"
+                android:textAppearance="@style/TextAppearance.StatusBar.Clock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:paddingLeft="6dip"
+                android:gravity="center_vertical"
+                />
+    
+	<!--
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility = "gone"
+                android:paddingLeft="4dip"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_blue_light"
+                />
+                <ImageView
+                    android:id="@+id/battery"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="4dip"
+                    />
+            </LinearLayout>
+    
+            <com.android.systemui.statusbar.policy.Clock
+                android:id="@+id/clock"
+                android:textAppearance="@style/TextAppearance.StatusBar.Clock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:paddingLeft="6dip"
+                android:gravity="center_vertical|left"
+                />
+        
+	-->
+<!-- Aurora <zhanggp> <2013-11-01> modified for systemui end -->
+        </LinearLayout>
+    </LinearLayout>
+    <!-- <ImageView
+        android:id="@+id/quick_lockscreen_second"
+        android:layout_height="match_parent"
+        android:layout_width="60dp"
+        android:background="#00000000"
+        android:layout_gravity="right"
+        />
+    <ImageView
+        android:id="@+id/quick_lockscreen"
+        android:layout_height="match_parent"
+        android:layout_width="40dp"
+        android:background="#00000000"
+        android:layout_gravity="right"
+        /> -->
+    <LinearLayout android:id="@+id/ticker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="6dip"
+        android:animationCache="false"
+        android:orientation="horizontal" 
+        android:alpha="0.75">
+        <ImageSwitcher android:id="@+id/tickerIcon"
+            android:layout_width="@dimen/aurora_systemui_status_bar_icon_size"
+            android:layout_height="@dimen/aurora_systemui_status_bar_icon_size"
+            android:layout_marginRight="4dip"
+            android:layout_gravity="center_vertical"
+            >
+            <com.android.systemui.statusbar.AnimatedImageView
+                android:id="@+id/tickericonone"
+                android:layout_width="@dimen/aurora_systemui_status_bar_icon_size"
+                android:layout_height="@dimen/aurora_systemui_status_bar_icon_size"
+                android:scaleType="centerInside"
+                />
+            <com.android.systemui.statusbar.AnimatedImageView
+                android:id="@+id/tickericontwo"
+                android:layout_width="@dimen/aurora_systemui_status_bar_icon_size"
+                android:layout_height="@dimen/aurora_systemui_status_bar_icon_size"
+                android:scaleType="centerInside"
+                />
+        </ImageSwitcher>
+        <com.android.systemui.statusbar.phone.TickerView android:id="@+id/tickerText"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dip">
+            <TextView
+                android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                />
+            <TextView
+                android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                />
+        </com.android.systemui.statusbar.phone.TickerView>
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.PhoneStatusBarView>

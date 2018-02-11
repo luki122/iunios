@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 公有设置 不要随便修改 -->
+    <dimen name="button_size">18sp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="small_textsize">12sp</dimen>
+    <dimen name="textsize_8">8sp</dimen>
+    <dimen name="textsize_9">9sp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_11">11sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_22">22sp</dimen>
+    <dimen name="textsize_24">24sp</dimen>
+    <dimen name="textsize_28">28sp</dimen>
+    <dimen name="textsize_16pt">11sp</dimen>
+    <dimen name="textsize_20pt">13sp</dimen>
+    <dimen name="textsize_22pt">15sp</dimen>
+    <dimen name="textsize_25pt">17sp</dimen>
+    <dimen name="textsize_28pt">19sp</dimen>
+    <dimen name="textsize_18pt">12sp</dimen>
+    
+    <!-- 全局 偏移量 padding和magin 不能随便改动 -->
+    <dimen name="padding_0">0dip</dimen>
+    <dimen name="padding_1">1dip</dimen>
+    <dimen name="padding_2">2dip</dimen>
+    <dimen name="padding_3">3dip</dimen>
+    <dimen name="padding_4">4dip</dimen>
+    <dimen name="padding_5">5dip</dimen>
+    <dimen name="padding_6">6dip</dimen>
+    <dimen name="padding_7">7dip</dimen>
+    <dimen name="padding_8">8dip</dimen>
+    <dimen name="padding_9">9dip</dimen>
+    <dimen name="padding_10">10dip</dimen>
+    <dimen name="padding_11">11dip</dimen>
+    <dimen name="padding_12">12dip</dimen>
+    <dimen name="padding_13">13dip</dimen>
+    <dimen name="padding_14">14dip</dimen>
+    <dimen name="padding_15">15dip</dimen>
+    <dimen name="padding_16">16dip</dimen>
+    <dimen name="padding_17">17dip</dimen>
+    <dimen name="padding_18">18dip</dimen>
+    <dimen name="padding_19">19dip</dimen>
+    <dimen name="padding_20">20dip</dimen>
+    
+    <!-- 公用配置 -->
+    <dimen name="big_font_size">18sp</dimen>
+    <dimen name="small_font_size">16sp</dimen>
+    <dimen name="list_item_height">47dp</dimen>
+    
+
+    <dimen name="mainpage_tv_margin_left">45dp</dimen>
+    <dimen name="mainpage_tv_margin_top">12dp</dimen>
+    <dimen name="mainpage_ib_margin_left">45dp</dimen>
+    <dimen name="mainpage_ib_margin_top">13dp</dimen>
+    <dimen name="mainpage_tv_size">10sp</dimen>
+    <dimen name="mainpage_category_tv_title_size">12sp</dimen>
+    <dimen name="mainpage_category_tv_title_margin_left">13dp</dimen>
+    <dimen name="mainpage_category_tv_title_margin_top">12dp</dimen>
+    <dimen name="mainpage_category_ll_content_parent_margin_top">12dp</dimen>
+    <dimen name="mainpage_category_ll_content_parent_margin_left">12dp</dimen>
+    <dimen name="mainpage_category_ll_content_parent_margin_right">12dp</dimen>
+    <dimen name="mainpage_category_ll_content_child_height">208dp</dimen>
+    <dimen name="mainpage_category_ll_content_child_margin_left">9dp</dimen>
+    <dimen name="mainpage_category_ll_content_child_rl_width">164dp</dimen>
+    <dimen name="mainpage_category_ll_content_child_rl_height">83dp</dimen>
+    <dimen name="mainpage_category_top_title_tv_size">15sp</dimen>
+    <dimen name="mainpage_category_top_title_tv_margin_left">10dp</dimen>
+    <dimen name="mainpage_category_top_title_tv_margin_right">10dp</dimen>
+    <dimen name="mainpage_category_top_title_tv_margin_top">12dp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_iv_width">56dp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_iv_height">56dp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_title_size">15sp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_desc_size">10sp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_desc_margin_top">3dp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_comment_size">8sp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_comment_margin_top">25dp</dimen>
+    <dimen name="mainpage_category_secondary_list_item_tv_comment_margin_right">3dp</dimen>
+    <dimen name="mainpage_category_top_comment_tv_size">8sp</dimen>
+    <dimen name="mainpage_category_top_comment_tv_margin_right">10dp</dimen>
+    <dimen name="mainpage_category_top_comment_tv_margin_bottom">5dp</dimen>
+    <dimen name="mainpage_category_top_iv_width">164dp</dimen>
+    <dimen name="mainpage_category_top_iv_height">125dp</dimen>
+    <dimen name="mainpage_category_top_iv_margin_top">83dp</dimen>
+    <dimen name="mainpage_category_content_fr_click_width">164dp</dimen>
+    <dimen name="mainpage_category_content_fr_click_height">208dp</dimen>
+    <dimen name="stickylist_margin_left_right">13dp</dimen>
+    <dimen name="stickylist_header_margin_left">13dp</dimen>
+    <dimen name="stickylist_header_tv_date_size">18sp</dimen>
+    <dimen name="stickylist_header_bar_size">36dp</dimen>
+    <dimen name="stickylist_header_tv_month_size">10sp</dimen>
+    <dimen name="stickylist_header_tv_month_margin_top">3dp</dimen>
+    <dimen name="stickylist_adapter_tv_content_size">15sp</dimen>
+    <dimen name="stickylist_adapter_tv_left_margin">8dp</dimen>
+    <dimen name="stickylist_adapter_tv_margin_top">8dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_height">25dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_twitter_time_tv_margin_left">8dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_twitter_comment_tv_margin_right">13dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_twitter_comment_iv_margin_right">3dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_twitter_collect_tv_margin_right">11dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_twitter_collect_iv_margin_right">3dp</dimen>
+    <dimen name="stickylist_adapter_item_footer_tv_size">10sp</dimen>
+    <dimen name="stickylist_adapter_item_header_iv_head_width">32dp</dimen>
+    <dimen name="stickylist_adapter_item_header_iv_head_height">32dp</dimen>
+    <dimen name="stickylist_adapter_item_header_iv_head_margin_left">7dp</dimen>
+    <dimen name="stickylist_adapter_item_header_tv_nick_margin_left">6dp</dimen>
+    <dimen name="stickylist_adapter_item_header_tv_nick_size">14sp</dimen>
+    <dimen name="activity_image_picker_custom_actionbar_title_size">19sp</dimen>
+    <dimen name="activity_image_picker_custom_actionbar_tv_img_select_done_size">19sp</dimen>
+    <dimen name="activity_image_picker_custom_actionbar_iv_switch_display_mode_margin_bottom">12dp</dimen>
+    <dimen name="activity_image_picker_custom_actionbar_tv_img_select_done_margin_right">16dp</dimen>
+    <dimen name="activity_image_picker_layout_tv_preview_margin_left">20dp</dimen>
+    <dimen name="activity_image_picker_layout_tv_preview_margin_top">19dp</dimen>
+    <dimen name="activity_image_picker_layout_tv_preview_size">19sp</dimen>
+    <dimen name="activity_image_picker_layout_ib_capture_margin_right">20dp</dimen>
+    <dimen name="activity_image_picker_layout_ib_capture_margin_top">19dp</dimen>
+    <dimen name="activity_image_preview_custom_item_layout_tv_size">20dp</dimen>
+    <dimen name="activity_image_preview_custom_item_layout_tv_padding_right">12dp</dimen>
+    <dimen name="activity_image_preview_layout_cb_margin_bottom">42dp</dimen>
+    <dimen name="activity_main_content_margin_bottom">50dp</dimen>
+    <dimen name="activity_post_detail_input_common_padding">10dp</dimen>
+    <dimen name="activity_post_detail_et_layout_width">0dp</dimen>
+    <dimen name="activity_post_detail_et_layout_height">35dp</dimen>
+    <dimen name="activity_post_detail_et_padding">10dp</dimen>
+    <dimen name="activity_post_detail_et_text_size">12sp</dimen>
+    <dimen name="activity_post_detail_bt_send_reply_layout_width">48.6dp</dimen>
+    <dimen name="activity_post_detail_bt_send_reply_layout_height">33.6dp</dimen>
+    <dimen name="activity_post_detail_bt_send_reply_margin_left">10dp</dimen>
+    <dimen name="activity_post_detail_bt_send_reply_text_size">14sp</dimen>
+    <dimen name="activity_post_detail_ll_input_reply_padding">10dp</dimen>
+    <dimen name="activity_post_detail_aet_input_padding">10dp</dimen>
+    <dimen name="activity_post_detail_aet_input_text_size">12sp</dimen>
+    <dimen name="activity_post_detail_ll_layout_width">48.6dp</dimen>
+    <dimen name="activity_post_detail_ll_margin_left">10dp</dimen>
+    <dimen name="activity_post_detail_comment_input_text_count_margin_bottom">5dp</dimen>
+    <dimen name="activity_post_detail_comment_input_text_count_size">12sp</dimen>
+    <dimen name="activity_post_detail_comment_btn_send_reply_layout_height">33.6dp</dimen>
+    <dimen name="activity_post_detail_comment_btn_send_reply_text_size">14sp</dimen>
+    <dimen name="activity_post_detail_aet_input_reply_layout_height">55dp</dimen>
+    <dimen name="activity_post_detail_img_preview_ll_icon_container_margin_botton">20dp</dimen>
+    <dimen name="activity_twitter_image_preview_hvp_layout_height">522dp</dimen>
+    <dimen name="activity_twitter_image_preview_actionbar_iv_padding_right">17dp</dimen>
+    <dimen name="activity_twitter_layout_gv_pic_selected_layout_height">186dp</dimen>
+    <dimen name="activity_twitter_layout_gv_pic_selected_layout_margin_top">7dp</dimen>
+    <dimen name="activity_twitter_layout_gv_pic_selected_layout_padding_bottom">1dp</dimen>
+    <dimen name="activity_twitter_layout_gv_pic_selected_layout_padding_top">7dp</dimen>
+    <dimen name="activity_twitter_layout_gv_pic_selected_layout_vertical_spacing">8dp</dimen>
+    <dimen name="activity_twitter_layout_aet_twitter_content_layout_height">90dp</dimen>
+    <dimen name="activity_twitter_layout_aet_twitter_content_margin_top">206dp</dimen>
+    <dimen name="activity_twitter_layout_aet_twitter_content_padding_left_right">10dp</dimen>
+    <dimen name="activity_twitter_layout_aet_twitter_content_padding_top">8dp</dimen>
+    <dimen name="activity_twitter_layout_aet_twitter_content_text_size">15sp</dimen>
+    <dimen name="activity_twitter_note_actionbar_tv_padding_right">16dp</dimen>
+    <dimen name="activity_twitter_note_actionbar_tv_size">20sp</dimen>
+    <dimen name="aurora_dialog_griditem_ll_layout_width">84dp</dimen>
+    <dimen name="aurora_dialog_griditem_tv_gridview_text_padding_top">5dp</dimen>
+    <dimen name="aurora_dialog_griditem_tv_gridview_text_size">13sp</dimen>
+    <dimen name="aurora_dialog_fragment_gv_padding_bottom">25dp</dimen>
+    <dimen name="aurora_dialog_fragment_gv_padding_top">25dp</dimen>
+    <dimen name="aurora_dialog_fragment_gv_vertical_spacing">17dp</dimen>
+    <dimen name="child_usercenter_layout_lv_divider_height">12dp</dimen>
+    <dimen name="collection_of_usercenter_lv_divider_height">12dp</dimen>
+    <dimen name="footview_of_postdetail_tv_layout_height">41dp</dimen>
+    <dimen name="footview_of_postdetail_tv_size">12sp</dimen>
+    <dimen name="headview_of_postdetail_ll_padding_bottom">5dp</dimen>
+    <dimen name="headview_of_postdetail_ll_padding_left">10dp</dimen>
+    <dimen name="headview_of_postdetail_ll_padding_right">10dp</dimen>
+    <dimen name="headview_of_postdetail_ll_padding_top">13dp</dimen>
+    <dimen name="headview_of_postdetail_ll_child_one_padding_bottom">10dp</dimen>
+    <dimen name="headview_of_postdetail_ll_child_one_padding_top">10dp</dimen>
+    <dimen name="headview_of_postdetail_civ_user_icon_layout_width">32dp</dimen>
+    <dimen name="headview_of_postdetail_civ_user_icon_layout_height">32dp</dimen>
+    <dimen name="headview_of_postdetail_tv_screen_name_layout_width">14sp</dimen>
+    <dimen name="headview_of_postdetail_tv_screen_name_layout_margin_left">6dp</dimen>
+    <dimen name="headview_of_postdetail_tv_publish_time_drawable_padding">4dp</dimen>
+    <dimen name="headview_of_postdetail_tv_publish_time_text_size">9sp</dimen>
+    <dimen name="headview_of_postdetail_aet_publish_content_text_size">15sp</dimen>
+    <dimen name="headview_of_postdetail_aet_publish_content_margin_top">10dp</dimen>
+    <dimen name="headview_of_postdetail_ll_child_two_padding_top">15dp</dimen>
+    <dimen name="headview_of_postdetail_tv_collection_count_drawable_padding">3dp</dimen>
+    <dimen name="headview_of_postdetail_tv_collection_count_text_size">10sp</dimen>
+    <dimen name="headview_of_postdetail_tv_comment_count_text_size">10sp</dimen>
+    <dimen name="headview_of_postdetail_tv_comment_count_margin_left">11dp</dimen>
+    <dimen name="headview_of_postdetail_tv_comment_count_drawble_padding">3dp</dimen>
+    <dimen name="headview_of_usercenter_rl_child_one_layout_height">226dp</dimen>
+    <dimen name="headview_of_usercenter_rl_switch_layout_height">36dp</dimen>
+    <dimen name="headview_of_usercenter_ll_publish_layout_width">0dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_publish_margin_left">4dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_publish_margin_right">5dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_publish_text_size">13sp</dimen>
+    <dimen name="headview_of_usercenter_tab_publish_count_text_size">13sp</dimen>
+    <dimen name="headview_of_usercenter_ll_collection_layout_width">0dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_collection_margin_left">4dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_collection_margin_right">5dp</dimen>
+    <dimen name="headview_of_usercenter_tab_text_collection_text_size">13sp</dimen>
+    <dimen name="headview_of_usercenter_tab_collection_count_text_size">13sp</dimen>
+    <dimen name="headview_of_usercenter_ll_child_one_layout_margin">15dp</dimen>
+    <dimen name="headview_of_usercenter_include_user_icon_layout_width_height">56dp</dimen>
+    <dimen name="headview_of_usercenter_user_screen_name_margin_left">8dp</dimen>
+    <dimen name="headview_of_usercenter_user_screen_name_text_size">18sp</dimen>
+    <dimen name="headview_of_usercenter_iv_empty_show_margin_top">70dp</dimen>
+    <dimen name="image_album_fragment_lv_album_layout_height">522dp</dimen>
+    <dimen name="image_picker_photo_fragment_gv_photo_layout_height">522dp</dimen>
+    <dimen name="image_picker_photo_fragment_gv_photo_horizontal_spacing">1dp</dimen>
+    <dimen name="image_picker_photo_fragment_gv_photo_vertical_spacing">1dp</dimen>
+    <dimen name="item_album_adapter_rl_layout_width">105dp</dimen>
+    <dimen name="item_album_adapter_iv_cover_layout_width_height">88dp</dimen>
+    <dimen name="item_album_adapter_iv_cover_margin_left">15dp</dimen>
+    <dimen name="item_album_adapter_iv_cover_margin_top">9dp</dimen>
+    <dimen name="item_album_adapter_iv_cover_margin_bottom">9dp</dimen>
+    <dimen name="item_album_adapter_ll_margin_left">13dp</dimen>
+    <dimen name="item_album_adapter_tv_album_name_text_size">15sp</dimen>
+    <dimen name="item_album_adapter_tv_album_size_text_size">12sp</dimen>
+    <dimen name="item_album_adapter_tv_album_size_margin_top">2dp</dimen>
+    <dimen name="item_collection_of_usercenter_usericon_width_height">50dp</dimen>
+    <dimen name="item_collection_of_usercenter_usericon_margin_left">25dp</dimen>
+    <dimen name="item_collection_of_usercenter_image_collection_margin_bottom">25dp</dimen>
+    <dimen name="item_collection_of_usercenter_user_name_margin_bottom">5dp</dimen>
+    <dimen name="item_collection_of_usercenter_user_name_margin_left">2dp</dimen>
+    <dimen name="item_collection_of_usercenter_user_name_margin_top">25dp</dimen>
+    <dimen name="item_collection_of_usercenter_user_name_text_size">15sp</dimen>
+    <dimen name="item_collection_of_postdetail_rl_padding_bottom">12dp</dimen>
+    <dimen name="item_collection_of_postdetail_rl_padding_top">12dp</dimen>
+    <dimen name="item_collection_of_postdetail_rl_padding_left">10dp</dimen>
+    <dimen name="item_collection_of_postdetail_rl_padding_right">10dp</dimen>
+    <dimen name="item_collection_of_postdetail_cimg_layout_width">32dp</dimen>
+    <dimen name="item_collection_of_postdetail_cimg_layout_height">32dp</dimen>
+    <dimen name="item_collection_of_postdetail_comment_time_text_size">9sp</dimen>
+    <dimen name="item_collection_of_postdetail_screen_name_text_size">12sp</dimen>
+    <dimen name="item_collection_of_postdetail_screen_name_margin_left">7dp</dimen>
+    <dimen name="item_collection_of_postdetail_screen_name_margin_right">7dp</dimen>
+    <dimen name="item_collection_of_postdetail_comment_content_margin_left">7dp</dimen>
+    <dimen name="item_collection_of_postdetail_comment_content_margin_right">33dp</dimen>
+    <dimen name="item_collection_of_postdetail_comment_content_margin_top">4dp</dimen>
+    <dimen name="item_collection_of_postdetail_comment_content_text_size">12sp</dimen>
+    <dimen name="item_collection_of_postdetail_item_iv_photo_layout_width">119dp</dimen>
+    <dimen name="item_collection_of_postdetail_item_iv_photo_layout_height">119dp</dimen>
+    <dimen name="item_img_preview_photo_choose_margin_bottom">42dp</dimen>
+    <dimen name="item_publish_of_user_center_ll_padding_left">12dp</dimen>
+    <dimen name="item_publish_of_user_center_ll_padding_right">12dp</dimen>
+    <dimen name="item_publish_of_user_center_iv_layout_height">12dp</dimen>
+
+    <dimen name="item_publish_of_user_center_publish_title_margin_left">8dp</dimen>
+    <dimen name="item_publish_of_user_center_publish_title_margin_right">8dp</dimen>
+    <dimen name="item_publish_of_user_center_publish_title_margin_top">10dp</dimen>
+    
+    
+    <!-- 1002 pixel for 334dp -->
+    <item name="stickylist_item_width_for_column_one" format="integer" type="dimen">1002</item>
+    <!-- 582 pixel for 194dp -->
+    <item name="stickylist_item_height_for_column_one" format="integer" type="dimen">582</item>
+
+    <!-- 324 pixel for 108dp -->
+    <item name="stickylist_item_width_for_column_more" format="integer" type="dimen">324</item>
+    <!-- 498 pixel for 166dp -->
+    <item name="stickylist_item_height_for_column_more" format="integer" type="dimen">498</item>
+    <!-- 15 pixel for 5dp -->
+    <item name="stickylist_item_right_margin_for_column_more" format="integer" type="dimen">15</item>
+
+    <!-- user center -->
+    <dimen name="usercenter_item_one_image_height">200dp</dimen>
+    <dimen name="usercenter_item_one_more_image_height">166dp</dimen>
+    <dimen name="usercenter_item_one_more_image_margin">5dp</dimen>
+
+    <!-- PostDetailActivity dimen -->
+    <dimen name="publish_image_of_postetail_height">324dp</dimen>
+    <dimen name="publish_image_of_postetail_topmargin">10dp</dimen>
+    <dimen name="postdetail_input_height_common">35dp</dimen>
+    <dimen name="postdetail_input_height_input">50dp</dimen>
+
+    <!-- XListView -->
+    <dimen name="xlistview_footerview_height">50dp</dimen>
+    
+    <!-- 快速索引相关 -->
+    <dimen name="quick_search_bar_text_size">12sp</dimen>
+    <dimen name="item_header_country_code_height">31dp</dimen>
+    <dimen name="item_country_code_height">47dp</dimen>
+    
+    <!-- 登录界面 -->
+    <dimen name="login_logo_width">218.55dp</dimen>
+    <dimen name="login_logo_height">232.55dp</dimen>
+    <dimen name="login_desc_margin_top">225dp</dimen>
+    <dimen name="login_logo_margin_top">28dp</dimen>
+    <dimen name="login_logo_margin_bottom">0dp</dimen>
+    <dimen name="login_title_margin_left">17dp</dimen>
+    <dimen name="login_content_margin_top">12dp</dimen>
+    <dimen name="login_content_margin_right">17dp</dimen>
+    <dimen name="login_account_margin_top">22dp</dimen>
+    <dimen name="login_account_height">@dimen/list_item_height</dimen>
+    <dimen name="login_vc_code_width">45dp</dimen>
+    <dimen name="login_vc_code_height">18dp</dimen>
+    <dimen name="login_vc_code_margin_top">20dp</dimen>
+    
+    <!-- 个人中心界面 -->
+    <dimen name="account_info_textview_header_height">33dp</dimen>
+    <dimen name="account_info_item_height">@dimen/list_item_height</dimen>
+    <dimen name="account_info_logo_container_height">100dp</dimen>
+    <dimen name="account_info_logo_width">78dp</dimen>
+    <dimen name="account_info_logo_height">78dp</dimen>
+    <dimen name="account_info_account_icon_width">76dp</dimen>
+    
+    <!-- 修改昵称界面 -->
+    <dimen name="set_nick_name_height">45dp</dimen>
+    
+    <!-- 注册相关页 -->
+    <dimen name="register_get_verifycode_time_width">36dp</dimen>
+    <dimen name="register_set_head_width_height">122.6dp</dimen>
+    <dimen name="register_layout_item_min_height">45dp</dimen>
+    
+    <!-- 绑定成功界面 -->
+    <dimen name="bind_success_icon_margin_top">83dp</dimen>
+    <dimen name="bind_success_info_margin_top">33dp</dimen>
+    <dimen name="bind_success_detail_margin_top">15dp</dimen>
+
+</resources>

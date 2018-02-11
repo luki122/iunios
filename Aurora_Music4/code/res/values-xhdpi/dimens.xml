@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="track_list_item_height">44.0dp</dimen>
+    <dimen name="song_itemheight">57.0dp</dimen>
+    <dimen name="song_padding">12.0dp</dimen>
+    <dimen name="song_modepadding">9.0dp</dimen>
+</resources>

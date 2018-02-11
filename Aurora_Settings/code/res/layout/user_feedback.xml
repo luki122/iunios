@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/aurora"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4.1" 
+        android:orientation="horizontal" 
+        android:layout_gravity="center">
+        
+       <ImageView
+         android:layout_marginTop="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iuni_os" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical" >
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/btn_provide_advice"
+                android:layout_width="328dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical|center"
+                android:text="@string/provide_advice" />
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/btn_feedback_the_problem"
+                android:layout_width="328dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="42dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center|center_horizontal"
+                android:text="@string/feedback_the_problem"/>
+    </LinearLayout>
+
+</LinearLayout>

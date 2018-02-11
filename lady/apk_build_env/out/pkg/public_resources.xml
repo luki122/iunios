@@ -1,0 +1,63 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/drawable-xxxhdpi/s02.png:0 -->
+  <public type="drawable" name="s02" id="0x7f020000" />
+  <!-- Declared at res/drawable-xxxhdpi/s03.png:0 -->
+  <public type="drawable" name="s03" id="0x7f020001" />
+  <!-- Declared at res/drawable-xxxhdpi/s04.png:0 -->
+  <public type="drawable" name="s04" id="0x7f020002" />
+  <!-- Declared at res/drawable-xxxhdpi/s05.png:0 -->
+  <public type="drawable" name="s05" id="0x7f020003" />
+  <!-- Declared at res/drawable-xxxhdpi/s06.png:0 -->
+  <public type="drawable" name="s06" id="0x7f020004" />
+  <!-- Declared at res/drawable-xxxhdpi/s07.png:0 -->
+  <public type="drawable" name="s07" id="0x7f020005" />
+  <!-- Declared at res/drawable-xxxhdpi/s08.png:0 -->
+  <public type="drawable" name="s08" id="0x7f020006" />
+  <!-- Declared at res/drawable-xxxhdpi/s09.png:0 -->
+  <public type="drawable" name="s09" id="0x7f020007" />
+  <!-- Declared at res/drawable-xxxhdpi/s10.png:0 -->
+  <public type="drawable" name="s10" id="0x7f020008" />
+  <!-- Declared at res/drawable-xxxhdpi/s11.png:0 -->
+  <public type="drawable" name="s11" id="0x7f020009" />
+  <!-- Declared at res/drawable-xxxhdpi/s12.png:0 -->
+  <public type="drawable" name="s12" id="0x7f02000a" />
+  <!-- Declared at res/drawable-xxxhdpi/s13.png:0 -->
+  <public type="drawable" name="s13" id="0x7f02000b" />
+  <!-- Declared at res/drawable-xxxhdpi/s14.png:0 -->
+  <public type="drawable" name="s14" id="0x7f02000c" />
+  <!-- Declared at res/drawable-xxxhdpi/s15.png:0 -->
+  <public type="drawable" name="s15" id="0x7f02000d" />
+  <!-- Declared at res/drawable-xxxhdpi/train_sketch_teach.png:0 -->
+  <public type="drawable" name="train_sketch_teach" id="0x7f02000e" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_record_success.png:0 -->
+  <public type="drawable" name="vs_wake_record_success" id="0x7f02000f" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_recording_ani.png:0 -->
+  <public type="drawable" name="vs_wake_recording_ani" id="0x7f020010" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_recording_train.png:0 -->
+  <public type="drawable" name="vs_wake_recording_train" id="0x7f020011" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_surecord.png:0 -->
+  <public type="drawable" name="vs_wake_surecord" id="0x7f020012" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_surecord_red.png:0 -->
+  <public type="drawable" name="vs_wake_surecord_red" id="0x7f020013" />
+  <!-- Declared at res/drawable-xxxhdpi/vs_wake_top_bg.png:0 -->
+  <public type="drawable" name="vs_wake_top_bg" id="0x7f020014" />
+
+  <!-- Declared at ../Aurora_WakeUp/code/res/values/colors.xml:9 -->
+  <public type="color" name="training_keyword_col" id="0x7f030000" />
+  <!-- Declared at ../Aurora_WakeUp/code/res/values/colors.xml:10 -->
+  <public type="color" name="sound_model_compound_success" id="0x7f030001" />
+  <!-- Declared at ../Aurora_WakeUp/code/res/values/colors.xml:11 -->
+  <public type="color" name="sound_model_compound_success_white" id="0x7f030002" />
+  <!-- Declared at ../Aurora_WakeUp/code/res/values/colors.xml:12 -->
+  <public type="color" name="sound_model_compound_fail" id="0x7f030003" />
+  <!-- Declared at ../Aurora_WakeUp/code/res/values/colors.xml:13 -->
+  <public type="color" name="enabling" id="0x7f030004" />
+
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+<!-- Gionee <xuwen> <2013-12-06> modify for CR00957338 begin -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" >
+<!-- Gionee <xuwen> <2013-12-06> modify for CR00957338 end -->
+        <string-array name="gn_timeout_close_torch_options">    
+        <item>不关闭</item>    
+        <item>1 分钟</item>    
+        <item>2 分钟</item>    
+        <item>3 分钟</item>  
+        <item>4 分钟</item>    
+    </string-array>    
+    <string-array name="gn_timeout_close_torch_values">    
+        <item>0</item>    
+        <item>1</item>    
+        <item>2</item> 
+        <item>3</item>    
+        <item>4</item>     
+    </string-array>   
+
+    <!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+    <string-array name="gn_entries_buttonlight">
+        <item>2 秒</item>
+        <item>始终打开</item>
+        <item>始终关闭</item>
+        <item>由外部亮度决定</item>
+    </string-array>
+
+    <string-array name="gn_entryvalues_buttonlight">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>1</item>
+        <!-- Do not translate. -->
+        <item>2</item>
+        <!-- Do not translate. -->
+        <item>3</item>
+    </string-array>
+    <!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+    <string-array name="gn_entries_font_size">
+        <item>小</item>
+        <item>标准</item>
+        <item>大</item>
+        <item>超大</item>
+    </string-array>
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+    
+    <!-- Gionee <chenml> <2013-05-29> add for CR00821135 begin  -->    
+    <string-array name="gn_screen_size_entries" translatable="false">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+    <!-- Gionee <chenml> <2013-05-29> add for CR00821135 end  -->   
+    <!-- Gionee <xuwen> <2013-12-06> add for CR00957338 begin -->
+    <string-array name="gn_wifi_status">
+        <item></item>
+        <item>"正在扫描..."</item>
+        <item>"正在连接..."</item>
+        <item>"正在进行身份验证..."</item>
+        <item>"正在获取 IP 地址..."</item>
+        <item>"已连接"</item>
+        <item>""</item>
+        <item>"正在断开连接..."</item>
+        <item>""</item>
+        <item>""</item>
+        <item>""</item>
+        <item>""</item>
+    </string-array>
+    <string-array name="gn_wifi_status_with_ssid">
+        <item></item>
+        <item>"正在扫描..."</item>
+        <item>"正在连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>..."</item>
+        <item>"正在通过 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 进行身份验证..."</item>
+        <item>"正在从 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 获取 IP 地址..."</item>
+        <item>"已连接到 <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</item>
+        <item>""</item>
+        <item>"正在断开与 <xliff:g id="NETWORK_NAME">%1$s</xliff:g> 的连接..."</item>
+        <item>""</item>
+        <item>""</item>
+        <item>""</item>
+        <item>""</item>
+    </string-array>
+    <!-- Gionee <xuwen> <2013-12-06> add for CR00957338 end -->   
+   <!--Gionee <chenml> <2014-07-02> add for CR01313622 begin  -->
+    <string-array name="entries_battery_display">
+        <item>图形样式</item>
+        <item>数字样式（外部）</item>
+        <item>数字样式（内部）</item>
+    </string-array>    
+   <!--Gionee <chenml> <2014-07-02> add for CR01313622 end  -->
+   
+   <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 begin -->  
+   <!--********************* Permission begin ********************-->  
+       <string-array name="ui_privacy_policy">
+        <item>拨打电话</item>
+        <item>发送短信</item>
+        <item>发送彩信</item>
+        <item>读取通话记录</item>
+        <item>读取短信</item>
+        <item>读取彩信</item>
+        <item>读取联系人信息</item>
+        <item>读取GPS位置信息</item>
+        <item>读取网络位置信息</item>
+        <item>读取手机状态</item>
+        <item>写入/删除短信</item>
+        <item>写入/删除彩信</item>
+        <item>写入/删除联系人</item>
+        <item>写入/删除通话记录</item>
+        <item>录音</item>
+        <item>拍照/摄像</item>
+        <item>调用移动网络开关</item>
+        <item>调用WLAN开关</item>
+        <item>调用蓝牙开关</item>
+        <item>蓝牙配对</item>
+        <item>调用NFC开关</item>
+    </string-array>
+    <string-array name="permission_summary">
+        <item>"个应用可拨打电话"</item>
+        <item>"个应用可发送短信"</item>
+        <item>"个应用可发送彩信"</item>
+        <item>"个应用可读取通话记录"</item>
+        <item>"个应用可读取短信"</item>
+        <item>"个应用可读取彩信"</item>
+        <item>"个应用可读取联系人"</item>
+        <item>"个应用可读取GPS位置信息"</item>
+        <item>"个应用可读取网络位置信息"</item>
+        <item>"个应用可读取手机号码或设备信息"</item>
+        <item>"个应用可写入/删除短信"</item>
+        <item>"个应用可写入/删除彩信"</item>
+        <item>"个应用可写入/删除联系人"</item>
+        <item>"个应用可写入/删除通话记录"</item>
+        <item>"个应用可录音"</item>
+        <item>"个应用可拍摄"</item>
+        <item>"个应用可调用移动网络开关"</item>
+        <item>"个应用可开启/关闭WLAN"</item>
+        <item>"个应用可调用蓝牙开关"</item>
+        <item>"个应用可蓝牙配对"</item>
+        <item>"个应用可调用NFC"</item>
+    </string-array>
+    <string-array name="header_list">
+        <item>已允许</item>
+        <item>已禁止</item>
+    </string-array>
+
+     <string-array name="listitem_permission_setting">
+        <item>全部信任</item>
+        <item>部分信任</item>
+        <item>完全不信任</item>
+     </string-array>
+     
+      <string-array name="listitem_permission_setting_summary">
+        <item>应用调用任何权限时无弹框提示</item>
+        <item>仅针对应用调用重要权限时弹框提示</item>
+        <item>应用调用任何权限时都会弹框提示</item>
+      </string-array>
+  <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 end -->  
+  <!--********************* Permission end ********************-->
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 begin-->
+    <string-array name="virtual_key_entries">
+        <item>返回键在左</item>
+        <item>返回键在右</item>
+    </string-array>
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 end-->
+    <string-array name="gn_font_size_example_title" translatable="false">
+        <item>张三</item>
+        <item>Wendy</item>
+    </string-array> 
+    <string-array name="gn_font_size_example_summary">
+        <item>短信内容已加密</item>
+        <item>How are you?</item>
+    </string-array>
+    
+     <string-array name="default_apn_cu_name" translatable="false">
+        <item>沃宽带用户手机上网</item>
+        <item>沃宽带用户连接互联网</item>
+        <item>中国联通3g彩信</item>
+         <item>中国联通3g网络</item>
+        <item>中国联通wap网络</item>
+        <item>沃3G手机上网</item>
+        <item>沃3G连接互联网</item>
+    </string-array>
+    <!--Gionee <wangguojing> <2014-07-03> add for CR01315743 begin --> 
+    <string-array name="screen_timeout_entries_new">
+        <item msgid="3342301044271143016">"15秒"</item>
+        <item msgid="8881760709354815449">"30秒"</item>
+        <item msgid="7589406073232279088">"1分钟"</item>
+        <item msgid="7001195990902244174">"2分钟"</item>
+        <item msgid="7489864775127957179">"5分钟"</item>
+        <item msgid="2314124409517439288">"10分钟"</item>
+        <item msgid="6864027152847611413">"30分钟"</item>
+    </string-array>
+    <!--Gionee <wangguojing> <2014-07-03> add for CR01315743 end --> 
+    <string-array name="entry_low_battery_alert">
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+    </string-array>
+    
+    <string-array name="transferdata_group" >
+        <item>图片</item>
+        <item>音乐</item>
+        <item>视频</item>
+    </string-array>
+
+</resources>

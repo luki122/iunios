@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ @name:attr.xml
+ @author:wangpf
+ @see:OTA2.1.1 GNProgressButton attribute
+ @createdate：2013-04-11
+ -->
+<resources>
+
+    <declare-styleable name="ProgressButton">
+        <attr name="max" format="integer" />
+        <attr name="fill" format="boolean" />
+        <attr name="paintwidth" format="integer" />
+        <attr name="paintcolor" format="integer" />
+        <attr name="showbottom" format="boolean" />
+        <attr name="insideinterval" format="integer" />
+    </declare-styleable>
+
+</resources>

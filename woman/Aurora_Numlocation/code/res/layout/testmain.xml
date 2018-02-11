@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editText_search" android:inputType="number"></EditText>
+    <Button android:layout_width="wrap_content" android:id="@+id/button_search" android:layout_height="wrap_content" android:text="@string/search"></Button>
+    <TextView android:text="@string/mytest" android:layout_width="wrap_content" android:id="@+id/textView_result" android:layout_height="wrap_content"></TextView>
+    <Button android:layout_width="wrap_content" android:id="@+id/button_updata" android:layout_height="wrap_content" android:text="@string/updata"></Button>
+    <Button android:id="@+id/button_test" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/test"></Button>
+    <Button android:id="@+id/button_import_test" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/import_test"></Button>
+     <Button android:id="@+id/distory_myself" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/import_test"></Button>
+       <Button android:id="@+id/cancle_download" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/import_test"></Button>
+</LinearLayout>

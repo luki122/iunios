@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/light_proximity_rl"
+  android:orientation="vertical"
+  android:paddingTop="10dp"
+  android:paddingBottom="10dp"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<TextView 
+  		android:id="@+id/light_proximity_title"
+  		android:text="@string/light_proximity_title"
+	   	android:textAppearance="?android:attr/textAppearanceLarge"
+	   	android:background="@color/test_blue"
+	   	android:textColor="@android:color/white"
+  		android:layout_alignParentTop="true"
+  		android:layout_marginBottom="10dp"
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"/>
+  
+    <TextView
+    	android:id="@+id/light"
+    	android:layout_below="@id/light_proximity_title"
+    	android:layout_alignParentLeft="true"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:text="@string/light_sensor"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+    	android:id="@+id/light_num"
+		android:layout_alignTop="@id/light"
+    	android:layout_toRightOf="@id/light"
+  		android:layout_marginLeft="10dp"
+  		android:layout_width="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:layout_height="wrap_content"/>
+    <TextView
+    	android:id="@+id/proximity"
+    	android:layout_below="@id/light"
+    	android:layout_alignParentLeft="true"
+  		android:layout_width="wrap_content"
+  		android:text="@string/proximity_sensor"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:layout_height="wrap_content"/>
+    <TextView
+    	android:id="@+id/proximity_num"
+    	android:layout_toRightOf="@id/proximity"
+  		android:layout_marginLeft="10dp"
+    	android:layout_below="@id/light_num"
+  		android:layout_width="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:layout_height="wrap_content"/>
+   <!--  <TextView
+    	android:id="@+id/colour"
+    	android:layout_below="@id/proximity"
+    	android:layout_alignParentLeft="true"
+  		android:layout_width="wrap_content"
+  		android:text="@string/colour"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:layout_height="wrap_content"/>
+    <TextView
+    	android:id="@+id/colournum"
+    	android:layout_toRightOf="@id/colour"
+  		android:layout_marginLeft="10dp"
+    	android:layout_below="@id/proximity_num"
+  		android:layout_width="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+  		android:layout_height="wrap_content"/> -->
+    
+    <include layout="@layout/right_wrong_restart"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:layout_alignParentBottom="true"/> 
+</RelativeLayout>

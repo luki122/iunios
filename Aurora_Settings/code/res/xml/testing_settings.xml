@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/testing" >
+            
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/testing_phone_info">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.RadioInfo" />
+    </aurora.preference.AuroraPreferenceScreen>
+        
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/testing_battery_info">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.BatteryInfo" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/testing_usage_stats">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.UsageStats" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/testing_wifi_info" >
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.wifi.WifiInfo" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="settings_testing_log"
+        aurora:auroratitle="@string/testing_log_onoff" >
+    </aurora.preference.AuroraSwitchPreference>
+    <!--    
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/testing_sim_toolkit">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.stk"
+                android:targetClass="com.android.stk.StkSettings" />
+    </aurora.preference.AuroraPreferenceScreen>
+    -->
+    
+    
+    <aurora.preference.AuroraPreferenceCategory
+         aurora:aurorakey="aurora_calibration_category"
+         aurora:auroratitle="@string/aurora_light_calibration" />
+    
+    <com.android.settings.AuroraButtonPerence
+         aurora:aurorakey="aurora_calibration"
+         aurora:auroratitle="@string/aurora_calibration_title"
+         aurora:aurorasummary="@string/aurora_calibration_summary"/>
+    
+
+</aurora.preference.AuroraPreferenceScreen>
+        

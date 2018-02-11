@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Google Inc.
+     Licensed to The Android Open Source Project.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- add by SQF start -->
+    <string name="aurora_actionbar_menu_delete">Delete</string>
+    <string name="aurora_actionbar_menu_mark_as">Mark As</string>
+    <string name="aurora_actionbar_menu_move_to">Move To</string>
+    <string name="aurora_actionbar_menu_archive">Archive</string>
+    <string name="aurora_listitem_slide_right_read_or_unread">Read Or Unread</string>
+    <string name="aurora_listitem_slide_right_move_to">Move To</string> <!-- &#8230; -->
+
+    <string name="aurora_send_failed">Send failed.</string>
+    <string name="aurora_send_success">Send succeeded.</string>
+    <string name="aurora_select_all">Select All</string>
+    <string name="aurora_reverse_select">Reverse Select</string>
+    <string name="aurora_menu_set_as_read">AlreadyRead</string>
+    <string name="aurora_menu_set_as_unread">Unread</string>
+    <string name="aurora_menu_set_as_starred">Starred</string>
+    <string name="aurora_menu_set_as_nonstarred">Non-starred</string>
+    <string name="aurora_actionbar_menu_setting">settings</string>
+    <string name="mark_as_unread">Mark As Unread</string>
+    <string name="mark_as_read">Mark As Read</string>
+    <string name="aurora_list_footer_view_loading_text">Loading&#8230;</string>
+    <string name="aurora_list_delete_item_tip_title">Tip</string>
+    <string name="aurora_list_delete_item_tip_message">Delete this item?</string>
+    <string name="aurora_list_delete_item_tip_messages">Delete these items?</string>
+    <string name="aurora_update_at_time">Last update at: %s</string>
+    <string name="aurora_one_year_ago">one year ago</string>
+    <string name="aurora_listview_empty_tip">No mails.</string>
+    <!-- add by SQF end -->
+
+
+    <!-- add by chenhl start -->
+    <string name="aurora_compose_title">Write a email</string>
+    <string name="aurora_send">Send</string>
+    <string name="aurora_signature">\n\n\n\n\n"<xliff:g id="SIGNATURE">%s</xliff:g>"\n</string>
+    <string name="string_newly_contact">Newly contact</string>
+    <string name="aurora_sender">Sender</string>
+    <string name="aurora_recipients">Address</string>
+    <string name="aurora_cc">Cc</string>
+    <string name="aurora_bcc">BCC</string>
+    <string name="aurora_theme">Theme</string>
+    <string name="aurora_body_hint">Enter your Message</string>
+    <string name="aurora_attachment_info"><xliff:g id="attach">%s</xliff:g>size of attachments，total <xliff:g id="attach_size">%s</xliff:g></string>
+    <string name="aurora_attachment_donwload_info"><xliff:g id="attach">%s</xliff:g>attachments, the download is complete</string>
+    <string name="aurora_attachment_donwload_percent"><xliff:g id="attach">%s</xliff:g>3 attachments, download<xliff:g id="percent">%s</xliff:g></string>
+    <string name="aurora_add">add</string>
+    <string name="aurora_show">show</string>
+    <string name="aurora_send_email_tips">Mailing tips</string>
+    <string name="aurora_send_fail_view">Send failed, click View</string>
+    <string name="aurora_resend_email">Resend</string>
+    <string name="aurora_network_fail">The network is disconnected, connect the network!</string>
+    <!-- add by chenhl end -->
+
+
+    <!-- add by tangjie start -->
+    <string name="aurora_num_sender">till<xliff:g id="senders">%d</xliff:g>person(s)</string>
+    <!-- add by tangjie end -->
+
+
+    <!-- add by lory start -->
+    <string name="aurora_savedraft">"Save Draft?"</string>
+    <string name="aurora_save">"Save"</string>
+    <string name="aurora_cancel">"Cancel"</string>
+    <!-- add by lory end -->
+
+
+    <!-- paul add start -->
+    <string name="aurora_confirm_delete_conversation">Delete this conversation?</string>
+    <string name="aurora_confirm_delete">Delete</string>
+    <string name="aurora_recipients_detail">Detail</string>
+    <string name="aurora_hide_detail">Hide</string>
+    <string name="aurora_empty_search_result">Empty</string>
+    <!-- paul add end -->
+
+
+    <!-- listview time divider add by JXh  begin -->
+    <string name="earlier">较早</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="file_overflow">%1$d attachments,exceeded the size limit on your mailbox!</string>
+    <string name="file_overflow_single">1 attachment,exceeded the size limit on your mailbox! </string>
+    <string name="file_normal">%1$d attachments</string>
+    <string name="file_normal_single">1 attachment</string>
+    <!-- listview time divider add by JXh  end -->
+    
+    <!-- shihao add for Conversation_detail_more popupWindow -->
+    <string name="aurora_backup_to_calendar">Back Up</string>
+    <string name="aurora_newemail_notification">New Email NOTE</string>
+    
+    <string name="aurora_add_picture">Add Picture</string>
+    <string name="aurora_add_camera">Take Picture</string>
+    <string name="aurora_choose_file">Choose File</string>
+    
+    <string name="aurora_longclick_delete">Delete</string>
+    <string name="aurora_longclick_markas">Mark As</string>
+    <string name="aurora_longclick_moveto">Move To</string>
+    
+    <string name="seleted">"Choosed <xliff:g id="SELETED">%d</xliff:g> item"</string>
+    <string name="nosubject">"No Subject"</string>
+</resources>

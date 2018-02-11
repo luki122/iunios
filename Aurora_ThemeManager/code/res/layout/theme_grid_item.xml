@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.aurora.internetimage.NetworkImageView
+            android:id="@+id/theme_grid_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/local_theme_preview_height" 
+           android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/downloaded_theme_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@com.aurora:drawable/aurora_action_bar_done_svg"
+            android:theme="@style/Local_Theme_State_Style"
+             android:clickable="false"
+            android:layout_gravity="center" />
+        
+        <aurora.widget.AuroraCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downloaded_theme_selected_box"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/theme_grid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/local_theme_item_name_title_color"
+            android:textSize="@dimen/local_theme_item_name_text_size" />
+
+        <TextView
+            android:id="@+id/theme_grid_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="@string/local_theme_update"
+            android:textColor="@color/local_theme_item_update_title_color"
+            android:textSize="@dimen/local_theme_item_update_text_size" 
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

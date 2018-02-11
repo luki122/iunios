@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<uk.co.senab.photoview.PhotoView 
+    android:id="@+id/photo_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+   android:scaleType="fitCenter"
+    />
+
+    <CheckBox
+        android:id="@+id/photo_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/item_img_preview_photo_choose_margin_bottom"
+        android:button="@drawable/aurora_img_select_selector" 
+
+        />
+</FrameLayout>

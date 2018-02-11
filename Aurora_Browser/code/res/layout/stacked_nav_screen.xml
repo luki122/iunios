@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 IUNI OS -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stacked_nav_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_setting_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/close_all_tab"
+            style="@style/HoloButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/null_string"
+            android:src="@drawable/btn_close_all_tab_selector" />
+
+        <ImageButton
+            android:id="@+id/new_tab"
+            style="@style/HoloButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/null_string"
+            android:gravity="center_vertical"
+            android:src="@drawable/btn_new_tab_selector" />
+    </LinearLayout>
+
+    <com.android.phase1.view.stackedscroller.StackViewLayout
+        android:id="@+id/stacked_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabbar"
+        android:orientation="vertical" />
+
+</RelativeLayout>

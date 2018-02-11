@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="font_color">#000</color>
+    <color name="top_font_color">#fff</color>
+    <color name="translate_color">#0000</color>
+    <color name="moviebar_bg_color">#66000000</color>
+    <color name="green_red">#4bcadd</color>
+	<color name="action_bar_save_press_color">#4bcadd</color>
+
+</resources>

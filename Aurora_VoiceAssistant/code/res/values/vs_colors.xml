@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vs_main_bg_color">#ffffff</color>
+    <color name="vs_black">#ff000000</color>
+    <color name="vs_white">#ffffffff</color>
+    <color name="vs_gray">#ff757474</color>
+    <color name="vs_blue">#ff02a5db</color>
+    <color name="vs_half_white">#50FFFFFF</color>
+    <color name="vs_cc_white">#CCFFFFFF</color>
+    
+    <color name="vs_news_content">#ff444444</color>
+    <color name="vs_news_resouce">#ff858585</color>
+    <color name="vs_textcolor">#ff313131</color>
+<!--     shigq -->
+	<color name="vs_sub_msg_color">#ff8d8d8d</color>
+    <!--     shigq -->
+<!--     <color name="vs_train_item_bg_press">#00000000</color> -->
+<!--     <color name="vs_transparent_background">#ffe8e8e8</color> -->
+	<color name="vs_train_item_bg_press">#ffe8e8e8</color>
+    <color name="vs_transparent_background">#00000000</color>
+    
+    <color name="vs_transparent">#00000000</color>
+    <color name="vs_view_press_bg">#ff0ec16f</color>
+    <drawable name="vs_speed_bg">#99000000</drawable>
+    
+    <!-- shigq -->
+    <color name="menu_focus_down">#ff3da0fd</color>
+    <color name="menu_focus_up">#ff3da0fd</color>
+    <color name="menu_focus_normal">#FFFFFF</color>
+    
+    <color name="vs_greeting_fwhite">#FFFAF0</color>
+    <color name="vs_greeting_red">#FF0000</color>
+    
+    
+    <!-- barcode -->
+    <color name="vs_barcode_result_view">#b0000000</color>
+    <color name="vs_barcode_divide_line">#50FFFFFF</color>
+    <color name="vs_barcode_scanning_background">#99000000</color>
+    <color name="vs_barcode_scanning_tips_white">#FFFFFFFF</color>
+    <color name="vs_barcode_result_black">#FF000000</color>
+    <color name="vs_barcode_scanning_border_frame">#01C16F</color>
+    <color name="vs_barcode_vcard_item">#8d8d8d</color>
+   
+</resources>

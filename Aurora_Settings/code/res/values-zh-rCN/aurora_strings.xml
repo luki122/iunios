@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+
+    <!-- Aurora <likai> add begin -->
+    <string name="aurora_advanced_settings_title">高级设置</string>
+    <string name="aurora_wifi_settings_title">WLAN</string>
+    <string name="aurora_wifi_connect_ssid">已连接<xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+	<string name="aurora_no_connect_ssid">已关闭</string>
+    <string name="aurora_wifi_list">WLAN 列表</string>
+    <string name="tether_settings_title_wifi_header">"共享热点"</string>
+    <string name="aurora_wifi_success_forget_message">已忽略<xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+    <string name="aurora_wifi_notify_open_networks">有可用网络时通知我</string>
+    <string name="aurora_wifi_sleep_policy_title">WLAN 休眠策略</string>
+    <string name="aurora_proxy_hostname_label">主机名</string>
+    <string name="aurora_proxy_port_label">端口</string>
+    <string name="aurora_proxy_exclusionlist_label">无代理网址</string>
+    <string name="aurora_display_brightness">适应环境亮度</string>
+    <string name="aurora_display_screen_timeout">休眠时间</string>
+    <string name="aurora_display_screen_timeout_summary">无操作<xliff:g id="TIMEOUT_DESCRIPTION">%1$s</xliff:g>后</string>
+    <string name="aurora_display_screen_timeout_one">15秒</string>
+    <string name="aurora_display_screen_timeout_two">30秒</string>
+    <string name="aurora_display_screen_timeout_three">1分钟</string>
+    <string name="aurora_display_screen_timeout_four">2分钟</string>
+    <string name="aurora_display_screen_timeout_five">5分钟</string>
+    <string name="aurora_display_screen_timeout_six">10分钟</string>
+    <string name="aurora_display_screen_timeout_seven">30分钟</string>
+    <string name="aurora_display_font_size">选择字体大小</string>
+    <string name="aurora_display_font_size_small">小号</string>
+    <string name="aurora_display_font_size_normal">默认</string>
+    <string name="aurora_display_font_size_medium">中号</string>
+    <string name="aurora_display_font_size_large">大号</string>
+    <string name="aurora_display_button_light">按键灯开关</string>
+    <string name="aurora_language_settings">语言和输入法</string>
+    <string name="aurora_language_title">系统语言</string>
+    <string name="aurora_language_category_title">语言</string>
+    <string name="aurora_language_picker_title">选择系统语言</string>
+    <string name="aurora_inputmethod_picker_title">选择默认输入法</string>
+    <string name="aurora_wireless_settings_title">高级连接设置</string>
+    <string name="aurora_location_settings_title">定位服务</string>
+	<string name="aurora_sim_settings_title">SIM卡应用</string>
+    <string name="aurora_application_settings_title">应用管理</string>
+    <string name="aurora_battery_settings_title">电源管理</string>
+    <string name="aurora_account_settings_title">帐户</string>
+    <string name="aurora_add_account_title">添加帐户</string>
+    <string name="aurora_tether_settings_title">网络共享</string>
+    <string name="aurora_usb_tether_text">通过USB分享网络</string>
+    <string name="aurora_bluetooth_tether_text">通过蓝牙分享网络</string>
+    <string name="aurora_wifi_tether_text">便携式 WLAN 热点</string>
+    <string name="aurora_wifi_tether_configure_ap">设置热点</string>
+    <!-- Aurora <likai> add end -->
+
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.string begin -->
+    <string name="aurora_report">报告</string>
+    <string name="aurora_megabyteShort">MB</string>
+    <string name="aurora_gigabyteShort">GB</string>
+    <string name="aurora_wifi_tether_configure_ssid_default" translatable="false">AndroidAP</string>
+    <string name="clearDefaultHintMsg">在“系统设置”&gt;“应用”&gt;“已下载”中清除默认设置。</string>
+    <string name="bugreport_title">Take bug report</string>
+    <string name="bugreport_message">这会收集有关当前设备状态的信息，并以电子邮件的形式进行发送。从开始生成错误报告到准备好发送需要一点时间，请耐心等待。</string>
+    <string name="ringtone_silent">无</string>
+    <string name="ringtone_unknown">未知铃声</string>
+    <string name="ssl_certificate">安全证书</string>
+    <string name="fast_scroll_alphabet"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.string end -->
+
+
+
+    <string name="wifi_proxy_settings_none" >无</string>
+    <string name="wifi_proxy_settings_manual" >手动</string>
+    <string name="wifi_ip_settings_dhcp" >DHCP</string>
+    <string name="wifi_ip_settings_static" >静态</string>
+    <string name="wifi_info_modify" >舍弃</string>
+    <string name="wifi_info_modify_message" >要舍弃您所做的更改吗?</string>
+    <string name="ignore_wifi_ap" >忽略该网络</string>
+    <string name="accessibility_twice_click_screen_awake_prerefence_title" >双击屏幕唤醒</string>
+    <string name="accessibility_screen_pick_take_prerefence_title" >极速抓拍</string>
+    <string name="accessibility_screen_music_control_prerefence_title" >黑屏音乐控制</string>
+    <string name="accessibility_screen_somatosensory_smart_pause" >体感智能暂停</string>
+    <string name="accessibility_screen_three_fingers_screenshots" >三指截屏</string>
+    <string name="accessibility_glove_title">手套模式</string>
+    <string name="screen_pick_take_summary" >锁屏状态下在屏幕上画C字形即可启动抓拍</string>
+    <string name="screen_music_control_summary" >锁屏状态下在屏幕上画左、右切换歌曲，画圈暂停/播放歌曲</string>
+    <string name="set_bootanimation_success">开机画面设置完成</string>
+    <string name="set_bootanimation_first">请先设置开机画面</string> 
+    <string name="photograph_bootanimation">拍照</string>
+    <string name="album_bootanimation">相册</string>
+    <string name="share_bootanimation">分享</string>
+    <string name="scan_bootanimation">预览</string>   
+    <string name="change_bootanimation">更换</string>
+    <string name="set_bootanimation">马上设置</string> 
+    <string name="reset_bootanimation">重置</string> 
+    <string name="bootanimation_settings">开机画面</string>
+    <string name="bootanimation_reset">开机画面已重置</string>
+    <string name="set_bootanimation_settings">调整图片</string>  
+    <string name="input_exceed_limit" >你输入的字数已经超过了限制！</string>
+    <string name="input_type_limit" >密码只能为数字、字母！</string>
+
+    <!--  Aurora liugj 2013-10-22 modified for aurora's new feature start -->
+    <string name="bluetooth_open_scan" >"可被发现"</string>
+    <string name="bluetooth_turned_on" >"已打开"</string>
+    <string name="bluetooth_paired" >"已配对"</string>
+    <string name="bluetooth_name_save" >"保存"</string>
+    <string name="bluetooth_title_device_name" >"我的设备名称"</string>
+    <string name="bluetooth_device_name_not_empty" >"设备名称不能为空"</string>
+    <string name="bluetooth_device_name_not_space" >"设备名称不能为空格"</string>
+    <string name="bluetooth_title_unpair" >"取消蓝牙配对"</string>
+    <string name="bluetooth_unpair_dialog_text">"您是否要取消与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”的蓝牙配对？"</string>
+    <string name="bluetooth_unpair_toast_ok">"已取消与“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”的配对"</string>
+    <string name="bluetooth_unpair_toast_fail">"与设备“<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”取消蓝牙配对失败"</string>
+    <!--  Aurora liugj 2013-10-22 modified for aurora's new feature end -->
+    
+    <string name="internal_storage_format">"格式化内部存储"</string>
+    <string name="internal_storage_format_summary">"清除内部存储中的全部数据"</string>
+
+
+    <string name="apn_add">添加接入点</string>
+    <string name="apn_add_message">"确定要取消添加接入点吗？"</string>
+    <string name="apn_edit_message">"确定要取消修改接入点吗？"</string>
+    <string name="remove_apn_label">删除接入点</string>
+    <string name="apn_ok">确定</string>
+    <string name="apn_cancel">取消</string>
+
+
+    <string name="master_clear_confirm">"即将把您的手机恢复到出厂状态，该操作无法撤销，请再次确认！"</string>
+
+
+    <string name="aurora_internal_storage">"内部存储"</string>
+    <string name="testing_log_onoff">"日志"</string>
+    <string name="battery_usage_hint">电池已用</string>
+
+
+
+    <string name="factory_settings_title">"三星原厂功能"</string>
+    <string name="smart_screen_settings_title">"智能屏幕"</string>
+    <string name="smart_screen_settings_summary">"使用智能面部检测功能"</string>
+    <string name="screen_mode_settings_title">"屏幕模式"</string>
+    <string name="screen_mode_settings_summary">"选择屏幕模式"</string>
+    <string name="power_save_mode_settings_title">"省电模式"</string>
+
+
+    
+    <string name="select_save_data_title">"选择要删除的数据"</string>
+    <string name="delete_app_title">"删除应用程序"</string>
+    <string name="delete_app_summary">"清除所有已安装的应用程序。"</string>
+    <string name="format_sdcard_title">"格式化内部存储卡"</string>
+    <string name="start_factory_alterdlg_summary_none">"是否清除用户数据？注意，该操作确认后无法撤销！"</string>
+    <string name="start_factory_alterdlg_summary_delapp">"是否清除用户数据，并删除所有应用程序？注意，该操作确认后无法撤销！"</string>
+    <string name="start_factory_alterdlg_summary_sdcard">"是否清除用户数据，并格式化内部存储？注意，该操作确认后无法撤销！"</string>
+    <string name="start_factory_alterdlg_summary_delappandsdcard">"是否清除手机上的所有数据？注意，该操作确认后无法撤销！"</string>
+    <string name="format_sdcard_summary">"清除SD卡中的所有数据，如音乐和照片。"</string>
+    
+    <!-- qy <b>"内存设备"</b>-->
+    <string name="factory_defalut_tip" >"此操作会清除您手机内存设备中的所有数据，包括："</string>
+    <string name="factory_defalut_tip_2" >"勾选“清除多媒体用户数据”，同时清空照片、音乐、视频等多媒体数据，包括："</string>
+    <string name="factory_defalut_tip_account"><li>"您的 Google 帐户"</li> </string>
+    <string name="factory_defalut_system_applay_tip"><li>"系统及应用数据和设置"</li></string>
+    <string name="factory_defalut_download_tip"><li>"已安装的应用"</li></string>
+    <string name="clear_multi_user_data_tip">"清除多媒体用户数据"</string>
+    <string name="factory_defalut_music_tip"><li>"音乐"</li></string>
+    <string name="factory_defalut_photo_tip"><li>"照片"</li></string>
+    <string name="factory_defalut_vedio_tip"><li>"视频"</li></string>    
+    <string name="factory_defalut_others_tip"><li>"其他多媒体用户数据"</li></string>
+    <string name="factory_defalut_others_use_tip"><li>"使用手机过程引入的其他数据"</li></string>
+    
+    <string name="start_factory_defalut_title">"开始恢复"</string>
+    <string name="start_factory_alterdlg_title">"要重置吗？"</string>
+    <string name="start_factory_alterdlg_summary">"要清除所有个人信息和下载的应用吗？请注意，此操作无法撤消！"</string>
+
+
+    <string name="total_size">"总共"</string>
+    <string name="avail_size">"可用"</string>
+    
+    <string name="lock_screen_notifications_title">锁定屏幕通知</string>
+    <string name="lock_screen_notifications_summary">在滑动锁定屏幕上显示未接来电和未接短信通知</string>
+    <!-- Aurora <zhang_xin> <2013-12-10> add for choose password begin -->
+    <string name="unlock_set_unlock_mode_digit">"简易密码"</string>
+    <string name="unlock_set_unlock_digit_title">"简易密码"</string>
+    <string name="unlock_set_unlock_digit_summary">"输入4位数字解锁"</string>
+    <string name="lockpassword_choose_your_digit_header">"输入密码"</string>
+    <string name="lockpassword_confirm_your_digit_header">"再次输入密码"</string>
+    <string name="lockpassword_choose_your_digit_title">"选择您的简易密码"</string>
+    <string name="lockpassword_confirm_digit_title">"确认您的简易密码"</string>
+    <string name="lockpassword_confirm_digit_header">"输入原密码"</string>
+    <string name="lockpassword_digit_recently_used">"设备管理员不允许使用最近用过的简易密码"</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpassword_again_confirm_passwords_dont_match">"第二次输入密码与第一次不符"</string>
+    <!-- Aurora <zhang_xin> <2013-12-10> add for choose password end -->
+    <!-- qy begin-->
+    <string name="format_title">"格式化"</string>
+    <string name="format_message">"格式化内部存储将清空所有文件，该操作无法撤销，是否继续？"</string>
+    <string name="clear_sd_card_message">"即将清空所有文件，该操作无法撤销，是否继续？"</string>
+    <string name="format_cancel">"取消"</string>
+    <string name="format_continue">继续</string>
+    <string name="format_ok">格式化</string>
+    <string name="clear_ok">清空</string>
+    <string name="clear_complete">清空完成</string>
+    <string name="format_confirm_message">"请再次确认格式化操作，格式化开始后不可停止。"</string>
+    <string name="clear_sd_card_confirm_message">"请再次确认清空操作，清空开始后不可停止。"</string>
+    <string name = "aurora_no_add_account">暂无可添加帐户</string>
+    <string name = "font_bold_pref_title">字体加粗</string>
+    <string name = "font_bold_message">字体加粗需重启系统，是否重启？</string>
+    <string name = "ok_font_bold_bt">确定</string>
+    <string name = "cancel_font_bold_bt">取消</string>
+    <string name = "font_bold_dlg_title">正在加载...</string>
+    <string name = "font_bold_dlg_msg">请稍候...</string>
+    <string name = "start_serivce_pref_title">"启用服务"</string>
+
+
+    <string name = "enable_com">COM 端口调试</string>
+    <string name = "enable_com_summary">连接 USB 后启用 COM 端口调试 </string>
+    <string name = "usb_adb">USB 调试</string>   
+
+    <string name = "virtual_key_setting_pref_title">"虚拟键设置"</string>
+    <string name = "return_key_setting_pref_title">"返回键设置"</string>
+    <string name = "virtual_key_setting_mode_left_pref_title">"返回键在左边"</string>
+    <string name = "virtual_key_setting_mode_left_pref_summary">"返回键在Home键左边，菜单键在右边"</string>
+    <string name = "virtual_key_setting_mode_right_pref_title">"返回键在右边"</string>
+    <string name = "virtual_key_setting_mode_right_pref_summary">"返回键在Home键右边，菜单键在左边"</string>
+    <!-- qy end-->    
+
+   <!--Aurora <gary.gou> <2014-05-09>add for third application NotifierPro (bug4568)-->
+   <string name="manage_notification_access" >"通知读取权限"</string>
+   <!--Aurora <gary.gou> <2014-05-09>add for third application NotifierPro (bug 456)-->
+
+    <!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. start -->
+    <string name="aurora_settings_sim_card_management">SIM 卡管理</string>
+    <string name="sim01_lock_settings_category">"设置 SIM1 卡锁定"</string>
+    <string name="sim02_lock_settings_category">"设置 SIM2 卡锁定"</string>
+    <string name="sim01_lock_settings_title">"SIM1 卡锁定设置"</string>
+    <string name="sim02_lock_settings_title">"SIM2 卡锁定设置"</string>
+    <string name="aurora_sim_01_settings_title">SIM卡1应用</string>
+    <string name="aurora_sim_02_settings_title">SIM卡2应用</string>
+    <!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. end -->
+
+    <!-- add by steve.tang 2014-06-09 add for art mode. start -->
+    <string name="enable_art_invalid">ART 模式</string>
+    <string name="select_runtime_warning_message_invalid">"要重新启动以将运行环境从“<xliff:g id="OLD">%1$s</xliff:g>”改为“<xliff:g id="NEW">%2$s</xliff:g>”吗？"</string>
+    <!-- add by steve.tang 2014-06-09 add for art mode. start -->
+    
+    <!-- add by hanpingjiang 2014-07-01 add for volume -->
+    <string name="otg_progress_unmounting" >"正在卸载 OTG 存储设备..."</string>
+    <string name="sd_progress_unmounting" >"正在卸载 SD 卡..."</string>
+    <string name="in_progress_unmounting" >"正在卸载内部存储卡..."</string>
+    <string name="progress_nomediapresent" >No removable media present</string>
+    <string name="otg_progress_erasing" >"正在清除 OTG 存储设备的数据..."</string>
+    <string name="sd_progress_erasing" >"正在清除 SD 卡的数据..."</string>
+    <string name="in_progress_erasing" >"正在清除内部存储的数据..."</string>
+    <string name="media_bad_removal" >"设备未卸载就被移除。"</string>
+    <string name="otg_media_checking" >"系统正在检查 OTG 存储设备。"</string>
+    <string name="sd_media_checking" >"目前正在检查 SD 卡。"</string>
+    <string name="in_media_checking" >"目前正在检查内部存储设备。"</string>
+    <string name="media_removed" >"设备已移除。"</string>
+    <string name="otg_media_shared" >"某台计算机正在使用 USB 存储设备。"</string>
+    <string name="sd_media_shared" >"目前有计算机正在使用 SD 卡。"</string>
+    <string name="in_media_shared" >"目前有计算机正在使用内部存储设备。"</string>
+    <string name="media_unknown_state" >"外部媒体处于未知状态。"</string>
+    <string name="format_error" >"无法清除。"</string>
+    
+    <!-- add by hanpingjiang 2014-07-17 add for DefaultSMSDialog -->
+    <string name="sms_application_title" translatable="true">默认短信应用</string>
+    <string name="sms_change_default_dialog_title" translatable="true">修改默认短信应用?</string>
+    <string name="sms_change_default_dialog_text" translatable="true">使用“ <xliff:g id="new_app">%s</xliff:g> ”替换“ <xliff:g id="current_app">%s</xliff:g> ”作为默认短信应用?</string>
+    <string name="sms_change_default_no_previous_dialog_text" translatable="true">使用 <xliff:g id="new_app">%s</xliff:g> 作为默认短信应用?</string>
+
+    <string name="art_title" >"切换运行模式"</string>
+    
+    <!-- add by hanpingjiang 2014-08-24 add for Storage -->
+    <string name="clear_sd_card">清空 SD 卡</string>  
+    <string name="otg_card_title">OTG 存储</string> 
+    <string name="clear_otg_card">清空 OTG 存储</string>
+
+    
+    <!--add by gary.gou-->
+    <string name="usage_type_data_wifi_send" msgid="7178327382353096029">"发送的WLAN数据量"</string>
+    <string name="usage_type_data_wifi_recv" msgid="7822328607564241372">"接受的WLAN数据量"</string>
+    <string name="aurora_factory_settings_title">"原厂功能"</string>
+    <string name="aurora_oneplus_factory_settings_title">"1+原厂功能"</string>
+    <string name="aurora_find7_factory_settings_title">"Find7原厂功能"</string>
+    <string name="smart_apperceive_control_settings">手势体感</string>
+    
+    <string name="breathing_LED_settings_title">呼吸灯</string>
+    <string name="breathing_LED_settings_inform_title">通知</string>
+    <string name="breathing_LED_settings_inform_summary">屏幕熄灭后，当您有未接来电、未读短信或通知时呼吸灯亮起</string>
+    <string name="breathing_LED_settings_low_power_title">电量低</string>
+    <string name="breathing_LED_settings_low_power_summary">屏幕熄灭后，当电池电量低于10%时呼吸灯亮起</string>
+    <string name="breathing_LED_settings_charge_title">充电</string>
+    <string name="breathing_LED_settings_charge_summary">屏幕熄灭后，当手机连接充电器充电时呼吸灯亮起</string>
+
+    <string name="aurora_light_calibration">"光感校准"</string>
+    <string name="aurora_calibration_title">"校准"</string>
+    <string name="aurora_calibration_summary">"请在室内进行校准(勿在强光下校准)"</string>
+    <string name="aurora_calibration_dialog_tip">"光感组件正在校准"</string>
+    <string name="aurora_calibration_failed">"校准失败,是否重新校准？"</string>
+    <string name="unlock_set_unlock_off_title_summary">按Power键直接解锁</string>
+    
+    <string name="credential_storage_type" >"存储类型"</string>
+    <string name="credential_storage_type_hardware" >"硬件支持"</string>
+    <string name="credential_storage_type_software">"仅限软件"</string>
+    <string name="ssl_security_certificate">安全证书</string>
+    
+    <string name="issued_to" >"颁发给："</string>
+    <string name="common_name" >"常用名称："</string>
+    <string name="org_name" >"组织："</string>
+    <string name="org_unit" >"组织单位："</string>
+    <string name="issued_by">"颁发者："</string>
+    <string name="validity_period">"有效期："</string>
+    <string name="issued_on" >"颁发时间："</string>
+    <string name="expires_on">"有效期至："</string>
+    <string name="serial_number" >"序列号："</string>
+    <string name="fingerprints" >"指纹："</string>
+    <string name="sha256_fingerprint" >"SHA-256 指纹："</string>
+    <string name="sha1_fingerprint">"SHA-1 指纹："</string>
+    
+     <!-- add begin by aurora.jiangmx -->
+    <string name="virtual_keyboard_switch_title">虚拟键隐藏功能</string>
+    <string name="virtual_keyboard_switch_summary">下滑虚拟键区域可以隐藏虚拟键，从屏幕底部上滑可以调出虚拟键</string>
+    
+    <string name="manage_notification_access_summary_zero" >"应用无法读取通知"</string>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="one" >"%d个应用可以读取通知"</item>
+        <item quantity="other" >"%d个应用可以读取通知"</item>
+    </plurals>
+    
+    <string name="notification_listener_security_warning_summary">
+            "“<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>
+            ”将可读取系统或任何已安装应用发布的任何通知（可能包括联系人姓名和别人发送给您的消息文字等个人信息）,还将可以关闭这些通知或触摸其中的操作按钮。"
+    </string>
+    
+    <string name="no_notification_listeners" >"未安装任何通知侦听器。"</string>
+    
+    <string name="enable_art">ART模式</string>
+    <string name="select_runtime_warning_message">手机将会重新启动切换至Art模式运行，确定继续？</string>
+    <string name="leave_art_runtime_warning_message">手机将会重新启动退出Art模式运行，确定继续？</string>
+    
+    <string name="personal_space">个人中心</string>
+    <string name="login_status_yes">已登录</string>
+    <string name="login_status_no">未登录</string>
+    <!-- add end -->
+
+    <!--theme settings  -->
+    <string name="theme_settings_title">主题</string>
+    <string name="theme_preview">预览</string>
+    <string name="kitty_str">Hello Kitty</string>
+    <string name="her_str">IUNI For Her</string>
+    <string name="back">返回</string>
+    <string name="theme_dialog_title">主题切换</string>
+    <string name="theme_dialog_msg">新主题需要重启之后才会生效，是否立即重启手机?</string>
+    <string name="theme_dialog_negative">暂不重启</string>
+    <string name="theme_dialog_positive">立即重启</string>
+    
+    
+    <!--  add by penggangding begin-->
+        <string name="app_name">FeedBack</string>
+    <string name="feed_back">用户反馈</string>
+    <string name="privider_sup">提供建议</string>
+    <string name="back_pro">反馈问题</string>
+    <string name="pro_discrible">问题描述</string>
+    <string name="pro_discrible_detail">请详细描述您遇到的问题...</string>
+    <string name="coms_contact">联系方式</string>
+    <string name="contact_detail">如果方便请留下您的QQ 或者电话方便我们后续跟进...</string>
+    <string name="recommend_drawings">建议附图</string>
+    <string name="note">注：该功能将会消耗一定的数据流量，请在网络容许的环境下使用 !</string>
+    <string name="commit">提交</string>
+    <string name="provide_advice">提供建议</string>
+    <string name="feedback_the_problem">反馈问题</string>
+    <string name="Problem_Description">问题描述</string>
+    <string name="limit_chinese_number">汉字个数不能超过一百个</string>
+    <string name="limit_contentid_number">汉字个数不能超过五十个</string>
+    <string name="submit">确定</string>
+    <string name="cancal">取消</string>
+    <string name="feed_back_summury">你还有未提交的内容，离开后内容将会丢失，是否继续？</string>
+    <string name="upload">上传信息</string>
+    <string name="upload_info">正在上传信息到服务器</string>
+    <string name="suggest_discrible">请填写建议描述</string>
+    <string name="feedback_discrible">请填写反馈问题描述</string>
+    <string name="contantid">请留下联系方式</string>
+     <string name="uploaded_server">您的反馈以提交</string>
+     <string name="unUpload_server">您的反馈未提交成功</string>
+     <string name="uploading_dialog">提交您的反馈信息以及相关机型信息至我们的服务器，是否继续？</string>
+     <string name="network_unConnect">网络未连接</string>
+     <!--  add by penggangding end-->
+    
+    
+        
+     <!-- add begin by aurora penggangding -->
+    <string name="action_settings">Settings</string>
+        <string name="check_all">选中所有</string>
+    <string name="no_user_app">No Personal App</string> 
+    <string name="necessary_app">Necessary App</string>
+     <string name="phone_memory">Phone</string>
+     <string name="sd_card">SD Card</string>
+     <string name="init">Initialization</string>
+     <string name="please_wait_init">Initializing, please wait...</string>
+     <string name="no_set_item">No set item</string> 
+     <string name="add_privacy_app">添加锁屏应用</string>
+     <string name="privacy_app">锁屏应用</string>
+     <string name="can_see_only_in_privacy">锁屏应用只在锁屏空间下可见</string>
+     <string name="sure_num">确定(%1$s)</string>
+     <string name="cancel_privacy">取消锁屏应用的显示</string>
+     <string name="choice_sort_way">Select sorting method</string>
+     <string name="cancel_privacy_app">取消隐藏应用</string>
+     <string name="sure_no_hint_choice_app">确定不再隐藏选中的应用吗？</string>
+     <string name="uninstall_choice_app_at_same_time"></string>
+     <string name="sure">OK</string>
+     <string name="during_cancel_privacy_app">正在取消隐藏应用，请等待...</string>
+     <string name="un_choice">未选中</string>
+     <string name="no_longer_hint">Do not prompt</string>
+    <string name="system">系统</string>
+ <!-- add end by aurora penggangding -->
+
+    
+    
+</resources>

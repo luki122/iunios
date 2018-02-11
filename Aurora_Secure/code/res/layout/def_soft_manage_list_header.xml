@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!-- 标签项 区域  begin -->
+<RelativeLayout 
+    android:id="@+id/labelLayout" xmlns:android="http://schemas.android.com/apk/res/android" 
+ 	android:layout_width="fill_parent" android:layout_height="wrap_content"  >
+ 	<!-- android:paddingBottom of this TextView changed from 5dp to 1dp(2015-1-9,Vulcan Yang) -->
+ 	<!-- android:paddingTop of this TextView changed from 20dp to 18dp(2015-1-9,Vulcan Yang) -->
+    <TextView  
+		    android:id="@+id/labelText"   
+		    android:layout_width="wrap_content" android:layout_height="fill_parent" 
+		    android:textColor="@color/def_soft_manage_list_header_textcolor"  android:textSize="16sp"
+		    android:gravity="center_horizontal|left" android:paddingLeft="15dp" 
+		    android:paddingTop="18dp" android:paddingBottom="1dp" android:singleLine="true"/>  
+</RelativeLayout> 
+<!-- 标签项 区域  end -->

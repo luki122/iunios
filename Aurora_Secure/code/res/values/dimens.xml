@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+     <!-- main_activity_grid_item_text_margin changed from 6dp to 2dp(2015-1-9,Vulcan Yang) -->
+    <dimen name="main_activity_grid_item_text_margin">2dp</dimen>
+    <dimen name="preferences_item_height">47dp</dimen>
+    <dimen name="preferences_item_text_size">17sp</dimen>
+    <dimen name="list_header_padding_top">10dp</dimen>
+    <dimen name="list_header_padding_bottom">3.3dp</dimen>
+    <dimen name="ad_scan_app_anim_holder_size">250dp</dimen>
+    <dimen name="ad_scan_app_icon_size">35dp</dimen>
+    <dimen name="main_circle_view_stroke_width">21.3dp</dimen>
+    <dimen name="main_circle_view_diameter">218.7dp</dimen>
+    <dimen name="list_header_text_size">18sp</dimen>
+    <dimen name="preference_list_header_padding_top">6dp</dimen>
+    <dimen name="preference_list_header_padding_bottom">6dp</dimen>
+    <dimen name="hint_big_text_size">22sp</dimen> 
+    <dimen name="hint_small_text_size">10sp</dimen> 
+    <dimen name="hint_small_text_margin_top">6dp</dimen> 
+    <dimen name="all_app_popup_window_btn_width">126dp</dimen>
+    <dimen name="letter_side_bar_text_width">13dp</dimen>
+    <dimen name="privacy_app_icon_size">55dp</dimen>
+    <dimen name="privacy_app_grid_item_width">68.34dp</dimen>
+    <dimen name="privacy_app_grid_item_height">92.3dp</dimen>
+    <dimen name="all_app_right_action_bar_chg_btn_padding_bottom">14dp</dimen>
+    <dimen name="leftLayout_padding_left">5dp</dimen>
+</resources>

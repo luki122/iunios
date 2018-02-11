@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/detail_web_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_post_detail_aet_input_reply_layout_height"
+        android:scrollbars="none" 
+        />
+
+    <ImageView
+        android:id="@+id/hide_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_post_detail_comment_iv_hide_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/share_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/wb_ly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_33"
+                android:src="@drawable/aurora_share_xlwb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_33"
+                android:layout_marginTop="@dimen/padding_12"
+                android:text="@string/weibo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_33"
+                android:src="@drawable/aurora_share_friends" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_33"
+                android:layout_marginTop="@dimen/padding_12"
+                android:text="@string/FriendsCircle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_45"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_33"
+                android:src="@drawable/aurora_share_wx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_33"
+                android:layout_marginTop="@dimen/padding_12"
+                android:text="@string/wxFriends" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/add_one_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/detail_bottom_bar_height_all"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@drawable/add_one"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/add_two_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/add_one_iv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:src="@drawable/add_two"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_input_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/detail_bottom_bar_background">
+
+            <LinearLayout
+                android:id="@+id/ll_input_normal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_bottom_bar_height"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/favour_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/bottom_bar_iv_left_right_padding"
+                    android:paddingRight="@dimen/bottom_bar_iv_left_right_padding"
+                    android:src="@drawable/add_nice" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.aurora.iunivoice.widget.AuroraEditText
+                        android:id="@+id/input_reply_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/padding_7"
+                        android:layout_marginTop="@dimen/padding_7"
+                        android:background="@drawable/input_comment_bg"
+                        android:gravity="left"
+                        android:maxLength="100"
+                        android:padding="@dimen/activity_post_detail_aet_input_padding"
+                        android:textColor="@color/gloab_title_color"
+                        android:textColorHint="@color/postdetail_light_color"
+                        android:textSize="@dimen/textsize_12" />
+
+                    <TextView
+                        android:id="@+id/score_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="@dimen/padding_14"
+                        android:gravity="center_vertical"
+                     
+                        android:textColor="@color/score_text_color"
+                        android:textSize="@dimen/textsize_13" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/comment_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="@dimen/bottom_bar_iv_left_right_padding"
+                    android:paddingRight="@dimen/bottom_bar_iv_left_right_padding"
+                    android:src="@drawable/add_score" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_input_press"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_bottom_input_bar_height"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/padding_7"
+                    android:layout_marginRight="@dimen/padding_12"
+                    android:layout_marginStart="@dimen/padding_9"
+                    android:layout_marginTop="@dimen/padding_7"
+                    android:background="@color/white_translucency"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.aurora.iunivoice.widget.AuroraEditText
+                            android:id="@+id/input_reply_press"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/padding_14"
+                            android:background="@null"
+                            android:duplicateParentState="true"
+                            android:gravity="left"
+                            android:maxLength="100"
+                            android:padding="@dimen/activity_post_detail_aet_input_padding"
+                            android:textColor="@color/reply_edit_text_color"
+                            android:textColorHint="@color/postdetail_light_color"
+                            android:textSize="@dimen/textsize_12" />
+
+                        <TextView
+                            android:visibility="invisible"
+                            android:id="@+id/length_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginBottom="@dimen/padding_8"
+                            android:layout_marginRight="@dimen/padding_12"
+                            android:textColor="@color/comment_length_hint_text"
+                            android:textSize="@dimen/textsize_9" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="@dimen/padding_33"
+                        android:background="@color/detail_bottom_bar_background" />
+
+                    <Button
+                        android:id="@+id/btn_send_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/action_bar_transparent"
+                        android:paddingLeft="@dimen/padding_9"
+                        android:paddingRight="@dimen/padding_12"
+                        android:text="@string/send_reply"
+                        android:textColor="@color/send_bar_text_color"
+                        android:textSize="@dimen/textsize_13" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/page_loading" />
+
+</RelativeLayout>

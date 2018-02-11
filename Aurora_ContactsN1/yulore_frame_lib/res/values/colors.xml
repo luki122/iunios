@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yulore_superyellowpage_pw_bg">#4d000000</color>
+    <color name="yulore_superyellowpage_detail_name_bg">#80000000</color>
+    <color name="yulore_superyellowpage_correct_color">#b2000000</color>
+    <color name="yulore_superyellowpage_view_color">#40000000</color>
+    <color name="yulore_superyellowpage_white">#FFFFFF</color>
+    <color name="yulore_superyellowpage_gray">#333333</color>
+    <color name="yulore_superyellowpage_black">#000000</color>
+    <!-- <color name="yulore_superyellowpage_color_divider">#e5e5e5</color> -->
+    <color name="yulore_superyellowpage_home_bg">#f5f5f5</color>
+    <color name="yulore_superyellowpage_light_gray">#C4C4C4</color>
+    <color name="yulore_superyellowpage_dial_more">#cccccc</color>
+    <color name="yulore_superyellowpage_item_pressed_color">#e0e0e0</color>
+    <color name="yulore_superyellowpage_blur">#999999</color>
+    <color name="yulore_superyellowpage_pw_title">#ff6000</color>
+    <color name="yulore_superyellowpage_tab_orange">#ff6000</color>
+    <color name="yulore_superyellowpage_tab_default_color">#666666</color>
+    <color name="yulore_superyellowpage_dial_orange">#c87f00</color>
+    <color name="yulore_superyellowpage_gray_white">#f3f3f3</color>
+    <color name="yulore_superyellowpage_more_info_color">#4d4d4d</color>
+    <color name="yulore_superyellowpage_for_and">#29b898</color>
+    <color name="yulore_superyellowpage_detail_bg">#f3f4f9</color>
+    <color name="yulore_superyellowpage_detail_title_bg_black">#212531</color>
+    <color name="yulore_superyellowpage_detail_title_bg_green">#1dc483</color>
+    <color name="yulore_superyellowpage_detail_title_bg_red">#fc5e52</color>
+    <color name="yulore_superyellowpage_detail_title_bg_blue">#3377dd</color>
+    <color name="yulore_superyellowpage_detail_text">#666666</color>
+    <color name="yulore_superyellowpage_misscall_text">#fa3131</color>
+    <color name="yulore_superyellowpage_home_gray">#989aa0</color>
+    <color name="yulore_superyellowpage_home_service_font_gray">#585858</color>
+    <color name="yulore_superyellowpage_search_header_gray">#F8F8F8</color>
+    <color name="yulore_superyellowpage_dianping_gray">#E5E5E5</color>
+    <color name="yulore_superyellowpage_source_logo">#00000000</color>
+    <color name="yulore_superyellowpage_hot_red">#ff2352</color>
+    <color name="yulore_superyellowpage_home_category_flag">#9c9ca0</color>
+    <color name="yulore_superyellowpage_list_bg">#fafafa</color>
+    <color name="yulore_superyellowpage_topbar_divider">#33000000</color>
+    <color name="yulore_superyellowpage_personal_item_text_gray">#191919</color>
+    <color name="yulore_superyellowpage_topbar_bg_color">#F3F3F3</color>
+    <color name="yulore_superyellowpage_home_top_service_pressed">#e6e6e6</color>
+
+</resources>

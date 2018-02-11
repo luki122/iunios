@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-4-16 added for GIUI4.0 start -->
+
+<com.android.mms.ui.ConversationListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/gn_list_item_height" >
+
+<!--     <CheckBox
+        android:id="@+id/gn_conv_select_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/gn_checkbox_right"
+        android:visibility="gone" /> -->
+
+<!--     <LinearLayout
+        android:id="@+id/gn_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:minWidth="16dip" >
+
+        <android.widget.QuickContactBadge
+            android:id="@+id/avatar"
+            style="?android:attr/quickContactBadgeStyleWindowMedium"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </LinearLayout> -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gn_list_margin_bottom_size"
+        android:layout_marginTop="@dimen/gn_list_margin_top_size" >
+
+        <ImageView
+            android:id="@+id/presence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dip"
+            android:visibility="gone" />
+
+        <com.gionee.mms.ui.GnTextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toLeftOf="@id/attachment"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/from"
+            android:layout_marginLeft="@dimen/gn_list_item_left_margin"
+            android:layout_marginRight="@dimen/gn_list_item_right_margin"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <View
+            android:id="@+id/right_panel"
+            android:layout_width="5dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_background"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/gn_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/from"
+            android:layout_toLeftOf="@+id/gn_unread_view"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/from"
+            android:layout_marginTop="4dip"
+            android:layout_toLeftOf="@id/gn_error"
+            android:visibility="gone" />
+        
+        <!-- Gionee <zhouyj> <2013-08-02> add for CR00845643 begin -->
+        <ImageView 
+            android:id="@+id/gn_unread_view"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignTop="@id/from"
+            android:layout_toLeftOf="@id/right_panel"
+            android:visibility="gone"
+            android:paddingRight="4dp"/>
+        <!-- Gionee <zhouyj> <2013-08-02> add for CR00845643 end -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/from"
+            android:layout_toLeftOf="@id/date" >
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <ImageView
+                android:id="@+id/encryptionimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.android.mms.ui.ConversationListItem>

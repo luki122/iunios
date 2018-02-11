@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"   
+    android:layout_height="match_parent" android:minHeight="40dp"
+    android:background="@color/white"
+    android:descendantFocusability= "blocksDescendants" >  
+	<aurora.widget.AuroraCheckBox
+	    android:id="@+id/checkBox"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true" android:layout_marginLeft="22dp"
+	    android:layout_centerVertical="true"/>    
+    <TextView
+        android:id="@+id/permissionName"
+        android:layout_width="fill_parent" android:layout_height="40dp"
+        android:layout_toRightOf="@id/checkBox" android:layout_marginRight="22dp"
+        android:layout_centerVertical="true"        
+        android:gravity="center_vertical|left"  android:paddingLeft="12dp"  android:lines="1"
+        android:textSize="18sp" android:textColor="@color/black"/>
+</RelativeLayout>

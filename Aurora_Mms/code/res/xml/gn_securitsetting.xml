@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+<!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_mms_password_clear"
+                        aurora:auroratitle="@string/pref_title_mms_password_clear"
+                        aurora:aurorasummary="@string/pref_summary_mms_password_clear" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_mms_password_change"
+                        aurora:auroratitle="@string/pref_title_mms_password_change"
+                        aurora:aurorasummary="@string/pref_summary_mms_password_change" />
+</aurora.preference.AuroraPreferenceScreen>

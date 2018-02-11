@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/aurora_filemanager_attachment_press" />
+    <item android:state_focused="true" android:drawable="@drawable/aurora_filemanager_attachment_press" />
+    <item android:drawable="@drawable/aurora_filemanager_attachment_normal" />
+</selector> -->
+
+<!-- cjs modify -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:width="22dp"
+    android:viewportHeight="60"
+    android:viewportWidth="60"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="8.5"
+        android:translateY="13" >
+        <path
+            android:name="aurora_img_attachment"
+            android:fillColor="#676768"
+            android:pathData="M-0.000,34.000 L43.000,34.000 L43.000,25.989 L-0.000,25.989 L-0.000,34.000 ZM3.981,27.972 L7.986,27.972 L7.986,32.017 L3.981,32.017 L3.981,27.972 ZM-0.000,-0.000 L-0.000,8.010 L43.000,8.010 L43.000,-0.000 L-0.000,-0.000 ZM7.986,6.028 L3.981,6.028 L3.981,1.982 L7.986,1.982 L7.986,6.028 ZM-0.000,21.024 L43.000,21.024 L43.000,13.014 L-0.000,13.014 L-0.000,21.024 ZM3.981,14.971 L7.986,14.971 L7.986,18.987 L3.981,18.987 L3.981,14.971 Z" />
+    </group>
+
+</vector>

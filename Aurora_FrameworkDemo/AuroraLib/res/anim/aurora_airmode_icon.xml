@@ -1,0 +1,37 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/aurora_airmode_normal" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004015" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004016" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004017" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004018" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004019" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_airmode004020" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004021" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004022" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004023" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004024" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_airmode004025" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004026" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004027" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004028" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004029" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_airmode004030" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004031" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004032" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004033" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004034" android:duration="10"/>
+    
+    <item android:drawable="@drawable/aurora_airmode004035" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004036" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004037" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004038" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004039" android:duration="10"/>
+    <item android:drawable="@drawable/aurora_airmode004040" android:duration="10"/>
+    
+    
+
+</animation-list>

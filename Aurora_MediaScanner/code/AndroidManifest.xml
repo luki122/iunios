@@ -1,0 +1,115 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.scanner.fileobserver"
+    android:versionCode="1"
+    android:versionName="1.150211" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="com.android.aurora.ScannerApplication">
+      <!--   <service android:name="com.aurora.scanner.fileobserver.AuroraFileObserverService" >
+        </service> -->
+
+       <!--  <receiver
+            android:name="com.aurora.scanner.fileobserver.AuroraFileObserverReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.intent.action.START_OBSERVER_SERVICE" />
+            </intent-filter>
+        </receiver> -->
+
+        <service
+            android:name="com.android.aurora.AuroraMediaScannerService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.service.AuroraMediaScannerService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.android.aurora.AuroraMediaScannerReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.AURORA_DIRECTORY_SCAN" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.AURORA_FILE_SCAN" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.AURORA_EXTERNAL_SCAN" />
+            </intent-filter>
+            
+             <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_STATE" />
+            </intent-filter> 
+            
+            <!-- add by JXH 2014-7-17 begin -->
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            
+             <intent-filter>
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <data android:scheme="file" />
+            </intent-filter>
+            
+             <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+              <!-- add by JXH 2014-7-17 end -->
+        </receiver>
+
+        <!-- mtp mode -->
+        <!--
+        <receiver android:name="com.android.aurora.AuroraMtpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.android.aurora.AuroraMtpService" />
+        -->
+    </application>
+
+</manifest>

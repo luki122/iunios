@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="editor_type_label_width">80.3dip</dimen>
+    <dimen name="aurora_editor_type_label_width">80.3dip</dimen>
+
+    <dimen name="aurora_call_record_tv_w">100dip</dimen>
+</resources> 

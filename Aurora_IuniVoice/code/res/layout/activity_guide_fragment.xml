@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guide_bg_color" >
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/guide_one_pic" />
+
+    <TextView
+        android:id="@+id/tv_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/guide_one_down"
+        android:textColor="@color/guide_text_down_color"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@+id/tv_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="330dp"
+        android:text="@string/guide_one_up"
+        android:textColor="@color/guide_text_color"
+        android:textSize="@dimen/textsize_14" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed"
+            android:text="@string/guide_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14" />
+
+        <Button
+            android:id="@+id/btn_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_normal"
+            android:text="@string/guide_ll"
+            android:textColor="@color/guide_text_color"
+            android:textSize="@dimen/textsize_14" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aurora_contact_list_header_text_color">#ff9999</color>
+    <color name="aurora_import_export_type_text_color">#feb6b7</color>
+    <color name="aurora_dialpad_bg">#FFfeb6b7</color>
+    <color name="aurora_empty_dialpad_text_color">#33000000</color>
+    <color name="merge_contacts_text_selected">#ffffff</color>
+    <color name="merge_contacts_text_unselected">#ff9999</color>
+</resources>

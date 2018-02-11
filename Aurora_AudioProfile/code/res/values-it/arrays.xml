@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="profile_title_list">
+        <item>Generale</item>
+        <item>Silenzioso</item>
+        <item>Riunione</item>
+        <item>All\'aperto</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.aurora.puremanager.view.AppDetailInfoView
+        android:id="@+id/appDetailInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/appdetailInfolayout_marginbottom"
+        android:layout_marginTop="@dimen/appdetailInfolayout_margintop" />
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/appdetailInfolayout_btnlayout_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/add_auto_start_addbtn_margin_right"
+        android:paddingRight="@dimen/add_auto_start_addbtn_margin_right" >
+
+        <Button
+            android:id="@+id/mForceStopButton"
+            style="@style/button_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/preferences_item_height"
+            android:layout_weight="1"
+            android:background="@drawable/all_button"
+            android:text="@string/end_run" />
+
+        <Button
+            android:id="@+id/uninstallBtn"
+            style="@style/button_text"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/preferences_item_height"
+            android:layout_marginLeft="@dimen/list_header_padding_top"
+            android:layout_weight="1"
+            android:background="@drawable/all_button"
+            android:text="@string/uninstall" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btnLayout"
+        android:layout_below="@id/appDetailInfoLayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/add_auto_start_addbtn_margin_right"
+            android:paddingRight="@dimen/add_auto_start_addbtn_margin_right" >
+
+            <com.aurora.puremanager.view.AppSizeView
+                android:id="@+id/appSizeView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/all_app_right_action_bar_chg_btn_padding_bottom" />
+
+            <RelativeLayout
+                android:id="@+id/AutoStartLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/preferences_item_height"
+                android:background="@drawable/item_of_middle" >
+
+                <TextView
+                    style="@style/text_of_preferences_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/appdetailInfolayout_marginbottom"
+                    android:text="@string/arrow_auto_start" />
+
+                <aurora.widget.AuroraSwitch
+                    android:id="@+id/autoStartSwitch"
+                    style="@style/aurora_switch"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/appdetailInfolayout_marginbottom"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clearDefaultSetLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/preferences_item_height"
+                android:background="@drawable/item_of_bottom_bg" >
+
+                <TextView
+                    style="@style/text_of_preferences_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/appdetailInfolayout_marginbottom"
+                    android:text="@string/default_set" />
+
+                <Button
+                    android:id="@+id/clearDefaultSetBtn"
+                    android:layout_width="@dimen/add_auto_start_addbtn_width"
+                    android:layout_height="@dimen/add_auto_start_addbtn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/appdetailInfolayout_marginbottom"
+                    android:background="@drawable/button"
+                    android:text="@string/clear"
+                    android:textColor="@color/btn_text_title_selector_color"
+                    android:textSize="@dimen/pernission_list_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/listview_dividerheight"
+        android:layout_above="@id/btnLayout"
+        android:background="@drawable/line" />
+
+</RelativeLayout>

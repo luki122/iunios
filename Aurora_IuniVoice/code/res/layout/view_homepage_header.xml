@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aurora.iunivoice.widget.FrameBannerView
+        android:id="@+id/banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_homepage_header_banner_height"
+        android:gravity="center"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_homepage_header_text_height"
+        android:background="@color/main_homepage_header_bg_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_newguide"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/home_page_textview_selector"
+            android:text="@string/main_homepage_header_new_to_app"
+            android:textColor="@color/main_homepage_header_tabtext_color"
+            android:textSize="@dimen/textsize_16" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/main_homepage_header_tabline_color" />
+
+        <TextView
+            android:id="@+id/tv_sign_daily"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:background="@drawable/home_page_textview_selector"
+            android:text="@string/main_homepage_header_sign_daily"
+            android:textColor="@color/main_homepage_header_tabtext_color"
+            android:textSize="@dimen/textsize_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/main_homepage_header_tabline_color" />
+
+</LinearLayout>

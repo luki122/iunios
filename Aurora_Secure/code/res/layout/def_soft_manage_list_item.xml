@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    <include layout="@layout/def_soft_manage_list_header"/>
+    <com.secure.view.GridViewForEmbed
+         android:id="@+id/itemGridView"
+         android:layout_width="fill_parent" android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp" android:layout_marginRight="10dp"  
+         android:layout_marginBottom="17dp"      
+         android:gravity="center"
+         android:numColumns="5"
+         android:horizontalSpacing="3dp" android:verticalSpacing="5dp"/>
+</LinearLayout>

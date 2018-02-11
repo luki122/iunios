@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-25 created for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-25 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-27 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2014-01-07 modified for aurora's new feature start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_group_reci_exsits"
+    android:orientation="horizontal"
+    android:layout_height="@com.aurora:dimen/aurora_list_doubleline_height"
+    android:layout_width="match_parent"
+    android:background="@color/aurora_menu_item_select">
+<!-- Aurora xuyong 2013-09-27 modified for aurora's new feature end -->
+        <!-- Aurora xuyong 2014-04-03 modified for aurora's new feature start -->
+        <aurora.widget.AuroraTextView 
+            android:id="@+id/aurora_reci_name_exist"
+            android:layout_marginLeft="@dimen/list_item_left_margin"
+            android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            style="@com.aurora:style/AuroraListMainTextStyle"/>
+    <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature start -->
+        <LinearLayout
+            android:layout_marginLeft="@dimen/list_item_left_margin"
+            android:layout_marginTop="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/aurora_reci_name_exist">
+<!-- Aurora xuyong 2014-01-07 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature end -->
+            <aurora.widget.AuroraTextView 
+                android:id="@+id/aurora_reci_num_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@com.aurora:style/AuroraListSubTextStyle"
+                />
+        <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature start -->
+            <aurora.widget.AuroraTextView 
+                android:id="@+id/aurora_reci_other_exist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dip"
+                android:singleLine="true"
+                style="@com.aurora:style/AuroraListSubTextStyle"
+                />
+        <!-- Aurora xuyong 2013-09-27 modified for aurora's new feature end -->
+        </LinearLayout>
+    <ImageButton
+        android:id="@+id/aurora_add_add"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/aurora_group_add_selector"
+        android:background="@null"/>
+    <ImageButton
+        android:id="@+id/aurora_check_exists"
+        android:layout_toLeftOf="@id/aurora_add_add"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/aurora_group_view_selector"
+        android:background="@null"/>
+    <!-- Aurora xuyong 2014-04-03 modified for aurora's new feature end -->
+</RelativeLayout>
+<!-- Aurora xuyong 2013-09-25 modified for aurora's new feature end -->

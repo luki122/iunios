@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vs_offline_search_contact_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/vs_offline_contact_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_offline_contact_item_height"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/vs_offline_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/vs_offline_contact_item_marginleft"
+            android:textSize="@dimen/vs_offline_contact_item_name_size"
+            android:textColor="@color/vs_white"/>
+        <TextView 
+            android:id="@+id/vs_offline_contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/vs_offline_contact_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/vs_offline_contact_item_number_marginleft"
+            android:textSize="@dimen/vs_offline_contact_item_number_size"
+            android:textColor="@color/vs_white"
+            android:phoneNumber="true"/>
+        <!-- <ImageView 
+            android:id="@+id/arrow_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/vs_help_arrows_normal"
+            android:visibility="gone"/> -->
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vs_help_devider"/>
+    
+    <LinearLayout 
+        android:id="@+id/vs_offline_search_contact_item_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+	<LinearLayout 
+        android:id="@+id/vs_offline_search_contact_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/vs_offline_search_contact_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vs_offline_contact_control_height"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/vs_offline_edit_contact"
+            android:background="@drawable/vs_offline_pressed_bg_left_style"/>
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vs_offline_contact_control_height"
+            android:background="@drawable/vs_offline_devider"/>
+        <TextView 
+            android:id="@+id/vs_offline_search_contact_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vs_offline_contact_control_height"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/vs_offline_forward_contact"
+            android:background="@drawable/vs_offline_pressed_bg_right_style"/>
+    </LinearLayout>
+
+</LinearLayout>

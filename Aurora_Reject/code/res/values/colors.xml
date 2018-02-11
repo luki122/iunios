@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#dbdbdb</color>  
+     <color name="textColor_selected">#ffffff</color>  
+     <color name="textColor_unselected">#d3d9eb</color>
+    <color name="phone_textColor_unselected">#383838</color>
+    <color name="phone_textColor_selected">#868686</color>  
+    
+    <color name="actionbar_normal">#8498cb</color>
+    <color name="actionbar_disable">#b7b7b7</color> 
+    <color name="actionbar_title">#ffffff</color> 
+    <color name="actionbar_title_press">#019c73</color>
+    <color name="title_bg">#8498cb</color>
+     
+</resources>

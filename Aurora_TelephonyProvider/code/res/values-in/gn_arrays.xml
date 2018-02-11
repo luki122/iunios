@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+/**
+ * @auther Linfeng Jia
+ * @time 20110815
+ * @version 1.0.0
+ * history
+ * name                              date                                      description
+ * lanwzh                           20110820                             CR00340870
+ */
+ -->
+<resources>
+    <string-array name="default_quick_texts">
+      <item>Di mana kau?</item>
+      <item>Apa yang kau lakukan?</item>
+      <item>Panggil kembali! Silahkan!</item>
+      <item>Maaf, saya ada rapat sekarang.</item>
+      <item>Panggilan Anda segera.</item>
+      <item>Jangan khawatir! Aku baik-baik.</item>
+      <item>Pada perjalanan pulang.</item>
+      <item>Tiba segera.</item>
+      <item>Jadilah ada atau persegi!</item>
+    </string-array>
+
+
+
+    <string-array name="default_quick_texts_Micromax">
+      <item>Bagaimana kabarmu?</item>
+      <item>Banyak cinta!</item>
+      <item>Lama tidak bertemu.</item>
+      <item>Bagaimana hari?</item>
+      <item>Terima kasih!</item>
+      <item>Maaf!</item>
+      <item>Hubungi saya sekarang.</item>
+      <item>Segera kembali.</item>
+      <item>Bagaimana dengan makan siang?</item>
+      <item>Menghubungi Anda nanti.</item>
+    </string-array>
+
+
+</resources>

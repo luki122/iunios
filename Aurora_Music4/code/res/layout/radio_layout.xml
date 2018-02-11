@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/aurora_id_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/line2"
+        android:scrollbars="none" />
+
+    <ImageView
+        android:id="@+id/id_song_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/song_selected"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/setting_sync"
+        android:textColor="@color/setting_tag_title_text_color"
+        android:textSize="@dimen/textsize_18" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/account_sync_wifi_switch_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_logout_normal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_sync_wlan_only"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/account_sync_open_wlan"
+                android:textColor="@color/account_sync_wlan_blew"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wlan_switch_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <aurora.widget.AuroraSwitch
+                android:id="@+id/wlan_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/setting_backup"
+        android:textColor="@color/setting_tag_title_text_color"
+        android:textSize="@dimen/textsize_18" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/account_sync_wifi_switch_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_logout_normal"
+        android:paddingLeft="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_set_auto_backup_tile"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/setting_wifi_auto_backup_tips"
+                android:textColor="@color/account_sync_wlan_blew"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_backup_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/tv_backup_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/setting_backup_time"
+                android:textSize="@dimen/textsize_16" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list_arrow_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

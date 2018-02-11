@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery_root"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <include layout="@layout/gl_root_group"/>
+    
+     <TextView android:id="@+id/auroraempty_gridview"
+        	android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+			android:layout_centerInParent="true"
+			android:layout_alignParentBottom="true"
+			android:text="@string/appwidget_empty_text"
+			android:visibility="gone"
+			android:gravity="center"
+			style="@com.aurora:style/AuroraPromptTextViewStyle"
+			android:paddingTop="0dp"/>
+ 
+    <FrameLayout android:id="@+id/header"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <!-- lory add start-->
+    
+    <FrameLayout android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <!--  <include layout="@layout/gridview_fragment"/> -->
+    <!-- lory add end -->
+    <FrameLayout android:id="@+id/footer"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>

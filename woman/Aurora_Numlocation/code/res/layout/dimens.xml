@@ -1,0 +1,70 @@
+<resources>
+	<!-- dip -->
+	<dimen name="dip_2">-2dip</dimen>
+	<dimen name="dip_3">-3dip</dimen>
+	<dimen name="dip_4">-4dip</dimen>
+	<dimen name="dip0">0dip</dimen>
+	<dimen name="dip1">1dip</dimen>
+	<dimen name="dip2">2dip</dimen>
+	<dimen name="dip4">4dip</dimen>
+	<dimen name="dip5">5dip</dimen>
+	<dimen name="dip8">8dip</dimen>
+	<dimen name="dip10">10dip</dimen>
+	<dimen name="dip12">12dip</dimen>
+	<dimen name="dip15">15dip</dimen>
+	<dimen name="dip20">20dip</dimen>
+	<dimen name="dip21">21dip</dimen>
+	<dimen name="dip30">30dip</dimen>
+	<dimen name="dip31">31dip</dimen>
+	<dimen name="dip33">33dip</dimen>
+	<dimen name="dip36">36dip</dimen>
+	<dimen name="dip38">38dip</dimen>
+	<dimen name="dip40">40dip</dimen>
+	<dimen name="dip42">42dip</dimen>
+	<dimen name="dip48">48dip</dimen>
+	<dimen name="dip49">49dip</dimen>
+	<dimen name="dip52">52dip</dimen>
+	<dimen name="dip59">59dip</dimen>
+	<dimen name="dip64">64dip</dimen>
+	<dimen name="dip80">80dip</dimen>
+	<dimen name="dip85">85dip</dimen>
+	<dimen name="dip120">120dip</dimen>
+	<dimen name="dip140">140dip</dimen>
+	<dimen name="dip150">150dip</dimen>
+	<dimen name="dip180">180dip</dimen>
+	<dimen name="dip210">210dip</dimen>
+	<dimen name="dip250">250dip</dimen>
+	<dimen name="dip235">235dip</dimen>
+	<dimen name="dip375">375dip</dimen>
+
+
+
+
+	<!-- sp -->
+	<dimen name="sp10">10sp</dimen>
+	<dimen name="sp12">12sp</dimen>
+	<dimen name="sp13">13sp</dimen>
+	<dimen name="sp14">14sp</dimen>
+	<dimen name="sp16">16sp</dimen>
+	<dimen name="sp18">18sp</dimen>
+	<dimen name="sp20">20sp</dimen>
+	<dimen name="sp24">24sp</dimen>
+
+	<!-- px -->
+	<dimen name="px10">10px</dimen>
+	<dimen name="px14">14px</dimen>
+	<dimen name="px16">16px</dimen>
+	<dimen name="px20">20px</dimen>
+
+	<dimen name="soft_introduction_padding_top">5dip</dimen>
+	<dimen name="soft_introduction_padding_bottom">5dip</dimen>
+	<dimen name="soft_introduction_padding_left">5dip</dimen>
+	<dimen name="soft_introduction_padding_right">5dip</dimen>
+	<dimen name="search_criteria_margin_left">5dip</dimen>
+	<dimen name="search_criteria_margin_left2">5dip</dimen>
+	<dimen name="search_btn_icon_height">38dip</dimen>
+	<dimen name="soft_list_layout_right_padding_top">15dip</dimen>
+	<dimen name="skin_button_region_width">108dip</dimen>
+	<dimen name="button_white_width">88dip</dimen>
+
+</resources>

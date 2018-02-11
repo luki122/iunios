@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="zzzzz_slot_a">&quot;A карта&quot;</string>
+    <string name="zzzzz_slot_b">&quot;B карта&quot;</string>
+<!-- Gionee dingwen 20120509 modify for CR00596474 start -->
+<string name="zzzzz_remind_next_time">Больше не напоминать мне</string>
+<!-- Gionee dingwen 20120509 modify for CR00596474 end -->
+<!-- Gionee huangyc 2012-7-6 add for CR00622045 start -->
+<string name="zzzzz_gnlauncher">Экран ЦзинЛи</string>
+<!-- Gionee huangyc 2012-7-6 add for CR00622045 end -->
+<!-- Gionee huangwenting 2012-9-6 add for CR00688643 start -->
+<!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 start -->
+<!-- string name="zzzzz_gnpowerprofile">省电模式</string -->
+<string name="zzzzz_gnpowerprofile">Экономить питание кнопкой</string>
+<!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 end -->
+<!-- Gionee huangwenting 2012-9-6 add for CR00688643 end -->
+<!-- Gionee zengxuanhui 20120712 modify for CR00560331 begin -->
+<string name="switch_to_internal_storage">Переключитесь на  внутренние памяти</string>
+    <string name="switch_to_external_storage">Переключитесь на внешние памяти</string>
+    <string name="storage_has_no_space">Недостаточное пространство памяти</string>
+<!-- Gionee zengxuanhui 20120712 modify for CR00560331 end -->
+<!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 start -->
+<string name="airlinemode_confirm_message">Телефон переходит в режим полета, все беспроводные коммуникации будут закрыты, продолжать?</string>
+<!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 end -->
+<!-- Gionee qiuxd 20121017 add for CR00714767 start -->
+<string name="zzzzz_gnguestmode">Режим визита</string>
+<!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 begin -->
+<!-- Gionee fengjianyi 2012-10-22 add for CR00705430 start -->
+<!--<string name="goto_guest_mode_warning">将会隐藏通话记录、信息、相册、便签数据并锁定桌面，确定要进入访客模式吗？</string>-->
+<string name="goto_guest_mode_warning">Будут срыты журнал вызовов, сообщения, альбом, данные заметки и запрещены редактировать экран, можно открыть парольную защиту в настройки- безопасность, переходить в режим визита?</string>
+<!-- Gionee fengjianyi 2012-10-22 add for CR00705430 end -->
+<!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 end -->
+<!-- Gionee qiuxd 20121017 add for CR00714767 end -->
+</resources>

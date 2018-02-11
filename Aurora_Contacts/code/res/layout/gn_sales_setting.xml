@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:paddingRight="10dip"
+    android:paddingLeft="10dip">
+    <TableLayout
+        android:id="@+id/saleSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="@string/gn_sales_num"
+                android:textSize="18dip"
+                android:gravity="right"
+                />
+             <aurora.widget.AuroraEditText
+                android:id="@+id/number"
+                android:maxLength="11"
+                android:inputType="number"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView 
+                android:text="@string/gn_sales_time"
+                android:textSize="18dip"
+                android:gravity="right"
+            />
+            <aurora.widget.AuroraEditText
+                android:id="@+id/time"
+                android:maxLength="4"
+                android:inputType="number"
+            />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/sales_switch"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/gn_sales_switch"/>
+    <aurora.widget.AuroraButton android:id="@+id/save" android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" android:text="@string/gn_sales_save" />
+    <aurora.widget.AuroraButton android:id="@+id/exit" android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" android:text="@string/gn_sales_exit" />
+    </RelativeLayout>
+</LinearLayout>

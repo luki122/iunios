@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="@com.aurora:dimen/aurora_preference_single_line_height"
+    android:gravity="center_vertical" 
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/aurora_operator_name"
+        android:textAppearance="?com.aurora:attr/auroraPreferenceTitleAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12.1dp"
+        android:paddingLeft="15dip"
+        android:lines="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/aurora_sms_center_thumbnail"
+        android:layout_marginLeft="9dip"
+        android:paddingTop="12.1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/aurora_operator_name"/>
+    <TextView
+        android:id="@+id/aurora_sms_center_number"
+        android:paddingBottom="12.1dp"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aurora_operator_name"
+        android:layout_marginTop="5dp"
+        android:lines="1"
+        android:textAppearance="?com.aurora:attr/auroraPreferenceSummaryAppearance"
+        android:textSize="14sp" />
+    
+</RelativeLayout>

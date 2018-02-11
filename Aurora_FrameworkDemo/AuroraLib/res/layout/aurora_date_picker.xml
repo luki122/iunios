@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout of date picker-->
+
+<!-- Warning: everything within the "pickers" layout is removed and re-ordered
+     depending on the date format selected by the user.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout android:id="@+id/aurora_pickers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:divider="@drawable/aurora_dialog_white_bg"
+        android:gravity="center">
+
+        <!-- Gionee <zhangxx><2013-04-10> modify for CR00795646 begin -->
+        <!-- Month -->
+            <aurora.lib.widget.AuroraNumberPicker
+                android:id="@+id/aurora_month"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+        <!-- Day -->
+            <aurora.lib.widget.AuroraNumberPicker
+                android:id="@+id/aurora_day"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+        <!-- Year -->
+            <aurora.lib.widget.AuroraNumberPicker
+                android:id="@+id/aurora_year"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+            />
+            <!-- Gionee <zhangxx><2013-04-10> modify for CR00795646 end -->
+
+    </LinearLayout>
+
+    <!-- calendar view -->
+    <CalendarView
+        android:id="@+id/aurora_calendar_view"
+        android:layout_width="245dip"
+        android:layout_height="280dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+</LinearLayout>

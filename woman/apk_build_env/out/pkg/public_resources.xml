@@ -1,0 +1,26 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/drawable-xxhdpi/add_option_click.png:0 -->
+  <public type="drawable" name="add_option_click" id="0x7f020000" />
+  <!-- Declared at res/drawable-xxhdpi/add_option_norma.png:0 -->
+  <public type="drawable" name="add_option_norma" id="0x7f020001" />
+  <!-- Declared at res/drawable-xxhdpi/back_normal.png:0 -->
+  <public type="drawable" name="back_normal" id="0x7f020002" />
+  <!-- Declared at res/drawable-xxhdpi/back_press.png:0 -->
+  <public type="drawable" name="back_press" id="0x7f020003" />
+  <!-- Declared at res/drawable-xxhdpi/optionviewsrc_normal.png:0 -->
+  <public type="drawable" name="optionviewsrc_normal" id="0x7f020004" />
+  <!-- Declared at res/drawable-xxhdpi/optionviewsrc_select.png:0 -->
+  <public type="drawable" name="optionviewsrc_select" id="0x7f020005" />
+  <!-- Declared at res/drawable-xxhdpi/share_normal.png:0 -->
+  <public type="drawable" name="share_normal" id="0x7f020006" />
+  <!-- Declared at res/drawable-xxhdpi/share_press.png:0 -->
+  <public type="drawable" name="share_press" id="0x7f020007" />
+
+</resources>

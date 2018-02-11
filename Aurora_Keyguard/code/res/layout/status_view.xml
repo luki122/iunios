@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.view.StatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyguard_status_view_face_palm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical" >
+
+    <include layout="@layout/lock_screen_bg_view" />
+    <ImageView
+        android:id="@+id/chart_layout_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/charge_mask"
+        android:visibility="gone"
+         />
+
+	 <!-- Aurora liugj 2014-06-27 modified for MusicLockScreen start -->
+    <RelativeLayout android:id="@+id/music_lockscreen_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+	 <!-- Aurora liugj 2014-06-27 modified for MusicLockScreen end -->
+    
+    <LinearLayout android:id="@+id/normal_lockscreen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"         
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="82dp" >
+
+            <com.android.keyguard.view.ClockImageView
+                android:id="@+id/clock_image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </com.android.keyguard.view.ClockImageView>
+
+            <com.android.keyguard.view.ClockImageView
+                android:id="@+id/clock_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp" >
+            </com.android.keyguard.view.ClockImageView>                
+                
+            <com.android.keyguard.view.ClockImageView
+                android:id="@+id/clock_image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp" >
+            </com.android.keyguard.view.ClockImageView>                
+
+            <com.android.keyguard.view.ClockImageView
+                android:id="@+id/clock_image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp" >
+            </com.android.keyguard.view.ClockImageView>
+
+            <com.android.keyguard.view.ClockImageView
+                android:id="@+id/clock_image_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp" >
+            </com.android.keyguard.view.ClockImageView>
+                
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center_horizontal">
+            
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                layout="@layout/status_area" />    
+                
+         </LinearLayout>           
+        <!-- <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            layout="@layout/keyguard_message_area" /> -->
+    </LinearLayout>
+
+    <include
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104.0dp"
+        android:visibility="gone"
+        layout="@layout/chart_animation_layout"
+        />
+	
+    <TextView
+        android:id="@+id/chart_finish_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="38dp"
+        android:textSize="15sp"
+        android:text="@string/text_chart_finish"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/palm_rejection_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:textSize="13sp"
+        android:text="@string/text_palm_rejection"
+        android:textColor="@color/warn_text_color"
+        android:visibility="gone" />
+    
+</com.android.keyguard.view.StatusView>

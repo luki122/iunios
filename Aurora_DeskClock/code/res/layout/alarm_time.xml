@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip" >
+
+    <!--
+         A layout that displays the time.  Shows time, am/pm (if 12-hour),
+         and an optional line below, used for day/days of week
+    -->
+
+    <com.android.deskclock.DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="0dp" >
+
+        <LinearLayout
+            android:id="@+id/time_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:orientation="horizontal"
+            android:baselineAligned="true" >
+
+            <com.android.deskclock.AndroidClockTextView
+                android:id="@+id/timeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                useClockTypeface="false"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:singleLine="true"
+                android:textColor="@color/gn_white" />
+
+            <com.android.deskclock.AndroidClockTextView
+                android:id="@+id/am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dip"
+                useClockTypeface="false"
+                android:textSize="10sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:singleLine="true"
+                android:textColor="@color/sometransparent" />
+        </LinearLayout>
+    </com.android.deskclock.DigitalClock>
+    
+      
+    <com.android.deskclock.DontPressWithParentLayout
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="14dp" >
+
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/clock_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true" />
+
+    </com.android.deskclock.DontPressWithParentLayout>
+    
+    <LinearLayout
+        android:id="@+id/lable_week"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/digitalClock"
+        android:layout_marginLeft="25dp" 
+        android:layout_toLeftOf="@id/indicator"
+        android:layout_marginRight="15dp"
+        >
+		<!-- 
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:hint="@string/label"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary" />
+         -->
+
+        <TextView
+            android:id="@+id/daysOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gn_white"
+            android:textSize="14sp" />
+        
+        <com.android.deskclock.LeftTimeTextView
+            android:id="@+id/timetoalarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/sometransparent"
+            android:textSize="10sp" 
+            android:ellipsize="end"/>
+    </LinearLayout>
+    
+    <!-- 
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="1dip"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip"
+        android:scaleType="fitXY"
+        android:src="?android:attr/dividerVertical" />
+         -->
+  
+    <!--  
+    <CheckBox
+        android:id="@+id/select_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+        -->       
+</RelativeLayout>

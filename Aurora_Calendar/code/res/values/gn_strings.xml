@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000  begin -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="gn_all_in_one_action_bar_today">Today</string>
+    <string name="gn_all_in_one_system">System</string>
+    <string name="gn_all_in_one_all_activities">All activities</string>
+    <!-- Gionee <pengwei>  <2013-04-12> modify for DayView begin -->
+    <string name="gn_day_lunar">Lunar</string>
+    <string name="gn_day_no_content">No content</string>
+    <string name="gn_day_no_content_alert">Adding utility to understand today fortune</string>
+    <string name="gn_day_Monday">Monday</string>
+    <string name="gn_day_Tuesday">Tuesday</string>
+    <string name="gn_day_Wednesday">Wednesday</string>
+    <string name="gn_day_Thursday">Thursday</string>
+    <string name="gn_day_Friday">Friday</string>
+    <string name="gn_day_Saturday">Saturday</string>
+    <string name="gn_day_Sunday">Sunday</string>
+    <string name="gn_day_January">January</string>
+    <string name="gn_day_February">February</string>
+    <string name="gn_day_March">March</string>
+    <string name="gn_day_April">April</string>
+    <string name="gn_day_May">May</string>
+    <string name="gn_day_June">June</string>
+    <string name="gn_day_July">July</string>
+    <string name="gn_day_August">August</string>
+    <string name="gn_day_September">September</string>
+    <string name="gn_day_October">October</string>
+    <string name="gn_day_November">November</string>
+    <string name="gn_day_December">December</string>
+    <string name="gn_day_event_view">View activitie</string>
+    <string name="gn_day_event_edit">Edit activity</string>
+    <string name="gn_day_event_del">Delete activity</string>
+    <string name="gn_day_event_share">Share activities</string>
+    <string name="gn_day_constellation_comprehensive_luck">综合运势</string>
+    <string name="gn_day_constellation_health_index">健"&#160;""&#160;""&#160;""&#160;"康</string>
+    <string name="gn_day_constellation_work_index">工"&#160;""&#160;""&#160;""&#160;"作</string>
+    <string name="gn_day_constellation_love_index">爱"&#160;""&#160;""&#160;""&#160;"情</string>
+    <string name="gn_day_constellation_wealth_index">财"&#160;""&#160;""&#160;""&#160;"运</string>
+    <string name="gn_day_constellation_lucky_color">幸运色</string>
+    <string name="gn_day_constellation_lucky_numbers">幸运数</string>
+    <string name="gn_day_constellation_speed_dating_constellation">速"&#160;""&#160;""&#160;""&#160;"配</string>
+    <!-- Gionee <pengwei>  <2013-05-14> modify for CR00811898 begin -->
+    <string name="gn_day_time_out_of_range">"Unable to switch the date, time beyond the scope[1970~2036]"</string>
+    <!-- Gionee <pengwei>  <2013-05-14> modify for CR00811898 end -->
+    <string name="gn_week_saturday">SAT</string>
+    <string name="gn_week_sunday">SUN</string>
+    <!-- Gionee <pengwei>  <2013-05-17> modify for CR00813681 begin -->
+    <string name="gn_week_text_holiday">假</string>
+    <string name="gn_week_text_work">班</string>
+    <!-- Gionee <pengwei>  <2013-05-17> modify for CR00813681 end -->
+    <!-- Gionee <pengwei>  <2013-04-12> modify for DayView end -->
+    <string name="gn_edit_event_title_cancle">Cancel</string>
+    <string name="gn_edit_event_title_save">Save</string>
+    <string name="gn_edit_event_hint_activity_name">Please input activity name</string>
+    <string name="gn_edit_event_time_name">Time</string>
+    <string name="gn_edit_event_start_time">Start:</string>
+    <string name="gn_edit_event_end_time">End:</string>
+    <string name="gn_edit_event_more">More</string>
+    <string name="gn_edit_event_select_account_name"> Select account</string>
+    <string name="gn_edit_event_account_name">Account</string>
+    <string name="gn_edit_event_date_time_set">Set</string>
+    <string name="gn_edit_event_date_time_cancel">Cancel</string>
+    <string name="gn_edit_event_date_time_dialog_title">Set date</string>
+    <string name="gn_hint_search_event">search event</string>
+    <string name="gn_agenda_search_nothing">Search nothing.</string>
+    <string name="gn_agenda_get_events_failed">Get agenda failed.</string>
+    <string name="gn_agenda_no_event">No activities.</string>
+    <string name="more_string"><xliff:g id="count">%1$s</xliff:g> more...</string>
+    <string name="gn_voice_add_event">Voice add Activity</string>
+    <string name="copy">Copy email address</string>
+     <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  begin -->
+     <string name="gn_about_title">Calendar</string>
+     <string name="gn_about_version">Version:</string>
+     <string name="gn_about_new_function">New features:</string>
+     
+     
+     <string name="gn_about_add_day_view">Brand new UI</string>
+     <string name="gn_about_add_alarm">More easily to add an activity</string>
+     <string name="gn_about_add_widget">Add activity by voice</string>
+     <string name="gn_about_add_4">Optimize calendar widget</string>
+     <string name="gn_about_content_source">Content source:</string>
+     
+     
+     <string name="about_update">Update</string>
+    
+     <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  end -->
+    <!-- Gionee <lilg><2013-05-02> add for gionee widget begin -->
+    <string name="app_name">CalendarWidget</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="no_target_activity">The Calendar must be disable, please enable it first.</string>
+    <string name="no_account_title">No Calendar Account</string>
+    <string name="no_account_content">Before you can request sync, you must add at least one Calendar account to your device and make a calendar visible. Touch Add Account to add an account (if you just added an account, wait for it to finish syncing and try again). Or touch Cancel and make sure at least one calendar is visible.</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <!-- Gionee <lilg><2013-05-02> add for gionee widget end -->
+    
+    <!-- Gionee <jiangxiao><2013-05-02> add for CR000000 begin -->
+    <string name="time_out_of_range">Can not fling more, because time is out of range[1970~2036]</string>
+    <string name="week_number_unit">week</string>
+    
+    <string name="legal_holiday">假</string>
+    <string name="legal_work_shift">班</string>
+    
+    <string name="no_agenda_prompt">No agenda today</string>
+    <!-- Gionee <jiangxiao><2013-05-02> add for CR000000 end -->
+    
+    <!-- Gionee <jiangxiao><2013-05-31> add for CR000000 begin -->
+    <!-- add strings for astro feature -->
+    
+    <string name="gn_astro_name_aries">Aries</string>
+    <string name="gn_astro_name_taurus">Taurus</string>
+    <string name="gn_astro_name_gemini">Gemini</string>
+    <string name="gn_astro_name_cancer">Cancer</string>
+    <string name="gn_astro_name_leo">Leo</string>
+    <string name="gn_astro_name_virgo">Virgo</string>
+    <string name="gn_astro_name_libra">Libra</string>
+    <string name="gn_astro_name_scorpio">Scorpio</string>
+    <string name="gn_astro_name_sagittarius">Sagittarius</string>
+    <string name="gn_astro_name_capricorn">Capricorn</string>
+    <string name="gn_astro_name_aquarius">Aquarius</string>
+    <string name="gn_astro_name_pisces">Pisces</string>
+    
+    <string name="gn_astro_range_aries">3/21&#8211;4/19</string>
+    <string name="gn_astro_range_taurus">4/20&#8211;5/20</string>
+    <string name="gn_astro_range_gemini">5/21&#8211;6/21</string>
+    <string name="gn_astro_range_cancer">6/22&#8211;7/22</string>
+    <string name="gn_astro_range_leo">7/23&#8211;8/22</string>
+    <string name="gn_astro_range_virgo">8/23&#8211;9/22</string>
+    <string name="gn_astro_range_libra">9/23&#8211;10/23</string>
+    <string name="gn_astro_range_scorpio">10/24&#8211;11/22</string>
+    <string name="gn_astro_range_sagittarius">11/23&#8211;12/21</string>
+    <string name="gn_astro_range_capricorn">12/22&#8211;1/19</string>
+    <string name="gn_astro_range_aquarius">1/20&#8211;2/18</string>
+    <string name="gn_astro_range_pisces">2/19&#8211;3/20</string>
+    
+    <!-- Gionee <jiangxiao><2013-05-31> add for CR000000 end -->
+    
+    <string name="horoscope">Horoscope</string>
+    <string name="horoscope_today">Today</string>
+    <string name="horoscope_tomorow">Tomorow</string>
+    <string name="horoscope_week">Week</string>
+    <string name="gn_tools_title">Tools</string>
+    <string name="gn_tools_content_horoscope">Horoscope</string>
+    <string name="gn_day_constellation">综"&#160;""&#160;""&#160;""&#160;"合</string>
+    <string name="get_horoscope_failed">Fail to obtain astro info.</string>
+    <!-- Gionee <pengwei><2013-06-07> add for CR00824087 begin -->  
+    <string name="gn_day_astro_name_aries">白羊座</string>
+    <string name="gn_day_astro_name_taurus">金牛座</string>
+    <string name="gn_day_astro_name_gemini">双子座</string>
+    <string name="gn_day_astro_name_cancer">巨蟹座</string>
+    <string name="gn_day_astro_name_leo">狮子座</string>
+    <string name="gn_day_astro_name_virgo">处女座</string>
+    <string name="gn_day_astro_name_libra">天秤座</string>
+    <string name="gn_day_astro_name_scorpio">天蝎座</string>
+    <string name="gn_day_astro_name_sagittarius">射手座</string>
+    <string name="gn_day_astro_name_capricorn">摩羯座</string>
+    <string name="gn_day_astro_name_aquarius">水瓶座</string>
+    <string name="gn_day_astro_name_pisces">双鱼座</string>
+    <!-- Gionee <pengwei><2013-06-07> add for CR00824087 end -->   
+    
+    <!-- Gionee <jiating><2013-07-01> modify for CR00819533 begin -->
+    <string name="gn_agenda_time_noon">noon</string>
+    <string name="gn_agenda_time_noon_replace">12:00PM</string>
+    <!-- Gionee <jiating><2013-07-01> modify for CR00819533 end -->
+    
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+    
+    <string name="almanac_more_title_chong">"冲："</string>
+    <string name="almanac_more_title_birth_god">"胎神："</string>
+    <string name="almanac_more_title_five_elements">"五行："</string>
+    <string name="almanac_more_title_pengzu">"彭祖百忌："</string>
+    <string name="almanac_more_title_lucky_fairy">"吉神宜趋："</string>
+    <string name="almanac_more_title_evil_spirit">"凶神宜忌："</string>
+    
+    <string name="almanac_five_elements_metal">"金"</string>
+    <string name="almanac_five_elements_wood">"木"</string>
+    <string name="almanac_five_elements_water">"水"</string>
+    <string name="almanac_five_elements_fire">"火"</string>
+    <string name="almanac_five_elements_soil">"土"</string>
+    
+    <string name="almanac_chinese_horoscope_mouse">"鼠"</string>
+    <string name="almanac_chinese_horoscope_cattle">"牛"</string>
+    <string name="almanac_chinese_horoscope_tiger">"虎"</string>
+    <string name="almanac_chinese_horoscope_rabbit">"兔"</string>
+    <string name="almanac_chinese_horoscope_dragon">"龙"</string>
+    <string name="almanac_chinese_horoscope_snake">"蛇"</string>
+    <string name="almanac_chinese_horoscope_horse">"马"</string>
+    <string name="almanac_chinese_horoscope_goat">"羊"</string>
+    <string name="almanac_chinese_horoscope_monkey">"猴"</string>
+    <string name="almanac_chinese_horoscope_chook">"鸡"</string>
+    <string name="almanac_chinese_horoscope_dog">"狗"</string>
+    <string name="almanac_chinese_horoscope_pig">"猪"</string>
+    
+    <string name="almanac_greg_date_year">"年"</string>
+    <string name="almanac_greg_date_month">"月"</string>
+    <string name="almanac_greg_date_day">"日"</string>
+    
+    <string name="almanac_today_bad_default">"百无禁忌"</string>
+    <string name="almanac_query_date_invalid">"无法查询[2012 - 2018]之外的数据"</string>
+    
+    <string name="almanac_messy_code_token">"安碓"</string>
+    <string name="almanac_messy_code_char">"□"</string>
+    
+    <string name="gn_tools_name_almanac">Almanac</string>
+    <string name="gn_get_lunar_fail">获取阴历失败</string>
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+</resources>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000  end -->

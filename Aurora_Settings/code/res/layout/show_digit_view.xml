@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.lockscreen.ShowDigitView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/digit_dot_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:paddingRight="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:src="@drawable/digit_password_dot_empty" />
+
+    <ImageView
+        android:id="@+id/digit_dot_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:paddingRight="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:src="@drawable/digit_password_dot_empty" />
+
+    <ImageView
+        android:id="@+id/digit_dot_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:paddingRight="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:src="@drawable/digit_password_dot_empty" />
+
+    <ImageView
+        android:id="@+id/digit_dot_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:paddingRight="@dimen/lock_pwd_digit_pwd_dot_icon_padding"
+        android:src="@drawable/digit_password_dot_empty" />
+
+</com.android.settings.lockscreen.ShowDigitView>

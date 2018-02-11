@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    <bool name="aurora_preferences_prefer_dual_pane">false</bool>
+    <bool name="aurora_action_bar_embed_tabs">true</bool>
+    <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 begin -->
+    <bool name="aurora_action_bar_expanded_action_views_exclusive">true</bool>
+    <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 end -->
+</resources>

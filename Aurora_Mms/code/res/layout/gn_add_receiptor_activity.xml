@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-16 added for GIUI4.1 start
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/top_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <view
+            class="com.gionee.mms.ui.SearchEditText"
+            android:id="@+id/search_text"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:paddingTop = "1dip"
+            android:paddingRight = "2dip"
+            android:paddingLeft= "2dip"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textColorHint="#B4B4B4"
+            android:textSize="@dimen/text_size_default"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="flagNoExtractUi"
+            android:freezesText="true"
+            android:hint="@string/search_bar_hint"/>
+    </LinearLayout>
+
+    <aurora.widget.AuroraListView
+        class="com.android.contacts.PinnedHeaderListView"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="insideOverlay"
+        android:visibility="gone" />
+
+   <aurora.widget.AuroraExpandableListView
+        android:id="@+id/group_expandable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:drawSelectorOnTop="false"
+        android:visibility="gone"
+        android:scrollbarStyle="insideOverlay" />
+
+    <LinearLayout
+        android:id="@+id/gn_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/gn_empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+</LinearLayout>
+

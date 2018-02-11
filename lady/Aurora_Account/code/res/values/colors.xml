@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="progressRoundProgressColor">#4bcadd</color>
+	<color name="register_info_tip_text">#4bcadd</color>
+	<color name="account_info_top_bg">#ddf8fc</color>
+	<color name="register_verify_phonenum_tips">#4bcadd</color>
+	<color name="register_link_color">#4bcadd</color>
+	<color name="button_logout_text_color_normal">#ff6141</color>
+	<color name="action_bar_text_color">#3ba6b6</color>
+	<color name="account_sync_name_text_color">#000000</color>
+	<color name="account_info_item_header_bg">#effdff</color>
+	<color name="textview_error_color">#ff6141</color>
+</resources>

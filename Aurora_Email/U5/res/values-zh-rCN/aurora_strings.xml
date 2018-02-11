@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="aurora_searchview_hint" >搜索邮件</string>
+    <string name="aurora_account_settings_delete">删除账号</string>
+    <string name="aurora_account_settings_add">添加帐号</string>
+    <string name="aurora_account_settings">账号</string>
+    
+    <string name="aurora_mail_check_frequency_push">自动（推送）</string>
+    <string name="aurora_mail_check_frequency_5min">每5分钟</string>
+    <string name="aurora_mail_check_frequency_15min">每15分钟</string>
+    <string name="aurora_mail_check_frequency_30min">每30分钟</string>
+    <string name="aurora_mail_check_frequency_1hour">每1小时</string>
+    <string name="aurora_mail_check_frequency_2hour">每2小时</string>
+    <string name="aurora_mail_check_frequency_5hour">每5小时</string>
+    <string name="aurora_check_frequency_label">定时收取</string>
+    <string name="aurora_default_signatrue">发自IUNI OS</string>
+    
+    <!-- Aurora shihao add for manual_setttings_login -->
+    <string name="aurora_server_type">服务器类型</string>
+    <string name="aurora_email_account_1">邮箱帐号</string>
+    <string name="aurora_recerver_server">收件服务器</string>
+    <string name="aurora_sent_server">发件服务器</string>
+    
+    <string name="aurora_email_server">服务器</string>
+    <string name="aurora_email_account">帐  号</string>
+    <string name="aurora_email_password">密  码</string>
+    <string name="aurora_email_port">端  口</string>
+    
+<!--     <string name="aurora_login_need_manual_setup">您登录的邮件帐号需要手动配置服务器，是否继续？</string>
+    <string name="aurora_manual_login_goon_button">继续</string> -->
+    <string name="aurora_login_need_manual_setup">邮件账号无法识别，手动配置服务器？</string>
+    <string name="aurora_manual_login_goon_button">配置</string>
+    <string name="aurora_manual_login_info_error">您的账户信息未填写完整！</string>
+    
+    <string name="aurora_account_setup_failed_dlg_auth_message">"用户名或密码不正确,或%1$s服务未开启"</string>
+    <string name="aurora_account_manual_setup">手动配置邮件服务器</string>
+    
+    <!-- Aurora shihao add for notification_ringtone 20150402 -->
+    <string name="aurora_email_notification">通知</string>
+    <string name="aurora_email_notification_ringtone">铃声</string>
+    <string name="aurora_email_notifi_ringtone_title">通知铃声</string>
+</resources>

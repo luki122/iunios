@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_secondary_action_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/aurora_second_action_height"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:descendantFocusability="afterDescendants"
+    android:paddingLeft="4dip"
+    android:gravity="center_vertical|right" >
+    <View  
+            android:id="@+id/aurora_second_divider"
+		    android:layout_width="1px"  
+		    android:layout_height="20dp" 
+		    android:background="@color/aurora_seprate_line_color2"  
+		    android:visibility="gone"
+    />  
+
+    <com.mediatek.contacts.widget.DontPressWithParentImageButton
+        android:id="@+id/secondary_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurora_call_log_detail_button"
+        android:focusable="false" />
+    
+</LinearLayout>

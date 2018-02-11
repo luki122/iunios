@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.AuroraPageClear xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|bottom"
+    android:orientation="horizontal" >
+        <com.android.systemui.recent.AuroraRubbishView
+        android:id="@+id/clear_all"
+        android:layout_width="90dp"
+        android:layout_height="@dimen/recent_cell_height"
+        />
+</com.android.systemui.recent.AuroraPageClear>

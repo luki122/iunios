@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-20 created for aurora's new feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Aurora xuyong 2014-12-01 modified for bug #10249 start -->
+    <item
+        android:id="@+id/aurora_batch_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector">
+    </item>
+    <item
+        android:id="@+id/aurora_batch_forward"
+        android:icon="@com.aurora:drawable/aurora_bottombar_forward_selector">
+    </item>
+    <item
+        android:id="@+id/aurora_batch_copy"
+        android:icon="@com.aurora:drawable/aurora_bottombar_copy_selector">
+    </item>
+    <!-- Aurora xuyong 2014-03-04 added for aurora's new feature start -->
+    <item
+        android:id="@+id/aurora_batch_pick"
+        android:icon="@com.aurora:drawable/aurora_bottombar_save_selector">
+    </item>
+    <!-- Aurora xuyong 2014-12-01 modified for bug #10249 end -->
+    <!-- Aurora xuyong 2014-03-04 added for aurora's new feature end -->
+</menu>

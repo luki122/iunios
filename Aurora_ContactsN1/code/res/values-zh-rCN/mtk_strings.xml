@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="menu_print">打印</string>
+    <string name="printContact">打印联系人方式</string>
+    <string name="no_way_to_print">无可用打印联系人的应用程序</string>
+
+    <!-- M: TODO for migration, duplicate string -->
+    <string name="call_speed_dial_title">快速拨号</string>
+    <string name="dialog_no_speed_dial_number_message">无快速拨号条目，是否现在设置？</string>
+    <string name="icc_phone_book_invalid">"电话簿暂时不可用，请稍候再试。"</string>
+    <string name="error_edit_join_group">"此为合并联系人，您可以在编辑模式更改群组信息"</string>
+    <string name="local_phone_account" product="tablet">"平板电脑"</string>
+    <string name="local_phone_account" product="default">手机</string>
+    <string name="vcs_menu_voice_contacts_search">语音搜索联系人</string>
+    <string name="vcs_msg_no_voice_contacts">哎呀… 好像没有这个人哦！</string>
+    <string name="imsCallLabelsGroup">IMS通话</string>
+    <string name="sip_url">SIP地址</string>
+    <string name="ims_call_disabled">IMS通话不可用</string>
+    <string name="contact_import_export_tips">导入/导出联系人正在运行，无法进行该操作</string>
+
+</resources>

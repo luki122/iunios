@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    
+    <dimen name="in_call_button_height">76dp</dimen>
+
+    
+    
+    <dimen name="incoming_call_photo_height">345dp</dimen>
+    
+    <dimen name="incoming_call_callcard_height">453dp</dimen>
+    
+    <dimen name="incoming_call_photo_top_magin">15dp</dimen>
+    
+    
+    <dimen name="other_call_photo_height">223dp</dimen>
+    
+
+    
+    <dimen name="other_call_photo_top_magin">11dp</dimen>
+    
+  
+    
+    <dimen name="photo_move_distance">59dp</dimen>
+    <dimen name="name_move_distance">123dp</dimen>
+    <dimen name="photo_move_distance2">85dp</dimen>
+
+    <dimen name="other_call_photo_height_real">140dp</dimen>
+    
+    
+
+   <dimen name="aurora_sogou_top">407.7dip</dimen>
+
+   
+   <integer name="slide_textview_distance">500</integer>
+    
+   <dimen name="aurora_incall_button_text_size">12sp</dimen>
+   
+   
+   <dimen name="incalltouchui_padding_bottom">0dp</dimen>
+    <dimen name="incallcontrolls_margin_bottom">109dp</dimen>
+    <color name="record_button_text_color">#00ff7a</color>
+    <dimen name="slideview_padding_bottom">45dp</dimen>
+    <dimen name="incomingcall_margin_bottom">0dp</dimen>
+    <dimen name="end_height">109dip</dimen>
+    <dimen name="end_padding_top">27dip</dimen>
+    <dimen name="end_padding_bottom">27dip</dimen>
+    <dimen name="call_waiting_margin_bottom">69dp</dimen>
+    
+     <dimen name="dtmf_dialpad_margin_bottom">109dp</dimen>
+         
+     <dimen name="dtmf_dialpad_text_height">71dp</dimen>
+     <dimen name="dtmf_dialpad_text_margin_top">0dp</dimen>
+     <dimen name="dtmf_dialpad_text_margin_bottom">0dp</dimen>
+    <dimen name="dtmf_dialpad_text_margin_left">32dp</dimen>
+    <dimen name="dtmf_dialpad_text_margin_right">32dp</dimen>
+    <dimen name="dtmf_dialpad_text_size">48sp</dimen>
+    
+        <dimen name="callcard_padding_top">0dp</dimen>
+        
+    <dimen name="callcard_area_height">424dp</dimen>
+    <dimen name="labelAndNumber_margin_top">7dp</dimen>
+    <!--  <dimen name="callStateLabel_padding_top">29dp</dimen> -->
+</resources>

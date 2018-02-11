@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/aurora_background">
+        <inset android:drawable="@color/play_seek_bar_bg_color" android:insetTop="14.5dp" android:insetBottom="8.5dp" />
+    </item>
+    <item android:id="@+id/aurora_secondaryProgress">
+        <clip>
+            <shape>
+                <!--
+                <corners android:radius="4.0dip" />
+                <padding android:left="3.0dip" android:top="3.0dip" android:right="3.0dip" android:bottom="3.0dip" />
+                -->
+                <gradient
+                    android:startColor="@color/play_seek_bar_start_color"
+                    android:endColor="@color/play_seek_bar_end_color"
+                    android:centerColor="@color/play_seek_bar_start_color"
+                    android:angle="0.0"
+                    android:centerY="0.2" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@+id/aurora_progress">
+        <clip>
+            <shape>
+                <!--
+                <corners android:radius="4.0dip" />
+                <stroke android:width="7.0dip" android:color="#e1e1e1" />
+                <padding android:left="3.0dip" android:top="3.0dip" android:right="3.0dip" android:bottom="3.0dip" />
+                -->
+                <gradient
+                    android:startColor="@color/play_seek_bar_start_color"
+                    android:endColor="@color/play_seek_bar_end_color"
+                    android:centerColor="@color/play_seek_bar_end_color"
+                    android:angle="0.0"
+                    android:centerY="0.2" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

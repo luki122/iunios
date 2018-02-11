@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout used for PreferenceCategory in a PreferenceActivity. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_preference_category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:gravity="bottom"
+    android:paddingBottom="5.7dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aurora_preference_category_title"
+        android:textSize="18sp"
+        android:textColor="@color/aurora_numberpicker_select_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="@dimen/aurora_preference_item_padding_side"
+        android:paddingRight="@dimen/aurora_preference_item_padding_side"
+        />
+
+</LinearLayout>

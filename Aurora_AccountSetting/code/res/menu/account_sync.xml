@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/sync_now"
+        android:icon="@drawable/aurora_account_sync"
+        android:title="@string/sync_menu_sync_now"/>
+    <!-- 
+    <item
+        android:id="@+id/sync_cancel"
+        android:icon="@drawable/ic_menu_close_clear_cancel"
+        android:title="@string/sync_menu_sync_cancel"/>
+         -->
+    <item
+        android:id="@+id/remove_account"
+        android:icon="@drawable/aurora_account_remove"
+        android:title="@string/remove_account_label"/>
+
+</menu>

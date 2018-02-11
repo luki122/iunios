@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">		
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:paddingLeft="17dp" android:paddingRight="17dp"
+           android:orientation="vertical">
+           <TextView
+		       android:layout_width="wrap_content" android:layout_height="wrap_content"
+		       android:layout_marginTop="12dp"
+		       android:textColor="#019c73"  android:textSize="@dimen/list_header_text_size"
+		       android:text="@string/work_at_non_space"/>
+           	
+           <RelativeLayout
+		       android:id="@+id/privacyRingLayout"
+		       android:layout_marginTop="12dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_up">
+  			   <TextView
+				   android:text="@string/privacy_ring"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>  
+				       
+		       <ImageView style="@style/item_right_arrow"/> 	       
+		   </RelativeLayout>
+		   
+           <RelativeLayout
+               android:id="@+id/privacyMsgNotifyLayout"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content"
+		       android:paddingLeft="15dp" 
+		       android:paddingTop="10dp" android:paddingBottom="10dp"        
+		       android:background="@drawable/item_of_bottom_bg">
+		       <LinearLayout
+			        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			        android:layout_centerVertical="true"	        
+			        android:orientation="vertical">
+			        <TextView
+			              android:layout_width="wrap_content" android:layout_height="wrap_content"
+			              android:gravity="left" android:lines="1"
+			              android:textColor="@drawable/prefer_text_title_selector_color"
+			              android:textSize="15sp"
+			              android:text="@string/privacy_msg_notify"/>
+			        <TextView
+			              android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			              android:layout_marginTop="2dp"
+			              android:gravity="left" android:lines="1" 
+			              android:textColor="@drawable/prefer_text_sub_selector_color"
+			              android:textSize="11.3sp"
+			              android:text="@string/switch_notify_hint"/>     
+			    </LinearLayout>
+					   
+			    <aurora.widget.AuroraSwitch 
+				    android:id="@+id/notifySwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/> 	
+		   </RelativeLayout>
+		   
+           <RelativeLayout
+               android:id="@+id/msgNotifyWordLayout"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content"
+		       android:paddingLeft="15dp" android:layout_marginTop="10dp"
+		       android:paddingTop="10dp" android:paddingBottom="10dp"        
+		       android:background="@drawable/item_of_alone">
+		       <LinearLayout
+			        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			        android:layout_centerVertical="true"	        
+			        android:orientation="vertical">
+			        <TextView
+			              android:layout_width="wrap_content" android:layout_height="wrap_content"
+			              android:gravity="left" android:lines="1"
+			              android:textColor="@drawable/prefer_text_title_selector_color"
+			              android:textSize="15sp"
+			              android:text="@string/notify_word"/>
+			        <TextView
+			              android:id="@+id/notifyText"
+			              android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			              android:layout_marginTop="2dp"
+			              android:gravity="left" android:lines="1" 
+			              android:textColor="@drawable/prefer_text_sub_selector_color"
+			              android:textSize="11.3sp"
+			              android:text="@string/switch_notify_hint"/>     
+			    </LinearLayout>				   
+                <ImageView style="@style/item_right_arrow"/> 
+		   </RelativeLayout>  
+		    			   				 		   
+       </LinearLayout> 	
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/file_browse_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- search ui start -->
+
+    <include layout="@layout/aurora_search_box" />
+
+    <ViewStub
+        android:id="@+id/search_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/aurora_view_stub_listview" />
+    <!--
+         <aurora.widget.AuroraListView
+        android:id="@+id/search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:visibility="gone" />
+    -->
+    <!-- search ui end -->
+
+    <RelativeLayout
+        android:id="@+id/category_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/aurora_file_main_page_bg" >
+
+        <!-- picture start -->
+
+        <RelativeLayout
+            android:id="@+id/category_picture"
+            style="@style/icon_pic" >
+
+            <TextView
+                android:id="@+id/category_picture_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_picture" />
+
+            <TextView
+                android:id="@+id/category_picture_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_picture_txt"
+                android:layout_below="@+id/category_picture_txt" />
+        </RelativeLayout>
+
+        <!-- picture end -->
+        <!-- video  start -->
+
+        <RelativeLayout
+            android:id="@+id/category_video"
+            style="@style/icon_video" >
+
+            <TextView
+                android:id="@+id/category_video_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_video" />
+
+            <TextView
+                android:id="@+id/category_video_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_video_txt"
+                android:layout_below="@+id/category_video_txt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_document"
+            style="@style/icon_doc"
+            android:layout_below="@+id/category_picture" >
+
+            <TextView
+                android:id="@+id/category_document_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_document" />
+
+            <TextView
+                android:id="@+id/category_document_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_document_txt"
+                android:layout_below="@+id/category_document_txt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_apk"
+            style="@style/icon_apk"
+            android:layout_below="@+id/category_video" >
+
+            <TextView
+                android:id="@+id/category_apk_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_apk" />
+
+            <TextView
+                android:id="@+id/category_apk_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_apk_txt"
+                android:layout_below="@+id/category_apk_txt" />
+        </RelativeLayout>
+        <!-- Second line Document apk end -->
+        <!-- Third line music download start -->
+
+        <RelativeLayout
+            android:id="@+id/category_music"
+            style="@style/icon_music"
+            android:layout_below="@+id/category_document" >
+
+            <TextView
+                android:id="@+id/category_music_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_music" />
+
+            <TextView
+                android:id="@+id/category_music_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_music_txt"
+                android:layout_below="@+id/category_music_txt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_download"
+            style="@style/icon_download"
+            android:layout_below="@+id/category_apk" >
+
+            <TextView
+                android:id="@+id/category_download_txt"
+                style="@style/LightCategoryButtonTextStyle"
+                android:text="@string/category_download" />
+
+            <TextView
+                android:id="@+id/category_download_count"
+                style="@style/NumberLightCategoryButtonTextStyle"
+                android:layout_alignRight="@+id/category_download_txt"
+                android:layout_below="@+id/category_download_txt" />
+        </RelativeLayout>
+        <!-- storage fragment -->
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/b_view"
+            layout="@layout/aurora_usb_single_page" />
+
+        <ViewStub
+            android:id="@+id/sd_view_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/b_view"
+            android:layout="@layout/aurora_usb_two_page" />
+
+        <View
+            android:id="@+id/b_view"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

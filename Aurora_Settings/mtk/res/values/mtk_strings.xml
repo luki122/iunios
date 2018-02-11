@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="bluetooth_advanced_settings">Advanced settings</string>
+    <!-- Bluetooth settings.  The user-visible string that is used whenever referring to the FTP profile. -->
+    <string name="bluetooth_profile_ftp">File transfer</string>
+    <!-- Bluetooth settings.  Connection options screen.  The summary for the FTP checkbox preference that describes how checking it will set the FTP profile as preferred. -->
+    <string name="bluetooth_ftp_profile_summary_use_for">Use for file transfer</string>
+    <string name="bluetooth_ftp_profile_summary_connected">"Connected to file transfer"</string>
+ <!--   <string name="lock_screen_notifications_title">Lock screen notifications</string>
+    <string name="lock_screen_notifications_summary">Show missed call and text messages on scroll lock screen</string>-->
+    <string name="lock_screen_style_title">Lock screen style</string>	
+    <string name="battery_percent">Battery Percentage</string>
+    <string name="cpu_dtm_title">CPU power saving mode</string>
+    <string name="cpu_dtm_summary">Limit the maximum CPU performance to conserve battery life and lower device temperature.</string>      
+    <string name="usb_sharing_title">USB Internet</string>
+    <string name="usb_sharing_summary">Sharing Windows PC internet via USB cable</string>
+    <string name="usb_sharing_info_title">Internet pass-through</string>
+    <string name="usb_sharing_info_step_1">"1. Open network connections on your Windows PC."</string>
+    <string name="usb_sharing_info_step_2">"2. Right-click the connection that you want to share, and then click properties."</string>
+    <string name="usb_sharing_info_step_3">"3. Click the sharing tab, and select \'Allow other network users to connect through this computer\'s internet connection\'(choose newly added netork which represents USB internet if \'Home networking connection\' appears)."</string>
+    <!-- RCS-e settings -->
+    <string name="rcse_settings_title">RCS-e settings</string>
+    <!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 begin --> 
+    <string name="apn_port_warning">The port value must be 1-65535!</string>
+    <string name="usb_tethering_select_version">Select PC system version</string>
+    <!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 end --> 
+</resources>

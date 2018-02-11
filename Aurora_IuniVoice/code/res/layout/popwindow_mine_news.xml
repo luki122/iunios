@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="168dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/btn_unread"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/mine_unread_news"
+        android:textColor="#676767"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/common_main_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_read"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/mine_read_news"
+        android:textColor="#676767"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/common_main_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_all"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/mine_all_news"
+        android:textColor="#676767"
+        android:textSize="16sp" />
+
+</LinearLayout>

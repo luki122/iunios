@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="black">#000</color>
+    <color name="red">#F00</color>
+	<color name="list_item_line">#e6e6e6</color>
+	<color name ="pref_category">#019c73</color>
+    <color name="memory_used">#F00</color>
+    <color name="memory_avail">#333333</color>
+    <color name="memory_apps_usage">#77831A</color>
+    <color name="memory_downloads">#476093</color>
+    <color name="memory_dcim">#793A7F</color>
+    <color name="memory_music">#8E562A</color>
+    <color name="memory_cache">#479392</color>
+    <color name="memory_misc">#7C3030</color>
+    <color name="memory_user_light">#479392</color>
+    <color name="memory_user_dark">#316665</color>
+    <color name="preference_background">#3da0fd</color>
+    <color name="list_item_background">#3da0fd</color>
+    <color name="list_item_text_summary">#7b7b7b</color>
+
+    <color name="crypt_keeper_clock_background">#ff9a9a9a</color>
+    <color name="crypt_keeper_clock_foreground">#ff666666</color>
+    <color name="crypt_keeper_clock_am_pm">#ff9a9a9a</color>
+
+    <color name="divider_color">#20ffffff</color>
+    <color name="title_color">@android:color/holo_blue_light</color>
+    <color name="setup_divider_color">#333333</color>
+
+    <!-- Gionee <qiuxd> <2013-06-17> add for CR00826405 begin -->
+    <color name="gn_hide_encry_pop_text_color">#222222</color>
+    <!-- Gionee <qiuxd> <2013-06-17> add for CR00826405 end -->
+    <color name="text_description">#444444</color>
+    <color name="settings_headers_arrow_text_color">#5d5d5d</color>
+    <color name="action_bar_save_press_color">#4bcadd</color>
+    <color name="gray">#c5c5c5</color>
+    
+    
+     <!-- add begin by aurora penggangding -->
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="white_translucency">#88ffffff</color>
+    <color name="button_no_enabled">#b8b8b8</color>
+    <color name="hint_text_color">#b2b2b2</color>
+    <color name="green_red">#019c73</color>
+     <!-- add end by aurora penggangding -->
+     
+     <!-- add for theme -->
+     <color name="theme_kitty_title_color">#745054</color>
+     <color name="theme_her_title_color">#FF9999</color>
+     <color name="her_color">#FF9999</color>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee lwzh 20130227 added for CR00774362 start -->
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="11dip"
+    android:paddingRight="10dip"
+    android:orientation="vertical" >
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+
+    <!-- ginoee gaoj 2012-6-28 added for CR00623375 start -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/gn_regularly_send_msg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gn_send_address_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- ginoee gaoj 2012-6-28 added for CR00623375 end -->
+    <!-- ginoee gaoj 2012-7-28 modified for CR00658643 start -->
+    <!-- Aurora xuyong 2014-03-24 modified for bug #3419 start -->
+    <aurora.widget.AuroraEditText
+        android:id="@id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25dip"
+        android:autoText="true"
+        android:background="@null"
+        android:capitalize="sentences"
+        android:gravity="top|left"
+        android:hint="@string/subject_hint"
+        android:imeOptions="actionDone|flagNoEnterAction"
+        android:textSize="16sp"
+        android:textColor="@color/aurora_color_edit_text"
+        android:maxLength="40"
+        android:paddingRight="2dip"
+        android:visibility="gone" />
+    <!-- ginoee gaoj 2012-7-28 modified for CR00658643 end -->
+
+    <View
+        android:id="@+id/subject_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginTop="2.0dip"
+        android:background="@drawable/aurora_divider_lan"
+        android:visibility="gone" />
+    <!-- Aurora xuyong 2014-03-24 modified for bug #3419 end -->
+    <!-- Aurora xuyong 2013-09-22 modified for Aurora's new feature start -->
+    <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+    <view
+        android:id="@+id/attachment_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        class="com.android.mms.ui.AttachmentEditor"
+        android:orientation="vertical" >
+    <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-09-22 modified for Aurora's new feature end -->
+
+        <!-- file attachment view -->
+
+        <ViewStub
+            android:id="@+id/file_attachment_view_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout="@layout/file_attachment_view" />
+
+        <ViewStub
+            android:id="@+id/gn_image_attachment_view_portrait_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_image_attachment_view_portrait" />
+
+        <ViewStub
+            android:id="@+id/gn_video_attachment_view_portrait_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_video_attachment_view_portrait" />
+
+        <ViewStub
+            android:id="@+id/gn_audio_attachment_view_portrait_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_audio_attachment_view_portrait" />
+
+        <ViewStub
+            android:id="@+id/gn_slideshow_attachment_view_portrait_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slideshow_attachment_view_portrait" />
+
+        <ViewStub
+            android:id="@+id/gn_image_attachment_view_landscape_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_image_attachment_view_landscape" />
+
+        <ViewStub
+            android:id="@+id/gn_video_attachment_view_landscape_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_video_attachment_view_landscape" />
+
+        <ViewStub
+            android:id="@+id/gn_audio_attachment_view_landscape_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_audio_attachment_view_landscape" />
+
+        <ViewStub
+            android:id="@+id/gn_slideshow_attachment_view_landscape_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slideshow_attachment_view_landscape" />
+    </view>
+
+</LinearLayout>

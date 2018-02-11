@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="17dp"
+    android:paddingStart="17dp"
+    android:paddingEnd="17dp"
+    android:paddingRight="17dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_how_exit"
+        android:layout_width="@dimen/user_guide_anim_frame_width"
+        android:layout_height="@dimen/user_guide_anim_frame_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:clipChildren="true" >
+
+        <ImageView
+            android:id="@+id/iv_how_exit_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/stars" />
+
+        <ImageView
+            android:id="@+id/iv_falling_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/falling_stars" />
+
+        <ImageView
+            android:id="@+id/iv_u3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginStart="-20dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/u3" />
+
+        <ImageView
+            android:id="@+id/iv_how_exit_handset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/how_exit_handset" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_how_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_how_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_userguide_bigtxt_to_picture"
+        android:gravity="center_horizontal"
+        android:paddingEnd="17dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingStart="17dp"
+        android:text="@string/how_exit"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:lineSpacingExtra="@dimen/userguide_textview_linespace"
+        android:id="@+id/tv_exit_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_how_exit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_userguide_smalltxt_to_bigtxt"
+        android:gravity="center_horizontal"
+        android:paddingEnd="17dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingStart="17dp"
+        android:text="@string/exit_method"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+
+
+</RelativeLayout>

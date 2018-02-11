@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-09-29 for bug #8949 created -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_sms_settings_title"
+                      aurora:aurorakey="pref_key_sms_settings" >
+    <aurora.preference.AuroraSwitchPreference
+                      aurora:aurorakey="pref_key_sms_delivery_reports"
+                      aurora:aurorasummary="@string/pref_summary_sms_delivery_reports"
+                      aurora:auroratitle="@string/gn_pref_title_sms_delivery_reports" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_manage_sim_messages"
+                      aurora:aurorasummary="@string/pref_summary_manage_sim_messages"
+                      aurora:auroratitle="@string/pref_title_manage_sim_messages" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_mms_settings_title"
+                      aurora:aurorakey="pref_key_mms_settings">
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_mms_delivery_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_delivery_reports"
+                      aurora:auroratitle="@string/gn_pref_title_mms_delivery_reports" />
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_mms_read_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_read_reports"
+                      aurora:auroratitle="@string/gn_pref_title_mms_read_reports" />
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_mms_auto_retrieval"
+                      aurora:auroratitle="@string/pref_title_mms_auto_retrieval"
+                      aurora:aurorasummary="@string/pref_summary_mms_auto_retrieval" />
+    <aurora.preference.AuroraSwitchPreference android:layout="?android:attr/preferenceLayoutChild"
+                        aurora:auroradependency="pref_key_mms_auto_retrieval"
+                        aurora:auroradefaultValue="false"
+                        aurora:aurorakey="pref_key_mms_retrieval_during_roaming"
+                        aurora:auroratitle="@string/pref_title_mms_retrieval_during_roaming"
+                        aurora:aurorasummary="@string/pref_summary_mms_retrieval_during_roaming" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/sms_service_center"
+             aurora:aurorakey="pref_aurora_key_sms_service_center">
+       <com.aurora.mms.ui.AuroraSmsCenterPreference aurora:aurorakey="pref_key_sms_center_sim1"/>
+       <com.aurora.mms.ui.AuroraSmsCenterPreference aurora:aurorakey="pref_key_sms_center_sim2"/>
+       <aurora.preference.AuroraPreference 
+                      aurora:aurorasummary="@string/aurora_sms_center_summary" />
+  </aurora.preference.AuroraPreferenceCategory>
+</aurora.preference.AuroraPreferenceScreen>
+

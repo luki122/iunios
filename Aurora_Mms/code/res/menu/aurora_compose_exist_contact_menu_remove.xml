@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-07-02 created for reject feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_exsit_dail"
+        android:title="@string/aurora_dail">
+    </item>
+    <item
+        android:id="@+id/aurora_exsit_view"
+        android:title="@string/aurora_view_contact">
+    </item>
+    <item
+        android:id="@+id/aurora_remove_from_black"
+        android:title="@string/aurora_remove_black">
+    </item>
+</menu>

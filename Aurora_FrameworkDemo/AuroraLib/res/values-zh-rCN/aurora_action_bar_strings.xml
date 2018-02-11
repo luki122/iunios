@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="aurora_go_home">Go home</string>
+    <string name="aurora_info">Info</string>
+    <string name="aurora_back">Back</string>
+    <string name="aurora_more">More</string>
+    <string name="aurora_add">Add</string>
+    <string name="aurora_edit">Edit</string>
+    <string name="aurora_divier_line">divier line</string>
+    
+    <string name="aurora_actionbar_image_button_content">actionbar button</string>
+    <string name="aurora_action_bar_ok_btn">确定</string>
+    <string name="aurora_action_bar_cancel_btn">取消</string>
+    <string name="aurora_action_bar_select_all_btn">全选</string>
+    <string name="aurora_action_bar_cancel_all_btn">反选</string>
+    
+    <string name="empty"></string>
+    
+    <string name="aurora_activity_searchviewcancelbtnttext">取消</string>
+
+</resources>

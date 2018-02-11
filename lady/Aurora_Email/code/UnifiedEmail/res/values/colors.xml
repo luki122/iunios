@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="aurora_unread_count_textcolor">#4bcadd</color>
+     <color name="aurora_attchament_downloaded_textColor">#4bcadd</color>
+</resources>

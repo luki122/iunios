@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_main_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/user_head_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="19dp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="7dp"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/homepage_item_divider_height"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/persional_item_padding_left_right"
+            android:paddingRight="@dimen/persional_item_padding_left_right" >
+
+            <ImageView
+                android:layout_width="@dimen/persional_icon_wigth_height"
+                android:layout_height="@dimen/persional_icon_wigth_height"
+                android:layout_marginRight="@dimen/persional_icon_margin_right"
+                android:scaleType="center"
+                android:src="@drawable/ziliao_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_info_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_score"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/persional_item_padding_left_right"
+            android:paddingRight="@dimen/persional_item_padding_left_right" >
+
+            <ImageView
+                android:layout_width="@dimen/persional_icon_wigth_height"
+                android:layout_height="@dimen/persional_icon_wigth_height"
+                android:layout_marginRight="@dimen/persional_icon_margin_right"
+                android:scaleType="center"
+                android:src="@drawable/jifen_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_score_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_publish"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="0.5dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/tiezi_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_publish_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_news"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/persional_item_padding_left_right"
+            android:paddingRight="@dimen/persional_item_padding_left_right" >
+
+            <ImageView
+                android:layout_width="@dimen/persional_icon_wigth_height"
+                android:layout_height="@dimen/persional_icon_wigth_height"
+                android:layout_marginRight="@dimen/persional_icon_margin_right"
+                android:scaleType="center"
+                android:src="@drawable/xiaoxi_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_news_text"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/unlogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="@dimen/homepage_item_divider_height"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/persional_item_padding_left_right"
+        android:paddingRight="@dimen/persional_item_padding_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mine_watch"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

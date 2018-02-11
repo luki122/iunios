@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?> <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="64dp" > 
+
+    <FrameLayout
+        android:id="@+id/aurora_notification_parent"
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        >
+        <ImageView android:id="@+id/aurora_notification"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+        />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/aurora_notification_parent"
+        android:paddingRight="12dip">
+        <TextView
+            android:id="@+id/aurora_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+        <ImageView 
+            android:id="@+id/aurora_sim_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dip"
+            android:layout_toRightOf="@id/aurora_address"
+            android:background="@null"
+            />
+        <TextView
+            android:id="@+id/aurora_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dip"
+            android:textColor="@color/aurora_notification_text_color2"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/aurora_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/aurora_notification_text_color2"
+            android:textSize="12sp"
+            android:layout_marginTop="7dip"
+            android:layout_below="@id/aurora_address"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout> 

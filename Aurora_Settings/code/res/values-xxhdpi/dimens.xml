@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Gionee chenml 2013-05-21 add for CR00808680  -->
+<resources>
+    <dimen name="battery_history_textsize">44px</dimen>
+    <dimen name="lock_pwd_digit_pwd_dot_icon_padding">4.0dip</dimen>
+</resources>

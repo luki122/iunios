@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="SettingsUpdate.Theme.NoTitleBar" parent="@android:Theme.Black.NoTitleBar">
+    </style>
+    
+    <style name="AuroraSettingUpdateTheme" parent="@android:Theme.Holo.Light.NoActionBar">
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="StatusBarBackground">
+        <item name="android:background">@drawable/gn_tab_bg</item>
+    </style>
+
+    <style name="GnSettingUpdateLightNoTitleTheme" parent="@com.aurora:style/Theme.Aurora.Light.NoActionBar">
+          <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="GnSettingUpdateLightTheme" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:buttonStyle">@style/ButtonLightStyle</item>
+    </style>
+
+    <style name="GnSettingUpdateDarkTheme" parent="@com.aurora:style/Theme.Aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:itemTextAppearance">@android:style/TextAppearance</item>
+        <item name="android:buttonStyle">@style/ButtonDarkStyle</item>
+    </style>
+
+    <style name="SettingUpdateLightTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:buttonStyle">@style/ButtonLightStyle</item>
+    </style>
+
+    <style name="GNTextAppearance" parent="@android:style/TextAppearance.Inverse">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="LightActionBarStyle" parent="@com.aurora:style/Widget.Aurora.Light.ActionBar.Solid.Inverse">
+        <item name="com.aurora:aurorabackground">@drawable/gn_tab_light_bg</item>
+        <item name="com.aurora:auroratitleTextStyle">@style/actionbar_title_text_color</item>
+    </style>
+
+    <style name="actionbar_title_text_color"
+           parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+           <item name="android:textColor">@color/white</item>
+           <item name="android:textSize">20sp</item>
+    </style>
+    <style name="DarkActionBarStyle" parent="@com.aurora:style/Widget.Aurora.Light.ActionBar.Solid">
+       <item name="com.aurora:aurorabackground">@drawable/gn_tab_light_bg</item>
+       <item name="com.aurora:auroratitleTextStyle">?android:attr/textAppearanceMediumInverse</item>
+    </style>
+    <!-- gionee wangyan 20121228 modify for widget2.0 end -->
+    <style name="ButtonLightStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/stat_button_light</item>
+		<item name="android:height">45dip</item>
+		<!-- gionee wangyan 20121221 modify for widget2.0 start -->
+		<item name="android:textSize">20sp</item>
+		<!-- gionee wangyan 20121221 modify for widget2.0 end -->
+		<item name="android:gravity">center</item>
+    </style>
+    <style name="ButtonDarkStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/stat_button_dark</item>
+        <item name="android:height">52dip</item>
+        <item name="android:width">140dip</item>
+		<item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

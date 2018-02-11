@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2013, Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<!-- Gionee <lilg><2013-04-25> modify for Gionee widget begin -->
+<!--
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/week"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:textSize="20px"
+    android:textColor="@android:color/white" />
+-->
+<!-- Gionee <lilg><2013-04-25> modify for Gionee widget end -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/week"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:background="#fafafa"
+    android:textSize="12sp" />

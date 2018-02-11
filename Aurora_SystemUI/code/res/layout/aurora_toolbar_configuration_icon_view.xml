@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.ConfigurationIconView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dip"
+    android:id="@+id/click_view"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <FrameLayout
+        android:id="@+id/config_icon_view"
+        android:layout_width="@dimen/aurora_toolbar_configuration_icon_view_width"
+        android:layout_height="@dimen/aurora_toolbar_configuration_icon_view_height"
+         >
+
+        <ImageView
+            android:id="@+id/config_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" >
+        </ImageView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/config_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+		android:layout_marginTop="@dimen/toolbar_icon_text_margintop"
+        android:textColor="@color/white"
+        android:textSize="@dimen/toolbar_icon_text_size" >
+    </TextView>
+
+</com.android.systemui.recent.ConfigurationIconView>

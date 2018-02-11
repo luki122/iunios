@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_add_reminder"
+        android:title="@string/menu_add_reminder"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_add_label"
+        android:title="@string/menu_add_label"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_gen_picture"
+        android:title="@string/menu_gen_picture"
+        android:showAsAction="always|withText" />
+</menu>

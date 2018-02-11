@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    coreApp="true"
+    package="com.android.settings"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="50002001"
+    android:versionName="1.699" >
+
+</manifest>

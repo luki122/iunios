@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">   
+    <com.secure.view.AppDetailInfoView
+        android:id="@+id/appDetailInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_marginTop="18dp" android:layout_marginBottom="15dp"/>
+          
+    <LinearLayout 
+	    android:id="@+id/btnLayout"
+		android:layout_height="74dp" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:gravity="center_vertical"
+		android:paddingLeft="17dp" android:paddingRight="17dp"
+		android:layout_alignParentBottom="true">
+		<Button
+		    android:id="@+id/mForceStopButton" 
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/end_run"
+            style="@style/button_text"
+            android:background="@drawable/button"/>
+		<Button 
+		    android:id="@+id/uninstallBtn" android:layout_marginLeft="10dp"
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/uninstall"
+			style="@style/button_text"
+			android:background="@drawable/button"/>
+	</LinearLayout>
+		
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent" 
+        android:layout_below="@id/appDetailInfoLayout" android:layout_above="@id/btnLayout">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:paddingLeft="17dp" android:paddingRight="17dp"
+           android:orientation="vertical">
+           <com.secure.view.AppSizeView
+			    android:id="@+id/appSizeView"
+			    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+			    android:layout_marginBottom="14dp"/> 
+		   
+		   <RelativeLayout
+		       android:id="@+id/netLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_up"
+		       >
+		       <TextView
+					android:text="@string/network_2G_3G"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_of_preferences_item" android:paddingLeft="15dp"/>    
+ 				<aurora.widget.AuroraSwitch 
+				    android:id="@+id/netSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/> 	
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/AutoStartLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_middle">
+ 			   <TextView
+					android:text="@string/arrow_auto_start"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_of_preferences_item" android:paddingLeft="15dp"/>      
+  			   <aurora.widget.AuroraSwitch
+				    android:id="@+id/autoStartSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/>	
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/permissionManageLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_middle">
+  			   <TextView
+					android:text="@string/app_permission"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>      
+		        <ImageView
+				    style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/clearDefaultSetLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_bottom_bg">
+		       <TextView
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_of_preferences_item" android:paddingLeft="15dp"
+					android:text="@string/default_set"/>    
+		       <Button
+					android:id="@+id/clearDefaultSetBtn"
+					android:layout_width="52dp" android:layout_height="27dp"
+					android:layout_alignParentRight = "true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true"
+					android:text="@string/clear" 
+					android:textColor="@color/btn_text_title_selector_color" 
+					android:textSize="16sp"
+					android:background="@drawable/button"/> 
+		   </RelativeLayout>
+       </LinearLayout> 	
+    </ScrollView>
+    
+    <View
+        android:layout_width="fill_parent" android:layout_height="1px"
+        android:background="@drawable/line" android:layout_above="@id/btnLayout"/>		
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<resources>
+    <declare-styleable name="container">
+        <attr name="cellHorizontalInterval" format="dimension"  />
+        <attr name="cellVerticalInterval" format="dimension"  />
+    </declare-styleable>
+
+    <declare-styleable name="GnGridPage">
+        <attr name="gnPageLayoutStartIndex" format="integer" />
+        <attr name="gnPageCapacity" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="GnViewSlideIndicator">
+        <attr name="gnSelected" format="reference" />
+        <attr name="gnUnselected" format="reference" />
+    </declare-styleable>
+    
+    <!-- gionee zhouyj 2012-05-22 add for CR00607938 start -->
+    <attr name="buttonStyle" format="reference" />
+    <!-- gionee zhouyj 2012-05-22 add for CR00607938 end -->
+    
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 start -->
+    <declare-styleable name="AlphbetIndexView">
+        <attr name="promptAnimationDuration" format="integer"></attr>
+        <attr name="sectionFontSize" format="dimension"></attr>
+        <attr name="promptSectionFontSize" format="dimension"></attr>
+        <attr name="enableSectionColor" format="color"></attr>
+        <attr name="disableSectionColor" format="color"></attr>
+        <attr name="promptSectionColor" format="color"></attr>
+        <attr name="promptBgRes" format="reference"></attr>
+        <attr name="promptLeftOffset" format="dimension"></attr>
+        <attr name="waveSideRange" format="dimension"></attr>
+        <attr name="showingLetterColor" format="color"></attr>
+    </declare-styleable>
+    <attr name="gn_search_edit_text_bg" format="reference" />
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 end -->
+</resources>

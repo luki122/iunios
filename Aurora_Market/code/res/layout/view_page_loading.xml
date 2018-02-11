@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_load_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/iv_loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/page_loading_padding_left_right"
+        android:paddingRight="@dimen/page_loading_padding_left_right"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_loading_img_margintop" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_loading_text_margintop"
+            android:textColor="@color/page_loading_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <Button
+            android:id="@+id/btn"
+            style="@style/generalButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:layout_marginTop="@dimen/page_loading_button_margintop"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

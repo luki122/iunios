@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-4-10 added for CR00555790 start
+/**
+ */
+ -->
+<resources>
+    <string-array name="default_quick_texts">
+      <item>Where are you?</item>
+      <item>What are you doing?</item>
+      <item>Call back! Please!</item>
+      <item>Sorry, I have a meeting now.</item>
+      <item>Call you soon.</item>
+      <item>Don\'t worry! I\'m fine.</item>
+      <item>On my way home.</item>
+      <item>Arrive soon.</item>
+      <item>Be there or be square!</item>
+    </string-array>
+    <string-array name="default_quick_texts_Micromax">
+      <item>How are you?</item>
+      <item>Lots of love!</item>
+      <item>Long time no see.</item>
+      <item>How was the day?</item>
+      <item>Thank you!</item>
+      <item>Sorry!</item>
+      <item>Call me now.</item>
+      <item>Be right back.</item>
+      <item>How about lunch?</item>
+      <item>Call you later.</item>
+    </string-array>
+</resources>

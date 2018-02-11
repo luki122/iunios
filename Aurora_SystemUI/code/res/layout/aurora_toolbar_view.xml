@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <com.android.systemui.recent.ToolBarView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:id="@+id/tool_bar_view" android:paddingBottom="8dip">
+
+	<com.android.systemui.recent.QuickSettingSwitchPanel
+		android:id="@+id/quick_setting_switch" android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:clickable="true">
+	</com.android.systemui.recent.QuickSettingSwitchPanel>
+    
+	<com.android.systemui.recent.QuickSettingSwitchSecondPanel
+		android:id="@+id/quick_setting_switch_second" android:orientation="horizontal"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:clickable="true">
+	</com.android.systemui.recent.QuickSettingSwitchSecondPanel>
+	 
+	 
+	 
+
+</com.android.systemui.recent.ToolBarView>-->
+
+<com.android.systemui.recent.NineGridToolBarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool_bar_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+    android:orientation="vertical">
+    
+    <com.android.systemui.recent.NineGridQuickSettingSwitchFirstPanel
+		android:id="@+id/quick_setting_linefirst"
+        android:orientation="horizontal"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:clickable="true">
+	</com.android.systemui.recent.NineGridQuickSettingSwitchFirstPanel>
+	
+	<com.android.systemui.recent.NineGridQuickSettingSwitchSecondPanel
+		android:id="@+id/quick_setting_linesecond"
+        android:orientation="horizontal"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/quick_settings_nine_two_margintop"
+		android:clickable="true">
+	</com.android.systemui.recent.NineGridQuickSettingSwitchSecondPanel>
+	
+    <com.android.systemui.recent.NineGridQuickSettingSwitchThirdPanel
+		android:id="@+id/quick_setting_linethree"
+        android:orientation="horizontal"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/quick_settings_nine_two_margintop"
+		android:clickable="true">
+	</com.android.systemui.recent.NineGridQuickSettingSwitchThirdPanel>
+	
+    <com.android.systemui.recent.AuroraBrightnessView
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+		android:layout_marginTop="@dimen/quick_settings_nine_bri_margintop"
+        android:id="@+id/quick_setting_brightness"
+        >
+        <!--  <include layout="@layout/aurora_preference_widget_brightness"/>-->
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <ImageButton
+                android:id="@+id/aurora_auto_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/aurora_auto_brightness_no"
+                android:contentDescription="@null"/>
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="@dimen/aurora_toolbar_briseekbar_width"
+                android:layout_height="@dimen/quick_settings_bri_height"
+				android:layout_marginLeft="@dimen/aurora_toolbar_briseekbar_marginleft"
+                android:layout_marginRight="@dimen/aurora_toolbar_briseekbar_marginright"
+				android:thumbOffset="@dimen/aurora_toolbar_briseekbar_thumboffset"
+                android:minHeight="9dp"
+                android:maxHeight="9dp"
+                android:thumb="@drawable/stat_seek_thumb"
+                android:progressDrawable="@drawable/stat_seekbar_progress_horizontal_holo_light"
+ 				android:paddingStart="@dimen/aurora_toolbar_briseekbar_paddingleft"
+                android:paddingEnd="@dimen/aurora_toolbar_briseekbar_paddingright"
+                />
+            <com.android.systemui.recent.AuroraBrightView
+                android:id="@+id/aurora_bright_view"
+                android:layout_width="@dimen/aurora_toolbar_brisun_width"
+                android:layout_height="@dimen/aurora_toolbar_brisun_height"
+                />
+        </LinearLayout>
+    </com.android.systemui.recent.AuroraBrightnessView>
+    
+</com.android.systemui.recent.NineGridToolBarView>

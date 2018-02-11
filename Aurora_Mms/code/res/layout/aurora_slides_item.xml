@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ViewStub
+        android:id="@+id/aurora_part_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/aurora_slides_item_tv"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        
+        <ViewStub
+            android:id="@+id/aurora_part_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/aurora_slides_item_image"
+            android:layout_marginRight="30dip"
+            android:visibility="gone" />
+        
+        <ViewStub
+            android:id="@+id/aurora_part_vedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slidebrowser_media_info"
+            android:layout_marginRight="30dip"
+            android:visibility="gone" />
+        
+        <ViewStub
+            android:id="@+id/aurora_part_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slidebrowser_media_info"
+            android:layout_marginRight="30dip"
+            android:visibility="gone" />
+    
+        
+    </LinearLayout>
+    
+    <ViewStub
+        android:id="@+id/aurora_part_num_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/aurora_slides_divider"
+        android:visibility="gone" />
+
+</LinearLayout>

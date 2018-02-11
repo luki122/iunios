@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:ellipsize="marquee"
+    android:ems="20"
+    android:gravity="center_vertical"
+    android:paddingStart="10dp"
+    android:scrollbars="none"
+    android:singleLine="true"
+    style="@style/Account.TextView.Minor"
+    android:textSize="@dimen/textsize_15" >
+</TextView>
+

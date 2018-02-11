@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* apps/common/assets/default/default/skins/StatusBar.xml
+**
+** Copyright 2011, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<!-- Support "SystemUI - Dual SIM". -->
+<com.android.systemui.statusbar.SignalClusterViewGemini
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    >
+    <FrameLayout
+        android:id="@+id/wifi_combo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="-6dp"
+        >
+        <ImageView
+            android:id="@+id/wifi_signal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            />
+        <ImageView
+            android:id="@+id/wifi_inout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center|bottom"
+            />
+    </FrameLayout>
+    <View
+        android:layout_height="8dp"
+        android:layout_width="8dp"
+        android:visibility="gone"
+        android:id="@+id/spacer"
+        />
+    <ImageView
+        android:id="@+id/sim_indicator_internet_or_alwaysask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginRight="3dip"
+        />
+    <!-- M: Support "SystemUI - Dual SIM". @{ -->
+
+    <LinearLayout
+        android:id="@+id/signal_cluster_combo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <!-- network type configuration start -->
+        <ImageView
+            android:id="@+id/network_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            />
+        <!-- network type configuration end -->
+
+        <FrameLayout
+            android:id="@+id/mobile_combo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/mobile_signal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_signal2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_type"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_roaming"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/mobile_inout"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|bottom"
+                />
+            <ImageView
+                android:id="@+id/mobile_slot_indicator"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="1dp"
+        android:visibility="gone"
+        android:id="@+id/spacer_gemini"
+        />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="1dp"
+        android:visibility="invisible"
+        />
+        
+    <LinearLayout
+        android:id="@+id/signal_cluster_combo_gemini"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+        <!--network type configuration start -->
+        <ImageView
+            android:id="@+id/network_type_gemini"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            />
+        <!--network type configuration end -->
+
+        <FrameLayout
+            android:id="@+id/mobile_combo_gemini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/mobile_signal_gemini"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_signal_gemini2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_type_gemini"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/mobile_roaming_gemini"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:id="@+id/mobile_inout_gemini"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right|bottom"
+                />
+            <ImageView
+                android:id="@+id/mobile_slot_indicator_gemini"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <!-- M: Support "SystemUI - Dual SIM". }@ -->
+
+    <!-- M: Support "SystemUI - Flight Mode". @{ -->
+    <ImageView
+        android:id="@+id/flight_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingLeft="4dip"
+        android:src="@drawable/stat_sys_flight_mode"
+        />
+    <!-- M: Support "SystemUI - Flight Mode". }@ -->
+</com.android.systemui.statusbar.SignalClusterViewGemini>

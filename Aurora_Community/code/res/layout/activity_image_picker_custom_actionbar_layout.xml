@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_action_bar_height"
+    android:paddingLeft="@dimen/action_bar_paddingleft"
+    >
+  <TextView 
+      android:id="@+id/tv_actionbar_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/actionbar_item_sel"
+      android:textSize="@dimen/activity_image_picker_custom_actionbar_title_size"
+      android:text="@string/image_picker_actionbar_title"
+     android:layout_centerVertical="true"
+      />
+  <ImageView 
+      android:id="@+id/btn_switch_display_mode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/tv_actionbar_title"
+      android:src="@drawable/image_pick_actionbar_element"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/activity_image_picker_custom_actionbar_iv_switch_display_mode_margin_bottom"
+      />
+  
+  <TextView 
+      android:id="@+id/tv_actionbar_done"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/actionbar_item_sel"
+      android:textSize="@dimen/activity_image_picker_custom_actionbar_tv_img_select_done_size"
+      android:text="@string/image_picker_actionbar_tv_done"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="@dimen/activity_image_picker_custom_actionbar_tv_img_select_done_margin_right"
+      
+      />
+</RelativeLayout>

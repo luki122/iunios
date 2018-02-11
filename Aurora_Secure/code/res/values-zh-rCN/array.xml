@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="choice_sort_way_list">
+        <item>按缓存大小排序</item>
+        <item>按应用大小排序</item>
+    </string-array>
+    
+    <string-array name="all_app_choice_sort_way_list">
+        <item>个人应用</item>
+        <item>系统应用</item>
+        <item>系统组件</item>
+    </string-array>
+</resources>

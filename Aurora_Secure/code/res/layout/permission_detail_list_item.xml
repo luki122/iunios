@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="match_parent" 
+    android:minHeight="@dimen/preferences_item_height" android:background="@color/white"
+    android:orientation="vertical"
+    android:descendantFocusability= "blocksDescendants" >
+    <RelativeLayout
+        android:id="@+id/itemLayout" 
+        android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		android:clickable="false"
+		android:layout_marginLeft="17dp" android:layout_marginRight="17dp">  
+	    <ImageView
+			android:id="@+id/permissionIcon"
+			android:layout_width="23dp" android:layout_height="23dp"
+			android:layout_alignParentLeft="true" android:layout_marginLeft="15dp"
+			android:layout_centerVertical="true"
+			android:visibility="gone"/>
+	    	    
+	    <TextView
+		    android:id="@+id/permissionSwitch"
+		    style="@style/aurora_switch"
+		    android:layout_alignParentRight ="true" 
+		    android:layout_marginRight="17dp"
+			android:layout_centerVertical="true"
+			android:textSize="14sp"
+			android:textColor="#656565"
+			android:drawableRight="@drawable/arrow_down"
+			android:drawablePadding="14sp"
+			 /> 
+			    
+	    <TextView
+	        android:id="@+id/permissionName"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/permissionIcon" 
+	        android:layout_alignParentLeft="true"
+	        android:gravity="left" android:paddingLeft="15dp" android:lines="1"
+	        android:layout_centerVertical="true"
+	        style="@style/text_of_preferences_item"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/bottomSpace"
+        android:layout_width="fill_parent" android:layout_height="14dp" 
+        android:visibility="gone"/>
+</LinearLayout>

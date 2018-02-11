@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton android:id="@+id/aurora_increment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aurora_numberpicker_up_btn"
+        android:background="@null"
+        android:paddingTop="0dip"
+        android:paddingBottom="0dip" 
+        android:visibility="gone"
+        />
+  
+
+    <view class="aurora.lib.widget.AuroraNumberPicker$CustomEditText"
+        android:id="@+id/aurora_numberpicker_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/aurora_numberpicker_select_text_color"
+        android:textSize="17sp" />
+
+
+    <ImageButton android:id="@+id/aurora_decrement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aurora_numberpicker_down_btn"
+        android:background="@null"
+        android:paddingTop="0dip"
+        android:paddingBottom="0dip"
+        android:visibility="gone"
+         />
+<!--  android:textColor="?android:attr/textColorPrimary" -->
+</merge>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/aurora_import_export_margin_left"
+    android:layout_marginRight="@dimen/aurora_import_export_margin_left"
+    android:layout_marginTop="@dimen/aurora_import_export_margin_top"
+    android:orientation="vertical" >
+    
+    <TextView
+            android:id="@+id/aurora_contact_import_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/aurora_import_title"
+            android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+            android:textColor="@color/aurora_import_export_type_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+    
+    <LinearLayout 
+        android:id="@+id/import_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurora_editor_item_view_bg"
+        android:orientation="vertical"    >
+        
+        <LinearLayout 
+            android:id="@+id/aurora_contact_import_sim"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingBottom="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+        	android:clickable="true"
+        	android:background="?android:attr/selectableItemBackground"
+        	android:orientation="vertical">
+            <TextView
+            android:id="@+id/aurora_contact_import_sim_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/aurora_import_sim_title"
+            android:textColor="@color/aurora_import_export_title_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+        </LinearLayout>
+        
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/h_diver" />
+        
+        <LinearLayout 
+            android:id="@+id/aurora_contact_import_sd"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingBottom="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+        	android:clickable="true"
+        	android:background="?android:attr/selectableItemBackground"
+        	android:orientation="vertical">
+            <TextView
+            android:id="@+id/aurora_contact_import_sd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/aurora_import_sd_title"
+            android:textColor="@color/aurora_import_export_title_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+            
+            <TextView
+            android:id="@+id/aurora_contact_import_sd_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/aurora_import_export_sub_margin_top"
+            android:gravity="left"
+            android:text="@string/aurora_import_sd_subtitle"
+            android:textColor="@color/aurora_import_export_subtitle_text_color"
+            android:textSize="@dimen/aurora_import_export_subtitle_text_size" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    <TextView
+            android:id="@+id/aurora_contact_export_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/aurora_import_export_margin_top"
+            android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+            android:gravity="left"
+            android:text="@string/aurora_export_title"
+            android:textColor="@color/aurora_import_export_type_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+    
+    <LinearLayout 
+        android:id="@+id/export_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurora_editor_item_view_bg"
+        android:orientation="vertical"    >
+        
+        <LinearLayout 
+            android:id="@+id/aurora_contact_export_sim"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingBottom="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+        	android:clickable="true"
+        	android:background="?android:attr/selectableItemBackground"
+        	android:orientation="vertical">
+            <TextView
+            android:id="@+id/aurora_contact_export_sim_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/aurora_export_sim_title"
+            android:textColor="@color/aurora_import_export_title_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+        </LinearLayout>
+        
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/h_diver" />
+        
+        <LinearLayout 
+            android:id="@+id/aurora_contact_export_sd"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingBottom="@dimen/aurora_import_export_item_padding_top"
+        	android:paddingLeft="@dimen/aurora_import_export_item_padding_left"
+        	android:clickable="true"
+        	android:background="?android:attr/selectableItemBackground"
+        	android:orientation="vertical">
+            <TextView
+            android:id="@+id/aurora_contact_export_sd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/aurora_export_sd_title"
+            android:textColor="@color/aurora_import_export_title_text_color"
+            android:textSize="@dimen/aurora_import_export_title_text_size" />
+            
+            <TextView
+            android:id="@+id/aurora_contact_export_sd_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/aurora_import_export_sub_margin_top"
+            android:gravity="left"
+            android:text="@string/aurora_export_sd_subtitle"
+            android:textColor="@color/aurora_import_export_subtitle_text_color"
+            android:textSize="@dimen/aurora_import_export_subtitle_text_size" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

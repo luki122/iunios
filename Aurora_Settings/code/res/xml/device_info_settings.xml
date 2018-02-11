@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/about_settings">
+	<!-- gionee wangyaohui 20121208 add for CR00741053 begin: ota update -->
+        <aurora.preference.AuroraPreferenceScreen 
+	          aurora:aurorakey="gn_ota_system_update_settings"
+	       	aurora:auroratitle="@string/system_update_settings_list_item_title" >
+	    	<intent  
+			android:action="android.settings.GN_OTA_SYSTEM_UPDATE_SETTINGS" />
+	     </aurora.preference.AuroraPreferenceScreen>
+	<!-- gionee wangyaohui 20121208 add for CR00741053 end: ota update -->
+        <!-- System update settings - launches activity -->
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="system_update_settings"
+                aurora:auroratitle="@string/system_update_settings_list_item_title" 
+                aurora:aurorasummary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="additional_system_update_settings"
+                          aurora:auroratitle="@string/additional_system_update_settings_list_item_title">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="@string/additional_system_update"
+                    android:targetClass="@string/additional_system_update_menu" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        <aurora.preference.AuroraPreferenceCategory />
+
+        <!-- Device hardware model -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="device_model"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/model_number"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- Detailed build version -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="build_number"
+                aurora:auroraselectable="true"
+                aurora:auroratitle="@string/build_number"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- Device firmware version -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="firmware_version"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/firmware_version"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- Device FCC equipment id -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="fcc_equipment_id"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/fcc_equipment_id"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- Device Baseband version -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="baseband_version"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/baseband_version"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- Device Kernel version -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="kernel_version"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/kernel_version"
+                aurora:aurorasummary="@string/device_info_default"/>
+
+        <!-- gionee zengxuanhui 20121123 add for CR00724044 begin-->
+        <!-- Gionee rom version -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="gn_rom_version" 
+                aurora:auroratitle="@string/gn_rom_version"
+                aurora:aurorasummary="@string/device_info_default"/>
+        <!-- gionee zengxuanhui 20121123 add for CR00724044 end-->
+
+        <!-- SELinux status information -->
+        <aurora.preference.AuroraPreference aurora:aurorakey="selinux_status"
+                aurora:auroraselectable="false"
+                aurora:auroratitle="@string/selinux_status"
+                aurora:aurorasummary="@string/selinux_status_enforcing"/>
+
+
+        <!-- Device status - launches activity -->
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="status_info"
+                aurora:auroratitle="@string/device_status" 
+                aurora:aurorasummary="@string/device_status_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.deviceinfo.Status" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        <!-- Gemini Device status - launches Gemini activity -->
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="status_info_gemini"
+                aurora:auroratitle="@string/device_status" 
+                aurora:aurorasummary="@string/device_status_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.deviceinfo.StatusGemini" />
+        </aurora.preference.AuroraPreferenceScreen>
+        <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 begin -->
+        <!-- Cpu Device status -->
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="gn_devices_info"
+                aurora:auroratitle="@string/gn_devices_title" 
+                aurora:aurorasummary="@string/gn_devices_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.gionee.settings.adapter"
+                    android:targetClass="com.gionee.settings.adapter.hwinfo.GnDevicesInfo" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        <aurora.preference.AuroraPreferenceCategory />
+
+        <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 end -->
+        <!-- Legal Information -->
+        <aurora.preference.AuroraPreferenceScreen
+               aurora:aurorakey="container"
+               aurora:auroratitle="@string/legal_information"
+               aurora:aurorafragment="com.android.settings.LegalInfoSettings">
+                    
+            <!-- Note: The titles given here probably won't be used.  Instead, we programmatically
+                       fill the title with the label of the activity with the corresponding action.
+                       If there is not an activity for an action, the item will be removed from the
+                       list. -->
+
+            <!-- Copyright information -->
+            <!--
+            <aurora.preference.AuroraPreferenceScreen
+                    aurora:aurorakey="copyright"
+                    aurora:auroratitle="@string/copyright_title">
+                <intent android:action="android.settings.COPYRIGHT" />
+            </aurora.preference.AuroraPreferenceScreen>
+            -->
+
+            <!-- License information -->
+            <!--
+            <aurora.preference.AuroraPreferenceScreen
+                    aurora:aurorakey="license"
+                    aurora:auroratitle="@string/license_title">
+                <intent android:action="android.settings.LICENSE" />
+            </aurora.preference.AuroraPreferenceScreen>
+            -->
+
+            <!-- Terms and conditions -->
+            <!--
+            <aurora.preference.AuroraPreferenceScreen
+                    aurora:aurorakey="terms"
+                    aurora:auroratitle="@string/terms_title">
+                <intent android:action="android.settings.TERMS" />
+            </aurora.preference.AuroraPreferenceScreen>
+            -->
+        </aurora.preference.AuroraPreferenceScreen>
+        
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="safetylegal"
+                aurora:auroratitle="@string/settings_safetylegal_title">
+            <intent android:action="android.settings.SAFETY" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        <!-- Contributors -->
+        <!-- 
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="contributors"
+                aurora:auroratitle="@string/contributors_title">
+            <intent android:action="android.settings.TEAM" />
+        </aurora.preference.AuroraPreferenceScreen>
+        -->
+
+        <com.android.settings.RegulatoryInfoPreference aurora:aurorakey="regulatory_info"
+                aurora:auroratitle="@string/regulatory_information" />
+
+</aurora.preference.AuroraPreferenceScreen>

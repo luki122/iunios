@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+     android:background="@drawable/mainpage_category_top_item_selector"
+    >
+
+    <ImageView
+        android:id="@+id/lv_secondary_cover"
+        android:layout_width="@dimen/mainpage_category_secondary_list_item_iv_width"
+        android:layout_height="@dimen/mainpage_category_secondary_list_item_iv_height"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/mainpage_category_ll_content_child_margin_left"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/lv_secondary_cover"
+         >
+
+        <TextView
+            android:id="@+id/tv_secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gloab_title_color"
+            android:textSize="@dimen/mainpage_category_secondary_list_item_tv_title_size"
+            />
+
+        <TextView
+            android:id="@+id/tv_secondary_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/postdetail_light_color"
+            android:textSize="@dimen/mainpage_category_secondary_list_item_tv_desc_size"
+            android:layout_marginTop="@dimen/mainpage_category_secondary_list_item_tv_desc_margin_top"
+            />
+    </LinearLayout>
+    
+     <TextView
+            android:id="@+id/tv_secondary_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/postdetail_light_color"
+            android:textSize="@dimen/mainpage_category_secondary_list_item_tv_comment_size"
+            android:layout_marginTop="@dimen/mainpage_category_secondary_list_item_tv_comment_margin_top"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mainpage_category_secondary_list_item_tv_comment_margin_right"
+            android:text="@string/total_comment"
+            />
+
+</RelativeLayout>

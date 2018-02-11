@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:orientation="horizontal" >
+
+        <com.android.contacts.widget.GnTextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="260dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textColor="@com.aurora:color/aurora_list_textcolor"
+            android:textSize="@dimen/aurora_group_browse_list_title_text_size" />
+
+        <TextView
+            android:id="@+id/count_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/aurora_between_group_title_and_count_dp"
+            android:layout_toRightOf="@+id/label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/aurora_group_browse_list_count_text_size"
+            android:text="@string/aurora_left_kuohao"
+            android:textColor="@color/aurora_group_browse_list_item_count_color" />
+        
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/count_left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/aurora_group_browse_list_count_text_size"
+            android:textColor="@color/aurora_group_browse_list_item_count_color" />
+        
+        <TextView
+            android:id="@+id/count_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/count"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/aurora_right_kuohao"
+            android:textSize="@dimen/aurora_group_browse_list_count_text_size"
+            android:textColor="@color/aurora_group_browse_list_item_count_color" />
+
+        <ImageView
+            android:id="@+id/aurora_enter_detail_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aurora_group_entrance_right_margin"
+            android:background="@drawable/aurora_entrance_group_img_normal" />
+    </RelativeLayout>
+</LinearLayout>

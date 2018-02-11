@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Загрузки</string>
+    <string name="no_file">Нет файлов</string>
+    <string name="all_select">Выбирать всё</string>
+    <string name="invert_select">Выбирать наоборот</string>
+    <string name="send_file">Разделение</string>
+    <string name="confirm">Да</string>
+    <string name="cancel">Отмена</string>
+    <string name="enable_sd_card">Накопитель недоступен</string>
+    <string name="category_download">Загрузка</string>
+    <string name="dialog_select_type">Выбирать тип файлов</string>
+    <string name="dialog_type_text">Текст</string>
+    <string name="dialog_type_audio">Аудио</string>
+    <string name="dialog_type_video">Видео</string>
+    <string name="dialog_type_image">Изображение</string>
+    <string name="msg_unable_open_file">Формат файлов не поддерживает </string>
+    <string name="missing_title" msgid="830115697868833773">&quot;&lt;неизвестно&gt;&quot;</string>
+    <string name="no_network">Подключите к сети</string>
+    <string name="no_network_2">Сеть недоступна</string>
+    <string name="unknow">Неизвестно</string>
+    <string name="download_running" msgid="4656462962155580641">&quot;Загрузка&quot;</string>
+    <string name="download_success" msgid="7006048006543495236">&quot;Закончено&quot;</string>
+    <string name="download_error" msgid="8081329546008568251">&quot;Загрузка неудачно&quot;</string>
+    <string name="download_paused">&quot;Пауза &quot;</string>
+    <string name="download_waiting">&quot;Ожидание загрузки&quot;</string>
+    <string name="share_download">Разделение</string>
+    <string name="delete_download" msgid="76629022653866471">&quot;Удалить&quot;</string>
+    <string name="dialog_file_missing_body" msgid="3223012612774276284">&quot;Не нашлись загруженные файлы.&quot;</string>
+    <string name="dialog_title_not_available" msgid="5746317632356158515">&quot;Невозможно загрузить&quot;</string>
+    <string name="retry_download" msgid="7617100787922717912">&quot;Попробуйте ещё раз&quot;</string>
+    <string name="share_too_much">Вы благородны,  и поделили так много</string>
+    <string name="operation_delete">Удалить</string>
+    <string name="del_file">Невозможно удалить%s </string>
+    <string name="operation_delete_single_confirm_message">&quot;Удалить этот файл?&quot;</string>
+    <string name="operation_delete_single_file_confirm_message">&quot;Удалить этот файл?&quot;</string>
+    <string name="operation_delete_double_file_confirm_message">&quot;Удалить выбранные %1$d файлы?&quot;</string>
+    <string name="operation_deleting">Удаление…</string>
+    <string name="download_no_complete">Подождите до завершения загрузки!</string>
+    <string name="can_not_redownload">Невозможно продолжать загрузить файл! Удалите и загрузите снова!</string>
+    <string name="dialog_file_running">Ожидание загрузки</string>
+    <string name="has_no_free_memory">Недостаточное пространство, освободите его</string>
+
+</resources>

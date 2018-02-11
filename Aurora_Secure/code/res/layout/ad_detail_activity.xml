@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">   
+    <com.secure.view.AppDetailInfoView
+        android:id="@+id/appDetailInfoLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>         
+    <LinearLayout 
+	    android:id="@+id/btnLayout"
+		android:layout_height="74dp" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:gravity="center_vertical"
+		android:paddingLeft="17dp" android:paddingRight="17dp"
+		android:layout_alignParentBottom="true">
+		<Button
+		    android:id="@+id/mBlockButton" 
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/block_ad"
+            style="@style/button_text"
+            android:background="@drawable/button"/>
+		<Button 
+		    android:id="@+id/uninstallBtn" android:layout_marginLeft="10dp"
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:layout_weight="1" android:text="@string/uninstall"
+			style="@style/button_text"
+			android:background="@drawable/button"/>
+	</LinearLayout>		
+	
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent" 
+        android:layout_below="@id/appDetailInfoLayout" android:layout_above="@id/btnLayout">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <!-- 广告类型展示区 -->
+           <FrameLayout
+               android:layout_width="fill_parent" android:layout_height="240dp"
+               android:background="@drawable/ad_type_bg">
+               <!-- 没有拦截广告的信息展示区 -->
+               <LinearLayout
+                  android:id="@+id/NoBlockLayout"
+	              android:layout_width="wrap_content" android:layout_height="wrap_content"
+	              android:orientation="horizontal"
+	              android:layout_gravity="center">
+	              <FrameLayout
+	                 android:id="@+id/notifyTypeLayout" 
+	                 android:layout_width="95.33dp" android:layout_height="wrap_content"
+	                 android:background="@drawable/phone_img">
+	                 <ImageView
+	                    android:id="@+id/notifyTypeAniView" android:layout_marginTop="19dp"
+	                    android:layout_gravity="center_horizontal" android:visibility="visible"
+	                    android:layout_width="85.33dp" android:layout_height="22.67dp"/>
+	              </FrameLayout>	               
+	              <View
+	                  android:id="@+id/spaceView"
+	                  android:layout_width="52dp" android:layout_height="1dp"/>               
+	              <FrameLayout
+	                  android:id="@+id/viewTypeLayout" 
+	                  android:layout_width="95.33dp" android:layout_height="wrap_content"
+	                  android:background="@drawable/phone_img">
+	                  <ImageView
+	                     android:id="@+id/viewTypeAniView" 
+	                     android:layout_gravity="center" android:visibility="visible"
+	                     android:layout_width="85.33dp" android:layout_height="80dp"/>
+	              </FrameLayout>
+             </LinearLayout> 
+           
+             <!-- 拦截广告的信息展示区 -->
+             <LinearLayout
+                 android:id="@+id/BlockLayout" android:orientation="vertical" 
+                 android:layout_width="95.33dp" android:layout_height="188.33dp"
+                 android:layout_gravity="center" android:gravity="center"
+                 android:background="@drawable/phone_img">
+                 <ImageView
+                    android:id="@+id/BlockStateImg" android:layout_marginTop="19dp"
+                    android:layout_gravity="center_horizontal" android:visibility="visible"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:background="@drawable/ad_green_img_small"/>
+                 <TextView
+                    android:id="@+id/BlockText" 
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:textColor="#a3a3a3" android:textSize="12sp"
+                    android:text="@string/block_scuess"/>
+             </LinearLayout>
+          </FrameLayout>
+  
+          <!-- 广告权限展示区 -->
+          <TextView
+               android:id="@+id/noPermText" android:visibility="gone"
+               android:layout_width="fill_parent" android:layout_height="wrap_content" 
+               android:layout_marginTop="80dp"
+               android:textColor="#c2c2c2" android:textSize="15dp" android:gravity="center"
+               android:text="@string/block_ad_risk_action"/>
+		  <LinearLayout
+		       android:id="@+id/adPermHolderLayout"
+		       android:orientation="vertical"
+		       android:layout_width="fill_parent" android:layout_height="fill_parent"
+		       android:paddingTop="17.16dp"  android:paddingBottom="17.16dp"
+		       android:paddingLeft="12.16dp" android:paddingRight="12.16dp"/>	  
+       </LinearLayout> 	
+    </ScrollView>   
+    <View
+        android:layout_width="fill_parent" android:layout_height="1px"
+        android:background="@drawable/line" android:layout_above="@id/btnLayout"/>
+    <ImageView
+        android:id="@+id/adBlockedFlag" android:visibility="invisible"
+        android:layout_width="45.33dp" android:layout_height="45.33dp"
+        android:layout_alignParentTop="true" android:layout_alignParentRight="true" 
+        android:src="@drawable/ad_block_bg"/>		
+</RelativeLayout>

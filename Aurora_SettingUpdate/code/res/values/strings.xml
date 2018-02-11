@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="setting">Updater</string>
+    <!-- menu text -->
+    <string name="select_file">"select file from local"</string>
+    <string name="current_version_desc">current version info</string>
+    <string name="menu_setting">"setting"</string>
+
+    <!-- Notification -->
+    <string name="notify_auto_update_title">System Update</string>
+    <string name="notify_auto_check_notify">We have new version for you, click to upgrade.</string>
+    <string name="down_upgrade_file">Download upgrade file</string>
+    <string name="down_suspend">Download interrupt...</string>
+    <string name="down_ok_continue">Download complete, click to continue</string>
+
+    <!-- Setting -->
+    <string name="auto_download_when_wlan">Auto download when WLAN</string>
+    <string name="automatic_check_update">Auto check upgrading</string>
+    <string name="auto_check_when_3g">Automatically checks update on data connection</string>
+    <string name="round_autoCheck">Automatic check period</string>
+    <string name="title">check period</string>
+    <string name="def_auto_check_round">two</string>
+
+    <!-- version && people download -->
+    <string name="text_new_version" formatted="false">New Version:%s (%sMB)</string>
+    <string name="text_old_version" formatted="false">Current Version:%s</string>
+    <string name="text_current_download" formatted="false"> %d Download</string>
+    <string name="now_version">Current version：</string>
+
+    <!-- cancel && sure -->
+    <string name="cancel">Cancel</string>
+    <string name="sure">OK</string>
+
+    <!-- dialog -->
+    <string name="sd_card_abnormal">Storage abnormal</string>
+    <string name="title_error">Notification</string>
+    <string name="local_file_md5_error">Exception occurred during file download, please try again</string>
+    <string name="file_MD5_Err">file verfied wrong, please try again</string>
+    <string name="netPrompt">Network connections warning</string>
+    <string name="download_3G_to_WLAN">Download pause because the current connection will cause a large amount of cellphone data usage,it\'s suggested to use WLAN network.</string>
+    <string name="mobile_net">WLAN network is not available, it will cause a large amount of cellphone data usage, still continue?</string>
+    <string name="wlanset">WLAN setting</string>
+    <string name="giveup_down">Exit upgrade</string>
+    <string name="giveup_title">Give up upgrade</string>
+    <string name="exitUpdate">Sure you want to exit upgrade ?</string>
+    <string name="restart_upgrade">Reboot to Upgrade</string>
+    <string name="restart_upgrade_message">Click upgrade now, phone will reboot</string>
+    <string name="upgrade_now">Upgrade now</string>
+    <string name="check_local_file">"checking upgrade package, please wait..."</string>
+    <string name="check_local_file_failed">"Invalid file, please re-select effective upgrade package and then upgrade."</string>
+    <string name="battery_title">Power warning</string>
+    <string name="battery_summery2">Your phone power is lower than 15%, You need to charge for a while and then continue upgrading.</string>
+    <string name="download_complete_title">Download complete</string>
+    <string name="sdcard_no_space">Insufficient storage space, please release space </string>
+    <string name="interanl_card_no_space">Internal storage capacity is insufficient, please release space before the upgrade.</string>
+
+    <!-- toast -->
+    <string name="network_error">Network anomaly, please check the network</string>
+    <string name="use_emmc">"Storage is insufficient, the file is saved in the internal memory"</string>
+    <string name="not_ascii">"Only support the file path or name in english"</string>
+    <string name="file_not_exists">"Local update file not exists"</string>
+    <string name="kown_more_no_info">Version Details</string>
+    <string name="no_update">System is the latest version</string>
+    <string name="storage_unuseful"> Storage is unavailable,please check</string>
+    <string name="file_delete">"The file has been deleted, please re-download"</string>
+    <string name="remote_file_not_found">Server anomaly</string>
+    <string name="download_again">Download again</string>
+    <string name="wap_moblie_net">"Current network doesn't support system update,please use WLAN"</string>
+    <string name="poor_moblie_net">Current network is poor,please wait a moment or use WLAN</string>
+    
+    <string name="kown_more_no_info_content">No Version Details</string>
+    
+    <!-- detail info -->
+    <string name="progress_info">Loading, please wait...</string>
+
+    <!-- Check Update -->
+    <string name="check_update">Check new version</string>
+    <string name="check_wait">Checking</string>
+
+    <!-- down_ready.xml -->
+    <string name="start_down">Start</string>
+
+    <!-- Down_Update -->
+    <string name="continue_dowm">Continue</string>
+    <string name="pause_down">Pause</string>
+    <string name="net_speed_slow">Network is not good,trying to download</string>
+    <string name="download_over_half">Congratulations,you have downloaded half the file</string>
+    <string name="download_pause">"Download pause..."</string>
+    <string name="download_suspend">Download interrupt,Waiting for network...</string>
+    <string name="download_wait_WLAN">Download interrupt,Waiting for WLAN...</string>
+    <string name="download_wait_storage">Download interrupt,Waiting for storage...</string>
+    <string name="verfy_file">Verifying...</string>
+
+    <!-- Push -->
+    <string name="push_content">"We have the latest version for you, click to upgrade."</string>
+    <string name="push_title">"System Upgrade(%s)"</string>
+
+    <!-- Aurora <likai> add begin -->
+    <string name="have_no_network">No Network</string>
+    <string name="have_network_error">Network Error</string>
+    <string name="have_network_error_info">Please try again later</string>
+    <string name="have_new_version">Found the new version (full edition)</string>
+    <string name="have_new_version_extpkg">Found the new version</string>
+    <string name="have_no_update">Not found the new version</string>
+    <string name="new_version_info" formatted="false">%s (%sMB)</string>
+    <string name="last_update_time">The last update time: %s</string>
+    <string name="start_check">Check For Upgrade </string>
+    <string name="start_update">Upgrade</string>
+    <string name="start_download">Download</string>
+    <string name="pause_download">Pause</string>
+    <string name="cancel_download">Cancel</string>
+    <string name="continue_download">Continue</string>
+    <string name="cancel_download_dialog_title">Cancel Downloading</string>
+    <string name="cancel_download_dialog_message">Click OK to cancel downloading the new version and delete the downloaded file</string>
+    <string name="exit_upgrade_dialog_message">There is downloading task, are you sure to exit?</string>
+    <string name="verfy_download_file">Detected downloaded upgrade package, verifying...</string>
+    <string name="new_version_detail">Version details</string>
+    <string name="current_version_detail">Version details</string>
+    <string name="pause_download_no_network">Network error, download has been suspended</string>
+    <string name="notice_mobile_net">Recommendation</string>
+    <string name="start_download_mobile_net">WLAN network is not available, it will cause a large amount of cellphone data usage, still continue?</string>
+    <string name="continue_download_mobile_net">WiFi is not available, still continue downloading with cellphone network?</string>
+    <string name="system_upgrade">System Upgrade</string>
+    <string name="system_upgrade_message">Upgrade package has been downloaded, reboot immediately to upgrade?</string>
+    <string name="restart_now">Reboot now</string>
+    <string name="upgrade_latter">Upgrade later</string>
+    <string name="upgrade_successful_title">Congratulations, upgrade successfully!</string>
+    <string name="upgrade_successful_message">click to check the new features</string>
+    <string name="start_reboot">Preparing to reboot</string>
+    <string name="msg_for_check_network">Please check the network</string>
+    
+    <string name="have_new_recovery">Found new Recovery</string>
+    
+    <string name="new_recovery_msg">The upgrade package contains only Recovery, please tap Updater to upgrade ROM </string>
+    
+    
+    <string name="click_to_check_current_version">Click to view the current version for details</string>
+    
+    <string name="default_location_country">China</string>
+    <string name="has_no_storage">Storage is not available</string>
+    
+    <string name="dialog_notice_title">Alert</string>
+    
+    
+    <string name="connection_time_out">Connection Time Out</string>
+    <string name="server_error">Server Error</string>
+    <string name="link_error">Link invalid</string>
+    <string name="request_error">Upgrade Checking Error</string>
+    <string name="bad_data">Upgrade Checking Error</string>
+    
+    
+    
+    
+    <!-- Aurora <likai> add end -->
+</resources>

@@ -1,0 +1,1 @@
+../Aurora_Secure/Aurora_Secure_U3.mk

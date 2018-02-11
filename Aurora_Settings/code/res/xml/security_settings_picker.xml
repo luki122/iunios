@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for lockscreen begin -->
+    <!--
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_off"
+            aurora:auroratitle="@string/unlock_set_unlock_off_title"
+            aurora:aurorapersistent="false"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_none"
+            aurora:auroratitle="@string/unlock_set_unlock_none_title"
+            aurora:aurorapersistent="false"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_biometric_weak"
+            aurora:auroratitle="@string/unlock_set_unlock_biometric_weak_title"
+            aurora:aurorapersistent="false"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_pattern"
+            aurora:auroratitle="@string/unlock_set_unlock_pattern_title"
+            aurora:aurorapersistent="false"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_pin"
+            aurora:auroratitle="@string/unlock_set_unlock_pin_title"
+            aurora:aurorapersistent="false"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="unlock_set_password"
+            aurora:auroratitle="@string/unlock_set_unlock_password_title"
+            aurora:aurorapersistent="false"/>
+    -->
+
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_none"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_none_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_none_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_biometric_weak"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_biometric_weak_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_biometric_weak_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_pattern"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_pattern_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_pattern_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_pin"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_pin_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_pin_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_digit"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_digit_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_digit_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_password"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_password_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_password_title" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="unlock_set_off"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unlock_set_unlock_off_title_summary"
+        aurora:auroratitle="@string/unlock_set_unlock_off_title" />
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for lockscreen end -->
+
+</aurora.preference.AuroraPreferenceScreen>

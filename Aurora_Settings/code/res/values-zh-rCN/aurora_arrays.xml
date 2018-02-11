@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IUNI wolfu  add 20140611 start-->
+<resources>
+    <!-- Aurora <likai> add begin -->
+    <string-array name="aurora_wifi_sleep_policy_entries">
+        <item>始终连接</item>
+        <item>充电时保持连接</item>
+        <item>休眠时断开（会增加数据流量）</item>
+    </string-array>
+
+    <string-array name="aurora_wifi_sleep_policy_entries_wifi_only">
+        <item>始终连接</item>
+        <item>充电时保持连接</item>
+        <item>休眠时断开</item>
+    </string-array>
+
+    <string-array name="aurora_screen_timeout_entries">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+    </string-array>
+
+    <string-array name="aurora_screen_timeout_values" translatable="false">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+
+    <string-array name="aurora_font_size_entries">
+        <item>小号</item>
+        <item>默认</item>
+        <item>中号</item>
+        <item>大号</item>
+    </string-array>
+
+    <string-array name="aurora_font_size_values" translatable="false">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+    </string-array>
+    <!-- Aurora <likai> add end -->
+
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for numPad begin -->
+    <!-- list of 3- or 4-letter mnemonics for a 10-key numeric keypad -->
+    <string-array translatable="false" name="lockscreen_num_pad_klondike">
+        <item></item><!-- 0 -->
+        <item></item><!-- 1 -->
+        <item>ABC</item><!-- 2 -->
+        <item>DEF</item><!-- 3 -->
+        <item>GHI</item><!-- 4 -->
+        <item>JKL</item><!-- 5 -->
+        <item>MNO</item><!-- 6 -->
+        <item>PQRS</item><!-- 7 -->
+        <item>TUV</item><!-- 8 -->
+        <item>WXYZ</item><!-- 9 -->
+    </string-array>
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for numPad end -->
+  
+    </resources>
+<!-- IUNI wolfu  add 20140611 end-->

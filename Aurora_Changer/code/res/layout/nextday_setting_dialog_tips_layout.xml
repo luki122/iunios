@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nextday_setting_dialog_tips_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <aurora.widget.AuroraCheckBox 
+        android:id="@+id/nextday_setting_dialog_tips_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:checked="true"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FF000000"
+        android:gravity="center"
+        android:text="@string/nextday_wallpaper_setting_dialog_tips"/>
+            
+</LinearLayout>

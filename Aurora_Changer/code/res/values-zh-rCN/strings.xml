@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">壁纸设置</string>
+    <string name="group_num_type">P</string>
+    <string name="sdcard_change_name">壁纸</string>
+    <string name="lockscreen_wallpaper">时光锁屏</string>
+    <string name="desktop_wallpaper">桌面壁纸</string>
+    <string name="menu_add">添加</string>
+    <string name="menu_next">下一步</string>
+    <string name="setting_wallpaper">正在保存...</string>
+    <string name="lockpaper_set_success">设置锁屏壁纸成功</string>
+    <string name="wallpaper_set_success">设置成功，壁纸已更换</string>
+    <string name="wallpaper_set_failed">设置失败，图片已丢失或损坏</string>
+    <string name="set_wallpaper_failed">壁纸设置失败</string>
+    <string name="set_wallpaper">"设置壁纸"</string>
+    
+    <string name="select_all">全选</string>
+    <string name="no_select_all">反选</string>
+    <string name="confirm_dialog_title">删除提示</string>
+    <string name="confirm_delete_selected_message">您确定要删除所选图片?</string>
+    <string name="confirm_ok">确定</string>
+    <string name="confirm_cancel">取消</string>
+    <string name="wallpaper_is_deleting">正在删除...</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+
+    <string name="wallpaper_settings_video">"com.mediatek.vlw"</string>
+    <string name="wallpaper_settings_samsung">"com.sec.android.app.wallpaperchooser"</string>
+    <string name="wallpaper_settings_live">"com.android.wallpaper.livepicker"</string>
+    <string name="lockpaper_pre_null_str">图片加载异常</string>
+    <string name="wallpaper_crop_title">移动或缩放图片</string>
+    <string name="wallpaper_crop_ok">保存</string>
+    <string name="wallpaper_crop_del">删除</string>
+    <string name="wallpaper_crop_custom_name">自定义系列</string>
+    <string name="wallpaper_crop_cancel_title">注意</string>
+    <string name="wallpaper_crop_cancel_msg">是否要舍弃您之前所做的裁剪？</string>
+    <string name="wallpaper_crop_del_msg">是否删除当前壁纸系列?</string>
+    <string name="wallpaper_select_max_toast">时光锁屏最多支持12张图片</string>
+    <string name="wallpaper_crop_sdcard_error">SD卡异常，请重新添加</string>
+    
+    <string name="dialog_title">提示</string>
+    <string name="image_loading">图片加载中...</string>
+    <string name="image_too_small">抱歉，您选择的图片像素过低，不适合设置壁纸.</string>
+    <string name="image_load_failed">图片加载失败，请重新选择图片</string>
+    <string name="wallpaper_setting">正在设置壁纸...</string>
+    
+    <!-- shigq add start -->
+    <string name="lockscreen_city">City</string>
+    <string name="lockscreen_cute">Cute</string>
+    <string name="lockscreen_dream">Dream</string>
+    <string name="lockscreen_elegant">Elegant</string>
+    <string name="lockscreen_fascinating">Fascinating</string>
+    <string name="lockscreen_misspuff">MissPuff</string>
+    <string name="lockscreen_timely">Timely</string>
+    <string name="nextday_wallpaper_name">每日壁纸推送</string>
+    <string name="nextday_wallpaper_name_logo">Nextday</string>
+    <string name="nextday_wallpaper_setting_dialog_title">壁纸推送</string>
+    <string name="nextday_wallpaper_setting_dialog_message">锁屏上每天自动推送NextDay精选图文吗？</string>
+    <string name="nextday_wallpaper_setting_dialog_tips">仅Wi-Fi下推送，不消耗手机流量</string>
+    <string name="nextday_wallpaper_loading_dialog_title">温馨提示</string>
+    <string name="nextday_wallpaper_loading_dialog_message">当前使用的是移动数据网络，是否继续下载高清原图？</string>
+    <string name="nextday_wallpaper_loading_dialog_tips">忽略此提醒</string>
+    <string name="nextday_wallpaper_loading_dialog_cancel">取消下载</string>
+    <string name="nextday_wallpaper_loading_dialog_confirm">继续下载</string>
+    <string name="nextday_wallpaper_loading_dialog_mobile_message">当前使用的是移动数据网络，查看壁纸会消耗数据流量，是否继续查看？</string>
+	<string name="nextday_wallpaper_loading_dialog_mobile_cancel">取消</string>
+	<string name="nextday_wallpaper_loading_dialog_mobile_confirm">使用流量查看</string>
+    <string name="nextday_wallpaper_loading_without_network">请连接网络后下载高清图片</string>
+    <string name="nextday_wallpaper_loading_completed">此壁纸已下载至SD卡下目录IUNI_Wallpaper，可直接到文件管理中查看。</string>
+    <string name="nextday_wallpaper_loading_failed">壁纸下载失败。</string>
+    <string name="set_wallpaper_tips">锁屏设置</string>
+    <string name="set_wallpaper_content">是否设置当前系列为锁屏，同时取消每日壁纸推送?</string>
+    <string name="share_wallpaper">分享</string>
+    <string name="share_wallpaper_loading_tips">图片下载中...</string>
+    <string name="nextday_wallpaper_preview_control_check_text">下载或分享时保留日期和文案</string>
+    <!-- shigq add end -->
+</resources>

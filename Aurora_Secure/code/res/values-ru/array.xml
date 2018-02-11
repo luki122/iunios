@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="choice_sort_way_list">
+        <item>Упорядочивать по размерам кэш-памяти</item>
+        <item>Упорядочивать по размерам приложений</item>
+    </string-array>
+    
+    <string-array name="all_app_choice_sort_way_list">
+        <item>Личные приложения</item>
+        <item>Приложения системы</item>
+        <item>Компоненты системы</item>
+    </string-array>
+</resources>

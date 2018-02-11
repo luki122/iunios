@@ -1,0 +1,630 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gionee.autommi"
+    android:versionCode="10000003"
+    android:versionName="1.0.0.d"
+    android:sharedUserId="android.uid.phone">
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+   <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> 
+   <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>  
+   <uses-permission android:name="android.permission.VIBRATE"/>
+   <uses-permission android:name="android.permission.BLUETOOTH"/>
+   <uses-permission android:name="android.permission.FLASHLIGHT" />  
+   <uses-permission android:name="android.permission.CAMERA"/> 
+   <uses-feature android:name="android.hardware.camera" />
+   <uses-feature android:name="android.hardware.autofocus"/>
+   <uses-permission android:name="android.permission.WAKE_LOCK" />
+   <uses-permission android:name="android.permission.DEVICE_POWER" />
+   <uses-permission android:name="android.permission.CALL_PHONE" />
+   <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+   <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+   <uses-permission android:name="android.permission.NFC" /> 
+
+    <application
+        android:name="com.gionee.autommi.AutoMMI"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <uses-library android:name="com.qualcomm.qcrilhook" />
+        <uses-library android:name="com.qualcomm.qcnvitems" />
+        
+    <activity 
+        android:name="WifiTest"
+        android:label="@string/title_wifi"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">       
+         <intent-filter>
+            <action android:name="com.gionee.autommi.wifi"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+    
+    <activity
+         android:name="com.gionee.autommi.BluetoothTest"
+         android:label="@string/title_bluetooth"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.bt"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+    
+    <activity
+         android:name="SoftwareVersionTest"
+         android:label="@string/title_SoftwareVersion"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.swv"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+    
+    <activity
+         android:name="NFCTest"
+         android:label="@string/nfc"
+         android:screenOrientation="portrait"
+         android:excludeFromRecents="true">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.nfc"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+        
+    <activity
+         android:name="VibratorTest"
+         android:label="@string/title_Vibrator"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.vbt"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+    
+    <activity 
+        android:name="PSensorTest"
+        android:label="@string/title_PSensor"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+       <intent-filter>
+            <action android:name="com.gionee.autommi.psensor"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>        
+    </activity>
+    
+     <activity 
+        android:name="LSensorTest"
+        android:label="@string/title_LSensor"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+       <intent-filter>
+            <action android:name="com.gionee.autommi.lsensor"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>        
+    </activity>
+    
+    <activity
+            android:name="BatteryTest"
+            android:label="@string/title_Battery"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.gionee.autommi.bat" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     
+     <activity
+            android:name="BackCameraTest"
+            android:label="@string/title_BackCamera"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.autommi.bcam" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     
+     <activity
+            android:name="FrontCameraTest"
+            android:label="@string/title_FrontCamera"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.autommi.fcam" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     
+     <activity
+            android:name="TouchPadTest"
+            android:label="@string/title_TouchPad"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.autommi.tp" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     
+      <activity
+            android:name="KeysTest"
+            android:label="@string/title_keyTest"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.gionee.autommi.key" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+     </activity>
+     
+    <activity
+         android:name=".redTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Color"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.red"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+
+    <activity
+         android:name=".greenTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Color"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.green"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+
+    <activity
+         android:name=".whiteTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Color"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.white"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+
+    <activity
+         android:name=".blankTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Color"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.blank"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+
+    <activity
+         android:name=".blueTest"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Color"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.blue"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+    <activity
+         android:name=".FlashTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Flash"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.open"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>    
+    <activity
+         android:name=".FlashCloseTest"
+         android:screenOrientation="portrait"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_Flash"
+         android:excludeFromRecents="true"
+		 android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.close"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter>     
+    </activity>
+     <activity
+        android:name="Mic_1_Test"
+        android:label="@string/title_AudioLoop"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.al"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+    <activity
+        android:name="FMTest"
+        android:screenOrientation="portrait"
+        android:label="@string/title_fm"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.fm"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+     <activity
+         android:name="HeadSetLoopTest"
+         android:label="@string/title_HeadSetLoop"
+         android:excludeFromRecents="true">
+         <intent-filter>
+             <action android:name = "com.gionee.autommi.hs"/>
+             <category android:name="android.intent.category.DEFAULT"/> 
+         </intent-filter>
+     </activity>  
+  
+      <activity android:name=".ScreenBrightnessTest"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/screen_brightness"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.zero"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+
+      <activity android:name=".ScreenBrightnessTestOne"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/screen_brightness"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.one"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>    
+    
+      <activity android:name=".ScreenBrightnessTestTwo"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/screen_brightness"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.two"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>   
+
+      <activity android:name=".ScreenBrightnessTestThree"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/screen_brightness"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.three"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity> 
+
+      <activity android:name=".ScreenBrightnessTestFour"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/screen_brightness"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.four"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity> 
+
+     
+     <activity
+        android:name="SpeakerTest"
+        android:label="@string/title_Speaker"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.sp"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+     <activity
+        android:name="ReceiverTest"
+        android:label="@string/title_Receiver"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.rc"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+     <activity
+        android:name="Mic_2_Test"
+        android:label="@string/title_AuxiliaryMic"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.am"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+      <activity
+        android:name="Mic_3_Test"
+        android:label="@string/title_Mic_3"
+        android:excludeFromRecents="true"
+        android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.mic3"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+     <activity
+         android:name="CustMicRoute"
+         android:launchMode="singleTask">
+        <intent-filter>
+            <action android:name="com.gionee.autommi.cmr"/>
+            <category android:name="android.intent.category.DEFAULT"/> 
+        </intent-filter>
+     </activity>
+         
+     <activity 
+         android:name="AccelerationTest"
+         android:label="@string/title_Acceleration"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter >
+            <action android:name="com.gionee.autommi.acc"/>
+            <category android:name="android.intent.category.DEFAULT"/> 
+        </intent-filter>   
+     </activity>
+     
+      <activity 
+         android:name="MagneticFieldTest"
+         android:label="@string/title_MagneticField"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter >
+            <action android:name="com.gionee.autommi.mag"/>
+            <category android:name="android.intent.category.DEFAULT"/> 
+        </intent-filter>   
+     </activity>
+     
+     <activity
+         android:name="SimCardTest"
+         android:label="@string/title_SimCard"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask" >
+         <intent-filter>
+             <action android:name="com.gionee.autommi.sim" />
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+      </activity>
+      
+     <activity 
+         android:name="CallTest"
+         android:label="@string/tilte_Call"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.call"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name="com.gionee.autommi.SdCardTest"
+         android:label="@string/tilte_SdCard"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.sdc"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".GyroSensorTest"
+         android:label="@string/title_Gyro"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter>
+             <action android:name = "com.gionee.autommi.gyro"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".GPSTest"
+         android:label="@string/title_GPS"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.gps"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+    <activity 
+         android:name=".InfoTest"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.info"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".PressureTest"
+         android:excludeFromRecents="true"
+         android:label="@string/title_Pressure"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.prs"/>
+             <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+     </activity>
+     
+     <activity
+         android:name=".composition.AccVibTest"
+         android:label="@string/tilte_AccVib"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.cav"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".composition.SdSimTpTest"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:label="@string/title_SdSimTp"
+         android:excludeFromRecents="true"
+         android:screenOrientation="portrait"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.csst"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity
+         android:name=".composition.KeysWifiTest"
+         android:label="@string/title_KeysWifi"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+        <intent-filter >
+             <action android:name="com.gionee.autommi.ckw"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>  
+     </activity>
+
+     
+     <activity 
+         android:name=".composition.PsRecTest"
+         android:label="@string/title_PsRec"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.cps"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter> 
+     </activity>
+     
+     <activity 
+         android:name=".composition.BtSpeakerTest"
+         android:label="@string/title_BtSpeaker">
+         android:excludeFromRecents="true"
+        <intent-filter >
+             <action android:name="com.gionee.autommi.cbs"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>     
+     </activity>
+     
+     <activity
+         android:name=".composition.FCamHeadSetTest"
+         android:label="@string/title_FCamHeadSet"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask" >
+         <intent-filter>
+             <action android:name="com.gionee.autommi.cfchs"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity
+         android:name=".composition.BCamAudioTest"
+         android:label="@string/title_BCamAudio"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask" >
+         <intent-filter>
+             <action android:name="com.gionee.autommi.cbca"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".composition.MagFmTest"
+         android:label="@string/title_MagFm"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.cmf"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".composition.ScrFlashBatTest"
+         android:label="@string/title_ScrFlashBat"
+         android:excludeFromRecents="true"
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.csfb"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity 
+         android:name=".composition.LightReceiver"
+         android:label="@string/title_LightReceiver"
+         android:excludeFromRecents="true"
+         android:launchMode="singleTask">
+         <intent-filter >
+             <action android:name="com.gionee.autommi.clr"/>
+             <category android:name="android.intent.category.DEFAULT"/>
+         </intent-filter>
+     </activity>
+     
+     <activity
+        android:name="Dumb"
+        android:launchMode="singleTask">
+                <intent-filter>
+            <action android:name="com.gionee.autommi.dumb"/>
+            <category android:name="android.intent.category.DEFAULT"/>       
+        </intent-filter> 
+     </activity>
+     
+
+     
+    </application>
+</manifest>

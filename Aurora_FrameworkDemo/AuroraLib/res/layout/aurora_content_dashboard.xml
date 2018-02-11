@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:id="@+id/windowLayout">
+<aurora.lib.widget.AuroraActionBarHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_action_bar_host"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <aurora.lib.widget.AuroraActionBar
+        android:id="@+id/aurora_action_bar"
+        style="@style/aurora.Widget.ActionBar.Dashboard"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="@dimen/aurora_action_bar_height"
+         />
+
+    <FrameLayout
+        android:id="@+id/aurora_action_bar_content_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</aurora.lib.widget.AuroraActionBarHost>
+</FrameLayout>

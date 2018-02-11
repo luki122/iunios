@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="setting">Обновление системы</string>
+<!-- menu text -->
+<string name="select_file">&quot;Выбирать пакет эскалации из местных&quot;</string>
+    <string name="current_version_desc">Информация о изменении версии</string>
+    <string name="menu_setting">&quot;Настройки&quot;</string>
+<!-- Notification -->
+<string name="notify_auto_update_title">Обновление системы</string>
+    <string name="notify_auto_check_notify">Обнаружено новая версия системы, нажмите для обновления.</string>
+    <string name="down_upgrade_file">&quot;Загрузка файлов эскалации…&quot;</string>
+    <string name="down_suspend">&quot;Загрузка прервана…&quot;</string>
+    <string name="down_ok_continue">Закончена загрузка, нажмите для продолжения</string>
+<!-- Setting -->
+<string name="auto_download_when_wlan">Авто.  загрузить обновление в сети WLAN</string>
+    <string name="automatic_check_update">Авто. проверить обновление</string>
+    <string name="auto_check_when_3g">В трафике данных, авто. проверить обновление по периодам</string>
+    <string name="round_autoCheck">Период Авто. проверки</string>
+    <string name="title">Период проверки</string>
+    <string name="def_auto_check_round">2</string>
+<!-- version && people download -->
+<string name="text_new_version" formatted="false">Новейшая версия：%s(%sMB)</string>
+    <string name="text_old_version" formatted="false">Настоящая версия：%s</string>
+    <string name="text_current_download" formatted="false">Загружено %d человек</string>
+    <string name="now_version">Настоящая версия：</string>
+<!-- cancel && ok -->
+<string name="cancel">Отмена</string>
+    <string name="sure">ОK</string>
+<!-- dialog -->
+<string name="sd_card_abnormal">Аномальный сервер</string>
+    <string name="title_error">Уведомление</string>
+    <string name="local_file_md5_error">Извините, загруженный файл аномален, перезагрузите</string>
+    <string name="file_MD5_Err">Извините, не удачно проверить файл эскалации, перезагрузите</string>
+    <string name="netPrompt">Уведомление подключение сети</string>
+    <string name="download_3G_to_WLAN">Остановлена загрузка, сейчас загрузить под мобильной сетью, может взиматься высокие платы, рекомендуйте загрузить в сети WLAN！</string>
+    <string name="mobile_net">Сеть WLAN  отключена, файл загрузки большой, рекомендуйте загрузить в сети WLAN, иначе платы высокие, продолжать?</string>
+    <string name="wlanset">Настройки WLAN</string>
+    <string name="giveup_down">Выйти из эскалации</string>
+    <string name="giveup_title">Отменить эскалацию</string>
+    <string name="exitUpdate">Выйти из эскалации?</string>
+    <string name="restart_upgrade">Перезапустить эскалацию</string>
+    <string name="restart_upgrade_message">Нажмите для обновления , телефон будет отключен и перезапущен</string>
+    <string name="upgrade_now">Сразу обновить</string>
+    <string name="check_local_file">&quot;Проверка пакета эскалации, подождите…&quot;</string>
+    <string name="check_local_file_failed">&quot;Недействующий пакет эскалации, выберите иной для обновления.&quot;</string>
+    <string name="battery_title">Уведомление заряда</string>
+    <string name="battery_summery2">Заряд аккумлятор менее 15%, зарядите и продолжите обновление!</string>
+    <string name="download_complete_title">Закончена загрузка</string>
+    <string name="sdcard_no_space">Недостаточное пространство хранилища, освободите</string>
+    <string name="interanl_card_no_space">Файл сохраняется на внутреннем хранилище, а его пространство недостаточно, освободите и обновите!</string>
+    <string name="download_again">Перезагрузить</string>
+<!-- toast -->
+<string name="network_error">Аномальная сеть, проверите подключение сети</string>
+    <string name="use_emmc">&quot;Недостаточное пространство хранилища, файл сохраняется на внутреннем хранилище&quot;</string>
+    <string name="not_ascii">&quot;Не поддерживает путь и название китайского языка&quot;</string>
+    <string name="file_not_exists">&quot;Не существует местного файла обновления&quot;</string>
+    <string name="kown_more_no_info">Подробности о вервии</string>
+    <string name="no_update">Новейшая версия</string>
+    <string name="storage_unuseful">Хранилище недоступно, подтвердите </string>
+    <string name="file_delete">&quot;Не обнаружен файл, перезагрузите&quot;</string>
+    <string name="remote_file_not_found">Аномальный сервер</string>
+    <string name="wap_moblie_net">Сеть не поддерживает обновление системы, используйте другие сети!</string>
+    
+    <string name="poor_moblie_net">Плохая сеть, попробуйте позже!</string>
+
+    <string name="kown_more_no_info_content">Нет подробности версии</string>
+<!-- detail info -->
+<string name="progress_info">Загрузка, подождите…</string>
+<!-- Check Update -->
+<string name="check_update">Проверка новой версии</string>
+    <string name="check_wait">&quot;Проверка&quot;</string>
+<!-- down_ready.xml -->
+<string name="start_down">Начинать эскалацию</string>
+<!-- Down_Update -->
+<string name="continue_dowm">Продолжать</string>
+    <string name="pause_down">Остановить</string>
+    <string name="net_speed_slow">Скорость сети медленная, стараться загрузить </string>
+    <string name="download_over_half">Поздравляем, загружено больше половины, будьте терпеливы</string>
+    <string name="download_pause">&quot;Загрузка остановлена…&quot;</string>
+    <string name="download_suspend">Загрузка прервана, ждать восстановление сети...</string>
+    <string name="download_wait_WLAN">Загрузка прервана, ждать подключение к сети WLAN...</string>
+    <string name="download_wait_storage">Загрузка прервана, ждать восстановление памяти…</string>
+    <string name="verfy_file">Проверка</string>
+<!-- Push -->
+<string name="push_content">&quot;Новая версия доступна, нажмите для обновления&quot;</string>
+    <string name="push_title">&quot;Обновлена система(%s)&quot;</string>
+    <string name="new_recovery_msg">Настоящий пакет эскалации включает только Recovery, для эскалации ROM нужно перезапустить &quot;обновление системы&quot;после этой эскалации</string>
+<!-- new added -->
+<string name="have_no_network">Сети нет</string>
+    <string name="have_network_error">Ошибка сети</string>
+    <string name="have_network_error_info">Попробуйте позже</string>
+    <string name="have_new_version">Новая версия доступна (полная)</string>
+    <string name="have_new_version_extpkg">Новая версия доступна</string>
+    <string name="have_no_update">Не обнаружена новая версия</string>
+    <string name="new_version_info" formatted="false">%s (%sMB)</string>
+    <string name="last_update_time">Время прошлого обновления:  %s</string>
+    <string name="start_check">Поиск обновления</string>
+    <string name="start_update">Эскалация</string>
+    <string name="start_download">Загрузить</string>
+    <string name="pause_download">Остановить</string>
+    <string name="cancel_download">Отмена</string>
+    <string name="continue_download">Продолжать</string>
+    <string name="cancel_download_dialog_title">Отменить загрузку</string>
+    <string name="cancel_download_dialog_message">Нажать ОК для отмены загрузки и удаления загруженного файла</string>
+    <string name="exit_upgrade_dialog_message">Задачу загружает, выйти?</string>
+    <string name="verfy_download_file">Обнаружен загруженный пакет эскалации, проверяет</string>
+    <string name="new_version_detail">Подробности о вервии</string>
+    <string name="current_version_detail">Подробности о вервии</string>
+    <string name="pause_download_no_network">Ошибка сети, загрузка остановлена</string>
+    <string name="notice_mobile_net">Уведомление</string>
+    <string name="start_download_mobile_net">Пакет эскалации большая, рекомендуйте загрузить через WIFI. WIFI  выключено, продолжать загрузить?</string>
+    <string name="continue_download_mobile_net">WIFI  выключено, загрузить с использованием мобильной сети?</string>
+    <string name="system_upgrade">Обновление системы</string>
+    <string name="system_upgrade_message">Загружена пакет эскалации, сразу перезапустить для обновления?</string>
+    <string name="restart_now">Сразу перезапустить</string>
+    <string name="upgrade_latter">Не обновить</string>
+    <string name="upgrade_successful_title">Поздравляем, удачно обновлено！</string>
+    <string name="upgrade_successful_message">Нажать  и смотреть новую специальность версии</string>
+    <string name="start_reboot">Подготовка к перезагрузки</string>
+    <string name="msg_for_check_network">Проверите сеть</string>
+    
+    <string name="have_new_recovery">Доступно новая версия Recovery</string>
+    
+    
+    
+    <string name="click_to_check_current_version">Нажать  и смотреть подробность настоящей версии</string>
+    
+    <string name="default_location_country">Китай</string>
+    <string name="has_no_storage">Недоступно хранилище</string>
+    <string name="dialog_notice_title">Уведомление</string>
+    
+    
+    <string name="connection_time_out">Неудачно подключить</string>
+    <string name="server_error">Невозможно проверить обновление</string>
+    <string name="link_error">Недействующий адрес загрузки</string>
+    <string name="request_error">Ошибка поиска обновления</string>
+    <string name="bad_data">Ошибка поиска обновления</string>
+    
+
+</resources>

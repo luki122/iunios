@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aurora.account.widget.OnSizeChangeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_ly"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="@dimen/login_logo_width"
+            android:layout_height="@dimen/login_logo_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/login_logo_margin_top"
+            android:src="@drawable/login_logo" />
+
+        <!--
+        <LinearLayout
+            android:id="@+id/desc_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_desc_margin_top"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/login_content_margin_right"
+            android:paddingStart="@dimen/login_title_margin_left" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/login_title"
+                android:textColor="#585858"
+                android:textSize="@dimen/textsize_16" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_content_margin_top"
+                android:text="@string/login_content"
+                android:textColor="#a3a3a3"
+                android:textSize="@dimen/textsize_11" />
+        </LinearLayout>
+        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_description"
+            android:textColor="#585858"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_below="@+id/logo_iv"
+            android:textSize="@dimen/textsize_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:paddingEnd="@dimen/login_content_margin_right"
+        android:paddingStart="@dimen/login_title_margin_left" >
+
+        <com.aurora.account.widget.ClearableEditText
+            android:id="@+id/account_cet"
+            style="@style/Account.TextView.Login"
+            android:layout_marginTop="@dimen/login_account_margin_top"
+            android:background="@drawable/common_edittext_bg_top_selector"
+            android:hint="@string/login_account_hint"
+            android:maxLength="@integer/account_max_length" />
+
+        <com.aurora.account.widget.ClearableEditText
+            android:id="@+id/password_cet"
+            style="@style/Account.TextView.Login"
+            android:background="@drawable/common_edittext_bg_bottom_selector"
+            android:hint="@string/login_pwd_hint"
+            android:inputType="textPassword"
+            android:maxLength="@integer/password_max_length" />
+
+        <LinearLayout
+            android:id="@+id/vc_code_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_vc_code_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <com.aurora.account.widget.ClearableEditText
+                android:id="@+id/vc_code_cet"
+                style="@style/Account.TextView.Login"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/common_edittext_bg_alone_selector"
+                android:hint="@string/login_vc_code_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="10" />
+
+            <com.aurora.account.widget.VerifyCodeView
+                android:id="@+id/vc_code_iv"
+                style="@style/Account.VerifyCodeView" />
+        </LinearLayout>
+
+        <include layout="@layout/error_info_layout" />
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/Account.Button"
+            android:layout_marginTop="30dp"
+            android:text="@string/login_login_btn" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/padding_17"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/register_tv"
+                style="@style/Account.TextView.LoginRegister"
+                android:text="@string/login_register" />
+
+            <TextView
+                style="@style/Account.TextView.LoginRegister"
+                android:paddingEnd="@dimen/padding_10"
+                android:paddingStart="@dimen/padding_10"
+                android:text="@string/login_register_vertical_sep" />
+
+            <TextView
+                android:id="@+id/find_password_tv"
+                style="@style/Account.TextView.LoginRegister"
+                android:text="@string/find_pwd" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.aurora.account.widget.OnSizeChangeLinearLayout>

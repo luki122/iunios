@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accesspoint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center_vertical"
+    android:baselineAligned="false"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/listChoiceBackgroundIndicator">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="15dip">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+			android:scrollHorizontally="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15.5sp"
+            android:ellipsize="end"
+            android:fadingEdge="horizontal"/>
+        
+<!-- Settings        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="159dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:fadingEdge="horizontal" /> -->
+<!-- android:layout_below="@android:id/title" -->
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@android:id/title"
+            android:layout_marginTop="2.83dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/green_red"
+            android:textSize="13.5sp"
+            android:maxLines="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@android:id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:orientation="vertical" />
+</LinearLayout>
+

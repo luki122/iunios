@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView 
+    	android:id="@+id/test_title"
+    	android:text="@string/test_title"
+    	android:textAppearance="?android:attr/textAppearanceLarge"
+    	android:background="@color/test_blue"
+    	android:textColor="@android:color/white"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"/>
+<!--<Button 
+	    android:id="@+id/red_light"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+	  	android:text="@string/red_light"/>
+  	<Button 
+	    android:id="@+id/green_light"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+	  	android:text="@string/green_light"/>
+    <Button 
+	    android:id="@+id/blue_light"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+	  	android:text="@string/blue_light"/>  --> 
+    <Button 
+	    android:id="@+id/flash_light"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+	  	android:text="@string/flash_light"/>
+  	<TextView 
+  		android:id="@+id/Light_note"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="0dp"
+	  	android:text="@string/led_light_note"
+	  	android:textAppearance="?android:attr/textAppearanceLarge"
+	  	android:layout_weight="1"/>
+    <include layout="@layout/right_wrong_restart"
+    	android:layout_height="wrap_content"
+    	android:layout_width="match_parent"
+    	android:layout_alignParentBottom="true"/> 
+  		  	
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/birthday_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/aurora_birthday_info_bg" />
+
+    <LinearLayout
+        android:id="@+id/birthday_header"
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/aurora_birthday_info_mask"
+        android:paddingLeft="32dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/birthday_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="134dp"
+            android:textColor="@color/press_white"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/birthday_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/press_white"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:text="@string/aurora_birthday_today" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/birthday_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/press_white"
+                android:textSize="37sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:contentDescription="@string/aurora_event_detail_separator"
+                android:src="@drawable/aurora_vertical_line" />
+
+            <TextView
+                android:id="@+id/birthday_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/press_white"
+                android:textSize="37sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/birthday_constellation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:textColor="@color/press_white"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/birthday_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/birthday_header"
+        android:background="@color/press_white" />
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.aurora" parent="Theme.Aurora.Dark">
+        <item name="android:windowBackground">@drawable/aurora_dark_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/aurora_text_view_link_color</item>
+        <item name="auroraActionBarTitleColor">@color/white</item>
+        <item name="auroraActionBarBackground">@drawable/aurora_actionbar_bg_dark</item>
+        <item name="auroraActionBarItemBackground">@null</item>
+        <item name="auroraActionBarDividerDrawable">@color/aurora_action_bar_divider_tint</item>
+        <item name="auroraActionBarDividerWidth">1sp</item>
+        <item name="auroraActionBarApplicationDrawable">@null</item>
+        <item name="auroraActionBarHomeDrawable">@null</item>
+        <item name="auroraActionBarItemColorNormal">@android:color/black</item>
+        <item name="auroraActionBarItemColorAlt">@android:color/white</item>
+        <item name="auroraActionBarMaxItems">3</item>
+        <item name="auroraActionBarStyle">@style/aurora.Widget.ActionBar</item>
+        <item name="auroraActionBarTitleStyle">@style/aurora.Widget.ActionBar.Title</item>
+        <item name="auroraActionBarItemStyle">@style/aurora.Widget.ActionBar.Item</item>
+        <item name="auroraPreferenceTitleAppearance">@style/AuroraPreference.Dark.Title</item>
+        <item name="auroraPreferenceSummaryAppearance">@style/AuroraPreference.Dark.Summary</item>
+        <item name="auroraPreferenceArrowTextAppearance">@style/AuroraPreference.Dark.Status</item>
+        <item name="homeIcon">@drawable/aurora_action_bar_back_dark</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Aurora.Dark.Medium</item>
+        <item name="auroraPreferenceArrowBackgroundAppearance">@drawable/aurora_preference_arrow_selector</item>
+        <item name="titleBackground">@drawable/aurora_action_bar_title_layout_dark_selector</item>
+
+        <item name="actionBarLeftWidgetBackground">@drawable/aurora_action_bar_widget_left_selector_dark</item>
+        <item name="actionBarRightWidgetBackground">@drawable/aurora_action_bar_widget_right_selector_dark</item>
+        
+        
+        <item name="buttonBackgroundLeft">@drawable/aurora_action_bar_icon_left_anim_dark</item>
+        <item name="buttonBackgroundRight">@drawable/aurora_action_bar_icon_left_anim_dark</item>
+    </style>
+    
+    <style name="Theme.Aurora.Dark.Transparent" parent="Theme.Aurora.Dark">
+        <item name="android:windowBackground">@drawable/aurora_dark_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/aurora_text_view_link_color</item>
+        <item name="auroraActionBarTitleColor">@color/white</item>
+        <item name="auroraActionBarBackground">@drawable/aurora_actionbar_bg_dark</item>
+        <item name="auroraActionBarItemBackground">@null</item>
+        <item name="auroraActionBarDividerDrawable">@color/aurora_action_bar_divider_tint</item>
+        <item name="auroraActionBarDividerWidth">1sp</item>
+        <item name="auroraActionBarApplicationDrawable">@null</item>
+        <item name="auroraActionBarHomeDrawable">@null</item>
+        <item name="auroraActionBarItemColorNormal">@android:color/black</item>
+        <item name="auroraActionBarItemColorAlt">@android:color/white</item>
+        <item name="auroraActionBarMaxItems">3</item>
+        <item name="auroraActionBarStyle">@style/aurora.Widget.ActionBar</item>
+        <item name="auroraActionBarTitleStyle">@style/aurora.Widget.ActionBar.Title</item>
+        <item name="auroraActionBarItemStyle">@style/aurora.Widget.ActionBar.Item</item>
+        <item name="auroraPreferenceTitleAppearance">@style/AuroraPreference.Dark.Title</item>
+        <item name="auroraPreferenceSummaryAppearance">@style/AuroraPreference.Dark.Summary</item>
+        <item name="auroraPreferenceArrowTextAppearance">@style/AuroraPreference.Dark.Status</item>
+        <item name="auroraPreferenceArrowBackgroundAppearance">@drawable/aurora_preference_arrow_selector</item>
+        
+        <item name="homeIcon">@drawable/aurora_action_bar_back_dark</item>
+        
+        
+        
+        <item name="auroraframeListBackground">@android:color/transparent</item>
+        <item name="auroraframeListTopBackground">@android:color/transparent</item>
+        <item name="auroraframeListMiddleBackground">@android:color/transparent</item>
+        <item name="auroraframeListBottomBackground">@android:color/transparent</item>
+        
+        
+        <item name="titleBackground">@drawable/aurora_action_bar_title_layout_dark_selector</item>
+        
+        <item name="actionBarLeftWidgetBackground">@drawable/aurora_action_bar_widget_left_selector_dark</item>
+        <item name="actionBarRightWidgetBackground">@drawable/aurora_action_bar_widget_right_selector_dark</item>
+        
+        <item name="buttonBackgroundLeft">@drawable/aurora_action_bar_icon_left_anim_dark</item>
+        <item name="buttonBackgroundRight">@drawable/aurora_action_bar_icon_left_anim_dark</item>
+    </style>
+  
+    <style name="Theme.aurora.Light" parent="Theme.Aurora.Light">
+    	<item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/aurora_text_view_link_color</item>
+        <item name="auroraActionBarTitleColor">@color/aurora_action_bar_title_color</item>
+        <item name="auroraActionBarBackground">@drawable/aurora_action_bar_top_bg</item>
+        <item name="auroraActionBarItemBackground">@null</item>
+        <item name="auroraActionBarDividerDrawable">@color/aurora_action_bar_divider_tint</item>
+        <item name="auroraActionBarDividerWidth">1sp</item>
+        <item name="auroraActionBarApplicationDrawable">@null</item>
+        <item name="auroraActionBarHomeDrawable">@null</item>
+        <item name="auroraActionBarItemColorNormal">@android:color/white</item>
+        <item name="auroraActionBarItemColorAlt">@android:color/black</item>
+        <item name="auroraActionBarMaxItems">3</item>
+        
+        <item name="auroraActionBarStyle">@style/aurora.Widget.ActionBar</item>
+        <item name="auroraActionBarTitleStyle">@style/aurora.Widget.ActionBar.Title</item>
+        <item name="auroraActionBarItemStyle">@style/aurora.Widget.ActionBar.Item</item>
+        <item name="auroraPreferenceTitleAppearance">@style/AuroraPreference.Light.Title</item>
+        <item name="auroraPreferenceSummaryAppearance">@style/AuroraPreference.Light.Summary</item>
+        <item name="auroraPreferenceArrowTextAppearance">@style/AuroraPreference.Light.Status</item>
+        <item name="auroraPreferenceArrowBackgroundAppearance">@drawable/aurora_preference_arrow_selector</item>
+        <item name="homeIcon">@drawable/aurora_action_bar_back</item>
+        <item name="titleBackground">@drawable/aurora_action_bar_title_layout_selector</item>
+        <item name="actionBarLeftWidgetBackground">@drawable/aurora_action_bar_widget_left_selector</item>
+        <item name="actionBarRightWidgetBackground">@drawable/aurora_action_bar_widget_right_selector</item>
+        
+        <item name="buttonBackgroundLeft">@drawable/aurora_action_bar_icon_left_anim</item>
+        <item name="buttonBackgroundRight">@drawable/aurora_action_bar_icon_right_anim</item>
+    </style>
+    
+       <style name="Theme.aurora.Default" parent="Theme.Aurora.Light">
+    	<item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorLink">@color/aurora_text_view_link_color</item>
+        <item name="auroraActionBarTitleColor">@color/aurora_action_bar_title_color</item>
+        <item name="auroraActionBarBackground">@drawable/aurora_action_bar_top_bg</item>
+        <item name="auroraActionBarItemBackground">@null</item>
+        <item name="auroraActionBarDividerDrawable">@color/aurora_action_bar_divider_tint</item>
+        <item name="auroraActionBarDividerWidth">1sp</item>
+        <item name="auroraActionBarApplicationDrawable">@null</item>
+        <item name="auroraActionBarHomeDrawable">@null</item>
+        <item name="auroraActionBarItemColorNormal">@android:color/white</item>
+        <item name="auroraActionBarItemColorAlt">@android:color/black</item>
+        <item name="auroraActionBarMaxItems">3</item>
+        
+        <item name="auroraActionBarStyle">@style/aurora.Widget.ActionBar</item>
+        <item name="auroraActionBarTitleStyle">@style/aurora.Widget.ActionBar.Title</item>
+        <item name="auroraActionBarItemStyle">@style/aurora.Widget.ActionBar.Item</item>
+        <item name="auroraPreferenceTitleAppearance">@style/AuroraPreference.Light.Title</item>
+        <item name="auroraPreferenceSummaryAppearance">@style/AuroraPreference.Light.Summary</item>
+        <item name="auroraPreferenceArrowBackgroundAppearance">@drawable/aurora_preference_arrow_selector</item>
+        <item name="homeIcon">@drawable/aurora_action_bar_back</item>
+        <item name="titleBackground">@drawable/aurora_action_bar_title_layout_selector</item>
+        <item name="actionBarLeftWidgetBackground">@drawable/aurora_action_bar_widget_left_selector</item>
+        <item name="actionBarRightWidgetBackground">@drawable/aurora_action_bar_widget_right_selector</item>
+        
+         <item name="buttonBackgroundLeft">@drawable/aurora_action_bar_icon_left_anim</item>
+        <item name="buttonBackgroundRight">@drawable/aurora_action_bar_icon_right_anim</item>
+    </style>
+
+</resources>

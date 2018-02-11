@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+	<dimen name="aurora_separator_item_view_height">25dp</dimen>
+	<dimen name="aurora_separator_item_view_padding_left">16dp</dimen>
+
+	<dimen name="aurora_item_view_height">64dp</dimen>
+	<dimen name="aurora_item_view_half_height">32dp</dimen>
+	<dimen name="aurora_item_view_padding_left">6dp</dimen>
+
+	<dimen name="aurora_drawable_width">50dp</dimen>
+	<dimen name="aurora_drawable_height">50dp</dimen>
+	<dimen name="aurora_drawable_margin">6dp</dimen>
+
+	<dimen name="aurora_progress_bar_width">20dp</dimen>
+	<dimen name="aurora_progress_bar_height">20dp</dimen>
+	<dimen name="aurora_progress_bar_margin">6dp</dimen>
+
+	<dimen name="aurora_action_bar_height">53.3dp</dimen>
+	<dimen name="aurora_action_bar_text_size">21sp</dimen>
+	<dimen name="aurora_action_bar_btn_size">24sp</dimen>
+	<dimen name="aurora_action_bar_margin_left">12dp</dimen>
+	<dimen name="aurora_action_bar_margin_right">12dp</dimen>
+	<dimen name="aurora_action_bar_title_margin_left">12dp</dimen>
+	<dimen name="aurora_action_bar_title_margin_top_first">0dp</dimen>
+	<dimen name="aurora_action_bar_title_height">26.6dp</dimen>
+	<dimen name="aurora_action_bar_title__margin_top">0dp</dimen>
+	<dimen name="aurora_action_bar_custom_view_width">280.3dp</dimen>
+	<dimen name="aurora_action_bar_title_maxwidth">250dp</dimen>
+	<dimen name="aurora_action_bar_title_paddingbottom_first">0dp</dimen>
+	<dimen name="aurora_action_bar_title_paddingtop_first">0dp</dimen>
+	
+
+	<dimen name="aurora_arrow_offset">5dp</dimen>
+	
+	<dimen name="aurora_menu_item_height">47dp</dimen>
+	<dimen name="aurora_menu_height">235dp</dimen>
+	<dimen name="aurora_menu_item_text_size">20sp</dimen>
+	
+	<dimen name="aurora_action_bottom_bar_margin_bottom">11dp</dimen>
+	<dimen name="aurora_action_bottom_bar_margin_top">10dp</dimen>
+	<dimen name="aurora_action_bottom_bar_height">47dp</dimen>
+	<dimen name="aurora_action_bottom_bar_margin_left">10dp</dimen>
+	<dimen name="aurora_action_bottom_bar_title_size">18sp</dimen>
+	
+	<dimen name="aurora_action_bottom_bar_margin_size_2">180dp</dimen>
+	<dimen name="aurora_action_bottom_bar_margin_size_3">120dp</dimen>
+	
+	
+</resources>

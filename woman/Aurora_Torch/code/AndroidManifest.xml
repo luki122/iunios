@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iuni.st.torch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.iuni.st.torch.AuroraTorchUi"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT"  />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.iuni.st.torch.AuroraTorchReceiver" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="iuni.intent.action.ACTION_CHANGE_TORCH_STATE" />
+                <action android:name="iuni.intent.action.ACTION_TOGGLE_DEBUG_STATE" />
+                <action android:name="iuni.intent.action.ACTION_TEST" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.iuni.st.torch.AuroraTorchService"
+            android:exported="true" />
+    </application>
+
+</manifest>

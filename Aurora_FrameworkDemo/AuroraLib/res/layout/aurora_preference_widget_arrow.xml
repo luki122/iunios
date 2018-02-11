@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout used by CheckBoxPreference for the checkbox style. This is inflated
+     inside android.R.layout.aurora_preference. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auroraarrow" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:focusable="false"
+    android:clickable="false" >
+    <TextView
+            android:id="@+id/aurorastatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|right"
+            android:visibility="gone"
+            android:maxWidth="145dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="15dp"
+            android:textAppearance="?attr/auroraPreferenceArrowTextAppearance"
+            />
+       <ImageView
+            android:id="@+id/aurora_arrow_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            android:background="@drawable/aurora_preference_arrow_selector"/>
+
+</LinearLayout>

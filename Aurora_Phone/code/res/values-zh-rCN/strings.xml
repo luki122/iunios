@@ -1,0 +1,1993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs.  This is the version of the label for
+         tablet devices, where the phone app handles mobile data but not
+         actual phone calls. -->
+    <string name="phoneAppLabel" product="tablet">"移动数据"</string>
+
+    <!-- Official label of the phone app, as seen in "Manage Applications"
+         and other settings UIs. -->
+    <string name="phoneAppLabel" product="default">"手机"</string>
+
+    <!-- Screen title for Emergency Dialer UI -->
+    <string name="emergencyDialerIconLabel">"紧急呼叫"</string>
+    <!-- Activity label for the in-call UI -->
+    <string name="phoneIconLabel">"电话"</string>
+    <!-- Title of FDN list screen -->
+    <string name="fdnListLabel">"固定拨号列表"</string>
+
+    <!-- Call status -->
+    <!-- Incoming call screen, name of "unknown" caller -->
+    <string name="unknown">"未知"</string>
+    <!-- Incoming call screen, string when number hidden -->
+    <string name="private_num">"私人号码"</string>
+    <!-- Incoming call screen, string when called from a pay phone -->
+    <string name="payphone">"公用电话"</string>
+    <!-- In-call screen: status label for a call that's on hold -->
+    <string name="onHold">"保持"</string>
+    <!-- Possible error messages with outgoing calls --><skip/>
+    <!-- In-call screen: call failure reason (busy) -->
+    <string name="callFailed_userBusy">"线路忙"</string>
+    <!-- In-call screen: call failure reason (network congestion) -->
+    <string name="callFailed_congestion">"网络忙"</string>
+    <!-- In-call screen: call failure reason (client timed out) -->
+    <string name="callFailed_timedOut">"无响应，已超时"</string>
+    <!-- In-call screen: call failure reason (server unreachable) -->
+    <string name="callFailed_server_unreachable">"无法连接到服务器"</string>
+    <!-- In-call screen: call failure reason (peer unreachable) -->
+    <string name="callFailed_number_unreachable">"该号码无法拨通"</string>
+    <!-- In-call screen: call failure reason (incorrect username or password) -->
+    <string name="callFailed_invalid_credentials">"用户名或密码错误"</string>
+    <!-- In-call screen: call failure reason (calling from out of network is not allowed) -->
+    <string name="callFailed_out_of_network">"网外呼叫"</string>
+    <!-- In-call screen: call failure reason (server error) -->
+    <string name="callFailed_server_error">"服务器错误，请稍后再试。"</string>
+    <!-- In-call screen: call failure reason (no signal) -->
+    <string name="callFailed_noSignal">"无信号"</string>
+    <!-- In-call screen: call failure reason (GSM ACM limit exceeded) -->
+    <string name="callFailed_limitExceeded">"超出 ACM 限制"</string>
+    <!-- In-call screen: call failure reason (radio is off) -->
+    <string name="callFailed_powerOff">"已关闭天线"</string>
+    <!-- In-call screen: call failure reason (SIM error) -->
+    <string name="callFailed_simError">"无 SIM 卡或 SIM 卡出错"</string>
+    <!-- In-call screen: call failure reason (out of service) -->
+    <string name="callFailed_outOfService">"不在服务区"</string>
+    <!-- In-call screen: call failure reason (call denied because of current FDN setting) -->
+    <string name="callFailed_fdn_only">"外拨电话受固定拨号限制。"</string>
+    <!-- In-call screen: call failure reason (call modified to USSD request) -->
+    <string name="callFailed_dialToUssd">拨号请求转变为USSD请求</string>
+    <!-- In-call screen: call failure reason (call modified to SS request) -->
+    <string name="callFailed_dialToSs">拨号请求转变为SS请求</string>
+    <!-- In-call screen: call failure reason (call modified to call with modified data) -->
+    <string name="callFailed_dialToDial">拨号请求转变为不同号码请求</string>
+    <!-- In-call screen: call failure reason (call denied because call barring is on) -->
+    <string name="callFailed_cb_enabled">"您无法在已启用通话限制的情况下拨出电话。"</string>
+    <!-- In-call screen: call failure reason (call denied because call barring is ON on MT side ) -->
+    <string name="callFailed_incoming_cb_enabled">启用来电通话限制</string>
+    <!-- In-call screen: call failure reason (call denied because domain specific access control is on) -->
+    <string name="callFailed_dsac_restricted">"所有通话都受访问控制限制。"</string>
+    <!-- In-call screen: call failure reason (Emergency call denied because domain specific access control is on)-->
+    <string name="callFailed_dsac_restricted_emergency">"急救或报警电话受访问控制限制。"</string>
+    <!-- In-call screen: call failure reason (Normal call denied because domain specific access control is on)-->
+    <string name="callFailed_dsac_restricted_normal">"正常通话受访问控制限制。"</string>
+    <!-- In-call screen: call failure reason (Dialed number doesn't exist) -->
+    <string name="callFailed_unobtainable_number">"号码无效"</string>
+    <!-- In-call screen: status label for a conference call -->
+    <string name="confCall">"电话会议"</string>
+    <!-- In-call screen: call lost dialog text -->
+    <string name="call_lost">"通话已中断。"</string>
+    <!-- In-call screen: status label for an incoming call that is not answered and forwarded  -->
+    <string name="callUnanswered_forwarded">呼叫无应答并转移</string>
+    <!-- In-call screen: auto retry  -->
+    <string name="retry">重试</string>
+    <!-- In-call screen: call lost title of dialog -->
+    <string name="call_lost_title">通话失败</string>
+
+    <!-- Positive button label ("OK") used in several dialogs in the phone UI [CHAR LIMIT=10] -->
+    <string name="ok">"确定"</string>
+
+    <!-- MMI dialog strings -->
+    <!-- Dialog label when an MMI code starts running -->
+    <string name="mmiStarted">"MMI 码已启动"</string>
+    <!-- Dialog label when a USSD code starts running -->
+    <string name="ussdRunning">"正在运行 USSD 代码..."</string>
+    <!-- Dialog label when an MMI code is canceled -->
+    <string name="mmiCancelled">"MMI 码已取消"</string>
+    <!-- Label for "cancel" button on the MMI dialog -->
+    <string name="cancel">"取消"</string>
+    <!-- Toast string when user does not enter any input in the MMI dialog -->
+    <string name="enter_input">需要输入，请重试</string>
+
+    <!-- Label for "Manage conference call" panel [CHAR LIMIT=40] -->
+    <string name="manageConferenceLabel">"管理电话会议"</string>
+
+    <!-- "Audio mode" popup menu: Item label to select the speakerphone [CHAR LIMIT=25] -->
+    <string name="audio_mode_speaker">"扬声器"</string>
+    <!-- "Audio mode" popup menu: Item label to select the handset earpiece [CHAR LIMIT=25] -->
+    <string name="audio_mode_earpiece">"手机听筒"</string>
+    <!-- "Audio mode" popup menu: Item label to select the wired headset [CHAR LIMIT=25] -->
+    <string name="audio_mode_wired_headset">"有线耳机"</string>
+    <!-- "Audio mode" popup menu: Item label to select the bluetooth headset [CHAR LIMIT=25] -->
+    <string name="audio_mode_bluetooth">"蓝牙"</string>
+
+    <!-- post dial -->
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "wait" character in a phone number to be dialed; this dialog asks the
+         user if it's OK to send the numbers following the "wait". -->
+    <string name="wait_prompt_str">"发送以下音频？"\n</string>
+    <!-- In-call screen: body text of the dialog that appears when we encounter
+         the "PAUSE" character in a phone number to be dialed; this dialog gives
+         informative message to the user to show the sending numbers following the "Pause". -->
+    <string name="pause_prompt_str">"正在发送双音频"\n</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog -->
+    <string name="send_button">"发送"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <string name="pause_prompt_yes">"是"</string>
+    <!-- In-call screen: button label on the "wait" prompt dialog in CDMA Mode-->
+    <string name="pause_prompt_no">"否"</string>
+    <!-- In-call screen: on the "wild" character dialog, this is the label
+         for a text widget that lets the user enter the digits that should
+         replace the "wild" character. -->
+    <string name="wild_prompt_str">"将通配符替换为"</string>
+    <!-- In-call screen: button label on the "modify call" prompt dialog for IMS call -->
+    <string name="modify_call_prompt_yes">是</string>
+    <!-- In-call screen: button label on the "modify call" prompt dialog for IMS call-->
+    <string name="modify_call_prompt_no">否</string>
+    <!-- In-call screen: Modify call request failure. -->
+    <string name="modify_call_failure_str">修改呼叫请求失败\n</string>
+
+    <!-- In-call screen: Modify Call Options for IMS call -->
+    <string name="modify_call_option_title">通话类型是什么?</string>
+    <string name="modify_call_option_vt">视频通话</string>
+    <string name="modify_call_option_vt_tx">发送视频</string>
+    <string name="modify_call_option_vt_rx">接受视频</string>
+    <string name="modify_call_option_voice">仅语音</string>
+
+    <!-- In-call screen: Incoming Modify Call for IMS call -->
+    <string name="accept_modify_call_request_prompt">修改通话请求？</string>
+    <string name="upgrade_vt_prompt">更新为视频通话？</string>
+    <string name="upgrade_vt_tx_prompt">更新为视频通话（仅发送）？</string>
+    <string name="upgrade_vt_rx_prompt">更新为视频通话（仅接收）？</string>
+
+    <!-- In-call screen: VT call dpl init failure. -->
+    <string name="vt_init_fail_str">视频通话初始化失败，回退为语音通话\n</string>
+
+    <!-- missing voicemail number -->
+    <!-- Title of the "Missing voicemail number" dialog -->
+    <string name="no_vm_number">"缺少语音信箱号码"</string>
+    <!-- Body text of the "Missing voicemail number" dialog -->
+    <string name="no_vm_number_msg">"SIM 卡上未存储语音信箱号码。"</string>
+    <!-- Button label on the "Missing voicemail number" dialog -->
+    <string name="add_vm_number_str">"添加号码"</string>
+
+    <!-- Status message displayed on SIM PIN unlock panel -->
+    <string name="puk_unlocked">"您的 SIM 卡已解锁。正在解锁您的手机..."</string>
+    <!-- network depersonalization -->
+    <!-- Label text for PIN entry widget on SIM Network Depersonalization panel -->
+    <string name="label_ndp">"SIM 网络解锁 PIN"</string>
+    <!-- Label text for PIN entry widget on SIM Network Subset Depersonalization panel -->
+    <string name="label_nsdp">SIM 子网解锁 PIN</string>
+    <!-- Label text for PIN entry widget on SIM Corporate Depersonalization panel -->
+    <string name="label_cdp">SIM 公司解锁 PIN</string>
+    <!-- Label text for PIN entry widget on SIM Service Provider Depersonalization panel -->
+    <string name="label_spdp">SIM 运营商解锁 PIN</string>
+    <!-- Label text for PIN entry widget on SIM SIM Depersonalization panel -->
+    <string name="label_sdp">SIM 解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM Network1 Depersonalization panel -->
+    <string name="label_rn1dp">RUIM 网络1解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM Network2 Depersonalization panel -->
+    <string name="label_rn2dp">RUIM 网络2解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM Hrpd Depersonalization panel -->
+    <string name="label_rhrpd">RUIM 高速分组数据解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM Corporate Depersonalization panel -->
+    <string name="label_rcdp">RUIM 公司解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM Service Provider Depersonalization panel -->
+    <string name="label_rspdp">RUIM 运营商解锁 PIN</string>
+    <!-- Label text for PIN entry widget on RUIM RUIM Depersonalization panel -->
+    <string name="label_rdp">RUIM 解锁 PIN</string>
+    <!-- Label text for PUK entry widget on Depersonalization panel -->
+    <string name="label_puk">PUK解锁</string>
+    <!-- Button label on SIM Depersonalization panel -->
+    <string name="sim_ndp_unlock_text">"解锁"</string>
+    <!-- Button label on SIM Depersonalization panel -->
+    <string name="sim_ndp_dismiss_text">"关闭"</string>
+    <!-- Status message displayed on SIM Network Depersonalization panel -->
+    <string name="requesting_nw_unlock">正在SIM 网络解锁 PIN...</string>
+    <!-- Status message displayed on SIM Network Subset Depersonalization panel -->
+    <string name="requesting_nw_subset_unlock">正在SIM 子网网解锁 PIN...</string>
+    <!-- Status message displayed on SIM Service Provider Depersonalization panel -->
+    <string name="requesting_sp_unlock">正在SIM 运营商解锁 PIN...</string>
+    <!-- Status message displayed on SIM Corporate Depersonalization panel -->
+    <string name="requesting_corporate_unlock">正在SIM 公司解锁 PIN...</string>
+    <!-- Status message displayed on SIM SIM Depersonalization panel -->
+    <string name="requesting_sim_unlock">正在SIM 解锁...</string>
+    <!-- Status message displayed on RUIM Network1 Depersonalization panel -->
+    <string name="requesting_rnw1_unlock">正在RUIM 网络1解锁 PIN...</string>
+    <!-- Status message displayed on RUIM Network2 Depersonalization panel -->
+    <string name="requesting_rnw2_unlock">正在RUIM 网络2解锁 PIN...</string>
+    <!-- Status message displayed on RUIM Hrpd Depersonalization panel -->
+    <string name="requesting_rhrpd_unlock">正在RUIM 高速分组数据解锁 PIN...</string>
+    <!-- Status message displayed on RUIM Service Provider Depersonalization panel -->
+    <string name="requesting_rsp_unlock">正在RUIM 运营商解锁 PIN</string>
+    <!-- Status message displayed on RUIM Corporate Depersonalization panel -->
+    <string name="requesting_rc_unlock">正在RUIM 公司解锁 PIN...</string>
+    <!-- Status message displayed on RUIM RUIM Depersonalization panel -->
+    <string name="requesting_ruim_unlock">正在RUIM 解锁...</string>
+    <!-- Status message displayed on PUK Depersonalization panel -->
+    <string name="requesting_puk_unlock">正在PUK 解锁...</string>
+    <!-- Error message displayed on SIM Network Depersonalization panel -->
+    <string name="nw_unlock_failed">SIM 网络解锁失败</string>
+    <!-- Error message displayed on SIM Network Subset Depersonalization panel -->
+    <string name="nw_subset_unlock_failed">SIM 子网解锁失败</string>
+    <!-- Error message displayed on SIM Service Provider Depersonalization panel -->
+    <string name="sp_unlock_failed">SIM 运营商解锁失败</string>
+    <!-- Error message displayed on SIM Corporate Depersonalization panel -->
+    <string name="corporate_unlock_failed">SIM 公司解锁失败</string>
+    <!-- Error message displayed on SIM SIM Depersonalization panel -->
+    <string name="sim_unlock_failed">SIM 解锁失败</string>
+    <!-- Error message displayed on RUIM Network1 Depersonalization panel -->
+    <string name="rnw1_unlock_failed">RUIM 网络1解锁失败</string>
+    <!-- Error message displayed on RUIM Network2 Depersonalization panel -->
+    <string name="rnw2_unlock_failed">RUIM 网络2解锁失败</string>
+    <!-- Error message displayed on RUIM Hrpd Depersonalization panel -->
+    <string name="rhrpd_unlock_failed">RUIM 高速分组数据解锁失败</string>
+    <!-- Error message displayed on RUIM Service Provider Depersonalization panel -->
+    <string name="rsp_unlock_failed">RUIM 运营商解锁失败</string>
+    <!-- Error message displayed on RUIM Corporate Depersonalization panel -->
+    <string name="rc_unlock_failed">RUIM 公司解锁失败</string>
+    <!-- Error message displayed on RUIM RUIM Depersonalization panel -->
+    <string name="ruim_unlock_failed">RUIM 解锁失败</string>
+    <!-- Error message displayed on PUK Depersonalization panel -->
+    <string name="puk_unlock_failed">PUK 解锁失败</string>
+    <!-- Success message displayed on SIM Network Depersonalization panel -->
+    <string name="nw_unlock_success">SIM 网络解锁成功</string>
+    <!-- Success message displayed on SIM Network Subset Depersonalization panel -->
+    <string name="nw_subset_unlock_success">SIM 子网解锁成功</string>
+    <!-- Success message displayed on SIM Service Provider Depersonalization panel -->
+    <string name="sp_unlock_success">SIM 运营商解锁成功</string>
+    <!-- Success message displayed on SIM Corporate Depersonalization panel -->
+    <string name="corporate_unlock_success">SIM 公司解锁成功</string>
+    <!-- Success message displayed on SIM SIM Depersonalization panel -->
+    <string name="sim_unlock_success">SIM 解锁成功</string>
+    <!-- Success message displayed on RUIM Network1 Depersonalization panel -->
+    <string name="rnw1_unlock_success">RUIM 网络1解锁成功</string>
+    <!-- Success message displayed on RUIM Network2 Depersonalization panel -->
+    <string name="rnw2_unlock_success">RUIM 网络2解锁成功</string>
+    <!-- Success message displayed on RUIM Hrpd Depersonalization panel -->
+    <string name="rhrpd_unlock_success">RUIM 高速分组数据解锁成功</string>
+    <!-- Success message displayed on RUIM Service Provider Depersonalization panel -->
+    <string name="rsp_unlock_success">RUIM 运营商解锁成功</string>
+    <!-- Success message displayed on RUIM Corporate Depersonalization panel -->
+    <string name="rc_unlock_success">RUIM 公司解锁成功</string>
+    <!-- Success message displayed on RUIM RUIM Depersonalization panel -->
+    <string name="ruim_unlock_success">RUIM 解锁成功</string>
+    <!-- Success message displayed on PUK Depersonalization panel -->
+    <string name="puk_unlock_success">PUK 解锁成功</string>
+    <string name="unlock_failed">"网络解锁请求失败。"</string>
+    <string name="requesting_unlock">"正在请求网络解锁..."</string>
+    <string name="unlock_success">"网络解锁成功。"</string>
+
+    <!-- settings strings -->
+
+    <!-- GSM Call settings screen, setting option name -->
+    <string name="labelGSMMore">"GSM 通话设置"</string>
+    <!-- CDM Call settings screen, setting option name -->
+    <string name="labelCDMAMore">"CDMA 通话设置"</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <string name="apn_settings">"接入点名称 (APN)"</string>
+    <!-- Label for the "Network settings" screen in the Settings UI -->
+    <string name="settings_label">"网络设置"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="voicemail">"语音信箱"</string>
+    <!-- Call forwarding dialog box, voicemail number prefix -->
+    <string name="voicemail_abbreviated">"语音信箱："</string>
+    <!-- Mobile network settings screen, setting option name -->
+    <string name="networks">"网络运营商"</string>
+    <!-- Call settings screen title -->
+    <string name="call_settings">"通话设置"</string>
+    <!-- GSM Call settings screen, setting option name -->
+    <string name="additional_gsm_call_settings">"其他设置"</string>
+    <!-- GSM-only Call settings screen, setting option name-->
+    <string name="sum_gsm_call_settings">"其他仅适用于 GSM 通话的设置"</string>
+    <!-- CDMA Call settings screen, setting option name -->
+    <string name="additional_cdma_call_settings">"其他 CDMA 通话设置"</string>
+    <!-- CDMA-only Call settings screen, setting option name-->
+    <string name="sum_cdma_call_settings">"仅适用于 CDMA 的其他通话设置"</string>
+    <!-- Call setting screen, nework service setting name -->
+    <string name="labelNwService">"网络服务设置"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="labelCallerId">"本机号码"</string>
+    <!-- Additional call settings screen, setting summary text when the setting is being loaded [CHAR LIMIT=40] -->
+    <string name="sum_loading_settings">"正在加载设置..."</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is hidden -->
+    <string name="sum_hide_caller_id">"外拨电话时隐藏本机号码"</string>
+    <!-- Additional call settings screen, setting summary text when Caller ID is shown -->
+    <string name="sum_show_caller_id">"外拨电话时显示本机号码"</string>
+    <!-- Additional call settings screen, setting summary text for default Caller ID value -->
+    <string name="sum_default_caller_id">"外拨电话时按照运营商的默认设置来显示本机号码"</string>
+    <!-- Additional call settings screen, setting check box name -->
+    <string name="labelCW">"呼叫等待"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is selected -->
+    <string name="sum_cw_enabled">"通话期间允许其他电话打入"</string>
+    <!-- Additional call settings screen, setting summary text when call waiting check box is clear -->
+    <string name="sum_cw_disabled">"通话期间允许其他电话打入"</string>
+    <!-- Call forwarding settings screen, section heading -->
+    <string name="call_forwarding_settings">"来电转接设置"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="labelCF">"来电转接"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <string name="labelCFU">"始终转接"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <string name="messageCFU">"始终使用此号码"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding all calls -->
+    <string name="sum_cfu_enabled_indicator">"转接所有来电"</string>
+    <!-- Call forwarding settings screen, setting summary text the Always forward is set -->
+    <string name="sum_cfu_enabled">"将所有来电转接到 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, Always forward is enabled but the number is unavailable -->
+    <string name="sum_cfu_enabled_no_number">"未提供电话号码"</string>
+    <!-- Call forwarding settings screen, setting summary text when Always forward is disabled -->
+    <string name="sum_cfu_disabled">"已停用"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <string name="labelCFB">"占线时转接"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <string name="messageCFB">"占线时的转接号码"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to specific number when busy -->
+    <string name="sum_cfb_enabled">"转接到 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding when busy is disabled -->
+    <string name="sum_cfb_disabled">"已停用"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is busy -->
+    <string name="disable_cfb_forbidden">"您的运营商不支持在手机占线时停用来电转接功能。"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <string name="labelCFNRy">"无人接听时转接"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <string name="messageCFNRy">"无人接听时的转接号码"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unanswered -->
+    <string name="sum_cfnry_enabled">"转接到 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unanswered is disabled -->
+    <string name="sum_cfnry_disabled">"已停用"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone does not answer -->
+    <string name="disable_cfnry_forbidden">"您的运营商不支持在手机无人接听时停用来电转接功能。"</string>
+
+    <!-- Call forwarding settings screen, setting option name -->
+    <string name="labelCFNRc">"无法接通时转接"</string>
+    <!-- Call forwarding dialog box, text field label -->
+    <string name="messageCFNRc">"无法接通时的转接号码"</string>
+    <!-- Call forwarding settings screen, setting summary text when forwarding to a specific number when unreachable-->
+    <string name="sum_cfnrc_enabled">"转接到 <xliff:g id="PHONENUMBER">{0}</xliff:g>"</string>
+    <!-- Call forwarding settings screen, setting summary text when Forward when unreachable is disabled -->
+    <string name="sum_cfnrc_disabled">"已停用"</string>
+    <!-- Error message displayed after failing to disable forwarding calls when the phone is unreachable -->
+    <string name="disable_cfnrc_forbidden">"您的运营商不支持在手机无法接通时停用来电转接功能。"</string>
+
+    <!-- Title of the progress dialog displayed while updating Call settings -->
+    <string name="updating_title">"通话设置"</string>
+    <!-- Title of the alert dialog displayed if an error occurs while updating Call settings -->
+    <string name="error_updating_title">"通话设置出错"</string>
+    <!-- Toast in Call settings dialog while settings are being read -->
+    <string name="reading_settings">"正在读取设置..."</string>
+    <!-- Toast in Call settings dialog while settings are being saved -->
+    <string name="updating_settings">"正在更新设置..."</string>
+    <!-- Toast in Call settings dialog while settings are being reverted -->
+    <string name="reverting_settings">"正在恢复设置..."</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <string name="response_error">"网络响应异常。"</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <string name="exception_error">"网络或 SIM 卡出错。"</string>
+    <!-- Status message displayed in the "Call settings error" dialog when
+         current SS request is modified to a different request by STK CC -->
+    <string name="stk_cc_ss_to_dial_error">SS请求转变为拨号请求</string>
+    <string name="stk_cc_ss_to_ussd_error">SS请求转变为USSD请求</string>
+    <string name="stk_cc_ss_to_ss_error">SS请求转变为新的SS请求</string>
+    <!-- Status message displayed in the "Call settings error" dialog when operation fails due to FDN
+         [CHAR LIMIT=NONE] -->
+    <string name="fdn_check_failure">"拨号应用的固定拨号设置已启用。因此，部分与拨号相关的功能将不能正常使用。"</string>
+    <!-- Status message displayed in the "Call settings error" dialog -->
+    <string name="radio_off_error">"请先开启无线装置，然后再查看这些设置。"</string>
+    <!-- Button label used to dismiss the "Call settings error" dialog -->
+    <string name="close_dialog">"确定"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <string name="enable">"确定"</string>
+    <!-- Button label used in several settings-related dialogs -->
+    <string name="disable">"禁用"</string>
+    <!-- Button label which indicates the user wants to update a stored
+         phone number; used in several settings-related dialogs -->
+    <string name="change_num">"更改"</string>
+    <!-- Phone settings: Caller ID preference values -->
+    <string-array name="clir_display_values">
+        <!-- Phone settings "Caller ID" preference option: use the default value -->
+        <item>"网络默认设置"</item>
+        <!-- Phone settings "Caller ID" preference option: hide outgoing Caller ID info -->
+        <item>"隐藏号码"</item>
+        <!-- Phone settings "Caller ID" preference option: show outgoing Caller ID info -->
+        <item>"显示号码"</item>
+    </string-array>
+    <!-- Phone settings: Internal keys used for Caller ID preference values.  DO NOT TRANSLATE. -->
+
+    <!-- voicemail setting strings --><skip/>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <string name="vm_changed">"语音信箱号码已更改。"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <string name="vm_change_failed">"无法更改语音信箱号码。"\n"如果此问题仍然存在，请与您的运营商联系。"</string>
+    <!-- Call settings screen, displayed when vm provider supplied forwarding number change fails-->
+    <string name="fw_change_failed">"无法更改转接号码。"\n"如果此问题仍然存在，请与您的运营商联系。"</string>
+    <!-- Call settings screen, displayed when forwarding number read fails-->
+    <string name="fw_get_in_vm_failed">"无法检索和保存当前转接号码设置。"\n"仍然要切换到新的服务提供商吗？"</string>
+    <!-- Call settings screen, Set voicemail number dialog text -->
+    <string name="no_change">"未做任何更改。"</string>
+    <!-- Call settings screen, "Voicemail" provider setting summary text when no provider is selected -->
+    <string name="sum_voicemail_choose_provider">"选择语音信箱服务"</string>
+    <!-- Call settings screen, "Voicemail" screen, default option - My Carrier -->
+    <string name="voicemail_default">"我的运营商"</string>
+
+    <!-- networks setting strings --><skip/>
+    <!-- Mobile network settings screen title -->
+    <string name="mobile_networks">"移动网络设置"</string>
+    <!-- Available networks screen title/heading -->
+    <string name="label_available">"可用网络"</string>
+    <!-- Mobile network settings screen, toast when searching for available networks -->
+    <string name="load_networks_progress">"正在搜索..."</string>
+    <!-- Available networks screen, text when no networks are found -->
+    <string name="empty_networks_list">"未找到网络。"</string>
+    <!-- Available networks screen, setting option name -->
+    <string name="search_networks">"搜索网络"</string>
+    <!-- Available networks screen, toast when an error is encountered when searching for networks -->
+    <string name="network_query_error">"搜索网络时出错。"</string>
+    <!-- Available networks screen, toast when registering on a specific network -->
+    <string name="register_on_network">"正在<xliff:g id="NETWORK">%s</xliff:g>上注册..."</string>
+    <!-- Available networks screen, toast when SIM card isn't allowed on a network -->
+    <string name="not_allowed">"您的 SIM 卡不允许连接到此网络。"</string>
+    <!-- Available networks screen, toast when unable to connect to a network temporarily -->
+    <string name="connect_later">"目前无法连接到此网络，请稍后重试。"</string>
+    <!-- Available networks screen, toast when registered on a specific network -->
+    <string name="registration_done">"已在网络上注册。"</string>
+    <!-- Mobile network settings screen setting option summary text -->
+    <string name="sum_carrier_select">"选择网络运营商"</string>
+    <!-- Available networks screen, setting summary text -->
+    <string name="sum_search_networks">"搜索所有可用网络"</string>
+    <!-- Available networks screen, setting option name -->
+    <string name="select_automatically">"自动选择"</string>
+    <!-- Available networks screen, setting summary text -->
+    <string name="sum_select_automatically">"自动选择首选网络"</string>
+    <string name="register_automatically">"自动注册..."</string>
+    <string name="preferred_network_mode_title">"网络模式"</string>
+    <string name="preferred_network_mode_summary">"更改网络运行方式"</string>
+    <string name="preferred_network_mode_dialogtitle">"首选网络模式"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA preferred[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_wcdma_perf_summary">"首选网络模式：WCDMA优先"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_gsm_only_summary">"首选网络模式：仅GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode WCDMA only [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_wcdma_only_summary">"首选网络模式：仅WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM / UMTS [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_gsm_wcdma_summary">"首选网络模式：GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_cdma_summary">"首选网络模式：CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA / EvDo [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_cdma_evdo_summary">"首选网络模式：CDMA/EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA only [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_cdma_only_summary">"首选网络模式：仅CDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode EvDo only [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_evdo_only_summary">"首选网络模式：仅EvDo"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_cdma_evdo_gsm_wcdma_summary">"首选网络模式：CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_lte_summary">"首选网络模式：LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode GSM/WCDMA/LTE [CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_lte_gsm_wcdma_summary">"首选网络模式：GSM/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode CDMA+LTE/EVDO[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_lte_cdma_evdo_summary">"首选网络模式：CDMA+LTE/EVDO"</string>
+    <!-- Mobile network settings, summary for preferred network mode Global[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_global_summary">"首选网络模式：Global(CDMA/EVDO/LTE/GSM/WCDMA)"</string>
+    <!-- Mobile network settings, summary for preferred network mode LTE / WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_lte_wcdma_summary">"首选网络模式：LTE/WCDMA"</string>
+        <!-- Mobile network settings, summary for preferred network mode TD-SCDMA only[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_only_summary">"首选网络模式：仅TD-SCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_wcdma_summary">"首选网络模式：TD-SCDMA/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / LTE[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_lte_summary">"首选网络模式：TD-SCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / GSM[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_gsm_summary">"首选网络模式：TD-SCDMA/GSM"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / GSM / LTE[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_gsm_lte_summary">"首选网络模式：TD-SCDMA/GSM/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / GSM / WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_gsm_wcdma_summary">"首选网络模式：TD-SCDMA/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / WCDMA/ LTE[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_wcdma_lte_summary">"首选网络模式：TD-SCDMA/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA / GSM / WCDMA/ LTE[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_gsm_wcdma_lte_summary">"首选网络模式：TD-SCDMA/GSM/WCDMA/LTE"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA/LTE/CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_lte_cdma_evdo_gsm_wcdma_summary">"首选网络模式：TD-SCDMA/LTE/CDMA/EvDo/GSM/WCDMA"</string>
+    <!-- Mobile network settings, summary for preferred network mode TD-SCDMA/CDMA/EvDo/GSM/WCDMA[CHAR LIMIT=100] -->
+    <string name="preferred_network_mode_td_scdma_cdma_evdo_gsm_wcdma_summary">"首选网络模式：TD-SCDMA/CDMA/EvDo/GSM/WCDMA"</string>
+
+
+
+    <string-array name="preferred_network_mode_choices">
+	    <item>TD-SCDMA/LTE/GSM/WCDMA/CDMA/EVDO </item>
+	    <item>TD-SCDMA/GSM/WCDMA/CDMA/EVDO </item>
+	    <item>TD-SCDMA/GSM/WCDMA/LTE</item>
+	    <item>TD-SCDMA/WCDMA/LTE</item>
+	    <item>TD-SCDMA/GSM/WCDMA</item>
+	    <item>TD-SCDMA/GSM/LTE</item>
+	    <item>TD-SCDMA/GSM</item>
+	    <item>TD-SCDMA/LTE</item>
+	    <item>TD-SCDMA/WCDMA</item>
+	    <item>TD-SCDMA only</item>
+	    <item>"LTE/WCDMA"</item>
+	    <item>"LTE"</item>
+	    <item>"通用"</item>
+	    <item>"GSM/WCDMA/LTE"</item>
+	    <item>"CDMA + LTE/EvDo"</item>
+	    <item>"CDMA/EvDo/GSM/WCDMA"</item>
+	    <item>"仅 EvDo"</item>
+	    <item>"CDMA，无 EvDo 功能"</item>
+	    <item>"CDMA/EvDo 自动选择"</item>
+	    <item>"GSM/WCDMA 自动选择"</item>
+	    <item>"仅 WCDMA"</item>
+	    <item>"仅 GSM"</item>
+	    <item>"首选 GSM/WCDMA"</item>
+  </string-array>
+    <!-- Mobile network settings screen, data enabling checkbox name -->
+    <string name="data_enabled">"启用数据网络"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is not selected (explains what selecting it would do) -->
+    <string name="data_enable_summary">"允许通过移动网络存取数据"</string>
+    <!-- Mobile network settings screen, setting check box name -->
+    <string name="roaming">"移动数据网络漫游"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is selected -->
+    <string name="roaming_enable">"漫游时连接到移动数据网络服务"</string>
+    <!-- Mobile network settings screen, setting summary text when check box is clear -->
+    <string name="roaming_disable">"漫游时连接到移动数据网络服务"</string>
+    <!-- Mobile network settings UI: notification message shown when you
+         lose data connectivity because you're roaming and you have the
+         "data roaming" feature turned off. -->
+    <string name="roaming_reenable_message">"移动数据网络连接已断开，因为您已离开本地网络并关闭了移动数据网络漫游功能。"</string>
+    <!-- Mobile network settings screen, dialog message when user selects the Data roaming check box -->
+    <string name="roaming_warning">"是否要允许移动数据网络漫游？这可能产生大量漫游费！"</string>
+    <string name="gsm_umts_options">"GSM/UMTS 选项"</string>
+    <string name="cdma_options">"CDMA 选项"</string>
+    <string name="mobile_network_setting">移动网络设置</string>
+    <string name="network_settings_sel_sub">所选卡移动网络设置</string>
+    <string name="network_manage_settings">网络设置</string>
+    <string name="title_data_settings">数据设置</string>
+    <string name="summary_manage_subscriptions">管理每一个卡的网络设置</string>
+
+    <!-- Screen option on the mobile network settings to go into data usage settings -->
+    <string name="throttle_data_usage">"流量使用情况"</string>
+    <!-- Data usage settings screen option for checking the current usage -->
+    <string name="throttle_current_usage">"当前时段使用的数据"</string>
+    <!-- Data usage settings screen option for time frame-->
+    <string name="throttle_time_frame">"数据使用时段"</string>
+    <!-- Data usage settings screen option for throttling rate-->
+    <string name="throttle_rate">"数据传输速率政策"</string>
+    <!-- Data usage settings screen option for accessing the carrier website-->
+    <string name="throttle_help">"了解详情"</string>
+
+    <string name="throttle_status_subtext">"时段上限为 <xliff:g id="USED_2">%3$s</xliff:g>，当前值为 <xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪)"\n"下一个时段从 <xliff:g id="USED_3">%4$d</xliff:g> 天后 (<xliff:g id="USED_4">%5$s</xliff:g>) 开始"</string>
+
+    <string name="throttle_data_usage_subtext">"时段上限为 <xliff:g id="USED_2">%3$s</xliff:g>，当前值为 <xliff:g id="USED_0">%1$s</xliff:g> (<xliff:g id="USED_1">%2$d</xliff:g>٪)"</string>
+
+    <string name="throttle_data_rate_reduced_subtext">"已超过<xliff:g id="USED_0">%1$s</xliff:g>速率上限"\n"数据传输速率已降至 <xliff:g id="USED_1">%2$d</xliff:g> Kb/s。"</string>
+
+    <string name="throttle_time_frame_subtext">"此周期已过去 <xliff:g id="USED_0">%1$d</xliff:g>٪"\n"下一个时段将从 <xliff:g id="USED_1">%2$d</xliff:g> 天后 (<xliff:g id="USED_2">%3$s</xliff:g>) 开始"</string>
+
+    <string name="throttle_rate_subtext">"如果超过了流量上限，则数据传输速率会降至 <xliff:g id="USED">%1$d</xliff:g> Kb/s"</string>
+
+    <string name="throttle_help_subtext">"有关您运营商的移动网络数据使用政策的详情"</string>
+
+    <string name="cell_broadcast_sms">"小区广播短信"</string>
+
+    <string name="enable_disable_cell_bc_sms">"小区广播短信"</string>
+    <string name="cell_bc_sms_enable">"已启用小区广播短信"</string>
+    <string name="cell_bc_sms_disable">"已停用小区广播短信"</string>
+
+    <string name="cb_sms_settings">"小区广播短信设置"</string>
+
+    <string name="enable_disable_emergency_broadcast">"紧急广播"</string>
+    <string name="emergency_broadcast_enable">"已启用紧急广播"</string>
+    <string name="emergency_broadcast_disable">"已停用紧急广播"</string>
+
+    <string name="enable_disable_administrative">"管理"</string>
+    <string name="administrative_enable">"已启用管理"</string>
+    <string name="administrative_disable">"已停用管理"</string>
+
+    <string name="enable_disable_maintenance">"维护"</string>
+    <string name="maintenance_enable">"已启用维护"</string>
+    <string name="maintenance_disable">"已停用维护"</string>
+
+    <string name="general_news_settings">"一般新闻"</string>
+    <string name="bf_news_settings">"商业财经新闻"</string>
+    <string name="sports_news_settings">"体育新闻"</string>
+    <string name="entertainment_news_settings">"娱乐新闻"</string>
+
+    <string name="enable_disable_local">"本地"</string>
+    <string name="local_enable">"已启用本地新闻"</string>
+    <string name="local_disable">"已停用本地新闻"</string>
+
+    <string name="enable_disable_regional">"地方性"</string>
+    <string name="regional_enable">"已启用地方新闻"</string>
+    <string name="regional_disable">"已停用地方新闻"</string>
+
+    <string name="enable_disable_national">"国内"</string>
+    <string name="national_enable">"已启用国内新闻"</string>
+    <string name="national_disable">"已停用国内新闻"</string>
+
+    <string name="enable_disable_international">"国际"</string>
+    <string name="international_enable">"已启用国际新闻"</string>
+    <string name="international_disable">"已停用国际新闻"</string>
+
+    <string name="list_language_title">"语言"</string>
+    <string name="list_language_summary">"选择新闻语言"</string>
+    <string-array name="list_language_entries">
+	    <item>"英语"</item>
+	    <item>"法语"</item>
+	    <item>"西班牙语"</item>
+	    <item>"日语"</item>
+	    <item>"韩语"</item>
+	    <item>"中文"</item>
+	    <item>"希伯来语"</item>
+    </string-array>
+    <string name="list_language_dtitle">"语言"</string>
+
+    <string name="enable_disable_local_weather">"本地天气"</string>
+    <string name="local_weather_enable">"已启用本地天气预报"</string>
+    <string name="local_weather_disable">"已停用本地天气预报"</string>
+
+    <string name="enable_disable_atr">"区域路况报告"</string>
+    <string name="atr_enable">"已启用区域路况报导"</string>
+    <string name="atr_disable">"已停用区域路况报导"</string>
+
+    <string name="enable_disable_lafs">"本地机场航班时刻表"</string>
+    <string name="lafs_enable">"已启用本地机场航班时刻表"</string>
+    <string name="lafs_disable">"已停用本地机场航班时刻表"</string>
+
+    <string name="enable_disable_restaurants">"餐馆"</string>
+    <string name="restaurants_enable">"已启用餐馆信息"</string>
+    <string name="restaurants_disable">"已停用餐馆信息"</string>
+
+    <string name="enable_disable_lodgings">"房屋租赁信息"</string>
+    <string name="lodgings_enable">"已启用房屋租赁信息"</string>
+    <string name="lodgings_disable">"已停用房屋租赁信息"</string>
+
+    <string name="enable_disable_retail_directory">"零售目录"</string>
+    <string name="retail_directory_enable">"已启用零售店名录"</string>
+    <string name="retail_directory_disable">"已停用零售店名录"</string>
+
+    <string name="enable_disable_advertisements">"广告"</string>
+    <string name="advertisements_enable">"已启用广告"</string>
+    <string name="advertisements_disable">"已停用广告"</string>
+
+    <string name="enable_disable_stock_quotes">"股票报价"</string>
+    <string name="stock_quotes_enable">"已启用股票报价"</string>
+    <string name="stock_quotes_disable">"已停用股票报价"</string>
+
+    <string name="enable_disable_eo">"招聘信息"</string>
+    <string name="eo_enable">"已启用招聘信息"</string>
+    <string name="eo_disable">"已停用招聘信息"</string>
+
+    <string name="enable_disable_mhh">"医疗、保健和医院"l</string>
+    <string name="mhh_enable">"医疗、保健和医院信息已启用"</string>
+    <string name="mhh_disable">"医疗、保健和医院信息已停用"</string>
+
+    <string name="enable_disable_technology_news">"技术新闻"</string>
+    <string name="technology_news_enable">"已启用技术新闻"</string>
+    <string name="technology_news_disable">"已停用技术新闻"</string>
+
+    <string name="enable_disable_multi_category">"多类别"</string>
+    <string name="multi_category_enable">"已启用多类别"</string>
+    <string name="multi_category_disable">"已停用多类别"</string>
+
+    <!-- Mobile network settings screen, setting option name -->
+    <string name="prefer_2g">"仅使用 2G 网络"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <string name="prefer_2g_summary">"省电"</string>
+
+    <!-- CDMA System select strings -->
+    <!-- Mobile network settings screen, setting option name -->
+    <string name="cdma_system_select_title">"系统选择"</string>
+    <!-- Mobile network settings screen, setting summary text -->
+    <string name="cdma_system_select_summary">"更改 CDMA 漫游模式"</string>
+    <!-- System select settings screen title -->
+    <string name="cdma_system_select_dialogtitle">"系统选择"</string>
+    <string-array name="cdma_system_select_choices">
+        <!-- System select dialog screen, setting option name -->
+        <item>"仅本地系统"</item>
+        <!-- Remove the following option "Affiliated Networks" from the option list -->
+        <!-- <item>Affiliated Networks</item> -->
+        <!-- System select dialog screen, setting option name -->
+        <item>"自动"</item>
+    </string-array>
+
+    <string name="cdma_subscription_title">"CDMA 订阅"</string>
+    <string name="cdma_subscription_summary">"在 RUIM/SIM 和 NV 之间进行切换"</string>
+    <string name="cdma_subscription_dialogtitle">"订阅"</string>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <!-- Preference title with which users can activate CDMA network [CHAR LIMIT=30] -->
+    <string name="cdma_activate_device">"激活设备"</string>
+    <!-- Preference title for launching an account manager page for prepaid LTE [CHAR LIMIT=30] -->
+    <string name="cdma_lte_data_service">"设置数据服务"</string>
+
+    <!-- Call Independent services screen title-->
+    <string name="call_ind_services">Call Independent Services</string>
+    <!-- button name for launching sub1, sub2 screen for Multi Sim Functionality-->
+    <string name="callind_multi_sim">双卡通话设置</string>
+    <!-- button name for direct launch of Call Feature screen for Single Sim Functionality -->
+    <string name="callind">通话设置</string>
+
+    <!-- multi sub one, setting option name -->
+    <string name="sub1">卡1</string>
+    <!-- multi mode settings screen, setting summary text -->
+    <string name="sub1_summary">管理卡1</string>
+    <!-- multi sub two, setting option name -->
+    <string name="sub2">卡2</string>
+    <!-- multi mode settings screen, setting summary text -->
+    <string name="sub2_summary">管理卡2</string>
+    <!-- multi sub three, setting option name -->
+    <string name="sub3">卡3</string>
+    <!-- multi mode settings screen, setting summary text -->
+    <string name="sub3_summary">管理卡3</string>
+
+    <!-- dual prompt, setting option name -->
+    <string name="prompt">提示</string>
+    <!-- dual mode settings screen, setting summary text -->
+    <string name="prompt_user">提示用户</string>
+
+    <!-- FDN settings strings -->
+    <!-- Call settings screen, setting option name -->
+    <string name="fdn">"固定拨号"</string>
+    <!-- Call settings screen, button label that takes you to
+         the Fixed Dialing Number management screen -->
+    <string name="manage_fdn_list">"固定拨号列表"</string>
+    <!-- Call settings screen, preference item label -->
+    <string name="fdn_activation">"激活固定拨号"</string>
+    <!-- Call settings setting option name when FDN is enabled -->
+    <string name="fdn_enabled">"已启用固定拨号"</string>
+    <!-- Call settings setting option name  when FDN is disabled-->
+    <string name="fdn_disabled">"已停用固定拨号"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="enable_fdn">"启用固定拨号"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="disable_fdn">"禁用固定拨号"</string>
+    <!-- Call settings screen, setting option name -->
+    <string name="change_pin2">"更改 PIN2"</string>
+    <!-- Call settings screen, setting option name when FDN is enabled -->
+    <string name="enable_fdn_ok">"禁用固定拨号"</string>
+    <!-- Call settings screen, setting option name when FDN is disabled -->
+    <string name="disable_fdn_ok">"启用固定拨号"</string>
+    <!-- Call settings screen, setting summary text -->
+    <string name="sum_fdn">"管理固定拨号"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <string name="sum_fdn_change_pin">"更改为访问固定拨号设置的 PIN"</string>
+    <!-- Call settings, FDN screen, setting option name -->
+    <string name="sum_fdn_manage_list">"管理手机号码列表"</string>
+    <!-- Voice privacy on CDMA is an added layer of voice encryption. Theoretically, it would be harder to break in to a phone call with this feature enabled. -->
+    <string name="voice_privacy">"语音隐私权"</string>
+    <string name="voice_privacy_summary">"启用增强型隐秘模式"</string>
+    <string name="tty_mode_option_title">"TTY 模式"</string>
+    <string name="tty_mode_option_summary">"设置 TTY 模式"</string>
+    <string name="auto_retry_mode_title">"自动重拨"</string>
+    <string name="auto_retry_mode_summary">"启用自动重拨模式"</string>
+
+    <!-- FDN list screen: menu item label -->
+    <string name="menu_add">"添加联系人"</string>
+    <!-- FDN list screen: menu item label -->
+    <string name="menu_edit">"编辑联系人"</string>
+    <!-- FDN list screen: menu item label -->
+    <string name="menu_delete">"删除联系人"</string>
+
+    <!-- FDN related strings -->
+    <!-- Label for PIN2 entry screen -->
+    <string name="get_pin2">"键入 PIN2"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "name" text field -->
+    <string name="name">"名称"</string>
+    <!-- "Edit FDN Contact" screen: Label for the "number" text field -->
+    <string name="number">"号码"</string>
+    <!-- "Edit FDN Contact" screen: Button label for "save" action -->
+    <string name="save">"保存"</string>
+    <!-- Title of "Edit FDN Contact" screen for a new contact -->
+    <string name="add_fdn_contact">"添加固定拨号联系人"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="adding_fdn_contact">"正在添加固定拨号联系人..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="fdn_contact_added">"已添加固定拨号联系人。"</string>
+    <!-- Title of "Edit FDN Contact" screen when editing an already-existing contact -->
+    <string name="edit_fdn_contact">"编辑固定拨号联系人"</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="updating_fdn_contact">"正在更新固定拨号联系人..."</string>
+    <!-- "Edit FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="fdn_contact_updated">"已更新固定拨号联系人。"</string>
+    <!-- Title of "Delete FDN Contact" screen -->
+    <string name="delete_fdn_contact">"删除固定拨号联系人"</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="deleting_fdn_contact">"正在删除固定拨号联系人..."</string>
+    <!-- "Delete FDN Contact" screen: status message displayed in a popup (toast) -->
+    <string name="fdn_contact_deleted">"已删除固定拨号联系人。"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <string name="pin2_invalid">"系统未更新 FDN，因为键入的 PIN 码有误。"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <string name="fdn_invalid_number">"系统未更新 FDN，因为号码不能超过 20 位。"</string>
+    <!-- FDN settings: error message displayed in a popup (toast), when the entered
+         FDN number was inappropriate, OR, PIN2 the user entered was incorrect.
+         Because of API restriction, there's no way to determine which is the exact
+         cause of the failure.
+         [CHAR LIMIT=NONE] -->
+    <string name="pin2_or_fdn_invalid">"FDN 未更新。PIN2 有误，或电话号码遭拒。"</string>
+    <!-- FDN settings: error message displayed in a popup (toast) -->
+    <string name="fdn_failed">FDN operation failed.</string>
+
+    <!-- ADN related strings -->
+    <!-- Placeholder text displayed while loading the list of SIM contacts -->
+    <string name="simContacts_emptyLoading">"正在从 SIM 卡读取..."</string>
+    <string name="exportContacts">Exporting contacts to SIM card\u2026</string>
+    <!-- Call settings, string that appears on FDN contact list when there are no contacts on the SIM. -->
+    <string name="simContacts_empty">"SIM 卡上无联系人。"</string>
+    <!-- Call settings: title of the dialog that lets you select contacts from the SIM. -->
+    <string name="simContacts_title">"选择要导入的联系人"</string>
+    <!-- Appears when user tries to import contacts in SIM during Airplane mode
+      [CHAR LIMIT=NONE] -->
+    <string name="simContacts_airplaneMode">"要从 SIM 卡导入联系人，请先关闭飞行模式。"</string>
+
+    <!-- SIM PIN strings -->
+    <!-- Title of "Enable/disable SIM PIN" screen -->
+    <string name="enable_pin">"启用/禁用 SIM 卡 PIN"</string>
+    <!-- Title of "Change SIM PIN" screen -->
+    <string name="change_pin">"更改 SIM 卡 PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <string name="enter_pin_text">"SIM 卡 PIN："</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <string name="oldPinLabel">"旧 PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <string name="newPinLabel">"新 PIN"</string>
+    <!-- SIM PIN screen: label for PIN entry widget -->
+    <string name="confirmPinLabel">"确认新 PIN"</string>
+    <!-- SIM PIN screen: error message -->
+    <string name="badPin">"键入的旧 PIN 有误，请重试。"</string>
+    <!-- SIM PIN screen: error message -->
+    <string name="mismatchPin">"键入的 PIN 不一致，请重试。"</string>
+    <!-- SIM PIN screen: error message when PIN is too short or too long -->
+    <string name="invalidPin">"输入 4 到 8 位数字的 PIN。"</string>
+    <!-- Title of "Disable SIM PIN" screen -->
+    <string name="disable_sim_pin">"停用 SIM 卡 PIN"</string>
+    <!-- Title of "Enable SIM PIN" screen -->
+    <string name="enable_sim_pin">"启用 SIM 卡 PIN"</string>
+    <!-- SIM PIN screen: progress message displayed while enabling -->
+    <string name="enable_in_progress">"请稍候..."</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <string name="enable_pin_ok">"SIM 卡 PIN 已启用。"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <string name="disable_pin_ok">"SIM 卡 PIN 已停用。"</string>
+    <!-- SIM PIN screen: error message displayed in a popup (toast) -->
+    <string name="pin_failed">"键入的 PIN 有误。"</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <string name="pin_changed">"已成功更改 SIM 卡 PIN。"</string>
+    <!-- SIM PIN screen: error message displayed in a dialog -->
+    <string name="puk_requested">"密码不正确，SIM 已锁定！需要 PUK2。"</string>
+
+    <!-- SIM PIN2 strings -->
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <string name="enter_pin2_text">"PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <string name="oldPin2Label">"旧 PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <string name="newPin2Label">"新 PIN2"</string>
+    <!-- SIM PIN2 screen: label for PIN entry widget -->
+    <string name="confirmPin2Label">"确认新 PIN2"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="badPuk2">"键入的 PUK2 有误，请重试。"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="badPin2">"您键入的旧 PIN2 有误，请重试。"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="mismatchPin2">"键入的 PIN2 不一致，请重试。"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="invalidPin2">"输入 4 到 8 位数字的 PIN2。"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="invalidPuk2">"输入 8 位数字的 PUK2。"</string>
+    <!-- SIM PIN2 screen: status message displayed in a popup (toast) -->
+    <string name="pin2_changed">"已成功更改 PIN2。"</string>
+    <!-- SIM PIN2 screen: label for PUK2 entry widget -->
+    <string name="label_puk2_code">"输入 PUK2 码"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <string name="fdn_enable_puk2_requested">"密码有误，请更改 PIN2 并重试。"</string>
+    <!-- SIM PIN2 screen: error message displayed in a dialog -->
+    <string name="puk2_requested">"密码有误，SIM 卡已锁定。需要 PUK2。"</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="puk2_blocked">PUK2 is permanently blocked.</string>
+    <!-- SIM PIN2 screen: error message -->
+    <string name="pin2_attempts">\nAttempts Remaining :</string>
+    <!-- SIM PIN screen: status message displayed in a popup (toast) -->
+    <string name="pin2_unblocked">PIN2 Unblocked!</string>
+
+    <!-- SIM PIN screen: button label -->
+    <string name="doneButton">"完成"</string>
+
+    <!-- In-call screen: status label for a conference call -->
+    <string name="caller_manage_header">"电话会议<xliff:g id="CONF_CALL_TIME">%s</xliff:g>"</string>
+
+    <!-- Call settings screen, Set voicemail dialog title -->
+    <string name="voicemail_settings_number_label">"语音信箱号码"</string>
+
+    <!-- Card titles -->
+    <!-- In-call screen: status label for a call in the "dialing" state -->
+    <string name="card_title_dialing">"正在拨号..."</string>
+    <!-- In-call screen: status label for a re-dialing call -->
+    <string name="card_title_redialing">"正在重拨..."</string>
+    <!-- In-call screen: status label for Unconditional Call Forwarding enabled  -->
+    <string name="card_title_unconditionalCF">无条件呼叫转移启用</string>
+    <!-- In-call screen: status label for Conditional Call Forwarding enabled  -->
+    <string name="card_title_conditionalCF">条件呼叫转移启用</string>
+    <!-- In-call screen: status label for a forwarded MO call  -->
+    <string name="card_title_MOcall_forwarding">拨号被转移</string>
+    <!-- In-call screen: status label when Call waiting is enabled on remote party  -->
+    <string name="card_title_calliswaiting">呼叫等待</string>
+    <!-- In-call screen: status label for MO call, when the caller & callee both belng to a CUG group -->
+    <string name="card_title_cugcall">闭合用户组通话</string>
+    <!-- In-call screen: status label when MO calls are barred -->
+    <string name="card_title_outgoing_barred">拨号限制</string>
+    <!-- In-call screen: status label for MO calls, when incoming calls are barred at remote party -->
+    <string name="card_title_incoming_barred">来电限制</string>
+    <!-- In-call screen: status label for MO calls when CLIR Suppression is rejected -->
+    <string name="card_title_clir_suppression_rejected">主叫限制被拒绝</string>
+    <!-- In-call screen: status label when MO call gets deflected to another party -->
+    <string name="card_title_call_deflected">呼叫偏移</string>
+    <!-- In-call screen: status label for incoming call being forwarded to other remote party  -->
+    <string name="card_title_MTcall_forwarding">来电正在被转移</string>
+    <!-- In-call screen: status label for incoming call forwarded from other remote party -->
+    <string name="card_title_forwarded_MTcall">来电被转移</string>
+    <!-- In-call screen: status label for incoming call which is answered & then put on hold  -->
+    <string name="card_title_callonhold">来电被保持</string>
+    <!-- In-call screen: status label for incoming call put on hold & then retreived back -->
+    <string name="card_title_callretrieved">来电被解除保持</string>
+    <!-- In-call screen: status label for incoming call which is part of MultiParty Call -->
+    <string name="card_title_multipartycall">多方通话</string>
+    <!-- In-call screen: status label for incoming call which is answered,put on hold & then released -->
+    <string name="card_title_callonhold_released">被保持来电释放</string>
+    <!-- In-call screen: status label for incoming call forward check received -->
+    <string name="card_title_forwardcheckreceived">收到呼叫转移确认</string>
+    <!-- In-call screen: status label for incoming call connecting through ECT -->
+    <string name="card_title_callconnectingect">来电正在被呼叫转接</string>
+    <!-- In-call screen: status label for incoming call connected through ECT -->
+    <string name="card_title_callconnectedect">已转接来电</string>
+    <!-- In-call screen: status label for incoming call is a deflected call -->
+    <string name="card_title_deflectedcall">偏移来电</string>
+    <!-- In-call screen: status label for a call in progress -->
+    <string name="card_title_in_progress">当前通话</string>
+    <!-- In-call screen: status label for a conference call -->
+    <string name="card_title_conf_call">"电话会议"</string>
+    <!-- In-call screen: status label for an incoming call -->
+    <string name="card_title_incoming_call">"来电"</string>
+    <!-- In-call screen: status label displayed briefly after a call ends -->
+    <string name="card_title_call_ended">"通话结束"</string>
+    <!-- In-call screen: status label for call that's on hold -->
+    <string name="card_title_on_hold">"保持"</string>
+    <!-- In-call screen: status label for a call that's in the process of hanging up -->
+    <string name="card_title_hanging_up">"正在挂断"</string>
+    <!-- In-call screen: status label for a call that's in CDMA flash mode -->
+    <string name="card_title_in_call">"正在通话"</string>
+    <!-- In-call screen: special status label that shows your own phone
+         number during emergency callback mode (ECM) [CHAR LIMIT=30] -->
+    <string name="card_title_my_phone_number">"我的手机号码：<xliff:g id="MY_PHONE_NUMBER">%s</xliff:g>"</string>
+
+    <!-- Notification strings -->
+    <!-- The "label" of the in-call Notification for a dialing call, used
+         as the format string for a Chronometer widget. [CHAR LIMIT=60] -->
+    <string name="notification_dialing">"正在拨号"</string>
+    <!-- Missed call notification label, used when there's exactly one missed call -->
+    <string name="notification_missedCallTitle">"未接电话"</string>
+    <!-- Missed call notification label, used when there are two or more missed calls -->
+    <string name="notification_missedCallsTitle">"未接电话"</string>
+    <!-- Missed call notification message used when there are multiple missed calls -->
+    <string name="notification_missedCallsMsg">"<xliff:g id="NUM_MISSED_CALLS">%s</xliff:g> 个未接电话"</string>
+    <!-- Missed call notification message used for a single missed call, including
+         the caller-id info from the missed call -->
+    <string name="notification_missedCallTicker">"来自<xliff:g id="MISSED_CALL_FROM">%s</xliff:g>的未接电话"</string>
+    <!-- The "label" of the in-call Notification for an ongoing call, used
+         as the format string for a Chronometer widget. [CHAR LIMIT=60] -->
+    <string name="notification_ongoing_call">"当前通话"</string>
+    <!-- The "label" of the in-call Notification for a call that's on hold -->
+    <string name="notification_on_hold">"保持"</string>
+    <!-- The "label" of the in-call Notification for an incoming ringing call -->
+    <string name="notification_incoming_call">"来电"</string>
+    <!-- Label for the "Voicemail" notification item, when expanded. -->
+    <string name="notification_voicemail_title">"新语音邮件"</string>
+    <!-- Label for the expanded "Voicemail" notification item,
+         including a count of messages. -->
+    <string name="notification_voicemail_title_count">"新语音邮件 (<xliff:g id="COUNT">%d</xliff:g>)"</string>
+    <!-- Message displayed in the "Voicemail" notification item, allowing the user
+         to dial the indicated number. -->
+    <string name="notification_voicemail_text_format">"拨打 <xliff:g id="VOICEMAIL_NUMBER">%s</xliff:g>"</string>
+    <!-- Message displayed in the "Voicemail" notification item,
+         indicating that there's no voicemail number available -->
+    <string name="notification_voicemail_no_vm_number">"语音信箱号码未知"</string>
+    <!-- Label for the "No service" notification item, when expanded. -->
+    <string name="notification_network_selection_title">"无服务"</string>
+    <!-- Label for the expanded "No service" notification item, including the
+         operator name set by user -->
+    <string name="notification_network_selection_text">"所选网络（<xliff:g id="OPERATOR_NAME">%s</xliff:g>）不可用"</string>
+    <!-- Message for "end call" Action.
+         It is displayed in the "Ongoing call" notification, which is shown
+         when the user is outside the in-call screen while the phone call is still
+         active. [CHAR LIMIT=40] -->
+    <string name="notification_action_end_call">"挂断"</string>
+    <!-- Message for "call back" Action, which is displayed in the missed call notificaiton.
+         The user will be able to call back to the person or the phone number.
+         [CHAR LIMIT=60] -->
+    <string name="notification_missedCall_call_back">"回拨"</string>
+    <!-- Message for "reply via sms" action, which is displayed in the missed call notification.
+         The user will be able to send text messages using the phone number.
+         [CHAR LIMIT=60] -->
+    <string name="notification_missedCall_message">"短信"</string>
+
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <string name="incall_error_power_off">"要进行呼叫，请先关闭飞行模式。"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog.
+         This string is currently unused (see comments in InCallScreen.java.) -->
+    <string name="incall_error_emergency_only">"尚未注册网络。"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <string name="incall_error_out_of_service">"无法访问移动网络"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <string name="incall_error_no_phone_number_supplied">"拨号未送出，因为输入的号码无效。"</string>
+    <!-- In-call screen: call failure message displayed in an error dialog -->
+    <string name="incall_error_call_failed">"拨号未送出。"</string>
+    <!-- In-call screen: status message displayed in a dialog when starting an MMI -->
+    <string name="incall_status_dialed_mmi">"正在启动 MMI 序列..."</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_unknown">"不支持此服务。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_switch">"无法切换通话。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_separate">"无法分离通话。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_transfer">"无法转移呼叫。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_conference">"无法进行电话会议。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_reject">"无法拒绝呼叫。"</string>
+    <!-- In-call screen: message displayed in an error dialog -->
+    <string name="incall_error_supp_service_hangup">"无法挂断。"</string>
+
+    <!-- In-call screen: "call type" indication for a SIP call [CHAR LIMIT=30]  -->
+    <string name="incall_call_type_label_sip">"互联网电话"</string>
+
+    <!-- Dialog title for the "radio enable" UI for emergency calls -->
+    <string name="emergency_enable_radio_dialog_title">"紧急呼救"</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <string name="emergency_enable_radio_dialog_message">"正在打开天线..."</string>
+    <!-- Status message for the "radio enable" UI for emergency calls -->
+    <string name="emergency_enable_radio_dialog_retry">"不在服务区，正在重试..."</string>
+
+    <!-- Dialer text on Emergency Dialer -->
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <string name="dial_emergency_error">"电话未拨出，<xliff:g id="NON_EMERGENCY_NUMBER">%s</xliff:g> 不是紧急呼救号码！"</string>
+    <!-- Emergency dialer: message displayed in an error dialog -->
+    <string name="dial_emergency_empty_error">"电话未拨出，请拨打紧急呼救电话！"</string>
+
+    <!-- Displayed in the text entry box in the dialer when in landscape mode to guide the user
+         to dial using the physical keyboard -->
+    <string name="dialerKeyboardHintText">"使用键盘拨号"</string>
+
+    <!-- Text for the onscreen "Hold" button -->
+    <string name="onscreenHoldText">"保持通话"</string>
+    <!-- Text for the onscreen "End call" button -->
+    <string name="onscreenEndCallText">"挂断"</string>
+    <!-- Text for the onscreen "Modify call" button -->
+    <string name="onscreenModifyCallText">Modify Call</string>
+    <!-- Text for the onscreen "Show Dialpad" button -->
+    <string name="onscreenShowDialpadText">"拨号键盘"</string>
+    <!-- Text for the onscreen "Mute" button -->
+    <string name="onscreenMuteText">"静音"</string>
+    <!-- Text for the onscreen "Add call" button -->
+    <string name="onscreenAddCallText">"添加通话"</string>
+    <!-- Text for the onscreen "Merge calls" button -->
+    <string name="onscreenMergeCallsText">"合并通话"</string>
+    <!-- Text for the onscreen "Swap calls" button -->
+    <string name="onscreenSwapCallsText">"切换通话"</string>
+    <!-- Text for the onscreen "Manage calls" button -->
+    <string name="onscreenManageCallsText">"管理通话"</string>
+    <!-- Text for the onscreen "Manage conference" button [CHAR LIMIT=20] -->
+    <string name="onscreenManageConferenceText">"管理会议"</string>
+    <!-- Text for the onscreen "Audio" button that lets you switch
+         between speaker / bluetooth / earpiece [CHAR LIMIT=10] -->
+    <string name="onscreenAudioText">"免提"</string>
+    <!-- Text for the onscreen "Subscription" button that lets you switch
+         between the available scubscriptions [CHAR LIMIT=20] -->
+    <string name="onscreenSwitchText">切换卡</string>
+    <!-- Text for the onscreen "Add Participant" button -->
+    <string name="onscreenAddParticipant">添加通话</string>
+
+    <!-- Menu item label in SIM Contacts: Import a single contact entry from the SIM card -->
+    <string name="importSimEntry">"导入"</string>
+    <!-- Menu item label in SIM Contacts: Import all contact entries from the SIM card -->
+    <string name="importAllSimEntries">"全部导入"</string>
+    <!-- SIM Contacts: status message displayed while importing card -->
+    <string name="importingSimContacts">"正在导入 SIM 联系人"</string>
+    <!-- Import a single contact entry from contacts to the SIM card -->
+    <string name="importToFDNfromContacts">"从联系人导入"</string>
+
+    <!-- Hearing aid settings -->
+    <string name="hac_mode_title">"助听器"</string>
+    <string name="hac_mode_summary">"启用助听器兼容模式"</string>
+
+    <!-- Service option entries.  -->
+    <string-array name="tty_mode_entries">
+        <item>"TTY 已停用"</item>
+        <item>"TTY 已满"</item>
+        <item>"TTY HCO"</item>
+        <item>"TTY VCO"</item>
+    </string-array>
+
+    <!-- Dtmf tones settings -->
+    <!-- Title for the DTMF Tones options displayed in Call Settings -->
+    <string name="dtmf_tones_title">"DTMF 音"</string>
+    <!-- Summary for the DTMF Tones options displayed in Call Settings -->
+    <string name="dtmf_tones_summary">"设置 DTMF 音长度"</string>
+    <!-- Options displayed as part of DTMF Tones in Call Settings -->
+    <string-array name="dtmf_tone_entries">
+      <item>"正常"</item>
+      <item>"长"</item>
+    </string-array>
+
+
+    <!-- XDivert Settings -->
+    <!-- Title for the XDivert Feature displayed in Call Settings -->
+    <string name="xdivert_title">X-Divert</string>
+    <!-- Summary for the XDivert Feature displayed in Call Settings -->
+    <string name="xdivert_summary">CFNRc 设置</string>
+    <string name="phone_numbers">输入手机号码</string>
+    <string name="sub1LineNumber">卡1号码 :</string>
+    <string name="sub2LineNumber">卡2号码 :</string>
+    <string name="proceed">进行</string>
+    <string name="xdivert_button">X-Divert 设置</string>
+    <string name="xdivert_setting">X-Divert 设置</string>
+    <string name="sum_xdivert_enabled">X-Divert 启用</string>
+    <string name="sum_xdivert_disabled">X-Divert 关闭</string>
+    <string name="xdivert_not_supported">X-Divert 不支持CDMA</string>
+    <string name="xdivert_enternumber_error">输入两张卡的号码</string>
+    <string name="xdivert_partial_set">XDivert 只设置第一张卡</string>
+    <string name="xdivert_sub_absent">X-Divert需要两张卡都启用</string>
+    <string name="xdivert_status">X-Divert 状态</string>
+    <string name="xdivert_active">启用</string>
+    <string name="xdivert_not_active">没有启用</string>
+    <string name="xdivert_imsi_not_read">sim在初始化，请稍候再试。</string>
+
+    <!-- Title for the dialog used to display CDMA DisplayInfo -->
+    <string name="network_message">"网络讯息"</string>
+
+    <!-- Shown in "Managed Roaming" dialog when registration is denied with rejCode 10. -->
+    <string name="managed_roaming_title">管理漫游</string>
+    <string name="managed_roaming_title_sub1">管理漫游（卡1）</string>
+    <string name="managed_roaming_title_sub2">管理漫游（卡2）</string>
+    <string name="managed_roaming_title_sub3">管理漫游（卡3）</string>
+    <string name="managed_roaming_dialog_content">发现无服务网络，是否重新搜网?</string>
+    <string name="managed_roaming_dialog_ok_button">是</string>
+    <string name="managed_roaming_dialog_cancel_button">否</string>
+
+    <!-- OTA-specific strings -->
+    <!-- Title shown on OTA screen -->
+    <string name="ota_title_activate">"激活您的手机"</string>
+    <!-- Message displayed on the OTA activation screen. -->
+    <string name="ota_touch_activate">"需要拨打特别号码才能激活您的手机服务。"\n\n"在按下“激活”后，按照语音提示激活您的手机。"</string>
+
+    <!-- Title of skip activation dialog -->
+    <string name="ota_skip_activation_dialog_title">"略过激活步骤？"</string>
+    <!-- Message displayed in skip activation dialog  -->
+    <string name="ota_skip_activation_dialog_message">"如果您略过激活步骤，就无法拨打电话或连接到移动数据网络（不过您可以连接到 Wi-Fi 网络）。如果您不激活手机，每次开机时都会收到激活提示。"</string>
+    <!-- Label shown on dialog button that allows the user to skip activation -->
+    <string name="ota_skip_activation_dialog_skip_label">"跳过"</string>
+
+    <!-- Button label within the OTA activation screen -->
+    <string name="ota_activate">"激活"</string>
+    <!-- Title text shown when phone activation is successful -->
+    <string name="ota_title_activate_success">"手机已激活。"</string>
+    <!-- Title text shown on screen where activation fails -->
+    <string name="ota_title_problem_with_activation">"激活时遇到问题"</string>
+    <!-- Message displayed on the OTA "listening" screen. This message
+         needs to be kept at 2 lines or less to be sure that there's
+         enough room for the dialpad. [CHAR LIMIT=80] -->
+    <string name="ota_listen">"按照语音提示操作，直至提示手机已激活。"</string>
+
+    <!-- Button label within the OTA listen screen -->
+    <string name="ota_speaker">"免提"</string>
+    <!-- String to be displayed on OTA listen screen once user has selected the
+         correct option to begin provisioning -->
+    <string name="ota_progress">"正在向您的手机中写入程序，请稍候。"</string>
+    <!-- String to display within the OTA Fail Notice dialog -->
+    <string name="ota_failure">"写入程序失败"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon successful provisioning -->
+    <string name="ota_successful">"您的手机已激活。最多 15 分钟即可开始使用服务。"</string>
+    <!-- String to be displayed on the OTA Fail/Success screen upon unsuccessful provisioning -->
+    <string name="ota_unsuccessful">"您的手机未激活。"\n"您可能需要找一个手机信号更好的位置（窗户附近或室外）。"\n\n"请重试或致电客户服务小组寻求更多解决方法。"</string>
+    <!-- String to display within the OTA SPC Fail Notice dialog -->
+    <string name="ota_spc_failure">"SPC 故障太多"</string>
+    <!-- Button label in OTA listen screen that cancels activation and goes to the previous screen -->
+    <string name="ota_call_end">"上一步"</string>
+    <!-- Button label shown on OTA error screen to allow the user to try again -->
+    <string name="ota_try_again">"重试"</string>
+    <!-- Button label shown on OTA screens that have a next screen -->
+    <string name="ota_next">"下一步"</string>
+
+    <!-- Emergency Callback Mode (ECM) -->
+    <string name="ecm_exit_dialog">EcmExitDialog</string>
+    <!-- ECM: Status bar notification message -->
+    <string name="phone_entered_ecm_text">"已进入紧急回拨模式"</string>
+    <!-- ECM: Notification title -->
+    <string name="phone_in_ecm_notification_title">"紧急回拨模式"</string>
+    <!-- ECM: Notification body -->
+    <string name="phone_in_ecm_call_notification_text">"数据连接已停用"</string>
+    <plurals name="phone_in_ecm_notification_time">
+        <!-- number of minutes is one -->
+        <item quantity="one">"持续 <xliff:g id="COUNT">%s</xliff:g> 分钟没有数据连接"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"持续 <xliff:g id="COUNT">%s</xliff:g> 分钟没有数据连接"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from the notifications screen -->
+    <plurals name="alert_dialog_exit_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"手机在 <xliff:g id="COUNT">%s</xliff:g> 分钟内都会处于紧急回拨模式下，此模式下无法使用需要联网的应用。您要立即退出吗？"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"手机在 <xliff:g id="COUNT">%s</xliff:g> 分钟内都会处于紧急回拨模式下，此模式下无法使用需要联网的应用。要立即退出吗？"</item>
+    </plurals>
+    <!-- ECM: Dialog box message for exiting from any other app -->
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <!-- number of minutes is one -->
+        <item quantity="one">"无法在紧急回拨模式下执行所选操作，而手机在 <xliff:g id="COUNT">%s</xliff:g> 分钟内都会处于此模式下。要立即退出吗？"</item>
+        <!-- number of minutes is not equal to one -->
+        <item quantity="other">"无法在紧急回拨模式下执行所选操作，而手机在 <xliff:g id="COUNT">%s</xliff:g> 分钟内都会处于此模式下。要立即退出吗？"</item>
+    </plurals>
+    <!-- ECM: Dialog box message while in emergency call -->
+    <string name="alert_dialog_in_ecm_call">"进行紧急呼救时无法执行所选操作。"</string>
+    <!-- ECM: Progress text -->
+    <string name="progress_dialog_exiting_ecm">"正在退出紧急回拨模式"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <string name="alert_dialog_yes">"是"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <string name="alert_dialog_no">"否"</string>
+    <!-- ECM: ECM exit dialog choice -->
+    <string name="alert_dialog_dismiss">"关闭"</string>
+
+    <!-- Preference for Voicemail service provider under "Voicemail" settings.
+         [CHAR LIMIT=40] -->
+    <string name="voicemail_provider">"服务"</string>
+
+    <!-- Preference for Voicemail setting of each provider.
+         [CHAR LIMIT=40] -->
+    <string name="voicemail_settings">"设置"</string>
+
+    <!-- String to display in voicemail number summary when no voicemail num is set -->
+    <string name="voicemail_number_not_set">"&lt;未设置&gt;"</string>
+
+    <!-- Title displayed above settings coming after voicemail in the call features screen -->
+    <string name="other_settings">"其它通话设置"</string>
+
+    <!-- Title displayed in the overlay when a call is placed using a 3rd party provider.
+         [CHAR LIMIT=40] -->
+    <string name="calling_via_template">"通过<xliff:g id="PROVIDER_NAME">%s</xliff:g>进行通话"</string>
+
+    <!-- Use this as a default to describe the contact photo; currently for screen readers through accessibility. -->
+    <string name="contactPhoto">"联系人照片"</string>
+    <!-- Use this to describe the separate conference call button; currently for screen readers through accessibility. -->
+    <string name="goPrivate">"私聊"</string>
+    <!--  Use this to describe the select contact button in EditPhoneNumberPreference; currently for screen readers through accessibility. -->
+    <string name="selectContact">"选择联系人"</string>
+
+
+    <!-- Start of SIP related strings defined from here. -->
+
+    <!-- Title displayed SIP settings coming after other call settings in the call features screen. [CHAR LIMIT=NONE] -->
+    <string name="sip_settings">"互联网通话设置"</string>
+    <!-- Title displayed SIP account settings in the sip settings category. [CHAR LIMIT=NONE] -->
+    <string name="sip_accounts">"互联网电话 (SIP) 帐户"</string>
+    <!-- Title displayed SIP account settings in the sip settings category. [CHAR LIMIT=NONE] -->
+    <string name="sip_accounts_title">"帐户"</string>
+    <!-- Title displayed for the button of receiving incoming SIP calls flag. Enabled for receiving calls. [CHAR LIMIT=NONE] -->
+    <string name="sip_receive_calls">"接听来电"</string>
+    <!-- Help user to understand that it will require more battery usage if the 'receiving incoming call' is enabled. [CHAR LIMIT=NONE] -->
+    <string name="sip_receive_calls_summary">"会缩短电池待机时间"</string>
+    <!-- Title for the dialog of selecting the way we handle an outgoing call. [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_title">"使用互联网电话"</string>
+    <!-- Title for the dialog of selecting the way we handle an outgoing call (Wi-Fi only). [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_wifi_only_title">"使用互联网通话（仅限 Wi-Fi）"</string>
+
+    <!-- Item of the Internet call option dialog: for routing all outgoing calls via SIP. [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_entry_1">"数据网络接通时适用于所有通话"</string>
+    <!-- Item of the Internet call option dialog: for routing a outgoing call via SIP if the destination is a SIP URI. [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_entry_2">"仅适用于互联网通话"</string>
+    <!-- Item of the Internet call option dialog: for asking user to select the way for each outgoing call. [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_entry_3">"每次呼叫时询问"</string>
+    <!-- Item of the Internet call (Wi-Fi only) option dialog: for routing all outgoing calls via SIP. [CHAR LIMIT=NONE] -->
+    <string name="sip_call_options_wifi_only_entry_1">"适用于所有通话"</string>
+
+    <!-- Title of the dialog to select the phone type for the outgoing call. [CHAR LIMIT=NONE] -->
+    <string name ="pick_outgoing_call_phone_type">"拨打电话"</string>
+
+    <!-- Title of the dialog to select the phone among the list of phones for the outgoing call. [CHAR LIMIT=NONE] -->
+    <string name ="pick_outgoing_sip_phone">"使用互联网电话帐户："</string>
+
+    <!-- Text of checkbox to remember the sip phone for all outbound calls. [CHAR LIMIT=NONE] -->
+    <string name ="remember_my_choice">"总是用于拨打互联网电话"</string>
+
+    <!-- Help text of checkbox to unset the default sip phone for all outbound calls. [CHAR LIMIT=NONE] -->
+    <string name="reset_my_choice_hint">"您可以在“手机”&gt;“设置”&gt;“互联网呼叫设置”&gt;“帐户”屏幕中更改默认使用的互联网呼叫帐户。"</string>
+
+    <!-- Item of the dialog to select the phone type for outgoing call. [CHAR LIMIT=NONE] -->
+    <string name ="pstn_phone">"手机拨号"</string>
+
+    <!-- Item of the dialog to select the phone type for outgoing call. [CHAR LIMIT=NONE] -->
+    <string name ="internet_phone">"互联网电话"</string>
+
+    <!-- Title of the dialog to redirect the user to SIP settings. [CHAR LIMIT=NONE] -->
+    <string name ="no_sip_account_found_title">"没有互联网电话帐户"</string>
+    <!-- Message of the dialog to redirect the user to SIP settings. [CHAR LIMIT=NONE] -->
+    <string name ="no_sip_account_found">"此手机上没有互联网呼叫帐户，要立即添加一个吗？"</string>
+    <!-- Menu item for no sip account found dialog -->
+    <string name="sip_menu_add">"添加"</string>
+
+    <!-- Title for the button to add a new sip account. [CHAR LIMIT=NONE] -->
+    <string name="add_sip_account">"添加帐户"</string>
+    <!-- Title for the button to remove a sip account. [CHAR LIMIT=NONE] -->
+    <string name="remove_sip_account">"删除帐户"</string>
+    <!-- String of the category which lists all sip accounts. [CHAR LIMIT=NONE] -->
+    <string name="sip_account_list">"SIP 帐户"</string>
+    <!-- Toast message to indicate that the system is saving the account. [CHAR LIMIT=NONE] -->
+    <string name="saving_account">"正在保存帐户..."</string>
+    <!-- Toast message to indicate that the system is removing the account. [CHAR LIMIT=NONE] -->
+    <string name="removing_account">"正在删除帐户..."</string>
+
+    <!-- Menu item when the menu button is pressed in the sip account editor. [CHAR LIMIT=NONE] -->
+    <string name="sip_menu_save">"保存"</string>
+    <!-- Menu item when the menu button is pressed in the sip account editor. [CHAR LIMIT=NONE] -->
+    <string name="sip_menu_discard">"舍弃"</string>
+
+    <!-- Title of the alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="alert_dialog_close">"关闭个人资料"</string>
+    <!-- Title of the button to show in a alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="alert_dialog_ok">"确定"</string>
+    <!-- Title of the button to show in a alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="close_profile">"关闭"</string>
+
+    <!-- Summary of a SIP account in the list of SIP accounts, consists of primary account status and registration status. This string indicates that this SIP account is a primary account and the string placeholder is the registration status, which will be one of the strings with name starting with "registration_status_" below. [CHAR LIMIT=NONE] -->
+    <string name="primary_account_summary_with">"主帐户。<xliff:g id="REGISTRATION_STATUS">%s</xliff:g>"</string>
+    <!-- Text of Internet-call registration status, checking current registration status with SIP service [CHAR LIMIT=NONE] -->
+    <string name="registration_status_checking_status">"正在检查状态..."</string>
+    <!-- Text of Internet-call registration status, registering with SIP server in order to receive calls on this account [CHAR LIMIT=NONE] -->
+    <string name="registration_status_registering">"正在注册..."</string>
+    <!-- Text of Internet-call registration status, still trying to register with SIP server [CHAR LIMIT=NONE] -->
+    <string name="registration_status_still_trying">"仍在尝试..."</string>
+    <!-- Text of Internet-call registration status, currently not receiving calls on this account [CHAR LIMIT=NONE] -->
+    <string name="registration_status_not_receiving">"不接听电话。"</string>
+    <!-- Text of Internet-call registration status, no data connection [CHAR LIMIT=NONE] -->
+    <string name="registration_status_no_data">"由于未连接至互联网，帐户注册已停止。"</string>
+    <!-- Text of Internet-call registration status, no Wi-Fi connection [CHAR LIMIT=NONE] -->
+    <string name="registration_status_no_wifi_data">"由于未连接到 WLAN 网络，帐户注册已停止。"</string>
+    <!-- Text of Internet-call registration status, registration process is not running due to some error [CHAR LIMIT=NONE] -->
+    <string name="registration_status_not_running">"帐户注册失败。"</string>
+    <!-- Text of Internet-call registration status, currently we can receive calls on this account [CHAR LIMIT=NONE] -->
+    <string name="registration_status_done">"接听电话。"</string>
+    <!-- Text of Internet-call registration status, registration failed with a reason; will try again later [CHAR LIMIT=NONE] -->
+    <string name="registration_status_failed_try_later">"帐户注册失败：（<xliff:g id="REGISTRATION_ERROR_MESSAGE">%s</xliff:g>）；系统会在稍后重试"</string>
+    <!-- Text of Internet-call registration status, registration failed due to invalid credentials [CHAR LIMIT=NONE] -->
+    <string name="registration_status_invalid_credentials">"帐户注册失败：用户名或密码有误。"</string>
+    <!-- Text of Internet-call registration status, registration failed due to unknown host exception [CHAR LIMIT=NONE] -->
+    <string name="registration_status_server_unreachable">"帐户注册失败：请检查服务器名称。"</string>
+    <!-- Text for describing the account's owner and status. For example, 'Active, in use by Google Talk', it means that the account managed by SIP service was registered by the application 'Google Talk' and the status is active. [CHAR LIMIT=NONE] -->
+    <string name="third_party_account_summary">"“<xliff:g id="ACCOUNT_OWNER">%s</xliff:g>”应用当前正在使用此帐户。"</string>
+
+
+    <!-- Title of the sip editor screen. [CHAR LIMIT=NONE] -->
+    <string name="sip_edit_title">"SIP 帐户详情"</string>
+    <!-- Title of the sip editor screen. [CHAR LIMIT=NONE] -->
+    <string name="sip_edit_new_title">"SIP 帐户详情"</string>
+
+    <!-- Text of the domain address preference. [CHAR LIMIT=NONE] -->
+    <string name="domain_address_title">"服务器"</string>
+    <!-- Text of the username preference. [CHAR LIMIT=NONE] -->
+    <string name="username_title">"用户名"</string>
+    <!-- Text of the password preference. [CHAR LIMIT=NONE] -->
+    <string name="password_title">"密码"</string>
+    <!-- Text of the display name preference. [CHAR LIMIT=NONE] -->
+    <string name="display_name_title">"显示名称"</string>
+    <!-- Text of the outbound proxy address preference. [CHAR LIMIT=NONE] -->
+    <string name="proxy_address_title">"出站代理地址"</string>
+    <!-- Text of the sip server/proxy port number. [CHAR LIMIT=NONE] -->
+    <string name="port_title">"端口号"</string>
+    <!-- Text of the transport type preference. [CHAR LIMIT=NONE] -->
+    <string name="transport_title">"传输类型"</string>
+    <!-- Text of the keepalive preference. [CHAR LIMIT=NONE] -->
+    <string name="send_keepalive_title">"发送持续连接消息"</string>
+    <!-- Text of the set-primary preference. Simplified from "Make this my primary account". [CHAR LIMIT=NONE] -->
+    <string name="set_primary_title">"设置为主帐户"</string>
+    <!-- Text of the set-primary preference summary. [CHAR LIMIT=NONE] -->
+    <string name="set_primary_summary">"用于外拨电话"</string>
+    <!-- Text of the advanced settings section. [CHAR LIMIT=NONE] -->
+    <string name="advanced_settings">"可选设置"</string>
+    <!-- Text of the username used in authentication. [CHAR LIMIT=NONE] -->
+    <string name="auth_username_title">"身份验证用户名"</string>
+    <!-- Help text of the auth_username field. [CHAR LIMIT=NONE] -->
+    <string name="auth_username_summary">"用于身份验证的用户名"</string>
+
+    <!-- Initial status of the preferences is '<Not set>'. [CHAR LIMIT=NONE] -->
+    <string name="default_preference_summary">"&lt;未设置&gt;"</string>
+    <!-- Default value for the display-name preference summary. [CHAR LIMIT=NONE] -->
+    <string name="display_name_summary">"&lt;与用户名相同&gt;"</string>
+    <!-- Default value for the outbound-proxy-address preference summary. [CHAR LIMIT=NONE] -->
+    <string name="optional_summary">"&lt;可选&gt;"</string>
+
+    <!-- Hint to show the advanced settings section. [CHAR LIMIT=NONE] -->
+    <string name="advanced_settings_show">"▷ 触摸可全部显示"</string>
+    <!-- Hint to hide the advanced settings section. [CHAR LIMIT=NONE] -->
+    <string name="advanced_settings_hide">"▽ 触摸可全部隐藏"</string>
+
+    <!-- Text in an alert dialog telling the user that some input field (name of which is also part of the strings being translated above) is required and can not be left blank. [CHAR LIMIT=NONE] -->
+    <string name="empty_alert">"“<xliff:g id="INPUT_FIELD_NAME">%s</xliff:g>”属于必填字段，不能留空。"</string>
+    <!-- Showing that port number is out of range in an alert dialog. [CHAR LIMIT=NONE] -->
+    <string name="not_a_valid_port">"端口号应在 1000 与 65534 之间。"</string>
+
+    <!-- Title of the alert dialog to notify user that there is no Internet connectivity. [CHAR LIMIT=40] -->
+    <string name="no_internet_available_title">"无互联网连接"</string>
+    <!-- Title of the alert dialog to notify user that there is no Wi-Fi connectivity. [CHAR LIMIT=40] -->
+    <string name="no_wifi_available_title">"无 Wi-Fi 连接"</string>
+    <!-- Message of the alert dialog to notify user that there is no Internet connectivity. [CHAR LIMIT=NONE] -->
+    <string name="no_internet_available">"要拨打互联网电话，请先检查互联网连接情况。"</string>
+    <!-- Message of the alert dialog to notify user that there is no Wi-Fi connectivity. [CHAR LIMIT=NONE] -->
+    <string name="no_wifi_available">"您需要连接到 Wi-Fi 网络才能使用互联网电话（使用“无线与网络”设置）。"</string>
+    <!-- Title of the alert dialog to notify user that Internet call is not supported. [CHAR LIMIT=40] -->
+    <string name="no_voip">"不支持互联网电话"</string>
+
+    <!-- Title of the alert dialog to notify user that there is no IMS connectivity. [CHAR LIMIT=40] -->
+    <string name="no_volte">Unable to make IMS call</string>
+
+    <!-- Option for whether the SIP service should send keepalive messages. [CHAR LIMIT=40] -->
+    <string translatable="true" name="sip_system_decide">"自动"</string>
+    <!-- Option for whether the SIP service should send keepalive messages. [CHAR LIMIT=40] -->
+    <string translatable="true" name="sip_always_send_keepalive">"一律发送"</string>
+
+    <!-- IMS settings related strings -->
+    <!-- Title of the ims editor screen. [CHAR LIMIT=NONE] -->
+    <string name="ims_edit_title">IMS账户详情</string>
+    <!-- Title displayed IMS account settings in the sip settings category. [CHAR LIMIT=NONE] -->
+    <string name="ims_accounts_title">IMS账户</string>
+    <!-- Text of the domain address preference. [CHAR LIMIT=NONE] -->
+    <string name="ims_domain_address_title">IMS服务器</string>
+    <!-- Text of the transport type preference. [CHAR LIMIT=NONE] -->
+    <string name="call_type_title">IMS通话类型</string>
+
+    <!-- Text of the use IMS default preference. [CHAR LIMIT=NONE] -->
+    <string name="use_ims_default_title">总是使用IMS</string>
+    <!-- Default to IMS call summary. -->
+    <string name="use_ims_default_summary">所有语音通话都使用IMS</string>
+    <!-- Menu item when the menu button is pressed in the IMS account editor. [CHAR LIMIT=NONE] -->
+    <string name="ims_menu_save">保存</string>
+    <!-- Menu item when the menu button is pressed in the IMS account editor. [CHAR LIMIT=NONE] -->
+    <string name="ims_menu_discard">关闭</string>
+    <!-- Title for the button to remove a IMS account. [CHAR LIMIT=NONE] -->
+    <string name="remove_ims_account">删除帐号</string>
+    <!-- End of IMS settings related strings -->
+
+    <!-- Dialog title to notify user that Voice calling is not supported
+         on this device. [CHAR LIMIT=40] -->
+    <string name="not_voice_capable">"不支持语音呼叫"</string>
+
+    <!-- Canned response for the "Respond via SMS" feature for incoming calls. [CHAR LIMIT=35] -->
+    <string name="respond_via_sms_canned_response_1">"现在无法接听。有什么事吗？"</string>
+    <!-- Canned response for the "Respond via SMS" feature for incoming calls. [CHAR LIMIT=35] -->
+    <string name="respond_via_sms_canned_response_2">"我马上会打给你。"</string>
+    <!-- Canned response for the "Respond via SMS" feature for incoming calls. [CHAR LIMIT=35] -->
+    <string name="respond_via_sms_canned_response_3">"我稍后会再打给你。"</string>
+    <!-- Canned response for the "Respond via SMS" feature for incoming calls. [CHAR LIMIT=35] -->
+    <string name="respond_via_sms_canned_response_4">"现在无法接听。能稍后再打给我吗？"</string>
+    <!-- "Respond via SMS" option that lets you compose a custom response. [CHAR LIMIT=30] -->
+    <string name="respond_via_sms_custom_message">"自定义短信"</string>
+
+    <!-- Title of settings screen for managing the "Respond via SMS" feature. [CHAR LIMIT=30] -->
+    <string name="respond_via_sms_setting_title">"快速回复"</string>
+    <!-- Slightly more verbose title of settings screen for managing the
+         "Respond via SMS" feature. [CHAR LIMIT=30] -->
+    <string name="respond_via_sms_setting_title_2">"修改快速回复"</string>
+    <!-- Settings summary string for the "Respond via SMS" feature. [CHAR LIMIT=40] -->
+    <string name="respond_via_sms_setting_summary"></string>
+    <!-- Dialog title when changing a string for the "Respond via SMS" feature. [CHAR LIMIT=30] -->
+    <string name="respond_via_sms_edittext_dialog_title">"快速回复"</string>
+    <!-- Menu option in  "Respond via SMS" that allows user to reset the default
+         activity used to handle "Respond via SMS" [CHAR LIMIT=30] -->
+    <string name="respond_via_sms_menu_reset_default_activity">"重置默认应用"</string>
+
+    <!-- "Respond via SMS": Confirmation message shown after sending
+         a text response. [CHAR LIMIT=40] -->
+    <string name="respond_via_sms_confirmation_format">"信息已发送至 <xliff:g id="PHONE_NUMBER">%s</xliff:g>。"</string>
+
+    <!-- String describing the image on ImageButton one
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_one">"一"</string>
+
+    <!-- String describing the image on ImageButton two
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_two">"二"</string>
+
+    <!-- String describing the image on ImageButton three
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_three">"三"</string>
+
+    <!-- String describing the image on ImageButton four
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_four">"四"</string>
+
+    <!-- String describing the image on ImageButton five
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_five">"五"</string>
+
+    <!-- String describing the image on ImageButton six
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_six">"六"</string>
+
+    <!-- String describing the image on ImageButton seven
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_seven">"七"</string>
+
+    <!-- String describing the image on ImageButton eight
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_eight">"八"</string>
+
+    <!-- String describing the image on ImageButton nine
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_nine">"九"</string>
+
+    <!-- String describing the image on ImageButton star
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_star">"星标"</string>
+
+    <!-- String describing the image on ImageButton zero
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_zero">"零"</string>
+
+    <!-- String describing the image on ImageButton pound
+
+         Note: AccessibilityServices use this attribute to announce what the view represents.
+               This is especially valuable for views without textual representation like ImageView.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_image_button_pound">"英镑"</string>
+
+    <!-- String describing the Dial ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_dial_button">"拨号"</string>
+
+    <!-- String describing the Delete/Backspace ImageButton
+
+         Used by AccessibilityService to announce the purpose of the button.
+         [CHAR LIMIT=NONE]
+    -->
+    <string name="description_delete_button">"Backspace 键"</string>
+
+    <!-- Content description of the speakerphone enabled notification icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_speakerphone_enabled">"扬声器已启用。"</string>
+
+    <!-- Content description of the call muted notification icon for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_call_muted">"通话已静音。"</string>
+
+    <!-- Description of the answer target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_answer">"接听"</string>
+    <!-- Description of the answer voice only target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_answer_video">以视频通话接听</string>
+    <!-- Description of the answer voice only target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_answer_tx_video">以视频通话接听（仅发送视频）</string>
+    <!-- Description of the answer voice only target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_answer_rx_video">以视频通话接听（仅接收视频）</string>
+    <!-- Description of the send_sms target in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_target_send_sms">"发送短信"</string>
+    <!-- Description of the decline on target in the Slide unlock screen. [CHAR LIMIT=NONE] -->
+    <string name="description_target_decline">"拒绝"</string>
+
+    <!-- Description of the answer directions in the Slide unlock screen of Phone. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_up_right">右上</string>
+    <string name="description_direction_up_left">左上</string>
+    <string name="description_direction_down_left">左下</string>
+    <string name="description_direction_down_right">右下</string>
+
+    <!-- Dialog title for the vibration settings for voicemail notifications [CHAR LIMIT=40] -->
+    <string name="voicemail_notification_vibrate_when_title" msgid="8731372580674292759">"振动"</string>
+    <!-- Dialog title for the vibration settings for voice mail notifications [CHAR LIMIT=40]-->
+    <string name="voicemail_notification_vibarte_when_dialog_title" msgid="8995274609647451109">"振动"</string>
+
+    <!-- Voicemail ringtone title. The user clicks on this preference to select
+         which sound to play when a voicemail notification is received.
+         [CHAR LIMIT=40] -->
+    <string name="voicemail_notification_ringtone_title">"提示音"</string>
+
+    <!--  The string used to describe a notification if it is the default one in the system. For
+          example, if the user selects the default notification, it will appear as something like
+          Default sound(Capella) in the notification summary.
+          [CHAR LIMIT=40] -->
+    <string name="default_notification_description">"默认提示音 (<xliff:g id="DEFAULT_SOUND_TITLE">%1$s</xliff:g>)"</string>
+
+    <!-- The vibrate notification modes for voicemail notifications -->
+    <string-array name="voicemail_notification_vibrate_when_entries">
+        <!-- Always [CHAR LIMIT=40] -->
+        <item>"始终"</item>
+        <!-- Only when the phone is in Silent mode [CHAR LIMIT=40] -->
+        <item>"仅在静音时"</item>
+        <!-- Never [CHAR LIMIT=40] -->
+        <item>"永不"</item>
+    </string-array>
+
+
+    <!-- Setting option name to pick ringtone (a list dialog comes up). [CHAR LIMIT=30] -->
+    <string name="ringtone_title">"手机铃声"</string>
+
+    <!-- Setting option name to enable or disable vibration when ringing
+         the phone.
+         [CHAR LIMIT=40] -->
+    <string name="vibrate_on_ring_title">"响铃时振动"</string>
+
+    <!-- Setting option name to enable or disable DTMF tone sound
+         [CHAR LIMIT=40] -->
+    <string name="dtmf_tone_enable_title">"拨号键盘触摸音效"</string>
+
+    <!--  Setting option name to enable or disable dialpad autocomplete functionality
+         [CHAR LIMIT=40] -->
+    <string name="dial_pad_autocomplete">"拨号键盘自动补全"</string>
+
+    <!-- Title for the category "ringtone", which is shown above ringtone and vibration
+         related settings.
+         [CHAR LIMIT=40] -->
+    <string name="preference_category_ringtone">"铃声和振动"</string>
+    <!-- Set Subscription screen: set subscription option name -->
+    <string name="set_subscription">双卡设置</string>
+    <!-- Set Subscription screen: label Card 1 -->
+    <string name="card_01">卡1</string>
+    <!-- Set Subscription screen: label Card 2 -->
+    <string name="card_02">卡2</string>
+    <!-- Set Subscription screen: label Card 3 -->
+    <string name="card_03">卡3</string>
+
+    <!-- Set dual dialer for MultiSim -->
+    <string name="place_a_call1">卡1</string>
+    <string name="place_a_call2">卡2</string>
+    <string name="place_a_call3">卡3</string>
+    <string name="count_down">"秒: "</string>
+    <string name="call_number">"到: "</string>
+    <string name="cancel_call">中断</string>
+
+      <!-- Set Subscription screen: Message shown in error dialog -->
+    <string name="set_subscription_error_atleast_one">至少要启用一张卡</string>
+    <!-- Set Subscription screen: label sub 1 -->
+    <string name="sub_1">SIM卡1</string>
+    <!-- Set Subscription screen: label sub 2 -->
+    <string name="sub_2">SIM卡2</string>
+    <!-- Set Subscription screen: label sub 3 -->
+    <string name="sub_3">SIM卡3</string>
+    <!-- Set Subscription screen: Progress message -->
+    <string name="set_uicc_subscription_progress">设置进行中...</string>
+    <!-- Set Subscription screen: Set subscriptio success -->
+    <string name="set_sub_success">设置成功</string>
+    <!-- Set Subscription screen: Set subscriptio success -->
+    <string name="set_sub_failed">设置失败</string>
+    <!-- Set Subscription screen: Subscription 1 -->
+    <string name="set_sub_1">设置卡1：</string>
+    <!-- Set Subscription screen: Subscription 2 -->
+    <string name="set_sub_2">设置卡2：</string>
+    <!-- Set Subscription screen: Subscription 3 -->
+    <string name="set_sub_3">设置卡3：</string>
+    <!-- Set Subscription screen: Subscription activate success -->
+    <string name="set_sub_activate_success">启用成功</string>
+    <!-- Set Subscription screen: Subscription deactivate success -->
+    <string name="set_sub_deactivate_success">禁用成功</string>
+    <!-- Set Subscription screen: Subscription activate failed -->
+    <string name="set_sub_activate_failed">启用失败</string>
+    <!-- Set Subscription screen: Subscription Global activate failed -->
+    <string name="set_sub_global_activate_failed">启用成功</string>
+    <!-- Set Subscription screen: Subscription Global deactivate failed -->
+    <string name="set_sub_global_deactivate_failed">禁用成功</string>
+    <!-- Set Subscription screen: Subscription deactivate failed -->
+    <string name="set_sub_deactivate_failed">禁用失败</string>
+    <!-- Set Subscription screen: Subscription activate not supported -->
+    <string name="set_sub_activate_not_supported">不支持启用</string>
+    <!-- Set Subscription screen: Subscription deactivate not supported -->
+    <string name="set_sub_deactivate_not_supported">不支持禁用</string>
+    <!-- Set Subscription screen: No change in subscription -->
+    <string name="set_sub_no_change">设置无变化</string>
+    <!-- Set Subscription screen: New cards available -->
+    <string name="new_cards_available">新卡插入</string>
+    <!-- Set Subscription screen: Configure subscription dialog title -->
+    <string name="config_sub_title">卡设置</string>
+    <!-- Set Subscription screen: Deactivate All subscription not supported -->
+    <string name="deact_all_sub_not_supported">不能禁用所有的卡</string>
+    <!-- Set Subscription screen: Deactivate All subscription not supported -->
+    <string name="set_sub_not_supported_phone_in_call">通话过程中不可以进行卡设置</string>
+
+    <!-- Sim contacts management -->
+    <string name="ContactScreen">添加或编辑卡联系人</string>
+    <string name="ExportContactScreen">导出手机联系人到SIM卡</string>
+    <string name="addSimEntries">添加卡联系人</string>
+    <string name="deleteAllSimEntries">删除所有卡联系人</string>
+    <string name="deleteSimContacts">删除卡联系人</string>
+    <string name="editContact">编辑卡联系人</string>
+    <string name="sendSms">发送短信</string>
+    <string name="delete">删除</string>
+    <string name="dial">拨号</string>
+    <string name="enterName">输入名字：</string>
+    <string name="enterNumber">输入号码：</string>
+    <string name="contactAddSuccess">成功添加卡联系人</string>
+    <string name="contactAddFailed">添加卡联系人失败！！！</string>
+    <string name="contactUpdateSuccess">成功更新卡联系人</string>
+    <string name="contactUpdateFailed">更新卡联系人失败！！！</string>
+    <string name="contactdeleteSuccess">成功删除卡联系人</string>
+    <string name="contactdeleteFailed">删除卡联系人失败！！！</string>
+    <string name="allContactdeleteSuccess">成功删除所有卡联系人</string>
+    <string name="allContactdeleteFailed">删除所有卡联系人失败！！！</string>
+    <string name="exportAllcontatsSuccess">成功导出所有联系人到SIM卡</string>
+    <string name="exportAllcontatsFailed">导出所有联系人到SIM卡失败！！！</string>
+    <string name="cursorError">游标没有可用数据</string>
+
+    
+    <string name="huadongjieting">滑动接听</string>
+    <string name="huadongjujie">向上滑动可拒接</string>
+    <string name="endcall">结束通话</string>
+    <string name="endcall_keypad">结束通话</string>
+    <string name="hide_keypad">隐藏键盘</string>
+ <!--aurora add liguangyu 20131111 for BUG #581 start -->
+    <string name="prefer_3g">启用3G网络</string>
+    <!--aurora add liguangyu 20131111 for BUG #581 start -->
+    
+    <!--aurora add liguangyu 20131128 start -->
+    <string name="aurora_overturn_mute_title">翻转静音</string>
+    <string name="aurora_overturn_mute_on">已开启</string>
+    <string name="aurora_overturn_mute_off">已关闭</string>
+    <!--aurora add liguangyu 20131128 end -->
+    
+        
+    <string name="aurora_cf_title">呼叫转移</string>
+    <string name="aurora_cf_dialog_title">转接到如下号码</string>
+    
+    <string name="aurora_dialing_dialog_title">"拨号"</string>
+    <string name="aurora_dialing_dialog_message">"拨号初始化中..."</string>
+    
+    <string-array name="aurora_preferred_network_mode_choices">
+        <item>仅3G</item>
+        <item>仅2G</item>
+        <item>3G优先</item>
+    </string-array>
+    
+    <string name="aurora_local_number">本地号码</string>
+    
+    <string name="aurora_incoming_touch_title">来电防误触</string>
+    
+    <string name="aurora_end_call_waiting">拒接</string>
+    <string name="aurora_answer_call_waiting_hold">"保留当前通话"</string>
+    <string name="aurora_answer_call_waiting_hangup">"挂断当前通话"</string>
+    <string name="aurora_service_number">服务号码</string>
+     
+    <string name="aurora_preferred_network_mode_choices_4p">4G(优先)/3G/2G</string>
+    <string name="aurora_preferred_network_mode_choices_3">仅3G</string>
+    <string name="aurora_preferred_network_mode_choices_2">仅2G</string>
+    <string name="aurora_preferred_network_mode_choices_3p">3G（优先）/2G</string>
+    <string name="aurora_proximity_sensor_title">距离传感器</string>
+
+    <string name="aurora_record_button_text_off">录音</string>
+    <string name="aurora_record_button_text_on">关闭录音</string>
+    <string name="aurora_error_sdcard_access">"无法访问 SD 卡"</string>
+    <string name="aurora_no_storage">存储空间不足，请释放空间</string>
+    <string name="gn_record">录音</string>
+    <string name="zzzzz_gn_record">录音</string>
+    <string name="zzzzz_gn_phone_record">电话录音</string>
+    <string name="gn_vt_recording_saved_sd_full">存储卡内容已满，录制文件已经保存。</string>
+    <string name="gn_ext_media_badremoval_notification_title">"SD 卡非正常移除"</string>
+    <string name="gn_confirm_device_info_full">存储卡内容已满，录音已经保存</string>
+    <string name="gn_no_storage">存储空间不足，请释放空间</string>
+    <string name="gn_internal_memory">SD卡空间不足，文件保存到内部存储器</string>
+    <string name="gn_save_sdcard">SD卡可用，文件保存到SD卡</string>
+    <string name="gn_recording">正在录音"&#160;&#160;"</string>
+    <string name="gn_shortlength">放弃保存</string>
+    <string name="gn_record_save">通话录音已保存</string>
+     <!-- voice recorder -->
+    <string name="start_record">"开始录音"</string>
+    <string name="stop_record">"停止录音"</string>
+    <string name="str_db_playlist_name">我的录音</string>
+    <string name="alert_device_error">录音出错</string>
+    <string name="ext_media_badremoval_notification_title">"SD 卡非正常移除"</string>
+    <string name="error_sdcard_access">"无法访问 SD 卡"</string>
+    <string name="confirm_device_info_full">存储卡内容已满，录音已经保存</string>
+    <string name="confirm_save_info_saved">录音已经保存</string>
+
+    <string name="aurora_ringer_title">智能响铃</string>
+    <string name="aurora_ringer_summary">铃声渐强，拿起手机后铃声减弱</string>
+    <string name="aurora_call_disconnecting">正在结束</string>
+    <string name="callind_multi_sim_card">SIM卡管理</string>
+       <!-- Multi Sim Settings screen, Voice box label -->
+    <string name="voice_title">通话/USSD/MMI</string>
+    <!-- Multi Sim Settings screen, Voice Summary label -->
+    <string name="voice_summary">选择通话默认卡</string>
+
+    <!-- Multi Sim Settings screen, Data box label -->
+    <string name="data_title">数据连接</string>
+    <!-- Multi Sim Settings screen, Voice Summary label -->
+    <string name="data_summary">选择数据连接默认卡</string>
+
+    <!-- Multi Sim Settings screen, SMS box label -->
+    <string name="sms_title">短信</string>
+    <!-- Multi Sim Settings screen, Voice Summary label -->
+    <string name="sms_summary">选择发送短信默认卡</string>
+    
+        <!-- Multi Sim Settings screen, Select Sub label -->
+    <string name="sel_sub_title">双卡设置</string>
+    <!-- Multi Sim Settings screen, Select Sub Summary label -->
+    <string name="sel_sub_summary">选择卡1，卡2....</string>
+    <!-- Select Subscription screen title -->
+    <string name="select_subscription">选择卡</string>
+    
+        <!-- Tune Away settings -->
+    <string name="tune_away_title">双模切换</string>
+    <string name="tune_away_Default">关闭</string>
+    <!-- Summary for the TuneAway status displayed in Multi SIM Settings -->
+    <string name="tune_away_enabled">双模切换开启</string>
+    <string name="tune_away_disabled">双模切换关闭</string>
+
+    <!-- Priority subscription settings -->
+    <string name="priority_sub_title">默认卡</string>
+    <string name="priority_sub_summary">选择默认卡</string>
+    
+    <!-- Multi Sim Settings screen, Set DDS progress dialog message -->
+    <string name="set_data_subscription_progress">正在设置数据连接所用卡</string>
+    <!-- Multi Sim Settings screen, Set DDS success message -->
+    <string name="set_dds_success">设置数据连接卡成功</string>
+    <!-- Multi Sim Settings screen, Set DDS failure message -->
+    <string name="set_dds_failed">无法设置数据连接默认卡，请关闭数据连接然后重试</string>
+    <!-- Multi Sim Settings screen, Set DDS error message -->
+    <string name="set_dds_error">设置数据连接默认卡失败</string>
+    <!-- Multi Sim Settings screen, Set SMS error message -->
+    <string name="set_sms_error">设置短信默认卡失败</string>
+    <!-- Multi Sim Settings screen, Set VOICE error message -->
+    <string name="set_voice_error">设置通话默认卡失败</string>
+    <!-- Multi Sim Settings screen, Set PRIORITY SUB error message -->
+    <string name="set_priority_sub_error">设置默认卡失败</string>
+    <string name="sim_icon_title">SIM卡图标</string>
+    <string name="sim_icon">图标</string>
+    <string name="sim_enable">启用</string>
+    <string name="third_sim_support">第三方支持</string>
+    <string name="third_sim_support_title">默认SIM卡</string>
+    <string name="third_sim_support_summary">本设置仅针对未提供选卡操作的第三方软件，用于拨打电话或发短信</string>
+    <string-array name="aurora_3rd_sim_choices">
+        <item>SIM卡1</item>
+        <item>SIM卡2</item>
+    </string-array>
+    <string name="operator_china_mobile">中国移动</string>
+    <string name="operator_china_unicom">中国联通</string>
+    <string name="operator_china_telecom">中国电信</string>
+    <string name="sim_icon_1">喜欢</string>
+    <string name="sim_icon_2">星标</string>
+    <string name="sim_icon_home">家庭</string>
+    <string name="sim_icon_office">办公</string>
+    <string name="sim_icon_net">上网</string>
+    <string name="sim_icon_dial">电话</string>
+    <string name="disable_all_sim">全部禁用sim卡将关闭所有sim卡相关服务，是否禁用?</string>
+    <string name="new_sim_insert">您已经插入新的SIM卡，是否指定SIM卡标志，以便于区分？</string>
+
+    <string name="aurora_add_black_title">骚扰拦截</string>
+    <string name="aurora_add_black_content">点击可将 <xliff:g id="BLACK_NAME">%s</xliff:g> 加入黑名单</string>
+    <string name="aurora_sogou_mark">人标记</string>
+    <string name="aurora_sogou_local_mark">已被您标记</string>
+    <string name="aurora_hangup_black_single_content">您已经拦截<xliff:g id="BLACK_NUMBER">%s</xliff:g>，点击查看</string>
+    <string name="aurora_hangup_black_many_content">有<xliff:g id="BLACK_TIMES">%s</xliff:g>条新的拦截记录，点击查看</string>
+    <string name="aurora_hangup_black_many_call_content">有<xliff:g id="BLACK_CALL_TIMES">%s</xliff:g>条新的来电拦截记录，点击查看</string>
+    <string name="aurora_hangup_black_many_sms_content">有<xliff:g id="BLACK_SMS_TIMES">%s</xliff:g>条新的短信拦截记录，点击查看</string>
+    
+    <string name="aurora_simulate_title">测试模式</string>
+    <string name="aurora_simulate_summary">切换后要重启Phone进程才有效</string>
+    
+    <string-array name="cm_preferred_network_mode_choices">
+	    <item>4G/3G/2G</item>	 
+	    <item>仅限3G</item>
+	    <item>仅限2G</item>
+	    <item>3G/2G</item> 
+    </string-array>
+    
+    <string-array name="oneplus_preferred_network_mode_choices">
+	    <item>4G/3G/2G</item>	 
+	    <item>仅限3G</item>
+	    <item>仅限2G</item>
+	    <item>3G/2G</item> 
+    </string-array>
+
+    <string name="deact_all_sub_not_supported_for_phb">卡联系人读取中，请稍候再试</string>    
+                
+    <string-array name="aurora_operator_name">        
+        <item>中国移动</item>
+    	<item>中国联通</item>
+    	<item>中国移动</item>
+    	<item>中国电信</item>
+        <item>中国移动</item>
+        <item>中国联通</item>
+    </string-array>
+    
+    <string name="private_notification_text">有新的系统消息</string>
+    <string name="aurora_hangup_private_ringing_call_content"><xliff:g id="BLACK_TIMES">%s</xliff:g>个未接电话</string>    
+    <string name="private_unknown_contact">未知号码</string>
+    
+    <string name="third_data_support_title">数据服务</string>
+    <string name="sim_data_support_summary">本设置用于切换获取网络服务的SIM卡</string>
+    
+    <string-array name="h6_preferred_network_mode_choices">        
+        <item>4G/3G/2G</item>
+        <item>3G/2G</item>
+    	<item>仅限2G</item>
+    </string-array>
+
+    <string-array name="mtk_preferred_network_mode_choices">
+	    <item>仅3G</item>
+	    <item>仅2G</item>
+	    <item>3G(优先)/2G</item> 
+    </string-array>
+    
+    <string name="data_switch_started" msgid="2040761479817166311">"正在切换用于连接数据网络的 SIM 卡，这最多可能需要 1 分钟的时间…"</string>
+  
+     <string name="slide_down_answer">下拉接听</string>
+    
+</resources>

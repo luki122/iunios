@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_slide_right_custom_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="horizontal">
+    
+    <!-- android:text="@string/aurora_listitem_slide_right_read_or_unread" -->
+    <Button android:id="@+id/btn_mark_as"
+            android:layout_width="@dimen/aurora_slide_right_item_width"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:background="@drawable/aurora_slide_right_read_or_unread"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_margin="0dp"
+            android:padding="2dp"/>
+    
+    <Button android:id="@+id/btn_move_to"
+            android:layout_width="@dimen/aurora_slide_right_item_width"
+            android:layout_height="match_parent"
+            android:text="@string/aurora_listitem_slide_right_move_to"
+            android:textSize="13sp"
+            android:background="@drawable/aurora_slide_right_move_to"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_margin="0dp"
+            android:padding="2dp"/>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aurora.note.NoteMainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <FrameLayout
+        android:id="@+id/no_note_fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/note_main_empty_text_padding_top"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:textColor="@color/no_match_note_text_color"
+            android:textSize="@dimen/note_main_empty_text_size"
+            android:text="@string/no_notes_hint" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.aurora.note.ui.PLA_PullListview
+            android:id="@+id/note_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/no_match"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/note_main_empty_text_padding_top"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:textColor="@color/no_match_note_text_color"
+            android:textSize="@dimen/note_main_empty_text_size"
+            android:text="@string/no_match_note"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

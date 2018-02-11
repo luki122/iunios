@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * File Description: Define all string resources add by Gionee engineer
+ * Author: huyuke
+ * Create Date: 2011/09/07
+ *
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Gionee wangyanyi 2011-12-05 add for CR00452545 start-->
+<string name="zzzzz_usb_storage_notification_message">&quot;Выберите хранение файлов или управлять телефоном  с помощью  компьютерных управляющих инструментов.&quot;</string>
+    <string name="zzzzz_turn_on_usb_storage">Хранение USB</string>
+    <string name="zzzzz_usb_storage_content">Редактировать память телефона в компьютере</string>
+    <string name="zzzzz_open_debug_mode">Временно включить отладку по USB</string>
+    <string name="zzzzz_debug_mode_message">После включения можно запустить инструменты синхронизационного управления компьютера</string>
+    <string name="zzzzz_no_sdcard_title">Нет SD карты </string>
+    <string name="zzzzz_no_sdcard_message">Нет карты хранения, или она не готова!</string>
+    <string name="zzzzz_adb_warning_title">Временно включить отладку по USB</string>
+    <string name="zzzzz_adb_warning_message">Будет временно включить отладку по USB, разрешить программное обеспечение на порте PC копировать данные и установить приложения.</string>
+<!-- gionee guozj 20130130 modified for CR00769470 start -->
+<string name="zzzzz_mount_sdcard_dialog_title">Не вытягивать линию данных в это время, возможно приводить к аномалии карте хранения! Перед закрытием устройства хранения USB, подтвердите вы уже удалили (&quot;стреляли&quot;) устройство хранения USB телефона с системой Android!</string>
+<!-- gionee guozj 20130130 modified for CR00769470 end -->
+<string name="zzzzz_usb_storage_title">&quot;Подключено USB&quot;</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_text">&quot;Если вы открыли устройство хранения USB.&quot;</string>
+    <string name="zzzzz_cancel">&quot;Отмена&quot;</string>
+    <string name="zzzzz_dlg_ok">&quot;ОК&quot;</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_title">&quot;Открыть устройство хранения USB&quot;</string>
+    <string name="zzzzz_usb_storage_error_message" product="nosdcard">&quot;Ошибка при рассмотрении устройство хранения USB   как устройство массового хранения.&quot;</string>
+    <string name="zzzzz_usb_storage_error_message" product="default">&quot;Ошибка при рассмотрении SD карты как устройство массового хранения.&quot;</string>
+    <string name="zzzzz_dlg_error_title" >&quot;Неудачная операция USB&quot;</string>
+<!-- Gionee wangyanyi 2011-12-05 add for CR00452545 end-->
+<!-- Gionee fengjianyi 2012-12-27 add for CR00754831 start -->
+<string name="zzzzz_gn_battery_low_why">&quot;Аккумулятор&quot;</string>
+<!-- Gionee fengjianyi 2012-12-27 add for CR00754831 end -->
+<!-- Gionee fengjianyi 2012-12-28 add for CR00751916 start -->
+<string name="zzzzz_gn_data_usage_disabled_dialog_enable">Перезапуск</string>
+<!-- Gionee fengjianyi 2012-12-28 add for CR00751916 end -->
+<!-- Gionee zengxuanhui 20130328 add for CR00788327 begin -->
+<string name="gn_ssg_dlg_title">Невозможно использовать соматический вызов</string>
+    <string name="gn_ssg_dlg_message">При функции “всегда спрашивать”, невозможно использовать соматический вызов, если хотите использовать, выберите карту по умолчанию</string>
+    <string name="gn_ssg_dlg_check">Больше на напоминать </string>
+<!-- Gionee zengxuanhui 20130328 add for CR00788327 end -->
+<!-- Gionee fengjianyi 2013-04-24 add for CR00800567 start -->
+<string name="zzzzz_gn_more_title">Больше</string>
+    <string name="zzzzz_gn_title_sort_tool_icon">Переключатель определения пользователя</string>
+    <string name="zzzzz_gn_showed_in_notification_bar">Показать в панели уведомления</string>
+    <string name="zzzzz_gn_not_showed_in_notification_bar">Не показать в панели уведомления</string>
+    <string name="zzzzz_gn_abbrev_wday_month_day_no_year">E\nM месяц d день</string>
+    <string name="zzzzz_gn_radio_notification">Уведомление</string>
+    <string name="zzzzz_gn_radio_switch">Переключатель</string>
+<!-- Gionee fengjianyi 2013-04-24 add for CR00800567 end -->
+<!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog begin -->
+<string name="zzzzz_gn_warn_title">невозможно зарядить</string>
+    <string name="zzzzz_gn_charging_over_voltage">Высокое давление зарядки, невозможно зарядить.&quot;\ n&quot;Выберите подходный зарядник.</string>
+    <string name="zzzzz_gn_charging_over_heat">Высокая температура аккумулятора, невозможно зарядить.&quot;\ n&quot;Зарядите после охлаждения.</string>
+    <string name="zzzzz_gn_warn_title_unplug">Уведомление системы</string>
+    <string name="zzzzz_gn_charging_over_heat_unplug">Высокая температура аккумулятора, повремените с использованием.</string>
+    <string name="zzzzz_gn_charging_cold">Низкая температура аккумулятора, невозможно зарядить.&quot;\ n&quot;Зарядите после восстановления. </string>
+    <string name="zzzzz_gn_charging_cold_unplug">Низкая температура аккумулятора, повремените с использованием.</string>
+<!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog end -->
+</resources>

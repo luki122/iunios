@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Chars for aurora msg inputMethod -->
+    <string-array name="auroraInputMethodChara">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+    </string-array>
+
+    <string-array name="auroraInputMethodCharb">
+        <item>a</item>
+        <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+    </string-array>
+
+    <string-array name="auroraInputMethodCharc">
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+    </string-array>
+
+    <string-array name="auroraWeekNumber">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="auroraDaysChinese">  
+		<item>星期日</item>  
+		<item>星期一</item>  
+		<item>星期二</item>
+		<item>星期三</item>  
+		<item>星期四</item>   
+		<item>星期五</item>  
+		<item>星期六</item>  
+	</string-array>
+
+    <string-array name="aurora_email_list">
+        <item>sina.com</item>
+        <item>3g.sina.cn</item>
+        <item>163.com</item>
+        <item>qq.com</item>
+        <item>gmail.com</item>
+        <item>126.com</item>
+        <item>sina.cn</item>
+        <item>hotmail.com</item>
+        <item>sohu.com</item>
+        <item>yahoo.com</item>
+       <item>tom.com</item>
+        <item>sogou.com</item>
+        <item>vip.sina.com</item>
+        <item>vip.qq.com</item>
+        <item>vip.163.com</item>
+        <item>vip.sohu.com</item>
+        <item>189.cn</item>
+        <item>etang.com</item>
+        <item>eyou.com</item>
+        <item>56.com</item>
+        <item>21cn.com</item>
+        <item>yeah.net</item>
+        <item>139.com</item>
+    </string-array>
+
+</resources>

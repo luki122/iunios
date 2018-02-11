@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sound and Vibration</string>
+    <string name="gn_audio_profile_message_invalid_name_wrong">The name contains invalid characters</string><!-- for Profile --><string name="sound_category_sound_title">General</string>
+	<string name="sound_category_calls_title" msgid="3688531959256239012">"Ringtone"</string>
+    <string name="sound_category_notification_title" msgid="3502115998790286943">"Notification"</string>
+    <string name="sound_and_system_feedback_category_title" msgid="4399742321363475393">"Sound effect and system feedback"</string>
+    <string name="Phone_vibrate_summary">"Vibrate on incoming calls, text messages or notifications"</string>
+    <string name="voice_call_title">"Call Ringtone"</string>
+    <string name="voice_call_summary">"Set the default voice call ringtone"</string>
+    <string name="alarm_ring_title">Alarm tone</string>
+    <string name="video_call_summary">Set the default video call ringtone</string>
+    <string name="audio_profile_settings_title">"Profiles"</string>
+    <string name="audio_profile_settings">"Personalized Profiles"</string>
+    <string name="audio_profile_settings_Edit">Personalized Profiles</string>
+    <string name="audio_profile_category_predefine_title">Default Mode</string>
+    <string name="audio_profile_category_custom_title">Custom Mode</string>
+    <string name="audio_profile_reset">Reset</string>
+    <string name="audio_profile_add">Add</string>
+    <string name="audio_profile_enable">"Enable"</string>
+    <string name="audio_profile_rename">Rename</string>
+    <string name="audio_profile_delete">Delete</string>
+    <string name="audio_profile_error">Error</string>
+    <string name="audio_profile_message_reset">All profiles will be restored to default settings</string>
+    <string name="audio_profile_message_rename">Enter the profile name</string>
+    <string name="audio_profile_message_name_error">This profile already exists</string>
+    <string name="audio_profile_message_name_length_wrong">The name must contain at least one character</string>
+    <string name="audio_profile_message_delete">Profile %1$s will be deleted</string>
+    <string name="audio_profile_message_overflow">Only allow to add six custom profiles</string>
+    <string name="restore_defaults">"Restore Default Settings"</string>
+    <string name="enable">"Enable"</string>
+    <string name="format_ok">Succeed in formatting SD card !</string>
+    <string name="format_notok">Failed to format SD card!</string>
+	<string name="ringtone_tab_title">Select A Ringtone</string><!-- Sound and alerts settings --><string name="sound_settings_title" msgid="8735891486683305886">"Sound and Vibration"</string>
+    <string name="display_settings_title" msgid="1708697328627382561">"Display"</string>
+    <string name="sound_settings" msgid="5007659014828162881">"Sound Settings"</string>
+    <string name="silent_mode_title" msgid="3181479108593217704">"Silent Mode"</string>
+    <string name="silent_mode_summary" msgid="3309650676072917899">"All sounds are set to silent mode except the media and alarm clock"</string>
+    <string name="silent_mode_incl_alarm_summary" msgid="2088830834182228458">"Set all sounds to silent mode except media"</string>
+    <string name="ringtone_title" msgid="5379026328015343686">"Ringtone"</string>
+    <string name="ringtone_summary" msgid="2630023412632683493">"Set the default call ringtone"</string>
+    <string name="all_volume_title" msgid="8741571721868253103">"Volume"</string>
+    <string name="ring_volume_title" msgid="7938706566797464165">"Ringtone Volume"</string>
+    <string name="ring_volume_summary" msgid="7055497624193116879">Set the ringtone volume for calls, alarms, and notifications</string>
+    <string name="vibrate_in_silent_title" msgid="3897968069156767036">"Vibrate in silent mode"</string>
+    <string name="vibrate_in_silent_summary" msgid="3312600513070076281">"Allow vibration in silent mode"</string>
+    <string name="vibrate_title" msgid="6045820877942801599">"Vibration"</string>
+    <string name="vibrate_summary" msgid="7378130397830790458">"Vibrate on incoming calls or notifications"</string>
+    <string name="notification_sound_title" msgid="6316316069880531693">"Notification ringtone"</string>
+    <string name="notification_sound_summary" msgid="2953599929394109819">"Set the default notification ringtone"</string>
+    <string name="notification_pulse_title" msgid="1247988024534030629">"Flash Notification Light"</string>
+    <string name="notification_pulse_summary" msgid="6899220780534617152">"When you receive a new notification, trackball lights will flash continuously"</string>
+    <string name="incoming_call_volume_title" msgid="8073714801365904099">"Ringtone"</string>
+    <string name="notification_volume_title" msgid="2012640760341080408">"Notification"</string>
+    <string name="alarm_title">Alarm</string>
+    <string name="sms_sound_title">SMS ringtone</string>
+    <string name="checkbox_notification_same_as_incoming_call" msgid="1073644356290338921">"Use the same ringtone volume for notifications and incoming calls"</string>
+    <string name="notification_sound_dialog_title" msgid="7057274209079144726">"Select Notification Ringtone"</string>
+    <string name="media_volume_title" msgid="3576565767317118106">"Media"</string>
+    <string name="media_volume_summary" msgid="5363248930648849974">"Set the volume for music and videos."</string>
+    <string name="alarm_volume_title" msgid="2285597478377758706">"Alarm"</string>
+    <string name="dock_settings_summary" msgid="455802113668982481">"Audio settings for the dock"</string>
+    <string name="dts_pref_title">"DTS Sound"</string>
+    <string name="dtmf_tone_enable_title" msgid="1453831168789523185">"Dial Pad Sound"</string>
+    <string name="touch_vibrate_feedback_title">Vibrate on Tap</string>
+    <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">"Play tones when using dial pad."</string>
+    <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">"Play tones when using dial pad."</string>
+    <string name="sound_effects_enable_title" msgid="3197313718929122833">"Tap Sound"</string>
+    <string name="sound_effects_enable_summary_on" msgid="6154141289879491329">"Play tones when selecting the screen"</string>
+    <string name="sound_effects_enable_summary_off" msgid="3447739581759560125">"Play tones when selecting the screen"</string>
+    <string name="lock_sounds_enable_title" msgid="1575990840389107141">"Screen Lock Sound"</string>
+    <string name="lock_sounds_enable_summary_on" msgid="145741024028391473">"Play sound when locking and unlocking the screen"</string>
+    <string name="lock_sounds_enable_summary_off" msgid="8481243116223542804">"Play sound when locking and unlocking the screen"</string>
+    <string name="haptic_feedback_enable_title" msgid="6311736559245411290">"Tactility"</string>
+    <string name="haptic_feedback_enable_summary_on" msgid="1875779656524793053">"Vibrate when pressing soft keys or interacting with certain UI"</string>
+    <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">"Vibrate when pressing soft keys or interacting with certain UI"</string>
+    <string name="flip_sounds_enable_title">Flipping Sound</string>
+    <string name="flip_sounds_enable_summary_on">Play sound when opening the lid to unlock</string>
+    <string name="flip_sounds_enable_summary_off">Play sound when opening the lid to unlock</string>
+    <string name="lock_settings_picker_title">Select the lock screen</string>
+	<string name="volume_ring_description">Ringtone and Notification</string>
+	<string name="volume_notification_description">Notification</string>
+    <string name="general_settings_title">Ring</string>
+    <string name="silent_settings_title">Silent</string>
+    
+    <string name="other_ringtone_title">Other Ringtones</string>
+    <string name="meeting_settings_title">Vibration</string>
+    <string name="outdoor_settings_title">Outdoor</string>
+    <string name="ring_summary">Ringtone</string>  
+    <string name="ring_vibrate_summary">Ringtone and Vibration</string> 
+    <string name="silent_summary">Mute only</string>  
+    <string name="meeting_summary">Vibration only</string>  
+    <string name="outdoor_summary">Maximum ringtone volume and vibration</string> 
+    <string name="gn_ringtone_notif">Call Ringtone</string> 
+    <string name="gn_mms_ringtone">SMS Ringtone</string> 
+    <string name="volume_alarm_description">Alarm</string>
+    <string name="loading_ringtone">Loading</string>
+    <string name="ringtone_silent_summary">Mute</string> 
+    <string name="sim1_ringtone_title">Slot 1</string>
+    <string name="sim2_ringtone_title">Slot 2</string><!-- Gionee Jingjc 20121122 add for CR00722601 start --><string name="haptic_vibration_title">System Vibration</string>
+    <string name="haptic_feedback_title">Vibration on Tap</string>
+    <string name="routine_vibrate_title">General Vibration</string>
+    <string name="dialpad_vibration_title">Vibration when tapping dial pad</string>
+    <string name="lockscreen_vibration_title">Vibration when locking screen</string>
+    <string name="selectapp_vibration_title">Vibration when selecting or removing applications</string><!-- Gionee Jingjc 20121122 add for CR00722601 end --><string name="ringtone_select_summary">Ringtone is used for ringing mode and outdoor mode</string><!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 begin --><string name="vibrate_profile">Vibration Pattern</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="vibrate_basecall">Basecall</string>
+    <string name="vibrate_heartbeat">Heartbeat</string>
+    <string name="vibrate_jinglebell">Jinglebell</string>
+    <string name="vibrate_ticktock">Ticktock</string>
+    <string name="vibrate_path_error">Vibration mode profile exception</string>
+    <string name="general_vibrate_title">General Vibration</string>
+    <string name="ring_vibrate_title">Incoming Call Vibration</string>
+    <string name="mms_vibrate_title">SMS Vibration</string>
+    <string name="notification_vibrate_title">Notification Vibration</string>
+    <string name="notification_vibrate_summary">"Include vibration for SMS, mails and other notifications"</string><!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 end --><string name="gn_vc_dlg_title">Turn off the voice control mode?</string>
+    <string name="gn_vc_dlg_message"> You can set sound and vibration after closing sound control mode. Are you sure to turn off the voice control mode?</string>
+    <string name="gn_vc_dlg_check">"Don't prompt next time"</string><!-- Choice in the ringtone picker.  If chosen, the default ringtone will be used. --><string name="ringtone_default">Default Ringtone</string><!-- Choice in the notification sound picker.  If chosen, the default notification sound will be
+         used. --><string name="notification_sound_default">Default Notification Ringtone</string><!-- Choice in the alarm sound picker.  If chosen, the default alarm sound will be used. --><string name="alarm_sound_default">Default Alarm Tone</string>
+    <string name="Add_More_Ringtones">More Ringtones...</string>
+    <string name="aurora_empty_other_ringtone_text">No Other Ringtone</string>
+    <string name="internal_storage_disable">Internal Storage Unavailable</string>
+    
+    <string name="none_select">None Selected</string>
+     <string name="set_ringtone">Set Ringtone</string>
+</resources>

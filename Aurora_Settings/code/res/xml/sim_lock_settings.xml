@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        >
+    
+    <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="sim_toggle"
+            aurora:auroratitle="@string/sim_pin_toggle"
+            aurora:aurorasummaryOn="@string/sim_lock_on"
+            aurora:aurorasummaryOff="@string/sim_lock_off"/>
+    <com.android.settings.EditPinPreference
+            aurora:aurorakey="sim_pin"
+            aurora:auroradependency="sim_toggle"
+            aurora:auroratitle="@string/sim_pin_change"
+            aurora:auroradialogTitle="@string/sim_change_pin"
+            aurora:auroradialogMessage="@string/sim_enter_old"
+            aurora:aurorapositiveButtonText="@string/sim_enter_ok"
+            aurora:auroranegativeButtonText="@string/sim_enter_cancel"/>
+</aurora.preference.AuroraPreferenceScreen>   

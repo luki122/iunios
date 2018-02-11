@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/vs_vd"
+     aurora:aurorakey="groups"
+     >
+    <aurora.preference.AuroraPreferenceCategory>
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="vopen"
+            aurora:auroratitle="@string/vs_vd"
+            aurora:aurorasummary="@string/vs_vd_dsr"
+            aurora:auroradefaultValue="true"
+            aurora:auroraswitchTextOn="@string/vs_open"
+            aurora:auroraswitchTextOff="@string/vs_close"/>
+    </aurora.preference.AuroraPreferenceCategory>
+    
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="wakeup_group"
+        >
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="wakeup"
+            aurora:auroratitle="@string/wakeup"
+            aurora:aurorasummary="@string/wakeup_intro"
+            aurora:auroradefaultValue="true"
+            aurora:auroraswitchTextOn="@string/vs_open"
+            aurora:auroraswitchTextOff="@string/vs_close"/>
+        
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="to_wakeup"
+            aurora:auroratitle="@string/wakeup_title"
+            aurora:aurorasummary="@string/wakeup_detail"            
+            aurora:auroradependency="wakeup"
+             />
+    </aurora.preference.AuroraPreferenceCategory>    
+  
+</aurora.preference.AuroraPreferenceScreen>

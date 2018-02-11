@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!--
+     XML resource file for primary call info, which will be used by CallCard.
+     See also call_card.xml.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/callcard_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_call_callcard_height"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/photo_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_photo_area_height"
+            android:layout_marginTop="12dip" >
+
+            <!-- Contact photo for primary call info -->
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/aurora_photo_size"
+                android:layout_height="@dimen/aurora_photo_size"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contactPhoto" />
+
+            <!-- Elapsed time indication for a call in progress. -->
+
+            <ImageView
+                android:id="@+id/photoguangquan"
+                  android:layout_width="@dimen/aurora_photo_circle_size_1"
+                android:layout_height="@dimen/aurora_photo_circle_size_1"
+                android:layout_centerInParent="true"
+                android:background="@drawable/touxiangquan" />
+
+            <TextView
+                android:id="@+id/elapsedTime"
+                android:layout_width="@dimen/aurora_photo_circle_size_1"
+                android:layout_height="@dimen/aurora_photo_circle_size_1"
+                android:layout_centerInParent="true"
+                android:background="@drawable/photo_bg_incall"
+                android:gravity="center_horizontal|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/aurora_green_text_color"
+                android:textSize="@dimen/call_time_size"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/meclapsedbg"
+                android:layout_width="@dimen/aurora_photo_circle_size_1"
+                android:layout_height="@dimen/aurora_photo_circle_size_1"
+                android:layout_centerInParent="true"
+                android:background="@drawable/photo_circle_incall" />
+
+            <ImageView
+                android:id="@+id/photoguangquan1"
+                android:layout_width="@dimen/aurora_photo_circle_size_1"
+                android:layout_height="@dimen/aurora_photo_circle_size_1"
+                android:layout_centerInParent="true"
+                android:background="@drawable/incoming_gq1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/photoguangquan2"
+                android:layout_width="@dimen/aurora_photo_circle_size_2"
+                android:layout_height="@dimen/aurora_photo_circle_size_2"
+                android:layout_centerInParent="true"
+                android:background="@drawable/incoming_gq2"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/photoguangquan3"
+                 android:layout_width="@dimen/aurora_photo_circle_size_2"
+                android:layout_height="@dimen/aurora_photo_circle_size_2"
+                android:layout_centerInParent="true"
+                android:background="@drawable/incoming_gq3"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/photoguangquan4"
+                 android:layout_width="@dimen/aurora_photo_circle_size_2"
+                android:layout_height="@dimen/aurora_photo_circle_size_2"
+                android:layout_centerInParent="true"
+                android:background="@drawable/incoming_gq4"
+                android:visibility="gone" />
+            <!--
+         Used when the phone call is on hold, dimming the primary photo
+
+         Note: Theoretically it is possible to achieve this effect using
+         Drawable#setColorFilter().
+
+         But watch out: we also use cross fade between primary and
+         secondary photo, which may interfere with the dim effect with
+         setColorFilter(). To try it out, use GSM phones and do multiple
+         calls.
+
+         Detail: during the cross-fade effect we are currently using
+         TransitionDrawable. TransitionDrawable#setColorFilter() will call
+         the equivalent method for *both* drawables which are shared by
+         the two ImageViews. If we set setColorFilter() for "on hold" effect
+         during the cross-fade, *both* primary and secondary photos become
+         dim.
+
+         Theoretically it can be avoided (by copying drawable, or carefully
+         calling setColorFilter() conditionally. But it doesn't bang for the
+         buck for now.
+
+         TODO: try that. It may be smoother with slower devices.
+            -->
+
+            <View
+                android:id="@+id/dim_effect_for_primary_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/on_hold_dim_effect"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/photoV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/photo"
+                android:layout_alignRight="@id/photo"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/yulore_photo_v" />
+        </RelativeLayout>
+        <!--
+         "Call Banner" for primary call, the foregound or ringing call.
+         The "call banner" is a block of info about a single call,
+         including the contact name, phone number, call time counter,
+         and other status info.  This info is shown as a "banner"
+         overlaid across the top of contact photo.
+        -->
+
+        <LinearLayout
+            android:id="@+id/namenote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="248dip"
+                android:singleLine="true"
+                android:textColor="@color/aurora_name_text_color"
+                android:textSize="@dimen/aurora_call_name_text_size" />
+
+            <ImageView
+                android:id="@+id/aurora_sim_slot"
+                android:layout_width="@dimen/sim_icon_width"
+                android:layout_height="@dimen/sim_icon_height"
+                android:layout_marginLeft="4dip"
+                android:src="@drawable/sim1_icon" />
+        </LinearLayout>
+        <!-- Label (like "Mobile" or "Work", if present) and phone number, side by side -->
+
+        <LinearLayout
+            android:id="@+id/labelAndNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/labelAndNumber_margin_top"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxWidth="148dip"
+                android:paddingRight="17dp"
+                android:singleLine="true"
+                android:textColor="@color/aurora_number_text_color"
+                android:textSize="@dimen/aurora_call_area_text_size" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/aurora_number_text_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/numberAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/unknown"
+                android:textAllCaps="true"
+                android:textColor="@color/aurora_number_text_color"
+                android:textSize="@dimen/aurora_call_area_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/note_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/note_margin_top"
+                android:ellipsize="end"
+                android:maxWidth="148dip"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/aurora_note_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sogou_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sogou_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/aurora_note_text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/sogou_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/aurora_sogou_icon"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/aurora_note_text_color"
+            android:textSize="12sp" />
+        
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/primary_call_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <!-- Name (or the phone number, if we don't have a name to display). -->
+
+
+        <!--
+             Call type indication: a special label and/or branding
+             for certain kinds of calls (like "Internet call" for a SIP call.)
+        -->
+
+        <TextView
+            android:id="@+id/callTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/incall_call_banner_text_color" />
+    </RelativeLayout> <!-- End of call_banner -->
+
+    <LinearLayout
+        android:id="@+id/secondary_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- Shown when a gateway provider is used during any outgoing call. -->
+
+        <LinearLayout
+            android:id="@+id/providerInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/provider_info_top_bottom_padding"
+            android:paddingLeft="@dimen/call_banner_side_padding"
+            android:paddingRight="@dimen/call_banner_side_padding"
+            android:paddingTop="@dimen/provider_info_top_bottom_padding"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/providerLabel"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/incall_call_banner_text_color" />
+
+            <TextView
+                android:id="@+id/providerAddress"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:ellipsize="middle"
+                android:gravity="right"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:text="@string/add_fdn_contact"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/incall_call_banner_text_color" />
+        </LinearLayout>
+
+        <!--
+             The "call state label": In some states, this shows a special
+             indication like "Dialing" or "Incoming call" or "Call ended".
+             It's unused for the normal case of an active ongoing call.
+        -->
+
+    </LinearLayout>
+
+
+    <!-- Social status (currently unused) -->
+    <!--
+         <TextView android:id="@+id/socialStatus"
+              android:layout_below="@id/callTypeLabel"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="@color/incall_call_banner_text_color"
+              android:maxLines="2"
+              android:ellipsize="end"
+              />
+    -->
+      <TextView
+	        android:id="@+id/callStateLabel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ellipsize="end"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="@dimen/callStateLabel_padding_top"
+	        android:singleLine="true"
+	        android:textAllCaps="true"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="12sp" />
+
+</LinearLayout>

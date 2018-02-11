@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_1">1</string>
+    <string name="sign_2">2</string>
+    <string name="sign_3">3</string>
+    <string name="sign_4">4</string>
+    <string name="sign_5">5</string>
+    <string name="sign_6">6</string>
+    <string name="sign_sharp">#</string>
+    <string name="info_send_fail">Sending failed,please retry </string>
+    <string name="info_send_success">Password has been sent</string>
+    <string name="app_name">Privacy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="test_string">testing string</string>
+    <string name="null_description">null description</string>
+    <string name="create_privacy_account">Create Space</string>
+    <string name="how_enter">How to Access Privacy</string>
+    <string name="how_protect">How to Protect Privacy</string>
+    <string name="how_exit">How to Exit Privacy</string>
+    <string name="enter_method"><Data><![CDATA[Enter <font color="#ff9999">#Privacy Password#</font> by dial keyboard to switch to privacy space.This is the only entrance,please keep it in mind.]]></Data></string>
+    <string name="exit_method"><Data><![CDATA[<font color="#ff9999">Automatic lock screen</font> and <font color="#ff9999">Manually lock screen</font> to exit privacy space immediately.]]></Data></string>
+    <string name="protect_method">Private contacts,messages,calls,apps,videos and images can only be accessed in privacy space.</string>
+    <string name="how_delete">How to Delete Privacy Space</string>
+    <string name="delete_method">After you enter privacy space,go setting and press the delete button.</string>
+    <string name="how_getback_password">How to Get Password Back</string>
+    <string name="getback_password_method">Press Privacy icon,you\'ll find \"can not enter privacy space?\"at the bottom of the screen.</string>
+    <string name="next_step">Next</string>
+    <string name="creator_info_password_struct">Password=Random number+Your password</string>
+    <string name="creator_hint_input_password">Please enter 4&#8211;10 numbers</string>
+    <string name="creator_hint_password_again">Confirm password</string>
+    <string name="creator_info_input_email">Please use private email</string>
+    <string name="creator_hint_input_email">Please enter email address</string>
+    <string name="finish">Finish</string>
+    <string name="password_again">Confirm password</string>
+    <string name="confirm">Confirm</string>
+    <string name="password_protection">Protect Password</string>
+    <string name="create_finish">Create Successfully</string>
+    <string name="info_three_step_teach">Three Steps to Protect Privacy</string>
+    <string name="lock_note">"Protect your privacy "</string>
+    <string name="shield_note">"Most confidential ever "</string>
+    <string name="switching_note">"Agile to switch"</string>
+    <string name="get_back_password">Get Password</string>
+    <string name="cant_enter_privacy_space">can\'t enter?</string>
+    <string name="sign_plus">"+"</string>
+    <string name="password_length_not_good">"Only accept 4&#8211;10 numbers"</string>
+    <string name="password_different">"Password not matched"</string>
+    <string name="email_addr_not_good">"Incorrect email address"</string>
+    <string name="email_addr_not_complete">"Incomplete email address"</string>
+    <string name="email_addr_not_exist">"Password protection email not exist"</string>
+    <string name="open_privacy_space">Enter Privacy Space</string>
+    <string name="info_send_password_to_me">You\'ll find out how to enter in your email</string>
+    <string name="error_net_not_available">No Network</string>
+    <string name="set">Setting</string>
+    <string name="help">Help</string>
+    <string name="password_protect">Protect Password</string>
+    <string name="change_password">Edit Password</string>
+    <string name="nom_space_notify_way">Remind mode in normal space</string>
+    <string name="privacy_call_msg">Privacy SMS and Calls</string>
+    <string name="privacy_app_msg">Privacy App messages</string>
+    <string name="delete_privacy_space">Delete Privacy Space</string>
+    <string name="sure_delete_privacy_space">Are you sure to delete privacy space?</string>
+    <string name="delete_privacy_content_at_same_time">Delete all private content</string>
+    <string name="sure">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="undelete_privacy_content_hint">It will be restore if you don\'t delete private content.Images and videos will be saved to \"private files\"folder.</string>
+    <string name="wait_sending">Sending,please wait</string>
+    <string name="work_at_non_space">Setting works in normal space</string>
+    <string name="privacy_ring">Privacy Calls</string>
+    <string name="privacy_msg_notify">Privacy SMS Notification</string>
+    <string name="switch_notify_hint">Switch on or off notification</string>
+    <string name="notify_word">Notification Text</string>
+    <string name="have_new_system_msg">New system message</string>
+    <string name="must_enter_word">Can not be empty</string>
+    <string name="can_not_export_20_word">Can not exceed 20 words</string>
+    <string name="enter_privacy_space">You are in privacy space</string>
+    <string name="no_keep_privacy_space">Not Keep in Privacy</string>
+    <string name="lock_screen_quit_privacy_space">Exit privacy when lock screen</string>
+    <string name="keep_privacy_space">Have Kept in Privacy</string>
+    <string name="lock_screen_not_quit_privacy_space">Not exit privacy when lock screen</string>
+    <string name="keep">Keep</string>
+    <string name="no_keep">Relieve</string>
+    <string name="safe_keeping_privacy_content_days">Privacy has been protect for %1$s" day(s)</string>
+    <string name="deleted_privacy_space">Privacy Space deleted</string>
+    <string name="change_password_success">Password edited</string>
+    <string name="change_email_success">Email address edited</string>
+    <string name="this_function_is_unavailable">function not available</string>
+    <string name="privacy_manage">Privacy Manage</string>
+    <string name="email_charset">._-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@</string>
+    <string name="password_no_change">Password not changed</string>
+    <string name="null_string">""</string>
+    
+    <!-- [20141215] new requirement -->
+    <string name="input_password_in_dialing_pad">Go Dial Keyboard</string>
+    <string name="i_see">I Get It</string>
+
+</resources>

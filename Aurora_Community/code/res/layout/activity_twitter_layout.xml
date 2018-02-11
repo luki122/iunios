@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/activity_main_background_color"
+            android:paddingBottom="10dp">
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/gv_pic_selected"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_twitter_layout_gv_pic_selected_layout_height"
+        android:layout_marginTop="@dimen/activity_twitter_layout_gv_pic_selected_layout_margin_top"
+        android:background="@color/globals_widget_color"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/mainpage_category_top_item_selector"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/activity_twitter_layout_gv_pic_selected_layout_padding_bottom"
+        android:paddingTop="@dimen/activity_twitter_layout_gv_pic_selected_layout_padding_top"
+        android:verticalSpacing="@dimen/activity_twitter_layout_gv_pic_selected_layout_vertical_spacing" >
+    </GridView>
+
+    <com.aurora.community.widget.AuroraEditText
+        android:id="@+id/twitter_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_twitter_layout_aet_twitter_content_layout_height"
+        android:layout_marginTop="@dimen/activity_twitter_layout_aet_twitter_content_margin_top"
+        android:background="@color/globals_widget_color"
+        android:gravity="top"
+        android:hint="@string/twitter_edittext_hit"
+        android:paddingLeft="@dimen/activity_twitter_layout_aet_twitter_content_padding_left_right"
+        android:paddingRight="@dimen/activity_twitter_layout_aet_twitter_content_padding_left_right"
+        android:paddingTop="@dimen/activity_twitter_layout_aet_twitter_content_padding_top"
+        android:textColor="@color/gloab_title_color"
+        android:maxLength="600"
+        android:textColorHint="@color/postdetail_light_color"
+        android:textSize="@dimen/activity_twitter_layout_aet_twitter_content_text_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_twittering"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_twitter_layout_ll_twittering_background_color"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:indeterminateDrawable="@drawable/progressbar_small"/>
+    </LinearLayout>
+</FrameLayout>
+
+<TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="12sp"
+          android:textColor="@color/gloab_title_color"
+          android:text="@string/select_tip_text"
+          android:layout_marginTop="12dp"
+          android:layout_marginLeft="10dp"/>
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:id="@+id/tags_container"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:layout_marginTop="10dp"/>
+</LinearLayout>
+</ScrollView>

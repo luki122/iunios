@@ -1,0 +1,25 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ImageView 
+        android:id="@+id/aurora_loading_point1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/aurora_loading_icon"
+        />
+    <ImageView 
+        android:id="@+id/aurora_loading_point2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/aurora_loading_icon"
+        android:layout_marginLeft="5dp"
+        />
+    <ImageView 
+        android:id="@+id/aurora_loading_point3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/aurora_loading_icon"
+         android:layout_marginLeft="5dp"
+        />
+</merge>

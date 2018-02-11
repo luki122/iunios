@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_textcolor">#4bcadd</color>
+	<color name="ad_app_list_header_textcolor">#4bcadd</color>
+	<color name="app_size_layout_topsizetext_textcolor">#4bcadd</color>
+	<color name="def_soft_manage_list_header_textcolor">#4bcadd</color>	
+	<color name="btn_title_state_color">#000000</color>
+	<drawable name="home_btn_bg_of_green_bar">#00000000</drawable>
+</resources>

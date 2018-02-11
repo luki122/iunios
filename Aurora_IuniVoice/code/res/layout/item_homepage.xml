@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_item_divider_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_item_height"
+        android:background="@drawable/home_pager_item_selector"
+        android:paddingBottom="@dimen/homepage_item_padding_bottom"
+        android:paddingLeft="@dimen/homepage_item_padding_left_right"
+        android:paddingRight="@dimen/homepage_item_padding_left_right" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_head"
+            android:singleLine="true"
+            android:textColor="@color/main_homepage_item_title_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:textColor="#00c490"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_author"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/tv_author"
+            android:singleLine="true"
+            android:textColor="#c0c0c0"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="19dp" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_author"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:textColor="#9d9d9f"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>

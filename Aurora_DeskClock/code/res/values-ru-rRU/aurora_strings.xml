@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="aurora_chronometer_pick_ringer_title">Звук таймера</string>
+    <string name="btnEnd">Готово</string>
+       	<string name="label_hour">Час</string>
+   	<string name="label_minute">Минута</string>
+   	<string name="label_second">Секунда</string>
+   	<string name="timer_title">Таймер</string>
+    <string name="stop_watch_title">Секундомер</string>
+</resources>

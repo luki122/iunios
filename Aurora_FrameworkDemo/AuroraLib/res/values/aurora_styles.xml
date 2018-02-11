@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--      Gionee <zhangxx> <2013-06-20> add for auroraframework. -->
+<resources>
+
+    <style name="TextAppearance.Aurora.Large" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.MediumSecond" parent="@style/TextAppearance.Aurora.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Small" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Large.Inverse" parent="@android:style/TextAppearance.Holo.Large.Inverse">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Medium.Inverse" parent="@android:style/TextAppearance.Holo.Medium.Inverse">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.MediumSecond.Inverse" parent="@style/TextAppearance.Aurora.Medium.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Small.Inverse" parent="@android:style/TextAppearance.Holo.Small.Inverse">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Large" parent="@android:style/TextAppearance.Holo.Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/aurora_preference_text_disable_color</item>
+    </style>
+
+    <!-- added by<flash> 2013.10.11 for preference style start -->
+    <style name="AuroraPreferenceTitle" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/aurora_preference_text_disable_color</item> 
+    </style>
+    <!-- added by<flash> 2013.10.11 for preference style end -->
+
+    <style name="TextAppearance.Aurora.Light.MediumSecond" parent="@style/TextAppearance.Aurora.Light.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Small" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textSize">14sp</item>
+       <item name="android:textColor">@color/aurora_preference_summary_disable_color</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Large.Inverse" parent="@android:style/TextAppearance.Holo.Large.Inverse">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Medium.Inverse" parent="@android:style/TextAppearance.Holo.Medium.Inverse">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.MediumSecond.Inverse" parent="@style/TextAppearance.Aurora.Light.Medium.Inverse">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Small.Inverse" parent="@android:style/TextAppearance.Holo.Small.Inverse">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.TextView.SpinnerItem" parent="@android:style/TextAppearance.Holo.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Title" parent="@style/TextAppearance.Aurora.Medium">
+        <item name="android:textSize">@dimen/aurora_action_bar_title_text_size</item>
+        <item name="android:textColor">@color/aurora_actionbar_title_color_dark</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Title.Inverse" parent="@style/TextAppearance.Aurora.Medium.Inverse">
+        <item name="android:textSize">@dimen/aurora_action_bar_title_text_size</item>
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_dark</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Light.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/aurora_alert_dialog_title_light</item>
+    </style>
+
+
+    <style name="AuroraAlertDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AuroraDialogExit</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item><!-- -->
+        
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        
+        <item name="android:textColorPrimary">@color/aurora_primary_text_light</item>
+        <item name="android:textColorSecondary">@color/aurora_secondary_text_light</item>
+        <item name="android:textColorTertiary">@color/aurora_tertiary_text_light</item>
+        <item name="android:textColorPrimaryInverse">@color/aurora_primary_text_dark</item>
+        <item name="android:textColorSecondaryInverse">@color/aurora_secondary_text_dark</item>
+        <item name="android:textColorTertiaryInverse">@color/aurora_tertiary_text_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/aurora_primary_text_disable_only_light</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/aurora_primary_text_disable_only_dark</item>
+        <item name="android:textColorPrimaryNoDisable">@color/aurora_primary_text_nodisable_light</item>
+        <item name="android:textColorSecondaryNoDisable">@color/aurora_secondary_text_nodisable_light</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/aurora_primary_text_nodisable_dark</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/aurora_secondary_text_nodisable_dark</item>
+        <item name="android:textColorHint">@color/aurora_hint_foreground_light</item>
+        <item name="android:textColorHintInverse">@color/aurora_hint_foreground_dark</item>
+        <item name="android:textColorHighlight">@color/aurora_highlighted_text_light</item>
+        <item name="android:textColorLink">@color/aurora_bright_foreground_yellow</item>
+        <!-- @hide android 2.3 have not these attrs -->
+        <item name="android:textColorHighlightInverse">@color/aurora_highlighted_text_dark</item>
+        <item name="android:textColorLinkInverse">@color/aurora_bright_foreground_yellow</item>
+        <item name="android:textColorAlertDialogListItem">@color/aurora_primary_text_light</item>
+        
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Aurora.Light.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Aurora.Light.Medium</item>
+        <item name="auroratextAppearanceMediumSecond">@style/TextAppearance.Aurora.Light.MediumSecond</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Aurora.Light.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.Aurora.Light.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Aurora.Light.Medium.Inverse</item>
+        <item name="auroratextAppearanceMediumSecondInverse">@style/TextAppearance.Aurora.Light.MediumSecond.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Aurora.Light.Small.Inverse</item> 
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:editTextBackground">@drawable/aurora_dialog_edit_text_bg</item>
+        <item name="android:editTextColor">@color/aurora_edit_text</item>
+        <item name="android:textSelectHandleLeft">@drawable/aurora_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/aurora_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/aurora_text_select_handle_middle</item>
+        <item name="android:textCursorDrawable">@drawable/aurora_text_cursor_light</item>
+        <item name="android:selectableItemBackground">@drawable/aurora_item_background_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/aurora_list_selector_light</item>
+        
+    </style>
+     
+    <style name="AuroraAlertDialogTheme2">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+        <item name="android:windowBackground">@drawable/aurora_dialog_white_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="AuroraAlertDialogTheme.Light"></style>
+
+    <style name="AuroraAlertDialogTheme.FullScreen">
+        <item name="aurorafullDark">@android:color/transparent</item>
+        <item name="auroratopDark">@android:color/transparent</item>
+        <item name="auroracenterDark">@android:color/transparent</item>
+        <item name="aurorabottomDark">@android:color/transparent</item>
+        <item name="aurorafullBright">@android:color/transparent</item>
+        <item name="auroratopBright">@android:color/transparent</item>
+        <item name="auroracenterBright">@android:color/transparent</item>
+        <item name="aurorabottomBright">@android:color/transparent</item>
+        <item name="aurorabottomMedium">@android:color/transparent</item>
+        <item name="auroracenterMedium">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Aurora.ActionBar.TabBar" parent="@android:style/Widget.Holo.ActionBar.TabBar">
+        <item name="android:divider">@drawable/aurora_tabbar_divider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">0dip</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ListView" parent="@android:style/Widget.Holo.ListView">
+        <item name="android:divider">?android:attr/listDivider</item>
+        <item name="android:listSelector">?android:attr/listChoiceBackgroundIndicator</item>
+        <!-- aurora <flash> 2013.9.27 add divider height start -->
+        <item name="android:dividerHeight">1px</item>
+        <!-- aurora <flash> 2013.9.27 add divider height end -->
+    </style>
+
+    <style name="Animation.Aurora.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/aurora_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/aurora_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/aurora_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/aurora_activity_close_exit</item>
+        <item name="android:taskOpenEnterAnimation">@anim/aurora_task_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/aurora_task_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/aurora_task_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/aurora_task_close_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/aurora_task_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/aurora_task_open_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/aurora_task_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/aurora_task_close_exit</item>
+        <item name="android:wallpaperOpenEnterAnimation">@anim/aurora_wallpaper_open_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/aurora_wallpaper_open_exit</item>
+        <item name="android:wallpaperCloseEnterAnimation">@anim/aurora_wallpaper_close_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/aurora_wallpaper_close_exit</item>
+    </style>
+    
+     <style name="AnimationAlertActivity">
+        <item name="android:activityOpenEnterAnimation">@anim/aurora_task_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/aurora_task_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/aurora_task_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/aurora_task_close_exit</item>
+        
+        <item name="android:taskOpenEnterAnimation">@anim/aurora_task_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/aurora_task_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/aurora_task_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/aurora_task_close_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/aurora_task_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/aurora_task_open_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/aurora_task_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/aurora_task_close_exit</item>
+        
+        <item name="android:wallpaperOpenEnterAnimation">@anim/aurora_wallpaper_open_enter</item>
+        <item name="android:wallpaperOpenExitAnimation">@anim/aurora_wallpaper_open_exit</item>
+        <item name="android:wallpaperCloseEnterAnimation">@anim/aurora_wallpaper_close_enter</item>
+        <item name="android:wallpaperCloseExitAnimation">@anim/aurora_wallpaper_close_exit</item>
+    </style>
+
+    <style name="Animation.Aurora.Dialog" parent="@android:style/Animation.Dialog">
+       <!--  <item name="android:windowEnterAnimation">@anim/aurora_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/aurora_dialog_exit</item> -->
+    </style>
+
+    <style name="Widget.Aurora.Light.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/aurora_btn_default_light</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/aurora_primary_text_light</item>
+        <item name="android:minHeight">46dip</item>
+        <item name="android:minWidth">46dip</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.Button.Small" parent="@style/Widget.Aurora.Light.Button">
+        <item name="android:background">@drawable/aurora_btn_default_small_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:minHeight">46dip</item>
+        <item name="android:minWidth">46dip</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.Button.Borderless" parent="@style/Widget.Aurora.Light.Button"></style>
+
+    <style name="Widget.Aurora.ProgressBar" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_medium_dark</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ProgressBar" parent="@style/Widget.Aurora.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_medium</item>
+    </style>
+
+    <style name="Widget.Aurora.ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/aurora_progress_horizontal_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_indeterminate_horizontal</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Horizontal" parent="@style/Widget.Aurora.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/aurora_progress_horizontal_light</item>
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_indeterminate_horizontal</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Small" parent="@android:style/Widget.Holo.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_small</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Large" parent="@android:style/Widget.Holo.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_large</item>
+    </style>
+
+    <style name="Widget.Aurora.ProgressBar.Inverse"></style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Small.Title"></style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Inverse"></style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Small.Inverse"></style>
+
+    <style name="Widget.Aurora.Light.ProgressBar.Large.Inverse"></style>
+
+    <style name="Widget.Aurora.Light.SeekBar" parent="@android:style/Widget.Holo.Light.SeekBar">
+
+        <!-- <item name="android:progressDrawable">@drawable/aurora_scrubber_progress_horizontal_light</item> -->
+        <item name="android:progressDrawable">@drawable/aurora_seekbar_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/aurora_scrubber_progress_horizontal_light</item>
+        <item name="android:thumb">@drawable/aurora_scrubber_control_selector_light</item>
+    </style>
+
+
+    <style name="Widget.Aurora.TextView.SpinnerItem" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Widget.TextView.SpinnerItem</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.Spinner" parent="@android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/aurora_spinner_background_light</item>
+        <item name="android:dropDownSelector">@drawable/aurora_list_selector_light</item>
+        <item name="android:popupBackground">@drawable/aurora_spinner_drop_down_bg</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.Spinner.DropDown"></style>
+
+    <style name="Widget.Aurora.Light.DropDownItem" parent="@android:style/Widget.Holo.Light.DropDownItem">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Light.Medium</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.DropDownItem.Spinner"></style>
+
+    <style name="Widget.Aurora.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/aurora_spinner_ab_light</item>
+        <item name="android:dropDownWidth">304dip</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.TabWidget" parent="@android:style/Widget.Holo.Light.TabWidget">
+        <!-- isn't public attr , cann't use -->
+        <!-- <item name="android:tabLayout">@layout/aurora_tab_indicator_light</item> -->
+    </style>
+
+    <style name="Widget.Aurora.AutoCompleteTextView" parent="@android:style/Widget.EditText">
+        <item name="auroracompletionHintView">@layout/aurora_simple_dropdown_hint</item>
+        <item name="auroracompletionThreshold">2</item>
+        <item name="auroradropDownSelector">@drawable/aurora_list_selector_light</item>
+        <item name="android:popupBackground">@drawable/aurora_menu_dropdown_panel_light</item>
+        <item name="auroradropDownVerticalOffset">-6dip</item>
+        <item name="auroradropDownHorizontalOffset">0dip</item>
+        <item name="auroradropDownWidth">wrap_content</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.AutoCompleteTextView" parent="@style/Widget.Aurora.AutoCompleteTextView"></style>
+
+    <style name="Widget.Aurora.TextView.ListSeparator" parent="@android:style/Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/aurora_preference_item_padding_side</item>
+        <item name="android:paddingRight">@dimen/aurora_preference_item_padding_side</item>
+        <item name="android:paddingTop">@dimen/aurora_preference_title_padding</item>
+        <item name="android:paddingBottom">@dimen/aurora_preference_title_padding</item>
+    </style>
+    
+    <style name="Widget.Aurora.Light.TextView.ListSeparator" parent="@style/Widget.Aurora.TextView.ListSeparator">
+
+        <!-- added by<flash>2013.10.11 for preference category style start -->
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/aurora_numberpicker_select_text_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/aurora_preference_single_line_height</item>
+        <item name="android:paddingLeft">@dimen/aurora_preference_item_padding_side</item>
+        <item name="android:paddingRight">@dimen/aurora_preference_item_padding_side</item>
+       <!--  <item name="android:paddingBottom">@dimen/aurora_preference_category_title_padding_bottom</item> -->
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- added by<flash>2013.10.11 for preference category style end -->
+    </style>
+
+    <style name="AuroraActionBar">
+        <item name="aurorabackground">@drawable/aurora_cab_background_top_light</item>
+        <item name="aurorabackgroundSplit">@drawable/aurora_cab_background_bottom_light</item>
+        <item name="aurorabackgroundStacked">@drawable/aurora_cab_background_top_light</item>
+        <item name="auroradisplayOptions">useLogo|showHome|showTitle</item>
+        <item name="auroradivider">?android:attr/dividerVertical</item>
+        <item name="auroraheight">?android:attr/actionBarSize</item>
+        <item name="android:homeAsUpIndicator">@drawable/aurora_ic_ab_back_light</item>
+        <item name="aurorahomeLayout">@layout/aurora_action_bar_home</item>
+        <item name="auroraitemPadding">8dip</item>
+        <item name="auroraindeterminateProgressStyle">@style/Widget.Aurora.Light.ProgressBar</item>
+        <item name="aurorapaddingLeft">0dip</item>
+        <item name="aurorapaddingTop">0dip</item>
+        <item name="aurorapaddingRight">0dip</item>
+        <item name="aurorapaddingBottom">0dip</item>
+        <item name="auroraprogressBarPadding">32dip</item>
+        <item name="auroraprogressBarStyle">@style/Widget.Aurora.Light.ProgressBar.Horizontal</item>
+        <item name="aurorashowDefault">true</item>
+        <item name="aurorasubtitleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle</item>
+        <item name="auroratextAppearance">?android:textAppearance</item>
+        <item name="auroratitleTextStyle">@style/TextAppearance.Aurora.Light.Widget.ActionBar.Title</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ActionBar" parent="@style/AuroraActionBar">
+        <item name="auroratitleTextStyle">@style/TextAppearance.Aurora.Light.Widget.ActionBar.Title</item>
+        <item name="aurorasubtitleTextStyle">@style/TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle</item>
+        <item name="aurorabackground">@drawable/aurora_cab_background_top_light</item>
+        <item name="aurorabackgroundStacked">@drawable/aurora_cab_background_top_light</item>
+        <item name="aurorabackgroundSplit">@drawable/aurora_cab_background_bottom_light</item>
+        <item name="android:homeAsUpIndicator">@drawable/aurora_ic_ab_back_light</item>
+        <item name="auroraprogressBarStyle">@style/Widget.Aurora.Light.ProgressBar.Horizontal</item>
+        <item name="auroraindeterminateProgressStyle">@style/Widget.Aurora.Light.ProgressBar</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ActionBar.Solid">
+        <item name="auroradivider">?android:attr/dividerVertical</item>
+        <item name="auroraprogressBarPadding">32dip</item>
+        <item name="auroraitemPadding">8dip</item>
+    </style>
+    <!-- by xiexiujie textview ziti -->
+    <style name="AuroraTextView">
+            
+        <item name="auroraUseDefaultFont">true</item>
+    </style>
+     <style name="AuroraSingleLineEditText">
+        <item name="android:layout_height">47dp</item>   
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>      
+        <item name="auroraTextBaseLinePadding">7</item>       
+    </style>
+
+    
+    <style name="Widget.Aurora.Light.ActionBar.Solid.Inverse">
+        <item name="auroratitleTextStyle">@style/TextAppearance.Aurora.Light.Widget.ActionBar.Title.Inverse</item>
+        <item name="aurorasubtitleTextStyle">@style/TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle.Inverse</item>
+        <item name="aurorabackground">@drawable/aurora_cab_background_top_dark</item>
+        <item name="aurorabackgroundStacked">@drawable/aurora_cab_background_top_dark</item>
+        <item name="aurorabackgroundSplit">@drawable/aurora_cab_background_bottom_light</item>
+        <!--
+        <item name="auroraprogressBarStyle">@style/Widget.Aurora.ProgressBar.Horizontal</item>
+        <item name="auroraindeterminateProgressStyle">@style/Widget.Aurora.ProgressBar</item>
+        -->
+    </style>
+
+    <style name="Widget.Aurora.Light.ActionBar.TabText" parent="@android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ListPopupWindow" parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:dropDownSelector">@drawable/aurora_list_selector_light</item>
+        <item name="android:popupBackground">@drawable/aurora_menu_dropdown_panel_light</item>
+    </style>
+
+    <style name="Widget.Aurora.Light.ExpandableListView" parent="@android:style/Widget.Holo.Light.ExpandableListView">
+        <item name="android:groupIndicator">@drawable/aurora_expander_group_light</item>
+    </style>
+
+    <style name="Widget.Aurora.ActionButton.CloseMode" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:minWidth">?android:attr/actionBarSize</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="DialogWindowTitle.Aurora.Light" parent="@style/DialogWindowTitle">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Light.DialogWindowTitle</item>
+    </style>
+
+    <style name="AuroraSwitchPreferenceStyle">
+        <item name="android:widgetLayout">@layout/aurora_preference_widget_switch</item>
+        <item name="android:switchTextOn">@string/aurora_capital_on</item>
+        <item name="android:switchTextOff">@string/aurora_capital_off</item>
+    </style>
+
+    <style name="AuroraWidgetSwitch">
+
+        <!--
+     fixed by flash 2013.9.26
+        <item name="auroratrack">@drawable/aurora_switch_track_light</item>
+        <item name="aurorathumb">@drawable/aurora_switch_inner_light</item>
+        <item name="auroratextOff">@string/aurora_capital_off</item>
+        <item name="auroratextOn">@string/aurora_capital_on</item>
+        <item name="aurorathumbTextPadding">8dip</item>
+        <item name="auroraswitchMinWidth">64dip</item>
+        <item name="auroraswitchPadding">12dip</item>
+        <item name="android:clickable">true</item>
+        -->
+        <item name="track">@drawable/switch0001</item>
+        <item name="switchTextAppearance">@android:style/TextAppearance.DeviceDefault.Small</item>
+        <item name="switchMinWidth">30dip</item>
+        <item name="switchPadding">15dip</item>
+    </style>
+
+    <style name="AuroraWidgetNumberPicker">
+        <item name="aurorasolidColor">@android:color/transparent</item>
+        <item name="aurorainternalLayout">@layout/aurora_number_picker</item>
+        <item name="aurorabackground">@null</item>
+        <item name="auroraselectionSrc">@drawable/aurora_numberpicker_selector</item>
+        <item name="auroraselectionDivider">@null</item>
+        <item name="auroraselectionDividerHeight">2dip</item>
+        <item name="aurorainternalMinWidth">64dip</item>
+        <item name="aurorainternalMaxHeight">180dip</item>
+    </style>
+
+    <style name="AuroraWidgetDatePicker">
+        <item name="aurorainternalLayout">@layout/aurora_date_picker</item>
+        <item name="auroracalendarViewShown">false</item>
+    </style>
+
+    <style name="AuroraWidgetTimePicker">
+        <item name="aurorainternalLayout">@layout/aurora_time_picker</item>
+    </style>
+
+    <style name="AuroraPreferenceFragment">
+        <item name="android:paddingLeft">@dimen/aurora_preference_fragment_padding_left</item>
+        <item name="android:paddingRight">@dimen/aurora_preference_fragment_padding_right</item>
+        <item name="android:paddingTop">@dimen/aurora_preference_fragment_padding_top</item>
+        <item name="android:paddingBottom">@dimen/aurora_preference_fragment_padding_bottom</item>
+    </style>
+
+    <style name="AuroraPreference">
+        <item name="android:layout">@layout/aurora_preference</item>
+        <item name="auroralayout">@layout/aurora_preference</item>
+    </style>
+
+    <style name="AuroraPreference.PreferenceScreen"></style>
+
+    <style name="AuroraPreference.Category">
+        <item name="android:layout">@layout/aurora_preference_category</item>
+        <item name="android:shouldDisableView">false</item>
+        <item name="android:selectable">false</item>
+        <item name="auroralayout">@layout/aurora_preference_category</item>
+        <item name="aurorashouldDisableView">false</item>
+        <item name="auroraselectable">false</item>
+    </style>
+
+    <style name="AuroraPreference.Information">
+        <item name="android:layout">@layout/aurora_preference_information</item>
+        <item name="android:enabled">false</item>
+        <item name="android:shouldDisableView">false</item>
+        <item name="auroralayout">@layout/aurora_preference_information</item>
+        <item name="auroraenabled">false</item>
+        <item name="aurorashouldDisableView">false</item>
+    </style>
+
+    <style name="AuroraPreference.CheckBoxPreference">
+        <item name="android:widgetLayout">@layout/aurora_preference_widget_checkbox</item>
+        <item name="aurorawidgetLayout">@layout/aurora_preference_widget_checkbox</item>
+    </style>
+
+    <style name="AuroraPreference.SwitchPreference">
+        <item name="android:widgetLayout">@layout/aurora_preference_widget_switch</item>
+        <item name="android:switchTextOn">@string/aurora_capital_on</item>
+        <item name="android:switchTextOff">@string/aurora_capital_off</item>
+        <item name="aurorawidgetLayout">@layout/aurora_preference_widget_switch</item>
+        <item name="auroraswitchTextOn">@string/aurora_capital_on</item>
+        <item name="auroraswitchTextOff">@string/aurora_capital_off</item>
+    </style>
+
+    <style name="AuroraPreference.DialogPreference">
+        <item name="android:positiveButtonText">@string/aurora_ok</item>
+        <item name="android:negativeButtonText">@string/aurora_cancel</item>
+        <item name="aurorapositiveButtonText">@string/aurora_ok</item>
+        <item name="auroranegativeButtonText">@string/aurora_cancel</item>
+    </style>
+
+    <style name="AuroraPreference.DialogPreference.YesNoPreference">
+        <item name="android:positiveButtonText">@string/aurora_yes</item>
+        <item name="android:negativeButtonText">@string/aurora_no</item>
+        <item name="aurorapositiveButtonText">@string/aurora_yes</item>
+        <item name="auroranegativeButtonText">@string/aurora_no</item>
+    </style>
+
+    <style name="AuroraPreference.DialogPreference.EditTextPreference">
+        <item name="android:dialogLayout">@layout/aurora_preference_dialog_edittext</item>
+        <item name="auroradialogLayout">@layout/aurora_preference_dialog_edittext</item>
+    </style>
+
+    <style name="AuroraPreference.RingtonePreference">
+        <item name="android:ringtoneType">ringtone</item>
+        <item name="android:showSilent">true</item>
+        <item name="android:showDefault">true</item>
+        <item name="auroraringtoneType">ringtone</item>
+        <item name="aurorashowSilent">true</item>
+        <item name="aurorashowDefault">true</item>
+    </style>
+
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 begin -->
+    <style name="AuroraSpinner">
+        <item name="auroraspinnerMode">dialog</item>
+        <item name="popupDrawable">@drawable/aurora_dialog_middle_light</item>
+        <item name="textMarginLeft">5dp</item>
+        <item name="textMarginRight">5dp</item>
+        <item name="spinnerDropDownVerticalOffset">0dp</item>
+        <item name="spinnerDropDownHorizontalOffset">0dp</item>
+        <item name="spinnerPaddingLeft">10dp</item>
+        <item name="spinnerPaddingRight">10dp</item>
+        <item name="spinnerDropDownWidth">match_parent</item>
+        <item name="android:background">@drawable/aurora_spinner_backgound_middle</item>
+    </style>
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 end -->
+
+
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 begin -->
+    <!-- Expandable List View style -->
+    <style name="AuroraExpandableListView" parent="@style/Widget.Aurora.Light.ListView">
+        <item name="auroragroupIndicator">@drawable/aurora_expander_group_light</item>
+        <item name="auroraindicatorLeft">?android:attr/expandableListPreferredItemIndicatorLeft</item>
+        <item name="auroraindicatorRight">?android:attr/expandableListPreferredItemIndicatorRight</item>
+        <item name="aurorachildDivider">?android:attr/listDivider</item>
+    </style>
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 end -->
+
+
+    <!-- Aurora added <Luofu> 2013-09-05  for searchview inputmethod button start -->
+
+    <style name="AuroraInputMethodbutton0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/aurora_inputmethod_button_text_color</item>
+        <item name="android:layout_marginLeft">1.5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:paddingLeft">0.1dp</item>
+        <item name="android:paddingRight">0.1dp</item>
+        <item name="android:background">@drawable/aurora_inputmethod_btn_normal</item>
+    </style>
+
+    <style name="AuroraInputMethodbutton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/aurora_inputmethod_button_text_color</item>
+        <item name="android:layout_marginLeft">1.5dp</item>
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">0.1dp</item>
+        <item name="android:paddingRight">0.1dp</item>
+        <item name="android:background">@drawable/aurora_inputmethod_btn_normal</item>
+    </style>
+
+    <style name="AuroraInputMethodbutton2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/aurora_inputmethod_button_text_color</item>
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">1.5dp</item>
+        <item name="android:paddingLeft">0.5dp</item>
+        <item name="android:paddingRight">0.5dp</item>
+        <item name="android:background">@drawable/aurora_inputmethod_btn_normal</item>
+    </style>
+    <!-- Aurora added <Luofu> 2013-09-05 for searchview inputmethod button end -->
+
+
+    <!-- Aurora added <jackycheng> 2013-09-11 add large text end -->
+    <style name="AuroraTextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHighlight">@color/aurora_focus_color</item>
+        <item name="android:textColorHint">@color/aurora_textcolor_hint</item>
+        <item name="android:textColorLink">@color/aurora_textcolor_link</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AuroraTextAppearanceLarge" parent="AuroraTextAppearance">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="AuroraTextAppearanceMedium" parent="AuroraTextAppearance">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="AuroraTextAppearanceSmall" parent="AuroraTextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AuroraTextAppearanceTiny" parent="AuroraTextAppearance">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="my_toast" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimationToast">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_exit</item>
+    </style>
+
+    <style name="Animation" />
+
+    <style name="Animation.RecentApplications">
+        <item name="android:windowEnterAnimation">@anim/recents_fade_in</item>
+        <item name="android:windowShowAnimation">@anim/recents_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/recents_fade_out</item>
+        <item name="android:windowHideAnimation">@anim/recents_fade_out</item>
+    </style>
+
+    <style name="Animation.ZoomButtons">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!-- luofu 2013-11-14 add for shutdown dialog begin -->
+    <style name="Aurora_Dialog_Fullscreen" parent="@android:style/Theme.NoTitleBar"> 
+       <item name="android:windowFullscreen">true</item> 
+       <item name="android:windowBackground">@color/aurora_shutdown_bg_color</item>
+　　   <item name="android:windowIsTranslucent">true</item>
+     
+    </style>  
+    <style name="AuroraShutdownDialogAnim">
+      <item name="android:windowEnterAnimation">@anim/fade_in</item>
+      <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+     <style name="AuroraDialogExit">
+      <item name="android:windowExitAnimation">@anim/aurora_dialog_exit</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance"></style>
+    <style name="TextAppearance.StatusBar" >
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    
+    <style name="TextAppearance.StatusBar.Icon">
+    </style>
+     <style name="TextAppearance.StatusBar.Ticker">
+    </style>
+    
+    <style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+     <style name="DialogWindowTitle.Holo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.DialogWindowTitle</item>
+    </style>
+    
+     
+     <style name="Widget.Aurora.Light.Button.Dialog" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/aurora_alert_dialog_btn_selector</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/aurora_primary_text_light</item>
+        <item name="android:minHeight">46dip</item>
+        <item name="android:minWidth">46dip</item>
+    </style>
+    
+    <!-- luofu 2013-11-14 add for shutdown dialog end -->
+    
+    <style name="AuroraSharedGridViewPaddings">
+        <item name="android:paddingLeft">@dimen/auroraSharedGridViewPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/auroraSharedGridViewPaddingRight</item>
+        <item name="android:paddingTop">@dimen/auroraSharedGridViewPaddingTop</item>
+        <item name="android:paddingBottom">@dimen/auroraSharedGridViewPaddingBottom</item>
+     
+    </style>
+    
+    
+    
+    <style name="TextAppearance.Aurora.Dark.Medium" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <!-- AuroraPreference TextAppearance  start -->
+    
+    <style name="AuroraPreference"></style>
+    <style name="AuroraPreference.Light">
+        <item name="android:textColor">@color/aurora_preference_text_disable_color</item>
+    </style>
+    <style name="AuroraPreference.Dark">
+        <item name="android:textColor">@color/aurora_preference_text_dark_color</item>
+    </style>
+    <style name="AuroraPreference.Light.Title">
+        <item name="android:textSize">18sp</item>
+        
+    </style>
+    
+    <style name="AuroraPreference.Light.Summary">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/aurora_preference_summary_disable_color</item>
+    </style>
+    
+    <style name="AuroraPreference.Light.Status">
+        <item name="android:textSize">15sp</item>
+    </style>
+    
+    
+    <!-- Dark -->
+    
+     <style name="AuroraPreference.Dark.Title">
+        <item name="android:textSize">18sp</item>
+        
+        
+    </style>
+    
+    <style name="AuroraPreference.Dark.Summary">
+        <item name="android:textSize">14sp</item>
+        
+    </style>
+    
+    <style name="AuroraPreference.Dark.Status">
+        <item name="android:textSize">15sp</item>
+        
+    </style>
+     <!-- AuroraPreference TextAppearance  end -->
+     
+     <style name="Widget.Aurora.Light.Dialog.Button" parent="@android:style/Widget.Button">
+     	<item name="android:textSize">19sp</item>
+     	<item name="android:textColor">@color/aurora_button_text_color</item>
+     	<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:background">@drawable/aurora_alert_dialog_btn_selector</item>
+    </style>    
+    
+    <style name="AuroraListViewStyle">
+        <item name="auroraListViewheaderShadowOffsetX">0</item>
+        <item name="auroraListViewheaderShadowOffsetY">0</item>
+        <item name="auroraShowRubbishIcon">true</item>
+    </style>
+     <!-- xxj add for list   start -->
+    <style name="AuroraListSingleLineStyle">
+       <item name="android:textSize">@dimen/aurora_list_singleline_text_size</item>
+       <item name="android:textColor">@color/aurora_list_textcolor</item>
+    </style>
+    <style name="AuroraListMainTextStyle">
+       <item name="android:textSize">@dimen/aurora_list_maintext_text_size</item>
+       <item name="android:textColor">@color/aurora_list_textcolor</item>
+    </style>
+    <style name="AuroraListSubTextStyle">
+       <item name="android:textSize">@dimen/aurora_list_subtext_text_size</item>
+       <item name="android:textColor">@color/aurora_list_subtext_content_textcolor</item>
+    </style>
+       <!-- xxj add for list   end -->
+    
+    <!-- tangjun 2014.7.24 add for alphabetlist start-->
+	<style name="AuroraAlphabetListStyle">
+        <item name="android:layout_height">@dimen/aurora_alphabetlist_height</item>
+        <item name="android:paddingRight">@dimen/aurora_alphabetlist_paddingright</item>
+        <item name="android:layout_marginTop">@dimen/aurora_alphabetlist_paddingtop</item>
+        <item name="android:textSize">@dimen/aurora_alphabetlist_textsize</item>
+    </style>
+    <!-- tangjun 2014.7.24 add for alphabetlist start-->
+	
+	<style name="AuroraCheckBoxStyle">
+        <item name="auroraRoundDrawable">true</item>
+    </style>
+    
+	<style name="AuroraPromptButton">
+        <item name="android:background">@drawable/aurora_prompt_button</item>
+        <item name="android:textColor">@color/aurora_prompt_button_color</item>
+        <item name="android:textSize">@dimen/aurora_prompt_button_size</item>
+        <item name="android:minHeight">@dimen/aurora_list_singleline_height</item>
+        <item name="android:minWidth">@dimen/aurora_prompt_button_minwidth</item>
+    </style>
+</resources>

@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:duplicateParentState="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- Turn off the alarm clock to display a red background by xiexiujie -->
+
+    <com.android.deskclock.BackgroundView
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!-- Turn off the alarm clock to display the text prompt "closing" by xiexiujie -->
+
+    <TextView
+        android:id="@+id/textView_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#98FFFFFF"
+        android:text="@string/fullscreenbg"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollviewtoclose"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/content_fullcreen"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:duplicateParentState="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.android.deskclock.DigitalClock
+                    android:id="@+id/digitalClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="106.6dp"
+                    android:baselineAligned="true"
+                    android:gravity="center" >
+
+                    <!-- Gionee <baorui><2013-06-15> modify for CR00820829 begin -->
+
+                    <com.android.deskclock.AndroidClockTextView
+                        android:id="@+id/timeDisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="73.3sp" />
+                    <!-- android jiating 20120614 begin -->
+
+                    <com.android.deskclock.AndroidClockTextView
+                        android:id="@+id/am_pm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/timeDisplay"
+                        android:layout_toRightOf="@id/timeDisplay"
+                        useClockTypeface="false"
+                        android:gravity="center"
+                        android:paddingLeft="4dip"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+                    <!-- android jiating 20120614 end -->
+                    <!-- Gionee <baorui><2013-06-15> modify for CR00820829 end -->
+                </com.android.deskclock.DigitalClock>
+
+                <LinearLayout
+                    android:id="@+id/stillsleeplinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/digitalClock"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="23dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@drawable/yaoyiyao" />
+
+                    <TextView
+                        android:id="@+id/stillsleeptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:text="@string/stillsleepfirst"
+                        android:textColor="@color/stillsleeptextcolor"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                
+                <TextView
+                        android:id="@+id/remarks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/stillsleeptextcolor"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="18sp"
+                        android:layout_below="@id/stillsleeplinear"
+                        android:layout_marginTop="18dp" 
+                        android:alpha="0.8"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:background="#00000000" />
+            <LinearLayout
+                android:id="@+id/slider_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/closearrow"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/alarmalertclose"
+                    android:textColor="@color/stopwatch_main_timeview_textcolor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="465dp"
+                android:background="#00000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

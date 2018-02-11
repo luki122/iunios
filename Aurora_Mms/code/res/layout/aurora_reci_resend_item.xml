@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-12-11 created for aurora's new feature -->
+<!-- Aurora xuyong 2013-12-17 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2014-03-17 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2014-04-03 modified for aurora's new feature start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="28dip"
+    android:paddingBottom="@dimen/list_item_bottom_margin"
+    android:paddingTop="@dimen/list_item_top_margin"
+    android:background="#ffffff">
+    <!-- Aurora xuyong 2013-12-17 modified for aurora's new feature start -->
+    <aurora.widget.AuroraCheckBox 
+        android:id="@+id/aurora_reci_check"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="3dip"
+        android:focusable="false"
+        android:clickable="false"
+        android:button="@null"/>
+    <!-- Aurora xuyong 2013-12-17 modified for aurora's new feature end -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/aurora_reci_check">
+<!-- Aurora xuyong 2013-12-17 modified for aurora's new feature end -->
+        <aurora.widget.AuroraTextView 
+            android:id="@+id/aurora_reci_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <aurora.widget.AuroraTextView 
+            android:id="@+id/aurora_reci_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aurora_reci_name"
+            android:layout_marginTop="@dimen/list_item_margin_between"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:textColor="#ff9c9c9c"
+            android:textSize="15sp"/>
+<!-- Aurora xuyong 2014-04-03 modified for aurora's new feature end -->
+    </RelativeLayout>
+<!-- Aurora xuyong 2014-03-17 modified for aurora's new feature end -->
+</RelativeLayout>

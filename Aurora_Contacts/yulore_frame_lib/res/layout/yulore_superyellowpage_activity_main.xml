@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@id/yulore_superyellowpage_top_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/yulore_superyellowpage_top_title_bar" />
+
+    <ScrollView
+        android:id="@id/yulore_superyellowpage_sv_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/yulore_superyellowpage_top_bar"
+        android:background="@color/yulore_superyellowpage_list_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yulore_superyellowpage_gray_white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <RelativeLayout
+                    android:id="@id/yulore_superyellowpage_rl_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/yulore_superyellowpage_search_box_bg"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@id/yulore_superyellowpage_iv_sc"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:contentDescription="@string/yulore_superyellowpage_app_name"
+                        android:src="@drawable/yulore_superyellowpage_icon_seaching" />
+
+                    <ImageView
+                        android:id="@id/yulore_superyellowpage_iv_search_delete"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="@string/yulore_superyellowpage_app_name"
+                        android:src="@drawable/yulore_superyellowpage_cancel"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/yulore_superyellowpage_et_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@id/yulore_superyellowpage_iv_sc"
+                        android:background="@null"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/yulore_superyellowpage_search_tips"
+                        android:singleLine="true"
+                        android:textColorHint="@color/yulore_superyellowpage_light_gray"
+                        android:textSize="@dimen/yulore_superyellowpage_fontsize_14" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_rl_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <com.yulore.superyellowpage.lib.view.AutoScrollViewPager
+                    android:id="@id/yulore_superyellowpage_vp_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@id/yulore_superyellowpage_ll_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_rl_top_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yulore_superyellowpage_gray_white"
+                android:paddingBottom="0.3dp"
+                android:paddingTop="0.3dp"
+                android:visibility="invisible" >
+
+                <com.yulore.superyellowpage.lib.view.MyGridView
+                    android:id="@id/yulore_superyellowpage_gv_top_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="0.3dp"
+                    android:numColumns="4"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_rl_clipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yulore_superyellowpage_gray_white"
+                android:orientation="horizontal"
+                android:paddingBottom="0.3dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible" >
+
+                <com.yulore.superyellowpage.lib.view.MyGridView
+                    android:id="@id/yulore_superyellowpage_gv_clipper_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="0.3dp"
+                    android:numColumns="4"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.3dp" >
+                </com.yulore.superyellowpage.lib.view.MyGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_more_service"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/yulore_superyellowpage_white"
+                android:clickable="true"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@id/yulore_superyellowpage_iv_more_service"
+                    android:layout_width="24dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_menu_down"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/yulore_superyellowpage_rl_common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/yulore_superyellowpage_white"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@id/yulore_superyellowpage_more_tips_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/yulore_superyellowpage_wait_for_tips_intro" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/yulore_superyellowpage_bt_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/yulore_superyellowpage_bg_personcenter"
+                android:paddingBottom="15dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:paddingTop="15dp"
+                android:text="@string/yulore_superyellowpage_title_personal"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/yulore_superyellowpage_list_loading"
+        android:visibility="invisible" />
+
+</RelativeLayout>

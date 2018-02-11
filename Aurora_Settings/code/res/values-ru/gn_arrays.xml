@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+<resources>
+        <string-array name="gn_timeout_close_torch_options">    
+        <item>Не выключить</item>    
+        <item>1 минута</item>    
+        <item>2 минуты</item>    
+        <item>3 минуты</item>  
+        <item>4 минуты</item>    
+    </string-array>    
+    <string-array name="gn_timeout_close_torch_values">    
+        <item>0</item>    
+        <item>1</item>    
+        <item>2</item> 
+        <item>3</item>    
+        <item>4</item>     
+    </string-array>
+<!-- GIONEE: dingwen 20120727 add for contorl button light begin -->
+<string-array name="gn_entries_buttonlight">
+        <item>2 секунды</item>
+        <item>Всегда включить</item>
+        <item>Всегда выключить</item>
+        <item>Зависит от внешней яркости</item>
+    </string-array>
+
+    <string-array name="gn_entryvalues_buttonlight">
+<!-- Do not translate. -->
+<item>0</item>
+<!-- Do not translate. -->
+<item>1</item>
+<!-- Do not translate. -->
+<item>2</item>
+<!-- Do not translate. -->
+<item>3</item>
+    </string-array>
+<!-- GIONEE: dingwen 20120727 add for contorl button light end -->
+<!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+<string-array name="gn_entries_font_size">
+        <item>Маленький размер</item>
+        <item>Стандартный размер</item>
+        <item>Средний размер</item>
+        <item>Большой размер</item>
+        <item>Крупный размер</item>
+    </string-array>
+<!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+<!-- Gionee <chenml> <2013-05-29> add for CR00821135 begin  -->
+<string-array name="gn_screen_size_entries" translatable="false">
+        <item>Большой</item>
+        <item>Средний</item>
+        <item>Маленький</item>
+    </string-array>
+<!-- Gionee <chenml> <2013-05-29> add for CR00821135 end  -->
+<!-- qy 2014 03 27 
+    <item >U盘模式</item>
+    <item >把手机作为U盘使用</item>
+    -->
+<string-array name="usb_conn_title_entries">
+        
+        <item >Медиа устройство (MTP)</item>
+        <item >Режим камеры (PTP)</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_entries">
+        
+        <item >Можно сохранить и использовать данные</item>
+        <item >Можно передать фото приложениями камеры</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_title_compa_entries">
+        
+        <item >Медиа устройство (MTP)</item>
+        <item >Режим камеры (PTP)</item>
+        
+    </string-array>  
+    <string-array name="usb_conn_summary_compa_entries">
+        
+        <item >Можно сохранить и использовать данные</item>
+        <item >Можно передать фото приложениями камеры</item>
+        
+    </string-array>   
+</resources>
+<!-- Gionee dengm 2012-05-03 added for CR00622042 end-->

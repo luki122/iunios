@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/HaveFlowPackageLayout" android:visibility="gone"
+      android:layout_width="fill_parent" android:layout_height="fill_parent">
+      <LinearLayout
+          android:id="@+id/remainDataLayout"
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:paddingLeft="7dp" android:paddingRight="7dp"
+          android:orientation="horizontal" 
+          android:layout_marginTop="38dp" android:layout_centerHorizontal="true" >
+          <TextView
+               android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:textSize="@dimen/main_act_big_text_size"  android:textColor="@color/black"
+               android:text="@string/remain_data"/>
+          <TextView
+               android:id="@+id/remainData"
+               android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:paddingLeft="3dp" android:paddingRight="3dp"
+               android:textSize="@dimen/main_act_big_text_size" android:textColor="@color/info_text_color"
+               android:text="@string/remain_data"/> 
+          <TextView
+               android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:textSize="@dimen/main_act_big_text_size" android:textColor="@color/black"
+               android:text="@string/day"/>     
+      </LinearLayout>        
+      <View
+          android:id="@+id/line"
+	      android:layout_width="fill_parent" android:layout_height="1px"
+	      android:background="@drawable/line" android:layout_below="@id/remainDataLayout"
+	      android:layout_alignLeft="@id/remainDataLayout" android:layout_alignRight="@id/remainDataLayout"
+	      android:layout_marginTop="12dp"/>
+      <LinearLayout
+          android:id="@+id/modifyLayout" 
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:layout_below="@id/line"  android:layout_marginTop="12dp"
+          android:layout_centerHorizontal="true"
+          android:orientation="horizontal" android:gravity="center_vertical">
+          <TextView
+              android:id="@+id/modifyLayoutText"
+	          android:layout_width="wrap_content" android:layout_height="wrap_content"
+	          android:textSize="@dimen/main_act_small_text_size" android:textColor="@color/info_text_color"
+	          android:text="@string/flow_error_manual_correction"/>
+          <ImageView
+              android:id="@+id/haveFlowArrow"
+              android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginLeft="8dp"
+              android:src="@drawable/modify_flow_arrow"/>
+      </LinearLayout>
+
+</RelativeLayout>  
+
+

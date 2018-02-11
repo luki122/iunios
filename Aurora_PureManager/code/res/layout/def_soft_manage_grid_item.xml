@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="64.34dp"
+        android:layout_height="67.3dp" >
+
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left|bottom" >
+
+            <ImageView
+                android:id="@+id/appIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/sysAppFlag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/sys_app_flag"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="@dimen/def_soft_manage_grid_item_sysAppFlag_paddingBottom"
+                android:paddingLeft="@dimen/def_soft_manage_grid_item_sysAppFlag_paddingLeft"
+                android:paddingStart="@dimen/def_soft_manage_grid_item_sysAppFlag_paddingLeft"
+                android:text="@string/system"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/def_soft_flag" />
+    </FrameLayout>
+
+</FrameLayout>

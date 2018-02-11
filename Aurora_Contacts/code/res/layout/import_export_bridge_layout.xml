@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:minHeight="?attr/list_item_header_height"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/list_item_header_height"
+            android:paddingLeft="@dimen/gn_contact_list_item_headertext_left_margin"
+            android:text="@string/tips_source"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:singleLine="true"            
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/gn_list_item_header_text_size" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/gn_contact_list_item_headertext_left_margin"
+        android:paddingRight="@dimen/gn_contact_list_item_headertext_left_margin" >
+        
+	    <aurora.widget.AuroraListView
+	        android:id="@+id/list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="?attr/kind_editors_bg" />    
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/buttonbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gn_action_button_padding"
+        android:orientation="horizontal" >
+	    <!-- android:padding="@dimen/gn_contact_list_item_headertext_left_margin" -->
+
+        <!-- <aurora.widget.AuroraButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:padding="0dip"
+            android:text="@string/back" /> -->
+
+        <aurora.widget.AuroraButton
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</LinearLayout>

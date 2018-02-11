@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_album_delete"
+        android:icon="@drawable/aurora_delete_button_u3"
+        >
+    </item>
+    <item
+        android:id="@+id/menu_album_addtolist"
+        android:icon="@drawable/aurora_add_playlist_button_u3"
+        >
+    </item>
+
+</menu>

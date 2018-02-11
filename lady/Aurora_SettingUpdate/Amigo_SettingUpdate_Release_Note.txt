@@ -1,0 +1,28 @@
+==================
+Build Notes
+==================
+1.版本目的:
+fix bug
+2.功能变更:
+menu图标问题
+3.重点测试的问题:
+menu图标问题
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/Amigo_SettingUpdate/Amigo_SettingUpdate_02_4.2_V2.2.1.m.zip
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingUpdate/trunk
+CR00836453	Opened	系统升级	wangyy	提交amigo修改	svn revision(57)
+Tag url: http://192.168.110.97/svn/Amigo_SettingUpdate/tags/Amigo_SettingUpdate_02_V2.2.1.m
+Previous tag: Amigo_SettingUpdate_02_V2.2.1.l
+Code difference: svn diff -r 57:56 http://192.168.110.97/svn/Amigo_SettingUpdate/trunk
+==================
+make sonar URL:
+http://ss.alm.gionee.com/sonar/dashboard/index/gionee.app:Amigo_SettingUpdate 
+==================

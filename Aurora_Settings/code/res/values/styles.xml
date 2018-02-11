@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="info_label">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:paddingEnd">4dip</item>
+    </style>
+
+    <style name="info_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_value</item>
+    </style>
+
+    <style name="info_small">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.info_small</item>
+    </style>
+
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingEnd">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="entry_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="form_value">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+    <style name="TextAppearance" parent="android:TextAppearance">
+    </style>
+
+    <style name="TextAppearance.info_label">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.info_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.info_value">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TallTitleBarTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.CreateShortCut" parent="android:Theme.Holo.DialogWhenLarge">
+    </style>
+
+    <style name="setup_wizard_theme" parent="android:Theme.Holo.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="@*android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
+    </style>
+
+    <!-- We'd like to have this as 16dip hight including paddingTop/paddingBottom to
+         be consistent with ProgressBar -->
+    <style name="TopDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/setup_divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_marginTop">@dimen/divider_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/divider_margin_bottom</item>
+    </style>
+
+    <style name="SetupTitle">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/setup_title_size</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+ 
+    <style name="wifi_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginStart">16dip</item>
+        <item name="android:layout_marginEnd">16dip</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="wifi_item_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="wifi_item_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+	<style name="aurora_vpn_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">47dip</item>
+        <item name="android:layout_marginStart">0dip</item>
+        <item name="android:layout_marginEnd">0dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/aurora_frame_list_bg_light</item>
+    </style>
+    <!-- Aurora <likai> add begin -->
+    <style name="aurora_wifi_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dip</item>
+        <item name="android:layout_marginStart">15dip</item>
+        <item name="android:layout_marginEnd">15dip</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/aurora_frame_list_bg_light</item>
+    </style>
+
+    <style name="aurora_wifi_item_label">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="aurora_wifi_ap_ignore">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="aurora_wifi_item_content">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="aurora_wifi_item_widget_main">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="aurora_wifi_item_widget">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">7</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="aurora_baseline_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">14dip</item>
+    </style>
+
+    <style name="aurora_baseline_vertical_main">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+    <style name="aurora_baseline_vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/aurora_baseline_vertical</item>
+    </style>
+    <!--   <item name="android:background">@drawable/aurora_baseline_vertical</item> -->
+    <!-- Aurora <likai> add end -->
+
+    <style name="wifi_section">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="setup_wizard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CryptKeeperBlankTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:background">#ff000000</item>
+    </style>
+
+    <!-- Gionee:zhang_xin 2012-12-27 modify for CR00746738 start -->
+    <!-- <style name="SecurityPreferenceButtonContainer" parent="@android:style/Holo.SegmentedButton">-->
+    <style name="SecurityPreferenceButtonContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2</item>
+        <item name="android:dividerPadding">8dip</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 begin-->        
+        <item name="android:layout_marginBottom">8dp</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 end-->
+    </style>
+    <!-- Gionee <chenml> <2013-08-23> modify for CR00857897 begin  -->
+    <!-- <style name="SecurityPreferenceButton" parent="@android:style/Widget.Holo.Button.Borderless">-->
+    <style name="SecurityPreferenceButton">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 begin-->
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <!--Gionee <wangyaohui><2013-06-22> add for CR00829050 end-->
+         <!-- gionee wangyaohui 20120805 add for CR00659237 begin -->
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <!-- gionee wangyaohui 20120805 add for CR00659237 end -->
+    </style>
+    <!-- Gionee:zhang_xin 2012-12-27 modify for CR00746738 end -->
+    <!-- Gionee <chenml> <2013-08-23> modify for CR00857897 end  -->
+    <style name="vpn_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+	<style name="vpn_new_label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ff878787</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="vpn_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="InputMethodPreferenceStyle">
+        <item name="android:layout">@layout/preference_inputmethod</item>
+        <item name="android:widgetLayout">@layout/preference_inputmethod_widget</item>
+    </style>
+
+    <style name="TextAppearance.Switch" parent="@*android:style/TextAppearance.Holo.Widget.Switch">
+        <item name="android:textAllCaps">true</item>
+    </style>
+<!--
+        <item name="android:textStyle">bold</item>
+-->
+    <style name="TextAppearance.PagerTabs" parent="@android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:textAllCaps">true</item>
+        <!-- Gionee <wangyaohui><2013-07-01> add for CR00829050 begin -->
+        <item name="android:textColor">@color/gn_tabwidget_text_color</item>
+        <item name="android:textSize">12sp</item>
+         <!-- Gionee <wangyaohui><2013-07-01> add for CR00829050 end -->
+    </style>
+
+    <style name="KeyguardAppWidgetItem">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+    <!-- apn aurora 
+    <item name="android:textColor">@color/aurora_preference_text_disable_color</item>-->
+    
+   <style name="AuroraPreferenceTitle" parent="@android:style/TextAppearance.Holo.Medium">
+        <item name="android:textSize">18sp</item>
+        
+    </style>
+    
+    
+    <!-- Gionee <xuwen><2013-07-09> add for CR00834689 begin -->  
+    <style name="TransparentDumb" parent="@com.aurora:style/Theme.Aurora.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="*android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Gionee <xuwen><2013-07-09> add for CR00834689 end -->
+    
+    
+    <!-- add begin by aurora.jiangmx -->
+    <style name="app_icon_of_listview">	     
+	     <item name="android:layout_width">43.3dp</item>
+	     <item name="android:layout_height">43.3dp</item>
+	     <item name="android:layout_marginLeft">17dp</item>
+	     <item name="android:layout_marginTop">10dp</item>
+	     <item name="android:layout_marginBottom">10dp</item>
+	</style>
+	
+    
+    <!-- add end -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- add begin by aurora penggangding -->
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    
+    
+    <style name="button_text">				
+	     <item name="android:textColor">@drawable/btn_text_title_selector_color</item>
+	     <item name="android:textSize">18sp</item>     
+    </style>
+    
+        <style name="edit_info">
+        <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:minLines">7</item>
+        <item name="android:textColorHint">#a9a9a9</item>
+        <item name="android:textSize"	>15dp</item>
+         <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background"	>@drawable/edittext_styles</item>
+    </style>
+    
+    <style name="layout_inter">
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:textColor">#cc000000</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+    
+    <!--  <item name="android:textColor">#50000000</item> -->
+    <style name="edittext_info_style">
+         <item name="android:textSize">13sp</item>
+         <item name="android:layout_marginLeft">17dp</item>
+         <item name="android:singleLine">false</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:minLines">7</item>
+        <item name="android:textColorHint">#a9a9a9</item>
+        <item name="android:layout_marginRight">17dp</item>
+        <item name="android:background"	>@drawable/edittext_styles</item>
+     </style>
+    
+     <style name="text_info_style">
+         <item name="android:textColor">#cc000000</item>
+         <item name="android:textSize">18sp</item>
+         <item name="android:layout_marginLeft">20dp</item>
+         <item name="android:gravity">center|center_vertical</item>
+     </style>
+     
+     <style name="note_info_style">
+         <item name="android:textColor">#50000000</item>
+         <item name="android:textSize">11sp</item>
+         <item name="android:layout_marginLeft">17dp</item>
+         <item name="android:layout_marginRight">17dp</item>
+         <item name="android:gravity">center|center_vertical</item>
+     </style>
+     
+    <style name="btn_info_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+         <item name="android:textColor">#cc000000</item>
+         <item name="android:textSize">18sp</item>
+         <item name="android:layout_marginLeft">17dp</item>
+         <item name="android:layout_marginRight">17dp</item>
+         <item name="android:gravity">center|center_vertical</item>
+         <item name="android:text">@string/commit</item>
+     </style>
+    
+    <style name="MyTheme">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+    </style>
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/slide_out_right</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+    
+    <!-- add end by aurora penggangding -->
+    
+</resources>

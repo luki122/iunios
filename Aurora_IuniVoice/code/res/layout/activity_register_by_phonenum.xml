@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_17" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_countryCode"
+            style="@style/Account_Layout_Item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/register_layout_item_min_height"
+            android:layout_marginBottom="@dimen/padding_14"
+            android:background="@drawable/common_bg_alone_selector"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_countryCode"
+                style="@style/Account_Layout_Item_TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cet_phoneNum_ly"
+            style="@style/Account_Layout_Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bg_top_selector"
+            android:orientation="horizontal" >
+
+            <com.aurora.iunivoice.widget.ClearableEditText
+                android:id="@+id/cet_phoneNum"
+                style="@style/Account_ClearableEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/register_please_input_phonenum"
+                android:inputType="phone"
+                android:maxLength="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cet_password_ly"
+            style="@style/Account_Layout_Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_bg_bottom_selector" >
+
+            <com.aurora.iunivoice.widget.ClearableEditText
+                android:id="@+id/cet_password"
+                style="@style/Account_ClearableEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/register_please_input_pwd"
+                android:maxLength="@integer/password_max_length" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vc_code_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_vc_code_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.aurora.iunivoice.widget.ClearableEditText
+                android:id="@+id/vc_code_cet"
+                style="@style/Account.TextView.Login"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/common_edittext_bg_alone_selector"
+                android:hint="@string/login_vc_code_hint"
+                android:maxLength="10" />
+
+            <com.aurora.iunivoice.widget.VerifyCodeView
+                android:id="@+id/vc_code_iv"
+                style="@style/Account.VerifyCodeView" />
+        </LinearLayout>
+
+        <include layout="@layout/error_info_layout" />
+
+        <include layout="@layout/password_format_tips_layout" />
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/btn_next"
+        style="@style/Account.Button.Next"
+        android:layout_alignParentBottom="true" />
+    -->
+
+</RelativeLayout>

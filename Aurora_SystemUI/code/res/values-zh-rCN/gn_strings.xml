@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="zzzzz_slot_a">"A 卡 "</string>
+    <string name="zzzzz_slot_b">"B 卡 "</string>
+
+    <!-- Gionee dingwen 20120509 modify for CR00596474 start -->
+    <string name="zzzzz_remind_next_time">下次不提醒我</string>
+    <!-- Gionee dingwen 20120509 modify for CR00596474 end -->
+    <!-- Gionee huangyc 2012-7-6 add for CR00622045 start -->
+    <string name="zzzzz_gnlauncher">金立桌面</string>
+    <!-- Gionee huangyc 2012-7-6 add for CR00622045 end -->
+    <!-- Gionee huangwenting 2012-9-6 add for CR00688643 start -->
+    <!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 start -->
+    <!-- string name="zzzzz_gnpowerprofile">省电模式</string -->
+    <string name="zzzzz_gnpowerprofile">一键省电</string>
+    <!-- Gionee fengjianyi 2013-05-14 modify for CR00800567 end -->
+    <!-- Gionee huangwenting 2012-9-6 add for CR00688643 end -->
+    <!-- Gionee zengxuanhui 20120712 modify for CR00560331 begin -->
+    <string name="switch_to_internal_storage">切换到内部存储器</string>
+    <string name="switch_to_external_storage">切换到外部存储器</string>
+    <string name="storage_has_no_space">存储空间不足</string>
+    <!-- Gionee zengxuanhui 20120712 modify for CR00560331 end -->
+
+    <!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 start -->
+    <string name="airlinemode_confirm_message">手机将进入飞行模式，所有的无线通讯将关闭，是否继续？</string>
+    <!-- Gionee:zhang_xin 2012-7-21 add for CR00652429 end -->
+    
+    <!-- Gionee qiuxd 20121017 add for CR00714767 start -->
+    <string name="zzzzz_gnguestmode">访客模式</string>
+    <!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 begin -->
+    <!-- Gionee fengjianyi 2012-10-22 add for CR00705430 start -->
+    <!--<string name="goto_guest_mode_warning">将会隐藏通话记录、信息、相册、便签数据并锁定桌面，确定要进入访客模式吗？</string>-->
+    <string name="goto_guest_mode_warning">将会隐藏通话记录、信息、图库、便签数据并禁止编辑桌面，也可在设置-安全中开启密码保护，确定进入访客模式吗？</string>
+    <!-- Gionee fengjianyi 2012-10-22 add for CR00705430 end -->
+    <!-- Gionee <qiuxd> <2013-05-07> add for CR00802506 end -->
+    <!-- Gionee qiuxd 20121017 add for CR00714767 end -->
+    
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/display_settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+        <!-- Aurora <likai> modify begin -->
+        <!-- 
+        <com.android.settings.BrightnessPreference
+                aurora:aurorakey="brightness"
+                aurora:auroratitle="@string/brightness"
+                aurora:auroradialogTitle="@string/brightness" />
+        -->
+        <!-- Aurora <likai> <2013-11-04> modify begin -->
+        <!-- 
+        <com.android.settings.AuroraBrightnessPreference
+                aurora:aurorakey="brightness"
+                aurora:auroratitle="@string/brightness"
+                aurora:aurorabottomwidgetLayout="@layout/aurora_preference_widget_brightness" />
+        -->
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="aurora_automatic"
+                aurora:auroratitle="@string/aurora_display_brightness" />
+        <com.android.settings.AuroraBrightnessPreference2
+                aurora:aurorakey="aurora_brightness" />
+        <!-- Aurora <likai> <2013-11-04> modify end -->
+        <!-- Aurora <likai> modify end -->
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="wallpaper"
+                aurora:auroratitle="@string/wallpaper_settings_title"
+                aurora:aurorafragment="com.android.settings.WallpaperTypeSettings" />
+        <!--Gionee 2012-09-04 lihq modify for CR00682401 start -->
+       <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="wallpaper_change"
+                aurora:auroratitle="@string/wallpaper_settings_title">
+                <intent
+            	android:action="com.gionee.change.wallpaper"
+            	/>
+         </aurora.preference.AuroraPreferenceScreen>     
+         <!--Gionee 2012-09-04 lihq modify for CR00682401 end -->
+
+        <!-- Aurora <likai> delete begin -->
+        <!-- 
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="accelerometer"
+            aurora:auroratitle="@string/accelerometer_title"/>
+        --> 
+        <!-- Aurora <likai> delete end -->
+
+        <aurora.preference.AuroraListPreference
+                aurora:aurorakey="screen_timeout"
+                aurora:auroratitle="@string/screen_timeout"
+                aurora:aurorasummary="@string/screen_timeout_summary"
+                aurora:aurorapersistent="false"
+                aurora:auroraentries="@array/screen_timeout_entries"
+                aurora:auroraentryValues="@array/screen_timeout_values" />
+
+        
+        <aurora.preference.AuroraPreferenceCategory />
+		<!-- Aurora <likai> add begin
+        <com.android.settings.AuroraScreenTimeoutPreference
+                aurora:aurorakey="aurora_screen_timeout"
+                aurora:auroratitle="@string/aurora_display_screen_timeout"
+                aurora:aurorabottomwidgetLayout="@layout/aurora_preference_widget_screen_timeout" />
+                
+                 -->
+        <!-- qy -->
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="aurora_pref_screen_timeout"
+            aurora:auroratitle="@string/aurora_display_screen_timeout"
+            />
+        <!--  
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="aurora_font_size_new"
+            aurora:auroratitle="@string/title_font_size"
+            />
+        -->
+        <!-- -->
+         <aurora.preference.AuroraPreferenceCategory />
+
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="font_bold"
+            aurora:auroratitle="@string/font_bold_pref_title" />
+           
+
+        <aurora.preference.AuroraPreferenceCategory />
+
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="accelerometer"
+            aurora:auroratitle="@string/accelerometer_title" />
+        <!-- Aurora <likai> add end -->
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="screensaver"
+                aurora:auroratitle="@string/screensaver_settings_title"
+                aurora:aurorafragment="com.android.settings.DreamSettings" />
+        <!-- Gionee:niejn 20120523 add for CR00605063 begin -->
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="font_category"
+                aurora:auroratitle="@string/gn_title_font_category" />
+        <!-- Gionee:niejn 20120523 add for CR00605063 end -->     
+
+        <!-- Aurora <likai> add begin -->
+        <com.android.settings.AuroraFontSizePreference
+                aurora:aurorakey="aurora_font_size"
+                aurora:auroratitle="@string/aurora_display_font_size"
+                aurora:aurorabottomwidgetLayout="@layout/aurora_preference_widget_font_size" />
+        <!-- Aurora <likai> add end -->
+
+        <com.android.settings.WarnedListPreference
+                aurora:aurorakey="font_size"
+                aurora:auroratitle="@string/title_font_size"
+                aurora:aurorasummary="@string/summary_font_size"
+                aurora:auroraentries="@array/entries_font_size"
+                aurora:auroraentryValues="@array/entryvalues_font_size"
+                aurora:auroradialogTitle="@string/dialog_title_font_size" />
+
+        <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+        <aurora.preference.AuroraPreferenceScreen 
+            aurora:aurorakey="gn_font_size"
+            aurora:auroratitle="@string/title_font_size"
+            aurora:aurorasummary="@string/summary_font_size">
+            <intent
+                android:targetPackage="com.android.settings"
+                android:targetClass  ="com.android.settings.GnFontSizeActivity" />
+        </aurora.preference.AuroraPreferenceScreen>
+        <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="notification_pulse"
+            aurora:auroratitle="@string/notification_pulse_title"
+            aurora:aurorapersistent="false" />
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="wifi_display"
+                aurora:auroratitle="@string/wifi_display_settings_title"
+                aurora:aurorafragment="com.android.settings.wfd.WifiDisplaySettings" />
+         <!-- Gionee chenml 2013-04-10 add for CR00795467 begin-->
+
+        <!-- Aurora <likai> add begin -->
+        <aurora.preference.AuroraPreferenceCategory />
+        <!-- Aurora <likai> add end -->
+
+        <!-- Aurora <likai> modify begin -->
+        <!-- 
+        <aurora.preference.AuroraCheckBoxPreference aurora:aurorakey="gn_button_light"
+                aurora:auroratitle="@string/gn_button_light"/>
+        -->
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="gn_button_light"
+                aurora:auroratitle="@string/aurora_display_button_light" />
+        <!-- Aurora <likai> modify end -->
+
+         <!-- Gionee chenml 2013-04-10 add for CR00795467 end-->
+        <aurora.preference.AuroraCheckBoxPreference aurora:aurorakey="lock_screen_notifications"
+                aurora:auroratitle="@string/lock_screen_notifications_title"
+                aurora:aurorasummary="@string/lock_screen_notifications_summary"/>
+
+</aurora.preference.AuroraPreferenceScreen>

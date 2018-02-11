@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.widget.GnStrangeNumberHandler 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="5dip"
+    	android:background="@drawable/gn_quickcontact_photo_background" >
+	    <ImageView
+	        android:id="@+id/gn_photo"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:scaleType="centerCrop" />
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent" >
+	        <TextView
+	            android:id="@+id/name"	            
+	            android:layout_width="match_parent"
+	    		android:layout_height="42dip"
+	    		android:layout_gravity="bottom"
+	    		android:background="#7F000000"
+	    		android:paddingLeft="8dip"
+	            android:singleLine="true"
+	            android:ellipsize="end"
+	            android:gravity="center_vertical"
+	            android:textColor="@android:color/white"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:paddingRight="16dip"
+	            android:visibility="gone" />
+	    </LinearLayout>
+    </FrameLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="64dip"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:background="?attr/quickcontact_list_bg"
+	    android:layout_margin="5dip" >
+	
+	    <LinearLayout android:id="@+id/gn_call_action"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:paddingLeft="@dimen/call_log_indent_margin"
+	        android:orientation="vertical"
+	        android:gravity="center_vertical"
+	        android:focusable="true"
+	        android:background="?android:attr/selectableItemBackground" >
+	
+	        <!-- android:textColor="?attr/call_log_primary_text_color" -->
+	        <TextView android:id="@+id/gn_call_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="16sp"
+	            android:textColor="@color/primary_text_color"
+	            android:singleLine="true" />
+
+            <TextView android:id="@+id/gn_call_area"
+                android:layout_width="wrap_content"
+             	android:layout_height="wrap_content"
+             	android:textAppearance="?android:attr/textAppearanceSmall"
+             	android:textColor="@color/secondary_text_color"
+             	android:visibility="gone"
+             	android:textAllCaps="true" />
+	    </LinearLayout>
+	    
+	    <View android:id="@+id/gn_vedio_call_divider"
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:background="?android:attr/dividerVertical"
+	        android:layout_gravity="center_vertical" />
+	    
+	    <ImageView android:id="@+id/gn_vedio_call_action"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="@dimen/call_log_outer_margin"
+	        android:paddingRight="@dimen/call_log_outer_margin"
+	        android:gravity="center"
+	        android:scaleType="centerInside"
+	        android:focusable="true"
+	        android:background="?android:attr/selectableItemBackground"
+	        android:src="@drawable/ic_video_call" />
+	
+	    <View android:id="@+id/gn_sms_divider"
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:background="?android:attr/dividerVertical"
+	        android:layout_gravity="center_vertical" />
+	
+	    <ImageView android:id="@+id/gn_sms_action"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="@dimen/call_log_outer_margin"
+	        android:paddingRight="@dimen/call_log_outer_margin"
+	        android:gravity="center"
+	        android:scaleType="centerInside"
+	        android:focusable="true"
+	        android:src="@drawable/ic_text_holo_light"
+	        android:background="?android:attr/selectableItemBackground" />
+	</LinearLayout>
+    
+<!--     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@android:color/transparent" /> -->
+    
+    <LinearLayout
+        android:layout_width="290dip"
+        android:layout_height="wrap_content"
+        android:background="?attr/quickcontact_list_bg"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal" >
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:gravity="center"
+		    android:layout_weight="1" >
+		    
+		    <TextView 
+		        android:id="@+id/gn_new_contact"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="match_parent"
+		    	android:gravity="center"
+		    	android:drawableTop="?attr/gn_ic_add_contact"
+		    	style="@style/QuickContactListItemStyle"
+		    	android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+		    	android:textColor="@android:color/black"
+		    	android:text="@string/gn_dialpad_new_contact_item"
+		    	android:clickable="true"
+		    	android:background="?android:attr/selectableItemBackground"/>
+		</LinearLayout>
+		
+        <View
+	        android:layout_width="1dip"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/list_divider" />
+        		    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1" >
+            
+		    <TextView
+		        android:id="@+id/gn_add_exist"
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+	    		android:drawableTop="?attr/gn_ic_add_existing_contact"
+		    	style="@style/QuickContactListItemStyle"
+		    	android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+		    	android:textColor="@android:color/black"
+		    	android:text="@string/gn_dialpad_add_exist_contact_item"
+		    	android:clickable="true"
+		    	android:background="?android:attr/selectableItemBackground"/>
+		</LinearLayout>
+		    	
+	    <!-- Gionee:huangzy 20120806 add for CR00667827 start -->	
+	    <View
+	        android:id="@+id/gn_add_blacklist_divider"
+	        android:layout_width="1dip"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/list_divider" />
+		    
+            <LinearLayout
+                android:id="@+id/gn_add_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+		    <TextView
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+	    		android:drawableTop="@drawable/gn_quick_add_to_black_contact_icon"
+		    	style="@style/QuickContactListItemStyle"
+		    	android:textAppearance="?android:attr/textAppearanceMedium"
+		    	android:textSize="16sp"
+		    	android:textColor="@android:color/black" 
+		    	android:text="@string/gn_add_blacklist"
+		    	android:clickable="true"
+		    	android:background="?android:attr/selectableItemBackground"/>
+	    <!-- Gionee:huangzy 20120806 add for CR00667827 end -->
+	    </LinearLayout>
+    </LinearLayout>
+
+</com.android.contacts.widget.GnStrangeNumberHandler>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/Calendar/assets/res/any/colors.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+
+    <color name="pressed">#330066ff</color>
+
+    <color name="selection">@android:color/holo_blue_light</color>
+
+    <color name="today_highlight_color">#0033b5e5</color>
+
+    <!-- The app wide background color -->
+    <color name="background_color">#fafafa</color>
+    <color name="event_background">#ffc3d9ff</color>
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#ffFFFFFF</color>
+
+    <color name="calendar_owner_text_color">#777777</color>
+    <color name="calendar_date_range_color">#80000000</color>
+
+    <color name="black">#000000</color>
+    <color name="gray">#666666</color>
+
+    <color name="week_saturday">#80333333</color>
+    <color name="week_sunday">#80333333</color>
+    <color name="calendar_future_bg_color">#ffffffff</color>
+    <color name="calendar_hour_label">#ff666666</color>
+    <color name="calendar_ampm_label">#ff999999</color>
+    <color name="calendar_hour_background">#ffEEEEEE</color>
+
+    <color name="calendar_date_banner_background">#FFEEEEEE</color>
+
+    <color name="calendar_date_banner_text_color">#ff666666</color>
+
+    <color name="calendar_grid_area_selected">#e633b5e5</color>
+
+
+    <color name="calendar_grid_line_inner_horizontal_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_inner_vertical_color">#FFCCCCCC</color>
+    <color name="calendar_grid_line_highlight_color">#ff707070</color>
+
+    <color name="mini_month_bg_color">#FFFFFFFF</color>
+    <color name="mini_month_today_outline_color">#FF000000</color>
+
+    <color name="month_day_number">#FF333333</color>
+    <color name="month_mini_day_number">#FF000000</color>
+    <color name="month_day_number_other">#FF999999</color>
+    <color name="month_week_num_color">#FF999999</color>
+    <color name="month_day_names_color">#FF999999</color>
+    <color name="month_today_number">#FF333333</color>
+    <color name="month_event_color">#FF333333</color>
+    <color name="month_event_extra_color">#FF666666</color>
+    <color name="month_event_other_color">#FF666666</color>
+    <color name="month_event_extra_other_color">#4C999999</color>
+    <color name="month_saturday">#80333333</color>
+    <color name="month_sunday">#80333333</color>
+    <color name="month_grid_lines">#ffCCCCCC</color>
+    <color name="month_other_month_day_number">#ff939497</color>
+
+
+
+    <color name="month_other_bgcolor">#FFEEEEEE</color>
+    <color name="month_selected_week_bgcolor">#FFDDDDDD</color>
+    <color name="month_today_bgcolor">#FFFFFFFF</color>
+    <color name="month_bgcolor">#FFE5E5E5</color>
+
+
+
+    <color name="month_dna_conflict_time_color">#FF333333</color>
+
+    <color name="event_center">#ff6bd697</color>
+    <color name="edit_event_separator">#FFDDDDDD</color>
+
+    <color name="calendar_visible">#ff000000</color>
+    <color name="calendar_hidden">#ff808080</color>
+    <color name="calendar_secondary_visible">#ff323232</color>
+    <color name="calendar_secondary_hidden">#ff808080</color>
+
+    <!-- Text color of the date in the Calendar widget -->
+
+    <color name="agenda_item_not_selected">#00000000</color>
+    <!-- Text color of declined events in agenda view -->
+    <color name="agenda_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in agenda view -->
+    <color name="agenda_item_standard_color">#FF333333</color>
+    <!-- Background Color of present/future events in agenda view  -->
+    <color name="agenda_day_bar_background_color">#FFFFFFFF</color>
+    <!-- Background Color of past events in agenda view  -->
+    <color name="agenda_past_days_bar_background_color">#FFDDDDDD</color>
+    <!-- Color of the separator between the past and the present/future in agenda view  -->
+    <color name="agenda_past_present_separator_color">#FF333333</color>
+    <!-- General background color in agenda view  -->
+    <color name="agenda_general_background_color">#FFEEEEEE</color>
+    <!-- Agenda day item text color  -->
+    <color name="agenda_day_item_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_text_color">#FF666666</color>
+    <!-- Color of the event location's text in an agenda item  -->
+    <color name="agenda_item_where_declined_text_color">#66666666</color>
+    <!-- Color of text in the calendar view selection menu -->
+    <color name="calendar_view_switch_menu_text_color">#FF666666</color>
+    <!-- Light color of text in the calendar view selection menu -->
+    <color name="calendar_view_switch_menu_text_color_light">#FF888888</color>
+    <!-- Color of the separator between items in the agenda list -->
+    <color name="agenda_list_separator_color">#FFBBBBBB</color>
+    <!-- Text color of a selected items in the agenda list - trumps all other text colors -->
+    <color name="agenda_selected_background_color">@android:color/holo_blue_dark</color>
+    <!-- Background color of a selected items in the agenda list -->
+    <color name="agenda_selected_text_color">#FFFFFFFF</color>
+    <!-- Text color of the "new event" hint in day and week views -->
+    <color name="new_event_hint_text_color">#FFFFFFFF</color>
+
+    <!-- Text color of a clicked event in the day/week view -->
+    <color name="day_event_clicked_background_color">#8033B5E5</color>
+    <!-- background color for for clicked days in month view-->
+    <color name="day_clicked_background_color">#FF33B5E5</color>
+    <!-- background color for the past -->
+    <color name="day_past_background_color">#FFDDDDDD</color>
+
+    <!-- Event info colors -->
+    <color name="event_info_headline_color">#FFFFFFFF</color>
+    <color name="event_info_headline_transparent_color">#B3FFFFFF</color>
+    <color name="event_info_headline_link_color">#FFFFFFFF</color>
+    <color name="event_info_organizer_color">#FF666666</color>
+    <color name="event_info_description_color">#FF666666</color>
+    <color name="event_info_body_color">#FF666666</color>
+    <color name="event_info_label_color">#FF999999</color>
+    <color name="event_info_label_background_color">#FFDDDDDD</color>
+
+    <color name="text_shadow_color">#4D000000</color>
+
+    <color name="alert_event_title">#FFFFFFFF</color>
+    <color name="alert_event_other">#FF999999</color>
+    <color name="alert_past_event">#8F999999</color>
+
+    <color name="appwidget_row_in_progress">#6633b5e5</color>
+
+    <color name="appwidget_date">#ffEEEEEE</color>
+    <color name="appwidget_week">@android:color/white</color>
+    <color name="appwidget_month">#ffEEEEEE</color>
+
+    <!-- Text color of declined events in widget view -->
+    <color name="appwidget_item_declined_color">#66333333</color>
+    <!-- Text color of non-declined events in widget view -->
+    <color name="appwidget_item_standard_color">#ff333333</color>
+    <!-- Text color for all day events in widget view -->
+    <color name="appwidget_item_allday_color">#ffffffff</color>
+
+    <color name="appwidget_title">#ffffffff</color>
+    <color name="appwidget_when">#ffffffff</color>
+    <color name="appwidget_where">#ffffffff</color>
+    <color name="appwidget_no_events">#ffffffff</color>
+    
+    <!-- Gionee <jiangxiao> <2013-04-11> add for CR000000 begin -->
+    <!-- add GN color res -->
+    <color name="gn_bg_month_agenda_list_item">#e8e8e8</color>
+    <color name="gn_bg_month_agenda_start_line">#666666</color>
+    
+    <color name="gn_bg_month_view">#e8e8e8</color>
+    <color name="gn_bg_selected_month_day">#e0e0e0</color>
+    
+    <color name="gn_bg_month_current">#f9f9f9</color>
+    <color name="gn_bg_month_secondary">#f0f0f0</color>
+    <color name="gn_bg_month_day_tapped">#c0c0c0</color>
+    <color name="gn_bg_month_day_tapped_today">#ff9000</color>
+    
+    <color name="gn_text_month_day_default">#666666</color>
+    <color name="gn_text_month_day_weekend">#ff6000</color>
+    <color name="gn_text_month_day_today">#ff9000</color>
+    <color name="gn_text_month_day_today_selected">#ffffff</color>
+    <color name="gn_text_month_day_secondary">#80666666</color>
+    
+    <color name="gn_text_lunar_month_day_default">#99222222</color>
+    <color name="gn_text_lunar_month_day_weekend">#99222222</color>
+    <color name="gn_text_lunar_month_day_today">#ff9000</color>
+    <color name="gn_text_lunar_month_day_secondary">#99666666</color>
+    
+    <color name="gn_text_month_header_default">#888888</color>
+    <color name="gn_text_month_header_weekend">#ff6000</color>
+    <color name="gn_text_month_header_today">#888888</color>
+    <color name="gn_bg_month_header">#f7f7f7</color>
+    
+    <color name="gn_text_month_agenda_title">#666666</color>
+    <color name="gn_text_month_agenda_time">#888888</color>
+    <color name="gn_text_month_agenda_start_line">#666666</color>
+    
+    <color name="gn_text_week_hours">#000000</color>
+    <color name="gn_text_week_number">#60666666</color>
+    <color name="gn_text_week_number_unit">#80666666</color>
+    <color name="gn_bg_week_hours_field">#f7f7f7</color>
+    <color name="gn_bg_week_number_field">#f7f7f7</color>
+    
+    <color name="gn_text_legal_holiday">#ffffff</color>
+    <color name="gn_text_legal_work_shift">#ffffff</color>
+    
+    <color name="gn_bg_astro_picker_menu">#B3000000</color>
+    
+    <color name="gn_test">#00eedd</color>
+    <color name="gn_test2">#e8e8e8</color>
+    <!-- Gionee <jiangxiao> <2013-04-11> add for CR000000 end -->
+    
+    <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 add actionbar backtoday text color  begin-->
+    <color name="gn_backtoday_text_default">#666666</color>
+    <color name="gn_backtoday_text_press">#ffffff</color>
+    <color name="gn_agenda_first_time_color">#ff9000</color>
+    <color name="gn_agenda_title_color">#444444</color>
+    <color name="gn_hocospose_tab_text_press">#ff9000</color>
+    <color name="gn_hocospose_tab_text">#ffffff</color>
+    <!-- Gionee <jiating>  <2013-04-11> modify for CR00000000 add actionbar backtoday text color  end-->
+
+
+    <!-- Gionee add GN color res start -->
+    <!--  Gionee <pengwei><2013-04-12> modify for DayView begin-->
+    <color name="gn_text_day_solarterms">#666666</color>
+    <color name="gn_text_day_lunar">#888888</color>
+    <color name="gn_text_day_date">#444444</color>
+    <color name="gn_text_day_week">#666666</color>
+    <color name="gn_text_day_holiday">#e71111</color>
+    <color name="gn_text_day_backgd">#f7f7f7</color>
+    <color name="gn_text_day_no_plan_bg">#e1e1e1</color>
+    <color name="gn_text_day_empty_schedule">#33666666</color>
+    <color name="gn_text_day_agenda_title">#666666</color>
+    <color name="gn_text_day_agenda_time">#888888</color>
+    <color name="gn_bg_day_agenda_start_line">#666666</color>
+    <color name="gn_text_day_listview_item_no_press">#e8e8e8</color>
+    <color name="gn_text_day_listview_bg">#e8e8e8</color>
+    <color name="gn_text_day_listview_item_press">#ff9000</color>
+    <color name="gn_text_day_listview_item_title_press">#ffffff</color>
+    <color name="gn_text_day_listview_item_time_and_line_press">#ccffffff</color>
+    <color name="gn_text_alert">#444444</color>
+    <color name="gn_text_week_header_week">#f7f7f7</color>
+    <color name="gn_text_week_header_month">#f7f7f7</color>
+    <color name="gn_text_week_header_week_text">#888888</color>
+	<color name="gn_text_week_header_weekend_text">#ff6000</color> 
+	<color name="gn_text_week_header_month_text">#666666</color>
+	<color name="gn_text_week_header_shadow_bg">#808080</color>
+	<color name="gn_text_calendar_hour_background">#e8e8e8</color>
+	<color name="gn_text_calendar_future_bg_color">#efefef</color>
+	<color name="gn_text_week_event_press">#b9b9b9</color>
+	<color name="gn_text_week_holiday">#ffffff</color>
+	<color name="gn_text_week_holiday_press">#dddddd</color>
+	<color name="gn_text_week_header_cur_month_bg">#f9f9f9</color>
+	<color name="gn_text_week_header_not_cur_month_bg">#f0f0f0</color>
+	<color name="gn_text_week_header_cur_month_text">#666666</color>
+	<color name="gn_text_week_header_not_cur_month_text">#80666666</color>
+	<color name="gn_text_week_header_cur_month_weekend_text">#ff6000</color>
+	<color name="gn_text_week_header_cur_month_lunar_text">#99222222</color>
+	<color name="gn_text_week_header_not_cur_month_lunar_text">#99666666</color>
+	<color name="gn_week_paint_color">#000000</color>
+	<color name="gn_text_week_current_day_text">#ffffff</color>
+	<!--  Gionee <pengwei><2013-04-12> modify for DayView end-->
+    
+    
+    <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  begin -->
+    <color name="note_title">#444444</color>
+    <color name="note_content">#666666</color>
+    <!-- Gionee <lihongyu> <2013-05-02> modify for CR00000000  end -->
+     
+     
+    <!-- Gionee add GN color res end -->
+    <!-- Gionee <lilg><2013-05-02> add for gionee widget begin -->
+    <color name="red">#ffff7a7a</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#ff51c25e</color>
+    
+    <color name="widget_other_month_bg_color">#f0f0f0</color>
+    <color name="widget_current_month_bg_color">#f9f9f9</color>
+    
+    <!-- 1 -->
+    <color name="widget_week_saturday_and_sunday_text_color">#ff6000</color>
+    <!-- 2 -->
+    <color name="widget_week_monday_to_friday_text_color">#888888</color>
+    <!-- 3 -->
+    <color name="widget_week_current_week_text_color">#ff9000</color>
+    
+    <!-- 4 -->
+    <color name="widget_day_other_month_text_color">#666666</color>
+    <!-- 5 -->
+    <color name="widget_lunar_other_month_text_color">#666666</color>
+    
+    <!-- 6 -->
+    <color name="widget_day_current_month_saturday_and_sunday_text_color">#ff6000</color>
+    <!-- 7 -->
+    <color name="widget_lunar_current_month_saturday_and_sunday_text_color">#222222</color>
+    
+    <!-- 8 -->
+    <color name="widget_day_current_month_monday_to_friday_text_color">#666666</color>
+    <!-- 9 -->
+    <color name="widget_lunar_current_month_monday_to_friday_text_color">#666666</color>
+    
+    <!-- 10 -->
+    <color name="widget_day_current_month_current_day_text_color">#ff9000</color>
+    <!-- 11 -->
+    <color name="widget_lunar_current_month_current_day_text_color">#ff9000</color>
+    
+    <!-- Gionee <lilg><2013-05-02> add for gionee widget end -->
+    
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+    <color name="gn_almanac_metal">#e6b322</color>
+    <color name="gn_almanac_wood">#38b48b</color>
+    <color name="gn_almanac_water">#2ca9e1</color>
+    <color name="gn_almanac_fire">#eb4901</color>
+    <color name="gn_almanac_soil">#6f511f</color>
+    <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+	<color name="pic_preview_bg">#c4b99b</color>
+    
+    <color name="pic_edit_bg">#19000000</color>
+    <color name="pic_browser_bg">#0f0f0f</color>
+    <color name="null_hint">#cbcbcb</color>
+    <color name="delete_button">#ff6141</color>
+    <color name="menu_bg">#0f000000</color>
+</resources>

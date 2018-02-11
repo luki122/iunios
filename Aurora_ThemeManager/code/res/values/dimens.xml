@@ -1,0 +1,91 @@
+<resources>
+
+    <dimen name="local_theme_item_name_text_size">12sp</dimen>
+    <dimen name="local_theme_item_update_text_size">8sp</dimen>
+    
+    <dimen name="btn_theme_apply_text_size">20sp</dimen>
+    <dimen name="theme_view_label_margin">10dp</dimen>
+    <!-- dimens for theme page -->
+    <dimen name="theme_item_preview_height">184dp</dimen>
+    <dimen name="theme_item_info_height">56dp</dimen>
+    
+    <dimen name="wallpaper_item_preview_height">202dp</dimen>
+    <dimen name="wallpaper_item_preview_width">114dp</dimen>
+
+    
+    <dimen name="theme_item_title_size">16sp</dimen>
+    <dimen name="theme_item_desc_size">10sp</dimen>
+    
+    <dimen name="theme_item_text_padding">5dp</dimen>
+    
+    
+        <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+    
+    <dimen name="aurora_bottom_controls_height">47dp</dimen>
+    
+    <dimen name="preview_time_bottom">30dp</dimen>
+    <dimen name="preview_date_top">12dp</dimen>
+    
+    <dimen name="theme_detail_page_button_height">48dp</dimen>
+    <dimen name="theme_detail_title_size">17sp</dimen>
+    <dimen name="theme_detail_size_text_size">12sp</dimen>
+    <dimen name="theme_detail_padding">10dp</dimen>
+    <dimen name="page_index_size">5dp</dimen>
+    <dimen name="page_index_margin">8dp</dimen>
+    <dimen name="theme_preview_width">180dp</dimen>
+    <dimen name="theme_preview_height">320dp</dimen>
+    <dimen name="theme_main_padding">8dp</dimen>
+    <dimen name="theme_list_card_radius">2dp</dimen>
+    <dimen name="theme_list_item_author_size">20dp</dimen>
+    <dimen name="theme_list_item_author_margin_left">6dp</dimen>
+    <dimen name="theme_list_item_info_padding_left">16dp</dimen>
+    <dimen name="theme_list_item_info_padding_right">12dp</dimen>
+    <dimen name="theme_list_item_download_btn_width">56dp</dimen>
+    <dimen name="theme_list_item_download_btn_height">24dp</dimen>
+     <dimen name="theme_list_item_download_btn_textsize">16sp</dimen>
+     
+     <dimen name="theme_detail_rington_notify_textsize">14sp</dimen>
+     
+     
+     <dimen name="app_item_down_btn_width">48dp</dimen>
+    <dimen name="app_item_down_btn_height">24dp</dimen>
+    <dimen name="app_item_down_btn_container_width">82dp</dimen>
+    
+     <dimen name="progressRoundWidth">1dp</dimen>
+    <dimen name="progressLineWidth">0.66dp</dimen>
+    <dimen name="progressBtnWidth">22dp</dimen>
+    <dimen name="progressBtnHeight">22dp</dimen>
+    <dimen name="progressBtnTextSize">14sp</dimen>
+    <dimen name="progressBtnBigRadius">13dp</dimen>
+    <dimen name="progressBtnDotRadius">0.8dp</dimen>
+    
+    
+    <dimen name="btn_downloaded_height">22dp</dimen>
+    <dimen name="btn_downloaded_width">22dp</dimen>
+    
+     <dimen name="btn_download_normal_height">20dp</dimen>
+    <dimen name="btn_download_normal_width">20dp</dimen>
+    <dimen name="btn_delete_theme_height">20dp</dimen>
+    <dimen name="btn_delete_theme_width">20dp</dimen>
+    <dimen name="local_theme_preview_height">166dp</dimen>
+    
+    <dimen name="ic_local_theme_width">24dp</dimen>
+    <dimen name="ic_local_theme_height">24dp</dimen>
+    <dimen name="ic_has_sound_effect_size">20dp</dimen>
+    <dimen name="footer_to_refresh_bottom">20dip</dimen>
+    <dimen name="load_more_view_height">40dp</dimen>
+    
+    <!-- 时光锁屏页面相关的尺寸 -->
+    <dimen name="time_wallpaper_title_text_size">14sp</dimen>
+    <dimen name="time_wallpaper_title_height">36dp</dimen>
+    <dimen name="time_wallpaper_sub_title_text_size">14sp</dimen>
+    <dimen name="time_wallpaper_title_padding_two_side">16dp</dimen>
+    <dimen name="time_wallpaper_title_update_text_size">12sp</dimen>
+    <dimen name="time_wallpaper_title_gap">4dp</dimen>
+    
+</resources>

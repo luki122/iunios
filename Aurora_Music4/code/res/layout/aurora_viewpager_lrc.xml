@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.android.music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.android.auroramusic.widget.AuroraScrollView
+        android:id="@+id/lyric_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <com.android.auroramusic.widget.AuroraLyricView
+                android:id="@+id/lyric_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                custom:lyric_lineGap="37dp"
+                custom:lyric_textColor="#ffffff"
+                custom:lyric_textColor_focus="#ffffff"
+                custom:lyric_textColor_focus_read="#0ec16f"
+                custom:lyric_textSize="17dp" />
+        </LinearLayout>
+    </com.android.auroramusic.widget.AuroraScrollView>
+
+    <ImageView
+        android:id="@+id/lrc_image_blur1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aurora_back_bg"
+        android:visibility="gone" />
+
+</FrameLayout>

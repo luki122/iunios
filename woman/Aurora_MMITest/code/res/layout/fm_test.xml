@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:padding="10dp"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:id="@+id/earphone_note" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/insert_earphone"
+	    android:layout_width="match_parent"
+	    android:gravity="center_horizontal"
+	    android:textAppearance="?android:attr/textAppearanceLarge" 
+	    android:layout_alignParentTop="true"/>
+    <SeekBar android:id="@+id/seekBar" 
+	    android:layout_height="wrap_content" 
+	    android:layout_width="match_parent" 
+	    android:layout_below="@+id/earphone_note"
+	    android:layout_alignParentLeft="true"/>
+	    
+    <TextView android:id="@+id/current_hz" 
+	    android:layout_height="wrap_content"
+	    android:textAppearance="?android:attr/textAppearanceLarge" 
+	    android:layout_width="match_parent" 
+	    android:layout_below="@+id/seekBar" 
+	    android:gravity="center_horizontal"
+	    android:layout_alignParentLeft="true" 
+	    android:layout_marginTop="31dp"></TextView>
+	    
+    <LinearLayout android:id="@+id/linearLayout1" 
+	    android:layout_height="wrap_content" 
+	    android:layout_width="match_parent" 
+	    android:layout_below="@id/current_hz">
+    	<Button 
+    		android:id="@+id/minus_btn"
+    		android:text="@string/minus"
+	    	android:textAppearance="?android:attr/textAppearanceLarge" 
+    		android:layout_weight="0.5"
+    		android:layout_width="wrap_content"
+    		android:layout_height="fill_parent"/> 
+    	<Button 
+    		android:id="@+id/default_btn"
+    		android:text="@string/default_value"
+	    	android:textAppearance="?android:attr/textAppearanceLarge" 
+    		android:layout_width="wrap_content"
+    		android:layout_weight="1"
+    		android:layout_height="fill_parent"/>
+    	<Button 
+    		android:id="@+id/plus_btn"
+    		android:text="@string/plus"
+	    	android:textAppearance="?android:attr/textAppearanceLarge" 
+    		android:layout_width="wrap_content"
+    		android:layout_weight="0.5"
+    		android:layout_height="fill_parent"/>   
+    </LinearLayout>
+    
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="horizontal"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true">
+	    <Button android:text="@string/right" 
+	        android:id="@+id/right_btn" 
+	        android:layout_weight="1"
+	        android:enabled="false"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"/>
+	    <Button android:text="@string/wrong" 
+	        android:id="@+id/wrong_btn" 
+	        android:layout_width="wrap_content" 
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"/>
+	</LinearLayout>
+</RelativeLayout>

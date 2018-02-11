@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<com.aurora.launcher.Cling
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.aurora.launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    launcher:drawIdentifier="workspace_portrait">
+    <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/ClingTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/workspace_cling_title" />
+            <TextView
+                style="@style/ClingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/workspace_cling_move_item" />
+        </LinearLayout>
+        <TextView
+        style="@style/ClingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/workspace_quick_search_all_apps" />
+    </FrameLayout> -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:textSize="18sp"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center"
+        android:typeface="sans"
+        android:text="@string/workspace_cling_appindex_title" />
+
+    <ImageView
+        android:id="@+id/img_cling_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="130dp"
+        android:layout_gravity="bottom"
+        />
+    <Button
+        android:id="@+id/btn_cling_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginBottom="27dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/cling_dismiss_button_icon"
+        android:text="@string/workspace_cling_btn"
+        android:gravity="center"
+        android:onClick="dismissWorkspaceCling" />
+</com.aurora.launcher.Cling>

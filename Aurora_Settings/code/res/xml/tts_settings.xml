@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/tts_settings_title">
+
+    <!-- The contents of this category are filled in by the Java code
+         based on the list of available engines. -->
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="tts_engine_preference_section"
+        aurora:auroratitle="@string/tts_engine_preference_section_title" />
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="tts_general_section"
+         aurora:auroratitle="@string/tts_general_section_title">
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="tts_default_rate"
+            aurora:auroratitle="@string/tts_default_rate_title"
+            aurora:aurorasummary="@string/tts_default_rate_summary"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/tts_rate_entries"
+            aurora:auroraentryValues="@array/tts_rate_values" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreference aurora:aurorakey="tts_play_example"
+         aurora:aurorapersistent="false"
+         aurora:auroratitle="@string/tts_play_example_title"
+         aurora:aurorasummary="@string/tts_play_example_summary" />
+</aurora.preference.AuroraPreferenceScreen>

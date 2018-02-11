@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/development_settings_title"
+         >
+    <!-- Add begin by aurora.jiangmx -->
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="dev_user_mode" >
+        
+        <!-- <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="usb_adb"
+            /> -->
+        
+	    <aurora.preference.AuroraSwitchPreference 
+	        aurora:aurorakey="enable_adb" 
+	        aurora:auroratitle="@string/enable_adb" 
+	        />
+	
+	    <aurora.preference.AuroraSwitchPreference 
+	        aurora:aurorakey="enable_art" 
+	        aurora:auroratitle="@string/enable_art" 
+	        />
+        
+    </aurora.preference.AuroraPreferenceCategory>
+    
+    <aurora.preference.AuroraPreferenceCategory />
+    
+    <!-- Add end -->    
+    
+    <com.android.settings.BugreportPreference
+            aurora:aurorakey="bugreport"
+            aurora:auroratitle="@string/bugreport_title"
+            aurora:auroradialogTitle="@string/bugreport_title" />
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="local_backup_password"
+            aurora:auroratitle="@string/local_backup_password_title"
+            aurora:aurorasummary="@string/local_backup_password_summary_none"
+            aurora:aurorapersistent="false" >
+        <intent
+                android:action="android.settings.privacy.SET_FULL_BACKUP_PASSWORD"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.SetFullBackupPassword" />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraCheckBoxPreference 
+        aurora:aurorakey="keep_screen_on" 
+        aurora:auroratitle="@string/keep_screen_on" 
+        aurora:aurorasummary="@string/keep_screen_on_summary"/>
+
+    <aurora.preference.AuroraListPreference
+        aurora:aurorakey="hdcp_checking"
+        aurora:auroratitle="@string/hdcp_checking_title"
+        aurora:auroradialogTitle="@string/hdcp_checking_dialog_title"
+        aurora:auroraentries="@array/hdcp_checking_titles"
+        aurora:auroraentryValues="@array/hdcp_checking_values" />
+
+    <!--aurora.preference.AuroraCheckBoxPreference
+        aurora:aurorakey="enforce_read_external"
+        aurora:auroratitle="@string/enforce_read_external_title"
+        aurora:aurorasummary="@string/enforce_read_external_summary" /> -->
+
+    
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="debug_debugging_category"
+            aurora:auroratitle="@string/debug_debugging_category">
+        
+        <!-- Delete begin by aurora.jiangmx -->
+        <!-- <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="enable_adb"
+            aurora:auroratitle="@string/enable_adb"
+            aurora:aurorasummary="@string/enable_adb_summary"
+            /> -->
+        <!-- Delete end -->
+        
+        <!-- qy add 2014 05 19 -->
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="enable_com"
+            aurora:auroratitle="@string/enable_com"
+            aurora:aurorasummary="@string/enable_com_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="bugreport_in_power"
+            aurora:auroratitle="@string/bugreport_in_power"
+            aurora:aurorasummary="@string/bugreport_in_power_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="allow_mock_location"
+            aurora:auroratitle="@string/allow_mock_location"
+            aurora:aurorasummary="@string/allow_mock_location_summary"/>
+
+        <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="debug_app"
+                aurora:auroratitle="@string/debug_app" />
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="wait_for_debugger"
+            aurora:auroratitle="@string/wait_for_debugger"
+            aurora:aurorasummary="@string/wait_for_debugger_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="verify_apps_over_usb"
+            aurora:auroratitle="@string/verify_apps_over_usb_title"
+            aurora:aurorasummary="@string/verify_apps_over_usb_summary"/>
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="debug_input_category"
+            aurora:auroratitle="@string/debug_input_category">
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_touches"
+            aurora:auroratitle="@string/show_touches"
+            aurora:aurorasummary="@string/show_touches_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="pointer_location"
+            aurora:auroratitle="@string/pointer_location"
+            aurora:aurorasummary="@string/pointer_location_summary"/>
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="debug_drawing_category"
+            aurora:auroratitle="@string/debug_drawing_category">
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="debug_layout"
+            aurora:auroratitle="@string/debug_layout"
+            aurora:aurorasummary="@string/debug_layout_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_hw_screen_udpates"
+            aurora:auroratitle="@string/show_hw_screen_updates"
+            aurora:aurorasummary="@string/show_hw_screen_updates_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_hw_layers_udpates"
+            aurora:auroratitle="@string/show_hw_layers_updates"
+            aurora:aurorasummary="@string/show_hw_layers_updates_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_hw_overdraw"
+            aurora:auroratitle="@string/show_hw_overdraw"
+            aurora:aurorasummary="@string/show_hw_overdraw_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_screen_updates"
+            aurora:auroratitle="@string/show_screen_updates"
+            aurora:aurorasummary="@string/show_screen_updates_summary"/>
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="window_animation_scale"
+            aurora:auroratitle="@string/window_animation_scale_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/window_animation_scale_entries"
+            aurora:auroraentryValues="@array/window_animation_scale_values" />
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="transition_animation_scale"
+            aurora:auroratitle="@string/transition_animation_scale_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/transition_animation_scale_entries"
+            aurora:auroraentryValues="@array/transition_animation_scale_values" />
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="animator_duration_scale"
+            aurora:auroratitle="@string/animator_duration_scale_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/animator_duration_scale_entries"
+            aurora:auroraentryValues="@array/animator_duration_scale_values" />
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="disable_overlays"
+            aurora:auroratitle="@string/disable_overlays"
+            aurora:aurorasummary="@string/disable_overlays_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="force_hw_ui"
+            aurora:auroratitle="@string/force_hw_ui"
+            aurora:aurorasummary="@string/force_hw_ui_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="force_msaa"
+            aurora:auroratitle="@string/force_msaa"
+            aurora:aurorasummary="@string/force_msaa_summary"/>
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="overlay_display_devices"
+            aurora:auroratitle="@string/overlay_display_devices_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/overlay_display_devices_entries"
+            aurora:auroraentryValues="@array/overlay_display_devices_values" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="debug_monitoring_category"
+            aurora:auroratitle="@string/debug_monitoring_category">
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="strict_mode"
+            aurora:auroratitle="@string/strict_mode"
+            aurora:aurorasummary="@string/strict_mode_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_cpu_usage"
+            aurora:auroratitle="@string/show_cpu_usage"
+            aurora:aurorasummary="@string/show_cpu_usage_summary"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="track_frame_time"
+            aurora:auroratitle="@string/track_frame_time"
+            aurora:aurorasummary="@string/track_frame_time_summary"/>
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="enable_opengl_traces"
+            aurora:auroratitle="@string/enable_opengl_traces_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/enable_opengl_traces_entries"
+            aurora:auroraentryValues="@array/enable_opengl_traces_values" />
+
+        <aurora.preference.AuroraMultiCheckPreference
+            aurora:aurorakey="enable_traces"
+            aurora:auroratitle="@string/enable_traces_title"
+            aurora:auroradialogTitle="@string/enable_traces_dialog_title" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="debug_applications_category"
+            aurora:auroratitle="@string/debug_applications_category">
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="immediately_destroy_activities"
+            aurora:auroratitle="@string/immediately_destroy_activities"
+            aurora:aurorasummary="@string/immediately_destroy_activities_summary"/>
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="app_process_limit"
+            aurora:auroratitle="@string/app_process_limit_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/app_process_limit_entries"
+            aurora:auroraentryValues="@array/app_process_limit_values" />
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="show_all_anrs"
+            aurora:auroratitle="@string/show_all_anrs"
+            aurora:aurorasummary="@string/show_all_anrs_summary"/>
+
+     </aurora.preference.AuroraPreferenceCategory>
+<!--Gionee <wangguojing> <2013-08-10> add for CR00854573 begin-->
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="gn_enable_debug"
+            aurora:auroratitle="@string/gn_enable_debug_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.android.settings.GnLogSwitchActivity" />
+        </aurora.preference.AuroraPreferenceScreen>
+<!--Gionee <wangguojing> <2013-08-10> add for CR00854573 end-->
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="dev_aurora_build_number"
+        aurora:auroraselectable="false"
+        aurora:auroratitle="@string/build_number"
+        aurora:aurorasummary="@string/device_info_default"/>
+   
+</aurora.preference.AuroraPreferenceScreen>

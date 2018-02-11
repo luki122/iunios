@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/advanced_settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+        
+<!--     	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="wireless_settings"
+                aurora:auroratitle="@string/aurora_wireless_settings_title"
+                aurora:aurorafragment="com.android.settings.WirelessSettings" /> -->
+    	
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorafragment="com.android.settings.vpn2.VpnSettings"
+                aurora:aurorakey="vpn_settings"
+                aurora:auroratitle="@string/vpn_settings_title" />
+    	<!-- Add begin by aurora.jiangmx -->
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorafragment="com.android.settings.nfc.AndroidBeam"
+                aurora:aurorakey="android_beam_settings"
+                aurora:auroratitle="@string/android_beam_settings_title" />
+    	<aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_nfc"
+                aurora:auroratitle="@string/nfc_quick_toggle_title"
+                aurora:aurorapersistent="false" />
+    	<!-- Add end -->
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="location_settings"
+                aurora:auroratitle="@string/aurora_location_settings_title"
+                aurora:aurorafragment="com.android.settings.LocationSettings" />
+<!-- qy del
+<intent
+            		android:action="android.intent.action.MAIN"
+            		android:targetPackage="com.android.stk"
+            		android:targetClass="com.android.stk.StkLauncherActivity" />
+            		
+            		<intent
+            		android:action="android.intent.action.MAIN"
+            		android:targetPackage="com.android.stk"
+            		android:targetClass="com.android.stk.StkLauncherActivity2" />
+
+ -->
+       <!-- Begin add by gary.gou -->
+       <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="two_sim_settings"
+                aurora:auroratitle="@string/aurora_sim_settings_title"
+                aurora:aurorafragment="com.android.settings.TwoSimSettings" />
+       <!-- End add by gary.gou -->
+       
+		<aurora.preference.AuroraPreference
+                aurora:aurorakey="sim_settings"
+                aurora:auroratitle="@string/aurora_sim_settings_title" >
+				
+    	</aurora.preference.AuroraPreference>
+
+		<aurora.preference.AuroraPreference
+                aurora:aurorakey="sim_02_settings"
+                aurora:auroratitle="@string/aurora_sim_02_settings_title" >
+				
+    	</aurora.preference.AuroraPreference>
+
+		<aurora.preference.AuroraPreferenceCategory/>
+		
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="language_settings"
+                aurora:auroratitle="@string/aurora_language_settings"
+                aurora:aurorafragment="com.android.settings.inputmethod.InputMethodAndLanguageSettings" />
+    	
+    	  <!-- aurora:aurorafragment="com.android.settings.applications.ManageApplications"  -->
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="application_settings"
+                aurora:auroratitle="@string/aurora_application_settings_title"
+                >
+              <!--    
+    	        <intent
+		            android:action="android.intent.action.MAIN"
+		            android:targetPackage="com.aurora.secure"
+		            android:targetClass="com.secure.activity.AllAppListActivity"/>
+		            -->
+    	</aurora.preference.AuroraPreferenceScreen>   	
+             
+    	  
+    	 
+    	<aurora.preference.AuroraPreferenceScreen 
+                aurora:aurorakey="storage_settings"
+                aurora:auroratitle="@string/storage_settings"
+                aurora:aurorafragment="com.android.settings.deviceinfo.Memory" >
+        </aurora.preference.AuroraPreferenceScreen> 
+       
+        
+        <aurora.preference.AuroraPreferenceCategory />
+
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorafragment="com.android.settings.SecuritySettings"		        
+		        aurora:auroratitle="@string/security_settings_title"
+		        aurora:aurorakey="security_settings"  />
+    	
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="account"
+                aurora:auroratitle="@string/aurora_account_settings_title"
+                >
+           <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.auroraaccountsettings"
+            android:targetClass="com.aurora.auroraaccountsettings.AccountActivity" />
+        </aurora.preference.AuroraPreferenceScreen>
+        
+        <aurora.preference.AuroraPreferenceCategory />
+
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="battery_settings"
+                aurora:auroratitle="@string/aurora_battery_settings_title"
+                aurora:aurorafragment="com.android.settings.fuelgauge.PowerUsageSummary" /> 
+         
+    	<!-- Modify begin by aurora.jiangmx -->
+    	<!-- 
+    	    modify from [com.android.settings.DevelopmentSettingsUserMode]
+    	           to [com.android.settings.DevelopmentSettings]
+    	 -->
+    	<aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="development_settings"
+                aurora:auroratitle="@string/development_settings_title"
+                aurora:aurorafragment="com.android.settings.DevelopmentSettings" /> 
+    	<!-- Modify end -->
+
+    	<aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="accessibility_settings"
+            aurora:auroratitle="@string/accessibility_settings"
+            aurora:aurorafragment="com.android.settings.AccessibilitySettings" />
+  
+        <aurora.preference.AuroraPreferenceCategory />
+
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="factory_settings"
+            aurora:auroratitle="@string/aurora_factory_settings_title"
+            aurora:aurorafragment="com.android.settings.LocalFactorySettings" />
+        
+        <aurora.preference.AuroraPreferenceCategory 
+            aurora:aurorakey="pref_category_factory_settings"/>
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="privacy_settings"
+                aurora:auroratitle="@string/privacy_settings"
+                aurora:aurorafragment="com.android.settings.PrivacySettings" />
+
+</aurora.preference.AuroraPreferenceScreen>

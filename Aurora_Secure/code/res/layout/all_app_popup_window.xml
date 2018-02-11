@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/choiceSortWayLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/SORT_BY_USER_APP"
+            android:layout_width="@dimen/all_app_popup_window_btn_width"
+            android:layout_height="45dp"
+            android:background="@drawable/button_no_frame"
+            android:text="@string/user_app"
+            android:textColor="@color/btn_text_title_selector_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/SORT_BY_SYS_APP"
+            android:layout_width="@dimen/all_app_popup_window_btn_width"
+            android:layout_height="45dp"
+            android:background="@drawable/button_no_frame"
+            android:text="@string/sys_app"
+            android:textColor="@color/btn_text_title_selector_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/SORT_BY_SYS_SUBGROUP"
+            android:layout_width="@dimen/all_app_popup_window_btn_width"
+            android:layout_height="45dp"
+            android:background="@drawable/button_no_frame"
+            android:text="@string/sys_subgroup"
+            android:textColor="@color/btn_text_title_selector_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/line" />
+
+        <Button
+            android:id="@+id/SORT_BY_RunningProcesses"
+            android:layout_width="@dimen/all_app_popup_window_btn_width"
+            android:layout_height="45dp"
+            android:background="@drawable/button_no_frame"
+            android:text="@string/running_proc"
+            android:textColor="@color/btn_text_title_selector_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</FrameLayout>

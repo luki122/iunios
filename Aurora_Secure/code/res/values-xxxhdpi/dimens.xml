@@ -1,0 +1,15 @@
+<resources>
+    <!-- main_activity_grid_item_text_margin changed from 5dp to 2dp(2015-1-9,Vulcan Yang) -->
+   <dimen name="main_activity_grid_item_text_margin">2dp</dimen>
+   <dimen name="preferences_item_height">43dp</dimen>
+   <dimen name="preferences_item_text_size">16sp</dimen>
+   <dimen name="preferences_item_sub_text_size">13sp</dimen>
+   <dimen name="list_header_padding_top">12dp</dimen>
+   <dimen name="list_header_padding_bottom">3dp</dimen>
+   <dimen name="list_header_text_size">16.25sp</dimen>
+   <dimen name="preference_list_header_padding_top">6dp</dimen>
+   <dimen name="preference_list_header_padding_bottom">6dp</dimen>
+   <dimen name="privacy_app_icon_size">52.5dp</dimen>
+   <dimen name="privacy_app_grid_item_width">65.84dp</dimen>
+   <dimen name="privacy_app_grid_item_height">89.8dp</dimen>
+</resources>

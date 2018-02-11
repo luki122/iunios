@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <Button 
+            android:id="@+id/camera_btn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_picture"/>
+        <Button android:text="@string/right" 
+            android:id="@+id/right_btn" 
+            android:enabled="false"
+            android:layout_width="wrap_content" 
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"/>
+        <Button android:text="@string/wrong" 
+            android:id="@+id/wrong_btn" 
+            android:layout_weight="1"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>
+	    <Button android:text="@string/restart" 
+	        android:id="@+id/restart_btn" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="0dp"/>
+    </LinearLayout>
+    <gn.com.android.mmitest.item.PreviewFrameLayout
+  	  	android:id="@+id/frame_layout"
+        android:layout_toLeftOf="@id/buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+      
+		<FrameLayout android:id="@+id/frame"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+		    <SurfaceView android:id="@+id/camera_preview"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+            <gn.com.android.mmitest.item.FocusRectangle
+                    android:id="@+id/focus_rectangle"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:layout_gravity="center" />
+	    </FrameLayout>
+	    
+   </gn.com.android.mmitest.item.PreviewFrameLayout>
+   
+</RelativeLayout>

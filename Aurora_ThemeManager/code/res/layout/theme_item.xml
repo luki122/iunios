@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/theme_main_padding"
+        android:background="@android:color/transparent"
+        android:theme="@android:style/Theme.Holo.Light" />
+
+    <com.aurora.thememanager.widget.ThemeListCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_list_item_bg"
+        android:orientation="vertical" >
+
+        <com.aurora.internetimage.NetworkImageView
+            android:id="@+id/theme_item_preview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/theme_item_preview_height"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/theme_item_info_height"
+            android:paddingLeft="@dimen/theme_list_item_info_padding_left"
+            android:paddingRight="@dimen/theme_list_item_info_padding_right"
+            android:paddingTop="@dimen/theme_main_padding" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/theme_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/theme_item_title_color"
+                    android:textSize="@dimen/theme_item_title_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <com.aurora.thememanager.widget.NetworkRoundedImageView
+                        android:id="@+id/theme_item_author_icon"
+                        android:layout_width="@dimen/theme_list_item_author_size"
+                        android:layout_height="@dimen/theme_list_item_author_size"
+                         android:scaleType="fitXY"
+                         />
+
+                    <TextView
+                        android:id="@+id/theme_item_author_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/theme_list_item_author_margin_left"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:maxWidth="100dp"
+                        android:textColor="@color/theme_item_desc_color"
+                        android:textSize="@dimen/theme_item_desc_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.aurora.thememanager.widget.ProgressBtn
+                android:id="@+id/theme_item_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.aurora.thememanager.widget.ThemeListCardView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="aurora_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="config_automatic_brightness_available">false</bool>
+    <bool name="config_alwaysUseCdmaRssi">false</bool>
+    <bool name="config_wimaxEnabled">false</bool>
+
+   <!--  <integer name="config_lowBatteryCloseWarningLevel">20</integer>
+    <integer name="config_lowBatteryWarningLevel">15</integer>
+    <integer name="config_criticalBatteryWarningLevel">4</integer>
+     -->
+	
+</resources>

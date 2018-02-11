@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="aurora_color_cpd">#ff9999</color>
+    <color name="aurora_ipop_tc">#ff9999</color>
+    <color name="aurora_detail_pressed_color">#de7e7e</color>
+    <color name="aurora_detail_normal_color">#ff9999</color>
+    <color name="aurora_send_msg_text_color">#595959</color>
+    <color name="aurora_reci_msg_text_color">#595959</color>
+</resources>

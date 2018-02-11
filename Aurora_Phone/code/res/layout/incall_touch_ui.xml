@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2012, The Linux Foundation. All rights reserved.
+     Not a Contribution, Apache license notifications and license are retained
+     for attribution purposes only.
+
+     Copyright (C) 2009 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!--
+     In-call onscreen touch UI elements, used on some platforms.
+
+     This layout is a fullscreen overlay, drawn on top of the
+     non-touch-sensitive parts of the in-call UI (i.e. the call card).
+
+     The top-level View here is a InCallTouchUi (FrameLayout) with 2 children:
+       (1) inCallControls: the widgets visible while a regular call (or calls) is in progress
+       (2) incomingCallWidget: the UI displayed while an incoming call is ringing
+     In usual cases, one of these is visible at any given moment.
+     One exception is when incomingCallWidget is fading-out. At that moment, we show
+     inCallControls beneath incomingCallWidget for smoother transition.
+-->
+<com.android.phone.InCallTouchUi xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    android:id="@+id/inCallTouchUi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/incalltouchui_padding_bottom" >
+
+    <!--
+        (1) inCallControls: the widgets visible while a regular call
+        (or calls) is in progress
+    -->
+
+    <RelativeLayout
+        android:id="@+id/inCallControls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/incallcontrolls_margin_bottom"
+        android:visibility="gone" >
+
+        <!--
+             DTMF dialpad shown in the upper part of the screen
+             (above the main cluster of buttons.)
+        -->
+
+
+        <!-- Main cluster of onscreen buttons on the lower part of the screen. -->
+
+        <LinearLayout
+            android:id="@+id/bottomButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <!--
+                 Row 1, the "extra button row": A couple of relatively rare
+                 buttons used only in certain call states.
+                 Most of the time this whole row is GONE.
+                 For now, at least, there's only ever one button visible here
+                 at a time, so this can be a simple FrameLayout.
+            -->
+
+            <ViewStub
+                android:id="@+id/extraButtonRow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/in_call_button_height"
+                android:layout="@layout/extra_button_row" />
+
+            <!--
+                 Row 2: The main batch of in-call buttons:
+                    Dialpad / Audio mode / Mute / Hold / Add call
+                 Visible in all states except while an incoming call is
+                 ringing.
+            -->
+            <!-- aurora add zhouxiaobing 20140710 for jiemian -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#4CFFFFFF"
+                    android:visibility="@integer/aurora_button_line" />
+
+                <LinearLayout
+                    android:id="@+id/button_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/incall_button_layout_in"
+                    android:orientation="horizontal" >
+
+                    <!--
+                     This row has either 4 or 5 buttons, depending on
+                     whether the device supports "Hold" (i.e. 4 buttons on"res/values/aurora_config.xml"
+                     CDMA devices, 5 buttons on GSM devices.)  The buttons
+                     are interspersed with 'layout_weight="1"' placeholder
+                     views so that they'll be spaced evenly in both cases.
+
+                     But note there are a couple of *pairs* of buttons that share a
+                     single "slot", namely Hold/Swap and Add/Merge.  For these, the
+                     code in InCallTouchUi is responsible for making sure that at any
+                     point exactly one of the pair is VISIBLE and the other is
+                     GONE.
+                    -->
+
+
+                    <!-- Separator between left padding and 1st button -->
+                    <!-- "Mute" -->
+                    <!-- This is a "compound button": it has checked and unchecked states. -->
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/muteButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_silent_icon"
+                        phone:ptext="@string/onscreenMuteText" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#4CFFFFFF"
+                        android:visibility="@integer/aurora_button_line" />
+                    <!-- "Dialpad" -->
+                    <!-- This is a "compound button": it has checked and unchecked states. -->
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/dialpadButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_keypad_icon"
+                        phone:ptext="@string/onscreenShowDialpadText" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#4CFFFFFF"
+                        android:visibility="@integer/aurora_button_line" />
+                    <!-- "Audio mode" -->
+                    <!--
+                     This is a multi-mode button that can behave either like a
+                     simple "compound button" with two states *or* like an
+                     action button that brings up a popup menu; see
+                     btn_compound_audio.xml and InCallTouchUi.updateAudioButton()
+                     for the full details.
+                    -->
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/audioButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_mianti_icon"
+                        phone:ptext="@string/onscreenAudioText" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#4CFFFFFF"
+                    android:visibility="@integer/aurora_button_line" />
+
+                <LinearLayout
+                    android:id="@+id/button_line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/incall_button_layout_in"
+                    android:orientation="horizontal" >
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/holdButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_hold_icon"
+                        phone:ptext="@string/onscreenHoldText" />
+                    <!-- "Swap" (or "Manage calls" in some CDMA states) -->
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/swapButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_qiehuan_icon"
+                        phone:ptext="@string/onscreenSwapCallsText" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#4CFFFFFF"
+                        android:visibility="@integer/aurora_button_line" />
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/enterContact"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_contact_icon"
+                        phone:ptext="@string/onscreenMergeCallsText" />
+
+                    <FrameLayout
+                        android:layout_width="120dip"
+                        android:layout_height="@dimen/in_call_button_height" >
+
+                        <TextView
+                            android:id="@+id/record_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="17dip"
+                            android:textColor="@color/record_button_text_color"
+                            android:textSize="17sp" />
+
+                        <com.android.phone.phoneCompoundButton
+                            android:id="@+id/recordButton"
+                            style="@style/PhoneCompound"
+                            phone:pimage="@drawable/aurora_record_icon"
+                            phone:ptext="@string/aurora_record_button_text_off" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#4CFFFFFF"
+                        android:visibility="@integer/aurora_button_line" />
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/addButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_add_icon"
+                        phone:ptext="@string/onscreenAddCallText" />
+
+                    <com.android.phone.phoneCompoundButton
+                        android:id="@+id/mergeButton"
+                        style="@style/PhoneCompound"
+                        phone:pimage="@drawable/aurora_hebing_icon"
+                        phone:ptext="@string/onscreenMergeCallsText" />
+
+                    <!-- Separator between 4th (or 5th) button and right padding -->
+                    <!-- <View style="@style/VerticalSeparator" /> -->
+
+                    <Button
+                        android:id="@+id/modifyCallButton"
+                        style="@style/InCallButton"
+                        android:background="@drawable/btn_compound_vt"
+                        android:contentDescription="@string/onscreenModifyCallText" />
+
+                    <!-- Separator between 4th (or 5th) button and right padding -->
+                    <!-- <View style="@style/VerticalSeparator" /> -->
+
+                    <Button
+                        android:id="@+id/addParticipant"
+                        style="@style/InCallButton"
+                        android:background="@drawable/btn_compound_addparticipant"
+                        android:contentDescription="@string/onscreenAddParticipant" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#4CFFFFFF"
+                    android:visibility="@integer/aurora_button_line" />
+            </LinearLayout>
+            <!-- Row 3: The "End call" button. -->
+            <!-- aurora add zhouxiaobing 20140710 for jiemian -->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--
+        (2) incomingCallWidget: the UI displayed while an incoming call is ringing.
+            See InCallTouchUi.showIncomingCallWidget().
+
+            Layout notes:
+            - Use an opaque black background since we need to cover up
+              a bit of the bottom of the contact photo
+            - The verticalOffset value gets us a little extra space above
+              the topmost "Respond by SMS" icon
+            - The negative layout_marginBottom shifts us slightly downward;
+              we're already aligned with the bottom of the screen, but we
+              don't have an icon in the downward direction so the whole
+              bottom area of this widget is just wasted space.
+    -->
+
+    <com.android.phone.SlideView2
+        android:id="@+id/incomingCallWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/slideview_padding_bottom"
+        android:splitMotionEvents="false"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/incomingcall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/huadongjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/incomingcall_margin_bottom" >
+
+                <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/huadongjieting"
+            android:textColor="#CCFFFFFF"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/huadongjieting"
+            />
+                -->
+
+                <com.android.phone.SlideTextView
+                    android:id="@+id/huadongjieting"
+                    android:layout_width="@dimen/aurora_sliderview_width"
+                    android:layout_height="@dimen/aurora_sliderview_height"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/text_fuhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dip"
+                    android:layout_toRightOf="@id/huadongjieting"
+                    android:background="@drawable/right_arrow2" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/huadongjie"
+                android:layout_centerHorizontal="true"
+                android:text="@string/huadongjujie"
+                android:textColor="#80FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </com.android.phone.SlideView2>
+
+    <LinearLayout
+        android:id="@+id/smsrespond_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/smsrespond1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_2"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_3"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_custom_message"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.android.phone.GlowPadView
+        android:id="@+id/OriginIncomingCallWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/aurora_glowview_margin_bottom"
+        android:layout_marginTop="0dip"
+        android:gravity="top"
+        android:visibility="gone"
+        prvandroid:directionDescriptions="@array/incoming_call_widget_2way_direction_descriptions"
+        prvandroid:feedbackCount="1"
+        prvandroid:firstItemOffset="0"
+        prvandroid:glowRadius="@dimen/glowpadview_glow_radius"
+        prvandroid:handleDrawable="@drawable/aurora_ic_in_call_touch_handle_normal"
+        prvandroid:innerRadius="@dimen/aurora_glowpadview_inner_radius"
+        prvandroid:outerRadius="@dimen/aurora_glowpadview_target_placement_radius"
+        prvandroid:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+        prvandroid:pointDrawable="@drawable/aurora_incoming_touch"
+        prvandroid:snapMargin="@dimen/glowpadview_snap_margin"
+        prvandroid:targetDescriptions="@array/incoming_call_widget_2way_target_descriptions"
+        prvandroid:targetDrawables="@array/aurora_incoming_call_widget_2way_targets"
+        prvandroid:vibrationDuration="20" />
+
+    <TextView
+        android:id="@+id/slidedowntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/aurora_slidedowntext_margin_bottom"
+        android:text="@string/slide_down_answer"
+        android:textColor="#cbdedf"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/end_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/end_height"
+        android:layout_gravity="bottom"
+        android:layoutAnimation="@anim/incall_button_layout_in"
+        android:paddingBottom="@dimen/end_padding_bottom"
+        android:paddingTop="@dimen/end_padding_top" >
+
+        <ImageView
+            android:id="@+id/endButton"
+            android:layout_width="282dip"
+            android:layout_height="@dimen/end_view_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/aurora_end_call"
+            android:contentDescription="@string/endcall" />
+
+        <TextView
+            android:id="@+id/end_calltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/endcall"
+            android:textColor="#FFFFFFFF"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dip"
+            android:paddingRight="32dip" >
+
+            <ImageView
+                android:id="@+id/end_keypad"
+                android:layout_width="141dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/aurora_endcall_keypad"
+                android:contentDescription="@string/endcall"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/endcall_text_keypad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/end_keypad"
+                android:layout_alignRight="@id/end_keypad"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/endcall_keypad"
+                android:textColor="#FFFFFFFF"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/hide_keypad"
+                android:layout_width="@dimen/end_view_width"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/aurora_hide_keypad"
+                android:contentDescription="@string/endcall"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/hide_keypad_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/hide_keypad"
+                android:layout_alignRight="@id/hide_keypad"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/hide_keypad"
+                android:textColor="@color/aurora_green_text_color"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/call_waiting_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/call_waiting_margin_bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_hold"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_hide_keypad"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hold_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/answer_callwaiting_hold"
+                android:layout_alignRight="@id/answer_callwaiting_hold"
+                android:layout_alignTop="@id/answer_callwaiting_hold"
+                android:layout_marginTop="6.8dp"
+                android:gravity="center"
+                android:text="@string/description_target_answer"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hold_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/answer_callwaiting_hold"
+                android:layout_alignLeft="@id/answer_callwaiting_hold"
+                android:layout_alignRight="@id/answer_callwaiting_hold"
+                android:layout_marginBottom="3.4dp"
+                android:gravity="center"
+                android:text="@string/aurora_answer_call_waiting_hold"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_hangup"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_hide_keypad"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hangup_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/answer_callwaiting_hangup"
+                android:layout_alignRight="@id/answer_callwaiting_hangup"
+                android:layout_alignTop="@id/answer_callwaiting_hangup"
+                android:layout_marginTop="6.8dp"
+                android:gravity="center"
+                android:text="@string/description_target_answer"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hangup_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/answer_callwaiting_hangup"
+                android:layout_alignLeft="@id/answer_callwaiting_hangup"
+                android:layout_alignRight="@id/answer_callwaiting_hangup"
+                android:layout_marginBottom="3.4dp"
+                android:gravity="center"
+                android:text="@string/aurora_answer_call_waiting_hangup"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_end"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_end_call"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/aurora_end_call_waiting"
+                android:textColor="@color/aurora_dialpad_text_color"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.android.phone.InCallTouchUi>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources> 
+    <string name="hello">Hallo Welt, AudioProfileSettings!</string>  
+    <string name="app_name">Audioprofile</string>  
+    <string name="gn_audio_profile_message_invalid_name_wrong">Namen enthalten ungültige Zeichen</string>  
+    <!-- for Profile -->  
+    <string name="sound_category_sound_title">Generell</string>  
+    <string name="sound_category_calls_title">Klingeltöne</string>  
+    <string name="sound_category_notification_title">Benachrichtigungen</string>  
+    <string name="sound_category_feedback_title">Feedback</string>  
+    <string name="Phone_vibrate_summary">Vibrieren für eingehende Anrufe</string>  
+    <string name="voice_call_title">Sprachanruf Klingelton</string>  
+    <string name="voice_call_summary">Legen Sie das Standard Anrufe Klingelton</string>  
+    <string name="video_call_title">Videoanruf Klingelton</string>  
+    <string name="video_call_summary">Default Videoanruf Klingelton einstellen</string>  
+    <string name="audio_profile_settings_title">Audio Profile</string>  
+    <string name="audio_profile_settings">Profil Einstellungen</string>  
+    <string name="audio_profile_settings_Edit">Profil Einstellungen bearbeiten</string>  
+    <string name="audio_profile_category_predefine_title">Vordefinierte Profile</string>  
+    <string name="audio_profile_category_custom_title">Benutzerdefinierte Profile</string>  
+    <string name="audio_profile_reset">Rücksetzen</string>  
+    <string name="audio_profile_add">Hinzufügen</string>  
+    <string name="audio_profile_enable">Ermöglichen</string>  
+    <string name="audio_profile_rename">Umbenennen</string>  
+    <string name="audio_profile_delete">Löschen</string>  
+    <string name="audio_profile_error">Fehler</string>  
+    <string name="audio_profile_message_reset">Alle Audioprofil Einstellungen werden auf die Standardwerte zurückgesetzt</string>  
+    <string name="audio_profile_message_rename">Bitte geben Sie den neuen Profilnamen ein</string>  
+    <string name="audio_profile_message_name_error">Der Name existiert bereits</string>  
+    <string name="audio_profile_message_name_length_wrong">Name muss mindestens einen Buchstaben haben</string>  
+    <string name="audio_profile_message_delete">Profil %1$s wird gelöscht</string>  
+    <string name="audio_profile_message_overflow">Sie können nur 6 benutzerdefinierte Profile hinzufügen</string>  
+    <string name="restore_defaults">Standardeinstellungen wiederherstellen</string>  
+    <string name="enable">Ermöglichen</string>  
+    <string name="format_ok">SD-Karte erfolgreich formatiert!</string>  
+    <string name="format_notok">SD-Karte nicht formatiert!</string>  
+    <string name="ringtone_tab_title">Töne wählen</string>  
+    <!-- Sound and alerts settings -->  
+    <!-- Main Settings screen setting option name to go into the sound settings screen -->  
+    <string name="sound_settings_title">Klingeln</string>  
+    <!-- Main Settings screen setting option name to go into the display settings screen -->  
+    <string name="display_settings_title">Anzeige</string>  
+    <!-- Sound settings screen heading -->  
+    <string name="sound_settings">Sound Einstellungen</string>  
+    <!-- Sound settings screen, setting option name checkbox -->  
+    <string name="silent_mode_title">Stumm Modus</string>  
+    <string name="silent_mode_summary">Alle Töne stumm stellen außer Medien Alarme</string>  
+    <string name="silent_mode_incl_alarm_summary">Alle Töne außer Medien stummgestellt</string>  
+    <string name="ringtone_title">Klingelton</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="ringtone_summary">Eingehende Anrufe standard Klingelton einstellen</string>  
+    <!-- Sound settings screen, volume title -->  
+    <string name="all_volume_title">Volumen</string>  
+    <!-- Sound settings screen, setting option name -->  
+    <string name="ring_volume_title">Klingeltonlautstärke</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="ring_volume_summary">Lautstärke für Klingelton, Wecker und Benachrichtigungen</string>  
+    <!-- Sound settings screen, setting option name checkbox -->  
+    <string name="vibrate_in_silent_title">Vibriert, wenn stumm</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="vibrate_in_silent_summary">Vibrations aktivieren wenn in Stumm Modus</string>  
+    <!-- Sound settings screen, setting option name checkbox -->  
+    <string name="vibrate_title">Vibrieren</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="vibrate_summary">Vibration für Anrufe und Benachrichtigungen</string>  
+    <!-- Sound settings screen, setting option name -->  
+    <string name="notification_sound_title">Benachrichtigung Klingelton</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="notification_sound_summary">Standard Benachrichtigungen Klingelton einstellen</string>  
+    <!-- Sound settings screen, notification light repeat pulsing title -->  
+    <string name="notification_pulse_title">Blinken bei Benachrichtigung</string>  
+    <!-- Sound settings screen, notification light repeat pulsing summary -->  
+    <string name="notification_pulse_summary">Trackball Licht wiederholt blinken bei neuen Meldungen</string>  
+    <!-- Sound settings screen, the title of the volume bar to adjust the incoming call volume -->  
+    <string name="incoming_call_volume_title">Klingelton</string>  
+    <!-- Sound settings screen, the title of the volume bar to adjust the notification volume -->  
+    <string name="notification_volume_title">Benachrichtigung</string>  
+    <!-- Sound settings screen, the caption of the checkbox for having the notification volume be
+         the same as the incoming call volume. -->  
+    <string name="checkbox_notification_same_as_incoming_call">Verwenden Sie die Lautstärke der eingehenden Anrufe für Benachrichtigungen</string>  
+    <!-- Sound settings screen, setting option title-->  
+    <string name="notification_sound_dialog_title">Wählen Sie Benachrichtigung Klingelton</string>  
+    <!-- Sound settings screen, setting option name -->  
+    <string name="media_volume_title">Medien</string>  
+    <!-- Sound settings screen, setting option summary text -->  
+    <string name="media_volume_summary">Lautstärke für Musik und Videos</string>  
+    <!-- Sound settings screen, alarm volume slider title -->  
+    <string name="alarm_volume_title">Alarm</string>  
+    <!-- Sound settings screen, dock settings summary-->  
+    <string name="dock_settings_summary">Audio-Einstellungen für den angeschlossenen Dock</string>  
+    <!-- Sound settings screen, setting check box label -->  
+    <string name="dtmf_tone_enable_title">Tastentöne</string>  
+    <!-- Sound settings screen, setting option summary text when check box is selected -->  
+    <string name="dtmf_tone_enable_summary_on">Töne bei Tastendruck abspielen</string>  
+    <!-- Sound settings screen, setting option summary text when check box is clear -->  
+    <string name="dtmf_tone_enable_summary_off">Töne bei Tastendruck abspielen</string>  
+    <!-- Sound settings screen, setting check box label -->  
+    <string name="sound_effects_enable_title">Akustische Auswahl</string>  
+    <!-- Sound settings screen, setting option summary text when check box is selected -->  
+    <string name="sound_effects_enable_summary_on">Ton abspielen, wenn Bildschirm ausgewählt wird</string>  
+    <!-- Sound settings screen, setting option summary text when check box is clear -->  
+    <string name="sound_effects_enable_summary_off">Ton abspielen, wenn Bildschirm ausgewählt wird</string>  
+    <!-- Sound settings screen, setting check box label -->  
+    <string name="lock_sounds_enable_title">Bildschirmsperre Ton</string>  
+    <!-- Sound settings screen, setting option summary text when check box is selected -->  
+    <string name="lock_sounds_enable_summary_on">Ton abspielen beim Sperren und Entsperren des Bildschirms</string>  
+    <!-- Sound settings screen, setting option summary text when check box is clear -->  
+    <string name="lock_sounds_enable_summary_off">Ton abspielen beim Sperren und Entsperren des Bildschirms</string>  
+    <!-- Sound settings screen, setting check box label -->  
+    <string name="haptic_feedback_enable_title">Haptisches Feedback</string>  
+    <!-- Sound settings screen, setting option summary text when check box is selected -->  
+    <string name="haptic_feedback_enable_summary_on">Vibrieren beim Drücken von Softkeys und bei bestimmten Benutzerinteraktionen</string>  
+    <!-- Sound settings screen, setting option summary text when check box is clear -->  
+    <string name="haptic_feedback_enable_summary_off">Vibrieren beim Drücken von Softkeys und bei bestimmten Benutzerinteraktionen</string>  
+    <string name="flip_sounds_enable_title">Flip Töne</string>  
+    <string name="flip_sounds_enable_summary_on">Töne abspielen bei Flip Ein-und Ausschaltung</string>  
+    <string name="flip_sounds_enable_summary_off">Töne abspielen bei Flip Ein-und Ausschaltung</string>  
+    <string name="lock_settings_picker_title">Wählen Sie Display-Sperre</string>  
+    <string name="volume_ring_description">Meldungen Klingelton</string>  
+    <!-- Volume description for notification volume -->  
+    <string name="volume_notification_description">Benachrichtigungen</string>  
+    <!-- Volume description for alarm volume -->  
+    <string name="volume_alarm_description">Alarm</string>  
+    <string name="general_settings_title">General</string>  
+    <string name="silent_settings_title">Still</string>  
+    <string name="meeting_settings_title">Meeting</string>  
+    <string name="outdoor_settings_title">Im Freien</string>  
+    <string name="ring_summary">Klingeln</string>  
+    <string name="ring_vibrate_summary">Klingeln und Vibrieren</string>  
+    <string name="silent_summary">Nur stumm</string>  
+    <string name="meeting_summary">Nur vibrieren</string>  
+    <string name="outdoor_summary">Stärkstes klingeln und vibrieren</string>  
+    <string name="gn_ringtone_notif">Klingelton</string>  
+    <string name="gn_mms_ringtone">MMS Klingelton</string> 
+</resources>

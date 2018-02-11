@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<set xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <alpha    
+	    android:fromAlpha="0.2" android:toAlpha="1.0" 
+	    android:duration="300" 
+	    android:interpolator="@android:anim/linear_interpolator"  />    
+	<!--
+	关于 % 与 %p 的解释：
+	（1） %表示移动位置相对自身的长度比 例如：android:fromYDelta="-100%" 
+	（2） %p表示移动位置相对服务局的长度比 例如：android:fromYDelta="-100%p" 
+	 -->    
+    <translate    
+	    android:fromYDelta="-100%"     
+	    android:toYDelta="0"    
+	    android:fromXDelta="100%"     
+	    android:toXDelta="0"   
+	    android:duration="300"
+	    android:interpolator="@android:anim/linear_interpolator"/> 
+</set> 

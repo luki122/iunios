@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Gionee <baorui><2013-05-02> modify for CR00799490 begin -->
+<string name="system_date">&quot;<xliff:g id="YEAR">%1$s</xliff:g>год<xliff:g id="MONTH">%2$s</xliff:g><xliff:g id="DAY">%3$s</xliff:g>день<xliff:g id="WEEK">%4$s</xliff:g>&quot;</string>
+    <string name="system_alarm">&quot;Следующий будильник：<xliff:g id="WEEK">%1$s</xliff:g> <xliff:g id="TIMES">%2$s</xliff:g>&quot;</string>
+    <string name="chronometer_screen_always_summary">Только в первой странице таймера экран светится постоянно</string>
+    <string name="stopwatch_screen_always_summary">Только в первой странице секундомера экран светится постоянно</string>
+<!-- Gionee <baorui><2013-05-02> modify for CR00799490 end -->
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:com.aurora="http://schemas.android.com/apk/res/com.aurora"
+>
+    <!-- Gionee <zhang_xin><2013-05-13> modify for CR00794646 begin -->
+    <style name="GnSettingsLightTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 begin -->
+        <!-- Aurora <likai> modify begin -->
+        <!-- <item name="android:windowBackground">@drawable/gn_background_light</item> -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- Aurora <likai> modify end -->
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 end -->
+        <item name="android:tabWidgetStyle">@style/Widget.GioneeView.TabWidget</item>
+    </style>
+    <style name="GnSettingsLightThemeBootanimation" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 begin -->
+        <!-- Aurora <likai> modify begin -->
+        <!-- <item name="android:windowBackground">@drawable/gn_background_light</item> -->
+        <item name="com.aurora:actionBarLeftWidgetBackground">@com.aurora:drawable/aurora_action_bar_widget_left_selector_dark</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- Aurora <likai> modify end -->
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 end -->
+        <item name="android:tabWidgetStyle">@style/Widget.GioneeView.TabWidget</item>
+    </style>
+    
+     <style name ="AuroraApnTheme" parent="com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowBackground">@android:color/white</item>
+        
+        <!--  
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+		<item name="android:activityOpenExitAnimation">@android:anim/slide_in_left</item>
+		<item name="android:activityCloseEnterAnimation">@android:anim/slide_out_right</item>
+		<item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+       -->
+    </style>
+    <style name = "noAnimation"
+        >
+        <item name="android:taskOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:taskOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:taskCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/slide_right_out</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+        <item name="android:activityOpenEnterAnimation">@android:anim/slide_in_left</item>
+		<item name="android:activityOpenExitAnimation">@android:anim/slide_in_left</item>
+		<item name="android:activityCloseEnterAnimation">@android:anim/slide_out_right</item>
+		<item name="android:activityCloseExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="GnSettingsDarkTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 begin -->
+        <item name="android:windowBackground">@drawable/gn_background_dark</item> 
+        <!-- Gionee <wangyaohui><2013-04-27> add for  CR00802940 end -->
+        <item name="android:tabWidgetStyle">@style/Widget.GioneeView.TabWidget</item>
+    </style>
+    <!-- Gionee <zhang_xin><2013-05-13> modify for CR00794646 end -->
+
+    <!-- Gionee <zhang_xin><2013-04-28> modify for CR00794646 begin -->
+    <style name="LightActionBarStyle" parent="@com.aurora:style/Widget.Aurora.Light.ActionBar.Solid.Inverse">
+    </style>
+    <!-- Gionee <zhang_xin><2013-04-28> modify for CR00794646 end -->
+
+    <style name="LightActionBarTabView" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/gn_action_bar_item_back</item>
+    </style>
+
+    <style name="Gn_actionBarTabTextStyle" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textSize">@dimen/gn_action_bar_tab_textsize</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textColorHint">#CCCCCC</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.Light.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/ListViewDropdownStyle</item>
+    </style>
+
+    <style name="GNTextAppearance" parent="@android:style/TextAppearance.Inverse">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="GNpopupMenuStyle" parent="@android:style/Widget.Holo.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="GNdropDownListViewStyle" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@android:drawable/divider_horizontal_bright</item>
+    </style>
+
+    <style name="DarkActionBarStyle" parent="@com.aurora:style/Widget.Aurora.Light.ActionBar">
+        <item name="android:background">@drawable/gn_tab_dark_bg</item>
+        <item name="android:backgroundSplit">@drawable/gn_menu_dark_bg</item>
+        <item name="android:backgroundStacked">@drawable/gn_tab_dark_bg</item>
+    </style>
+
+    <style name="ListViewDropdownStyle" parent="@android:style/Widget.ListView.DropDown">
+        <item name="android:listSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+
+    <!-- Gionee fangbin 20120727 added for CR00658330 start -->
+    <!-- Gionee <zhang_xin><2013-03-25> modify for CR00788411 begin -->
+    <!-- <style name="GnSettingsDarkThemeDialog" parent="@android:style/Theme.Holo.Dialog"> -->
+    <style name="GnSettingsDarkThemeDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+    <!-- Gionee <zhang_xin><2013-03-25> modify for CR00788411 end -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="GnSettingsLightThemeDialog" parent="@com.aurora:style/Theme.Aurora.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- gionee guozj 20121228 added for CR00754692 start -->
+    <style name="GnSettingsAlertDialog" parent="@com.aurora:style/Theme.Aurora.Dialog.Alert.FullScreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- gionee guozj 20121228 added for CR00754692 end -->
+    <!-- Gionee fangbin 20120727 added for CR00658330 end -->
+    
+    <!-- Gionee <zhang_xin><2013-05-13> add for CR00794646 begin -->
+    <style name="Widget.GioneeView.TabWidget" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:divider">@drawable/gn_tabbar_divider</item>
+        <item name="android:dividerPadding">0dip</item>
+    </style>
+    <!-- Gionee <zhang_xin><2013-05-13> add for CR00794646 end -->
+
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 start -->
+    <style name="Widget.GioneeView.Tab" parent="@android:style/Widget.Holo.Tab">
+        <item name="android:background">@drawable/gn_tab_indicator_dark</item>
+    </style>
+    
+    <!-- Gionee <zhang_xin><2013-03-25> modify for CR00788411 begin -->
+    <style name="GnDialogLightTheme" parent="@com.aurora:style/Theme.Aurora.Light.Dialog"></style>
+    <!-- <style name="GnDialogBlackTheme" parent="@com.aurora:style/Theme.Aurora.Light.Dialog"></style> -->
+    <style name="GnDialogBlackTheme" parent="@com.aurora:style/Theme.Aurora.Light.Dialog"></style>
+    <!-- Gionee <zhang_xin><2013-03-25> modify for CR00788411 end -->
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 end -->
+
+    <!-- Gionee fangbin 20120913 added for CR00692777 start -->
+    <style name="GnEmptyTheme">
+        <item name="android:windowAnimationStyle">@style/GnOpenClose</item>
+    </style>
+    <!-- Gionee fangbin 20120913 added for CR00692777 end -->
+
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 begin -->
+    <style name="GnFontSizeSeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/gn_font_size_seekbar</item>
+        <item name="android:indeterminateDrawable">@drawable/gn_font_size_seekbar</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+        <item name="android:thumb">@drawable/gn_font_size_seekbar_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:focusable">true</item>
+    </style>
+    
+     <style name="GnOpenClose">
+       <item name="@android:activityOpenEnterAnimation">@null</item>
+       <item name="@android:activityOpenExitAnimation">@null</item>
+       <item name="@android:activityCloseEnterAnimation">@null</item>
+       <item name="@android:activityCloseExitAnimation">@null</item>
+    </style>
+    
+    <!-- Gionee <zhang_xin><2013-03-23> add for CR00788411 end -->
+
+</resources>

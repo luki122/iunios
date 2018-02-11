@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingRight="16dip"
+              android:enabled="false">
+
+    <ImageView android:id="@+id/aurora_up"
+               android:src="?android:attr/homeAsUpIndicator"
+               android:layout_gravity="center_vertical|left"
+               android:visibility="gone"
+               android:background="?android:attr/actionBarItemBackground"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+    
+         <View 
+               android:id="@+id/aurora_empty_view"
+               android:layout_width="16dip"
+               android:layout_height="match_parent"
+               android:visibility="gone"
+               android:background="@null"/>    
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical|left"
+                  android:orientation="vertical">
+        <aurora.lib.widget.AuroraAnimationText 
+            android:id="@+id/aurora_action_bar_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:singleLine="true"
+                  android:scaleType="center"
+                  android:ellipsize="end" />
+        <TextView android:id="@+id/aurora_action_bar_subtitle"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/aurora_action_bar_subtitle_top_margin"
+                  android:singleLine="true"
+                  android:ellipsize="end"
+                  android:visibility="gone" />
+        <!-- android:layout_marginTop="@dimen/aurora_action_bar_subtitle_top_margin"
+                  android:layout_marginBottom="@dimen/aurora_action_bar_subtitle_bottom_margin" -->
+    </LinearLayout>
+</LinearLayout>

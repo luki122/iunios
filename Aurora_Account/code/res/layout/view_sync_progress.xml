@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.aurora.account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aurora.account.widget.RoundProgressView
+        android:id="@+id/roundProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/account_sync_progressview_margin"
+        android_custom:roundColor="@color/progressRoundColor"
+        android_custom:roundProgressColor="@color/progressRoundProgressColor"
+        android_custom:textColor="@color/progressTextColor"
+        android_custom:roundWidth="1.3dp"
+        android_custom:textSize="11sp" />
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+
+</FrameLayout>

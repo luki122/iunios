@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="@dimen/aurora_list_singleline_height"
+    android:background="@drawable/aurora_menu_item_select"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/aurora_menu_normal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center"
+        >
+        <ImageView
+        android:id="@+id/aurora_menu_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/aurora_menu_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/aurora_menu_item__title_change_color"
+        android:gravity="center"
+        android:textSize="@dimen/aurora_list_singleline_text_size" />
+        
+    </LinearLayout>
+    
+    <FrameLayout
+        android:id="@+id/aurora_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="#3399ff"
+        />
+
+</LinearLayout>

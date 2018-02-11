@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+     Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+
+     Not a Contribution.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+        aurora:auroratitle="@string/mobile_networks">
+        
+   <AuroraPreferenceCategory
+        aurora:aurorakey="sim1_category_key"
+        aurora:auroratitle="@string/sub_1"
+        aurora:auroraicon="@drawable/sim1_icon"
+        aurora:aurorapersistent="false">
+
+    <!-- target class is com.android.phone.MultiSimSetting for Multi Sim Functionality-->
+    <!--  
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_settings_manage_sub"
+        aurora:auroratitle="@string/network_settings_sel_sub"
+        aurora:aurorasummary="@string/summary_manage_subscriptions"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.SelectSubscription" />
+    </AuroraPreferenceScreen>
+    -->
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="cdma_lte_data_service_key"
+        aurora:auroratitle="@string/cdma_lte_data_service">
+    </AuroraPreferenceScreen>
+
+    <!--  
+    <AuroraCheckBoxPreference
+        aurora:aurorakey="button_data_enabled_key"
+        aurora:auroratitle="@string/data_enabled"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/data_enable_summary"/>
+
+    <AuroraCheckBoxPreference
+        aurora:aurorakey="button_roaming_key"
+        aurora:auroratitle="@string/roaming"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummaryOn="@string/roaming_enable"
+        aurora:aurorasummaryOff="@string/roaming_disable"/>
+        -->
+    
+    <AuroraSwitchPreference
+        aurora:aurorakey="button_data_enabled_key"
+        aurora:auroratitle="@string/data_enabled"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/data_enable_summary"/>
+
+    <AuroraSwitchPreference
+        aurora:aurorakey="button_roaming_key"
+        aurora:auroratitle="@string/roaming"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummaryOn="@string/roaming_enable"
+        aurora:aurorasummaryOff="@string/roaming_disable"/>
+
+    <!--  
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_settings_manage_1"
+        aurora:auroratitle="@string/sim_icon_1"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.MSimMobileNetworkSubSettings" />
+    </AuroraPreferenceScreen>
+                -->
+      <AuroraListPreference
+        aurora:aurorakey="preferred_network_mode_key"
+        aurora:auroratitle="@string/preferred_network_mode_title"
+        aurora:aurorasummary="@string/preferred_network_mode_summary"
+        aurora:auroraentries="@array/preferred_network_mode_choices"
+        aurora:auroraentryValues="@array/preferred_network_mode_values"
+        aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle" />      
+                
+      <AuroraPreferenceScreen
+        aurora:aurorakey="preferred_network_mode_key2"
+        aurora:auroratitle="@string/preferred_network_mode_title"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.MSimPreferNetworkSettings" />
+       </AuroraPreferenceScreen>
+        
+	     <AuroraPreferenceScreen
+	        aurora:aurorakey="button_apn_key_1"
+	        aurora:auroratitle="@string/apn_settings"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.android.settings"
+	            android:targetClass="com.android.settings.ApnSettings" />
+	
+	    </AuroraPreferenceScreen>
+	
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_carrier_sel_key_1"
+	        aurora:auroratitle="@string/networks"
+	        aurora:aurorasummary="@string/sum_carrier_select"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.android.phone"
+	            android:targetClass="com.android.phone.NetworkSetting" />
+	
+	    </AuroraPreferenceScreen>
+    
+  </AuroraPreferenceCategory>
+ 
+ 
+   
+  <AuroraPreferenceCategory
+        aurora:aurorakey="sim2_category_key"
+        aurora:auroratitle="@string/sub_2"
+        aurora:auroraicon="@drawable/sim2_icon"
+        aurora:aurorapersistent="false">
+       <!--  
+            <AuroraPreferenceScreen
+		        aurora:aurorakey="button_settings_manage_2"
+		        aurora:auroratitle="@string/sim_icon_2"
+		        aurora:aurorapersistent="false">
+
+		        <intent android:action="android.intent.action.MAIN"
+		            android:targetPackage="com.android.phone"
+		            android:targetClass="com.android.phone.MSimMobileNetworkSubSettings" />
+             </AuroraPreferenceScreen>
+             -->
+       
+       <AuroraSwitchPreference
+            aurora:aurorakey="button_data_enabled_key2"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/data_enable_summary"
+            aurora:auroratitle="@string/data_enabled" />
+
+        <AuroraSwitchPreference
+            aurora:aurorakey="button_roaming_key2"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/roaming_disable"
+            aurora:aurorasummaryOn="@string/roaming_enable"
+            aurora:auroratitle="@string/roaming" />
+        
+        <AuroraPreferenceScreen
+	        aurora:aurorakey="preferred_network_mode_key4"
+	        aurora:auroratitle="@string/preferred_network_mode_title"
+	        aurora:aurorapersistent="false">
+
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.android.phone"
+	            android:targetClass="com.android.phone.MSimPreferNetworkSettings" />
+       </AuroraPreferenceScreen>
+             
+             
+	     <AuroraPreferenceScreen
+	        aurora:aurorakey="button_apn_key_2"
+	        aurora:auroratitle="@string/apn_settings"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.android.settings"
+	            android:targetClass="com.android.settings.ApnSettings" />	
+	    </AuroraPreferenceScreen>
+	
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_carrier_sel_key_2"
+	        aurora:auroratitle="@string/networks"
+	        aurora:aurorasummary="@string/sum_carrier_select"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.android.phone"
+	            android:targetClass="com.android.phone.NetworkSetting" />
+	    </AuroraPreferenceScreen>
+  </AuroraPreferenceCategory>
+  
+  
+  
+      <AuroraPreferenceCategory
+        aurora:aurorakey="sim_data_support_key"
+        aurora:auroratitle="@string/third_data_support_title"
+        aurora:aurorapersistent="false">
+	    
+          <AuroraSwitchPreference
+		        aurora:aurorakey="aurora_data_enabled_key"
+		        aurora:auroratitle="@string/data_enabled"
+		        aurora:aurorapersistent="false"
+		        aurora:aurorasummary="@string/data_enable_summary"/>
+		        
+          <AuroraPreference
+            aurora:aurorakey="data"
+            aurora:auroratitle="@string/data_title"
+            aurora:aurorapersistent="false" />
+          
+           <AuroraPreference
+	            aurora:aurorakey="sim_data_support_summary_key"
+	            aurora:aurorasummary="@string/sim_data_support_summary"
+	            aurora:aurorapersistent="false" />
+    
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:auroratitle="@string/callind_multi_sim_card"
+        aurora:aurorapersistent="false">
+      <AuroraPreferenceScreen
+	        aurora:aurorakey="dual_sim_setting_key"
+	        aurora:auroratitle="@string/callind_multi_sim_card"
+	        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.SetSubscription" />
+       </AuroraPreferenceScreen>
+
+    
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim_3rd_support_key"
+        aurora:auroratitle="@string/third_sim_support"
+        aurora:aurorapersistent="false">
+        
+		                 
+         <AuroraPreference
+            aurora:aurorakey="priority_subscription"
+            aurora:auroratitle="@string/priority_sub_title"
+            aurora:aurorapersistent="false" />
+              
+             
+           <AuroraPreference
+	            aurora:aurorakey="sim_3rd_spinner_key_summary"
+	            aurora:aurorasummary="@string/third_sim_support_summary"
+	            aurora:aurorapersistent="false" />
+    
+    </AuroraPreferenceCategory>
+  
+</AuroraPreferenceScreen>

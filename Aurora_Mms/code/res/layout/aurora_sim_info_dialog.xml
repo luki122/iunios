@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-25 created for aurora's new feature -->
+<!-- Aurora liugj 2013-11-14 created for aurora's new feature start -->
+<!-- Aurora liugj 2013-11-20 modified for customDialog margin start -->
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="24dp">
+<!-- Aurora liugj 2013-11-20 modified for customDialog margin end -->
+<!-- Aurora liugj 2013-11-14 created for aurora's new feature end -->
+        
+         <!-- Aurora liugj 2013-11-20 modified for bug-936 start -->
+        <TextView
+                android:id="@+id/dialog_sim_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dp"
+                android:maxHeight="253dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                 />
+        <!-- Aurora liugj 2013-11-20 modified for bug-936 end -->
+
+        <TextView 
+            android:id="@+id/dialog_sim_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/aurora_text_color_date"
+            android:textSize="15sp"
+             />
+</LinearLayout>

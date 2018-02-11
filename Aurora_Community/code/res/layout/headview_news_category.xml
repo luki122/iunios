@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingBottom="8dp">
+     <TextView
+        android:id="@+id/tv_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mainpage_category_tv_title_margin_top"
+        android:textColor="@color/mainpage_category_title_tv_color"
+        android:textSize="@dimen/mainpage_category_tv_title_size" 
+        android:text="@string/main_category_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/topic_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mainpage_category_ll_content_parent_margin_top"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/mainpage_category_ll_content_child_height"
+            android:background="@color/globals_widget_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/main_category_rl_style" >
+
+                <TextView
+                    android:id="@+id/tv_left_topic_title"
+                    style="@style/main_category_top_title_tv_style" />
+
+                <TextView
+                    android:id="@+id/tv_left_topic_comment"
+                    style="@style/main_category_top_comment_tv_style" 
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_left_topic"
+                style="@style/main_category_top_iv_style" 
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                
+                />
+
+            <FrameLayout
+                android:id="@+id/left_topic_click"
+                style="@style/main_category_top_fr_click_style"
+                android:background="@drawable/mainpage_category_top_item_selector"
+                android:clickable="true" >
+            </FrameLayout>
+        </FrameLayout>
+         <ImageView android:layout_width="@dimen/mainpage_category_ll_content_child_margin_left"
+                    android:layout_height="@dimen/mainpage_category_ll_content_child_height"
+                    android:background="@drawable/action_bar_transparent"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/mainpage_category_ll_content_child_height"
+            android:background="@color/globals_widget_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/main_category_rl_style" >
+
+                <TextView
+                    android:id="@+id/tv_right_topic_title"
+                    style="@style/main_category_top_title_tv_style" />
+
+                <TextView
+                    android:id="@+id/tv_right_topic_comment"
+                    style="@style/main_category_top_comment_tv_style" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_right_topic"
+                style="@style/main_category_top_iv_style" 
+                 android:layout_width="match_parent"
+                 android:scaleType="centerCrop"/>
+
+            <FrameLayout
+                android:id="@+id/right_topic_click"
+                style="@style/main_category_top_fr_click_style"
+                android:background="@drawable/mainpage_category_top_item_selector"
+                android:clickable="true" >
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

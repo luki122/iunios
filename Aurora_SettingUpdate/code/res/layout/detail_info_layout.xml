@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:id="@+id/info_more"
+    Android:layout_width="fill_parent"
+    Android:layout_height="fill_parent"
+    Android:orientation="vertical" >
+
+   <RelativeLayout 
+        Android:id="@+id/download_info"
+        Android:layout_gravity="center_vertical"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+    >
+    <ProgressBar
+        Android:id="@+id/progress_webview"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_marginLeft="30dp"
+        Android:layout_marginRight="10dp"
+        Android:visibility="visible" />
+    <TextView 
+        Android:id="@+id/progress_textview"
+        Android:layout_marginTop="10dip"
+        Android:layout_toRightOf="@id/progress_webview"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:text="@string/progress_info"
+        Android:textSize="@dimen/check_update_textSize"
+        />
+    </RelativeLayout>
+    
+    <WebView
+        Android:id="@+id/ready_webview"
+        Android:layout_width="fill_parent"
+        Android:layout_height="fill_parent"
+        Android:visibility="gone" />
+
+    <ImageView
+        Android:id="@+id/network_error"
+        Android:layout_width="match_parent"
+        Android:layout_height="match_parent"
+        Android:src="@drawable/network_error_big"
+        Android:visibility="gone" />
+
+</FrameLayout>

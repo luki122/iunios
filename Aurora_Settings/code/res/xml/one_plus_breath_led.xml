@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/breathing_LED_settings_title" >
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="notification"
+        aurora:auroratitle="@string/breathing_LED_settings_inform_title"
+        aurora:aurorasummary="@string/breathing_LED_settings_inform_summary"/>
+    
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="low_power"
+        aurora:auroratitle="@string/breathing_LED_settings_low_power_title" 
+        aurora:aurorasummary="@string/breathing_LED_settings_low_power_summary"/>
+    
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="charge"
+        aurora:auroratitle="@string/breathing_LED_settings_charge_title"
+        aurora:aurorasummary="@string/breathing_LED_settings_charge_summary"/>
+
+</aurora.preference.AuroraPreferenceScreen>

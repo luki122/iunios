@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-07-02 created for reject feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aurora_remove_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dip"
+        android:layout_marginTop="28dip"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+    <aurora.widget.AuroraCheckBox
+        android:id="@+id/aurora_black_resume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dip"
+        android:layout_marginBottom="23dip"
+        android:textSize="16sp"
+        android:textColor="#8c8c8c"
+        android:paddingLeft="11dip"
+        android:text="@string/aurora_resume_tag2"
+       />
+
+</LinearLayout>

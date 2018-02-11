@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dashboard-categories xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <dashboard-category
+        android:id="@+id/aurora_framework_demo_cat"
+        android:title="Test" >
+
+        <!--
+        配置这个之后不需要调用启动activity的代码，只需要配置好action，然后在目标activity中注册对应的action就可以了
+        	android:title是显示在列表里的文本
+        	android：id和系统控件中定义的id一个意思，用法一样
+        
+        
+        dashboard-tile：每个tile对应一个列表的item
+        -->
+        <dashboard-tile
+            android:id="@+id/activity_demo"
+            android:title="AuroraActivity" >
+            <intent android:action="com.aurora.frameworkdemo.AuroraActivity" />
+        </dashboard-tile>
+        <dashboard-tile
+            android:id="@+id/dialog_demo"
+            android:title="AuroraDialogDemo" >
+            <intent android:action="com.aurora.frameworkdemo.AuroraDialogDemo" />
+        </dashboard-tile>
+
+        <dashboard-tile
+                android:id="@+id/aurora_actionbar"
+                android:title="AuroraActionbar"
+                >
+                <intent android:action="com.aurora.frameworkdemo.AuroraActionbarDemo" />
+                </dashboard-tile>
+                
+        <dashboard-tile
+                android:id="@+id/aurora_menu"
+                android:title="AuroraMenu"
+                >
+                <intent android:action="com.aurora.frameworkdemo.AuroraMenuDemo" />
+         </dashboard-tile>
+         
+         <dashboard-tile
+            android:id="@+id/auroraactivity_search"
+            android:title="AuroraActivitySearch" >
+            <intent android:action="com.aurora.frameworkdemo.AuroraActivitySearchDemo" />
+
+         </dashboard-tile>
+    </dashboard-category>
+
+</dashboard-categories>

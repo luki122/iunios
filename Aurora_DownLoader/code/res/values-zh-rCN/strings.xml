@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">下载管理</string>
+    <string name="no_file">没有文件</string>
+    <string name="all_select">全选</string>
+    <string name="invert_select">反选</string>
+    <string name="send_file">分享</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="enable_sd_card">存储器不可用</string>
+    <string name="category_download">下载</string>
+    <string name="dialog_select_type">选择文件类型</string>
+    <string name="dialog_type_text">文本</string>
+    <string name="dialog_type_audio">音频</string>
+    <string name="dialog_type_video">视频</string>
+    <string name="dialog_type_image">图像</string>
+    <string name="msg_unable_open_file">文件格式不支持请安装相关应用</string>
+    <string name="missing_title" msgid="830115697868833773">"&lt;未知&gt;"</string>
+    <string name="no_network">请连接网络</string>
+    <string name="no_network_2">无网络链接</string>
+    <string name="unknow">未知</string>
+    <string name="download_running" msgid="4656462962155580641">"正在下载"</string>
+    <string name="download_success" msgid="7006048006543495236">"已完成"</string>
+    <string name="download_error" msgid="8081329546008568251">"下载失败"</string>
+    <string name="download_paused">暂停下载</string>
+    <string name="download_waiting">等待下载</string>
+    <string name="share_download">分享</string>
+    <string name="delete_download" msgid="76629022653866471">"删除"</string>
+    <string name="dialog_file_missing_body" msgid="3223012612774276284">"找不到已下载的文件。"</string>
+    <string name="dialog_title_not_available" msgid="5746317632356158515">"无法下载"</string>
+    <string name="retry_download" msgid="7617100787922717912">"重试"</string>
+    <string name="share_too_much">您太博爱了，分享这么多</string>
+    <string name="operation_delete">删除</string>
+    <string name="del_file">无法删除 %s </string>
+    <string name="operation_delete_single_confirm_message">"您确定要删除此文件吗？"</string>
+    <string name="operation_delete_single_file_confirm_message">"是否删除此文件？"</string>
+    <string name="operation_delete_double_file_confirm_message">"是否删除所选的%1$d个文件？"</string>
+    <string name="operation_deleting">正在删除&#8230;</string>
+    <string name="download_no_complete">请等待任务下载完成！</string>
+    <string name="can_not_redownload">无法继续下载该文件！请删除重新下载！</string>
+    <string name="dialog_file_running">等待下载</string>
+    <string name="has_no_free_memory">存储空间不足，请释放空间</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dates">
+        <item></item>
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item></item>
+        <item></item>
+    </string-array><!-- Единицы измерения трафика --><string-array name="flow_unit">
+        <item>Мб</item>
+        <item>Гб</item>
+    </string-array><!-- Тип пакета China Mobile --><string-array name="package_type_cm">
+        <item>M-zone</item>
+        <item>Gotone</item>
+        <item>Easy own</item>
+    </string-array><!-- China UnicomТип пакета --><string-array name="package_type_cu">
+        <item>2G</item>
+        <item>3G</item>
+    </string-array><!-- Провинция --><string-array name="province">
+         <item>Город  Пекин</item>
+         <item>Город  Тяньцзинь </item>
+		 <item>Город  Шанхай</item>
+		 <item>Город Чунцин </item>
+		 <item>Провинция Хэбэй</item>
+		 <item>Провинция Хэнань</item> 
+		 <item>Провинция Юньнань</item>
+		 <item>Провинция Ляонин</item>
+		 <item>Провинция Хэйлунцзян</item> 
+		 <item>Провинция Хунань</item>
+		 <item>Провинция Аньхой</item> 
+		 <item>Провинция Шаньдун</item>
+		 <item>Синьцзян-Уйгурский автономный район</item>
+		 <item>Провинция Цзянсу </item>
+		 <item>Провинция Чжэцзян</item>
+		 <item>Провинция Цзянси</item>
+		 <item>Провинция Хубэй</item>
+		 <item>Гуанси-Чжуанский автономный район</item>
+		 <item>Провинция Ганьсу </item>
+		 <item>Провинция Шаньси</item> 
+		 <item>Внутренняя Монголия</item> 
+		 <item>Провинция Шэньси</item>
+		 <item>Провинция Цзилинь</item> 
+		 <item>Провинция Фуцзянь</item>
+		 <item>Провинция Гуйчжоу</item>
+		 <item>Провинция Гуандун</item>
+		 <item>Провинция Цинхай</item>
+		 <item>Тибет</item>
+		 <item>Провинция Сычуань</item>
+		 <item>Нинся-Хуэйский автономный район</item>
+		 <item>Провинция Хайнань</item>
+		 <item>Специальный административный район Гонконг</item>
+		 <item>Специальный административный район Макао </item>
+    </string-array>
+    
+
+ 
+
+</resources>

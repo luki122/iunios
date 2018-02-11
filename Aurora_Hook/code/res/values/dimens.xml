@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aurora_alert_dialog_title_text_size">19sp</dimen>
+</resources>

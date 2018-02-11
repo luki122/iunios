@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/layout">
+
+	<SurfaceView android:id="@+id/bootanimation_surfaceview"   
+     	android:layout_width="1080px"    
+		android:layout_height="1920px"
+		android:layout_gravity="top"
+		/>
+	<ImageView 
+        android:layout_width="fill_parent"
+    	android:layout_height="1700px"
+        android:src="@drawable/bootanimation_cut_bg"
+        android:layout_gravity="top"
+        />
+    
+<!--    <SurfaceView android:id="@+id/bootanimation_surfaceview"   
+     	android:layout_width="810px"    
+		android:layout_height="1440px"	
+		android:layout_marginLeft="45dp" 
+		android:layout_gravity="top"
+		/>
+	<ImageView 
+        android:layout_width="fill_parent"
+    	android:layout_height="1700px"
+        android:src="@drawable/bootanimation_cut_bg"
+        android:layout_gravity="top"
+        />
+	<TextView
+        android:text="@string/sign_bootanimation"
+		android:layout_width="140dp"
+	 	android:layout_height="30dp"
+		android:layout_marginTop="210dp"
+		android:textSize="15sp"
+		android:layout_marginLeft="110dp"
+        android:background="@null" />
+-->
+    <ImageView 
+        android:id="@+id/animation_setting"
+        android:layout_width="60dp"
+	 	android:layout_height="60dp"
+        android:background="@drawable/bootanimation_take"
+		android:layout_marginTop="475dp"
+		android:layout_marginLeft="150dp"
+        />
+
+</FrameLayout>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/incoming_pop"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/aurora_float_bg_color" >
+
+    <Button
+        android:id="@+id/hangup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/aurora_black_icon" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/aurora_stat_sys_phone_call_button" />
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="@dimen/miss_noti_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/answer"
+        android:layout_toRightOf="@id/hangup"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/aurora_dialpad_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.3dp"
+            android:layout_gravity="center_horizontal"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:textColor="@color/aurora_notification_text_color2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

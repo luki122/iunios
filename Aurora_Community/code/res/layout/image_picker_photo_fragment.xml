@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/gv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_picker_photo_fragment_gv_photo_layout_height"
+        android:horizontalSpacing="@dimen/image_picker_photo_fragment_gv_photo_horizontal_spacing"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/image_picker_photo_fragment_gv_photo_vertical_spacing" >
+    </GridView>
+
+</LinearLayout>

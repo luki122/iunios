@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/call_and_sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/listChoiceBackgroundIndicator"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/primary_action_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:orientation="vertical"
+            android:paddingLeft="32dip"
+            android:paddingTop="@dimen/aurora_detail_item_padding_top" >
+
+            <LinearLayout
+                android:id="@+id/phone_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="7dip"
+                    android:text="@string/phoneLabelsGroup"
+                    android:textColor="@com.aurora:color/aurora_list_textcolor"
+                    android:textSize="@dimen/aurora_group_entrance_title_size" />
+
+                <com.android.contacts.widget.GnTextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/aurora_group_entrance_title_size"
+                    android:drawablePadding="8dp"
+                    android:paddingRight="1dip" 
+                    android:singleLine="true"
+                    android:textColor="@com.aurora:color/aurora_list_textcolor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/number_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:textColor="@color/aurora_group_edit_ringtone_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/secondary_action_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginRight="@dimen/aurora_call_sms_margin_right"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/secondary_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/sms"
+                android:duplicateParentState="false"
+                android:paddingTop="10dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sogou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/aurora_detail_item_padding_bottom"
+        android:paddingLeft="32dip"
+        android:paddingRight="32dip" >
+
+        <TextView
+            android:id="@+id/sogou_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="150dp"
+            android:singleLine="true"
+            android:textColor="@color/aurora_group_edit_ringtone_text_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/aurora_ver_drv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/aurora_ver_driver"
+            android:contentDescription="@string/sms"
+            android:duplicateParentState="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sogou_mark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxWidth="120dp"
+            android:singleLine="true"
+            android:text="@string/aurora_reject_marks"
+            android:textColor="@color/aurora_group_edit_ringtone_text_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/aurora_ver_drv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/aurora_ver_driver"
+            android:contentDescription="@string/sms"
+            android:duplicateParentState="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sogou_mark2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:maxWidth="120dp"
+            android:singleLine="true"
+            android:text="@string/aurora_reject_from_sogou"
+            android:textColor="@color/aurora_group_edit_ringtone_text_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/aurora_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/aurora_sogou_icon"
+            android:contentDescription="@string/sms"
+            android:duplicateParentState="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

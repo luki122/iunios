@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="yulore_superyellowpage_intent_not_found">无法执行该操作</string>
+    <string name="yulore_superyellowpage_enter_code">验证码</string>
+    <string name="yulore_superyellowpage_enter_tel">请输入您的手机号</string>
+    <string name="yulore_superyellowpage_menu_tip">提示</string>
+    <string name="yulore_superyellowpage_menu_confirm">确定</string>
+    <string name="yulore_superyellowpage_menu_cancel">取消</string>
+    <string name="yulore_superyellowpage_app_name">lib</string>
+    <string name="yulore_superyellowpage_search_tips">轻敲你想查找的关键字</string>
+    <string name="yulore_superyellowpage_clipper_service">快捷服务</string>
+    <string name="yulore_superyellowpage_common_number">常用号码</string>
+    <string name="yulore_superyellowpage_handy_service">便民服务</string>
+    <string name="yulore_superyellowpage_loading_tips">正在加载中...</string>
+    <string name="yulore_superyellowpage_no_category_data">离线数据包中暂无该分类信息，请连接网络后重试</string>
+    <string name="yulore_superyellowpage_sd_no_available">SD卡不存在，请检查后再试</string>
+    <string name="yulore_superyellowpage_load_more_data">加载更多数据</string>
+    <string name="yulore_superyellowpage_list_no_more_data"></string>
+    <string name="yulore_superyellowpage_request_server_timeout">请求服务器超时</string>
+    <string name="yulore_superyellowpage_request_server_error">访问服务器失败</string>
+    <string name="yulore_superyellowpage_network_not_available">网络连接不可用，请检查网络之后重试</string>
+    <string name="yulore_superyellowpage_detail_network_not_available">加载数据失败，请检查网络之后重试</string>
+    <string name="yulore_superyellowpage_loading_data">加载中...</string>
+    <string name="yulore_superyellowpage_offline_et_hint">城市名或拼音</string>
+    <string name="yulore_superyellowpage_menu_dial">请选择电话</string>
+    <string name="yulore_superyellowpage_detail_more_title">商户简介</string>
+    <string name="yulore_superyellowpage_register_title">注册验证</string>
+    <string name="yulore_superyellowpage_detail_service">快捷服务</string>
+    <string name="yulore_superyellowpage_detail_comment">优惠 &amp; 评论</string>
+    <string name="yulore_superyellowpage_detail_more">更多</string>
+    <string name="yulore_superyellowpage_search_item_head_subTitle">电话邦认证</string>
+    <string name="yulore_superyellowpage_search_item_head_website">官方网站</string>
+    <string name="yulore_superyellowpage_detail_text_comment">大众点评</string>
+    <string name="yulore_superyellowpage_loading_data_failed">加载数据失败</string>
+    <string name="yulore_superyellowpage_detail_text_favorite">收藏</string>
+    <string name="yulore_superyellowpage_mark_title">您可以将其标记为：</string>
+    <string name="yulore_superyellowpage_add_contact">添加联系人</string>
+    <string name="yulore_superyellowpage_add_hint">例如：疑似诈骗</string>
+    <string name="yulore_superyellowpage_add_sign_tips">轻松标记一下，帮助千万大众</string>
+    <string name="yulore_superyellowpage_get_code">获取验证码</string>
+    <string name="yulore_superyellowpage_call_log">通话记录</string>
+    <string name="yulore_superyellowpage_detail">    详情    </string>
+    <string name="yulore_superyellowpage_unknown">未知</string>
+    <string name="yulore_superyellowpage_personal_center">个人中心</string>
+    <string name="yulore_superyellowpage_clear_search_history">清除搜索历史记录</string>
+    <string name="yulore_superyellowpage_retract">收起</string>
+    <string name="yulore_superyellowpage_yuan">元</string>
+    <string name="yulore_superyellowpage_reload">网络不给力，请点击重新加载</string>
+    <string name="yulore_superyellowpage_relocation">定位失败，稍后重试</string>
+    <string name="yulore_superyellowpage_no_record">无记录</string>
+    <string name="yulore_superyellowpage_correction">纠错</string>
+    <string name="yulore_superyellowpage_title_personal">IUNI个人中心</string>
+    <string name="yulore_superyellowpage_hotline">快递热线</string>
+    <string name="yulore_superyellowpage_yellowpage_home">生活服务</string>
+    <string name="yulore_superyellowpage_wait_for_tips_intro">该图片用于屏蔽其他功能</string>
+    
+</resources>

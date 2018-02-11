@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:paddingLeft="@dimen/action_bar_paddingleft"
+    android:paddingTop="@dimen/action_bar_padding_top_bottom"
+    android:paddingBottom="@dimen/action_bar_padding_top_bottom"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true">
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/action_bar_transparent"
+                 android:id="@+id/btn_back"
+                 android:layout_marginRight="@dimen/action_bar_margin_title"
+                 android:duplicateParentState="true"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_title"
+              android:textSize="@dimen/action_bar_text_size"
+              android:textColor="@color/actionbar_item_sel"
+              android:singleLine="true"
+              android:ellipsize="end"
+              android:maxWidth="200dp"
+              android:duplicateParentState="true"
+              />
+</LinearLayout>

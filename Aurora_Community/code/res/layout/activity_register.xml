@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_17" >
+
+    <RelativeLayout
+        android:id="@+id/rl_registerByPhoneNum"
+        style="@style/Account_Layout_Item"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/register_layout_item_min_height"
+        android:background="@drawable/common_bg_top_selector" >
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_12"
+            android:src="@drawable/icon_phone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv1" >
+
+            <TextView
+                style="@style/Account_Layout_Item_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_by_phonenum" />
+
+            <TextView
+                style="@style/Account_Layout_Item_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_recommend"
+                android:textColor="@color/register_info_tip_text" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_arrow_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_registerByEmail"
+        style="@style/Account_Layout_Item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_layout_item_min_height"
+        android:background="@drawable/common_bg_bottom_selector" >
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_12"
+            android:src="@drawable/icon_email" />
+
+        <TextView
+            style="@style/Account_Layout_Item_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv2"
+            android:text="@string/register_by_email" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_arrow_right" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/Account_TextView_Tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_14"
+        android:text="@string/register_tips" />
+
+</LinearLayout>

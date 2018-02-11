@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="1" android:drawable="@color/date1" />
+    <item android:maxLevel="2" android:drawable="@color/date2" />
+    <item android:maxLevel="3" android:drawable="@color/date3" />
+    <item android:maxLevel="4" android:drawable="@color/date4" />
+    <item android:maxLevel="5" android:drawable="@color/date5" />
+    <item android:maxLevel="6" android:drawable="@color/date6" />
+    <item android:maxLevel="7" android:drawable="@color/date7" />
+    <item android:maxLevel="8" android:drawable="@color/date8" />
+    <item android:maxLevel="9" android:drawable="@color/date9" />
+    <item android:maxLevel="10" android:drawable="@color/date10" />
+    <item android:maxLevel="11" android:drawable="@color/date11" />
+    <item android:maxLevel="12" android:drawable="@color/date12" />
+    <item android:maxLevel="13" android:drawable="@color/date13" />
+    <item android:maxLevel="14" android:drawable="@color/date14" />
+    <item android:maxLevel="15" android:drawable="@color/date15" />
+    <item android:maxLevel="16" android:drawable="@color/date16" />
+    <item android:maxLevel="17" android:drawable="@color/date17" />
+    <item android:maxLevel="18" android:drawable="@color/date18" />
+    <item android:maxLevel="19" android:drawable="@color/date19" />
+    <item android:maxLevel="20" android:drawable="@color/date20" />
+    <item android:maxLevel="21" android:drawable="@color/date21" />
+    <item android:maxLevel="22" android:drawable="@color/date22" />
+    <item android:maxLevel="23" android:drawable="@color/date23" />
+    <item android:maxLevel="24" android:drawable="@color/date24" />
+    <item android:maxLevel="25" android:drawable="@color/date25" />
+    <item android:maxLevel="26" android:drawable="@color/date26" />
+    <item android:maxLevel="27" android:drawable="@color/date27" />
+    <item android:maxLevel="28" android:drawable="@color/date28" />
+    <item android:maxLevel="29" android:drawable="@color/date29" />
+    <item android:maxLevel="30" android:drawable="@color/date30" />
+    <item android:maxLevel="31" android:drawable="@color/date31" />
+</level-list>
+

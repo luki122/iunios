@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/permission_detail_bg" >
+
+    <FrameLayout
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="167.3dp"
+            android:text="@string/no_app_for_freezed"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/hint_big_text_size" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/freezed_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/app_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/freeze_app_hint"
+            android:textColor="@color/uninstall_list_item_text_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/freezed_layout"
+        android:background="@color/permission_detail_bg" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/empty_view"
+        android:background="@drawable/line" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/freezed_ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_view"
+        android:divider="@drawable/line"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/freeze_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/freezed_ListView" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/no_freeze_app"
+            android:textColor="@color/uninstall_list_item_text_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/empty_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/freeze_layout"
+        android:background="@color/permission_detail_bg" />
+
+    <View
+        android:id="@+id/line_view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/empty_view2"
+        android:background="@drawable/line" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_view2"
+        android:divider="@drawable/line"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:focusable="false" />
+
+</RelativeLayout>

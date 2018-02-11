@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/album_pop_line_background" >
+    
+	<!-- wenyongzhe -->
+    <ImageView
+        android:id="@+id/load_icon"
+        android:layout_width="5dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="17dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/load_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/load_icon" 
+        android:layout_toLeftOf="@+id/temp_bg_rigth"
+        android:layout_marginRight="30dp">
+
+        <ProgressBar
+            android:id="@+id/load_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12.5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/aurora_task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/load_progressbar"
+            android:layout_below="@+id/load_progressbar"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="6dp"
+            android:text="@string/aurora_album_download_status"
+            android:textColor="@color/aurora_cloud_progress_status_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/load_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/load_progressbar"
+            android:layout_below="@+id/load_progressbar"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="6dp"
+            android:text="@string/aurora_album_download_status"
+            android:textColor="@color/aurora_cloud_progress_status_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/temp_bg_rigth" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/load_background" />
+
+        <TextView
+            android:id="@+id/load_num"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:textSize="9.92sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/temp_bg_rigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/aurora_bg_rigth" />
+
+</RelativeLayout>

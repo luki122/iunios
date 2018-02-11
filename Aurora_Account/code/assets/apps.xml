@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps>
+    <app>
+		<app_name>联系人</app_name>
+		<app_packagename>com.android.contacts</app_packagename>
+		<app_uri>content://com.android.contacts/sync</app_uri>
+		<app_type>contacts</app_type>
+		<app_syncself>false</app_syncself>
+	</app>
+	
+	<app>
+		<app_name>短消息</app_name>
+		<app_packagename>com.android.mms</app_packagename>
+		<app_uri>content://mms-sms-sync</app_uri>
+		<app_type>sms</app_type>
+		<app_syncself>false</app_syncself>
+	</app>
+ 
+	<app>
+		<app_name>相册</app_name>
+		<app_packagename>com.android.gallery3d</app_packagename>
+		<app_uri></app_uri>
+		<app_type>sms</app_type>
+		<app_syncself>true</app_syncself>
+	</app>
+
+</apps>

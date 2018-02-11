@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/auto_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginRight="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginTop="@dimen/aurora_editor_text_padding1"
+        android:background="@drawable/aurora_group_edit_item_bg" >
+
+        <TextView
+            android:id="@+id/aurora_auto_record_tv"
+            android:layout_width="@dimen/aurora_call_record_tv_w"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/aurora_editor_item_padding_left"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_alignParentLeft="true"
+            android:text="@string/aurora_auto_record"
+            android:textColor="@color/aurora_group_edit_ringtone_text_color"
+            android:textSize="@dimen/aurora_group_browse_list_title_text_size" />
+        
+        <View
+            android:id="@+id/aurora_h_driver"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/aurora_auto_record_tv"
+            android:background="@drawable/aurora_vertical_divider" />
+
+        <aurora.widget.AuroraSpinner
+            android:id="@+id/aurora_auto_record_sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/aurora_call_record_tv_w"
+            android:layout_marginRight="0dip" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/special_auto_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginRight="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginTop="@dimen/aurora_editor_text_padding2"
+        android:background="@drawable/aurora_kind_view_bg" >
+
+        <TextView
+            android:id="@+id/aurora_group_ringtone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dip"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:text="@string/aurora_record_select_contact"
+            android:textColor="@color/aurora_detail_item_secondary_text_color"
+            android:textSize="@dimen/aurora_group_browse_list_title_text_size"  />
+            
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aurora_editor_field_margin"
+            android:background="@drawable/aurora_entrance_group_img"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aurora_record_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginRight="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginTop="@dimen/aurora_editor_text_padding2"
+        android:background="@drawable/aurora_kind_view_bg" >
+
+        <TextView
+            android:id="@+id/aurora_group_ringtone_tv"
+            android:layout_width="@dimen/aurora_edit_group_title_width"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="@string/aurora_record_history"
+            android:textColor="@color/aurora_detail_item_secondary_text_color"
+            android:textSize="@dimen/aurora_group_browse_list_title_text_size"  />
+            
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/aurora_editor_field_margin"
+            android:background="@drawable/aurora_entrance_group_img"/>
+    </RelativeLayout>
+
+</LinearLayout>

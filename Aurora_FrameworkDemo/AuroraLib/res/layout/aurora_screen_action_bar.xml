@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <fenglp> <2013-06-20> add for CR00812456 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_alignParentTop="true"
+	android:fitsSystemWindows="true"
+	android:orientation="vertical" >
+
+	<com.aurora.internal.lib.widget.AuroraActionBarContainer
+		android:id="@+id/aurora_action_bar_container"
+		style="?attr/auroraactionBarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+
+        <com.aurora.internal.lib.widget.AuroraExtraViewContainer
+    		android:id="@+id/aurora_action_bar_intellgent_container"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"/>
+
+        <com.aurora.internal.lib.widget.AuroraActionBarView
+		android:id="@+id/aurora_action_bar"
+		style="?attr/auroraactionBarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+        </com.aurora.internal.lib.widget.AuroraActionBarView>
+        <com.aurora.internal.lib.widget.AuroraActionBarContextView
+		android:id="@+id/aurora_action_context_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		style="?attr/auroraactionBarStyle" />
+	</com.aurora.internal.lib.widget.AuroraActionBarContainer>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" >
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+			<FrameLayout
+				android:id="@+id/aurora_content"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1">
+			</FrameLayout>
+			
+			<RelativeLayout
+				android:id = "@+id/aurora_overlap"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/aurora_optionsmenu_transparaent"
+				android:layout_gravity="bottom"
+				android:visibility="gone"
+			/>
+		</LinearLayout>
+	
+	</RelativeLayout>
+	<!--
+	<com.aurora.internal.widget.AuroraSplitActionBarContainer
+		android:id="@+id/aurora_split_action_bar"
+		style="?attr/AuroraActionBarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+		android:visibility="gone" >
+	</com.aurora.internal.widget.AuroraSplitActionBarContainer>-->
+
+</LinearLayout>
+
+	<aurora.lib.widget.AuroraMagicBar
+		android:id="@+id/aurora_magic_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"   
+		android:visibility="gone"/>
+</RelativeLayout>

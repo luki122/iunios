@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.aurora.market"
+    android:id="@+id/label_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/label_margin_left"
+    android:background="@color/white" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_by_label"
+        android:textColor="#b5b5b5"
+        android:paddingTop="@dimen/label_title_padding_top"
+        android:textSize="@dimen/textsize_14" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/label_margin_right"
+        android:scrollbars="none" >
+
+        <com.aurora.market.widget.LabelList
+            android:id="@+id/label_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_10"
+            app:horizontalSpace="@dimen/label_horizontal_space"
+            app:verticalSpace="@dimen/label_vertical_space" />
+    </ScrollView>
+
+</LinearLayout>

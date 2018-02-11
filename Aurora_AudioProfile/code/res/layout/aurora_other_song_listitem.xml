@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+ android:textColor="@color/list_item_text_color" 
+    android:background="@drawable/list_item_back"
+  -->
+<aurora.widget.AuroraCheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+	aurora:position="right"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"  
+    android:singleLine="true" 
+    android:ellipsize="end" 
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    aurora:isSingleChoice="true"
+    android:textColor="@android:color/black" 
+    android:background="@android:color/white"
+    
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+    android:paddingLeft="17dp"
+    android:paddingRight="-18dp"
+/>

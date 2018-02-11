@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="true">
+	
+	<item android:drawable="@drawable/aurora_checkbox0" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox1" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox2" android:duration="0"/>
+    <!--
+    <item android:drawable="@drawable/aurora_checkbox3" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox4" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox5" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox6" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox7" android:duration="0"/>
+    -->
+    <item android:drawable="@drawable/aurora_checkbox8" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox9" android:duration="0"/>
+    
+    <item android:drawable="@drawable/aurora_checkbox10" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox11" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox12" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox13" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox14" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox15" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox16" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox17" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox18" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox19" android:duration="0"/>
+    
+    <item android:drawable="@drawable/aurora_checkbox20" android:duration="0"/>
+    <item android:drawable="@drawable/aurora_checkbox21" android:duration="0"/>
+	
+
+</animation-list>

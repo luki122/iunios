@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-11 created for aurora's new feature -->
+<!-- Aurora liugj 2013-10-23 modified for fix bug 134 -->
+<!-- Aurora liugj 2013-10-12 modified for aurora's new feature start -->
+<!-- Aurora liugj 2013-11-20 modified for textview margin -->
+<!-- Aurora liugj 2013-12-10 modified for checkbox animation -->
+<!-- Aurora liugj 2013-12-30 modified for textview margin -->
+<!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+<com.android.mms.ui.ConversationListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_list_doubleline_height"
+    android:paddingBottom="@com.aurora:dimen/aurora_list_content_layout_paddingbottom"
+    android:paddingTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+    android:paddingRight="@com.aurora:dimen/aurora_subtitle_padding_right" >
+<!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+<!-- Aurora liugj 2013-10-12 modified for aurora's new feature end -->
+    
+     <!-- Aurora liugj 2013-11-05 modified for aurora's new feature start -->
+    <!-- <CheckBox
+        android:id="@+id/aurora_conv_select_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/list_checkbox_top_margin"
+        android:layout_marginRight="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" /> -->
+      <!-- Aurora liugj 2013-11-05 modified for aurora's new feature end -->
+    
+    <!-- <LinearLayout
+        android:id="@+id/gn_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/gn_conv_select_check_box"
+        android:layout_centerVertical="true"
+        android:minWidth="16dip"
+        android:visibility="gone" >
+
+        <android.widget.QuickContactBadge
+            android:id="@+id/avatar"
+            style="?android:attr/quickContactBadgeStyleWindowMedium"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </LinearLayout> -->
+    
+    <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/list_item_bottom_margin"
+        android:layout_marginTop="@dimen/list_item_top_margin"
+        android:layout_toRightOf="@id/aurora_conv_select_check_box" > -->
+        
+        <!-- <ImageView 
+            android:id="@+id/gn_unread_view"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:src="@drawable/ic_unread_dot"
+            /> -->
+        
+        <!-- <ImageView
+            android:id="@+id/presence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dip"
+            android:visibility="gone" /> -->
+            
+        <!-- Aurora liugj 2013-12-17 modified for aurora's new feature start-->
+        <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+        <aurora.widget.AuroraTextView
+            android:id="@+id/aurora_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/aurora_convfrom_text_max_width"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginBottom="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+            android:ellipsize="end"
+            android:singleLine="true"
+            style="@com.aurora:style/AuroraListMainTextStyle"/>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+        <!-- Aurora liugj 2013-12-17 modified for aurora's new feature end-->
+        
+        <!-- <View
+            android:id="@+id/right_panel"
+            android:layout_width="5dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_background"
+            android:visibility="invisible" /> -->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+        <aurora.widget.AuroraTextView
+            android:id="@+id/aurora_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aurora_from"
+            android:layout_toRightOf="@id/aurora_from"
+            android:paddingBottom="@dimen/text_item_bottom_padding"
+            android:layout_marginLeft="@dimen/list_item_margin"
+            android:layout_marginBottom="@dimen/list_sw_margin_bottom"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+        
+          <!-- Aurora liugj 2013-10-24 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2014-03-25 modified for aurora's new featrue start -->
+        <ImageView
+            android:id="@+id/aurora_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aurora_from"
+            android:layout_toRightOf="@id/aurora_draft"
+            android:layout_marginLeft="@dimen/list_item_margin"
+            android:layout_marginBottom="@dimen/list_sp_margin_bottom"
+            android:background="@drawable/aurora_ic_list_sms_failed"
+            android:visibility="gone" />
+    <!-- Aurora xuyong 2014-03-25 modified for aurora's new featrue end -->
+         <!-- Aurora liugj 2013-10-24 modified for aurora's new feature end -->
+
+         <!-- Aurora liugj 2013-10-24 modified for aurora's new feature start -->
+        <!-- Aurora xuyong 2014-03-24 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2014-03-25 modified for aurora's new featrue start -->
+        <ImageView
+            android:id="@+id/aurora_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aurora_from"
+            android:layout_toRightOf="@id/aurora_error"
+            android:layout_marginLeft="@dimen/list_item_margin"
+            android:layout_marginBottom="@dimen/list_sp_margin_bottom"
+            android:background="@drawable/aurora_ic_attachment"
+            android:visibility="gone" />
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature start -->
+        <ImageView
+            android:id="@+id/aurora_lock_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aurora_from"
+            android:layout_toRightOf="@id/aurora_attachment"
+            android:layout_marginLeft="@dimen/list_item_margin"
+            android:layout_marginBottom="@dimen/list_sp_margin_bottom"
+            android:background="@drawable/aurora_privacy_lock"
+            android:visibility="gone" />
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature end -->
+    <!-- Aurora xuyong 2014-03-25 modified for aurora's new featend end -->
+    <!-- Aurora xuyong 2014-03-24 modified for aurora's new feature end -->
+         <!-- Aurora liugj 2013-10-24 modified for aurora's new feature end -->
+        
+         <!-- Aurora liugj 2013-11-18 modified for aurora's new feature start -->
+         <!-- Aurora liugj 2013-12-20 modified for list scroll optimize start -->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+        <aurora.widget.AuroraTextView
+            android:id="@+id/aurora_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/aurora_from"
+            android:layout_marginBottom="@dimen/list_sw_margin_bottom"
+            android:singleLine="true"
+            android:textSize="12sp" />
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+         <!-- Aurora liugj 2013-12-20 modified for list scroll optimize end -->
+         <!-- Aurora liugj 2013-11-18 modified for aurora's new feature end -->
+
+         <!-- Aurora liugj 2013-11-26 modified for aurora's new feature start -->   
+         <!-- Aurora liugj 2013-10-30 modified for aurora's new feature start -->
+        <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/aurora_from"
+            android:layout_alignLeft="@id/aurora_from"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="5.6dp" > -->
+            <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+            <aurora.widget.AuroraTextView
+                android:id="@+id/aurora_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@id/aurora_from"
+                android:layout_alignLeft="@id/aurora_from"
+                android:singleLine="true"
+                style="@com.aurora:style/AuroraListSubTextStyle"/>
+        <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+              <!-- Aurora liugj 2013-10-30 modified for aurora's new feature end -->
+
+            <!-- <ImageView
+                android:id="@+id/encryptionimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:visibility="gone" />
+        </RelativeLayout> -->
+         <!-- Aurora liugj 2013-11-26 modified for aurora's new feature end -->
+    <!-- </RelativeLayout> -->
+    
+</com.android.mms.ui.ConversationListItem>

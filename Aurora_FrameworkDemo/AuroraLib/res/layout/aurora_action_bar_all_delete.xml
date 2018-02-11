@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/aurora_action_bar_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/aurora_action_bar_margin_left"
+        android:paddingRight="@dimen/aurora_action_bar_margin_right"
+        android:text="@string/aurora_action_bar_cancel_btn"
+        android:textColor="@color/aurora_action_bar_button_change_color"
+        android:textSize="@dimen/aurora_action_bar_btn_size" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/aurora_action_bar_height"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/aurora_action_bar_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="@dimen/aurora_action_bar_margin_left"
+        android:paddingRight="@dimen/aurora_action_bar_margin_right"
+        android:text="@string/aurora_action_bar_select_all_btn"
+        android:textColor="@color/aurora_action_bar_button_change_color"
+        android:textSize="@dimen/aurora_action_bar_btn_size" />
+
+</LinearLayout>

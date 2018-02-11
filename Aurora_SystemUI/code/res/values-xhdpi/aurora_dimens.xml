@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2006, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+-->
+<resources>
+	
+	<dimen name="aurora_toolbar_configuration_icon_view_width">42dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_height">42dp</dimen>	
+	<dimen name="aurora_toolbar_configuration_icon_view_text_padding_top">6dp</dimen>	
+
+	<!-- Aurora <SteveTang> 2014-09-13 height between toolbar first,second,third & brightness. start -->
+
+    <dimen name="aurora_quick_settings_toolbar_margintop">-51dp</dimen>
+
+	<!-- aurora tool bar padding dimens -->
+    <dimen name="aurora_toolbar_padding_left">27dp</dimen>
+    <dimen name="aurora_toolbar_padding_right">26dp</dimen>
+
+	<!-- aurora tool bar first, second, third, brightness, view margin dimens -->
+    <dimen name="aurora_toolbar_second_margin_top">30dp</dimen>
+    <dimen name="aurora_toolbar_third_margin_top">30dp</dimen>
+    <dimen name="aurora_toolbar_brightness_margin_top">43dp</dimen>
+
+	<!-- aurora tool bar brightness dimens -->
+	<!-- aurora tool bar brightness auto button dimens -->
+    <dimen name="aurora_toolbar_autobri_marginleft">22.25dp</dimen>
+
+	<!-- aurora tool bar brightness seekbar dimens -->	
+    <dimen name="aurora_toolbar_briseekbar_width">202dp</dimen>
+    <dimen name="aurora_toolbar_briseekbar_marginleft">2.5dp</dimen>
+    <dimen name="aurora_toolbar_briseekbar_marginright">3.75dp</dimen>
+    <dimen name="aurora_toolbar_briseekbar_paddingleft">10dp</dimen>
+    <dimen name="aurora_toolbar_briseekbar_paddingright">10dp</dimen>
+    <dimen name="aurora_toolbar_briseekbar_thumboffset">10dp</dimen>
+
+	<!-- aurora tool bar brightness sun dimens -->
+    <dimen name="aurora_toolbar_brisun_width">25.6dp</dimen>
+    <dimen name="aurora_toolbar_brisun_height">25.6dp</dimen>
+    <dimen name="aurora_toolbar_brisun_marginright">25dp</dimen>
+
+	<!-- aurora tool bar last view dimens -->
+    <dimen name="aurora_toolbar_lastview_height">60dp</dimen>
+
+	<!-- Aurora <SteveTang> 2014-09-13 height between toolbar first,second,third & brightness. end -->
+	    	<!-- Aurora <rock.tong> <2014-10-11> udate statusbar height begin -->
+    <dimen name="aurora_systemui_status_bar_height">25dip</dimen>
+    <dimen name="aurora_systemui_status_bar_icon_size">25dip</dimen>
+    <dimen name="aurora_systemui_statusbar_icon_size">20dip</dimen>
+    <!-- Aurora <rock.tong> <2014-10-11> udate statusbar height end -->
+    <integer name="aurora_recent_icon_zoom_percent">93</integer>
+</resources>

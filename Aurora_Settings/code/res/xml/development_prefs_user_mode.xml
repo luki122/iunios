@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     2012.11.06 Gionee guoyx added for CR00725060
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:title="@string/development_settings_title">
+        <!-- aurora:auroratitle="@string/usb_adb" -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="usb_adb"
+        />
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="enable_adb" 
+        aurora:auroratitle="@string/enable_adb" 
+        />
+
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="enable_art" 
+        aurora:auroratitle="@string/enable_art" 
+        />
+
+    <aurora.preference.AuroraPreferenceCategory 
+        />
+    <!-- Android 4.1 not show this preference 
+    aurora:aurorasummary="@string/enable_adb_summary"
+    
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="enable_dts"
+        aurora:auroratitle="DTS" />
+    <Preference
+        android:key="verifier_device_identifier"
+        style="?android:attr/preferenceInformationStyle"
+        android:title="@string/verifier_device_identifier"
+        android:summary="@string/verifier_device_identifier_not_available"
+        android:persistent="false" />
+-->
+</aurora.preference.AuroraPreferenceScreen>

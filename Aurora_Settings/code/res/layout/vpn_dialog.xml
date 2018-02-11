@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:scrollbars="none">
+    <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="3mm">
+
+        <LinearLayout android:id="@+id/editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_name"/>
+			<LinearLayout
+                style="@style/aurora_vpn_item"
+				android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/name"
+					android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:maxLength="32"
+                    android:singleLine="true"
+                    android:inputType="textNoSuggestions"/>
+            </LinearLayout>
+
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_type"
+					android:layout_marginTop="8dp"/>
+			<LinearLayout
+                style="@style/aurora_vpn_item"
+				android:layout_marginTop="6dp">
+				<aurora.widget.AuroraSpinner
+                    android:id="@+id/type"
+                    style="@style/vpn_value"
+                    aurora:changeArrowDirection="true"
+                    android:prompt="@string/vpn_type"
+                    android:entries="@array/vpn_types" />
+            </LinearLayout>
+
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_server"
+					android:layout_marginTop="8dp"/>
+			<LinearLayout
+                style="@style/aurora_vpn_item"
+				android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/server"
+					android:paddingLeft="8dp"
+					android:background="@null"
+                    android:maxLength="32"
+                    android:singleLine="true"
+                    android:inputType="textNoSuggestions"/>
+            </LinearLayout>
+
+            <aurora.widget.AuroraCheckBox style="@style/vpn_new_label" android:id="@+id/mppe"
+					android:layout_marginTop="17dp"
+					android:paddingLeft="13dp"
+                    android:text="@string/vpn_mppe"
+                    android:singleLine="false"
+                    android:visibility="gone"/>
+
+            <LinearLayout android:id="@+id/l2tp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_l2tp_secret"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/l2tp_secret"
+						android:paddingLeft="8dp"
+                        android:password="true"
+                        android:hint="@string/vpn_not_used"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+				</LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ipsec_psk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_ipsec_identifier"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/ipsec_identifier"
+						android:paddingLeft="8dp"
+                        android:hint="@string/vpn_not_used"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+				</LinearLayout>
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_ipsec_secret"
+						android:layout_marginTop="8dp"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/ipsec_secret"
+						android:paddingLeft="8dp"
+                        android:password="true"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+				</LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ipsec_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_ipsec_user_cert"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+					<aurora.widget.AuroraSpinner
+                    	android:id="@+id/ipsec_user_cert"
+                    	style="@style/vpn_value"
+                    	aurora:changeArrowDirection="true"
+                    	android:prompt="@string/vpn_ipsec_user_cert" />
+            	</LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/ipsec_peer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_ipsec_ca_cert"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+					<aurora.widget.AuroraSpinner
+                    	android:id="@+id/ipsec_ca_cert"
+                    	style="@style/vpn_value"
+                    	aurora:changeArrowDirection="true"
+                    	android:prompt="@string/vpn_ipsec_ca_cert" />
+            	</LinearLayout>
+                <TextView style="@style/vpn_new_label" android:text="@string/vpn_ipsec_server_cert"
+						android:layout_marginTop="8dp"/>
+				<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+					<aurora.widget.AuroraSpinner
+                    	android:id="@+id/ipsec_server_cert"
+                    	style="@style/vpn_value"
+                    	aurora:changeArrowDirection="true"
+                    	android:prompt="@string/vpn_ipsec_server_cert" />
+            	</LinearLayout>
+            </LinearLayout>
+
+            <aurora.widget.AuroraCheckBox style="@style/vpn_new_label" android:id="@+id/show_options"
+					android:layout_marginTop="10dp"
+					android:paddingLeft="13dp"
+                    android:singleLine="false"
+                    android:text="@string/vpn_show_options"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_search_domains"/>
+			<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/search_domains"
+						android:paddingLeft="8dp"
+                    	android:hint="@string/vpn_not_used"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+			</LinearLayout>
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_dns_servers"
+					android:layout_marginTop="8dp"/>
+			<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/dns_servers"
+						android:paddingLeft="8dp"
+                    	android:hint="@string/vpn_not_used"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+			</LinearLayout>
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_routes"
+					android:layout_marginTop="8dp"/>
+			<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/routes"
+						android:paddingLeft="8dp"
+                    	android:hint="@string/vpn_not_used"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+			</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_username"/>
+			<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/username"
+						android:paddingLeft="8dp"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+			</LinearLayout>
+            <TextView style="@style/vpn_new_label" android:text="@string/vpn_password"
+					android:layout_marginTop="8dp"/>
+			<LinearLayout
+                	style="@style/aurora_vpn_item"
+					android:layout_marginTop="6dp">
+                <aurora.widget.AuroraEditText style="@style/vpn_value" android:id="@+id/password"
+						android:paddingLeft="8dp"
+						android:password="true"
+						android:background="@null"
+                    	android:maxLength="32"
+                    	android:singleLine="true"
+                   		android:inputType="textNoSuggestions"/>
+			</LinearLayout>
+
+            <aurora.widget.AuroraCheckBox style="@style/vpn_new_label" android:id="@+id/save_login"
+					android:layout_marginTop="17dp"
+					android:paddingLeft="13dp"
+                    android:singleLine="false"
+                    android:text="@string/vpn_save_login"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/theme_view_label_margin" 
+        android:layout_marginTop="48dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+               
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/theme_browse_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/preview_index"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!--
+                      android:layout_alignParentLeft="true"
+            android:layout_below=""
+            android:layout_toRightOf=""
+                -->
+
+                <TextView
+                    android:id="@+id/theme_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/label_theme_name" />
+
+                <TextView
+                    android:id="@+id/theme_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/theme_name"
+                    android:text="@string/label_theme_author" />
+
+                <TextView
+                    android:id="@+id/theme_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theme_name"
+                    android:layout_marginLeft="@dimen/theme_view_label_margin"
+                    android:layout_toRightOf="@id/theme_author"
+                    android:text="@string/label_theme_version" />
+
+                <TextView
+                    android:id="@+id/theme_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/theme_author"
+                    android:text="@string/label_theme_grade" />
+
+                <TextView
+                    android:id="@+id/theme_download_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theme_author"
+                    android:layout_marginLeft="@dimen/theme_view_label_margin"
+                    android:layout_toRightOf="@id/theme_grade"
+                    android:text="@string/label_theme_download" />
+
+                <TextView
+                    android:id="@+id/theme_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/theme_grade"
+                    android:text="@string/label_theme_description" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    
+    
+    
+    <Button
+        android:id="@+id/btn_theme_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_apply_theme_bg"
+        android:onClick="applyTheme"
+        android:text="@string/btn_apply_text"
+        android:textSize="@dimen/btn_theme_apply_text_size" />
+
+</FrameLayout>

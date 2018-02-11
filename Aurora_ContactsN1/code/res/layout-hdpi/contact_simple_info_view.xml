@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.widget.ContactSimpleInfoView 
+    xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >    
+    <ImageView 
+        android:id="@+id/head_iv"
+        style="?android:attr/quickContactBadgeStyleWindowMedium"
+    	android:src="@drawable/ic_contact_picture_holo_light"
+    	android:layout_marginTop="4dip"
+    	android:scaleType="centerCrop" />
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_vertical"
+    	android:layout_marginLeft="@dimen/aurora_contact_list_item_name_left_margin"
+    	android:orientation="vertical" >
+    	<com.android.contacts.widget.GnTextView android:id="@+id/name_tv"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#000000"
+            android:textSize="18sp" 
+            android:layout_marginTop="13.6dip"/>
+    	
+	    <com.android.contacts.widget.LinearListView android:id="@+id/number_tv"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@+id/name_tv"
+	    	android:layout_marginTop="4.5dip"
+	    	android:layout_marginBottom="7.35dip"/> 
+    </RelativeLayout>
+</com.android.contacts.widget.ContactSimpleInfoView>

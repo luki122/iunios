@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-13 created for aurora's new feature -->
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature start -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+        android:state_pressed="false"
+        android:drawable="@drawable/aurora_attach_camera_normal" />
+   <item
+        android:state_pressed="true"
+        android:drawable="@drawable/aurora_attach_camera_pressed" />
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature end -->
+</selector>

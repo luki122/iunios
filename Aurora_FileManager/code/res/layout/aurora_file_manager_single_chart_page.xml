@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chartUsb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/f_bottom"
+        android:layout_weight="1"
+        android:background="@drawable/aurora_file_single_chart_bg1" >
+
+        <ImageView
+            android:id="@+id/bgDetailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/f_bg" />
+        <!-- android:background="@drawable/aurora_file_single_chart_bg_detail" -->
+
+        <com.aurora.widget.SinglePieChart
+            android:id="@+id/pieChartUsb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/f_pic" >
+        </com.aurora.widget.SinglePieChart>
+
+        <RelativeLayout
+            style="@style/singlepie_rele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <!-- android:layout_marginBottom="16.3dp" -->
+
+
+            <!--
+                 <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/chartUsb_image_icon"
+                android:background="@drawable/category_icon_internal_light_detail_single" />
+            -->
+
+            <TextView
+                android:id="@+id/usb_storage_free"
+                style="@style/AuroraStorageCenterTextStyle_free"
+                android:gravity="center" />
+            <!--
+            <FrameLayout
+                android:id="@+id/d_l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/usb_storage_free"
+                    style="@style/AuroraStorageCenterTextStyle"
+                    android:gravity="center"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="top"
+                    android:text="@string/gtext"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+            </FrameLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usb_storage_free"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/chartUsb_linear"
+                android:orientation="horizontal" >
+
+                <!-- u2  android:layout_marginBottom="15dp" -->
+
+                <ImageView
+                    style="@style/imag_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    style="@style/AuroraStorageCenterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/aurora_file_storage_free"
+                    android:textSize="12sp" />
+
+                <!--
+                     <TextView
+                    style="@style/AuroraStorageCenterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier"
+                    android:textSize="12sp" />
+                -->
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <!-- android:layout_marginTop="24.4dp" -->
+
+    <LinearLayout
+        android:id="@+id/storageDetail"
+        style="@style/storageDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/aurora_file_single_chart_bg2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AuroraStorageDetailTitleStyle"
+                android:text="@string/aurora_file_manager_total_storage_title"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTitleStyle"
+                android:text="@string/divier"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/usb_storage_total"
+                style="@style/AuroraStorageDetailTitleStyle"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_pic_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_picture" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_picture"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_doc_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_document" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_document"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_video_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_video" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_video"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_apk_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_apk" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_apk"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_music_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_music" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_music"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AuroraStorageDetailLayoutStyleSingle" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/aurora_detail_other_single" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_marginLeft="8.6dp"
+                    android:text="@string/category_other" />
+
+                <TextView
+                    style="@style/AuroraStorageDetailTextStyleSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/category_legend_other"
+                    style="@style/AuroraStorageDetailTextStyleSingle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

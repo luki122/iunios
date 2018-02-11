@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    
+      <!-- Dashboard margins between each tiles within the layout -->
+    <dimen name="dashboard_cell_gap_x">0dp</dimen>
+    <dimen name="dashboard_cell_gap_y">0dp</dimen>
+
+    <!-- Dashboard padding in its container -->
+    <dimen name="dashboard_padding_start">15dp</dimen>
+    <dimen name="dashboard_padding_end">15dp</dimen>
+    <dimen name="dashboard_padding_top">20dp</dimen>
+    <dimen name="dashboard_padding_bottom">20dp</dimen>
+
+    <!-- Dashboard category padding start / end -->
+    <dimen name="dashboard_category_padding_start">0dp</dimen>
+    <dimen name="dashboard_category_padding_end">0dp</dimen>
+
+    <!-- Dashboard category panel elevation -->
+    <dimen name="dashboard_category_elevation">4dp</dimen>
+
+    <!-- Dashboard category title layout height -->
+    <dimen name="dashboard_category_title_height">48dp</dimen>
+
+    <!-- Dashboard category title margin start -->
+    <dimen name="dashboard_category_title_margin_start">16dp</dimen>
+
+    <!-- Dashboard tile minimum height -->
+    <dimen name="dashboard_tile_minimum_height">72dp</dimen>
+
+    <!-- Dashboard image tile size -->
+    <dimen name="dashboard_tile_image_size">24dp</dimen>
+
+    <!-- Dashboard tile image margin start / end -->
+    <dimen name="dashboard_tile_image_margin_start">16dp</dimen>
+    <dimen name="dashboard_tile_image_margin_end">32dp</dimen>
+     <dimen name="dashboard_category_margin_from_brother">5.7dp</dimen>
+    <dimen name="dashboard_page_margin_top">10dp</dimen>
+     <dimen name="dashboard_page_margin_bottom">20dp</dimen>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" 
+    android:layout_marginLeft="-10dp">
+
+    <aurora.widget.AuroraSearchView android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/app_ranking_tab_bottomline_height"
+        android:layout_gravity="center_vertical"
+        android:background="@color/transparent"
+        />
+
+</LinearLayout>

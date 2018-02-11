@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/tab_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        aurora:tabBackgroundColor="@color/background_tab_normal"
+        aurora:cursorColor="@color/tab_cursor_color" 
+        aurora:entriesTitle="@array/tab_names" 
+        aurora:textFocusColor = "@color/tab_title_selected_color"
+        />
+
+
+</LinearLayout>

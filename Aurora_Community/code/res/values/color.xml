@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="red">#FF0000</color> <!-- 红色 -->
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="transparent">#00000000</color>
+    
+
+    <color name="gloab_title_color">#585858</color>
+    <color name="common_deep_blue_color">#4bcadd</color>
+    <color name="common_blue_color">#3ba6b6</color>
+    <color name="common_main_bg">#f4f4f4</color>
+    <color name="common_content_color">#b2000000</color>
+    <color name="postdetail_light_color">#7f000000</color>
+    <color name="postdetail_replyname_color">#ff6141</color>
+    <color name="label_text_color">#7f7f7f</color>
+    
+    <color name="activity_main_background_color">#f4f4f4</color>
+    <color name="widget_textview_normal">#585858</color>
+    <color name="widget_textview_selected">#ff0000</color>
+    <color name="stickylist_header_background_color">#ccf2efec</color>
+    <color name="stickylist_header_tv_date_background_color">#dd806048</color>
+    <color name="stickylist_header_tv_month_background_color">#99806048</color>
+    <color name="stickylist_tv_content_background_color">#806048</color>
+    <color name="stickylist_adapter_item_footer_twitter_time_tv_color">#585858</color>
+    <color name="stickylist_adapter_item_footer_twitter_comment_tv_color">#f7b698</color>
+    <color name="stickylist_adapter_item_footer_twitter_collect_tv_color">#f8a7a7</color>
+    <color name="stickylist_adapter_item_header_user_nick_tv_color">#8d725f</color>
+    <color name="mainpage_category_title_tv_color">#b2000000</color>
+    <color name="activity_image_picker_custom_actionbar_title_color">#6a4b33</color>
+    <color name="activity_image_picker_custom_actionbar_tv_img_select_done_color">#6a4b33</color>
+    <color name="activity_post_detail_input_reply_color">#f6f6f6</color>
+    <color name="activity_post_detail_et_input_reply_color">#806048</color>
+    <color name="activity_post_detail_et_input_reply_color_hint">#b3978a</color>
+    <color name="activity_post_detail_bt_send_reply_text_color">#ffffff</color>
+    <color name="activity_post_detail_aet_input_text_color">#806048</color>
+    <color name="activity_post_detail_aet_input_text_color_hint">#b3978a</color>
+    <color name="activity_post_detail_comment_input_text_count_color">#b3978a</color>
+    <color name="activity_post_detail_comment_btn_send_reply_text_color">#ffffff</color>
+    <color name="activity_post_detail_comment_lv_post_detail_background_color">#ffffff</color>
+    <color name="activity_post_detail_comment_lv_post_detail_cache_color_hint">#00000000</color>
+    <color name="activity_post_detail_comment_iv_hide_bg">#80000000</color>
+    <color name="activity_twitter_layout_ll_twittering_background_color">#30000000</color>
+    <color name="aurora_dialog_griditem_tv_gridview_text_color">#858585</color>
+    <color name="aurora_dialog_fragment_gv_listselector">#00000000</color>
+    <color name="child_usercenter_layout_lv_cache_color_hint">#00000000</color>
+    <color name="collection_of_usercenter_lv_cache_color_hint">#00000000</color>
+    <color name="footview_of_postdetail_tv_color">#80b3978a</color>
+    <color name="headview_of_postdetail_tv_screen_name_text_color">#6a4b33</color>
+    <color name="headview_of_postdetail_tv_publish_time_text_color">#b3978a</color>
+    <color name="headview_of_postdetail_aet_publish_content_text_color">#806048</color>
+    <color name="headview_of_postdetail_tv_collection_count_text_color">#f8a7a7</color>
+    <color name="headview_of_postdetail_tv_comment_count_text_color">#f7b698</color>
+    <color name="headview_of_usercenter_tab_text_publish_text_color">#ffffff</color>
+    <color name="headview_of_usercenter_tab_publish_count_text_color">#ffffff</color>
+    <color name="headview_of_usercenter_tab_text_collection_text_color">#ffffff</color>
+    <color name="headview_of_usercenter_tab_collection_count_text_color">#ffffff</color>
+    <color name="headview_of_usercenter_user_screen_name_text_color">#ccffffff</color>
+    <color name="item_album_adapter_tv_album_name_text_color">#806048</color>
+    <color name="item_album_adapter_tv_album_size_text_color">#b3978a</color>
+    <color name="item_collection_of_usercenter_user_name_text_color">#000000</color>
+    <color name="item_collection_of_postdetail_comment_time_text_color">#b3978a</color>
+    <color name="item_collection_of_postdetail_screen_name_text_color">#b3978a</color>
+    <color name="item_publish_of_user_center_ll_background_color">#ffffff</color>
+    <color name="item_publish_of_user_center_publish_title_text_color">#806048</color>
+    <color name="globals_widget_color">#ffffff</color>
+    <color name="globals_text_color">#7f5f46</color>
+
+    <!-- 圆形头像后的白色背景 -->
+
+    <drawable name="user_icon_bg">#ccffffff</drawable>
+    <drawable name="main_category_top_item_default">#00ffffff</drawable>
+    <drawable name="main_category_top_item_selected">#33ffffff</drawable>
+
+    <drawable name="divider_color_drawable">#ff0000</drawable>
+    <!-- user center -->
+    <color name="usercenter_tab_text_select">#4bcadd</color>
+    <color name="usercenter_tab_text_unselect">#80ffffff</color>
+
+    <drawable name="usercenter_tab_bg_select">#80000000</drawable>
+    <drawable name="usercenter_tab_bg_unselect">#50000000</drawable>
+
+    <color name="postdetail_comment_content">#806048</color>
+    <color name="postdetail_comment_reply_name">#f04e4c</color>
+    <color name="postdetail_title_color">#7f5f46</color>
+    
+    <!-- common -->
+    <color name="button_logout_text_color_normal">#ff6141</color>
+    <color name="pop_query_text_color">#019c73</color>
+    <color name="button_text_color_normal">#FFFFFF</color>
+    <color name="textview_error_color">#ff6141</color>
+    <color name="action_bar_account_text_color">#3ba6b6</color>
+    
+    <!-- 灰色分隔线等 -->
+    <color name="line_grey">#EAEAEA</color>
+    <color name="list_item_press">#f0f0f0</color>
+    
+    <!-- 账户个人详情界面 -->
+    <color name="account_info_top_bg">#ddf8fc</color>
+    <color name="account_info_item_header_bg">#f0fdff</color>
+    <color name="account_info_line">#d0d8e1</color>
+    <color name="account_info_item_bg_normal">#ffffff</color>
+    <color name="account_info_item_bg_pressed">#e3e3e3</color>
+    
+    <!-- 注册 -->
+    <color name="register_link_green">#019c73</color>
+    <color name="register_link_grey">#9e9e9e</color>
+    <color name="register_info_tip_text">#4bcadd</color>
+    <color name="register_link_color">#019c73</color>
+    <color name="register_verify_phonenum_tips">#4bcadd</color>
+
+</resources>

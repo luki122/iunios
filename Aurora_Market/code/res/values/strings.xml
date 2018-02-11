@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">App Store</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_title">应用商店</string>
+    <string name="aurora_searchview_hint">搜索</string>
+    <string name="new_note_on_loading">正在加载...</string>
+    <!-- 图片浏览器 -->
+    <string name="submitPics">上传4张</string>
+    <string name="submitPics_part1">上传</string>
+    <string name="submitPics_part2">张</string>
+    <string name="remainerSpace">还剩余10M</string>
+    <string name="remainerSpace_part1">还剩余</string>
+    <string name="titlebarname">相机胶卷</string>
+    <string name="remainerspace_less">啊哦，抱歉，您本月的上传限额已用完</string>
+    <string name="attachment_full">单次上传数量已达上限</string>
+    <string name="picview_loading">图片信息加载中...</string>
+
+    <!-- 上传文件进度对话框 -->
+    <string name="upload_file">附件正在上传</string>
+
+    <!-- 检测SD -->
+    <string name="sd_space_not_enough">SD卡即将存满，请先清理再执行本操作</string>
+    <string name="sdcard_not_mounted">SD卡不存在，请插入SD卡。</string>
+
+    <!-- DateTimePickerView -->
+    <string name="dayStr">日</string>
+    <string name="monthStr">月</string>
+    <string name="yearStr">年</string>
+    <string name="weekStr">周</string>
+
+    <!-- 公有 -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_prompt">提示</string>
+    <string name="no_network_download_toast">无网络，请打开网络连接</string>
+    
+    <!-- 网络异常 -->
+    <string name="no_connection_prompt">"网络异常，点击重新加载"</string>
+    <string name="no_wifi_download_message">"你已开启Wi-Fi下载,是否关闭该选项?"</string>
+
+    <!-- 下拉更新 -->
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="pull_to_refresh_update">最近更新时间：</string>
+    <string name="all_loaded">数据加载完毕</string>
+    <string name="pull_to_rerefresh">下拉再次刷新</string>
+
+    <!-- 首页 -->
+    <string name="tab_new">新品</string>
+    <string name="tab_special">专题</string>
+    <string name="tab_ranking">排行</string>
+    <string name="tab_category">分类</string>
+    <string name="tab_starter">必备</string>
+    <string name="tab_design">设计奖</string>
+    <string name="app_adapter_down_end">人下载</string>
+    <string name="search_by_label">标签搜索</string>
+    <!-- App Detail Page -->
+    <string name="app_detail_page">应用详情</string>
+    <string name="demo_app_name">应用名称</string>
+    <string name="app_detail_loading_text">正在加载</string>
+    <string name="app_detail_no_desctext">暂无更新描述</string>
+
+    <!-- 排行页 -->
+    <string name="app_ranking">应用排行</string>
+    <string name="game_ranking">游戏排行</string>
+
+    <!-- 分类页 -->
+    <string name="category_app">应用分类</string>
+    <string name="category_game">游戏分类</string>
+    <string name="category_essential">必备</string>
+
+    <!-- App Item项 -->
+    <string name="item_download">下载</string>
+    <string name="item_open">打开</string>
+
+    <!--
+    <string name="download_count_str">%1$d人下载</string>
+    <string name="app_size_str">%1$dMB</string>
+    -->
+
+    <string name="download_count_str">人下载</string>
+    <string name="app_size_str">14.5MB</string>
+    <string name="app_intro">软件介绍</string>
+    <string name="app_update_desc">更新描述</string>
+    <string name="view_comment">查看评论(%1$d条)</string>
+    <string name="app_version">版本号：</string>
+    <string name="app_update_time">更新时间：</string>
+    <string name="app_developer">开发者：</string>
+    <string name="app_category">应用类型：</string>
+    <string name="app_download">下载安装</string>
+    <string name="app_installing">正在安装...</string>
+    <string name="app_install_finish">安装完成</string>
+    <string name="app_install">安装</string>
+    <string name="pref_app_update_title">应用更新</string>
+    <string name="pref_download_manager_title">下载管理</string>
+    <string name="pref_app_manager_title">应用管理</string>
+    <string name="pref_settings_title">设置</string>
+    <string name="pref_version_info_title">版本信息</string>
+    <string name="test_app_info_desc">        由文管进入sd卡根目录之后对文件各种操作均能实现监听，这部分目前只有一种bug：在三级以上目录复制文件，之后会直接跳到根目录
+     这会导致监听器管理出现混乱，同下 不能监听-2不能监听：
+     1.文管中有对文件进行分类，直接进入分类文件夹，对其中文件进行操作的情况监听不到
+     2.直接从高级目录跳到低级，如从第三级跳到第一级，会导致监听器的管理出现混乱，目前支持逐级处理。
+     3.第三方应用直接操作某个文件夹中的文件，如豌豆夹下载某个apk直接保存在其新建的特定文件夹中。
+     4.各单个应用，如相册/下载等对其目录下文件的操作，现实现的监听不能捕获操作，只能由各应用自己去触法扫描</string>
+    <string name="download_process_tip">下载中...%1$d</string>
+    <string name="download_process_pause">暂停...%1$d</string>
+    <string name="download_process_update">更新</string>
+    <string name="download_process_wait">等待下载中...</string>
+    <string name="download_process_sign">&#037;</string>
+    <string name="app_source">应用来源：</string>
+    
+    <!-- Market Manager Page -->
+    <string name="market_manager_page">管理</string>
+    <string name="app_update_check_pref">应用更新</string>
+    <string name="download_manager_pref">下载管理</string>
+    <string name="app_manager_pref">应用管理</string>
+    <string name="settings_pref">设置</string>
+    <string name="version_update_pref">版本更新</string>
+
+    <!-- Settings Page -->
+    <string name="update_settings_pref">更新设置</string>
+    <string name="wifi_download_pref">仅Wi-Fi下载</string>
+    <string name="none_download_pic_pref">移动网络不加载图片</string>
+    <string name="hold_app_pref">保留应用安装包</string>
+
+    <!-- App Update Page -->
+    <string name="app_update_page">应用更新</string>
+    <string name="available_update_number">可更新（%1$d）</string>
+    <string name="app_update_settings">更新设置</string>
+    <string name="update_by_one_key">一键更新</string>
+    <string name="test_app_name">腾讯QQ</string>
+    <string name="test_app_version">1.0.5->1.1.5</string>
+    <string name="test_app_size">13.8MB</string>
+    <string name="app_update">更新</string>
+    <string name="ignore_update_app">忽略</string>
+
+    <!-- Update Apps Ignored Page -->
+    <string name="update_apps_ignored">已忽略更新应用</string>
+    <string name="update_all_apps">全部恢复更新</string>
+    <string name="update_apps_ignored_num">已忽略（%1$d）</string>
+    <string name="restore_update_app">恢复更新</string>
+    <string name="flow_saves_update">省流量更新</string>
+    <string name="flow_saves_total">省流更新%1$dM(共省%2$dM)</string>
+    <string name="ignored_dialog_title_tip">提示</string>
+    <string name="ignored_dialog_msg_content">是否确认将全部已忽略更新的应用恢复到更新列表？</string>
+
+    <!-- Update Settings Page -->
+    <string name="wifi_auto_upgrade">Wi-Fi下自动升级</string>
+    <string name="software_auto_update_tip">软件更新提醒</string>
+    <string name="apps_update_ignored">已忽略更新应用</string>
+    <string name="wifi_auto_upgrade_open_tip">打开该选项后系统会在锁屏且Wi-Fi的状态下自动将可更新的应用升级到最新版，是否确认打开？</string>
+    
+    <!-- 下载 -->
+    <string name="app_market_name">App名称</string>
+    <string name="app_market_download_sum">下载量</string>
+    <string name="app_market_download_size">大小</string>
+    <string name="app_market_download">下载</string>
+    <string name="app_market_download_operation">operation</string>
+    <string name="app_market_download_del">删除</string>
+    <string name="app_market_download_pause">pause</string>
+    <string name="app_market_download_cancel">cancel</string>
+
+    <!-- 分类 -->
+    <string name="app_market_type_name">分类名称</string>
+    <string name="app_market_type_info">微博  交友  婚恋  论坛  空间  陌陌</string>
+
+    <!-- Search Page -->
+    <string name="clear_search_history">清空搜索记录</string>
+
+    <!-- 下载管理 -->
+    <string name="downloadman_downloading">下载中</string>
+    <string name="downloadman_downloaded">已下载</string>
+    <string name="downloadman_no_install">未安装</string>
+    <string name="downloadman_installed">已安装</string>
+    <string name="downloadman_install_failed">安装失败</string>
+    <string name="downloadman_installing">正在安装...</string>
+    <string name="downloadman_open">打开</string>
+    <string name="downloadman_continue">继续</string>
+    <string name="downloadman_pause">暂停</string>
+    <string name="downloadman_paused">已暂停</string>
+    <string name="downloadman_retry">重试</string>
+    <string name="downloadman_down_fail">下载失败</string>
+    <string name="downloadman_install">安装</string>
+    <string name="donwloadman_update">更新</string>
+    <string name="donwloadman_download">下载</string>
+    <string name="downloadman_connecting">正在连接</string>
+    <string name="downloadman_wait_download">等待下载</string>
+    <string name="downloadman_wait_wifi">等待WI-FI网络</string>
+    <string name="downloadman_no_network">暂无网络</string>
+    <string name="downloadman_show_more">全部展开</string>
+    <string name="downloadman_nodata">暂无下载任务</string>
+    <string name="downloadman_go_shopping">去逛逛</string>
+    <string name="downloadman_select_all">全选</string>
+    <string name="downloadman_reverse_selection">反选</string>
+    <string name="downloadman_dlg_delete_confirm">删除确认</string>
+    <string name="downloadman_also_delete_apk">同时删除安装包</string>
+    <string name="downloadman_delete_the_record">是否删除该下载记录？</string>
+    <string name="downloadman_delete_the_task">是否删除该下载任务？</string>
+    <string name="downloadman_delete_select_task_and_record">是否删除选中的任务和记录？</string>
+    <string name="downloadman_clear_record">是否清空所有下载记录？</string>
+    <string name="downloadman_no_select">未选择删除任务</string>
+    <string name="downloadman_noakkfile_redownload">没有检测到安装包，是否重新下载？</string>
+    <string name="downloadman_continue_download_by_mobile">是否使用移动网络继续下载？</string>
+
+    <!-- 通知栏 -->
+    <string name="notification_status_dis_download">个应用正在下载</string>
+    <string name="notification_status_dis_install">个应用正在安装</string>
+    <string name="notification_status_dis_installed">个应用安装成功</string>
+    <string name="notification_status_dis_installfailed">个应用安装失败</string>
+    <string name="notification_status_installed">安装成功</string>
+    <string name="notification_status_installfailed">安装失败</string>
+    <string name="notification_status_update">可更新</string>
+    <string name="notification_status_dis_update">个应用可更新</string>
+    <string name="notification_status_click_dis">点击查看</string>
+    <string name="notification_status_click_update">一键升级</string>
+    <string name="notification_status_dis_auto_upate">为你自动升级%1$d个应用</string>
+    <!-- 搜索 -->
+    <string name="search_result_page">搜索结果</string>
+    <string name="search_page_submit">搜索</string>
+    <string name="search_page_pop_item1">Result 1</string>
+    <string name="search_page_pop_item2">Result 2</string>
+    <string name="search_page_pop_item3">Result 3</string>
+    <string name="search_page_pop_item4">Result 4</string>
+    <string name="search_content_empty_tip">搜索内容不能为空！</string>
+
+    <!-- page loading -->
+    <string name="page_loading_network_error">网络错误</string>
+    <string name="page_loading_no_network">无网络</string>
+    <string name="page_loading_retry">重试</string>
+    <string name="page_loading_set_network">设置网络</string>
+    <string name="page_empty_update">暂无可更新应用</string>
+    <string name="page_empty_ignore_upate">暂无忽略更新的应用，更新列表项左滑可对应用进行忽略。</string>
+    <string name="page_empty_search">暂无匹配结果，换个关键词试试</string>
+    <string name="search_check_query">搜索关键词不能为空</string>
+    <string name="app_updating_info">正在更新</string>
+
+    <!-- 专题页 -->
+    <string name="app_special">应用专题</string>
+    <string name="special_app_count_text">%1$d款热门应用</string>
+    <string name="apecial_show_all">查看全部</string>
+    <string name="design_award_app">设计奖应用</string>
+    <string name="essentail_app">必备应用</string>
+    
+    <string name="install_by_one_key">一键安装</string>
+    <string name="girls_language">"女生专题"</string>
+
+</resources>

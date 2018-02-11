@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+  <!-- Height of the main row of in-call buttons. -->
+    <dimen name="in_call_button_height">76dp</dimen>
+
+    <dimen name="incoming_call_text_size">20dp</dimen>
+   
+    <dimen name="incoming_call_text_gap">14dp</dimen>
+    
+    <dimen name="incoming_call_text_left_magin">123dp</dimen>
+    
+    <dimen name="incoming_call_text_gap2">10dp</dimen>
+    
+    <dimen name="incoming_call_text_size2">12dp</dimen>
+    
+    <dimen name="incoming_call_text_hang_gap">2dp</dimen>
+    
+    <dimen name="incoming_call_photo_height">345dp</dimen>
+    
+    <dimen name="incoming_call_callcard_height">453dp</dimen>
+    
+    <dimen name="incoming_call_photo_top_magin">15dp</dimen>
+    
+    <dimen name="incoming_call_name_text_size">28dp</dimen>
+    
+    <dimen name="other_call_photo_height">223dp</dimen>
+    
+    <dimen name="other_call_callcard_height">309dp</dimen>
+    
+    <dimen name="other_call_photo_top_magin">11dp</dimen>
+    
+    <dimen name="other_call_name_text_size">23dp</dimen>
+    <dimen name="incoming_call_jieting_bottom_margin">30dp</dimen>    
+    <dimen name="call_number_address_distance">17dp</dimen>  
+    
+    <dimen name="photo_move_distance">59dp</dimen>
+    <dimen name="name_move_distance">123dp</dimen>
+    <dimen name="photo_move_distance2">85dp</dimen>
+    <dimen name="button_movedistance">8dp</dimen>
+    
+    <dimen name="incoming_callstatelable_padding">20dp</dimen>
+    <dimen name="other_callstatelable_padding">29dp</dimen>
+    <dimen name="callstatelable_move_distance">114dp</dimen>
+    
+    <dimen name="incoming_call_photo_height_real">166dp</dimen>
+    <dimen name="other_call_photo_height_real">140dp</dimen>
+    
+    <dimen name="aurora_dialpad_digits_container_height">48px</dimen>
+    
+     <dimen name="aurora_editor_min_line_item_width">29dip</dimen>
+   <dimen name="aurora_editor_min_line_item_height">47dip</dimen>
+   <dimen name="sim_big_icon_height">74dip</dimen>
+   <dimen name="sim_big_icon_check_height">26dip</dimen>
+   <dimen name="dtmf_button_height">64dip</dimen>
+   <dimen name="aurora_sogou_top">407.7dip</dimen>
+   <integer name="slide_textview_distance">500</integer>
+   
+   <dimen name="aurora_incall_button_text_size">12sp</dimen>
+   
+    <dimen name="incalltouchui_padding_bottom">0dp</dimen>
+    <dimen name="incallcontrolls_margin_bottom">109dp</dimen>
+    <color name="record_button_text_color">#00ff7a</color>
+    <dimen name="slideview_padding_bottom">45dp</dimen>
+    <dimen name="incomingcall_margin_bottom">0dp</dimen>
+    <dimen name="aurora_sliderview_width">191dip</dimen>
+    <dimen name="aurora_sliderview_height">25dip</dimen>
+    <dimen name="end_height">109dip</dimen>
+    <dimen name="end_padding_top">27dip</dimen>
+    <dimen name="end_padding_bottom">27dip</dimen>
+    <dimen name="end_view_height">56.3dip</dimen>
+    <dimen name="end_view_width">141.3dip</dimen>
+    <dimen name="call_waiting_margin_bottom">69dp</dimen>
+    
+     <dimen name="dtmf_dialpad_margin_bottom">109dp</dimen>
+     <dimen name="dtmf_dialpad_text_height">71dp</dimen>
+     <dimen name="dtmf_dialpad_text_margin_top">0dp</dimen>
+     <dimen name="dtmf_dialpad_text_margin_bottom">0dp</dimen>
+    <dimen name="dtmf_dialpad_text_margin_left">32dp</dimen>
+    <dimen name="dtmf_dialpad_text_margin_right">32dp</dimen>
+    <dimen name="dtmf_dialpad_text_padding_right">16dp</dimen>
+    <dimen name="dtmf_dialpad_text_padding_left">16dp</dimen>
+    <dimen name="dtmf_dialpad_text_size">48sp</dimen>
+    
+    
+    <dimen name="callcard_padding_top">0dp</dimen>
+    
+    <dimen name="callcard_area_height">424dp</dimen>
+    <dimen name="labelAndNumber_margin_top">7dp</dimen>
+    <dimen name="note_margin_top">6dp</dimen>
+    <dimen name="callStateLabel_padding_top">270dp</dimen>
+    
+    <dimen name="sim_icon_height">15.5dp</dimen>
+    <dimen name="sim_icon_width">13.5dp</dimen>
+                                      
+
+    <dimen name="call_banner_text_size">17dip</dimen>
+    <dimen name="call_banner_call_state_label_text_size">16dip</dimen>
+    <dimen name="call_banner_small_text_size">10dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding">1dip</dimen>
+    <dimen name="call_banner_sim_indicator_padding_right">6dip</dimen>
+    <dimen name="call_sim_indicator_height">14dip</dimen>
+      <dimen name="call_banner_sim_indicator_padding_left">10dip</dimen>
+    
+    <dimen name="honor6_callcard_area_extra_height">23dip</dimen>
+    
+    <dimen name="callcard_translucent_padding_top">22dp</dimen>
+    
+    <dimen name="miss_noti_width">150dp</dimen>
+    
+    <dimen name="aurora_dtmf_dialpad_text_margin_top">0dp</dimen>        
+    <dimen name="aurora_callcard_padding_top">34dp</dimen>
+    
+      <!-- Dimensions for Emergency Dialer and dialpad inside the in-call screen -->
+    <dimen name="dialpad_horizontal_margin">4dp</dimen>
+    <dimen name="dialpad_vertical_margin">2dp</dimen>
+    <dimen name="dialpad_digits_text_size">35sp</dimen>
+    
+        <dimen name="slideview_distance">150dp</dimen>
+    <dimen name="slideview_distance2">143dp</dimen>
+
+  
+    <dimen name="aurora_point_radius_not_touch">114.25dp</dimen>
+    <dimen name="aurora_point_radius_touch">42.5dp</dimen>
+    <dimen name="aurora_point_touch_gap">8dp</dimen>
+    <dimen name="aurora_point_radius">7dp</dimen>
+    <dimen name="aurora_glowpadview_inner_radius">30.75dip</dimen>
+    <dimen name="aurora_glowpadview_target_placement_radius">124.25dip</dimen>
+    <dimen name="aurora_glowpadview_out_ringer_diameter">248.5dip</dimen>
+    <dimen name="aurora_glowpadview_target_radius_differ">10dip</dimen>
+    <dimen name="incoming_call_photo_height_real_v2">100dp</dimen>
+    <dimen name="incoming_call_photo_height_v2">128dp</dimen>
+    <dimen name="incoming_call_photo_top_magin_v2">31dp</dimen>
+    <dimen name="aurora_call_name_text_size">24sp</dimen>
+    <dimen name="aurora_call_area_text_size">14sp</dimen>
+    <dimen name="aurora_glowpadview_glow_radius">35dip</dimen>
+    <dimen name="aurora_glowpadview_snap_margin">40dp</dimen>    
+    <dimen name="name_move_distance_v2">-64dp</dimen>
+    <dimen name="photo_move_distance_v2">-28.5dp</dimen>       
+    <integer name="aurora_animation_duration">300</integer>
+
+
+    
+    <dimen name="call_time_size">22sp</dimen>
+    <dimen name="aurora_photo_size">109dp</dimen>
+    <dimen name="aurora_photo_circle_size_1">113dp</dimen>
+    <dimen name="aurora_photo_circle_size_2">123dp</dimen>
+    <dimen name="aurora_photo_area_height">137dp</dimen>
+    
+     <dimen name="aurora_glowview_margin_bottom">59dp</dimen>
+     
+         <!-- Circle size for incoming call widget's each item. -->
+    <dimen name="aurora_incoming_call_widget_circle_size">94dp</dimen>
+    <!-- Margin used for incoming call widget's icon for each item.
+         This should be same as "(incoming_call_widget_circle_size - icon_size)/2".
+         Right now answer/decline/reject icons have 38dp width/height.
+         So, (94 - 38)/2 ==> 28dp -->
+    <dimen name="incoming_call_widget_asset_margin">28dp</dimen>
+    
+    <dimen name="aurora_slidedowntext_margin_bottom">14dp</dimen>
+    
+</resources>

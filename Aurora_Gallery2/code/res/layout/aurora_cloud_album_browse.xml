@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="8dp" >
+
+    <View
+        android:id="@+id/headview"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="162.66dp"
+            android:layout_height="125.33dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp" >
+
+            <ImageView
+                android:id="@+id/album_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/ingest_sorting"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/create_album_text"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="17.33sp"
+                android:textColor="@color/aurora_cloud_create_album_color"
+             />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/checkbox_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:src="@drawable/aurora_check14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/checkbox_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:src="@drawable/aurora_check00"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/aroura_cloud_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/aurora_pic_black_bg"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.33dp"
+                android:textColor="@color/aurora_cloud_album_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/album_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.66dp"
+                android:textColor="@color/aurora_cloud_album_sub_title_color"
+                android:layout_toRightOf="@+id/album_title"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/album_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/aurora_cloud_album_num_color"
+                android:textSize="9sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

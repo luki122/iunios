@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="auto_test">"自动测试"</string>
+    <string name="single_test">"硬件测试"</string>
+    <string name="test_result">"测试报告"</string>
+    <string name="master_clear">"恢复出厂设置"</string>
+    <string name="wait">"请稍候。。。"</string>
+    
+    <string name="test_right">"测试通过"</string>
+    <string name="test_wrong">"未通过测试"</string>
+    <string name="fix">"请校准"</string>
+    <string name="right">"通过"</string>
+    <string name="wrong">"失败"</string>
+    <string name="plus">"+"</string>
+    <string name="minus">"-"</string>
+    <string name="default_value">"复位"</string>
+    <string name="test_title">"请判断测试结果"</string>
+    
+    <string msgid="5907939616087039756" name="master_clear_title">"恢复出厂设置"</string>
+    <string msgid="6917971132484622696" name="master_clear_final_desc">"是否删除所有个人信息和下载的所有应用程序？此操作无法还原！"</string>
+
+
+    <string name="hello">Hello World, GnHardWareTestActivity!</string>
+    <string name="app_name">GnHardWareTest</string>
+    <string name="sw_version">"软件版本检测"</string>
+    <string name="keys">"按键"</string>
+    <string name="touch_pad">"CTP划线"</string>
+    <string name="pass">"成功"</string>
+    <string name="restart">"重测"</string>
+    <string name="quit">"退出"</string>
+    <string name="color">"LCD"</string>
+    <string name="screen_brightness">"背光/按键背光"</string>
+    <string name="vibrate">"震动"</string>
+    <string name="light">"LED灯"</string>
+    <string name="tone">"扬声器"</string>
+    <string name="receiver">"听筒"</string>
+    <string name="gyroscope">"陀螺仪"</string>
+    <string name="acceleration">"加速仪"</string>
+    <string name="magnetic_field">"地磁感应"</string>
+    <string name="light_proximity">"距离/光感"</string>
+    <string name="light_sensor">"光敏传感器"</string>
+    <string name="proximity_sensor">"距离传感器"</string>
+    <string name="back_camera">"后摄像头"</string>
+    <string name="front_camera">"前摄像头"</string>
+    <string name="take_picture">"拍照"</string>
+    <string name="preview">"预览"</string>
+        
+    <string name="acceleration_note">"把手机竖起，然后在竖直平面内转动手机朝上下左右四个方向，当转到到四个方向时屏幕将出现指向天空的手机图片，当四个方向测完，正确按钮可用"</string>
+    
+    <string name="magnetic_field_test">"请校准手机:\n手机屏幕面向天空，在你的身旁，拿着手机画8字形状，画两次。再把手机的屏幕面对自己画8字，画两次。"</string>
+    <string name="gps">GPS</string>
+    <string name="bluetooth">"蓝牙"</string>
+    <string name="fm">"FM"</string>
+    <string name="wifi">"WIFI"</string>
+    <string name="battery">"电池/充电"</string>
+    <string name="clock">"闹钟"</string>
+    
+    <string name="power_key">"电源键"</string>
+    <string name="volume_up_key">"增大声音按键"</string>
+    <string name="volume_down_key">"减小声音按键"</string>
+    <string name="camera_key">"拍照键"</string>
+    <string name="back_key">"返回键"</string>
+    <string name="menu_key">"菜单键"</string>
+    <string name="home_key">"HOME键"</string>
+    <string name="search_key">"搜索键"</string>
+    
+    <string name="vibrate_note">"请注意马达是否震动"</string>
+    <string name="stop_vibrate">"停止马达震动"</string>
+    
+    <string name="led_light_note">"请注意键盘灯和相机闪光灯是否打开"</string>
+    <string name="red_light">"红色LED"</string>
+    <string name="green_light">"绿色LED"</string>
+    <string name="blue_light">"蓝色LED"</string>
+    <string name="flash_light">"闪光灯"</string>
+    <string name="close_flash_light">"关闭闪光灯"</string>
+    <string name="record">"录音"</string>
+    <string name="stop_record">"停止录音"</string>
+    <string name="earphone_loopback">"耳机回路"</string>
+    <string name="phone_loopback">"音频回路"</string>
+    <string name="headsethook_note">"请按下按键耳机控制开关"</string>
+    <string name="headsethook_press">"耳机控制开关已按，开始进行耳机回路测试"</string>
+    
+    
+    <string name="earphone_loopback_note">"已插入耳机，进行耳机回路测试"</string>
+    <string name="earphone_loopback_wrong_note">"请插入耳机，进行耳机回路测试"</string>
+    <string name="earphone_loopback_no_state_note">"无法判断耳机是否插入，如果未耳机插入请插入，进行耳机回路测试"</string>
+        
+    <string name="phone_loopback_note">"已移除耳机，进行音频回路测试"</string>
+    <string name="phone_loopback_wrong_note">"请移除耳机，进行手机回路测试"</string>
+    <string name="phone_loopback_no_state_note">"无法判断耳机是否插入，如果耳机已插入请拔出，进行音频回路测试"</string>
+    
+    <string name="record_test">"点击按钮来开关录音，插上耳机则测试耳机，没有耳机则测试手机"</string>
+    <string name="tone_note">"扬声器是否发出10秒左右1千赫兹音调"</string>
+    <string name="receiver_note">"听筒是否发出10秒左右1千赫兹音调"</string>
+    
+    <string name="start_tone">"发出声调"</string>
+    <string name="stop_tone">"停止声调"</string>
+    
+    <string name="no_back_camera">"后置摄像头不存在"</string>
+    <string name="no_front_camera">"前置摄像头不存在"</string>
+    
+    <string name="opening_gps">"正在打开GPS,请稍候"</string>
+    <string name="scanning_gps">"已打开GPS，开始定位"</string>
+    <string name="gps_scan_time">"定位时间： "</string>
+    <string name="altitude">"海拔： "</string>
+    <string name="longitude">"经度： "</string>
+    <string name="latitude">"纬度： "</string>
+    <string name="satellite_count">"卫星数目： "</string>
+    <string name="satellite_snc">"第%1$d个卫星信噪比： "</string>
+    
+    
+    
+    <string name="init_gps_fail">"打开蓝牙失败"</string>    
+    <string name="opening_bluetooth">"正在打开蓝牙，请稍候。。。"</string>
+    <string name="init_bluetooth_fail">"打开蓝牙失败"</string>
+    <string name="scanning_bluetooth_device">"正在搜索蓝牙设备，请等待12秒"</string>
+    <string name="find_bluetooth_device_num">"搜索到蓝牙设备数量：%1$s"</string>
+    <string name="opening_wifi">"正在打开无线网络，请稍候。。。"</string>
+    <string name="init_wifi_fail">"打开无线网络失败"</string>
+    <string name="scanning_wifi">"正在搜索无线网络。。。"</string>
+    <string name="find_wifi_num">"搜索到无线网络数量：%1$s"</string>
+    <string name="rescan_wifi">"重新扫描无线网络"</string>
+    <string name="insert_earphone">"请插入耳机"</string>
+    <string name="inserted_earphone">"已插入耳机"</string>
+    <string name="current_hz">"当前频率： %1$sMHz"</string>
+    <string name="light_proximity_title">"距离传感器将根据距离远近在0和1之间切换，光敏传感器将根据周围光线强弱来改变。用手捂住传感器，当光敏传感器数值小于5时并且距离传感器为0时，屏幕背光将变为绿色"</string>
+    <string name="light_proximity_title_105">"距离传感器将根据距离远近在0和1之间切换，光敏传感器将根据周围光线强弱来改变。用手捂住传感器，当光敏传感器数值小于50时并且距离传感器为0时，屏幕背光将变为绿色"</string>
+    <string name="init_light_sensor_fail">"初始化光感传感器失败"</string>
+    <string name="init_proximity_sensor_fail">"初始化距离传感器失败"</string>
+
+    <string name="battery_status_unknow">"充放电未知状态"</string>
+    <string name="battery_status_full">"已充满电"</string>
+    <string name="battery_status_charging">"正在充电"</string>
+    <string name="battery_status_nocharging">"未充电"</string>
+    <string name="battery_status_discharging">"正在放电"</string>
+    <string name="battery_status">"电池充放电状态: "</string>
+    
+    
+    <string name="battery_health">"电池健康状态: "</string>
+    <string name="battery_health_unknow">"未知"</string>
+    <string name="battery_health_good">"良好"</string>
+    <string name="battery_health_dead">"电池没有电"</string>
+    <string name="battery_health_over_voltage">"电池电压过高"</string>
+    <string name="battery_health_overheart">"电池过热"</string>
+    <string name="battery_health_unspecified_failure">"未知错误"</string>
+    
+    
+    <string name="battery_plugged">"是否已插电: "</string>
+    <string name="no_battery_plugged">"未插电"</string>
+    <string name="battery_plugged_ac">"交流电"</string>
+    <string name="battery_plugged_usb">"USB"</string>
+    <string name="battery_power">"电池剩余电量(%): "</string>
+    <string name="battery_capacity">"电池容量(%): "</string>
+    <string name="battery_v">"电池电压: "</string>
+    <string name="battery_temperature">"电池温度："</string>
+    <string name="battery_technology">"电池技术： "</string>
+    <string name="charge_v">"充电电压："</string>
+    <string name="charge_i">"充电电流："</string>
+    <string name="gn_ft_bt_result_success">通过</string>
+    <string name="gn_ft_bt_result_fail">失败</string>
+    <string name="gn_ft_bt_result_no">未检测</string>
+    <string name="isnull">未知</string>
+    <string name="buildtime">创建时间</string>
+    <string name="external_version">版本号</string>
+    
+    <string name="test_result_count">"共%1$d项测试失败"</string>
+</resources>

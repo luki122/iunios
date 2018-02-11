@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="constellation_labels">
+        <item>魔羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+    </string-array>
+
+    <string-array name="day_labels">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_sun">
+        <item>每月第一个周日</item>
+        <item>每月第二个周日</item>
+        <item>每月第三个周日</item>
+        <item>每月第四个周日</item>
+        <item>每月最后一个周日</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_mon">
+        <item>每月第一个周一</item>
+        <item>每月第二个周一</item>
+        <item>每月第三个周一</item>
+        <item>每月第四个周一</item>
+        <item>每月最后一个周一</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_tues">
+        <item>每月第一个周二</item>
+        <item>每月第二个周二</item>
+        <item>每月第三个周二</item>
+        <item>每月第四个周二</item>
+        <item>每月最后一个周二</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_wed">
+        <item>每月第一个周三</item>
+        <item>每月第二个周三</item>
+        <item>每月第三个周三</item>
+        <item>每月第四个周三</item>
+        <item>每月最后一个周三</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_thurs">
+        <item>每月第一个周四</item>
+        <item>每月第二个周四</item>
+        <item>每月第三个周四</item>
+        <item>每月第四个周四</item>
+        <item>每月最后一个周四</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_fri">
+        <item>每月第一个周五</item>
+        <item>每月第二个周五</item>
+        <item>每月第三个周五</item>
+        <item>每月第四个周五</item>
+        <item>每月最后一个周五</item>
+    </string-array>
+
+    <string-array name="aurora_repeat_by_nth_sat">
+        <item>每月第一个周六</item>
+        <item>每月第二个周六</item>
+        <item>每月第三个周六</item>
+        <item>每月第四个周六</item>
+        <item>每月最后一个周六</item>
+    </string-array>
+
+</resources>

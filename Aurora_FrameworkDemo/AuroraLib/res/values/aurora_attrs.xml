@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Gionee <zhangxx> <2013-06-20> add for auroraframework. -->
+<resources>
+
+    <!-- textview ziti -->
+    <attr name="auroraTextViewStyle" format="reference" />
+    <attr name="auroraswitchStyle" format="reference" />
+    <attr name="auroranumberPickerStyle" format="reference" />
+    <attr name="auroradatePickerStyle" format="reference" />
+    <attr name="auroratimePickerStyle" format="reference" />
+    <attr name="auroraalertDialogStyle" format="reference" />
+    <attr name="auroraframeListBackground" format="reference" />
+    <attr name="auroraframeListTopBackground" format="reference" />
+    <attr name="auroraframeListMiddleBackground" format="reference" />
+    <attr name="auroraframeListBottomBackground" format="reference" />
+    <attr name="auroratextAppearanceMediumSecond" format="reference" />
+    <attr name="auroratextAppearanceMediumSecondInverse" format="reference" />
+    <attr name="auroraactionBarStyle" format="reference" />
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 begin -->
+    <attr name="auroraspinnerStyle" format="reference" />
+    <attr name="auroraoptionMenuListBackground" format="reference" />
+    <attr name="auroraoptionMenuMoreBg" format="reference" />
+    <attr name="auroraoptionMenuBg" format="reference" />
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 end -->
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 begin -->
+    <attr name="auroraExpandableListViewStyle" format="reference" />
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 end -->
+    <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 begin -->
+    <attr name="aurorasearchResultListItemHeight" format="dimension" />
+    <attr name="aurorasearchViewEditQuery" format="reference" />
+    <attr name="aurorasearchViewEditQueryBackground" format="reference" />
+    <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 end -->
+
+
+    <!-- flash changed 2013.9.26 start removed out from AuroraSwitch, if delete derectly have errors ! -->
+    <attr name="aurorathumb" format="reference" />
+    <attr name="auroratrack" format="reference" />
+    <attr name="auroratextOn" format="reference" />
+    <attr name="auroratextOff" format="reference" />
+    <attr name="aurorathumbTextPadding" format="dimension" />
+    <attr name="auroraswitchMinWidth" format="dimension" />
+    <attr name="auroraswitchPadding" format="dimension" />
+ <attr name="textColor" format="reference|color" />
+    <attr name="textStyle">
+        <flag name="normal" value="0" />
+        <flag name="bold" value="1" />
+        <flag name="italic" value="2" />
+    </attr>
+    <attr name="textSize" format="dimension" />
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+    <declare-styleable name="AuroraSwitch">
+        <attr name="track" format="reference" />
+        <attr name="switchTextAppearance" format="reference" />
+        <attr name="switchMinWidth" format="dimension" />
+        <attr name="switchPadding" format="dimension" />
+    </declare-styleable>
+    <!-- flash changed 2013.9.26 end -->
+
+    <declare-styleable name="AuroraNumberPicker">
+        <attr name="aurorasolidColor" format="color|reference" />
+        <attr name="auroraselectionDivider" format="reference" />
+        <attr name="auroraselectionDividerHeight" format="dimension" />
+        <attr name="auroraselectionDividersDistance" format="dimension" />
+        <attr name="aurorainternalMinHeight" format="dimension" />
+        <attr name="aurorainternalMaxHeight" format="dimension" />
+        <attr name="aurorainternalMinWidth" format="dimension" />
+        <attr name="aurorainternalMaxWidth" format="dimension" />
+        <attr name="aurorainternalLayout" format="reference" />
+        <attr name="auroravirtualButtonPressedDrawable" format="reference" />
+        <attr name="auroraselectionSrc" format="reference" />
+        <attr name="aurorabackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AuroraDatePicker">
+        <attr name="aurorastartYear" format="integer" />
+        <attr name="auroraendYear" format="integer" />
+        <attr name="auroraspinnersShown" format="boolean" />
+        <attr name="auroracalendarViewShown" format="boolean" />
+        <attr name="auroraminDate" format="string" />
+        <attr name="auroramaxDate" format="string" />
+        <attr name="aurorainternalLayout" />
+    </declare-styleable>
+    <declare-styleable name="AuroraTimePicker">
+        <attr name="aurorainternalLayout" />
+        <attr name="hideAmPm" format="boolean" />
+        <attr name="is24Hour" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base attributes available to Preference. -->
+    <attr name="auroraPreferenceTitleAppearance" format="reference" />
+    <attr name="auroraPreferenceSummaryAppearance" format="reference" />
+    <attr name="auroraPreferenceArrowTextAppearance" format="reference" />
+    <attr name="auroraPreferenceArrowBackgroundAppearance" format="reference" />
+
+    <declare-styleable name="AuroraPreference">
+
+        <!-- The optional icon for the preference -->
+        <attr name="auroraicon" format="reference" />
+        <!-- The key to store the Preference value. -->
+        <attr name="aurorakey" format="string" />
+        <!-- The title for the Preference in a PreferenceActivity screen. -->
+        <attr name="auroratitle" format="string" />
+        <!-- The summary for the Preference in a PreferenceActivity screen. -->
+        <attr name="aurorasummary" format="string" />
+        <!--
+             The order for the Preference (lower values are to be ordered first). If this is not
+             specified, the default orderin will be alphabetic.
+        -->
+        <attr name="auroraorder" format="integer" />
+        <!--
+             When used inside of a modern PreferenceActivity, this declares
+             a new PreferenceFragment to be shown when the user selects this item.
+        -->
+        <attr name="aurorafragment" format="string" />
+        <!--
+             The layout for the Preference in a PreferenceActivity screen. This should
+             rarely need to be changed, look at widgetLayout instead.
+        -->
+        <attr name="auroralayout" format="reference" />
+        <!--
+             The layout for the controllable widget portion of a Preference. This is inflated
+             into the layout for a Preference and should be used more frequently than
+             the layout attribute. For example, a checkbox preference would specify
+             a custom layout (consisting of just the CheckBox) here.
+        -->
+        <attr name="aurorawidgetLayout" format="reference" />
+
+        <!-- add by <flash>2013.10.16 ,for bottom layout -->
+        <attr name="aurorabottomwidgetLayout" format="reference" />
+        <!-- end -->
+
+
+        <!-- Whether the Preference is enabled. -->
+        <attr name="auroraenabled" format="boolean" />
+        <!-- Whether the Preference is selectable. -->
+        <attr name="auroraselectable" format="boolean" />
+        <!--
+             The key of another Preference that this Preference will depend on.  If the other
+             Preference is not set or is off, this Preference will be disabled.
+        -->
+        <attr name="auroradependency" format="string" />
+        <!-- Whether the Preference stores its value to the shared preferences. -->
+        <attr name="aurorapersistent" format="boolean" />
+        <!--
+             The default value for the preference, which will be set either if persistence
+             is off or persistence is on and the preference is not found in the persistent
+             storage.
+        -->
+        <attr name="auroradefaultValue" format="string|boolean|integer|reference|float" />
+        <!--
+             Whether the view of this Preference should be disabled when
+             this Preference is disabled.
+        -->
+        <attr name="aurorashouldDisableView" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AuroraSwitchPreference">
+
+        <!--
+             The summary for the Preference in a PreferenceActivity screen when the
+             SwitchPreference is checked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead.
+        -->
+        <attr name="aurorasummaryOn" format="string" />
+        <!--
+             The summary for the Preference in a PreferenceActivity screen when the
+             SwitchPreference is unchecked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead.
+        -->
+        <attr name="aurorasummaryOff" format="string" />
+        <!--
+             The text used on the switch itself when in the "on" state.
+             This should be a very SHORT string, as it appears in a small space.
+        -->
+        <attr name="auroraswitchTextOn" format="string" />
+        <!--
+             The text used on the switch itself when in the "off" state.
+             This should be a very SHORT string, as it appears in a small space.
+        -->
+        <attr name="auroraswitchTextOff" format="string" />
+        <!--
+             The state (true for on, or false for off) that causes dependents to be disabled. By default,
+             dependents will be disabled when this is unchecked, so the value of this preference is false.
+        -->
+        <attr name="auroradisableDependentsState" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AuroraCheckBoxPreference">
+
+        <!--
+             The summary for the Preference in a PreferenceActivity screen when the
+             CheckBoxPreference is checked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead.
+        -->
+        <attr name="aurorasummaryOn" />
+        <!--
+             The summary for the Preference in a PreferenceActivity screen when the
+             CheckBoxPreference is unchecked. If separate on/off summaries are not
+             needed, the summary attribute can be used instead.
+        -->
+        <attr name="aurorasummaryOff" />
+        <!--
+             The state (true for on, or false for off) that causes dependents to be disabled. By default,
+             dependents will be disabled when this is unchecked, so the value of this preference is false.
+        -->
+        <attr name="auroradisableDependentsState" />
+    </declare-styleable>
+
+    <!--
+         Attribute for a header describing the item shown in the top-level list
+         from which the selects the set of preference to dig in to.
+    -->
+    <declare-styleable name="AuroraPreferenceHeader">
+
+        <!-- Identifier value for the header. -->
+        <attr name="auroraid" format="reference" />
+        <!-- The title of the item that is shown to the user. -->
+        <attr name="auroratitle" />
+        <!-- The summary for the item. -->
+        <attr name="aurorasummary" />
+        <!-- The title for the bread crumb of this item. -->
+        <attr name="aurorabreadCrumbTitle" format="string" />
+        <!-- The short title for the bread crumb of this item. -->
+        <attr name="aurorabreadCrumbShortTitle" format="string" />
+        <!-- An icon for the item. -->
+        <attr name="auroraicon" />
+        <!-- The fragment that is displayed when the user selects this item. -->
+        <attr name="aurorafragment" />
+    </declare-styleable>
+
+    <!-- Base attributes available to PreferenceGroup. -->
+    <declare-styleable name="AuroraPreferenceGroup">
+
+        <!--
+             Whether to order the Preference under this group as they appear in the XML file.
+             If this is false, the ordering will follow the Preference order attribute and
+             default to alphabetic for those without the order attribute.
+        -->
+        <attr name="auroraorderingFromXml" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base attributes available to DialogPreference. -->
+    <declare-styleable name="AuroraDialogPreference">
+
+        <!-- The title in the dialog. -->
+        <attr name="auroradialogTitle" format="string" />
+        <!--
+             The message in the dialog. If a dialogLayout is provided and contains
+             a TextView with ID android:id/message, this message will be placed in there.
+        -->
+        <attr name="auroradialogMessage" format="string" />
+        <!-- The icon for the dialog. -->
+        <attr name="auroradialogIcon" format="reference" />
+        <!-- The positive button text for the dialog. Set to @null to hide the positive button. -->
+        <attr name="aurorapositiveButtonText" format="string" />
+        <!-- The negative button text for the dialog. Set to @null to hide the negative button. -->
+        <attr name="auroranegativeButtonText" format="string" />
+        <!--
+             A layout to be used as the content View for the dialog. By default, this shouldn't
+             be needed. If a custom DialogPreference is required, this should be set. For example,
+             the EditTextPreference uses a layout with an EditText as this attribute.
+        -->
+        <attr name="auroradialogLayout" format="reference" />
+    </declare-styleable>
+
+    <!-- Base attributes available to ListPreference. -->
+    <declare-styleable name="AuroraListPreference">
+
+        <!--
+             The human-readable array to present as a list. Each entry must have a corresponding
+             index in entryValues.
+        -->
+        <attr name="auroraentries" format="reference" />
+        <!--
+             The array to find the value to save for a preference when an entry from
+             entries is selected. If a user clicks on the second item in entries, the
+             second item in this array will be saved to the preference.
+        -->
+        <attr name="auroraentryValues" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AuroraMultiSelectListPreference">
+
+        <!--
+             The human-readable array to present as a list. Each entry must have a corresponding
+             index in entryValues.
+        -->
+        <attr name="auroraentries" />
+        <!--
+             The array to find the value to save for a preference when an entry from
+             entries is selected. If a user clicks the second item in entries, the
+             second item in this array will be saved to the preference.
+        -->
+        <attr name="auroraentryValues" />
+    </declare-styleable>
+
+    <!-- Base attributes available to RingtonePreference. -->
+    <declare-styleable name="AuroraRingtonePreference">
+
+        <!-- Which ringtone type(s) to show in the picker. -->
+        <attr name="auroraringtoneType">
+
+            <!-- Ringtones. -->
+            <flag name="ringtone" value="1" />
+            <!-- Notification sounds. -->
+            <flag name="notification" value="2" />
+            <!-- Alarm sounds. -->
+            <flag name="alarm" value="4" />
+            <!-- All available ringtone sounds. -->
+            <flag name="all" value="7" />
+        </attr>
+        <!-- Whether to show an item for a default sound. -->
+        <attr name="aurorashowDefault" format="boolean" />
+        <!-- Whether to show an item for 'Silent'. -->
+        <attr name="aurorashowSilent" format="boolean" />
+    </declare-styleable>
+
+    <!-- Base attributes available to VolumePreference. -->
+    <declare-styleable name="AuroraVolumePreference">
+
+        <!-- Different audio stream types. -->
+        <attr name="aurorastreamType">
+            <enum name="voice" value="0" />
+            <enum name="system" value="1" />
+            <enum name="ring" value="2" />
+            <enum name="music" value="3" />
+            <enum name="alarm" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <!-- The set of attributes that describe a AlertDialog's theme. -->
+    <declare-styleable name="AuroraAlertDialog">
+        <attr name="aurorafullDark" format="reference|color" />
+        <attr name="auroratopDark" format="reference|color" />
+        <attr name="auroracenterDark" format="reference|color" />
+        <attr name="aurorabottomDark" format="reference|color" />
+        <attr name="aurorafullBright" format="reference|color" />
+        <attr name="auroratopBright" format="reference|color" />
+        <attr name="auroracenterBright" format="reference|color" />
+        <attr name="aurorabottomBright" format="reference|color" />
+        <attr name="aurorabottomMedium" format="reference|color" />
+        <attr name="auroracenterMedium" format="reference|color" />
+        <attr name="auroralayout" />
+        <attr name="auroralistLayout" format="reference" />
+        <attr name="auroramultiChoiceItemLayout" format="reference" />
+        <attr name="aurorasingleChoiceItemLayout" format="reference" />
+        <attr name="auroralistItemLayout" format="reference" />
+        <attr name="auroraprogressLayout" format="reference" />
+        <attr name="aurorahorizontalProgressLayout" format="reference" />
+    </declare-styleable>
+    <!-- Aurora <luofu> 2013-09-17 add for aurora dialog begin -->
+    <attr name="auroraDialogTheme" format="reference" />
+
+    <!-- Aurora <luofu> 2013-09-17 add for aurora dialog begin -->
+    <!-- Attributes used to style the Action Bar. -->
+    <declare-styleable name="AuroraActionBar">
+
+        <!-- The type of navigation to use. -->
+        <attr name="auroranavigationMode">
+
+            <!-- Normal static title text -->
+            <enum name="normal" value="0" />
+            <!-- The action bar will use a selection list for navigation. -->
+            <enum name="listMode" value="1" />
+            <!-- The action bar will use a series of horizontal tabs for navigation. -->
+            <enum name="tabMode" value="2" />
+        </attr>
+        <!-- Options affecting how the action bar is displayed. -->
+        <attr name="auroradisplayOptions">
+            <flag name="none" value="0" />
+            <flag name="useLogo" value="0x1" />
+            <flag name="showHome" value="0x2" />
+            <flag name="homeAsUp" value="0x4" />
+            <flag name="showTitle" value="0x8" />
+            <flag name="showCustom" value="0x10" />
+            <flag name="disableHome" value="0x20" />
+        </attr>
+        <!-- Specifies title text used for navigationMode="normal" -->
+        <attr name="auroratitle" />
+        <!-- Specifies subtitle text used for navigationMode="normal" -->
+        <attr name="aurorasubtitle" format="string" />
+        <!-- Specifies a style to use for title text. -->
+        <attr name="auroratitleTextStyle" format="reference" />
+        <!-- Specifies a style to use for subtitle text. -->
+        <attr name="aurorasubtitleTextStyle" format="reference" />
+        <!-- Specifies the drawable used for the application icon. -->
+        <attr name="auroraicon" />
+        <!-- Specifies the drawable used for the application logo. -->
+        <attr name="auroralogo" format="reference" />
+        <!-- Specifies the drawable used for item dividers. -->
+        <attr name="auroradivider" format="reference" />
+        <!-- Specifies a background drawable for the action bar. -->
+        <attr name="aurorabackground" />
+        <!-- Specifies a background drawable for a second stacked row of the action bar. -->
+        <attr name="aurorabackgroundStacked" format="reference|color" />
+        <!-- Specifies a background drawable for the bottom component of a split action bar. -->
+        <attr name="aurorabackgroundSplit" format="reference|color" />
+        <!-- Specifies a layout for custom navigation. Overrides navigationMode. -->
+        <attr name="auroracustomNavigationLayout" format="reference" />
+        <!-- Specifies a fixed height. -->
+        <attr name="auroraheight" format="dimension" />
+        <!-- Specifies a layout to use for the "home" section of the action bar. -->
+        <attr name="aurorahomeLayout" format="reference" />
+        <!-- Specifies a style resource to use for an embedded progress bar. -->
+        <attr name="auroraprogressBarStyle" format="reference" />
+        <!-- Specifies a style resource to use for an indeterminate progress spinner. -->
+        <attr name="auroraindeterminateProgressStyle" format="reference" />
+        <!-- Specifies the horizontal padding on either end for an embedded progress bar. -->
+        <attr name="auroraprogressBarPadding" format="dimension" />
+        <!--
+             Specifies padding that should be applied to the left and right sides of
+             system-provided items in the bar.
+        -->
+        <attr name="auroraitemPadding" format="dimension" />
+        <!-- <attr name="aurorahomeAsUpIndicator" format="reference" /> -->
+        <attr name="aurorapaddingLeft" format="dimension" />
+        <attr name="aurorapaddingTop" format="dimension" />
+        <attr name="aurorapaddingRight" format="dimension" />
+        <attr name="aurorapaddingBottom" format="dimension" />
+        <attr name="auroratextAppearance" format="reference" />
+        <attr name="aurorashowDefault" />
+    </declare-styleable>
+    <declare-styleable name="AuroraAutoCompleteTextView">
+
+        <!-- Defines the hint displayed in the drop down menu. -->
+        <attr name="auroracompletionHint" format="string" />
+        <!-- Defines the hint view displayed in the drop down menu. -->
+        <attr name="auroracompletionHintView" format="reference" />
+        <!--
+         Defines the number of characters that the user must type before
+         completion suggestions are displayed in a drop down menu.
+        -->
+        <attr name="auroracompletionThreshold" format="integer" min="1" />
+        <!-- Selector in a drop down list. -->
+        <attr name="auroradropDownSelector" format="reference|color" />
+        <!-- Amount of pixels by which the drop down should be offset vertically. -->
+        <attr name="auroradropDownVerticalOffset" format="dimension" />
+        <!-- Amount of pixels by which the drop down should be offset horizontally. -->
+        <attr name="auroradropDownHorizontalOffset" format="dimension" />
+        <!--
+             View to anchor the auto-complete dropdown to. If not specified, the text view itself
+             is used.
+        -->
+        <attr name="auroradropDownAnchor" format="reference" />
+        <!--
+             Specifies the basic width of the dropdown. Its value may
+             be a dimension (such as "12dip") for a constant width,
+             fill_parent or match_parent to match the width of the
+             screen, or wrap_content to match the width of
+             the anchored view.
+        -->
+        <attr name="auroradropDownWidth" format="dimension">
+
+            <!--
+                 The dropdown should fill the width of the screen.
+                 This constant is deprecated starting from API Level 8 and
+                 is replaced by {@code match_parent}.
+            -->
+            <enum name="fill_parent" value="-1" />
+            <!--
+                 The dropdown should fit the width of the screen.
+                 Introduced in API Level 8.
+            -->
+            <enum name="match_parent" value="-1" />
+            <!-- The dropdown should fit the width of its anchor. -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!--
+             Specifies the basic height of the dropdown. Its value may
+             be a dimension (such as "12dip") for a constant height,
+             fill_parent or match_parent to fill the height of the
+             screen, or wrap_content to match the height of
+             the content of the drop down.
+        -->
+        <attr name="auroradropDownHeight" format="dimension">
+
+            <!--
+                 The dropdown should fit the height of the screen.
+                 This constant is deprecated starting from API Level 8 and
+                 is replaced by {@code match_parent}.
+            -->
+            <enum name="fill_parent" value="-1" />
+            <!--
+                 The dropdown should fit the height of the screen.
+                 Introduced in API Level 8.
+            -->
+            <enum name="match_parent" value="-1" />
+            <!-- The dropdown should fit the height of the content. -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!-- <attr name="inputType" /> -->
+    </declare-styleable>
+    <!-- Gionee <fenglp> <2013-07-10> add for CR00812456 begin -->
+    <!-- for ContextMenu -->
+    <attr name="aurorapanelMenuListWidth" format="dimension" />
+    <!-- The preferred padding along the start edge of list items. -->
+    <attr name="auroralistPreferredItemPaddingStart" format="dimension" />
+    <!-- The preferred padding along the end edge of list items. -->
+    <attr name="auroralistPreferredItemPaddingEnd" format="dimension" />
+
+    <declare-styleable name="AuroraMenuView">
+
+        <!-- Default appearance of menu item text. -->
+        <attr name="auroraitemTextAppearance" format="reference" />
+        <!-- Default horizontal divider between rows of menu items. -->
+        <attr name="aurorahorizontalDivider" format="reference" />
+        <!-- Default vertical divider between menu items. -->
+        <attr name="auroraverticalDivider" format="reference" />
+        <!-- Default background for the menu header. -->
+        <attr name="auroraheaderBackground" format="color|reference" />
+        <!-- Default background for each menu item. -->
+        <attr name="auroraitemBackground" format="color|reference" />
+        <!-- Default animations for the menu. -->
+        <attr name="aurorawindowAnimationStyle" format="reference" />
+        <!-- Default disabled icon alpha for each menu item that shows an icon. -->
+        <attr name="auroraitemIconDisabledAlpha" format="float" />
+        <!-- Whether space should be reserved in layout when an icon is missing. -->
+        <attr name="aurorapreserveIconSpacing" format="boolean" />
+    </declare-styleable>
+    <!-- Gionee <fenglp> <2013-07-10> add for CR00812456 end -->
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 begin -->
+    <declare-styleable name="AuroraSpinner">
+        <attr name="auroraprompt" format="reference" />
+        <attr name="auroraspinnerMode" format="enum">
+
+            <!-- Spinner options will be presented to the user as a dialog window. -->
+            <enum name="dialog" value="0" />
+            <!--
+                 Spinner options will be presented to the user as an inline dropdown
+                 anchored to the spinner widget itself.
+            -->
+            <enum name="dropdown" value="1" />
+        </attr>
+        <attr name="changeArrowDirection" format="boolean" />
+        <attr name="entries" format="reference" />
+        <attr name="popupDrawable" format="reference" />
+        <attr name="textMarginLeft" format="dimension" />
+        <attr name="textMarginRight" format="dimension" />
+        <attr name="imageDrawable" format="reference" />
+        <attr name="spinnerDropDownVerticalOffset" format="dimension" />
+        <attr name="spinnerDropDownHorizontalOffset" format="dimension" />
+        <attr name="spinnerPaddingLeft" format="dimension" />
+        <attr name="spinnerPaddingRight" format="dimension" />
+        <attr name="spinnerDivider" format="dimension" />
+        <attr name="spinnerDropDownWidth" format="dimension">
+
+            <!--
+                 The dropdown should fit the height of the screen.
+                 This constant is deprecated starting from API Level 8 and
+                 is replaced by {@code match_parent}.
+            -->
+            <enum name="fill_parent" value="-1" />
+            <!--
+                 The dropdown should fit the height of the screen.
+                 Introduced in API Level 8.
+            -->
+            <enum name="match_parent" value="-1" />
+            <!-- The dropdown should fit the height of the content. -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="spinnerPosition" format="integer">
+            <enum name="left_top" value="0" />
+            <enum name="left_normal" value="1" />
+            <enum name="left_bottom" value="2" />
+            <enum name="right_top" value="3" />
+            <enum name="right_normal" value="4" />
+            <enum name="right_bottom" value="5" />
+            <enum name="normal" value="6" />
+        </attr>
+    </declare-styleable>
+    <!-- Gionee <daizhimin> <2013-07-11> add for CR00833379 end -->
+
+
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 begin -->
+    <declare-styleable name="AuroraExpandableListView">
+
+        <!-- Indicator shown beside the group View. This can be a stateful Drawable. -->
+        <attr name="auroragroupIndicator" format="reference" />
+        <!-- Indicator shown beside the child View. This can be a stateful Drawable. -->
+        <attr name="aurorachildIndicator" format="reference" />
+        <!--
+             The left bound for an item's indicator. To specify a left bound specific to children,
+             use childIndicatorLeft.
+        -->
+        <attr name="auroraindicatorLeft" format="dimension" />
+        <!--
+             The right bound for an item's indicator. To specify a right bound specific to children,
+             use childIndicatorRight.
+        -->
+        <attr name="auroraindicatorRight" format="dimension" />
+        <!-- The left bound for a child's indicator. -->
+        <attr name="aurorachildIndicatorLeft" format="dimension" />
+        <!-- The right bound for a child's indicator. -->
+        <attr name="aurorachildIndicatorRight" format="dimension" />
+        <!--
+             Drawable or color that is used as a divider for children. (It will drawn
+             below and above child items.) The height of this will be the same as
+             the height of the normal list item divider.
+        -->
+        <attr name="aurorachildDivider" format="reference|color" />
+    </declare-styleable>
+    <!-- Gionee <xuhz> <2013-07-25> add for CR00833450 end -->
+
+
+    <!-- Aurora <luofu> <2013-09-05> add for searchview begin -->
+
+    <declare-styleable name="AuroraSearchView">
+        <attr name="hintSearchIcon" format="reference" />
+        <attr name="closeButtonDrawable" format="reference" />
+        <attr name="editAreaBackgroud" format="reference" />
+        <attr name="searchTextColor" format="color" />
+        <attr name="voiceButtonDrawable" format="reference" />
+        <attr name="submitButtonDrawable" format="reference" />
+        <attr name="dropdown_list_width" format="dimension">
+
+            <!--
+                 The view should be as big as its parent (minus padding).
+                 This constant is deprecated starting from API Level 8 and
+                 is replaced by {@code match_parent}.
+            -->
+            <enum name="fill_parent" value="-1" />
+            <!--
+                 The view should be as big as its parent (minus padding).
+                 Introduced in API Level 8.
+            -->
+            <enum name="match_parent" value="-1" />
+            <!-- The view should be only big enough to enclose its content (plus padding). -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AuroraCheckedTextView">
+        <attr name="position" format="integer">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="isSingleChoice" format="boolean" />
+    </declare-styleable>
+
+    <!-- Aurora <luofu> <2013-09-05> add for searchview end -->
+
+
+    <!-- Aurora <luofu> <2013-11-26> add for button's animation begin -->
+    <attr name="playAnim" format="boolean" />
+    <!--
+    <declare-styleable name="AuroraAnimationButton">
+        <attr name="playAnim" format="boolean"/>
+    </declare-styleable>
+    -->
+
+    <attr name="homeIcon" format="reference" />
+    <!-- Aurora <luofu> <2013-11-26> add for button's animation end -->
+
+    <attr name="ActionBarAnimationDrawablePosition" format="integer">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="normal" value="2" />
+    </attr>
+    <attr name="playAnimation" format="boolean" />
+
+    <declare-styleable name="AuroraAnimationText">
+        <attr name="ActionBarAnimationDrawablePosition" />
+        <attr name="buttonBackgroundLeft" format="reference" />
+        <attr name="buttonBackgroundRight" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AuroraAnimationButton">
+        <attr name="ActionBarAnimationDrawablePosition" />
+        <attr name="playAnimation" />
+    </declare-styleable>
+    <declare-styleable name="AuroraTextView">
+        <attr name="auroraTextBaseLinePadding" format="integer" />
+        <attr name="auroraUseDefaultFont" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AuroraEditText">
+        <attr name="auroraSingleLineEditTextStyle" format="boolean" />
+        <attr name="auroraTextSelectHandleLeft" />
+        <attr name="auroraTextSelectHandleRight" />
+    </declare-styleable>
+
+    <attr name="auroraCheckableframeListBackground" format="reference" />
+    <attr name="auroraCheckableframeListTopBackground" format="reference" />
+    <attr name="auroraCheckableframeListMiddleBackground" format="reference" />
+    <attr name="auroraCheckableframeListBottomBackground" format="reference" />
+    <attr name="auroraCheckablePreferenceTitleColor" format="reference" />
+    <attr name="auroraCheckablePreferenceSummaryColor" format="reference" />
+
+    <declare-styleable name="AuroraListView">
+        <attr name="auroraListViewheaderShadowOffsetX" format="integer" />
+        <attr name="auroraListViewheaderShadowOffsetY" format="integer" />
+        <attr name="auroraShowRubbishIcon" format="boolean" />
+        <attr name="auroraListViewOverScroll" format="boolean" />
+        <attr name="auroraListViewSlideRight" format="boolean" />
+        <attr name="auroraListViewSortItem" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AuroraCheckBox">
+        <attr name="auroraRoundDrawable" format="boolean" />
+    </declare-styleable>
+
+    <!-- add for Edittext textSelectHandler -->
+    <attr name="auroraTextSelectHandleLeft" format="reference" />
+    <attr name="auroraTextSelectHandleRight" format="reference" />
+    <attr name="auroraEditTextStyle" format="reference" />
+
+    <!-- add for virtual key by luofu  begin -->
+    <declare-styleable name="AuroraNavKey">
+        <attr name="auroraKeyCode" format="integer" />
+        <attr name="auroraKeyRepeat" format="boolean" />
+    </declare-styleable>
+
+    <attr name="imeOptions">
+
+        <!-- There are no special semantics associated with this editor. -->
+        <flag name="normal" value="0x00000000" />
+        <!--
+             There is no specific action associated with this editor, let the
+             editor come up with its own if it can.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_NULL}.
+        -->
+        <flag name="actionUnspecified" value="0x00000000" />
+        <!--
+             This editor has no action associated with it.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_NONE}.
+        -->
+        <flag name="actionNone" value="0x00000001" />
+        <!--
+             The action key performs a "go"
+             operation to take the user to the target of the text they typed.
+             Typically used, for example, when entering a URL.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_GO}.
+        -->
+        <flag name="actionGo" value="0x00000002" />
+        <!--
+             The action key performs a "search"
+             operation, taking the user to the results of searching for the text
+             the have typed (in whatever context is appropriate).
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_SEARCH}.
+        -->
+        <flag name="actionSearch" value="0x00000003" />
+        <!--
+             The action key performs a "send"
+             operation, delivering the text to its target.  This is typically used
+             when composing a message.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_SEND}.
+        -->
+        <flag name="actionSend" value="0x00000004" />
+        <!--
+             The action key performs a "next"
+             operation, taking the user to the next field that will accept text.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_NEXT}.
+        -->
+        <flag name="actionNext" value="0x00000005" />
+        <!--
+             The action key performs a "done"
+             operation, closing the soft input method.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_DONE}.
+        -->
+        <flag name="actionDone" value="0x00000006" />
+        <!--
+             The action key performs a "previous"
+             operation, taking the user to the previous field that will accept text.
+             Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_ACTION_PREVIOUS}.
+        -->
+        <flag name="actionPrevious" value="0x00000007" />
+        <!--
+             Used to request that the IME never go
+             into fullscreen mode.  Applications need to be aware that the flag is not
+             a guarantee, and not all IMEs will respect it.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_FULLSCREEN}.
+        -->
+        <flag name="flagNoFullscreen" value="0x2000000" />
+        <!--
+             Like flagNavigateNext, but
+             specifies there is something interesting that a backward navigation
+             can focus on.  If the user selects the IME's facility to backward
+             navigate, this will show up in the application as an actionPrevious
+             at {@link android.view.inputmethod.InputConnection#performEditorAction(int)
+             InputConnection.performEditorAction(int)}.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_FULLSCREEN}.
+        -->
+        <flag name="flagNavigatePrevious" value="0x4000000" />
+        <!--
+             Used to specify that there is something
+             interesting that a forward navigation can focus on. This is like using
+             actionNext, except allows the IME to be multiline (with
+             an enter key) as well as provide forward navigation.  Note that some
+             IMEs may not be able to do this, especially when running on a small
+             screen where there is little space.  In that case it does not need to
+             present a UI for this option.  Like actionNext, if the
+             user selects the IME's facility to forward navigate, this will show up
+             in the application at
+             {@link android.view.inputmethod.InputConnection#performEditorAction(int)
+             InputConnection.performEditorAction(int)}.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NAVIGATE_NEXT}.
+        -->
+        <flag name="flagNavigateNext" value="0x8000000" />
+        <!--
+             Used to specify that the IME does not need
+             to show its extracted text UI.  For input methods that may be fullscreen,
+             often when in landscape mode, this allows them to be smaller and let part
+             of the application be shown behind.  Though there will likely be limited
+             access to the application available from the user, it can make the
+             experience of a (mostly) fullscreen IME less jarring.  Note that when
+             this flag is specified the IME may <em>not</em> be set up to be able
+             to display text, so it should only be used in situations where this is
+             not needed.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_EXTRACT_UI}.
+        -->
+        <flag name="flagNoExtractUi" value="0x10000000" />
+        <!--
+             Used in conjunction with a custom action, this indicates that the
+             action should not be available as an accessory button when the
+             input method is full-screen.
+             Note that by setting this flag, there can be cases where the action
+             is simply never available to the user.  Setting this generally means
+             that you think showing text being edited is more important than the
+             action you have supplied.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_ACCESSORY_ACTION}.
+        -->
+        <flag name="flagNoAccessoryAction" value="0x20000000" />
+        <!--
+             Used in conjunction with a custom action,
+             this indicates that the action should not be available in-line as
+             a replacement for the "enter" key.  Typically this is
+             because the action has such a significant impact or is not recoverable
+             enough that accidentally hitting it should be avoided, such as sending
+             a message.    Note that {@link android.widget.TextView} will
+             automatically set this flag for you on multi-line text views.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_NO_ENTER_ACTION}.
+        -->
+        <flag name="flagNoEnterAction" value="0x40000000" />
+        <!--
+             Used to request that the IME should be capable of inputting ASCII
+             characters.  The intention of this flag is to ensure that the user
+             can type Roman alphabet characters in a {@link android.widget.TextView}
+             used for, typically, account ID or password input.  It is expected that IMEs
+             normally are able to input ASCII even without being told so (such IMEs
+             already respect this flag in a sense), but there could be some cases they
+             aren't when, for instance, only non-ASCII input languagaes like Arabic,
+             Greek, Hebrew, Russian are enabled in the IME.  Applications need to be
+             aware that the flag is not a guarantee, and not all IMEs will respect it.
+             However, it is strongly recommended for IME authors to respect this flag
+             especially when their IME could end up with a state that has only non-ASCII
+             input languages enabled.
+             <p>Corresponds to
+             {@link android.view.inputmethod.EditorInfo#IME_FLAG_FORCE_ASCII}.
+        -->
+        <flag name="flagForceAscii" value="0x80000000" />
+    </attr>
+    <attr name="inputType">
+
+        <!-- There is no content type.  The text is not editable. -->
+        <flag name="none" value="0x00000000" />
+        <!--
+             Just plain old text.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_NORMAL}.
+        -->
+        <flag name="text" value="0x00000001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             request capitalization of all characters.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_CHARACTERS}.
+        -->
+        <flag name="textCapCharacters" value="0x00001001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             request capitalization of the first character of every word.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_WORDS}.
+        -->
+        <flag name="textCapWords" value="0x00002001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             request capitalization of the first character of every sentence.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_CAP_SENTENCES}.
+        -->
+        <flag name="textCapSentences" value="0x00004001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             request auto-correction of text being input.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_CORRECT}.
+        -->
+        <flag name="textAutoCorrect" value="0x00008001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             specify that this field will be doing its own auto-completion and
+             talking with the input method appropriately.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_AUTO_COMPLETE}.
+        -->
+        <flag name="textAutoComplete" value="0x00010001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             allow multiple lines of text in the field.  If this flag is not set,
+             the text field will be constrained to a single line.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_MULTI_LINE}.
+        -->
+        <flag name="textMultiLine" value="0x00020001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             indicate that though the regular text view should not be multiple
+             lines, the IME should provide multiple lines if it can.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_IME_MULTI_LINE}.
+        -->
+        <flag name="textImeMultiLine" value="0x00040001" />
+        <!--
+             Can be combined with <var>text</var> and its variations to
+             indicate that the IME should not show any
+             dictionary-based word suggestions.  Corresponds to
+             {@link android.text.InputType#TYPE_TEXT_FLAG_NO_SUGGESTIONS}.
+        -->
+        <flag name="textNoSuggestions" value="0x00080001" />
+        <!--
+             Text that will be used as a URI.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_URI}.
+        -->
+        <flag name="textUri" value="0x00000011" />
+        <!--
+             Text that will be used as an e-mail address.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_ADDRESS}.
+        -->
+        <flag name="textEmailAddress" value="0x00000021" />
+        <!--
+             Text that is being supplied as the subject of an e-mail.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_EMAIL_SUBJECT}.
+        -->
+        <flag name="textEmailSubject" value="0x00000031" />
+        <!--
+             Text that is the content of a short message.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_SHORT_MESSAGE}.
+        -->
+        <flag name="textShortMessage" value="0x00000041" />
+        <!--
+             Text that is the content of a long message.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_LONG_MESSAGE}.
+        -->
+        <flag name="textLongMessage" value="0x00000051" />
+        <!--
+             Text that is the name of a person.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_PERSON_NAME}.
+        -->
+        <flag name="textPersonName" value="0x00000061" />
+        <!--
+             Text that is being supplied as a postal mailing address.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_POSTAL_ADDRESS}.
+        -->
+        <flag name="textPostalAddress" value="0x00000071" />
+        <!--
+             Text that is a password.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_PASSWORD}.
+        -->
+        <flag name="textPassword" value="0x00000081" />
+        <!--
+             Text that is a password that should be visible.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_VISIBLE_PASSWORD}.
+        -->
+        <flag name="textVisiblePassword" value="0x00000091" />
+        <!--
+             Text that is being supplied as text in a web form.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EDIT_TEXT}.
+        -->
+        <flag name="textWebEditText" value="0x000000a1" />
+        <!--
+             Text that is filtering some other data.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_FILTER}.
+        -->
+        <flag name="textFilter" value="0x000000b1" />
+        <!--
+             Text that is for phonetic pronunciation, such as a phonetic name
+             field in a contact entry.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_PHONETIC}.
+        -->
+        <flag name="textPhonetic" value="0x000000c1" />
+        <!--
+             Text that will be used as an e-mail address on a web form.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_EMAIL_ADDRESS}.
+        -->
+        <flag name="textWebEmailAddress" value="0x000000d1" />
+        <!--
+             Text that will be used as a password on a web form.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_TEXT} |
+             {@link android.text.InputType#TYPE_TEXT_VARIATION_WEB_PASSWORD}.
+        -->
+        <flag name="textWebPassword" value="0x000000e1" />
+        <!--
+             A numeric only field.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+             {@link android.text.InputType#TYPE_NUMBER_VARIATION_NORMAL}.
+        -->
+        <flag name="number" value="0x00000002" />
+        <!--
+             Can be combined with <var>number</var> and its other options to
+             allow a signed number.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+             {@link android.text.InputType#TYPE_NUMBER_FLAG_SIGNED}.
+        -->
+        <flag name="numberSigned" value="0x00001002" />
+        <!--
+             Can be combined with <var>number</var> and its other options to
+             allow a decimal (fractional) number.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+             {@link android.text.InputType#TYPE_NUMBER_FLAG_DECIMAL}.
+        -->
+        <flag name="numberDecimal" value="0x00002002" />
+        <!--
+             A numeric password field.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_NUMBER} |
+             {@link android.text.InputType#TYPE_NUMBER_VARIATION_PASSWORD}.
+        -->
+        <flag name="numberPassword" value="0x00000012" />
+        <!--
+             For entering a phone number.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_PHONE}.
+        -->
+        <flag name="phone" value="0x00000003" />
+        <!--
+             For entering a date and time.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+             {@link android.text.InputType#TYPE_DATETIME_VARIATION_NORMAL}.
+        -->
+        <flag name="datetime" value="0x00000004" />
+        <!--
+             For entering a date.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+             {@link android.text.InputType#TYPE_DATETIME_VARIATION_DATE}.
+        -->
+        <flag name="date" value="0x00000014" />
+        <!--
+             For entering a time.  Corresponds to
+             {@link android.text.InputType#TYPE_CLASS_DATETIME} |
+             {@link android.text.InputType#TYPE_DATETIME_VARIATION_TIME}.
+        -->
+        <flag name="time" value="0x00000024" />
+    </attr>
+    <attr name="maxWidth" format="dimension" />
+    <!-- add for virtual key by luofu   end -->
+    <declare-styleable name="SearchView">
+
+        <!--
+             The default state of the SearchView. If true, it will be iconified when not in
+             use and expanded when clicked.
+        -->
+        <attr name="textColor"/>
+        <attr name="iconifiedByDefault" format="boolean" />
+        <!-- An optional maximum width of the SearchView. -->
+        <attr name="maxWidth" />
+        <!-- An optional query hint string to be displayed in the empty query field. -->
+        <attr name="queryHint" format="string" />
+        <!-- The IME options to set on the query text field. -->
+        <attr name="imeOptions" />
+        <!-- The input type to set on the query text field. -->
+        <attr name="inputType" />
+        <!-- background -->
+        <attr name="maxLength" format="integer" min="0" />
+        <attr name="background" format="boolean" />
+        <attr name="focusable" format="boolean" />
+    </declare-styleable>
+
+   
+
+    <declare-styleable name="TextAppearance">
+
+        <!-- Text color. -->
+        <attr name="textColor" />
+        <!-- Size of the text. Recommended dimension type for text is "sp" for scaled-pixels (example: 15sp). -->
+        <attr name="textSize" />
+        <!-- Style (bold, italic, bolditalic) for the text. -->
+        <attr name="textStyle" />
+        <!-- Typeface (normal, sans, serif, monospace) for the text. -->
+        <attr name="typeface" />
+        <!-- Present the text in ALL CAPS. This may use a small-caps form when available. -->
+        <attr name="textAllCaps" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:paddingTop="@com.aurora:dimen/status_bar_height" >
+    <ImageView
+		android:id="@+id/logoIcon"
+		android:layout_width="fill_parent" android:layout_height="171dp"
+		android:scaleType="center" android:src="@drawable/permission_remind_logo"/>
+    
+    <TextView
+        android:id="@+id/permissionHintText" 
+        android:layout_below="@id/logoIcon"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp" android:layout_marginRight="22dp"
+        android:text="@string/permission_hint_text"
+        style="@style/text_title"/>
+          
+    <LinearLayout 
+	    android:id="@+id/bottomLayout"
+		android:layout_width="360dp" android:layout_height="104dp" 
+		android:paddingLeft="17dp" android:paddingRight="17dp"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true">
+		<View
+	        android:layout_width="fill_parent" android:layout_height="1px"
+	        android:background="@drawable/line"/>
+		
+		<TextView
+	        android:layout_width="fill_parent" android:layout_height="33dp"
+	        android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+	        android:gravity="center"
+	        android:text="@string/modify_hint_text"
+	        android:textSize="11sp" android:textColor="#333333"/>	
+	        	
+		<Button
+		    android:id="@+id/sureBtn" 
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+			android:text="@string/sure" 
+            style="@style/button_text"
+            android:background="@drawable/button"/>
+	</LinearLayout>
+	   
+	<aurora.widget.AuroraListView
+		android:id="@+id/ListView" 
+		android:layout_width="fill_parent"  android:layout_height="fill_parent"
+		android:layout_marginTop="22dp"
+		android:layout_below="@id/permissionHintText" android:layout_above="@id/bottomLayout"
+		android:focusable="false" android:fadingEdge="none"
+		android:listSelector="@drawable/list_selector"
+		android:divider="@color/white" android:dividerHeight="0dp"  />	  
+</RelativeLayout>

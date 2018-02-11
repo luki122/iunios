@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <views.Forecast24hAirView
+        android:id="@+id/mForecast24hAirView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/fr_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/forcast_bottom_padding" 
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_divider" 
+                android:visibility="invisible"/>
+
+            <views.ForecastContentView
+                android:id="@+id/mForecastContentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_divider" 
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/fenge_shu" 
+            android:layout_alignTop="@id/fr_content"
+            android:layout_alignBottom="@id/fr_content"
+            android:alpha="0.6"
+            android:layout_marginBottom="@dimen/forcast_bottom_padding"
+            android:id="@+id/iv_line_left"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fenge_shu" 
+            android:layout_alignTop="@id/fr_content"
+            android:layout_alignBottom="@id/fr_content"
+            android:alpha="0.6"
+            android:layout_marginBottom="@dimen/forcast_bottom_padding"
+            android:id="@+id/iv_line_right"/>
+    </RelativeLayout>
+
+</LinearLayout>

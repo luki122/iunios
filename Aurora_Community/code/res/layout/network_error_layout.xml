@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <RelativeLayout
+        android:id="@+id/network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" 
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_no_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_network" />
+
+        <TextView
+            android:id="@+id/tv_error_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_no_network"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/app_name"
+            android:textColor="#99806048"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_retry_network"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_error_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/no_network_retry"
+            android:textColor="#806048"
+            android:textSize="18sp" />
+        
+        <Button 
+            android:id="@+id/setup_network"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="70dp"
+             android:text="@string/open_network"
+             android:textColor="#806048"
+             android:textSize="18sp"
+             android:visibility="gone"
+              android:layout_below="@+id/bt_retry_network"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

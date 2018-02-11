@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview_of_usercenter_rl_child_one_layout_height" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_center_bg" />
+
+        <LinearLayout
+            android:id="@+id/rl_switch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headview_of_usercenter_rl_switch_layout_height"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_publish"
+                android:layout_width="@dimen/headview_of_usercenter_ll_publish_layout_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/tab_icon_publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tab_text_publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/headview_of_usercenter_tab_text_publish_margin_left"
+                    android:layout_marginRight="@dimen/headview_of_usercenter_tab_text_publish_margin_right"
+                    android:text="@string/publish"
+                    android:textColor="@color/headview_of_usercenter_tab_text_publish_text_color"
+                    android:textSize="@dimen/headview_of_usercenter_tab_text_publish_text_size" />
+
+                <TextView
+                    android:id="@+id/tab_publish_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headview_of_usercenter_tab_publish_count_text_color"
+                    android:textSize="@dimen/headview_of_usercenter_tab_publish_count_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_collection"
+                android:layout_width="@dimen/headview_of_usercenter_ll_collection_layout_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/tab_icon_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tab_text_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/headview_of_usercenter_tab_text_collection_margin_left"
+                    android:layout_marginRight="@dimen/headview_of_usercenter_tab_text_collection_margin_right"
+                    android:text="@string/collection"
+                    android:textColor="@color/headview_of_usercenter_tab_text_collection_text_color"
+                    android:textSize="@dimen/headview_of_usercenter_tab_text_collection_text_size" />
+
+                <TextView
+                    android:id="@+id/tab_collection_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/headview_of_usercenter_tab_collection_count_text_color"
+                    android:textSize="@dimen/headview_of_usercenter_tab_collection_count_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_switch"
+            android:layout_margin="@dimen/headview_of_usercenter_ll_child_one_layout_margin"
+            android:gravity="center_vertical" >
+
+            <include
+                android:id="@+id/layout_icon"
+                android:layout_width="@dimen/headview_of_usercenter_include_user_icon_layout_width_height"
+                android:layout_height="@dimen/headview_of_usercenter_include_user_icon_layout_width_height"
+                android:layout_centerVertical="true"
+                layout="@layout/layout_user_head_icon" />
+
+            <TextView
+                android:id="@+id/user_screen_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/layout_icon"
+                android:layout_toLeftOf="@+id/arrow"
+                android:layout_marginLeft="@dimen/headview_of_usercenter_user_screen_name_margin_left"
+                android:textColor="@color/common_blue_color"
+                android:textSize="@dimen/headview_of_usercenter_user_screen_name_text_size" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/arrow_right" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_empty_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/headview_of_usercenter_iv_empty_show_margin_top"
+        android:visibility="gone" />
+
+</LinearLayout>

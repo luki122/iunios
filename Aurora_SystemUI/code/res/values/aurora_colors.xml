@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="systemui_bg">#F5FFFFFF</color>
+    <color name="notification_icon_bg">#fff0f0f0</color>
+    <color name="font_color">#ff000000</color>
+    <color name="font_color2">#ff9e9e9e</color>
+    <color name="translate_bg">#00000000</color>
+    <color name="time_color">#ff626262</color>
+    
+     <!--in recents-->
+    <color name="recent_bg">#99000000</color>
+    <color name="recent_other_bg">#D9000000</color>
+    <color name="quick_setting_font">#14cb9b</color>
+    <color name="seekbar_start_color">#ff4ee2a6</color>
+    <color name="seekbar_end_color">#ff88da3e</color>
+		
+    
+    <!--in internal-->
+    <color name="calling_bg">#019c73</color>
+    <color name="aurora_warning_color">#ff4444</color>
+    <color name="font_color3">#ffffff</color>   
+    <color name="aurora_dialpad_text_color">#FFFFFFFF</color>
+    <color name="aurora_notification_text_color2">#8a8a8a</color>
+    <color name="aurora_usb_button_text_color">#bebebe</color>
+</resources>

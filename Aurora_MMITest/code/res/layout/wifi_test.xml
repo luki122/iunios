@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView 
+        android:id="@+id/wifi_title"
+        android:layout_width="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:background="@color/test_blue"
+        android:layout_height="wrap_content"/>
+	<Button 
+	    android:id="@+id/scan_wifi"
+	    android:layout_below="@id/wifi_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	 	android:text="@string/rescan_wifi"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+    
+    <include layout="@layout/right_wrong_restart"
+        android:id="@+id/right_wrong"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/> 
+        
+    <ListView 
+        android:id="@+id/wifi_content"
+        android:layout_below="@id/scan_wifi"
+        android:layout_above="@id/right_wrong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+           
+</RelativeLayout>

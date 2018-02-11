@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <View
+        android:id="@+id/fake_top_block"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" />
+         
+    <com.android.systemui.statusbar.toolbar.DragListView
+        android:id="@+id/lv_world_time_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        
+</LinearLayout>

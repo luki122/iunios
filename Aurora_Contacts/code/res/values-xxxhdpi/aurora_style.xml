@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="editor_spinner_text_style">
+        <item name="android:textColor">@color/aurora_spinner_title_col</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+    
+    <style name="editor_type_text_style">
+        <item name="android:textColor">@color/aurora_spinner_title_col</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+    
+    <style name="editor_field_text_style">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/aurora_editor_hint_text_color</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+    
+    <style name="list_item_name_text_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+    
+    <style name="list_item_name_text_no_change_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+    
+    <style name="list_item_data_text_no_change_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_subtext_explain_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_subtext_text_size</item>
+    </style>
+    
+    <style name="list_item_data_text_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_subtext_explain_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_subtext_text_size</item>
+    </style>
+    
+    <style name="list_goto_group_text_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_textcolor</item>
+    </style>
+
+    <style name="aurora_list_header_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/aurora_contact_list_header_color</item>
+    </style>
+    
+</resources>

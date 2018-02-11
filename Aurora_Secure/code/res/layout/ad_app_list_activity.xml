@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout 
+	    android:id="@+id/btnLayout"
+		android:layout_height="91dp" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:orientation="vertical">
+		<View
+	        android:layout_width="fill_parent" android:layout_height="1px"
+	        android:background="@drawable/line" />  
+        <LinearLayout 
+			android:layout_width="fill_parent" android:layout_height="fill_parent" 
+			android:paddingLeft="17dp" android:paddingRight="17dp"
+			android:orientation="horizontal" android:gravity="center_vertical"
+			android:layout_gravity="center_horizontal">
+			<Button
+			    android:id="@+id/adScanBtn" 
+			    android:layout_height="47dp" android:layout_width="fill_parent"
+				android:layout_weight="1" android:text="@string/ad_scan"
+	            style="@style/button_text"
+	            android:background="@drawable/button"/>
+			<Button 
+			    android:id="@+id/oneKeyBlockBtn" android:layout_marginLeft="10dp"
+			    android:layout_height="47dp" android:layout_width="fill_parent"
+				android:layout_weight="1" android:text="@string/one_key_block"
+				style="@style/button_text"
+				android:background="@drawable/button"/>
+		</LinearLayout>
+	</LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/NoAdAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_above="@id/btnLayout" 
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:orientation="vertical" android:layout_gravity="center">
+            <ImageView
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:src="@drawable/ad_green_img"/>
+	        <TextView
+	            android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	            android:layout_marginTop="12dp" android:layout_gravity="center_horizontal"
+	            android:textSize="16sp" android:textColor="#464646"
+	            android:text="@string/no_found_ad"/>
+        </LinearLayout>
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:id="@+id/HaveAppLayout" android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_above="@id/btnLayout">         	    
+	    <FrameLayout
+	        android:id="@+id/ListFrameLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@id/btnLayout">
+			<com.secure.stickylistheaders.StickyListHeadersListView
+				android:id="@+id/appListview" 
+				android:layout_width="fill_parent"  android:layout_height="fill_parent"			
+				android:focusable="false" android:fadingEdge="none"
+				android:listSelector="@drawable/item_of_middle"
+				android:divider="@drawable/line" android:dividerHeight="1px" />	        
+		</FrameLayout> 
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/NoAppLayout" 
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:clickable="true"
+        android:background="#f6f6f6" >
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="167.3dp" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_big_text_size" android:textColor="@color/hint_text_color"
+            android:text="@string/no_app"/>
+    </FrameLayout>   
+</RelativeLayout>

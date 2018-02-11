@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+/**
+ * @auther Linfeng Jia
+ * @time 20110815
+ * @version 1.0.0
+ * history
+ * name                              date                                      description
+ * lanwzh                           20110820                             CR00340870
+ */
+ -->
+<resources> 
+    <string-array name="default_quick_texts"> 
+        <item>Ты где?</item>  
+        <item>Что делаешь?</item>  
+        <item>Перезвони, пожалуйста.</item>  
+        <item>Я на совещании.</item>  
+        <item>Скоро позвоню.</item>  
+        <item>Не беспокойся, у меня все хорошо.</item>  
+        <item>Еду домой.</item>  
+        <item>Скоро буду.</item>  
+        <item>Обязательно приходи!</item> 
+    </string-array>  
+    <string-array name="default_quick_texts_Micromax"> 
+        <item>Как ты?</item>  
+        <item>С любовью!</item>  
+        <item>Сколько лет, сколько зим!</item>  
+        <item>Как прошел твой день?</item>  
+        <item>Спасибо!</item>  
+        <item>Прости!</item>  
+        <item>Срочно позвони мне!</item>  
+        <item>Я скоро вернусь.</item>  
+        <item>Пообедаем вместе?</item>  
+        <item>Я перезвоню.</item> 
+    </string-array> 
+</resources>

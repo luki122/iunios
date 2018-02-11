@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 timepicker View begin -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/gn_date_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gn_light_bg"
+            android:gravity="center"
+            android:layout_weight="1.0"/>
+        <TextView 
+            android:id="@+id/gn_time_text"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gn_select_bg"
+            android:gravity="center"
+            android:layout_weight="1.0"/>
+    </LinearLayout>
+    <aurora.widget.AuroraDatePicker
+        android:id="@+id/gn_datePicker"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnersShown="true"
+        android:calendarViewShown="false"
+        android:visibility="gone"
+        />
+    <aurora.widget.AuroraTimePicker
+        android:id="@+id/gn_timePicker"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 timepicker View end -->

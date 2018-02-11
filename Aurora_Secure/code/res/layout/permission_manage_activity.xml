@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <LinearLayout 
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#f6f6f6" android:visibility="gone">
+        <TextView
+            android:id="@+id/noAppTitle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="167.3dp" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_big_text_size" android:textColor="@color/hint_text_color"/>
+        <TextView
+            android:id="@+id/noAppText"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hint_small_text_margin_top" 
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_small_text_size" android:textColor="@color/hint_text_color"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/HaveAppLayout" android:visibility="gone"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">         
+	    <FrameLayout 
+		    android:id="@+id/btnLayout"
+			android:layout_height="91dp" android:layout_width="fill_parent"
+			android:layout_alignParentBottom="true">
+			<View
+		        android:layout_width="fill_parent" android:layout_height="1px"
+		        android:background="@drawable/line" android:layout_gravity="top"/>  
+			<Button
+			    android:id="@+id/aKeyOptimizeBtn" 
+			    android:layout_height="47dp" android:layout_width="fill_parent"
+			    android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+			    android:layout_gravity="center_vertical"
+				android:text="@string/a_key_optimize"
+	            style="@style/button_text"
+	            android:background="@drawable/button"/>
+		</FrameLayout>
+	    
+	    <FrameLayout
+	        android:id="@+id/ListFrameLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@id/btnLayout">
+			<com.secure.stickylistheaders.StickyListHeadersListView
+				android:id="@+id/appListview" 
+				android:layout_width="fill_parent"  android:layout_height="fill_parent"			
+				android:focusable="false" android:fadingEdge="none"
+				android:listSelector="@drawable/item_of_middle"
+				android:divider="@drawable/line" android:dividerHeight="1px" />	        
+		</FrameLayout> 
+    </RelativeLayout> 
+</RelativeLayout>

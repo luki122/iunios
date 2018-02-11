@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+     Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+
+     Not a Contribution.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:phone="http://schemas.android.com/apk/res/com.aurora.callsetting"
+        aurora:auroratitle="@string/call_settings">
+        
+    <!--  
+      <AuroraPreferenceScreen
+        aurora:aurorakey="multi_sim_card_settings"
+        aurora:auroratitle="@string/callind_multi_sim_card"
+        aurora:aurorapersistent="false">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.SetSubscription" />
+
+    </AuroraPreferenceScreen>
+    -->
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim1_category_key"
+        aurora:auroratitle="@string/sub_1"
+        aurora:auroraicon="@drawable/sim1_icon"
+        aurora:aurorapersistent="false">
+
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_cf_expand_key1"
+	        aurora:auroratitle="@string/aurora_cf_title"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.aurora.callsetting"
+	            android:targetClass="com.aurora.callsetting.GsmUmtsCallForwardOptions"/>
+	    </AuroraPreferenceScreen>
+	    
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_more_expand_key1"
+	        aurora:auroratitle="@string/labelCW"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.aurora.callsetting"
+	            android:targetClass="com.aurora.callsetting.GsmUmtsAdditionalCallOptions"/>
+	    </AuroraPreferenceScreen>
+    
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim2_category_key"
+        aurora:auroratitle="@string/sub_2"
+        aurora:auroraicon="@drawable/sim2_icon"
+        aurora:aurorapersistent="false">
+
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_cf_expand_key2"
+	        aurora:auroratitle="@string/aurora_cf_title"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.aurora.callsetting"
+	            android:targetClass="com.aurora.callsetting.GsmUmtsCallForwardOptions"/>
+	    </AuroraPreferenceScreen>
+	    
+	    <AuroraPreferenceScreen
+	        aurora:aurorakey="button_more_expand_key2"
+	        aurora:auroratitle="@string/labelCW"
+	        aurora:aurorapersistent="false">
+	
+	        <intent android:action="android.intent.action.MAIN"
+	            android:targetPackage="com.aurora.callsetting"
+	            android:targetClass="com.aurora.callsetting.GsmUmtsAdditionalCallOptions"/>
+	    </AuroraPreferenceScreen>
+    
+    </AuroraPreferenceCategory>
+      
+    
+
+    <!-- target class is com.aurora.callsetting.MultiSimSetting -->
+    <!--  
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_call_independent_serv"
+        aurora:auroratitle="@string/callind_multi_sim"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.AuroraCallSettingSelectSubscription" />
+
+    </AuroraPreferenceScreen>
+    -->
+
+  <AuroraPreferenceCategory aurora:aurorakey="button_misc_category_key"
+        aurora:auroratitle="@string/other_settings"
+        aurora:aurorapersistent="false" />
+
+  <AuroraCheckBoxPreference
+      aurora:aurorakey="button_play_dtmf_tone"
+      aurora:auroratitle="@string/dtmf_tone_enable_title"
+      aurora:aurorapersistent="false"
+      aurora:auroradefaultValue="true" />
+<!--
+  <AuroraCheckBoxPreference
+      aurora:aurorakey="button_dialpad_autocomplete"
+      aurora:auroratitle="@string/dial_pad_autocomplete"
+      aurora:aurorapersistent="false"
+      aurora:auroradefaultValue="false" />
+--><!-- aurora change zhouxiaobing 20140512 for 4.4 build and the 4.4 phone is not have this-->
+    <AuroraCheckBoxPreference
+        aurora:aurorakey="button_auto_retry_key"
+        aurora:auroratitle="@string/auto_retry_mode_title"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/auto_retry_mode_summary"/>
+
+    <AuroraListPreference
+        aurora:aurorakey="button_tty_mode_key"
+        aurora:auroratitle="@string/tty_mode_option_title"
+        aurora:aurorasummary="@string/tty_mode_option_summary"
+        aurora:aurorapersistent="false"
+        aurora:auroraentries="@array/tty_mode_entries"
+        aurora:auroraentryValues="@array/tty_mode_values"/>
+
+     <AuroraCheckBoxPreference
+        aurora:aurorakey="button_hac_key"
+        aurora:auroratitle="@string/hac_mode_title"
+        aurora:aurorapersistent="true"
+        aurora:aurorasummary="@string/hac_mode_summary"/>
+
+    <AuroraListPreference
+        aurora:aurorakey="button_dtmf_settings"
+        aurora:auroratitle="@string/dtmf_tones_title"
+        aurora:aurorasummary="@string/dtmf_tones_summary"
+        aurora:auroraentries="@array/dtmf_tone_entries"
+        aurora:auroraentryValues="@array/dtmf_tone_values"/>
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_xdivert"
+        aurora:auroratitle="@string/xdivert_title"
+        aurora:aurorasummary="@string/xdivert_summary"
+        aurora:aurorapersistent="false">
+    </AuroraPreferenceScreen>
+    
+        <!--aurora add liguangyu 20131128 start -->
+    <AuroraSwitchPreference 
+        aurora:aurorakey="aurora_overturn_mute_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_overturn_mute_switch"
+		aurora:auroratitle="@string/aurora_overturn_mute_title"
+		/>
+    <!--aurora add liguangyu 20131128 end -->
+    
+    
+    <AuroraSwitchPreference 
+        aurora:aurorakey="aurora_incoming_touch_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_incoming_touch_switch"
+		aurora:auroratitle="@string/aurora_incoming_touch_title"
+		/>
+	
+	<!-- 
+	<AuroraSwitchPreference 
+        aurora:aurorakey="aurora_proximty_sensor_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_proximity_sensor"
+		aurora:auroratitle="@string/aurora_proximity_sensor_title"/>
+		 -->
+	
+    <AuroraSwitchPreference 
+        aurora:aurorakey="aurora_ringer_switch" 
+        aurora:auroradefaultValue="@bool/aurora_ringer"
+        aurora:aurorasummary="@string/aurora_ringer_summary"
+		aurora:auroratitle="@string/aurora_ringer_title"/>
+</AuroraPreferenceScreen>

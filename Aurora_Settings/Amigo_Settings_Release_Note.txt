@@ -1,0 +1,35 @@
+==================
+Build Notes
+==================
+1.版本目的:
+验证功能，BUG
+2.功能变更:
+添加wifi可用通知的声音控制开关,修改BUG
+3.重点测试的问题:
+功能，BUG
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/Aurora_Settings/Aurora_Settings_mtk_4.2.3_V5.0.2.a.zip
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/Aurora_Settings/trunk
+CR00845996	Resolved	GBW192A	wanggj	TASTE3.0：开启蓝牙，设置-显示-无线显示是关闭状态，点击开/关，弹出询问框时选择拒绝，开关仍会显示被开启	svn revision(166)
+CR00867998	Coded	设置	chenml	去掉Aurora_Settings 辅助功能 中 说出秘密 一项	svn revision(158)
+CR00868371	Resolved	设置	wanggj	【设置5.0.1】中文下将字体修改为大号和超大后，切换语言为英文，点击显示就报错	svn revision(165)
+CR00868463	Opened	设置	wanggj	Aurora修改代码	svn revision(167,185)
+CR00868848	Resolved	设置	chenml	Aurora_Settings 代码调整，删除多余mtk的代码	svn revision(170,162,161,168,163,159,160,164,169,171)
+CR00871193	Opened	设置	chenml	merge前期修改的Bug到Aurora_Settings	svn revision(172,175,174,173)
+CR00871248	Opened	设置	chenml	E6 Aurora 设置 GUI走查	svn revision(188,180,179,182,184,177,178,187,189,181,183,176)
+CR00873125	Resolved	WBT5315	wanggj	mini e6——蓝牙UI修改	svn revision(186)
+Tag url: http://192.168.110.97/svn/Aurora_Settings/tags/Aurora_Settings_mtk_V5.0.2.a
+Previous tag: Aurora_Settings_mtk_V5.0.1.r
+Code difference: svn diff -r 189:157 http://192.168.110.97/svn/Aurora_Settings/trunk
+==================
+make sonar URL:
+http://ss.alm.gionee.com/sonar/dashboard/index/gionee.app:Aurora_Settings 
+==================

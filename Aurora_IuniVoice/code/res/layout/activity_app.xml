@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fr_action_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_action_bar_height" />
+
+    <!--
+         <ImageView
+        android:id="@+id/action_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurora_action_bar_divider" />
+    -->
+
+    <ImageView
+        android:id="@+id/action_bar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/action_bar_divider_color" />
+
+    <FrameLayout
+        android:id="@+id/fr_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_main_bg" />
+
+</LinearLayout>

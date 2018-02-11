@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- //Aurora <SQF> <2014-6-4>  for NEW_UI begin -->
+<!-- ORIGINALLY: -->
+
+<!-- android:background="@color/filtershow_categoryview_background" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+			  android:background="@android:color/black">
+
+    <com.android.gallery3d.filtershow.category.CustomHorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none"
+            >
+
+        <!-- android:layout_height="@dimen/category_panel_height" -->
+        <com.android.gallery3d.filtershow.category.CategoryTrack
+                android:id="@+id/listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                custom:iconSize="@dimen/category_panel_icon_size"
+                android:divider="@android:color/transparent"
+                android:dividerPadding="8dip"
+                >
+            <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_crop_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_crop"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	        
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_rotate_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_rotate"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_filters_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_filter_effect"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	         
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_beauty_shot_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_pitu"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	         
+	         
+	         <!-- For TTPic Below begin-->
+	         <!-- 
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_ttpic_beautify_photo_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_beautify_photo"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	        
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_ttpic_beautify_portrait_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_beautify_portrait"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_ttpic_natural_makeup_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_natural_makeup"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+	         
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/main_menu_ttpic_jigsaw_btn"
+	                android:src="@drawable/aurora_filtershow_bottom_icon_jigsaw"
+	                android:background="@color/translate_color"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"/>
+		      -->
+	         <!-- For TTPic Below begin-->
+        </com.android.gallery3d.filtershow.category.CategoryTrack>
+
+    </com.android.gallery3d.filtershow.category.CustomHorizontalScrollView>
+
+    <!-- 
+    <com.android.gallery3d.filtershow.category.IconView
+            android:id="@+id/addButton"
+            android:layout_width="@dimen/category_panel_height"
+            android:layout_height="@dimen/category_panel_height"
+            android:src="@drawable/filtershow_add"/>
+	 -->
+</LinearLayout>
+ 
+ 
+ <!-- SQF MODIFIEDT TO: -->
+ <!-- android:background="@color/filtershow_categoryview_background" -->
+ 
+ <!-- 
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffff00">
+              
+     
+
+    <com.android.gallery3d.filtershow.category.IconView
+            android:id="@+id/addButton"
+            android:layout_width="@dimen/category_panel_height"
+            android:layout_height="@dimen/category_panel_height"
+            android:src="@drawable/filtershow_add"
+            android:layout_alignParentRight="true"/>
+	
+    <com.android.gallery3d.filtershow.category.CustomHorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" 
+            android:layout_toLeftOf="@id/addButton"
+            android:background="#ff0000">
+
+        <com.android.gallery3d.filtershow.category.CategoryTrack
+                android:id="@+id/listItems"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/category_panel_height"
+                custom:iconSize="@dimen/category_panel_icon_size"
+                android:divider="@android:color/transparent"
+                android:dividerPadding="8dip"
+                android:background="#00ff00"
+                />
+
+    </com.android.gallery3d.filtershow.category.CustomHorizontalScrollView>
+    
+</RelativeLayout>
+ -->
+ 
+<!-- //Aurora <SQF> <2014-6-4>  for NEW_UI end -->

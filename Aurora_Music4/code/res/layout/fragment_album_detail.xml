@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.auroramusic.ui.album.AlbumDetailFragment" >
+
+    <include layout="@layout/activity_album_list_header" />
+
+    <include layout="@layout/aurora_album_list_item" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/buttonbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/track_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none" />
+        
+        <ImageView
+	        android:id="@+id/aurora_flying_indicator"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/aurora_track_item_height"
+	        android:layout_gravity="left"
+	        android:background="@drawable/album_track_play_indicator" 
+	        android:contentDescription="@null"
+	        android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

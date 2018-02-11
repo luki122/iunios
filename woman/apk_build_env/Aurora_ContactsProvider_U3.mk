@@ -1,0 +1,1 @@
+../Aurora_ContactsProvider/Aurora_ContactsProvider_U3.mk

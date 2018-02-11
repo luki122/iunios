@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/item_of_listview"
+    android:descendantFocusability= "blocksDescendants" >
+    
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/leftLayout_padding_left" android:paddingRight="1dp">
+        <aurora.widget.AuroraCheckBox
+		    android:id="@+id/checkBox"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true" android:layout_marginLeft="17dp"
+		    android:layout_centerVertical="true"/> 
+    </RelativeLayout>
+		    
+    <ImageView
+        android:id="@+id/img_set_go"
+	    android:layout_width="wrap_content"  android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"  android:layout_centerVertical="true"
+	    android:layout_marginRight="17dp"
+	    android:src="@drawable/right_arrow"/>
+		    
+    <RelativeLayout
+        android:id="@+id/midLayout"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView
+			android:id="@+id/appIcon"
+			style="@style/app_icon_of_listview"
+			android:layout_centerVertical="true"/>
+	    	    
+	    <TextView
+		    android:id="@+id/cacheText"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_centerVertical="true" 
+		    android:layout_alignParentRight="true"
+		    android:textSize="12sp" android:textColor="@color/list_text_sub_selector_color" />
+	    
+	    <TextView
+	        android:id="@+id/appName"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/appIcon" android:layout_toLeftOf="@id/cacheText"
+	        android:layout_marginLeft="12dp" android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"        
+	        android:gravity="center_vertical|left"   android:lines="1" android:ellipsize="end"
+	        android:textSize="16sp" android:textColor="@color/list_text_title_selector_color"/>
+    </RelativeLayout>
+</RelativeLayout>

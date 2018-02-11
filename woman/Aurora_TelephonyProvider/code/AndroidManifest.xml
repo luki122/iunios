@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License. 
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.providers.telephony"
+        coreApp="true"
+        android:sharedUserId="android.uid.phone">
+
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <!-- Aurora xuyong 2014-06-05 added for android 4.4 new feature start -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- Aurora xuyong 2014-06-05 added for android 4.4 new feature end -->
+    <application android:process="com.android.phone"
+                 android:allowClearUserData="false"
+                 android:allowBackup="false"
+                 android:label="@string/app_label"
+                 android:icon="@drawable/ic_launcher_phone">
+
+        <provider android:name="TelephonyProvider"
+                  android:authorities="telephony"
+                  android:multiprocess="true" />
+        <provider android:name="EmptyProvider"
+                  android:authorities="nwkinfo"
+                  android:multiprocess="true" />
+        <provider android:name="CbProvider"
+                  android:authorities="cb"
+                  android:multiprocess="true" />
+        
+        <provider android:name="SmsProvider"
+                  android:authorities="sms"
+                  android:multiprocess="true"
+                  android:readPermission="android.permission.READ_SMS"
+                  android:writePermission="android.permission.WRITE_SMS" />
+        
+        <provider android:name="CdmaCallOptionProvider"
+                  android:authorities="cdma"
+                  android:multiprocess="true" />
+
+        <provider android:name="WapPushProvider"
+                  android:authorities="wappush"
+                  android:multiprocess="true" />
+
+        <provider android:name="MmsProvider"
+                  android:authorities="mms"
+                  android:multiprocess="true"
+                  android:readPermission="android.permission.READ_SMS"
+                  android:writePermission="android.permission.WRITE_SMS">
+            <grant-uri-permission android:pathPrefix="/part/" />
+            <grant-uri-permission android:pathPrefix="/drm/" />
+        </provider>
+
+        <provider android:name="MmsSmsProvider"
+                  android:authorities="mms-sms"
+                  android:multiprocess="true"
+                  android:readPermission="android.permission.READ_SMS"
+                  android:writePermission="android.permission.WRITE_SMS" />
+        <!-- Aurora xuyong 2014-09-02 added for whitelist feature start -->
+        <provider android:name="WhiteListProvider"
+                  android:authorities="white-list"
+                  android:multiprocess="true" />
+        <!-- Aurora xuyong 2014-09-02 added for whitelist feature end -->
+        <!-- Aurora yudingmin 2014-11-03 added for sync feature start -->
+        <provider android:name="MmsSmsSyncProvider"
+                  android:authorities="mms-sms-sync"
+                  android:exported="true"/>
+        <!-- Aurora yudingmin 2014-11-03 added for sync feature end -->
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature start -->
+        <receiver android:name="com.android.transaction.AuroraPrivacyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.aurora.privacy.contact.UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.privacymanage.SWITCH_ACCOUNT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.privacymanage.DELETE_ACCOUNT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.android.transaction.AuroraPrivacyBindService"
+                 android:exported="true" />
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature end -->
+    </application>
+</manifest>

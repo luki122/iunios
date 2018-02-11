@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Звук и вибрация</string>
+    <string name="gn_audio_profile_message_invalid_name_wrong">Название включает недействующие символы</string>
+<!-- for Profile -->
+<string name="sound_category_sound_title">Общие нормы</string>
+	<string name="sound_category_calls_title" msgid="3688531959256239012">&quot;Мелодия&quot;</string>
+    <string name="sound_category_notification_title" msgid="3502115998790286943">&quot;Уведомление&quot;</string>
+    <string name="sound_and_system_feedback_category_title" msgid="4399742321363475393">&quot;Эффекты звука и отзыв системы&quot;</string>
+    <string name="Phone_vibrate_summary">&quot;Вибрация при вызове, сообщениях и уведомлениях&quot;</string>
+    <string name="voice_call_title">&quot;Мелодия телефона&quot;</string>
+    <string name="voice_call_summary">&quot;Установить  голосовую мелодию по умолчанию&quot;</string>
+    <string name="alarm_ring_title">Звук будильника</string>
+    <string name="video_call_summary">Установить мелодию видео по умолчанию</string>
+    <string name="audio_profile_settings_title">&quot;Профили&quot;</string>
+    <string name="audio_profile_settings">&quot;Персонализированные профили&quot;</string>
+    <string name="audio_profile_settings_Edit">Персонализированные профили</string>
+    <string name="audio_profile_category_predefine_title">Предустановленные профили</string>
+    <string name="audio_profile_category_custom_title">Определённый профиль пользователям</string>
+    <string name="audio_profile_reset">Перестановка</string>
+    <string name="audio_profile_add">Добавить</string>
+    <string name="audio_profile_enable">&quot;Выбрать&quot;</string>
+    <string name="audio_profile_rename">Переименование</string>
+    <string name="audio_profile_delete">Удалить</string>
+    <string name="audio_profile_error">Ошибка</string>
+    <string name="audio_profile_message_reset">Восстановить профили в настройки по умолчанию</string>
+    <string name="audio_profile_message_rename">Введите название профили</string>
+    <string name="audio_profile_message_name_error">Профиль существует</string>
+    <string name="audio_profile_message_name_length_wrong">Название должно включить один символ</string>
+    <string name="audio_profile_message_delete">Профиль %1$s будет удалён</string>
+    <string name="audio_profile_message_overflow">Допустимо добавить 6  определённых профилей пользователям</string>
+    <string name="restore_defaults">&quot;Восстановить в настройки по умолчанию&quot;</string>
+    <string name="enable">&quot;Выбрать&quot;</string>
+    <string name="format_ok">Удачное форматирование SD карты!</string>
+    <string name="format_notok">Неудачное форматирование SD карты!</string>
+	<string name="ringtone_tab_title">Выберите мелодию</string>
+<!-- Sound and alerts settings -->
+<string name="sound_settings_title" msgid="8735891486683305886">&quot;Звук и вибрация&quot;</string>
+    <string name="display_settings_title" msgid="1708697328627382561">&quot;Дисплей&quot;</string>
+    <string name="sound_settings" msgid="5007659014828162881">&quot;Настройка звука&quot;</string>
+    <string name="silent_mode_title" msgid="3181479108593217704">&quot; Беззвучный режим&quot;</string>
+    <string name="silent_mode_summary" msgid="3309650676072917899">&quot;За исключением мультимедиа и будильника, все звуки установлены беззвучными&quot;</string>
+    <string name="silent_mode_incl_alarm_summary" msgid="2088830834182228458">&quot;Установить все звуки, за исключением мультимедиа, беззвучными&quot;</string>
+    <string name="ringtone_title" msgid="5379026328015343686">&quot;Мелодия телефона&quot;</string>
+    <string name="ringtone_summary" msgid="2630023412632683493">&quot;Установить мелодию вызова по умолчанию&quot;</string>
+    <string name="all_volume_title" msgid="8741571721868253103">&quot;Громкость&quot;</string>
+    <string name="ring_volume_title" msgid="7938706566797464165">&quot;Громкость мелодии&quot;</string>
+    <string name="ring_volume_summary" msgid="7055497624193116879">&quot;Установить громкость вызова, будильника и уведомления&quot;</string>
+    <string name="vibrate_in_silent_title" msgid="3897968069156767036">&quot;Вибрация при беззвучном&quot;</string>
+    <string name="vibrate_in_silent_summary" msgid="3312600513070076281">&quot;Допущены отзывы вибрации при беззвучном режиме&quot;</string>
+    <string name="vibrate_title" msgid="6045820877942801599">&quot;Вибрация&quot;</string>
+    <string name="vibrate_summary" msgid="7378130397830790458">&quot;Вибрация при вызове и уведомлении&quot;</string>
+    <string name="notification_sound_title" msgid="6316316069880531693">&quot;Звук уведомления&quot;</string>
+    <string name="notification_sound_summary" msgid="2953599929394109819">&quot;Установить звук уведомления по умолчанию&quot;</string>
+    <string name="notification_pulse_title" msgid="1247988024534030629">&quot;Подсветка уведомления &quot;</string>
+    <string name="notification_pulse_summary" msgid="6899220780534617152">&quot;При получении новых сообщений, подсветка горит&quot;</string>
+    <string name="incoming_call_volume_title" msgid="8073714801365904099">&quot;Мелодия&quot;</string>
+    <string name="notification_volume_title" msgid="2012640760341080408">&quot;Уведомление&quot;</string>
+    <string name="alarm_title">Звук будильника</string>
+    <string name="sms_sound_title">Звук сообщения</string>
+    <string name="checkbox_notification_same_as_incoming_call" msgid="1073644356290338921">&quot;Громкость звонка используется в качестве громкости уведомления&quot;</string>
+    <string name="notification_sound_dialog_title" msgid="7057274209079144726">&quot;Выбирать звук уведомления&quot;</string>
+    <string name="media_volume_title" msgid="3576565767317118106">&quot;Мультимедиа&quot;</string>
+    <string name="media_volume_summary" msgid="5363248930648849974">&quot;Установить громкость музыки и видео&quot;</string>
+    <string name="alarm_volume_title" msgid="2285597478377758706">&quot;Будильник&quot;</string>
+    <string name="dock_settings_summary" msgid="455802113668982481">&quot;Настройки аудио дополнительных фундаментов&quot;</string>
+    <string name="dts_pref_title">&quot;DTS эффекты&quot;</string>
+    <string name="dtmf_tone_enable_title" msgid="1453831168789523185">&quot;Звук клавиш&quot;</string>
+    <string name="touch_vibrate_feedback_title">Отзыв вибрации касания</string>
+    <string name="dtmf_tone_enable_summary_on" msgid="3028201873989887327">&quot;Проиграть звук клавиш при использовании клавиш&quot;</string>
+    <string name="dtmf_tone_enable_summary_off" msgid="7791065951268525678">&quot;Проиграть звук клавиш при использовании клавиш&quot;</string>
+    <string name="sound_effects_enable_title" msgid="3197313718929122833">&quot;Звук касания&quot;</string>
+    <string name="sound_effects_enable_summary_on" msgid="6154141289879491329">&quot;Проиграть звук при выборе экрана&quot;</string>
+    <string name="sound_effects_enable_summary_off" msgid="3447739581759560125">&quot;Проиграть звук при выборе экрана&quot;&quot;</string>
+    <string name="lock_sounds_enable_title" msgid="1575990840389107141">&quot;Звук блокировки&quot;</string>
+    <string name="lock_sounds_enable_summary_on" msgid="145741024028391473">&quot;Проиграть звук при блокировке и разблокировке&quot;</string>
+    <string name="lock_sounds_enable_summary_off" msgid="8481243116223542804">&quot;Проиграть звук при блокировке и разблокировке&quot;</string>
+    <string name="haptic_feedback_enable_title" msgid="6311736559245411290">&quot;Ощущение&quot;</string>
+    <string name="haptic_feedback_enable_summary_on" msgid="1875779656524793053">&quot;Вибрация при взаимодействии несколько UI  и нажатии виртуальной клавише &quot;</string>
+    <string name="haptic_feedback_enable_summary_off" msgid="7287885436963105314">&quot;Вибрация при взаимодействии несколько UI  и нажатии виртуальной клавише&quot;</string>
+    <string name="flip_sounds_enable_title">Звук открытия крыши</string>
+    <string name="flip_sounds_enable_summary_on">Играют  эффекты звука во время разблокировки открытия крыши</string>
+    <string name="flip_sounds_enable_summary_off">Играют эффекты звука во время разблокировки открытия крыши </string>
+    <string name="lock_settings_picker_title">Выбирать блокировки экрана</string>
+	<string name="volume_ring_description">Звук и уведомление</string>
+	<string name="volume_notification_description">Уведомление</string>
+    <string name="general_settings_title">Звонок</string>
+    <string name="silent_settings_title">Без звука</string>
+    
+    <string name="other_ringtone_title">Другие звуки</string>
+    <string name="meeting_settings_title">Вибрация</string>
+    <string name="outdoor_settings_title">На улице</string>
+    <string name="ring_summary">Звук</string>  
+    <string name="ring_vibrate_summary">Звук и вибрация</string> 
+    <string name="silent_summary">Только без звук</string>  
+    <string name="meeting_summary">Только вибрация</string>  
+    <string name="outdoor_summary">Максимальный звук и вибрация</string> 
+    <string name="gn_ringtone_notif">Мелодия вызова</string> 
+    <string name="gn_mms_ringtone">Звук сообщения</string> 
+    <string name="volume_alarm_description">Будильник</string>
+    <string name="loading_ringtone">Загрузка</string>
+    <string name="ringtone_silent_summary">Без звука</string> 
+    <string name="sim1_ringtone_title">Слот 1</string>
+    <string name="sim2_ringtone_title">Слот 2</string>
+<!-- Gionee Jingjc 20121122 add for CR00722601 start -->
+<string name="haptic_vibration_title">Системная вибрация</string>
+    <string name="haptic_feedback_title">Вибрация касания</string>
+    <string name="routine_vibrate_title">Общая вибрация</string>
+    <string name="dialpad_vibration_title">Вибрация клавиш</string>
+    <string name="lockscreen_vibration_title">Вибрация блокировки</string>
+    <string name="selectapp_vibration_title">Вибрация при выборе и удалении приложений</string>
+<!-- Gionee Jingjc 20121122 add for CR00722601 end -->
+<string name="ringtone_select_summary">Мелодия для режима на улице и режима звонка</string>
+<!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 begin -->
+<string name="vibrate_profile">Тип вибрации</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Определение</string>
+    <string name="vibrate_basecall">Basecall</string>
+    <string name="vibrate_heartbeat">Heartbeat</string>
+    <string name="vibrate_jinglebell">Jinglebell</string>
+    <string name="vibrate_ticktock">Ticktock</string>
+    <string name="vibrate_path_error">Аномальные файлы настройки режима вибрации</string>
+    <string name="general_vibrate_title">Общая вибрация</string>
+    <string name="ring_vibrate_title">Вибрация при вызове</string>
+    <string name="mms_vibrate_title">Вибрация при получении сообщения</string>
+    <string name="notification_vibrate_title">Вибрация при уведомлении</string>
+    <string name="notification_vibrate_summary">&quot;Включая вибрации сообщения, почты и других уведомлений&quot;</string>
+<!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 end -->
+<string name="gn_vc_dlg_title">Закрыть режим звукового управления？</string>
+    <string name="gn_vc_dlg_message">После закрытия режима звукового управления, можно установить звук и вибрацию, закрыть его？</string>
+    <string name="gn_vc_dlg_check">Больше не напоминать</string>
+<!-- Choice in the ringtone picker.  If chosen, the default ringtone will be used. -->
+<string name="ringtone_default">Мелодия по умолчанию</string>
+<!-- Choice in the notification sound picker.  If chosen, the default notification sound will be
+         used. -->
+<string name="notification_sound_default">Звук уведомления по умолчанию</string>
+<!-- Choice in the alarm sound picker.  If chosen, the default alarm sound will be used. -->
+<string name="alarm_sound_default">Звук будильника по умолчанию</string>
+    <string name="Add_More_Ringtones">Более мелодий …</string>
+    <string name="aurora_empty_other_ringtone_text">Пока нет других мелодий</string>
+    <string name="internal_storage_disable">Внутренний накопитель пока недоступен</string>
+    
+      <string name="none_select">Не выбирать</string>
+      <string name="set_ringtone">Установить мелодию</string>
+      
+    
+</resources>

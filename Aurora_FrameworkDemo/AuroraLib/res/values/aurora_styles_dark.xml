@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="TextAppearance.Aurora.Dark.Widget.ActionBar.Title" parent="@style/TextAppearance.Aurora.Light.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Dark.Widget.ActionBar.Subtitle" parent="@style/TextAppearance.Aurora.Light.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/aurora_actionbar_title_color_light</item>
+    </style>
+    
+    <style name="TextAppearance.Aurora.Dark.DialogWindowTitle" parent="@android:style/TextAppearance.Holo.DialogWindowTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/aurora_alert_dialog_title_light</item>
+    </style>    
+    
+    <style name="Widget.Aurora.Dark.Button" parent="@style/Widget.Aurora.Light.Button">
+        <item name="android:background">@drawable/aurora_btn_default_dark</item>
+        <item name="android:textColor">@color/aurora_primary_text_dark</item> 
+    </style>
+    
+    <style name="Widget.Aurora.Dark.Button.Small" parent="@style/Widget.Aurora.Light.Button.Small">
+        <item name="android:background">@drawable/aurora_btn_default_small_dark</item>
+    </style>
+    
+    <style name="Widget.Aurora.Dark.Button.Borderless" parent="@style/Widget.Aurora.Dark.Button"></style>
+    
+    <style name="Widget.Aurora.Dark.ProgressBar.Small" parent="@style/Widget.Aurora.Light.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_small_dark</item>
+    </style>
+
+    <style name="Widget.Aurora.Dark.ProgressBar.Large" parent="@style/Widget.Aurora.Light.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/aurora_progress_large_dark</item>
+    </style>  
+        
+    <style name="Widget.Aurora.Dark.ProgressBar.Small.Title"></style>
+    <style name="Widget.Aurora.Dark.ProgressBar.Small.Inverse"></style>
+    <style name="Widget.Aurora.Dark.ProgressBar.Large.Inverse"></style>
+    
+    <style name="Widget.Aurora.Dark.SeekBar" parent="@style/Widget.Aurora.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/aurora_scrubber_progress_horizontal_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/aurora_scrubber_progress_horizontal_dark</item>
+        <item name="android:thumb">@drawable/aurora_scrubber_control_selector_dark</item>
+    </style>    
+        
+    <style name="Widget.Aurora.Dark.Spinner" parent="@style/Widget.Aurora.Light.Spinner">
+        <item name="android:background">@drawable/aurora_spinner_background_dark</item>
+        <item name="android:dropDownSelector">@drawable/aurora_list_selector_dark</item>
+        <item name="android:popupBackground">@drawable/aurora_menu_dropdown_panel_dark</item>
+    </style>
+    
+    <style name="Widget.Aurora.Dark.Spinner.DropDown"></style>  
+    
+    <style name="Widget.Aurora.Dark.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/aurora_spinner_ab_light</item>
+        <item name="android:dropDownWidth">304dip</item>
+    </style>     
+    
+    <style name="Widget.Aurora.Dark.DropDownItem" parent="@style/Widget.Aurora.Light.DropDownItem">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Medium</item>
+    </style>    
+    
+    <style name="Widget.Aurora.Dark.DropDownItem.Spinner"></style>
+    
+    <style name="Widget.Aurora.Dark.TabWidget" parent="@style/Widget.Aurora.Light.TabWidget">
+    </style>
+    
+    <style name="Widget.Aurora.Dark.ActionBar" parent="@style/Widget.Aurora.Light.ActionBar">
+        <item name="auroratitleTextStyle">@style/TextAppearance.Aurora.Dark.Widget.ActionBar.Title</item>
+        <item name="aurorasubtitleTextStyle">@style/TextAppearance.Aurora.Dark.Widget.ActionBar.Subtitle</item>
+        <item name="aurorabackground">@drawable/aurora_cab_background_top_dark</item>
+        <item name="aurorabackgroundStacked">@drawable/aurora_cab_background_top_dark</item>
+        <item name="aurorabackgroundSplit">@drawable/aurora_cab_background_bottom_dark</item>
+        <item name="auroraprogressBarStyle">@style/Widget.Aurora.ProgressBar.Horizontal</item>
+        <item name="auroraindeterminateProgressStyle">@style/Widget.Aurora.ProgressBar</item>
+    </style>
+    
+    <style name="Widget.Aurora.Dark.ActionBar.Solid">
+        <item name="auroradivider">?android:attr/dividerVertical</item>
+        <item name="auroraprogressBarPadding">32dip</item>
+        <item name="auroraitemPadding">8dip</item>
+    </style>
+    
+    <style name="Widget.Aurora.Dark.ListPopupWindow" parent="@style/Widget.Aurora.Light.ListPopupWindow">
+        <item name="android:dropDownSelector">@drawable/aurora_list_selector_dark</item>
+        <item name="android:popupBackground">@drawable/aurora_menu_dropdown_panel_dark</item>
+    </style>
+    
+    <style name="Widget.Aurora.Dark.ExpandableListView" parent="@style/Widget.Aurora.Light.ExpandableListView">
+        <item name="android:groupIndicator">@drawable/aurora_expander_group_dark</item>
+    </style>
+    
+    <style name="AuroraAlertDialogTheme.Dark">
+        <item name="aurorafullDark">@drawable/aurora_dialog_full_dark</item>
+        <item name="auroratopDark">@drawable/aurora_dialog_top_dark</item>
+        <item name="auroracenterDark">@drawable/aurora_dialog_middle_dark</item>
+        <item name="aurorabottomDark">@drawable/aurora_dialog_bottom_dark</item>
+        <item name="aurorafullBright">@drawable/aurora_dialog_full_dark</item>
+        <item name="auroratopBright">@drawable/aurora_dialog_top_dark</item>
+        <item name="auroracenterBright">@drawable/aurora_dialog_middle_dark</item>
+        <item name="aurorabottomBright">@drawable/aurora_dialog_bottom_dark</item>
+        <item name="aurorabottomMedium">@drawable/aurora_dialog_bottom_dark</item>
+        <item name="auroracenterMedium">@drawable/aurora_dialog_middle_dark</item>        
+    </style>    
+    
+    <style name="DialogWindowTitle.Aurora.Dark" parent="@style/DialogWindowTitle">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Dark.DialogWindowTitle</item>
+    </style>
+</resources>

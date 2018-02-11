@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="vs_app_name">IUNI语音助手</string>
+	<string name="vs_action_settings">Settings</string>
+	<string name="vs_entry_main">进入主界面</string>
+	<string name="vs_send">发送</string>
+	<string name="vs_pocessing">请求处理中...</string>
+	<string name="vs_iunier">IUNIer</string>
+	<string name="vs_input_text">输入你想说的话</string>
+	<string name="vs_shard">分享</string>
+	<string name="vs_input">输入</string>
+	<string name="vs_nearby">周边</string>
+	<string name="vs_cancel_search">您已取消了搜索</string>
+	<string name="vs_error_search">您说什么？不好意思，刚我走神了一会.</string>
+	<string name="vs_viewmore">查看更多</string>
+	<string name="vs_pre_pic">上一张</string>
+	<string name="vs_next_pic">下一张</string>
+	<string name="vs_moremsg">更多信息</string>
+	<string name="vs_search">查询</string>
+	<string name="vs_s_not_found">"很抱歉！没有找到相应的长途车班次"</string>
+	<string name="vs_allbusinfo">"全部班次信息"</string>
+	<string name="vs_s2d">"始发地-目的地"</string>
+	<string name="vs_stime">"发车时间"</string>
+	<string name="vs_cprice">"参考票价"</string>
+	<string name="vs_kece">"客车"</string>
+	<string name="vs_lece">"列车"</string>
+	<string name="vs_span">-</string>
+	<string name="vs_booking">订票</string>
+	<string name="vs_notel">暂无电话</string>
+	<string name="vs_hangban">航班</string>
+	<string name="vs_loading">正在加载...</string>
+	<string name="vs_cancel">取消</string>
+	<string name="vs_searchresult">为您搜索: </string>
+	
+	<string name="vs_myaddress">我的位置</string>
+	<string name="vs_score">推荐</string>
+	<string name="vs_star">星级</string>
+	
+	<string name="vs_distancemin">距离近</string>
+	<string name="vs_pricemin">价格低</string>
+	<string name="vs_average">人均: </string>
+	
+	<string name="vs_toend">到这里去</string>
+	<string name="vs_tostart">从这里出发</string>
+	<string name="vs_recomment">推荐菜: </string>
+	<string name="vs_tsave">查看</string>
+	<string name="vs_forwardmsg">转发</string>
+	<string name="vs_more">更多</string>
+	<string name="vs_mores">更多...</string>
+	<string name="vs_address">地址: </string>
+	<string name="vs_phone">电话: </string>
+	<string name="vs_airline_logo">航空公司</string>
+	<string name="vs_lc">列车</string>
+	
+	<string name="vs_wendai">问答</string>
+	<string name="vs_shipin">视频</string>
+	<string name="vs_tieba">贴吧</string>
+	<string name="vs_sousuo">搜索</string>
+	<string name="vs_zhoubian">周边</string>
+	<string name="vs_wenku">文库</string>
+	<string name="vs_baike">百科</string>
+	<string name="vs_tupian">图片</string>
+	<string name="vs_tianqi">天气</string>
+	<string name="vs_ditu">地图</string>
+	<string name="vs_travel">旅游</string>
+	<string name="vs_news">新闻</string>
+	<string name="vs_open">开启</string>
+	<string name="vs_close">关闭</string>
+	<string name="vs_setting">设置</string>
+	<string name="vs_vd">语音播报</string>
+	<string name="vs_vd_dsr">由搜狗提供技术支持</string>
+	<string name="vs_save">保存</string>
+	<string name="vs_sogoumapurl">查看地图</string>
+	<!-- shigq -->
+<!-- 	<string name="vs_savesec">保存成功！</string> -->
+	<string name="vs_savesec">已保存至storage/sdcard0/voiceAssistant</string>
+	<!-- shigq -->
+	<string name="vs_savefal">保存失败！</string>
+	<string name="vs_savesec_nocard">保存失败,无存储卡!</string>
+	
+	<string name="vs_speech_des1">由</string>
+	<string name="vs_speech_des2">搜狗语音助手</string>
+	<string name="vs_speech_des3">提供技术支持</string>
+	<string name="vs_providerinfo">—— 搜索结果由搜狗语音助手提供</string>
+	
+	<!-- for help -->
+	<string name="vs_help_tips">你可以这样问我：</string>
+	<string name="vs_help_tips_offline">通讯&amp;应用</string>
+	<string name="vs_help_tips_offline_call">打电话给马文轩</string>
+	<string name="vs_help_tips_offline_message">发短信给高琪</string>
+	<string name="vs_help_tips_offline_open">打开日历</string>
+	<string name="vs_help_tips_nearby">搜附近</string>
+	<string name="vs_help_tips_nearby_food">附近美食</string>
+	<string name="vs_help_tips_nearby_bank">哪里有银行</string>
+	<string name="vs_help_tips_weather">查天气</string>
+	<string name="vs_help_tips_weather_today">今天天气</string>
+	<string name="vs_help_tips_weather_beijing">北京天气</string>
+	<string name="vs_help_tips_travel">出行信息</string>
+	<string name="vs_help_tips_travel_train">深圳北到广州南的列车</string>
+	<string name="vs_help_tips_travel_bus">汕头到厦门的长途车</string>
+	<string name="vs_help_tips_picture">图片视频</string>
+	<string name="vs_help_tips_picture_beauty">美女图片</string>
+	<string name="vs_help_tips_picture_video">我是歌手视频</string>
+	
+	
+	<string-array name="vs_near_shop_sort">
+	    <item>推荐</item>
+	    <item>距离近</item>
+	    <item>价格低</item>
+	</string-array>
+	
+	
+	<!-- shigq -->
+	<string-array name="vs_custom_menu_items">
+	    <item>清除屏幕</item>
+        <item>设置</item>
+    </string-array>
+    <string name="vs_diagonal">/</string>
+    <string name="vs_dialogtitle">提示</string>
+    <string name="vs_dialogmessage">是否确认清空所有搜索内容？</string>
+    <string name="vs_dialog_yes">确认</string>
+    <string name="vs_dialog_no">取消</string>
+    <string name="vs_dialogtitle_single">删除记录</string>
+    <string name="vs_dialogmessage_single">是否删除此条搜索相关内容</string>
+    
+    <string name="vs_copy_text">复制</string>
+    <string name="vs_delete_text">删除</string>
+    <string name="vs_clear_all">清空所有</string>
+    <string name="vs_search_again">重新搜索</string>
+    
+    <string name="vs_net_error">当前网络不可用</string>
+    <!-- <string name="vs_net_error">断网了，我只能为您打电话，发短信或者打开应用</string> -->
+    <string name="vs_init_error">语音播报初始化失败</string>
+    <string name="vs_init_ing">正在初始化...</string>
+    <string name="vs_init">语音播报初始化</string>
+    <string name="vs_net_available">当前网络环境欠佳</string>
+    <string name="vs_reload">刷新</string>
+    <string name="vs_greeting_early">Hi 凌晨好</string>
+    <string name="vs_greeting_morning">Hi 早上好</string>
+    <string name="vs_greeting_noon">Hi 中午好</string>
+    <string name="vs_greeting_aoon">Hi 下午好</string>
+    <string name="vs_greeting_night">Hi 晚上好</string>
+    <string name="vs_speech_red">红</string>
+    <string name="vs_speech_yel">黄</string>
+    <string name="vs_speech_gre">绿</string>
+    
+    <string name="wakeup">声纹激活</string>
+	<string name="wakeup_intro">激活后可灭屏唤醒语音助手</string>
+	<string name="wakeup_title">声纹管理</string>
+	<string name="wakeup_detail">进行声纹信息的管理</string>
+	
+	<!-- barcode -->
+	<string name="vs_barcode_app_name">BarCodeScanner</string>
+	<string name="vs_barcode_title_scanner">扫一扫</string>
+    <string name="vs_barcode_title_result">扫描结果</string>
+    <string name="vs_barcode_scanning_tips">对准二维码即可自动扫描</string>
+    <string name="vs_barcode_getphotos">从相册提取</string>
+    <string name="vs_barcode_choosephotos">选择二维码图片</string>
+    <string name="vs_barcode_search">搜索</string>
+    <string name="vs_barcode_share">分享</string>
+    <string name="vs_barcode_share_to">分享至</string>
+    <string name="vs_barcode_add_contacts">添加到联系人</string>
+    <string name="vs_barcode_add_contacts_fail">打开应用失败</string>
+    
+    <string name="vs_barcode_photo_tip_title">提示</string>
+    <string name="vs_barcode_photo_tip_message">未识别到二维码，你可以尝试裁剪出二维码的主题区域重新试试</string>
+    <string name="vs_barcode_photo_button_left">裁剪图片</string>
+    <string name="vs_barcode_photo_button_right">取消</string>
+    
+    <string name="vs_barcode_vcard_name">姓名：</string>
+    <string name="vs_barcode_vcard_phone">手机：</string>
+    <string name="vs_barcode_vcard_tel">电话：</string>
+    <string name="vs_barcode_vcard_mail">邮箱：</string>
+    <string name="vs_barcode_vcard_qq">QQ：</string>
+    <string name="vs_barcode_vcard_addr">地址：</string>
+    <string name="vs_barcode_vcard_org">公司：</string>
+    <string name="vs_barcode_vcard_title">职位：</string>
+    <string name="vs_barcode_vcard_website">网址：</string>
+    
+    <!-- offline -->
+    <string name="vs_offline_airplane_mode">飞行模式</string>
+    <string name="vs_offline_answer_call_head">为您拨打</string>
+    <string name="vs_offline_answer_call_tail">的电话</string>
+    <string name="vs_offline_answer_call_choose">请选择您要拨打的号码</string>
+    <string name="vs_offline_answer_call_airplane_mode">要拨打电话或发送短信，请先关闭飞行模式</string>
+    <string name="vs_offline_answer_call_default">为您打开电话</string>
+    <string name="vs_offline_answer_call_cancel">取消拨打</string>
+    
+    <string name="vs_offline_answer_message_choose">请选择收短信的号码</string>
+    <string name="vs_offline_answer_message_edit">请编辑短信内容</string>
+    <string name="vs_offline_answer_message_no_sim">未插入sim卡</string>
+    <string name="vs_offline_answer_message_default">为您打开短信</string>
+    <string name="vs_offline_answer_message_cancel">取消发送短信</string>
+    
+    <string name="vs_offline_contacts_not_found_head">对不起，没有找到联系人</string>
+    <!-- <string name="vs_offline_contacts_not_found_tail">，通讯录没有这位联系人</string> -->
+    <string name="vs_offline_contacts_several">您是不是要找以下联系人</string>
+    <string name="vs_offline_contacts_search_head">为您找到</string>
+    <string name="vs_offline_contacts_search_tail">的联系方式</string>
+    <string name="vs_offline_contacts_search_more_normal">更多结果</string>
+    <string name="vs_offline_contacts_search_more_pressed">收起更多</string>
+
+    <string name="vs_offline_contact_name_title">姓名:</string>
+    <string name="vs_offline_contact_item_manynumbers">多个号码</string>
+    <string name="vs_offline_contact_number_type_home">家庭</string>
+    <string name="vs_offline_contact_number_type_mobile">手机</string>
+    <string name="vs_offline_contact_number_type_work">办公</string>
+    <string name="vs_offline_contact_number_type_workfax">传真</string>
+    <string name="vs_offline_contact_number_type_other">其他</string>
+    
+    <string name="vs_offline_calling_tips">即将为您</string>
+    <string name="vs_offline_calling_tips_by">用</string>
+    <string name="vs_offline_calling_tips_sim1">SIM卡1</string>
+    <string name="vs_offline_calling_tips_sim2">SIM卡2</string>
+    <string name="vs_offline_calling_tips_call">拨打...</string>
+    
+    <string name="vs_offline_sending_message_to">收件人：</string>
+    <string name="vs_offline_sending_message_hint">点击语音按钮，即可语音编辑短信</string>
+    <string name="vs_offline_sending_cancel">取消</string>
+    <string name="vs_offline_sending_message_sending">正在发送...</string>
+    <string name="vs_offline_sending_message_failed">发送失败</string>
+    <string name="vs_offline_sending_message_failed_tips">提示</string>
+    <string name="vs_offline_sending_message_failed_tips_content">信息发送失败，是否重发</string>
+    <string name="vs_offline_sending_message_failed_resend_yes">重发</string>
+    <string name="vs_offline_sending_message_processed">该短信不存在，已被发送或删除</string>
+    
+    <string name="vs_offline_voice_input_tips">请说出短信内容...</string>
+    <string name="vs_offline_edit_contact">编辑联系人</string>
+    <string name="vs_offline_forward_contact">转发联系人</string>
+    
+    <string name="vs_offline_applications">请选择您要打开的应用:</string>
+    <string name="vs_offline_application_model">你想要打开哪个应用？</string>
+    <string name="vs_offline_application_not_found">未安装此应用</string>
+    <string name="vs_offline_application_will_run">即将为你打开应用</string>
+    <string name="vs_offline_application_is_running">已为你打开</string>
+    
+    <!-- Calendar alarm -->
+    <string name="vs_reminder_alarm_answer">你要设置如下提醒吗?</string>
+    <string name="vs_reminder_alarm_cancel">取消设置提醒</string>
+    <string name="vs_reminder_alarm_no_reminder_found">无提醒</string>
+    <string name="vs_reminder_alarm_check_calendar">到日历中查看</string>
+    <string name="vs_reminder_alarm_query_title_text">提醒</string>
+    <string-array name="vs_reminder_alarm_rule">
+        <item>一次性</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>每月</item>
+        <item>每年</item>
+    </string-array>
+    <!-- Hazel start to add warning dialog content begin -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_contiune">继续</string>
+    <string name="dialog_exit">退出</string>
+    <string name="use_network_msg_gprs">在使用过程中可能产生数据流量&#044;流量费请咨询当地运营商。是否继续使用&#063;</string>
+    <string name="use_network_no_show">不再提示</string>
+    <string name="use_network_title">系统提示</string>    
+    <!-- Hazel start to add warning dialog content end -->
+</resources>

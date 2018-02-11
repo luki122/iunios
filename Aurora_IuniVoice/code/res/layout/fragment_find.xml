@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/find_bg_color"
+    android:orientation="vertical" >
+
+    <com.aurora.iunivoice.view.SetingItemView
+        android:id="@+id/siv_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:info="@string/find_iuni_shop"
+        app:s_icon="@drawable/find_iuni_shop" />
+
+    <com.aurora.iunivoice.view.SetingItemView
+        android:id="@+id/siv_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:visibility="gone"
+        app:info="@string/find_qq"
+        app:s_icon="@drawable/find_qq_icon" />
+
+    <com.aurora.iunivoice.view.SetingItemView
+         android:layout_marginTop="9dp"
+        android:id="@+id/siv_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:info="@string/find_call_phone"
+        app:s_icon="@drawable/find_callphone_icon" />
+
+    <com.aurora.iunivoice.view.SetingItemView
+        android:id="@+id/siv_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        app:info="@string/find_feedback"
+        app:s_icon="@drawable/find_feedback" />
+
+</LinearLayout>

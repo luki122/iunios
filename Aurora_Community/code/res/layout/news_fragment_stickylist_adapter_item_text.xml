@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/news_fragment_stickylist_adapter_item_header" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider" />
+
+    <TextView
+        android:id="@+id/tv_twitter_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/postdetail_light_color"
+        android:textSize="@dimen/stickylist_adapter_tv_content_size" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/divider"
+        android:layout_marginTop="8dp"
+         />
+
+    <include layout="@layout/news_fragment_stickylist_adapter_item_footer" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Main!</string>
+	<string name="welcom_textview">欢迎使用号码查询</string>
+	<string name="checkButton">查询</string>
+	<string name="setting">设置</string>
+	<string name="base_setting">基本设置</string>
+	<string name="belongcheck">来电归属地提示</string>
+	<string name="belongstyle">归属地提示风格</string>
+	<string name="belonglocation">归属地提示位置</string>
+	<string name="belongothers">其他</string>
+	<string name="belongcheckupdata">检查更新</string>
+	<string name="belongfriend">好友推荐</string>
+	<string name="belongsuggest">提交建议</string>
+	<string name="app_name">号码归属地</string>
+	<string name="search">查询</string>
+	<string name="updata">更新</string>
+	<string name="test">测试</string>
+	<string name="ok">确定</string>
+	<string name="canle">取消</string>
+	<string name="unknown_number">未知号码</string>
+	<string name="unknown_area">未知地区</string>
+	<string name="error_connect_faild">网络连接失败</string>
+	<string name="error_connect_timeout">网络连接超时</string>
+	<string name="error_parse_db">解析归属地数据失败</string>
+	<string name="error_updata_processing">已经在更新中</string>
+	<string name="init_finish">服务初始化成功</string>
+	<string name="success_connect">更新数据库成功</string>
+	<string name="user_cancel_updata">用户取消更新</string>
+	<string name="wait_connecting">更新中,请稍后!</string>
+	<string name="wait_init">正在初始化服务</string>
+	<string name="error_init_not_finish">服务未初始化成功</string>
+	<string name="db_is_last_version">数据库已经是最新版本</string>
+	<string name="import_test">导入T卡数据</string>
+	<string name="import_test1111111">导入T卡数据</string>
+	<string name="areanum_style">归属地框风格设置</string>
+	<string name="cannt_tobenull">输入不能为空</string>
+	<string name="cannt_callout_1_9">拨号1-9无法播出</string>
+	<string name="finish_init">初始化完成</string>
+	<string name="limit_num">最多只能输入30个字符</string>
+	<string name="unknownum_cannot_call_out">未知号码无法播出</string>
+	<string name="add_success">添加成功</string>
+	<string name="add_umsuccess">添加失败，非常用号码无法添加</string>
+	<string name="add_umsuccess_nowidget">添加失败，请在桌面上添加widget</string>
+	<string name="dialog_cancle">取消</string>
+	<string name="dialog_ok">确定</string>
+
+	<string name="txt_prompt">提示</string>
+	<string name="txt_quit_desc">是否确定退出程序？</string>
+	<!-- AreaNumAdapter -->
+	<string name="phone">电话:</string>
+	<string name="areacode">区号:</string>
+	<string name="internationalareacode">国际区号:</string>
+	<string name="tel">TEL:</string>
+	<!-- 欢迎 -->
+	<string name="welcom">奥软来电通,怎么都是通</string>
+	<!-- 关于 -->
+	<string name="aora_about">
+		关于产品:
+
+		\n奥软来电通是深圳市奥软科技推出的个性化号码查询
+
+		\n及归属地应用服务，主要为广大用户方便快捷的查询
+
+		\n常用的号码及归属地信息等相关号码信息。
+		\n
+		\n免责声明:
+		\n以上信息仅参考,不作为其它途径使用。
+		\n
+		\n资费说明：
+		\n本应用免费使用,使用检查更新及提交建议会产生一
+		\n定的GPRS流量,具体资费标准请咨询当地运营商。
+		\n
+		\n关于我们：
+		\n版本号：V1.0.3
+		\n发行：深圳市奥软网络科技有限公司
+		\n邮箱：support@aoratec.com
+		\n客服：400-799-6666
+	
+    </string>
+	<string name="move_text">按住提示框拖动到任意位置！
+		\n按返回键立即生效！</string>
+	<string name="about_title">关于</string>
+	<string name="about_title1">关于产品</string>
+	<string name="nonet">检测升级</string>
+	<string name="enter_net_option">网络接入出错，请检查接入点，或者网络状态不好</string>
+	<string name="point_out">提示</string>
+	<string name="point_out_text">本操作将访问互联网,是否继续?</string>
+	<string name="please_add_number">请添加号码在进行快速拨打</string>
+	<string name="sim_card_error">sim卡有误</string>
+	<string name="mytest"></string>
+</resources>

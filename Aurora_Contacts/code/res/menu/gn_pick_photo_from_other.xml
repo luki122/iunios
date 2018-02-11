@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee xuhz 20120812 add for GIUI4.3 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/gn_pick_photo_from_other_app"
+        android:title="@string/gn_pick_photo_from_other_app"
+        android:showAsAction="ifRoom" />
+</menu>

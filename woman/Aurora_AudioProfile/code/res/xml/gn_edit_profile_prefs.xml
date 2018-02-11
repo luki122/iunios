@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     Gionee fangbin 20120629 added for CR00622030
+-->
+<aurora.preference.AuroraPreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorapersistent="false"
+    aurora:auroraorderingFromXml="true">
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="general"
+        aurora:auroratitle="@string/sound_category_sound_title"/>
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="list_profile"
+            aurora:auroratitle="@string/audio_profile_settings_title"
+            aurora:aurorasummary="@string/general_settings_title"
+            aurora:auroraentries="@array/entries_list_profile"
+            aurora:auroraentryValues="@array/entryvalues_list_profile"
+            aurora:auroradialogTitle="@string/audio_profile_settings_title" />
+    
+        <gn.com.android.audioprofile.RingerVolumePreference
+            aurora:aurorakey="ring_volume"
+            aurora:auroratitle="@string/all_volume_title"
+            aurora:auroradialogTitle="@string/all_volume_title"
+            aurora:aurorapersistent="false"/>
+        
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="phone_vibrate" 
+            aurora:auroratitle="@string/vibrate_title"
+            aurora:aurorasummary="@string/Phone_vibrate_summary"/>
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="ringtone"
+        aurora:auroratitle="@string/sound_category_calls_title">
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="phone_ringtone" 
+            aurora:auroratitle="@string/voice_call_title"
+            aurora:aurorapersistent="false"/>
+        <gn.com.android.audioprofile.DefaultRingtonePreference
+            aurora:aurorakey="video_call_ringtone" 
+            aurora:auroratitle="@string/video_call_title"
+            aurora:aurorapersistent="false"/>
+        <gn.com.android.audioprofile.DefaultRingtonePreference
+            aurora:aurorakey="notifications_ringtone" 
+            aurora:auroratitle="@string/notification_sound_title"
+            aurora:aurorapersistent="false"/>
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_ringtone"
+            aurora:auroratitle="@string/gn_mms_ringtone"
+            aurora:aurorapersistent="false"
+            />
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="feedback"
+        aurora:auroratitle="@string/sound_category_feedback_title"/>
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="audible_touch_tones" 
+            aurora:auroratitle="@string/dtmf_tone_enable_title"/>
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="audible_selection" 
+            aurora:auroratitle="@string/sound_effects_enable_title"/>
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="screen_lock_sounds"
+            aurora:auroratitle="@string/lock_sounds_enable_title"/>
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="flip_sounds"
+            aurora:auroratitle="@string/flip_sounds_enable_title"/>
+        <aurora.preference.AuroraCheckBoxPreference 
+            aurora:aurorakey="haptic_feedback" 
+            aurora:auroratitle="@string/haptic_feedback_enable_title"/>
+</aurora.preference.AuroraPreferenceScreen>

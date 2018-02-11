@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 start -->
+    <string name="zzzzz_gn_def_flip_on_sound" translatable="false">/system/media/audio/ui/FlipOn.ogg</string>
+    <string name="zzzzz_gn_def_flip_off_sound" translatable="false">/system/media/audio/ui/FlipOff.ogg</string>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 end -->
+    
+    <!-- Gionee:zhang_xin 2012-12-09 add for start -->
+    <bool name="def_gn_power_saver">false</bool>
+    <!-- Gionee:zhang_xin 2012-12-09 add for end -->
+    
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 begin -->
+    <integer name="def_gn_font_size">0</integer>
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 end -->
+    
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 begin -->
+    <bool name="def_haptic_vibration">true</bool>
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 end -->
+    
+    <!--Gionee Jingjc 20121101 add for CR00722601 start-->
+    <bool name="def_switch_vibration">true</bool>
+    <bool name="def_dialpad_vibration">true</bool>
+    <bool name="def_lockscreen_vibration">true</bool>
+    <bool name="def_selectapp_vibration">true</bool>
+    <!--Gionee Jingjc 20121101 add for CR00722601 end -->
+    
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 begin-->
+    <bool name="def_ring_vibration">true</bool>
+    <bool name="def_mms_vibration">true</bool>
+    <bool name="def_notification_vibration">true</bool>
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 end-->
+    
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 begin -->
+    <bool name="def_fanfan_widget">false</bool>
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 end -->
+
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+    <bool name="def_respirationlamp_low_power">false</bool>
+    <bool name="def_respirationlamp_in_charge">false</bool>
+    <bool name="def_respirationlamp_notification">false</bool>
+    <bool name="def_respirationlamp_music">false</bool>
+    <bool name="def_respirationlamp_call">false</bool>
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+
+   <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 begin -->
+    <bool name="def_ssg_switch">false</bool>
+    <bool name="def_dg_switch">false</bool>
+    <bool name="def_ssg_auto_dial">false</bool>
+    <bool name="def_ssg_call_access">false</bool>
+    <bool name="def_ssg_delay_alarm">false</bool>
+    <bool name="def_ssg_switch_screen">false</bool>
+    <bool name="def_sdg_call_access">false</bool>
+    <bool name="def_sdg_browse_photos">false</bool>
+    <bool name="def_sdg_video_progress">false</bool>
+    <bool name="def_sdg_video_volume">false</bool>
+    <bool name="def_sdg_video_pause">false</bool>
+
+    <bool name="def_sound_control_switch">false</bool>
+    <bool name="def_sound_control_calling">false</bool>
+    <bool name="def_sound_control_message">false</bool>
+    <bool name="def_sound_control_lockscreen">false</bool>
+    <bool name="def_sound_control_alarmclock">false</bool>
+    <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 end -->
+</resources>

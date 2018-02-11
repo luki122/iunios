@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.mms" android:sharedUserId="android.uid.mms" android:versionCode="40809020" android:versionName="1.713">
+
+    <original-package android:name="com.android.mms" />
+    
+    <!-- Aurora liugj 2014-01-22 modified for adpter all screens start -->
+    <supports-screens android:largeScreens="true" 
+        android:normalScreens="true" android:smallScreens="true"
+        android:resizeable="true" android:anyDensity="true" />
+    <!-- Aurora liugj 2014-01-22 modified for adpter all screens end -->
+    
+    <uses-sdk android:targetSdkVersion="22" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_EMERGENCY_BROADCAST" />
+    <uses-permission android:name="android.permission.RECEIVE_CB_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_DRM" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_WAPPUSH" />
+    <uses-permission android:name="android.permission.WRITE_WAPPUSH" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <!-- Aurora xuyong 2014-05-30 added for multisim feature start -->
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <!-- Aurora xuyong 2014-05-30 added for multisim feature end -->
+    <!-- Aurora xuyong 2014-05-30 added for bug #6842 start -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- Aurora xuyong 2014-05-30 added for bug #6842 end -->
+    <!-- gionee gaoj 2012-3-22 added for CR00555790 start -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <!-- Aurora xuyong 2015-07-10 added for bug #14158 start -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- Aurora xuyong 2015-07-10 added for bug #14158 end -->
+    <!-- gionee gaoj 2012-3-22 added for CR00555790 end -->
+    
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 start -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 end -->
+    <!-- gionee luoguangming 2012.08.29 modify for CR00682236 begin -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- gionee luoguangming 2012.08.29 modify for CR00682236  end  -->
+    <!-- gionee kangjiajia 2012.11.09 modify for MMSONLINE start-->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!-- gionee luoguangming 2012.08.29 modify for MMSONLINE  end  -->
+    <!-- gionee zhouyj 2013-01-17 add for CR00765580 start-->
+    <uses-permission android:name="gn.com.android.Statistics.permission.RECEIVE"/>
+    <!-- gionee zhouyj 2013-01-17 add for CR00765580 end-->
+    
+    <!-- Gionee <gaoj> <2013-05-28> add for CR00817770 begin -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Gionee <gaoj> <2013-05-28> add for CR00817770 end -->
+    <!-- gionee <guoyx> <2013-05-31> add for CR00819767 begin-->
+    <uses-permission android:name="com.gionee.alarm.permission.SET_ACCURATE_WAKE_ALARM" />
+    <!-- gionee <guoyx> <2013-05-31> add for CR00819767 end -->
+     <!-- Aurora liugj 2013-12-03 added for aurora's new feature start -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+     <!-- Aurora liugj 2013-12-03 added for aurora's new feature end -->
+    
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2013-11-20 modified for apk icon start -->
+    <!-- Aurora xuyong 2014-05-30 added for bug #5101 start -->
+    <permission android:name="android.permission.MMS_SEND_OUTBOX_MSG"
+         android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.MMS_SEND_OUTBOX_MSG"/>
+    <!-- Aurora xuyong 2014-05-30 added for bug #5101 end -->
+    <!-- Aurora xuyong 2015-03-30 added for yulore feature start -->
+    <uses-permission android:name="com.yulore.permossion.ACCESS_YULORE_SERVICE" />
+    <!-- Aurora xuyong 2015-03-30 added for yulore feature end -->
+    <application android:name="MmsApp"
+            android:label="@string/app_label"
+            android:icon="@drawable/aurora_mms_icon"
+            android:taskAffinity="android.task.mms"
+            android:allowTaskReparenting="true"
+            android:theme="@style/Theme.NoTitleBar">
+    <!-- Aurora xuyong 2013-11-20 modified for apk icon end -->
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+        <service android:name=".transaction.TransactionService"
+                 android:exported="true" />
+
+        <service android:name=".transaction.SmsReceiverService"
+                 android:exported="true" />
+
+        <service android:name=".transaction.WapPushReceiverService"
+                 android:exported="true" />
+
+        <service android:name=".transaction.CBMessageReceiverService"
+                 android:exported="true" />
+
+        <service android:name=".util.OMACPReceiverService"
+                 android:exported="true" /> 
+
+         <!-- Aurora liugj 2013-12-12 modified for App start optimize start -->
+        <!-- <activity android:name=".ui.BootActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> -->
+         <!-- Aurora liugj 2013-12-12 modified for App start optimize end -->
+
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+        <activity android:name=".ui.ConversationList"
+                  android:label="@string/app_label"
+                  android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MmsHoloTheme"
+                  android:uiOptions="splitActionBarWhenNarrow"
+                  android:launchMode="singleTop">
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+              <!-- Aurora liugj 2013-12-13 modified for startActivity start -->
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android-dir/mms-sms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/cb-messages" />
+            </intent-filter> -->
+              <!-- Aurora liugj 2013-12-13 modified for startActivity end -->
+        </activity>
+        
+        <!-- Gionee zengxuanhui 20120809 add for CR00672106 begin -->
+        <activity android:name="com.gionee.mms.ui.GnRingtonePreference" 
+            android:theme="@style/MmsHoloTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/pref_title_notification_ringtone">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+        
+        <!-- FolderMode -->
+        <activity android:name=".ui.FolderViewList"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:theme="@style/MmsHoloTheme"
+                  android:uiOptions="splitActionBarWhenNarrow"
+                  android:launchMode="singleTop">
+        </activity>
+        
+        <activity android:name=".ui.FolderViewMultiDeleteActivity"
+                  android:theme="@style/MultiSelectionHoloTheme"
+                  android:uiOptions="splitActionBarWhenNarrow"
+                  android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity android:name=".ui.MultiSaveActivity"
+                  android:configChanges="orientation|keyboardHidden">        
+        </activity>
+
+        <activity android:name=".ui.PreviewActivity"
+                  android:configChanges="orientation|keyboardHidden">        
+        </activity>
+        <activity android:name=".ui.FolderModeSmsViewer"
+            android:label="@string/text_message"
+            android:theme="@style/MmsHoloTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity android:name=".ui.CBMessageListActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/cb-messages" />
+            </intent-filter>
+        </activity>
+
+        <!-- wap push begin -->
+        <!-- WPMessageActivity, the launcherMode is same with ComposeMessageActivity -->         
+        <activity android:name=".ui.WPMessageActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:launchMode="singleTop" >
+        </activity>
+        
+         <!-- wap push end -->
+        <!-- Aurora xuyong 2013-09-17 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2013-10-12 modified for aurora's new feature start -->
+        <activity android:name=".ui.ComposeMessageActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AuroraTheme"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop" >
+    <!-- Aurora xuyong 2013-10-12 modified for aurora's new feature end -->
+        <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+        <!-- Aurora xuyong 2013-09-17 modified for aurora's new feature end -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android-dir/mms-sms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="image/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="video/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="audio/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="text/plain" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND_MULTIPLE" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="image/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND_MULTIPLE" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="video/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND_MULTIPLE" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="audio/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SENDMini" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="image/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SENDMini" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="video/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SENDMini" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="audio/*" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SENDMini" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="text/plain" />
+           </intent-filter>
+           <intent-filter>
+               <action android:name="android.intent.action.SEND_MULTIPLEMini" />
+               <category android:name="android.intent.category.DEFAULT" />
+               <data android:mimeType="*/*" />
+           </intent-filter>
+            <intent-filter>
+                  <action android:name="android.intent.action.SEND"/>
+                  <category android:name="android.intent.category.DEFAULT"></category>
+                  <data android:mimeType="application/ogg"/>
+           </intent-filter>
+           <!--  -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.GIONEE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.GIONEE" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+           <!--  -->
+        </activity>
+        <!-- Aurora xuyong 2013-09-13 added for aurora's new feature start -->
+    <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+        <activity android:name="com.aurora.mms.ui.AuroraMsgDetailActivity"
+                  android:theme="@style/AuroraTheme"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:windowSoftInputMode="stateHidden"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop">
+    <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-12-24 modified for bug #1457 start -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>    
+        <!-- Aurora xuyong 2013-12-24 modified for bug #1457 end -->
+        </activity>
+    <!-- Aurora xuyong 2013-09-13 added for aurora's new feature end -->
+                
+        <activity android:name=".ui.MultiSaveActivity"
+                  android:theme="@style/MultiSelectionHoloTheme"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:uiOptions="splitActionBarWhenNarrow">        
+        </activity>
+        <!-- Aurora xuyong 2014-12-32 modified for bug #10782 start -->
+        <activity-alias android:name=".ui.SendMessageToActivity"
+                  android:targetActivity=".ui.ComposeMessageActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:windowSoftInputMode="stateHidden">
+        </activity-alias>
+
+        <activity-alias android:name=".ui.ForwardMessageActivity"
+                  android:targetActivity=".ui.ComposeMessageActivity"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AuroraTheme"
+                  android:windowSoftInputMode="stateHidden">
+        </activity-alias>
+        <!-- Aurora xuyong 2014-12-32 modified for bug #10782 end -->
+
+        <activity android:name=".ui.DeliveryReportActivity"
+            android:label="@string/delivery_report_activity"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+        <activity android:name=".ui.WarnOfStorageLimitsActivity"
+                android:theme="@com.aurora:style/Theme.Aurora.Dialog.Alert.FullScreen"
+                android:label="@string/storage_limits_activity"
+                android:excludeFromRecents="true">
+        </activity>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+
+        <activity android:name=".ui.EditSlideDurationActivity"
+            android:label="@string/change_duration_activity"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity android:name=".ui.SlideshowEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/edit_slideshow_activity" />
+
+        <activity android:name=".ui.SlideEditorActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MmsHoloTheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/edit_slide_activity" />
+
+        <activity android:name=".ui.SlideshowActivity"
+            android:noHistory="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/slideshow_activity">
+        </activity>
+
+        <activity android:name=".ui.MmsPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/slideshow_activity">
+        </activity>
+
+        <activity android:name=".ui.ClassZeroActivity"
+            android:label="@string/class_0_message_activity"
+            android:theme="@android:style/Theme.Translucent"
+            android:excludeFromRecents="true">
+        </activity>
+        <!-- Aurora liugj 2013-09-17 modified for aurora's new feature start -->
+        <!-- Aurora xuyong 2014-09-29 modified for bug #8949 start -->
+        <activity android:name="com.aurora.mms.ui.AuroraSettingPreferencesActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:theme="@style/AuroraTheme"
+            android:screenOrientation="portrait"
+            android:label="@string/preferences_title" />
+        <!-- Aurora xuyong 2014-09-29 modified for bug #8949 end -->
+        <!-- Aurora liugj 2013-09-17 modified for aurora's new feature end -->
+        <activity android:name=".ui.ImportSmsActivity"
+            android:theme="@style/MmsHoloTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/pref_summary_import_msg" /> 
+
+        <activity android:name=".ui.MultiSimPreferenceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/preferences_title" />
+
+        <activity android:name=".ui.SelectCardPreferenceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/preferences_title" />
+            
+        <!-- Gionee zhangxx 2012-08-10 modify for CR00664465 begin -->
+        <!-- android:label="@string/gn_mms" -->
+        <activity android:name=".ui.ShareVCardViaMMSActivity"
+                  android:label="@string/app_label"
+                  android:theme="@android:style/Theme.NoTitleBar"
+                  android:configChanges="orientation|keyboardHidden">
+             <!-- Aurora xuyong 2014-03-28 modified for bug #3535 start -->       
+             <intent-filter>
+                 <action android:name="android.intent.action.SEND.NOUSE" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <data android:mimeType="text/x-vCard" />
+                 <data android:mimeType="text/x-vcard" />
+             </intent-filter>
+             <!-- Aurora xuyong 2014-03-28 modified for bug #3535 end --> 
+        </activity>
+        <!-- Gionee zhangxx 2012-08-10 modify for CR00664465 end -->
+            
+        <receiver android:name=".transaction.PushReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+            <!-- Aurora xuyong 2014-05-30 added for bug #5101 start -->
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+            <!-- Aurora xuyong 2014-05-30 added for bug #5101 end -->
+        </receiver>
+
+        <receiver android:name=".transaction.MmsSystemEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.CONTENT_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.settings.AIRPLANE_MODE_SETTINGS" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_SETTING_INFO_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_FULL" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_NOT_FULL" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.SmsTemplateEditActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/preferences_title" />
+
+        <!-- Aurora liugj 2013-09-17 modified for aurora's new feature start -->
+        <activity android:name=".ui.ManageSimMessages"
+                  android:theme="@style/AuroraTheme"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/sim_manage_messages_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <!-- Aurora liugj 2013-09-17 modified for aurora's new feature end -->
+        <!-- Aurora liugj 2013-09-25 modified for aurora's new feature start -->
+        <activity android:name="com.aurora.mms.ui.AuroraManageSimMessages"
+                  android:theme="@style/AuroraTheme"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/sim_manage_messages_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <!-- Aurora liugj 2013-09-25 modified for aurora's new feature end -->
+        <!-- Aurora xuyong 2014-05-31 added for multisim feature start -->
+        <activity android:name="com.aurora.mms.ui.AuroraMultiSimManageActivity"
+                  android:theme="@style/AuroraTheme"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/sim_manage_messages_title">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <!-- Aurora xuyong 2014-05-31 added for multisim feature end -->
+        <!-- Aurora xuyong 2014-07-18 added for bug #6626 start -->
+        <activity android:name="com.aurora.mms.ui.AuroraRejConvOperActivity"
+                  android:taskAffinity="com.aurora.reject"
+                  android:theme="@style/AuroraTheme"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/app_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Aurora xuyong 2014-07-18 added for bug #6626 end -->
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature start -->
+        <activity android:name="com.aurora.mms.ui.AuroraPrivConvActivity"
+                  android:icon="@drawable/aurora_privacy_mms"
+                  android:taskAffinity="com.aurora.privacymanage"
+                  android:theme="@style/AuroraTheme"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:label="@string/aurora_privacy_msg_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature end -->
+        <activity android:name=".ui.MultiDeleteActivity"
+                  android:theme="@style/MultiSelectionHoloTheme"
+                  android:configChanges="orientation|screenSize|keyboardHidden"
+                  android:uiOptions="splitActionBarWhenNarrow" />
+
+        <!-- Require sender permissions to prevent SMS spoofing -->
+        <receiver android:name=".transaction.PrivilegedSmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            <!-- Aurora xuyong 2014-05-30 added for bug #5101 start -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            <!-- Aurora xuyong 2014-05-30 added for bug #5101 end -->
+            </intent-filter>
+        </receiver>
+
+        <!-- Gionee guoyx 20130221 add for CR00773050 begin-->
+    <service android:name=".ui.SelectMmsSubscription"
+            android:exported="true">
+        </service>
+    <!-- Gionee guoyx 20130221 add for CR00773050 end-->
+    
+        <receiver android:name=".transaction.CBMessageReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.CB_SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_CB_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_EMERGENCY_CB_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Catch-all receiver for broadcasts that don't have associated security -->
+        <receiver android:name=".transaction.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.MESSAGE_SENT" />
+                <!-- TODO Do a better data match here. -->
+                <data android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.WapPushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+            <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+            <data android:mimeType="application/vnd.wap.sic"/>
+            <data android:mimeType="text/vnd.wap.si"/>
+
+            <data android:mimeType="application/vnd.wap.slc"/>
+            <data android:mimeType="text/vnd.wap.sl"/>
+
+            <data android:mimeType="application/vnd.wap.coc"/>
+            <data android:mimeType="text/vnd.wap.co"/>            
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.WapPushTimeChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".util.OMACPReceiver">
+            <intent-filter>
+                <action android:name="com.mediatek.omacp.settings"/>
+                <data android:mimeType="application/com.mediatek.omacp-w4" />
+                <data android:mimeType="application/com.mediatek.omacp-ap0005" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.omacp.capability"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.MessageStatusReceiver">
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.MessageStatusReceiver.MESSAGE_STATUS_RECEIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="MMS_READ_STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.SimFullReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SIM_FULL" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".transaction.SmsRejectedReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_REJECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.ConfirmRateLimitActivity"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.android.mms.RATE_LIMIT_SURPASSED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <!-- Aurora liugj 2013-10-25 deleted for fix bug-241 start -->
+        <!-- <activity android:name=".ui.SearchActivity"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/search"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity> -->
+
+        <!-- <meta-data android:name="android.app.default_searchable"
+            android:value=".ui.SearchActivity" /> -->
+         <!-- Aurora liugj 2013-10-25 deleted for fix bug-241 end -->
+
+        <!-- Search Suggestions Provider -->
+        <provider android:name="SuggestionsProvider"
+            android:readPermission="android.permission.READ_SMS"
+            android:authorities="com.android.mms.SuggestionsProvider" >
+            <path-permission
+                    android:pathPrefix="/search_suggest_query"
+                    android:readPermission="android.permission.GLOBAL_SEARCH" />
+            <path-permission
+                    android:pathPrefix="/search_suggest_shortcut"
+                    android:readPermission="android.permission.GLOBAL_SEARCH" />
+        </provider>
+
+        <service android:name=".ui.NoConfirmationSendService"
+                 android:permission="android.permission.SEND_SMS_NO_CONFIRMATION"
+                 android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.mms.intent.action.SENDTO_NO_CONFIRMATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+            </intent-filter>
+        </service>
+    <!-- Aurora xuyong 2014-02-17 added for bug #2348 start -->
+        <service android:name=".ui.NoConfirmationSendServiceProxy"
+                 android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"
+                 android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mms" />
+            </intent-filter>
+        </service>
+    <!-- Aurora xuyong 2014-02-17 added for bug #2348 end -->
+
+        <provider android:name="TempFileProvider"
+                  android:authorities="mms_temp_file"
+                  android:multiprocess="true" />
+
+        <activity android:name=".ui.MiniPreferenceActivity" >
+            <intent-filter>
+                <action android:name="com.android.mms.intent.action.MESSAGING_APP_NOTIFICATIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- gionee gaoj 2012-3-22 added for CR00555790 start -->
+        <!-- gionee zhouyj 2012-04-24 add for CR00588621 start -->
+        <activity android:name="com.gionee.mms.ui.AttachmentPickerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MmsHoloTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            />
+        <!-- gionee zhouyj 2012-04-24 add for CR00588621 end -->
+        <!-- android:theme="@style/Theme" -->
+
+        <activity android:name="com.gionee.mms.popup.PopUpMsgActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:theme="@style/GnSmsAlertDialog"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:launchMode="singleInstance">
+             <intent-filter>
+                <action android:name="android.intent.action.PopUpMmsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.gionee.mms.ui.MsgChooseLockPassword"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:exported="false">
+        </activity>
+
+        <activity android:name="com.gionee.mms.ui.SecuritySettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/preferences_title">
+        </activity>
+
+        <activity android:name="com.gionee.mms.ui.TabActivity" android:label="@string/app_label"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" android:clearTaskOnLaunch="true"
+            android:windowSoftInputMode = "adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    <!-- Aurora liugj 2013-09-13 added for aurora's new feature start -->    
+        <!-- Aurora liugj 2013-10-19 modified for aurora's new feature start -->
+         <!-- Aurora liugj 2013-12-12 modified for App start optimize start -->
+        <!-- Aurora xuyong 2014-01-08 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2014-03-19 modified for aurora's new feature start -->
+        <activity android:name="com.aurora.mms.ui.AuroraConvListActivity" 
+            android:label="@string/app_label"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuroraTheme"
+            android:launchMode="singleTop"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode ="adjustPan">
+    <!-- Aurora xuyong 2014-03-19 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-01-08 modified for aurora's new feature end -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+              <!-- Aurora liugj 2013-12-13 modified for startActivity start -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android-dir/mms-sms" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/cb-messages" />
+            </intent-filter>
+              <!-- Aurora liugj 2013-12-13 modified for startActivity end -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+              <!-- Aurora liugj 2013-09-16 deleted for bug-927 start -->
+            <!-- <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+            /> -->
+              <!-- Aurora liugj 2013-09-16 deleted for bug-927 end -->
+        </activity>
+         <!-- Aurora liugj 2013-12-12 modified for App start optimize end -->
+        <!-- Aurora liugj 2013-10-19 modified for aurora's new feature end -->
+        <!-- Aurora liugj 2013-09-13 added for aurora's new feature end -->
+        <activity android:name="com.gionee.mms.ui.AddReceiptorTab" android:label="@string/app_label"
+            android:theme="@style/GnEmptyTheme" android:configChanges="orientation|keyboardHidden|screenSize"
+            android:clearTaskOnLaunch="true"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode = "adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- gionee zhouyj 2012-04-28 modified for CR00585826 start -->
+    <!-- Aurora xuyong 2013-12-30 modified for aurora's ne feature start -->
+        <activity android:name="com.gionee.mms.ui.SlidesBrowserActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuroraTheme">
+    <!-- Aurora xuyong 2013-12-30 modified for aurora's ne feature end -->
+        <!-- gionee zhouyj 2012-04-28 modified for CR00585826 end -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <!-- gionee gaoj 2012-5-18 modified for CR00601632 start -->
+        <activity android:name="com.gionee.mms.ui.AddReceiptorActivity" android:label="@string/app_label"
+            android:theme="@style/MmsHoloTheme" android:configChanges="orientation|keyboardHidden|screenSize"
+            android:clearTaskOnLaunch="true"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- gionee gaoj 2012-5-18 modified for CR00601632 end -->
+        
+        <!-- gionee zhouyj 2012-05-22 add for CR00607938 start -->
+        <activity android:name="com.gionee.mms.importexport.ImportExportSmsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/TabActivityTheme"
+            android:launchMode="singleTask"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.ImportExportSmsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.gionee.mms.importexport.MultiExportSmsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/TabActivityTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.MultiExportSmsActivity" />
+                <action android:name="android.intent.action.GNMESSAGEBACKUP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.gionee.mms.importexport.MultiImportSmsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/TabActivityTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.MultiImportSmsActivity" />
+                <action android:name="android.intent.action.GNMESSAGERESTORE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.gionee.mms.importexport.ImportExportService">
+            <intent-filter>
+                <action android:name="android.intent.action.ImportExportService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!-- gionee zhouyj 2012-05-22 add for CR00607938 end -->
+        
+    <!--gionee gaoj 2012-3-22 added for CR00555790 end  -->
+        <!-- Gionee guoyx 2013-04-19 removed for CR00796598 begin-->
+        <!-- Gionee fangbin 20120629 added for CR00622030/CR00718095 start -->
+        <!--  <receiver android:name=".GnMmsRingtoneReceiver"
+            >
+            <intent-filter>
+                <action android:name="com.android.mms.gnmmsringtone" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>-->
+        <!-- Gionee fangbin 20120629 added for CR00622030/CR00718095 end -->
+    <!-- Gionee guoyx 2013-04-19 removed for CR00796598 end-->
+        <activity android:name="com.gionee.mms.ui.ChooseSdcardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/TabActivityTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.choosesdcard" />
+                <action android:name="android.intent.action.GNMESSAGERESTORE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Gionee fengjianyi 2012-07-28 add for CR00614662 start -->
+        <activity android:name="com.gionee.mms.ui.SimSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SimSelectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Gionee fengjianyi 2012-07-28 add for CR00614662 end -->
+
+        <!-- gionee gaoj 2012-8-11 added for CR00623375 start -->
+        <receiver android:name="com.gionee.mms.regularlysend.AlarmReceiver"
+            >
+            <intent-filter>
+                <action android:name="com.gionee.mms.regularsend" />
+            </intent-filter>
+        </receiver>
+        <!-- gionee gaoj 2012-8-11 added for  CR00623375 end -->
+        
+        <!-- gionee zhouyj 2012-08-16 add for CR00678252 start -->
+        <activity android:name="com.gionee.mms.geolocation.GnSelectPoiActivity"
+            android:theme="@style/MmsHoloTheme"
+            android:label="@string/gn_location_others_poi">
+            <intent-filter>
+                <action android:name="android.intent.action.gnselectpoi" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- gionee zhouyj 2012-08-16 add for CR00678252 end -->
+
+        <!-- Gionee: 20120918 chenrui add for CR00696600 begin -->
+        <receiver android:name=".transaction.AlertMissMsgReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <action android:name="com.android.mms.transaction.ALERT_MISS_MSG" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".transaction.AlertMissMsgReceiverService"
+                android:exported="true" />
+        <!-- Gionee: 20120918 chenrui add for CR00696600 end -->
+
+        <!-- Gionee: 20120928 kangjiajia add for CR00710910 start  android:launchMode="singleTask">-->
+        <activity
+            android:name="com.gionee.mms.online.activity.RecommendInformation"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.RecommendInformation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.gionee.mms.online.data.MyContentProvider"
+            android:authorities="com.gionee.mms.inline" />
+        <!-- Gionee: 20120928 kangjiajia add for CR00710910 end -->
+        <!-- android:theme="@android:style/Theme.Holo.Light.Dialog"> -->
+        <!-- gionee gaoj 2012-12-13 added for CR00745515 start-->        
+        <activity android:name="com.gionee.mms.ui.SimSelectView"
+            android:windowSoftInputMode="stateUnchanged"
+            android:excludeFromRecents="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop" android:taskAffinity=""
+            android:theme="@style/SimSelectViewTheme" >
+        </activity>
+        <!-- gionee gaoj 2012-12-13 added for CR00745515 end -->
+
+        <!-- Widget  gionee gaoj 2013-3-11 added for CR00782858 start -->
+         <!-- Aurora liugj 2013-11-07 deleted for hide widget start -->
+        <!-- <receiver android:name=".widget.MmsWidgetProvider"  android:label="@string/app_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.mms.intent.action.ACTION_NOTIFY_DATASET_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/widget_info" />
+        </receiver>
+        <service android:name=".widget.MmsWidgetService"
+                 android:permission="android.permission.BIND_REMOTEVIEWS"
+                 android:exported="false" /> 
+        
+        <activity android:name=".widget.MmsWidgetProxyActivity">
+        </activity> -->
+         <!-- Aurora liugj 2013-11-07 deleted for hide widget end -->
+        <!-- gionee gaoj 2013-3-11 added for CR00782858 end -->
+        <!-- Gionee <zhouyj> <2013-04-28> add for CR00802651 begin -->
+        <receiver android:name="com.android.mms.transaction.VoiceHelperReceiver">
+            <intent-filter>
+                <action android:name="gn.voice.service.TTSService.stop" />
+            </intent-filter>
+        </receiver>
+        <!-- Gionee <zhouyj> <2013-04-28> add for CR00802651 end -->
+        <!-- Aurora xuyong 2014-07-02 added for reject feature start -->
+        <!-- Aurora xuyong 2014-08-08 modified for bug #7389 start -->
+        <receiver android:name="com.aurora.mms.transaction.AuroraRejectRubbishOrBlackMsgReceiver">
+            <intent-filter>
+                <action android:name="com.android.reject.RUBBISH_MSG_REJECT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.reject.BLACK_MSG_REJECT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.black.changed"/>
+            </intent-filter>
+        </receiver>
+        <!-- Aurora xuyong 2014-08-08 modified for bug #7389 end -->
+        <!-- Aurora xuyong 2014-07-02 added for reject feature end -->
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature start -->
+        <receiver android:name="com.aurora.mms.transaction.AuroraPrivacyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.aurora.privacy.contact.UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.privacymanage.SWITCH_ACCOUNT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.aurora.privacymanage.DELETE_ACCOUNT"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.aurora.mms.transaction.AuroraPrivacyBindService"
+                 android:exported="true" />
+        <!-- Aurora xuyong 2014-10-23 added for privacy feature end -->
+    </application>
+</manifest>

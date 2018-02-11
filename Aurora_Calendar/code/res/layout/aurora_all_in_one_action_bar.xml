@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_actionbar_height"
+    android:background="@drawable/aurora_actionbar_bg">
+
+    <RelativeLayout
+        android:id="@+id/gn_all_in_one_actionbar_time_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/aurora_all_in_one_action_bar_margin_left" >
+
+        <TextView
+            android:id="@+id/gn_all_in_one_actionbar_time_year_show"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            style="@style/style_action_bar_date_picker" />
+
+        <TextView
+            android:id="@+id/gn_all_in_one_actionbar_time_month_show"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gn_all_in_one_actionbar_time_year_show"
+            android:layout_centerVertical="true"
+            style="@style/style_action_bar_date_picker" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gn_all_in_one_create_event"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="?com.aurora:attr/actionBarRightWidgetBackground">
+
+        <ImageView
+            android:id="@+id/all_in_one_right_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/aurora_actionbar_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gn_all_in_one_actionbar_return_today_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/gn_all_in_one_create_event"
+        android:background="?com.aurora:attr/actionBarRightWidgetBackground">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/aurora_actionbar_back_today" />
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/horizontal_divider"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

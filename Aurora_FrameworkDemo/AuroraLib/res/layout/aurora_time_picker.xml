@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout of time picker-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_number_picker_layout"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <!-- Gionee <zhangxx><2013-04-10> modify for CR00795646 begin -->
+    <!-- hour -->
+    <aurora.lib.widget.AuroraNumberPicker
+        android:id="@+id/aurora_hour"
+        android:background="@null"
+        android:layout_width="53dip"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <!-- minute -->
+    <aurora.lib.widget.AuroraNumberPicker
+        android:id="@+id/aurora_minute"
+        android:background="@null"
+        android:layout_width="53dip"
+        android:layout_marginLeft="16.3dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <!-- AM / PM -->
+    <aurora.lib.widget.AuroraNumberPicker
+        android:id="@+id/aurora_amPm"
+        android:background="@null"      
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16.3dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <!-- Gionee <zhangxx><2013-04-10> modify for CR00795646 end -->
+
+</LinearLayout>

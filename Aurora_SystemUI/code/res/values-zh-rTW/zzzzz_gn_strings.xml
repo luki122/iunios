@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * File Description: Define all string resources add by Gionee engineer
+ * Author: huyuke
+ * Create Date: 2011/09/07
+ *
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 start-->
+    <string name="zzzzz_usb_storage_notification_message">"選擇檔存儲或利用電腦管理工具對手機進行管理。"</string>
+    <string name="zzzzz_turn_on_usb_storage">USB存儲</string>
+    <string name="zzzzz_usb_storage_content">開啟後可在電腦對本機存放區內容編輯</string>
+    <string name="zzzzz_open_debug_mode">臨時開啟USB調試</string>
+    <string name="zzzzz_debug_mode_message">開啟後可啟用電腦同步管理工具</string>
+    <string name="zzzzz_no_sdcard_title">沒有SD卡</string>
+    <string name="zzzzz_no_sdcard_message">沒有記憶卡，或記憶卡未準備好!</string>
+    <string name="zzzzz_adb_warning_title">臨時開啟USB調試</string>
+    <string name="zzzzz_adb_warning_message">將臨時啟用USB調試。允許PC端管理軟體在您的設備和電腦之間複製資料，安裝程式。</string>
+    <string name="zzzzz_mount_sdcard_dialog_title">正在打開... 請不要在此時拔出傳輸線，可能導致記憶卡異常！在關閉 USB 存放裝置前，請確保您已從電腦中卸載（“彈出”）Android 手機的 USB 存放裝置!</string>
+    <string name="zzzzz_usb_storage_title">"USB 已連接"</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_text">"如果您打開了 USB 存放裝置，則您當前使用的某些應用程式會停止，而且在您關閉 USB 存放裝置前可能都無法使用。"</string>
+    <string name="zzzzz_cancel">"取消"</string>
+    <string name="zzzzz_dlg_ok">"確定"</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_title">"打開 USB 存放裝置"</string>
+    <string name="zzzzz_usb_storage_error_message" product="nosdcard">"使用 USB 存放裝置作為 USB 大型存放區設備時出現問題。"</string>
+    <string name="zzzzz_usb_storage_error_message" product="default">"使用 SD 卡作為 USB 大型存放區設備時出現問題。"</string>
+    <string name="zzzzz_dlg_error_title" >"USB 操作失敗"</string>
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 end-->
+
+</resources>

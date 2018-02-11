@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aurora_time_picker_layout"
+    android:layout_width="313dp"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/aurora_date_picker_dialog_grey_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/aurora_grey_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/aurora_alert_dialog_bg2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aurora_date_picker_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/aurora_alert_dialog_title_divider" />
+
+        <aurora.lib.widget.AuroraTimePicker
+            android:id="@+id/aurora_time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="29dp"
+            android:calendarViewShown="false"
+            android:spinnersShown="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/aurora_alert_dialog_btn_panel_divider_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/aurora_alert_dialog_btn_panel_divider_v"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/aurora_date_picker_cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/aurora_alert_dialog_btn_selector_left"
+                    android:text="@string/aurora_datepicker_cancel"
+                    android:textColor="@color/aurora_button_text_color" />
+
+                <ImageView
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/aurora_alert_dialog_btn_panel_divider_v" 
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/aurora_date_picker_done_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/aurora_alert_dialog_btn_selector_right"
+                    android:text="@string/aurora_datepicker_done"
+                    android:textColor="@color/aurora_button_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<resources>
+	  <!-- Aurora liugj 2013-09-17 modified for aurora's new feature start -->
+	<!-- Aurora liugj 2013-10-10 modified for aurora's new feature start -->
+    <style name="AuroraTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <!-- <item name="android:actionBarStyle">@style/ActionBarStyle</item> -->
+        <item name="android:actionModeBackground">@drawable/aurora_titlebar_bg</item> 
+        <item name="android:actionModeSplitBackground">@drawable/aurora_menu_click_bg</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionModeCloseDrawable">@null</item>
+        <item name="android:actionModeCloseButtonStyle">@style/MyActionModeCloseButtonStyle</item>
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+    </style>
+    <style name="MyActionModeCloseButtonStyle" >
+        <item name="android:background">@null</item>
+    </style>
+    
+    <style name="SetTheme" parent="com.aurora:style/Theme.aurora.Light">
+       
+        <item name="com.aurora:actionBarRightWidgetBackground">@drawable/aurora_set_bg_selector</item>
+    </style>
+  
+</resources>

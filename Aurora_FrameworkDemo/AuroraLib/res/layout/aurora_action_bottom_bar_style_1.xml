@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aurora_action_bottom_bar_background_color"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/aurora_action_bottom_bar_menu_item_layout1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/aurora_action_bottom_bar_height"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:gravity="center" >
+
+        <aurora.lib.widget.AuroraAnimationImageView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scaleType="center"
+            aurora:playAnim="true" >
+        </aurora.lib.widget.AuroraAnimationImageView>
+
+        <TextView
+            android:id="@+id/aurora_action_bottom_bar_menu_item_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/aurora_action_bottom_bar_margin_left"
+            android:gravity="center"
+            android:scaleType="center"
+            android:textColor="@color/aurora_action_bottom_bar_title_change_color"
+            android:textSize="@dimen/aurora_action_bottom_bar_title_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/gn_enable_debug_title" >
+
+    <aurora.preference.AuroraCheckBoxPreference
+        aurora:aurorakey="aurora_log_onoff"
+        aurora:auroratitle="@string/aurora_log_onoff_title" />
+    	<!-- qy add 2014 05 26 -->
+   	<aurora.preference.AuroraCheckBoxPreference
+        aurora:aurorakey="aurora_dump _onoff"
+        aurora:auroratitle="@string/aurora_dump_onoff_pref_title" />
+
+	<aurora.preference.AuroraPreferenceCategory
+	    aurora:aurorakey="gn_log_switchs">
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_master_switch"
+	        aurora:auroratitle="@string/gn_log_master_switch" />
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_verbose_switch"
+	        aurora:auroratitle="@string/gn_log_verbose_switch"/>
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_debug_switch"
+	        aurora:auroratitle="@string/gn_log_debug_switch"/>
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_info_switch"
+	        aurora:auroratitle="@string/gn_log_info_switch" />
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_warn_switch"
+	        aurora:auroratitle="@string/gn_log_warn_switch" />
+	    <aurora.preference.AuroraCheckBoxPreference
+	        aurora:aurorakey="gn_error_switch"
+	        aurora:auroratitle="@string/gn_log_error_switch" />
+	</aurora.preference.AuroraPreferenceCategory>
+	    
+</aurora.preference.AuroraPreferenceScreen>

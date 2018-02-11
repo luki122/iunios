@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+      <!--Gionee <jiating><2013-06-24> modify for CR00822801 begin -->
+    <item android:state_pressed="true" android:state_enabled="true" android:color="@color/gn_backtoday_text_press" />
+    <item android:state_pressed="false" android:state_enabled="true" android:color="@color/gn_backtoday_text_default" />
+    <item android:state_enabled="false" android:color="#d5d5d5"/>
+    <!--Gionee <jiating><2013-06-24> modify for CR00822801 end -->
+</selector>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <pengwei><2013-05-29> modify for CR00817892 begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_day_astro_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gn_day_listview_item"
+    android:gravity="center_vertical"
+    android:minHeight="52dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+    	android:id="@+id/gn_day_astro_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/astro_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/gn_calendar_back_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/constellation_comprehensive_luck_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_comprehensive_luck"
+                    android:textColor="@color/gn_day_listview_item_title"
+                    android:textSize="17sp" />
+
+                <RatingBar
+                    android:id="@+id/constellation_comprehensive_luck_ratingbar"
+                    style="@style/GNDayRatingBarBig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14.5dp"
+                    android:layout_marginLeft="6dp"
+                    android:isIndicator="true"
+                    android:layout_gravity="center_vertical" />
+                 <RatingBar
+                    android:id="@+id/constellation_comprehensive_luck_ratingbar_press"
+                    style="@style/GNDayRatingBarBigWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14.5dp"
+                    android:layout_marginLeft="6dp"
+                    android:isIndicator="true"
+                    android:layout_gravity="center_vertical" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_work_index_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_work_index"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/gn_day_constellation_work_index_ratingbar"
+                    style="@style/GNDayRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+                    <RatingBar
+                    android:id="@+id/gn_day_constellation_work_index_ratingbar_press"
+                    style="@style/GNDayRatingBarSmallWhite"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_love_index_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_love_index"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/gn_day_constellation_love_index_ratingbar"
+                    style="@style/GNDayRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+                                <RatingBar
+                    android:id="@+id/gn_day_constellation_love_index_ratingbar_press"
+                    style="@style/GNDayRatingBarSmallWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_health_index_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_health_index"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/gn_day_constellation_health_index_ratingbar"
+                    style="@style/GNDayRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+                <RatingBar
+                    android:id="@+id/gn_day_constellation_health_index_ratingbar_press"
+                    style="@style/GNDayRatingBarSmallWhite"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_wealth_index_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_wealth_index"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <RatingBar
+                    android:id="@+id/gn_day_constellation_wealth_index_ratingbar"
+                    style="@style/GNDayRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+               	<RatingBar
+                    android:id="@+id/gn_day_constellation_wealth_index_ratingbar_press"
+                    style="@style/GNDayRatingBarSmallWhite"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_speed_dating_constellation_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_speed_dating_constellation"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_speed_dating_constellation_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_lucky_color_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_lucky_color"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_lucky_color_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_lucky_numbers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gn_day_constellation_lucky_numbers"
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/gn_day_constellation_lucky_numbers_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"                   
+                    android:textColor="@color/gn_day_listview_item_time"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+     	<View 
+		android:layout_width="wrap_content"
+        android:layout_height="100dp"  
+	    />
+    -->
+
+</LinearLayout> <!-- Gionee <pengwei><2013-05-29> modify for CR00817892 end -->

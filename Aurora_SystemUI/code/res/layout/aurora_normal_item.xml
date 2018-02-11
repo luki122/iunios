@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.AuroraRecentlItemView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/recent_cell_width"
+    android:layout_height="@dimen/recent_cell_height"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/recent_item"
+    android:orientation="vertical" >
+      <RelativeLayout 
+	      android:layout_gravity="center_horizontal"
+	      android:gravity="center_horizontal"
+	      android:layout_height="@dimen/recents_app_icon_max_height"
+	      android:layout_width="@dimen/recents_app_icon_max_width">
+				<ImageView
+					android:id="@+id/app_icon"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:layout_centerHorizontal="true"
+		      android:layout_centerVertical="true"
+		      android:scaleType="centerInside"/>
+		      
+				<ImageView
+					android:id="@+id/app_lock"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/aurora_recent_lock"
+		        android:layout_alignLeft="@+id/app_icon"
+		        android:layout_alignBottom="@+id/app_icon"
+		        android:visibility="invisible"/>
+		     </RelativeLayout>   
+        <TextView android:id="@+id/app_label"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_normal_item_label_height"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/aurora_recents_app_label_text_size"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:paddingTop="@dimen/aurora_normal_item_label_padding_top"
+            android:textColor="@color/status_bar_recents_app_label_color"/>
+				
+    	
+</com.android.systemui.recent.AuroraRecentlItemView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="aurora_action_bar_info" type="id"/>
+    <item name="aurora_action_bar_home" type="id"/>
+    <item name="aurora_action_bar_back" type="id"/>
+    <item name="aurora_action_bar_more" type="id"/>
+
+</resources>

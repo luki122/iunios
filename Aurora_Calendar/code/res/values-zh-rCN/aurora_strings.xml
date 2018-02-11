@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- event edit -->
+    <string name="aurora_event_edit_name_hint">日程标题</string>
+    <string name="aurora_event_calendar_account">账号</string>
+
+    <string name="aurora_event_edit_open">开</string>
+    <string name="aurora_event_edit_close">关</string>
+    <string name="aurora_event_edit_repeat_title">周期</string>
+    <string name="aurora_does_not_repeat">一次性</string>
+    <string name="aurora_every_weekday">每个工作日</string>
+    <string name="aurora_event_edit_description_hint">备注</string>
+    <string name="aurora_event_edit_cancel">舍弃</string>
+    <string name="aurora_event_edit_cancel_info">要舍弃您所做的更改吗？</string>
+    <string name="aurora_event_edit_save_no_title">请输入日程标题</string>
+
+    <!-- event detail -->
+    <string name="aurora_event_detail_whenfirst">"从<xliff:g id="DATES">%s</xliff:g>"</string>
+    <string name="aurora_weekly">"每周（<xliff:g id="DAYS_OF_WEEK">%s</xliff:g>）"</string>
+    <string name="aurora_monthly_on_day_count">"每月（<xliff:g id="ORDINAL_NUMBER">%1$s</xliff:g><xliff:g id="DAY_OF_WEEK">%2$s</xliff:g>）"</string>
+    <string name="aurora_monthly_on_day">"每月<xliff:g id="DAY_OF_MONTH">%s</xliff:g> 日"</string>
+    <string name="aurora_event_detail_title">日程详情</string>
+    <string name="aurora_delete_event_dialog">是否删除该日程？</string>
+    <string name="aurora_delete_event_toast">已删除成功！</string>
+    <string name="aurora_event_detail_separator">|</string>
+    <string name="aurora_event_detail_no_description">无备注</string>
+    <string name="aurora_when_start">开始</string>
+    <string name="aurora_when_end">结束</string>
+    <string name="aurora_date_format">yyyy年MM月dd日</string>
+
+    <!-- calendar setting -->
+    <string name="aurora_menu_setting">设置</string>
+    <string name="aurora_view_filter">日历显示筛选</string>
+    <string name="aurora_period_detail">详细设置</string>
+    <string name="aurora_account_management">日历账户管理</string>
+    <string name="aurora_view_firstday">每周起始天</string>
+    <string name="preferences_week_start_day_default">2</string>
+    <string name="aurora_note_reminder_switch">显示备忘录</string>
+    <string name="aurora_birthday_reminder_switch">"生日提醒"</string>
+    <string name="aurora_events_reminder">日程提醒时间</string>
+    <string name="aurora_todo_reminder">待办提醒时间</string>
+    <string name="aurora_ring_picker">提醒铃声</string>
+    <string name="aurora_default_ring">默认</string>
+
+    <string name="aurora_happy_day">休假方案</string>
+    <string name="aurora_lunar_calendar">农历</string>
+    <string name="aurora_festival_day">节假日</string>
+    <string name="aurora_work_hard">日程标识</string>
+
+    <string name="preferences_period_title">大姨妈设置</string>
+    <string name="period_time">5</string>
+    <string name="period_time_title">经期长度</string>
+    <string name="period_cycle">28</string>
+    <string name="period_cycle_title">周期长度</string>
+    <string name="period_prompt">您的月经通常持续几天？</string>
+    <string name="period_cycle_prompt">月经周期以月经第一天为周期的开始，到下次月经来为止。\n周期的长短因人而异，约为21&#8211;36天不等，默认周期28天。</string>
+
+    <!-- month view -->
+    <string name="aurora_legal_holiday">假</string>
+    <string name="aurora_legal_workday">班</string>
+    <string name="aurora_term_qingming">清明</string>
+    <string name="aurora_agenda">日程</string>
+    <string name="aurora_no_agenda">暂无日程</string>
+    <string name="aurora_create_agenda">新建日程</string>
+    <string name="aurora_birthday_reminder">生日提醒</string>
+    <string name="aurora_birthday_only_one"><xliff:g id="NAME">%s</xliff:g>今天生日</string>
+    <string name="aurora_birthday_have_other"><xliff:g id="NAME">%s</xliff:g>等<xliff:g id="NUMBER">%d</xliff:g>人今天生日</string>
+    <string name="aurora_birthday_wish">点击送上一条温暖的祝福吧</string>
+    <string name="aurora_wish_birthday">生日祝福</string>
+    <string name="aurora_happy_birthday">生日快乐</string>
+    <string name="aurora_agenda_reminder_open">已开启提醒</string>
+    <string name="aurora_agenda_reminder_close">已关闭提醒</string>
+
+    <!-- birthday info -->
+    <string name="aurora_birthday_info">生日详情</string>
+    <string name="aurora_birthday_today">今天生日</string>
+    <string name="aurora_birthday_notice">你共有<xliff:g id="NUMBER"> %d </xliff:g>位好友</string>
+    <string name="aurora_birthday_content"><xliff:g id="NUMBER">%d</xliff:g>岁生日</string>
+
+    <!-- select calendars -->
+    <string name="aurora_local_calendar">本地日历</string>
+
+    <!-- delete event -->
+    <string name="aurora_delete_recurring_event">要删除此周期性活动吗？</string>
+
+
+    <!-- 生成图片预览界面 -->
+    <string name="note_gen_picture">分享</string>
+    <string name="share_title">分享到</string>
+    <string name="save_to_gallery_success">图片已成功保存到相册</string>
+    <string name="save_to_gallery_failed">保存图片到相册失败</string>
+    <string name="sdcard_is_not_available">SD卡不可用</string>
+
+    <!-- 图片预览界面 -->
+    <string name="load_picture_error_io">加载图片失败</string>
+    <string name="load_picture_error_network">网络有问题，无法下载</string>
+    <string name="load_picture_error_decoding">图片无法显示</string>
+    <string name="load_picture_error_out_of_memory">图片太大无法显示</string>
+    <string name="load_picture_error_unknow">未知的错误</string>
+
+    <!-- 微信分享反馈信息 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- 新浪微博分享界面 -->
+    <string name="share_sina_weibo_title">分享到新浪微博</string>
+    <string name="share_sina_weibo_right_menu_item">发送</string>
+    <string name="share_sina_weibo_menu_unbind">解除帐号绑定(%1$s)</string>
+    <string name="share_sina_weibo_hint">输入文字</string>
+    <string name="share_sina_weibo_sending">正在发送...</string>
+    <string name="share_sina_weibo_unbind_success">解除帐号绑定成功</string>
+    <string name="share_sina_weibo_unbind_error">解除帐号绑定失败，请重试</string>
+    <string name="share_sina_weibo_authorize_invalid_token">授权失败，请重试</string>
+    <string name="share_sina_weibo_authorize_cancel">授权已取消</string>
+    <string name="share_sina_weibo_no_network">请先打开网络连接</string>
+    <string name="share_sina_weibo_authorize_expire">授权已过期，请重新授权</string>
+    <string name="share_sina_weibo_send_success">微博发送成功</string>
+    <string name="share_sina_weibo_send_ongoing">微博仍在发送...</string>
+    <string name="share_sina_weibo_send_failed">微博发送失败，请重试</string>
+    <string name="share_sina_weibo_default_content">分享图片</string>
+    <string name="share_sina_weibo_is_sending">上次微博正在发送中，请稍候...</string>
+    <string name="share_sina_weibo_get_user_info">正在获取用户信息...</string>
+    <string name="share_sina_weibo_get_user_info_failed">获取用户信息失败</string>
+    <string name="share_sina_weibo_unbind_ongoing">解除帐号绑定，请稍侯...</string>
+    <string name="share_sina_weibo_image_too_large">图片大小超出限制，无法发送</string>
+
+    <!-- 共用的出错提示消息 -->
+    <string name="memory_is_not_enough">图片太大，请重试</string>
+    <string name="decode_bitmap_error">加载图片失败</string>
+    <string name="prepare_record_error">录音准备出错，请重试</string>
+
+    <!-- Added on 2015-03-30 begin -->
+    <string name="share_weibo">微博</string>
+    <string name="share_weixin_friend">微信好友</string>
+    <string name="share_weixin">朋友圈</string>
+    <string name="share_qq_friend">QQ好友</string>
+    <string name="share_qq_zone">QQ空间</string>
+    <string name="share_more">更多</string>
+    <string name="share_activity_title">分享</string>
+    <!-- Added on 2015-03-30 end -->
+    <!--remember day-->
+
+</resources>

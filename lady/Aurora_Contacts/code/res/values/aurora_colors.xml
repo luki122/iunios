@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aurora_contact_list_header_text_color">#4bcadd</color>
+    <color name="aurora_import_export_type_text_color">#ddf8fc</color>
+    <color name="aurora_dialpad_bg">#ddf8fc</color>
+    <color name="aurora_empty_dialpad_text_color">#33000000</color>
+    <color name="merge_contacts_text_selected">#ffffff</color>
+    <color name="merge_contacts_text_unselected">#4bcadd</color>
+    <color name="detail_name_color">#b2000000</color>
+    <color name="detail_header_color">#ddf8fc</color>
+    <color name="aurora_dialpad_text_color">#4bcadd</color>
+    <color name="aurora_dialer_search_text_color">#79898b</color> 
+    <color name="aurora_search_matched_highlight">#4bcadd</color> 
+    <color name="gn_dial_number_area_text_color">#4bcadd</color>
+    <color name="aurora_header_name_bg">#637072</color>
+    <color name="aurora_dialpad_text_color_high_light">#b2f2ff</color>
+
+</resources>

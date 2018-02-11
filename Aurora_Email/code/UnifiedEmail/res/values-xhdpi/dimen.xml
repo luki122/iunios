@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- add by SQF start -->
+    <dimen name="aurora_listview_checkbox_margin_top">-10dp</dimen>
+    <!-- add by SQF end -->
+</resources>

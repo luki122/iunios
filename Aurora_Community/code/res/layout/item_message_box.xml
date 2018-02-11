@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_main_background_color"
+        android:paddingBottom="17dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="17dp" >
+
+        <com.aurora.community.view.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/item_collection_of_postdetail_cimg_layout_width"
+            android:layout_height="@dimen/item_collection_of_postdetail_cimg_layout_height" />
+
+        <FrameLayout android:layout_width="56dp"
+                     android:layout_height="56dp"
+                     android:id="@+id/fl_content"
+                     android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/content_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" 
+            
+            />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:padding="5dp"
+                  android:id="@+id/content"
+                  android:gravity="center"
+                  android:visibility="gone"
+                  android:background="@android:color/white"
+                  android:textSize="12sp"
+                  android:textColor="@color/common_content_color"
+                  android:maxLines="3"
+                  />
+</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@id/fl_content"
+            android:layout_toRightOf="@id/user_icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:textColor="@color/postdetail_light_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/gloab_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/msg_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/star"
+                android:text="@string/message_box_collection"
+                android:textColor="@color/common_blue_color"
+                android:textSize="12sp"
+                android:visibility="gone" 
+                />
+
+            <TextView
+                android:id="@+id/msg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/postdetail_light_color"
+                android:textSize="9sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/aurora_action_bar_divider" />
+
+</LinearLayout>

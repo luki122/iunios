@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.iunivoice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name="com.aurora.iunivoice.IuniVoiceApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AuroraTheme" >
+        <activity
+            android:name="com.aurora.iunivoice.activity.SplashActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.activity.GuideActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.activity.MainActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.activity.ForumDatailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 注册页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.RegisterActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 手机号注册页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.RegisterByPhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 国际码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.CountryCodeActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 验证手机号页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.PhoneNumVerificationActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 邮箱注册页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.RegisterByEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 验证邮箱页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.EmailVerificationActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 创建账号信息页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.RegisterAccountInfoActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 账号详情页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.AccountInfoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 修改昵称页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.SetNickActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 修改密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.ChangePwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 验证密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.ValidatePwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 修改手机号页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.ChangePhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 修改邮箱页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.ChangeEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 绑定成功页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.BindSuccessActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 同步账户页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.SyncAccountActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 找回密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.FindPwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 通过手机找回密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.FindPwdByPhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 通过邮箱找回密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.FindPwdByEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+
+        <!-- 重设密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.ResetPasswordActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 用户协议页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.UserAgreementActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 通过手机找回密码页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.PhotoBackupActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 登录页 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.account.LoginActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 帖子详情界面 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.PageDetailActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 用户反馈 -->
+        <activity
+            android:name="com.aurora.iunivoice.feedback.ProviderIdea"
+            android:configChanges="screenSize|keyboardHidden|navigation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.feedback.PFBActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuroraTheme_no_line"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.feedback.UserFBActivity"
+            android:theme="@style/AuroraTheme_no_line" >
+        </activity>
+        <!--  -->
+
+        <activity
+            android:name="com.aurora.iunivoice.activity.MineInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.MineScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.MineNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.MinePublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.MineSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.AccountManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.UserIntroduceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.aurora.iunivoice.activity.AboutIuniActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 话题发布 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.PublishActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 版块选择 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.ForumChoiceActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 图片选择 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.picBrowser.ImagePickerActvity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 图片预览 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.picBrowser.ImagePreviewActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 图片预览编辑 -->
+        <activity
+            android:name="com.aurora.iunivoice.activity.picBrowser.TwitterItemPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.aurora.iunivoice.activity.PageDetailPicBrowserActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service android:name="com.aurora.iunivoice.service.SystemTipService" >
+            <intent-filter>
+                <action android:name="com.iunivoice.systemtip.service.action" />
+            </intent-filter>
+        </service>
+        <service android:name="com.aurora.iunivoice.service.SystemPushMsgService" >
+            <intent-filter>
+                <action android:name="com.iunibbs.action.system.pushmsg.service.action" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.aurora.iunivoice.broadcast.ServiceHelpBroadCast" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="555052e9e0f55ad1c4002082" >
+    </meta-data>
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="@string/community_channel" >
+    </meta-data>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="7dip"
+    android:paddingLeft="9dip"
+    android:paddingRight="9dip"
+    android:paddingTop="7dip" >
+
+    <RelativeLayout
+        android:id="@+id/rl_forcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/tv_forcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_forcast"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/focus" 
+            android:id="@+id/focus"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_24hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dip"
+        android:layout_toRightOf="@id/rl_forcast" >
+
+        <TextView
+            android:id="@+id/tv_24hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tv_24hour"
+            android:textColor="#ffffff"
+            android:textSize="15sp" 
+            android:alpha="0.5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/focus" 
+            android:id="@+id/focus"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="15sp" 
+        android:alpha="0.5"/>
+
+    <ImageView
+        android:id="@+id/iv_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/focus"
+        android:visibility="invisible" />
+
+</RelativeLayout>

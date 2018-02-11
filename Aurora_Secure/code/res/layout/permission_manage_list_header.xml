@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!-- 标签项 区域  begin -->
+<RelativeLayout 
+    android:id="@+id/labelLayout" xmlns:android="http://schemas.android.com/apk/res/android" 
+ 	android:layout_width="fill_parent" android:layout_height="wrap_content"  >
+    <TextView  
+		    android:id="@+id/labelText"   
+		    android:layout_width="wrap_content" android:layout_height="fill_parent" 
+		    android:textColor="@color/common_textcolor"  android:textSize="@dimen/list_header_text_size"
+		    android:gravity="center_horizontal|left" android:paddingLeft="17dp" 
+		    android:paddingTop="@dimen/list_header_padding_top" 
+            android:paddingBottom="@dimen/list_header_padding_bottom"/>  
+</RelativeLayout> 
+<!-- 标签项 区域  end -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gn_sound_control_dialog_message" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"/>
+<!-- android:textColor="@android:color/white" -->
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/not_alert_again"/>
+<!--         android:textColor="@android:color/white" -->
+</LinearLayout>

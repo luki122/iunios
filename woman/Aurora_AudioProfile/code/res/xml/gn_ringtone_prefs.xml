@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" 
+    aurora:aurorapersistent="false"
+    aurora:auroraorderingFromXml="true">
+            
+    <gn.com.android.audioprofile.DefaultRingtonePreference
+        aurora:aurorakey="sim1_ringtone" 
+        aurora:auroratitle="@string/sim1_ringtone_title"
+        aurora:aurorapersistent="false"/>
+    
+    <gn.com.android.audioprofile.DefaultRingtonePreference
+        aurora:aurorakey="sim2_ringtone" 
+        aurora:auroratitle="@string/sim2_ringtone_title"
+        aurora:aurorapersistent="false"/>
+        
+</aurora.preference.AuroraPreferenceScreen>

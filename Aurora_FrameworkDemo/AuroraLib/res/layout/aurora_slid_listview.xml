@@ -1,0 +1,109 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      
+      android:orientation="vertical">
+      
+    <LinearLayout
+	     android:id="@+id/aurora_list_header"
+	     android:layout_width="match_parent"
+    	 android:layout_height="wrap_content"
+    	 android:orientation="vertical"
+	     >
+	 </LinearLayout>  
+
+
+<LinearLayout   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    >
+    
+    <FrameLayout
+		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	>
+	<FrameLayout
+		android:id="@+id/aurora_listview_custom_front"	
+		android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:visibility="gone"
+    	android:gravity="center"
+    	android:layout_gravity="bottom|left"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+    	>
+		</FrameLayout>	
+     <LinearLayout android:id="@+id/content"
+	     android:layout_width="match_parent"
+    	 android:layout_height="wrap_content"
+    	 android:layout_gravity="left|center"
+    	 android:orientation="horizontal" 
+    	 android:visibility="visible"
+    	 >
+    	<RelativeLayout
+    	    android:id="@+id/control_padding"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/aurora_list_paddingleft">
+			
+   	    <aurora.lib.widget.AuroraCheckBox 
+        android:id="@+id/aurora_list_left_checkbox"
+        android:layout_width="@dimen/aurora_list_cb_width"
+   	 	android:layout_height="wrap_content"
+   	 	android:layout_gravity="top"
+   	 	android:clickable="false"
+   	 	android:focusable="false"	
+   	 	android:alpha="0"
+   	 	android:layout_marginTop="@dimen/aurora_list_cb_margintop"
+   	 	android:layout_alignParentLeft="true"
+   	 	android:visibility="gone"
+        /> 
+       <RelativeLayout
+		android:id="@+id/aurora_listview_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        
+         />
+         </RelativeLayout>
+	  </LinearLayout>    
+	  </FrameLayout>	
+	  
+	 <LinearLayout
+		android:id="@+id/aurora_listview_back"	
+		android:layout_width="72dp"
+    	android:layout_height="match_parent"
+    	android:visibility="invisible"
+    	android:gravity="center"
+    	android:layout_gravity="bottom|right"
+		android:background="#ffff4444"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+    	>
+	<ImageView
+    	    android:id="@+id/aurora_rubbish"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+            android:layout_gravity="center"
+    		/>
+	</LinearLayout>
+</LinearLayout >
+	  <ImageView 
+		android:id="@+id/aurora_listview_divider"
+	    android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/aurora_list_divider_light"
+        android:visibility="gone"
+	    />
+	    <!-- aurora_item_sliding_switch just a mark of item can side rubbish out  -->
+	    <View 
+		android:id="@+id/aurora_item_sliding_switch"
+	    android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:visibility="gone"
+	    />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/aurora_title_contain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="11dp"
+        android:paddingTop="11dp" >
+
+        <Button
+            android:id="@+id/aurora_ignore_button"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/aurora_is_ignored"
+            android:textColor="@color/aurora_fold_button_clicked"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/aurora_fold_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/aurora_fold_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/aurora_fold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/aurora_fold_no_songs"
+            style="@com.aurora:style/AuroraPromptTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/aurora_no_songs"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/aurora_no_ignore_fold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/aurora_ignore_fold_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/aurora_no_ignore_bg" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aurora_ignore_fold_bg"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="@string/aurora_ignore_info"
+                android:textColor="#9e9e9e"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

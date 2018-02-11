@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* apps/common/assets/default/default/skins/StatusBar.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<com.android.systemui.statusbar.phone.NotificationPanelView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_panel"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zzzzz_gn_quick_settings_bg"
+    android:paddingTop="@dimen/notification_panel_padding_top"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:layout_marginLeft="@dimen/notification_panel_margin_left"
+    >
+
+    <View
+        android:id="@+id/handle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzzzz_gn_close_handle_height"
+        android:background="@drawable/zzzzz_gn_status_bar_close"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/zzzzz_gn_status_bar_expanded_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_panel_header_height"
+    		android:layout_alignParentTop="true"
+            />
+    	<com.android.systemui.statusbar.phone.GnPanelPager
+        	android:id="@+id/panel_pager"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_marginBottom="@dimen/zzzzz_gn_close_handle_underlap"
+    		android:layout_alignParentLeft="true"
+    		android:layout_below="@id/header"
+    		android:layout_toLeftOf="@+id/divider"
+        	/>
+    	
+    	<View
+        	android:id="@+id/divider"
+        	android:layout_width="8dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginTop="2dip"
+        	android:layout_marginBottom="4dip"
+        	android:layout_marginLeft="2dip"
+        	android:layout_marginRight="3dip"
+    		android:layout_toLeftOf="@+id/radioGroup"
+    		android:layout_alignTop="@id/panel_pager"
+    		android:layout_alignBottom="@id/panel_pager"
+        	android:background="@drawable/zzzzz_gn_status_bar_horizontal_divider"
+        	/>
+    	
+		<RadioGroup
+		    android:id="@id/radioGroup"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical"
+        	android:layout_marginRight="2dip"
+        	android:layout_marginTop="2dip"
+    		android:layout_alignParentRight="true"
+    		android:layout_alignTop="@id/panel_pager"
+    		android:layout_alignBottom="@id/panel_pager"
+        	>
+        	<com.android.systemui.statusbar.util.GnRotateRadioButton
+        	    android:id="@+id/rb_switch"
+        		android:layout_width="48dip"
+        		android:layout_height="match_parent"
+        		android:layout_weight="1"
+            	android:text="@string/zzzzz_gn_radio_switch"
+        		style="aurora:style/TextAppearance.Aurora.MediumSecond"
+        		android:textColor="@color/zzzzz_gn_tab_text_color"
+        		android:button="@null"
+            	android:background="@drawable/zzzzz_gn_radio_button_up_bg"
+       			android:gravity="center"
+            	/>
+        	<com.android.systemui.statusbar.util.GnRotateRadioButton
+				android:id="@+id/rb_notification"
+        		android:layout_width="48dip"
+        		android:layout_height="match_parent"
+        		android:layout_weight="1"
+				android:text="@string/zzzzz_gn_radio_notification"
+        		style="aurora:style/TextAppearance.Aurora.MediumSecond"
+        		android:textColor="@color/zzzzz_gn_tab_text_color"
+        		android:button="@null"
+            	android:background="@drawable/zzzzz_gn_radio_button_down_bg"
+       			android:gravity="center"
+            	android:checked="true"
+            	/>
+		</RadioGroup>
+    </RelativeLayout>
+</com.android.systemui.statusbar.phone.NotificationPanelView><!-- end of sliding panel -->

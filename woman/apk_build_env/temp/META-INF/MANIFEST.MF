@@ -1,0 +1,105 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: res/drawable-xxhdpi/phone.png
+SHA1-Digest: Y5ThRSn8tJ0pa00vXP6ceH2GrAA=
+
+Name: res/drawable-xxhdpi/mms.png
+SHA1-Digest: sJoaVewo5Dcmq4eJqHWiquT2yT4=
+
+Name: res/drawable-xxhdpi/system_update.png
+SHA1-Digest: Fo141xZoMYBFCQECW3fQlxsLSVg=
+
+Name: res/drawable-xxhdpi/shadow_app.png
+SHA1-Digest: x0JiYzol8fELg1lyDNEB9F0jMzo=
+
+Name: resources.arsc
+SHA1-Digest: 0RXVTWAgAGbytF6PSS/2+g652dE=
+
+Name: res/drawable-xxhdpi/chrome_browser.png
+SHA1-Digest: WC01FcmaREJLCXypb9+GnRb0QaQ=
+
+Name: res/drawable-xxhdpi/camera.png
+SHA1-Digest: 68/64MfEu5Oy1TopQTdjas9P+MY=
+
+Name: res/drawable-xxhdpi/yuyinsousuo.png
+SHA1-Digest: mufYT29vNe0lIlvLmGIv6JeiVLw=
+
+Name: res/drawable-xxhdpi/weather.png
+SHA1-Digest: pG+NA19hUzaoxS+aideQoA6dSXg=
+
+Name: res/drawable-xxhdpi/drawable_base.png
+SHA1-Digest: FOdlXKbN/SyXU3X/b9bQ8wMrBvw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: H218F+BKkgmA2MQbNDpOvnePTJI=
+
+Name: res/drawable-xxhdpi/s_note.png
+SHA1-Digest: 7wLg9YKcfzzIn/AB63GzYxuIfKY=
+
+Name: res/drawable-xxhdpi/video.png
+SHA1-Digest: +2SQE9rFmN4e1uPMiJTTSuYGX8Y=
+
+Name: res/drawable-xxhdpi/filemanager.png
+SHA1-Digest: J4gj7V5OzG+w3NLv3x0x3aatZRE=
+
+Name: res/drawable-xxhdpi/gallery3d.png
+SHA1-Digest: 3VYB7Oe1aKogd99b6iVAxrAxK+Y=
+
+Name: res/drawable-xxhdpi/shadow.png
+SHA1-Digest: U7WRPlA8jB15pCoZLoqzqCcqyto=
+
+Name: res/drawable-xxhdpi/cloud_service.png
+SHA1-Digest: Kbre7j6Lp1gIOXvKe6++LU9GItk=
+
+Name: res/drawable-xxhdpi/calendar.png
+SHA1-Digest: 8vTSme2PDYDS7O7dXHyHrrk36Dw=
+
+Name: res/drawable-xxhdpi/fangdarao.png
+SHA1-Digest: bz3oDZUubucbicj2d2RXfEwLjGk=
+
+Name: res/drawable-xxhdpi/contacts.png
+SHA1-Digest: WpTECt8Foqqux0zEB7TAsaBebTE=
+
+Name: res/drawable-xxhdpi/email.png
+SHA1-Digest: 24oeVcfOo06tsldxqoVUAxzO6yg=
+
+Name: res/drawable-xxhdpi/recorder.png
+SHA1-Digest: JNlV8mOIkO0+CDBTB/y/Y/UhgP8=
+
+Name: classes.dex
+SHA1-Digest: dGb6JoG5YadowrzkPCWVvvmMVuY=
+
+Name: res/drawable-xxhdpi/music.png
+SHA1-Digest: 07+egH6+GuIr+FOR+1kSt7ipuwQ=
+
+Name: res/drawable-xxhdpi/calculator2.png
+SHA1-Digest: M4SWjqLn6Eg19axx0yZ5b6s9sJA=
+
+Name: res/drawable-xxhdpi/yinsi.png
+SHA1-Digest: qMv9Kxzv+D2pzHmDpe+auycKGBU=
+
+Name: res/drawable-xxhdpi/settings.png
+SHA1-Digest: NVvsUUTNAYbhS7EsxW8EfQqnnZE=
+
+Name: res/drawable-xxhdpi/downlist.png
+SHA1-Digest: 1agFT1FwyTsWNhQR3Loo9X1+5+w=
+
+Name: res/drawable-xxhdpi/network_flow.png
+SHA1-Digest: TprObv66Qz7ogjgW/Ue3j7Gd564=
+
+Name: res/drawable-xxhdpi/radio.png
+SHA1-Digest: XeC15t5MguuzaGhMmMtNjGQLHbU=
+
+Name: res/drawable-xxhdpi/time_lockscreen.png
+SHA1-Digest: doMS6ODl6ntysHZ1CFkVlcXemkM=
+
+Name: res/drawable-xxhdpi/aurora_safe.png
+SHA1-Digest: GmolEmVCtPADmCMWw/3aEdIMu28=
+
+Name: res/drawable-xxhdpi/deskclock.png
+SHA1-Digest: 5LiD/9dB3tt6x1MV+4x6h/9nP8g=
+
+Name: res/drawable-xxhdpi/aurora_appstore.png
+SHA1-Digest: iglunEHPgBZ+b1SnLPiUioHvUbA=
+

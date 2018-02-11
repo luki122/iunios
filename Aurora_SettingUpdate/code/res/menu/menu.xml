@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 
+    <item android:id="@+id/upgrade_from_local"
+          android:showAsAction="never"
+          android:title="@string/select_file"/>
+
+    <item android:id="@+id/version_improving_information"
+          android:showAsAction="never"
+          android:title="@string/current_version_desc"/>
+
+    <item android:id="@+id/menu_setting"
+          android:icon="@drawable/menu_item_setting"
+          android:showAsAction="always"
+          android:title="@string/menu_setting"/>
+    -->
+
+    <item android:id="@+id/upgrade_from_local"
+          android:title="@string/select_file"/>
+
+    <item android:id="@+id/version_improving_information"
+          android:title="@string/current_version_desc"/>
+
+    <item android:id="@+id/menu_setting"
+          android:title="@string/menu_setting"/>
+</menu>

@@ -1,0 +1,146 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- layer1: star background -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:paddingEnd="17dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingStart="17dp" >
+
+        <ImageView
+            android:id="@+id/iv_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#3c506e"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/privacy_frame" />
+    </RelativeLayout>
+
+    <!-- layer2: all the animations -->
+
+    <FrameLayout
+        android:id="@+id/fl_animations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <!-- layer3: view pager to controlling the animations -->
+
+    <com.privacymanage.view.UserGuidePager
+        android:id="@+id/vp_user_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- layer4: button and page indicator -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:paddingEnd="17dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingStart="17dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_window"
+            android:contentDescription="@string/null_description" />
+
+        <com.privacymanage.activity.PageIndicator
+            android:id="@+id/pi_for_user_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/null_description"
+                android:paddingLeft="7.5dp"
+                android:paddingRight="7.5dp"
+                android:src="@drawable/page_indicator_item_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/null_description"
+                android:paddingLeft="7.5dp"
+                android:paddingRight="7.5dp"
+                android:src="@drawable/page_indicator_item_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/null_description"
+                android:paddingLeft="7.5dp"
+                android:paddingRight="7.5dp"
+                android:src="@drawable/page_indicator_item_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/null_description"
+                android:paddingLeft="7.5dp"
+                android:paddingRight="7.5dp"
+                android:src="@drawable/page_indicator_item_selector" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/null_description"
+                android:paddingLeft="7.5dp"
+                android:paddingRight="7.5dp"
+                android:src="@drawable/page_indicator_item_selector" />
+        </com.privacymanage.activity.PageIndicator>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pi_for_user_guide" >
+
+            <Button
+                android:id="@+id/btn_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/preferences_item_height"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/next_step"
+                android:textColor="@drawable/btn_text_title_selector_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_to_dialing_pad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/preferences_item_height"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/input_password_in_dialing_pad"
+                android:textColor="@drawable/btn_text_title_selector_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_i_see"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/preferences_item_height"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/i_see"
+                android:textColor="@drawable/btn_text_title_selector_color"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

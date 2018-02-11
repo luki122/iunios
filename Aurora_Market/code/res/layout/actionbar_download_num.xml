@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/download_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aurora_actionbar_right_selector"
+    android:focusable="true"
+    >
+    <ImageView android:id="@+id/to_download_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/page_download_selector"
+        android:layout_marginRight="@dimen/search_page_margin_12"
+        android:layout_marginLeft="@dimen/search_page_margin_12"
+        android:focusable="true"
+        />
+    
+    <TextView  android:id="@+id/download_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/search_page_margin_10"
+        android:layout_marginRight="@dimen/search_page_margin_5"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/message_bg"
+        android:visibility="gone"
+        android:textSize="10.0dip"
+        />
+    
+</FrameLayout>

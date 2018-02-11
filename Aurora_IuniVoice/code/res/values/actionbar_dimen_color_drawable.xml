@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_bar_paddingleft_back">4dp</dimen>
+    <dimen name="action_bar_paddingleft">16dp</dimen>
+    <dimen name="action_bar_paddingright">16dp</dimen>
+    <dimen name="action_bar_margin_in_item">16dp</dimen>
+    <dimen name="action_bar_margin_title">12dp</dimen>
+    <dimen name="action_bar_padding_top_bottom">6dp</dimen>
+    <dimen name="action_bar_text_size">18sp</dimen>
+    <color name="action_bar_text_color">#000000</color>
+    <color name="action_bar_background_color">#272928</color>
+    <drawable name="action_bar_transparent">#00000000</drawable>
+    <drawable name="drawable_white">#ffffff</drawable>
+    <dimen name="menu_text_size">12sp</dimen>
+    <dimen name="menu_item_height">44dp</dimen>
+    <dimen name="aurora_action_bar_height">48dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <color name="action_bar_divider_color">#e8e8e8</color>
+</resources>

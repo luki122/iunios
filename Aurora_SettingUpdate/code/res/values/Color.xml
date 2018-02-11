@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#2A4664</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bottom_text_color">#666666</color>
+    <color name="new_version_text_color">#f64c00</color>
+    <color name="download_progress_color">#ffd446</color>
+    <color name="progress_text_color">#222222</color>
+    <color name="paint_color">#ffffcc00</color>
+</resources>

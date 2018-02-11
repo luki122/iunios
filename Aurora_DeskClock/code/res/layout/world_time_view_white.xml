@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent" >
+    
+    <include layout="@layout/gn_analog_appwidget" android:id="@+id/gn_analog_appwidget"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+    
+    <TextView
+        android:id="@+id/nativetimetext" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/sometransparent"
+        android:text="@string/nativitime"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30.5dp" >
+        
+        <LinearLayout 
+            android:id="@+id/worldtime_list_empty" 
+            android:layout_width="fill_parent" 
+            android:layout_height="match_parent" 
+            android:orientation="vertical" 
+            android:gravity="center_horizontal" 
+            android:visibility="visible"
+            android:layout_marginTop="77dip" >
+		
+        	<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/no_city"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/sometransparent2"
+                android:textSize="16sp" />
+		</LinearLayout>
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/lv_worldtime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:divider="@color/transparent2"
+            android:dividerHeight="0.3dp"
+            android:layout_marginTop="@dimen/worldtime_listview_layout_marginTop"
+            android:layout_alignParentTop="true"
+            
+         />
+         <TextView 
+        android:id="@+id/first_divider"
+        android:layout_height="0.3dp"
+         android:layout_marginTop="@dimen/worldtime_listview_layout_marginTop"
+        android:layout_width="match_parent"
+        android:background="@color/transparent2"               
+        android:layout_alignParentTop="true"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

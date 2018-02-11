@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * File Description: Define all string resources add by Gionee engineer
+ * Author: huyuke
+ * Create Date: 2011/09/07
+ *
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 start-->
+    <string name="zzzzz_usb_storage_notification_message">Selectare memorie sau activare/dezactivare mod depanare.</string>
+    <string name="zzzzz_turn_on_usb_storage">Memorie usb</string>
+    <string name="zzzzz_usb_storage_content">pentru a vizualiza memoria internă în PC</string>
+    <string name="zzzzz_open_debug_mode">Mod depanare</string>
+    <string name="zzzzz_debug_mode_message">Mod depanare când este conectat la PC</string>
+    <string name="zzzzz_usb_storage_title">USB conectat</string>
+    <string name="zzzzz_no_sdcard_title">Nici-un SD Card</string>
+    <string name="zzzzz_no_sdcard_message">Nu există nici-un SD card, montați un SD card înainte de operație!</string>
+    <string name="zzzzz_adb_warning_title">Mod depanare activat temporar</string>
+    <string name="zzzzz_adb_warning_message">Mod depanare activat temporar . Prin această funcție se permite unui PC să administreze copierea fișierelor de sistem</string>
+    <string name="zzzzz_mount_sdcard_dialog_title">Se activează ... Nu deconectați cablu USB acum , poate defecta memoria !Înainte de a dezactiva legătura , asigurați-vă că aveți montată (\u201cejected\u201d) memoria \u2018s din telefonul dvs.!</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_text">Dacă activați legătura , unele aplicații pe care le folosiți vor fi oprite sau pot fi indisponibile cat timp există legătura activă.</string>
+    <string name="zzzzz_cancel">Anulare</string>
+    <string name="zzzzz_dlg_ok">OK</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_title">Activare legătură</string>
+    <string name="zzzzz_usb_storage_error_message" product="nosdcard">Aceasta este o problemă cauzată de legătura cu PC-ul.</string>
+    <string name="zzzzz_usb_storage_error_message" product="default">Aceasta este o problemă cauzată de utilizarea SD card-ului ca memorie .</string>
+    <string name="zzzzz_dlg_error_title">Operație eșuată</string>
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 end-->
+</resources>

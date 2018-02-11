@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/sound_settings"
+        aurora:aurorakey="sound_settings"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<!--  
+    <com.android.settings.RingerVolumePreference
+            aurora:aurorakey="ring_volume"
+            aurora:auroratitle="@string/all_volume_title"
+            aurora:auroradialogTitle="@string/all_volume_title"
+            aurora:aurorapersistent="false"
+            android:streamType="ring" />
+-->
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="musicfx"
+            aurora:auroratitle="@string/musicfx_title">
+        <intent android:targetPackage="com.android.musicfx"
+                android:targetClass="com.android.musicfx.ControlPanelPicker" />
+    </aurora.preference.AuroraPreference>
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="category_calls_and_notification"
+            aurora:auroratitle="@string/sound_category_call_ringtone_vibrate_title"/>
+
+    <!-- Do not nest these, or removals in code will break -->
+    <com.android.settings.DefaultRingtonePreference
+            aurora:aurorakey="ringtone"
+            aurora:auroratitle="@string/ringtone_title"
+            aurora:auroradialogTitle="@string/ringtone_title"
+            aurora:aurorapersistent="false"
+            android:ringtoneType="ringtone" />
+
+    <aurora.preference.AuroraCheckBoxPreference
+         aurora:aurorakey="vibrate_when_ringing"
+         aurora:auroratitle="@string/vibrate_when_ringing_title"
+         aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:auroratitle="@string/sound_category_system_title"/>
+
+    <!-- Do not nest these, or removals in code will break -->
+
+    <com.android.settings.DefaultRingtonePreference
+            aurora:aurorakey="notification_sound"
+            aurora:auroratitle="@string/notification_sound_title"
+            aurora:auroradialogTitle="@string/notification_sound_dialog_title"
+            aurora:aurorapersistent="false"
+            android:ringtoneType="notification" />
+
+    <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="dtmf_tone"
+            aurora:auroratitle="@string/dtmf_tone_enable_title"
+            aurora:auroradefaultValue="true" />
+
+    <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="sound_effects"
+            aurora:auroratitle="@string/sound_effects_enable_title"
+            aurora:auroradefaultValue="true" />
+
+    <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="lock_sounds"
+            aurora:auroratitle="@string/lock_sounds_enable_title"
+            aurora:auroradefaultValue="true" />
+
+    <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="haptic_feedback"
+            aurora:auroratitle="@string/haptic_feedback_enable_title"
+            aurora:auroradefaultValue="true" />
+
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="emergency_tone"
+            aurora:auroratitle="@string/emergency_tone_title"
+            aurora:auroraentries="@array/emergency_tone_entries"
+            aurora:auroraentryValues="@array/emergency_tone_values" />
+
+    <!-- Dock -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="dock_category"
+        aurora:auroratitle="@string/dock_settings"/>
+
+    <!-- Do not nest these, or removals in code will break -->
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="dock_audio"
+        aurora:auroratitle="@string/dock_audio_settings_title">
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:auroratitle="@string/bluetooth_dock_settings_a2dp"
+            aurora:aurorakey="dock_audio_media_enabled"
+            aurora:auroraenabled="true"
+            />
+    </aurora.preference.AuroraPreferenceScreen>
+
+    <aurora.preference.AuroraCheckBoxPreference
+        aurora:aurorakey="dock_sounds"
+        aurora:auroratitle="@string/dock_sounds_enable_title"
+        aurora:auroradefaultValue="false" />
+
+</aurora.preference.AuroraPreferenceScreen>

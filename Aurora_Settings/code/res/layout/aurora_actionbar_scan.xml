@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-24 created for aurora's new feature 24dp
+android:layout_marginRight="12dp"
+
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <Button android:id="@+id/scan_btn"
+        android:padding="12dp"
+        android:layout_width="19dp"
+    	android:layout_height="19dp"
+    	android:layout_gravity="right|center_vertical"
+    	android:layout_marginRight="12dp"    	
+    	android:background="@drawable/aurora_bt_scan_bg"
+    	 />
+    
+    <ProgressBar android:id="@+id/scan_progressbar"
+        android:padding="5dp"
+        android:layout_width="29dp"
+    	android:layout_height="29dp"
+    	android:layout_gravity="right|center_vertical"
+    	android:layout_marginRight="7dp"
+    	android:indeterminateDrawable="@drawable/aurora_scan_bar"
+    	style="@style/auroraProgressStyle"
+    	android:visibility="gone" />
+    
+    
+</FrameLayout>

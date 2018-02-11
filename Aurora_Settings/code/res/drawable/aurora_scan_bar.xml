@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-24 created for aurora's new feature -->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:drawable="@drawable/aurora_ic_scan_nor"  
+    android:pivotX="50%"  
+    android:pivotY="50%"  
+    android:fromDegrees="0"  
+    android:toDegrees="360" /> 

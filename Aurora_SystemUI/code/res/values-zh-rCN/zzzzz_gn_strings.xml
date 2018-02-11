@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * File Description: Define all string resources add by Gionee engineer
+ * Author: huyuke
+ * Create Date: 2011/09/07
+ *
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 start-->
+    <string name="zzzzz_usb_storage_notification_message">"选择文件存储或利用电脑管理工具对手机进行管理。"</string>
+    <string name="zzzzz_turn_on_usb_storage">USB存储</string>
+    <string name="zzzzz_usb_storage_content">在电脑上编辑手机存储内容</string>
+    <string name="zzzzz_open_debug_mode">临时开启USB调试</string>
+    <string name="zzzzz_debug_mode_message">开启后可启用电脑同步管理工具</string>
+    <string name="zzzzz_no_sdcard_title">没有SD卡</string>
+    <string name="zzzzz_no_sdcard_message">没有存储卡，或存储卡未准备好!</string>
+    <string name="zzzzz_adb_warning_title">临时开启USB调试</string>
+    <string name="zzzzz_adb_warning_message">将临时启用USB调试,允许PC端管理软件在您的计算机和设备之间复制数据，安装程序。</string>
+    
+    <!-- gionee guozj 20130130 modified for CR00769470 start -->
+    <string name="zzzzz_mount_sdcard_dialog_title">请不要在此时拔出数据线，可能导致存储卡异常！在关闭 USB 存储设备前，请确保您已从计算机中卸载（“弹出”）Android 手机的 USB 存储设备!</string>
+    <!-- gionee guozj 20130130 modified for CR00769470 end -->
+    
+    <string name="zzzzz_usb_storage_title">"USB 已连接"</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_text">"如果您打开了 USB 存储设备，则您当前使用的某些应用程序会停止，而且在您关闭 USB 存储设备前可能都无法使用。"</string>
+    <string name="zzzzz_cancel">"取消"</string>
+    <string name="zzzzz_dlg_ok">"确定"</string>
+    <string name="zzzzz_dlg_confirm_kill_storage_users_title">"打开 USB 存储设备"</string>
+    <string name="zzzzz_usb_storage_error_message" product="nosdcard">"使用 USB 存储设备作为 USB 大容量存储设备时出现问题。"</string>
+    <string name="zzzzz_usb_storage_error_message" product="default">"使用 SD 卡作为 USB 大容量存储设备时出现问题。"</string>
+    <string name="zzzzz_dlg_error_title" >"USB 操作失败"</string>
+    <!-- Gionee wangyanyi 2011-12-05 add for CR00452545 end-->
+    
+    <!-- Gionee fengjianyi 2012-12-27 add for CR00754831 start -->
+    <string name="zzzzz_gn_battery_low_why">"电量状况"</string>
+    <!-- Gionee fengjianyi 2012-12-27 add for CR00754831 end -->
+    
+    <!-- Gionee fengjianyi 2012-12-28 add for CR00751916 start -->
+    <string name="zzzzz_gn_data_usage_disabled_dialog_enable">重新启用</string>
+    <!-- Gionee fengjianyi 2012-12-28 add for CR00751916 end -->
+    <!-- Gionee zengxuanhui 20130328 add for CR00788327 begin -->
+    <string name="gn_ssg_dlg_title">无法使用体感拨号</string>
+    <string name="gn_ssg_dlg_message">开启“总是询问”时无法使用体感拨号功能，如需使用请默认一张卡</string>
+    <string name="gn_ssg_dlg_check">下次不再提示</string>
+    <!-- Gionee zengxuanhui 20130328 add for CR00788327 end -->
+    
+    <!-- Gionee fengjianyi 2013-04-24 add for CR00800567 start -->
+    <string name="zzzzz_gn_more_title">更多</string>
+    <string name="zzzzz_gn_title_sort_tool_icon">自定义开关</string>
+    <string name="zzzzz_gn_showed_in_notification_bar">在通知栏显示</string>
+    <string name="zzzzz_gn_not_showed_in_notification_bar">不在通知栏显示</string>
+    <string name="zzzzz_gn_abbrev_wday_month_day_no_year">E\nM 月 d 日</string>
+    <string name="zzzzz_gn_radio_notification">通知</string>
+    <string name="zzzzz_gn_radio_switch">开关</string>
+    <!-- Gionee fengjianyi 2013-04-24 add for CR00800567 end -->
+
+     <!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog begin -->
+    <string name="zzzzz_gn_warn_title">无法充电</string>
+    <string name="zzzzz_gn_charging_over_voltage">充电电压过高，无法充电。"\n"请选择合适的电源。</string>
+    <string name="zzzzz_gn_charging_over_heat">充电温度过高，无法充电。"\n"请冷却后再进行充电。</string>
+    <string name="zzzzz_gn_warn_title_unplug">系统提示</string>
+    <string name="zzzzz_gn_charging_over_heat_unplug">电池温度过高，请暂缓使用。</string>
+    <string name="zzzzz_gn_charging_cold">温度过低，建议不要在此时充电。"\n"否则会造成电池发胀。</string>
+    <string name="zzzzz_gn_charging_cold_unplug">电池温度过低，请暂缓使用。</string>
+     <!-- Aurora <tongyh> <2014-03-23> add  OverVoltageDialog and OverHeatDialog end -->
+</resources>

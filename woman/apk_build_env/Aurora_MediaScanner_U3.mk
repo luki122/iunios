@@ -1,0 +1,1 @@
+../Aurora_MediaScanner/Aurora_MediaScanner_U3.mk

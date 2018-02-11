@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-13 created for aurora's new feature -->
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-10-14 modified for aurora's new feature start -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/aurora_scroll"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="#ffffff"
+   android:paddingRight="4dip"
+   android:fadingEdgeLength="100dip"
+   android:scrollbarSize="2.6dip"
+   android:scrollbarThumbVertical="@drawable/aurora_detail_scrollbar">
+   <!-- Aurora xuyong 2013-11-11 modified for aurora's new feature start -->
+   <!-- Aurora xuyong 2013-11-16 modified for aurora's new feature start -->
+   <!-- Aurora xuyong 2014-02-20 modified for aurora's new feature start -->
+   <!-- Aurora xuyong 2014-04-04 modified for aurora's new feature start -->
+    <TextView
+        android:id="@+id/aurora_detail_mes"
+        android:textColorHighlight="#00ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="none"
+        android:linksClickable="true"
+        android:paddingTop="17dip"
+        android:paddingBottom="32dip"
+        android:paddingLeft="28.6dip"
+        android:paddingRight="18dip"
+        android:textAppearance="@com.aurora:style/AuroraTextAppearance"
+        android:lineSpacingExtra="3.2dip"
+        />
+    <!-- Aurora xuyong 2014-04-04 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-02-20 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-11-16 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-11-11 modified for aurora's new feature end -->
+</ScrollView>
+<!-- Aurora xuyong 2013-10-14 modified for aurora's new feature end -->
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->

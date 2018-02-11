@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cloud_actionbar"
+    android:layout_width="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_height="@com.aurora:dimen/aurora_action_bar_height" >
+
+    <TextView
+        android:id="@+id/local_albums"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+       	android:paddingTop="5dp"
+        android:textColor="@color/aurora_cloud_actionbar_not_available"
+        android:text="@string/aurora_local_album"
+        android:textSize="16sp" >
+    </TextView>
+
+   <!--   android:layout_alignBottom="@+id/cloud_albums" -->
+    <TextView
+        android:id="@+id/cloud_albums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/local_albums"
+        android:gravity="center"
+        android:text="@string/aurora_cloud_album"
+        android:textColor="@color/aurora_cloud_actionbar_color"
+        android:textSize="20sp" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/cloud_albums"
+        android:clickable="false"
+        android:src="@drawable/baidu_icon" />
+    
+     <ImageView
+        android:id="@+id/tv_upload_dowload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+          android:src="@drawable/bt_upload_download" />
+  
+</RelativeLayout>

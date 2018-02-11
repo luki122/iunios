@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    /** gionee gaoj 2012-4-9 added for GIUI4.0 start
+    */
+-->
+
+
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+<com.android.mms.ui.MessageListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.mms"
+    android:id="@+id/msg_list_item"
+    android:background="@color/aurora_msg_item_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+
+
+    <!-- AURORA-START::move this check box from the right side to the left side::add::xuyong::2013-09-03 -->
+
+    <TextView
+        android:id="@+id/gn_msg_time_text"
+        android:layout_width="match_parent"
+        android:layout_height="29.6dip"
+        android:gravity="center"
+        android:textColor="#b8b8b8"
+        android:visibility="gone"
+        android:textSize="12sp" />
+
+    <!-- <TextView
+        android:id="@+id/gn_msg_send_time"
+        android:layout_width="match_parent"
+        android:layout_height="32dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#b8b8b8"
+        android:textSize="12sp"
+        android:visibility="gone" /> -->
+    <!-- Aurora xuyong 2014-01-10 modified for bug #1666 start -->
+    <LinearLayout
+        android:id="@+id/aurora_external_views"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.5dip"
+        android:layout_marginBottom="20dip"
+        android:paddingLeft="9dip"
+        android:paddingRight="9dip"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/aurora_under_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6.5dip"
+        android:paddingBottom="6.5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/aurora_batch_time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:paddingBottom="3dip"
+            android:gravity="center"
+            android:textColor="#b8b8b8"
+            android:textSize="8sp"
+            android:visibility="gone" />
+        <aurora.widget.AuroraCheckBox
+            android:id="@+id/gn_select_check_box"
+            android:layout_toRightOf="@id/aurora_batch_time_tag"
+            android:layout_marginRight="-6dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dip"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:visibility="gone" />
+        <!-- AURORA-END::move this check box from the right side to the left side::add::xuyong::2013-09-03 -->
+
+        <!-- <LinearLayout
+            android:id="@+id/gn_mms_parent_before"
+            android:layout_toRightOf="@id/gn_select_check_box"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dip"
+            android:orientation="vertical" > -->
+     <!-- Aurora xuyong 2014-01-10 modified for bug #1666 end -->
+
+            <!-- Gionee <gaoj> <2013-4-11> added for CR00796538 start -->
+
+
+            <!-- Gionee <gaoj> <2013-4-11> added for CR00796538 end -->
+
+            <RelativeLayout
+                android:id="@+id/gn_msg_item_content"
+                android:layout_toRightOf="@id/gn_select_check_box"
+                android:layout_marginLeft="@dimen/aurora_msg_left_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left" >
+
+<!--                 <ImageView
+                    android:id="@+id/gn_stop_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:paddingLeft="@dimen/gn_checkbox_right"
+                    android:paddingRight="@dimen/gn_checkbox_right"
+                    android:visibility="gone" /> -->
+
+<!--                 <view
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/gn_avatar"
+                    style="?android:attr/quickContactBadgeStyleWindowMedium"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="1dip"
+                    android:layout_toRightOf="@id/gn_stop_voice"
+                    class="com.android.mms.ui.QuickContactDivot"
+                    position="right_upper"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" /> -->
+
+                <LinearLayout
+                    android:id="@+id/mms_layout_view_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:orientation="vertical" >
+
+                    <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+                    <!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature start -->
+
+                    <FrameLayout
+                        android:id="@+id/left_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical" >
+
+                        <!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature end -->
+
+                        <ViewStub
+                            android:id="@+id/gn_mms_downloading_view_stub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dip"
+                            android:layout="@layout/gn_mms_downloading_view"
+                            android:visibility="gone" />
+                        <!-- gionee zhouyj 2012-06-01 add for CR00611491 start -->
+
+                        <ViewStub
+                            android:id="@+id/gn_mms_file_attachment_view_stub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:layout_marginTop="3dip"
+                            android:layout="@layout/file_attachment_view"
+                            android:visibility="gone" />
+                        <!-- gionee zhouyj 2012-06-01 add for CR00611491 end -->
+
+                        <FrameLayout
+                            android:id="@+id/gn_mms_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+                            <!-- Aurora xuyong 2014-05-26 modified for multisim feature start -->
+                            <FrameLayout 
+                                android:layout_gravity="top|left|center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <com.aurora.mms.ui.AuroraRoundImageView
+                                    android:id="@+id/gn_image_view"
+                                    android:layout_width="92dip"
+                                    android:layout_height="112dip"
+                                    android:layout_margin="6dip"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="gone"
+                                    app:border_width="0dip"
+                                    app:corner_radius="13dip" />
+                                <ImageView
+                                    android:id="@+id/aurora_sim_indi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="14dip"
+                                    android:visibility="gone"
+                                    android:layout_gravity="right|top"
+                                    />
+                            </FrameLayout>
+                            <!-- Aurora xuyong 2014-05-26 modified for multisim feature end -->
+                            <com.aurora.mms.ui.AuroraRoundImageView
+                                android:id="@+id/gn_image_view_batch"
+                                android:layout_width="92dip"
+                                android:layout_height="112dip"
+                                android:layout_gravity="top|left|center"
+                                android:layout_marginLeft="14dip"
+                                android:layout_marginRight="14dip"
+                                android:layout_marginTop="14dip"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                app:border_width="0dip"
+                                app:corner_radius="13dip" />
+
+                            <ImageView
+                                android:id="@+id/gn_image_clip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="0dip"
+                                android:src="@drawable/aurora_va_play_selector"
+                                android:visibility="gone" />
+                <!-- Aurora xuyong 2014-01-03 added for aurora's new featurea start -->
+                            <TextView
+				                android:id="@+id/aurora_bg_down"
+				                android:layout_width="92dip"
+				                android:layout_height="20dip"
+				                android:visibility="gone"
+				                android:gravity="right"
+				                android:textColor="#ffffff"
+                                android:textSize="13sp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="12dp"
+                        		android:layout_gravity="bottom"
+                                android:layout_marginBottom="6dip"
+				                android:layout_marginLeft="6dip"
+				                android:background="@drawable/aurora_attach_bg_down" />
+                <!-- Aurora xuyong 2014-01-03 added for aurora's new featurea end -->
+                            <!-- Aurora xuyong 2013-10-24 added for aurora's new feature start -->
+
+                            <ImageView
+                                android:id="@+id/gn_image_clip_batch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dip"
+                                android:src="@drawable/aurora_va_play_selector"
+                                android:visibility="gone" />
+                <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea start -->
+                            <TextView
+                    			android:id="@+id/aurora_bg_down_batch"
+				                android:layout_width="92dip"
+				                android:layout_height="20dip"
+				                android:visibility="gone"
+				                android:gravity="right"
+				                android:textColor="#ffffff"
+                                android:textSize="13sp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="3dp"
+				                android:layout_gravity="bottom"
+				                android:layout_marginLeft="14dip"
+				                android:background="@drawable/aurora_attach_bg_down" />
+                <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea end -->
+                            <!-- Aurora xuyong 2013-10-24 added for aurora's new feature end -->
+                        </FrameLayout>
+                    </FrameLayout>
+                    <!-- Aurora xuyong 2013-09-24 modified for aurora;s new feature start -->
+                    <!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature start -->
+                    <!-- Aurora liugj 2013-10-31 modified for fix bug-331 start -->
+                    <!-- Aurora xuyong 2014-07-14 modified for aurora's new feature start -->
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <!-- Aurora xuyong 2014-11-07 modified for bug #9526 start -->
+                        <com.aurora.mms.util.AuroraMessageBodyView
+                            android:id="@+id/gn_text_view"
+                            android:textColorHighlight="#00ffffff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minHeight="34dip"
+                            android:maxLines="18"
+                            android:maxWidth="400dip"
+                            android:paddingBottom="7.8dip"
+                            android:paddingLeft="14dip"
+                            android:paddingRight="14dip"
+                            android:paddingTop="11dip"
+                            android:textColor="@color/aurora_reci_msg_text_color"
+                            android:textSize="16sp"
+                            android:lineSpacingExtra="3.2dip"
+                            android:visibility="gone" />
+                        <!-- Aurora xuyong 2014-11-07 modified for bug #9526 end -->
+                        <ImageView
+                            android:id="@+id/aurora_sim_flag"
+                            android:visibility="gone"
+                            android:layout_marginTop="14dip"
+                            android:layout_marginLeft="15dip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                    <!-- Aurora xuyong 2014-07-14 modified for aurora's new feature end -->
+                    <!--
+                     <TextView
+                    android:id="@+id/gn_text_view_batch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="3dip"
+                    android:autoLink="all"
+                    android:linksClickable="false"
+                    android:maxWidth="400dip"
+                    android:minHeight="34dip"
+                    android:visibility="gone"
+                    android:paddingTop="8dip"
+                    android:paddingLeft="14dip"
+                    android:paddingRight="14dip"
+                    android:textColor="#333333"
+                    android:textAppearance="@com.aurora:style/AuroraTextAppearance" />
+                    -->
+                    <!-- Aurora liugj 2013-10-31 modified for fix bug-331 end -->
+                    <!-- Aurora xuyong 2013-09-24 modified for aurora;s new feature end -->
+                   <TextView
+                       android:id="@+id/aurora_show_detail"
+                       android:layout_gravity="right"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingBottom="8dip"
+                       android:paddingLeft="14dip"
+                       android:paddingRight="14dip"
+                       android:textAppearance="@com.aurora:style/AuroraTextAppearance"
+                       android:textColor="@color/aurora_check_detail_color"
+                       android:visibility="gone" />
+                    <!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature end -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="3dip"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/message_sim_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/favorite_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dip"
+                            android:paddingLeft="10dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/aurora_mms_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/mms_layout_view_parent"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/aurora_mms_download_selector"
+                    android:visibility="gone" />
+        <!-- Aurora xuyong 2013-11-11 added for aurora's new feature start -->
+                <ProgressBar 
+                    android:id="@+id/aurora_mms_downloading"
+                    android:layout_toRightOf="@id/mms_layout_view_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_centerVertical="true"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:visibility="gone"
+                    />
+        <!-- Aurora xuyong 2013-11-11 added for aurora's new feature end -->
+                <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+            </RelativeLayout>
+        <!-- </LinearLayout> -->
+        <!-- Aurora xuyong 2013-09-13 deleted for aurora's new feature start -->
+        <!--
+          <CheckBox
+        android:id="@+id/gn_select_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="@dimen/gn_checkbox_right"
+        android:focusable="false"
+        android:clickable="false"
+        android:gravity="right"
+        android:visibility="gone" />
+        -->
+        <!-- Aurora xuyong 2013-09-13 deleted for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-01-10 modified for bug #1666 start -->
+    </RelativeLayout>
+    <!-- Aurora xuyong 2014-01-10 modified for bug #1666 end -->
+    <!-- Aurora xuyong 2013-09-13 modified for aurora's new feature end -->
+
+</com.android.mms.ui.MessageListItem>

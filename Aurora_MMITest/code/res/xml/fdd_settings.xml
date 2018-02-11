@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/fdd_settings" >
+    
+     <aurora.preference.AuroraSwitchPreference
+         aurora:aurorakey="fdd_setting_key"
+         aurora:aurorasummary="@string/fdd_settings_summary"
+         aurora:auroratitle="@string/fdd_settings_title" />
+
+</aurora.preference.AuroraPreferenceScreen>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Begin Add by gary.gou -->
+    <style name="LightActionBarStyle" parent="@com.aurora:style/Widget.Aurora.Light.ActionBar.Solid.Inverse"></style>
+
+    <style name="LightActionBarTabView" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/action_bar_item_back</item>
+    </style>
+
+    <style name="Widget.MMITest.TabWidget" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:divider">@drawable/gn_tabbar_divider</item>
+        <item name="android:dividerPadding">0dip</item>
+    </style>
+
+    <style name="SettingsLightTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraactionBarStyle">@style/LightActionBarStyle</item>
+        <item name="android:actionBarTabStyle">@style/LightActionBarTabView</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:tabWidgetStyle">@style/Widget.MMITest.TabWidget</item>
+    </style>
+    <!-- End Add by gary.gou -->
+
+</resources>

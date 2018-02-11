@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     Gionee <zhangxx> <2013-06-20> add for auroraframework.
+ -->
+<resources>
+    <style name="Theme.Aurora.Dark" parent="@android:style/Theme.Holo">
+        <item name="android:windowAnimationStyle">@style/Animation.Aurora.Activity</item> 
+        <item name="android:windowBackground">@drawable/aurora_background_dark</item>
+        <item name="android:textColorPrimary">@color/aurora_primary_text_dark</item>
+        <item name="android:textColorSecondary">@color/aurora_secondary_text_dark</item>
+        <item name="android:textColorTertiary">@color/aurora_tertiary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/aurora_primary_text_light</item>
+        <item name="android:textColorSecondaryInverse">@color/aurora_secondary_text_light</item>
+        <item name="android:textColorTertiaryInverse">@color/aurora_tertiary_text_light</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/aurora_primary_text_disable_only_dark</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/aurora_primary_text_disable_only_light</item>
+        <item name="android:textColorPrimaryNoDisable">@color/aurora_primary_text_nodisable_dark</item>
+        <item name="android:textColorSecondaryNoDisable">@color/aurora_secondary_text_nodisable_dark</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/aurora_primary_text_nodisable_light</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/aurora_secondary_text_nodisable_light</item>
+        <item name="android:textColorHint">@color/aurora_hint_foreground_dark</item>
+        <item name="android:textColorHintInverse">@color/aurora_hint_foreground_light</item>
+        <item name="android:textColorHighlight">@color/aurora_highlighted_text_dark</item>
+        <item name="android:textColorLink">@color/aurora_bright_foreground_yellow</item>
+        <!-- @hide android 2.3 have not these attrs -->
+        <item name="android:textColorHighlightInverse">@color/aurora_highlighted_text_light</item>
+        <item name="android:textColorLinkInverse">@color/aurora_bright_foreground_yellow</item>
+        <item name="android:textColorAlertDialogListItem">@color/aurora_primary_text_dark</item>
+        
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Aurora.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Aurora.Medium</item>
+        <item name="auroratextAppearanceMediumSecond">@style/TextAppearance.Aurora.MediumSecond</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Aurora.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.Aurora.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Aurora.Medium.Inverse</item>
+        <item name="auroratextAppearanceMediumSecondInverse">@style/TextAppearance.Aurora.MediumSecond.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Aurora.Small.Inverse</item>  
+        <!-- EditText styles -->
+        <item name="android:editTextBackground">@drawable/aurora_edit_text</item>
+        <item name="android:editTextColor">@color/aurora_edit_text</item>
+        <!-- Text selection handle attributes -->
+        <item name="android:textSelectHandleLeft">@drawable/aurora_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/aurora_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/aurora_text_select_handle_middle</item>
+        <item name="android:textCursorDrawable">@drawable/aurora_text_cursor_light</item>    
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.Aurora.Dark.Button</item>
+        <item name="android:buttonStyleSmall">@style/Widget.Aurora.Dark.Button.Small</item>
+        <item name="android:selectableItemBackground">@drawable/aurora_item_background_dark</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Aurora.Dark.Button.Borderless</item>        
+        <!-- radio button style -->
+        <item name="android:listChoiceIndicatorSingle">@drawable/aurora_btn_radio_dark</item>
+        <!-- check box style -->
+        <item name="android:listChoiceIndicatorMultiple">@drawable/aurora_btn_check_dark</item>
+        <!-- progress bar style -->
+        <item name="android:progressBarStyle">@style/Widget.Aurora.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/Widget.Aurora.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/Widget.Aurora.Dark.ProgressBar.Small</item>
+        <item name="android:progressBarStyleSmallTitle">@style/Widget.Aurora.Dark.ProgressBar.Small.Title</item>
+        <item name="android:progressBarStyleLarge">@style/Widget.Aurora.Dark.ProgressBar.Large</item>
+        <item name="android:progressBarStyleInverse">@style/Widget.Aurora.ProgressBar.Inverse</item>
+        <item name="android:progressBarStyleSmallInverse">@style/Widget.Aurora.Dark.ProgressBar.Small.Inverse</item>
+        <item name="android:progressBarStyleLargeInverse">@style/Widget.Aurora.Dark.ProgressBar.Large.Inverse</item>
+        <!-- seek bar style -->
+        <item name="android:seekBarStyle">@style/Widget.Aurora.Light.SeekBar</item>        
+
+        <item name="android:dropDownSpinnerStyle">@style/Widget.Aurora.Dark.Spinner.DropDown</item>
+        <item name="android:spinnerDropDownItemStyle">@style/Widget.Aurora.Dark.DropDownItem.Spinner</item>
+        <!-- tab widget style -->
+        <item name="android:tabWidgetStyle">@style/Widget.Aurora.Dark.TabWidget</item>
+        <!-- frame list background -->
+        <item name="auroraframeListBackground">@drawable/aurora_frame_list_background_dark</item>
+        <item name="auroraframeListTopBackground">@drawable/aurora_frame_list_top_background_dark</item>
+        <item name="auroraframeListMiddleBackground">@drawable/aurora_frame_list_middle_background_dark</item>
+        <item name="auroraframeListBottomBackground">@drawable/aurora_frame_list_bottom_background_dark</item>
+        
+         <item name="auroraCheckableframeListBackground">@drawable/aurora_checkable_frame_list_background_dark</item>
+        <item name="auroraCheckableframeListTopBackground">@drawable/aurora_checkable_frame_list_top_background_dark</item>
+        <item name="auroraCheckableframeListMiddleBackground">@drawable/aurora_checkable_frame_list_middle_background_dark</item>
+        <item name="auroraCheckableframeListBottomBackground">@drawable/aurora_checkable_frame_list_bottom_background_dark</item>
+        
+         <item name="auroraCheckablePreferenceTitleColor">@color/aurora_preference_checkable_text_disable_color</item>
+        <item name="auroraCheckablePreferenceSummaryColor">@color/aurora_preference_checkable_summary_disable_color</item>
+        <!-- Gionee <daizhimin> <2013-07-29> add for CR00833379 begin --> 
+        <item name="auroraoptionMenuListBackground">@drawable/aurora_frame_list_bg_dark</item>
+        <item name="auroraoptionMenuMoreBg">@drawable/aurora_magic_menu_more_dark</item>
+        <item name="auroraoptionMenuBg">@drawable/aurora_cab_background_bottom_dark</item>
+        <!-- Gionee <daizhimin> <2013-07-29> add for CR00833379 end --> 
+        <!-- Preference styles -->
+        <item name="android:preferenceScreenStyle">@style/AuroraPreference.PreferenceScreen</item>
+        <!-- <item name="android:preferenceFragmentStyle">@style/AuroraPreferenceFragment</item> -->
+        <item name="android:preferenceCategoryStyle">@style/AuroraPreference.Category</item>
+        <item name="android:preferenceStyle">@style/AuroraPreference</item>
+        <item name="android:preferenceInformationStyle">@style/AuroraPreference.Information</item>        
+        <item name="android:checkBoxPreferenceStyle">@style/AuroraPreference.CheckBoxPreference</item>
+        <item name="android:switchPreferenceStyle">@style/AuroraPreference.SwitchPreference</item>
+        <item name="android:yesNoPreferenceStyle">@style/AuroraPreference.DialogPreference.YesNoPreference</item>
+        <item name="android:dialogPreferenceStyle">@style/AuroraPreference.DialogPreference</item>
+        <item name="android:editTextPreferenceStyle">@style/AuroraPreference.DialogPreference.EditTextPreference</item>
+        <item name="android:ringtonePreferenceStyle">@style/AuroraPreference.RingtonePreference</item>
+        <item name="android:preferenceLayoutChild">@layout/aurora_preference_child</item>
+        
+        <!-- Action bar style -->
+        <item name="auroraactionBarStyle">@style/Widget.Aurora.Dark.ActionBar.Solid</item>
+        <item name="android:actionBarTabBarStyle">@style/Widget.Aurora.ActionBar.TabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.Aurora.Light.ActionBar.TabText</item>
+        <item name="android:actionModeCloseDrawable">@drawable/aurora_ic_ab_back_light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/Widget.Aurora.ActionButton.CloseMode</item>        
+        <item name="android:actionDropDownStyle">@style/Widget.Aurora.Dark.Spinner.DropDown.ActionBar</item>
+        <item name="android:actionModeBackground">@drawable/aurora_cab_background_top_dark</item>
+        <item name="android:actionModeSplitBackground">@drawable/aurora_cab_background_bottom_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/aurora_actionbar_item_background_light</item>
+        
+        <item name="android:homeAsUpIndicator">@drawable/aurora_ic_ab_back_light</item>
+        <!-- preference category title -->
+        <item name="android:listSeparatorTextViewStyle">@style/Widget.Aurora.TextView.ListSeparator</item>         
+        <!-- menu list item style -->
+        <item name="android:textAppearanceListItemSmall">@style/TextAppearance.Aurora.Medium</item>
+        
+        <item name="android:listDivider">@drawable/aurora_list_divider_dark</item>
+        <!-- list popup style -->
+        <item name="android:listPopupWindowStyle">@style/Widget.Aurora.Dark.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/Widget.Aurora.Dark.ListPopupWindow</item>
+        
+        <item name="android:listChoiceBackgroundIndicator">@drawable/aurora_list_selector_dark</item>
+        
+        <!-- Expandable List View style -->
+        <item name="android:expandableListViewStyle">@style/Widget.Aurora.Dark.ExpandableListView</item>
+        <!-- Dialog attributes -->
+        <item name="auroraalertDialogStyle">@style/AuroraAlertDialogTheme.Dark</item>
+        <item name="android:dialogTheme">@style/Theme.Aurora.Dark.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.Aurora.Dark.Dialog.Alert</item>
+        <!-- Panel attributes -->
+        <item name="android:panelBackground">@drawable/aurora_menu_hardkey_panel_dark</item>
+        <!-- fast scroll attributes -->
+        <item name="android:fastScrollThumbDrawable">@drawable/aurora_fastscroll_thumb</item>
+        <item name="android:fastScrollTrackDrawable">@drawable/aurora_fastscroll_track_light</item>
+        <item name="auroraswitchStyle">@style/AuroraWidgetSwitch</item>
+        <!-- Aurora numberpicker style -->
+        <item name="auroranumberPickerStyle">@style/AuroraWidgetNumberPicker</item>
+        <!-- Aurora datepicker style -->
+        <item name="auroradatePickerStyle">@style/AuroraWidgetDatePicker</item>
+        <!-- Aurora timepicker style -->
+        <item name="auroratimePickerStyle">@style/AuroraWidgetTimePicker</item>
+        <!-- Aurora contextMenu -->
+        <item name="auroralistPreferredItemPaddingStart">16dip</item>
+        <item name="auroralistPreferredItemPaddingEnd">16dip</item>
+        <item name="aurorapanelMenuListWidth">250dip</item>
+        <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 begin -->
+        <item name="aurorasearchViewEditQuery">@drawable/aurora_ic_commit_search_api_holo_dark</item>
+        <!-- Gionee <fenglp> <2013-08-05> add for CR00812456 end -->
+    </style>
+    
+    <style name="Theme.Aurora.Dark.Dialog">
+        <item name="android:windowAnimationStyle">@style/Animation.Aurora.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Aurora.Dark</item>
+        <item name="android:windowBackground">@drawable/aurora_menu_dropdown_panel_dark</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+        <item name="android:colorBackgroundCacheHint">@null</item>
+
+        <item name="android:buttonBarStyle">@null</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.Aurora.Dark.Button.Borderless</item>
+
+        <item name="android:listPreferredItemPaddingLeft">16dip</item>
+        <item name="android:listPreferredItemPaddingRight">16dip</item>
+        
+        <!-- <item name="android:alertDialogStyle">@style/AuroraAlertDialog.Light</item> -->
+    </style>
+    
+    <style name="Theme.Aurora.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle.Aurora.Dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    
+    <!-- Variant of the holographic (light) theme with no action bar. -->
+    <style name="Theme.Aurora.Dark.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- Variant of the holographic (light) theme that has no title bar and fills
+         the entire screen -->
+    <style name="Theme.Aurora.Dark.NoActionBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>    
+</resources>

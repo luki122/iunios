@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2013 Qualcomm Technologies, Inc.  All Rights Reserved.
+Qualcomm Technologies Proprietary and Confidential.
+ -->
+
+<resources>
+    <color name="training_keyword_col">#ff9999</color>
+    <color name="sound_model_compound_success">#ff9999</color> 
+    <color name="sound_model_compound_success_white">#ffffff</color>
+    <color name="sound_model_compound_fail">#ff9999</color>    
+    <color name="enabling">#ff9999</color>
+</resources>

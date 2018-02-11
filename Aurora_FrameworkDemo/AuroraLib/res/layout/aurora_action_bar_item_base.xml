@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aurora_action_bar_item"
+    android:layout_height="@dimen/aurora_action_bar_height"
+    android:layout_width="wrap_content"
+    android:paddingLeft="@dimen/aurora_action_bar_title_margin_left"
+    android:paddingRight="@dimen/aurora_action_bar_title_margin_left"
+    android:background="?attr/actionBarRightWidgetBackground"
+    android:gravity="center_vertical"
+    android:scaleType="center"
+    android:layout_gravity="center_vertical"
+    android:src="?attr/homeIcon"
+    android:contentDescription="@string/aurora_actionbar_image_button_content" />
+<!--  android:background="@drawable/aurora_action_item_base_selector"-->

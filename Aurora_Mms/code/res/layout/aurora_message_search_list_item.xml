@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-20 created for aurora's new feature -->
+<!-- Aurora liugj 2013-11-07 modified for bug-440 -->
+<!-- Aurora liugj 2013-10-12 modified for aurora's new feature start -->
+<!-- Aurora liugj 2013-12-03 modified for checkbox animation -->
+<!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+<com.aurora.mms.search.MessageSearchListItem xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">    
+<!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+<!-- Aurora liugj 2013-10-12 modified for aurora's new feature end -->
+    
+    <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="@dimen/list_item_top_margin"
+         > -->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->    
+        <view
+            class="com.aurora.view.AuroraTextViewSnippet"
+            android:id="@+id/search_from"
+            android:layout_width="@dimen/aurora_from_text_max_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@com.aurora:dimen/aurora_subtitle_padding_left"
+            android:maxWidth="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginBottom="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+            android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+            android:ellipsize="end"
+            android:singleLine="true"
+            style="@com.aurora:style/AuroraListMainTextStyle"/>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+        
+         <!-- Aurora liugj 2013-11-20 modified for textview margin start -->
+         <!-- Aurora liugj 2013-12-20 modified for list scroll optimize start -->
+        <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+        <aurora.widget.AuroraTextView
+            android:id="@+id/search_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/search_from"
+            android:layout_marginRight="@com.aurora:dimen/aurora_subtitle_padding_right"
+            android:singleLine="true"
+            android:gravity="right"
+            android:textColor="@color/aurora_list_text_date_color"
+            android:paddingBottom="@dimen/text_item_bottom_padding"
+            android:textSize="12sp" />
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+         <!-- Aurora liugj 2013-12-20 modified for list scroll optimize end -->
+         <!-- Aurora liugj 2013-11-26 modified for aurora's new feature start -->                
+        <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/search_from"
+            android:layout_alignLeft="@id/search_from"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="5.6dp"
+             > -->
+        <!-- Aurora liugj 2013-11-20 modified for textview margin end -->
+            <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+            <view
+                class="com.aurora.view.AuroraTextViewSnippet"
+                android:id="@+id/search_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginBottom="@com.aurora:dimen/aurora_list_content_layout_paddingbottom"
+                android:layout_below="@id/search_from"
+                android:layout_alignLeft="@id/search_from"
+                android:singleLine="true"
+                style="@com.aurora:style/AuroraListSubTextStyle"/>
+            <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+            <!-- <ImageView
+                android:id="@+id/search_encryptionimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:visibility="gone" />
+        </RelativeLayout> -->
+         <!-- Aurora liugj 2013-11-26 modified for aurora's new feature end -->
+    <!-- </RelativeLayout> -->
+          <!-- Aurora xuyong 2014-04-02 added for aurora's new feature start -->
+          <aurora.widget.AuroraTextView 
+              android:id="@+id/aurora_search_item_divider"
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:visibility="visible"
+              android:background="@drawable/aurora_divider_lan"
+              android:layout_below="@id/search_subject"/>
+           <!-- Aurora xuyong 2014-04-02 added for aurora's new feature end -->
+</com.aurora.mms.search.MessageSearchListItem>

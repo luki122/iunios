@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/see_all_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footview_of_postdetail_tv_layout_height"
+        android:gravity="center"
+        android:text="@string/see_all_comment"
+        android:textColor="@color/footview_of_postdetail_tv_color"
+        android:textSize="@dimen/footview_of_postdetail_tv_size" />
+
+</RelativeLayout>

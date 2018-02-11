@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">  
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+        <View
+	        android:layout_width="fill_parent" android:layout_height="1px"
+	        android:background="@drawable/line" />  
+	    <LinearLayout 
+			android:layout_width="fill_parent" android:layout_height="91dp"
+			android:orientation="horizontal" android:gravity="center_vertical"
+			android:paddingLeft="17dp" android:paddingRight="17dp">
+			<Button
+			    android:id="@+id/cancel_button" 
+			    android:layout_height="47dp" android:layout_width="fill_parent"
+				android:layout_weight="1" android:text="@string/cancel"
+				android:textSize="19sp"/>
+			<Button 
+			    android:id="@+id/ok_button" android:layout_marginLeft="10dp"
+			    android:layout_height="47dp" android:layout_width="fill_parent"
+				android:layout_weight="1" android:text="@string/install"
+				android:textSize="19sp"/>
+		</LinearLayout>    
+   </LinearLayout>
+    	  
+   <RelativeLayout
+        android:layout_above="@id/buttonLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ExpandableListView
+	        android:id="@+id/expandableListView"
+	        android:layout_width="fill_parent" android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	        android:focusable="false" android:fadingEdge="none"
+			android:divider="@color/white" android:dividerHeight="0dp" 
+			android:listSelector="@color/white"
+			android:groupIndicator="@null" />
+        <TextView
+            android:id="@+id/permissionHintText"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="18sp" android:textColor="#000000" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

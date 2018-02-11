@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroraorderingFromXml="true"
+    aurora:aurorapersistent="false" >
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="phone_ringtone_gemini"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/voice_call_title" />
+
+    <gn.com.android.audioprofile.DefaultRingtonePreference
+        aurora:aurorakey="video_call_ringtone"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/video_call_title" />
+    <gn.com.android.audioprofile.DefaultRingtonePreference
+        aurora:aurorakey="notifications_ringtone"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/notification_sound_title" />
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="mms_ringtone_gemini"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/gn_mms_ringtone" />
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="general"
+        aurora:auroratitle="@string/ringtone_select_summary" />
+
+</aurora.preference.AuroraPreferenceScreen>

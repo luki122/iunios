@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ListFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <FrameLayout 
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="#f6f6f6" android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="176dp" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_big_text_size" android:textColor="@color/hint_text_color"
+            android:text="@string/no_user_app"/>
+        
+        <!--
+        <style name="button_text">              
+         <item name="android:textColor">@color/btn_text_title_selector_color</item>
+         <item name="android:textSize">18sp</item>     
+   </style>
+        -->
+       	<Button
+		    android:id="@+id/gotoMarketBtn" 
+		    android:layout_height="47dp" android:layout_width="fill_parent"
+		    android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+		    android:layout_gravity="bottom" android:layout_marginBottom="82dp"
+			android:text="@string/necessary_app"
+			android:textColor="@color/btn_text_title_selector_color"
+			android:textSize="18sp"
+			android:visibility="gone"
+            android:background="@drawable/button"/>
+    </FrameLayout>
+    
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="fill_parent"  android:layout_height="fill_parent"		
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/memorySizeLayout"
+            android:layout_width="fill_parent" android:layout_height="29.33dp" 
+            android:background="@drawable/title_bg" android:visibility="gone">
+            <TextView
+	            android:id="@+id/MemorySizeTextView"
+	            android:layout_width="wrap_content" android:layout_height="fill_parent"
+	            android:gravity="center_vertical" android:lines="1" 
+	            android:layout_alignParentLeft="true" android:paddingLeft="17dp"
+	            android:textColor="#333333" android:textSize="12sp"
+	            android:text="@string/phone_memory"/>
+	        <TextView
+	            android:id="@+id/percentTextView"
+	            android:layout_width="wrap_content" android:layout_height="fill_parent" 
+	            android:gravity="center" android:lines="1"
+	            android:layout_alignParentRight="true" android:paddingRight="17dp"
+	            android:textColor="#333333" android:textSize="12sp"
+	            android:text="@string/sd_card"/>   
+        </RelativeLayout>
+        <aurora.widget.AuroraListView
+			android:id="@+id/appListview" 
+			android:layout_width="fill_parent"  android:layout_height="fill_parent"			
+			android:focusable="false" android:fadingEdge="none"
+			android:listSelector="@drawable/item_of_middle"
+			android:divider="@drawable/line" android:dividerHeight="1px" 
+			android:scrollbars="none"/>
+    </LinearLayout>
+        		
+	<FrameLayout
+	    android:id="@+id/FastIndexingLayout"
+	    android:layout_width="fill_parent" android:visibility="gone"
+	    android:layout_height="@com.aurora:dimen/aurora_alphabetlist_height" 
+	    android:layout_marginTop="@com.aurora:dimen/aurora_alphabetlist_paddingtop">
+	    <com.secure.view.LetterSideBar
+	        android:id="@+id/letterSideBar"
+	        android:layout_width="wrap_content" android:layout_height="fill_parent"        
+	        android:layout_gravity="right"/>
+		
+		<LinearLayout
+		    android:id="@+id/toastLayout"
+		    android:layout_width="wrap_content" android:layout_height="wrap_content"
+		    android:layout_gravity="right" android:layout_marginRight="78dp" 
+		    android:visibility="invisible" android:orientation="horizontal">
+		    <TextView
+	            android:id="@+id/tvLetter"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@drawable/show_head_toast_bg_left"            
+	            android:gravity="center" android:textColor="#FFFFFF"
+	            android:textSize="29sp" />
+		    <ImageView
+		        android:visibility="gone"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical" android:layout_marginLeft="2dp"
+	            android:background="@drawable/show_head_toast_bg_right" />
+		</LinearLayout>	 
+	</FrameLayout> 
+	
+		        
+</FrameLayout>

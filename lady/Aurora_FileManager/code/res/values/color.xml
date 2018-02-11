@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="aurora_action_bar_title_color_pressed">#4bcadd</color>
+ <color name="tab_item_color">#4bcadd</color>
+ <color name="aurora_storage_title_color">#4bcadd</color>
+</resources>

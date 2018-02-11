@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_download_pausetext">下载暂停</string>
+    
+    <!-- Phrase describing a time duration using seconds [CHAR LIMIT=16] -->
+    <string name="duration_seconds"> %d 秒</string>
+    <!-- Phrase describing a time duration using minutes [CHAR LIMIT=16] -->
+    <string name="duration_minutes"> %d 分钟</string>
+    <!-- Phrase describing a time duration using hours [CHAR LIMIT=16] -->
+    <string name="duration_hours">%d 小时</string>
+</resources>

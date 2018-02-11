@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/page_loading_padding_left_right"
+        android:paddingRight="@dimen/page_loading_padding_left_right"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/down_man_nodata_uxiaobei_margintop"
+            android:src="@drawable/icon_uxiaobei" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/down_man_nodata_text_margintop"
+            android:text="@string/downloadman_nodata"
+            android:textColor="@color/down_man_nodata_text"
+            android:textSize="@dimen/textsize_16" />
+
+        <Button
+            android:id="@+id/btn_goto"
+            style="@style/generalButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_btn_height"
+            android:layout_marginTop="@dimen/down_man_nodata_button_margintop"
+            android:gravity="center"
+            android:text="@string/downloadman_go_shopping" />
+    </LinearLayout>
+
+    <com.aurora.market.widget.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

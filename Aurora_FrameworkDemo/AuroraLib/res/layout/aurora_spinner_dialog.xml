@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/transparent"
+    >
+<ImageView 
+    android:id="@+id/aurora_spinner_grey_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aurora_grey_bg"
+    />
+<ListView 
+    android:id="@+id/aurora_spinner_dialog_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:scrollbars="none"
+    android:divider="?android:attr/listDivider"
+    android:listSelector="?android:attr/listChoiceBackgroundIndicator"
+    android:background="@drawable/aurora_dialog_white_bg"
+    android:dividerHeight="1px"
+    android:cacheColorHint="@android:color/transparent"
+    android:choiceMode="singleChoice"
+    ></ListView>
+
+
+</FrameLayout>

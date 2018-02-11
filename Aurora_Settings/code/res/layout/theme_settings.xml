@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res/com.android.settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+
+        <com.android.settings.theme.ThemeItem
+            android:id="@+id/kitty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            item:title="@string/kitty_str"
+            item:titleColor="@color/theme_kitty_title_color"
+            item:checkboxId="@+id/kitty_checkbox"
+            item:imageId="@+id/kitty_image"
+            item:imageResourceLeft="@drawable/ic_launcher"
+            item:imageResourceRight="@drawable/ic_launcher"/>
+
+        <com.android.settings.theme.ThemeItem
+            android:id="@+id/her"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            item:title="@string/her_str"
+            item:titleColor="@color/theme_her_title_color"
+            item:checkboxId="@+id/her_checkbox"
+            item:imageId="@+id/her_image"
+            item:imageResourceLeft="@drawable/ic_launcher"
+            item:imageResourceRight="@drawable/ic_launcher"/>
+        
+    </LinearLayout>
+
+</ScrollView>

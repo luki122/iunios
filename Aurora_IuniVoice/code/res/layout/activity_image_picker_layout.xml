@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/photo_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/img_pick_bottom_bar" >
+
+        <TextView
+            android:id="@+id/tv_pic_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_image_picker_layout_tv_preview_margin_left"
+            android:layout_marginTop="@dimen/activity_image_picker_layout_tv_preview_margin_top"
+            android:text="@string/image_picker_actionbar_tv_preview"
+            android:textColor="@drawable/previews_bottom_tv_selector"
+            android:textSize="@dimen/activity_image_picker_layout_tv_preview_size" />
+
+        <ImageButton
+            android:id="@+id/ib_start_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_image_picker_layout_ib_capture_margin_right"
+            android:layout_marginTop="@dimen/activity_image_picker_layout_ib_capture_margin_top"
+            android:background="@drawable/aurora_camera_selector"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

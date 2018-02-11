@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/group_header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/aurora_edit_group_margin_top"
+        android:paddingLeft="@dimen/aurora_group_entrance_left_margin"
+        android:textColor="@color/aurora_contact_list_header_color"
+        android:textSize="@dimen/aurora_contact_list_header_text_size"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:paddingTop="6dp"
+        android:maxWidth="300dp"
+        android:visibility="gone" />
+
+    <include layout="@layout/aurora_group_item" />
+
+</LinearLayout>

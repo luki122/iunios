@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="leftLayout_padding_left">2dp</dimen>
+</resources>

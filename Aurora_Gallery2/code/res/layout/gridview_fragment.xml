@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+    
+    <!--     #ffe4c4 -->
+    <!-- <ImageView android:id="@+id/animation_container"
+        		android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="#00000000"
+		        android:src="@drawable/photoeditor_effect_autofix"
+		        android:visibility="gone"
+		        >
+		        
+        <ImageView  android:id="@+id/animation_image"
+        		android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="#00000000"
+        />
+    </ImageView> -->
+    
+    <!-- android:paddingTop="@dimen/gridview_marginTop" -->
+	<TextView android:id="@+id/empty_gridview"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_gravity="center_horizontal"
+			 android:paddingTop="@dimen/gridview_marginTop"
+			android:textSize="@dimen/gridview_textSize"
+			android:textColor="#e6e6e6"
+			android:text="@string/appwidget_empty_text"
+			android:visibility="gone" />
+	
+	<!-- android:listSelector="#00000000" 去掉黄底色 android:overScrollMode="never"-->
+	<ListView android:id="@+id/listview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:cacheColorHint="#00000000"
+		android:divider="#00000000"
+		android:overScrollMode="never"
+		/>
+	
+	
+	<!-- @android:color/transparent 
+	android:src="@drawable/photoeditor_effect_autofix"-->
+	<!-- <ImageView android:id="@+id/animation_container"
+        	android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+		    /> -->
+	    
+	<FrameLayout android:id="@+id/header_background"
+	    android:layout_width="@dimen/date_layout_margin"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"
+	    android:background="#ffffff"
+	    >
+	    
+	    <View 
+	    	android:layout_width="@dimen/date_layout_margin"
+	    	android:layout_height="@dimen/header_backgroundsize"
+	    	android:background="#ffffff"
+	    />
+	    
+	    <RelativeLayout android:id="@+id/header_dategroup"
+	    	android:layout_width="@dimen/date_layout_margin"
+	    	android:layout_height="wrap_content"
+	    	android:background="#ffffff"
+	    	android:orientation="vertical" >
+    
+	        <LinearLayout android:id="@+id/header_date_da"
+	            android:layout_width="@dimen/date_group"
+		    	android:layout_height="wrap_content"
+		    	android:layout_alignParentTop="true"
+		     	android:orientation="horizontal"
+		     >
+		     	<TextView android:id="@+id/header_date_date"
+			        android:layout_width="@dimen/date_datawidth"
+			        android:layout_height="wrap_content"
+			        android:textColor="#000000"
+			        android:textSize="@dimen/date_textsize"
+			        android:singleLine="true"
+			        android:gravity="right|top"
+			     />
+		     	
+			     <TextView android:id="@+id/header_date_wenzi"
+			        android:layout_width="@dimen/wenzi_datawidth"
+			        android:layout_height="wrap_content"
+			        android:textColor="#000000"
+			        android:textSize="@dimen/wenzi_textsize"
+			        android:text="@string/date_day"
+			        android:singleLine="true"
+			        android:gravity ="right"
+			         />
+		     </LinearLayout>
+		    
+		    <TextView android:id="@+id/header_date_year"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#5e5e5e"
+		        android:layout_below="@+id/header_date_da"
+		        android:textSize="@dimen/year_textsize"
+		        android:singleLine="true"
+		        android:gravity="right|top"
+		        android:layout_alignRight="@+id/header_date_da"
+		         />
+	
+		</RelativeLayout>
+	    
+	</FrameLayout>
+
+
+</FrameLayout>

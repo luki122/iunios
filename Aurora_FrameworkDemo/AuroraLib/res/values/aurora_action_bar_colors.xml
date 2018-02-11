@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aurora_action_bar_tint">#FFFFFF</color>
+    <color name="aurora_action_bar_divider_tint">#7fff</color>
+    <color name="aurora_action_bar_title_color">#7f5f46</color>
+    <color name="aurora_action_bar_btn_color">#000000</color>
+    <color name="aurora_action_bar_title_color_pressed">#0ec16f</color>
+
+     <color name="aurora_menu_item_text_color">#000000</color>
+     <color name="aurora_menu_item_selected_color">#3DA0FD</color>
+     <color name="aurora_menu_item_color">#FFFFFF</color>
+     <color name="aurora_menu_item_cover_color">#FFFFFF</color>
+     <color name="aurora_menu_item_text_color_pressed">#FFFFFF</color>
+     
+     <color name="aurora_action_bottom_bar_background_color">#272928</color>
+     <color name="aurora_action_bottom_bar_title_enable_color">#535353</color>
+     
+     <color name="aurora_text_view_link_color">#ff3578d3</color>
+     
+</resources>

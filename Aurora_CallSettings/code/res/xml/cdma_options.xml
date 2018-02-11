@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        xmlns:settings="http://schemas.android.com/apk/res/com.aurora.callsetting">
+
+    <com.aurora.callsetting.CdmaSystemSelectListPreference
+        aurora:aurorakey="cdma_system_select_key"
+        aurora:auroratitle="@string/cdma_system_select_title"
+        aurora:aurorasummary="@string/cdma_system_select_summary"
+        aurora:auroraentries="@array/cdma_system_select_choices"
+        aurora:auroraentryValues="@array/cdma_system_select_values"
+        aurora:auroradialogTitle="@string/cdma_system_select_dialogtitle" />
+
+    <com.aurora.callsetting.CdmaSubscriptionListPreference
+        aurora:aurorakey="cdma_subscription_key"
+        aurora:auroratitle="@string/cdma_subscription_title"
+        aurora:aurorasummary="@string/cdma_subscription_summary"
+        aurora:auroraentries="@array/cdma_subscription_choices"
+        aurora:auroraentryValues="@array/cdma_subscription_values"
+        aurora:auroradialogTitle="@string/cdma_subscription_dialogtitle" />
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="cdma_activate_device_key"
+        aurora:auroratitle="@string/cdma_activate_device">
+        <intent android:action="com.aurora.callsetting.PERFORM_VOICELESS_CDMA_PROVISIONING">
+            <extra android:name="autoStart" android:value="true" />
+        </intent>
+    </AuroraPreferenceScreen>
+</AuroraPreferenceScreen>

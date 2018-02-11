@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0 
+ *
+ * Unless required by applicable law or agreed to in writing, software 
+ * distributed under the License is distributed on an "AS IS" BASIS, 
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and 
+ * limitations under the License.
+ */
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="back_to_call">Back to call</string>
+    <string name="do_not_notify">Banning</string>
+    <string name="notify_warning">Can be reopen in Notification Setting</string>
+    <string name="notify_warning_title">Disable notification ?</string>
+    <string name="clear_all_recents">Clear all</string>
+    
+    <string name="toolbar_wlan">WLAN</string>
+    <string name="toolbar_mobile">Data</string>
+    <string name="toolbar_silent">Silent</string>
+    <string name="toolbar_brightness">Brightness</string>
+    <string name="toolbar_autorotate">AutoRotate</string>
+    
+    <string name="toolbar_vibrate">Vibrate</string>
+    <string name="toolbar_airplanemode">Airplane</string>
+    <string name="toolbar_gps">GPS</string>
+    <string name="toolbar_bluetooth">Bluetooth</string>
+    <string name="toolbar_electric_torch">Torch</string>
+    <string name="battery_low_content">"Phone battery has less than <xliff:g id="NUMBER">%d%%</xliff:g>,please charge "</string>
+    <string name="recent_no_task">No recent Apps</string>
+    <string name="storage_usb_type">USB storage</string>
+    <string name="storage_usb_badremoval_notification_title">USB storage has been removed</string>
+    <string name="storage_usb_badremoval_notification_message">USB storage has been removed, insert a new memory.</string>
+    <!--// Aurora <tongyh> <2014-04-09> add CarrierLabel begin-->
+    <string name="China_Mobile">China Mobile</string>
+    <string name="China_Unicom">China Unicom</string>
+    <string name="China_Telecom">China Telecom</string>
+    <string name="roamingTextSearching">Searching for Service</string>
+    <!--// Aurora <tongyh> <2014-04-09> add CarrierLabel end-->
+    <!--// Aurora <tongyh> <2014-04-11> Add alarm retreated to the background of green tips begin-->
+        <string name="back_to_alarm_clock">Back to alarm clock</string>
+        <!--// Aurora <tongyh> <2014-04-11> Add alarm retreated to the background of green tips end-->
+
+    <!-- Aurora <Felix.Duan> <2014-8-19> <BEGIN> Add guidance on hiding navigation bar -->
+    <string name="aurora_dialog_title_notice">Notice</string>
+    <string name="aurora_nav_bar_hidden_msg">To hide navigation bar, swipe down from it in portrait mode.\nTo restore, swipe up from screen bottom.\nThis feature can be turned off in the Settings-Advanced-Accessibility.</string>
+    <!-- Aurora <Felix.Duan> <2014-8-19> <END> Add guidance on hiding navigation bar -->
+    <string name="qq_running_back">"正在后台运行"</string>
+</resources>

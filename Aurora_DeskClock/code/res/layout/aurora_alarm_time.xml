@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarm_time_linear"
+    android:layout_width="173dp"
+    android:layout_height="173dp"
+    android:orientation="vertical"
+    android:background="@drawable/alarmsmallcycleopen"
+    android:gravity="center" >
+
+    <com.android.deskclock.DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/time_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:baselineAligned="true" >
+
+            <com.android.deskclock.AndroidClockTextView
+                android:id="@+id/timeDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                useClockTypeface="false"
+                android:textSize="24sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <com.android.deskclock.AndroidClockTextView
+                android:id="@+id/am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dip"
+                useClockTypeface="false"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </com.android.deskclock.DigitalClock>
+    
+    <LinearLayout
+        android:id="@+id/lable_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="6dip">
+
+        <TextView
+            android:id="@+id/daysOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffff0000"
+            android:textSize="12sp" />
+        
+        <com.android.deskclock.LeftTimeTextView
+            android:id="@+id/timetoalarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffff0000"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

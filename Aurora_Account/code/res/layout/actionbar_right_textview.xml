@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/right_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/actionbar_right_textview_bg_selector"
+    android:paddingStart="@dimen/padding_20"
+    android:paddingEnd="@dimen/padding_15"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="@dimen/textsize_20"
+    android:text="@string/dialog_cancel" />

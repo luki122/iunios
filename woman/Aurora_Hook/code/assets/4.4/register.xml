@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    targetClassName:完整的类名，该类是你需要修改的android原生类
+    impClassName：完整类名，该类是你实现了原生方法的类，一个原生方法对应一个你自己的类  
+    hookMethod：原生类中你需要修改的方法
+    invokeType：你希望你的方法在原生方法执行之前还是之后执行，必须传递整形，且是
+    类FrameworkApiList中以下数据中的一个
+    public static final int INVOKE_TYPE_BEFORE = 1;
+	public static final int INVOKE_TYPE_AFTER = 2;
+	具体类型请参见com.aurora.xposed.FrameworkApiList类
+ -->
+ <!-- add for dialog -->
+<component 
+        targetClassName="com.android.internal.app.AlertController" 
+        impClassName="com.aurora.apihook.dialog.DialogHook"  
+        >
+        <!-- AlertController -->
+         <targetMethod name="AlertController" constructor="true" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>android.content.DialogInterface</methodArg>
+            <methodArg>android.view.Window</methodArg>
+        </targetMethod>
+        
+        <!-- installContent -->
+        <targetMethod name="installContent" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        <!-- setTitle -->
+        <targetMethod name="setTitle" invokeType="1">
+            <methodArg>java.lang.CharSequence</methodArg>
+        </targetMethod>
+        <!-- setCustomTitle -->
+        
+        <targetMethod name="setCustomTitle" invokeType="1">
+            <methodArg>android.view.View</methodArg>
+        </targetMethod>
+        
+        <!-- setMessage -->
+        
+          <targetMethod name="setMessage" invokeType="1">
+            <methodArg>java.lang.CharSequence</methodArg>
+        </targetMethod>
+        
+        <!-- setButton -->
+        <targetMethod name="setButton" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>java.lang.CharSequence</methodArg>
+            <methodArg>android.content.DialogInterface.OnClickListener</methodArg>
+            <methodArg>android.os.Message</methodArg>
+        </targetMethod>
+        <!-- setIcon -->
+        <targetMethod name="setIcon" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+        <!-- setInverseBackgroundForced -->
+        <targetMethod name="setInverseBackgroundForced" invokeType="1">
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+        <!-- getListView -->
+        <targetMethod name="getListView" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        <!-- getButton -->
+        <targetMethod name="getButton" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+        <!-- onKeyDown -->
+        <targetMethod name="onKeyDown" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>android.view.KeyEvent</methodArg>
+        </targetMethod>
+        <!-- onKeyUp -->
+        <targetMethod name="onKeyDown" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>android.view.KeyEvent</methodArg>
+        </targetMethod>
+        <targetMethod name="setView" invokeType="1">
+            <methodArg>android.view.View</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+        </targetMethod>
+        
+        <targetMethod name="setView" invokeType="1">
+            <methodArg>android.view.View</methodArg>
+        </targetMethod>
+       <!-- setIcon -->
+       <targetMethod name="setIcon" invokeType="1">
+            <methodArg>android.graphics.drawable.Drawable</methodArg>
+        </targetMethod>
+        <targetMethod name="setIcon" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+</component>
+<component 
+        targetClassName="com.android.internal.app.AlertController.AlertParams" 
+        impClassName="com.aurora.apihook.dialog.DialogHook"  
+        >
+         <targetMethod name="apply" invokeType="1">
+            <methodArg>com.android.internal.app.AlertController</methodArg>
+        </targetMethod>
+       
+</component>
+
+<component 
+        targetClassName="com.android.internal.policy.impl.PhoneWindowManager" 
+        impClassName="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook"  
+        >
+         <targetMethod name="checkAddPermission" invokeType="2"  minSdkVersion="18">
+            <methodArg>android.view.WindowManager.LayoutParams</methodArg>
+            <methodArg>int[]</methodArg>
+        </targetMethod>
+        <targetMethod name="checkAddPermission" invokeType="2" maxSdkVersion="17">
+            <methodArg>android.view.WindowManager.LayoutParams</methodArg>
+        </targetMethod>
+       <targetMethod name="showGlobalActionsDialog" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        <!-- interceptKeyBeforeQueueing -->
+        <targetMethod name="interceptKeyBeforeQueueing" invokeType="1">
+            <methodArg>android.view.KeyEvent</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+</component>
+
+<!-- add for toast -->
+<component 
+        targetClassName="android.widget.Toast.TN" 
+        impClassName="com.aurora.apihook.toasthook.ToastHook"  
+        >
+         <targetMethod name="handleShow"  invokeType="1" >
+             <methodArg>void</methodArg>
+        </targetMethod>
+</component>
+<!-- add for chooser activity  1-->
+<component 
+        targetClassName="com.android.server.am.ActivityManagerService" 
+        impClassName="com.aurora.apihook.resolver.ChooserActivityHook"  
+        >
+         <targetMethod name="startActivityAsUser" invokeType="1"  minSdkVersion="18" >
+             <methodArg>android.app.IApplicationThread</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>android.content.Intent</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>android.os.IBinder</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>android.os.ParcelFileDescriptor</methodArg>
+             <methodArg>android.os.Bundle</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+        <targetMethod name="startActivityAsUser" invokeType="1"  maxSdkVersion="17">
+             <methodArg>android.app.IApplicationThread</methodArg>
+             <methodArg>android.content.Intent</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>android.os.IBinder</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>android.os.ParcelFileDescriptor</methodArg>
+             <methodArg>android.os.Bundle</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+</component>
+<!-- add for chooser activity  2-->
+<component 
+        targetClassName="android.content.ComponentName" 
+        impClassName="com.aurora.apihook.resolver.ResolverActivityHook"  
+        >
+         <targetMethod name="ComponentName" constructor="true" invokeType="2" >
+             <methodArg>java.lang.String</methodArg>
+             <methodArg>java.lang.String</methodArg>
+        </targetMethod>
+</component>
+<!-- add for chooser activity  2-->
+
+<!-- android.app.WallpaperManger  methods -->
+<component 
+        targetClassName="android.app.WallpaperManager" 
+        impClassName="com.aurora.apihook.wallpaper.WallpaperManagerHook"  
+        >
+         <targetMethod name="setBitmap" invokeType="1">
+            <methodArg>android.graphics.Bitmap</methodArg>
+        </targetMethod>
+</component>
+<component 
+        targetClassName="com.android.server.WallpaperManagerService" 
+        impClassName="com.aurora.apihook.wallpaper.WallpaperManagerServiceHook"  
+        >
+        <targetMethod name="loadSettingsLocked" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+</component>
+<!-- add for text view -->
+<component 
+        targetClassName="android.widget.TextView" 
+        impClassName="android.text.TextViewHook"  
+        >
+         <targetMethod name="setTypefaceFromAttrs" invokeType="1">
+            <methodArg>java.lang.String</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+        </targetMethod>
+     <!--    <targetMethod name="onDraw" invokeType="1">
+            <methodArg>android.graphics.Canvas</methodArg>
+        </targetMethod> -->
+         <targetMethod name="TextView" constructor="true" invokeType="1">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>android.util.AttributeSet</methodArg>
+            <methodArg>int</methodArg>
+        </targetMethod>
+</component>
+<!-- <component 
+        targetClassName="android.text.Layout" 
+        impClassName="android.text.TextViewHook"  
+        >
+        <targetMethod name="drawText" invokeType="1">
+            <methodArg>android.graphics.Canvas</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+        </targetMethod>
+</component> -->
+
+<!-- Add for AuroraPointerInterceptor by Felix.Duan START -->
+<component 
+        targetClassName="com.android.internal.policy.impl.PhoneWindowManager" 
+        impClassName="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"  
+        >
+        <targetMethod name="updateSettings" invokeType="2">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        <targetMethod name="init" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>android.view.IWindowManager</methodArg>
+            <methodArg>android.view.WindowManagerPolicy.WindowManagerFuncs</methodArg>
+        </targetMethod>
+        <!-- debug helper
+        <targetMethod name="auroraSetupPointerInterceptor" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        -->
+</component>
+
+<!-- For 4.4 4.3-->
+<component
+        targetClassName="android.view.ViewRootImpl.EarlyPostImeInputStage"
+        impClassName="com.aurora.apihook.view.EarlyPostImeInputStageHook"
+        >
+        <targetMethod name="processPointerEvent" invokeType="1" minSdkVersion="18" maxSdkVersion="19">
+            <methodArg>android.view.ViewRootImpl.QueuedInputEvent</methodArg>
+        </targetMethod>
+</component>
+<!-- Add for AuroraPointerInterceptor by Felix.Duan END -->
+
+<component 
+        targetClassName="com.android.internal.telephony.DefaultPhoneNotifier" 
+        impClassName="com.aurora.apihook.telephony.DefaultPhoneNotifierHook"  
+        >
+         <targetMethod name="notifyPhoneState" invokeType="1">
+            <methodArg>com.android.internal.telephony.Phone</methodArg>
+        </targetMethod>
+</component>
+
+<!-- Add for AlarmManagerService by zhouxiaobing start -->
+<component 
+        targetClassName="com.android.server.AlarmManagerService" 
+        impClassName="com.aurora.apihook.alarmmanager.AlarmManagerServiceHook"  
+        >
+         <targetMethod name="setImplLocked" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>long</methodArg>
+            <methodArg>long</methodArg>
+            <methodArg>long</methodArg>
+            <methodArg>long</methodArg>
+            <methodArg>long</methodArg>
+            <methodArg>android.app.PendingIntent</methodArg>
+            <methodArg>boolean</methodArg>
+            <methodArg>boolean</methodArg>
+            <methodArg>android.os.WorkSource</methodArg>
+        </targetMethod>
+</component>
+<!-- Add for AlarmManagerService by zhouxiaobing end -->
+
+
+<!-- add for volume panel begin -->
+<!-- <component 
+        targetClassName="android.view.VolumePanel" 
+        impClassName="com.aurora.apihook.volumepanel.VolumePanelHook"  
+        >
+         <targetMethod name="VolumePanel" constructor="true" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>android.media.AudioService</methodArg>
+        </targetMethod>
+        
+            <targetMethod name="updateStates" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        
+        <targetMethod name="postVolumeChanged" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+         <targetMethod name="postRemoteVolumeChanged" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+        <targetMethod name="postRemoteSliderVisibility" invokeType="1">
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+         <targetMethod name="postHasNewRemotePlaybackInfo" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod>
+        <targetMethod name="postMasterVolumeChanged" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+         <targetMethod name="postMuteChanged" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+         <targetMethod name="postMasterMuteChanged" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+         <targetMethod name="postDisplaySafeVolumeWarning" invokeType="1">
+            <methodArg>int</methodArg>
+        </targetMethod>
+</component> -->
+<!-- add for volume panel end -->
+<!-- Aurora xuyong 2014-11-06 added for Android 4.4 MMS Hook start -->
+<component 
+        targetClassName="com.android.internal.telephony.SmsApplication" 
+        impClassName="com.aurora.apihook.telephony.SmsApplicationHook"  
+        >
+        <targetMethod name="getDefaultSmsApplication" invokeType="1">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+        <targetMethod name="getDefaultMmsApplication" invokeType="1">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+        <targetMethod name="getDefaultRespondViaMessageApplication" invokeType="1">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+        <targetMethod name="getDefaultSendToApplication" invokeType="1">
+            <methodArg>android.content.Context</methodArg>
+            <methodArg>boolean</methodArg>
+        </targetMethod>
+        <targetMethod name="shouldWriteMessageForPackage" invokeType="1">
+            <methodArg>java.lang.String</methodArg>
+            <methodArg>android.content.Context</methodArg>
+        </targetMethod>
+</component>
+<!-- add for InputMethodManagerService end -->
+<!-- <component 
+        targetClassName="android.media.AudioService" 
+        impClassName="com.aurora.apihook.audio.AudioServiceHook"  
+        >
+         AudioService
+         <targetMethod name="AudioService" constructor="true" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+        </targetMethod>
+</component> -->
+
+<!-- add for volume panel begin -->
+<component 
+        targetClassName="android.media.AudioService" 
+        impClassName="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"  
+        >
+         <!-- AudioService -->
+         <targetMethod name="AudioService" constructor="true" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+        </targetMethod>
+        <!-- sendVolumeUpdate -->
+            <targetMethod name="sendVolumeUpdate" invokeType="1">
+             <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+              <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+        <!-- sendMasterVolumeUpdate -->
+        <targetMethod name="sendMasterVolumeUpdate" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+              <methodArg>int</methodArg>
+        </targetMethod>
+        <!-- sendMasterMuteUpdate -->
+         <targetMethod name="sendMasterMuteUpdate" invokeType="1">
+            <methodArg>boolean</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>
+        <!-- onCheckMusicActive -->
+        <!-- <targetMethod name="onCheckMusicActive" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod> -->
+        <targetMethod name="handleConfigurationChanged" invokeType="2">
+            <methodArg>android.content.Context</methodArg>
+        </targetMethod>
+        <!-- onNewPlaybackInfoForRcc 
+         <targetMethod name="onNewPlaybackInfoForRcc" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>-->
+        <!-- adjustRemoteVolume 
+        <targetMethod name="adjustRemoteVolume" invokeType="1">
+            <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+             <methodArg>int</methodArg>
+        </targetMethod>-->
+        <!-- onReevaluateRemote -->
+       <!--   <targetMethod name="onReevaluateRemote" invokeType="1">
+            <methodArg>void</methodArg>
+        </targetMethod> -->
+        <!-- checkSafeMediaVolume -->
+         <!-- <targetMethod name="checkSafeMediaVolume" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+        </targetMethod>
+ -->        
+         <!-- adjustStreamVolume -->
+       <!--   <targetMethod name="adjustStreamVolume" invokeType="1">
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>int</methodArg>
+            <methodArg>java.lang.String</methodArg>
+        </targetMethod> -->
+</component>
+<!-- add for volume panel end -->
+
+<!-- android.content.res.AssetManager -->
+<component 
+        targetClassName="android.content.res.AssetManager" 
+        impClassName="com.aurora.apihook.assetmanager.AssetManagerHook"  
+        >
+         
+         <!-- AudioService -->
+         <targetMethod name="AssetManager" constructor="true" invokeType="2">
+            <methodArg>void</methodArg>
+        </targetMethod>
+</component>
+
+<!-- Aurora xuyong 2014-11-06 added for Android 4.4 MMS Hook end -->
+<!-- add for InputMethodManagerService end -->
+
+<component 
+        targetClassName="com.android.server.pm.PackageManagerService" 
+        impClassName="com.aurora.apihook.pm.PackageManagerService"  
+        >
+         
+         <!-- AudioService -->
+         <targetMethod name="compareSignatures"  invokeType="2">
+            <methodArg>android.content.pm.Signature[]</methodArg>
+            <methodArg>android.content.pm.Signature[]</methodArg>
+        </targetMethod>
+</component>
+

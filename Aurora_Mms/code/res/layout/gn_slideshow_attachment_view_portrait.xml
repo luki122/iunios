@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<!-- Aurora xuyong 2013-10-15 modified for aurora's new feature start -->
+<com.android.mms.ui.SlideshowAttachmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.mms"
+    android:id="@+id/gn_slideshow_attachment_view_portrait"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+   <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea start -->
+   <RelativeLayout
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:descendantFocusability="blocksDescendants">
+   <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea end -->
+
+            <com.aurora.mms.ui.AuroraRoundImageView
+                android:id="@+id/slideshow_image"
+                android:scaleType="centerCrop"
+                android:layout_width="92dip"
+                android:layout_height="112dip"
+                app:corner_radius="13dip"
+                app:border_width="0dip"/>
+
+            <TextView
+                android:id="@+id/slideshow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/text_color_black" />
+            
+            <ImageView
+                android:id="@+id/play_slideshow_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+                android:src="@drawable/aurora_va_play_selector" />
+         <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea start -->
+         <TextView
+            android:id="@+id/aurora_slide_bg_down"
+            android:layout_width="92dip"
+            android:layout_height="20dip"
+            android:gravity="right"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/aurora_attach_bg_down" />
+         <!-- Aurora xuyong 2014-01-03 modified for aurora's new featurea end -->
+
+        <TextView android:id="@+id/media_size_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:textColor="#ffffffff"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"/>
+   </RelativeLayout>
+<!-- Aurora xuyong 2013-10-15 modified for aurora's new feature end -->
+</com.android.mms.ui.SlideshowAttachmentView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_marginEnd="17dp"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp"
+    android:layout_marginStart="17dp"
+    android:gravity="center" >
+    
+    
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_create_done"
+        android:layout_marginTop="@dimen/activity_picture_create_ok_margin_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/create_done"
+        android:contentDescription="@string/test_string">
+    </ImageView>
+    
+    <aurora.widget.AuroraTextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_finish"
+        android:layout_below="@id/iv_create_done"
+        android:layout_marginTop="12dp"
+        android:textColor="#019c7c"
+        android:textSize="32sp"/>
+    
+        <aurora.widget.AuroraButton
+            android:id="@+id/ab_to_user_guide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preferences_item_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:text="@string/info_three_step_teach"
+            android:textColor="@drawable/btn_text_title_selector_color"
+            android:textSize="18sp"/>
+
+</RelativeLayout>

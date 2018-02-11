@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants" >
+
+    <aurora.widget.AuroraTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxWidth="240dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#383838"
+            android:layout_centerVertical="true"
+            android:textSize="@com.aurora:dimen/aurora_list_singleline_text_size" />
+    
+    <com.mediatek.contacts.widget.DontPressWithParentImageButton
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/aurora_record_detail" />
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/detail"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:textColor="#aeaeae"
+        android:textSize="10sp" />
+    
+</RelativeLayout>

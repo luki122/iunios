@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="common_textcolor">#019c73</color>
+	<color name="ad_app_list_header_textcolor">@color/common_textcolor</color>
+	<color name="all_app_right_action_bar_item_textcolor">@color/black</color>
+	<color name="app_size_layout_topsizetext_textcolor">@color/common_textcolor</color>
+	<color name="def_soft_manage_list_header_textcolor">@color/common_textcolor</color>	
+	<color name="btn_title_state_color">@color/white</color>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/activity_main_background_color"
+    android:paddingLeft="@dimen/item_publish_of_user_center_ll_padding_left"
+    android:paddingRight="@dimen/item_publish_of_user_center_ll_padding_right">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_publish_of_user_center_iv_layout_height"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_publish_of_user_center_ll_background_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_images_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/usercenter_item_one_more_image_height"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/usercenter_item_one_more_image_margin"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/usercenter_item_one_more_image_margin"
+                android:layout_weight="1"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/publish_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/item_publish_of_user_center_publish_title_margin_left"
+            android:layout_marginRight="@dimen/item_publish_of_user_center_publish_title_margin_right"
+            android:layout_marginTop="@dimen/item_publish_of_user_center_publish_title_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/gloab_title_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#f2efec" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="13dp" >
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/postdetail_time_icon"
+                android:drawablePadding="3dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/postdetail_light_color"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/comments_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/comment_icon"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="@color/common_blue_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/collections_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@id/comments_count"
+                android:drawableLeft="@drawable/collection_icon"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="@color/common_deep_blue_color"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_save_to"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+    android:layout_marginBottom="@dimen/aurora_editor_text_padding2"
+    android:background="@drawable/aurora_kind_view_bg" >
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/aurora_save_to_title"
+        android:layout_width="@dimen/aurora_editor_type_label_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/aurora_editor_item_padding_left"
+        android:singleLine="true"
+        android:text="@string/aurora_save_to"
+        android:textColor="@color/aurora_spinner_title_col"
+        android:textSize="@dimen/aurora_group_browse_list_title_text_size" />
+    
+    <View
+        android:id="@+id/type_vertical_divider"
+        android:layout_width="@dimen/aurora_list_item_driver_hight"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/aurora_save_to_title"
+        android:background="@drawable/aurora_vertical_divider" />
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/aurora_save_to_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/aurora_editor_field_margin"
+        android:layout_marginRight="0dip"
+        android:layout_toRightOf="@+id/type_vertical_divider"
+        android:background="@null"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:text="@string/aurora_save_to_local"
+        android:textColor="@color/aurora_spinner_title_col"
+        android:textSize="@dimen/aurora_group_browse_list_title_text_size" />
+
+    <ImageView
+        android:id="@+id/aurora_save_to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/aurora_editor_field_margin"
+        android:visibility="gone"
+        android:background="@drawable/aurora_entrance_group_img" />
+
+</RelativeLayout>

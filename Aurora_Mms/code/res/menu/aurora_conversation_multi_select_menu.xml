@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Aurora liugj 2013-11-13 modified for aurora's new feature start -->
+    <item android:id="@+id/delete"
+          android:title="@string/delete"
+          android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+          android:showAsAction="always" />
+    <!-- Aurora liugj 2013-11-13 modified for aurora's new feature end -->
+</menu>

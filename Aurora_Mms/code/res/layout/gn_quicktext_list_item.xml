@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-4 added for GIUI4.0 start
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/list_item_right_margin"
+    android:paddingLeft="12dip"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal">
+
+    <com.gionee.mms.ui.GnTextView
+        android:id="@+id/quick_text_body"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:text="@string/quick_text_header_text"/>
+
+</LinearLayout>
+

@@ -1,0 +1,802 @@
+#!/bin/bash
+usage(){
+printf "\
+Usage : $0 app_config 
+options:
+    [--help] Show help message
+    [-u|--user] build user apk, default build eng
+    [-v|--version] output target of apk version
+
+example:
+    $0 ../GN_Mms/GN_Mms_01.mk
+"
+}
+
+copy_to_code(){
+	local srcdir="$1"
+	
+	if [ -d "$srcdir" ];then	
+		path=`pwd`	
+		pushd $srcdir
+		find . -path "*\.svn" -prune -o -type f -print | cpio -pdmu ../code
+		file=`find . -path "*\.svn" -prune -o -type f  -print`
+		file=${file//\.\//\/''}
+	    for s in $file
+		    do echo `pwd`$s >> $path/apklog 
+			done
+		popd &>/dev/null
+	fi
+}
+
+get_opts(){
+    opts=$(getopt -o v:uh --long version:,user,debug,help -- "$@")     
+    if [ $? -ne 0 ];then
+        usage 
+        exit 1
+    fi
+
+    eval set -- "$opts"
+    while true 
+    do
+        case "$1" in 
+            -u|--user)
+                TARGET_BUILD_VERIANT=user
+                shift 1
+                ;;
+            -v|--version)
+                GN_APK_VERSION=$2
+                shift 2
+                ;;
+            --debug)
+                GN_DEBUG="yes"
+                shift 1
+                ;;
+            -h|--help)
+                usage
+                exit 0
+                ;;
+            --)
+                shift
+                break
+                ;;
+            *)
+                usage
+                exit 1
+                ;;
+        esac
+    done
+
+    #get info from GN_APK_CONFIG
+    for cfg in $@ 
+    do
+        if [ "${cfg:0 -2}" == "mk" ];then
+            GN_APK_CONFIG="$cfg"
+            break
+        fi
+    done
+
+    if [ -z "$GN_APK_CONFIG" ];then
+        echo "The GN_APK_CONFIG format error" >&2
+        exit 1
+    else
+        GN_APK_CONFIG=$(basename $GN_APK_CONFIG)
+        gn_apk_config_dir_tmp=${GN_APK_CONFIG##*_}
+        GN_APK_SOURCE_NAME="${GN_APK_CONFIG%_*}"
+        GN_APK_SOURCE_ROOT="../$GN_APK_SOURCE_NAME"
+        GN_APK_CONFIG_ROOT="$GN_APK_SOURCE_ROOT/${gn_apk_config_dir_tmp%.mk}"
+        if [ ! -d "$GN_APK_SOURCE_ROOT"  -o ! -f "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG" ];then
+            echo "The $GN_APK_CONFIG not exist" >&2
+            exit 2
+        else
+            ln -sf  "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG" "$GN_APK_CONFIG"
+        fi
+
+        GN_APK_CODE_DIR="$GN_APK_SOURCE_ROOT/code"
+        if [ ! -d "$GN_APK_CODE_DIR" ];then
+            echo "Error:project code not exist!" >&2
+            exit 3
+        fi
+
+        copy_to_code "$GN_APK_CONFIG_ROOT"
+        if [ -n "$GN_APK_VERSION" ];then
+            $GN_TOOLS_DIR/gn_change_version.sh $GN_APK_VERSION $GN_APK_CODE_DIR/AndroidManifest.xml
+        fi
+    fi
+}
+
+error(){
+    local ret="$1"
+    local string="error: $2"
+    if [ "$ret" -ne 0 ];then
+        echo "$string" >&2
+        exit $ret
+    fi
+}
+
+getJar(){
+    local dir="$1"
+    str=$(echo `find $dir -path "*dex_bootjars" -prune -o -type f -iname "*.jar" -print`)
+    echo $str
+}
+
+del_same_string(){
+    local str=$1
+    tmp=$(echo `for s in $str; do echo $s; done| sort -u`)
+    echo $tmp
+}
+
+getLibList(){
+    local gn_local_path=$1
+    #get libs list
+    local gn_lib_jars=$(getJar "$GN_JARS_PATH")
+    [ "$GN_DEBUG" == "yes"  ] && echo "DEBUG_INFO gn_local_jars: $gn_lib_jars" 
+    #get static lib 
+    local gn_static_jar_dirs=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_STATIC_JAVA_LIBRARIES "$gn_local_path/Android.mk")
+    gn_static_jar_dirs=$(del_same_string "$gn_static_jar_dirs")
+    local gn_static_jars=""
+    for dir in $gn_static_jar_dirs
+    do
+        if [ -f "$OUT_ROOT/$GN_APK_SOURCE_NAME/$dir.jar" ];then
+            gn_static_jars="$gn_static_jars $OUT_ROOT/$GN_APK_SOURCE_NAME/$dir.jar"
+            continue
+        fi
+
+        if [ -d "$GN_STATIC_JARS_PATH/$dir" ];then
+            gn_static_jars="$gn_static_jars $(getJar "$GN_STATIC_JARS_PATH/$dir")"
+        else
+            echo -e "\e[31mWarning:Missing\e[0m static jar folder $dir" >&2
+        fi
+
+    done
+    [ "$GN_DEBUG" == "yes" ] && echo "DEBUG_INFO gn_static_jars: $gn_static_jars" 
+
+
+    #get prebuild static lib
+    local gn_jar_files=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES "$gn_local_path/Android.mk")
+    for file in $gn_jar_files
+    do
+        if [ -f "$gn_local_path/$file" ];then
+            local gn_prebuild_static_jars="$gn_prebuild_static_jars $gn_local_path/$file"
+        else
+            echo -e "\e[31mWarning:Missing\e[0m local jar: $file not exist!" >&2
+        fi
+    done
+    [ "$GN_DEBUG" == "yes" ] && echo "DEBUG_INFO gn_prebuild_static_jars: $gn_prebuild_static_jars" 
+    GN_LIB_JARS=$(echo ${gn_lib_jars})
+    GN_REFER_JARS=$(echo ${gn_static_jars} ${gn_prebuild_static_jars})
+    GN_EXTERNER_JARS=$(echo ${GN_LIB_JARS} ${GN_REFER_JARS})
+}
+
+prebuild(){
+    #create out dir
+    rm -rf $OUT_ROOT
+    mkdir -p $OUT_ROOT
+    mkdir -p $OUT_ROOT/$GN_APK_SOURCE_NAME
+
+    [ ! -f "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG" ] && return
+    while read line
+    do
+        [ -z "$line" -o "${line:0:1}" == "#" ] && continue
+        local key=$(echo `echo $line | cut -d "=" -f 1`)
+        local value=$(echo `echo $line | cut -d "=" -f 2`)
+        if [ "x${key:0:6}" == "xGN_APK" -a -n "$value" ];then
+            export "$key=$value"
+        fi
+    done < <(cat "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG")
+
+    # This is a historical problem, the application can not define their own system featureoption
+    #rm -rf $GN_APK_CODE_DIR/src/com/mediatek/featureoption/
+    local Featureoption_file="$GN_APK_CODE_DIR/src/com/gionee/featureoption/FeatureOption.java"
+    if [ ! -f "$Featureoption_file" ];then
+        $GN_TOOLS_DIR/gn_apk_javaoptgen.pl "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG"
+    else
+       while read line 
+       do
+           [ -z "$line" -o "${line:0:1}" == "#" ] && continue 
+           local key=$(echo `echo $line | cut -d "=" -f 1`)
+           local value=$(echo `echo $line | cut -d "=" -f 2`)
+           if [ "$value" == "yes" -o "$value" == "no" ];then
+               [ "$value" == "yes" ] && local option=true
+               [ "$value" == "no" ] && local option=false
+
+               if `grep -qw "public static final boolean $key" $Featureoption_file` ;then
+                   sed -i "s/\($key\) = \(.*\);/\1 = $option;/g"  $Featureoption_file
+               else
+                   sed -i  "/}/i\\\tpublic static final boolean $key = $option;" $Featureoption_file
+               fi
+           fi
+       done < "$GN_APK_SOURCE_ROOT/$GN_APK_CONFIG"
+    fi
+
+    # set gionee jars path
+    if [ "$GN_APK_PLATFORM_VENDOR" == "mtk"  ];then
+        GN_STATIC_JARS_PATH="$GN_CURRENTPATH/static_jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION/$GN_APK_MTK_PLATFORM"
+        GN_JARS_PATH="$GN_CURRENTPATH/jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION/$GN_APK_MTK_PLATFORM"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "qcom" ];then
+        GN_STATIC_JARS_PATH="$GN_CURRENTPATH/static_jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION"
+        GN_JARS_PATH="$GN_CURRENTPATH/jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "google" ];then
+        GN_STATIC_JARS_PATH="$GN_CURRENTPATH/static_jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION"
+        GN_JARS_PATH="$GN_CURRENTPATH/jars/$GN_APK_PLATFORM_VENDOR/$GN_APK_PLATFORM_VERSION"
+    fi
+
+    # fix: firm resource id rom 4.1.2 start
+    if [ "$GN_APK_PLATFORM_VERSION" == "4.1" -a "$GN_APK_FIRM_RESOURCE_ID" == "yes" ];then
+        GN_STATIC_JARS_PATH="$GN_CURRENTPATH/static_jars/${GN_APK_PLATFORM_VENDOR}/${GN_APK_PLATFORM_VERSION}.2/$GN_APK_MTK_PLATFORM"
+        GN_JARS_PATH="$GN_CURRENTPATH/jars/${GN_APK_PLATFORM_VENDOR}/${GN_APK_PLATFORM_VERSION}.2/$GN_APK_MTK_PLATFORM"
+    fi
+    # fix: firm resource id rom 4.1.2 end
+    GN_BOOT_CLASS_JAR="$GN_JARS_PATH/core/classes.jar"
+}
+
+create_resource_java_files(){
+    echo -e "\e[32mTarget\e[0m R.java and Manifest.java"   
+    local gn_local_path=$1
+    local gn_out_root=$2
+    local opt_gn_search_res=""
+    local gn_out_src_root=$gn_out_root/src
+    local static_libs=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_STATIC_JAVA_LIBRARIES $gn_local_path/Android.mk)
+    local gn_local_aapt_flags=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_AAPT_FLAGS $gn_local_path/Android.mk)
+    local gn_local_resource_dir=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_RESOURCE_DIR $gn_local_path/Android.mk)
+    if [ -z "$gn_local_resource_dir" ];then
+        opt_gn_search_res="-S $gn_local_path/res"
+    else
+        for dir in $gn_local_resource_dir
+        do
+            opt_gn_search_res="-S $gn_local_path/$dir $opt_gn_search_res"
+        done
+    fi
+
+    if [ "$GN_APK_PLATFORM_VENDOR" == "mtk" ];then
+         opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk -I $GN_JARS_PATH/mediatek_res.apk  -I $GN_JARS_PATH/aurora-framework_res.apk"
+#        opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk -I $GN_JARS_PATH/package-export.apk"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "qcom" ];then
+        opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "google" ];then
+       opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk -I $GN_JARS_PATH/aurora-framework_res.apk"
+    else
+        echo -e "\e[31mWarning:Missing\e[0m opt_gn_existing_pkg" >&2
+    fi
+    echo $GN_TOOLS_DIR/aapt  package $gn_local_aapt_flags  -z -m -J "$gn_out_src_root" -M $gn_local_path/AndroidManifest.xml -P "$gn_out_root/public_resources.xml" $opt_gn_search_res -A $gn_local_path/assets $opt_gn_existing_pkg -G "$gn_out_root/proguard_options" --min-sdk-version ${GN_SDK_VER} --target-sdk-version ${GN_SDK_VER} --version-code ${GN_SDK_VER}
+
+    $GN_TOOLS_DIR/aapt  package $gn_local_aapt_flags  -z -m -J "$gn_out_src_root" -M $gn_local_path/AndroidManifest.xml -P "$gn_out_root/public_resources.xml" $opt_gn_search_res -A $gn_local_path/assets $opt_gn_existing_pkg -G "$gn_out_root/proguard_options" --min-sdk-version ${GN_SDK_VER} --target-sdk-version ${GN_SDK_VER} --version-code ${GN_SDK_VER}
+
+   error "$?" "create_resource_java_files"
+}
+
+find_java_from_mkfile(){
+    local gn_local_path="$1"
+    local gn_out_root="$2"
+    local is_android_func="no"
+    local dir=""
+    local gn_src_files=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_SRC_FILES $gn_local_path/Android.mk)
+    gn_src_files=${gn_src_files//','/', '}
+    #echo $gn_src_files
+    for str in $gn_src_files
+    do
+        #parse java files
+        if [ "${str:0:20}" == "all-java-files-under" ];then
+            is_android_func='yes'
+            continue
+        fi
+
+        if [ "$is_android_func" == "yes" ];then
+            dir=$str     
+            dir=${dir//')'/}
+            if [ -d "$gn_local_path/$dir" ];then
+                find $gn_local_path/$dir -name "*.java" >> $gn_out_root/java-source-list
+            fi
+            is_android_func="no"
+        fi
+
+        if [ "${str: -5}" == ".java" -a -f "$gn_local_path/$str" ];then
+            echo "$gn_local_path/$str" >> $gn_out_root/java-source-list
+        fi
+    done
+}
+
+transform_aidl_to_java(){
+    echo -e "\e[32mTarget\e[0m transform_aidl_to_java"
+    local gn_local_path=$1
+    local gn_out_root=$2
+    local is_android_func="no"
+    local dir=""
+    local gn_src_files=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_SRC_FILES $gn_local_path/Android.mk)
+    [ "$GN_DEBUG" == "yes"  ] && echo "DEBUG_INFO LOCAL_SRC_FILES: $gn_src_files"
+    gn_src_files=${gn_src_files//','/', '}
+    for str in $gn_src_files
+    do
+        #parse aidl
+        if [ "${str:0:21}" == "all-Iaidl-files-under" ];then
+            is_android_func='yes'
+            continue
+        fi
+
+        if [ "$is_android_func" == "yes" ];then
+            dir=$str     
+            dir=${dir//')'/}
+            while read aidl_file
+            do
+                $GN_TOOLS_DIR/aidl -I$gn_local_path -I$gn_local_path/$dir -b -o$gn_out_root/src $aidl_file
+            done < <(find $gn_local_path/$dir -name "*.aidl")
+            is_android_func="no"
+        fi
+
+        if [ "${str: -5}" == ".aidl" -a -f "$gn_local_path/$str" ];then
+            $GN_TOOLS_DIR/aidl  -b -I$gn_local_path/$dir -I$gn_local_path/src -o$gn_out_root/src $gn_local_path/$str
+        fi
+    done
+}
+
+
+transform_logtags_to_java(){
+    echo -e "\e[32mTarget\e[0m transform_logtags_to_java"
+    local gn_local_path=$1
+    local gn_out_root=$2
+    local dir=""
+    local is_android_func="no"
+    local gn_src_files=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_SRC_FILES $gn_local_path/Android.mk)
+    [ "$GN_DEBUG" == "yes"  ] && echo "DEBUG_INFO LOCAL_SRC_FILES: $gn_src_files"
+    gn_src_files=${gn_src_files//','/', '}
+    for str in $gn_src_files
+    do
+        #parse logtags 
+        if [ "${str:0:23}" == "all-logtags-files-under" ];then
+            is_android_func='yes'
+            continue
+        fi
+
+        if [ "$is_android_func" == "yes" ];then
+            dir=$str     
+            dir=${dir//')'/}
+            if [ -d "$gn_local_path/$dir" ];then
+                while read logtags_file
+                do
+                    $GN_TOOLS_DIR/java-event-log-tags.py -o${logtags_file%.logtags}.java \
+                        $logtags_file  $gn_out_root/all-event-log-tags.txt
+                done < <(find $gn_local_path/$dir -name "*.logtags")
+            fi
+            is_android_func="no"
+        fi
+
+        if [ "${str: -8}" == ".logtags" -a -f "$gn_local_path/$str" ];then
+            $GN_TOOLS_DIR/java-event-log-tags.py -o$gn_local_path/${str%.logtags}.java \
+                $gn_local_path/$str  $gn_out_root/all-event-log-tags.txt
+        fi
+    done
+}
+
+transform_java_to_classes_jar(){
+    echo -e "\e[32mTarget\e[0m transform_java_to_classes_jar"
+    local gn_local_path=$1
+    local gn_out_root=$2
+    local gn_out_src_root=$gn_out_root/src
+    local gn_out_classes_root=$gn_out_root/classes
+    #echo $gn_local_path
+    getLibList "$gn_local_path"
+    for f in ${GN_REFER_JARS}
+    do
+        if [ ! -f "$f" ];then
+            echo "\e[41mMissing\e[0m file $f" 
+        else
+            unzip -qo $f -d $gn_out_classes_root
+            rm -rf $gn_out_classes_root/META-INF
+        fi
+    done
+
+    #R.java dir 
+    if [ -d "$gn_out_src_root" ];then
+        find $gn_out_src_root -name "*.java" >> $gn_out_root/java-source-list
+    fi
+
+    #default java src dir
+    if [ -d "$gn_local_path/src" ];then
+        find $gn_local_path/src -name "*.java" >> $gn_out_root/java-source-list
+    else
+        echo -e "\e[31mWarning:Missing\e[0m java src dir folder $d" >&2
+    fi
+
+    find_java_from_mkfile "$gn_local_path" "$gn_out_root"
+
+    #def the sanme java
+    tr ' ' '\n' < $gn_out_root/java-source-list | sort -u > $gn_out_root/java-source-list-uniq 
+
+    local gn_externer_jars=${GN_EXTERNER_JARS// /':'}
+
+    echo `which javac` -J-Xmx512M -target 1.5 -Xmaxerrs 9999999 -encoding UTF-8 -g -bootclasspath ${GN_BOOT_CLASS_JAR} -classpath ./jars/google/4.4/aurora-framework/classes.jar:${gn_externer_jars} -d $gn_out_classes_root  @$gn_out_root/java-source-list-uniq
+ 
+    `which javac` -J-Xmx512M -target 1.5 -Xmaxerrs 9999999 -encoding UTF-8 -g -bootclasspath ${GN_BOOT_CLASS_JAR} -classpath ./jars/google/4.4/aurora-framework/classes.jar:${gn_externer_jars} -d $gn_out_classes_root  @$gn_out_root/java-source-list-uniq
+    error "$?" "build java file"
+    rm -rf  $gn_out_root/java-source-list*
+
+    jar -cf  $gn_out_root/classes.jar -C $gn_out_classes_root .
+    
+    #add profile into classes.jar 
+    if [ -d "$gn_local_path/src"  -a "$GN_APK_ADD_PROFILE" == "yes" ];then
+        local java_res_jar_flags=$(find $gn_local_path/src -path "*\.svn" -prune -o -type f -a -not -name "*.java" -print | sed -e "s?^$gn_local_path/src/? -C $gn_local_path/src ?")
+        if [ -n "$java_res_jar_flags" ] ; then 
+            echo $java_res_jar_flags >$gn_out_root/java_res_jar_flags
+            jar uf $gn_out_root/classes.jar $java_res_jar_flags
+        fi
+    fi
+}
+
+transform_jar_to_proguard(){
+    echo -e "\e[32mTarget\e[0m transform_jar_to_proguard"
+    local gn_local_path="$1"
+    local gn_out_root="$1"
+    local gn_proguard_enabled=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_PROGUARD_ENABLED $gn_local_path/Android.mk)
+    local gn_proguard_flag_files=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_PROGUARD_FLAG_FILES $gn_local_path/Android.mk)
+    [ -z "$gn_proguard_enabled" ] && return 
+    [ -z "$gn_proguard_flag_files" ] && gn_proguard_flag_files="proguard.flags"
+    if [ ! -f "$gn_local_path/$gn_proguard_flag_files" ];then
+        echo "$gn_local_path/$gn_proguard_flag_files file does not exist" >&2
+        return
+    fi
+    local gn_libraryjar_opts=""
+    for j in ${GN_LIB_JARS}
+    do
+        if [ -f "$j" ];then
+            gn_libraryjars_opts="$gn_libraryjars_opts -libraryjars $j"
+        fi
+    done
+    #echo $gn_libraryjars_opts
+    mv $gn_out_root/classes.jar $gn_out_root/noproguard.classes.jar
+    `which java` -jar $GN_TOOLS_DIR/proguard.jar  -injars $gn_out_root/noproguard.classes.jar -outjars $gn_out_root/classes.jar $gn_libraryjars_opts -forceprocessing  -printmapping $gn_out_root/${GN_PACKAGENAME}_proguard_mapping -include $gn_local_path/$gn_proguard_flag_files 
+    error "$?" "transform_jar_to_proguard"
+}
+
+transform_classes_to_dex(){
+    local gn_out_root=$1
+    $GN_TOOLS_DIR/dx -JXms16M -JXmx2048M --dex --output=$gn_out_root/classes.dex $gn_out_root/classes.jar
+    error "$?" "transform_classes_to_dex"
+}
+
+create_package(){
+    echo -e "\e[32mTarget\e[0m add assets to package"
+    local gn_local_path="$1"
+    local gn_out_root="$2"
+    local opt_gn_search_res=""
+    local gn_local_aapt_flags=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_AAPT_FLAGS $gn_local_path/Android.mk)
+    local gn_local_resource_dir=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_RESOURCE_DIR $gn_local_path/Android.mk)
+    if [ -z "$gn_local_resource_dir" ];then
+        opt_gn_search_res="-S $gn_local_path/res"
+    else
+        for dir in $gn_local_resource_dir
+        do
+            opt_gn_search_res="-S $gn_local_path/$dir $opt_gn_search_res"
+        done
+    fi
+
+    if [ "$GN_APK_PLATFORM_VENDOR" == "mtk" ];then
+        opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk -I $GN_JARS_PATH/mediatek_res.apk -I $GN_JARS_PATH/aurora-framework_res.apk"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "qcom" ];then
+        opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk"
+    elif [ "$GN_APK_PLATFORM_VENDOR" == "google" ];then
+        opt_gn_existing_pkg="-I $GN_JARS_PATH/framework_res.apk -I $GN_JARS_PATH/aurora-framework_res.apk"
+    else
+        echo -e "\e[31mWarning:Missing\e[0m opt_gn_existing_pkg" >&2
+    fi
+
+    echo $GN_TOOLS_DIR/aapt package $gn_local_aapt_flags -u -z -c $GN_APK_LANGUAGE,$GN_APK_RESOLUTION -M $gn_local_path/AndroidManifest.xml $opt_gn_search_res -A $gn_local_path/assets $opt_gn_existing_pkg --min-sdk-version ${GN_SDK_VER} --target-sdk-version ${GN_SDK_VER} --product default --version-code ${GN_SDK_VER} -F $gn_out_root/package.apk
+
+   $GN_TOOLS_DIR/aapt package $gn_local_aapt_flags -u -z -c $GN_APK_LANGUAGE,$GN_APK_RESOLUTION -M $gn_local_path/AndroidManifest.xml $opt_gn_search_res -A $gn_local_path/assets $opt_gn_existing_pkg --min-sdk-version ${GN_SDK_VER} --target-sdk-version ${GN_SDK_VER} --product default --version-code ${GN_SDK_VER} -F $gn_out_root/package.apk
+
+    error "$?" "create_package"
+    
+    if [ "$GN_APK_HAS_JNI_LIBRARIES" == "yes" ];then
+        local gn_cur_path=`pwd`
+        pushd $gn_local_path>/dev/null
+        find lib -path "*\.svn" -prune -o -type f -iname "*.so" -print | zip -r $gn_cur_path/$gn_out_root/package.apk -@
+        popd >/dev/null
+    fi
+    $GN_TOOLS_DIR/aapt add -k $gn_out_root/package.apk $gn_out_root/classes.dex
+
+    #add java res jar flags to apk
+    if [ -d "$OUT_PKG_CLASSES_ROOT" ] ; then 
+        local java_res_jar_flags=$(find $OUT_PKG_CLASSES_ROOT -type f -a -not -name "*.class" | sed -e "s?^$OUT_PKG_CLASSES_ROOT/? -C $OUT_PKG_CLASSES_ROOT ?")
+        if [ -n "$java_res_jar_flags" ] ; then 
+            echo $java_res_jar_flags >$OUT_PKG_ROOT/java_res_jar_flags
+            jar uf $gn_out_root/package.apk $java_res_jar_flags
+        fi
+    fi
+}
+
+signature_apk(){
+    echo -e "\e[32mTarget\e[0m signatured apk"
+    local gn_out_root=$1
+    echo `which java` -Xmx1024m -jar ${GN_TOOLS_DIR}/signapk.jar -w $GN_CURRENTPATH/security/${GN_CERTIFICATE}.x509.pem $GN_CURRENTPATH/security/${GN_CERTIFICATE}.pk8 $gn_out_root/package.apk $gn_out_root/package_unalign.apk
+ 
+    `which java` -Xmx1024m -jar ${GN_TOOLS_DIR}/signapk.jar -w $GN_CURRENTPATH/security/${GN_CERTIFICATE}.x509.pem $GN_CURRENTPATH/security/${GN_CERTIFICATE}.pk8 $gn_out_root/package.apk $gn_out_root/package_unalign.apk
+    error "$?" "signature_apk"
+    $GN_TOOLS_DIR/zipalign -f 4 $gn_out_root/package_unalign.apk $gn_out_root/package.apk
+}
+
+format_output(){
+    local product_copy_files="$1"
+    if [ -n "$product_copy_files" ];then
+        printf 'PRODUCT_COPY_FILES +=\\'
+        printf '\n'
+        for line in `printf "${product_copy_files}"`
+        do
+            printf "\t$line\\"
+            printf '\n'
+        done
+    fi
+}
+
+dexpreopt_one_file(){
+    echo -e "\e[32mtarget\e[0m dexpreopt_one_file"
+    boot_jars_list="$(sed -n '/DEXPREOPT_BOOT_JARS.*core/p' jars/qcom/4.1/dex_bootjars/dex_preopt.mk| awk -F '[=| ]' '{print $NF}')"
+    LD_LIBRARY_PATH=$GN_JARS_PATH/dexpreopt_dep_libs:$LD_LIBRARY_PATH ./tools/dex-preopt --dexopt=tools/dexopt --build-dir=$GN_CURRENTPATH --product-dir=$GN_JARS_PATH/dex_bootjars --boot-dir=system/framework --boot-jars=$boot_jars_list  $OUT_PKG_ROOT/package.apk $OUT_PKG_ROOT/package.odex
+    error "$?" "dexpreopt_one_file"
+}
+
+remove_classes_from_pacakge(){
+    $GN_CURRENTPATH/tools/aapt remove $OUT_PKG_ROOT/package.apk classes.dex
+}
+
+create_apk_android_mk(){
+    local NAME
+    local android_file=$1
+    local product_copy_files="$2"
+    NAME=$(echo $GN_PACKAGENAME | tr '[a-z]' '[A-Z]')
+    NAME=${NAME/'GN_'/}
+    NAME=${NAME/'GN'/}
+
+cat > $android_file<<EOF
+ifeq ("\$(GN_APK_${NAME}_SUPPORT)","yes")
+LOCAL_PATH := \$(call my-dir)
+include \$(CLEAR_VARS)
+
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE := $GN_PACKAGENAME
+LOCAL_SRC_FILES := \$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+`format_output "$product_copy_files"`
+
+include \$(BUILD_PREBUILT)
+endif
+EOF
+}
+
+copy_apk_target(){
+    echo -e "\e[32mTarget\e[0m copy apk target"
+    local gn_local_path=$1
+    local gn_out_root=$2
+    local gn_channel_name=$3
+    local gn_out_target_root=$OUT_ROOT/$GN_APK_SOURCE_NAME
+
+    if [ -f $gn_out_root/package.apk ];then
+        if [ -n "$gn_channel_name" ];then
+            cp -v $gn_out_root/package.apk $gn_out_target_root/${GN_PACKAGENAME}-${gn_channel_name}.apk
+        else
+            cp -v $gn_out_root/package.apk $gn_out_target_root/${GN_PACKAGENAME}.apk
+        fi
+    fi
+
+    if [ -f $gn_out_root/package.odex ];then
+        cp -v $gn_out_root/package.odex $gn_out_target_root/$GN_PACKAGENAME.odex
+    fi
+
+    if [ -f $gn_out_root/${GN_PACKAGENAME}_proguard_mapping ];then
+        cp -v $gn_out_root/${GN_PACKAGENAME}_proguard_mapping $gn_out_target_root/
+    fi
+                   
+
+
+    # add README for autobuild_139_tast
+    >$gn_out_target_root/README
+    while read line
+    do
+        if [ "x${line:0:5}" == "xGN_RM" ];then
+            echo $line >> $gn_out_target_root/README
+        fi
+        if [ "x${line:0:12}" == "xGN_ZIP_NAME_" ];then
+            echo $line >> $gn_out_target_root/README
+        fi
+    done < $GN_CURRENTPATH/$GN_APK_CONFIG
+    echo "GN_APK_PLATFORM_VENDOR=$GN_APK_PLATFORM_VENDOR" >> $gn_out_target_root/README
+    echo "GN_APK_PLATFORM_VERSION=$GN_APK_PLATFORM_VERSION" >> $gn_out_target_root/README
+    if [ "$GN_APK_PLATFORM_VENDOR" == "mtk" ];then
+        echo "GN_APK_MTK_PLATFORM=$GN_APK_MTK_PLATFORM" >> $gn_out_target_root/README
+    fi
+
+    local apk_copy_files=$(${GN_TOOLS_DIR}/gn_parse_android.sh PRODUCT_COPY_FILES $gn_local_path/Android.mk)
+    if [ -n "$apk_copy_files" ];then
+        local product_copy_files=
+        for i in $apk_copy_files
+        do
+            src=$(echo  $i |cut -d ':' -f 1)
+            dest=$(echo  $i |cut -d ':' -f 2)
+            if [ -z "$src" -a -z "$dest" ];then
+                echo -e "\e[31mCopy file Missing: $src -> $dest\e[0m"
+                break 
+            fi
+            if [ -f $gn_local_path/$src ] ;then
+                mkdir -p `dirname $gn_out_target_root/$dest`
+                cp -v $gn_local_path/$src $gn_out_target_root/$dest
+                product_copy_files+="\$(LOCAL_PATH)/$dest:$dest\n"
+            else
+                echo "Warning: not $src"
+            fi
+        done
+    fi
+    create_apk_android_mk "$gn_out_target_root/Android.mk" "$product_copy_files"
+
+    #add copy 3rd to zip for GN_VoiceHelper APK
+    if [ "$GN_APK_COPY_3RD_SUPPORT" == "yes" -a -d "$GN_APK_SOURCE_ROOT/3rd" ];then
+        local cur_dir=`pwd`
+        pushd $GN_APK_SOURCE_ROOT/3rd/ >/dev/null
+        find . -path "*\.svn" -prune -o -type f -print | cpio -pdmu  $cur_dir/out/$GN_PACKAGENAME/
+        popd>/dev/null
+    fi
+}
+
+
+create_local_static_jar(){
+    local gn_local_path=$1
+    local gn_out_root=$2
+    transform_aidl_to_java "$gn_local_path" "$gn_out_root"
+    transform_logtags_to_java "$gn_local_path" "$gn_out_root"
+    transform_java_to_classes_jar "$gn_local_path" "$gn_out_root"
+}
+
+create_local_res_zip(){
+    local gn_local_path=$1
+    local zip_name=$2
+    local cur_pwd=`pwd`
+    pushd $gn_local_path >/dev/null
+    find res -path "*.svn" -prune -o -type f -print | zip -qy $cur_pwd/out/$GN_APK_SOURCE_NAME/${zip_name}Res.zip -@
+    popd >/dev/null
+}
+
+build_local_static_jar(){
+    echo -e "\e[32mTarget\e[0m *******build_local_static_jar*******"
+    while read android 
+    do
+        if ! grep -qw 'BUILD_STATIC_JAVA_LIBRARY' $android;then
+            continue
+        fi
+
+        if grep -qw 'BUILD_PACKAGE' $android; then
+            #This is to compiled meet GN_Widget the demand,
+            #although I do not want to write, but there is no way
+            #FIXME for later
+            echo "Warning: Compile static jar Android.mk contains the compiled Pkg, modify it!"
+            continue
+        fi
+
+        local gn_local_path=$(dirname $android)
+        local local_module_name=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_MODULE $gn_local_path/Android.mk) 
+        [ -z "$local_module_name" ] && continue
+        rm -rf  $OUT_STATIC_JAVA_ROOT
+        mkdir -p $OUT_STATIC_JAVA_ROOT
+        mkdir -p $OUT_STATIC_JAVA_SRC_ROOT
+        mkdir -p $OUT_STATIC_JAVA_CLASSES_ROOT
+        if [ -f "$gn_local_path/AndroidManifest.xml" ];then
+            #This is to compiled meet GN_Widget the demand,
+            #although I do not want to write, but there is no way
+            #FIXME for later
+            create_resource_java_files "$gn_local_path" "$OUT_STATIC_JAVA_ROOT"
+            create_local_static_jar "$gn_local_path" "$OUT_STATIC_JAVA_ROOT"
+            create_local_res_zip "$gn_local_path" "$local_module_name"
+            cp -v $OUT_STATIC_JAVA_ROOT/classes.jar  $OUT_ROOT/$GN_APK_SOURCE_NAME/${local_module_name}.jar
+        else
+            create_local_static_jar "$gn_local_path" "$OUT_STATIC_JAVA_ROOT"
+            cp -v $OUT_STATIC_JAVA_ROOT/classes.jar  $OUT_ROOT/$GN_APK_SOURCE_NAME/${local_module_name}.jar
+        fi
+    done < <(find $GN_APK_CODE_DIR/ -mindepth 1 -type f -name "Android.mk")
+}
+
+create_channel_files(){
+local channel_name=$1
+mkdir -p $GN_APK_CODE_DIR/res/values
+cat >$GN_APK_CODE_DIR/res/values/channel_string.xml<<EOF
+<resources>
+    <string name="channel">$channel_name</string>
+    <string name="ua_channel">$channel_name</string>
+</resources>
+EOF
+
+mkdir -p $GN_APK_CODE_DIR/src/com/gionee/client/util
+cat >$GN_APK_CODE_DIR/src/com/gionee/client/util/UpgradeUrl.java<<EOF
+package com.gionee.client.util;
+
+public class UpgradeUrl {
+    static final String URL_UPGRADE_WIFI = "http://update.gionee.com/synth/open/checkUpgrade.do?product=com.gionee.client.${channel_name}&version=";
+    static final String TEST_URL_UPGRADE = "http://test1.gionee.com/synth/open/checkUpgrade.do?product=com.gionee.client.${channel_name}&version=";
+    static final String TEST_URL_UPGRADE_ALL = "http://test1.gionee.com/synth/open/checkUpgrade.do?product=com.gionee.client.${channel_name}&test=true&version=";
+}
+EOF
+}
+
+
+build_apk(){
+    echo -e "\e[32mTarget\e[0m *************build apk**************"
+    while read android 
+    do
+        [ ! -f "$android" ] && continue
+        if ! grep -qw 'BUILD_PACKAGE' $android;then
+            continue
+        fi
+
+        #create build dir
+        rm -rf $OUT_PKG_ROOT
+        mkdir -p $OUT_PKG_ROOT
+        mkdir -p $OUT_PKG_SRC_ROOT
+        mkdir -p $OUT_PKG_CLASSES_ROOT
+
+        local gn_local_path=$(dirname $android)
+
+        #don't build tests apk
+        local local_module_tags=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_MODULE_TAGS $android)
+        [ "$local_module_tags" == "tests" ] && continue
+
+        # get apk name and apk certificate value
+        GN_PACKAGENAME=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_PACKAGE_NAME ${gn_local_path}/Android.mk)
+        GN_CERTIFICATE=$($GN_TOOLS_DIR/gn_parse_android.sh LOCAL_CERTIFICATE ${gn_local_path}/Android.mk)
+        [ -z "$GN_CERTIFICATE" ] && GN_CERTIFICATE="platform"
+
+        if [ ! -d $gn_local_path/assets ];then
+            mkdir -p $gn_local_path/assets
+        fi
+        create_resource_java_files "$gn_local_path" "$OUT_PKG_ROOT"
+        transform_aidl_to_java "$gn_local_path" "$OUT_PKG_ROOT"
+        transform_logtags_to_java "$gn_local_path" "$OUT_PKG_ROOT"
+        transform_java_to_classes_jar "$gn_local_path" "$OUT_PKG_ROOT"
+        transform_jar_to_proguard "$gn_local_path" "$OUT_PKG_ROOT"
+        transform_classes_to_dex "$OUT_PKG_ROOT"
+        create_package "$gn_local_path" "$OUT_PKG_ROOT"
+        signature_apk "$OUT_PKG_ROOT"
+        copy_apk_target "$gn_local_path" "$OUT_PKG_ROOT"
+    done < <(find $GN_APK_CODE_DIR/ -mindepth 1 -type f -name "Android.mk")
+}
+
+main(){
+    get_opts "$@"    
+    prebuild
+
+    build_local_static_jar
+    build_apk
+}
+
+GN_CURRENTPATH=$(dirname $0)
+GN_TOOLS_DIR=$GN_CURRENTPATH/tools
+
+#out root
+OUT_ROOT=$GN_CURRENTPATH/out
+#out pkg root
+OUT_PKG_ROOT=$OUT_ROOT/pkg
+OUT_PKG_SRC_ROOT=$OUT_PKG_ROOT/src
+OUT_PKG_CLASSES_ROOT=$OUT_PKG_ROOT/classes
+#out static java root
+OUT_STATIC_JAVA_ROOT=$OUT_ROOT/static_java
+OUT_STATIC_JAVA_SRC_ROOT=$OUT_STATIC_JAVA_ROOT/src
+OUT_STATIC_JAVA_CLASSES_ROOT=$OUT_STATIC_JAVA_ROOT/classes
+
+
+#default build env
+TARGET_BUILD_VERIANT=eng
+
+# android env dir
+GN_SDK_VER=15
+
+
+GN_PACKAGENAME=""
+GN_CERTIFICATE=""
+
+#apk Resolution
+GN_APK_RESOLUTION="ldpi,hdpi,mdpi,nodpi"
+#apk Language
+####GN_APK_LANGUAGE="zh_CN,ru_RU,en_US"
+GN_APK_LANGUAGE="zh_CN,en_US"
+
+GN_Log="apk_build.log"
+GN_APK_PLATFORM_VERSION=4.0
+GN_APK_PLATFORM_VENDOR="google"
+GN_APK_MTK_PLATFORM=6577
+main "$@"  2>&1 | tee $GN_Log
+exit ${PIPESTATUS[0]}

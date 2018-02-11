@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_body"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/aurora_action_bar_top_bg"
+    android:minHeight="55dp" >
+
+    <LinearLayout
+        android:id="@+id/aurora_bottom_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/aurora_action_bar_middle_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/aurora_action_bar_option_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#fff"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" />
+
+        <ImageButton
+            android:id="@+id/aurora_search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/aurora_action_bar_option_panel"
+            android:layout_alignParentTop="true"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aurora_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top|left"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/aurora_action_bar_title_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/aurora_action_bar_left_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/aurora_action_bar_title_custom" >
+
+            <ImageButton
+                android:id="@+id/aurora_action_bar_title_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/aurora_action_bar_back_normal" />
+
+            <LinearLayout
+                android:id="@+id/aurora_action_bar_title_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/aurora_action_bar_title_icon"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/aurora_action_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/aurora_action_bar_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

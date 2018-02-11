@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Keyguard colors -->
+    <color name="keyguard_avatar_frame_color">#ffffffff</color>
+    <color name="keyguard_avatar_frame_shadow_color">#80000000</color>
+    <color name="keyguard_avatar_nick_color">#ffffffff</color>
+    <color name="keyguard_avatar_frame_pressed_color">#ff35b5e5</color>
+    <color name="kg_widget_pager_gradient">#ffffffff</color>
+
+    <!-- FaceLock -->
+    <color name="facelock_spotlight_mask">#CC000000</color>
+
+    <!-- Clock -->
+    <color name="clock_white">#ffffffff</color>
+    <color name="clock_gray">#80ffffff</color>
+
+    <color name="date1">#bb6655</color>
+    <color name="date2">#336644</color>
+    <color name="date3">#aa6655</color>
+    <color name="date4">#dd6655</color>
+    <color name="date5">#ff6655</color>
+    <color name="date6">#556633</color>
+    <color name="date7">#006644</color>
+    <color name="date8">#006655</color>
+    <color name="date9">#382e4a</color>
+    <color name="date10">#382e4a</color>
+    <color name="date11">#382e4a</color>
+    <color name="date12">#cc6655</color>
+    <color name="date13">#dd66ff</color>
+    <color name="date14">#ee66ee</color>
+    <color name="date15">#5366dd</color>
+    <color name="date16">#2666cc</color>
+    <color name="date17">#3366bb</color>
+    <color name="date18">#3355aa</color>
+    <color name="date19">#33ee55</color>
+    <color name="date20">#33bb55</color>
+    <color name="date21">#33cc55</color>
+    <color name="date22">#33dd55</color>
+    <color name="date23">#65aa55</color>
+    <color name="date24">#33aa55</color>
+    <color name="date25">#336655</color>
+    <color name="date26">#336aa5</color>
+    <color name="date27">#336bb5</color>
+    <color name="date28">#336cc5</color>
+    <color name="date29">#336dd5</color>
+    <color name="date30">#336ff5</color>
+    <color name="date31">#3aa655</color>
+    
+    <color name="default_colors">#131522</color>
+    
+    <color name="alpha_background">#ff000000</color>
+
+    <drawable name="numpad_mask">#51000000</drawable>
+    
+    <color name="chart_text_color">#00fefe</color>
+    <color name="warn_text_color">#ff4444</color>
+	 <color name="chart_finish_black_color">#cc000000</color>
+</resources>

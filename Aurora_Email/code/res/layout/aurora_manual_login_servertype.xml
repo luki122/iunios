@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="47dp"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textSize="14sp"
+	    android:textColor="@color/aurora_manual_title_color"
+	    android:maxLines="1"
+	    android:gravity="center_vertical"
+	    android:text="@string/aurora_server_type"
+	    android:paddingLeft="15dp"/>
+   	    
+	<ImageView 
+	    android:id="@+id/image"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:background="@drawable/aurora_manual_servertype_icon"
+	    android:clickable="false"
+	    android:focusable="false"/>
+	
+	<TextView 
+        android:id="@+id/server_type"
+    	android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:textSize="14sp"
+    	android:gravity="center"
+    	android:text="@string/imap_name"
+    	android:layout_toLeftOf="@id/image"
+    	android:textColor="@color/aurora_manual_title_color"/>
+</RelativeLayout>

@@ -1,0 +1,304 @@
+11-08 18:47:32.975: E/MTPRx(3193): Sending Broadcast
+11-08 18:47:32.990: E/MTPRx(3193): In MtpReceiverandroid.hardware.usb.action.USB_STATE
+11-08 18:47:32.990: E/MTPRx(3193): check value of boot_completed is1
+11-08 18:47:32.990: E/MTPRx(3193): check booting is completed_sys.boot_completed
+11-08 18:47:32.990: E/MTPRx(3193): Sd-Card path/storage/extSdCard
+11-08 18:47:32.995: E/MTPRx(3193): Status for mount/Unmount :removed
+11-08 18:47:32.995: E/MTPRx(3193): SDcard is not available
+11-08 18:47:32.995: E/MTPRx(3193): The value of first_boot is  1
+11-08 18:47:32.995: E/MTPRx(3193): [ 662] The value of first_boot is  1NORMAL SEQUENCE 
+11-08 18:47:33.000: E/MTPRx(3193): Received USB_STATE with sdCardLaunch = 0
+11-08 18:47:33.000: E/MTPRx(3193): configured is false
+11-08 18:47:33.025: E/MtpService(3193): onDestroy.
+11-08 18:47:33.025: E/MTPJNIInterface(3193): noti = 3
+11-08 18:47:33.025: E/(3193): ****** [mtp_usb_mtp_finalize] mtp_close_fd Calling 
+11-08 18:47:33.025: E/(3193): [mtp_close_fd]  fd = 52...
+11-08 18:47:33.025: E/(3193): [mtp_close_fd] USB endpoint [52] closed...
+11-08 18:47:33.025: E/(3193): ****** [mtp_usb_mtp_finalize] Updating the gInitializeFlag Flag to FALSE 
+11-08 18:47:33.025: E/(3193): ****** [mtp_usb_mtp_finalize] Calling mtp_stop_io 
+11-08 18:47:33.665: E/videowall-TranscodeReceiver(3443): broadcastMSG : android.intent.action.ACTION_POWER_DISCONNECTED
+11-08 18:47:33.730: E/FaceScanner(3207): scan groupData.size():0
+11-08 18:47:35.800: E/SELinux(6037): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+11-08 18:47:35.900: E/MTPRx(6037): In MtpReceiverandroid.intent.action.ACTION_POWER_CONNECTED
+11-08 18:47:35.910: E/videowall-TranscodeReceiver(3443): broadcastMSG : android.intent.action.ACTION_POWER_CONNECTED
+11-08 18:47:36.115: E/MTPRx(6037): In MtpReceiverandroid.hardware.usb.action.USB_STATE
+11-08 18:47:36.115: E/MTPRx(6037): check value of boot_completed is1
+11-08 18:47:36.115: E/MTPRx(6037): check booting is completed_sys.boot_completed
+11-08 18:47:36.115: E/MTPRx(6037): Sd-Card path/storage/extSdCard
+11-08 18:47:36.115: E/MTPRx(6037): Status for mount/Unmount :removed
+11-08 18:47:36.115: E/MTPRx(6037): SDcard is not available
+11-08 18:47:36.125: E/MTPRx(6037): The value of first_boot is  1
+11-08 18:47:36.125: E/MTPRx(6037): [ 662] The value of first_boot is  1NORMAL SEQUENCE 
+11-08 18:47:36.125: E/MTPRx(6037): Received USB_STATE with sdCardLaunch = 0
+11-08 18:47:36.125: E/MTPRx(6037): configured is false
+11-08 18:47:37.085: E/MTPRx(6037): In MtpReceiverandroid.hardware.usb.action.USB_STATE
+11-08 18:47:37.085: E/MTPRx(6037): check value of boot_completed is1
+11-08 18:47:37.085: E/MTPRx(6037): check booting is completed_sys.boot_completed
+11-08 18:47:37.085: E/MTPRx(6037): Sd-Card path/storage/extSdCard
+11-08 18:47:37.085: E/MTPRx(6037): Status for mount/Unmount :removed
+11-08 18:47:37.085: E/MTPRx(6037): SDcard is not available
+11-08 18:47:37.085: E/MTPRx(6037): The value of first_boot is  1
+11-08 18:47:37.085: E/MTPRx(6037): [ 662] The value of first_boot is  1NORMAL SEQUENCE 
+11-08 18:47:37.085: E/MTPRx(6037): Received USB_STATE with sdCardLaunch = 0
+11-08 18:47:37.085: E/MTPRx(6037): Start observing USB_STATE_MATCH 
+11-08 18:47:37.110: E/MTPRx(6037): sending MTP_ICON_ENABLED to stack
+11-08 18:47:37.130: E/MTPRx(6037): else part ... so first time!!!
+11-08 18:47:37.130: E/MTPPlaObsrvr(6037): inside setContext()
+11-08 18:47:37.150: E/MTPPlaObsrvr(6037): playlist count is0
+11-08 18:47:37.155: E/MTPPlaObsrvr(6037): Inside registerContentObserver
+11-08 18:47:37.165: E/MtpAdbObserver(6037): inside setContext()
+11-08 18:47:37.165: E/MtpAdbObserver(6037): Inside registerContentObserver
+11-08 18:47:37.180: E/MtpService(6037): onCreate.
+11-08 18:47:37.180: E/MtpService(6037): < MTP > Registering BroadCast receiver :::::
+11-08 18:47:37.190: E/MtpService(6037): < MTP > Registering BroadCast registerBroadCastPolicyRec :::::
+11-08 18:47:37.200: E/MtpService(6037): onStartCommand.
+11-08 18:47:37.200: E/MTPJNIInterface(6037): < MTP > Registering BroadCast receiver :::::
+11-08 18:47:37.200: E/MTPJNIInterface(6037): noti = 10
+11-08 18:47:37.205: E/MtpService(6037): handleMessage. msg= { what=0 when=0 arg1=1 obj=Intent { cmp=com.android.MtpApplication/.MtpService } }
+11-08 18:47:37.205: E/EnterpriseContainerManager(3207): ContainerPolicy Service is not yet ready!!!
+11-08 18:47:37.205: E/MtpServerJNI(3207): could not open MTP driver, errno: 2
+11-08 18:47:37.205: E/MtpServerJNI(3207): server is null in add_storage
+11-08 18:47:37.210: E/MtpServerJNI(3207): server is null in run
+11-08 18:47:37.210: E/MtpServerJNI(3207): server is null in cleanup
+11-08 18:47:37.210: E/MtpService(6037): onStartCommand.
+11-08 18:47:37.210: E/MTPRx(6037): Checking the driver time out
+11-08 18:47:37.210: E/MTPJNIInterface(6037): noti = 2
+11-08 18:47:37.210: E/MTPRx(6037): called native method
+11-08 18:47:37.210: E/MTPJNIInterface(6037): setting Media scanner status0
+11-08 18:47:37.210: E/MTPJNIInterface(6037): After setting Media scanner status0
+11-08 18:47:37.210: E/MTPJNIInterface(6037): Getting media scanner status0
+11-08 18:47:37.210: E/MtpService(6037): handleMessage. msg= { what=0 when=-3ms arg1=2 obj=Intent { cmp=com.android.MtpApplication/.MtpService } }
+11-08 18:47:37.210: E/NotificationService(2940): Ignoring notification with icon==0: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 kind=[null])
+11-08 18:47:37.215: E/NotificationService(2940): Ignoring notification with icon==0: Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 kind=[null])
+11-08 18:47:38.210: E/SQLiteLog(6037): (10) Failed to open database file with errno : 2!
+11-08 18:47:38.210: E/SQLiteLog(6037): (14) cannot open file at line 32474 of [00bb9c9ce4]
+11-08 18:47:38.210: E/SQLiteLog(6037): (14) os_unix.c:32474: (2) open(/opt/dbspace/inappdb_mtp) - 
+11-08 18:47:38.215: E/MTPJNIInterface(6037): DeviceName is Null
+11-08 18:47:38.215: E/MTPJNIInterface(6037): DeviceName is Default
+11-08 18:47:38.590: E/MTPJNIInterface(6037): Status for mount/Unmount :removed
+11-08 18:47:38.590: E/MTPJNIInterface(6037): SDcard is not available
+11-08 18:47:38.590: E/MTPJNIInterface(6037): Status for mount/Unmount :removed
+11-08 18:47:38.590: E/MTPJNIInterface(6037): SDcard is not available
+11-08 18:47:38.590: E/MTPJNIInterface(6037): Status for mount/Unmount :removed
+11-08 18:47:38.590: E/MTPJNIInterface(6037): SDcard is not available
+11-08 18:47:38.595: E/MTPJNIInterface(6037): Status for mount/Unmount :removed
+11-08 18:47:38.595: E/MTPJNIInterface(6037): SDcard is not available
+11-08 18:47:38.600: E/MTPJNIInterface(6037): Status for mount/Unmount :removed
+11-08 18:47:38.600: E/MTPJNIInterface(6037): SDcard is not available
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) API call with unopened database connection pointer
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) misuse at line 96726 of [00bb9c9ce4]
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) API call with unopened database connection pointer
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) misuse at line 93202 of [00bb9c9ce4]
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) API call with unopened database connection pointer
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) misuse at line 93202 of [00bb9c9ce4]
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) API call with unopened database connection pointer
+11-08 18:47:38.600: E/SQLiteLog(6037): (21) misuse at line 96726 of [00bb9c9ce4]
+11-08 18:47:38.605: E/(6037): [mtp_init_device]  After open the MTP fd = 52 and line = 663...
+11-08 18:47:38.610: E/MTPRx(6037): Open session has come  remove the  Messagetrue
+11-08 18:47:38.615: E/MTPRx(6037): Open session has come  remove the  Messagetrue
+11-08 18:47:38.640: E/MTPRx(6037): Open session has come  remove the  Messagetrue
+11-08 18:47:38.640: E/MTPRx(6037): Open session has come  remove the  Messagetrue
+11-08 18:47:39.595: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:47:56.425: E/Watchdog(2940): !@Sync 45
+11-08 18:48:01.330: E/SmartFaceManager(2940): checkForSmartStay S
+11-08 18:48:01.335: E/SmartFaceService(2940): setValue, key: smart-stay-framecount-reset value: 
+11-08 18:48:01.335: E/SmartFaceService(2940): register:1368970
+11-08 18:48:01.340: E/SecCamera-JNI-Java(2940): SecCamera.open()
+11-08 18:48:01.340: E/SecCamera-JNI-Java(2940): SecCamera()
+11-08 18:48:01.340: E/SmartFaceService.Client(2940): New SmartFaceService.Client, service type: 100 pid: 2940
+11-08 18:48:01.340: E/CameraController(2940): Wait for 1
+11-08 18:48:01.340: E/CameraController(2940): handleMessage: { what=1 when=-1ms arg1=4 }
+11-08 18:48:01.340: E/CameraController(2940): open() as 100
+11-08 18:48:01.345: E/CameraService(2476): system_server
+11-08 18:48:01.345: E/CameraService(2476): CameraService::connect before lock (pid 2940, org id 11)
+11-08 18:48:01.345: E/CameraService(2476): orgID: 3 checkingID: 0 seems GOOD
+11-08 18:48:01.345: E/CameraService(2476): orgID: 3 checkingID: 1 seems GOOD
+11-08 18:48:01.345: E/CameraService(2476): orgID: 3 checkingID: 2 seems GOOD
+11-08 18:48:01.345: E/CameraService(2476): orgID: 3 checkingID: 3 seems GOOD
+11-08 18:48:01.345: E/CameraService(2476): orgID: 3 checkingID: 4 seems GOOD
+11-08 18:48:01.385: E/SecCameraCoreManager(2476): initialize1
+11-08 18:48:01.385: E/ExynosCameraHWInterface(2476): DEBUG(int android::HAL_camera_device_open(const hw_module_t*, char const*, hw_device_t**)):open camera 1
+11-08 18:48:01.395: E/SecCameraCoreManager(2476): initialize2
+11-08 18:48:01.400: E/CameraController(2940): open() x
+11-08 18:48:01.400: E/CameraController(2940): Preview need to be rotated counter clock-wise 90 degree.
+11-08 18:48:01.400: E/CameraController(2940): setCamreaParameter with mode: 1 service_type: 100
+11-08 18:48:01.405: E/CameraController(2940): Preview Size Is Not Supported (maybe auto-mode). Auto-Select
+11-08 18:48:01.405: E/CameraController(2940): Front Camera Support 480, 270 preview
+11-08 18:48:01.420: E/CameraController(2940): StartPreview()
+11-08 18:48:01.650: E/CameraController(2940): 100ms Time out!
+11-08 18:48:01.650: E/CameraController(2940): StartPreview() X
+11-08 18:48:01.650: E/CameraController(2940): handleMessage signal: 1
+11-08 18:48:01.650: E/CameraController(2940): waitHere, 309ms
+11-08 18:48:01.650: E/CameraController(2940): DONE!
+11-08 18:48:01.750: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 0 frame
+11-08 18:48:01.780: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 1 frame
+11-08 18:48:01.815: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 2 frame
+11-08 18:48:01.845: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 3 frame
+11-08 18:48:01.880: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 4 frame
+11-08 18:48:01.920: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 5 frame
+11-08 18:48:01.975: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 6 frame
+11-08 18:48:02.035: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 7 frame
+11-08 18:48:02.095: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 0 frame
+11-08 18:48:02.155: E/ExynosCameraHWImpl(2476): [CAM-FRONT]-DEBUG(bool android::ExynosCameraHWImpl::m_previewThreadFunc()):skipping 1 frame
+11-08 18:48:02.225: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.225: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1369863
+11-08 18:48:02.225: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1369864
+11-08 18:48:02.230: E/SmartScreen_JNI(2940): processImage start : prev time [ 871344870 ]
+11-08 18:48:02.285: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.285: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1369924
+11-08 18:48:02.285: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1369924
+11-08 18:48:02.345: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.345: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1369981
+11-08 18:48:02.345: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1369982
+11-08 18:48:02.405: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.405: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1370041
+11-08 18:48:02.405: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1370042
+11-08 18:48:02.460: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.460: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1370099
+11-08 18:48:02.460: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1370099
+11-08 18:48:02.500: E/SmartFaceManager(2940): No Callback!
+11-08 18:48:02.520: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.520: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1370158
+11-08 18:48:02.520: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1370158
+11-08 18:48:02.580: E/SmartFaceService(2940): Orientation: 0
+11-08 18:48:02.580: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Scroll/Pause Worker,5,main]/1370218
+11-08 18:48:02.580: E/SmartFaceService(2940): Calling onPreviewFrame: Thread[Stay/Rotation Worker,5,main]/1370218
+11-08 18:48:02.585: E/SmartScreen_JNI(2940): processImage end : function time [ 357437 ]
+11-08 18:48:02.585: E/SmartFaceManager(2940): checkForSmartStay onInfo: 100: 0
+11-08 18:48:02.585: E/SmartScreen_JNI(2940): processImage start : prev time [ 357952 ]
+11-08 18:48:02.585: E/Stay/Rotation Worker(2940): processSmartStay[357ms], ret: -1 needToStay: 0 mFrameCount: 0 mFixed: false
+11-08 18:48:02.585: E/SmartFaceService(2940): unregister:1370224
+11-08 18:48:02.585: E/CameraController(2940): Wait for 0
+11-08 18:48:02.590: E/CameraController(2940): handleMessage: { what=0 when=-1ms }
+11-08 18:48:02.765: E/SmartScreen_JNI(2940): processImage end : function time [ 180707 ]
+11-08 18:48:02.770: E/Stay/Rotation Worker(2940): processSmartStay[180ms], ret: -1 needToStay: 0 mFrameCount: 1 mFixed: false
+11-08 18:48:02.820: E/SmartFaceService(2940): Clear worker messages
+11-08 18:48:02.835: E/libcsc(2476): csc_deinit:: unsupported csc_hw_type
+11-08 18:48:02.835: E/libcsc(2476): csc_deinit:: unsupported csc_hw_type
+11-08 18:48:02.935: E/CameraController(2940): 100ms Time out!
+11-08 18:48:02.935: E/SmartFaceManager(2940): checkForSmartStay X: false
+11-08 18:48:02.935: E/CameraController(2940): handleMessage signal: 0
+11-08 18:48:02.935: E/CameraController(2940): waitHere, 348ms
+11-08 18:48:02.935: E/CameraController(2940): DONE!
+11-08 18:48:09.315: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:09.440: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:09.685: E/videowall-TranscodeReceiver(3443): broadcastMSG : android.intent.action.SCREEN_OFF
+11-08 18:48:09.695: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:09.870: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] PSSH/UUID/MOOV NOT identified...not a drm file
+11-08 18:48:09.870: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] Mflag is FALSE... NOT a DRM file
+11-08 18:48:09.870: E/PlayreadyPlugIn(2475): PlayreadyPlugIn.cpp: Function[onCanHandle]; Line[1712]; DRM Result[0x80004005]
+11-08 18:48:09.870: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] PlayreadyPlugIn::onCanHandle   DRM_ASFVerify_Context_Initialize is failed
+11-08 18:48:09.875: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] PSSH/UUID/MOOV NOT identified...not a drm file
+11-08 18:48:09.875: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] Mflag is FALSE... NOT a DRM file
+11-08 18:48:09.875: E/PlayreadyPlugIn(2475): PlayreadyPlugIn.cpp: Function[onCanHandle]; Line[1712]; DRM Result[0x80004005]
+11-08 18:48:09.875: E/SEC_DRM_PLUGIN_PLAYREADY(2475): [DRM_PR_PLUGIN] PlayreadyPlugIn::onCanHandle   DRM_ASFVerify_Context_Initialize is failed
+11-08 18:48:09.880: E/videowall-TranscodeService(3443): duration time is 9 ==> not Live but Static thumbnail
+11-08 18:48:09.885: E/vwengine(3443): stopTranscoding
+11-08 18:48:09.940: E/WallpaperScreenElement(4104): fail to load lockscreen wallpaper: /data/data/com.miui.mihome2/app_current_theme/lock_wallpaper
+11-08 18:48:09.955: E/ResourceManager(4104): fail to load image: music_album_cover.9.png
+11-08 18:48:09.960: E/AudioResampler(2476): Unsupported sample format, 1 bits, 1 channels
+11-08 18:48:10.005: E/ActivityThread(4104): Failed to find provider info for datahub
+11-08 18:48:10.010: E/ContactsProvider(3366): match = 3000
+11-08 18:48:10.010: E/ActivityThread(4104): Failed to find provider info for datahub
+11-08 18:48:10.015: E/ContactsProvider(3366): match = 3000
+11-08 18:48:10.220: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:48:14.540: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:14.655: E/AudioResampler(2476): Unsupported sample format, 1 bits, 2 channels
+11-08 18:48:14.690: E/MotionRecognitionService(2940):   mReceiver.onReceive : ACTION_USER_PRESENT  :: UNLOCK SCREEN
+11-08 18:48:14.710: E/MotionRecognitionService(2940):   mReceiver.onReceive : ACTION_USER_PRESENT  :: UNLOCK SCREEN
+11-08 18:48:14.915: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:15.195: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:15.455: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:15.795: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:16.175: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:25.830: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:26.090: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:26.430: E/Watchdog(2940): !@Sync 46
+11-08 18:48:35.860: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:36.180: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:45.870: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:46.270: E/LightSensor(2940): Light old sensor_state 129, new sensor_state : 1 en : 0
+11-08 18:48:49.880: E/LightSensor(2940): Light old sensor_state 1, new sensor_state : 129 en : 1
+11-08 18:48:50.420: E/WifiHW(2940): ##################### set firmware type 0 #####################
+11-08 18:48:50.510: E/SELinux(2940): file_context_open: file_contexts is loaded from /file_contexts
+11-08 18:48:50.745: E/installd(2477): ECS_ECS: * do_install  pkg [com.teago.trueme]
+11-08 18:48:50.745: E/installd(2477): ECS_ECS: installing Normal package
+11-08 18:48:50.745: E/installd(2477): ECS_ECS: installing Normal package
+11-08 18:48:50.745: E/installd(2477): ECS_ECS  NON Container pkg, calling selinux
+11-08 18:48:50.745: E/installd(2477): ECS_ECS: Restting the data Path to -data-  ret [0]
+11-08 18:48:50.750: E/installd(2477): ECS_ECS: * do_linklib  pkg [com.teago.trueme]
+11-08 18:48:50.750: E/installd(2477): ECS_ECS: do_linklib Normal package
+11-08 18:48:50.750: E/installd(2477): ECS_ECS: Restting the data Path to -data-  ret [0]
+11-08 18:48:50.750: E/installd(2477): ECS_ECS: * do_dexopt  pkg [/data/app/com.teago.trueme-1.apk]
+11-08 18:48:50.750: E/installd(2477): ECS_ECS: do_dexopt Normal package
+11-08 18:48:51.255: E/installd(2477): ECS_ECS: Restting the data Path to -data-  ret [0]
+11-08 18:48:51.350: E/installd(2477): ECS_ECS: * do_move_dex  pkg [/data/app/com.teago.trueme-1.apk]
+11-08 18:48:51.350: E/installd(2477): ECS_ECS: do_move_dex Normal package
+11-08 18:48:51.350: E/installd(2477): ECS_ECS: Restting the data Path to -data-  ret [0]
+11-08 18:48:51.490: E/AudioResampler(2476): Unsupported sample format, 1 bits, 1 channels
+11-08 18:48:51.605: E/SELinux(6279): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+11-08 18:48:51.700: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:48:52.040: E/common.network(3237): error to call url:http://market.xiaomi.com/apm/updateinfo error:null
+11-08 18:48:52.040: E/common.network(3237): java.io.EOFException
+11-08 18:48:52.040: E/common.network(3237): 	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:170)
+11-08 18:48:52.040: E/common.network(3237): 	at java.util.zip.GZIPInputStream.read(GZIPInputStream.java:167)
+11-08 18:48:52.040: E/common.network(3237): 	at java.io.FilterInputStream.read(FilterInputStream.java:138)
+11-08 18:48:52.040: E/common.network(3237): 	at com.miui.mihome.common.d.read(Network.java:1042)
+11-08 18:48:52.040: E/common.network(3237): 	at java.io.InputStreamReader.read(InputStreamReader.java:244)
+11-08 18:48:52.040: E/common.network(3237): 	at java.io.BufferedReader.fillBuf(BufferedReader.java:130)
+11-08 18:48:52.040: E/common.network(3237): 	at java.io.BufferedReader.readLine(BufferedReader.java:354)
+11-08 18:48:52.040: E/common.network(3237): 	at com.miui.mihome.common.a.a(Network.java:610)
+11-08 18:48:52.040: E/common.network(3237): 	at com.miui.mihome.common.a.a.a(Utils.java:424)
+11-08 18:48:52.040: E/common.network(3237): 	at com.miui.mihome.g.a(DownloadModIconsUrl.java:72)
+11-08 18:48:52.040: E/common.network(3237): 	at com.miui.mihome.g.A(DownloadModIconsUrl.java:143)
+11-08 18:48:52.040: E/common.network(3237): 	at com.android.launcher2.ad.run(DownloadModIconsFromMarket.java:154)
+11-08 18:48:52.040: E/common.network(3237): 	at java.lang.Thread.run(Thread.java:856)
+11-08 18:48:52.040: E/DownloadModIconsUrl(3237): doHttpPost failed: null
+11-08 18:48:52.350: E/SELinux(6315): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+11-08 18:48:52.740: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:48:54.000: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:48:56.430: E/Watchdog(2940): !@Sync 47
+11-08 18:49:11.200: E/IMGSRV(3237): :0: GetPTLAFormat: Invalid format
+11-08 18:49:12.495: E/MoreInfoHPW_ViewGroup(2940): Parent view is not a TextView
+11-08 18:49:12.520: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.640: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.645: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.650: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.655: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.660: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:12.840: E/EnterpriseContainerManager(2940): ContainerPolicy Service is not yet ready!!!
+11-08 18:49:14.350: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.360: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.370: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.380: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.390: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.400: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.410: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.420: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.430: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:14.440: E/MoreInfoHPW_ViewGroup(5011): Parent view is not a TextView
+11-08 18:49:15.740: E/SELinux(6374): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+11-08 18:49:15.820: E/dalvikvm(6374): Could not find class 'android.widget.GNAppSecurityPermissions', referenced from method com.android.packageinstaller.PackageInstallerActivity.startInstallConfirm
+11-08 18:49:15.960: E/AndroidRuntime(6374): FATAL EXCEPTION: main
+11-08 18:49:15.960: E/AndroidRuntime(6374): java.lang.NoClassDefFoundError: android.widget.GNAppSecurityPermissions
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at com.android.packageinstaller.PackageInstallerActivity.startInstallConfirm(PackageInstallerActivity.java:124)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at com.android.packageinstaller.PackageInstallerActivity.initiateInstall(PackageInstallerActivity.java:325)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at com.android.packageinstaller.PackageInstallerActivity.onCreate(PackageInstallerActivity.java:418)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.Activity.performCreate(Activity.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.ActivityThread.access$700(ActivityThread.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.os.Handler.dispatchMessage(Handler.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.os.Looper.loop(Looper.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at android.app.ActivityThread.main(ActivityThread.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at java.lang.reflect.Method.invokeNative(Native Method)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at java.lang.reflect.Method.invoke(Method.java:511)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java)
+11-08 18:49:15.960: E/AndroidRuntime(6374): 	at dalvik.system.NativeStart.main(Native Method)
+11-08 18:49:16.315: E/android.os.Debug(2940): !@Dumpstate > sdumpstate -k -t -z -d -o /data/log/dumpstate_app_error
+11-08 18:49:25.250: E/SmartFaceService - 3rd party pause(2940): onChange, mOptionMenuOpened: false mSystemDialogOpened: true
+11-08 18:49:26.430: E/Watchdog(2940): !@Sync 48
+

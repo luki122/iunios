@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_sel_done"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingRight="@dimen/activity_image_preview_custom_item_layout_tv_padding_right"
+    android:text="@string/image_picker_actionbar_tv_done"
+    android:textColor="@drawable/mainpage_bottom_tv_selector"
+    android:textSize="@dimen/activity_image_preview_custom_item_layout_tv_size" >
+
+</TextView>

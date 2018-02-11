@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:sonar="antlib:org.sonar.ant" basedir=".">
+	<property file="sonar.properties" />
+	<property file="project.properties" />
+
+	<!-- other sonar propeties -->
+	<property name="sonar.sourceEncoding" value="UTF-8" />
+	<property name="sonar.language" value="java" />
+
+	<target name="sonar">
+		<taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+			<classpath path="${my.sonar.jars}" />
+		</taskdef>
+		<sonar:sonar  />
+	</target>
+</project>

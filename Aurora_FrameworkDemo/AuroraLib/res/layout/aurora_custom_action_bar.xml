@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <FrameLayout
+        android:id="@+id/aurora_custom_action_bar_bottom_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/aurora_action_bar_height"
+        android:background="#ff0000"
+        android:gravity="center" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/aurora_custom_action_bar_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/auroraActionBarBackground"
+        android:minHeight="@dimen/aurora_action_bar_height" >
+
+        <RelativeLayout
+            android:id="@+id/aurora_custom_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_action_bar_height"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/aurora_custom_action_bar_title_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:id="@+id/aurora_custom_action_bar_left_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/aurora_custom_action_bar_title_custom" >
+
+                <ImageButton
+                    android:id="@+id/aurora_custom_action_bar_title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/actionBarLeftWidgetBackground"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="center"
+                    android:src="?attr/homeIcon" />
+
+                <LinearLayout
+                    android:id="@+id/aurora_custom_action_bar_title_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/aurora_custom_action_bar_title_icon"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/aurora_custom_action_bar_title"
+                        style="?attr/auroraActionBarTitleStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:scaleType="center"
+                        android:singleLine="true"
+                        android:textSize="@dimen/aurora_action_bar_text_size"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/aurora_custom_action_bar_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/aurora_custom_action_bar_option_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp" >
+
+                <ImageButton
+                    android:id="@+id/aurora_custom_action_bar_default_option_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/aurora_green_action_bar_most_right_item_pressed_selector"
+                    android:src="@drawable/aurora_custom_action_bar_defalut_icon_selector"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aurora_custom_action_bar_middle_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/aurora_custom_action_bar_option_panel"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/aurora_custom_action_bar_bottom_search_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/aurora_custom_action_bar_search_view_parent"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/aurora_action_bar_height"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/aurora_custom_action_bar_search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/header_search_bg"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aurora_custom_action_bar_bottom_search_icon_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/aurora_custom_action_bar_search_icon_margin_left"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/aurora_custom_action_bar_search_view_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/aurora_action_bar_height"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/aurora_actionbar_search_icon_level_list"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/aurora_custom_action_bar_search_hint_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:text="@string/aurora_custom_action_bar_search_hint_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

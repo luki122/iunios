@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     android:paddingStart="16dip"
+      android:textStyle="bold"
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/active_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:paddingStart="22dip"
+        android:paddingEnd="22dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:gravity="top">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dip">
+                <ImageView android:id="@+id/admin_icon"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginEnd="16dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@null" />
+                <TextView android:id="@+id/admin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dip"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18sp"
+                   
+                    android:singleLine="true"
+                    android:ellipsize="marquee" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView android:id="@+id/admin_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0"
+                    android:padding="0dip" 
+                    
+                    android:textSize="15sp"
+                   
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView android:id="@+id/add_msg_expander"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:contentDescription="@null" />
+                    <TextView android:id="@+id/add_msg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dip" 
+                        
+                        android:textSize="18sp"/>
+                </LinearLayout>
+				<!-- android:padding="10dip"  
+				android:paddingStart="16dip"
+      				android:paddingEnd="12dip"
+				-->
+                <TextView android:id="@+id/admin_warning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="27dp"                   
+                    android:paddingRight="3dp"
+                    />
+                <LinearLayout android:id="@+id/admin_policies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    
+      				
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+<!--   
+
+
+	android:divider="?android:attr/dividerHorizontal"
+	 android:showDividers="beginning"
+	 style="?android:attr/buttonBarStyle"
+-->
+    <LinearLayout android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="22dp"
+       >
+        <LinearLayout            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:measureWithLargestChild="true">
+            <LinearLayout android:id="@+id/leftSpacer"
+                android:layout_weight="0.25"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"                
+                />
+            <Button android:id="@+id/cancel_button"
+                
+                android:layout_width="0dip"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:text="@string/cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                />
+            <Button android:id="@+id/action_button"
+                android:layout_width="0dip"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:maxLines="2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_height="wrap_content" 
+                android:layout_marginRight="17dp"
+                />
+            <LinearLayout android:id="@+id/rightSpacer"
+                android:layout_width="0dip"
+                android:layout_weight="0.25"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+        </LinearLayout>
+     </LinearLayout>
+
+</LinearLayout>

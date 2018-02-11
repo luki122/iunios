@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="2738748390251381682">&quot;Программа установки пакетов приложений&quot;</string>
+    <string name="install" msgid="5896438203900042068">&quot;Установить&quot;</string>
+    <string name="done" msgid="3889387558374211719">&quot;Завершение&quot;</string>
+    <string name="security_settings_desc" msgid="2706691034244052604">&quot;Разрешить приложению получить:&quot;</string>
+    <string name="cancel" msgid="8360346460165114585">&quot;Отмена&quot;</string>
+    <string name="unknown" msgid="4742479012767208045">&quot;Неизвестно&quot;</string>
+    <string name="installing" msgid="8613631001631998372">&quot;Установка…&quot;</string>
+    <string name="install_done" msgid="3682715442154357097">&quot;Удачно установлено приложение&quot;</string>
+    <string name="install_confirm_question" msgid="7295206719219043890">&quot;Установить приложение? Приложение будет получать следующие право доступа:&quot;</string>
+    <string name="install_confirm_question_no_perms" msgid="5918305641302873520">&quot;Установить это приложение? Приложение не нужно особые права доступа.&quot;</string>
+    <string name="install_confirm_question_update" msgid="4624159567361487964">&quot;Установить обновление настоящих приложений? Данные не будут потеряны. Обновленные приложения могут посещать:&quot;</string>
+    <string name="install_confirm_question_update_system" msgid="1302330093676416336">&quot;Установить обновление встроенных приложений? Данные не будут потеряны. Обновленные приложения могут посещать:&quot;</string>
+    <string name="install_failed" msgid="6579998651498970899">&quot;Не установлено приложение&quot;</string>
+<!-- Linxiaobin modify 20140507 start -->
+<!-- <string name="install_failed_invalid_apk" msgid="1287935707565682604">"该数据包似乎已损坏。"</string> -->
+<string name="install_failed_invalid_apk" msgid="1287935707565682604">&quot;Казалось, пакет установки сломался&quot;</string>
+<!-- <string name="install_failed_inco<string name="install_failed_cpu_abi_incompatible" product="tablet" msgid="7098684468842750800">"此应用与您的平板电脑不兼容。"</string>nsistent_certificates" msgid="1517751954440692054">"已安装了存在签名冲突的同名数据包。"</string> -->
+<string name="install_failed_inconsistent_certificates" msgid="1517751954440692054">&quot;Существует одноименные приложения&quot;</string>
+<!-- <string name="install_failed_older_sdk" msgid="7947925824732917665">"该数据包仅适用于较新版本的 Android。"</string> -->
+<string name="install_failed_older_sdk" msgid="7947925824732917665">&quot;Приложение подходит к устройству Android более новой версии&quot;</string>
+<!-- <string name="install_failed_cpu_abi_incompatible" product="tablet" msgid="7098684468842750800">"此应用与您的平板电脑不兼容。"</string> -->
+<string name="install_failed_cpu_abi_incompatible" product="tablet" msgid="7098684468842750800">&quot;Приложение не совместимо с CPU&quot;</string>
+<!-- <string name="install_failed_cpu_abi_incompatible" product="default" msgid="4433316303249711331">"此应用与您的手机不兼容。"</string> -->
+<string name="install_failed_cpu_abi_incompatible" product="default" msgid="4433316303249711331">&quot;Приложение не совместимо с CPU&quot;</string>
+<!-- Linxiaobin modify 20140507 end -->
+<string name="install_failed_file_not_found" msgid="1958430133396322619">&quot;Удален указанный программный пакет, невозможно завершить  установки.&quot;</string>
+    <string name="install_failed_verify_failed" msgid="5567372439890440205">&quot;Программный пакет не проверен, невозможно установить.&quot;</string>
+    <string name="install_failed_verify_timeout" msgid="7083090219270140373">&quot;Время истекает при попытке проверки программного пакета. Попробуйте установку позже.&quot;</string>
+    <string name="install_failed_msg" product="tablet" msgid="8368835262605608787">&quot;Невозможно установить “<xliff:g id="APP_NAME">%1$s</xliff:g>” на планшете&quot;</string>
+    <string name="install_failed_msg" product="default" msgid="8554909560982962052">&quot;Невозможно установить “<xliff:g id="APP_NAME">%1$s</xliff:g>” в телефоне.&quot;</string>
+    <string name="launch" msgid="4826921505917605463">&quot;Открыть&quot;</string>
+<!-- Gionee lihq modify for CR00754539 start  
+    <string name="unknown_apps_dlg_title" msgid="2855558586206583032">"禁止安装"</string>
+    -->
+<string name="unknown_apps_dlg_title" msgid="2855558586206583032">&quot;Разрешить неизвестный источник?&quot;</string>
+<!-- Gionee lihq modify for CR00754539 end -->
+<string name="unknown_apps_dlg_text" product="tablet" msgid="7504186369474734767">&quot;В целях безопасности, на планшете не разрешить установку приложений из неизвестных источников.&quot;</string>
+<!--Gionee lihq modify for CR00754539 start
+    <string name="unknown_apps_dlg_text" product="default" msgid="133213135679009316">"出于安全考虑，您的手机已设置为禁止安装来源不明的应用。"</string>
+    -->
+<string name="unknown_apps_dlg_text" product="default" msgid="133213135679009316">&quot;В целях безопасности, в телефоне не разрешить установку приложений из неизвестных источников.  \n можно установить приложений из любых источников, но вам нужно нести все ответственности на сломанные или потерянные данные из-за этих приложений.  \n можно изменить эту настройку в “Настройки системы→безопасность→неизвестный источник”</string>  
+    <string name="gn_unlock">&quot;Разрешить&quot;</string>
+<!-- Gionee lihq modify for CR00754539 end -->
+<string name="ok" msgid="3468756155452870475">&quot;ОК&quot;</string>
+    <string name="settings" msgid="6743583734099755409">&quot;Настройки&quot;</string>
+    <string name="allow_source_dlg_title" msgid="7568985073502399415">&quot;Новый источник приложений&quot;</string>
+    <string name="allow_source_dlg_text" msgid="3927580956764099076">&quot;<xliff:g id="APP_NAME">%1$s</xliff:g> требует установить другие приложения.&quot;\ n &quot;Разрешить эту операцию отныне?&quot;</string>
+    <string name="manage_applications" msgid="4033876279091996596">&quot;Управление приложениями&quot;</string>
+    <string name="dlg_app_replacement_title" msgid="1232230739563820951">&quot;Заменить приложение?&quot;</string>
+    <string name="dlg_app_replacement_statement" msgid="2992911899989907492">&quot;Установленное приложение будет заменять другое приложение.&quot;\ n&quot;Будет сохраняться ваши бывшие данные всех пользователей.&quot;</string>
+    <string name="dlg_sys_app_replacement_statement" msgid="1900046590819605929">&quot;Это приложение системы.&quot;\ n&quot;Будет сохраняться ваши бывшие данные всех пользователей.&quot;</string>
+    <string name="out_of_space_dlg_title" msgid="7843674437613797326">&quot;Нет памяти&quot;</string>
+    <string name="out_of_space_dlg_text" msgid="4774775404294282216">&quot;Невозможно установить “<xliff:g id="APP_NAME">%1$s</xliff:g>”, освободите память и попробуйте позже.&quot;</string>
+    <string name="dlg_ok" msgid="6944357727705699232">&quot;ОК&quot;</string>
+    <string name="app_not_found_dlg_title" msgid="2692335460569505484">&quot;Не обнаружено приложение&quot;</string>
+    <string name="app_not_found_dlg_text" msgid="6107465056055095930">&quot;Не обнаружено приложение в списке установленных списках.&quot;</string>
+    <string name="uninstall_application_title" msgid="1860074100811653963">&quot;Удалить приложение&quot;</string>
+    <string name="uninstall_update_title" msgid="4146940097553335390">&quot;Удалить обновление&quot;</string>
+    <string name="uninstall_activity_text" msgid="6680688689803932550">&quot;<xliff:g id="ACTIVITY_NAME">%1$s</xliff:g> принадлежит следующим приложениям&quot;</string>
+    <string name="uninstall_application_text" msgid="6691975835951187030">&quot;Удалить приложение?&quot;</string>
+    <string name="uninstall_update_text" msgid="2056387942084605027">&quot;Изменить приложение заводской версией?&quot;</string>
+    <string name="uninstalling" msgid="5556217435895938250">&quot;Удаление...&quot;</string>
+    <string name="uninstall_done" msgid="3792487853420281888">&quot;Удачно удалить.&quot;</string>
+    <string name="uninstall_failed" msgid="631122574306299512">&quot;Неудачно удалить.&quot;</string>
+    <string name="uninstall_failed_device_policy_manager" msgid="3493789239037852035">&quot;Программный пакет является диспетчером устройств, невозможно удалить.&quot;</string>
+    <string name="manage_device_administrators" msgid="891392489300312370">&quot;Управление диспетчером устройств&quot;</string>
+    <string name="uninstall_failed_msg" msgid="8969754702803951175">&quot;Невозможно удалить “<xliff:g id="APP_NAME">%1$s</xliff:g>”.&quot;</string>
+    <string name="Parse_error_dlg_title" msgid="6079580916889596257">&quot;Ошибка анализировании&quot;</string>
+    <string name="Parse_error_dlg_text" msgid="7623286983621067011">&quot;Ошибка при анализировании программного пакета.&quot;</string>
+    <string name="newPerms" msgid="6039428254474104210">&quot;Новое право доступа&quot;</string>
+    <string name="privacyPerms" msgid="1850527049572617">&quot;Соответствующие права доступа личности&quot;</string>
+    <string name="devicePerms" msgid="6733560207731294504">&quot;Соответствующие права доступа оборудований&quot;</string>
+    <string name="no_new_perms" msgid="6657813692169565975">&quot;Обновление не требует нового права доступа.&quot;</string>
+    
+    <string name="privacy_permission">Личные права доступа</string>   
+    <string name="ordinary_permission">Обычные права доступа</string>
+    <string name="other_permission">Другие права доступа</string>
+    <string name="new_permission">Новое право доступа</string>
+    
+    <string name="new_version_not_apply_new_permission">Новая версия не заявило право доступа</string>
+    <string name="app_not_apply_permission">Приложение не заявило право доступа</string>
+    <string name="modify_hint_text">Можно изменить в &quot;управления приложениями- управление правом доступа&quot;</string>
+	<string name="uninstall_confirm">Подтвердите удаление</string>   
+	<string name="uninstall_application_text_by_name">&quot;Удалить \&quot;<xliff:g id="app_name">%1$s</xliff:g>\&quot;?&quot;</string>
+    <string name="uninstall_update_text_by_name">&quot;Изменить \&quot;<xliff:g id="app_name">%1$s</xliff:g>\&quot; заводской версией?&quot;</string> 
+    <string name="reasons_for_failure">Причина неудачи:</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="install_failed_missing_shared_library">Отсутствие соответствующих файлов, нужных google</string>
+    <string name="install_failed_version_downgrade">Обнаружена высшая версия приложений</string>
+    <string name="clear_residual_files">&quot; &quot;Очистить остатки</string>
+    <string name="clear_sucess">Удачно очищены остатки</string>
+    
+    
+</resources>

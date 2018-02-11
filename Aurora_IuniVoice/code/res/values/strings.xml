@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公有 -->
+    <string name="app_name">IUNI社区</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">保存</string>
+    <string name="finish">完成</string>
+    <string name="unbind">未绑定</string>
+    <string name="uncreate">未创建</string>
+    <string name="update_success">修改成功</string>
+
+    <!-- AuroraEditText -->
+    <string name="aurora_paste">粘贴</string>
+    <string name="aurora_selectAll">全选</string>
+    <string name="aurora_select">选择</string>
+    <string name="aurora_cut">剪切</string>
+    <string name="aurora_copy">复制</string>
+    <string name="aurora_inputMethod">输入法</string>
+
+    <!-- xListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新</string>
+    <string name="xlistview_header_hint_loading">正在刷新...</string>
+    <string name="xlistview_header_last_time">上次更新：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_load_finish">已全部加载</string>
+    <string name="xlistview_footer_hint_ready">松开加载</string>
+    <string name="xlistview_footer_hint_loading">正在加载...</string>
+   
+
+    <!-- dialog -->
+    <string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_prompt">提示</string>
+
+    <!-- 网络异常 -->
+    <string name="no_connection_prompt">"网络异常，点击重新加载"</string>
+    <string name="network_not_available">无网络，请打开网络连接</string>
+    <string name="network_exception">网络异常，请重试</string>
+    <string name="network_error_please_try_again_later">网络异常，请稍候重试</string>
+
+    <!-- 验证码 -->
+    <string name="load_verify_code_error">加载验证码失败，点击重新加载</string>
+
+    <!-- 检测SD -->
+    <string name="sd_space_not_enough">SD卡即将存满，请先清理再执行本操作</string>
+    <string name="sdcard_not_mounted">SD卡不存在，请插入SD卡。</string>
+
+    <!-- 上传图片 -->
+    <string name="upload_pic_err_msg">服务器没有响应</string>
+    <string name="upload_pic_too_large">图片过大，无法上传</string>
+    <string name="upload_pic_fail">图片上传失败</string>
+
+    <!-- 首页 -->
+    <string name="main_homepage">首页</string>
+    <string name="main_homepage_header_new_to_app">新手入门</string>
+    <string name="main_homepage_header_sign_daily">每日签到</string>
+    <string name="main_homepage_dialog_exit_tips">确定要退出程序吗？</string>
+
+    <!-- 板块 -->
+    <string name="main_forum">板块</string>
+    <string name="forum_list">板块列表</string>
+
+    <!-- 发现 -->
+    <string name="main_find">发现</string>
+    <string name="find_iuni_shop">官网商城</string>
+    <string name="find_service_center">服务中心</string>
+    <string name="find_qq">QQ在线客服</string>
+    <string name="find_call_phone">拨打热线 400-866-6210</string>
+    <string name="find_feedback">反馈意见</string>
+
+    <!-- 我的 -->
+    <string name="main_personal">我的</string>
+
+    <!-- 登录界面 -->
+    <string name="login">登录</string>
+    <string name="login_title">随你而变，有备无患</string>
+    <string name="login_content">个人中心帮你安全同步联系人、短信，你的数据永不丢失，换手机迁移数据一步到位。</string>
+    <string name="login_description">一个账号，便可使用IUNI所有服务。</string>
+    <string name="login_account_hint">手机号/邮箱/用户名</string>
+    <string name="login_pwd_hint">密码</string>
+    <string name="login_vc_code_hint">验证码</string>
+    <string name="login_login_btn">登录</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_register_vertical_sep">|</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="login_on_logining">正在登录...</string>
+    <string name="login_confirm_reserve_local_data">检测到您切换帐号了，是否要保留原帐号的本地数据？</string>
+    <string name="login_confirm_reserve">保留</string>
+    <string name="login_confirm_not_reserve">不保留</string>
+    <string name="login_clear_local_data_on_going">正在切换帐号，请稍候...</string>
+    <string name="login_error_account_cannot_be_empty">请输入账号</string>
+    <string name="login_error_account_format_invalid">请输入有效的账号</string>
+    <string name="login_error_pwd_cannot_be_empty">请输入密码</string>
+    <string name="login_error_vccode_cannot_be_empty">请输入验证码</string>
+    <string name="login_error_acc_or_pwd_incorrect">帐号或密码错误</string>
+    <string name="login_error_email_acc_not_active">邮箱未激活</string>
+    <string name="login_error_vc_code_incorrect">验证码错误</string>
+    <string name="login_error_unknow">登录失败，请重试</string>
+
+    <!-- 注册界面 -->
+    <string name="register_title">注册IUNI账号</string>
+    <string name="register_by_phonenum">用手机号注册</string>
+    <string name="register_by_email">用邮箱注册</string>
+    <string name="register_recommend">（推荐）</string>
+    <string name="register_tips">个人账号绑定手机号或邮箱，能快速找回密码</string>
+    <string name="register_by_phonenum_title">登录信息1/2</string>
+    <string name="register_please_input_phonenum">请输入手机号</string>
+    <string name="register_please_input_pwd">请输入密码</string>
+    <string name="register_password_tips">为了你的账号安全，密码不少于8位数，至少由数字＋字母组合，字母区分大小写</string>
+    <string name="register_next">下一步</string>
+    <string name="register_verify_phonenum_tips">验证码已发送到%1$s，若120秒内未收到短信，请重新获取验证码。</string>
+    <string name="register_verify_phonenum_title">验证手机2/2</string>
+    <string name="register_get_again">重新获取</string>
+    <string name="register_verification_code">短信验证码</string>
+    <string name="register_user_agreement_tips1">注册账号即表示我同意IUNI云服务</string>
+    <string name="register_user_agreement_tips2">《用户协议》</string>
+    <string name="register_user_agreement_tips3">。</string>
+    <string name="register_account_info_title">账户信息3/3</string>
+    <string name="register_create_nickname">创建昵称</string>
+    <string name="register_save">保存</string>
+    <string name="register_error_phonenum_cannot_be_empty">请输入手机号</string>
+    <string name="register_error_phonenum_format_invalid">请输入正确的手机号</string>
+    <string name="register_error_pwd_cannot_less_than_8">密码不少于8位数</string>
+    <string name="register_error_pwd_cannot_be_empty">请输入密码</string>
+    <string name="register_error_pwd_format_invalid">密码至少是字母+数字组成</string>
+    <string name="register_error_verifycode_cannot_be_empty">请输入正确的验证码</string>
+    <string name="register_getting_verify_code">正在获取验证码</string>
+    <string name="register_get_verify_code_success">已发送验证码</string>
+    <string name="register_get_verify_code_fail">获取手机验证码失败</string>
+    <string name="register_is_being_registered">正在注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="register_countries_and_regions">国家和地区</string>
+    <string name="register_search_countries_and_regions">搜索国家和地区</string>
+    <string name="register_please_input_email">请输入正确的邮箱账号</string>
+    <string name="register_input_email">请输入邮箱账号</string>
+    <string name="register_email_format_invalid">请输入正确的邮箱账号</string>
+    <string name="register_sending_email_verify">正在发送邮箱验证</string>
+    <string name="register_please_visit_mailbox">请访问邮箱</string>
+    <string name="register_click_the_link">点击邮件中的链接激活账户</string>
+    <string name="register_re_registration">重新注册</string>
+    <string name="register_re_send_email_verify">重发邮箱验证邮件</string>
+    <string name="register_resending_email_verify">正在重发验证邮件</string>
+    <string name="register_get_email_verify_success">已发送验证邮件</string>
+    <string name="register_check_email_finish">验证完成</string>
+    <string name="register_get_email_verify_fail">发送验证邮件失败</string>
+    <string name="register_email_account_title">账户激活2/2</string>
+    <string name="register_error_ercode_error">验证码错误</string>
+    <string name="register_error_phonenum_already_register">该手机号已被注册，可直接登录</string>
+    <string name="register_error_email_already_register">邮箱地址已被绑定</string>
+    <string name="register_verifying_email">正在验证邮箱...</string>
+    <string name="register_please_login_email_to_finish">请登录邮箱完成验证</string>
+    <string name="register_verifying_email_error">验证邮箱出错</string>
+    <string name="register_error_vccode_cannot_be_empty">请输入验证码</string>
+    <string name="register_code_error_send_msg_frequent">发送短信过于频繁</string>
+    <string name="register_user_agreement">用户协议</string>
+    <string name="email_tips">温馨提示：若未能收到邮件，请到“垃圾邮箱”中检查。</string>
+
+    <!-- 个人详情界面 -->
+    <string name="account_info_title">个人资料</string>
+    <string name="account_info_account_info">账号信息</string>
+    <string name="account_info_account_id">账户ID</string>
+    <string name="account_info_account_nickname">昵称</string>
+    <string name="account_info_account_pwd">密码</string>
+    <string name="account_info_account_phone">手机</string>
+    <string name="account_info_account_email">邮箱</string>
+    <string name="account_info_storage">存储空间</string>
+    <string name="account_info_storage_total">总容量</string>
+    <string name="account_info_storage_available">可用容量</string>
+    <string name="account_info_logout">退出登录</string>
+    <string name="account_info_get_user_info">正在获取账户信息...</string>
+    <string name="account_info_set_icon_title">设置图像</string>
+    <string name="account_info_wait_logout">正在注销...</string>
+    <string name="account_info_retry">重试</string>
+    <string name="account_info_confirm_logout">确定中断同步并注销？</string>
+    <string name="account_info_error_photo_file_not_exist">修改图像失败，请重试</string>
+    <string name="account_info_error_falied_to_crop">裁剪图像失败，请重试</string>
+    <string name="account_info_error_upload_photo_failed">上传图像失败</string>
+    <string name="account_info_error_download_icon_falied">下载图像失败</string>
+    <string name="account_info_error_load_icon_falied">加载图像失败</string>
+    <string name="account_info_error_falied_to_logout">注销失败</string>
+    <string name="account_sync_error_failed_to_get_info">获取用户信息失败</string>
+
+    <!-- 修改昵称界面 -->
+    <string name="set_nick_title">修改昵称</string>
+    <string name="set_nick_name_hint">请输入昵称</string>
+    <string name="set_nick_error_name_is_empty">昵称不能为空</string>
+    <string name="set_nick_error_name_length_invalid">昵称长度为6~20个字符</string>
+    <string name="set_nick_saving">正在保存...</string>
+    <string name="set_nick_success">昵称修改成功</string>
+    <string name="set_nick_tips">昵称30天内仅能修改一次</string>
+    <string name="set_nick_error">修改失败，请重试</string>
+    <string name="set_nick_error_nick_invalid">无效的昵称，包含敏感词</string>
+    <string name="set_nick_error_nick_already_exist">昵称已存在</string>
+    <string name="set_nick_error_nick_update_frequently">昵称修改太频繁</string>
+
+    <!-- 修改密码界面 -->
+    <string name="change_pwd_title">更改密码</string>
+    <string name="change_pwd_old_pwd_hint">输入旧密码</string>
+    <string name="change_pwd_new_pwd_hint">输入新密码</string>
+    <string name="change_pwd_success">密码修改成功</string>
+    <string name="change_pwd_error_old_pwd_is_empty">旧密码不能为空</string>
+    <string name="change_pwd_error_old_pwd_incorrect">旧密码错误</string>
+    <string name="change_pwd_error_failed_to_save">修改密码失败，请重试</string>
+    <string name="change_pwd_error_vccode_cannot_be_empty">请输入验证码</string>
+
+    <!-- 验证密码界面 -->
+    <string name="validate_pwd_title_phone">更改绑定手机1/4</string>
+    <string name="validate_pwd_title_email">更改绑定邮箱1/2</string>
+    <string name="validate_pwd_account_phone_hint">请输入当前绑定手机号</string>
+    <string name="validate_pwd_account_email_hint">请输入当前绑定邮箱</string>
+    <string name="validate_pwd_pwd_hint">请输入登录密码</string>
+    <string name="validate_pwd_tips">为了你的账号安全，请先输入登录密码。</string>
+    <string name="validate_pwd_error_phone_is_empty">请输入当前绑定手机号</string>
+    <string name="validate_pwd_error_phone_format_invalid">无效的手机号</string>
+    <string name="validate_pwd_error_email_is_empty">请输入当前绑定邮箱</string>
+    <string name="validate_pwd_error_email_format_invalid">无效的邮箱</string>
+    <string name="validate_pwd_error_pwd_is_empty">请输入登录密码</string>
+    <string name="validate_pwd_error_unknow_error">校验失败，请重试</string>
+    <string name="validate_pwd_validating">正在校验...</string>
+    <string name="validate_pwd_error_phonenum_not_registered">手机号未注册</string>
+    <string name="validate_pwd_error_phonenum_already_registered">该手机号已被注册，可直接登录</string>
+    <string name="validate_pwd_error_failed_to_send">验证码短信发送失败</string>
+
+    <!-- 修改手机号界面 -->
+    <string name="validate_old_phone_title">验证旧手机2/4</string>
+    <string name="change_phone_title">更改绑定手机3/4</string>
+    <string name="change_phone_title_set">绑定手机1/2</string>
+    <string name="change_phone_validating_vc">正在验证验证码...</string>
+    <string name="change_phone_new_phone_hint">请输入新手机号</string>
+    <string name="change_phone_new_phone_hint_set">请输入要绑定的手机号</string>
+    <string name="change_phone_error_new_phone_is_empty">请输入新手机号</string>
+    <string name="change_phone_error_bind_phone_is_empty">请输入要绑定的手机号</string>
+    <string name="change_phone_verification_title">验证手机4/4</string>
+    <string name="change_phone_verification_title_set">验证手机2/2</string>
+    <string name="change_phone_error_phone_num_already_registered">手机号已注册</string>
+    <string name="change_phone_error_failed_to_send">验证码短信发送失败</string>
+    <string name="change_phone_error_cur_phone_invalid">原手机号错误</string>
+    <string name="change_phone_error_pwd_error">密码错误</string>
+    <string name="change_phone_error_no_phone_bind">用户未绑定手机号</string>
+    <string name="change_phone_error_send_sms_too_many">发送短信过于频繁</string>
+
+    <!-- 修改邮箱界面 -->
+    <string name="change_email_title_set">绑定邮箱1/2</string>
+    <string name="change_email_new_email_hint">请输入新邮箱</string>
+    <string name="change_email_new_email_hint_set">请输入要绑定的邮箱</string>
+    <string name="change_email_error_new_email_is_empty">请输入新邮箱</string>
+    <string name="change_email_error_bind_email_is_empty">请输入要绑定的邮箱</string>
+    <string name="change_email_verification_title">验证邮箱2/2</string>
+    <string name="change_email_verification_title_set">验证邮箱2/2</string>
+    <string name="change_email_error_no_email_client">手机上没有邮件客户端，请用浏览器激活</string>
+    <string name="change_email_error_failed_to_open_browser">打开浏览器失败</string>
+    <string name="change_email_error_already_bind">邮箱地址已被绑定</string>
+    <string name="change_email_error_unknow_error">绑定邮箱失败，请重试</string>
+    <string name="change_email_error_no_email_bind">用户未绑定邮箱</string>
+    <string name="change_email_error_cur_email_invalid">原邮箱地址错误</string>
+    <string name="change_email_error_send_email_too_many">发送邮件过于频繁</string>
+
+    <!-- 绑定成功界面 -->
+    <string name="bind_success_title">绑定成功</string>
+    <string name="bind_success_phone">您已成功更改绑定手机！</string>
+    <string name="bind_success_details">当前绑定手机号为%1$s，\n该手机号可以用来登录个人中心及找回密码。</string>
+    <string name="bind_email_success_tips">已向邮箱%1$s发送了验证链接，请点击邮箱中的链接完成绑定。</string>
+
+    <!-- 找回密码界面 -->
+    <string name="findpwd">找回密码</string>
+    <string name="findpwd_by_phonenum">通过手机号找回密码</string>
+    <string name="findpwd_by_email">通过邮箱找回密码</string>
+    <string name="findpwd_please_input_register_phonenum">请输入注册的手机号</string>
+    <string name="findpwd_new_pwd">新密码</string>
+    <string name="findpwd_finding_pwd">正在重置密码...</string>
+    <string name="findpwd_find_success">找回密码成功</string>
+    <string name="findpwd_please_input_email">请输入你的邮箱</string>
+    <string name="findpwd_reset_by_email_tips">密码重置链接将发送到你注册的邮箱，如未能收取邮件，请检查“垃圾邮箱”</string>
+    <string name="findpwd_reset_by_email_tips_dialog">密码重置链接已发送到邮箱，请登录邮箱检查</string>
+    <string name="findpwd_sending_reset_email">正在发送密码重置链接...</string>
+    <string name="findpwd_phone_verifycode_wrong">验证码错误或过期</string>
+    <string name="findpwd_find_fail">找回密码失败</string>
+    <string name="findpwd_validating_code">正在验证手机验证码...</string>
+    <string name="findpwd_error_imei_isempty">缺少IMEI号</string>
+    <string name="findpwd_error_validate_code_fail">验证手机验证码失败</string>
+    <string name="findpwd_error_checkcode_input_error">校验码错误或失效</string>
+    <string name="findpwd_error_email_not_registered">邮箱地址未注册</string>
+    <string name="findpwd_error_email_send_error">发送验证邮件失败</string>
+    <string name="findpwd_error_checkcode_not_input">缺少校验码</string>
+
+    <!-- 用户反馈 -->
+    <string name="feed_back">用户反馈</string>
+    <string name="privider_sup">提供建议</string>
+    <string name="back_pro">反馈问题</string>
+    <string name="pro_discrible_detail">请详细描述您遇到的问题...</string>
+    <string name="coms_contact">联系方式</string>
+    <string name="contact_detail">如果方便请留下您的QQ 或者电话方便我们后续跟进...</string>
+    <string name="recommend_drawings">建议附图</string>
+    <string name="note">注：该功能将会消耗一定的数据流量，请在网络容许的环境下使用 !</string>
+    <string name="commit">提交</string>
+    <string name="limit_chinese_number">汉字个数不能超过一百个</string>
+    <string name="limit_contentid_number">汉字个数不能超过五十个</string>
+    <string name="submit">确定</string>
+    <string name="cancal">取消</string>
+    <string name="feed_back_summury">你还有未提交的内容，离开后内容将会丢失，是否继续？</string>
+    <string name="upload">上传信息</string>
+    <string name="upload_info">正在上传信息到服务器</string>
+    <string name="suggest_discrible">请填写建议描述</string>
+    <string name="feedback_discrible">请填写反馈问题描述</string>
+    <string name="contantid">请留下联系方式</string>
+    <string name="uploaded_server">您的反馈已提交</string>
+    <string name="unUpload_server">您的反馈未提交成功</string>
+    <string name="uploading_dialog">提交您的反馈信息以及相关机型信息至我们的服务器，是否继续？</string>
+    <string name="network_unConnect">网络未连接</string>
+    <string name="feedback_the_problem">反馈问题</string>
+    <string name="provide_advice">提供建议</string>
+
+    <!-- 版本更新 -->
+    <string name="toast_no_network">无网络，请打开网络连接</string>
+    <string name="toast_network_error">网络错误，清稍候再试</string>
+    <string name="toast_no_new_version">已是最新版本</string> <!-- 通知提示 -->
+    <string name="notification_status_download">正在下载</string>
+    <string name="notification_status_installed">安装成功</string>
+    <string name="notification_status_installfailed">安装失败</string>
+    <string name="notification_status_update">可更新</string>
+    <string name="notification_status_dis_update">个应用可更新</string>
+    <string name="notification_status_click_dis">点击查看</string>
+    <string name="notification_status_click_update">一键升级</string>
+    <string name="notification_status_dis_auto_upate">为你自动升级%1$d个应用</string>
+    <string name="update_error">更新失败</string>
+    <string name="dialog_update_title">应用更新</string>
+    <string name="dialog_update_ok">立即更新</string>
+    <string name="updating">正在更新</string>
+    <string name="update_checking">正在检查更新</string>
+    <string name="background_udpdate">后台更新</string>
+    <string name="update">更新</string>
+    <string name="cancel">取消</string>
+    <string name="new_version">发现新版本</string>
+    <string name="notification_title">IUNI社区更新</string>
+
+    <!-- 帖子详情 -->
+    <string name="send_reply">发送</string>
+    <string name="postdetail_title">帖子详情</string>
+    <string name="comment_success">评分成功！</string>
+    <string name="comment_fail">评分失败，请稍后再试！</string>
+    <string name="comment_content_least">评论内容不能小于10个字符</string>
+    <string name="comment_content_most">评论内容不能大于100个字符</string>
+    <string name="favoured">您已经点过赞！</string>
+    <string name="rated">您已经评分过！</string>
+    <string name="back">返回</string>
+
+    <!-- 分享相关 -->
+    <string name="share_cancel">取消</string>
+    <string name="share_title">分享</string>
+    <string name="share_wx_not_support">微信客户端未安装或者该客户端版本不支持</string>
+    <string name="share_making_pic">正在生成图片...</string>
+    <string name="share_make_pic_fail">图片生成失败</string>
+    <string name="share_weibo_sharepic">分享图片</string>
+    <string name="share_weibo_auth_error">新浪微博未授权或者授权失效</string>
+    <string name="share_weibo_sending">正在分享到新浪微博</string>
+    <string name="share_weibo_send_success">已分享到新浪微博</string>
+    <string name="share_weibo_send_fail">分享到新浪微博失败</string>
+    <string name="share_wx_send_fail">微信分享失败</string>
+    <string name="community_channel">COMMUNITY_CHANNEL</string>
+    <string name="comment_content_empty">评论内容不能为空</string>
+    <string name="net_error">网络不可用</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="weibo">新浪微博</string>
+    <string name="wxFriends">微信好友</string>
+    <string name="FriendsCircle">朋友圈</string>
+
+    <!-- 我模块 -->
+    <string name="mine_application_setting_text">应用设置</string>
+    <string name="mine_wifi_text">非Wi-fi网络自动显示图片</string>
+    <string name="mine_notification_text">推送通知</string>
+    <string name="mine_clear_text">清除缓存</string>
+    <string name="mine_other_text">其他</string>
+    <string name="mine_check_update_text">检查更新</string>
+    <string name="mine_about_text">关于iuniBBS</string>
+    <string name="mine_exit_login_text">退出登录</string>
+    <string name="mine_info_text">我的资料</string>
+    <string name="mine_score_text">我的积分</string>
+    <string name="mine_publish_text">我的帖子</string>
+    <string name="mine_news_text">我的消息</string>
+    <string name="mine_setting_text">设置</string>
+    <string name="mine_money_text">金钱</string>
+    <string name="mine_U_text">U币</string>
+    <string name="mine_jifen_text">积分</string>
+    <string name="mine_friend_text">好友</string>
+    <string name="mine_record_text">记录</string>
+    <string name="mine_rizhi_text">日志</string>
+    <string name="mine_huitie_text">回帖</string>
+    <string name="mine_zhuti_text">主题</string>
+    <string name="mine_fenxiang_text">分享</string>
+    <string name="mine_yonghuzu_text">用户组</string>
+    <string name="mine_yiyongkongjian_text">已用空间</string>
+    <string name="score_calculate_text">总积分=发帖数x1+精华帖数x10+在线时间（时）x2+主题数x1</string>
+    <string name="mine_load_more">查看更多</string>
+    <string name="mine_read_news">已读消息</string>
+    <string name="mine_unread_news">未读消息</string>
+    <string name="mine_all_news">全部消息</string>
+    <string name="mine_no_news">无消息</string>
+    <string name="mine_watch">随便看看</string>
+    <string name="mine_unlogin">未登录</string>
+    <string name="mine_change_user_icon">修改头像</string>
+    <string name="mine_introduce">个人简介</string>
+    <string name="mine_introduce_hint">精彩的个人介绍让更多的人关注你，记住你~</string>
+    <string name="mine_account_namage">帐号管理</string>
+    <string name="mine_shouqi">收起</string>
+    <string name="clear_caching">正在清除缓存...</string>
+    <string name="clear_cache_success">清除成功!</string>
+    <string name="modifyinage_icon">正在上传头像...</string>
+    <string name="modify_success">修改成功!</string>
+    <string name="content_not_empty">输入内容不能为空!</string>
+     <string name="content_specail">输入内容不能包含特殊字符!</string>
+    <string name="mine_setting_logout_message">确定要退出登录吗？</string>
+        <string name="mine_error">系统繁忙，请稍后重试</string>
+
+    <!-- aurora dialog -->
+    <string name="aurora_dialog_default_title">提示</string>
+    <string name="aurora_save">保存</string>
+
+    <!-- page loading -->
+    <string name="page_loading_network_error">网络异常</string>
+    <string name="page_loading_no_network">无网络</string>
+    <string name="page_loading_retry">重试</string>
+    <string name="page_loading_set_network">设置网络</string>
+    <string name="press_enter">开始体验</string>
+
+    <!-- 话题发布页 -->
+    <string name="publish">发表</string>
+    <string name="publish_title">话题发布</string>
+    <string name="publish_forum">板块</string>
+    <string name="publish_subject">主题</string>
+    <string name="publish_confirm">确定</string>
+    <string name="publish_choice_forum">选择板块</string>
+    <string name="publish_please_choice_forum">请选择板块</string>
+    <string name="publish_please_input_subject">请输入主题</string>
+    <string name="publish_please_input_content">请输入内容</string>
+    <string name="publish_publish_success">发表成功</string>
+    <string name="publish_publishing">正在发布...</string>
+
+    <!-- picBrowser -->
+    <string name="image_picker_actionbar_title">所有图片</string>
+    <string name="image_picker_actionbar_tv_done">完成</string>
+    <string name="image_picker_actionbar_tv_preview">预览</string>
+    <string name="image_album_item_tv">张</string>
+    <string name="image_choose">选择</string>
+
+    <!-- about iuni -->
+    <string name="about_title">关于BBS</string>
+    <string name="about_version">IUNI VOICE 1.0</string>
+    <string name="about_info">IUNI Voice是U友在线产品交流，资源分享，随手摄影，畅谈八卦等互动平台。</string>
+    <string name="about_weixin">微信</string>
+    <string name="about_weixin_content">iunimobi</string>
+    <string name="about_weibo">微博</string>
+    <string name="about_weibo_content">\u0040iuni手机 \u0040iuni_OS</string>
+    <string name="about_community_net">社区官网</string>
+    <string name="about_community_net_content">http://bbs.iuni.com</string>
+    <string name="about_community_os_net">OS社区官网</string>
+    <string name="about_community_os_net_content">http://bbs.iunios.com</string>
+    <string name="about_copyright">copyright: IUNI 2015</string>
+    
+    <!-- guide -->
+    <string name="guide_one_up">随手摄影</string>
+    <string name="guide_one_down">聚集有品，分享有趣</string>
+    <string name="guide_two_up">资源分享</string>
+    <string name="guide_two_down">简单快捷，一键发帖</string>
+    <string name="guide_three_up">U友活动</string>
+    <string name="guide_three_down">因为爱有你，所以这里您最大</string>
+    <string name="guide_login">登录</string>
+    <string name="guide_ll">随便看看</string>
+    
+    <!-- splash -->
+    <string name="splash_note">因你而精彩</string>
+    <string name="splash_copyright">copyright: iuni 2015</string>
+
+</resources>

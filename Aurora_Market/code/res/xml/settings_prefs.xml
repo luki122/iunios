@@ -1,0 +1,21 @@
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraPreferenceCategory>
+         <com.aurora.market.widget.AuroraMarketPreference Aurora:aurorakey="update_settings_key"
+          Aurora:auroratitle="@string/update_settings_pref" 
+        />
+    </AuroraPreferenceCategory>
+
+    <AuroraPreferenceCategory>
+        <aurora.preference.AuroraSwitchPreference Aurora:aurorakey="wifi_download_key"
+             Aurora:auroratitle="@string/wifi_download_pref" />
+        
+        <aurora.preference.AuroraSwitchPreference Aurora:aurorakey="none_download_pic_key"
+             Aurora:auroratitle="@string/none_download_pic_pref" />
+        
+        <aurora.preference.AuroraSwitchPreference Aurora:aurorakey="hold_app_key"
+             Aurora:auroratitle="@string/hold_app_pref" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

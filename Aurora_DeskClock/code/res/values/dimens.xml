@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tabtextsize">18sp</dimen>
+    
+    <dimen name="time_text_size">92sp</dimen>
+    <dimen name="ampm_text_size">20dip</dimen>
+    <dimen name="date_text_size">15sp</dimen>
+    <dimen name="next_alarm_text_size">15sp</dimen>
+    <dimen name="time_margin_right">48dip</dimen>
+    <dimen name="time_margin_bottom">14dip</dimen>
+    <dimen name="time_margin_top">16dip</dimen>
+    <dimen name="ampm_margin_top">8dip</dimen>
+    <dimen name="font_margin_adjust">4dip</dimen>
+    <dimen name="next_alarm_margin_top">-4dip</dimen>
+    <dimen name="alarm_label_padding">8dip</dimen>
+    <dimen name="setlistheight">55dip</dimen>
+    <dimen name="u2dividerheight">0.3dp</dimen>
+    <dimen name="u3dividerheight">0.3dp</dimen>
+    
+    <dimen name="datawidgettxtWeekDay">40dp</dimen>
+    <dimen name="datawidgettxtth">23dp</dimen>
+    <dimen name="datawidgettxtAll">15dp</dimen>
+    <!-- add by xxj  u3 stopwatch item-->
+    <dimen name="stopwatch_mark_item_height">44.6dp</dimen>
+    <dimen name="stopwatch_no_text_size">12sp</dimen>
+    <dimen name="stopwatch_time_diff_text_size">12sp</dimen>
+    <dimen name="stopwatch_time_text_size">23sp</dimen>   
+    <dimen name="aurora_stopwatch_time_diff_margin_left">248dp</dimen>
+    <dimen name="aurora_stopwatch_time_margin_left">121dp</dimen>
+    <dimen name="aurora_stopwatch_list_view_height">178.4dp</dimen>
+    <dimen name="aurora_stopwatch_buttons_layout_marginTop">464.4dp</dimen>
+    <dimen name="aurora_stopwatch_mark_layout_marginTop">240.4dp</dimen>
+    <dimen name="worldtime_listview_layout_marginTop">0dp</dimen>
+     
+
+</resources>

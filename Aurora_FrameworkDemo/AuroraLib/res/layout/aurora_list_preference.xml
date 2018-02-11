@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Layout for a Preference in a PreferenceActivity. The
+     Preference is able to place a specific widget for its particular
+     type in the "widget_frame" layout.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="33dp"
+    android:paddingRight="4dp"
+    android:orientation="vertical"
+   >
+	<ListView 
+	    android:id="@android:id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="33dp"
+	    android:clipToPadding="false"
+        android:scrollbarStyle="@integer/aurora_preference_screen_header_scrollbarStyle"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:listPreferredItemHeight="47dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        
+	    ></ListView>
+   
+
+</LinearLayout>

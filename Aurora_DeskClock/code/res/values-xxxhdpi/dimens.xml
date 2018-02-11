@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tabtextsize">18sp</dimen>
+    
+    <dimen name="time_text_size">92sp</dimen>
+    <dimen name="ampm_text_size">20dip</dimen>
+    <dimen name="date_text_size">15sp</dimen>
+    <dimen name="next_alarm_text_size">15sp</dimen>
+    <dimen name="time_margin_right">48dip</dimen>
+    <dimen name="time_margin_bottom">14dip</dimen>
+    <dimen name="time_margin_top">16dip</dimen>
+    <dimen name="ampm_margin_top">8dip</dimen>
+    <dimen name="font_margin_adjust">4dip</dimen>
+    <dimen name="next_alarm_margin_top">-4dip</dimen>
+    <dimen name="alarm_label_padding">8dip</dimen>
+    <dimen name="setlistheight">55dip</dimen>
+    <dimen name="u2dividerheight">0.3dp</dimen>
+    <dimen name="u3dividerheight">0.3dp</dimen>
+    
+    <dimen name="datawidgettxtWeekDay">37sp</dimen>
+    <dimen name="datawidgettxtth">21sp</dimen>
+    <dimen name="datawidgettxtAll">14sp</dimen>
+    <!-- add by xxj for u3 -->
+    <dimen name="stopwatch_mark_item_height">39dp</dimen>
+    <dimen name="stopwatch_no_text_size">10sp</dimen>
+    <dimen name="aurora_stopwatch_mark_item_margin">86.2dp</dimen>
+    <dimen name="stopwatch_time_diff_text_size">10sp</dimen>
+    <dimen name="stopwatch_time_text_size">19.5sp</dimen> 
+    <dimen name="aurora_stopwatch_time_diff_margin_left">231.5dp</dimen>
+    <dimen name="aurora_stopwatch_time_margin_left">117dp</dimen>
+    <dimen name="aurora_stopwatch_mark_item_margin3">42dp</dimen>  
+      
+    <dimen name="aurora_stopwatch_list_view_height">156dp</dimen>
+    <dimen name="aurora_stopwatch_buttons_layout_marginTop">451.9dp</dimen>
+    <dimen name="aurora_stopwatch_mark_layout_marginTop">252.9dp</dimen>
+    <dimen name="worldtime_listview_layout_marginTop">12dp</dimen>
+    <dimen name="round_button_text_size">17sp</dimen> 
+    <dimen name="seekbarwidth">6dp</dimen> 
+      
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="horizontal"  
+    android:gravity="center"  
+    android:id="@+id/my_ll"  
+     >  
+     
+     <GridView
+        android:id="@+id/ls_lscreen"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="21.3dp"
+        android:gravity="center"
+        android:listSelector="@color/white"
+        android:numColumns="4"
+        android:verticalSpacing="5dp"
+        /> 
+<!--              <Button
+        android:id="@+id/ls_lscreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1" >
+    </Button>
+    <Button  
+        android:id="@+id/my_iv"  
+        android:layout_width="0dp"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+         >  
+    </Button>  
+  
+    <Button  
+        android:id="@+id/my_btn"  
+        android:layout_width="0dp"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" 
+        android:layout_marginLeft="5dp" 
+        android:text="@string/about_settings" >  
+    </Button>  
+  
+    <Button  
+        android:id="@+id/my_tv"  
+        android:layout_width="0dp"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        >  
+    </Button>  -->
+    
+  
+  
+</LinearLayout>

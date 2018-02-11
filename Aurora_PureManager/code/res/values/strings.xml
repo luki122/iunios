@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="comma">，</string>
+    <string name="colon">：</string>  
+    <string name="app_name">纯净管家</string>
+    <string name="app_num">款应用</string>
+    <string name="user_app">个人应用</string>
+    <string name="sys_app">系统应用</string>
+    <string name="app_manage">应用管理</string>
+    <string name="jurisdiction_manage">权限管理</string>
+    <string name="manage_optimize">点击优化</string>
+    
+    <string name="recom_optimal">个应用推荐优化</string>
+    <string name="already_optimal">已经优化应用</string>
+    <string name="jurisdiction_num">项权限</string>
+    <string name="need_close_permisson_num">项可关闭</string>
+    <string name="need_open_permisson_num">项可打开</string>
+    
+    <string name="choice_sort_way">选择排序方式</string>
+    
+    <string name="permission_control">权限控制</string>
+    <string name="auto_start_prohibit">杜绝应用自启</string>
+    
+    <string name="auto_start_manage">自启管理</string>
+    <string name="app_uninstall">应用卸载</string>
+    <string name="app_freezeon">应用冻结</string>
+    <string name="def_soft_manage">默认应用</string>
+    
+    <string name="storage_not_available">存储器不可用</string>  
+    
+    <string name="cancel">取消</string>
+    <string name="no_longer_hint">不再提示</string>
+    <string name="stop">停止</string>
+    <string name="force_stop_dlg_title">要强行停止吗？</string>
+    <string name="force_stop_dlg_text">强行停止某个应用可能会导致其出现异常。</string>
+    <string name="sure">确定</string>
+    <string name="no_danger_permission_app">无涉及敏感权限应用</string>
+    <string name="text_no_app_has_permission">没有涉及该权限的应用</string>
+    <string name="has_no_trust_permission">"没有涉及隐私和安全的相关权限"</string>
+    <string name="text_no_privacy_has_permission">"没有涉及隐私与安全的相关应用"</string>
+    <string name="app_permission_count">"涉及<xliff:g>%1$s</xliff:g>项隐私和安全的权限"</string>
+	<string name="itrust">"我信任该应用"</string>
+	<string name="itrust_second">"开启后系统将不会拦截该应用的所有权限操作"</string>
+
+    <string name="permission_important">"重要"</string>
+    <string name="text_load">加载中&#8230;</string>
+    <string name="text_allow">允许</string>
+    <string name="text_forbidden">禁止</string>
+    <string name="text_ask">询问</string>
+    <string name="perm_default">默认</string>
+     <string name="permlab_readMms">"读取您的彩信"</string>
+    <string name="permlab_writeMms">"写入/删除您的彩信"</string>
+    <string name="perm_send_mms">"发送彩信"</string>
+    
+    <string name="browser">浏览器</string>
+     <string name="music">音乐</string>
+    <string name="dial">拨号</string>
+    <string name="msg">短信</string>
+    <string name="camera">相机</string>
+    <string name="gallery">图库</string>
+    <string name="launcher">桌面</string>
+    <string name="init">初始化</string>
+    <string name="contacts">联系人</string>
+    <string name="video">视频</string>
+    <string name="ebook">电子书</string>
+    <string name="crop">裁剪</string>
+    
+    <string name="recommend_use">"(推荐使用)"</string>
+    <string name="permission_grade">"权限信任等级"</string>
+    
+    <string name="storager">"内存"</string>
+    <string name="internal_storager">"本机内存"</string>
+    <string name="sd_storager">"SD卡内存"</string>
+    <string name="already_user">"已用 "</string>
+    
+    <string name="no_auto_start_app_hint_title">暂无自启动应用</string> 
+    <string name="no_auto_start_app_hint_text">可通过右上角“+”添加</string>
+    <string name="auto_start_app_num">个应用会自启动</string>
+    <string name="what_is_auto_start">什么是自启动？</string>
+    <string name="auto_start_explain">部分应用会通过在后台自动启动的形式保证可及时向用户推送消息（如即时通讯应用），但一些不必要的应用申请了自启动权限会令系统更耗电和耗内存</string>
+    <string name="prohibit">禁用</string>
+    <string name="forbit_auto_start">禁用自启动</string>
+    <string name="are_you_sure_forbit_auto_start">是否禁用该应用的自启动行为？</string>
+    <string name="add">添加</string>
+    <string name="added">已添加</string>
+    <string name="no_app_for_add">暂无可添加应用</string> 
+    <string name="add_auto_start_app">添加自启动应用</string>
+    <string name="no_app_for_uninstall">暂无可卸载应用</string>
+    <string name="no_app_for_freezed">暂无可冻结应用</string>
+    <string name="freeze_app_hint">被冻结应用桌面图标将被隐藏，可在本列表点击该应用图标打开。</string>
+    <string name="no_freeze_app">未冻结应用</string>
+    <string name="text_freeze_btn">"未冻结"</string>
+    <string name="text_freezed_btn">"已冻结"</string>
+    
+    <string name="input_method">输入法</string>
+    <string name="left_brackets">（</string>
+    <string name="right_brackets">）</string>
+    <string name="no_set_item">暂无可设置项</string>
+    <string name="not_set">未设置</string>
+    <string name="system">系统</string>
+    <string name="alread_clear">已清空</string>
+    <string name="def_setting">的默认设置</string>
+    <string name="please_wait_init">正在初始化，请等待...</string>
+    
+    <string name="no_user_app">暂无个人应用</string>
+    <string name="necessary_app">必备应用</string>
+    <string name="phone_memory">手机存储</string>
+    <string name="sd_card">SD卡</string>
+    <string name="sys_subgroup">系统组件</string>
+    <string name="running_proc">正在运行</string>
+    <string name="app_list">应用列表</string>
+    <string name="memory_details">内存详情：%1$s/%2$s</string>
+    <string name="memory_percent">已使用%1$s</string>
+    <string name="end_run">结束运行</string>
+    <string name="uninstall">卸载</string>
+    <string name="arrow_auto_start">允许自启动</string>
+    <string name="default_set">默认设置</string>
+    <string name="clear">清除</string>
+    <string name="app_detail">应用详情</string>
+    <string name="app_not_install">应用未安装</string>
+    <string name="disable">停用</string>
+    <string name="start">启用</string>
+    <string name="clear_sucess">清除成功</string>
+    <string name="app_disable_dlg_title">要停用内置应用吗？</string>
+    <string name="app_disable_dlg_text">如果停用内置应用，其他应用可能会出现异常。</string>
+    <string name="move_app_failed_dlg_title">"无法移动应用</string>
+    <string name="insufficient_storage">存储空间不足。</string>
+    <string name="does_not_exist">应用不存在。</string>
+    <string name="app_forward_locked">应用受版权保护。</string>
+    <string name="invalid_location">安装位置无效。</string>
+    <string name="system_package">无法在外部介质上安装系统更新。</string>
+    <string name="move_app">移动</string>
+    <string name="move_app_to_internal">移至手机内存</string>
+    <string name="move_app_to_sdcard">移至 SD 卡</string>
+    <string name="moving">正在移动...</string>
+    
+    <string name="total_size">总计</string> 
+    <string name="app_size">应用大小</string>
+    <string name="user_data">用户数据</string>
+    <string name="app_cache">应用缓存</string>
+    <string name="clear_data_dlg_title">要删除应用数据吗？</string>
+    <string name="clear_data_dlg_text">系统会永久删除此应用的所有数据。删除的内容包括所有文件、设置、帐户、数据库等。</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="clear_one_cache_dlg_text">该应用的相关缓存数据将会被永久清除，是否确认？</string>
+    <string name="move_sucess">移动成功</string>
+    <string name="alread_save">已节省</string>
+    <string name="memery_size">内存空间</string>
+    <string name="version">软件版本</string>
+    
+    <string name="percent">"%"</string>
+</resources>

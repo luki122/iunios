@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"> 
+     <LinearLayout
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#f6f6f6" android:visibility="gone">
+        <TextView
+            android:id="@+id/noAppTitle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="167.3dp" android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_big_text_size" android:textColor="@color/hint_text_color"/>
+        <TextView
+            android:id="@+id/noAppText"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hint_small_text_margin_top" 
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/hint_small_text_size" android:textColor="@color/hint_text_color"/>
+    </LinearLayout>
+       
+    <com.secure.stickylistheaders.StickyListHeadersListView
+		android:id="@+id/appListview" 
+		android:layout_width="fill_parent"  android:layout_height="fill_parent"			
+		android:focusable="false" android:fadingEdge="none"
+		android:listSelector="@drawable/item_of_middle"
+		android:divider="@drawable/line" android:dividerHeight="1px"/>
+</RelativeLayout>

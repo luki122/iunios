@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="gn_entries_list_photo_options">
+        <!-- <item>彩色人名</item> -->
+        <!-- <item>彩色头像</item> -->        
+        <!-- <item>单色人名</item> -->
+        <item>Default</item>
+        <item>Hide</item>
+    </string-array>
+    
+    <string-array name="gn_entryvalues_list_photo_options">
+        <!-- <item>0</item> -->
+        <!-- <item>1</item>         -->
+        <!-- <item>3</item> -->
+        <item>4</item>
+        <item>2</item>
+    </string-array>
+       
+    
+</resources>
+

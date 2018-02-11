@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!--aurora change liguangyu 20131114 for BUG #728 start -->
+    
+    <item
+        android:id="@+id/menu_add_new_contact"
+        android:title="@string/menu_newContact" />
+    
+    <item
+        android:id="@+id/menu_add_exist_contact"
+        android:title="@string/aurora_menu_add_exist_contact" />
+    
+    <item
+        android:id="@+id/menu_clean_call_log"
+        android:title="@string/aurora_menu_delete_calllog"
+        android:showAsAction="always" />
+    <!--aurora change liguangyu 20131114 for BUG #728 end -->
+
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Size of the generic status lines keyguard's status view -->
+    <dimen name="kg_status_line_font_size">64.5px</dimen>
+
+    <!-- Size of the generic status lines keyguard's security status view -->
+    <dimen name="kg_security_status_line_font_size">72.5px</dimen>
+
+    <!-- Clock Date Week font size -->
+    <dimen name="lock_screen_clock_size">328.5px</dimen>
+    <dimen name="lock_screen_date_size">72.5px</dimen>
+    <dimen name="lock_screen_week_size">64.5px</dimen>
+
+</resources>

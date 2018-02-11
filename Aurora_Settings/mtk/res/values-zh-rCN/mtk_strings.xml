@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="bluetooth_advanced_settings">"蓝牙高级设置"</string>
+    <string name="bluetooth_profile_ftp">"文件传输"</string>
+    <string name="bluetooth_ftp_profile_summary_use_for">"用于文件传输"</string>
+    <string name="bluetooth_ftp_profile_summary_connected">"已连接到文件传输"</string>
+ <!--<string name="lock_screen_notifications_title">锁定屏幕通知</string>
+    <string name="lock_screen_notifications_summary">在滑动锁定屏幕上显示未接来电和未接短信通知</string> -->
+    <string name="lock_screen_style_title">锁定屏幕风格</string>
+    <string name="battery_percent">电量百分比</string> 
+    <string name="cpu_dtm_title">CPU省电模式</string>
+    <string name="cpu_dtm_summary">限制 CPU 最大性能以节省电量并降低温度。</string>
+    <string name="usb_sharing_title">USB 互连网</string>  
+    <string name="usb_sharing_summary">通过 USB 线共享 Windows PC 网络</string>  
+    <string name="usb_sharing_info_title">网络</string>  
+    <string name="usb_sharing_info_step_1">"1. 打开 Windows PC 网络."</string>  
+    <string name="usb_sharing_info_step_2">"2. 在想要分享的网络上点击右键, 选择属性."</string>  
+    <string name="usb_sharing_info_step_3">"3. 点击高级选项, 选择 \"允许其他网络用户共享此计算机的 Internet 来连接\" (如果出现家庭网络选项, 请选择新增的USB网络连接)"."</string>  
+    <!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 begin -->
+    <string name="apn_port_warning">端口值必须是1-65535！</string>
+    <string name="usb_tethering_select_version">选择电脑系统版本</string>
+    <!-- Gionee <wangyaohui><2013-05-28> add for CR00820266 end -->    
+</resources>

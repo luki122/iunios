@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.apihook"
+    android:installLocation="internalOnly"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="15" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> 
+   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+   <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <application android:label="AuroraApi" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="AuroraApiHook" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+             <activity android:name="com.aurora.apihook.resolver.ChooserActivity"
+                android:theme="@style/ChooserActivityStyle"
+                android:finishOnCloseSystemDialogs="true"
+                android:excludeFromRecents="true"
+                android:multiprocess="true">
+            <intent-filter>
+                <action android:name="aurora.intent.action.CHOOSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity android:name="com.aurora.apihook.phonewindowmanger.ShutdownActivity"
+                android:theme="@style/ShutdownActivityStyle"
+                android:finishOnCloseSystemDialogs="true"
+                android:excludeFromRecents="true"
+                android:multiprocess="true">
+            <intent-filter>
+                <action android:name="aurora.intent.action.shutdown" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            </activity>
+        <service android:name="com.aurora.apihook.phonewindowmanger.ShutdownService"
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter >
+                <action android:name="aurora.intent.action.SHUT_DOWN_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

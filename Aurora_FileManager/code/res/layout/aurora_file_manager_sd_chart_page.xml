@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chartUsbSdCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/aurora_file_chart_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/usbBgDetailImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp" />
+
+        <com.aurora.widget.PieChart
+            android:id="@+id/pieChartSdCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="11dp" >
+        </com.aurora.widget.PieChart>
+
+        <RelativeLayout
+            style="@style/strong_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+
+            <TextView
+                android:id="@+id/sdCard_storage_free"
+                style="@style/AuroraStorageCenterTextStyle" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sdCard_storage_free"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/imag_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    style="@style/AuroraStorageCenterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/aurora_file_storage_free"
+                    android:textSize="8sp" />
+
+                <!--
+                <TextView
+                    style="@style/AuroraStorageCenterTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/divier" />
+
+                <TextView
+                    android:id="@+id/sdCard_storage_free"
+                    style="@style/AuroraStorageCenterTextStyle" />
+                -->
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/storageDetailSdCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4.7dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                style="@style/strong_imag_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTitleStyle"
+                android:text="@string/aurora_file_manager_total_storage_title_sd" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTitleStyle"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/sdCard_storage_total"
+                style="@style/AuroraStorageDetailTitleStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/AuroraStorageDetailLayoutStyle_s"
+            android:layout_marginTop="8dp" >
+
+            <ImageView
+                style="@style/aurora_detail_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_picture" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_picture_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AuroraStorageDetailLayoutStyle_s" >
+
+            <ImageView
+                style="@style/aurora_detail_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_video" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_video_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AuroraStorageDetailLayoutStyle_s" >
+
+            <ImageView
+                style="@style/aurora_detail_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_music" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_music_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AuroraStorageDetailLayoutStyle_s" >
+
+            <ImageView
+                style="@style/aurora_detail_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_document" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_document_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AuroraStorageDetailLayoutStyle_s" >
+
+            <ImageView
+                style="@style/aurora_detail_apk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_apk" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_apk_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/AuroraStorageDetailLayoutStyle_s" >
+
+            <ImageView
+                style="@style/aurora_detail_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_marginLeft="@dimen/aurora_storage_title_margin_left"
+                android:text="@string/category_other" />
+
+            <TextView
+                style="@style/AuroraStorageDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divier" />
+
+            <TextView
+                android:id="@+id/category_legend_other_sdCard"
+                style="@style/AuroraStorageDetailTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/search_file_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="16dip"
+        android:gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/file_icon_default_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/search_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:maxWidth="@dimen/aurora_file_manager_title_max_size"
+            android:singleLine="true"
+            android:textColor="@color/aurora_operation_more_title_change_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/search_file_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/aurora_file_item_change_color"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

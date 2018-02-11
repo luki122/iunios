@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:aurora="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/auroraActionbarLayout"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<!--  android:textColor="@color/aurora_action_bar_title_color" -->
+    <TextView
+        android:id="@+id/aurora_action_bar_title"
+        style="?attr/auroraActionBarTitleStyle"
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1.0"
+    	android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/aurora_title_padding_left"
+        android:paddingBottom="@dimen/aurora_action_bar_title_paddingbottom_first"
+        android:paddingTop="@dimen/aurora_action_bar_title_paddingtop_first"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/aurora_action_bar_text_size"
+        android:maxWidth="@dimen/aurora_action_bar_title_maxwidth"
+        android:singleLine="true" />
+</LinearLayout>
