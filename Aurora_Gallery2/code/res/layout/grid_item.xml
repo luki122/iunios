@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_grid_item"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <com.android.gallery3d.fragmentutil.RecyclingImageView
+        android:id="@+id/img_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        />
+    
+	<ImageView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_gallery_play"
+        android:visibility="gone"/>
+        
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/uncheck"
+        android:visibility="gone" />
+    
+</RelativeLayout>

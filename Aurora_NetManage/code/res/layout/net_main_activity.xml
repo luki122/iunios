@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#fafafa">
+
+    <RelativeLayout
+       android:id="@+id/bottomLayout"
+       android:layout_width="fill_parent" android:layout_height="150dp"
+       android:layout_alignParentBottom="true" android:background="@color/white">
+	   <View
+	        android:layout_width="fill_parent" android:layout_height="1px"
+	        android:layout_alignParentTop="true"
+	        android:background="@drawable/line" />  
+       <include 
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            layout="@layout/hava_flow_package_layout"/>
+       <include 
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            layout="@layout/no_flow_package_layout"/>    
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:layout_above="@id/bottomLayout">
+        <com.netmanage.view.EnterAnimationView
+        android:id="@+id/enterAnimationView"
+        android:layout_width="@dimen/main_act_enter_animation_size" 
+        android:layout_height="@dimen/main_act_enter_animation_size"
+        android:layout_gravity="center">        
+        <ImageView
+            android:id="@+id/firstView"
+            android:layout_width="@dimen/main_act_enter_animation_size" 
+            android:layout_height="@dimen/main_act_enter_animation_size"/>
+        
+        <ImageView
+            android:id="@+id/secondView" android:layout_gravity="center"
+            android:layout_width="@dimen/main_act_second_view_width" 
+            android:layout_height="@dimen/main_act_second_view_height"/>
+        
+        <ImageView
+            android:id="@+id/thridView" android:layout_gravity="center"
+            android:layout_width="@dimen/main_act_third_view_size" 
+            android:layout_height="@dimen/main_act_third_view_size"
+            android:src="@drawable/progress_green_bg"
+            android:background="@drawable/progress_red_bg"/>
+              
+        <com.netmanage.view.ProgressView
+            android:id="@+id/progressWaveImg"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/main_act_progress_view_size"
+            android:layout_height="@dimen/main_act_progress_view_size"
+            android:visibility="visible"/>
+        
+        <com.netmanage.view.FlowNumLayout
+            android:id="@+id/flowNumLayout"
+            android:layout_width="wrap_content" android:layout_height="60dp"
+            android:layout_marginRight="@dimen/main_act_flow_num_margin_right"  
+            android:layout_gravity="right|center_vertical" 
+            android:gravity="center_vertical"  android:orientation="horizontal" >
+           <ImageView
+                android:id="@+id/kiloImg" android:visibility="gone" 
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/hundredImg" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/tenImg" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/bitImg" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/decimalPointImg" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/decimal_point"/>
+            <ImageView
+                android:id="@+id/decimal1Img" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/decimal2Img" android:visibility="gone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/num_zero"/>
+            <ImageView
+                android:id="@+id/flowUnitImg" android:visibility="visible"
+                android:layout_width="44.67dp" android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/main_act_num_to_flow_mb_distance"
+                android:src="@drawable/remainder_gb_img"/>
+        </com.netmanage.view.FlowNumLayout>
+    </com.netmanage.view.EnterAnimationView>
+    </FrameLayout>
+</RelativeLayout>

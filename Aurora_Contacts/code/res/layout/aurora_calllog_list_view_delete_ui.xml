@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/aurora_list_view_delete_width"
+    android:layout_height="match_parent"
+    android:background="@color/aurora_list_view_delete_bg_color"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="0dp">
+    
+    <TextView
+    android:id="@+id/aurora_list_view_delete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:text="@string/aurora_menu_delete"
+    android:gravity="center"
+    android:textColor="@color/aurora_list_view_delete_text_color"
+    android:textSize="@dimen/aurora_contact_list_header_text_size" />
+
+</RelativeLayout>

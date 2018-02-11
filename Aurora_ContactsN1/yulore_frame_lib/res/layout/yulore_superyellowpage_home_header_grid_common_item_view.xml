@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/yulore_superyellowpage_white" >
+
+    <LinearLayout 
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp" >
+        
+        <ImageView
+            android:id="@id/yulore_superyellowpage_iv_category_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@id/yulore_superyellowpage_tv_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-1dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/yulore_superyellowpage_hotline"
+            android:textColor="@color/yulore_superyellowpage_home_service_font_gray"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

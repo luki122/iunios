@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/waiting_bg"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/wait_note1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loading_top"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/gray_text_space"
+        android:text="@string/wait_note1"
+        android:textColor="@color/wait_text_color"
+        android:textSize="@dimen/textsize_12" />
+
+</RelativeLayout>

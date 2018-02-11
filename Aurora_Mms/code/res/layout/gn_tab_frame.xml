@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-3-31 added for GIUI4.0 add tab start
+-->
+<!-- gionee lwzh 20130227 modify for for CR00774362 start -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.gionee.mms.ui.TabViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</merge>

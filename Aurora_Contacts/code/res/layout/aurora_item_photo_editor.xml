@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_contact_photo_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/aurora_editor_margin_left_or_right"
+    class="com.android.contacts.editor.PhotoEditorView" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/aurora_editor_item_photo_height"
+        android:layout_height="@dimen/aurora_editor_item_photo_height" >
+        <!-- Aurora xuyong 2016-01-14 modified for aurora 2.0 new feature start -->
+        <aurora.widget.AuroraRoundedImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/aurora_editor_photo_height"
+            android:layout_height="@dimen/aurora_editor_photo_height"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/description_contact_photo"
+            android:cropToPadding="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:src="@color/aurora_person_white_color" />
+        <!-- Aurora xuyong 2016-01-14 modified for aurora 2.0 new feature end -->
+        <Button
+            android:id="@+id/change_button"
+            android:layout_width="@dimen/aurora_editor_photo_btn_height"
+            android:layout_height="@dimen/aurora_editor_photo_btn_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null" />
+    </RelativeLayout>
+
+</view>

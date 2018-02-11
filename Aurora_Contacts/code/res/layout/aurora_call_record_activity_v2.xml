@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/aurora_record_history"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+        android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin" >
+
+        <TextView
+            android:id="@+id/aurora_group_ringtone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:text="@string/aurora_record_history"
+            android:textColor="@color/quickcontact_entry_header_text_color"
+            android:textSize="@dimen/expanding_entry_card_title_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/expanding_entry_card_item_separator_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/expanding_entry_card_item_separator_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/auto_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aurora_group_entrance_left_margin"
+        android:layout_marginRight="@dimen/aurora_group_entrance_left_margin" >
+
+        <RelativeLayout
+            android:id="@+id/aurora_auto_record_line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_single_line_list_view_item_hight"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/aurora_auto_record_tv"
+                android:layout_width="@dimen/aurora_call_record_tv_w"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/aurora_auto_record"
+                android:textColor="@color/quickcontact_entry_header_text_color"
+                android:textSize="@dimen/expanding_entry_card_title_text_size" />
+
+            <aurora.widget.AuroraSwitch
+                android:id="@+id/aurora_auto_record_switch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/auto_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aurora_auto_record_line1"
+            android:layout_marginTop="8dp" >
+
+            <RadioButton
+                android:id="@+id/all_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/aurora_record_all_contacts"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/select_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="18dp"
+                android:text="@string/aurora_record_select_contact"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/aurora_record_contacts"
+            android:layout_width="@dimen/aurora_call_record_tv_w"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auto_group"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/aurora_editor_item_padding_left"
+            android:paddingRight="6dp"
+            android:scrollbarFadeDuration="2000"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="@string/aurora_auto_record"
+            android:textColor="@color/quickcontact_entry_sub_header_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/edit_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/auto_group"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/aurora_auto_record_line1"
+            android:layout_marginTop="43dp"
+            android:background="?com.aurora:attr/actionBarRightWidgetBackground"
+            android:gravity="right|bottom"
+            android:paddingBottom="6dp"
+            android:paddingLeft="@com.aurora:dimen/aurora_action_bar_margin_left"
+            android:paddingRight="@com.aurora:dimen/aurora_action_bar_margin_right"
+            android:scaleType="center"
+            android:text="@string/menu_editContact"
+            android:textColor="@com.aurora:color/aurora_action_bar_selectall_button_color"
+            android:textSize="@com.aurora:dimen/aurora_action_bar_btn_size" />
+    </RelativeLayout>
+
+</LinearLayout>

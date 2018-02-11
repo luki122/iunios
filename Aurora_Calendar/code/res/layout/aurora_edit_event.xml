@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  begin -->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/aurora_background_color" />
+
+    <!-- WHAT -->
+
+    <LinearLayout
+        android:id="@+id/what_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <aurora.widget.AuroraEditText
+            android:id="@+id/title"
+            style="@style/style_edit_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:hint="@string/aurora_event_edit_name_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aurora_background_color" />
+    </LinearLayout>
+
+    <!-- WHEN -->
+
+    <LinearLayout
+        android:id="@+id/when_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- FROM - Read/write version which launches the date/time pickers -->
+
+        <RelativeLayout
+            android:id="@+id/from_row"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aurora_ripple_selector" >
+
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/aurora_summary_text_color"
+                android:textSize="@dimen/aurora_event_edit_date_text_size" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_date"
+                android:layout_marginTop="-6dp"
+                android:textColor="@color/aurora_title_text_color"
+                android:textSize="@dimen/aurora_event_edit_time_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="#8a8faf" />
+
+        <!-- TO - Read/write version which launches the date/time pickers -->
+
+        <RelativeLayout
+            android:id="@+id/to_row"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/aurora_ripple_selector" >
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/aurora_summary_text_color"
+                android:textSize="@dimen/aurora_event_edit_date_text_size" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/end_date"
+                android:layout_marginTop="-6dp"
+                android:textColor="@color/aurora_title_text_color"
+                android:textSize="@dimen/aurora_event_edit_time_text_size" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- REMINDERS -->
+
+        <RelativeLayout
+            android:id="@+id/reminder"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:background="?com.aurora:attr/actionBarLeftWidgetBackground"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/reminder_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="60dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aurora_background_color" />
+    </LinearLayout>
+
+    <!--
+    REMINDERS 
+
+    <LinearLayout
+        android:id="@+id/reminders_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+        android:focusable="true"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/reminders_group_label"
+            style="@style/GNSlidingTitleTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+            android:gravity="center_vertical"
+            android:text="@string/event_info_reminders_label"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/reminder_items_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_bg_top"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/reminder_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_sliding_content_bottom_on_off"
+            android:gravity="center_vertical"
+            android:minHeight="48dip" >
+
+            <TextView
+                android:id="@+id/event_info_add_reminder_info"
+                style="@style/GNEditEventContentTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/event_info_add_reminder_imageview"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/event_info_add_reminder_imageview"
+                android:text="@string/reminders_label" />
+
+            <ImageView
+                android:id="@+id/event_info_add_reminder_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+                android:background="@drawable/gn_all_in_one_create_view_on_off" />
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/repeats_row"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/event_edit_repeat_title"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/aurora_title_text_color"
+            android:textSize="@dimen/aurora_event_edit_item_text_size"
+            android:text="@string/aurora_event_edit_repeat_title" />
+
+        <!--
+        <aurora.widget.AuroraSpinner
+            android:id="@+id/repeats"
+            style="@style/TextAppearance.Spinner.EditEvent_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/event_edit_repeat_title"
+            android:contentDescription="@string/accessibility_repeats"
+            android:prompt="@string/repeats_label"
+            android:layout_centerInParent="true"
+            aurora:auroraspinnerMode="dialog" /> -->
+
+        <TextView
+            android:id="@+id/repeat_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/event_edit_repeat_title"
+            android:layout_centerVertical="true"
+            android:textColor="@color/aurora_title_text_color"
+            android:textSize="@dimen/aurora_event_edit_item_text_size" />
+
+        <ImageView
+            android:id="@+id/repeat_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/aurora_ic_arrow_right"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/aurora_background_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar_select_account_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/calendar_selector_group"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginBottom="@com.aurora:dimen/aurora_settings_item_divider_height"
+            android:background="@drawable/aurora_edit_item_bg"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/calendars_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/gn_sliding_content_margin_left_or_right"
+                android:prompt="@string/edit_event_calendar_label"
+                aurora:auroraspinnerMode="dialog" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- CALENDAR DISPLAY for existing events -->
+    <RelativeLayout
+        android:id="@+id/calendar_group"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginBottom="@com.aurora:dimen/aurora_settings_item_divider_height"
+        android:paddingLeft="@dimen/aurora_event_edit_item_padding_left"
+        android:paddingRight="@dimen/aurora_event_edit_item_padding_left"
+        android:background="@drawable/aurora_edit_item_bg"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/event_edit_account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/aurora_event_calendar_account"
+            android:textColor="@color/aurora_edit_item_text_color"
+            android:textSize="@dimen/aurora_event_edit_item_text_size"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:id="@+id/calendar_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/event_edit_account_title"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/edit_item_read_only_text_color"
+            android:textSize="@dimen/aurora_event_edit_item_text_size" />
+
+    </RelativeLayout>
+
+    <!-- NOTE -->
+
+    <LinearLayout
+        android:id="@+id/description_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <aurora.widget.AuroraEditText
+            android:id="@+id/description"
+            style="@style/style_edit_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:hint="@string/aurora_event_edit_description_hint" />
+
+    </LinearLayout>
+</LinearLayout>

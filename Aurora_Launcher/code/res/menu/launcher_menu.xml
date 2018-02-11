@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item 
+         android:id="@+id/add_widget"
+         android:title="@string/menu_add_widget"/>
+     <item 
+         android:id="@+id/change_wallpaper"
+         android:title="@string/menu_change_wallpaper"/>
+     <item 
+         android:id="@+id/align_icon"
+         android:title="@string/menu_align_icon"/>
+     <item 
+         android:id="@+id/system_settings"
+         android:title="@string/menu_system_settings"/>
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/Account.LinearLayout.AccountSyncContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/account_sync_textview_header_height"
+        android:background="@color/account_info_item_header_bg"
+        android:visibility="gone"
+        android:paddingRight="@dimen/padding_0" >
+
+        <TextView
+            android:id="@+id/tv_titlebar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/account_sync_data_text_color"
+            android:textSize="@dimen/textsize_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/Account.LinearLayout.AccountSyncContainer"
+        android:layout_width="fill_parent"
+        android:paddingRight="16sp"
+        android:layout_height="@dimen/account_sync_wifi_switch_height"
+        android:descendantFocusability="blocksDescendants" >
+
+        <LinearLayout
+            android:id="@+id/module_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.aurora.account.widget.SyncProgressView
+                android:id="@+id/spv_app"
+                android:layout_width="@dimen/account_sync_module_icon_height"
+                android:layout_height="@dimen/account_sync_module_icon_height" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/account_sync_module_icon_height"
+                android:layout_height="@dimen/account_sync_module_icon_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/account_sync_wifi_switch_height"
+            android:layout_marginLeft="@dimen/account_sync_module_name_left"
+            android:layout_toLeftOf="@+id/module_switch"
+            android:layout_toRightOf="@+id/module_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/module_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_sync_module_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_16" />
+
+                <TextView
+                    android:id="@+id/app_warn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_sync_contacts_info_warn"
+                    android:textColor="@color/sync_appname_warn"
+                    android:textSize="@dimen/textsize_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sync_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_4"
+                android:text="@string/account_sync_time"
+                android:textColor="@color/account_sync_wlan_blew"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/module_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <aurora.widget.AuroraSwitch
+                android:id="@+id/wlan_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/view_header"
+        layout="@layout/header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_header"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="28dp"
+        android:textColor="@color/info_text_color"
+        android:text="@string/scma_insert_sim_card_info"
+        android:textSize="16sp" />
+    
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true" >-->
+
+        <!--<include layout="@layout/footer" />-->
+    <!--</LinearLayout>-->
+    <fragment
+        android:id="@+id/navigation_bar"
+        android:name="com.android.setupwizard.navigationbar.SetupWizardNavBar"
+        style="@style/setup_wizard_navbar_style" />
+</RelativeLayout>

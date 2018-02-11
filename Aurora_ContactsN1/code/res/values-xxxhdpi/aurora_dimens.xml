@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aurora_editor_field_text_size">16sp</dimen>
+
+    
+    <dimen name="aurora_two_lines_list_view_item_height">59dp</dimen>
+   
+    <dimen name="aurora_contact_list_header_text_size">14sp</dimen>
+
+    <dimen name="aurora_alphbet_index_star_font_size">20sp</dimen>
+    <dimen name="aurora_alphbet_index_font_size">12sp</dimen>
+    <dimen name="aurora_alphbet_prompt_text_font_size">6sp</dimen>
+    <dimen name="aurora_alphbet_height">415dp</dimen>
+    
+    <dimen name="aurora_empty_contact_button_padding_top">117dp</dimen>
+    <dimen name="aurora_empty_contact_text_size">20sp</dimen>
+
+    <dimen name="aurora_call_log_animate_move_length_1">29.25dp</dimen>
+    
+    <dimen name="aurora_zoom_clip_radius">168dp</dimen>
+    <dimen name="aurora_zoom_clip_ccy">215dp</dimen>
+
+    <dimen name="aurora_list_view_left_margin">12dp</dimen>
+
+    <dimen name="aurora_call_log_text_width">232dp</dimen>
+    <dimen name="aurora_call_log_count_margin">5dp</dimen>
+    <dimen name="aurora_tab_height">43dp</dimen>
+    <dimen name="aurora_dialpad_digits_height">68.75dip</dimen>
+    <dimen name="aurora_dialpad_digits_margin_top">8.5dip</dimen>
+    <dimen name="aurora_dialpad_digits_size">50sp</dimen>
+    <dimen name="aurora_dialpad_area_size">11sp</dimen>
+    <dimen name="aurora_call_sms_margin_right">9dp</dimen>
+    <dimen name="aurora_second_action_height">59dp</dimen>
+    <dimen name="aurora_dialpad_height">275dp</dimen>
+    <item name="aurora_dialpad_bg_scale_Y" type="dimen" format="float">1.95</item>
+    
+    <dimen name="aurora_call_date_margin_right">12dp</dimen>
+    <dimen name="aurora_call_date_text_size">10sp</dimen>
+    <dimen name="namecount_margin_top">11.5dp</dimen>
+    <dimen name="aurora_sim_icon_margin_right">7dp</dimen>
+    <dimen name="aurora_name_text_size">16sp</dimen>
+    <dimen name="sencond_line_container_margin_left">5dp</dimen>
+    <dimen name="sencond_line_container_margin_top">4.25dp</dimen>
+    <dimen name="aurora_call_type_padding_right">8dp</dimen>
+    <dimen name="sencond_line_text_size">11sp</dimen>
+    
+    <dimen name="dialer_search_list_item_height">59dp</dimen>
+    <dimen name="dialer_search_paddingLeft">16dp</dimen>
+    <dimen name="dialer_search_name_text_size">16sp</dimen>
+    <dimen name="dialer_search_number_and_name_margin_top">4.25dp</dimen>
+    <dimen name="dialer_search_number_margin_top">0dp</dimen>
+    <dimen name="dialer_search_number_text_size">13sp</dimen>
+    <dimen name="dialer_search_area_margin_top">0dp</dimen>
+    
+    <dimen name="call_log_date_margin_right">39.75dp</dimen>
+    <dimen name="call_log_date_text_size">10sp</dimen>
+    <dimen name="call_log_first_margin_top">11.5dp</dimen>
+    <dimen name="call_log_sim_margin_right">7dp</dimen>
+    <dimen name="call_log_name_text_size">16sp</dimen>
+    <dimen name="call_log_count_margin_left">5dp</dimen>
+    <dimen name="call_log_count_text_size">13sp</dimen>
+    <dimen name="call_log_second_margin_left">5dp</dimen>
+    <dimen name="call_log_second_margin_top">4.25dp</dimen>
+    <dimen name="call_log_type_padding_right">8dp</dimen>
+    <dimen name="call_log_second_text_size">11sp</dimen>
+    <dimen name="call_log_padding_left">0dp</dimen>
+    <dimen name="call_log_type_margin_right">0dp</dimen>
+
+    <dimen name="aurora_editor_type_label_width">98dip</dimen>
+    <dimen name="editor_type_label_width">98dip</dimen>
+</resources> 

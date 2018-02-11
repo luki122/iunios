@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project Licensed under the 
+    Author: lich
+    Description: modify contact_detail_list_item.xml
+    Date:2012-04-20
+-->
+
+<!-- Note: padding might be controlled programatically -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    <com.android.contacts.detail.ActionsViewContainer
+        android:id="@+id/actions_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingTop="@dimen/aurora_detail_item_padding_top"
+		android:paddingBottom="@dimen/aurora_detail_item_padding_bottom"
+        android:orientation="horizontal"
+        android:focusable="true"   
+        android:nextFocusRight="@+id/secondary_action_view_container"
+        android:minHeight="49dp"
+        android:background="?android:attr/listChoiceBackgroundIndicator" >
+
+        <!-- Note: padding might be controlled programatically -->
+       <LinearLayout
+            android:id="@+id/primary_action_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="32dip"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:background="#0000"
+            android:gravity="center_vertical|left" >
+           
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:orientation="horizontal">
+                
+                <LinearLayout
+			        android:id="@+id/name_star"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+	                <com.android.contacts.widget.GnTextView
+	                    android:id="@+id/type"
+	                    android:textColor="@com.aurora:color/aurora_list_textcolor"
+	                	android:textSize="@dimen/aurora_group_entrance_title_size"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:singleLine="true"
+	                    android:maxWidth="@dimen/gn_contact_detail_list_item_max_type_width"
+	                    android:paddingRight="7dip" />
+	
+		            <com.android.contacts.widget.GnTextView
+		                android:id="@+id/data"
+		                android:textColor="@com.aurora:color/aurora_list_textcolor"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="@dimen/aurora_group_entrance_title_size"
+		                android:drawablePadding="8dp"
+	                    android:paddingRight="1dip" />
+	            </LinearLayout>
+	            
+	            <TextView
+	                android:id="@+id/gn_number_area"
+	                android:layout_marginTop="5dip"
+	                android:layout_below="@id/name_star"
+	                android:textColor="@color/aurora_group_edit_ringtone_text_color"
+	                android:textSize="@com.aurora:dimen/aurora_list_subtext_text_size"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" />
+            </RelativeLayout>
+			               
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/vtcall_action_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <ImageView
+                android:id="@+id/vtcall_action_button"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="false" />
+        </FrameLayout>
+
+        <!-- Note: padding might be controlled programatically -->
+        <FrameLayout
+            android:id="@+id/secondary_action_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dip"
+            android:layout_gravity="center_vertical|right"
+            android:focusable="true"
+            android:nextFocusLeft="@id/actions_view_container">
+            <ImageView
+                android:id="@+id/secondary_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="false" />
+        </FrameLayout>
+    </com.android.contacts.detail.ActionsViewContainer>
+    
+</LinearLayout>
+

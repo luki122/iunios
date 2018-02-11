@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+	<com.gionee.zoom.ImageZoomView
+	    android:id="@+id/zoomview"
+	    android:background="@null"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    />
+	
+	<com.gionee.zoom.ClipFrontView
+	    android:id="@+id/frontView"
+	    android:background="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+	
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom="22.6dip"
+	    android:layout_gravity="center_horizontal|bottom"
+	    android:gravity="center">
+	    <ImageView 
+	        android:id="@+id/clip_check_button"
+	        android:src="@drawable/clip_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginBottom="10dip"
+	    android:layout_gravity="center_horizontal|bottom"
+	    android:gravity="center">
+	    <ImageView 
+	        android:id="@+id/rotationLeft"
+	        android:src="@drawable/rotate_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="30dip"
+	        />
+	    <ImageView 
+	        android:id="@+id/rotationRight"
+	        android:src="@drawable/rotate_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        />
+	</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:amigo="http://schemas.android.com/apk/res/amigo"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/container"
+        android:focusable="false"
+        android:orientation="vertical" >
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:focusable="false"
+	        android:orientation="horizontal" >
+	        	        
+	        <TextView
+	            android:id="@+id/title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="12dp"
+	            android:focusable="false"
+	            android:singleLine="true"
+	            android:textSize="@dimen/pernission_list_text_size"/>
+<!--                 android:textColor="@amigo:color/amigo_content_color_primary_on_backgroud_c1" -->
+	        
+	        <TextView
+                android:id="@+id/title_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:visibility="gone"/>	        
+<!--                 android:textColor="@amigo:color/amigo_content_color_secondary_on_backgroud_c2" -->
+        </LinearLayout>
+        
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:focusable="false"
+            android:textSize="12sp"/>
+<!--             android:textColor="@amigo:color/amigo_content_color_secondary_on_backgroud_c2" -->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/icon_listview_margin_right"
+            android:focusable="false"
+            android:clickable="false"/>        
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project Licensed under the 
+    Author: lich
+    Description: modify contact_detail_list_item.xml
+    Date:2012-04-20
+-->
+
+<!-- Note: padding might be controlled programatically -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dip">
+
+    <com.android.contacts.detail.ActionsViewContainer
+        android:id="@+id/actions_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:nextFocusRight="@+id/secondary_action_view_container"
+        android:minHeight="@dimen/detail_min_line_item_height">
+
+        <!-- Note: padding might be controlled programatically -->
+        <LinearLayout
+            android:id="@+id/primary_action_view"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="8dip"
+            android:gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gn_phone_num_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginRight="6dip"
+                    android:gravity="center"
+                    android:src="@drawable/gn_phone_num_icon"/>
+
+	            <TextView
+	                android:id="@+id/data"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+                    android:gravity="center"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+			
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/presence_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/ContactDetailItemType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                
+                <!-- gionee xuhz 20120531 add start -->
+                <TextView android:id="@+id/gn_number_area"
+                    style="@style/ContactDetailItemType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <!-- gionee xuhz 20120531 add end -->
+
+                <View
+                    android:id="@+id/primary_indicator"
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_list_default_mime_holo_dark" />
+
+                <ImageView
+                    android:id="@+id/association_sim_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="6dip"
+                    android:paddingRight="4dip"
+                    android:visibility="gone" />
+                
+                <TextView
+                    android:id="@+id/association_sim_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_gravity="center"
+                    android:layout_toLeftOf="@+id/primary_icon"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFFFF"
+                    android:visibility="gone" />
+                
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical_divider_vtcall"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/detail_vertical_divider_vertical_margin"
+            android:layout_marginBottom="@dimen/detail_vertical_divider_vertical_margin"
+            android:background="?android:attr/dividerVertical" />
+
+        <!-- Note: padding might be controlled programatically -->
+        <FrameLayout
+            android:id="@+id/vtcall_action_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <ImageView
+                android:id="@+id/vtcall_action_button"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="false" />
+        </FrameLayout>
+        <View
+            android:id="@+id/vertical_divider"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/detail_vertical_divider_vertical_margin"
+            android:layout_marginBottom="@dimen/detail_vertical_divider_vertical_margin"
+            android:background="?android:attr/dividerVertical" />
+
+        <!-- Note: padding might be controlled programatically -->
+        <FrameLayout
+            android:id="@+id/secondary_action_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/detail_item_icon_margin"
+            android:paddingRight="@dimen/detail_item_icon_margin"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:nextFocusLeft="@id/actions_view_container">
+            <ImageView
+                android:id="@+id/secondary_action_button"
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="false" />
+        </FrameLayout>
+    </com.android.contacts.detail.ActionsViewContainer>
+</FrameLayout>
+

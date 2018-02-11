@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-13 created for aurora's new feature -->
+<!-- Aurora liugj 2013-10-30 modified for bug-295 start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_title"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/aurora_title_layout_height"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <!-- Aurora liugj 2013-10-30 modified for bug-295 end -->
+    <!-- Aurora xuyong 20131014 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2013-10-24 modified for aurora's new feature start -->
+    <TextView
+        android:id="@+id/aurora_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/aurora_title_name_style"
+        />
+    <!-- Aurora xuyong 2013-10-24 modified for aurora's new feature end -->
+
+    <TextView
+        android:id="@+id/aurora_title_number_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/aurora_title_number_style"
+        />
+     <!-- Aurora xuyong 20131014 modified for aurora's new feature end -->
+
+</LinearLayout>

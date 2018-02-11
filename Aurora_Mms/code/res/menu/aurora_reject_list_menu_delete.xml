@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-07-02 created for reject feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Aurora liugj 2013-11-13 modified for aurora's new feature start -->
+    <item android:id="@+id/aurora_list_menu_reject"
+          android:title="@string/gn_confirm"
+          android:icon="@com.aurora:drawable/aurora_bottombar_done_selector"
+          />
+    <!-- Aurora liugj 2013-11-13 modified for aurora's new feature end -->
+</menu>

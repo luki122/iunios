@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/gallert_local_rename"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="bottom"
+        android:hint="@string/aurora_max_album_name"
+        android:inputType="text"
+        android:maxLength="31"
+        android:singleLine="true"
+        android:textColor="#444444"
+        android:textSize="14sp" >
+    </aurora.widget.AuroraEditText>
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/input_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="41dp"
+        android:focusable="false"
+        android:textColor="@color/album_error_input"
+        android:textSize="8sp" />
+
+</FrameLayout>

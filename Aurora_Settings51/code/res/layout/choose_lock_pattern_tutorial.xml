@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/lock_title"
+                android:paddingBottom="10dip"
+                android:textSize="18sp"
+                style="?android:attr/textAppearanceMedium"
+                android:visibility="visible"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:textSize="14sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/lock_intro_message"
+            />
+
+            <com.aurora.lockscreen.AuroraLockPatternView android:id="@+id/lockPattern"
+                 android:layout_width="324dip"
+                 android:layout_height="324dip"
+                 android:layout_marginTop="32dip"
+                 android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/SecurityPreferenceButtonContainer"
+        android:orientation="horizontal">
+        <Button android:id="@+id/skip_button"
+            style="@style/SecurityPreferenceButton"
+            android:layout_marginLeft="8dp"
+            android:text="@string/lockpattern_tutorial_cancel_label"/>
+
+        <Button android:id="@+id/next_button"
+            style="@style/SecurityPreferenceButton"
+            android:layout_marginRight="8dp"
+            android:text="@string/lockpattern_tutorial_continue_label"/>
+    </LinearLayout>
+
+</LinearLayout>

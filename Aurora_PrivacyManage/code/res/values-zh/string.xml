@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sign_1">1</string>
+    <string name="sign_2">2</string>
+    <string name="sign_3">3</string>
+    <string name="sign_4">4</string>
+    <string name="sign_5">5</string>
+    <string name="sign_6">6</string>
+    <string name="sign_sharp">#</string>
+    <string name="info_send_fail">发送失败，请重试</string>
+    <string name="info_send_success">密码已发送到密保邮箱</string>
+    <string name="app_name">隐私</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="test_string">测试字符串</string>
+    <string name="null_description">null description</string>
+    <string name="create_privacy_account">创建隐私空间</string>
+    <string name="how_enter">如何进入隐私空间</string>
+    <string name="how_protect">如何保护隐私空间</string>
+    <string name="how_exit">如何退出隐私空间</string>
+    <string name="enter_method"><Data><![CDATA[正常空间下，在拨号盘输入 <font color="#019C73">#隐私密码#</font> ，即可切换到隐私空间；这是唯一入口，请牢记]]></Data></string>
+    <string name="exit_method"><Data><![CDATA[<font color="#019C73">自动锁屏</font> 和 <font color="#019C73">手动锁屏</font>，可以立即退出隐私空间]]></Data></string>
+    <string name="protect_method">只有在隐私空间下，才会显示你设定的隐私联系人、短信、通话记录、应用、视频和图片</string>
+    <string name="how_delete">如何删除隐私空间</string>
+    <string name="delete_method">进入隐私空间后，在桌面点击隐私图标，再进入设置，点击删除隐私空间</string>
+    <string name="how_getback_password">如何找回密码</string>
+    <string name="getback_password_method">在桌面点击隐私图标，再点击页面下方的进不了隐私空间，按照流程执行即可</string>
+    <string name="next_step">下一步</string>
+    <string name="creator_info_password_struct">隐私空间密码=随机数字+您的密码</string>
+    <string name="creator_hint_input_password">请输入4&#8211;10位的数字密码</string>
+    <string name="creator_hint_password_again">请再次输入密码</string>
+    <string name="creator_info_input_email">请使用相对隐私的个人邮箱，用于找回密码</string>
+    <string name="creator_hint_input_email">请输入邮箱地址</string>
+    <string name="finish">完成</string>
+    <string name="password_again">再次输入密码</string>
+    <string name="confirm">确认</string>
+    <string name="password_protection">密码保护</string>
+    <string name="create_finish">创建完成</string>
+    <string name="info_three_step_teach">只需三步，教你如何保护隐私</string>
+    <string name="lock_note">"保护隐私，您也可以拥有一点小秘密；"</string>
+    <string name="shield_note">"足够隐蔽，一手掌握另一个精彩世界；"</string>
+    <string name="switching_note">"快速切换，举手投足间的从容与淡定。"</string>
+    <string name="get_back_password">找回密码</string>
+    <string name="cant_enter_privacy_space">进不了隐私空间?</string>
+    <string name="sign_plus">"+"</string>
+    <string name="password_length_not_good">"密码位数不正确"</string>
+    <string name="password_different">"密码不一致"</string>
+    <string name="email_addr_not_good">"邮箱地址不正确"</string>
+    <string name="email_addr_not_complete">"邮箱地址不完整"</string>
+    <string name="email_addr_not_exist">"不存在此密保邮箱"</string>
+    <string name="open_privacy_space">开启隐私空间</string>
+    <string name="info_send_password_to_me">进入隐私空间的方法和密码将发送到密保邮箱</string>
+    <string name="error_net_not_available">网络不可用</string>
+    <string name="set">设置</string>
+    <string name="help">帮助</string>
+    <string name="password_protect">密码保护</string>
+    <string name="change_password">修改密码</string>
+    <string name="nom_space_notify_way">正常空间下的提醒方式</string>
+    <string name="privacy_call_msg">隐私来电与短信</string>
+    <string name="privacy_app_msg">隐私应用消息</string>
+    <string name="delete_privacy_space">删除隐私空间</string>
+    <string name="sure_delete_privacy_space">确定删除隐私空间吗？</string>
+    <string name="delete_privacy_content_at_same_time">同时删除所有隐私内容</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="undelete_privacy_content_hint">如不删除隐私内容，则将被恢复为常规内容。隐私图片和视频保存在根目录下的“私人文件”文件夹</string>
+    <string name="wait_sending">正在发送，请稍候</string>
+    <string name="work_at_non_space">以下设置作用于非隐私空间</string>
+    <string name="privacy_ring">隐私来电</string>
+    <string name="privacy_msg_notify">隐私短信通知</string>
+    <string name="switch_notify_hint">打开或关闭通知栏提示</string>
+    <string name="notify_word">通知栏提示文字</string>
+    <string name="have_new_system_msg">有新的系统消息</string>
+    <string name="must_enter_word">必须输入文字</string>
+    <string name="can_not_export_20_word">提示文字最多为20字</string>
+    <string name="enter_privacy_space">已进入隐私空间</string>
+    <string name="no_keep_privacy_space">未保持隐私空间</string>
+    <string name="lock_screen_quit_privacy_space">锁屏将会退出隐私空间</string>
+    <string name="keep_privacy_space">已保持隐私空间</string>
+    <string name="lock_screen_not_quit_privacy_space">锁屏将不会退出隐私空间</string>
+    <string name="keep">保持</string>
+    <string name="no_keep">解除</string>
+    <string name="safe_keeping_privacy_content_days">已为您保护隐私%1$s"天</string>
+    <string name="deleted_privacy_space">已删除隐私空间</string>
+    <string name="change_password_success">修改密码成功</string>
+    <string name="change_email_success">修改邮箱地址成功</string>
+    <string name="this_function_is_unavailable">该功能暂时无法使用！</string>
+    <string name="privacy_manage">隐私管理</string>
+    <string name="email_charset">._-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@</string>
+    <string name="password_no_change">密码未改变</string>
+    <string name="null_string">""</string>
+    
+    <!-- [20141215] new requirement -->
+    <string name="input_password_in_dialing_pad">去拨号盘输入密码</string>
+    <string name="i_see">我知道了</string>
+
+</resources>

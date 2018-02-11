@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="0.7dp"
+    android:height="12dp"
+    android:viewportWidth="2"
+    android:viewportHeight="36">
+
+    <path
+        android:name="XMLID_3_"
+        android:fillColor="@color/aurora_white_color"
+        android:fillAlpha="0.5"
+        android:strokeAlpha="0.5"
+        android:pathData="@string/separator_v2_path" />
+</vector>

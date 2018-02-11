@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.android.gallery3d.local.widget.DragSelectGridView
+        android:id="@+id/local_album_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="false"
+        android:horizontalSpacing="@dimen/local_gridview_horizontalSpacing"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/local_gridview_horizontalSpacing" />
+    <!-- @dimen/local_gridview_horizontalSpacing -->
+
+    <RelativeLayout
+        android:id="@+id/empty_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="204dp" >
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/aurora_no_pic_icon" />
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="7dp"
+            android:text="@string/aurora_empty_text"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</FrameLayout>

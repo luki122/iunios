@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+        
+    <AuroraPreferenceCategory 
+        aurora:auroratitle="@string/cell_broadcast_sms">
+            
+    <AuroraCheckBoxPreference 
+        aurora:aurorakey="button_enable_disable_cell_bc_sms" 
+        aurora:auroratitle="@string/enable_disable_cell_bc_sms"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummaryOn="@string/cell_bc_sms_enable"
+        aurora:aurorasummaryOff="@string/cell_bc_sms_disable"/>
+    
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+            aurora:auroratitle="@string/cb_sms_settings">
+        
+        <AuroraListPreference
+            aurora:aurorakey="list_language" 
+            aurora:auroratitle="@string/list_language_title"
+            aurora:aurorasummary="@string/list_language_summary"
+            aurora:auroraentries="@array/list_language_entries"
+            aurora:auroraentryValues="@array/list_language_values"
+            aurora:auroradialogTitle="@string/list_language_dtitle"/>
+            
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_emergency_broadcast" 
+                aurora:auroratitle="@string/enable_disable_emergency_broadcast"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/emergency_broadcast_enable"
+                aurora:aurorasummaryOff="@string/emergency_broadcast_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_administrative" 
+                aurora:auroratitle="@string/enable_disable_administrative"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/administrative_enable"
+                aurora:aurorasummaryOff="@string/administrative_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_maintenance" 
+                aurora:auroratitle="@string/enable_disable_maintenance"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/maintenance_enable"
+                aurora:aurorasummaryOff="@string/maintenance_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_local_weather" 
+                aurora:auroratitle="@string/enable_disable_local_weather"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/local_weather_enable"
+                aurora:aurorasummaryOff="@string/local_weather_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_atr" 
+                aurora:auroratitle="@string/enable_disable_atr"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/atr_enable"
+                aurora:aurorasummaryOff="@string/atr_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_lafs" 
+                aurora:auroratitle="@string/enable_disable_lafs"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/lafs_enable"
+                aurora:aurorasummaryOff="@string/lafs_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_restaurants" 
+                aurora:auroratitle="@string/enable_disable_restaurants"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/restaurants_enable"
+                aurora:aurorasummaryOff="@string/restaurants_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_lodgings" 
+                aurora:auroratitle="@string/enable_disable_lodgings"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/lodgings_enable"
+                aurora:aurorasummaryOff="@string/lodgings_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_retail_directory" 
+                aurora:auroratitle="@string/enable_disable_retail_directory"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/retail_directory_enable"
+                aurora:aurorasummaryOff="@string/retail_directory_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_advertisements" 
+                aurora:auroratitle="@string/enable_disable_advertisements"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/advertisements_enable"
+                aurora:aurorasummaryOff="@string/advertisements_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_stock_quotes" 
+                aurora:auroratitle="@string/enable_disable_stock_quotes"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/stock_quotes_enable"
+                aurora:aurorasummaryOff="@string/stock_quotes_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_eo" 
+                aurora:auroratitle="@string/enable_disable_eo"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/eo_enable"
+                aurora:aurorasummaryOff="@string/eo_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_mhh" 
+                aurora:auroratitle="@string/enable_disable_mhh"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/mhh_enable"
+                aurora:aurorasummaryOff="@string/mhh_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_technology_news" 
+                aurora:auroratitle="@string/enable_disable_technology_news"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/technology_news_enable"
+                aurora:aurorasummaryOff="@string/technology_news_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_multi_category" 
+                aurora:auroratitle="@string/enable_disable_multi_category"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/multi_category_enable"
+                aurora:aurorasummaryOff="@string/multi_category_disable"/>
+                
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+            aurora:auroratitle="@string/general_news_settings">
+        
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_local_general_news" 
+                aurora:auroratitle="@string/enable_disable_local"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/local_enable"
+                aurora:aurorasummaryOff="@string/local_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_regional_general_news" 
+                aurora:auroratitle="@string/enable_disable_regional"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/regional_enable"
+                aurora:aurorasummaryOff="@string/regional_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_national_general_news" 
+                aurora:auroratitle="@string/enable_disable_national"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/national_enable"
+                aurora:aurorasummaryOff="@string/national_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_international_general_news" 
+                aurora:auroratitle="@string/enable_disable_international"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/international_enable"
+                aurora:aurorasummaryOff="@string/international_disable"/>
+        <!--
+        <ListPreference 
+                android:key="list_general_news"
+                android:title="@string/general_news_title"
+                android:summary="@string/general_news_summary"
+                android:entries="@array/general_news_entries"
+                android:entryValues="@array/general_news_entryvalues"
+                android:dialogTitle="@string/general_news_dialogtitle"/> -->
+                
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+            aurora:auroratitle="@string/bf_news_settings">
+        
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_local_bf_news" 
+                aurora:auroratitle="@string/enable_disable_local"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/local_enable"
+                aurora:aurorasummaryOff="@string/local_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_regional_bf_news" 
+                aurora:auroratitle="@string/enable_disable_regional"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/regional_enable"
+                aurora:aurorasummaryOff="@string/regional_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_national_bf_news" 
+                aurora:auroratitle="@string/enable_disable_national"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/national_enable"
+                aurora:aurorasummaryOff="@string/national_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_international_bf_news" 
+                aurora:auroratitle="@string/enable_disable_international"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/international_enable"
+                aurora:aurorasummaryOff="@string/international_disable"/>
+                
+        <!--    
+        <ListPreference 
+                android:key="list_bf"
+                android:title="@string/bf_news_title"
+                android:summary="@string/bf_news_summary"
+                android:entries="@array/bf_news_entries"
+                android:entryValues="@array/bf_news_entryvalues"
+                android:dialogTitle="@string/bf_news_dialogtitle"/> -->
+    
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+            aurora:auroratitle="@string/sports_news_settings">
+        
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_local_sports_news" 
+                aurora:auroratitle="@string/enable_disable_local"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/local_enable"
+                aurora:aurorasummaryOff="@string/local_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_regional_sports_news" 
+                aurora:auroratitle="@string/enable_disable_regional"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/regional_enable"
+                aurora:aurorasummaryOff="@string/regional_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_national_sports_news" 
+                aurora:auroratitle="@string/enable_disable_national"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/national_enable"
+                aurora:aurorasummaryOff="@string/national_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_international_sports_news" 
+                aurora:auroratitle="@string/enable_disable_international"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/international_enable"
+                aurora:aurorasummaryOff="@string/international_disable"/>
+                
+        <!--    
+        <ListPreference 
+                android:key="list_sports_news"
+                android:title="@string/sports_news_title"
+                android:summary="@string/sports_news_summary"
+                android:entries="@array/sports_news_entries"
+                android:entryValues="@array/sports_news_entryvalues"
+                android:dialogTitle="@string/sports_news_dialogtitle"/> -->
+                
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+            aurora:auroratitle="@string/entertainment_news_settings">
+        
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_local_entertainment_news" 
+                aurora:auroratitle="@string/enable_disable_local"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/local_enable"
+                aurora:aurorasummaryOff="@string/local_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_regional_entertainment_news" 
+                aurora:auroratitle="@string/enable_disable_regional"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/regional_enable"
+                aurora:aurorasummaryOff="@string/regional_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_national_entertainment_news" 
+                aurora:auroratitle="@string/enable_disable_national"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/national_enable"
+                aurora:aurorasummaryOff="@string/national_disable"/>
+                
+        <AuroraCheckBoxPreference 
+                aurora:aurorakey="button_international_entertainment_news" 
+                aurora:auroratitle="@string/enable_disable_international"
+                aurora:aurorapersistent="false"
+                aurora:aurorasummaryOn="@string/international_enable"
+                aurora:aurorasummaryOff="@string/international_disable"/>
+                
+        <!--    
+        <ListPreference 
+                android:key="list_entertainment_news"
+                android:title="@string/entertainment_news_title"
+                android:summary="@string/entertainment_news_summary"
+                android:entries="@array/entertainment_news_entries"
+                android:entryValues="@array/entertainment_news_entryvalues"
+                android:dialogTitle="@string/entertainment_news_dialogtitle"/> -->
+                
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>   

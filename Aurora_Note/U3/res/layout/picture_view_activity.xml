@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pic_browser_bg" >
+
+    <com.aurora.note.ui.PicViewPager
+        android:id="@+id/pic_view_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:spacing="5.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/picbrowser_top_tool_bg"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/pic_view_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="@com.aurora:dimen/status_bar_height"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:duplicateParentState="true"
+            android:src="@drawable/pic_view_back_selector" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pic_view_go_back"
+            android:paddingTop="@com.aurora:dimen/status_bar_height"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/pic_view_current_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/pic_view_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

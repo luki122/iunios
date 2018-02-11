@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_save_to"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_editor_item_kind_section_height" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/aurora_save_to_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/aurora_save_to"
+            android:textColor="@color/aurora_editor_title_text_color"
+            android:textSize="@dimen/aurora_editor_title_text_size" />
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/aurora_save_to_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/aurora_save_to_local"
+            android:textColor="@color/aurora_editor_subtitle_text_color"
+            android:textSize="@dimen/aurora_editor_subtitle_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/aurora_save_to_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/aurora_ic_arrow_right" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aurora_editor_item_gap_color" />
+
+</RelativeLayout>

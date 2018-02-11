@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/reminder_widget_width"
+        android:layout_height="@dimen/reminder_widget_height" >
+
+        <ImageView
+            android:id="@+id/reminder_widget_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reminder_widget_bg_top_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/reminder_widget_bg_top" />
+
+        <TextView
+            android:id="@+id/reminder_widget_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/reminder_widget_ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reminder_widget_time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/reminder_widget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/reminder_widget_time"
+            android:layout_below="@id/reminder_widget_time"
+            android:layout_marginTop="-7dp"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/reminder_widget_title"
+            android:layout_width="@dimen/reminder_widget_title_width"
+            android:layout_height="@dimen/reminder_widget_title_height"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#99FFFFFF"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/reminder_widget_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/emoticon_default" />
+    </RelativeLayout>
+</FrameLayout>

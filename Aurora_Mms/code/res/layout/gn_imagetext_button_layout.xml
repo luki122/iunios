@@ -1,0 +1,17 @@
+<merge
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      >
+<ImageView
+    android:id="@+id/gnDrawable"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="center" />
+
+<TextView
+    android:id="@+id/gnText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0.5dip"
+    android:paddingLeft="6dip"
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+</merge>

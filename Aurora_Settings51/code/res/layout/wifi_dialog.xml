@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="11"
+    android:scrollbars="none"
+    android:id="@+id/wifi_scrollview" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dip" />
+
+        <LinearLayout
+            android:id="@+id/info"
+            style="@style/wifi_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/type"
+            style="@style/wifi_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <LinearLayout style="@style/aurora_wifi_item" >
+
+                <TextView
+                    android:text="@string/wifi_ssid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                    android:textDirection="locale" />
+
+                <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                <aurora.widget.AuroraEditText
+                    android:id="@+id/ssid"
+                    android:hint="@string/wifi_ssid_hint"
+                    android:maxLength="32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="20dip"
+                    android:background="@null"
+                    android:singleLine="true"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Second"
+                    android:textColor="#cc414142"
+                    android:textDirection="locale" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+
+            <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/security_text"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_security" />
+
+                <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/security"
+                    style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    aurora:spinnerPosition="right_normal"
+                    android:entries="@array/wifi_security"
+                    android:prompt="@string/wifi_security"
+                    aurora:changeArrowDirection="true" />
+            </LinearLayout>
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/security_wfa"
+                style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                aurora:spinnerPosition="right_normal"
+                android:entries="@array/wifi_security_wfa"
+                android:prompt="@string/wifi_security"
+                aurora:changeArrowDirection="true" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/wpa_security"
+                style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                aurora:spinnerPosition="right_normal"
+                android:entries="@array/wpa_security"
+                android:prompt="@string/wifi_security"
+                aurora:changeArrowDirection="true" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/wpa_security_wfa"
+                style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                aurora:spinnerPosition="right_normal"
+                android:entries="@array/wpa_security_wfa"
+                android:prompt="@string/wifi_security"
+                aurora:changeArrowDirection="true" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/wapi_security"
+                aurora:spinnerPosition="right_normal"
+                style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:entries="@array/wapi_security"
+                android:prompt="@string/wifi_security"
+                aurora:changeArrowDirection="true" />
+
+            <View style="@style/aurora_baseline_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/security_fields"
+            style="@style/wifi_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- eap identity start -->
+
+            <LinearLayout
+                android:id="@+id/eap_identity"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/l_identity"
+                    style="@style/aurora_wifi_item"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                        android:text="@string/wifi_eap_identity" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/identity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="20dip"
+                        android:background="@null"
+                        android:inputType="textUri"
+                        android:singleLine="true"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Second"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <!-- eap identity end -->
+
+            <!--LinearLayout
+                android:id="@+id/password_layout"
+                style="@style/wifi_section" >
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_password" />
+
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/password"
+                        style="@style/aurora_wifi_item_widget"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout-->
+
+            <!--密码-->
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="38dip"
+                     android:gravity="center_vertical"
+                     android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                        android:text="@string/wifi_password" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="20dip"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Second"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                    <!--显示密码-->
+                    <ImageButton
+                        android:id="@+id/show_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/show_password_image"
+                    />
+
+                    </LinearLayout>
+
+                    <View
+                       android:id="@+id/aurora_preference_divider"
+                       android:layout_width="match_parent"
+                       android:layout_height="1px"
+                       android:background="#16000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_password_layout"
+                style="@style/wifi_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <CheckBox
+                    android:id="@+id/hex_password"
+                    style="@style/wifi_item_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_hex_password"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- WAPI start -->
+
+        <LinearLayout
+            android:id="@+id/wapi_cert_fields"
+            style="@style/wifi_section"
+            android:visibility="gone" >
+
+            <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                <TextView
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wapi_as_certificate" />
+
+                <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/wapi_as_cert"
+                    style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    aurora:spinnerPosition="right_normal"
+                    android:prompt="@string/wapi_as_certificate" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+
+            <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                <TextView
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wapi_user_certificate" />
+
+                <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/wapi_user_cert"
+                    style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    aurora:spinnerPosition="right_normal"
+                    android:prompt="@string/wapi_user_certificate" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+        </LinearLayout>
+        <!-- WAPI end -->
+
+
+        <!-- CMCC WLAN priority layout start -->
+
+        <LinearLayout
+            android:id="@+id/priority_field"
+            style="@style/wifi_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <!-- CMCC WLAN priority layout end -->
+
+        <LinearLayout
+            android:id="@+id/wifi_advanced_toggle"
+            style="@style/wifi_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/wifi_advanced_togglebox"
+                style="@style/wifi_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_show_advanced"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wifi_advanced_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <!-- eap security start -->
+
+            <LinearLayout
+                android:id="@+id/eap"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <!-- EAP方法 -->
+                <LinearLayout
+                    android:id="@+id/l_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item"
+                        android:layout_height="60dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wifi_eap_method" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraSpinner
+                            android:id="@+id/method"
+                            style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            aurora:spinnerPosition="right_normal"
+                            android:entries="@array/wifi_eap_method"
+                            android:prompt="@string/wifi_eap_method" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+
+                <!-- SIM 卡槽 -->
+                <LinearLayout
+                    android:id="@+id/sim_slot_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item"
+                        android:layout_height="60dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sim_slot" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraSpinner
+                            android:id="@+id/sim_slot"
+                            style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            aurora:spinnerPosition="right_normal"
+                            android:entries="@array/sim_slot"
+                            android:prompt="@string/sim_slot" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+
+                <!--阶段2身份验证-->
+                <LinearLayout
+                    android:id="@+id/l_phase2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item"
+                        android:layout_height="60dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/please_select_phase2" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraSpinner
+                            android:id="@+id/phase2"
+                            style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            aurora:spinnerPosition="right_normal"
+                            android:entries="@array/wifi_phase2_entries"
+                            android:prompt="@string/please_select_phase2" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+
+                <!--CA证书-->
+                <LinearLayout
+                    android:id="@+id/l_ca_cert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item"
+                        android:layout_height="60dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wifi_eap_ca_cert" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraSpinner
+                            android:id="@+id/ca_cert"
+                            style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            aurora:spinnerPosition="right_normal"
+                            android:prompt="@string/wifi_eap_ca_cert" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+
+                <!--用户证书-->
+                <LinearLayout
+                    android:id="@+id/l_user_cert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item"
+                        android:layout_height="60dip"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wifi_eap_user_cert" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraSpinner
+                            android:id="@+id/user_cert"
+                            style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            aurora:spinnerPosition="right_normal"
+                            android:prompt="@string/wifi_eap_user_cert" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+
+                <!--匿名身份-->
+                <LinearLayout
+                    android:id="@+id/l_anonymous"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout style="@style/aurora_wifi_item" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                            android:text="@string/wifi_eap_anonymous" />
+
+                        <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                        <aurora.widget.AuroraEditText
+                            android:id="@+id/anonymous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingStart="20dip"
+                            android:background="@null"
+                            android:inputType="textNoSuggestions"
+                            android:singleLine="true"
+                            style="@com.aurora:style/TextAppearance.Aurora.Material.Second"
+                            android:textColor="#cc414142" 
+                            android:textDirection="locale" />
+                    </LinearLayout>
+
+                    <View style="@style/aurora_baseline_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- eap security end -->
+
+
+            <!-- WEP security start -->
+
+            <LinearLayout
+                android:id="@+id/wep"
+                style="@style/wifi_section"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/wep_key_index_label"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi_WEP_transmit_key" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraSpinner
+                        android:id="@+id/wep_key_index"
+                        style="@style/wifi_item_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/wifi_WEP_index"
+                         aurora:spinnerPosition="right_normal"
+                        android:prompt="@string/wifi_WEP_transmit_key" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        android:id="@+id/wep_key_type_label"
+                        style="@style/wifi_item_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi_password"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body2"
+                        android:textColor="?android:attr/colorAccent" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <EditText
+                        android:id="@+id/password_wep"
+                        style="@style/wifi_item_edit_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:text="@string/wifi_WEP_secury_key" />
+
+                    <aurora.widget.AuroraSpinner
+                        android:id="@+id/wep_key_type"
+                        style="@style/wifi_item_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         aurora:spinnerPosition="right_normal"
+                        android:entries="@array/wifi_WEP_security_type" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <!-- WEP security end -->
+
+            <!-- 代理 -->
+            <LinearLayout
+                android:id="@+id/proxy_settings_fields"
+                style="@style/wifi_section"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/proxy_settings_title"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/proxy_settings_title" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraSpinner
+                        android:id="@+id/proxy_settings"
+                        style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:entries="@array/wifi_proxy_settings"
+                        aurora:spinnerPosition="right_normal"
+                        android:prompt="@string/proxy_settings_title" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proxy_warning_limited_support"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <!-- Dummy to enable right-justification of warning -->
+
+                <TextView
+                    style="@style/wifi_item_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    style="@style/wifi_item_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/proxy_warning_limited_support" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proxy_pac_field"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/proxy_url_title" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/proxy_pac"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/proxy_url_hint"
+                        android:inputType="textNoSuggestions"
+                        android:textColor="#cc414142"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/proxy_fields"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <!--主机名-->
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/proxy_hostname_label" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/proxy_hostname"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/proxy_hostname_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <!--端口-->
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/proxy_port_label" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/proxy_port"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/proxy_port_hint"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <!--无代理网址-->
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        android:id="@+id/proxy_exclusionlist_text"
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/proxy_exclusionlist_label" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/proxy_exclusionlist"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/proxy_exclusionlist_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <!--IP 设置-->
+            <LinearLayout
+                android:id="@+id/ip_fields"
+                style="@style/wifi_section"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/aurora_wifi_item"
+                    android:layout_height="60dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/wifi_ip_settings"
+                        style="@com.aurora:style/TextAppearance.Aurora.Material.Content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifi_ip_settings" />
+
+                    <!--<View style="@style/aurora_baseline_vertical" />-->
+
+                    <aurora.widget.AuroraSpinner
+                        android:id="@+id/ip_settings"
+                        style="@com.aurora:style/Widget.Aurora.Light.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:entries="@array/wifi_ip_settings"
+                        aurora:spinnerPosition="right_normal"
+                        android:prompt="@string/wifi_ip_settings" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/staticip"
+                style="@style/wifi_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        android:id="@+id/wifi_ip_address"
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_ip_address" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/ipaddress"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/wifi_ip_address_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_gateway" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/gateway"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/wifi_gateway_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_network_prefix_length" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/network_prefix_length"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/wifi_network_prefix_length_hint"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_dns1" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/dns1"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/wifi_dns1_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+
+                <LinearLayout style="@style/aurora_wifi_item" >
+
+                    <TextView
+                        style="@style/aurora_wifi_item_label"
+                        android:text="@string/wifi_dns2" />
+
+                    <aurora.widget.AuroraEditText
+                        android:id="@+id/dns2"
+                        style="@style/aurora_wifi_item_content"
+                        android:hint="@string/wifi_dns2_hint"
+                        android:inputType="textNoSuggestions"
+                        android:singleLine="true"
+                        android:textColor="#cc414142"
+                        android:textDirection="locale" />
+                </LinearLayout>
+
+                <View style="@style/aurora_baseline_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+        <LinearLayout
+            android:id="@+id/ignore_network"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/ignore_network_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/white"
+                    android:layout_marginBottom="@com.aurora:dimen/aurora_preference_title_text_size"
+                    android:text="@string/ignore_wifi_ap" />
+        </LinearLayout>
+</LinearLayout>

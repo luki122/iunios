@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/aurora_slides_index"
+        android:paddingLeft="18dip"
+        android:layout_width="52dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        style="@style/aurora_slide_index_style"/>
+
+    <LinearLayout
+        android:id="@+id/aurora_slide_content"
+        android:layout_toRightOf="@id/aurora_slides_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip"
+        android:orientation="horizontal" >
+        
+        <ViewStub
+            android:id="@+id/aurora_part_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/aurora_slides_item_image"
+            android:layout_marginRight="4dip"
+            android:visibility="gone" />
+        
+        <ViewStub
+            android:id="@+id/aurora_part_vedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slidebrowser_media_info"
+            android:layout_marginRight="4dip"
+            android:visibility="gone" />
+        
+        <ViewStub
+            android:id="@+id/aurora_part_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout="@layout/gn_slidebrowser_media_info"
+            android:layout_marginRight="4dip"
+            android:visibility="gone" />
+    
+        
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/aurora_part_textview"
+        android:layout_below="@id/aurora_slide_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/aurora_slides_item_tv"
+        android:layout_marginBottom="8dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1px"
+        android:layout_marginLeft="52dip"
+        android:background="@color/aurora_conv_divider_bg_color" />
+
+</RelativeLayout>

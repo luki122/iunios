@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:phone="http://schemas.android.com/apk/res/com.aurora.callsetting"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/labelGSMMore">
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_cf_expand_key"
+        aurora:auroratitle="@string/aurora_cf_title"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.GsmUmtsCallForwardOptions"/>
+    </AuroraPreferenceScreen>
+
+    <!--  <AuroraPreferenceScreen
+        aurora:aurorakey="button_more_expand_key"
+        aurora:auroratitle="@string/additional_gsm_call_settings"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.GsmUmtsAdditionalCallOptions"/>
+    </AuroraPreferenceScreen> --> 
+    
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_more_expand_key"
+        aurora:auroratitle="@string/labelCW"
+        aurora:aurorapersistent="false">
+
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.GsmUmtsAdditionalCallOptions"/>
+    </AuroraPreferenceScreen>
+    
+    
+</AuroraPreferenceScreen>

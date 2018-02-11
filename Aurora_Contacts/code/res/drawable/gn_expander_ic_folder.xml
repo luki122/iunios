@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee xuhz 20120729 add for CR00658824 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_expanded="true"
+        android:drawable="@drawable/gn_ic_expand_open" />
+    <item android:drawable="@drawable/gn_ic_expand_close" />
+</selector>

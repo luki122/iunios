@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmark_preloads">
+        <item>@raw/favicon_iuni</item>
+        <item>@raw/thumb_google</item>
+        <item>@raw/favicon_iunios</item>
+        <item>@raw/thumb_picasa</item>
+        <item>@raw/favicon_baidu</item>
+        <item>@raw/thumb_yahoo</item>
+        <item>@raw/favicon_sina</item>
+        <item>@raw/thumb_msn</item>
+        <item>@raw/favicon_qzone</item>
+        <item>@raw/thumb_twitter</item>
+        <item>@raw/favicon_taobao</item>
+        <item>@raw/thumb_facebook</item>
+        <item>@raw/favicon_youku</item>
+        <item>@raw/thumb_wikipedia</item>
+        <item>@raw/favicon_news_163</item>
+        <item>@raw/thumb_ebay</item>
+        <item>@raw/favicon_sina_sport</item>
+        <item>@raw/thumb_cnn</item>
+        <item>@raw/favicon_qidian</item>
+        <item>@raw/thumb_nytimes</item>
+        <item>@raw/favicon_9game</item>
+        <item>@raw/thumb_espn</item>
+    </array>
+</resources>

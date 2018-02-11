@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+    
+    <item android:drawable="@drawable/play_pause2" android:duration="20" />
+    <item android:drawable="@drawable/play_pause3" android:duration="20" />
+    <item android:drawable="@drawable/play_pause4" android:duration="20" />
+    <item android:drawable="@drawable/play_pause5" android:duration="20" />
+    <item android:drawable="@drawable/play_pause6" android:duration="20" />
+    <item android:drawable="@drawable/play_pause7" android:duration="20" />
+    <item android:drawable="@drawable/play_pause8" android:duration="20" />
+    <item android:drawable="@drawable/play_pause9" android:duration="20" />
+    <item android:drawable="@drawable/play_pause10" android:duration="20" />
+    <item android:drawable="@drawable/play_pause11" android:duration="20" />
+    <item android:drawable="@drawable/play_pause12" android:duration="20" />
+    <item android:drawable="@drawable/play_pause13" android:duration="20" />
+    <item android:drawable="@drawable/play_pause14" android:duration="20" />
+    <item android:drawable="@drawable/play_pause15" android:duration="20" />
+    <item android:drawable="@drawable/play_pause16" android:duration="20" />
+    <item android:drawable="@drawable/play_pause17" android:duration="20" />
+    <item android:drawable="@drawable/play_pause18" android:duration="20" />
+    <item android:drawable="@drawable/play_pause19" android:duration="20" />
+    <item android:drawable="@drawable/play_pause20" android:duration="20" />
+    <item android:drawable="@drawable/play_pause21" android:duration="20" />
+    <item android:drawable="@drawable/play_pause22" android:duration="20" />
+    <item android:drawable="@drawable/play_pause23" android:duration="20" />
+    <item android:drawable="@drawable/play_pause24" android:duration="20" />
+    <item android:drawable="@drawable/play_pause25" android:duration="20" />
+    <item android:drawable="@drawable/play_pause26" android:duration="20" />
+
+</animation-list>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:text="@string/account_delete_dlg_instructions_fmt"
+        android:textColor="@color/aurora_manual_title_color"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@drawable/aurora_manual_eidtprefernce_divider"
+        android:visibility="gone" />
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_toRightOf="@id/title"
+        android:singleLine="true"
+        android:textColor="@color/account_setup_info_text_color2"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+		android:layout_alignParentBottom="true"
+        android:alpha="0.1"
+        android:background="@color/conversation_view_border_color2" />
+
+</RelativeLayout>

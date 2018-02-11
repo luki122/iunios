@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.survivingwithandroid.fab"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/auroratabwidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        aurora:cursorHeight="@dimen/cursor_height"
+        aurora:entriesTitle="@array/tabwidget_titles"
+        aurora:tabAtTop="true" />
+
+</LinearLayout>

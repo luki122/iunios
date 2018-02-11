@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   
+    <!-- Aurora liugj 2013-09-24 modified for aurora's new feature start -->
+    <!-- Aurora liugj 2013-10-17 modified for aurora's new feature start -->
+    <!-- Aurora liugj 2014-02-07 modified for xuqiu:searchview scroll with listview start -->
+    <!--<include layout="@layout/aurora_searchbox_layout"
+        android:id="@+id/search_layout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:visibility="gone"
+        />-->
+    <!-- Aurora liugj 2014-02-07 modified for xuqiu:searchview scroll with listview end -->
+    <!-- Aurora liugj 2013-10-17 modified for aurora's new feature end -->
+    <!-- Aurora liugj 2013-09-24 modified for aurora's new feature end -->
+    
+    <!-- Aurora liugj 2013-11-26 modified for aurora's new feature start -->
+    <!-- Aurora liugj 2014-02-07 modified for xuqiu:searchview scroll with listview start -->
+    <LinearLayout
+        android:id="@+id/gn_encryption_title"
+        android:background="@color/aurora_notification_item_bg_color"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/aurora_no_result_tip_src"
+            android:layout_marginBottom="@dimen/aurora_no_result_tip_gap_size"
+            android:layout_marginTop="@dimen/aurora_no_result_tip_top_margin"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!-- Aurora liugj 2013-09-30 modified for aurora's new feature start -->
+        <TextView
+            android:id="@+id/aurora_conv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aurora_no_msg_tip"
+            android:gravity="center_horizontal"
+            style="@style/aurora_no_result_tip_style"
+            />
+        <!-- Aurora liugj 2013-09-30 modified for aurora's new feature end -->
+    </LinearLayout>
+    <!-- Aurora liugj 2014-02-07 modified for xuqiu:searchview scroll with listview end -->
+    <!-- Aurora liugj 2013-11-26 modified for aurora's new feature end -->
+    
+     <!-- <include layout="@layout/aurora_bottom_custom_layout"
+         android:id="@+id/bottom_layout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:visibility="gone" /> -->
+
+    <!-- Aurora liugj 2013-10-11 modified for aurora's new feature start -->
+     <!-- Aurora liugj 2013-10-25 modified for fix bug-136 start -->
+    <aurora.widget.AuroraListView
+        android:id="@+id/aurora_conv_list"
+        android:background="@color/aurora_notification_item_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gn_encryption_title"
+        android:divider="@color/aurora_notification_item_bg_color"
+        android:dividerHeight="@dimen/aurora_conv_notification_text_bottom_margin"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="16dip"
+        android:scrollbars="vertical" />
+     <!-- Aurora liugj 2013-10-25 modified for fix bug-136 end -->
+     <!-- Aurora liugj 2013-10-11 modified for aurora's new feature end -->
+    
+</RelativeLayout>
+     <!-- Aurora liugj 2013-10-10 added for aurora's new feature start -->
+    <!-- Aurora liugj 2013-12-03 modified for search animation start -->
+    <!-- <ViewStub
+        android:id="@+id/home_inputbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/aurora_searchview_animation"
+        android:layout="@layout/aurora_searchview_animation" /> -->
+    <!-- Aurora liugj 2013-12-03 modified for search animation end -->
+    <!-- Aurora liugj 2013-10-10 added for aurora's new feature end -->
+</FrameLayout>

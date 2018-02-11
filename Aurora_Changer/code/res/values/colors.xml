@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#66FFFFFF</color>
+    <color name="default_circle_indicator_stroke_color">#00FFFFFF</color>
+    
+    <color name="timely_color">#FFB64B2C</color>
+    <color name="city_color">#FF5E8CAA</color>
+    <color name="cat_color">#FFA99E8F</color>
+    <color name="color_color">#ff51179d</color>
+    <color name="dream_color">#ff8b224f</color>
+    <color name="green_color">#ff95d4ba</color>
+    <color name="cute_color">#ffacddcb</color>
+    <color name="fascinating_color">#ffff9999</color>
+    <color name="misspuff_color">#ffbf6071</color>
+    <color name="default_title_color">#FF000000</color>
+    <color name="crop_wallpaper_bottom_color">#8C000000</color>
+    <color name="crop_wallpaper_next_hightlight_color">#ff0ec16f</color>
+    <color name="crop_wallpaper_next_disable_color">#ffb8b8b8</color>
+    
+    <color name="button_dark_transparent_background">#8c000000</color>
+    <color name="translate_color">#0000</color>
+</resources>

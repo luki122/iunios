@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+aurora:ukiliu 20130917 add
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/menu_contact_edit"
+        android:title="@string/aurora_menu_edit"/>
+    
+    <item
+        android:id="@+id/menu_contact_delete"
+        android:title="@string/aurora_menu_delete"/>
+    
+    <item
+        android:id="@+id/menu_contact_share"
+        android:title="@string/aurora_menu_share_contact"/>
+    
+   <!-- <item
+        android:id="@+id/menu_contact_qrcode"
+        android:title="@string/aurora_menu_share_qrcode"/>  --> 
+     
+</menu>

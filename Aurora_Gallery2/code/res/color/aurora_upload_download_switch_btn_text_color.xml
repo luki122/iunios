@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/aurora_upload_download_file_name"/>
+    <item android:state_focused="true" android:color="@color/aurora_upload_download_file_name"/>
+    <item android:state_selected="true" android:color="@color/aurora_upload_download_file_name"/>
+    <item android:color="#989898"/> <!-- default -->
+</selector>

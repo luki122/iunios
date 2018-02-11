@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+   android:layout_height="@dimen/stopwatch_mark_item_height"  
+    >
+    <!--  android:paddingBottom="@dimen/stopwatch_mark_item_padding"
+    android:paddingTop="@dimen/stopwatch_mark_item_padding"  -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"    
+        android:layout_alignParentTop="true"    
+        android:background="@color/transparent2"
+        android:id="@+id/line_top" />
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/line_top"
+                android:layout_above="@+id/line_bottom"
+                android:background="@color/transparent"
+                android:id="@+id/rl_content">
+                <!-- android:background="@color/aurora_markList_bg_color" -->
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/stopwatch_no_text_size"
+        android:layout_marginLeft="@dimen/aurora_stopwatch_mark_item_margin"       
+        android:textColor="@color/aurora_stopwatch_mark_item_color"/>
+    
+    <TextView
+        android:id="@+id/time_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/stopwatch_time_diff_text_size"     
+        android:layout_alignParentLeft="true"    
+        android:layout_marginLeft="@dimen/aurora_stopwatch_time_diff_margin_left"
+        android:textColor="@color/aurora_stopwatch_mark_item_color2" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/stopwatch_time_text_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"  
+        android:layout_marginLeft="@dimen/aurora_stopwatch_time_margin_left"
+        android:layout_marginRight="@dimen/aurora_stopwatch_mark_item_margin3"
+        android:textColor="@color/aurora_stopwatch_mark_item_color" />
+    </RelativeLayout>
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"    
+        android:layout_alignParentBottom="true"    
+        android:background="@color/transparent2"
+        android:id="@+id/line_bottom" />
+</RelativeLayout>

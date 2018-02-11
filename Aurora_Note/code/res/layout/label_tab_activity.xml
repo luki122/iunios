@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.aurora.note.activity.LabelTabActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <FrameLayout
+        android:id="@+id/no_note_fra"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/note_main_empty_text_padding_top"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:textSize="@dimen/note_main_empty_text_size"
+            android:textColor="@color/no_match_note_text_color"
+            android:text="@string/no_notes_hint" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/note_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+        
+        <TextView
+            android:id="@+id/no_match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/search_view_no_match_text_padding_top"
+            android:gravity="center"
+            android:text="@string/no_match_note"
+            android:textSize="@dimen/textsize_24"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

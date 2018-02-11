@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/long_bus_station_to_station_linearlayout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vs_question_structure_item_bg"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/long_bus_station_to_station_header_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+				<!-- 始发地 -->
+                <RelativeLayout
+                    android:id="@+id/long_bus_departure_station_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/vs_long_bus_station_bg"
+                    android:padding="0.0dip" >
+
+                    <TextView
+                        android:id="@+id/long_bus_departure_station_textview"
+                        style="@style/vs_train_s2s_station"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+
+                    <!-- <ImageView
+                        android:id="@+id/long_bus_departure_station_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.169983dip"
+                        android:visibility="gone"
+                        android:src="@drawable/vs_nearby_shop_right_triangle_icon" /> -->
+                </RelativeLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:src="@drawable/vs_long_bus_icon"/>
+				<!-- 终点地 -->
+                <RelativeLayout
+                    android:id="@+id/long_bus_arrival_station_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:layout_marginLeft="11dp"
+                    android:background="@drawable/vs_long_bus_station_bg"
+                    android:padding="0.0dip" >
+
+                    <TextView
+                        android:id="@+id/long_bus_arrival_station_textview"
+                        style="@style/vs_train_s2s_station"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+
+                    <!-- <ImageView
+                        android:id="@+id/long_bus_arrival_station_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5.169983dip"
+                        android:visibility="gone"
+                        android:src="@drawable/vs_nearby_shop_right_triangle_icon" /> -->
+                </RelativeLayout>
+            </LinearLayout>
+			
+            <!-- 查询 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.829987dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:id="@+id/long_bus_query_imagebutton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.5dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vs_button_bg_main_voice"
+                        android:padding="0.0dip"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:shadowColor="#ff0079ac"
+                        android:shadowDx="0.0"
+                        android:shadowDy="1.0"
+                        android:shadowRadius="1.0"
+                        android:text="@string/vs_search"
+                        android:textColor="#ffffffff"
+                        android:textSize="17.169983dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+		
+        <!-- 分割线-->
+        <View
+            android:id="@+id/long_bus_divider"
+            style="@style/vs_train_s2s_divider"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"/>
+		
+		<!-- 抱歉，没有找到相关车次 -->
+        <TextView
+            android:id="@+id/no_long_bus_textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18.5dip"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:layout_marginTop="8.5dip"
+            android:gravity="center"
+            android:text="@string/vs_s_not_found"
+            android:textColor="#ffa8a8a8"
+            android:textSize="12.5dip"
+            android:visibility="gone" />
+        
+        <!-- 班次信息 -->
+		<LinearLayout
+	        android:id="@+id/vr_long_bus_list_linearlayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="9dip"
+	        android:layout_marginRight="9dip"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="8.5dip"
+	            android:layout_marginTop="8.5dip"
+	            android:orientation="horizontal" >
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="left"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:id="@+id/long_bus_station_textview"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="left|center"
+	                    android:padding="2.0dip"
+	                    android:singleLine="true"
+	                    android:text="@string/vs_s2d"
+	                    android:textColor="#ff959595"
+	                    android:textSize="12.5dip" />
+	            </LinearLayout>
+	
+	            <LinearLayout
+	                android:id="@+id/long_bus_departure_time_layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="right|center"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:id="@+id/long_bus_departure_textview"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="right|center"
+	                    android:padding="2.0dip"
+	                    android:singleLine="true"
+	                    android:text="@string/vs_stime"
+	                    android:textColor="#ff959595"
+	                    android:textSize="12.5dip" />
+	
+	                <TextView
+	                    android:id="@+id/long_bus_ticket_price_textview"
+	                    android:layout_width="55.5dip"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="8.5dip"
+	                    android:gravity="right|center"
+	                    android:padding="2.0dip"
+	                    android:singleLine="true"
+	                    android:text="@string/vs_cprice"
+	                    android:textColor="#ff959595"
+	                    android:textSize="12.5dip" />
+	            </LinearLayout>
+	        </LinearLayout>
+	
+	        <View
+	            android:id="@+id/long_bus_divider"
+	            style="@style/vs_train_s2s_divider"
+            	android:layout_marginLeft="9dp"
+            	android:layout_marginRight="9dp"/>
+			<!-- 在此插入item -->
+	        <LinearLayout
+	            android:id="@+id/long_bus_list_linearlayout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" />
+    </LinearLayout>
+        
+		<!-- 全部车次信息 -->
+        <LinearLayout
+            android:id="@+id/long_bus_station_to_station_content_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:clickable="true"/>
+
+        <!-- <View
+            android:id="@+id/long_bus_search_more_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="9dip"
+            android:layout_marginRight="9dip"
+            android:background="@drawable/vs_question_structure_divider"
+            android:padding="0.0dip" /> -->
+
+        <LinearLayout
+            android:id="@+id/long_bus_search_more_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vs_search_more_bg_style"
+            android:orientation="vertical"
+            android:padding="0.0dip"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/long_bus_search_more_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dip"
+                android:layout_marginRight="9dip"
+                android:layout_marginTop="14dip"
+                android:layout_marginBottom="7dip">
+<!-- 	            android:layout_marginTop="12dip" -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/long_bus_search_more_imageview"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/long_bus_search_more_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0.0dip"
+                        android:text="@string/vs_allbusinfo"
+                        android:textColor="#ff858585"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/long_bus_search_more_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vs_question_structure_right_triangle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

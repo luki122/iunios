@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@com.aurora:drawable/aurorasearchviewbarbackground"
+        android:focusable="false"
+        android:paddingLeft="9dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/search_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/et_search"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/aurora_search_hint_marginLeft"
+        android:text="@string/search_hint_input"
+        android:textColor="#cbcbcb"
+        android:textSize="@dimen/aurora_search_textsize" />
+
+    <ImageView
+        android:id="@+id/aurora_id_baidu_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/aurora_baidu_logo"
+        android:visibility="gone" />
+
+</RelativeLayout>

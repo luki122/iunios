@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tu_ya_col_cover_bg">
+
+    <RelativeLayout
+        android:id="@id/tuya_id_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tu_ya_dimen_head_height"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@id/tuya_id_drop_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/tu_ya_dimen_icon_padding"
+            android:paddingRight="@dimen/tu_ya_dimen_icon_padding"
+            android:text="@string/tuya_st_drop_image"
+            android:textColor="@color/tu_ya_cols_save_text_color"
+            android:textSize="@dimen/tu_ya_dimen_save_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/tuya_id_undo"
+                android:layout_width="@dimen/tu_ya_dimen_undo_button_width"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/tu_ya_drawable_undo"
+                android:tint="@color/tu_ya_cols_undo_and_redo" />
+
+            <ImageView
+                android:id="@id/tuya_id_redo"
+                android:layout_width="@dimen/tu_ya_dimen_redo_button_width"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:layout_marginLeft="@dimen/tu_ya_dimen_redo_margin_left"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/tu_ya_drawable_redo"
+                android:tint="@color/tu_ya_cols_undo_and_redo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/tuya_id_save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/tu_ya_dimen_icon_padding"
+            android:paddingRight="@dimen/tu_ya_dimen_icon_padding"
+            android:text="@string/tuya_st_save_image"
+            android:textColor="@color/tu_ya_cols_save_text_color"
+            android:textSize="@dimen/tu_ya_dimen_save_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tu_ya_col_operation_panel_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tu_ya_dimen_config_panel_height"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_config_panel_margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_config_panel_margin_top"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/tu_ya_dimen_config_panel_padding"
+            android:paddingRight="@dimen/tu_ya_dimen_config_panel_padding"
+            android:weightSum="3">
+
+            <include layout="@layout/tu_ya_paint_size_select_layout" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <include layout="@layout/tu_ya_paint_color_select_layout" />
+
+                <include
+                    layout="@layout/tu_ya_blur_value_layout"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <include layout="@layout/tu_ya_drawing_select_layout" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tuya_id_footer"
+        android:layout_below="@id/tuya_id_head">
+
+        <SurfaceView
+            android:id="@id/tuya_id_mosaic_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/tu_ya_dimen_tuya_padding"
+            android:layout_marginRight="@dimen/tu_ya_dimen_tuya_padding"
+            android:visibility="invisible" />
+
+        <com.android.gallery3d.plugin.tuYa.ui.TuYaView
+            android:id="@id/tuya_id_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/tu_ya_dimen_tuya_padding"
+            android:layout_marginRight="@dimen/tu_ya_dimen_tuya_padding" />
+    </FrameLayout>
+
+</RelativeLayout>

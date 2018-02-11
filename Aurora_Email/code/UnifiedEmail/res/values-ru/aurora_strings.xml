@@ -1,0 +1,85 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- add by SQF start -->
+    <string name="aurora_actionbar_menu_delete">Удалить</string>
+    <string name="aurora_actionbar_menu_mark_as">Отметить как</string>
+    <string name="aurora_actionbar_menu_move_to">Переместить в</string>
+    <string name="aurora_actionbar_menu_archive">Сохранить в архиве</string>
+    <string name="aurora_listitem_slide_right_read_or_unread">Прочитанные, непрочитанные</string>
+    <string name="aurora_listitem_slide_right_move_to">Переместить в &#8230;</string>
+    <string name="aurora_send_failed">Отправка не удалась</string>
+    <string name="aurora_send_success">Отправка завершена</string>
+    <string name="aurora_select_all">Выбрать все</string>
+    <string name="aurora_reverse_select">Обратное выделение</string>
+    <string name="aurora_menu_set_as_read">Прочитанные</string>
+    <string name="aurora_menu_set_as_unread">Непрочитанные</string>
+    <string name="aurora_menu_set_as_starred">Звёздочка</string>
+    <string name="aurora_menu_set_as_nonstarred">Без звёздочки</string>
+    <string name="aurora_actionbar_menu_setting">Настройки</string>
+    <string name="mark_as_unread">Отметить как непрочитанное</string>
+    <string name="mark_as_read">Отметить как прочитанное</string>
+    <string name="aurora_list_footer_view_loading_text">Идет скачивание &#8230;</string>
+    <string name="aurora_list_delete_item_tip_title">Напоминание</string>
+    <string name="aurora_list_delete_item_tip_message">Удалить это письмо?</string>
+    <string name="aurora_list_delete_item_tip_messages">Удалить эти письма?</string>
+    <string name="aurora_update_at_time">Предыдущие обновления:  %s</string>
+    <string name="aurora_one_year_ago">Сегодняшний день прошлого года</string>
+    <string name="aurora_listview_empty_tip">Пока писем нет</string>
+
+    <!-- add by SQF end -->
+
+
+    <!-- add by chenhl start -->
+    <string name="aurora_compose_title">Написать письмо</string>
+    <string name="aurora_send">Отправить</string>
+    <string name="aurora_signature">\n\n\n\n\n"<xliff:g id="SIGNATURE">%s</xliff:g>"\n</string>
+    <string name="string_newly_contact">Последние контакты</string>
+    <string name="aurora_sender">Отправитель</string>
+    <string name="aurora_recipients">Получатель</string>
+    <string name="aurora_cc">Отправить копию</string>
+    <string name="aurora_bcc">Скрытая копия</string>
+    <string name="aurora_theme">Тема</string>
+    <string name="aurora_signature_defualt">Отправлено с IUNI OS</string>
+    <string name="aurora_body_hint">Ввести текст</string>
+    <string name="aurora_attachment_info"><xliff:g id="attach">%s</xliff:g>Приложений, всего <xliff:g id="attach_size">%s</xliff:g></string>
+    <string name="aurora_attachment_donwload_info"><xliff:g id="attach">%s</xliff:g>Приложений, загрузка завершена</string>
+    <string name="aurora_attachment_donwload_percent"><xliff:g id="attach">%s</xliff:g>Приложений, загрузка<xliff:g id="percent">%s</xliff:g></string>
+    <string name="aurora_add">add</string>
+    <string name="aurora_show">show</string>
+    <string name="aurora_send_email_tips">Напоминание об отправке письма</string>
+    <string name="aurora_send_fail_view">Не удалось отправить, нажмите чтобы посмотреть</string>
+    <string name="aurora_resend_email">Повторить отправку</string>
+    <string name="aurora_network_fail">Нет сети, подключитесь к интернету!</string>
+    <!-- add by chenhl end -->
+    <!-- add by lory start -->
+    <string name="aurora_savedraft">“Сохранить черновик?”</string>
+    <string name="aurora_save">“Сохранить”</string>
+    <string name="aurora_cancel">“Отменить”</string>
+    <!-- add by lory end -->
+
+
+    <!-- paul add start -->
+    <string name="aurora_confirm_delete_conversation">Удалить письмо?</string>
+    <string name="aurora_confirm_delete">Удалить</string>
+    <string name="aurora_recipients_detail">Подробности</string>
+    <string name="aurora_hide_detail">Скрыть</string>
+    <string name="aurora_empty_search_result">Нет результатов, соответствующих условиям поиска</string>
+    <!-- paul add end -->
+    <!-- add by tangjie start -->
+    <string name="aurora_num_sender">Еще <xliff:g id="senders">%d</xliff:g> человек</string>
+    <!-- add by tangjie end -->
+
+
+    <!-- listview time divider add by JXh -->
+    <string name="earlier">Довольно рано</string>
+    <string name="yesterday">Вчера</string>
+    <string name="file_overflow">%1$d приложений,превышен лимит %2$s &#033;</string>
+    <string name="file_overflow_single">1приложение,превышен лимит %s &#033;</string>
+    <string name="file_normal">%1$d приложений</string>
+    <string name="file_normal_single">1 приложение</string>
+    <!-- listview time divider add by JXh  end -->
+
+	<!-- shihao add for Conversation_detail_more popupWindow -->
+    <string name="aurora_backup_to_calendar">Копировать в график</string>
+    <string name="aurora_newemail_notification">Напоминание о новом письме</string>
+</resources>

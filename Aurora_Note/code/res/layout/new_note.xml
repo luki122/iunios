@@ -1,0 +1,202 @@
+<com.aurora.note.widget.NewNoteRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingTop="@com.aurora:dimen/status_bar_height">
+
+    <!-- 标题栏开始 -->
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/new_note_title_bar_margin_top"
+        android:layout_marginBottom="@dimen/new_note_title_bar_margin_bottom"
+        android:layout_marginLeft="@dimen/new_note_reminder_label_container_margin_left"
+        android:textColor="@color/new_note_title_text_color"
+        android:textSize="@dimen/new_note_title_textsize"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/gen_pic_field"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/new_note_reminder_label_container_height"
+        android:layout_alignParentRight="true"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:id="@+id/gen_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/new_note_gen_picture" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/new_note_reminder_label_container_height"
+        android:layout_toLeftOf="@id/gen_pic_field"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/set_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/new_note_set_paper" />
+    </LinearLayout>
+    <!-- 标题栏结束 -->
+
+    <LinearLayout
+        android:id="@+id/note_reminder_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_note_reminder_label_container_height"
+        android:layout_below="@id/title_tv"
+        android:paddingLeft="@dimen/new_note_reminder_label_container_margin_left"
+        android:paddingRight="@dimen/new_note_reminder_label_container_margin_right"
+        android:orientation="horizontal" >
+
+        <com.aurora.note.widget.LabelLinearLayout
+            android:id="@+id/note_label_ly"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/new_note_label_icon_width"
+                android:layout_height="@dimen/new_note_label_icon_height"
+                android:background="@drawable/new_note_label_bg" />
+
+            <TextView
+                android:id="@+id/note_label1_tv"
+                style="@style/new_note_reminder_label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/note_label_sep_tv"
+                style="@style/new_note_reminder_label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note_label_separate"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/note_label2_tv"
+                style="@style/new_note_reminder_label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </com.aurora.note.widget.LabelLinearLayout>
+
+        <ImageView
+            android:id="@+id/note_reminder_label_vertical_line"
+            android:layout_width="@dimen/new_note_reminder_label_vertical_line_width"
+            android:layout_height="@dimen/new_note_reminder_label_vertical_line_height"
+            android:layout_gravity="center"
+            android:src="@drawable/new_note_reminder_lable_vertical_line" />
+
+        <LinearLayout
+            android:id="@+id/note_reminder_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/new_note_reminder_icon_width"
+                android:layout_height="@dimen/new_note_reminder_icon_height"
+                android:background="@drawable/new_note_reminder_bg" />
+
+            <TextView
+                android:id="@+id/note_reminder_tv"
+                style="@style/new_note_reminder_label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_note_menu_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="#ddffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/bullet_menu_iv"
+            style="@style/new_note_menu_item"
+            android:background="@drawable/aurora_ripple_selector"
+            android:onClick="onSign_Click"
+            android:src="@drawable/new_note_menu_bullet_list_normal" />
+
+        <View style="@style/Note.VerticalLine" />
+
+        <ImageView
+            android:id="@+id/mark_menu"
+            style="@style/new_note_menu_item"
+            android:background="@drawable/aurora_ripple_selector"
+            android:onClick="onMark_Click"
+            android:src="@drawable/new_note_menu_mark_normal" />
+
+        <View style="@style/Note.VerticalLine" />
+
+        <ImageView
+            style="@style/new_note_menu_item"
+            android:background="@drawable/aurora_ripple_selector"
+            android:onClick="onPic_Click"
+            android:src="@drawable/new_note_menu_image_normal" />
+
+        <View style="@style/Note.VerticalLine" />
+
+        <ImageView
+            android:id="@+id/record_menu"
+            style="@style/new_note_menu_item"
+            android:background="@drawable/aurora_ripple_selector"
+            android:onClick="onSound_Click"
+            android:src="@drawable/new_note_menu_voice_normal" />
+
+        <View style="@style/Note.VerticalLine" />
+
+        <ImageView
+            style="@style/new_note_menu_item"
+            android:background="@drawable/aurora_ripple_selector"
+            android:onClick="onVideo_Click"
+            android:src="@drawable/new_note_menu_video_normal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_ly"
+        android:layout_below="@id/note_reminder_label_container"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <com.aurora.note.ui.CopyNoSpaceEditText
+            android:id="@+id/note_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="@string/enter_note_hit"
+            android:textColorHint="@color/new_note_content_hint_text_color"
+            android:lineSpacingExtra="@dimen/new_note_content_line_spacing_extra"
+            android:maxLength="30000"
+            android:minLines="5"
+            android:paddingBottom="@dimen/new_note_content_padding_bottom"
+            android:paddingLeft="@dimen/new_note_content_padding_left"
+            android:paddingRight="@dimen/new_note_content_padding_right"
+            android:paddingTop="@dimen/new_note_content_padding_top"
+            android:textColor="@color/new_note_content_text_color"
+            android:textCursorDrawable="@drawable/new_note_content_cursor"
+            android:textSize="@dimen/new_note_content_textsize" />
+    </ScrollView>
+
+</com.aurora.note.widget.NewNoteRelativeLayout>

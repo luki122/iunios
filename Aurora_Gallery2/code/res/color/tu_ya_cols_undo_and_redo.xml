@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/tu_ya_col_drawable_unenable_color" android:state_enabled="false" />
+    <item android:color="@color/tu_ya_col_drawable_enable_color" />
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="lock_sounds"
+        aurora:auroratitle="@string/lock_sounds_enable_title" />
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="dtmf_tone"
+        aurora:auroratitle="@string/dtmf_tone_enable_title" />
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="sound_effects"
+        aurora:auroratitle="@string/sound_effects_enable_title" />
+    <!-- <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="enable_dts"
+        aurora:auroratitle="@string/dts_pref_title" /> -->
+
+</aurora.preference.AuroraPreferenceScreen>

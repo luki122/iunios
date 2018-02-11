@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Power Laucher</string>
+    <string name="exit_string">Exit extreme mode</string>
+    <string name="ok_string">Ok</string>
+    <string name="cancel_string">Cancel</string>
+    <string name="exit_msg">Are you sure to exit extreme mode?</string>
+    <string name="exit_msg1">Phone is being charged, are you sure to exit extreme mode?</string>
+    <string name="can_use_time">Standby time </string>
+    <string name="need_charging_time">Need charge %s</string>
+    <string name="power_cannotget">Unable to estimate </string>
+    <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 begin -->
+    <string name="power_hours">&#160;Hour&#160;</string>
+    <string name="power_minutes">&#160;Minute&#160;</string>
+    <!-- Gionee <yangxinruo> <2015-9-9> <modify> for CR01549850 end -->    
+    <string name="is_charging_now">Charging</string>
+    <string name="charged_completely">Charged</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="one">1</string>
+    <string name="colom">:</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end-->    
+</resources>

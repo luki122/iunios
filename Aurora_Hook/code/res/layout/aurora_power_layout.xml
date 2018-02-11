@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/air_mode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="invisible" >
+
+        <com.aurora.internal.view.ShutdownTextView
+            android:id="@+id/aurora_airmode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/aurora_airmode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@com.aurora:drawable/aurora_airmode_normal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/reboot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <com.aurora.internal.view.ShutdownTextView
+            android:id="@+id/aurora_reboot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/aurora_reboot_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@com.aurora:drawable/aurora_reboot_normal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shutdown_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <com.aurora.internal.view.ShutdownTextView
+            android:id="@+id/aurora_shutdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/aurora_shutdown_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@com.aurora:drawable/aurora_shutdown_normal" />
+    </FrameLayout>
+
+</LinearLayout>

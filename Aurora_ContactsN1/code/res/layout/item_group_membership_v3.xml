@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.android.contacts.editor.AuroraGroupMembershipView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dip"
+    android:layout_marginBottom="@dimen/aurora_editor_items_gap"
+    android:orientation="vertical">
+
+    <FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:focusable="false" >
+	    <TextView
+	        android:id="@+id/kind_title"
+	        style="@style/ContactListSeparatorTextViewStyle"
+	        android:background="@null"
+	        android:paddingLeft="@dimen/gn_contact_list_item_headertext_left_margin"
+	        android:paddingRight="@dimen/gn_contact_list_item_headertext_left_margin" />
+	</FrameLayout>
+
+    <FrameLayout 
+        android:id="@+id/group_list_bg"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="?attr/kind_editors_bg">
+	    
+	    <LinearLayout	        
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:clickable="true"
+		    android:background="@drawable/aurora_kind_view_bg" >
+		    
+	        <TextView 
+			    style="@style/editor_spinner_text_style"
+			    android:layout_width="@dimen/editor_type_label_width"
+			    android:layout_height="@dimen/editor_min_line_item_height"
+			    android:paddingLeft="15dip"
+			    android:gravity="center_vertical"
+			    android:singleLine="true"
+			    android:ellipsize="marquee"
+			    android:text="@string/aurora_group_title" />
+
+		    <aurora.widget.AuroraButton
+		        android:id="@+id/group_list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="@dimen/aurora_editor_item_padding_left"
+		        android:background="@null"
+		        android:singleLine="true"
+		        android:ellipsize="end"
+		        android:minHeight="@dimen/editor_min_line_item_height"
+		        android:textColor="@color/aurora_add_button_text_color"
+		        android:textSize="@dimen/aurora_editor_field_text_size"
+		        android:textColorHint="@color/aurora_editor_hint_text_color"
+		        android:gravity="left|center_vertical"
+		        android:paddingLeft="16dip"
+		        android:hint="@string/aurora_edit_group_name_title"
+		        android:focusable="true" />
+	    </LinearLayout>
+        
+    </FrameLayout>
+</com.android.contacts.editor.AuroraGroupMembershipView>

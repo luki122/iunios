@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/aurora_camera_attachment_press" />
+    <item android:state_focused="true" android:drawable="@drawable/aurora_camera_attachment_press" />
+    <item android:drawable="@drawable/aurora_camera_attachment_normal" />
+</selector> -->
+
+<!-- cjs modify -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:width="22dp"
+    android:viewportHeight="60"
+    android:viewportWidth="60"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="5.52"
+        android:translateY="8" >
+        <path
+            android:name="aurora_img_attachment"
+            android:fillColor="#676768"
+            android:pathData="M43.590,43.995 L5.238,43.995 C2.343,43.995 -0.003,41.640 -0.003,38.734 L-0.003,10.922 C-0.003,8.017 2.343,5.945 5.238,5.945 L10.872,5.945 L16.098,0.002 L16.098,-0.013 L16.113,-0.013 L32.479,-0.013 L32.479,0.002 L37.799,5.945 L43.590,5.945 C46.485,5.945 48.973,8.017 48.973,10.922 L48.973,38.734 C48.973,41.640 46.485,43.995 43.590,43.995 ZM24.288,10.760 C16.870,10.760 10.856,16.796 10.856,24.241 C10.856,31.686 16.870,37.721 24.288,37.721 C31.707,37.721 37.720,31.686 37.720,24.241 C37.720,16.796 31.707,10.760 24.288,10.760 ZM24.288,32.789 C19.584,32.789 15.771,28.962 15.771,24.241 C15.771,19.519 19.584,15.692 24.288,15.692 C28.993,15.692 32.806,19.519 32.806,24.241 C32.806,28.962 28.993,32.789 24.288,32.789 Z" />
+    </group>
+
+</vector>

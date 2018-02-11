@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="tab_names">
+     <item>Theme</item>
+    <item>Wallpaper</item>
+     <item>Times</item>
+    <item>Ringtong</item>
+</string-array>
+
+  <string-array name="day_of_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+  <string-array name="send_theme_menus">
+      <item>发送电子邮件</item>
+        <item>复制</item>
+  </string-array>
+</resources>

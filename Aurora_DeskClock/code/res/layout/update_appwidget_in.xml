@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtWeekDay"
+        style="@style/StyleTextShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/datawidgettxtWeekDay" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:gravity="left|top"
+        android:layout_marginLeft="-2.5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txtMonth"
+            style="@style/StyleTextShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/datawidgettxtWeekDay" />
+
+        <TextView
+            android:id="@+id/txtth"
+            style="@style/StyleTextShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-7dp"
+            android:text="@string/txtday"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/datawidgettxtth" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAll"
+        style="@style/StyleTextShadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="1dp"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/datawidgettxtAll" />
+
+</LinearLayout>

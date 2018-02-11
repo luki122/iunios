@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item
+        android:id="@+id/pop_newcontact"
+        android:title="@string/pop_newcontact"/>
+     <item
+        android:id="@+id/pop_record"
+        android:title="@string/pop_record"/>
+      <item
+        android:id="@+id/blacklist"
+        android:title="@string/blacklist"/>
+     <item
+        android:id="@+id/pop_setting"
+        android:title="@string/pop_setting"/>
+ 
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="8dp"
+    android:height="14dp"
+    android:viewportWidth="24"
+    android:viewportHeight="42">
+
+    <path
+        android:name="XMLID_104_"
+        android:fillColor="@color/aurora_small_button_checked_color"
+        android:pathData="@string/audio_subscipt_path" />
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gn_prompt_section_font_size">48px</dimen> <!-- must be px -->
+    <dimen name="gn_section_font_size">13sp</dimen>
+    <dimen name="gn_wave_side_range">60dip</dimen>
+    <dimen name="gn_prompt_section_text_size">48sp</dimen>
+    
+</resources>

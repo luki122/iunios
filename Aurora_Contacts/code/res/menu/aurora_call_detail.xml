@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!-- aurora change liguangyu 20131114 for BUG #728 start -->
+
+    <item
+        android:id="@+id/menu_add_new_contact"
+        android:title="@string/menu_add_contact"/>
+    <!-- app:showAsAction="ifRoom" -->
+
+    <item
+        android:id="@+id/menu_check_contact_info"
+        android:title="@string/menu_viewContact"/>
+    <item
+        android:id="@+id/menu_add_exist_contact"
+        android:title="@string/aurora_menu_add_exist_contact"/>
+    <item
+        android:id="@+id/menu_clean_call_log"
+        android:title="@string/aurora_menu_delete_calllog"/>
+    <!-- aurora change liguangyu 20131114 for BUG #728 end -->
+
+    <item
+        android:id="@+id/menu_edit_mark"
+        android:title="@string/edit_number_mark"/>
+    <item
+        android:id="@+id/menu_add_mark"
+        android:title="@string/add_number_mark_menu"/>
+    <item
+        android:id="@+id/menu_remove_black"
+        android:title="@string/aurora_remove_from_black"/>
+    <item
+        android:id="@+id/menu_add_black"
+        android:title="@string/aurora_add_to_black"/>
+
+</menu>

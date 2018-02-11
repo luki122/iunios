@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraSwitchPreference
+        aurora:aurorakey="preference_key_no_picture_mode"
+        aurora:auroratitle="@string/no_picture_mode" />
+
+    <aurora.preference.AuroraPreferenceCategory>
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="@string/text_size_normal"
+            aurora:auroraentries="@array/preference_entry_text_size"
+            aurora:auroraentryValues="@array/preference_entryvalue_text_size"
+            aurora:aurorakey="@string/preference_key_text_size"
+            aurora:auroratitle="@string/text_size" />
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="@string/pref_search_engine_value_baidu"
+            aurora:auroraentries="@array/preference_key_search_engine"
+            aurora:auroraentryValues="@array/preference_value_search_engine"
+            aurora:aurorakey="preferences_key_search_engine"
+            aurora:auroratitle="@string/search_engine" />
+        <aurora.preference.AuroraListPreference
+            aurora:auroradefaultValue="@string/pref_preload_value_on_wlan"
+            aurora:auroraentries="@array/preference_key_smart_preload"
+            aurora:auroraentryValues="@array/preference_value_smart_preload"
+            aurora:aurorakey="preference_key_smart_preload"
+            aurora:auroratitle="@string/smart_preload" />
+    </aurora.preference.AuroraPreferenceCategory>
+    <aurora.preference.AuroraPreferenceCategory>
+        <AuroraPreferenceScreen
+            aurora:aurorakey="clear_data"
+            aurora:auroratitle="@string/clear_data" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.phase1.activity.ClearDataPage"
+                android:targetPackage="com.android.browser" />
+        </AuroraPreferenceScreen>
+        <AuroraPreference
+            aurora:aurorakey="pref_reset_default_preferences"
+            aurora:auroratitle="@string/restore_factory"
+            aurora:auroradialogMessage="@string/ask_if_restore_factory" />
+    </aurora.preference.AuroraPreferenceCategory>
+    <aurora.preference.AuroraPreferenceCategory>
+        <AuroraPreferenceScreen
+            aurora:aurorakey="advanced_setting"
+            aurora:auroratitle="@string/advanced_setting" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.phase1.activity.AdvancedSettingPage"
+                android:targetPackage="com.android.browser" />
+        </AuroraPreferenceScreen>
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

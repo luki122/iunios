@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/wait_fragment" />
+
+    <com.aurora.email.widget.AuroraEmailScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.aurora.email.widget.AuroraSenderView
+                android:id="@+id/id_send_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.aurora.email.widget.AuroraComposeAddressView
+                android:id="@+id/id_receive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/id_bcc_cc_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/id_cc_layout_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                     >
+
+                    <TextView
+                        android:id="@+id/aurora_compose_cc"
+                        android:layout_width="@dimen/aurora_compose_titlewidth"
+                        android:layout_height="@dimen/aurora_address_height"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/aurora_cc"
+                        android:textColor="#aaaaaa"
+                        android:textSize="14sp" 
+                        android:layout_marginLeft="17dp"/>
+
+                    <TextView
+                        android:id="@+id/aurora_compose_bcc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/aurora_address_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:alpha="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/aurora_bcc"
+                        android:textColor="#000000"
+                        android:textSize="11sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/aurora_compose_bcc"
+                        android:layout_toRightOf="@+id/aurora_compose_cc"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/aurora_compse_sendertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/aurora_address_height"
+                            android:layout_weight="1"
+                            android:completionThreshold="1"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="5.0dip"
+                            android:paddingTop="0dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/aurora_compose_titlesize" />
+
+                        <TextView
+                            android:id="@+id/aurora_compse_sendernum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/aurora_address_height"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/aurora_compose_titlesize" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="?android:attr/listDivider" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_cc_layout_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <com.aurora.email.widget.AuroraComposeAddressView
+                        android:id="@+id/id_cc_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.aurora.email.widget.AuroraComposeAddressView
+                        android:id="@+id/id_bcc_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/id_theme_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.aurora.email.widget.AuroraComposeTitle
+                    android:id="@+id/id_theme_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </com.aurora.email.widget.AuroraComposeTitle>
+
+                <com.aurora.email.widget.AuroraFujianView
+                    android:id="@+id/id_fujian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/id_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aurora_body_hint"
+                    android:textColor="#d2d2d2"
+                    android:textSize="14sp" />
+
+                <aurora.widget.AuroraEditText
+                    android:id="@+id/id_write_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:inputType="textLongMessage|textMultiLine|textAutoCorrect|textCapSentences"
+                    android:minHeight="111dp"
+                    android:scrollbars="vertical"
+                    android:textColor="#444444"
+                    android:textSize="16sp" 
+                    android:lineSpacingExtra="3.2dp"/>
+            </FrameLayout>
+
+            <com.android.mail.compose.QuotedTextView
+                android:id="@+id/quoted_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" 
+               />
+
+            <TextView
+                android:id="@+id/id_edite_touch"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+        </LinearLayout>
+    </com.aurora.email.widget.AuroraEmailScrollView>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.widget.CombineItemView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/aurora_group_entrance_left_margin" >
+    <com.android.contacts.widget.LinearListView
+        android:id="@+id/combine_item_container" 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:orientation="vertical"/>
+    <Button  android:id="@+id/combine_action"
+        android:layout_width="76dip"
+        android:layout_height="28dip"
+        android:textSize="16sp"
+        android:layout_marginBottom="7.35dp"
+        android:layout_gravity="bottom|right"
+        android:text="@string/gn_manual_combine"
+        android:textColor="@color/aurora_merge_button_text_color"
+        android:background="@drawable/merge_contact_btn"/>
+</com.android.contacts.widget.CombineItemView>

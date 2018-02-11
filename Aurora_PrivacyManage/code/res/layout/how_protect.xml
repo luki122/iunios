@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_how_protect"
+        android:layout_width="@dimen/user_guide_anim_frame_width"
+        android:layout_height="@dimen/user_guide_anim_frame_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:clipChildren="true" >
+
+        <ImageView
+            android:id="@+id/iv_how_protect_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/stars" />
+
+        <ImageView
+            android:id="@+id/iv_how_protect_planet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="85dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/planet1" />
+
+        <ImageView
+            android:id="@+id/iv_how_protect_planet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="62dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/planet2" />
+
+        <ImageView
+            android:id="@+id/iv_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="76dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/sms" />
+
+        <ImageView
+            android:id="@+id/iv_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="128dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/video" />
+
+        <ImageView
+            android:id="@+id/iv_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="111dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/app" />
+
+        <ImageView
+            android:id="@+id/iv_address_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="142dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/address_book" />
+
+        <ImageView
+            android:id="@+id/iv_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="116dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/album" />
+
+        <ImageView
+            android:id="@+id/iv_call_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/call_log" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_banners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_how_protect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_userguide_bigtxt_to_picture"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_how_protect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/how_protect"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <TextView
+            android:lineSpacingExtra="@dimen/userguide_textview_linespace"
+            android:id="@+id/tv_protect_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_userguide_smalltxt_to_bigtxt"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/protect_method"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

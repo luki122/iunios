@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @auther Linfeng Jia
+ * @time 20110815
+ * @version 1.0.0
+ */
+ -->
+<resources>
+    <string-array name="default_quick_texts">
+      <item>"你在哪里？"</item>
+      <item>"你在做什么？"</item>
+      <item>"急！请速回电。"</item>
+      <item>"抱歉，正在开会。"</item>
+      <item>"待会儿再回你电话。"</item>
+      <item>"我没事，别担心。"</item>
+      <item>"正在回家的路上。"</item>
+      <item>"我很快就到。"</item>
+      <item>"不见不散！"</item>
+    </string-array>
+</resources>

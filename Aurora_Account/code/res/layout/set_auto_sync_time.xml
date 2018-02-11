@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="25dip"
+    android:paddingBottom="25dip">
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/set_auto_sync_time_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入同步时间，格式为22:00"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textSize="14sp" />
+</FrameLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:paddingTop="@dimen/note_list2_padding_top"
+    android:paddingLeft="@dimen/note_list2_padding_left"
+    android:paddingRight="@dimen/note_list2_padding_left">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/note_list_item_bg_normal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/note_attachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/note_attachment_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/note_main_image_empty_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/text_color_note_main_summary"
+                    android:textSize="@dimen/note_list_item_time_size"
+                    android:text="@string/image_not_found" />
+
+                <ImageView
+                    android:id="@+id/note_attachment_photo_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/desc_image_content"
+                    android:src="@null" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/note_attachment_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_list2_item_pic_height"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/note_attachment_video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/desc_video_content"
+                    android:src="@null" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/desc_video_play_icon"
+                    android:src="@drawable/ic_note_main_play" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.aurora.note.ui.AuroraTextViewSnippet2
+                android:id="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/note_list2_item_padding"
+                android:paddingRight="@dimen/note_list2_item_padding"
+                android:paddingTop="@dimen/note_list2_item_title_padding_top"
+                android:singleLine="true"
+                android:textColor="@color/text_color_note_main_title"
+                android:textSize="@dimen/note_list_item_title_size" />
+
+            <com.aurora.note.ui.AuroraTextViewSnippet
+                android:id="@+id/note_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/note_list2_item_padding"
+                android:paddingRight="@dimen/note_list2_item_padding"
+                android:paddingTop="@dimen/note_list2_item_summary_padding_top"
+                android:maxLines="3"
+                android:lineSpacingExtra="3.3dp"
+                android:textColor="@color/text_color_note_main_summary"
+                android:textSize="@dimen/note_list_item_summary_size" />
+
+            <TextView
+                android:id="@+id/note_modify_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/note_list2_item_padding"
+                android:paddingRight="@dimen/note_list2_item_padding"
+                android:paddingTop="@dimen/note_list2_item_time_padding_top"
+                android:paddingBottom="@dimen/note_list2_item_time_padding_top"
+                android:drawableStart="@drawable/ic_note_main_time"
+                android:textColor="@color/text_color_note_main_time"
+                android:textSize="@dimen/note_list_item_time_size" />
+
+            <View
+                android:id="@+id/note_diriver"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/note_horizontal_divider" />
+
+            <View
+                android:id="@+id/note_space"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_list2_item_space_height"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/note_images"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/note_list2_item_images_height"
+                android:paddingRight="@dimen/note_list2_item_image_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/note_video_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_note_main_video" />
+
+                <ImageView
+                    android:id="@+id/note_alert_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/note_list2_item_image_margin"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_note_main_alert" />
+
+                <ImageView
+                    android:id="@+id/note_voice_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/note_list2_item_image_margin"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_note_main_voice" />
+
+	        </LinearLayout>
+	    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

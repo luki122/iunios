@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="true" >
+    
+    <item android:drawable="@drawable/aurora_next0" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next1" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next2" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next3" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next4" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next5" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next6" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next7" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next8" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next9" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next10" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next11" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next12" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next13" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next14" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next15" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next16" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next17" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next18" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next19" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next20" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next21" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next22" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next23" android:duration="20" />
+    <item android:drawable="@drawable/aurora_next24" android:duration="20" />
+
+</animation-list>

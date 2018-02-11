@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item      
+        android:id="@+id/btn_network_control"
+        android:title="@string/net_manage"
+        android:enabled="false"/>
+        
+    <item
+        android:id="@+id/btn_service_network"
+        android:title="@string/service_network_info"
+        android:enabled="false"/>
+    
+    <item
+        android:id="@+id/btn_set"
+        android:title="@string/set"
+        android:enabled="false"/>
+</menu>

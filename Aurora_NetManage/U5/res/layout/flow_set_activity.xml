@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">		
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:paddingLeft="17dp" android:paddingRight="17dp"
+           android:orientation="vertical">
+		    <RelativeLayout
+		       android:id="@+id/packageSetBtn" android:layout_marginTop="12dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_alone">
+  			   <TextView
+					android:text="@string/package_set"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>      
+		        <ImageView
+				    style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		   		   
+		    <RelativeLayout
+		       android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:text="@string/excess_early_warning"
+					style="@style/preferences_item" android:clickable="false"
+					android:background="@drawable/item_of_up"/>    
+ 				<aurora.widget.AuroraSwitch 
+				    android:id="@+id/excessEarlyWarningSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/> 	
+		   </RelativeLayout>
+		   
+		   <LinearLayout
+		       android:layout_width="fill_parent" android:layout_height="80dp"
+		       android:orientation="vertical"
+		       android:paddingLeft="15dp" android:paddingRight="15dp"
+		       android:background="@drawable/item_of_middle_bg">
+		       <RelativeLayout
+		           android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		           android:layout_weight="1">
+		           <TextView
+		               android:id="@+id/warningValueText"
+		               android:layout_width="wrap_content" android:layout_height="wrap_content"
+		               style="@style/text_selector_of_preferences_item" android:text="@string/warning_value"
+		               android:layout_centerVertical="true" android:layout_alignParentLeft="true"/>
+		           <TextView
+		               android:id="@+id/scaleTextView"
+		               android:layout_width="wrap_content" android:layout_height="wrap_content"
+		               style="@style/text_selector_of_preferences_item"
+		               android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+		       </RelativeLayout>
+		       <RelativeLayout
+		           android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		           android:layout_weight="1">
+		           <SeekBar 
+	   		       android:id="@+id/seekBar"
+	   		       android:layout_width="fill_parent" 
+	   		       android:layout_height="wrap_content"	
+	   		       android:layout_marginTop="50dp"
+	   		       android:layout_centerInParent="true"
+			       android:max="100"/>
+		       </RelativeLayout>
+		   </LinearLayout>
+		   
+		   <RelativeLayout
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:text="@string/background_traffic_tips"
+					style="@style/preferences_item" android:clickable="false"
+					android:background="@drawable/item_of_middle"/>    
+  			   <aurora.widget.AuroraSwitch
+				    android:id="@+id/backgroundTrafficTipsSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/>	
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:text="@string/daily_excess_tips" 
+					style="@style/preferences_item" android:clickable="false"
+					android:background="@drawable/item_of_bottom"/>    
+		        <aurora.widget.AuroraSwitch
+				    android:id="@+id/dailyExcessTipsSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/>	
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/flowCorrectionBtn" android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_alone">
+  			   <TextView
+  			        android:id="@+id/flowCorrectionText"
+					android:text="@string/flow_correction"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>      
+		        <ImageView
+		            android:id="@+id/flowCorrectionArrow"
+				    style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/manualCorrectionBtn" android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_alone">
+  			   <TextView
+  			        android:id="@+id/manualCorrectionText"
+					android:text="@string/manual_correction" 
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>      
+		        <ImageView
+		            android:id="@+id/manualCorrectionArrow"
+				    style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		   
+		   <RelativeLayout
+		       android:id="@+id/statisticalDataClearBtn" android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_alone">
+  			   <TextView
+					android:text="@string/statistical_data_clear"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>      
+		        <ImageView
+				    style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+       </LinearLayout> 	
+    </ScrollView>
+</RelativeLayout>

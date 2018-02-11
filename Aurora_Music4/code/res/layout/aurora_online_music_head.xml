@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- <include
+        android:id="@+id/aurora_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        layout="@layout/layout_search" /> -->
+        
+	<com.android.auroramusic.widget.AuroraSearchView
+	    android:id="@+id/aurora_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/aurora_online_margintop"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp" >
+
+        <com.android.auroramusic.widget.BannerViewPager
+            android:id="@+id/aurora_id_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="133dp" />
+
+        <com.android.auroramusic.widget.AuroraDotView
+            android:id="@+id/aurora_dot_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/aurora_id_banner"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aurora_online_music_mask" />
+    </RelativeLayout>
+
+</LinearLayout>

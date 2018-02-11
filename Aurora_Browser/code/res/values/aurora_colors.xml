@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_disabled">#b8b8b8</color>
+
+    <color name="bg_browser_main_window">#191919</color>
+    
+</resources>

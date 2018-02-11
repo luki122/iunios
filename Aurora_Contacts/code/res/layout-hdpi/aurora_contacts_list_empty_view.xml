@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_background" >
+
+   <RelativeLayout
+       android:id="@+id/empty_contact_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listview_background" >
+
+        <RelativeLayout
+            android:id="@+id/no_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/gn_calllog_empty_tip_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="128dp"
+                android:src="@drawable/ic_empty_view" />
+
+            <TextView
+                android:id="@+id/gn_calllog_empty_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gn_calllog_empty_tip_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/aurora_empty_contact_text"
+                android:textColor="@color/aurora_empty_contact_text_color"
+                android:textSize="@dimen/aurora_empty_contact_text_size" />
+        </RelativeLayout>
+        <!--
+             <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="103dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_empty_view"
+            android:drawablePadding="16dp"
+            android:text="@string/aurora_empty_contact_text"
+            style="@style/empty_list_text_style" />
+        -->
+
+
+        <!--
+             <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/empty_text"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/aurora_editor_margin_left_or_right"
+            android:paddingRight="@dimen/aurora_editor_margin_left_or_right"
+            android:paddingTop="@dimen/aurora_empty_contact_button_padding_top" >
+        -->
+
+        <Button
+            android:id="@+id/empty_view_import_from_sim"
+            android:layout_width="@dimen/aurora_empty_list_btn_width"
+            android:layout_height="@dimen/aurora_empty_list_btn_height"
+            android:text="@string/aurora_import_sim_title"
+            android:layout_below="@id/no_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/contact_empty_button_bg"
+            android:textColor="#0ebc7d"
+            android:textSize="14sp"
+            android:visibility="gone"
+             />
+        <!-- style="@com.aurora:style/AuroraPromptButton" -->
+
+        <TextView
+            android:id="@+id/empty_view_import_from_sdcard"
+            android:layout_width="@dimen/aurora_empty_list_btn_width"
+            android:layout_height="@dimen/aurora_empty_list_btn_height"
+            android:layout_below="@id/empty_view_import_from_sim"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/contact_empty_button_bg"
+            android:textColor="#0ebc7d"
+            android:textSize="14sp"
+             android:text="@string/aurora_menu_import"
+             android:gravity="center" />
+
+        <!-- <aurora.widget.AuroraButton -->
+
+        <TextView
+            android:id="@+id/empty_view_import_from_acount"
+            android:layout_width="@dimen/aurora_empty_list_btn_width"
+            android:layout_height="@dimen/aurora_empty_list_btn_height"
+            android:layout_below="@+id/empty_view_import_from_sdcard"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aurora_menu_sync"
+            android:textColor="#0ebc7d"
+            android:textSize="14sp"
+            android:background="@drawable/contact_empty_button_bg"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+             />
+        
+
+        <!-- </RelativeLayout> -->
+    </RelativeLayout>
+
+</FrameLayout>

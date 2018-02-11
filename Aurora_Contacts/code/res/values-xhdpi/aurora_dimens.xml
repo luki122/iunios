@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <dimen name="aurora_card_view_item_singleline_height">48dp</dimen>
+       
+             <dimen name="call_card_title_text_size">14sp</dimen>
+     <dimen name="calllog_duration_text_size">14sp</dimen>
+      <dimen name="aurora_two_line_height">68dp</dimen>
+          <dimen name="expanding_entry_card_title_text_size">16sp</dimen>
+              <dimen name="sencond_line_text_size">14sp</dimen>
+</resources> 

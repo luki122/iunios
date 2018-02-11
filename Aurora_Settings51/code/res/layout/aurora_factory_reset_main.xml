@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="22dp"
+    android:layout_marginLeft="16dp"
+    android:layout_above="@+id/start_factory_button"
+    android:layout_marginRight="16dp"
+    >
+    
+    <aurora.widget.AuroraListView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="28dp"
+        android:visibility="gone"
+        android:drawSelectorOnTop="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+    />
+   
+     <TextView
+         android:id="@+id/tv_restore_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+		 android:textColor="@android:color/black"
+         android:text="@string/factory_defalut_tip" />
+
+     <TextView
+         android:id="@+id/tv_system_apply_info"
+         android:layout_below="@+id/tv_restore_info"
+         android:layout_alignLeft="@+id/tv_restore_info"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"	 
+         android:text="@string/factory_defalut_system_applay_tip" />
+     <TextView
+         android:id="@+id/tv_download_info"
+         android:layout_below="@+id/tv_system_apply_info"
+         android:layout_alignLeft="@+id/tv_system_apply_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"		 
+         android:text="@string/factory_defalut_download_tip" />
+     
+     <TextView
+         android:id="@+id/tv_restore_info2"
+         android:layout_below="@+id/tv_download_info"
+         android:layout_alignLeft="@+id/tv_download_info"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+		 android:textColor="@android:color/black"
+         android:text="@string/factory_defalut_tip_2"
+         android:visibility="invisible"/>
+     
+     <LinearLayout android:id="@+id/ll_clear_multi_user_data"
+        android:layout_below="@+id/tv_restore_info2"
+        android:layout_alignLeft="@+id/tv_restore_info2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+         <aurora.widget.AuroraCheckBox 
+	        android:id="@+id/cb_clear_multi_user_data"
+	        android:layout_width="30dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+         	/>
+	         
+         <TextView android:id="@+id/tv_clear_multi_user_data_tip"
+             android:layout_width="match_parent"
+       		 android:layout_height="wrap_content"
+       		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+			 android:textColor="@android:color/black"
+	         android:text="@string/clear_multi_user_data_tip"
+             />
+	    
+     </LinearLayout>
+     
+      <TextView
+         android:id="@+id/tv_music_info"
+         android:layout_below="@+id/ll_clear_multi_user_data"
+         android:layout_alignLeft="@+id/ll_clear_multi_user_data"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"		 
+         android:text="@string/factory_defalut_music_tip" />
+      
+      <TextView
+         android:id="@+id/tv_photo_info"
+         android:layout_below="@+id/tv_music_info"
+         android:layout_alignLeft="@+id/tv_music_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"		 
+         android:text="@string/factory_defalut_photo_tip" />
+      
+      <TextView
+         android:id="@+id/tv_vedio_info"
+         android:layout_below="@+id/tv_photo_info"
+         android:layout_alignLeft="@+id/tv_photo_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"	 
+         android:text="@string/factory_defalut_vedio_tip" />
+      
+      <TextView
+         android:id="@+id/tv_others_info"
+         android:layout_below="@+id/tv_vedio_info"
+         android:layout_alignLeft="@+id/tv_vedio_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"	 
+         android:text="@string/factory_defalut_others_tip" />
+      
+      <TextView
+         android:id="@+id/tv_others_use_info"
+         android:layout_below="@+id/tv_others_info"
+         android:layout_alignLeft="@+id/tv_others_info"
+         android:layout_marginTop="5dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"         
+         android:layout_marginRight="10dp"
+		 android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"		 
+         android:text="@string/factory_defalut_others_use_tip" />
+   
+</RelativeLayout>
+    <Button        
+        android:id="@+id/start_factory_button"
+        android:layout_alignParentBottom="true"        
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+        android:text="@string/start_factory_defalut_title"
+        />
+    </RelativeLayout>

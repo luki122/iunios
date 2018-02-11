@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tu_ya_col_cover_bg">#262626</color>
+    <color name="tu_ya_col_save_enable_text_color">#ffffff</color>
+    <color name="tu_ya_col_save_unenable_text_color">#777777</color>
+    <color name="tu_ya_col_drawable_select_color">#ffffff</color>
+    <color name="tu_ya_col_drawable_select_color_no_select">#777777</color>
+    <color name="tu_ya_col_drawable_paint_size_color">#ffffff</color>
+    <color name="tu_ya_col_drawable_paint_size_color_no_select">#66ffffff</color>
+    <color name="tu_ya_col_paint_color_red">#f04518</color>
+    <color name="tu_ya_col_paint_color_yellow">#f7d619</color>
+    <color name="tu_ya_col_paint_color_green">#a1d91d</color>
+    <color name="tu_ya_col_paint_color_blue">#1c69d1</color>
+    <color name="tu_ya_col_paint_color_while">#ffffff</color>
+    <color name="tu_ya_col_paint_color_red_no_select">#66f04518</color>
+    <color name="tu_ya_col_paint_color_yellow_no_select">#66d4ba27</color>
+    <color name="tu_ya_col_paint_color_green_no_select">#668ab91b</color>
+    <color name="tu_ya_col_paint_color_blue_no_select">#661c69d1</color>
+    <color name="tu_ya_col_paint_color_while_no_select">#66ffffff</color>
+    <color name="tu_ya_default_pathline_paint_color">@color/tu_ya_col_paint_color_red</color>
+    <color name="tu_ya_default_circle_paint_color">@color/tu_ya_col_paint_color_red</color>
+    <color name="tu_ya_default_arrow_paint_color">@color/tu_ya_col_paint_color_red</color>
+    <color name="tu_ya_default_rectangle_paint_color">@color/tu_ya_col_paint_color_red</color>
+    <color name="tu_ya_col_drawable_enable_color">#ffffff</color>
+    <color name="tu_ya_col_drawable_unenable_color">#777777</color>
+
+    <color name="tu_ya_col_operation_panel_bg">#33000000</color>
+
+</resources>

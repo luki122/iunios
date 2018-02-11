@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+	xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/somatosensory">
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="smart_phone"
+            aurora:auroratitle="@string/smart_phone">
+
+      
+   
+       <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="smart_call"
+            aurora:auroratitle="@string/smart_call"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/smart_call_summary" />
+              <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="smart_answer"
+            aurora:auroratitle="@string/smart_answer"
+            aurora:aurorapersistent="false" 
+            aurora:aurorasummary="@string/smart_answer_summary"/>
+        
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="smart_gesture"
+        aurora:auroratitle="@string/smart_gesture" >
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="gesture_photo"
+            aurora:auroratitle="@string/smart_gesture_photo"
+            aurora:aurorasummary="@string/smart_gesture_photo_summary"
+            aurora:aurorapersistent="false" />
+       <!--  <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="gesture_answer"
+            aurora:auroratitle="@string/smart_gesture_answer"
+            aurora:aurorasummary="@string/smart_gesture_answer_summary"
+            aurora:aurorapersistent="false" /> -->
+       <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="gesture_vedio"
+            aurora:auroratitle="@string/smart_gesture_vedio"
+            aurora:aurorasummary="@string/smart_gesture_vedio_summary"
+            aurora:aurorapersistent="false" />
+       
+    </aurora.preference.AuroraPreferenceCategory>
+    
+        <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="system_category"
+            aurora:auroratitle="@string/somatosensory_system_title">
+
+       <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="somatosensory_pause"
+            aurora:auroratitle="@string/accessibility_screen_somatosensory_smart_pause"
+            aurora:aurorapersistent="false"
+            />
+              <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="somatosensory_music"
+            aurora:auroratitle="@string/accessibility_screen_music_control_prerefence_title"
+            aurora:aurorapersistent="false" 
+            aurora:aurorasummary="@string/somatosensory_music_control_summary"/>
+        
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

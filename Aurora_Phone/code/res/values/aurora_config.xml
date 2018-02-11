@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+     <integer name="aurora_button_line">1</integer>
+      <integer name="aurora_misscall_action">0</integer>
+</resources>

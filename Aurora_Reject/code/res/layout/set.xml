@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<!-- Aurora liugj 2013-10-12 modified for change AuroraCheckBoxPreference to AuroraSwitchPreference -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_sms_settings"
+        aurora:auroratitle="" >
+
+        <aurora.preference.AuroraSwitchPreference
+            aurora:auroradefaultValue="true"
+            aurora:aurorakey="sms"
+            aurora:aurorasummary=""
+            
+            aurora:auroratitle="@string/reject_sms" />
+
+        <aurora.preference.AuroraSwitchPreference
+            aurora:auroradefaultValue="true"
+            aurora:aurorakey="intercept"
+            aurora:aurorasummary=""
+            aurora:auroratitle="@string/reject_notification" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_mms_settings"
+        aurora:auroratitle="" >
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="black_name"
+            aurora:aurorasummary=""
+            aurora:auroratitle="@string/black_manage" />
+
+       
+    </aurora.preference.AuroraPreferenceCategory>
+    
+     <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_phone_settings"
+        aurora:auroratitle="" >
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="mark"
+            aurora:aurorasummary=""
+            aurora:auroratitle="@string/mark_manage" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

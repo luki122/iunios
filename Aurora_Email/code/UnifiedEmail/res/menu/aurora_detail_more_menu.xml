@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_detail_menu_item_move_to"
+        android:title="@string/aurora_actionbar_menu_move_to">
+    </item>
+
+</menu>
+

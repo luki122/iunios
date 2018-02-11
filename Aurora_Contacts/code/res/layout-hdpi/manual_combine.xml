@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+   >
+   <aurora.widget.AuroraListView 
+    android:id="@android:id/list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:dividerHeight="1px"
+    android:divider="@drawable/h_diver" />
+
+    <TextView
+        android:id="@+id/no_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/gn_manual_combine_no_content"
+        android:visibility="gone"
+        android:singleLine="true"
+        style="@com.aurora:style/AuroraPromptTextViewStyle"
+        android:gravity="center_horizontal"/>
+
+</FrameLayout>
+
+

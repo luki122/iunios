@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photopage_top_controls"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:background="@color/translate_color"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+    <View
+	android:id="@+id/photopage_top_control_bgView"
+	android:background="@drawable/aurora_photo_top_bg"
+	android:layout_width="match_parent"
+	android:layout_height="80dp"
+	android:visibility="gone" />
+
+    
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ripple"
+        android:src="@drawable/aurora_top_icon_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/leftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textColor="@color/top_font_color"
+        android:layout_toRightOf="@+id/leftButton"
+        android:visibility="gone" />
+ <!-- 
+ 	<TextView
+        android:id="@+id/leftTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textColor="@color/top_font_color"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" 
+        android:drawableLeft="@drawable/aurora_top_icon_back"/>
+ 		-->
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/translate_color"
+        android:src="@drawable/aurora_top_icon_slideshow"
+        android:visibility="gone" />
+</RelativeLayout>

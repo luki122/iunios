@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/aurora_listview_dividers" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_below="@+id/divider" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left|top"
+            android:paddingLeft="16dp" >
+
+            <TextView
+                android:id="@+id/local_albums_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/albums"
+                android:textColor="@color/aurora_local_album_item_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/local_albums_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/local_albums_name"
+                android:alpha="0.5"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:text="@string/albums"
+                android:textColor="@color/aurora_local_album_item_title_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/local_albums"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp" >
+
+            <ImageView
+                android:id="@+id/first_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/albums"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/second_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/local_gridview_horizontalSpacing"
+                android:layout_weight="1"
+                android:contentDescription="@string/albums"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/third_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/local_gridview_horizontalSpacing"
+                android:layout_weight="1"
+                android:contentDescription="@string/albums"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/fourth_img"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/local_gridview_horizontalSpacing"
+                android:layout_weight="1"
+                android:contentDescription="@string/albums"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/checkbox_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider"
+        android:contentDescription="@string/ingest_sorting"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:scaleType="center"
+        android:src="@drawable/aurora_check14"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/checkbox_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/divider"
+        android:contentDescription="@string/ingest_sorting"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp"
+        android:scaleType="center"
+        android:src="@drawable/aurora_check00"
+        android:visibility="gone" />
+
+</merge>

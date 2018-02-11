@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@drawable/noti_bg_ripple" >
+
+    <FrameLayout
+        android:id="@+id/aurora_notification_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/noti_icon_margin_left"
+        android:layout_marginRight="@dimen/noti_icon_margin_right" >
+
+        <ImageView
+            android:id="@+id/aurora_notification"
+            android:layout_width="@dimen/noti_icon_width"
+            android:layout_height="@dimen/noti_icon_width" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/aurora_notification_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="8dip" >
+
+        <RelativeLayout
+            android:id="@+id/first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/aurora_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="6dip"
+                android:textColor="@color/aurora_button_color_v2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/aurora_sim_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dip"
+                android:layout_toRightOf="@id/aurora_address"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/aurora_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dip"
+                android:textColor="#8d8d8e"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/aurora_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#8d8d8e"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

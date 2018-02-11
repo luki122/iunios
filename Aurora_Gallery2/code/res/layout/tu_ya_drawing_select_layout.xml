@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gallery3d.plugin.tuYa.ui.DrawingSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/tuya_id_drawing_select_panel"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/tu_ya_dimen_drawing_select_panel_padding"
+    android:paddingRight="@dimen/tu_ya_dimen_drawing_select_panel_padding"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:id="@id/tuya_id_pathline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_drawing_icon__margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_drawing_icon__margin_top"
+            android:src="@drawable/tu_ya_drawable_pathline"
+            android:tint="@color/tu_ya_cols_drawing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuya_st_pathline"
+            android:singleLine="true"
+            android:textColor="@color/tu_ya_cols_drawing_select"
+            android:textSize="@dimen/tu_ya_dimen_drawing_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_rectangle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_drawing_icon__margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_drawing_icon__margin_top"
+            android:src="@drawable/tu_ya_drawable_rectangle"
+            android:tint="@color/tu_ya_cols_drawing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuya_st_rectangle"
+            android:singleLine="true"
+            android:textColor="@color/tu_ya_cols_drawing_select"
+            android:textSize="@dimen/tu_ya_dimen_drawing_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_circle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_drawing_icon__margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_drawing_icon__margin_top"
+            android:src="@drawable/tu_ya_drawable_circle"
+            android:tint="@color/tu_ya_cols_drawing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuya_st_circle"
+            android:singleLine="true"
+            android:textColor="@color/tu_ya_cols_drawing_select"
+            android:textSize="@dimen/tu_ya_dimen_drawing_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_arrow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_drawing_icon__margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_drawing_icon__margin_top"
+            android:src="@drawable/tu_ya_drawable_arrow"
+            android:tint="@color/tu_ya_cols_drawing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuya_st_arrow"
+            android:singleLine="true"
+            android:textColor="@color/tu_ya_cols_drawing_select"
+            android:textSize="@dimen/tu_ya_dimen_drawing_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_mosaic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tu_ya_dimen_drawing_icon__margin_bottom"
+            android:layout_marginTop="@dimen/tu_ya_dimen_drawing_icon__margin_top"
+            android:src="@drawable/tu_ya_drawable_mosaic"
+            android:tint="@color/tu_ya_cols_drawing_select" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuya_st_mosaic"
+            android:singleLine="true"
+            android:textColor="@color/tu_ya_cols_drawing_select"
+            android:textSize="@dimen/tu_ya_dimen_drawing_text_size" />
+    </LinearLayout>
+
+</com.android.gallery3d.plugin.tuYa.ui.DrawingSelectView>

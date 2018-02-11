@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/custommenu_item_height"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/custommenu_item_fontsize"
+        android:textColor="@color/custom_menu_item__title_change_color"
+        android:gravity="center"
+        android:focusable="false"
+        />
+</LinearLayout>

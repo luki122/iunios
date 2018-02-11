@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="crop_picture">&quot;Обрезать&quot;</string>
+    <string name="wallpaper_set">&quot;Заменен фоновый рисунок&quot;</string>
+    <string name="goto_filemanager">&quot;Другие документы&quot;</string>
+    <string name="action_title">&quot;%1$d рисунок&quot;</string>
+    <string name="date_day">&quot;День&quot;</string>
+    <string name="date_month">&quot;Месяц&quot;</string>
+    <string name="myselect_all">&quot;Выбирать все&quot;</string>
+    <string name="unmyselect_all">&quot;Выбирать наоборот&quot;</string>
+    <string name="delete_finish">&quot;Удалены %1$d документы&quot;</string>
+    <string name="update_pic">&quot;Обновление рисунки...&quot;</string>
+    <string name="appwidget_empty_video">&quot;Нет аудио&quot;</string>
+    
+    <string name="aurora_wallpaper">&quot;IUNI альбом&quot;</string>
+    
+    <string name="aurora_storage_root">&quot;Память телефона&quot;</string>
+    <string name="aurora_storage_external">&quot;SD-карту&quot;</string>
+    <string name="aurora_storage_internal">&quot;Внутренний накопитель&quot;</string>
+<!-- //Aurora <SQF> <2014-06-05>  for NEW_UI begin -->
+<string name="photo_edit_action_bar_save">&quot;Сохранить&quot;</string>
+    <string name="photo_edit_action_bar_cancel">&quot;Отмена&quot;</string>
+    <string name="photo_edit_action_bar_confirm_crop">&quot;Подтвердить обрезать&quot;</string>
+    <string name="photo_edit_action_bar_confirm_filter">&quot;Сохранить&quot;</string> <!-- 确认滤镜 -->
+    <string name="photo_edit_action_bar_return">"Return"</string>
+<!-- //Aurora <SQF> <2014-06-05>  for NEW_UI end -->
+<!-- //Aurora <SQF> <2014-09-12>  for NEW_UI begin -->
+<string name="aurora_effects">&quot;Aurora эффекты фильтра&quot;</string>
+    
+    <string name="aurora_effects_normal">&quot;Оригинал&quot;</string>
+    <string name="aurora_effects_reversal">&quot;Позитивная пленка&quot;</string>
+    <string name="aurora_effects_crayon">&quot;Восковые мелки&quot;</string>
+    <string name="aurora_effects_fleeting_time">&quot;Мимолетное время&quot;</string>
+    <string name="aurora_effects_cosmetology_backlight">&quot;Косметика&quot;</string>
+    <string name="aurora_effects_japan_backlight">&quot;Задний свет&quot;</string>
+    <string name="aurora_effects_cold_lomo">&quot;LOMO&quot;</string>
+    <string name="aurora_effects_sunset">&quot;Осеннее сияние&quot;</string>
+    <string name="aurora_effects_softpink">&quot;Сладкие&quot;</string>
+    
+    <string name="aurora_effects_warm_lomo">&quot;Тёплый тон LOMO&quot;</string>
+    <string name="aurora_effects_reflection">&quot;Отражение&quot;</string>
+    <string name="aurora_effects_light_beam">&quot;Световой пучок&quot;</string>
+    <string name="aurora_effects_snowflakes">&quot;Летучий снег&quot;</string>
+<!-- //Aurora <SQF> <2014-09-12>  for NEW_UI end -->
+<string name="aurora_error_notice_title">&quot;Уведомление&quot;</string>
+    <string name="aurora_error_notice">&quot;Сейчас нет внешнего накопителя, откройте альбом повторно.&quot;</string>
+    <string name="aurora_local_album">Локальный альбом</string>
+    <string name="aurora_album">Альбом</string>
+    <string name="aurora_system_album">Системный альбом</string>
+    <string name="aurora_system_screenshot">Скриншоты</string>
+    <string name="aurora_cloud_no_picture">В альбоме пусто</string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- storage fragment -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sd_card_storage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/usb_card_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/usb_card_storage_show"
+            style="@style/CategoryButtonIconStyle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/category_icon_internal_light" />
+
+        <TextView
+            android:id="@+id/usb_card_storage_size_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usb_card_storage_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/storage_category_text_color"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/usb_card_storage"
+        android:id="@+id/sd_card_storage_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sd_card_storage_show"
+            style="@style/CategoryButtonIconStyle"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/category_icon_external_light" />
+
+        <TextView
+            android:id="@+id/sd_card_storage_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sd_card_storage_show"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/storage_category_text_color"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

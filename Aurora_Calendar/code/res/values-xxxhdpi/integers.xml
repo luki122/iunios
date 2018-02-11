@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="month_week_view_height">46</integer>
+    <integer name="month_day_number_top_padding">10</integer>
+    <integer name="month_day_text_top_padding">28</integer>
+    <integer name="month_day_text_size">18</integer>
+</resources>

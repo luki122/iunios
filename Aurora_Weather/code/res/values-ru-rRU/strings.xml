@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">Загружается </string>
+    <string name="inactive_network">Плохое состояние сети</string>
+    <string name="unknown">Неизвестно --/--</string>
+    <string name="weather_default">Неизвестно </string>
+
+    <string-array name="default_day_show">
+        <item>Вчера  </item>
+        <item>Сегодня </item>
+        <item>Второй день</item>
+        <item>Третий день </item>
+        <item>Четвертый день </item>
+        <item>Пятый день </item>
+    </string-array>
+
+    <string name="neverupdate">Не обновлялось </string>
+    <string name="local_time_error">Неправильное местное время мобильного телефона, пожалуйста, исправьте </string>
+    <string name="local_city_error">Не удалось определить местоположение </string>
+    <string name="warn_detail_title">Предварительное оповещение </string>
+    <string name="tv_warn_publishtime">Опубликовать для%1$sмесяц%2$sдень %3$s</string>
+    <string name="tv_have_warn">Есть%1$s</string>
+    <string name="share_title">Поделиться </string>
+    <string name="notification_title">Предварительное напоминание </string>
+    <string name="notification_content">%1$sесть%2$s</string>
+    <string name="app_name">Погода </string>
+    <string name="tv_forcast">Прогноз</string>
+    <string name="tv_24hour">24 часа</string>
+    <string name="tv_city_list_fragment_title">Город </string>
+    <string name="tv_city_search">Отменить</string>
+    <string name="tv_search_city">Поиск города </string>
+    <string name="tv_search_input">Введите название города на китайском языке или сокращением латиницей</string>
+    <string name="tv_no_searching_city">Нет соответствующего города </string>
+    <string name="tv_city_add_already_full">Можно добавить не более 7 городов, пожалуйста, проведите влево, чтобы удалить другие города </string>
+    <string name="the_city_already_add">Данный город добавлен </string>
+    <string name="locate_city_forbid_delete">Нельзя удалить город, в котором вы находитесь </string>
+    <!-- <string name="tv_wind_location">%1sсила </string> -->
+    <string name="tv_wind_location">%1s级</string>
+    <string name="refreshing">Обновляется…</string>
+
+    <string-array name="week_name_chinese">
+        <item>Воскресенье </item>
+        <item>Понедельник </item>
+        <item>Вторник </item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота </item>
+    </string-array>
+
+    <string name="today">Сегодня</string>
+    <string name="lastday">Вчера </string>
+   <!--  <string name="tv_air_quality">Температура воздуха : %1s</string> -->
+   <string name="tv_air_quality">空气 : %1s</string>
+   <!--  <string name="tv_humidity">Влажность%1s</string> -->
+    <string name="tv_humidity">湿度%1s</string>
+    <string name="no_network">Пожалуйста, подключитесь к сети, что бы получить данные о погоде в городе</string>
+    <string name="network_error">Плохой сигнал сети, пожалуйста, попробуйте позже </string>
+    <string name="request_network_in">Данные о погоде в городе загружаются </string>
+    <string name="no_network_data">Нет сетевых данных</string>
+    <string name="refresh_justnow">Обновлено только что </string>
+    <string name="refresh_before_minute"> Обновлено     минуту назад</string>
+    <string name="refresh_before_hour"> Обновлено час назад </string>
+    <string name="refresh_at_date"> Обносить </string>
+    <!-- <string name="mWindDirection_default">Восточный ветер N силы </string> -->
+    <string name="mWindDirection_default">东风N级</string>
+    <!-- <string name="mWindDirection_mHumidity_default">Восточный ветер N силы, влажность N%</string> -->
+     <string name="mWindDirection_mHumidity_default">东风N级 湿度N%</string>
+   <!--  <string name="mHumidity_default">Влажность N% </string> -->
+    <string name="mHumidity_default">湿度N%</string>
+   <!--  <string name="airQualityDesc_defalut">Температура воздуха : неизвестно </string> -->
+   <string name="airQualityDesc_defalut">空气 : 未知</string>
+    <string name="airQualityValue_value">N</string>
+
+    <string-array name="weather_type_forcast">
+        <item>Погожий и небольшой дождь</item>
+        <item>Солнечная погода </item>
+        <item>Облачная погода </item>
+        <item>Погожий и облачный</item>
+        <item>Небольшой дождь </item>
+        <item>Небольшой дождь </item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <Moth><2013-08-15> add for CR00854200 begin -->
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/icon_page_indicator" />
+<!-- Gionee <Moth><2013-08-15> add for CR00854200 end -->

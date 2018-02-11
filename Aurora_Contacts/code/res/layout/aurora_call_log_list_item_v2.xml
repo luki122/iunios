@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.calllog.AuroraCallLogListItemViewV2 xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/aurora_primary_action_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_two_line_height"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/listitem_double_margin_bottom" >
+
+    <RelativeLayout
+        android:id="@+id/contact_photo_rl"
+        style="@style/double_list_item_photo_style" >
+
+        <aurora.widget.AuroraRoundedImageView
+            android:id="@+id/contact_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/svg_dial_default_photo1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/listitem_double_margin_top"
+        android:layout_toRightOf="@id/contact_photo_rl" >
+
+        <TextView
+            android:id="@+id/aurora_name"
+            style="@style/double_list_item_name_text_style_with_photo"
+            android:layout_width="@dimen/listitem_double_name_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/name" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/call_date_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/list_item_margin_right" >
+
+            <TextView
+                style="@style/double_list_item_name_text_style_with_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nullname" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/aurora_call_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/time"
+                android:textColor="@color/calllog_date_text_color"
+                android:textSize="@dimen/calllog_date_text_size" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/contact_photo_rl" >
+
+        <ImageView
+            android:id="@+id/aurora_call_type"
+            android:layout_width="8dp"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/aurora_ic_call_outgoing" />
+
+        <TextView
+            android:id="@+id/aurora_call_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/call_log_count_margin_left"
+            android:layout_toRightOf="@id/aurora_call_type"
+            android:text="@string/count"
+            android:textColor="@color/calllog_count_text_color"
+            android:textSize="@dimen/calllog_count_text_size" />
+
+        <ImageView
+            android:id="@+id/aurora_sim_icon"
+            android:layout_width="8.67dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/call_log_count_margin_left"
+            android:layout_toRightOf="@id/aurora_call_count"
+            android:src="@drawable/svg_dial_card1" />
+
+        <TextView
+            android:id="@+id/aurora_area"
+            style="@style/double_list_item_data_text_style_with_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/call_log_count_margin_left"
+            android:layout_toRightOf="@id/aurora_sim_icon"
+            android:singleLine="true"
+            android:text="@string/area" />
+
+        <!--
+                          <TextView
+                    android:id="@+id/aurora_reject_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/sogoutext_divider"
+                    android:textColor="#8d8d8e"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+        -->
+
+        <TextView
+            android:id="@+id/aurora_reject_note"
+            style="@style/double_list_item_data_text_style_with_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/call_log_count_margin_left"
+            android:layout_toRightOf="@id/aurora_area"
+            android:singleLine="true"
+            android:text="@string/sogoutext"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/list_item_margin_right" >
+
+            <TextView
+                style="@style/double_list_item_name_text_style_with_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nullname" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/svg_dial_expand" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.android.contacts.calllog.AuroraCallLogListItemViewV2><!-- </RelativeLayout> -->

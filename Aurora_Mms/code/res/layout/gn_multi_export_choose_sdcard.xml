@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <LinearLayout
+        android:id="@+id/topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tips"
+            style="@style/GNExportTopTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:text="@string/import_export_tip"
+            android:textColor="#777777" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonbar"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <aurora.widget.AuroraButton
+            android:id="@+id/btn_action"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/import_export_next" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btn_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/buttonbar"
+        android:background="?android:attr/dividerHorizontal" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/btn_divider"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_below="@id/topview" />
+
+</RelativeLayout>

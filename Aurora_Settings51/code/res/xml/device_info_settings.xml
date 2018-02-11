@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/about_settings" >
+
+    <!-- System update settings - launches activity -->
+    <PreferenceScreen
+        style="?android:preferenceInformationStyle"
+        android:key="system_update_settings"
+        android:summary="@string/system_update_settings_list_item_summary"
+        android:title="@string/system_update_settings_list_item_title" >
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="additional_system_update_settings"
+        android:title="@string/additional_system_update_settings_list_item_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="@string/additional_system_update_menu"
+            android:targetPackage="@string/additional_system_update" />
+    </PreferenceScreen>
+
+    <!-- ///M: MTK_SYSTEM_UPDATE_SUPPORT -->
+    <PreferenceScreen
+        android:key="mtk_software_update"
+        android:summary="@string/software_updates_more_summary"
+        android:title="@string/software_updates_more_title" >
+    </PreferenceScreen>
+
+    <!-- Device hardware model -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="device_model"
+        android:summary="@string/device_info_default"
+        android:title="@string/model_number" />
+
+    <!-- Device status - launches activity -->
+    <!--
+    <PreferenceScreen
+        android:key="status_info"
+        android:summary="@string/device_status_summary"
+        android:title="@string/device_status" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.deviceinfo.Status"
+            android:targetPackage="com.android.settings" />
+    </PreferenceScreen>
+    -->
+    <!-- Detailed build version -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="build_number"
+        android:summary="@string/device_info_default"
+        android:title="@string/build_number" />
+
+    <PreferenceScreen
+        android:key="regulatory_info"
+        android:title="@string/regulatory_information" >
+        <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
+    </PreferenceScreen>
+
+    <!-- Feedback on the device -->
+    <PreferenceScreen
+        android:key="device_feedback"
+        android:title="@string/device_feedback" >
+    </PreferenceScreen>
+
+    <!-- Device firmware version -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="firmware_version"
+        android:summary="@string/device_info_default"
+        android:title="@string/firmware_version" />
+
+    <!-- Device FCC equipment id -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="fcc_equipment_id"
+        android:summary="@string/device_info_default"
+        android:title="@string/fcc_equipment_id" />
+
+    <!-- Device Baseband version -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="baseband_version"
+        android:summary="@string/device_info_default"
+        android:title="@string/baseband_version" />
+
+    <!-- ///M: Device Baseband version2 -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="baseband_version_2"
+        android:summary="@string/device_info_default"
+        android:title="@string/baseband_version" />
+
+    <!-- Device Kernel version -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="kernel_version"
+        android:summary="@string/device_info_default"
+        android:title="@string/kernel_version" />
+
+    <!-- SELinux status information -->
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="selinux_status"
+        android:summary="@string/selinux_status_enforcing"
+        android:title="@string/selinux_status" />
+
+    <!-- ///M: Custom build version -->
+    <!--
+    <Preference
+        style="?android:preferenceInformationStyle"
+        android:key="custom_build_version"
+        android:summary="@string/device_info_default"
+        android:title="@string/custom_build_version" />
+    -->
+
+
+    <!-- Legal Information -->
+    <PreferenceScreen
+        style="?android:preferenceInformationStyle"
+        android:key="container"
+        android:title="@string/legal_information" >
+
+        <!--
+                 Note: The titles given here probably won't be used.  Instead, we programmatically
+                       fill the title with the label of the activity with the corresponding action.
+                       If there is not an activity for an action, the item will be removed from the
+                       list.
+        -->
+
+
+        <!-- Copyright information -->
+        <PreferenceScreen
+            android:key="copyright"
+            android:title="@string/copyright_title" >
+            <intent android:action="android.settings.COPYRIGHT" />
+        </PreferenceScreen>
+
+        <!-- License information -->
+        <PreferenceScreen
+            android:key="license"
+            android:title="@string/license_title" >
+            <intent android:action="android.settings.LICENSE" />
+        </PreferenceScreen>
+
+        <!-- Terms and conditions -->
+        <PreferenceScreen
+            android:key="terms"
+            android:title="@string/terms_title" >
+            <intent android:action="android.settings.TERMS" />
+        </PreferenceScreen>
+
+        <!-- System WebView License information -->
+        <PreferenceScreen
+            android:key="webview_license"
+            android:title="@string/webview_license_title" >
+            <intent android:action="android.settings.WEBVIEW_LICENSE" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="wallpaper_attributions"
+            android:summary="@string/wallpaper_attributions_values"
+            android:title="@string/wallpaper_attributions" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

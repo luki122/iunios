@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listview_height"
+    android:layout_gravity="center_vertical"
+    android:columnCount="3"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:paddingBottom="@dimen/padding_small"
+    android:paddingTop="@dimen/padding_small" >
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="@dimen/length_40dp"
+        android:layout_height="@dimen/length_40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_rowSpan="3"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@android:id/title"
+        android:layout_width="0dip"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="6dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="@color/list_color_title"
+        android:textDirection="locale"
+        android:textSize="@dimen/textsize_16" />
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginStart="@dimen/padding_small"
+        android:layout_marginTop="6dip"
+        android:textColor="@color/tab_text_normal_color"
+        android:textSize="@dimen/textsize_12" />
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_height="@dimen/height_12"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginTop="@dimen/padding_small"
+        android:max="100" />
+
+    <TextView
+        android:id="@android:id/summary"
+        android:layout_width="0dip"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginTop="2dip"
+        android:maxLines="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+</GridLayout>

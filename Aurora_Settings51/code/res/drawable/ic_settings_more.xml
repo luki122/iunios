@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/dash_category_icon_size"
+    android:viewportHeight="72"
+    android:viewportWidth="72"
+    android:width="@dimen/dash_category_icon_size" >
+
+    <group
+        android:translateX="14.08"
+        android:translateY="30.73" >
+        <path
+            android:name="aurora_actionbar_done"
+            android:fillColor="@color/dash_catetory_icon_color"
+            android:pathData="M38.562,10.531 C35.646,10.531 33.281,8.173 33.281,5.265 C33.281,2.357 35.646,-0.000 38.562,-0.000 C41.479,-0.000 43.844,2.357 43.844,5.265 C43.844,8.173 41.479,10.531 38.562,10.531 ZM21.922,10.542 C19.008,10.542 16.645,8.180 16.645,5.265 C16.645,2.351 19.008,-0.011 21.922,-0.011 C24.836,-0.011 27.198,2.351 27.198,5.265 C27.198,8.180 24.836,10.542 21.922,10.542 ZM5.281,10.531 C2.364,10.531 -0.000,8.173 -0.000,5.265 C-0.000,2.357 2.364,-0.000 5.281,-0.000 C8.198,-0.000 10.562,2.357 10.562,5.265 C10.562,8.173 8.198,10.531 5.281,10.531 Z" />
+    </group>
+
+</vector>

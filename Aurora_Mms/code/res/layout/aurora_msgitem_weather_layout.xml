@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2015-04-23 modified for aurora's new feature start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/aurora_weather_bg" >
+    
+    <TextView
+        android:id="@+id/aurora_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="11.67dip"
+        android:paddingBottom="11.67dip"
+        android:layout_marginLeft="9.22dip"
+        android:layout_marginRight="0.44dip"
+        android:textColor="#535353"
+        android:textSize="18.33dip"
+        />
+    <ImageView
+        android:id="@+id/aurora_w_divider"
+        android:layout_marginTop="14.67dip"
+        android:layout_toRightOf="@id/aurora_city"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/aurora_weather_divider"
+        />
+    <TextView
+        android:id="@+id/aurora_a_tmp"
+        android:paddingTop="9.33dip"
+        android:layout_toRightOf="@id/aurora_w_divider"
+        android:layout_marginLeft="3.00dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#535353"
+        android:textSize="15dip"
+        />
+    
+    <TextView
+        android:id="@+id/aurora_status"
+        android:layout_toRightOf="@id/aurora_w_divider"
+        android:layout_below="@id/aurora_a_tmp"
+        android:layout_marginLeft="3.00dip"
+        android:layout_marginTop="-4.33dip"
+        android:paddingBottom="6dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#535353"
+        android:textSize="12dip"
+        />
+    <ImageView
+        android:layout_marginTop="9dip"
+        android:layout_toRightOf="@id/aurora_a_tmp"
+        android:layout_marginLeft="1dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/aurora_weather_suffix"
+        />
+    
+    <!-- <TextView
+        android:id="@+id/aurora_temp_range"
+        android:layout_marginLeft="3dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aurora_status"
+        android:layout_toRightOf="@id/aurora_status"
+        android:textColor="#535353"
+        android:textSize="10dip"
+        /> -->
+        
+        <ImageView 
+            android:id="@+id/aurora_weather_thumbnail"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11.23dip"
+            android:layout_marginTop="10.33dip"
+            />
+
+</RelativeLayout>
+<!-- Aurora xuyong 2015-04-23 modified for aurora's new feature end -->

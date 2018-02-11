@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_label">Календарь</string>
+
+    <!-- event edit -->
+    <string name="aurora_event_edit_name_hint">Тема повестки</string>
+    <string name="aurora_event_calendar_account">Аккаунт</string>
+
+    <string name="aurora_event_edit_open">Открыть</string>
+    <string name="aurora_event_edit_close">Закрыть</string>
+    <string name="aurora_event_edit_repeat_title">Период</string>
+    <string name="aurora_does_not_repeat">Однократно</string>
+    <string name="aurora_every_weekday">Каждые рабочие дни</string>
+    <string name="aurora_event_edit_description_hint">Примечание</string>
+    <string name="aurora_event_edit_cancel">Отменить </string>
+    <string name="aurora_event_edit_cancel_info">Отменить изменённые?</string>
+    <string name="aurora_event_edit_save_no_title">Введите тему повестки</string>
+
+    <!-- event detail -->
+    <string name="aurora_event_detail_whenfirst">&quot;С<xliff:g id="DATES">%s</xliff:g>&quot;</string>
+    <string name="aurora_weekly">&quot;Каждые недели（<xliff:g id="DAYS_OF_WEEK">%s</xliff:g>）&quot;</string>
+    <string name="aurora_monthly_on_day_count">&quot;Каждые месяцы（<xliff:g id="ORDINAL_NUMBER">%1$s</xliff:g><xliff:g id="DAY_OF_WEEK">%2$s</xliff:g>）&quot;</string>
+    <string name="aurora_monthly_on_day">&quot;<xliff:g id="DAY_OF_MONTH">%s</xliff:g> день каждого месяца&quot;</string>
+    <string name="aurora_event_detail_title">Описание повестки</string>
+    <string name="aurora_delete_event_dialog">Удалить повестку?</string>
+    <string name="aurora_delete_event_toast">Удалена повестка!</string>
+    <string name="aurora_event_detail_separator">|</string>
+    <string name="aurora_event_detail_no_description">Нет примечаний</string>
+    <string name="aurora_when_start">Начало</string>
+    <string name="aurora_when_end">Конец</string>
+    <string name="aurora_date_format">Yyyy год MM месяц dd день</string>
+
+    <!-- calendar setting -->
+    <string name="aurora_menu_setting">Установить</string>
+    <string name="aurora_view_filter">Отбирать показания календари</string>
+    <string name="aurora_account_management">Управлять аккаунтом календари</string>
+    <string name="aurora_view_firstday">Начальный день недели</string>
+    <string name="aurora_note_reminder_switch">Показать меморандум</string>
+    <string name="aurora_birthday_reminder_switch">&quot;Напоминание дня рождения&quot;</string>
+    <string name="aurora_events_reminder">Время напоминания повестки</string>
+    <string name="aurora_todo_reminder">Время напоминания нерешённых</string>
+    <string name="aurora_ring_picker">Мелодия напоминания</string>
+    <string name="aurora_default_ring">По умолчанию</string>
+
+    <string name="aurora_happy_day">Программа отпуска</string>
+    <string name="aurora_lunar_calendar">Лунные календари</string>
+    <string name="aurora_festival_day">Праздники и выходные дни</string>
+    <string name="aurora_work_hard">Знак повестки</string>
+
+    <!-- month view -->
+    <string name="aurora_legal_holiday">Отпуск</string>
+    <string name="aurora_legal_workday">Работа</string>
+    <string name="aurora_term_qingming">Цинмин</string>
+    <string name="aurora_agenda">Повестка</string>
+    <string name="aurora_no_agenda">Нет повестки</string>
+    <string name="aurora_birthday_reminder">Напоминание дня рождения</string>
+    <string name="aurora_birthday_only_one"><xliff:g id="NAME">%s</xliff:g>день рождения</string>
+    <string name="aurora_birthday_have_other"><xliff:g id="NAME">%s</xliff:g>и<xliff:g id="NUMBER">%d</xliff:g>день рождения</string>
+    <string name="aurora_birthday_wish">Нажать и отправить тёплое пожелание</string>
+    <string name="aurora_wish_birthday">Пожелание дня рождения</string>
+    <string name="aurora_happy_birthday">С днём рождения</string>
+    <string name="aurora_agenda_reminder_open">Открыто напоминание</string>
+    <string name="aurora_agenda_reminder_close">Закрыто напоминание</string>
+
+    <!-- birthday info -->
+    <string name="aurora_birthday_info">Детали дня рождения</string>
+    <string name="aurora_birthday_today">День рождения</string>
+    <string name="aurora_birthday_notice">У вас всего <xliff:g id="NUMBER"> %d </xliff:g>друзей</string>
+    <string name="aurora_birthday_content"><xliff:g id="NUMBER">%d</xliff:g>летний день рождения</string>
+
+    <!-- select calendars -->
+    <string name="aurora_local_calendar">Местные календари</string>
+
+    <!-- delete event -->
+    <string name="aurora_delete_recurring_event">Удалить периодическое мероприятие?</string>
+
+      <!-- 生成图片预览界面 -->
+    <string name="note_gen_picture">Разделение</string>
+    <string name="share_title">Разделение в </string>
+    <string name="save_to_gallery_success">Изображения сохраняются в альбоме</string>
+    <string name="save_to_gallery_failed">Не удалось сохранение изображений в альбоме</string>
+    <string name="sdcard_is_not_available">SD-карта недоступна</string>
+    
+        <!-- 图片预览界面 -->
+    <string name="load_picture_error_io">Неудачно загрузить изображение</string>
+    <string name="load_picture_error_network">Проблема сети, невозможно загрузить</string>
+    <string name="load_picture_error_decoding">Невозможно показать изображение</string>
+    <string name="load_picture_error_out_of_memory">Изображение слишком велико для отображения</string>
+    <string name="load_picture_error_unknow">Неизвестная ошибка</string>
+      <!-- 新浪微博分享界面 -->
+    <string name="share_sina_weibo_title">Разделение в микроблок</string>
+    <string name="share_sina_weibo_right_menu_item">Отправить</string>
+    <string name="share_sina_weibo_menu_unbind">Освобождать  от привязки аккаунта(%1$s)</string>
+    <string name="share_sina_weibo_hint">Ввести слова</string>
+    <string name="share_sina_weibo_sending">Отправление&#8230;</string>
+    <string name="share_sina_weibo_unbind_success">Удачно освобождать</string>
+    <string name="share_sina_weibo_unbind_error">Неудачно освобождать, попробуйте ещё раз</string>
+    <string name="share_sina_weibo_authorize_invalid_token">Неудачно уполномочие, попробуйте ещё раз</string>
+    <string name="share_sina_weibo_authorize_cancel">Отменено уполномочие</string>
+    <string name="share_sina_weibo_no_network">Откройте сетевые подключения</string>
+    <string name="share_sina_weibo_authorize_expire">Уполномочие просрочено, уполномочите ещё раз</string>
+    <string name="share_sina_weibo_send_success">Отправление блока удачно</string>
+    <string name="share_sina_weibo_send_ongoing">Отправление блока&#8230;</string>
+    <string name="share_sina_weibo_send_failed">Отправление блока неудачно, попробуйте ещё раз</string>
+    <string name="share_sina_weibo_default_content">Разделение изображений</string>
+    <string name="share_sina_weibo_is_sending">Отправление бывшего блока, подождите&#8230;</string>
+    <string name="share_sina_weibo_get_user_info">Получение информации о пользователе&#8230;</string>
+    <string name="share_sina_weibo_get_user_info_failed">Неудачно получить информацию</string>
+    <string name="share_sina_weibo_unbind_ongoing">Освобождение привязки аккаунта, подождите&#8230;</string>
+    <string name="share_sina_weibo_image_too_large">Размер изображения превышает лимита, отправить невозможно</string>
+
+    <!-- 微信分享反馈信息 -->
+    <string name="errcode_success">Удачно отправить</string>
+    <string name="errcode_cancel">Отменить отправление</string>
+    <string name="errcode_deny">Отказано отправление</string>
+    <string name="errcode_unknown">Отправить предыдущий шаг</string>
+
+    <!-- 共用的出错提示消息 -->
+    <string name="memory_is_not_enough">Изображение слишком велико, попробуйте ещё раз</string>
+    <string name="decode_bitmap_error">Неудачно загрузить изображение</string>
+    <string name="prepare_record_error">Ошибка при подготовке к записи, попробуйте ещё раз</string>
+        <!-- Added on 2015-03-30 begin -->
+    <string name="share_weibo">«Вэйбо»</string>
+    <string name="share_weixin_friend">Друзья в «Wechat»</string>
+    <string name="share_weixin">Круг друзей «Wechat»</string>
+    <string name="share_qq_friend">Друзья в QQ</string>
+    <string name="share_qq_zone">Пространство QQ</string>
+    <string name="share_more">Больше </string>
+    <string name="share_activity_title">Поделиться</string>
+    <!-- Added on 2015-03-30 end -->
+</resources>

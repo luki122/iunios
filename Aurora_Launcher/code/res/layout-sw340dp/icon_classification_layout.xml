@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="@dimen/classify_interface_btn_width"
+        android:layout_height="@dimen/classify_interface_btn_height"
+        android:layout_weight="1"
+        android:text="@string/classify_app_btn_restore"
+        android:clickable="false"
+        android:textSize="16sp"
+		android:textColor="@color/folder_import_txt_invalid_color"
+		android:background="@drawable/classify_btn_selector"
+		android:layout_marginLeft="@dimen/classify_interface_btn_margin_left_right"
+        />
+    
+    <Button
+       android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/classify_interface_btn_width"
+        android:layout_height="@dimen/classify_interface_btn_height"
+        android:layout_weight="1"
+        android:text="@string/classify_app_btn_ok"
+        android:clickable="false"
+        android:textSize="16sp"
+        android:layout_marginLeft="18dp"
+		android:textColor="@color/folder_import_txt_invalid_color"
+		android:background="@drawable/classify_btn_selector"
+		android:layout_marginRight="@dimen/classify_interface_btn_margin_left_right"
+        />
+</LinearLayout>

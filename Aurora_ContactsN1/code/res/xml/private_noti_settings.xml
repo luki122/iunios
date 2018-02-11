@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+  <com.android.contacts.auroraprivate.PrivateRadioPreference
+        aurora:aurorakey="private_radio_2"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/private_noti_radio2_title" />
+
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_1"
+            aurora:aurorapersistent="false"
+           	aurora:auroraicon="@drawable/private_setting_ring_icon"
+            aurora:aurorasummary="@string/private_incoming_noti1_summary"
+            aurora:auroratitle="@string/private_incoming_noti1_title" />
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_2"
+            aurora:aurorapersistent="false"
+            aurora:auroraicon="@drawable/private_setting_missed_icon"
+            aurora:aurorasummary="@string/private_miss_noti1_summary"
+            aurora:auroratitle="@string/private_miss_noti1_title" />
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_3"
+            aurora:aurorapersistent="false"
+            aurora:auroraicon="@drawable/private_setting_calllog_icon"
+            aurora:aurorasummary="@string/private_calllog_noti1_summary"
+            aurora:auroratitle="@string/private_calllog_noti1_title" />
+
+    <com.android.contacts.auroraprivate.PrivateRadioPreference
+        aurora:aurorakey="private_radio_1"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/private_noti_radio1_title" />
+
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_4"
+            aurora:aurorapersistent="false"
+            aurora:auroraicon="@drawable/private_setting_hang_icon"
+            aurora:aurorasummary="@string/private_incoming_noti2_summary"
+            aurora:auroratitle="@string/private_incoming_noti1_title" />
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_5"
+            aurora:aurorapersistent="false"
+            aurora:auroraicon="@drawable/private_setting_noti_icon"
+            aurora:aurorasummary="@string/private_miss_noti1_summary"
+            aurora:auroratitle="@string/private_incoming_noti2_title" />
+        <AuroraPreference
+                    aurora:aurorakey="private_radio_text_6"
+            aurora:aurorapersistent="false"
+            aurora:auroraicon="@drawable/private_setting_calllog_icon"
+            aurora:aurorasummary="@string/private_calllog_noti1_summary"
+            aurora:auroratitle="@string/private_calllog_noti1_title" />
+
+</AuroraPreferenceScreen>

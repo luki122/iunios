@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:viewportHeight="66"
+    android:viewportWidth="66"
+    android:width="22dp" >
+
+    <group
+        android:translateX="24"
+        android:translateY="21" >
+        <path
+            android:fillColor="@color/progress_btn_second_color"
+            android:pathData="M-0.000,24.000 L6.000,24.000 L6.000,-0.000 L-0.000,-0.000 L-0.000,24.000 ZM12.000,24.000 L18.000,24.000 L18.000,-0.000 L12.000,-0.000 L12.000,24.000 Z" />
+    </group>
+
+</vector>

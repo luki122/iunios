@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="empty_list_text_style">
+        <item name="android:textColor">@color/aurora_editor_subtitle_text_color</item>
+        <item name="android:textSize">@dimen/aurora_empty_list_text_size</item>
+    </style>
+
+    <style name="empty_list_btn_style">
+        <item name="android:textColor">@color/aurora_empty_list_text_color</item>
+        <item name="android:textSize">@dimen/aurora_editor_title_text_size</item>
+    </style>
+
+    <style name="editor_spinner_text_style">
+        <item name="android:textColor">@color/aurora_editor_title_text_color</item>
+        <item name="android:textSize">@dimen/aurora_editor_subtitle_text_size</item>
+    </style>
+
+    <style name="editor_type_text_style">
+        <item name="android:textColor">@color/aurora_editor_title_text_color</item>
+        <item name="android:textSize">@dimen/aurora_editor_title_text_size</item>
+    </style>
+
+    <style name="editor_field_text_style">
+        <item name="android:textColor">@color/aurora_editor_title_text_color</item>
+        <item name="android:textColorHint">@color/aurora_editor_subtitle_text_color</item>
+        <item name="android:textSize">@dimen/aurora_editor_title_text_size</item>
+    </style>
+
+    <style name="list_item_name_text_no_change_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_singleline_text_size</item>
+    </style>
+
+    <style name="list_item_data_text_no_change_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_subtext_explain_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_subtext_text_size</item>
+    </style>
+
+    <style name="list_item_data_text_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_subtext_explain_textcolor</item>
+        <item name="android:textSize">@com.aurora:dimen/aurora_list_subtext_text_size</item>
+    </style>
+
+    <style name="list_goto_group_text_style">
+        <item name="android:textColor">@com.aurora:color/aurora_list_textcolor</item>
+    </style>
+
+    <style name="ExpandingEntryCardStyle">
+
+        <!-- <item name="android:elevation">@dimen/expanding_entry_card_elevation</item> -->
+        <item name="android:background">@color/expanding_entry_card_background_color</item>
+        <item name="android:layout_marginBottom">@dimen/expanding_entry_card_marginBottom</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SelectableItem" parent="@android:style/Theme.Translucent">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="aurora_list_header_style">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/calllog_list_header_text_color</item>
+    </style>
+
+    <style name="GN_PreferenceActivityTheme_light" parent="@style/GnPeopleTheme">
+        <item name="list_item_header_text_indent">0dip</item>
+        <item name="list_item_header_height">32dip</item>
+        <item name="list_item_header_underline_height">1dip</item>
+        <item name="contact_browser_list_padding_left">@dimen/gn_contact_list_item_left_margin</item>
+        <item name="contact_browser_list_padding_right">@dimen/gn_contact_list_item_right_margin</item>
+        <item name="list_item_photo_size">@dimen/gn_contact_photo_size</item>
+        <item name="list_item_height">?android:attr/listPreferredItemHeight</item>
+        <item name="promptSectionColor">@color/alphbetIndexView_prompt_section_light</item>
+        <item name="enableSectionColor">@color/alphbetIndexView_enable_section_light</item>
+        <item name="disableSectionColor">@color/alphbetIndexView_disable_section_light</item>
+        <item name="showingLetterColor">@color/alphbetIndexView_showing_section_light</item>
+        <item name="promptBgRes">@drawable/gn_show_window_light</item>
+    </style>
+
+    <style name="single_list_item_name_text_style_with_photo">
+        <item name="android:textColor">@color/single_list_item_name_text_color_with_photo</item>
+        <item name="android:textSize">@dimen/single_list_item_name_text_size_with_photo</item>
+    </style>
+
+    <style name="double_list_item_name_text_style_with_photo">
+        <item name="android:textColor">@color/double_list_item_name_text_size_with_photo</item>
+        <item name="android:textSize">@dimen/double_list_item_name_text_color_with_photo</item>
+    </style>
+
+    <style name="double_list_item_data_text_style_with_photo">
+        <item name="android:textColor">@color/double_list_item_data_text_size_with_photo</item>
+        <item name="android:textSize">@dimen/double_list_item_data_text_color_with_photo</item>
+    </style>    
+  
+    <style name="aurora_dialog_anim" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@com.aurora:anim/aurora_dialog_enter</item> 
+        <item name="@android:windowExitAnimation">@com.aurora:anim/aurora_dialog_exit</item>
+    </style>  
+
+</resources>

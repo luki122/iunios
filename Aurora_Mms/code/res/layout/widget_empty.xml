@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_conv_tip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:visibility="gone"
+    android:paddingTop="@dimen/aurora_widget_no_conv_tip_top_padding"
+    android:text="@string/aurora_no_msg_tip"
+    style="@style/aurora_widget_no_conv_tip_text_style"
+    />

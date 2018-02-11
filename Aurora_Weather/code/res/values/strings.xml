@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	
+    <string-array name="weather_anim_class_name">
+        <item>anims.RainSmall</item>  <!-- 小雨 -->
+        <item>anims.RainSmall</item>  <!-- 小雨 -->
+        <item>anims.RainMiddle</item> <!-- 中雨 -->
+        <item>anims.RainMiddle</item> <!-- 中雨 -->
+        <item>anims.RainMiddle</item> <!-- 中雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainLarge</item>  <!-- 大雨 -->
+        <item>anims.RainThundershower</item>  <!-- 雷阵雨 -->
+        <item>anims.RainThundershower</item>  <!-- 雷阵雨 -->
+        <item>anims.OverCast</item>  <!-- 阴 -->
+        <item>anims.Sunny</item>  <!-- 晴 -->
+        <item>anims.SnowSmall</item>  <!-- 小雪 -->
+        <item>anims.SnowSmall</item>  <!-- 小雪 -->
+        <item>anims.SnowMiddle</item>  <!-- 中雪 -->
+        <item>anims.SnowMiddle</item>  <!-- 中雪 -->
+        <item>anims.SnowLarge</item>  <!-- 大雪 -->
+        <item>anims.SnowLarge</item>  <!-- 大雪 -->
+        <item>anims.SnowLarge</item>  <!-- 大雪 -->
+        <item>anims.SnowLarge</item>  <!-- 大雪 -->
+        <item>anims.RainWithSnow</item>  <!-- 雨夹雪 -->
+        <item>anims.Cloudy</item>  <!-- 多云 -->
+        <item>anims.Haze</item>    <!-- 霾 -->
+        <item>anims.Foggy</item>   <!-- 雾 -->
+        <item>anims.Duststorm</item>  <!-- 沙尘暴 -->
+        <item>anims.Duststorm</item>    <!-- 强沙尘暴 -->
+        <item>anims.Sand</item>   <!-- 扬沙 -->
+        <item>anims.Sand</item>  <!-- 浮尘 -->
+    </string-array>
+    
+    <string-array name="weather_types">
+       <item>小雨</item>
+       <item>阵雨</item>
+       <item>中雨</item>
+       <item>小到中雨</item>
+       <item>冻雨</item>
+       <item>大雨</item>
+       <item>中到大雨</item>
+       <item>大到暴雨</item>
+       <item>暴雨</item>
+       <item>暴雨到大暴雨</item>
+       <item>大暴雨</item>
+       <item>大暴雨到特大暴雨</item>
+       <item>特大暴雨</item>
+       <item>雷阵雨</item>
+       <item>雷阵雨伴有冰雹</item>
+       <item>阴</item>
+       <item>晴</item>
+       <item>小雪</item>
+       <item>阵雪</item>
+       <item>中雪</item>
+       <item>小到中雪</item>
+       <item>大雪</item>
+       <item>中到大雪</item>
+       <item>大到暴雪</item>
+       <item>暴雪</item>
+       <item>雨夹雪</item>
+       <item>多云</item>
+       <item>霾</item>
+       <item>雾</item>
+       <item>沙尘暴</item>
+       <item>强沙尘暴</item>
+       <item>扬沙</item>
+       <item>浮尘</item>
+    </string-array>
+    
+    <string-array name="widget_weather_types">
+       <item>小雨</item>
+       <item>阵雨</item>
+       <item>中雨</item>
+       <item>中雨</item>
+       <item>冻雨</item>
+       <item>大雨</item>
+       <item>大雨</item>
+       <item>暴雨</item>
+       <item>暴雨</item>
+       <item>大暴雨</item>
+       <item>大暴雨</item>
+       <item>特大暴雨</item>
+       <item>特大暴雨</item>
+       <item>雷阵雨</item>
+       <item>雷阵雨</item>
+       <item>阴</item>
+       <item>晴</item>
+       <item>小雪</item>
+       <item>阵雪</item>
+       <item>中雪</item>
+       <item>中雪</item>
+       <item>大雪</item>
+       <item>大雪</item>
+       <item>暴雪</item>
+       <item>暴雪</item>
+       <item>雨夹雪</item>
+       <item>多云</item>
+       <item>霾</item>
+       <item>雾</item>
+       <item>沙尘暴</item>
+       <item>强沙尘暴</item>
+       <item>扬沙</item>
+       <item>浮尘</item>
+    </string-array>
+    
+    <string-array name="forcast_types">
+        <item>晴</item>
+        <item>晴转多云</item>
+        <item>晴转阴</item>
+        <item>晴转雾</item>
+        <item>晴转霾</item>
+        <item>晴转小雨</item>
+        <item>晴转中雨</item>
+        <item>晴转大雨</item>
+        <item>晴转雷阵雨</item>
+        <item>晴转冻雨</item>
+        <item>晴转暴雨</item>
+        <item>晴转小雪</item>
+        <item>晴转中雪</item>
+        <item>晴转大雪</item>
+        <item>晴转暴雪</item>
+        <item>晴转沙尘暴</item>
+        <item>晴转扬沙</item>
+        <item>多云</item>
+        <item>多云转阴</item>
+        <item>多云转雾</item>
+        <item>多云转霾</item>
+        <item>多云转小雨</item>
+        <item>多云转中雨</item>
+        <item>多云转大雨</item>
+        <item>多云转雷阵雨</item>
+        <item>多云转冻雨</item>
+        <item>多云转暴雨</item>
+        <item>多云转小雪</item>
+        <item>多云转中雪</item>
+        <item>多云转大雪</item>
+        <item>多云转暴雪</item>
+        <item>多云转沙尘暴</item>
+        <item>多云转扬沙</item>
+        <item>阴</item>
+        <item>阴转多云</item>
+        <item>阴转雾</item>
+        <item>阴转霾</item>
+        <item>阴转小雨</item>
+        <item>阴转中雨</item>
+        <item>阴转大雨</item>
+        <item>阴转雷阵雨</item>
+        <item>阴转冻雨</item>
+        <item>阴转暴雨</item>
+        <item>阴转小雪</item>
+        <item>阴转中雪</item>
+        <item>阴转大雪</item>
+        <item>阴转暴雪</item>
+        <item>阴转沙尘暴</item>
+        <item>阴转扬沙</item>
+        <item>雾</item>
+        <item>雾转多云</item>
+        <item>雾转阴</item>
+        <item>雾转霾</item>
+        <item>雾转小雨</item>
+        <item>雾转中雨</item>
+        <item>雾转大雨</item>
+        <item>雾转雷阵雨</item>
+        <item>雾转冻雨</item>
+        <item>雾转暴雨</item>
+        <item>雾转小雪</item>
+        <item>雾转中雪</item>
+        <item>雾转大雪</item>
+        <item>雾转暴雪</item>
+        <item>雾转沙尘暴</item>
+        <item>雾转扬沙</item>
+        <item>霾</item>
+        <item>霾转多云</item>
+        <item>霾转阴</item>
+        <item>霾转雾</item>
+        <item>霾转小雨</item>
+        <item>霾转中雨</item>
+        <item>霾转大雨</item>
+        <item>霾转雷阵雨</item>
+        <item>霾转冻雨</item>
+        <item>霾转暴雨</item>
+        <item>霾转小雪</item>
+        <item>霾转中雪</item>
+        <item>霾转大雪</item>
+        <item>霾转暴雪</item>
+        <item>霾转沙尘暴</item>
+        <item>霾转扬沙</item>
+        <item>小雨</item>
+        <item>小到中雨</item>
+        <item>中雨</item>
+        <item>冻雨</item>
+        <item>大雨</item>
+        <item>大到暴雨</item>
+        <item>暴雨</item>
+        <item>暴雨到大暴雨</item>
+        <item>特大暴雨</item>
+        <item>阵雨</item>
+        <item>雷阵雨</item>
+        <item>雷阵雨伴有冰雹</item>
+        <item>中雨转多云</item>
+        <item>中雨转阴</item>
+        <item>中雨转雾</item>
+        <item>中雨转霾</item>
+        <item>中雨转小雨</item>
+        <item>中雨转大雨</item>
+        <item>中雨转雷阵雨</item>
+        <item>中雨转冻雨</item>
+        <item>中雨转暴雨</item>
+        <item>中雨转小雪</item>
+        <item>中雨转中雪</item>
+        <item>中雨转大雪</item>
+        <item>中雨转暴雪</item>
+        <item>中雨转沙尘暴</item>
+        <item>中雨转扬沙</item>
+        <item>雷阵雨转多云</item>
+        <item>雷阵雨转阴</item>
+        <item>雷阵雨转雾</item>
+        <item>雷阵雨转霾</item>
+        <item>雷阵雨转小雨</item>
+        <item>雷阵雨转中雨</item>
+        <item>雷阵雨转大雨</item>
+        <item>雷阵雨转冻雨</item>
+        <item>雷阵雨转暴雨</item>
+        <item>雷阵雨转小雪</item>
+        <item>雷阵雨转中雪</item>
+        <item>雷阵雨转大雪</item>
+        <item>雷阵雨转暴雪</item>
+        <item>雷阵雨转沙尘暴</item>
+        <item>雷阵雨转扬沙</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>阵雪</item>
+        <item>大雪</item>
+        <item>暴雪</item>
+        <item>雨夹雪</item>
+        <item>小到中雪</item>
+        <item>大到暴雪</item>
+        <item>中雪转多云</item>
+        <item>中雪转阴</item>
+        <item>中雪转雾</item>
+        <item>中雪转霾</item>
+        <item>中雪转小雨</item>
+        <item>中雪转中雨</item>
+        <item>中雪转大雨</item>
+        <item>中雪转雷阵雨</item>
+        <item>中雪转冻雨</item>
+        <item>中雪转暴雨</item>
+        <item>中雪转小雪</item>
+        <item>中雪转大雪</item>
+        <item>中雪转暴雪</item>
+        <item>中雪转沙尘暴</item>
+        <item>中雪转扬沙</item>
+        <item>沙尘暴</item>
+        <item>强沙尘暴</item>
+        <item>扬沙</item>
+        <item>浮尘</item>
+        <item>沙尘暴转多云</item>
+        <item>沙尘暴转阴</item>
+        <item>沙尘暴转雾</item>
+        <item>沙尘暴转霾</item>
+        <item>沙尘暴转小雨</item>
+        <item>沙尘暴转中雨</item>
+        <item>沙尘暴转大雨</item>
+        <item>沙尘暴转雷阵雨</item>
+        <item>沙尘暴转冻雨</item>
+        <item>沙尘暴转暴雨</item>
+        <item>沙尘暴转小雪</item>
+        <item>沙尘暴转中雪</item>
+        <item>沙尘暴转大雪</item>
+        <item>沙尘暴转暴雪</item>
+    </string-array>
+    
+    <string name="tv_forcast">forecast</string>
+    <string name="tv_24hour">24h</string>
+    <string name="tv_city_list_fragment_title">City</string>
+    <string name="tv_city_search">Cancel</string>
+    <string name="tv_search_city">Search city</string>
+    <string name="tv_search_input">Please enter a name</string>
+    <string name="tv_no_searching_city">No matching result</string>
+    <string name="tv_city_add_already_full">You can only add up to seven cities, please delete others</string>
+    <string name="the_city_already_add">The city has already been added</string>
+    <string name="locate_city_forbid_delete">The positioning city can not be deleted</string>
+    <!-- <string name="tv_wind_location">%1swind</string> -->
+    <string name="tv_wind_location">%1s级</string>
+    <string name="refreshing">Refreshing...</string>
+    <string-array name="week_name_chinese">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tues</item>
+        <item>Wed</item>
+        <item>Thur</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string name="today">Today</string>
+    <string name="lastday">Yesterday</string>
+    <!-- <string name="tv_air_quality">Air quality : %1s</string> -->
+    <string name="tv_air_quality">空气 : %1s</string>
+    <!-- <string name="tv_humidity">Humidity %1s</string> -->
+     <string name="tv_humidity">湿度%1s</string>
+    <string name="no_network">Please connect the network to get weather data</string>
+    <string name="network_error">Network signal is poor, please try again later</string>
+    <string name="request_network_in">The weather data is loading</string>
+    <string name="no_network_data">No network data</string>
+    <string name="refresh_justnow">Just updated</string>
+    <string name="refresh_before_minute"> minutes ago updated</string>
+    <string name="refresh_before_hour"> hours ago updated</string>
+    <string name="refresh_at_date"> updated</string>
+    <!--  <string name="mWindDirection_default">Force N east wind</string> -->
+    <string name="mWindDirection_default">东风N级</string>
+     <!-- <string name="mWindDirection_mHumidity_default">Force N east wind Humidity N%</string> -->
+      <string name="mWindDirection_mHumidity_default">东风N级 湿度N%</string>
+    <!-- <string name="mHumidity_default">Humidity N%</string> -->
+     <string name="mHumidity_default">湿度N%</string>
+   <!--  <string name="airQualityDesc_defalut">Air quality : unknown</string> -->
+   <string name="airQualityDesc_defalut">空气 : 未知</string>
+    <string name="airQualityValue_value">N</string>
+    
+    <string-array name="weather_type_forcast">
+        <item>晴转雨</item>
+        <item>晴</item>
+        <item>多云</item>
+        <item>晴转多云</item>
+        <item>小雨</item>
+        <item>小雨</item>
+    </string-array>
+    <string-array name="weather_temperature_forcast">
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+    </string-array>
+    <string name="default_temperature">--/--</string>
+
+    <string name="loading">Loading</string>
+    <string name="inactive_network">Network signal is poor</string>
+    <string name="unknown">unknown--/--</string>
+    <string name="weather_default">unknow</string>
+        <string-array name="default_day_show">
+        <item>Yesterday</item>
+        <item>Today</item>
+        <item>2nd day</item>
+        <item>3rd day</item>
+        <item>4th day</item>
+        <item>5th day</item>
+    </string-array>
+    
+    <string name="neverupdate">Never update</string>
+    <string name="local_time_error">Local time error, please correct it</string>
+    <string name="local_city_error">Failed to locate</string>
+    <string name="warn_detail_title">Warning</string>
+    <string name="tv_warn_publishtime">Published on %1$s月%2$s日 %3$s</string>
+    <string name="tv_have_warn">Have %1$s</string>
+    
+    <string name="share_title">Share</string>
+    <string name="notification_title">Warning notification</string>
+    <string name="notification_content">%1$s has %2$s</string>
+    <string name="desk_tip_content">%1$s，%2$s°C，空气：%3$s</string>
+</resources>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View begin -->
+<!--Gionee <jiating><2013-06-22> modify for CR00828906 begin  -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="@dimen/event_info_padding" >
+
+    <RelativeLayout
+        android:id="@+id/event_info_loading_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/event_info_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_info_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:text="@string/loading" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/event_info_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:fadingEdge="none"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+            android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right" >
+
+            <RelativeLayout
+                android:id="@+id/what_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <!-- WHAT -->
+
+                <TextView
+                    android:id="@+id/calendar_event_title_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/title"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/hint_what"
+                    style="@style/GNSlidingTitleTextAppearance" />
+                <!-- FROM - Read/write version which launches the date/time pickers -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/calendar_event_title_name"
+                    android:background="@drawable/gn_edit_event_content_single_bg"
+                    
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:textIsSelectable="true"
+                        android:minHeight="@dimen/min_height_gn_event_info_title"
+                        style="@style/GNEditEventContentTextAppearance" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:animateLayoutChanges="false"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/from_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/gn_edit_event_time_name"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+                <LinearLayout
+                    android:id="@+id/from_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_all_in_one_sliding_content_bg_top"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:text="@string/gn_edit_event_start_time"
+                        style="@style/GNEditEventContentTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/when_start_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textIsSelectable="true"
+                        android:gravity="center_vertical"
+                        style="@style/GNEditEventTimeTextAppearance" />
+                </LinearLayout>
+
+                <!-- TO - Read/write version which launches the date/time pickers -->
+
+                <LinearLayout
+                    android:id="@+id/to_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="false"
+                    android:background="@drawable/gn_all_in_one_sliding_content_bg_bottom"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:text="@string/gn_edit_event_end_time"
+                        style="@style/GNEditEventContentTextAppearance" />
+
+                    <TextView
+                        android:id="@+id/when_end_datetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textIsSelectable="true"
+                        style="@style/GNEditEventTimeTextAppearance" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- REMINDERS -->
+
+            <LinearLayout
+                android:id="@+id/reminders_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/reminders_group_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:gravity="center_vertical"
+                    android:text="@string/event_info_reminders_label"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+                <LinearLayout
+                    android:id="@+id/reminder_items_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_all_in_one_sliding_content_bg_top"
+                    android:orientation="vertical" />
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 begin --> 
+                <RelativeLayout
+                    android:id="@+id/reminder_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dip"
+                    android:background="@drawable/gn_all_in_one_sliding_content_bottom_on_off"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/event_info_add_reminder_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/event_info_add_reminder_imageview"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/event_info_add_reminder_imageview"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:text="@string/reminders_label"
+                        style="@style/GNEditEventContentTextAppearance" />
+
+                    <ImageView
+                        android:id="@+id/event_info_add_reminder_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:background="@drawable/gn_all_in_one_create_view_on_off" />
+                </RelativeLayout>
+            </LinearLayout>
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 end --> 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" 
+                android:id="@+id/event_info_repeat_layout">
+
+                <TextView
+                    android:id="@+id/repeats_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/repeats_label"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_edit_event_content_single_bg"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/min_height_gn_event_info_when_repeat"
+                    >
+
+                    <TextView
+                        android:id="@+id/when_repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        style="@style/GNEditEventContentTextAppearance" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_attendees_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:minHeight="48dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/attendees_label"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+        
+               <!-- GUEST LIST -->
+            <com.android.calendar.event.AttendeesView
+                android:id="@+id/long_attendee_list"
+                android:textColor="@color/event_info_body_color"
+                android:orientation="vertical"
+                android:background="@drawable/gn_edit_event_content_single_bg"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:visibility="gone" />
+            
+          
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/description_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/description_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/hint_description"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+                <!-- DESCRIPTION -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_edit_event_content_single_bg"
+                    android:layout_below="@id/description_title"
+                    android:minHeight="@dimen/min_height_gn_event_info_description" 
+                    android:gravity="center_vertical"
+                    >
+               <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                    style="@style/GNEditEventContentTextAppearance" />
+               </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- CALENDARS SELECTOR for new events -->
+
+            <LinearLayout
+                android:id="@+id/calendar_select_account_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/gn_edit_event_account_name"
+                    style="@style/GNSlidingTitleTextAppearance" />
+
+                <!-- CALENDAR DISPLAY for existing events -->
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 begin --> 
+                <LinearLayout
+                    android:id="@+id/calendar_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="16dip"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gn_edit_event_content_single_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/calendar_label"
+                        style="@style/GNEditEventContentAccountTextAppearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+			android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+                        android:text="@string/view_event_calendar_label" />
+
+                    <TextView
+                        android:id="@+id/calendar_name"
+                        style="@style/GNEditEventContentAccountTextAppearance"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textIsSelectable="true" />
+                </LinearLayout>
+ <!--Gionee <jiating><2013-06-21> modify for CR00828565 end --> 
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+<!--Gionee <jiating><2013-06-22> modify for CR00828906 end  -->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View end -->

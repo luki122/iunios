@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 AllInOneActivity sliding View begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gn_sliding_bg"
+    android:orientation="vertical" >
+
+    <!-- tools menu: horoscope, almanac ... -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+        android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+            android:layout_marginTop="12dp"
+            android:text="@string/gn_tools_title"
+            style="@style/GNSlidingTitleTextAppearance" />
+
+        <LinearLayout
+            android:id="@+id/sliding_xingzuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_top_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:background="@drawable/gn_tool_xingzuo" />
+<!-- Gionee <jiating><2013-06-24> modify for CR00822801 begin -->
+            <TextView
+                android:id="@+id/gn_tools_name_horoscope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:gravity="center_vertical"
+                android:text="@string/gn_tools_content_horoscope"
+                style="@style/GNAllInOneSlidingContentText" />
+        </LinearLayout>
+        
+        <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+        <LinearLayout
+            android:id="@+id/sliding_almanac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_bottom_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:background="@drawable/gn_tool_almanac" />
+
+            <TextView
+                android:id="@+id/gn_tools_name_almanac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:gravity="center_vertical"
+                android:text="@string/gn_tools_name_almanac"
+                style="@style/GNAllInOneSlidingContentText" />
+        </LinearLayout>
+        <!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->
+    </LinearLayout>
+    <!-- end of tools menu -->
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+        android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+        android:orientation="vertical"
+        android:id="@+id/sliding_system"
+ >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+            android:layout_marginTop="12dp"
+            android:text="@string/gn_all_in_one_system"
+            style="@style/GNSlidingTitleTextAppearance" />
+
+        <LinearLayout
+            android:id="@+id/sliding_serach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_top_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+<!-- Gionee <jiating><2013-06-24> modify for CR00822801 begin -->
+            <ImageView
+                android:id="@+id/gn_sliding_search_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:src="@drawable/gn_all_in_one_sliding_content_search_on_off" />
+
+            <TextView
+                android:id="@+id/gn_sliding_search_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:gravity="center_vertical"
+                android:text="@string/search"
+                style="@style/GNAllInOneSlidingContentText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sliding_all_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_middle_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gn_silding_all_activities_image"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:src="@drawable/gn_all_in_one_sliding_content_all_activity_view_on_off" />
+
+            <TextView
+                android:id="@+id/gn_silding_all_activities_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/gn_all_in_one_all_activities"
+                style="@style/GNAllInOneSlidingContentText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sliding_clear_all_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_middle_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gn_sliding_clear_image"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:src="@drawable/gn_all_in_one_sliding_content_clear_view_on_off" />
+
+            <TextView
+                android:id="@+id/gn_all_in_one_clear_all_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/clear_events"
+                style="@style/GNAllInOneSlidingContentText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sliding_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_all_in_one_new_sliding_content_bottom_on_off"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginLeft="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginRight="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:background="@drawable/gn_all_in_one_sliding_content_setting_view_on_off" />
+
+            <TextView
+                android:id="@+id/gn_all_in_one_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:layout_marginTop="@dimen/gn_sliding_content_margin_top_or_bottom"
+                android:text="@string/menu_preferences"
+                style="@style/GNAllInOneSlidingContentText"/>
+        </LinearLayout>
+    </LinearLayout>
+<!-- Gionee <jiating><2013-06-24> modify for CR00822801 end-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        android:id="@+id/test" />
+
+</LinearLayout>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 AllInOneActivity sliding View end -->

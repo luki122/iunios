@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aurora_listview_dividers"
+    android:orientation="vertical" >
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/albums_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8dp"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="false"
+         android:divider="@null"
+        android:headerDividersEnabled="true" />
+
+    <RelativeLayout
+        android:id="@+id/empty_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="174dp">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/no_albums" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+            android:layout_below="@id/empty_image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aurora_no_albums"
+            android:textColor="#cccccc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</FrameLayout>

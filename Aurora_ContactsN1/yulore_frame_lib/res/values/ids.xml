@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity_correction -->
+
+    <item name="yulore_superyellowpage_rl_ads" type="id"/>
+    <item name="yulore_superyellowpage_vp_ads" type="id"/>
+    <item name="yulore_superyellowpage_auto_focus" type="id"/>
+    <item name="yulore_superyellowpage_decode" type="id"/>
+    <item name="yulore_superyellowpage_decode_failed" type="id"/>
+    <item name="yulore_superyellowpage_decode_succeeded" type="id"/>
+    <item name="yulore_superyellowpage_encode_failed" type="id"/>
+    <item name="yulore_superyellowpage_encode_succeeded" type="id"/>
+    <item name="yulore_superyellowpage_launch_product_query" type="id"/>
+    <item name="yulore_superyellowpage_quit" type="id"/>
+    <item name="yulore_superyellowpage_restart_preview" type="id"/>
+    <item name="yulore_superyellowpage_return_scan_result" type="id"/>
+    <item name="yulore_superyellowpage_ll_popup" type="id"/>
+    <item name="yulore_superyellowpage_tv_info" type="id"/>
+    <item name="yulore_superyellowpage_bt_cancel" type="id"/>
+    <item name="yulore_superyellowpage_bt_confirm" type="id"/>
+    <item name="yulore_superyellowpage_rl_search" type="id"/>
+    <item name="yulore_superyellowpage_iv_sc" type="id"/>
+    <item name="yulore_superyellowpage_iv_search_delete" type="id"/>
+    <item name="yulore_superyellowpage_et_search" type="id"/>
+    <item name="yulore_superyellowpage_gv_clipper_service" type="id"/>
+    <item name="yulore_superyellowpage_gv_common_number" type="id"/>
+    <item name="yulore_superyellowpage_gv_handy_service" type="id"/>
+    <item name="yulore_superyellowpage_view_loading" type="id"/>
+    <item name="yulore_superyellowpage_pb" type="id"/>
+    <item name="yulore_superyellowpage_tv_loading_txt" type="id"/>
+    <item name="yulore_superyellowpage_rl_title" type="id"/>
+    <item name="yulore_superyellowpage_mWebView" type="id"/>
+    <item name="yulore_superyellowpage_rl_reload" type="id"/>
+    <item name="yulore_superyellowpage_iv_reload" type="id"/>
+    <item name="yulore_superyellowpage_mListView" type="id"/>
+    <item name="yulore_superyellowpage_iv_category_pic" type="id"/>
+    <item name="yulore_superyellowpage_iv_category_container_layout" type="id"/>
+    <item name="yulore_superyellowpage_tv_category_name" type="id"/>
+    <item name="yulore_superyellowpage_iv_shop_icon" type="id"/>
+    <item name="yulore_superyellowpage_tv_shopName" type="id"/>
+    <item name="yulore_superyellowpage_iv_more" type="id"/>
+    <item name="yulore_superyellowpage_tv_dist" type="id"/>
+    <item name="yulore_superyellowpage_bt_delete" type="id"/>
+    <item name="yulore_superyellowpage_tv_key" type="id"/>
+    <item name="yulore_superyellowpage_lkrl_search" type="id"/>
+    <item name="yulore_superyellowpage_bt_search_cancel" type="id"/>
+    <item name="yulore_superyellowpage_ll_p" type="id"/>
+    <item name="yulore_superyellowpage_bt_city" type="id"/>
+    <item name="yulore_superyellowpage_rl_history" type="id"/>
+    <item name="yulore_superyellowpage_historyListView" type="id"/>
+    <item name="yulore_superyellowpage_search_tips" type="id"/>
+    <item name="yulore_superyellowpage_search_no_results" type="id"/>
+    <item name="yulore_superyellowpage_pb_load_progress" type="id"/>
+    <item name="yulore_superyellowpage_tv_load_more" type="id"/>
+    <item name="yulore_superyellowpage_tv_cityName" type="id"/>
+    <item name="yulore_superyellowpage_phgv" type="id"/>
+    <item name="yulore_superyellowpage_mLetterListView" type="id"/>
+    <item name="yulore_superyellowpage_bt_search_back" type="id"/>
+    <item name="yulore_superyellowpage_lv_search_city" type="id"/>
+    <item name="yulore_superyellowpage_sv_more_info" type="id"/>
+    <item name="yulore_superyellowpage_tv_more_info" type="id"/>
+    <item name="yulore_superyellowpage_kl_top" type="id"/>
+    <item name="yulore_superyellowpage_tv_dial_tiltle" type="id"/>
+    <item name="yulore_superyellowpage_tv_dial_num" type="id"/>
+    <item name="yulore_superyellowpage_bt_correction" type="id"/>
+    <item name="yulore_superyellowpage_bt_topbar_back" type="id"/>
+    <item name="yulore_superyellowpage_tv_topbar_title" type="id"/>
+    <item name="yulore_superyellowpage_header_layout" type="id"/>
+    <item name="yulore_superyellowpage_tv_sort_key" type="id"/>
+    <item name="yulore_superyellowpage_rl_suggestion" type="id"/>
+    <item name="yulore_superyellowpage_suggestionListView" type="id"/>
+    <item name="yulore_superyellowpage_rl_clipper" type="id"/>
+    <item name="yulore_superyellowpage_rl_common" type="id"/>
+    <item name="yulore_superyellowpage_rl_handy" type="id"/>
+    <item name="yulore_superyellowpage_bt_back" type="id"/>
+    <item name="yulore_superyellowpage_bt_forward" type="id"/>
+    <item name="yulore_superyellowpage_bt_refresh" type="id"/>
+    <item name="yulore_superyellowpage_bt_topbar_order" type="id"/>
+    <item name="yulore_superyellowpage_rl_toolbar" type="id"/>
+    <item name="yulore_superyellowpage_tv_dispgrp_name" type="id"/>
+    <item name="yulore_superyellowpage_tv_title" type="id"/>
+    <item name="yulore_superyellowpage_lv_select" type="id"/>
+    <item name="yulore_superyellowpage_bt_negative" type="id"/>
+    <item name="yulore_superyellowpage_bt_positive" type="id"/>
+    <item name="yulore_superyellowpage_tv_content" type="id"/>
+    <item name="yulore_superyellowpage_tv_shopSubtitle" type="id"/>
+    <item name="yulore_superyellowpage_iv_right_icon" type="id"/>
+    <item name="yulore_superyellowpage_iv_left_icon" type="id"/>
+    <item name="yulore_superyellowpage_tv_text" type="id"/>
+    <item name="yulore_superyellowpage_tv_subtext" type="id"/>
+    <item name="yulore_superyellowpage_tv_tag" type="id"/>
+    <item name="yulore_superyellowpage_iv_large_image" type="id"/>
+    <item name="yulore_superyellowpage_ra_image" type="id"/>
+    <item name="yulore_superyellowpage_rl_content" type="id"/>
+    <item name="yulore_superyellowpage_bt_topbar_refresh" type="id"/>
+    <item name="yulore_superyellowpage_preview_view" type="id"/>
+    <item name="yulore_superyellowpage_viewfinder_view" type="id"/>
+    <item name="yulore_superyellowpage_tv_address" type="id"/>
+    <item name="yulore_superyellowpage_rl_prompt" type="id"/>
+    <item name="yulore_superyellowpage_rl_relocation" type="id"/>
+    <item name="yulore_superyellowpage_rl_location" type="id"/>
+    <item name="yulore_superyellowpage_iv_location" type="id"/>
+    <item name="yulore_superyellowpage_iv_tg" type="id"/>
+    <item name="yulore_superyellowpage_iv_myy" type="id"/>
+    <item name="yulore_superyellowpage_iv_sj" type="id"/>
+    <item name="yulore_superyellowpage_tv_tg_title" type="id"/>
+    <item name="yulore_superyellowpage_tv_tg_content" type="id"/>
+    <item name="yulore_superyellowpage_tv_tg_price" type="id"/>
+    <item name="yulore_superyellowpage_tv_tg_value" type="id"/>
+    <item name="yulore_superyellowpage_tv_tg_yuan" type="id"/>
+    <item name="yulore_superyellowpage_ll_group_purchase" type="id"/>
+    <item name="yulore_superyellowpage_groupon_listView" type="id"/>
+    <item name="yulore_superyellowpage_more_listView" type="id"/>
+    <item name="yulore_superyellowpage_ll_service" type="id"/>
+    <item name="yulore_superyellowpage_listView_service" type="id"/>
+    <item name="yulore_superyellowpage_view_line1" type="id"/>
+    <item name="yulore_superyellowpage_view_line2" type="id"/>
+    <item name="yulore_superyellowpage_view_line3" type="id"/>
+    <item name="yulore_superyellowpage_view_line4" type="id"/>
+    <item name="yulore_superyellowpage_iv_tuan" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_item_head_main" type="id"/>
+    <item name="yulore_superyellowpage_rl_search_item_head_hotline1" type="id"/>
+    <item name="yulore_superyellowpage_rl_search_item_head_hotline2" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_item_head_website" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_item_head_main_logo" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_item_head_main_shopName" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_hotline1_title" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_hotline1_subTitle" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_hotline2_title" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_hotline2_subTitle" type="id"/>
+    <item name="yulore_superyellowpage_iv_search_item_head_hotline1_call" type="id"/>
+    <item name="yulore_superyellowpage_iv_search_item_head_hotline2_call" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_main_subtitle" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_item_head_offical_website" type="id"/>
+    <item name="yulore_superyellowpage_view_search_item_head_hotline1_line" type="id"/>
+    <item name="yulore_superyellowpage_view_search_item_head_hotline2_line" type="id"/>
+    <item name="yulore_superyellowpage_ll_comment" type="id"/>
+    <item name="yulore_superyellowpage_rl_comment" type="id"/>
+    <item name="yulore_superyellowpage_ll_dianping" type="id"/>
+    <item name="yulore_superyellowpage_tv_comment_title" type="id"/>
+    <item name="yulore_superyellowpage_tv_comment_level" type="id"/>
+    <item name="yulore_superyellowpage_tv_comment_content" type="id"/>
+    <item name="yulore_superyellowpage_tv_comment_size" type="id"/>
+    <item name="yulore_superyellowpage_ll_service_comment" type="id"/>
+    <item name="yulore_superyellowpage_ll_ads" type="id" />
+    <item name="yulore_superyellowpage_iv_ads1" type="id" />
+    <item name="yulore_superyellowpage_iv_ads2" type="id" />
+    <item name="yulore_superyellowpage_ll_indicator" type="id" />
+    <item name="yulore_superyellowpage_rl_ads2" type="id" />
+    <item name="yulore_superyellowpage_rl_ads1" type="id" />
+    <item name="yulore_superyellowpage_rl_service_groupon_more" type="id"/>
+    <item name="yulore_superyellowpage_tv_service_groupon_more" type="id"/>
+    <item name="yulore_superyellowpage_iv_service_groupon_more" type="id"/>
+    <item name="yulore_superyellowpage_rl_service_groupon_more_up" type="id"/>
+    <item name="yulore_superyellowpage_tv_service_groupon_more_up" type="id"/>
+    <item name="yulore_superyellowpage_iv_service_groupon_more_up" type="id"/>
+    <item name="yulore_superyellowpage_iv_search_service_icon" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_service" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_hot" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_service_name" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_service_subtitle" type="id"/>
+    <item name="yulore_superyellowpage_lv_search_service" type="id"/>
+    <item name="yulore_superyellowpage_ll_search_dianping" type="id"/>
+    <item name="yulore_superyellowpage_rb_search_scroe" type="id"/>
+    <item name="yulore_superyellowpage_tv_search_price" type="id"/>
+    <item name="yulore_superyellowpage_rl_search_add" type="id"/>
+    <item name="yulore_superyellowpage_iv_shop_detail_coments_come_from" type="id"/>
+    <item name="yulore_superyellowpage_tv_shop_detail_coments_come_from" type="id"/>
+    <item name="yulore_superyellowpage_ll_shop_detail_coments_logo" type="id"/>
+    <item name="yulore_superyellowpage_lv_favorites" type="id"/>
+    <item name="yulore_superyellowpage_ll_shop_slogan" type="id" />
+    <item name="yulore_superyellowpage_iv_slogan" type="id" />
+    <item name="yulore_superyellowpage_lv_history" type="id" />
+    <item name="yulore_superyellowpage_ll_favorites" type="id" />
+    <item name="yulore_superyellowpage_tv_favorites" type="id" />
+    <item name="yulore_superyellowpage_view_favorites_line" type="id" />
+    <item name="yulore_superyellowpage_bt_personal" type="id" />
+    <item name="yulore_superyellowpage_tv_tel" type="id" />
+    <item name="yulore_superyellowpage_tv_location" type="id" />
+    <item name="yulore_superyellowpage_tv_flag" type="id" />
+    <item name="yulore_superyellowpage_lv_sign" type="id" />
+    <item name="yulore_superyellowpage_rl_know" type="id" />
+    <item name="yulore_superyellowpage_tv_add" type="id" />
+    <item name="yulore_superyellowpage_rl_contact" type="id" />
+    <item name="yulore_superyellowpage_rl_cancel" type="id" />
+    <item name="yulore_superyellowpage_iv_hight_light" type="id" />
+    <item name="yulore_superyellowpage_no_any_record" type="id" />
+    <item name="yulore_superyellowpage_iv_tag" type="id" />
+    <item name="yulore_superyellowpage_et_info" type="id" />
+    <item name="yulore_superyellowpage_et_telnum" type="id" />
+    <item name="yulore_superyellowpage_bt_register" type="id" />
+    <item name="yulore_superyellowpage_ll_auth" type="id" />
+    <item name="yulore_superyellowpage_et_code" type="id" />
+    <item name="yulore_superyellowpage_bt_auth" type="id" />
+    <item name="yulore_superyellowpage_detail_root_rl" type="id" />
+    <item name="yulore_superyellowpage_rl_tensile" type="id" />
+    <item name="yulore_superyellowpage_topbar_rl" type="id" />
+    <item name="yulore_superyellowpage_target_logo" type="id" />
+    <item name="yulore_superyellowpage_detail_pullscroll" type="id" />
+    <item name="yulore_superyellowpage_include_under" type="id" />
+    <item name="yulore_superyellowpage_content_fm_call" type="id" />
+    <item name="yulore_superyellowpage_content_fm_detail" type="id" />
+    <item name="yulore_superyellowpage_fill_view" type="id" />
+    <item name="yulore_superyellowpage_include_upper" type="id" />
+    <item name="yulore_superyellowpage_bt_topbar_back_upper" type="id" />
+    <item name="yulore_superyellowpage_detail_tab_detail" type="id" />
+    <item name="yulore_superyellowpage_detail_tab_callrecords" type="id" />
+    <item name="yulore_superyellowpage_hold_mid_layout" type="id" />
+    <item name="yulore_superyellowpage_detail_tab_layout" type="id" />
+    <item name="yulore_superyellowpage_iv_shop_logo" type="id" />
+    <item name="yulore_superyellowpage_hold_tv_slogan" type="id" />
+    <item name="yulore_superyellowpage_hold_tv_flag" type="id" />
+    <item name="yulore_superyellowpage_ll_shop_title" type="id" />
+    <item name="yulore_superyellowpage_rb_shop_level" type="id" />
+    <item name="yulore_superyellowpage_tv_shop_price" type="id" />
+    <item name="yulore_superyellowpage_hold_layout_linear" type="id" />
+    <item name="yulore_superyellowpage_hold_layout_linear_target" type="id" />
+    <item name="yulore_superyellowpage_hold_title_bar_rl" type="id" />
+    <item name="yulore_superyellowpage_scroll_view_head" type="id" />
+    <item name="yulore_superyellowpage_tv_topbar_title_target" type="id" />
+    <item name="yulore_superyellowpage_container" type="id" />
+    <item name="yulore_superyellowpage_tv_ads1" type="id" />
+    <item name="yulore_superyellowpage_fm_detail_calllog_list" type="id" />
+    <item name="yulore_superyellowpage_ll_more" type="id" />
+    <item name="yulore_superyellowpage_record_date" type="id" />
+    <item name="yulore_superyellowpage_record_telnum" type="id" />
+    <item name="yulore_superyellowpage_record_logo" type="id" />
+    <item name="yulore_superyellowpage_record_duration" type="id" />
+    <item name="yulore_superyellowpage_rl_left" type="id" />
+    <item name="yulore_superyellowpage_rl_topbar_right_image" type="id" />
+    <item name="yulore_superyellowpage_sv_fragment" type="id" />
+    <item name="yulore_superyellowpage_rl_top_service" type="id" />
+    <item name="yulore_superyellowpage_gv_top_service" type="id" />
+    <item name="yulore_superyellowpage_view_common_top_stroken" type="id" />
+    <item name="yulore_superyellowpage_iv_category_logo" type="id" />
+    <item name="yulore_superyellowpage_tv_category_title" type="id" />
+    <item name="yulore_superyellowpage_view_common_stroken" type="id" />
+    <item name="yulore_superyellowpage_iv_more_service" type="id" />
+    <item name="yulore_superyellowpage_more_tips_pic" type="id" />
+    
+    <!-- Topbar ids -->
+    <item name="yulore_superyellowpage_bt_topbar_back_page" type="id" />
+    <item name="yulore_superyellowpage_iv_personal_center" type="id" />
+    <item name="yulore_superyellowpage_top_bar" type="id" />
+    <item name="yulore_superyellowpage_test_call_log" type="id" />
+    <item name="yulore_superyellowpage_more_service" type="id" />
+    
+</resources>

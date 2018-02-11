@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules>
+
+    <!-- 
+    每一个module对应一个你要钩挂的方法，
+    impCls是你在AuroraHook中实现具体业务罗辑的类的完整类名
+    method是你要钩挂的系统framework的方法名
+    orgCls是你要钩挂的系统framework的完整类名
+    targetSdk是你钩挂的方法所在的sdk版本，除特殊情况外这个默认不用写
+    minSdk是你钩挂的方法的最低sdk版本，除特殊情况外不用写
+    maxSdk是你要钩挂的方法的最高sdk版本，除特殊情况外不用写
+    上面提到的特殊情况主要表现在，例如在sdk为17的时候有一个方法叫methodA(int a,int b);
+    在18,19上就把这个方法去掉了，这种情况为了统一处理，所以需要标注清楚它的sdk版本范围
+    
+    
+    
+    
+    
+     -->
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="sendVolumeUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="sendMasterVolumeUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="sendMasterMuteUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="setLayoutDirection"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="AudioService"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHook"
+        method="handleConfigurationChanged"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanager.DecorViewHook"
+        method="fitSystemWindowsInt"
+        orgCls="android.view.View" />
+
+    <module
+        impCls="com.aurora.apihook.activity.ActivityHook"
+        method="onResume"
+        orgCls=" android.app.Activity" />
+
+    <module
+        impCls="com.aurora.apihook.activity.ActivityHook"
+        method="onResume"
+        orgCls="android.app.Activity" />
+
+    <module
+        impCls="com.aurora.apihook.activity.ActivityHook"
+        method="onWindowFocusChanged"
+        orgCls="android.app.Activity" />
+
+    <!-- add for dialog -->
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="installContent"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setTitle"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setCustomTitle"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setMessage"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setView"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setButton"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setIcon"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="getIconAttributeResId"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="setInverseBackgroundForced"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="getListView"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="getButton"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="onKeyDown"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="onKeyUp"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="getListView"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="apply"
+        orgCls="com.android.internal.app.AlertController.AlertParams" />
+
+    <module
+        impCls="com.aurora.apihook.dialog.DialogHook"
+        method="AlertController"
+        orgCls="com.android.internal.app.AlertController" />
+
+    <!-- add for alarmmanager -->
+
+    <module
+        impCls="com.aurora.apihook.alarmmanager.AlarmManagerServiceHook"
+        maxSdk="18"
+        method="setRepeating"
+        orgCls="com.android.server.AlarmManagerService" />
+
+    <module
+        impCls="com.aurora.apihook.alarmmanager.AlarmManagerServiceHook"
+        method="setImplLocked"
+        orgCls="com.android.server.AlarmManagerService" />
+    <!-- add for phoneWindowManager -->
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook"
+        method="checkAddPermission"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook"
+        method="showGlobalActionsInternal"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook"
+        method="interceptKeyBeforeQueueing"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <!-- add for Toast -->
+
+    <module
+        impCls="com.aurora.apihook.toasthook.ToastHook"
+        method="handleShow"
+        orgCls="android.widget.Toast.TN" />
+
+    <!-- add for ActivitymanagerService -->
+
+    <module
+        impCls="com.aurora.apihook.resolver.ChooserActivityHook"
+        method="startActivityAsUser"
+        orgCls="com.android.server.am.ActivityManagerService" />
+
+    <!--
+        /
+		 add for ComponentName
+		/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.resolver.ResolverActivityHook"
+        method="ComponentName"
+        orgCls="android.content.ComponentName" />
+
+    <!--
+         	/
+		 add for WallpaperManager
+		/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.wallpaper.WallpaperManagerHook"
+        method="setBitmap"
+        orgCls="android.app.WallpaperManager" />
+
+    <!--
+        /
+		 add for WallpaperManagerService
+		/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.wallpaper.WallpaperManagerServiceHook"
+        method="loadSettingsLocked"
+        orgCls="com.android.server.WallpaperManagerService" />
+
+    <!--
+         	/
+		 add for PhoneWindowManager
+		/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"
+        method="init"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"
+        method="updateSettings"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"
+        method="prepareAddWindowLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"
+        method="removeWindowLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHook2"
+        method="setInitialDisplaySize"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <!--
+        /
+		 add for keyguard
+		
+		/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="systemReady"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="screenTurningOn"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="screenTurnedOff"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="keyguardIsShowingTq"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="inKeyguardRestrictedKeyInputMode"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="dismissKeyguardLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="launchHomeFromHotKey"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="finishPostLayoutPolicyLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="isKeyguardSecure"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="exitKeyguardSecurely"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="enableKeyguard"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="notifyLidSwitchChanged"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="interceptMotionBeforeQueueingWhenScreenOff"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="setCurrentUserLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        method="removeWindowLw"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <module
+        impCls="com.aurora.apihook.keyguard.LockSettingsServiceHook"
+        method="checkPassword"
+        orgCls="com.android.server.LockSettingsService" />
+
+    <module
+        impCls="com.aurora.apihook.phonewindowmanger.PhoneWindowManagerHookForKeyguard"
+        maxSdk="18"
+        method="showAssistant"
+        orgCls="com.android.internal.policy.impl.PhoneWindowManager" />
+
+    <!--
+                    /
+					 add for EarlyPostImeInputStage
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.view.EarlyPostImeInputStageHook"
+        method="processPointerEvent"
+        orgCls="android.view.ViewRootImpl.EarlyPostImeInputStage" />
+
+    <module
+        impCls="com.aurora.apihook.telephony.DefaultPhoneNotifierHook"
+        method="notifyPhoneState"
+        orgCls="com.android.internal.telephony.DefaultPhoneNotifier" />
+
+    <!--
+                    /
+					 add for view
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.adblock.AdblockHook"
+        method="View"
+        orgCls="android.view.View" />
+
+    <module
+        impCls="com.aurora.apihook.adblock.AdblockHook"
+        method="setVisibility"
+        orgCls="android.view.View" />
+
+    <module
+        impCls="com.aurora.apihook.adblock.AdblockHook_ex"
+        method="View"
+        orgCls="android.view.View" />
+
+    <!--
+                    /
+					 add for SMSDispatcher
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.telephony.SMSDispatcherHook"
+        maxSdk="18"
+        method="dispatch"
+        orgCls="com.android.internal.telephony.SMSDispatcher" />
+
+    <!--
+                    /
+					 add for AudioService
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="AudioService"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="sendVolumeUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="sendMasterVolumeUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="sendMasterMuteUpdate"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="onCheckMusicActive"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="adjustStreamVolume"
+        orgCls="android.media.AudioService" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="checkSafeMediaVolume"
+        orgCls="android.media.AudioService"
+        targetSdk="17" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="onReevaluateRemote"
+        orgCls="android.media.AudioService"
+        targetSdk="17" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="onNewPlaybackInfoForRcc"
+        orgCls="android.media.AudioService"
+        targetSdk="17" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="adjustRemoteVolume"
+        orgCls="android.media.AudioService"
+        targetSdk="17" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="handleConfigurationChanged"
+        orgCls="android.media.AudioService"
+        targetSdk="18" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="setStreamVolume"
+        orgCls="android.media.AudioService"
+        targetSdk="18" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="onNewPlaybackInfoForRcc"
+        orgCls="android.media.AudioService"
+        targetSdk="18" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="adjustRemoteVolume"
+        orgCls="android.media.AudioService"
+        targetSdk="18" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="onReevaluateRemote"
+        orgCls="android.media.AudioService"
+        targetSdk="18" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="handleConfigurationChanged"
+        orgCls="android.media.AudioService"
+        targetSdk="19" />
+
+    <module
+        impCls="com.aurora.apihook.volumepanel.VolumePanelHookForAudioService"
+        method="setStreamVolume"
+        orgCls="android.media.AudioService"
+        targetSdk="19" />
+
+    <!--
+                     	/
+					 add for AssetManager
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.assetmanager.AssetManagerHook"
+        method="AssetManager"
+        orgCls="android.content.res.AssetManager" />
+
+    <!--
+                    /
+					 add for PackageManagerService
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.pm.PackageManagerService"
+        method="compareSignatures"
+        orgCls="com.android.server.pm.PackageManagerService" />
+
+    <module
+        impCls="com.aurora.apihook.pms.PmsHook"
+        method="getPackageInfo"
+        orgCls="com.android.server.pm.PackageManagerService" />
+
+    <module
+        impCls="com.aurora.apihook.pms.PmsHook"
+        method="getApplicationInfo"
+        orgCls="com.android.server.pm.PackageManagerService" />
+
+    <module
+        impCls="com.aurora.apihook.pms.PmsHook"
+        method="getInstalledPackages"
+        orgCls="com.android.server.pm.PackageManagerService" />
+
+    <module
+        impCls="com.aurora.apihook.pms.PmsHook"
+        method="getInstalledApplications"
+        orgCls="com.android.server.pm.PackageManagerService" />
+
+    <!--
+                     	/
+					 add for SmsApplication,since KITKAT(version 4.4)
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.telephony.SmsApplicationHook"
+        method="getDefaultSmsApplication"
+        minSdk="19"
+        orgCls="com.android.internal.telephony.SmsApplication" />
+
+    <module
+        impCls="com.aurora.apihook.telephony.SmsApplicationHook"
+        method="getDefaultMmsApplication"
+        minSdk="19"
+        orgCls="com.android.internal.telephony.SmsApplication" />
+
+    <module
+        impCls="com.aurora.apihook.telephony.SmsApplicationHook"
+        method="getDefaultRespondViaMessageApplication"
+        minSdk="19"
+        orgCls="com.android.internal.telephony.SmsApplication" />
+
+    <module
+        impCls="com.aurora.apihook.telephony.SmsApplicationHook"
+        method="getDefaultSendToApplication"
+        minSdk="19"
+        orgCls="com.android.internal.telephony.SmsApplication" />
+
+    <module
+        impCls="com.aurora.apihook.telephony.SmsApplicationHook"
+        method="shouldWriteMessageForPackage"
+        minSdk="19"
+        orgCls="com.android.internal.telephony.SmsApplication" />
+
+    
+    <!-- add for input method show and hide -->
+    
+      <module
+        impCls="com.aurora.apihook.inputmethod.InputMethodManager"
+        method="handleMessage"
+        orgCls="com.android.server.InputMethodManagerService" />
+    
+    
+    
+    <module
+        orgCls="com.android.server.power.PowerManagerService"
+        impCls="com.aurora.apihook.pms.PowerManagerServiceHook"
+        method="updateDisplayPowerStateLocked" />
+
+    <module
+        orgCls="com.android.server.power.DisplayPowerController"
+        impCls="com.aurora.apihook.dpc.DisplayPowerControllerHook"
+        method="DisplayPowerController" />
+
+    <module
+        orgCls="com.android.server.power.DisplayPowerController"
+        impCls="com.aurora.apihook.dpc.DisplayPowerControllerHook"
+        method="updateAutoBrightness" />
+
+    <module
+        orgCls="com.android.server.power.DisplayPowerController"
+        impCls="com.aurora.apihook.dpc.DisplayPowerControllerHook"
+        method="setLightSensorEnabled" />
+
+    <module
+       orgCls="com.android.server.power.DisplayPowerController"
+        impCls="com.aurora.apihook.dpc.DisplayPowerControllerHook"
+        method="updatePowerState" />
+
+    <module
+        orgCls="com.android.server.wifi.WifiService"
+        impCls="com.aurora.apihook.wifiservice.WifiServiceHook"
+        method="WifiService" />
+
+    <module
+        orgCls="com.android.server.usb.UsbDeviceManager.UsbHandler"
+        impCls="com.aurora.apihook.usbdevicemanager.UsbDeviceManagerHook"
+        method="updateUsbNotification" />
+
+    <module
+        orgCls="com.android.server.usb.UsbDeviceManager.UsbHandler"
+        impCls="com.aurora.apihook.usbdevicemanager.UsbDeviceManagerHook"
+        method="updateAdbNotification" />
+    <!--
+                     	/
+					 add for notification xml
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="applyStandardTemplate"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="resetStandardTemplateWithActions"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="removeLargeIconBackground"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="applyLargeIconBackground"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="processSmallRightIcon"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="shrinkLine3Text"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="unshrinkLine3Text"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="resetStandardTemplateWithActions"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="applyStandardTemplateWithActions"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="makeContentView"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="makeTickerView"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="makeBigContentView"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="generateActionButton"
+        orgCls="com.android.app.Notification.Builder" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="getStandardView"
+        orgCls="com.android.app.Notification.Style" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationHook"
+        method="processLegacyAction"
+        orgCls="com.android.app.Notification.Style" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationBigPictureStyleHook"
+        method="makeBigContentView"
+        orgCls="com.android.app.Notification.BigPictureStyle" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationBigTextStyleHook"
+        method="makeBigContentView"
+        orgCls="com.android.app.Notification.BigTextStyle" />
+
+    <module
+        impCls="com.aurora.apihook.app.NotificationInboxStyleHook"
+        method="makeBigContentView"
+        orgCls="com.android.app.Notification.InboxStyle" />
+    <!--
+                    /
+					 add for NotificationManagerService
+					/
+    -->
+
+    <module
+        impCls="com.aurora.apihook.server.NotificationManagerServiceHook"
+        method="isUidSystem"
+        orgCls="com.android.server.NotificationManagerService" />
+    
+    
+    
+    
+    
+
+</modules>

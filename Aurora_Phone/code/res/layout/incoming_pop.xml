@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 360 86 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_container"
+    android:layout_width="360dp"
+    android:layout_height="86dp"
+    android:paddingTop="@dimen/float_margin_top" >
+
+    <RelativeLayout
+        android:id="@+id/incoming_pop"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        android:background="@drawable/pop_bg_ripple" >
+
+        <com.android.phone.PopbackgroundView
+            android:id="@+id/incoming_pop_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true" />
+
+        <FrameLayout
+            android:id="@+id/image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:id="@+id/photo_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:tint="#33000000" />
+
+            <TextView
+                android:id="@+id/image_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:includeFontPadding="false"
+                android:maxWidth="35dp"
+                android:singleLine="true"
+                android:text="@string/cheat"
+                android:visibility="gone"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/hangup"
+            android:layout_width="@dimen/float_icon_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@null"
+            android:src="@drawable/float_end_call" />
+
+        <FrameLayout
+            android:id="@+id/action_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@id/hangup" >
+
+            <RelativeLayout
+                android:id="@+id/ringing_action_area"
+                android:layout_width="70.7dp"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/answer"
+                    android:layout_width="@dimen/float_icon_width"
+                    android:layout_height="@dimen/float_icon_width"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@null"
+                    android:src="@drawable/float_answer" />
+
+                <ImageButton
+                    android:id="@+id/answer_speaker"
+                    android:layout_width="@dimen/float_icon_width"
+                    android:layout_height="@dimen/float_icon_width"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/float_speaker_answer" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/incall_action_area"
+                android:layout_width="70.7dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <com.android.phone.phoneCompoundButton
+                    android:id="@+id/mute"
+                    android:layout_width="@dimen/float_icon_width"
+                    android:layout_height="@dimen/float_icon_width"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@drawable/float_mute_icon" />
+
+                <com.android.phone.phoneCompoundButton
+                    android:id="@+id/speaker"
+                    android:layout_width="@dimen/float_icon_width"
+                    android:layout_height="@dimen/float_icon_width"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/float_speaker_icon" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="9.25dp"
+            android:layout_marginTop="8.75dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/action_area"
+            android:layout_toRightOf="@id/image_container"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:includeFontPadding="false"
+                android:maxWidth="124dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#6c6c6c"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" >
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:maxWidth="124dp"
+                    android:singleLine="true"
+                    android:textColor="#b2b2b2"
+                    android:ellipsize="end"
+                    android:drawablePadding="4dp"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:maxWidth="124dp"
+                    android:singleLine="true"
+                    android:text="@string/init_time"
+                    android:textColor="#b2b2b2"
+                    android:drawablePadding="4dp"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<resources>
+    <color name="aurora_transparent">#00000000</color>
+    <color name="aurora_text_color_title">#ff000000</color>
+    <color name="aurora_text_color_subject">#ff9c9c9c</color>
+    <color name="aurora_text_color_date">#ff9c9c9c</color>
+    <!-- Aurora xuyong 2014-03-24 modified for bug #3293 start -->
+    <color name="aurora_text_color_draft">#ffff4444</color>
+    <!-- Aurora xuyong 2014-03-24 modified for bug #3293 end -->
+    <!-- Aurora liugj 2013-09-26 added for aurora's new feature start -->
+    <color name="aurora_text_color_empty">#ffe6e6e6</color>
+    <!-- Aurora liugj 2013-09-26 added for aurora's new feature end -->
+    <!-- Aurora liugj 2013-11-02 added for aurora's new feature start -->
+    <color name="aurora_color_edit_text">#ff333333</color>
+    <!-- Aurora liugj 2013-11-02 added for aurora's new feature end -->
+    <!-- Aurora xuyong 2015-02-06 added for forher feature start -->
+    <color name="aurora_color_cpd">#ffffff</color>
+    <color name="aurora_ipop_tc">@color/aurora_widget_tip_text_color</color>
+    <!-- Aurora xuyong 2015-02-06 added for forher feature end -->
+    <color name="aurora_detail_pressed_color">#6cc729</color>
+    <color name="aurora_detail_normal_color">#019c73</color>
+    <color name="aurora_send_msg_text_color">#323235</color>
+    <color name="aurora_reci_msg_text_color">#323235</color>
+    <color name="aurora_msg_item_bg_color">#f7f7f7</color>
+    <!-- Aurora xuyong 2015-12-07 added for aurora 2.0 new feature -->
+    <color name="aurora_conv_draft_color">#e4004e</color>
+    <color name="aurora_conv_error_color">#f04852</color>
+    <color name="aurora_conv_unread_color">@color/aurora_conv_error_color</color>
+    <color name="aurora_conv_list_tag_text_color">#48000000</color>
+    <color name="aurora_conv_list_snippet_text_color">#99414142</color>
+    <color name="aurora_conv_list_title_text_color">#414142</color>
+    <color name="aurora_avatar_circle_color">#fcfcfc</color>
+    <color name="aurora_avatar_overlay_color">#4cffffff</color>
+    <color name="aurora_notification_bg_color">#12000000</color>
+    <color name="aurora_notification_item_bg_color">#fcfcfc</color>
+    <color name="aurora_conv_divider_bg_color">#19000000</color>
+
+    <color name="aurora_widget_msg_edit_bg_normal_color">#ffffffff</color>
+    <color name="aurora_widget_msg_edit_bg_pressed_color">#ffeaeaea</color>
+    <color name="aurora_widget_gradient_start_color">#fff5f5f5</color>
+    <color name="aurora_widget_gradient_end_color">#00f5f5f5</color>
+
+    <color name="aurora_widget_conv_title_color">#00000000</color>
+    <color name="aurora_widget_conv_snippet_color">#99000000</color>
+    <color name="aurora_widget_conv_tag_color">#50000000</color>
+    <color name="aurora_widget_bg_color">#f5f5f5</color>
+    <color name="aurora_widget_tip_text_color">#49aef7</color>
+
+    <color name="aurora_msg_edit_divider_color">#ededed</color>
+
+    <color name="aurora_rec_fold_indi_text_color">#49aef7</color>
+    <color name="aurora_send_fold_indi_text_color">#ffffff</color>
+
+    <color name="aurora_msg_rec_text_color">#414142</color>
+    <color name="aurora_msg_rec_bg_color">#ffffff</color>
+    <color name="aurora_msg_send_text_color">#414142</color>
+    <color name="aurora_msg_send_bg_color">#ebebeb</color>
+
+    <color name="aurora_mm_info_txt_color">#ffffff</color>
+
+    <color name="aurora_msg_time_txt_color">#49000000</color>
+    <color name="aurora_compose_msg_bg_color">#49b3b3b3</color>
+
+    <color name="aurora_slide_index_color">#414142</color>
+    <color name="aurora_recent_call_contact_bg_color">#f7f7f7</color>
+
+    <color name="aurora_no_result_tip_txt_color">#cccccc</color>
+
+    <color name="aurora_title_name_txt_color">#000000</color>
+    <color name="aurora_title_number_txt_color">#7b7b7b</color>
+
+    <color name="aurora_ip_bg_pressed_color">#439dde</color>
+    <color name="aurora_ip_bg_normal_color">#49aef7</color>
+
+    <color name="aurora_slot_indi_txt_color">#ffffff</color>
+    <color name="aurora_slot_indi_bg_color">#99000000</color>
+
+    <color name="aurora_widget_edge_effect_color">#ffdddddd</color>
+
+    <color name="aurora_contactcollection_select_color">#414142</color>
+</resources>

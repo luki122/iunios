@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- ActionBar field -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gn_all_in_one_title_bg" >
+      
+        <!-- goto up level button -->
+        <RelativeLayout
+            android:id="@+id/gn_almanac_back_icon_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gn_all_in_one_action_bar_select_date_on_off"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true" >
+            
+            <!-- set background in code -->
+            <ImageView
+                android:id="@+id/gn_almanac_back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/gn_almanac_gap_back_button"
+                android:background="@drawable/gn_almanac_back_tu"
+                android:visibility="invisible" />
+          
+        </RelativeLayout>
+      
+        <!-- description for the aboving button -->
+        <TextView
+            android:id="@+id/gn_almanac_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/gn_almanac_back_icon_bg"
+            android:layout_marginLeft="@dimen/gn_almanac_gap_back_button"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/gn_almanac_text_size_almanac_title"
+            android:text="@string/gn_tools_name_almanac"
+            android:visibility="invisible" />
+      
+        <!-- back today button -->
+        <Button
+            android:id="@+id/gn_almanac_back_today_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/gn_almanac_gap_top_back_today_button"
+            android:layout_marginRight="@dimen/gn_almanac_gap_right_back_today_button"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gn_all_in_one_action_bar_today_on_off"
+            android:paddingLeft="@dimen/gn_almanac_gap_internal_back_today_button"
+            android:paddingRight="@dimen/gn_almanac_gap_internal_back_today_button"
+            android:textColor="@color/gn_all_in_one_actionbar_back_today_text_color"
+            android:textSize="@dimen/date_header_text_size"
+            android:text="@string/gn_all_in_one_action_bar_today"
+            android:visibility="invisible" />
+  
+        <!-- time picker button 
+        <RelativeLayout
+            android:id="@+id/gn_almanac_time_picker_button_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/gn_almanac_back_today_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/gn_almanac_back_today_button"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/gn_agenda_action_bar_select_date_on_off" >
+    
+            <ImageView
+                android:id="@+id/gn_almanac_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:background="@drawable/gn_almanac_time_picker_shui" />
+        </RelativeLayout>
+        -->
+      
+    </RelativeLayout>
+  
+    <!-- ViewSwitcher field -->
+    <ViewSwitcher
+        android:id="@+id/gn_almanac_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+<!-- Gionee <jiangxiao> <2013-07-16> add for CR00837096 end -->

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_how_delete"
+        android:layout_width="@dimen/user_guide_anim_frame_width"
+        android:layout_height="@dimen/user_guide_anim_frame_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:clipChildren="true" >
+
+        <ImageView
+            android:id="@+id/iv_privacy_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-28dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/privacy_home" />
+
+        <ImageView
+            android:id="@+id/iv_privacy_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="163dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/privacy_arrow"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_privacy_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/privacy_setting" />
+
+        <ImageView
+            android:id="@+id/iv_click_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="133dp"
+            android:layout_marginTop="128dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/click_shadow" />
+
+        <ImageView
+            android:id="@+id/iv_finger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="134dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/finger" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_banners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_how_delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_userguide_bigtxt_to_picture"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_how_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/how_delete"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <TextView
+            android:lineSpacingExtra="@dimen/userguide_textview_linespace"
+            android:id="@+id/tv_delete_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/height_userguide_smalltxt_to_bigtxt"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/delete_method"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

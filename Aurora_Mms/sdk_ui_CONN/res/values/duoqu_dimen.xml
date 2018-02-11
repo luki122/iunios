@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bubble_bottom_two_minheight">6dp</dimen>
+    <dimen name="bubble_bottom_two_height">40dp</dimen>
+    <dimen name="card_body_split_minheight">16dp</dimen>
+    <dimen name="card_body_split_height">20dp</dimen>
+    <dimen name="d_big185_120">200dp</dimen>
+    <dimen name="base_margin_top">70dp</dimen>
+    <dimen name="popup_content_padding">6dp</dimen>
+    <dimen name="train_body_min_height">200dp</dimen>
+    <dimen name="hotel_body_min_height">225dp</dimen>
+    <dimen name="train_padding">5dp</dimen>
+    <dimen name="train_heat_top">28dp</dimen>
+    <dimen name="hotel_top_textview">8dp</dimen>
+    <dimen name="duoqu_bottom_div_hight">32dp</dimen>
+    <dimen name="laidian_img_margin">28dp</dimen>
+    <dimen name="laidian_img_margin2">32dp</dimen>
+    <dimen name="laidian_name_margin">136dp</dimen>
+    <dimen name="hotel_body">224dp</dimen>
+    <dimen name="train_body">140dp</dimen>
+    <dimen name="liandian_body">220dp</dimen>
+    <dimen name="dialog_body_height">288dp</dimen>
+    <dimen name="dialog_body_width">270dp</dimen>
+    <dimen name="dialog_title_height">41dp</dimen>
+    <dimen name="dialog_list_height">293dp</dimen>
+    <dimen name="dialog_button_height">54dp</dimen>
+    <dimen name="dialog_button_text_size">18dp</dimen>
+    <dimen name="dialog_title_text_size">20dp</dimen>
+    <dimen name="duoqu_drawable_bounds_top">0dp</dimen>
+    <dimen name="duoqu_drawable_bounds_right">32dp</dimen>
+    <dimen name="duoqu_drawable_bounds_bottom">32dp</dimen>
+    <dimen name="duoqu_first_textview_padding_bottom">0dp</dimen>
+    <dimen name="duoqu_second_textview_padding_bottom">2dp</dimen>
+    <dimen name="destination_text_padding_right">15dp</dimen>
+    <dimen name="duoqu_center_view_width">20dp</dimen>
+    <dimen name="duoqu_center_view_height">1dp</dimen>
+    <dimen name="duoqu_custom_layout_width">70dp</dimen>
+    <dimen name="duoqu_bubble_padding">12dp</dimen>
+ <!-- 汽泡间距 -->
+    <!-- notification -->
+    <dimen name="duoqu_drop_content_title_text_size">16dp</dimen>
+    <dimen name="duoqu_drop_content_text_size">12dp</dimen>
+    <dimen name="duoqu_btn_text_size">14dp</dimen>
+    <dimen name="duoqu_menu_logo_param">17dp</dimen>
+    <dimen name="contacts_contact_oper_bar_height">33dip</dimen>
+
+    <!-- font-size : notification  2016-03-28-->
+    <!-- font-size : notification 间距-->
+    <dimen name="duoqu_notification_padding_top">0dp</dimen>
+    <dimen name="duoqu_notification_padding_bottom">0dp</dimen>
+    <dimen name="duoqu_notification_padding_left">8dp</dimen>
+    <dimen name="duoqu_notification_padding_right">8dp</dimen>
+    <!-- font-size : notification 圆角-->
+    <dimen name="duoqu_notification_radius_top_left">2dp</dimen>
+    <dimen name="duoqu_notification_radius_bottom_left">2dp</dimen>
+    <dimen name="duoqu_notification_radius_top_right">2dp</dimen>
+    <dimen name="duoqu_notification_radius_bottom_right">2dp</dimen>
+
+    <!-- font-size : notification 布局-->
+    <dimen name="duoqu_notification_body_bg_width">344dp</dimen>
+    <dimen name="duoqu_notification_body_bg_height">64dp</dimen>
+    <dimen name="duoqu_notification_bottom_bg_width">344dp</dimen>
+    <dimen name="duoqu_notification_bottom_bg_height">50dp</dimen>
+    <!-- font-size : notification body -->
+    <dimen name="duoqu_notification_logo_width">38dp</dimen>
+    <dimen name="duoqu_notification_logo_heigh">38dp</dimen>
+    <dimen name="duoqu_notification_logo_left_margin">12dp</dimen>
+    <dimen name="duoqu_notification_logo_right_margin">14dp</dimen>
+    <dimen name="duoqu_notification_logo_top_margin">12dp</dimen>
+
+    <dimen name="duoqu_notification_title_size">16dp</dimen>
+    <dimen name="duoqu_notification_title_left_margin">0dp</dimen>
+    <dimen name="duoqu_notification_title_top_margin">13dp</dimen>
+
+    <dimen name="duoqu_notification_subtitle_size">14dp</dimen>
+    <dimen name="duoqu_notification_subtitle_left_margin">0dp</dimen>
+    <dimen name="duoqu_notification_subtitle_top_margin">0dp</dimen>
+
+    <dimen name="duoqu_notification_time_size">10dp</dimen>
+    <dimen name="duoqu_notification_time_left_margin">14dp</dimen>
+    <dimen name="duoqu_notification_time_right_margin">14dp</dimen>
+    <dimen name="duoqu_notification_time_top_margin">16dp</dimen>
+    <!-- font-size : notification bottom -->
+    <dimen name="duoqu_notification_line_width">268dp</dimen>
+    <dimen name="duoqu_notification_line_height">1px</dimen>
+    <dimen name="duoqu_notification_line_left_margin">68dp</dimen>
+    <dimen name="duoqu_notification_line_right_margin">14dp</dimen>
+    <dimen name="duoqu_notification_line_top_margin">0dp</dimen>
+
+    <dimen name="duoqu_notification_line_sec_width">0dp</dimen>
+    <dimen name="duoqu_notification_line_sec_height">0dp</dimen>
+    <dimen name="duoqu_notification_line_sec_left_margin">0dp</dimen>
+    <dimen name="duoqu_notification_line_sec_right_margin">0dp</dimen>
+    <dimen name="duoqu_notification_line_sec_top_margin">0dp</dimen>
+
+    <dimen name="duoqu_notification_btn_size">14dp</dimen>
+    <dimen name="duoqu_notification_btn_left_margin">64dp</dimen>
+    <dimen name="duoqu_notification_btn_top_margine">15dp</dimen>
+
+    <dimen name="duoqu_notification_btn_sec_left_margin">198dp</dimen>
+    <dimen name="duoqu_notification_btn_sec_top_margin">15dp</dimen>
+
+</resources>

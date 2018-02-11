@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/tu_ya_cols_paint_size_select" />
+
+    <size
+        android:height="@dimen/tu_ya_dimen_paint_size_3"
+        android:width="@dimen/tu_ya_dimen_paint_size_3" />
+
+</shape>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/auroratabwidget"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:animateLayoutChanges="true"
+        aurora:cursorColor="@color/aurora_tab_cursorColor"
+        aurora:entriesTitle="@array/tab_widget_title" />
+
+</FrameLayout>

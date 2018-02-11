@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/aurora_detail_menu_item_reply"
+        android:icon="@com.aurora:drawable/aurora_bottombar_reply_selector"
+        android:title="@string/reply">
+    </item>
+    <item
+        android:id="@+id/aurora_detail_menu_item_replyall"
+        android:icon="@com.aurora:drawable/aurora_bottombar_replyall_selector"
+        android:title="@string/reply_all">
+    </item>
+    <item
+        android:id="@+id/aurora_detail_menu_item_forward"
+        android:icon="@com.aurora:drawable/aurora_bottombar_transmit_selector"
+        android:title="@string/forward">
+    </item>
+    <item
+        android:id="@+id/aurora_detail_menu_item_del"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/aurora_actionbar_menu_delete">
+    </item>
+
+</menu>

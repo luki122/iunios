@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">		
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:paddingLeft="17dp" android:paddingRight="17dp"
+           android:orientation="vertical">	
+           <RelativeLayout
+		       android:id="@+id/passwordProtectLayout"
+		       android:layout_marginTop="12dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_up">
+  			   <TextView
+				   android:text="@string/password_protect"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>  
+				       
+		       <ImageView android:id="@+id/passwordProtectGoImg" style="@style/item_right_arrow"/> 
+		       
+		       <TextView
+				    android:id="@+id/EmailText"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_centerVertical="true" 
+				    android:layout_toLeftOf="@id/passwordProtectGoImg" android:layout_marginRight="9dp"
+                    android:maxWidth="159dip" android:singleLine="true"
+			        android:textColor="@drawable/prefer_text_sub_selector_gray_color"
+                    android:textSize="@com.aurora:dimen/aurora_preference_summary_text_size"
+                    android:ellipsize="end" android:fadingEdge="horizontal"  />			       
+		   </RelativeLayout>
+		   
+           <RelativeLayout
+		       android:id="@+id/ChangePasswordLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_bottom">
+  			   <TextView
+				   android:text="@string/change_password"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/> 
+				         
+		       <ImageView style="@style/item_right_arrow"/> 
+		   </RelativeLayout>	    
+		   		   
+		   <RelativeLayout
+		       android:id="@+id/callMsgLayout"
+		       android:layout_marginTop="10dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_alone">
+  			   <TextView
+				   android:text="@string/privacy_call_msg"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>  
+				       
+		       <ImageView style="@style/item_right_arrow"/> 		       
+		   </RelativeLayout>
+		   		    
+		   <RelativeLayout
+		       android:layout_marginTop="28dp"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:id="@+id/deletePrivacySpaceBtn"
+					android:text="@string/delete_privacy_space" 
+					android:layout_width="fill_parent"
+					android:layout_height="@dimen/preferences_item_height"
+					android:textSize="18sp"
+                    android:textColor="@drawable/red_btn_text_selector_color"     
+					android:background="@drawable/red_button"/>    
+		   </RelativeLayout>		 		 		   
+       </LinearLayout> 	
+    </ScrollView>
+</RelativeLayout>

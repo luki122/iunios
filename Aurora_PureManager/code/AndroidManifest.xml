@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="com.aurora.puremanager"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".activity.PureApp"
+        android:theme="@style/AppActionTheme">
+        <activity
+            android:name="com.aurora.puremanager.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+			android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.PermissionManageActivity"
+            android:label="@string/jurisdiction_manage"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.permission.PermissionMrgActivity"
+            android:label="@string/jurisdiction_manage"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+         <activity
+            android:name="com.aurora.puremanager.permission.PermissionDetailActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.permission.PermissionAppDetail"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+            <intent-filter>
+                <action android:name="com.gionee.permission" />
+                <category android:name="com.gionee.permission.category" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <activity
+            android:name="com.aurora.puremanager.permission.PermissionSettingActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.AppManageActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_manage" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.AllAppListActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true" >
+	        <intent-filter>
+                <action android:name="android.settings.APPLICATION_SETTINGS" />
+                <action android:name="android.settings.MANAGE_APPLICATIONS_SETTINGS" />
+                <action android:name="android.settings.MANAGE_ALL_APPLICATIONS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.AppDetailActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" android:exported="true">
+	        <intent-filter>
+                <action android:name="android.settings.APPLICATION_DETAILS_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.UninstallAppActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_uninstall" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.AllAppListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_list" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.FreezeAppActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_freezeon" >
+        </activity>
+
+        <activity
+            android:name="com.aurora.puremanager.activity.AutoStartActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.aurora.puremanager.activity.DefSoftManageActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.aurora.puremanager.traffic.AppNetworkControlActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.aurora.puremanager.traffic.TrafficRankActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.BatterySavingMainActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.settings.MANAGE_POWER_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.WaitingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:noHistory="false"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.action.exit.super.power.save.mode" />
+
+                <category android:name="com.action.exit.super.power.save.mode.category" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PureBackgroundActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PureBackgroundSettingActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.PureBackgroundDetailActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.BatteryConsumeActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".activity.PowerUsageDetailActivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.SuperStandbyAcitivity"
+            android:theme="@style/AppPowerTheme"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".traffic.TrafficAssistantMainActivity"
+            android:configChanges="screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".traffic.TrafficLimitActivity"
+            android:configChanges="screenSize"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".traffic.TrafficPopWindows"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@com.aurora:style/AuroraAlertDialogTheme"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.aurora.puremanager.service.WatchDogService" />
+
+        <service
+            android:name=".service.PowerManagerService"/>
+
+        <!--android:exported:是否允许被其它程序调用-->
+        <service
+            android:name="com.aurora.puremanager.service.AidlService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.aurora.puremanager.service.IAidlService" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.SmartPowerService" />
+
+        <service android:name=".service.AutoSleepService" />
+
+        <service android:name=".traffic.TrafficProcessorService" />
+
+         <!-- Gionee <liuyb> <2014-5-12> modify for CR01245505 begin -->
+        <receiver
+            android:name=".traffic.TrafficMonitorBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                </action>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" >
+                </action>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!-- Gionee <liuyb> <2014-5-12> modify for CR01245505 end -->
+
+        <receiver android:name="com.aurora.puremanager.receive.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.aurora.puremanager.receive.PowerAlertReceiver">
+            <intent-filter>
+                <action android:name="aurora.intent.action.lowpower" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.aurora.puremanager.receive.HandlePackageAction"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"></action>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"></action>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"></action>
+                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH"></action>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"></action>
+                <action android:name="android.intent.action.PACKAGE_RESTARTED"></action>
+
+                <data android:scheme="package"></data>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.aurora.puremanager.receive.SDcardPlugExtractReceiver">
+		    <intent-filter>
+		        <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+		        <action android:name="android.intent.action.MEDIA_EJECT" />
+		        <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+		        <data android:scheme="file"/>
+		    </intent-filter>
+		 </receiver>
+
+        <provider
+            android:name="com.aurora.puremanager.provider.AuroraAppInfosProvider"
+            android:authorities="com.provider.AuroraAppInfosProvider" />
+
+        <provider
+            android:name="com.aurora.puremanager.provider.UseOperateInfoProvider"
+            android:authorities="com.provider.AuroraUseOperateInfoProvider" />
+
+        <provider
+            android:name="com.aurora.puremanager.provider.open.AutoStartAppProvider"
+            android:authorities="com.aurora.puremanager.provider.open.AuroraAutoStartAppProvider" />
+
+        <provider
+            android:name="com.aurora.puremanager.provider.open.AutoSleepAppProvider"
+            android:authorities="com.aurora.puremanager.provider.open.AuroraAutoSleepAppProvider" />
+
+        <provider
+            android:name="com.aurora.puremanager.provider.open.StopWakeAppProvider"
+            android:authorities="com.aurora.puremanager.provider.open.AuroraStopWakeAppProvider"
+            android:exported="true"/>
+
+        <provider
+            android:name="com.aurora.puremanager.provider.open.FreezedAppProvider"
+            android:authorities="com.aurora.puremanager.provider.open.AuroraFreezedAppProvider" />
+
+        <provider
+            android:name=".provider.SharedPreferencesProvider"
+            android:authorities="com.aurora.puremanager.sp"
+            android:exported="true"
+            android:process=":remote" />
+
+    </application>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USER_ACTIVITY" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REMOVE_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+</manifest>
+

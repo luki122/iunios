@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/onlyonce"
+        android:title="@string/onlyonce">
+    </item>
+    
+    <item
+        android:id="@+id/everyday"
+        android:title="@string/every_day">
+    </item>
+    <item
+        android:id="@+id/weekday"
+        android:title="@string/weekday">
+    </item>
+    <item
+        android:id="@+id/officialweekday"
+        android:title="@string/officialweekday">
+    </item>
+    <item
+        android:id="@+id/selfdefine"
+        android:title="@string/selfdefine">
+    </item>
+</menu>

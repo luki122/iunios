@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee zhouyj 2012-05-28 modify for CR00607938 start -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gn_list_item_height"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    >
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ecyImg"
+        android:singleLine="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:ellipsize="middle"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ecyImg"
+        android:layout_marginTop="10dip"
+        android:singleLine="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:ellipsize="middle"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ImageView
+        android:id="@+id/ecyImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/count"
+        android:layout_marginRight="10dip"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/selBtn"
+        android:layout_marginRight="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <CheckBox
+        android:id="@+id/selBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    
+    <TextView
+        android:id="@+id/file_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/ecyImg"
+        android:layout_below="@id/content"
+        android:layout_marginTop="3dip"
+        android:singleLine="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+</RelativeLayout>
+<!-- gionee zhouyj 2012-05-28 modify for CR00607938 end -->

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/aurora_callcard_padding_top" >
+
+    <View
+           android:layout_width="match_parent"
+        android:layout_height="181dp" 
+        />
+    <RelativeLayout
+        android:id="@+id/digits_area"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="#FFF"
+        android:gravity="bottom" >
+
+        <RelativeLayout
+            android:id="@+id/aurora_deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/svg_dial_delete" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_toLeftOf="@id/aurora_deleteButton"
+            android:background="#FFF" >
+
+            <EditText
+                android:id="@+id/aurora_digits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="bottom|center_horizontal"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="#0ebc7d"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/aurora_emergency_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FFF"
+                android:text="@string/emergencyDialerIconLabel"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:textColor="#8d8d8e"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/aurora_dialpad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/aurora_dial_digit_keyboard" />
+    </LinearLayout>
+
+</LinearLayout>

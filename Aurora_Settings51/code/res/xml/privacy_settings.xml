@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009-2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+                  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        aurora:auroratitle="@string/privacy_settings_title">
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="backup_category"
+            aurora:auroratitle="@string/backup_section_title">
+
+        <!-- Backup settings -->
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="backup_data"
+                aurora:auroratitle="@string/backup_data_title"
+                aurora:aurorasummary="@string/backup_data_summary"
+                aurora:aurorapersistent="false" />
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="configure_account"
+                aurora:auroratitle="@string/backup_configure_account_title"
+                aurora:aurorasummary="@string/backup_configure_account_default_summary"
+                aurora:aurorapersistent="false">
+            <!-- the Intent declared here is always overwritten by a real one -->
+            <intent android:action="dummy" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="auto_restore"
+                aurora:auroratitle="@string/auto_restore_title"
+                aurora:aurorasummary="@string/auto_restore_summary"
+                aurora:aurorapersistent="false" />
+
+        <!--<Preference
+                android:key="backup_inactive"
+                android:title="@string/backup_inactive_title"
+                android:summary="@string/backup_inactive_summary"
+                android:persistent="false"
+                android:enabled="false"
+                android:selectable="false" />-->
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="personal_data_category"
+            aurora:auroratitle="@string/personal_data_section_title">
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="drm_settings"
+        aurora:auroratitle="@string/drm_settings_title"
+        aurora:aurorasummary="@string/drm_settings_summary"
+        aurora:aurorafragment="com.mediatek.settings.DrmSettings"/>
+        <!-- Factory reset -->
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:auroratitle="@string/master_clear_title"
+            aurora:aurorasummary="@string/master_clear_summary"
+            settings:keywords="@string/keywords_factory_data_reset"
+            aurora:aurorafragment="com.android.settings.MasterClear" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

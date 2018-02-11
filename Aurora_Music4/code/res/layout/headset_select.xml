@@ -1,0 +1,119 @@
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/id_null"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_null"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+   
+    <RadioButton
+        android:id="@+id/id_rock_headset"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_rock_headset"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+         android:id="@+id/id_rock_headset_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <RadioButton
+        android:id="@+id/id_iuni_twist_tone"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_iuni_twist_tone"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/id_iuni_twist_tone_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+
+    <RadioButton
+        android:id="@+id/id_iphone_earpodes"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_earpods"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <RadioButton
+        android:id="@+id/id_akg450"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_akg450"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <RadioButton
+        android:id="@+id/id_urbeats"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:button="@null"
+        android:drawableRight="@com.aurora:drawable/aurora_btn_radio_material_anim"
+        android:gravity="center_vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="15dp"
+        android:text="@string/aurora_urbeats"
+        android:textColor="#090909"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+</RadioGroup>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-4 added for CR00623383 start
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<aurora.widget.AuroraListView
+        class="com.android.contacts.PinnedHeaderListView"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/gn_star_contacts_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/gn_star_contacts_text"
+            android:text="@string/gn_no_star_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="77dip"
+            android:textColor="@color/gn_empty_text_color"
+            android:textSize="24sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+</LinearLayout>

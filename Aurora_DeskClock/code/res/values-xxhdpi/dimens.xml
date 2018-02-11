@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <dimen name="datawidgettxtWeekDay">32dp</dimen>
+       <dimen name="datawidgettxtth">23dp</dimen>
+       <dimen name="datawidgettxtAll">13dp</dimen>
+       <dimen name="stopwatch_mark_item_height">44.6dp</dimen>
+       <dimen name="stopwatch_no_text_size">12sp</dimen>
+       <dimen name="aurora_stopwatch_mark_item_margin">66.3dp</dimen>
+       <dimen name="stopwatch_time_diff_text_size">12sp</dimen>
+       <dimen name="stopwatch_time_text_size">23sp</dimen>   
+       <dimen name="aurora_stopwatch_time_diff_margin_left">248dp</dimen>
+       
+       <dimen name="aurora_stopwatch_time_margin_left">121dp</dimen>
+       <dimen name="aurora_stopwatch_mark_item_margin3">42dp</dimen>
+       
+       <dimen name="aurora_stopwatch_list_view_height">178.4dp</dimen>
+       <dimen name="aurora_stopwatch_buttons_layout_marginTop">444.4dp</dimen>
+       <dimen name="aurora_stopwatch_mark_layout_marginTop">240.4dp</dimen>
+       <dimen name="worldtime_listview_layout_marginTop">0dp</dimen>
+         
+      <dimen name="round_button_text_size">17.6sp</dimen> 
+      <dimen name="seekbarwidth">6dp</dimen> 
+</resources>

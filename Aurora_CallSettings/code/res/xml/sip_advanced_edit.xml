@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:aurorapersistent="false">
+
+    <AuroraPreferenceCategory
+        aurora:aurorakey="@string/advanced_settings_container"
+        aurora:aurorapersistent="false">
+
+        <AuroraEditTextPreference
+            aurora:aurorakey="@string/auth_username"
+            aurora:auroratitle="@string/auth_username_title"
+            aurora:auroradialogTitle="@string/auth_username_title"
+            aurora:aurorasummary="@string/auth_username_summary"
+            aurora:aurorapersistent="false"
+            android:singleLine="true"/>
+
+        <AuroraEditTextPreference
+            aurora:aurorakey="@string/display_name"
+            aurora:auroratitle="@string/display_name_title"
+            aurora:auroradialogTitle="@string/display_name_title"
+            aurora:aurorasummary="@string/display_name_summary"
+            aurora:aurorapersistent="false"
+            android:singleLine="true"/>
+
+        <AuroraEditTextPreference
+            aurora:aurorakey="@string/proxy_address"
+            aurora:auroratitle="@string/proxy_address_title"
+            aurora:auroradialogTitle="@string/proxy_address_title"
+            aurora:aurorasummary="@string/optional_summary"
+            aurora:aurorapersistent="false"
+            android:singleLine="true"/>
+
+        <AuroraEditTextPreference
+            aurora:aurorakey="@string/port"
+            aurora:auroratitle="@string/port_title"
+            aurora:aurorasummary="@string/default_port"
+            aurora:auroradialogTitle="@string/port_title"
+            aurora:aurorapersistent="false"
+            android:inputType="number|numberDecimal"
+            android:singleLine="true"/>
+
+        <AuroraListPreference
+            aurora:aurorakey="@string/transport"
+            aurora:auroratitle="@string/transport_title"
+            aurora:auroraentries="@array/transport_types"
+            aurora:auroraentryValues="@array/transport_types"
+            aurora:aurorasummary="@string/default_transport"
+            aurora:aurorapersistent="false"
+            aurora:auroradialogTitle="@string/transport_title"/>
+
+        <AuroraListPreference
+            aurora:aurorakey="@string/send_keepalive"
+            aurora:auroratitle="@string/send_keepalive_title"
+            aurora:auroraentries="@array/sip_send_keepalive_options"
+            aurora:auroraentryValues="@array/sip_send_keepalive_options"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/sip_system_decide"/>
+    </AuroraPreferenceCategory>
+</AuroraPreferenceScreen>

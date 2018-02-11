@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/duoqu_bubble_body_callmessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/duoqu_call_username_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="14dp"
+        android:text="@string/duoqu_calls_reminder_discern_call"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_call_username_title"
+       android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/duoqu_call_username_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_call_username_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_reminder_side_phone_num"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_call_number_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_call_number_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_comingcall_number_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_call_number_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_frequency"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_number_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_comingcall_number_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_comingcall_number_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_comingcall_number_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_calltime"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_call_time_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_call_time_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_lastcall_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_call_time_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_last_calltime"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_lastcall_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_lastcall_time_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_lastcall_time_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_callfrom_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_lastcall_time_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_sideattribution"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_callfrom_time_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_callfrom_time_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_callfrom_time_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_ownstate"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_call_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_call_state_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_call_state_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_calling_state_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_call_state_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_sidestate"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_calling_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_calling_state_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_calling_state_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_callingfrom_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_calling_state_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/duoqu_calls_callingtime"
+        android:textColor="@color/duoqu_mark_text_color"
+         android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_callingfrom_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/duoqu_callingfrom_time_title"
+       android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/duoqu_callingfrom_time_title"
+        android:textColor="@color/duoqu_white"
+        android:singleLine="true"
+         android:textSize="14dp" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/noti_bg_ripple"
+    android:layout_height="64dp" >
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/noti_icon_margin_left"
+        android:layout_marginRight="@dimen/noti_icon_margin_right" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/noti_icon_width"
+            android:layout_height="@dimen/noti_icon_width" />
+
+        <ImageView
+            android:id="@+id/private_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/private_noti_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="@dimen/miss_noti_width"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/image_container"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/first_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/aurora_button_color_v2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/aurora_sim_slot"
+                android:layout_gravity="center_vertical"
+                android:layout_width="11dp"
+                android:layout_height="12.75dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/sim_noti_1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="140dp"
+            android:singleLine="true"
+            android:textColor="#8d8d8e"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sms"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/aurora_ic_text_holo_dark_button"
+        android:visibility="@integer/aurora_misscall_action" />
+
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="1px"
+        android:layout_height="22.7dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@id/sms"
+        android:background="@color/aurora_notification_divider_color"
+        android:visibility="@integer/aurora_misscall_action" />
+
+    <ImageView
+        android:id="@+id/dial"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/aurora_ic_lockscreen_answer_normal"
+        android:contentDescription="@string/endcall" />
+
+</RelativeLayout>

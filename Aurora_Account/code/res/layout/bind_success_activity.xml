@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/padding_17" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bind_success_icon_margin_top"
+        android:src="@drawable/bind_success_icon" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bind_success_info_margin_top"
+        android:text="@string/bind_success_phone"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_18" />
+    
+    <TextView
+        android:id="@+id/bind_detail_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bind_success_detail_margin_top"
+        android:textColor="#9e9e9e"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_12" />
+</LinearLayout>

@@ -1,0 +1,286 @@
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01386770      Opened     wanggj     适配7301AAL功能
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.aq
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.ap
+Code difference: svn diff -r 197:186 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01387135      Opened     chenml     【工厂】来电铃声设为自定义铃声，连接电脑打开存储，正常退出拔掉USB》铃声恢复默认（通知铃声、短信、闹钟都有此问题）【必现】
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.ar
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.aq
+Code difference: svn diff -r 200:199 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01390965      Opened     chenml     ROM4.2.12完整：T0775 OTA升级到T5029，无法开启使用音控模式
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.as
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.ar
+Code difference: svn diff -r 204:202 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01392602      Opened     chenml     隔空手势 添加隔空视频控制，隔空图片浏览开关
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.at
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.as
+Code difference: svn diff -r 207:206 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01392602      Opened     chenml     隔空手势 添加隔空视频控制，隔空图片浏览开关
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.au
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.at
+Code difference: svn diff -r 210:209 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01392273      Opened     wanggj     【产品定义】设置：必现，亮度自动省电背光默认为关闭，而产品定义要求默认为开启
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.av
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.au
+Code difference: svn diff -r 213:212 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01397189      Opened     wanggj     7301添加智能振动提醒开关
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.aw
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.av
+Code difference: svn diff -r 216:215 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01403182      Opened     wanggj     虚拟按键,设置 添加菜单
+CR01406835      Opened     wanggj     添加智能亮屏菜单，智能亮屏和黑屏手势数据库
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.ax
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.aw
+Code difference: svn diff -r 220:218 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01403182      Opened     wanggj     虚拟按键,设置 添加菜单
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.ay
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.ax
+Code difference: svn diff -r 223:222 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01408165      Opened     wanggj     增加新版黑屏手势功能
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.az
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.ay
+Code difference: svn diff -r 226:225 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01412715      Opened     wanggj     添加隔开解锁，隔空亮屏，隔空桌面滑动菜单
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.ba
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.az
+Code difference: svn diff -r 229:228 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+svn: warning: W170000: URL 'http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V' non-existent in revision 246
+
+svn: E200009: Could not display info for all targets because some targets don't exist
+svn: E205000: Syntax error in revision argument '246:'
+File does not exist:  at getAppChangeSet.pl line 48
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01418765      Opened     wanggj     android5.0适配
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.b
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.a
+Code difference: svn diff -r 250:248 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+Can't locate XML/Simple.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at getAppChangeSet.pl line 3.
+BEGIN failed--compilation aborted at getAppChangeSet.pl line 3.
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01418765      Opened     wanggj     android5.0适配
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.d
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.c
+Code difference: svn diff -r 256:255 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+Can't locate XML/Simple.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at getAppChangeSet.pl line 3.
+BEGIN failed--compilation aborted at getAppChangeSet.pl line 3.
+
+==================
+==================
+Can't locate XML/Simple.pm in @INC (@INC contains: /etc/perl /usr/local/lib/perl/5.14.2 /usr/local/share/perl/5.14.2 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.14 /usr/share/perl/5.14 /usr/local/lib/site_perl .) at getAppChangeSet.pl line 3.
+BEGIN failed--compilation aborted at getAppChangeSet.pl line 3.
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01418765      Opened     wanggj     android5.0适配
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.g
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.f
+Code difference: svn diff -r 265:264 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01441629      Coded      wanggj     【产品定义】黑屏手势：未开启黑屏手势 双指下滑解锁，灭屏时双指下滑，屏幕自动解锁  必现
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.h
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.g
+Code difference: svn diff -r 268:267 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01418765      Opened     wanggj     android5.0适配
+CR01441629      Closed     wanggj     【产品定义】黑屏手势：未开启黑屏手势 双指下滑解锁，灭屏时双指下滑，屏幕自动解锁  必现
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V1.0.1.bb
+Previous tag: Amigo_SettingsProvider_01_V1.0.1.ba
+Code difference: svn diff -r 269:231 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01418765      Opened     wanggj     android5.0适配
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.i
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.h
+Code difference: svn diff -r 277:270 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01462639      Opened     wanggj     添加代码支持7501 关闭天窗模式
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.j
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.i
+Code difference: svn diff -r 308:279 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01474790      Opened     wanggj     设置添加音乐/阅读隔空手势
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.k
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.j
+Code difference: svn diff -r 313:310 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01472537      Resolved   wanggj     软件产品定义：黑屏手势未去除，产品定义规定：删除高级设置>动作手势>黑屏手势>双指上/下/左/右滑（项目黑屏手势不支持双指操作）
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.l
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.k
+Code difference: svn diff -r 319:315 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01472537      Resolved   wanggj     软件产品定义：黑屏手势未去除，产品定义规定：删除高级设置>动作手势>黑屏手势>双指上/下/左/右滑（项目黑屏手势不支持双指操作）
+CR01474790      Opened     wanggj     设置添加音乐/阅读隔空手势
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.m
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.k
+Code difference: svn diff -r 321:315 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01472537      Resolved   wanggj     软件产品定义：黑屏手势未去除，产品定义规定：删除高级设置>动作手势>黑屏手势>双指上/下/左/右滑（项目黑屏手势不支持双指操作）
+CR01474790      Opened     wanggj     设置添加音乐/阅读隔空手势
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.n
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.k
+Code difference: svn diff -r 325:315 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01479632      Opened     wanggj     黑屏手势增加疾速拍
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.o
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.n
+Code difference: svn diff -r 328:327 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01480499      Opened     wanggj     添加低电量提醒菜单
+CR01481721      Opened     wanggj     7319去掉手套模式
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.p
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.o
+Code difference: svn diff -r 332:330 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01500102      Opened     wanggj     7501添加快速开机功能
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.q
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.p
+Code difference: svn diff -r 344:334 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01501989      Opened     wanggj     7501，ota升级 快速开机显示不出来
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.r
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.q
+Code difference: svn diff -r 349:346 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01516517      Opened     wanggj     修改Amigo为amigo
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.s
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.r
+Code difference: svn diff -r 361:351 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01520944      Opened     wanggj     添加振动效果和自定义手势数据库字段
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.t
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.s
+Code difference: svn diff -r 373:363 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01526572      Opened     chenml     7320项目 去掉 屏幕投射
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.u
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.t
+Code difference: svn diff -r 383:375 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01527696      Coded      lizhipeng  黑屏手势_V1.2.0 需求修改
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.v
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.u
+Code difference: svn diff -r 386:385 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+R01527696      Resolved   lizhipeng  黑屏手势_V1.2.0 需求修改
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.w
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.v
+Code difference: svn diff -r 389:388 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01511884      Resolved   wanggj     【重点问题】驱动：必现 T4033版本未恢复出厂写diag接口，PC端无端口显示(恢复出厂后正常)
+CR01531683      Opened     wanggj     在设置中选择振动效果时，点击每个效果就会振动。如果当前一次振动没结束时，就返回上一级菜单，振动就要中断停止
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.x
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.w
+Code difference: svn diff -r 394:391 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+
+==================

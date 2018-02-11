@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<aurora.widget.AuroraListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidesbrowser_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fastScrollEnabled="true"
+    android:divider="@null"
+    android:gravity="center"
+    android:orientation="vertical">
+</aurora.widget.AuroraListView>

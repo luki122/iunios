@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+	
+	<!-- Aurora liugj 2014-07-30 modified for desktop_wallpaper rebuild start -->
+    <ImageView android:id="@+id/item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="139dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/item_default_bg"/>
+	<!-- Aurora liugj 2014-07-30 modified for desktop_wallpaper rebuild end -->
+    <ImageView android:id="@+id/item_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+        	android:background="@drawable/grid_item_selected"
+            android:visibility="gone"/>
+	
+</FrameLayout>

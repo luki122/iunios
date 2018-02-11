@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/month_agenda_field"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/horizontal_divider" />
+
+        <LinearLayout
+            android:id="@+id/month_day_info"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dip"
+                android:textColor="@color/month_header_text_color"
+                android:textSize="10sp"
+                android:text="@string/agenda_view" />
+
+            <TextView
+                android:id="@+id/month_day_solar_date"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/month_header_text_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/month_day_lunar_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="19dip"
+                android:textColor="@color/month_header_text_color"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/horizontal_divider" />
+
+        <TextView
+            android:id="@+id/no_agenda_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dip"
+            android:background="@color/month_day_bg_color"
+            android:textSize="20sp"
+            android:textColor="@color/month_day_no_agenda_color"
+            android:text="@string/aurora_no_agenda" />
+
+        <!-- 
+    	<ImageView
+    	    android:id="@+id/no_agenda_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="60dp"
+            android:src="@drawable/gn_month_no_agenda_today"
+            android:visibility="visible" />
+        -->
+  
+        <aurora.widget.AuroraListView
+            android:id="@+id/month_agenda_list"
+        	android:layout_width="match_parent"
+    		android:layout_height="match_parent" 
+    		android:visibility="visible" />
+    </LinearLayout>
+
+    <!-- 
+    <View
+        android:layout_width="match_parent"
+    	android:layout_height="6dp"
+        android:layout_alignTop="@id/month_agenda_field"
+        android:background="@drawable/gn_day_view_bg" />
+    -->
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    android:id="@+id/dialpad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical"     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/one"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area1"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_1" />
+
+                <TextView
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/two"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area2"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:lineSpacingExtra="-30sp"
+                    android:text="@string/num_2" />
+
+                <TextView
+                    android:id="@+id/letter_area2"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_2a" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/three"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area3"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_3" />
+
+                <TextView
+                    android:id="@+id/letter_area3"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_3a" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/four"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area4"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_4" />
+
+                <TextView
+                    android:id="@+id/letter_area4"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_4a" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/five"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area5"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_5" />
+
+                <TextView
+                    android:id="@+id/letter_area5"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_5a" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/six"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area6"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_6" />
+
+                <TextView
+                    android:id="@+id/letter_area6"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_6a" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/seven"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area7"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_7" />
+
+                <TextView
+                    android:id="@+id/letter_area7"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_7a" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eight"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area8"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_8" />
+
+                <TextView
+                    android:id="@+id/letter_area8"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_8a" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nine"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area9"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_9" />
+
+                <TextView
+                    android:id="@+id/letter_area9"
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:text="@string/num_9a" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/star"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_star"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:background="@drawable/dialpad_star_bg"
+                    android:text="@string/num_star" />
+
+                <TextView
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zero"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_area0"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_0" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/svg_dial_plus" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pound"
+            style="@style/GnDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <LinearLayout style="@style/GnDialtactsDialpadStyle" >
+
+                <TextView
+                    android:id="@+id/num_pound"
+                    style="@style/GnDialtactsDialpadTextStyle"
+                    android:text="@string/num_pound" />
+
+                <TextView
+                    style="@style/GnDialtactsDialpadLetterStyle"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

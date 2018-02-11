@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/aurora_album_setting"
+    >
+	    <aurora.preference.AuroraPreference
+	        aurora:aurorakey="block_management"
+	        aurora:aurorapersistent="false"
+	        aurora:auroratitle="@string/aurora_album_block_management" 
+	        />
+    
+     <aurora.preference.AuroraPreferenceCategory 
+        aurora:auroratitle=""
+        aurora:aurorakey="login_info"
+        aurora:aurorashouldDisableView="true">
+	    
+	 		<aurora.preference.AuroraPreference
+	         aurora:aurorakey="my_info"
+	         aurora:aurorapersistent="false"
+	         aurora:auroratitle="@string/accessibility_switch_to_panorama"
+	         aurora:auroraicon="@drawable/filtershow_button_geometry_beautify_portrait_pressed"/>
+	      <!-- 
+	       <aurora.preference.AuroraSwitchPreference
+	         aurora:aurorakey="auto_upload"
+	         aurora:aurorapersistent="true"
+	         aurora:auroradefaultValue="true"
+	         aurora:auroratitle="@string/aurora_album_auto_backup"
+	          aurora:aurorasummary="@string/aurora_album_auto_backup_summary"
+	         />
+	         -->
+	        <aurora.preference.AuroraPreference
+         	aurora:aurorakey="select_update_album"
+         	aurora:aurorapersistent="false"
+         	aurora:auroratitle="@string/aurora_album_choose_backup_albums"
+         	/>	<!-- 	aurora:auroradependency="auto_upload" -->
+	        
+	       <aurora.preference.AuroraPreference
+         	aurora:aurorakey="upload_list"
+         	aurora:aurorapersistent="false"
+         	aurora:auroratitle="@string/aurora_album_duplicate_record"
+         	/>
+	       
+    </aurora.preference.AuroraPreferenceCategory>
+     
+</aurora.preference.AuroraPreferenceScreen>

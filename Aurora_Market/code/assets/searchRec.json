@@ -1,0 +1,49 @@
+{
+	"code":1,
+	"desc":"调用成功",
+	"recommendations": [
+		{
+			"id":1,
+			"title":"微信",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/3/bd/5295ac6a9c6d51e8285690bdbe1b1bd3_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/3/bd/5295ac6a9c6d51e8285690bdbe1b1bd3_100_100.png"
+			}
+		},
+		{
+			"id":2,
+			"title":"陌陌",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/9/aa/427c9386c1721880ab4e3704068aeaa9_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/9/aa/427c9386c1721880ab4e3704068aeaa9_100_100.png"
+			}
+		},
+		{
+			"id":3,
+			"title":"QQ空间",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/2/a2/1e4c0b7cac55f694e716f3b26784aa22_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/2/a2/1e4c0b7cac55f694e716f3b26784aa22_100_100.png"
+			}
+		},
+		{
+			"id":4,
+			"title":"微漫",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/7/4a/3a370d4d987eead299ed976edaf724a7_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/7/4a/3a370d4d987eead299ed976edaf724a7_100_100.png"
+			}
+		},
+		{
+			"id":5,
+			"title":"微博",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/e/49/b91822e4adc0540a15b321ed7587d49e_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/e/49/b91822e4adc0540a15b321ed7587d49e_100_100.png"
+			}
+		},
+		{
+			"id":6,
+			"title":"内涵社",
+			"icons":{
+				"px256":"http://img.wdjimg.com/mms/icon/v1/d/65/fb8cf917eba80ed5d2c237f79d6cf65d_256_256.png","px100":"http://img.wdjimg.com/mms/icon/v1/d/65/fb8cf917eba80ed5d2c237f79d6cf65d_100_100.png"
+			}
+		}
+      
+	]
+}

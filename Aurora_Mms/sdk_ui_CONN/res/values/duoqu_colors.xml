@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="duoqu_select_color">#d9d9d9</color>
+    <color name="duoqu_gray_white">#f7f7f7</color>
+    <color name="duoqu_border_color">#cccccc</color>
+    <color name="duoqu_gray_black">#333333</color>
+    <color name="duoqu_black">#666666</color>
+    <color name="duoqu_webtitle_bg">#1a000000</color>
+    <color name="duoqu_dark_transparent">#B0000000</color>
+    <color name="duoqu_all_transparent">#00000000</color>
+    <color name="duoqu_head_title_text_color">#ffffff</color>
+    <color name="duoqu_head_left_title_text_color">#e5000000</color>
+    <color name="duoqu_head_right_title_text_color">#99000000</color>
+    <color name="duoqu_bottom_text_color">#191919</color>
+    <color name="duoqu_bubble_bottom_text_color">#28c0c6</color>
+    <color name="duoqu_content_text_color">#757575</color>
+    <color name="duoqu_white">#ffffff</color>
+    <color name="duoqu_white2">#FFFEFF</color>
+    <color name="duoqu_mark_text_color_blcak">#4d1a1a1a</color>
+    <color name="duoqu_mark_text_color">#7FFFFFFF</color>
+    <color name="duoqu_black2">#000000</color>
+    <color name="duoqu_body_text_color_gray">#808080</color>
+    <color name="duoqu_list_item_text_color">#979797</color>
+    <color name="duoqu_list_item_text_color_p">#3ABEEE</color>
+    <color name="duoqu_split_line_bg">#A1A1A1</color>
+    <color name="duoqu_drl_background_color">#E6E6E6</color>
+    <color name="duoqu_huawei_text_blue">#28c0c6</color>
+    <color name="duoqu_title_head_hw_text_friend_color">#ABABAB</color>
+    <color name="duoqu_huawei_text_disable">#7f000000</color>
+    <color name="duoqu_tos_bottom_color">#ff5773</color>
+    <color name="duoqu_tos_bottom_color1">#2ab1f1</color>
+    <color name="duoqu_tos_bottom_color2">#a06bf7</color>
+    <color name="duoqu_tos_bottom_color3">#fac150</color>
+    <color name="duoqu_tos_bottom_color4">#ff5773</color>
+    <color name="duoqu_tos_bottom_color5">#ff5773</color>
+    <color name="duoqu_tos_dialog_textcolor">#A3A3A3</color>
+    <color name="duoqu_tos_dialog_titleclolr">#03A9F4</color>
+    <color name="duoqu_action_bar_title_text_color">#f7f7f7</color>
+    <color name="duoqu_items_air_flight_numbe_color">#2d6baa</color>
+    <color name="duoqu_text_color_new_gray">#a3a3a3</color>
+    <color name="duoqu_body_background_blue">#5aa8f8</color>
+    <color name="duoqu_less_white"> #FAFAFA</color>
+    <color name="duoqu_white_transparent_40">#66FFFFFF</color>
+    <color name="duoqu_white_transparent_30">#4CFFFFFF</color>
+    <color name="duoqu_calls_l">#66EDEDED</color>
+    <color name="duoqu_calls_r">#EDEDED</color>
+    <!-- 情景气泡title_background -->
+    <color name="duoqu_title_background_blue">#5aa8f8</color>
+    <color name="duoqu_head_code">#f8955a</color>
+    <!-- notification -->
+    <color name="duoqu_notify_black">#ff000000</color>
+    <color name="duoqu_split_line_background">#bcbcbc</color>
+    <color name="duoqu_sms_time_text_color">#414141</color>
+    <color name="duoqu_notify_white">#d8ffffff</color>
+    <color name="duoqu_notify_white2">#ccffffff</color>
+    <!-- 附近网点 -->
+    <color name="duoqu_nearby_point_name_blue">#358FF8</color>
+    <color name="duoqu_nearby_point_address_black">#454545</color>
+    <color name="duoqu_nearby_point_gray">#949494</color>
+    <color name="duoqu_nearby_point_distance_black">#6C6C6C</color>
+    <color name="duoqu_nearby_point_split_gray">#EFEFEF</color>
+    <color name="duoqu_nearby_point_bg_load_more">#F2F2F2</color>
+    <color name="duoqu_nearby_point_tip_load_more">#ADADAD</color>
+    <color name="duoqu_nearby_point_hyper_link">#75BAF5</color>
+    <color name="duoqu_gray_buttonpress">#DDDDDD</color>
+    <color name="duoqu_menu_bg">#fffbfb</color>
+
+    <!-- colo-size : notification  2016-03-28 -->
+    <color name="duoqu_notification_body_bg_color">#fafafa</color>
+    <color name="duoqu_notification_bottom_bg_color">#fafafa</color>
+    <color name="duoqu_notification_title_color">#414142</color>
+    <color name="duoqu_notification_subtitle_color">#64414142</color>
+    <color name="duoqu_notification_time_color">#64414142</color>
+    <color name="duoqu_notification_line_color">#e1e1e1</color>
+    <color name="duoqu_notification_btn_color">#414142</color>
+    <color name="duoqu_notification_btn_sec_color">#414142</color>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mms="http://schemas.android.com/apk/res/com.android.mms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/first_char_prompt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dip"
+        android:background="?attr/promptBgRes"
+        android:gravity="center"
+        android:textColor="?attr/promptSectionColor"
+        android:textSize="@dimen/gn_prompt_section_text_size"
+        android:visibility="gone" />
+
+    <com.gionee.mms.alphbetindex.AlphbetIndexView
+        android:id="@+id/alphbet_indexer"
+        android:layout_width="90dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/gn_padding_alphbet_index"
+        mms:promptSectionFontSize="@dimen/gn_prompt_section_font_size"
+        mms:sectionFontSize="@dimen/gn_section_font_size"
+        mms:waveSideRange="@dimen/gn_wave_side_range"
+        mms:promptBgRes="?attr/promptBgRes"
+        mms:enableSectionColor="?attr/enableSectionColor"
+        mms:disableSectionColor="?attr/disableSectionColor"
+        mms:showingLetterColor="?attr/showingLetterColor"
+        mms:promptSectionColor="?attr/promptSectionColor"
+        android:visibility="invisible" />
+
+</RelativeLayout>

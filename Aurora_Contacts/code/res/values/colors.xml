@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <color name="textColorIconOverlay">#fff</color>
+    <color name="textColorIconOverlayShadow">#000</color>
+
+    <color name="shortcut_overlay_text_background">#7f000000</color>
+
+    <color name="quickcontact_list_divider">#ffcdcdcd</color>
+    <color name="quickcontact_list_background">#ffe2e2e2</color>
+    <color name="quickcontact_tab_indicator">#ff33b5e6</color>
+
+    <!-- Color of the background of the contact detail and editor pages -->
+    <color name="background_primary">#FFFFFF</color>
+
+    <color name="background_social_updates">#ffeeeeee</color>
+
+    <!-- Color used for the letter in the A-Z section header -->
+    <color name="section_header_text_color">#ff999999</color>
+
+    <!-- Color of the text in the updates tab in the tab carousel on the contact detail page -->
+    <color name="detail_update_tab_text_color">#777777</color>
+
+    <!-- Color of the text describing an unconsumed missed call. -->
+    <color name="call_log_missed_call_highlight_color">#FF0000</color>
+
+    <!-- Color of the text describing an unconsumed voicemail. -->
+    <color name="call_log_voicemail_highlight_color">#33b5e5</color>
+
+    <!-- Colour background for the voicemail playback ui. -->
+    <color name="voicemail_playback_ui_background">@android:color/black</color>
+
+    <!-- Colour of voicemail progress bar to the right of position indicator. -->
+    <color name="voicemail_playback_seek_bar_yet_to_play">#44ffffff</color>
+
+    <!-- Colour of voicemail progress bar to the left of position indicator. -->
+    <color name="voicemail_playback_seek_bar_already_played">#ccffffff</color>
+
+    <!-- Colour of text that appears on the voicemail ui. -->
+    <color name="voicemail_playback_ui_text">#cc696969</color>
+
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#345</color>
+
+    <!-- Secondary text color in the Phone app -->
+    <color name="dialtacts_secondary_text_color">#888888</color>
+
+    <!-- Colors in the contact browser list -->
+    <color name="contact_count_text_color">#AAAAAA</color>
+
+    <!-- Color of the text of the tab carousel in the contact details  -->
+    <color name="detail_tab_carousel_tab_label_color">#EEEEEE</color>
+
+    <!-- Color of the text for buttons in the action bar  -->
+    <color name="action_bar_button_text_color">#FFFFFF</color>
+
+    <!--  Color of the status message for starred contacts in the People app -->
+    <color name="people_contact_tile_status_color">#CCCCCC</color>
+
+    <!--  Color of the semi-transparent shadow box on contact tiles -->
+    <color name="contact_tile_shadow_box_color">#7F000000</color>
+
+    <!--  Color of the vertical stripe that goes on the left of a block quote inside a stream item -->
+    <color name="stream_item_stripe_color">#CCCCCC</color>
+
+    <!-- Color of image view placeholder. -->
+    <color name="image_placeholder">#DDDDDD</color>
+    
+    <!-- Add for ICS -->
+    <color name="calllog_list_item_simname_font_color">#f5f5f5</color>
+    
+    <drawable name="translucent_background">#00000000</drawable>
+    
+    <color name="calllog_tab_current">#0ebc7d</color>
+    
+    <color name="calllog_tab_notcurrent">#b2b2b2</color>
+    
+    <color name="fab_bg">#f06872</color>
+    <color name="fab_bg_dialbutton">#0ebc7d</color>
+    <color name="choosesimdialog">#71b5f3</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="selected">#F0F2F1</color>
+    
+    <color name="tab_color_text_normal">#b2b2b2</color>
+    <color name="tab_color_text_selected">#0ebc7d</color>
+    <color name="tab_cursor_color">#0ebc7d</color>
+    <color name="tab_color_bg_normal">#FFFFFF</color>
+    <color name="actionbar_bg_color">#ffffff</color>
+    <color name="name_textview_color">#414142</color>
+   <color name="contact_list_header_text_color">#8d8d8e</color>
+    <color name="contact_list_header_background_color">#f5f5f5</color>
+     <color name="calllog_list_header_text_color">#8d8d8e</color>
+     <color name="mark_text_color">#8d8d8e</color>
+     <color name="number_textview_color">#8d8d8e</color>
+     
+     <color name="promptviewbg_color">#0ebc7d</color>
+     <color name="listview_item_color">#ffffff</color>
+      
+      <color name="double_list_item_data_text_size_with_photo">#8d8d8e</color>
+      <color name="double_list_item_name_text_size_with_photo">#414142</color>
+      <color name="single_list_item_name_text_color_with_photo">#414142</color>
+      
+      <color name="calllog_date_text_color">#b2b2b2</color>
+      <color name="calllog_count_text_color">#8d8d8e</color>
+</resources>

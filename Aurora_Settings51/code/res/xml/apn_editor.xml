@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        aurora:auroratitle="@string/apn_edit">
+        
+       <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_name"
+        aurora:auroradialogTitle="@string/apn_name"
+        aurora:aurorakey="apn_name"/>  
+        
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_apn"
+        aurora:auroradialogTitle="@string/apn_apn"
+        aurora:aurorakey="apn_apn"/>
+    
+    <!--aurora linchunhui 20150910 BUG-16347-->
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_type"
+        aurora:auroradialogTitle="@string/apn_type"
+        aurora:aurorakey="apn_type_list"
+        />             
+   <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_http_proxy"
+        aurora:auroradialogTitle="@string/apn_http_proxy"
+        aurora:aurorakey="apn_http_proxy"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_http_port"
+        aurora:auroradialogTitle="@string/apn_http_port"
+        aurora:aurorakey="apn_http_port"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_user"
+        aurora:auroradialogTitle="@string/apn_user"
+        aurora:aurorakey="apn_user"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_password"
+        aurora:auroradialogTitle="@string/apn_password"
+        aurora:aurorakey="apn_password"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_server"
+        aurora:auroradialogTitle="@string/apn_server"
+        aurora:aurorakey="apn_server"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_mmsc"
+        aurora:auroradialogTitle="@string/apn_mmsc"
+        aurora:aurorakey="apn_mmsc"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_mms_proxy"
+        aurora:auroradialogTitle="@string/apn_mms_proxy"
+        aurora:aurorakey="apn_mms_proxy"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_mms_port"
+        aurora:auroradialogTitle="@string/apn_mms_port"
+        aurora:aurorakey="apn_mms_port"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_mcc"
+        aurora:auroradialogTitle="@string/apn_mcc"
+        aurora:aurorakey="apn_mcc"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/apn_mnc"
+        aurora:auroradialogTitle="@string/apn_mnc"
+        aurora:aurorakey="apn_mnc"
+        />
+    <aurora.preference.AuroraListPreference
+        aurora:auroratitle="@string/apn_auth_type"
+        aurora:aurorakey="auth_type"
+        aurora:auroraentries="@array/apn_auth_entries"
+        aurora:auroraentryValues="@array/apn_auth_values"
+        />
+    <aurora.preference.AuroraListPreference
+        aurora:auroratitle="@string/apn_protocol"
+        aurora:auroradialogTitle="@string/apn_protocol"
+        aurora:aurorakey="apn_protocol"
+        aurora:auroraentries="@array/apn_protocol_entries"
+        aurora:auroraentryValues="@array/apn_protocol_values"
+        />
+    <aurora.preference.AuroraListPreference
+        aurora:auroratitle="@string/apn_roaming_protocol"
+        aurora:auroradialogTitle="@string/apn_roaming_protocol"
+        aurora:aurorakey="apn_roaming_protocol"
+        aurora:auroraentries="@array/apn_protocol_entries"
+        aurora:auroraentryValues="@array/apn_protocol_values"
+        />
+      <aurora.preference.AuroraCheckBoxPreference
+        aurora:auroratitle="@string/carrier_enabled"
+        aurora:aurorakey="carrier_enabled"
+        aurora:auroraenabled="false"
+        aurora:aurorasummaryOn="@string/carrier_enabled_summaryOn"
+        aurora:aurorasummaryOff="@@string/carrier_enabled_summaryOff"
+        />
+	
+     <aurora.preference.AuroraListPreference
+        aurora:auroratitle="@string/bearer"
+        aurora:aurorakey="bearer"
+        aurora:auroraentries="@array/bearer_entries"
+        aurora:auroraentryValues="@array/bearer_values"
+        />
+    <aurora.preference.AuroraListPreference
+        aurora:auroratitle="@string/mvno_type"
+        aurora:aurorakey="mvno_type"
+        aurora:auroraentries="@array/ext_mvno_type_entries"
+        aurora:auroraentryValues="@array/ext_mvno_type_values"
+        />
+    <com.android.settings.AuroraApnEditTextPreference
+        aurora:auroratitle="@string/mvno_match_data"
+        aurora:auroradialogTitle="@string/mvno_match_data"
+        aurora:aurorakey="mvno_match_data"
+        />
+</aurora.preference.AuroraPreferenceScreen >   

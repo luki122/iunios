@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="4dp">
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/rank_tabwidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        aurora:entriesTitle="@array/traffic_rank_titles"
+        aurora:textSize = "@dimen/main_activity_memory_text_size"
+        aurora:cursorWidth="@dimen/traffic_rank_tab_width"
+        aurora:cursorColor="@color/main_title_color" />
+</RelativeLayout>

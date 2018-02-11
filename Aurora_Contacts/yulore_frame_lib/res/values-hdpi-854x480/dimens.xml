@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="yulore_superyellowpage_detail_list_item_text">14sp</dimen>
+    <dimen name="yulore_superyellowpage_detail_list_item_subtext">12sp</dimen>
+</resources>

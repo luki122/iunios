@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.account"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <!-- 系统权限，之后需要打开 -->
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.aurora.account.AccountApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppActionTheme" >
+        <activity
+            android:name="com.aurora.account.activity.LoginActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustResize" >
+   
+            <intent-filter>
+                 <action android:name="android.intent.action.VIEW" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	               <data
+                    android:host="com.aurora.account.login"
+                    android:scheme="openaccount" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 引导页 -->
+        <activity
+            android:name="com.aurora.account.activity.SyncSettingGuideActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 引导页 -->
+        <activity
+            android:name="com.aurora.account.activity.SyncSettingGuide2Activity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 注册页 -->
+        <activity
+            android:name="com.aurora.account.activity.RegisterActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 手机号注册页 -->
+        <activity
+            android:name="com.aurora.account.activity.RegisterByPhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 国际码页 -->
+        <activity
+            android:name="com.aurora.account.activity.CountryCodeActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 验证手机号页 -->
+        <activity
+            android:name="com.aurora.account.activity.PhoneNumVerificationActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 邮箱注册页 -->
+        <activity
+            android:name="com.aurora.account.activity.RegisterByEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 验证邮箱页 -->
+        <activity
+            android:name="com.aurora.account.activity.EmailVerificationActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 创建账号信息页 -->
+        <activity
+            android:name="com.aurora.account.activity.RegisterAccountInfoActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 账号详情页 -->
+        <activity
+            android:name="com.aurora.account.activity.AccountInfoActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+             <intent-filter>
+               <action android:name="android.intent.action.VIEW" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	               <data
+                    android:host="com.aurora.account.accountInfo"
+                    android:scheme="openaccountinfo" />
+            </intent-filter>
+           </activity>
+        
+        <!-- 修改昵称页 -->
+        <activity
+            android:name="com.aurora.account.activity.SetNickActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <!-- 修改密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.ChangePwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <!-- 验证密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.ValidatePwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <!-- 修改手机号页 -->
+        <activity
+            android:name="com.aurora.account.activity.ChangePhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <!-- 修改邮箱页 -->
+        <activity
+            android:name="com.aurora.account.activity.ChangeEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <!-- 绑定成功页 -->
+        <activity
+            android:name="com.aurora.account.activity.BindSuccessActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- 同步账户页 -->
+        <activity
+            android:name="com.aurora.account.activity.SyncAccountActivity"
+            android:configChanges="screenSize"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 找回密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.FindPwdActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 通过手机找回密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.FindPwdByPhoneNumActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 通过邮箱找回密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.FindPwdByEmailActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" >
+        </activity>
+        
+        <!-- 重设密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.ResetPasswordActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 用户协议页 -->
+        <activity
+            android:name="com.aurora.account.activity.UserAgreementActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        
+        <!-- 通过手机找回密码页 -->
+        <activity
+            android:name="com.aurora.account.activity.PhotoBackupActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AccountTheme"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <!-- 同步设置 -->
+        <activity
+            android:name="com.aurora.account.activity.SyncSettingActivity"
+            android:configChanges="screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@com.aurora:style/Theme.aurora.Light"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 上传服务 -->
+        <service android:name="com.aurora.account.service.ExtraFileUpService" />
+        
+        <!-- 网络改变接收器 -->
+        <receiver android:name="com.aurora.account.receiver.NetWorkReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.aurora.account.receiver.StartSyncReceiver" >
+            <intent-filter>
+                <action android:name="com.aurora.account.START_SYNC" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="com.aurora.account.service.StartSyncService" android:exported="false" />
+        
+        <receiver android:name="com.aurora.account.receiver.BootCompletedReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <provider
+            android:name="com.aurora.account.contentprovider.AccountProvider"
+            android:authorities="com.aurora.account.accountprovider"
+            android:exported="true" />
+        
+        <service android:name="com.aurora.account.service.BackgroundWorkService" android:exported="false" />
+        
+        <!-- 应用备份闹钟触发 -->
+        <receiver
+            android:name="com.aurora.account.receiver.AutoBackupAlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.aurora.account.PHOTOBACKUPALARM" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- 系统时间改变的Receiver -->
+        <receiver android:name="com.aurora.account.receiver.SystemTimeChangeReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.TIME_SET" />
+			</intent-filter>
+		</receiver>
+        
+        <!-- 获取相册同步时间 -->
+        <receiver android:name="com.aurora.account.receiver.PhotoBackupSyncTimeReceiver" >
+            <intent-filter>
+                <action android:name="com.aurora.gallery.notify.time" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

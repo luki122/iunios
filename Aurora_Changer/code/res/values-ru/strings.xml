@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Настройки фоновых изображений</string>
+    <string name="group_num_type">р</string>
+    <string name="sdcard_change_name">Фоновые изображения</string>
+    <string name="lockscreen_wallpaper">Блокировки времени</string>
+    <string name="desktop_wallpaper">Изображения экрана</string>
+    <string name="menu_add">Добавить</string>
+    <string name="menu_next">Следующий </string>
+    <string name="setting_wallpaper">Сохранение…</string>
+    <string name="lockpaper_set_success">Удачная настройка фона блокировки</string>
+    <string name="wallpaper_set_success">Удачная настройка, сменян фон</string>
+    <string name="wallpaper_set_failed">Неудачная настройка, потеряно или сломано изображение</string>
+    <string name="set_wallpaper_failed">Неудачная настройка фона</string>
+    <string name="set_wallpaper">&quot;Настроить фон&quot;</string>
+    
+    <string name="select_all">Выбирать всё</string>
+    <string name="no_select_all">Выбирать обратно</string>
+    <string name="confirm_dialog_title">Уведомление о удалении</string>
+    <string name="confirm_delete_selected_message">Удалить выбранные изображения?</string>
+    <string name="confirm_ok">ОК</string>
+    <string name="confirm_cancel">Отмена</string>
+    <string name="wallpaper_is_deleting">Удаление...</string>
+    <string name="delete_success">Удалено</string>
+    <string name="delete_failed">Не удалено</string>
+
+    <string name="wallpaper_settings_video">&quot;com.mediatek.vlw&quot;</string>
+    <string name="wallpaper_settings_samsung">&quot;com.sec.android.app.wallpaperchooser&quot;</string>
+    <string name="wallpaper_settings_live">&quot;com.android.wallpaper.livepicker&quot;</string>
+    <string name="lockpaper_pre_null_str">Аномалия загрузки изображений</string>
+    <string name="wallpaper_crop_title">Перемещение и снижение изображений</string>
+    <string name="wallpaper_crop_ok">Сохранить</string>
+    <string name="wallpaper_crop_del">Удалить</string>
+    <string name="wallpaper_crop_custom_name">Определить пользователям</string>
+    <string name="wallpaper_crop_cancel_title">Внимание</string>
+    <string name="wallpaper_crop_cancel_msg">Отменить вырезанные?</string>
+    <string name="wallpaper_crop_del_msg">Удалить нынешнюю серию фона?</string>
+    <string name="wallpaper_select_max_toast">Изображения в серии блокировки времени не более 12</string>
+    <string name="wallpaper_crop_sdcard_error">Аномалия SD карты, повторно добавите</string>
+    
+    <string name="dialog_title">Уведомление</string>
+    <string name="image_loading">Загрузка изображения...</string>
+    <string name="image_too_small">Извините, пиксель выбранного изображения слишком низкая, не подходит к фоне.</string>
+    <string name="image_load_failed">Неудачная загрузка фона, повторно выбирать изображение</string>
+    <string name="wallpaper_setting">Настройка фона...</string>
+</resources>

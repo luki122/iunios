@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="style_action_bar_date_picker">
+        <item name="android:textColor">@color/aurora_actionbar_date_picker_text_color</item>
+        <item name="android:textSize">@dimen/aurora_all_in_one_action_bar_date_size</item>
+    </style>
+    
+    <style name="style_edit_text_view">
+        <item name="android:textColor">#414242</item>
+        <item name="android:textColorHint">#55414242</item>
+        <item name="android:textSize">@dimen/aurora_event_edit_item_text_size</item>
+    </style>
+    
+</resources>

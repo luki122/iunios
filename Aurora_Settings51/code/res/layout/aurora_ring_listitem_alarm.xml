@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aurora.audioprofile.AuroraCheckedTextViewWithTitle xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+    android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:gravity="center_vertical"
+    android:textColor="@android:color/white" 
+    android:background="@android:color/transparent"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:singleLine="true" 
+    android:paddingStart="17dp"
+    android:paddingEnd="15dp"
+    
+/>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="duoqu_attr">
+        <attr name="duoqu_height" format="dimension" />
+        <attr name="duoqu_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="duoqu_table_attr">
+        <attr name="title_textsize" format="dimension" />
+        <attr name="content_textsize" format="dimension" />
+        <attr name="title_textcolor" format="reference" />
+        <attr name="content_textcolor" format="reference" />
+        <attr name="title_paddingtop" format="dimension" />
+        <attr name="title_paddingleft" format="dimension" />
+        <attr name="content_paddingtop" format="dimension" />
+        <attr name="content_paddingleft" format="dimension" />
+        <attr name="content_paddingbottom" format="dimension" />
+        <attr name="single_line" format="string" />
+        <attr name="line_spacing" format="dimension" />
+        <attr name="margin_top" format="dimension" />
+         <attr name="margin_left" format="dimension" />
+         <attr name="margin_right" format="dimension" />
+         <attr name="margin_bottom" format="dimension" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+</resources>

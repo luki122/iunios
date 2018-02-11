@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/twoline_height"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin" >
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+            android:singleLine="true"
+            style="@style/list_primary_text_style" />
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:singleLine="true"
+            android:layout_marginTop="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+            style="@style/list_secondary_text_style"
+            android:text="@string/mars" />
+    </RelativeLayout>
+
+    <aurora.widget.AuroraCheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="17dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>

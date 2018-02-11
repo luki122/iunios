@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tuya_st_app_name">涂鸦</string>
+    <string name="tuya_st_drop_image">舍弃</string>
+    <string name="tuya_st_save_image">保存</string>
+    <string name="tuya_st_circle">圆形</string>
+    <string name="tuya_st_rectangle">矩形</string>
+    <string name="tuya_st_arrow">箭头</string>
+    <string name="tuya_st_pathline">画笔</string>
+    <string name="tuya_st_mosaic">马赛克</string>
+    <string name="tuya_st_msg_loading">加载中...</string>
+    <string name="tuya_st_msg_load_fail">加载失败</string>
+    <string name="tuya_st_msg_save">保存中...</string>
+    <string name="tuya_st_msg_memory_full_failed_save">存储空间已满，保存失败！</string>
+    <string name="tuya_st_msg_failed_to_save">保存失败！</string>
+    <string name="tuya_st_msg_save_content">是否保存当前标注？</string>
+    <string name="tuya_st_msg_nonsupport">不支持当前格式的标注</string>
+</resources>

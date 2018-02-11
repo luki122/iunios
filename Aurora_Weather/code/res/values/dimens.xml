@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- circle view height -->
+    <dimen name="circleIndexViewHeight">33dp</dimen>
+    <dimen name="WeatherAnimViewHeight">400dp</dimen>
+    
+    <dimen name="optionviewmarginright">12dp</dimen>
+    <dimen name="optionviewmargintop">21dp</dimen>
+    <dimen name="citynamesize">24sp</dimen>
+    <dimen name="dateandtimesize">14sp</dimen>
+    
+    <dimen name="detailsviewmarginbottom">366dp</dimen>
+    <dimen name="warn_detailsviewmarginbottom">330dp</dimen>
+    
+    <dimen name="cityoptionviewheight">200dp</dimen>
+    <dimen name="forcast_bottom_padding">25dp</dimen>
+    
+    <dimen name="main_view_marginbottom">0dp</dimen>
+    
+    <dimen name="citylist_item_icon_width">62dp</dimen>
+    <dimen name="citylist_divide_height">1px</dimen>
+    <dimen name="citylist_item_padding_left_right">20dp</dimen>
+    <dimen name="citylist_item_height">91dp</dimen>
+    
+    <dimen name="weatherwidgettxttime">77sp</dimen>
+    <dimen name="weatherwidgettxtall">15sp</dimen>
+</resources>

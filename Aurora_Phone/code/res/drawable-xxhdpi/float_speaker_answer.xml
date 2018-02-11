@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="23.3dp"
+    android:height="23.3dp"
+    android:viewportWidth="70"
+    android:viewportHeight="70">
+
+    <path
+        android:name="XMLID_33_"
+        android:fillColor="@color/float_speaker_answer_color"
+        android:pathData="@string/float_speaker_answer_path1" />
+    <path
+        android:name="XMLID_17_"
+        android:fillColor="@color/float_speaker_answer_color"
+        android:pathData="@string/float_speaker_answer_path2" />
+</vector>

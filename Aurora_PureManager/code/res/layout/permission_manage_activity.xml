@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="167.3dp"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/hint_big_text_size" />
+
+        <TextView
+            android:id="@+id/noAppText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/hint_small_text_margin_top"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/hint_small_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/HaveAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="91dp"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_gravity="top"
+                android:background="@drawable/line" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ListFrameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/btnLayout" >
+
+            <com.aurora.puremanager.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/appListview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@drawable/line"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:focusable="false"
+                android:listSelector="@drawable/item_of_middle" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

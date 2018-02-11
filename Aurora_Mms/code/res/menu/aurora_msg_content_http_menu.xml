@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-20 created for aurora's new feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_msg_http_visit"
+        android:title="@string/aurora_msg_web_visit">
+    </item>
+    <item
+        android:id="@+id/aurora_msg_http_copy"
+        android:title="@string/aurora_copy">
+    </item>
+</menu>

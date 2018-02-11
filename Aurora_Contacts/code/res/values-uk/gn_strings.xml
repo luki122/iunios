@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ 	<!-- GIONEE: luoguangming 2012.07.23 modify for "explay translate string CR00651738" begin-->
+  	<string name = "gn_phone_text">Телефон</string>
+	<string name="gn_phone_label">Телефон</string>
+	<string name="gn_account_phone" product="default">Только телефон</string>
+	<string name="gn_add_to_group">Додати контакти</string>
+	<string name="gn_add">Додати</string>
+	<string name="gn_menu_ringtone_set_batch">Встановити рингтон</string>
+    <string name="gn_contactsFavoritesLabel">Улюблені</string>
+    <string name="gn_allcall_tab_label">Всі виклики</string>
+    <string name="gn_misscall_tab_label">Пропущені</string>
+	<string name="gn_outgoingcall_tab_label">Вихідні</string>
+    <string name="gn_incomingcall_tab_label">Вхідні</string>
+    <string name="gn_no_conditioned_contacts">Співпадінь не знайдено.</string>
+    <string name="gn_dialer_suggest_show">Пошук контактів за іменем чи номеру в журналі викликів и тел.книзі. Щоб знайти контакт під іменем Іван, наберіть 4225.</string>
+    <string name="gn_hint_findContacts">"Пошук за контактами:%d"</string>
+	<string name="gn_remove">Видал.</string>
+	<string name="gn_remove_from_favorite">идалити з Улюблених</string>
+	<string name="gn_add_to_favorite">Додати в улюблені</string>
+	<string name="gn_save">Збер.</string>
+    <string name="gn_listCustomView">Змінити</string>
+	<string name="gn_menu_delete_contact">Видалити контакти</string>
+    <string name = "gn_share_contact_label">Карта пам\'яті</string>
+    <string name="gn_noMergableContacts_msg">Немає однакових контактів</string>
+    <string name="gn_noMergableConfirmation_title">Немає однакових</string>
+    <string name="gn_mergeContactsConfirmation">Об\'єднати однакові контакти, сохраненные в телефоне?</string>
+	<string name="gn_menu_merge_contacts">Об\'єднати контакти</string>
+    <string name="gn_mergeContactsConfirmation_title">Об\'єднати контакти</string>
+    <string name="gn_dialpad_add_exist_contact_item">Існуючий</string>
+	<!-- GIONEE: luoguangming 2012.07.23 modify for "explay translate string CR00651738"  end -->
+	<!-- GIONEE: lujian 2012.10.09 modify for "explay CR00709996" begin--> 
+	<string name="zzzzz_gn_menu_callNumber" msgid="5142851348489387516"><xliff:g id="NAME">%s</xliff:g></string> 
+	<!-- GIONEE: lujian 2012.10.09 modify for "explay CR00709996"   end-->
+       <string name="gn_menu_gemini_sim_management">Керування SIM</string>
+       
+    <string name="crop_picture">Crop picture</string>
+    <string name="cancel">Cancel</string>
+    <string name="crop_save_text">Crop</string>
+    <string name="crop_label">Crop picture</string>
+    <string name="reset">Reset</string>
+    <string name="load_failed">Load failed</string>
+    <!-- Gionee fangbin 20120716 added for CR00636040 start -->
+    <string name="crop_failed">Lack of space, cutting failed!</string>
+    <!-- Gionee fangbin 20120716 added for CR00636040 end -->
+</resources>

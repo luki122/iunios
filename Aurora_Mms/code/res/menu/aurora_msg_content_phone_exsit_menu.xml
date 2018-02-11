@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-04-21 created for bug #4438 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_msg_phone_dail"
+        android:title="@string/aurora_dail">
+    </item>
+    <item
+        android:id="@+id/aurora_msg_phone_forward"
+        android:title="@string/aurora_send_msg">
+    </item>
+    <item
+        android:id="@+id/aurora_msg_num_copy"
+        android:title="@string/aurora_copy">
+    </item>
+    <item
+        android:id="@+id/aurora_current_view"
+        android:title="@string/aurora_view_contact">
+    </item>
+</menu>

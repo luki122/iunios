@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天气</string>
+    <string name="tv_forcast">预报</string>
+    <string name="tv_24hour">24h</string>
+    <string name="tv_city_list_fragment_title">城市</string>
+    <string name="tv_city_search">取消</string>
+    <string name="tv_search_city">搜索城市</string>
+    <string name="tv_search_input">输入城市中文名或简拼</string>
+    <string name="tv_no_searching_city">没有相关城市</string>
+    <string name="tv_city_add_already_full">最多可添加7个城市，请左滑删除其他城市</string>
+    <string name="the_city_already_add">此城市已被添加</string>
+    <string name="locate_city_forbid_delete">定位城市不能删除</string>
+    <string name="tv_wind_location">%1s级</string>
+    <string name="refreshing">正在刷新...</string>
+    <string-array name="week_name_chinese">
+        <item>星期日</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <string name="today">今天</string>
+    <string name="lastday">昨天</string>
+    <string name="tv_air_quality">空气 : %1s</string>
+    <string name="tv_humidity">湿度%1s</string>
+    <string name="no_network">请连接网络以获取城市天气数据</string>
+    <string name="network_error">网络信号差，请稍候再试</string>
+    <string name="request_network_in">正在加载城市天气数据</string>
+    <string name="no_network_data">无网络数据</string>
+    <string name="refresh_justnow">刚刚更新</string>
+    <string name="refresh_before_minute"> 分钟前更新</string>
+    <string name="refresh_before_hour"> 小时前更新</string>
+    <string name="refresh_at_date"> 更新</string>
+    <string name="mWindDirection_default">东风N级</string>
+     <string name="mWindDirection_mHumidity_default">东风N级 湿度N%</string>
+    <string name="mHumidity_default">湿度N%</string>
+    <string name="airQualityDesc_defalut">空气 : 未知</string>
+    <string name="airQualityValue_value">N</string>
+    
+    <string-array name="weather_type_forcast">
+        <item>晴转雨</item>
+        <item>晴</item>
+        <item>多云</item>
+        <item>晴转多云</item>
+        <item>小雨</item>
+        <item>小雨</item>
+    </string-array>
+    <string-array name="weather_temperature_forcast">
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+        <item>--/--</item>
+    </string-array>
+    <string name="default_temperature">--/--</string>
+
+    <string name="loading">加载中</string>
+    <string name="inactive_network">网络状态差</string>
+    <string name="unknown">未知--/--</string>
+    <string name="weather_default">未知</string>
+        <string-array name="default_day_show">
+        <item>昨天</item>
+        <item>今天</item>
+        <item>第二天</item>
+        <item>第三天</item>
+        <item>第四天</item>
+        <item>第五天</item>
+    </string-array>
+    <string name="neverupdate">从未更新</string>
+    <string name="local_time_error">手机本地时间异常，请校准</string>
+    <string name="local_city_error">城市定位失败</string>
+    <string name="warn_detail_title">预警提示</string>
+    <string name="tv_warn_publishtime">发布于%1$s月%2$s日 %3$s</string>
+    <string name="tv_have_warn">有%1$s</string>
+    <string name="share_title">分享</string>
+    <string name="notification_title">预警提醒</string>
+    <string name="notification_content">%1$s有%2$s</string>
+    <string name="desk_tip_content">%1$s，%2$s°C，空气：%3$s</string>
+</resources>

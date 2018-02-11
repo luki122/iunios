@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/twoline_height"
+    android:minHeight="@dimen/twoline_height"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        style="@style/list_primary_text_style"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"/>
+        />
+
+    <TextView
+        android:id="@+id/sms_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/sms_title"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+        style="@style/list_secondary_text_style"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginRight="17dip"
+         />
+
+    <aurora.widget.AuroraCheckBox 
+        android:id="@+id/sms_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/sms_title"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/sms_date"
+        android:animateLayoutChanges="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/sms_title"
+        android:layout_toLeftOf="@id/sms_checkbox"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="2dp"
+        style="@style/list_secondary2_text_style"
+        />
+
+    <ImageView
+        android:id="@+id/mms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sms_title"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/sms_title"
+        android:src="@drawable/mms_flag" 
+        android:visibility="gone"/>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@com.aurora:dimen/aurora_list_doubleline_height"
+        android:layout_toLeftOf="@id/sms_date"
+        android:visibility="invisible">
+         
+     </LinearLayout>
+     
+     <View 
+         android:layout_height="2px"
+         android:layout_width="match_parent"
+         android:layout_alignParentBottom="true"
+         android:background="@color/list_divider_color"/>
+</RelativeLayout>
+

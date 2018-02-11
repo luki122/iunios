@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="preference_background">#3da0fd</color>
+    <color name="list_item_background">#3da0fd</color>
+    <color name="list_item_text_summary">#7b7b7b</color>
+    <color name="text_description">#444444</color>
+    <color name="settings_headers_arrow_text_color">#5d5d5d</color>
+    <color name="action_bar_save_press_color">#0ec16f</color>
+    <color name="gray">#c5c5c5</color>
+    <color name="gn_hide_encry_pop_text_color">#222222</color>
+    <color name="list_item_line">#e6e6e6</color>
+	<color name ="pref_category">#019c73</color>    
+    <color name="white_translucency">#ffffff</color>
+    <color name="translucency">#00ffffff</color>
+    <color name="button_no_enabled">#b8b8b8</color>
+    <color name="hint_text_color">#b2b2b2</color>
+    <color name="green_red">#019c73</color>
+    <color name="blue">#49aef7</color>
+    <color name="theme_kitty_title_color">#745054</color>
+    <color name="theme_her_title_color">#FF9999</color>
+    <color name="her_color">#FF9999</color>
+    <color name="list_item_press">#f0f0f0</color>
+    <color name="action_bar_widget_color">#ffffff</color>
+	<color name="dash_board_tile_divider">@com.aurora:color/aurora_list_divider_color</color>
+	<color name="dash_catetory_icon_color">#8a8faf</color>
+	<color name="aurora_volum_title_background_color">#19000000</color>
+    <color name="aurora_volum_title_color">#99414141</color>
+    <color name="aurora_volum_title_background_color_alarm">#19ffffff</color>
+    <color name="aurora_volum_title_color_alarm">#99ffffff</color>
+    <color name="finger_id_blue">#46a9ec</color>
+    <color name="search_panel_text_hint_color">#ffffff</color>
+</resources>

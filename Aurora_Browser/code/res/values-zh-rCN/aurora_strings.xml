@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preference_entry_text_size">
+        <item>@string/pref_item_text_size_small</item>
+        <item>@string/pref_item_text_size_normal</item>
+        <item>@string/pref_item_text_size_big</item>
+        <item>@string/pref_item_text_size_superbig</item>
+    </string-array>
+    <string-array name="preference_entryvalue_text_size">
+        <item>@string/text_size_small</item>
+        <item>@string/text_size_normal</item>
+        <item>@string/text_size_big</item>
+        <item>@string/text_size_superbig</item>
+    </string-array>
+    <string-array name="preference_key_search_engine">
+        <item>@string/baidu</item>
+        <item>@string/google</item>
+        <item>@string/yahoo_china</item>
+        <item>@string/microsoft_bing</item>
+    </string-array>
+    <string-array name="preference_value_search_engine">
+        <item>@string/pref_search_engine_value_baidu</item>
+        <item>@string/pref_search_engine_value_google</item>
+        <item>@string/pref_search_engine_value_yahoo_china</item>
+        <item>@string/pref_search_engine_value_microsoft_bing</item>
+    </string-array>
+    <string-array name="preference_key_smart_preload">
+        <item>@string/smart_preload_never</item>
+        <item>@string/smart_preload_on_wlan</item>
+        <item>@string/smart_preload_forever</item>
+    </string-array>
+    <string-array name="preference_value_smart_preload">
+        <item>@string/pref_preload_value_on_never</item>
+        <item>@string/pref_preload_value_on_wlan</item>
+        <item>@string/pref_preload_value_on_always</item>
+    </string-array>
+    <string-array name="preference_key_change_home_page">
+        <item>@string/this_page</item>
+        <item>@string/blank_page</item>
+        <item>@string/default_page</item>
+        <item>@string/other</item>
+    </string-array>
+
+    <!-- preference_value_change_home_page -->
+    <string-array name="preference_value_change_home_page"  translatable="false">
+        <item>current</item>
+        <item>blank</item>
+        <item>default</item>
+        <item>other</item>
+    </string-array>
+
+    <string name="no_picture_mode">无图模式</string>
+    <string name="setting">设置</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="text_size">字体大小</string>
+    <string name="text_size_big">LARGER</string>
+    <string name="text_size_small">SMALLEST</string>
+    <string name="text_size_normal">NORMAL</string>
+    <string name="text_size_superbig">LARGEST</string>
+    <string name="pref_item_text_size_big">大号</string>
+    <string name="pref_item_text_size_small">小号</string>
+    <string name="pref_item_text_size_normal">中号</string>
+    <string name="pref_item_text_size_superbig">超大</string>
+    <string name="search_engine">搜索引擎</string>
+    <string name="baidu">百度</string>
+    <string name="google">Google</string>
+    <string name="yahoo_china">中国雅虎</string>
+    <string name="microsoft_bing">必应</string>
+    <string name="smart_preload_on_wlan">仅限WLAN</string>
+    <string name="smart_preload_never">永不</string>
+    <string name="smart_preload_forever">始终</string>
+    <string name="smart_preload">智能预读</string>
+    <string name="clear_data">清除数据</string>
+    <string name="restore_factory">恢复默认设置</string>
+    <string name="ask_if_close_all_tab">关闭全部窗口？</string>
+    <string name="close_all">关闭</string>
+    <string name="advanced_setting">高级设置</string>
+    <string name="record_of_input">输入记录</string>
+    <string name="record_of_browse">浏览记录</string>
+    <string name="password_of_account">账户密码</string>
+    <string name="buffered_page">页面缓存</string>
+    <string name="cookies">Cookies</string>
+    <string name="geo_authorization">地理位置授权</string>
+    <string name="change_home_page">设置主页</string>
+    <string name="null_string"></string>
+    <string name="this_page">当前页</string>
+    <string name="blank_page">空白页</string>
+    <string name="default_page">默认页</string>
+    <string name="most_visited_website">访问最多的网站</string>
+    <string name="other">自定义</string>
+    <string name="remember_submited_form">记住表单数据</string>
+    <string name="remember_password">记住密码</string>
+    <string name="preference_key_text_size">preference_key_text_size</string>
+    <string name="preference_value_text_size_normal">NORMAL</string>
+    <string name="preference_value_text_size_small">SMALLER</string>
+    <string name="preference_value_text_size_big">LARGER</string>
+    <string name="preference_value_text_size_superbig">LARGEST</string>
+    <string name="pref_search_engine_value_baidu">baidu</string>
+    <string name="pref_search_engine_value_google">google</string>
+    <string name="pref_search_engine_value_yahoo_china">yahoo_cn</string>
+    <string name="pref_search_engine_value_microsoft_bing">bing_zh_CN</string>
+    <string name="pref_preload_value_on_wlan">WIFI_ONLY</string>
+    <string name="pref_preload_value_on_never">NEVER</string>
+    <string name="pref_preload_value_on_always">ALWAYS</string>
+    <string name="ask_if_clear_or_not">清除数据？</string>
+    <string name="ask_if_restore_factory">恢复默认设置？</string>
+    <string name="aurora_nav_tab_title">导航窗口标题</string>
+    <string name="aurora_nav_tab_content">导航窗口内容</string>
+
+    <string name="delete">删除</string>
+    <string name="restore">恢复</string>
+</resources>

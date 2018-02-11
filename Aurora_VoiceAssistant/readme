@@ -1,0 +1,34 @@
+
+app_vercode:1
+device_model:mione_plus_cdma
+build_version:2.3.5y
+condition:1
+processName:com.aurora.voiceassistant
+pid:1689
+uid:10075
+tag:null
+shortMsg:java.lang.UnsatisfiedLinkError
+longMsg:java.lang.UnsatisfiedLinkError: open
+stackTrace:java.lang.UnsatisfiedLinkError: open
+	at com.sohu.inputmethod.voice.encode.SpeexIMEInterface.open(Native Method)
+	at com.sogou.speech.b.d.<init>(Unknown Source)
+	at com.sogou.speech.a.b.q(Unknown Source)
+	at com.sogou.speech.a.b.<init>(Unknown Source)
+	at com.sogou.speech.a.a.d(Unknown Source)
+	at com.sogou.speech.ui.RecognizerDialog.a(Unknown Source)
+	at com.sogou.speech.ui.RecognizerDialog.show(Unknown Source)
+	at com.aurora.voiceassistant.MainActivity.onClick(MainActivity.java:203)
+	at android.view.View.performClick(View.java:2486)
+	at android.view.View$PerformClick.run(View.java:9130)
+	at android.os.Handler.handleCallback(Handler.java:587)
+	at android.os.Handler.dispatchMessage(Handler.java:92)
+	at android.os.Looper.loop(Looper.java:130)
+	at android.app.ActivityThread.main(ActivityThread.java:3703)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:624)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+

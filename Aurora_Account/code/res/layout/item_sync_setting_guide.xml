@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Account.LinearLayout.AccountSyncContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/account_sync_wifi_switch_height"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp" >
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/guide_item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="27dp"
+        android:layout_toLeftOf="@+id/module_switch"
+        android:gravity="center_vertical"
+        android:text="@string/account_sync_module_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_16" />
+
+    <LinearLayout
+        android:id="@+id/module_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/wlan_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_grey" />
+
+</RelativeLayout>

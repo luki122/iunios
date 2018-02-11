@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<!-- Aurora liugj 2013-11-20 modified for aurora's new feature -->
+<!-- Aurora liugj 2013-12-30 modified for list margin -->
+<resources>
+    <!-- Aurora liugj 2013-12-20 modified for aurora's new feature start-->
+    <dimen name="aurora_convfrom_text_max_width">175dp</dimen> 
+    <dimen name="aurora_from_text_max_width">250dp</dimen> 
+    <!-- Aurora liugj 2013-12-20 modified for aurora's new feature end-->
+    <dimen name="list_item_left_margin">17dip</dimen>
+    <dimen name="list_item_right_margin">17dip</dimen>
+     <!-- Aurora liugj 2013-10-30 modified for aurora's new feature start -->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <dimen name="list_item_top_margin">13.6dip</dimen>
+    <dimen name="list_item_bottom_margin">13.6dip</dimen>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+    <dimen name="list_item_height">71dip</dimen>
+     <!-- Aurora liugj 2013-10-30 modified for aurora's new feature end -->
+    <dimen name="list_item_margin">7dip</dimen>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <dimen name="list_item_margin_between">5dip</dimen>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+    <dimen name="list_right_del_width">72dip</dimen>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <dimen name="text_item_bottom_padding">1.0dip</dimen>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+    <!-- Aurora liugj 2013-10-11 modified for aurora's new feature start -->
+    <dimen name="list_checkbox_top_margin">8dip</dimen>
+    <!-- Aurora liugj 2013-10-11 modified for aurora's new feature end -->
+    <dimen name="aurora_titlebar_margin">12dip</dimen>
+    <!-- Aurora liugj 2013-09-25 added for aurora's new feature start -->
+    <dimen name="aurora_empty_margin_top">176dip</dimen>
+    <!-- Aurora liugj 2013-09-25 added for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-03-25 added for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <dimen name="list_sw_margin_bottom">3dip</dimen>
+   <!-- Aurora xuyong 2014-08-01 modified for bug #7092 start-->
+   <!-- Aurora xuyong 2014-08-07 modified for bug #7331 start -->
+    <dimen name="list_sp_margin_bottom">5dip</dimen>
+    <dimen name="list_sp_noti_margin_bottom">3dip</dimen>
+   <!-- Aurora xuyong 2014-08-07 modified for bug #7331 end -->
+   <!-- Aurora xuyong 2014-08-01 modified for bug #7092 end-->
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2014-03-25 added for aurora's new feature end -->
+    <dimen name="aurora_personal_avatar_size_length">36dip</dimen>
+    <dimen name="aurora_notification_avatar_size_length">30dip</dimen>
+    <dimen name="aurora_conv_list_title_text_size">14sp</dimen>
+    <dimen name="aurora_conv_list_snippet_text_size">12sp</dimen>
+    <dimen name="aurora_conv_list_snippet_linespace">5dp</dimen>
+    <dimen name="aurora_conv_personal_list_height">60dip</dimen>
+    <dimen name="aurora_personal_list_vertical_padding">12dip</dimen>
+    <dimen name="aurora_conv_notification_title_height">45dip</dimen>
+    <dimen name="aurora_conv_notification_text_top_margin">11dip</dimen>
+    <dimen name="aurora_conv_notification_text_bottom_margin">9dip</dimen>
+    <dimen name="aurora_msg_text_size">13sp</dimen>
+    <dimen name="aurora_title_name_txt_size">14sp</dimen>
+    <dimen name="aurora_title_number_txt_size">11sp</dimen>
+    <dimen name="aurora_msg_time_txt_size">11sp</dimen>
+    <dimen name="aurora_title_layout_height">54dip</dimen>
+
+    <dimen name="list_conv_purpose_margin_bottom">1dip</dimen>
+
+    <dimen name="aurora_list_conv_cb_tm">11dip</dimen>
+    <dimen name="aurora_list_notify_conv_cb_tm">12dip</dimen>
+    <dimen name="aurora_list_cb_lm">34dip</dimen>
+</resources>

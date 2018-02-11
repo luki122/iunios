@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tu_ya_dimen_head_height">50dp</dimen>
+    <dimen name="tu_ya_dimen_save_text_size">18sp</dimen>
+    <dimen name="tu_ya_dimen_icon_padding">20dp</dimen>
+    <dimen name="tu_ya_dimen_tuya_padding">12dp</dimen>
+
+    <dimen name="tu_ya_dimen_paint_size_1">8dp</dimen>
+    <dimen name="tu_ya_dimen_paint_size_2">13dp</dimen>
+    <dimen name="tu_ya_dimen_paint_size_3">16dp</dimen>
+
+    <dimen name="tu_ya_dimen_drawbale_paint_color_size">20dp</dimen>
+    <dimen name="tu_ya_dimen_drawbale_paint_color_radius_size">2dp</dimen>
+
+    <dimen name="tu_ya_default_pathline_paint_size">@dimen/tu_ya_dimen_paint_size_1</dimen>
+    <dimen name="tu_ya_default_circle_paint_size">@dimen/tu_ya_dimen_paint_size_1</dimen>
+    <dimen name="tu_ya_default_rectangle_paint_size">@dimen/tu_ya_dimen_paint_size_1</dimen>
+    <dimen name="tu_ya_default_arrow_paint_size">@dimen/tu_ya_dimen_paint_size_1</dimen>
+    <dimen name="tu_ya_default_mosaic_paint_size">@dimen/tu_ya_dimen_paint_size_2</dimen>
+
+    <dimen name="tu_ya_dimen_drawing_select_panel_padding">12dp</dimen>
+    <dimen name="tu_ya_dimen_drawing_icon__margin_top">6dp</dimen>
+    <dimen name="tu_ya_dimen_drawing_icon__margin_bottom">0dp</dimen>
+    <dimen name="tu_ya_dimen_drawing_text_size">8sp</dimen>
+
+    <dimen name="tu_ya_dimen_undo_button_width">50dp</dimen>
+    <dimen name="tu_ya_dimen_redo_margin_left">20dp</dimen>
+    <dimen name="tu_ya_dimen_redo_button_width">50dp</dimen>
+
+    <dimen name="tu_ya_dimen_config_panel_height">31dp</dimen>
+    <dimen name="tu_ya_dimen_config_panel_margin_top">15dp</dimen>
+    <dimen name="tu_ya_dimen_config_panel_margin_bottom">8dp</dimen>
+    <dimen name="tu_ya_dimen_config_panel_padding">14dp</dimen>
+
+    <dimen name="tu_ya_dimen_config_mosaic_blur_panel_icon_margin_left">2dp</dimen>
+    <dimen name="tu_ya_dimen_config_mosaic_blur_panel_icon_margin_right">9dp</dimen>
+
+</resources>

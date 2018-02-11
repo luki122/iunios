@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goto_search_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@com.aurora:drawable/aurorasearchviewbarbackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="39dp"
+        android:layout_centerVertical="true"
+        android:text="@string/search_hint"
+        android:textColor="@com.aurora:color/aurora_textcolor_hint"
+        android:textSize="15sp" />
+
+ 
+</RelativeLayout>

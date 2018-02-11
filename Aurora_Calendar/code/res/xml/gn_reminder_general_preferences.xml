@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Gionee <jiating> <2013-05-06> modify for CR00000000 begin -->
+<aurora.preference.AuroraPreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:aurorakey="preferences_alerts"
+            aurora:auroradefaultValue="true"
+            aurora:auroratitle="@string/preferences_alerts_title" />
+
+        <aurora.preference.AuroraRingtonePreference
+            aurora:auroralayout="?android:attr/preferenceLayoutChild"
+            aurora:aurorakey="preferences_alerts_ringtone"
+            aurora:auroratitle="@string/preferences_alerts_ringtone_title"
+            aurora:auroraringtoneType="notification"
+            aurora:auroradefaultValue="content://settings/system/notification_sound" />
+<!--Gionee <jiating><2013-06-13> modify for CR00825951 delete Vibrate Item begin -->
+<!--  
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:auroralayout="?aurora:auroraattr/preferenceLayoutChild"
+            aurora:aurorakey="preferences_vibrate_forEventReminder"
+            aurora:auroratitle="@string/preferences_alerts_vibrateWhen_title"
+            aurora:auroradefaultValue="false"
+            aurora:aurorasummary="@string/preferences_alerts_vibrateWhen_summary" />
+-->
+<!--Gionee <jiating><2013-06-13> modify for CR00825951 delete Vibrate Item end -->
+        <aurora.preference.AuroraCheckBoxPreference
+            aurora:auroralayout="?android:attr/preferenceLayoutChild"
+            aurora:aurorakey="preferences_alerts_popup"
+            aurora:auroradefaultValue="false"
+            aurora:auroratitle="@string/preferences_alerts_popup_title" />
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="preferences_default_reminder"
+            aurora:auroradefaultValue="@string/preferences_default_reminder_default"
+            aurora:auroratitle="@string/preferences_default_reminder_title"
+            aurora:auroraentries="@array/preferences_default_reminder_labels"
+            aurora:auroraentryValues="@array/preferences_default_reminder_values"
+            aurora:auroradialogTitle="@string/preferences_default_reminder_dialog" />
+<!--Gionee <jiating><2013-06-13> modify for CR00825784  delete this item begin  -->
+<!-- 
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="preferences_quick_responses"
+            aurora:aurorafragment="com.android.calendar.QuickResponseSettings"
+            aurora:auroratitle="@string/quick_response_settings"
+            aurora:aurorasummary="@string/quick_response_settings_summary" />
+ -->
+<!--Gionee <jiating><2013-06-13> modify for CR00825784  delete this item end  -->
+</aurora.preference.AuroraPreferenceScreen>
+<!-- Gionee <jiating> <2013-05-06> modify for CR00000000 end -->

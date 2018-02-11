@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="24dip"
+        android:layout_height="@dimen/citylist_item_height"
+         >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerVertical="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/item_city_content_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item_city_list_city_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_city_list_fragment_title"
+                        android:textColor="#333333"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/locate_flag" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/item_city_list_city_terperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_temperature"
+                        android:textColor="#b5b5b5"
+                        android:textSize="14sp" 
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:src="@drawable/temperature_small_point_black" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+         <RelativeLayout
+            android:layout_width="102dp"
+            android:layout_height="91dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/item_city_list_city_right_circle_view"
+                android:layout_width="@dimen/citylist_item_icon_width"
+                android:layout_height="@dimen/citylist_item_icon_width"
+                android:layout_centerInParent="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_city_list_city_right_circle_view"
+                android:layout_alignLeft="@id/item_city_list_city_right_circle_view"
+                android:layout_alignRight="@id/item_city_list_city_right_circle_view"
+                android:layout_alignTop="@id/item_city_list_city_right_circle_view" 
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="29sp" />
+
+                <ImageView
+                    android:id="@+id/iv_temperature_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv_temperature"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/tv_temperature"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/temperature_point_small"
+                    android:visibility="invisible" 
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha="0.5" />
+
+</LinearLayout>

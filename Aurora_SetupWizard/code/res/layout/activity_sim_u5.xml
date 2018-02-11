@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/bg" />
+    
+    <ImageView 
+        android:layout_width="232dp"
+        android:layout_height="176dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/sim_icon"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:singleLine="true"
+        android:text="@string/scma_insert_sim_card"
+        android:textColor="@color/language_welcome"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_info_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:singleLine="true"
+        android:text="@string/scma_insert_sim_card_info_1"
+        android:textColor="@color/app_reson_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_info_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="@string/scma_insert_sim_card_info_2"
+        android:textColor="@color/app_reson_color"
+        android:textSize="14sp" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- aurora hujianwei 20150724 modify for sim lock  -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/security_settings_title">
+
+    <!--<aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="fingerprint"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/fingerprint">
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="fingerprint_settings"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/finger_manager">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.fingerprint.AuroraFingerprintMainActivity"
+                android:targetPackage="com.android.settings" />
+        </aurora.preference.AuroraPreference>
+
+    </aurora.preference.AuroraPreferenceCategory>-->
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="sim_lock"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sim_lock_settings_title">
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="sim_lock_settings"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sim_lock_settings_category">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.IccLockSettings"
+                android:targetPackage="com.android.settings" />
+
+        </aurora.preference.AuroraPreference>
+
+        <!-- aurora hujianwei 20150724 modify for sim lock settings start -->
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="sim01_lock_settings_category"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sim01_lock_settings_category">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.IccLockSettings"
+                android:targetPackage="com.android.settings">
+                <extra
+                    android:name="sim_card_id"
+                    android:value="0" />
+            </intent>
+
+        </aurora.preference.AuroraPreference>
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="sim02_lock_settings_category"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sim02_lock_settings_category">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.IccLockSettings"
+                android:targetPackage="com.android.settings">
+                <extra
+                    android:name="sim_card_id"
+                    android:value="1" />
+            </intent>
+
+        </aurora.preference.AuroraPreference>
+        <!-- aurora hujianwei 20150724 modify for sim lock settings start -->
+
+    </aurora.preference.AuroraPreferenceCategory>
+    <!-- modify by jiyouguang -->
+    <!--     <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/security_passwords_title"
+                aurora:aurorapersistent="false">
+
+            <aurora.preference.AuroraSwitchPreference aurora:aurorakey="show_password"
+                    aurora:auroratitle="@string/show_password"
+                    aurora:aurorapersistent="false"/>
+
+        </aurora.preference.AuroraPreferenceCategory> -->
+    <!--    end -->
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="device_admin_category"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/device_admin_title">
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorafragment="com.android.settings.DeviceAdminSettings"
+            aurora:aurorakey="manage_device_admin"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/manage_device_admin_summary"
+            aurora:auroratitle="@string/manage_device_admin" />
+
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="toggle_install_applications"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/install_unknown_applications"
+            aurora:aurorasummaryOn="@string/install_unknown_applications"
+            aurora:auroratitle="@string/install_applications" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="credentials_management"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/credentials_title">
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="credential_storage_type"
+            aurora:aurorapersistent="false"
+
+            aurora:auroratitle="@string/credential_storage_type" />
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorafragment="com.android.settings.TrustedCredentialsSettings"
+            aurora:aurorakey="trusted_credentials"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/trusted_credentials_summary"
+            aurora:auroratitle="@string/trusted_credentials" />
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="credentials_install"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/credentials_install_summary"
+            aurora:auroratitle="@string/credentials_install">
+
+            <intent
+                android:action="android.credentials.INSTALL"
+                android:targetClass="com.android.certinstaller.CertInstallerMain"
+                android:targetPackage="com.android.certinstaller" />
+
+        </aurora.preference.AuroraPreference>
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="credentials_reset"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/credentials_reset_summary"
+            aurora:auroratitle="@string/credentials_reset">
+
+            <intent
+                android:action="com.android.credentials.RESET"
+                android:targetClass="com.android.settings.CredentialStorage"
+                android:targetPackage="com.android.settings" />
+
+        </aurora.preference.AuroraPreference>
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="advanced_security"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/advanced_security_title">
+
+        <!--<aurora.preference.AuroraPreference
+            aurora:aurorafragment="com.android.settings.TrustAgentSettings"
+            aurora:aurorakey="manage_trust_agents"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/manage_trust_agents_summary"
+            aurora:auroratitle="@string/manage_trust_agents" />-->
+
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.ScreenPinningSettings"
+            aurora:aurorakey="screen_pinning_settings"
+            aurora:aurorasummary="@string/switch_off_text"
+            aurora:auroratitle="@string/screen_pinning_title" />
+
+        <!--<aurora.preference.AuroraPreference
+            aurora:aurorafragment="com.android.settings.UsageAccessSettings"
+            aurora:aurorakey="usage_access"
+            aurora:auroratitle="@string/usage_access_title" />-->
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

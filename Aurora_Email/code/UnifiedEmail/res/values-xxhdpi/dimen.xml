@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- add by SQF start -->
+    <dimen name="aurora_listview_checkbox_margin_top">37dp</dimen>
+    
+    <dimen name="aurora_listview_empty_tip_tv_height">400dp</dimen>
+    <!-- add by SQF end -->
+</resources>

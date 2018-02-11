@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shareInterpolator="false" android:zAdjustment="normal">
+      
+    	<scale 
+        	android:fromYScale="@dimen/aurora_dialpad_bg_scale_Y"
+	        android:toYScale="1.0"
+	        android:pivotX="50%"
+	        android:pivotY="100%"
+	        android:fromXScale="1.0"
+	        android:toXScale="1.0"
+	      	android:interpolator="@android:anim/decelerate_interpolator"
+	        android:duration="@integer/common_anim_duration"/>
+    	
+	        
+</set>

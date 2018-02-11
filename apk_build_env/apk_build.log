@@ -1,0 +1,243 @@
+********GN_STATIC_JARS_PATH:./static_jars/2.0/mtk/5.1/6753
+********GN_JARS_PATH:./jars/2.0/mtk/5.1/6753
+[32mTarget[0m *******build_local_static_jar*******
+[32mTarget[0m *************build apk**************
+[32mTarget[0m R.java and Manifest.java
+./tools/5.1/aapt package --auto-add-overlay --extra-packages com.android.ex.chips -z -m -J ./out/pkg/src -M ../Aurora_Weather/code/AndroidManifest.xml -P ./out/pkg/public_resources.xml -S ../Aurora_Weather/code/res -A ../Aurora_Weather/code/assets -I ./jars/2.0/mtk/5.1/6753/framework_res.apk -I ./jars/2.0/mtk/5.1/6753/aurora-framework_res.apk -G ./out/pkg/proguard_options --min-sdk-version 15 --target-sdk-version 15 --version-code 15
+Warning: AndroidManifest.xml already defines versionCode (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines minSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+[32mTarget[0m transform_aidl_to_java
+[32mTarget[0m transform_logtags_to_java
+[32mTarget[0m transform_java_to_classes_jar
+/home/aurora/jdk1.7.0_75/bin/javac -J-Xmx512M -target 1.7 -Xmaxerrs 9999999 -encoding UTF-8 -g -bootclasspath ./jars/2.0/mtk/5.1/6753/core/classes.jar -classpath ./jars/2.0/mtk/5.1/6753/javax.obex/classes.jar:./jars/2.0/mtk/5.1/6753/setup-wizard-navbar/classes.jar:./jars/2.0/mtk/5.1/6753/mms-common/classes.jar:./jars/2.0/mtk/5.1/6753/core-junit/classes.jar:./jars/2.0/mtk/5.1/6753/android.policy/classes.jar:./jars/2.0/mtk/5.1/6753/apache-xml/classes.jar:./jars/2.0/mtk/5.1/6753/aurora-framework/classes.jar:./jars/2.0/mtk/5.1/6753/mediatek-common/classes.jar:./jars/2.0/mtk/5.1/6753/ims-common/classes.jar:./jars/2.0/mtk/5.1/6753/ext/classes.jar:./jars/2.0/mtk/5.1/6753/conscrypt/classes.jar:./jars/2.0/mtk/5.1/6753/mediatek-telephony-common/classes.jar:./jars/2.0/mtk/5.1/6753/framework/classes.jar:./jars/2.0/mtk/5.1/6753/services/classes.jar:./jars/2.0/mtk/5.1/6753/voip-common/classes.jar:./jars/2.0/mtk/5.1/6753/mediatek-framework/classes.jar:./jars/2.0/mtk/5.1/6753/core-libart/classes.jar:./jars/2.0/mtk/5.1/6753/telephony-common/classes.jar:./jars/2.0/mtk/5.1/6753/bouncycastle/classes.jar:./static_jars/2.0/mtk/5.1/6753/android-common/javalib.jar:./static_jars/2.0/mtk/5.1/6753/android-common-chips/javalib.jar:./static_jars/2.0/mtk/5.1/6753/android-support-v13/javalib.jar:./static_jars/2.0/mtk/5.1/6753/android-support-v4/javalib.jar:../Aurora_Weather/code/libs/jackson-all-1.8.10.jar:../Aurora_Weather/code/libs/locSDK_4.2.jar -d ./out/pkg/classes @./out/pkg/java-source-list-uniq
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[32mTarget[0m transform_jar_to_proguard
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.au$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.d$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.x$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ad$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ad$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.d$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ad$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.au$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.aj$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.s$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ay$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.au$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.d$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.l$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.LocationClient$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.GeofenceClient$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ai$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.s$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.s$3) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.ai$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.aj$2) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.o$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+warning: Ignoring InnerClasses attribute for an anonymous inner class
+(com.baidu.location.BDLocation$1) that doesn't come with an
+associated EnclosingMethod attribute. This class was probably produced by a
+compiler that did not target the modern .class file format. The recommended
+solution is to recompile the class from source, using an up-to-date compiler
+and without specifying any "-target" type options. The consequence of ignoring
+this warning is that reflective operations on this class will incorrectly
+indicate that it is *not* an inner class.
+[32mTarget[0m add assets to package
+./tools/5.1/aapt package --auto-add-overlay --extra-packages com.android.ex.chips -u -z -c zh_CN,en_US,ru_RU,ldpi,hdpi,mdpi,nodpi,xhdpi,xxhdpi,xxxhdpi -M ../Aurora_Weather/code/AndroidManifest.xml -S ../Aurora_Weather/code/res -A ../Aurora_Weather/code/assets -I ./jars/2.0/mtk/5.1/6753/framework_res.apk -I ./jars/2.0/mtk/5.1/6753/aurora-framework_res.apk --min-sdk-version 15 --target-sdk-version 15 --product default --version-code 15 -F ./out/pkg/package.apk
+warning: ignoring flag -c ldpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c hdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c mdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c nodpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c ldpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c hdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c mdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c nodpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxxhdpi-v4. Use --preferred-density instead.
+../Aurora_Weather/code/res/drawable-xxxhdpi/add_option_click.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/add_option_click.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/cloudy_back.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/cloudy_front.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/cloudy_middle.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/localcityindexpoint.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/long_click_shadow.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/optionviewsrc_select.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxxhdpi/optionviewsrc_select.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/rain_large.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/rain_middle.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/rain_small.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/temperature7.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/temprature_minus.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-mdpi/weather_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-hdpi/weather_icon.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/widget_cloudy.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+../Aurora_Weather/code/res/drawable-xxhdpi/widget_diagonal_line.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+Warning: AndroidManifest.xml already defines versionCode (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines minSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+ './out/pkg/classes.dex' as 'classes.dex'...
+[32mTarget[0m signatured apk
+[32mTarget[0m copy apk target
+`./out/pkg/package.apk' -> `./out/Aurora_Weather/Aurora_Weather.apk'

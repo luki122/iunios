@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/aurora_timing_start"
+        android:background="@*com.aurora:drawable/aurora_list_selector_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="12dp"
+            android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+            android:gravity="left"
+            android:textColor="#414142"
+            android:text="@string/timing_start" />
+
+        <TextView
+            android:id="@+id/timing_start_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="2dp"
+            android:textColor="#99414141"
+            android:textSize="12sp"
+            android:gravity="left" />
+        
+        
+            <View android:layout_width="match_parent"
+                android:layout_height="1px" 
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="36dp"
+                android:background="#16000000" 
+      />
+    </LinearLayout>
+    
+
+
+
+    <LinearLayout
+        android:id="@+id/aurora_timing_end"
+        android:background="@*com.aurora:drawable/aurora_list_selector_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="12dp"
+            android:textSize="@com.aurora:dimen/aurora_preference_title_text_size"
+            android:gravity="left"
+            android:textColor="#414142"
+            android:text="@string/timing_end" />
+
+        <TextView
+            android:id="@+id/timing_end_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="#99414141"
+            android:textSize="12sp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+</LinearLayout>

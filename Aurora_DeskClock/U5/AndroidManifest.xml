@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.deskclock"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="10000"
+    android:versionName="1.297" >
+
+    <uses-sdk
+        android:targetSdkVersion="22" />
+    
+    <original-package android:name="com.aurora.alarmclock" />
+    <original-package android:name="com.android.deskclock" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_alarmclock1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <provider
+            android:name="com.android.deskclock.AlarmProvider"
+            android:authorities="com.android.deskclock"
+            android:exported="true" />
+                
+        <activity
+            android:name="com.android.deskclock.AlarmClock"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.android.deskclock.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.android.deskclock.AuroraSetAlarm"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:label="@string/set_alarm"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.android.deskclock.AlarmAlert"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""/>
+        
+        <activity
+            android:name="com.android.deskclock.AlarmAlertFullScreen"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/AlarmAlertFullScreenTheme" />
+        
+        <receiver
+            android:name="com.android.deskclock.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.android.deskclock.ALARM_ALERT" />
+                <action android:name="alarm_killed" />
+                <action android:name="cancel_snooze" />
+                <action android:name="alarm_repeat_ring" />
+                <action android:name="com.aurora.lancher.start.anim" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name="com.android.deskclock.BootAlarmReciver" >
+            <intent-filter>
+                <action android:name="com.aurora.keyguard.snooze.acton" />
+                <action android:name="com.aurora.keyguard.dissmiss.acton" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- <receiver android:name="com.android.deskclock.SystemShutDownReciver">
+            <intent-filter >
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="com.aurora.shutdown.alarm.action"/>
+            </intent-filter>
+        </receiver> -->
+        
+        <activity
+            android:name="com.android.deskclock.HandleSetAlarm"
+            android:excludeFromRecents="true"
+            android:permission="com.android.alarm.permission.SET_ALARM"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        
+       <service
+            android:name="com.android.deskclock.AlarmKlaxon"
+            android:description="@string/alarm_klaxon_service_desc"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.deskclock.ALARM_ALERT" />
+            </intent-filter>
+        </service>
+        
+        <receiver android:name="com.android.deskclock.AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.SERVICE_STATE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="com.aurora.lancher.start.anim" />
+                <action android:name="android.intent.action.ACTION_KEYCODE_POWER_SHORTPRESS" />
+            </intent-filter>
+        </receiver>
+        
+        
+        <receiver android:name="com.aurora.timer.TimerInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.android.deskclock.Screensaver"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DREAM" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name=".PoweroffAlarmReceiver">
+            <intent-filter>
+               <action android:name="android.intent.action.POWER_OFF_ALARM_ALERT" />  
+               <category android:name="android.intent.category.DEFAULT" />             
+            </intent-filter>
+        </receiver>
+
+       <activity
+            android:name="com.android.deskclock.HandleApiCalls"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="" 
+            android:permission="com.android.alarm.permission.SET_ALARM"
+            android:theme="@android:style/Theme.NoDisplay"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_ALARMS" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.SET_TIMER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.android.deskclock.CTSHandleApiReceiver">
+            <intent-filter >
+                <action android:name="com.android.deskclock.ALARM_ALERT"/>
+                <action android:name="com.aurora.gst.timer.action"/>
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".AlarmPhoneListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.deskclock.ALARM_PHONE_LISTENER" />
+            </intent-filter>
+        </service>
+        
+        <activity
+            android:name="com.aurora.worldtime.WorldTimeSearchActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateUnspecified" />
+        
+        <receiver android:name="com.aurora.alarmclock.DigitalAppWidgetProvider"  
+                  android:label="@string/app_widget_label" >  
+            <intent-filter>  
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>                                
+                <action android:name="cn.com.karl.widget.click" />  
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>  
+            <meta-data android:name="android.appwidget.provider"   
+                       android:resource="@xml/update_appwidget_info" />  
+        </receiver>
+        
+        <service android:name="com.aurora.alarmclock.DigitalAppWidgetService"  android:label="@string/app_name"
+            android:exported="true">  
+            <intent-filter>  
+                <action android:name="com.aurora.UPDATE_SERVICE" />  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </service> 
+        
+        <receiver android:name="com.aurora.alarmclock.DigitalTimeAppWidgetProvider"  
+                  android:label="@string/app_widget_label_time" >  
+            <intent-filter>  
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>          
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>  
+            <meta-data android:name="android.appwidget.provider"   
+                       android:resource="@xml/update_appwidget_time_info" />  
+        </receiver>
+        <service android:name="com.aurora.alarmclock.DigitalTimeService" 
+            android:exported="true"
+		android:process=":remote">
+            <intent-filter>
+                <action android:name="com.aurora.UPDATE_SERVICE_WIDGET" />  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>
+            
+        </service>
+        <service android:name="com.aurora.alarmclock.DigitalTimeAppWidgetService"  android:label="@string/app_name"
+            android:exported="false">  
+            <intent-filter>  
+                <action android:name="com.aurora.TIME_UPDATE_SERVICE" />  
+                <category android:name="android.intent.category.DEFAULT" />  
+            </intent-filter>  
+        </service> 
+        
+        <receiver android:name="com.aurora.alarmclock.AnalogClockAppWidgetProvider"  
+                  android:label="@string/app_widget_label_analogclock" >  
+            <intent-filter>  
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>  
+            <meta-data android:name="android.appwidget.provider"   
+                       android:resource="@xml/update_appwidget_analogclock_info" />  
+        </receiver>
+        
+        
+                <service
+            android:name="com.aurora.timer.ChronometerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.android.intent.chronometer.ALARM.ALERT" />
+            </intent-filter>
+        </service>
+        
+                        <activity
+            android:name="com.aurora.timer.ChronometerAlertFullScreen"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+                       android:theme="@style/Aurora_Theme_Dialog" />
+        <!-- Gionee <baorui><2013-03-06> modify for CR00774104 end -->
+
+        <activity
+            android:name="com.aurora.timer.ChronometerAlarmAlert"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+                 android:theme="@style/Aurora_Theme_Dialog" />
+        
+        <receiver android:name="com.aurora.timer.TimerReceiver" >
+            <intent-filter>
+                <action android:name="coma.aurora.timer.alert" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

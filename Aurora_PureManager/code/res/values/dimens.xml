@@ -1,0 +1,210 @@
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+     <!-- main_activity_grid_item_text_margin changed from 6dp to 2dp(2015-1-9,Vulcan Yang) -->
+    <dimen name="main_activity_grid_item_text_margin">2dp</dimen>
+    <dimen name="main_activity_maincircle_layout_height">330dp</dimen>
+    <dimen name="main_activity_maincircle_height">240dp</dimen>
+    <dimen name="main_activity_clear_btn_margintop">254dp</dimen>
+    <dimen name="main_activity_maincircle_margintop">28dp</dimen>
+    <dimen name="main_activity_circlenum_layout">162.7dp</dimen>
+    <dimen name="main_activity_circlenum_text_margintop">23.7dp</dimen>
+    <dimen name="main_activity_circlenum_text_size">56sp</dimen>
+    <dimen name="main_activity_percent_text_size">22sp</dimen>
+    <dimen name="main_activity_memory_text_size">12sp</dimen>
+    <dimen name="main_activity_circleview_height">300dp</dimen>
+    <dimen name="main_activity_gridview_spacing">0dp</dimen>
+    <dimen name="add_auto_start_noapptext_margintop">167.3dp</dimen>
+    <dimen name="listview_dividerheight">1px</dimen>
+    <dimen name="list_item_btn_width">52dp</dimen>
+    <dimen name="list_item_btn_height">27dp</dimen>
+    <dimen name="add_auto_start_addbtn_margin_right">17dp</dimen>
+    <dimen name="add_auto_start_addbtn_text_size">16sp</dimen>
+    <dimen name="add_auto_start_list_item_text_paddingleft">12dp</dimen>
+    <dimen name="add_auto_start_list_item_text_size">15sp</dimen>
+    <dimen name="second_page_top_layout_height">294dp</dimen>
+
+    <dimen name="all_app_list_noapptext_margintop">176dp</dimen>
+    <dimen name="all_app_list_gotomarketbtn_marginbottom">82dp</dimen>
+    <dimen name="all_app_list_memorysizelayout_height">29.33dp</dimen>
+    <dimen name="all_app_list_toastlayout_margin_right">78dp</dimen>
+    <dimen name="all_app_list_item_tvletter_size">29sp</dimen>
+    <dimen name="all_app_list_subtext_margin_top">7dp</dimen>
+    <dimen name="all_app_popup_window_btn_height">45dp</dimen>
+    <dimen name="all_app_right_actionbar_changesortbtn_paddingright">23dp</dimen>
+    <dimen name="appdetailInfolayout_marginbottom">15dp</dimen>
+    <dimen name="appdetailInfolayout_margintop">18dp</dimen>
+    <dimen name="appdetailInfolayout_btnlayout_height">74dp</dimen>
+    
+    <dimen name="progress_width">230dp</dimen>
+    <dimen name="progress_width_short">132dp</dimen>
+    
+    <dimen name="preferences_item_height">47dp</dimen>
+    <dimen name="preferences_item_text_size">17sp</dimen>
+    <dimen name="list_header_padding_top">10dp</dimen>
+    <dimen name="list_header_padding_bottom">3.3dp</dimen>
+    <dimen name="ad_scan_app_anim_holder_size">250dp</dimen>
+    <dimen name="ad_scan_app_icon_size">35dp</dimen>
+    <dimen name="main_circle_view_stroke_width">21.3dp</dimen>
+    <dimen name="main_circle_view_diameter">218.7dp</dimen>
+    <dimen name="list_header_text_size">18sp</dimen>
+    <dimen name="preference_list_header_padding_top">6dp</dimen>
+    <dimen name="preference_list_header_padding_bottom">6dp</dimen>
+    <dimen name="hint_big_text_size">22sp</dimen> 
+    <dimen name="hint_small_text_size">10sp</dimen> 
+    <dimen name="hint_small_text_margin_top">6dp</dimen> 
+    <dimen name="all_app_popup_window_btn_width">126dp</dimen>
+    <dimen name="letter_side_bar_text_width">13dp</dimen>
+    <dimen name="privacy_app_icon_size">55dp</dimen>
+    <dimen name="privacy_app_grid_item_width">68.34dp</dimen>
+    <dimen name="privacy_app_grid_item_height">92.3dp</dimen>
+    <dimen name="all_app_right_action_bar_chg_btn_padding_bottom">14dp</dimen>
+    <dimen name="leftLayout_padding_left">5dp</dimen>
+    <dimen name="permission_listitem_height">60dp</dimen>
+    <dimen name="pernission_list_text_size">16sp</dimen>
+    <dimen name="tab_curser_height">36dp</dimen>
+    <dimen name="app_info_layout_height">76dp</dimen>
+    
+    <dimen name="empty_view_icon_and_text_margin_top">204dp</dimen>
+    <dimen name="traffic_rank_tab_width">22dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 公有设置 不要随便修改 -->
+    <dimen name="button_size">18sp</dimen>
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="title_size">25sp</dimen>
+    <dimen name="small_textsize">12sp</dimen>
+    <dimen name="head_text_size">12sp</dimen>
+    <dimen name="textsize_8">8sp</dimen>
+    <dimen name="textsize_9">9sp</dimen>
+    <dimen name="textsize_10">10sp</dimen>
+    <dimen name="textsize_11">11sp</dimen>
+    <dimen name="textsize_12">12sp</dimen>
+    <dimen name="textsize_13">13sp</dimen>
+    <dimen name="textsize_14">14sp</dimen>
+    <dimen name="textsize_15">15sp</dimen>
+    <dimen name="textsize_16">16sp</dimen>
+    <dimen name="textsize_17">17sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="textsize_22">22sp</dimen>
+    <dimen name="textsize_24">24sp</dimen>
+    <dimen name="textsize_28">28sp</dimen>
+    <dimen name="textsize_66">66sp</dimen>
+
+    <dimen name="textsize_16pt">11sp</dimen>
+    <dimen name="textsize_20pt">13sp</dimen>
+    <dimen name="textsize_22pt">15sp</dimen>
+    <dimen name="textsize_25pt">17sp</dimen>
+    <dimen name="textsize_28pt">19sp</dimen>
+    <dimen name="textsize_18pt">12sp</dimen>
+    <dimen name="textsize_88pt">88sp</dimen>
+
+    <dimen name="length_2dp">2dp</dimen>
+    <dimen name="length_4dp">4dp</dimen>
+    <dimen name="length_6dp">6dp</dimen>
+    <dimen name="length_80dp">80dp</dimen>
+    <dimen name="length_32dp">32dp</dimen>
+    <dimen name="length_38dp">38dp</dimen>
+    <dimen name="length_48dp">48dp</dimen>
+    <dimen name="length_40dp">40dp</dimen>
+    <dimen name="length_58dp">58dp</dimen>
+
+
+    <dimen name="app_ranking_tab_bottomline_height">2dp</dimen>
+    <dimen name="tag_viewpage_margin_top">-0.1dp</dimen>
+    <dimen name="homepage_tabview_height">45dp</dimen>
+    <dimen name="battery_icon_left_margin">231dp</dimen>
+    <dimen name="battery_icon_top_margin">80dp</dimen>
+    <dimen name="battery_pic_height">294dp</dimen>
+    <dimen name="battery_pic_top">62dp</dimen>
+    <dimen name="usb_icon_top">42dp</dimen>
+    <dimen name="battery_pic_left">85dp</dimen>
+    <dimen name="battery_text_left">20dp</dimen>
+    <dimen name="battery_text_top">81dp</dimen>
+    <dimen name="height_12">12dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="height_68">68dp</dimen>
+    <dimen name="height_72">72dp</dimen>
+    <dimen name="height_22">22dp</dimen>
+    <dimen name="list_icon_left">16dp</dimen>
+    <dimen name="list_icon_width">24dp</dimen>
+    <dimen name="height_23">23dp</dimen>
+    <dimen name="height_26">26dp</dimen>
+    <dimen name="height_16">16dp</dimen>
+    <dimen name="power_item_portrait_margin">12dp</dimen>
+    <dimen name="height_18">18dp</dimen>
+    <dimen name="height_19">19dp</dimen>
+    <dimen name="height_14">14dp</dimen>
+    <dimen name="height_6">6dp</dimen>
+    <dimen name="list_icon_right">16dp</dimen>
+    <dimen name="list_item_height">54dp</dimen>
+    <dimen name="head_text_height">30dp</dimen>
+    <dimen name="list_app_item_height">56dp</dimen>
+    <dimen name="list_left_right_margin">16dp</dimen>
+    <dimen name="list_single_text_size">16sp</dimen>
+    <dimen name="list_icon_size">38dp</dimen>
+
+    <!-- 耗电详情界面 layout/powersaver_app_percentage_item.xml -->
+    <dimen name="usagedetails_gridlayout_paddingLeft">8dp</dimen>
+    <dimen name="usagedetails_gridlayout_paddingTop">8dp</dimen>
+    <dimen name="usagedetails_gridlayout_paddingBottom">8dp</dimen>
+    <dimen name="usagedetails_image_width">40dp</dimen>
+    <dimen name="usagedetails_image_height">40dp</dimen>
+    <dimen name="usagedetails_image_marginLeft">16dp</dimen>
+    <dimen name="usagedetails_image_marginRight">16dp</dimen>
+    <dimen name="usagedetails_title_margintop">12dp</dimen>
+    <dimen name="usagedetails_summary_margintop">12dp</dimen>
+    <dimen name="usagedetails_name_marginTop">4dp</dimen>
+    <dimen name="usagedetails_percentage_marginTop">4dp</dimen>
+    <dimen name="usagedetails_percentage_marginLeft">8dp</dimen>
+    <dimen name="usagedetails_indicator_width">48dp</dimen>
+    <dimen name="usagedetails_indicator_height">48dp</dimen>
+    <dimen name="usagedetails_progressbar_height">12dp</dimen>
+    <dimen name="normal_listview_height">64dp</dimen>
+
+    <dimen name="cursor_height">2dp</dimen>
+    <dimen name="cursor_item_text_size">13sp</dimen>
+    <dimen name="big_pic_top_padding">48dp</dimen>
+    <dimen name="big_pic_bottom_padding">24dp</dimen>
+    <dimen name="big_text_top">24dp</dimen>
+    <dimen name="big_text_left">16dp</dimen>
+    <dimen name="middle_text_size">14sp</dimen>
+    <dimen name="middle_text_top">12dp</dimen>
+    <dimen name="bottom_text_top">24dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="cursor_width">50dp</dimen>
+    <dimen name="percent_top">20dp</dimen>
+    <dimen name="battery_icon_margin">5dp</dimen>
+    <dimen name="battery_icon_dynamic">44dp</dimen>
+    <dimen name="battery_icon_total_height">118dp</dimen>
+    <dimen name="usb_icon_height">86dp</dimen>
+    <dimen name="tab_curser_width">46dp</dimen>
+    <dimen name="wait_anim_bottom">180dp</dimen>
+    <dimen name="wait_bottom_margin">102dp</dimen>
+    
+    <dimen name="net_manage_dot_margin_right">4dp</dimen>
+    <dimen name="big_pic_height">376dp</dimen>
+    <dimen name="battery_icon_width">54dp</dimen>
+    <dimen name="battery_icon_height">136dp</dimen>
+    <dimen name="gray_text_space">6dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="gray_line_left_margin">56dp</dimen>
+    <dimen name="power_item_text_size_big">14sp</dimen>
+    <dimen name="power_item_text_size_middle">12sp</dimen>
+    <dimen name="power_item_middle_height">50dp</dimen>
+    <dimen name="power_item_big_height">60dp</dimen>
+    <dimen name="battery_usage_item_height">60dp</dimen>
+    <dimen name="battery_usage_item_top1">12dp</dimen>
+    <dimen name="battery_usage_item_top2">8dp</dimen>
+    <dimen name="battery_usage_item_text_big">16sp</dimen>
+    <dimen name="gray_line_margin_portrait">7dp</dimen>
+    <dimen name="battery_usage_item_text_middle">10sp</dimen>
+    <dimen name="loading_top">458dp</dimen>
+
+</resources>

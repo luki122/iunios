@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*gionee gaoj 2012-4-6 added for GIUI4.0 start
+ */
+-->
+<com.android.mms.ui.WPMessageListItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wpms_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/gn_wp_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView 
+            android:id="@+id/gn_wp_msg_sim"
+            android:layout_toRightOf="@id/gn_wp_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wpms_layout_view_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--         <view xmlns:android="http://schemas.android.com/apk/res/android"
+            class="com.android.mms.ui.QuickContactDivot"
+            style="?android:attr/quickContactBadgeStyleWindowMedium"
+            android:id="@+id/avatar"
+            position="right_upper"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="1dip"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            /> -->
+
+        <LinearLayout
+            android:id="@+id/message_block"
+            android:minHeight="@dimen/avatar_width_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView android:id="@+id/text_view"
+                android:autoLink="all"
+                android:paddingLeft="@dimen/message_item_text_padding_left_right"
+                android:paddingRight="@dimen/message_item_text_padding_left_right"
+                android:paddingTop="@dimen/message_item_text_padding_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/locked_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/expiration_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dip"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/details_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="3dip"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.android.mms.ui.WPMessageListItem>

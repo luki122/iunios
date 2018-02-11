@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/ringtone_rela" >
+    
+    <TextView
+        android:id="@+id/local_ringtone_text"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@com.aurora:color/window_background_color_default"
+        android:gravity="center_vertical"
+        android:minHeight="28dp"
+        android:paddingLeft="16dp"
+        android:text="@string/downloaded_ringtone"
+        android:textColor="#a0414142"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/local_ringtone_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/local_ringtone_text"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+    
+    <TextView
+        android:id="@+id/no_downloadringtone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_downloaded_ringtone"
+        android:textColor="#cccccc"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- @dimen/local_item_hv -->
+
+    <FrameLayout
+        android:id="@+id/album_image_frame"
+        android:layout_width="@dimen/local_item_hv"
+        android:layout_height="@dimen/local_item_hv" >
+
+        <ImageView
+            android:id="@+id/album_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/checkbox_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/ingest_sorting"
+        android:scaleType="center"
+        android:paddingBottom="4dp"
+        android:paddingRight="4dp"
+        android:src="@drawable/aurora_check14"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/checkbox_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/ingest_sorting"
+        android:scaleType="center"
+        android:src="@drawable/aurora_check00"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/isvideo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ingest_sorting"
+        android:scaleType="center"
+        android:src="@drawable/ic_gallery_play"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/collection_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/ingest_sorting"
+        android:scaleType="center"
+        android:src="@drawable/ic_gallery_fav"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- </LinearLayout> -->

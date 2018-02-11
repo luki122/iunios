@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 锁屏壁纸信息配置 -->
+<!-- name: 主题名称
+	 default：是否为默认主题
+	 title_color：主题文字颜色值
+	 time_black：时间控件是否为黑色
+	 status_black：状态栏是否为黑色 -->
+<wallpaper>
+	<lockpaper name="Timely" default="false">
+		<title_color>#FFB64B2C</title_color>
+	    <time_black>false</time_black>
+	    <statusbar_black>false</statusbar_black>
+	</lockpaper>
+</wallpaper>

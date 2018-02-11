@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aurora_action_bar_tint">#FFFFFF</color>
+    <color name="aurora_action_bar_divider_tint">#7fff</color>
+    <color name="aurora_action_bar_title_color">#000000</color>
+    <color name="aurora_action_bar_btn_color">#000000</color>
+    <color name="aurora_action_bar_title_color_pressed">#0ec16f</color>
+    <color name="aurora_menu_item_text_color">#000000</color>
+    <color name="aurora_menu_item_selected_color">#3DA0FD</color>
+    <color name="aurora_menu_item_color">#FFFFFF</color>
+    <color name="aurora_menu_item_cover_color">#FFFFFF</color>
+    <color name="aurora_menu_item_text_color_pressed">#FFFFFF</color>
+    <color name="aurora_action_bottom_bar_background_color">#272928</color>
+    <color name="aurora_action_bottom_bar_title_enable_color">#b8b8b8</color>
+    <color name="aurora_text_view_link_color">#ff3578d3</color>
+
+    <string-array name="colors">
+        <item>#60eaef</item>
+        <item>#98bffe</item>
+        <item>#fe8770</item>
+        <item>#ffdb7e</item>
+        <item>#a0abff</item>
+        <item>#c3fe77</item>
+        <item>#dedede</item>
+    </string-array>
+    
+    <color name="aurora_storage_pic_color">#60eaef</color>
+    <color name="aurora_storage_video_color">#98bffe</color>
+    <color name="aurora_storage_music_color">#fe8770</color>
+    <color name="aurora_storage_file_color">#ffdb7e</color>
+    <color name="aurora_storage_apk_color">#a0abff</color>
+    <color name="aurora_storage_other_color">#c3fe77</color>
+    <color name="aurora_storage_free_color">#dedede</color>
+    
+    <color name="aurora_storage_text_color">#565656</color>
+    <color name="aurora_storage_title_color">#019c73</color>
+    <color name="aurora_file_item_detail_color">#7b7b7b</color>
+    
+    <color name="aurora_file_item_text_color">#FFFFFF</color>
+    <color name="aurora_file_item_bg_color_1">#ef6161</color>
+    <color name="aurora_file_item_bg_color_2">#61a4ef</color>
+    <color name="aurora_file_item_bg_color_3">#1fdbba</color>
+    <color name="aurora_file_item_bg_color_4">#d6e1df</color>
+
+</resources>

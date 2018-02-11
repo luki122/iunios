@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popupback" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selfdefinecycle"
+        android:textSize="18sp"
+        android:textColor="@color/selfdefinecycle"
+        android:gravity="center_horizontal"
+        android:paddingTop="14dp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center_horizontal" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/dayone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dayone"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+
+            <CheckBox
+                android:id="@+id/daytwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daytwo"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+
+            <CheckBox
+                android:id="@+id/daythree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daythree"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+            <CheckBox
+                android:id="@+id/dayfour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dayfour"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+
+            <CheckBox
+                android:id="@+id/dayfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dayfive"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+
+            <CheckBox
+                android:id="@+id/daysix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daysix"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp" 
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle"/>
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+            <CheckBox
+                android:id="@+id/dayseven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dayseven"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/selfdefinecycle" />
+            
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48.3dp"
+        android:layout_marginBottom="20dp">
+        <Button 
+            android:id="@+id/quxiao"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+			android:gravity="center"
+            android:text="@string/quxiao"
+            android:textSize="20sp"
+            android:textColor="@color/selfdefinecycle"/>
+        <Button 
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_gravity="right"
+			android:gravity="center"
+            android:text="@string/sure"
+            android:textSize="20sp"
+            android:textColor="@color/selfdefinecycle"/>
+    </LinearLayout>
+
+</LinearLayout>

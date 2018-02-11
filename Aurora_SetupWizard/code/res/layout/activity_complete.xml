@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/bg" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginLeft="107dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/comlete_icon"/>
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:layout_marginTop="210dp"
+        android:text="@string/complete_title"
+        android:textColor="@color/language_welcome"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_complete"
+        android:singleLine="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="54dp"
+        android:text="@string/app_recommend"
+        android:textColor="@color/language_welcome_text"
+        android:textSize="16sp" />
+    
+
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" />
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/tv_recommend"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_anzhuang"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:singleLine="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/next_"
+            android:text="@string/anzhuang" />
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/tv_anzhuang"
+            android:background="@color/app_bg" />
+
+        <ListView
+            android:id="@+id/lv_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/v"
+            android:layout_alignParentTop="true"
+            android:divider="@null"
+            android:paddingBottom="10dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <TextView 
+        android:id="@+id/tv_complete_info"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8dp"
+       	android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="@color/app_reson_color"
+        android:text="@string/complete_info"/>
+    
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_above="@id/footer"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@drawable/complete_play_icon"
+            android:drawablePadding="4dp"
+            android:paddingLeft="12dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:paddingRight="12dp"
+            android:background="@drawable/complete_play_bg"
+            android:layout_marginBottom="112dp"
+            android:visibility="gone"
+            android:onClick="play"
+            android:text="@string/complete_play_text"/>
+    
+</RelativeLayout>

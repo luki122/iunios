@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.aurora.view.GridViewForEmbed
+         android:id="@+id/item_grid_view"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content"
+         android:paddingLeft="@dimen/quick_index_grid_normal_padding_left"
+         android:paddingRight="@dimen/quick_index_grid_normal_padding_right"
+         android:gravity="left"
+         android:numColumns="4"
+         android:horizontalSpacing="0dp" 
+         android:verticalSpacing="@dimen/quick_index_gridviewforembed_verticalspacing"
+         android:paddingTop="@dimen/quick_index_gridViewForEmbed_padding_top"
+         >
+        
+    </com.aurora.view.GridViewForEmbed>
+<!--                android:layout_marginLeft="4dp" 36 center-->
+<!--          android:layout_marginRight="30dp"     -->
+</FrameLayout>
+<!-- android:background="@drawable/def_soft_list_bg"/> -->

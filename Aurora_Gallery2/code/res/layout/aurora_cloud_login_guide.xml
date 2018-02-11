@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingTop="8dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:background="#f2f2f2"
+	    android:orientation="vertical">
+		<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/login_guide_bg"
+		    android:orientation="vertical">
+		  
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="200dp"
+		    	   android:background="@drawable/login_guide_bg"
+		    	android:gravity="center"
+		    	android:orientation="horizontal">
+		    	
+		    	<LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginBottom="2dp"
+			    	android:orientation="vertical">
+			    	<aurora.widget.AuroraRoundedImageView
+			    	    android:id="@+id/guide_head"
+			    	    android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/head_icon"
+				        android:labelFor="@string/accessibility_back_to_first_level"
+			    	    />
+			    	<TextView 
+			    	    android:id="@+id/my_head_text"
+			    	    android:layout_width="fill_parent"
+			    	    android:layout_height="wrap_content"
+			    	    android:lines="1"
+			    	    android:layout_gravity="center"
+			    	    android:gravity="center"
+			    	    android:layout_marginTop="10dp"
+			    	    android:textSize="10sp"
+			    	    android:textColor="#b2000000"
+			    	    android:ellipsize="end"
+			    	    android:text="@string/aurora_cloud_iuni_account_number"/>
+			    </LinearLayout>
+			    
+		    	<ImageView
+		    	    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/relevance_icon"
+			        android:layout_marginLeft="16dp"
+			        android:layout_marginRight="16dp"
+			        android:layout_marginBottom="13dp"
+		    	    />
+		    	
+		    	<LinearLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				     android:layout_marginBottom="2dp"
+			    	android:orientation="vertical">
+			    	 <aurora.widget.AuroraRoundedImageView
+		    	    android:id="@+id/baidu_icon"
+		    	    android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:src="@drawable/baidu_logo"
+		    	    />
+		    	    <TextView 
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_gravity="center"
+			    	android:gravity="center"
+			    	android:layout_marginTop="10dp"
+			    	android:textSize="10sp"
+			    	 android:textColor="#b2000000"
+		    	    android:text="@string/aurora_cloud_baidu"/>
+			    </LinearLayout>
+			 
+			    
+		    </LinearLayout>
+		    
+		    <Button
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dp"
+		         android:id="@+id/bt_login_iuni"
+		         android:background="@drawable/aurora_login_button_bg"
+		         android:gravity="center"
+		         android:textColor="#ffffff"
+		         android:textSize="14sp"
+		         android:elevation="0dp"
+		         android:stateListAnimator="@null"
+		         android:text="@string/aurora_cloud_login_iuni" />
+		
+		     <Button
+		          android:layout_width="fill_parent"
+		         android:layout_height="48dp"
+		         android:elevation="0dp"
+		         android:background="@drawable/aurora_bind_baidu_button_bg"
+		         android:id="@+id/bt_bind_baidu"
+		         android:gravity="center"
+		         android:textSize="14sp"
+		          android:stateListAnimator="@null"
+		         android:textColor="#ffffff"
+		         android:text="@string/aurora_cloud_login_baidu"
+		         />
+	
+		</LinearLayout>
+	</LinearLayout>
+	
+	 <ProgressBar
+                android:id="@+id/bind_baidu_progressBar"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+        		android:layout_centerVertical="true"
+        		android:layout_gravity="center"
+        		android:layout_marginBottom="70dp"
+                android:visibility="invisible"
+                 	/>
+	
+</FrameLayout>

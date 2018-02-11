@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+ <!-- Aurora xuyong 2013-09-13 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-10-18 modified for aurora's new feature start -->
+<LinearLayout 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+        <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <aurora.widget.AuroraTextView
+        android:id="@+id/aurora_freeze_text"
+        android:background="@null"
+        android:paddingTop="1.8dip"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#3da0fd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <aurora.widget.AuroraTextView
+        android:id="@+id/aurora_freeze_nail"
+        android:background="@null"
+        android:paddingTop="1.8dip"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="#3da0fd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+</LinearLayout>
+<!-- Aurora xuyong 2013-10-18 modified for aurora's new feature end -->
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature end -->

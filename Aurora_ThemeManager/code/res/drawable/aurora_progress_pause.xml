@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:viewportHeight="66"
+    android:viewportWidth="66"
+    android:width="22dp" >
+    <group
+        android:translateX="27.27"
+        android:translateY="19.5" >
+        <path
+            android:name="aurora_actionbar_done"
+            android:fillColor="@color/progress_btn_second_color"
+            android:pathData="M-0.002,27.000 L17.469,13.500 L-0.002,-0.000 L-0.002,27.000 Z"
+            />
+        </group>
+
+</vector>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ /**gionee gaoj 2012-5-4 added for GIUI4.0 start
+  */
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/add_quick_text_content"
+        android:scrollbars="vertical"
+        android:maxLines="6"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:hint="@string/quick_text_edit_hint"
+        android:singleLine="false"
+        android:minLines="3"
+        android:maxLength="200"
+        android:autoText="false"
+        android:capitalize="none"
+        android:textCursorDrawable="@null"
+        android:gravity="fill_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+</LinearLayout>

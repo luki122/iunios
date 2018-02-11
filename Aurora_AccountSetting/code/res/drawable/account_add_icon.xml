@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/dash_category_finger_icon_size"
+    android:height="@dimen/dash_category_finger_icon_size"
+    android:viewportHeight="60"
+    android:viewportWidth="60">
+
+    <group
+        android:translateX="9.97"
+        android:translateY="9.96">
+        <path
+            android:fillColor="@color/dash_category_finger_add_icon_color"
+            android:pathData="M40.062,23.034 L23.031,23.034 L23.031,40.065 L17.031,40.065 L17.031,23.034 L-0.000,23.034 L-0.000,17.034 L17.031,17.034 L17.031,0.002 L23.031,0.002 L23.031,17.034 L40.062,17.034 L40.062,23.034 Z" />
+    </group>
+
+</vector>

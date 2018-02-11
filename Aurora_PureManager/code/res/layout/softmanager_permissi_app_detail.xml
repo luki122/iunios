@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/permission_detail_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/trust"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/permission_listitem_height"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/traffic_ripple_button"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/permission_trust_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itrust"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/permission_detail_item_text"
+                android:textSize="@dimen/pernission_list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/itrust_second"
+                android:textColor="@color/permission_detail_item_hint"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/permission_trust_switch"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/permission_trust_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/trust"
+        android:background="@color/divider_color_permission" />
+
+    <!-- <ExpandableListView
+        android:id="@+id/permission_app_expand_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/permission_trust_divider"
+        android:divider="@null" /> -->
+        
+        <aurora.widget.AuroraListView
+        android:id="@+id/permission_app_expand_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/permission_trust_divider"
+        android:divider="@null"
+         android:dividerHeight="@dimen/zero_dp" />
+
+    <RelativeLayout
+        android:id="@+id/permission_trust__empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/permission_trust_empty_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/empty_view_icon_and_text_margin_top"
+            android:background="@drawable/empty_image" />
+
+        <TextView
+            android:id="@+id/permission_trust_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/permission_trust_empty_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/has_no_trust_permission"
+            android:textColor="#cdd0d3"
+            android:textSize="@dimen/pernission_list_text_size" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loadview"
+        android:visibility="gone" />
+
+</RelativeLayout>

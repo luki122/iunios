@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aurora_sound_and_vibrate">声音与振动</string>
+    <string name="app_name">声音与振动</string>
+    <string name="gn_audio_profile_message_invalid_name_wrong">名字中包含无效字符</string>
+    <string name="sound_category_notification_title" msgid="3502115998790286943">"通知"</string>
+    <string name="sound_and_system_feedback_category_title" msgid="4399742321363475393">"音效与系统反馈"</string>
+
+    <string name="alarm_ring_title">闹钟铃声</string>
+    <string name="restore_defaults">"恢复默认设置"</string>
+    <string name="enable">"启用"</string>
+    <string name="format_ok">格式化 SD 卡成功!</string>
+    <string name="format_notok">格式化 SD 卡失败!</string>
+    <string name="ringtone_tab_title">选择铃声</string>
+    <string name="sound_settings_title" msgid="8735891486683305886">"声音与振动"</string>
+
+    <string name="sms_sound_title">短信铃声</string>
+    <string name="other_ringtone_title">其他铃声</string>
+    <string name="dts_pref_title">"DTS音效"</string>
+    <string name="touch_vibrate_feedback_title">触摸反馈</string>
+
+    <string name="ringtone_default">默认铃声</string>
+    <string name="alarm_sound_default">默认闹钟铃声</string>
+    <string name="notification_sound_default">默认通知铃声</string>
+    <string name="internal_storage_disable">内部存储暂不可用</string>
+    <string name="aurora_empty_other_ringtone">暂无其他铃声</string>
+    <string name="none_select">未选择</string>
+    <string name="set_ringtone">设置铃声</string>
+
+    <string name="vibrate_settings_title">响铃时振动</string>
+
+    <string name="unlock_set_unlock_off_title_summary">按Power键直接解锁</string>
+    <string name="aurora_inputmethod_picker_title">选择默认输入法</string>
+
+
+    <string name="notify_push">通知栏</string>
+    <string name="pref_push_title">通知栏</string>
+    <string name="notify_push_dlg_message">“%1$s”会向您发送推送消息，您可以在“设置-通知”里配置</string>
+    <string name="notify_push_dlg_title">推送提醒</string>
+    <string name="notify_push_dlg_confirm">允许</string>
+    <string name="notify_push_dlg_deny">拒绝</string>
+
+    <string name="status_and_notify_push">通知与状态栏</string>
+
+
+    <string name="battery_percent">电量百分比</string>
+
+    <string name="pref_digital_battery_percent_display">电量百分比</string>
+    <string name="lockscreen_notify_settings">锁屏通知设置</string>
+    <string name="lockscreen_notify">锁屏通知</string>
+    <string name="lockscreen_showall">显示所有通知</string>
+    <string name="lockscreen_showall_summary">在锁屏界面上显示通知内容，启动后用户可针对不同应用设置是否显示通知内容详情</string>
+    <string name="lockscreen_notshow">不显示通知</string>
+    <string name="lockscreen_notshow_summary">在锁界面上不显示任一通知内容，只有解锁之后，才可下滑通知栏查看通知内容</string>
+    <string name="lockscreen_hidenotifydetail">隐藏通知详情</string>
+    <string name="lockscreen_hidenotifydetail_summary">在锁界面仅显示发送通知的应用名，不显示通知详情</string>
+    <string name="application_notify_mgr">应用通知管理</string>
+    <string name="notify_mgr">通知管理</string>
+
+    <string name="lockscreen_show">显示通知</string>
+    <string name="lockscreen_show_summary">关闭此开关可屏蔽应用发送的所有通知</string>
+    <string name="lockscreen_notify_shwo_detail">锁屏通知显示详情</string>
+    <string name="lockscreen_notify_shwo_detail_summary">启动数字或者密码锁后，锁屏通知显示详情</string>
+
+    <string name="software_version">软件版本：</string>
+    <string name="app_total_size">总计：</string>
+
+    <string name="no_third_app">暂无第三方应用</string>
+
+    <string name="pref_push_summary">打开或关闭以下应用通知</string>
+    <string name="pref_push_notify">状态栏</string>
+    <string name="pref_lscreen">锁屏显示</string>
+    <string name="pref_push_network_speed_display">显示网速</string>
+    <string name="pref_push_noapp_summary">无推送通知应用。</string>
+    <string name="pref_app_category">应用</string>
+    <string name="pref_app_on">已开启</string>
+    <string name="pref_app_off">已关闭</string>
+
+    <string name="aurora_advanced_settings_title">更多设置</string>
+
+    <string name="aurora_sim_01_settings_title">SIM卡1应用</string>
+    <string name="aurora_sim_02_settings_title">SIM卡2应用</string>
+    <string name="aurora_location_settings_title">定位服务</string>
+    <string name="aurora_sim_settings_title">SIM卡应用</string>
+    <string name="aurora_language_settings">语言与输入法</string>
+    <string name="aurora_application_settings_title">应用管理</string>
+    <string name="aurora_battery_settings_title">省电管理</string>
+    <string name="aurora_account_settings_title">帐户</string>
+
+    <string name="aurora_display_brightness">自动亮度</string>
+    <string name="aurora_display_screen_timeout">自动熄屏时间</string>
+    <string name="aurora_display_system">系统</string>
+    <!-- <Aurora><hujianwei>20150718 add for screen saving start -->
+    <string name="aurora_display_screen_saving">屏幕省电</string>
+    <string name="aurora_display_screen_saving_detail">根据内容自动调节背光以节省电量</string>
+    <!-- <Aurora><hujianwei>20150718 add for screen saving start -->
+
+    <string name="aurora_display_screen_timeout_one">15秒</string>
+    <string name="aurora_display_screen_timeout_two">30秒</string>
+    <string name="aurora_display_screen_timeout_three">1分钟</string>
+    <string name="aurora_display_screen_timeout_four">2分钟</string>
+    <string name="aurora_display_screen_timeout_five">5分钟</string>
+    <string name="aurora_display_screen_timeout_six">10分钟</string>
+    <string name="aurora_display_screen_timeout_seven">30分钟</string>
+    <string name="aurora_display_button_light">按键灯开关</string>
+
+
+    <!-- Wifi settings cooper  penggangding-->
+    <string name="wifi_operator_connect">连接</string>
+    <string name="wifi_operator_save">保存</string>
+    <string name="wifi_operator_forget">忘记</string>
+    <string name="wifi_operator_modify">修改</string>
+    <string name="aurora_wifi_tether_text">便携式 WLAN 热点</string>
+    <string name="aurora_wifi_tether_configure_ap">设置网络热点</string>
+    <string name="bluetooth_title_device_name">"我的设备名称"</string>
+    <string name="ignore_wifi_ap">忽略该网络</string>
+    <string name="wifi_modify">修改</string>
+
+    <!-- add for accessiblity setting -->
+    <string name="accessibility_screen_three_fingers_screenshots">三指截屏</string>
+    <string name="somatosensory">智能体感</string>
+    <string name="smart_call">智能呼叫</string>
+    <string name="smart_call_summary">拨号盘输入号码，拿起手机靠近耳朵，放到耳边自动拨号</string>
+    <string name="smart_answer">智能接听</string>
+    <string name="smart_answer_summary">来电时手机拿起靠近耳朵的过程中铃声逐渐降低，放到耳边自动接听</string>
+    <string name="smart_phone">智能通话</string>
+    <string name="smart_gesture">隔空手势</string>
+    <string name="smart_gesture_photo">隔空图片翻页</string>
+    <string name="smart_gesture_photo_summary">查看图片时，手掌隔空左右翻动图片</string>
+    <string name="smart_gesture_answer">隔空手势接听</string>
+    <string name="smart_gesture_answer_summary">来电时，手掌隔空向下滑动实现免提接听；向上滑动拒接电话</string>
+    <string name="smart_gesture_vedio">隔空视频控制</string>
+    <string name="smart_gesture_vedio_summary">播放状态下，手掌隔空，左右控制暂停；暂停状态下，手掌隔空左右控制播放</string>
+
+    <string name="somatosensory_system_title">"系统"</string>
+    <string name="somatosensory_system_pause">"体感暂停"</string>
+    <string name="somatosensory_music_control">"黑屏音乐控制"</string>
+    <string name="somatosensory_music_control_summary">"熄屏时在屏幕上画圈播放/暂停音乐、横划切歌"</string>
+
+    <string name="accessibility_twice_click_screen_awake_prerefence_title">双击唤醒</string>
+    <string name="accessibility_screen_pick_take_prerefence_title">极速抓拍</string>
+    <string name="accessibility_screen_music_control_prerefence_title">熄屏音乐控制</string>
+    <string name="accessibility_screen_somatosensory_smart_pause">体感暂停</string>
+
+    <string name="accessibility_glove_title">手套模式</string>
+    <string name="apn_add">添加接入点</string>
+    <string name="apn_add_message">"确定要取消添加接入点吗？"</string>
+    <string name="aurora_apn_add_message">"舍弃所做的更改？"</string>
+    <string name="apn_edit_message">"确定要取消修改接入点吗？"</string>
+    <string name="remove_apn_label">删除接入点</string>
+    <string name="aurora_apn_ok">舍弃</string>
+    <string name="apn_ok">确定</string>
+    <string name="apn_cancel">取消</string>
+    <string name="personal_space">个人中心</string>
+    <string name="login_status_yes">已登录</string>
+    <string name="login_status_no">未登录</string>
+
+    <!-- end -->
+
+
+    <!--theme settings  -->
+    <string name="theme_settings_title">主题</string>
+    <string name="theme_preview">预览</string>
+    <string name="kitty_str">Hello Kitty</string>
+    <string name="her_str">IUNI For Her</string>
+    <string name="back">返回</string>
+    <string name="theme_dialog_title">主题切换</string>
+    <string name="theme_dialog_msg">新主题需要重启之后才会生效，是否立即重启手机?</string>
+    <string name="theme_dialog_negative">取消切换</string>
+    <string name="theme_dialog_positive">立即重启</string>
+    <string name="switch_leds_title">呼吸灯灯效</string>
+    <string name="switch_leds_dlg_title">提示</string>
+    <string name="remind">提示</string>
+    <string name="switch_leds_dlg_msg">是否关闭所有呼吸灯的提示</string>
+
+    <!-- Aurora <jiyouguang> <2015-05-14> add for choose password begin -->
+    <string name="unlock_set_unlock_mode_digit">"简易密码"</string>
+    <string name="unlock_set_unlock_digit_title">"简易密码"</string>
+    <string name="unlock_set_unlock_digit_summary">"输入4位数字解锁"</string>
+    <string name="lockpassword_choose_your_digit_header">"输入4位密码"</string>
+    <string name="lockpassword_confirm_your_digit_header">"再次输入4位密码"</string>
+    <string name="lockpassword_choose_your_digit_title">"简易密码"</string>
+    <string name="lockpassword_confirm_digit_title">"确认当前密码"</string>
+    <string name="lockpassword_confirm_digit_header">"输入原密码"</string>
+    <string name="lockpassword_digit_recently_used">"设备管理员不允许使用最近用过的简易密码"</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpassword_again_confirm_passwords_dont_match">"密码不一致"</string>
+    <!-- Aurora <jiyouguang> <2015-05-14> add for choose password end -->
+    <string name="aurora_wifi_list">WLAN 列表</string>
+
+    <!--Aurora scrren color mode-->
+    <string name="screen_color_mode_title">屏幕色彩模式</string>
+    <string name="color_temp">色温调节</string>
+    <string name="screen_color_mode_trips">调节后只改变手机的屏幕效果</string>
+    <string name="sim_preferred_title">更新首选项？</string>
+    <string name="sim_preferred_message">“%1$s”是在设备中唯一的SIM卡。你想用这个SIM卡的蜂窝数据，呼叫和SMS消息？</string>
+
+
+    <!--  add by jiyouguang for feedback  begin-->
+    <string name="feed_back">用户反馈</string>
+    <string name="privider_sup">提供建议</string>
+    <string name="back_pro">反馈问题</string>
+    <string name="pro_discrible">问题描述</string>
+    <string name="pro_discrible_detail">请详细描述您遇到的问题...</string>
+    <string name="coms_contact">联系方式</string>
+    <string name="contact_detail">方便留下您的QQ或电话，以便我们后续跟进</string>
+    <string name="recommend_drawings">建议附图</string>
+    <string name="note">此功能将会消耗一定的数据流量</string>
+    <string name="commit">提交</string>
+    <string name="provide_advice">提供建议</string>
+    <string name="feedback_the_problem">反馈问题</string>
+    <string name="Problem_Description">问题描述</string>
+    <string name="limit_chinese_number">不能超过100个汉字</string>
+    <string name="limit_contentid_number">不能超过50个汉字</string>
+    <string name="submit">确定</string>
+    <string name="cancal">取消</string>
+    <string name="feed_back_summury">你还有未提交的内容，离开后内容将会丢失，是否继续？</string>
+    <string name="upload">上传信息</string>
+    <string name="upload_info">正在上传信息到服务器</string>
+    <string name="suggest_discrible">请填写建议描述</string>
+    <string name="feedback_discrible">请填写反馈问题描述</string>
+    <string name="contantid">请留下联系方式</string>
+    <string name="uploaded_server">您的反馈已提交</string>
+    <string name="unUpload_server">您的反馈未提交成功</string>
+    <string name="uploading_dialog">提交您的反馈信息以及相关机型信息至我们的服务器，是否继续？</string>
+    <string name="network_unConnect">网络未连接</string>
+
+
+    <string name="i_know">我知道了</string>
+    <string name="i_guide">从屏幕底部向上滑动\n可以呼出快捷开关</string>
+    <!--  add by jiyouguang end-->
+    <!--start modify by hujianwei 20150713 for factory reset string definition  -->
+    <string name="factory_defalut_tip">"此操作会清除手机内存中的所有数据，包括："</string>
+    <string name="factory_defalut_tip_2"></string>
+    <string name="factory_defalut_tip_account"><li>"您的 Google 帐户"</li> </string>
+    <string name="factory_defalut_system_applay_tip"><li>"系统及应用数据和设置"</li></string>
+    <string name="factory_defalut_download_tip"><li>"已安装的应用"</li></string>
+    <string name="clear_multi_user_data_tip">"清除多媒体用户数据，包括："</string>
+    <string name="factory_defalut_music_tip"><li>"音乐"</li></string>
+    <string name="factory_defalut_photo_tip"><li>"照片"</li></string>
+    <string name="factory_defalut_vedio_tip"><li>"视频"</li></string>
+    <string name="factory_defalut_others_tip"><li>"其他多媒体用户数据"</li></string>
+    <string name="factory_defalut_others_use_tip"><li>"使用手机过程引入的其他数据"</li></string>
+    <string name="start_factory_defalut_title">"开始恢复"</string>
+    <string name="start_factory_alterdlg_title">"要重置吗？"</string>
+    <string name="start_factory_alterdlg_summary">"要清除所有个人信息和下载的应用吗？请注意，此操作无法撤消！"</string>
+    <string name="okay_continue">继续</string>
+    <string name="cancel_action">取消</string>
+    <string name="okay_restore">"恢复出厂状态"</string>
+    <string name="master_clear_confirm">"恢复出厂设置将会清除手机数据，为不可逆步骤，请谨慎操作！"</string>
+    <!--end modify by hujianwei 20150713 for factory reset string definition  -->
+
+    <!--start modify by hujianwei 20150714 for factory reset string definition  -->
+    <string name="lock_title" msgid="4059246467204273930" product="default">"手机安全设置"</string>
+    <string name="lock_intro_message" msgid="8393155371327584659" product="default">"创建个人屏幕解锁图案可防止他人未经许可使用您的手机。在下一屏幕上滑动手指以任意顺序连接至少四个点。"\n\n"准备好开始了吗？请触摸“下一步”。"</string>
+    <!--end modify by hujianwei 20150714for factory reset string definition  -->
+
+    <string name="format_otg_title">格式化 USB 存储设备</string>
+    <string name="format_otg_summary">清除 USB 储存器中的全部数据</string>
+    <string name="total_size">"总共 "</string>
+    <string name="avail_size">"可用 "</string>
+    <string name="aurora_internal_storage">"内部存储 "</string>
+
+    <string name="aurora_wifi_notify_open_networks">"可用网络通知"</string>
+    <string name="aurora_wifi_sleep_policy_title">WLAN 休眠策略</string>
+    <string name="bluetooth_name_save">"保存"</string>
+
+
+    <string name="confirm_format_msg">请再次确认格式化操作，格式化后不可停止</string>
+    <string name="comfirm_format_button_text">格式化</string>
+    <string name="format_sd_card_dialog_title">格式化 SD 卡</string>
+    <string name="format_otg_dialog_title">格式化 USB 存储设备</string>
+    <string name="format_cancel">"取消"</string>
+
+    <string name="aurora_settings_sim_card_management">SIM 卡管理</string>
+    <string name="sim01_lock_settings_category">"设置 SIM1 卡锁定"</string>
+    <string name="sim02_lock_settings_category">"设置 SIM2 卡锁定"</string>
+    <string name="sim01_lock_settings_title">"SIM1 卡锁定设置"</string>
+    <string name="sim02_lock_settings_title">"SIM2 卡锁定设置"</string>
+    <string name="sim_lock_settings_title">"SIM 卡锁定设置"</string>
+
+    <string name="wifi_disabled_wifi_failure">WiFi 连接识别</string>
+    <string name="continue_format_storage">继续</string>
+
+    <string name="dashboard_title_fingerprints">指纹与安全</string>
+    <string name="secure_setting_tile">指纹与锁屏</string>
+    <string name="finger_manager">指纹管理</string>
+    <string name="fingerprint">指纹</string>
+    <string name="add_fingerprint">添加指纹</string>
+    <string name="dashboard_action_body">手势体感</string>
+    <string name="more_network_settings">其他网络设置</string>
+    <string name="aurora_fingerprint_placing_finger">将手指轻放在主页键上\n感受到振动后抬起</string>
+
+    <string name="aurora_fingerprint_note1">将手指放置于手机背面的指纹识别器上</string>
+    <string name="aurora_fingerprint_note2">录入指纹</string>
+    <string name="aurora_fingerprint_note3">将手指放在指纹识别器上，感受到振动后移开并重复此步骤</string>
+    <string name="aurora_fingerprint_note4">点击名称可进行重命名</string>
+
+    <string name="aurora_fingerprint_add_status1">手指移动太快，请重试</string>
+    <string name="aurora_fingerprint_add_status2">不要过多移动手指</string>
+    <string name="aurora_fingerprint_add_status3">稍微移动手指</string>
+    <string name="aurora_fingerprint_add_status4">完全覆盖指纹识别器</string>
+
+    <string name="aurora_fingerprint_set_success">录入成功</string>
+    <string name="aurora_fingerprint_set_fail">录入失败</string>
+    <string name="aurora_fingerprint_retry">重录</string>
+    <string name="aurora_fingerprint_add_fail">尝试使用其他手指</string>
+    <string name="aurora_fingerprint_add_fail_note">无法读取该指纹，请尝试使用其他手指</string>
+    <string name="aurora_fingerprint_timeout_note">长时间未完成录入，已舍弃</string>
+    <string name="aurora_fingerprint_name_len_note">最多可输入10个字</string>
+    <string name="aurora_fingerprint_timeout">超时，重试</string>
+    <string name="aurora_fingerprint_timeout_retry">超时，重试</string>
+    <string name="finger_lock_status_on">指纹解锁开</string>
+    <string name="finger_lock_status_off">指纹解锁关</string>
+    <string name="finger_lock_title">指纹解锁</string>
+
+    <string name="aurora_fingerprint_name_cat_title">指纹名称</string>
+    <string name="aurora_fingerprint_edit_save_note">请输入指纹名</string>
+    <string name="aurora_fingerprint_name_exist">该指纹名已存在</string>
+    <string name="aurora_fingerprint_delete_dialog_title">"删除此指纹？"</string>
+    <string name="aurora_fingerprint_delete_dialog_msg">"与此指纹相关的功能也将失去关联"</string>
+    <string name="aurora_fingerprint_edit_dialog_title">"重命名"</string>
+
+    <string name="aurora_securitypassword_type">密码形式</string>
+    <string name="aurora_securitypassword_set_dialog_message">执行此操作需要设置手机安全密码</string>
+    <string name="aurora_securitypassword_set_dialog_title">安全密码未设置</string>
+    <string name="aurora_securitypassword_input_error_note">密码错误，还可输入%1$s次</string>
+    <string name="aurora_securitypassword_retry_note">请%1$s分钟后再次尝试</string>
+    <string name="aurora_securitypassword_forget">忘记密码</string>
+    <string name="aurora_securitypassword_set_password">设置密码</string>
+
+    <string name="aurora_securitypassword_note1">要使用指纹，你需要先设置一种备用锁屏方式</string>
+    <string name="aurora_securitypassword_title">手机安全密码</string>
+    <string name="aurora_securitypassword_set_cat_title">密码设置</string>
+    <string name="aurora_securitypassword_first_set">设置手机安全密码</string>
+    <string name="aurora_securitypassword_change_password">更改密码</string>
+    <string name="aurora_securitypassword_set_success">手机安全密码设置已完成</string>
+    <string name="lockpassword_choose_your_password_four_header">选择您的四位数字密码</string>
+    <string name="unlock_set_password">设置密码</string>
+    <string name="unlock_set_password_confirm">确认密码</string>
+    <string name="lockpassword_confirm_pins_dont_match_four">密码不匹配！请重新设置密码</string>
+    <string name="unlock_set_unlock_password_four_summary">解锁无需确认</string>
+    <string name="unlock_set_unlock_password_four_title">四位数字密码</string>
+    <string name="aurora_securitypassword_confirm_title">输入手机安全密码</string>
+    <string name="aurora_fingerprint_confirm_your_password_header">请输入密码或使用指纹识别</string>
+    <string name="aurora_confirm_your_password_header">请输入密码</string>
+    <string name="aurora_securitypassword_forget_note2">你的所有数据将被抹去！</string>
+
+    <string name="three_finger_screen_shots_summary">三指同时在屏幕上滑或下滑,截取屏幕</string>
+    <string name="double_click_wake_up_summary">熄屏时双击屏幕唤醒手机</string>
+    <string name="smart_stop_summary">翻转屏幕朝下以暂停音乐/视频的播放</string>
+    <string name="glove_mode_summary">提升屏幕灵敏度，便于戴手套时操作手机</string>
+    <string name="security">安全</string>
+    <string name="wallpaper_setting_title">壁纸</string>
+    <string name="theme_setting_title">主题</string>
+    <string name="time_wallpaper_setting_title">时光锁屏</string>
+    <string name="self_ringtone">下载铃声</string>
+    <string name="system_ringtone">系统铃声</string>
+    <string name="notification_manage">通知</string>
+    <string name="do_not_disturb">勿扰模式</string>
+    <string name="dnd_enable">立即启用</string>
+    <string name="ringer_enable">允许来电提醒</string>
+    <string name="zen_config_select">选项</string>
+    <string name="dnd_summary">勿扰模式下，来电及消息将不会响铃及震动</string>
+    <string name="timing_enale">定时勿扰</string>
+    <string name="repeated_calls_remind">重复来电提醒</string>
+    <string name="repeated_calls_summary">5分钟内的重复来电将不会被静音</string>
+    <string name="calls_white_list">来电白名单</string>
+    <string name="calls_with_no_limit">来电将不受限制</string>
+    <string name="timing_start">开始时间</string>
+    <string name="timing_end">结束时间</string>
+    <string name="no_whitelist">无联系人</string>
+    <string name="calls_whitelist">来电白名单</string>
+    <string name="alow_calls_from">允许的来电</string>
+    <string name="alow_calls_from_anyone">所有人</string>
+    <string name="alow_calls_from_starred">收藏的联系人</string>
+    <string name="alow_calls_from_contacts">所有联系人</string>
+
+    <string name="wifi_change_password">修改密码</string>
+    <string name="aurora_location_service">定位服务</string>
+    <string name="aurora_location_mode">定位模式</string>
+    <string name="aurora_other_select">其它</string>
+    <string name="aurora_color_weekness_assistant">色弱辅助</string>
+    <string name="aurora_color_weekness_assistant_open">启用</string>
+    <string name="aurora_color_weekness_assistant_mode">辅助模式</string>
+    <string name="app_authoriy_control">应用权限优化控制   </string>
+    <string name="wechat_set">微信分身</string>
+    <string name="use_dual_wechat">使用微信分身</string>
+    <string name="use_dual_wechat_summery">同时使用两个微信号</string>
+    <string name="use_dual_wechat_info">"双微信请勿登录同一账号，可能造成信息接收问题"</string>
+    <string name="no_wechat">未安装微信,分身不可用</string>
+      <string name="wechat_install">微信安装提示</string>
+      <string name="wechat_install_title">微信已安装,开启微信分身?</string>
+      <string name="wechat_install_message">也可从\"系统设置->更多设置->微信分身\"进行设置</string>
+       <string name="query_hint">搜索设置项</string>
+</resources>

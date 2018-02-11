@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/list_item_margin_right"
+    android:layout_marginRight="@dimen/list_item_margin_right"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/group_name_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_two_line_height" >
+
+        <aurora.widget.AuroraEditText
+            android:id="@+id/aurora_edit_group_name"
+            style="@style/editor_type_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/aurora_edit_group_name_hint"
+            android:singleLine="true"
+            aurora:auroraTextBaseLinePadding="3" />
+
+        <ImageView
+            android:id="@+id/aurora_group_title_delete_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/aurora_edit_delete"
+            android:visibility="gone" />
+
+        <ImageView
+            style="@style/horizontal_line_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aurora_edit_ring"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_two_line_height"
+        android:paddingTop="@dimen/listitem_double_margin_top" >
+
+        <TextView
+             android:layout_alignParentTop="true"
+            android:id="@+id/aurora_group_ringtone_tv"
+            style="@style/double_list_item_name_text_style_with_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/aurora_edit_group_ring_title" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/aurora_group_ring_name"
+            style="@style/double_list_item_data_text_style_with_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/listitem_double_margin_bottom"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/gnDefaultLabel" />
+
+        <ImageView
+            style="@style/horizontal_line_style"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

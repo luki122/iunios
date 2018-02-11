@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp" --> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+      
+	 <!--  
+	<aurora.widget.AuroraListView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:listSelector="@android:color/transparent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:visibility="gone"
+    />
+	
+	<TextView android:id="@+id/usb_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+    	android:layout_marginRight="17dp"
+        android:text="@string/storage_title_usb"
+        android:textSize="18sp"
+        android:textColor="@color/pref_category"
+         />
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background= "@color/list_item_line"
+	    />
+	<ListView  
+        android:id="@+id/lv_usb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:listSelector="#00000000"      
+        
+        />
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background= "@color/list_item_line"
+	    />
+	-->
+	<aurora.widget.AuroraListView xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="17dp"
+    	android:layout_marginRight="17dp"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+    />
+</LinearLayout>  

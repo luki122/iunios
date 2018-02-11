@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:note="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pic_preview_bg" >
+
+    <com.aurora.note.ui.PicViewPager
+        android:id="@+id/pic_view_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:spacing="5.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/picbrowser_top_tool_bg"
+        android:visibility="gone" >
+
+		<LinearLayout
+		    android:id="@+id/back_ly"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_marginTop="@com.aurora:dimen/status_bar_height"
+		    android:gravity="center_vertical"
+		    android:orientation="horizontal" >
+
+		    <ImageView
+		        android:id="@+id/pic_view_go_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:contentDescription="@null"
+		        android:duplicateParentState="true"
+		        android:src="@drawable/aurora_actionbar_back" />
+
+		    <TextView
+		        android:id="@+id/pic_view_title_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/note_gen_picture"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp" />
+		</LinearLayout>
+
+	    <ImageView
+	        android:id="@+id/save_to_gallery"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="@com.aurora:dimen/status_bar_height"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:scaleType="center"
+	        android:src="@drawable/picture_save_to_gallery_selector" />
+    </RelativeLayout>
+
+    <com.aurora.note.widget.BottomToolLayout
+        android:id="@+id/pic_view_bottom_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_bottom_tool_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/picbrowser_top_tool_bg"
+        android:gravity="center_vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        note:verticalSpace="10dp"
+        android:visibility="gone" >
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/share_by_weibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/picture_share_by_weibo_selector"
+            note:text="@string/share_weibo" />
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/send_by_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/picture_send_by_wx_selector"
+            note:text="@string/share_weixin_friend" />
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/share_by_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/picture_share_by_wx_selector"
+            note:text="@string/share_weixin" />
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/share_by_qq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/share_by_qq_selector"
+            note:text="@string/share_qq_friend" />
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/share_by_qzone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/share_by_qzone_selector"
+            note:text="@string/share_qq_zone" />
+
+        <com.aurora.note.widget.BottomToolItem
+            android:id="@+id/share_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            note:src="@drawable/share_more_selector"
+            note:text="@string/share_more" />
+    </com.aurora.note.widget.BottomToolLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"   
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="3.1"
+        android:orientation="vertical" android:background="#506482">
+        <com.privacymanage.view.PrivacyManageAnimView
+            android:id="@+id/animView"
+            android:layout_width="180dp" android:layout_height="180dp"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="1dp"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="@color/white" android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13dp" />	    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="fill_parent" android:layout_height="0dp" 
+        android:layout_weight="3.9">
+        <GridView
+           android:id="@+id/gridView"
+           android:layout_width="fill_parent" android:layout_height="fill_parent"
+           android:gravity="center" 
+           android:numColumns="3" android:listSelector="@drawable/list_selector"
+           android:horizontalSpacing="0dp" android:verticalSpacing="0dp"
+           android:scrollbars="none"/>
+        <ImageView
+            android:id="@+id/coverImg" android:visibility="invisible"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:background="@color/clarity" android:clickable="true"/>
+    </FrameLayout>
+    
+
+</LinearLayout> 

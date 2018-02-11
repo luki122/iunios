@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/popup_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:singleLine="true"
+           android:gravity="center"
+        android:text="@string/no_usual_contacts"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/h_diver" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+adb push libspeex_sogou_v42.so system/lib;adb push libencrypt_sogou_v00.so system/lib;adb push liblocSDK_2.4.so system/lib;adb push libhci_tts_local_synth.so system/lib;adb push libhci_tts_local_n6_synth.so system/lib;adb push libhci_tts_jni.so system/lib;adb push libhci_tts.so system/lib;adb push libhci_sys_jni.so system/lib;adb push libhci_sys.so system/lib;adb push libcurl.so system/lib;adb push libjtspeex.so system/lib;adb push libjtopus.so system/lib;adb push libXiaoKun.n6.voclib.so system/lib;adb push libLetter_XiaoKun.n6.voclib.so system/lib;adb push libENG_Cameal.n6.voclib.so system/lib;
+
+
+            

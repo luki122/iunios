@@ -1,0 +1,4 @@
+    <selector  xmlns:android="http://schemas.android.com/apk/res/android">  
+        <item android:drawable="@drawable/dial_press" android:state_pressed="true"></item>  
+        <item android:drawable="@drawable/dial"></item>  
+    </selector>  

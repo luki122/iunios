@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginTop="@dimen/empty_view_icon_and_text_margin_top"
+        android:drawablePadding="@dimen/padding_small"
+        android:drawableTop="@drawable/empty_image"
+        android:textColor="@color/empty_text_color_primary"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_4dp"
+        android:background="@color/white" />
+    
+    <aurora.widget.AuroraListView
+        android:id="@+id/traffic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
+
+</LinearLayout>

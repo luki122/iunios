@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="crop_picture">Clip Image</string>
+    <string name="wallpaper_set">Wallpaper has been changed</string>
+    <string name="goto_filemanager">Other Files</string>
+    <string name="action_title">%1$d Photos</string>
+    <string name="date_day">Date</string>
+    <string name="date_month">Month</string>
+    <string name="date_year">""</string> <!-- empty -->
+    <string name="myselect_all">Select All</string>
+    <string name="unmyselect_all">Unselect</string>
+    <string name="delete_finish">%1$d files deleted.</string>
+    <string name="update_pic">Updating pictures...</string>
+    <string name="appwidget_empty_video">No video file</string>
+    <string name="aurora_wallpaper">IUNI Album</string>
+    <string name="aurora_storage_root">Phone Storage</string>
+    <string name="aurora_storage_external">SD Card</string>
+    <string name="aurora_storage_internal">Internal Storage</string>
+
+    <!-- //Aurora <SQF> <2014-06-05>  for NEW_UI begin -->
+    <string name="photo_edit_action_bar_save">"Save"</string>
+    <string name="photo_edit_action_bar_cancel">"Cancel"</string>
+    <string name="photo_edit_action_bar_confirm_crop">"Confirm Cropping"</string>
+    <string name="photo_edit_action_bar_confirm_filter">"Save"</string> <!-- Confirm Filter -->
+    <string name="photo_edit_action_bar_return">"Return"</string>
+    <string name="photo_edit_cancel_current_edit">"Really cancel current editing?"</string>
+    <string name="photo_edit_cancel_filter">"Cancel filter?"</string>
+    <string name="photo_edit_cancel_crop">"Cancel crop?"</string>
+    <string name="photo_edit_cancel_tip_title">"Tip"</string>
+      <string name="photo_upload_no_wifi_title">"继续传输照片？"</string>
+
+    <!-- //Aurora <SQF> <2014-06-05>  for NEW_UI end -->
+
+
+    <!-- //Aurora <SQF> <2014-09-12>  for NEW_UI begin -->
+    <string name="aurora_effects">"Aurora Filters Effects"</string>
+    <string name="aurora_effects_normal">"Normal"</string>
+    <string name="aurora_effects_reversal">"Reversal"</string>
+    <string name="aurora_effects_crayon">"Crayon"</string>
+    <string name="aurora_effects_fleeting_time">"FleetingTime"</string>
+    <string name="aurora_effects_cosmetology_backlight">"Cosmetology"</string>
+    <string name="aurora_effects_japan_backlight">"Backlight"</string>
+    <string name="aurora_effects_cold_lomo">"ColdLomo"</string>
+    <string name="aurora_effects_sunset">"Sunset"</string>
+    <string name="aurora_effects_softpink">"SoftPink"</string>
+    <string name="aurora_effects_warm_lomo">"WarmLomo"</string>
+    <string name="aurora_effects_reflection">"Reflection"</string>
+    <string name="aurora_effects_light_beam">"LightBeam"</string>
+    <string name="aurora_effects_snowflakes">"SnowFlakes"</string>
+    <!-- //Aurora <SQF> <2014-09-12>  for NEW_UI end -->
+    <string name="aurora_error_notice_title">"Notice"</string>
+    <string name="aurora_error_notice">&quot;No external storage device available currently, please open the album again.&quot;</string> <!-- JXH add for cloud album 20150408 begin -->
+    <string name="aurora_cloud_album">Cloud album</string>
+    <string name="aurora_local_album">Local album</string>
+    <string name="aurora_album">Album</string>
+    <string name="aurora_system_album">System album</string>
+    <string name="aurora_system_screenshot">Screenshot</string>
+    <string name="aurora_cloud_no_picture">No picture</string> <!-- JXH add for cloud album 20150408 end -->
+
+
+    <!-- share -->
+    <string name="aurora_share_short_video_share">"Share"</string>
+    <string name="aurora_share_short_video_cancel_share">"Cancel"</string>
+
+    <!-- upload download list -->
+    <string name="aurora_upload_download_list_act_title">"Transfer List"</string>
+    <string name="aurora_upload_download_list_act_upload">"Upload"</string>
+    <string name="aurora_upload_download_list_act_download">"Download"</string>
+    <string name="aurora_test_string_download">"Download"</string>
+    <string name="aurora_test_string_upload">"Upload"</string>
+    <string name="aurora_test_string_get_list">"Get list"</string>
+    <string name="aurora_test_string_login">"Login"</string>
+    <string name="aurora_test_string_mkdir">"MkDir"</string>
+    <string name="aurora_string_progress_text_format">"%1$s/%2$s"</string>
+    <string name="long_format_to_string_b">%1$sB</string>
+    <string name="long_format_to_string_kb">%1$sKB</string>
+    <string name="long_format_to_string_mb">%1$sMB</string>
+    <string name="long_format_to_string_gb">%1$sGB</string>
+    <string name="aurora_upload_download_no_task">"No tasks"</string>
+    <string name="aurora_upload_download_pause_task">"Pause"</string>
+    <string name="aurora_upload_download_continue_task">"Continue"</string>
+    <string name="aurora_upload_download_retry_task">"Retry"</string>
+    <string name="aurora_upload_download_waiting_task">"Waiting"</string>
+    <string name="aurora_upload_download_failed_task">"Failed"</string>
+    <string name="aurora_upload_download_creating_task">"Creating"</string>
+    <string name="aurora_upload_download_creating_failed_task">"Create failed"</string>
+    <string name="aurora_upload_download_getting_task_info">"Getting infos"</string>
+    <string name="aurora_upload_download_task_completed">"Completed"</string>
+    <string name="aurora_upload_download_task_upload_completed">"Uploaded"</string>
+    <string name="aurora_upload_download_task_download_completed">"Downloaded"</string>
+
+    <plurals name="upload_to_xcloud_confirm_string">
+        <item quantity="one">Upload selected item?</item>
+        <item quantity="other">Upload selected items?</item>
+    </plurals>
+
+    <string name="aurora_upload_to_xcloud">"upload to XCloud"</string>
+    <string name="aurora_local_photos">"Local Photos"</string>
+    <string name="aurora_baidu_cloud_album">"Baidu Cloud"</string>
+    <string name="baidu_cloud_login_failed">"Baidu Cloud Login failed"</string>
+    <string name="baidu_cloud_login_progress_tip">"Login Baidu Cloud"</string>
+    <string name="aurora_album_upload_status">Uploading&#8230;</string>
+    <string name="aurora_not_support_uplaod_video">Uploading videos not supported currently.</string>
+        <string name="aurora_not_support_move_video">暂不支持视频移动</string>
+    <string name="aurora_upload_sum_string_format">Upload selected %s photos to</string>
+    <string name="aurora_network_not_available">Network not available. Please check.</string>
+    <string name="aurora_network_not_wifi">Not under wifi network. Parts of functions are unavailable.</string>
+    <string name="aurora_uploaddownload_clear_list">Clear list</string>
+    <string name="aurora_not_support_upload_under_data_network">Not under wifi network.</string>
+    <string name="aurora_not_support_file_format">Currently not support webp, wbpm file format</string>
+    <string name="aurora_clear_upload_list">Clear upload list?</string>
+    <string name="aurora_clear_download_list">Clear list will not delete photos.</string>
+    <string name="aurora_upload_download_list_delete_task_confirm">Delete this task?</string>
+    <!-- aurora SQF -->
+
+
+    <!-- wenyongzeh 2015.9.15 -->
+    <string name="aurora_move_ok">Images move successfully！</string>
+    <string name="aurora_move_error">Mobile failure</string>
+    <string name="aurora_move_error_file_already_exist">Target album has been in existence that file, mobile failure</string>
+    <string name="aurora_move_new_album">Pictures will be moved to the new album</string>
+    <string name="aurora_new_album">Create a new album.</string>
+    <string name="aurora_download_complete">Download is successful, please go to the local photo album view</string>
+    <string name="aurora_album_setting">设置</string>
+    <string name="aurora_album_block_management">屏蔽管理</string>
+    <string name="aurora_album_auto_backup">自动备份</string>
+    <string name="aurora_album_auto_backup_summary">仅在连接wifi且充电条件下备份</string>
+    <string name="aurora_album_choose_backup_albums">选择要备份的相册</string>
+    <string name="aurora_album_duplicate_record">传输列表</string>
+    <string name="aurora_cloud_login_iuni">登录iuni账号</string>
+    <string name="aurora_cloud_login_baidu">绑定百度云</string>
+    <string name="aurora_cloud_iuni_account_number">iuni账号</string>
+    <string name="aurora_cloud_baidu">百度云</string>
+    <string name="aurora_cloud_list_upload_ok">上传完成</string>
+      <string name="aurora_cloud_list_dowload_ok">下载完成</string>
+    <string name="aurora_cloud_list_upload_clean">清空记录</string>
+    <string name="aurora_cloud_list_uploading">正在上传</string>
+     <string name="aurora_cloud_list_dowloading">正在下载</string>
+    <string name="aurora_cloud_notify_uploading">图片正在上传</string>
+    <string name="aurora_cloud_notify_dowloading">图片正在下载</string>
+    <!-- wenyongzeh 2015.9.24 -->
+
+    <string name="aurora_album_no_picture">No photo</string>
+    <string name="aurora_album_wifi_refash">Your WIFI is like running away from home，\nClick to refresh.</string>
+    <string name="aurora_max_album_name">Name up to 30 words</string>
+    <string name="aurora_album_rename">rename</string>
+    <string name="aurora_create_album">The new album</string>
+    <string name="aurora_create">new</string>
+    <string name="aurora_upload_complete">Uploaded successfully, please check to the cloud photo album</string>
+
+    <!-- wenyongzhe 2015.9.1 dialog -->
+    <string name="aurora_actionbar_upload_to">Uploaded to</string>
+    <string name="aurora_upload_download_lists_delete_task_confirm">Delete</string>
+    <string name="aurora_upload_download_button">Transmission</string>
+    <string name="aurora_upload_download_lists_delete_task_confirm_tip">Sure you want to delete the selected %1$d task？</string>
+     <string name="aurora_upload_download_lists_delete_task_confirm_tip_one">删除所选的任务？</string>
+    <string name="aurora_actionbar_move_to">Move to</string>
+    <string name="aurora_cloud_download_dialog_message">Is currently in the wi-fi environment, transfer photos will consume your data traffic, whether or not to continue？</string>
+    <string name="aurora_album_cannot_char">Can not create this photo album.</string>
+    <!-- wenyongzhe 2016.1.13 new_ui -->
+    <string name="aurora_album_page_move">移动</string>
+    <string name="aurora_album_page_set_for">设为</string>
+    <string name="aurora_album_page_edite">编辑</string>
+    <string name="aurora_album_page_slide_play">幻灯片播放</string>
+    <string name="aurora_album_page_detail">图片详情</string>
+    <string name="aurora_selet_auto_updata_album">选择要备份的相册</string>
+    <string name="aurora_downloading">云相册正在传输</string>
+    <string name="aurora_auto_updata_stop_toash">停止备份相册。</string>
+    <string name="cloud_path">"/apps/iuni云/"</string>
+    <string name="aurora_album_name_repeat">Album name cannot be repeated.</string>
+    <string name="aurora_del_album">Deleted from the cloud photo album phase images will not be able to restore, please careful operation.Sure you want to delete the selected you %1$d photo？</string>
+    <string name="aurora_del_error">Delete failed.</string>
+    <string name="aurora_del_ok">Delete the success.</string>
+    <string name="aurora_rename_error">Rename the failure.</string>
+    <string name="aurora_del_picture">Deleted from the cloud photo album phase images will not be able to restore, please careful operation.Sure you want to delete you selected %1$d photo？</string>
+    <string name="aurora_checkbox_string">While maintaining the original of the photos in the album.</string>
+    <string name="aurora_move_picture">Move the selected %1$d picture.</string>
+    <string name="aurora_album_login_failed">Login cloud albums failure.</string>
+    <string name="aurora_album_download_status">In the download&#8230;</string>
+    <string name="aurora_album_error_char">Including illegal characters.</string>
+    <string name="aurora_album_login_cloud">Using the cloud photo album must login first personal center</string>
+    <string name="aurora_album_network_fail">The network is not available</string>
+    <string name="aurora_xcloud_move">Please click on the upper right corner of the "+" new cloud photo album</string>
+     <string name="aurora_upload_photo_favorite">"favorite"</string>
+     
+    <!-- add by JXH begin -->
+    <string name="album_name_video">Video</string>
+    <string name="album_name_collection">Collection</string>
+    <string name="album_name_camera">Camera</string>
+    <string name="album_name_screenshots">Screenshots</string>
+    <!-- add by JXH end -->
+    <!-- paul add -->
+    <string name="aurora_load_fail">Decode error or can\'t find the file</string>
+    <string name="aurora_share">Share</string>
+    <string name="aurora_delete">Delete</string>
+    <string name="aurora_favorite">Favorite</string>
+    <string name="aurora_cancel_favorite">Cancel</string>
+    <string name="aurora_more">More</string>
+    <string name="aurora_move">Move</string>
+    <string name="aurora_upload">Upload</string>
+    <string name="aurora_tab_photo">photo</string>
+    <string name="aurora_tab_album">album</string>
+    <string name="aurora_empty_text">No photos</string>
+    <string name="aurora_empty_album_text">"无相册"</string>
+	
+    <!-- add by JXH begin -->
+    <string name="share_max">800</string>
+    <string name="share_too_much">It is so kind of you to share so much</string>
+    <string name="send_file">Share</string>
+    <string name="aurora_shield">屏蔽</string>
+    <string name="aurora_unshield">恢复</string>
+    <string name="aurora_shield_manager">屏蔽管理</string>
+    <string name="adlum_select_num">已选择%d项</string>
+    <string name="album_num_string">%d项内容</string>
+    <string name="number_of_albums_selected_del_one">"是否删除此相册"</string>
+    <string name="number_of_albums_selected_del_other">"是否删除所选的%1$d个相册"</string>
+    <string name="number_of_files_selected_del_one">"是否删除此图片"</string>
+    <string name="number_of_files_selected_del_other">"是否删除所选的%1$d个图片"</string>
+    <string name="number_of_albums_selected_shield_one">"是否屏蔽此相册"</string>
+    <string name="number_of_albums_selected_shield_other">"是否屏蔽所选的%1$d个相册"</string>
+    <string name="aurora_local_album_no_picture">相册没有照片很孤单哦</string>
+    
+    <string name="number_of_files_selected_del_movie_one">"删除此视频？"</string>
+		<string name="number_of_files_selected_del_movie_other">删除所选的%1$d个视频？</string>
+		<string name="number_of_files_selected_del_movie_and_photo_other">删除所选的%1$d项内容？</string>
+		
+    <string name="cloud_download">云下载</string>
+    <string name="album_name_isempty">请输入相册名</string>
+    <string name="album_move">移动成功</string>
+    <string name="album_sys_del">系统相册&#040;相机&#044;视频&#044;收藏&#044;截图&#044;云下载&#041;不可被删除</string>
+    <string name="album_sys_shield">系统相册&#040;相机&#044;视频&#044;收藏&#044;截图&#044;云下载&#041;不可被屏蔽</string>
+    <string name="aurora_cloud_login">Please login to Baidu cloud</string>
+    <string name="aurora_download">downlaod</string>
+    <string name="aurora_no_albums">无相册</string>
+    <string name="aurora_video_cannt_move">视频无法被移动</string>
+
+</resources>

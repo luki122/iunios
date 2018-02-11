@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popwindowshape"
+    android:id="@+id/ll_popup_container" >
+
+    <LinearLayout
+        android:id="@+id/pop_newcontact"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/popwindowselector"
+         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop_newcontact"
+            android:textSize="16sp"
+            android:textColor="#414142"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+   <LinearLayout
+        android:id="@+id/pop_record"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/popwindowselector"
+         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop_record"
+            android:textSize="16sp"
+            android:textColor="#414142"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/pop_setting"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/popwindowselector"
+         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop_setting"
+            android:textSize="16sp"
+            android:textColor="#414142"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+    
+  
+
+</LinearLayout>

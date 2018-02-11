@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+	 <string name="app_name">时钟</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">联系人详情12333</string>
+    <string name="name">联系人详情</string>
+    <string name="quxiao">取消</string>
+    <string name="setup">闹钟设置</string>
+    <string name="sure">确定</string>
+    <string name="fullscreenbg">正在关闭</string>
+    
+    <string name="txtday">th</string>
+    <string name="app_widget_label">日期</string> 
+    <string name="app_widget_label_time">时间</string> 
+    <string name="app_widget_label_analogclock">时钟</string> 
+    <string name="app_widget_title">Updates</string>  
+    <string name="app_widget_error_message">No messages, please check to login.</string>
+    <string name="onlyonce">一次性</string>
+    <string name="weekend">周末</string>
+    <string name="dontdisturb1">免扰舍友</string>
+    <string name="dontdisturb2">关闭声音并加强振动强度</string>
+    <string name="weekday">工作日</string>
+    <string name="selfdefine">自定义</string>
+    <string name="officialweekday">法定工作日(智能跳过节假日)</string>
+    <string name="officialweekday2">法定工作日</string>
+    <string name="choosealarm">选择闹钟铃声</string>
+    <string name="nativitime">本地标准时间</string>
+    
+   	<string name="dayseven">星期日</string>  
+	<string name="dayone">星期一</string>  
+	<string name="daytwo">星期二</string>
+	<string name="daythree">星期三</string>  
+	<string name="dayfour">星期四</string>   
+	<string name="dayfive">星期五</string>  
+	<string name="daysix">星期六</string>  
+	
+	<string name="notify_wakeup_notalarm">今天很厉害，闹钟没响就醒来了</string>
+	<string name="notify_clicktoclosewakeupalarm">点击可关闭今天即将到来的起床闹铃</string>
+	<string name="selfdefinecycle">自定义周期</string>
+	<string name="stillsleepfirst">摇一摇手机延迟10分钟</string>
+	<string name="stillsleepsecond">再摇一摇继续延迟10分钟</string>
+	<string name="stillsleepthird">不能再贪睡啦，快起床吧</string>
+	
+	<string name="currenttimetext">当前时间</string>
+	<string name="deletealarm">删除闹钟</string>
+	<!-- <string name="suretodeletealarm">你确定要删除此闹钟吗</string> -->
+	<string name="suretodeletealarm">删除此闹钟?</string>
+	<string name="hint">提示</string>
+	<!-- <string name="ifgiveupchange">是否舍弃该修改?</string> -->
+	<string name="ifgiveupchange">保存闹钟?</string>
+	
+	
+	<string name="worldtimeearly1" >"快<xliff:g id="HOUR">%d</xliff:g>小时<xliff:g id="MINUTE">%d</xliff:g>分钟"</string>
+	<string name="worldtimeearly2" >"快<xliff:g id="HOUR">%d</xliff:g>小时"</string>
+	<string name="worldtimelate1" >"慢<xliff:g id="HOUR">%d</xliff:g>小时<xliff:g id="MINUTE">%d</xliff:g>分钟"</string>
+	<string name="worldtimelate2" >"慢<xliff:g id="HOUR">%d</xliff:g>小时"</string>
+	<string name="worldtimesame" >"和我们时间一样"</string>
+    
+    <string-array name="auto_silence_values" translatable="false">
+        <item>-1</item> <!-- Off -->
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+     </string-array>
+    <string name="app_label" msgid="6674495003718166674">"时钟"</string>
+    <string name="alarm_list_title" msgid="7589940465292950600">"闹钟"</string>
+    <string name="add_alarm" msgid="5976616107390962899">"添加闹钟"</string>
+    <string name="menu_desk_clock" msgid="3241995064554071588">"座钟"</string>
+    <string name="menu_edit_alarm" msgid="7204602994918829751">"修改闹钟设置"</string>
+    <string name="delete_alarm" msgid="3457780990646206817">"取消闹钟"</string>
+    <string name="enable_alarm" msgid="1834599140632142536">"启用闹钟"</string>
+    <string name="disable_alarm" msgid="5889378670229554109">"停用闹钟"</string>
+    <string name="delete_alarm_confirm" msgid="4237696873219106907">"将会取消此闹钟。"</string>
+    <string name="show_clock" msgid="8358759982675616915">"显示时钟"</string>
+    <string name="hide_clock" msgid="3217727306480505694">"隐藏时钟"</string>
+    <string name="label" msgid="162189613902857319">"标签"</string>
+    <string name="default_label" msgid="5590025289805630372">"闹钟"</string>
+    <string name="empty_label" msgid="5590025211805638872">"无"</string>
+    <string name="set_alarm" msgid="9148359866152726808">"设置闹钟"</string>
+    <string name="alarm_vibrate" msgid="3476686921490362230">"振动"</string>
+    <string name="alarm_repeat" msgid="7242985466344233206">"重复"</string>
+    <string name="alarm_remarks" msgid="9542985466344233206">"备注"</string>
+    <string name="set_alarm_remarks" msgid="9542985466355233206">"设置备注"</string>
+    <string name="input_alarm_remarks_hint" msgid="9542452566355233206">"输入备注"</string>
+    <string name="alert" msgid="6539852766423700221">"铃声"</string>
+    <string name="time" msgid="8067216534232296518">"时间"</string>
+    <!-- <string name="alarm_alert_dismiss_text" msgid="4942914605480888820">"取消"</string> -->
+    <string name="alarm_alert_dismiss_text" msgid="4942914605480888820">"不保存"</string>
+    <string name="alarm_alert_dismiss_text2" >"取消"</string>
+    <string name="alarm_alert_alert_silenced" msgid="7918075929961104202">"闹钟响铃时间为 <xliff:g id="MINUTES">%d</xliff:g> 分钟"</string>
+    <string name="alarm_alert_snooze_text" msgid="1774416052207651584">"暂停再响"</string>
+    <!-- Gionee baorui 2013-01-17 modify for CR00765213 begin -->
+    <!-- 
+    <string name="alarm_alert_snooze_set" msgid="656470966696912087">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟。"</string>
+    -->
+    <string name="alarm_alert_snooze_set" msgid="656470966696912087">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟"</string>
+    <!-- Gionee baorui 2013-01-17 modify for CR00765213 begin -->
+
+    <!-- Gionee baorui 2013-01-17 modify for CR00764967 begin -->
+    <!-- 
+    <string-array name="alarm_set">
+        <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+        <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+        <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+    -->
+    <string-array name="alarm_set">
+        <item msgid="5163476010406761625">"不到 1 分钟后闹钟响"</item>
+        <item msgid="7110525731259629055">"<xliff:g id="DAYS">%1$s</xliff:g>后闹钟响"</item>
+        <item msgid="7003982794086186185">"<xliff:g id="HOURS">%2$s</xliff:g>后闹钟响"</item>
+        <item msgid="7311021123230077742">"<xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g>后闹钟响"</item>
+        <item msgid="8431715191823114872">"<xliff:g id="MINUTES">%3$s</xliff:g>后闹钟响"</item>
+        <item msgid="3244151088673185428">"<xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后闹钟响"</item>
+        <item msgid="3663661342600168814">"<xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后闹钟响"</item>
+        <item msgid="7779544127785487304">"<xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后闹钟响"</item>
+    </string-array>
+    <!-- Gionee baorui 2013-01-17 modify for CR00764967 end -->
+
+    <string name="day" msgid="7984755014526510295">"1 天"</string>
+    <string name="days" msgid="2070509222727852210">"<xliff:g id="DAYS">%s</xliff:g> 天"</string>
+    <string name="hour" msgid="2546819039651509323">"1 小时"</string>
+    <string name="hours" msgid="2071487018566991613">"<xliff:g id="HOURS">%s</xliff:g> 小时"</string>
+    <string name="minute" msgid="2486157997434653710">"1 分钟"</string>
+    <string name="minutes" msgid="6115838729146292526">"<xliff:g id="MINUTES">%s</xliff:g> 分钟"</string>
+    <string name="every_day" msgid="1058994798884544691">"每天"</string>
+    <string name="never" msgid="54104287800571769">"一律不"</string>
+    <string name="day_concat" msgid="971998564991636532">", "</string>
+    <string name="clock_instructions" msgid="3118560284915857690">"选择要显示的时钟。"</string>
+    <string name="analog_gadget" msgid="1670505720837152766">"模拟时钟"</string>
+    <string name="settings" msgid="5849739030579520686">"设置"</string>
+    <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">"静音模式下闹钟响"</string>
+    <string name="alarm_in_silent_mode_summary" msgid="6042500263899922832">"手机处于静音模式时，闹钟仍会响"</string>
+    <!-- android jiating 20120528 begin -->
+<!--            <string name="snooze_duration_title" msgid="1471249885139952670">"再响间隔"</string> -->
+    <string name="snooze_duration_title" msgid="1471249885139952670">"小睡"</string>
+    <!-- android jiating 20120528 end -->
+    <string-array name="snooze_duration_entries">
+        <item msgid="8337408933053603125">"5 分钟"</item>
+        <item msgid="5294206441496024610">"10 分钟"</item>
+        <item msgid="2165904039211935470">"15 分钟"</item>
+        <item msgid="7248236967714374250">"20 分钟"</item>
+        <item msgid="738394723625179423">"25 分钟"</item>
+        <item msgid="1180222611308391616">"30 分钟"</item>
+    </string-array>
+    <string-array name="snooze_duration_values">
+        <item msgid="3655014754453084122">"5"</item>
+        <item msgid="8939029597449573449">"10"</item>
+        <item msgid="3922647341176353315">"15"</item>
+        <item msgid="5821804105985044459">"20"</item>
+        <item msgid="6048861883552402852">"25"</item>
+        <item msgid="2740866721232379791">"30"</item>
+    </string-array>
+
+    <string name="auto_silence_title" msgid="8000666766495360928">"自动暂停闹铃"</string>
+    <string name="auto_silence_summary" msgid="5757272454196171758">"闹钟将会在 <xliff:g id="MINUTES">%d</xliff:g> 分钟后暂停闹铃"</string>
+    <string name="auto_silence_never" msgid="4302257878142130807">"关闭"</string>
+
+    <string-array name="auto_silence_entries">
+        <item msgid="7718972982871612080">"关闭"</item>
+        <item >"1 分钟"</item>
+        <item msgid="5431906692406316549">"5 分钟"</item>
+        <item msgid="7742728812068919959">"10 分钟"</item>
+        <item msgid="2855948657259647629">"15 分钟"</item>
+        <item msgid="6330196381284475079">"20 分钟"</item>
+        <item msgid="7809240121716151904">"25 分钟"</item>
+        <item msgid="2807487305575255986">"30 分钟"</item>
+    </string-array>
+
+    <string name="done" msgid="6509722361933858451">"完成"</string>
+    <string name="revert" msgid="9100911171235162926">"还原"</string>
+    <string name="delete" msgid="5732434972457000541">"删除闹钟"</string>
+    <string name="alarm_volume_title" msgid="8506245173912428522">"闹钟音量"</string>
+    <string name="alarm_volume_summary" msgid="8957440373896242438">"设置闹钟音量"</string>
+    <string name="silent_alarm_summary" msgid="8605302849408279221">"静音"</string>
+    <string name="alarm_notify_text" msgid="4146350965933990093">"选择暂停或关闭此闹钟。"</string>
+    <string name="alarm_notify_snooze_label" msgid="5404083762646377829">"<xliff:g id="LABEL">%s</xliff:g>（已暂停）"</string>
+    <string name="alarm_notify_snooze_text" msgid="8004830999152609519">"闹钟将在<xliff:g id="TIME">%s</xliff:g>再提醒,点击可关闭"</string>
+<!--     <string name="volume_button_setting_title" msgid="6937131248843413357">"音量按钮"</string> -->
+    <string name="volume_button_setting_title" msgid="6937131248843413357">"音量按钮的作用"</string>
+    <string name="volume_button_dialog_title" msgid="8768042543750036853">"按钮的作用"</string>
+    <string name="volume_button_setting_summary" msgid="4776447991226047070">"设置这些按钮在闹钟响起时的作用"</string>
+
+    <string-array name="volume_button_setting_entries">
+        <item msgid="4520420953175098625">"无"</item>
+        <item msgid="7111908302622811168">"暂停"</item>
+        <item msgid="8573552194573068996">"关闭"</item>
+    </string-array>
+    <string-array name="volume_button_setting_values">
+        <item msgid="4851033050639608752">"0"</item>
+        <item msgid="3204893476515513084">"1"</item>
+        <item msgid="7687709558968154577">"2"</item>
+    </string-array>
+
+    <string name="default_ringtone_setting_title" msgid="4549726190682964245">"设置默认铃声"</string>
+    <string name="alarm_button_description" msgid="740283647046258651">"闹钟"</string>
+    <string name="gallery_button_description" msgid="1151743663255257668">"图库"</string>
+    <string name="music_button_description" msgid="1626593420810117999">"音乐"</string>
+    <string name="nightmode_button_description" msgid="990894208217576381">"调暗"</string>
+    <string name="home_button_description" msgid="3383859096809056157">"启动器"</string>
+    <string name="desk_clock_button_description" msgid="968868045496561043">"时钟显示"</string>
+    <string name="battery_charging_level" msgid="4391767951302394083">"<xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>"</string>
+    <string name="weather_fetch_failure" msgid="7517010911981312358">"目前无法提供天气信息。"</string>
+    <string name="menu_item_dock_settings" msgid="3524235151132971114">"底座设置"</string>
+    <string name="alarm_klaxon_service_desc" msgid="2153290655559916468">"在 DeskClock 中设置的闹钟铃声播放服务。"</string>
+    <string name="loading_ringtone" msgid="6523322777415268044">"正在载入铃声..."</string>
+    <string name="control_set_alarm" msgid="2194676418924016327">"设置闹钟"</string>
+    <string name="control_set_alarm_with_existing" msgid="1128169496817859490">"设置的闹钟时间：<xliff:g id="TIME">%s</xliff:g>"</string>
+    <!-- android jiating 20120528 begin -->
+    <string name="isDelete_select_alarm" msgid="2153290655559916468">您确定要删除所选闹钟吗？</string>
+    <!-- <string name="alarm_delete_sure" msgid="2153290655559916468">确定</string> -->
+    <string name="alarm_delete_sure" msgid="2153290655559916468">保存</string>
+    <string name="alarm_delete_sure2" >删除</string>
+    <string name="show_info_for_select" msgid="2153290655559916468">已选中</string>
+    <string name="show_info_for_select_count" msgid="2153290655559916468">个</string>
+    <string name="show_info_for_select_all" msgid="2153290655559916468">全部</string>
+    <string name="create_alarm" msgid="2153290655559916468">创建闹钟</string>
+    <string name="all_selected" msgid="2153290655559916468">全选</string>
+    <string name="no_alarm" msgid="2153290655559916468">你还没有闹钟，赶紧添加一个吧!</string>
+    <string name="edite_alarm" msgid="2153290655559916468">编辑闹钟</string>
+    <string name="android_delete_alarm" msgid="2153290655559916468">删除闹钟</string>
+    <string name="all_unselected" msgid="2153290655559916468">取消全选</string>
+    <!-- android jiating 20120528 end -->
+    <!-- android lilg 20120601 add for stopwatch, chronometer start -->
+    <string name="stopwatch">秒表</string>
+    <string name="btnMark">计次</string>
+    <string name="lightInfo">计时中屏幕常亮</string>
+    <string name="chronometer">计时器</string>
+    <string name="btnStart">开始</string>
+    <string name="btnPause">暂停</string>
+    <string name="btnGoon">继续</string>
+    <string name="btnReset">重置</string>
+    <string name="etHint">请输入倒计时时间：</string>
+    <string name="tvRing">铃声提醒：早上好</string>
+    <string name="timeOut">计时器时间到</string>
+    <string name="chronometer_alarm_alert_dismiss_text">确定</string>
+    <string name="chronometer_alarm_alert_title">提示</string>
+    <string name="world_time" msgid="2153290655559916468">世界时钟</string>
+
+    <!-- android lilg 20120601 add for stopwatch, chronometer end -->
+    <!-- android yuchunfei 20120601 add start -->
+    <string name="exists_already">已存在</string>
+    <string name="add_city">添加城市</string>
+    <string name="search_city">请输入城市</string>
+    <string name="delete_city">删除</string>
+    <string name="delete_all_city">您确定要删除所选的城市吗？</string>
+    <string name="no_city">还没有城市，赶紧添加一个吧!</string>
+    <string name="world_search_no_city">无匹配结果</string>
+    <string name="default_ringtone">默认铃声</string>
+    <string name="world_time_morning">上午</string>
+    <string name="world_time_afernoon">下午</string>
+    <!-- android yuchunfei 20120601 add end -->
+
+    <string name="chronometer_start_chronometer">顺时针旋转以定时</string>
+    <string name="chronometer_notify_alarm">提醒铃声</string>
+    <string name="chronometer_alarm">铃声</string>
+    <string name="chronometer_screen_always_on">计时中屏幕常亮</string>
+    
+    <string name="btnContinue">继续</string>
+
+    <string name="power_on">"取消并开机"</string>
+	<string name="power_off">"取消并关机"</string>
+	
+	<string name="alarm_upadate_data_menu">系统时间</string>
+    
+    <!-- gionee huangxiaochuan 20120719 add start -->
+    <string name="stopWatchNotiTitle">秒表</string>
+	<string name="stopWatchNotiText">秒表正在运行</string>
+	<string name="chronometerNotiTitle">计时器</string>
+	<string name="chronometerNotiText">计时器正在运行</string>
+	<string name="toastAddalarm">创建闹钟</string>
+	<string name="toastDeleteAlarm">删除闹钟</string>
+	<string name="toastAddCity">添加城市</string>
+	<string name="toastDeleteCity">删除城市</string>
+	<string name="toastSortCity">排序</string>
+	<string name="toastSortCityOk">确定</string>
+	<string name="toastSortCityCancel">取消</string>
+	<string name="titleSortCityBack">改变城市顺序</string>
+	
+	<string name="alarm_notify_delay_text" >"已默认将闹钟延迟为<xliff:g id="TIME">%s</xliff:g>再提醒"</string>
+  	<string name="alarm_alert_delay_set" > 默认延迟<xliff:g id="MINUTES">%d</xliff:g> 分钟后重响。"</string>
+   	<string name="alarm_notify_delay_label" >"<xliff:g id="LABEL">%s</xliff:g>（默认重响）"</string>
+
+   	
+   	<string name="chronometer_alart_title">计时</string>
+   	<string name="chronometer_alart_title_hour">小时</string>
+   	<string name="chronometer_alart_title_minute">分钟</string>
+   	<string name="chronometer_alart_title_second">秒</string>
+	
+	<!-- gionee huangxiaochuan 20120719 add end -->
+	<!-- Gionee baorui 2012-11-15 modify for CR00732943 begin -->
+    <string name="no_set">未设置</string>
+    <!-- Gionee baorui 2012-11-15 modify for CR00732943 end -->
+    <!-- Gionee baorui 2012-12-16 modify for CR00733082 begin -->
+    <string name="daysOfWeek">日 一 二 三 四 五 六</string>
+    <string name="btnOff">关闭</string>
+    <string name="off_power_on">关闭并开机</string>
+    <string name="option">选项</string>
+    <string name="remove_alarm">删除</string>
+    <string name="alarms_remove">批量删除</string>
+    <!-- <string name="isDelete_the_alarm">您确定要删除此闹钟吗？</string> -->
+    <string name="isDelete_the_alarm">删除此闹钟？</string>
+    <string name="delete_alarm_title">删除</string>
+    <!-- <string name="delete_the_city">您确定要删除此城市吗？</string> -->
+    <string name="delete_the_city">删除此城市？</string>
+    <string name="vibrate_in_silent_mode_summary">手机处于静音模式时，振动不可用</string>
+    <string name="gn_chronometer_alarm_alert_title">计时到</string>
+    <!-- Gionee baorui 2012-12-16 modify for CR00733082 end -->
+    <!-- Gionee baorui 2013-01-15 modify for CR00762851 begin -->
+    <string name="favorite_title">常用</string>
+    <string name="menu_discard">舍弃</string>
+    <string name="menu_done">保存</string>
+    <string name="empty"></string>
+    <!-- Gionee baorui 2013-01-15 modify for CR00762851 end -->
+    
+    <!-- Gionee <baorui><2013-03-15> modify for CR00784986 begin -->
+    <string name="digital_gadget" msgid="2326954556720571358">"数字时钟"</string>
+    <string name="alarm_deleted" msgid="5017075127290219443">"闹钟已删除。"</string>
+    <!-- Gionee <baorui><2013-03-15> modify for CR00784986 end -->
+     <string-array name="weeked">
+     <item >"日"</item>
+      <item >"一"</item>
+      <item >"二"</item>
+      <item >"三"</item>
+      <item >"四 "</item>
+      <item >"五"</item>  
+      <item >"六"</item>  
+    </string-array>
+    <string name="alarmalertclose">向上滑动关闭闹钟</string>
+     <string name="isshowofficeday">yes</string>
+    <string name="airplanemodeoff">已自动帮你关闭飞行模式!</string>
+    <string name="appwidget_month">月</string>
+    <string name="appwidget_date">日&#160;&#160;&#160;</string>
+     
+    
+</resources>

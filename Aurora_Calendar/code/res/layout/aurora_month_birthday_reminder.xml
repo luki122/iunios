@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp">
+
+    <TextView 
+        android:id="@+id/birthday_reminder_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:maxWidth="270dp"
+        android:drawableStart="@drawable/aurora_agenda_icon_blue"
+        android:drawablePadding="15dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/aurora_title_text_color"
+        android:textSize="14sp"
+        android:text="@string/aurora_birthday_reminder" />
+
+    <TextView
+        android:id="@+id/birthday_reminder_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/birthday_reminder_title"
+        android:layout_marginTop="1dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/aurora_summary_text_color"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/birthday_reminder_wish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/aurora_birthday_reminder" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/horizontal_divider" />
+</RelativeLayout>

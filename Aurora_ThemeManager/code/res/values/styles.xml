@@ -1,0 +1,91 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="com.aurora:style/Theme.aurora.Light">
+       <item name="com.aurora:auroraActionBarTitleColor">@android:color/white</item> 
+        <item name="com.aurora:auroraActionBarItemBackground">@color/white</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="com.aurora:auroraActionBarBackground">@color/action_bar_bg_color</item>
+        <item name="progressBtnMainColor">@color/theme_main_color</item>
+    </style>
+
+    <style name="Theme_aurora" parent="com.aurora:Theme.aurora">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="com.aurora:auroraActionBarItemBackground">@android:color/white</item>
+    </style>
+
+    <style name="ThemeDetailTitleStyle">
+        <item name="android:textSize">@dimen/theme_detail_title_size</item>
+        <item name="android:textColor">@color/theme_detail_page_title_color</item>
+    </style>
+
+    <style name="ThemeDetailThemeSizeStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/theme_detail_page_size_color</item>
+    </style>
+    
+    <style name="ThemeDetailThemeSizeDesStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/theme_grey_color</item>
+    </style>
+
+    <style name="ThemeDetailDescStyle">
+        <item name="android:textSize">@dimen/theme_detail_size_text_size</item>
+        <item name="android:textColor">@color/theme_detail_page_size_color</item>
+    </style>
+
+    <style name="ThemeListItemDownloadBtnStyle">
+        <item name="android:textSize">@dimen/theme_list_item_download_btn_textsize</item>
+        <item name="android:textColor">@color/theme_list_item_download_btn_text_color</item>
+    </style>
+    
+    <style name="Local_Theme_State_Style" parent="com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:auroraActionBarItemBackground">@color/local_theme_state_color</item>
+    </style>
+    
+    <style name="Theme_Time_Wallpaper_Preview" parent="com.aurora:style/Theme.aurora.Light">
+         <item name="com.aurora:auroraActionBarItemBackground">@android:color/white</item>
+         <item name="com.aurora:auroraActionBarTitleColor">@android:color/white</item>s
+        <item name="progressBtnMainColor">@android:color/white</item>
+    </style>
+    <style name="Time_Wallpaper_sub_title_style">
+        <item name="android:textSize">@dimen/time_wallpaper_sub_title_text_size</item>
+        <item name="android:textColor">@color/time_wallpaper_sub_title_color</item>
+    </style>
+    
+     <style name="Time_Wallpaper_title_bar_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/time_wallpaper_title_padding_two_side</item>
+        <item name="android:paddingRight">@dimen/time_wallpaper_title_padding_two_side</item>
+    </style>
+    
+    <style name="Style_Send_Email_To">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#414142</item>
+    </style>
+    
+    <style name="Style_Send_Email_Text">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#49aef7</item>
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+</resources>

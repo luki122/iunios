@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">AuroraAccountSettings</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_settings">"Accounts"</string>
+    <string name="aurora_account_category_title">Accounts</string>
+    <string name ="aurora_account_category_security_title">Security</string>
+    <string name="add_account_label" >"Add an account"</string>
+    <string name="header_add_an_account" >"Add an account"</string>
+     <string name="remove_account_label" >"Remove an account"</string>
+    <string name="sync_disabled">"Sync is disabled"</string>
+    <string name="sync_error" >"Sync is error"</string>
+    <string name="sync_in_progress" >"Click Sync Now\n Syncing…"</string>
+    <string name="account_sync_settings_title" >"Sync"</string>
+    <string name="accessibility_sync_enabled" msgid="558480439730263116">"Sync is enabled"</string>
+    <string name="accessibility_sync_disabled" msgid="1741194106479011384">"Sync is disabled"</string>
+    <string name="accessibility_sync_error" msgid="8703299118794272041">"Sync is error"</string>
+    <string name="sync_is_failing" msgid="1591561768344128377">"Synchronous operation has some problems, will soon be restored."</string>
+    <string name="help_url_accounts" translatable="false"></string>
+    <!-- <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string> -->
+    <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string>
+    <string name="lock_settings_picker_title" msgid="1095755849152582712">"Select the screen lock mode"</string>
+    <string name="sync_enabled" msgid="4551148952179416813">"Sync is enabled"</string>
+    <string name="really_remove_account_title" msgid="8800653398717172460">"Delete the accounts?"</string>
+    <string name="really_remove_account_message" product="default" msgid="3483528757922948356">"Deleting the account will delete all messages from the phone, contacts, and other data."</string>
+    <string name="remove_account_failed" product="default" msgid="6217238709175617517">"Some applications need to use this account. You only have to reset the phone to factory default settings (this operation will delete all your personal data), you can delete this account. You can perform this operation by
+       settings."</string>
+    <string name="cant_sync_dialog_message" msgid="1938380442159016449">"Currently, this entry synchronization feature is disabled. To change this setting, enable background data and automatic synchronization temporarily."</string>
+    <string name="cant_sync_dialog_title" msgid="8923508322291625282">"Can not manually sync"</string>
+    <string name="finish_button_label" msgid="481587707657751116">"Complete"</string>
+    <string name="sync_menu_sync_now" msgid="6154608350395805683">"Sync Now"</string>
+    <string name="sync_menu_sync_cancel" msgid="8292379009626966949">"Sync cancel"</string>
+    <string name="last_synced" msgid="4242919465367022234">"Click Sync Now\n Last synchronization time：<xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>"</string>
+    <string name="auto_sync_start">"Auto-sync is enabled"</string>
+    <string name="sync_failed" msgid="1696499856374109647">"Sync failed"</string>
+    <string name="sync_active" msgid="8476943765960863040">"Syncing"</string>
+    <string name="sync_one_time_sync" msgid="6766593624598183090">"Touch can be synchronized immediately（<xliff:g id="LAST_SYNC_TIME">
+	%1$s</xliff:g>）"</string>
+    <string name="sync_automatically" msgid="1682730255435062059">"Application data is automatically synchronized"</string>
+   
+    <string name="global_change_warning" product="default" msgid="2461264421590324675">"This setting affects all users of this phone."</string>
+
+</resources>

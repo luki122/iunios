@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-4-12 added for GIUI4.0 start
+-->
+
+<!-- gionee zhouyj 2012-05-17 modify for CR00601094 start -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- gionee zhouyj 2012-04-27 modified for CR00585541 start -->
+    <item android:id="@+id/gn_search"
+        android:title="@string/menu_search"
+        android:showAsAction="always" />
+    <!-- gionee zhouyj 2012-04-27 modified for CR00585541 end -->
+
+    <item android:id="@+id/gn_action_compose_new"
+        android:title="@string/new_message"
+        android:showAsAction="always" />
+    
+    <item android:id="@+id/gn_action_delete_all_draft"
+        android:title="@string/delete_all_dratfs" 
+        android:visible="false"
+        android:showAsAction="never"/>
+    
+    <item android:id="@+id/gn_action_cancel_all_favorite"
+        android:title="@string/gn_cancel_all_favorite" 
+        android:showAsAction="never"/>
+    
+    <item android:id="@+id/gn_action_delete_all"
+        android:title="@string/menu_delete_all" 
+        android:visible="false"
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/gn_action_batch_operation"
+        android:title="@string/gn_action_batch_operation"
+        android:showAsAction="never" />
+    <item android:id="@+id/gn_action_encryption"
+        android:title="@string/gn_action_encryption" 
+        android:showAsAction="never"/>
+
+    <item android:id="@+id/gn_action_in_out"
+        android:title="@string/pref_title_io_settings"
+        android:showAsAction="never" />
+    
+    <!-- Gionee <zhouyj> <2013-04-25> add for CR00802357 start -->
+    <item android:id="@+id/gn_action_synchronizer"
+        android:title="@string/gn_synchronizer" 
+        android:showAsAction="never"/>
+    <!-- Gionee <zhouyj> <2013-04-25> add for CR00802357 end -->
+
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 start -->
+    <item android:id="@+id/gn_action_doctoran"
+        android:title="@string/gn_menu_doctoran" 
+        android:showAsAction="never"/>
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 end -->
+
+    <!--  
+    <item android:id="@+id/gn_action_disturb"
+        android:title="@string/gn_prevent_disturb" />
+    -->
+    
+    <item android:id="@+id/gn_action_exchange"
+        android:title="@string/gn_exchange" 
+        android:showAsAction="never"/>
+    
+    <item android:id="@+id/gn_action_settings"
+        android:title="@string/menu_preferences"
+        android:showAsAction="never"/>
+</menu>
+<!-- gionee zhouyj 2012-05-17 modify for CR00601094 end -->

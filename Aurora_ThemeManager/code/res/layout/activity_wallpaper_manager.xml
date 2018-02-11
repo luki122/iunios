@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Space
+            android:layout_width="9dip"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="296dip" >
+
+                <ImageView
+                    android:id="@+id/manager_lockpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <ImageView android:id="@+id/manager_prelockpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/lockpaper_pre_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:gravity="center"
+                android:text="@string/lockscreen_wallpaper"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="9dip"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="296dip" >
+
+                <ImageView
+                    android:id="@+id/manager_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+				<!-- shigq add "android:id" start -->
+                <include
+                    android:id="@+id/manager_wallpaper_base"
+                    layout="@layout/wallpaper_icon_preview_small"
+                     />
+                <!-- shigq add "android:id" end -->
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/wallpaper_pre_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dip"
+                android:gravity="center"
+                android:text="@string/desktop_wallpaper"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="9dip"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

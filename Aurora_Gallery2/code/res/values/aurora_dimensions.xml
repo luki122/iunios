@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <dimen name="aurora_top_controls_height">55dp</dimen>
+    <dimen name="aurora_bottom_controls_height">47dp</dimen>
+
+    <!-- Iuni <lory><2013-12-28> add begin -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="date_layout_margin">64dp</dimen>
+    <dimen name="gridview_horizontalSpacing">1dp</dimen>
+    <dimen name="gridview_verticalSpacing">1dp</dimen>
+    <dimen name="gridview_textSize">24sp</dimen>
+    <dimen name="gridview_marginTop">176dp</dimen>
+    <dimen name="gridview_padding">12dp</dimen>
+    <dimen name="gridview_padding2">17dp</dimen>
+    <dimen name="gridview_paddingright">3dp</dimen>
+    <dimen name="gridview_paddinleft">15dp</dimen>
+    <dimen name="grid_item_dater_space">5dp</dimen>
+    <dimen name="header_hight">13dp</dimen>
+    <dimen name="date_paddinleft">9dp</dimen>
+    <dimen name="date_group">55dp</dimen>
+    <dimen name="date_datawidth">45dp</dimen>
+    <dimen name="wenzi_datawidth">10dp</dimen>
+    <dimen name="date_textsize">12sp</dimen><!-- paul for UI_20-->
+    <dimen name="wenzi_textsize">10sp</dimen>
+    <dimen name="year_textsize">12sp</dimen>
+    <dimen name="header_paddingtop">14dp</dimen>
+    <dimen name="date_dateheightsize">19dp</dimen>
+    <dimen name="header_backgroundsize">32sp</dimen>
+    <!-- Iuni <lory><2013-12-28> add end -->
+
+
+    <!-- Aurora <SQF> <2014-03-31> for visual design begin -->
+    <dimen name="header_height">30dp</dimen><!-- paul for UI_20-->
+    <dimen name="header_extra_height">3dp</dimen>
+    <dimen name="slot_view_right_margin_3_column">3dp</dimen>
+    <dimen name="slot_view_right_margin_6_column">1dp</dimen>
+    <!-- Aurora <SQF> <2014-03-31> for visual design begin -->
+
+
+    <!-- paul for crop start -->
+    <dimen name="crop_corner_w">4dp</dimen>
+    <dimen name="crop_corner_h">8dp</dimen>
+    <dimen name="crop_edge_margin">10dp</dimen>
+
+    <dimen name="sys_menu_padding_right">0dp</dimen>
+    <dimen name="sys_menu_padding_bottom">0dp</dimen>
+    <!-- paul for crop end -->
+
+
+    <!-- //Aurora <SQF> <2014-09-15>  for NEW_UI begin -->
+    <dimen name="aurora_effect_view_bmp_width">48.5dp</dimen>
+    <dimen name="aurora_effect_view_bmp_top_margin">9dp</dimen>
+    <dimen name="aurora_effect_view_text_height">19dp</dimen>
+    <dimen name="aurora_effect_view_left_right_margin">9.5dp</dimen>
+    <dimen name="aurora_effect_view_spacing">10dp</dimen>
+    <dimen name="aurora_effect_view_text_size">8sp</dimen>
+    <dimen name="aurora_upload_download_list_height">57dp</dimen>
+    <dimen name="aurora_updown_cancel_btn_right_margin">27dp</dimen>
+    <dimen name="aurora_updown_pause_resume_btn_right_margin">12dp</dimen>
+    <dimen name="aurora_updown_cancel_btn_width_height">21.33dp</dimen>
+    <dimen name="aurora_updown_pause_resume_btn_width">50dp</dimen>
+    <dimen name="aurora_updown_pause_resume_btn_height">30dp</dimen>
+    <!-- //Aurora <SQF> <2014-09-15>  for NEW_UI end -->
+
+
+    <!-- add by JXH  cloudAbum 2015-4-24 start -->
+    <dimen name="aurora_album_margin">11dp</dimen>
+    <dimen name="aurora_album_margin_2">4dp</dimen>
+    <dimen name="aurora_album_name_length">116dp</dimen>
+    <dimen name="aurora_album_listview_max_height">280dp</dimen>
+    <!-- add by JXH  cloudAbum 2015-4-24 end -->
+    
+<!--add By wenyongzhe   -->
+     <dimen name="aurora_RoundProgressBar_roundWidth">5dp</dimen>
+    <dimen name="aurora_RoundProgressBar_roundMargin">6dp</dimen>
+    <dimen name="aurora_filtershow_system_menu_marging_right">16dp</dimen>
+    <dimen name="aurora_filtershow_system_menu_marging_bottom">6dp</dimen>
+    <dimen name="aurora_album_name_textview_length">310dp</dimen>
+
+    <!--paul add start-->
+    <dimen name="aurora_no_pic_paddingtop">174dp</dimen>
+    <dimen name="aurora_no_pic_paddingtop_offset">12dp</dimen>
+    <dimen name="aurora_no_pic_textsize">14sp</dimen>
+    <!--paul add end-->
+    <!-- JXH add start -->
+    <dimen name="aurora_no_pic_paddingtop_local">204dp</dimen>
+     <!-- JXH add end -->
+     
+     <dimen name="albums_select_top">5px</dimen>
+</resources>

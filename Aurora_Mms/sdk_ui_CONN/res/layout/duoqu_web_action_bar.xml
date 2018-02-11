@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/duoqu_header"
+    android:layout_width="match_parent"
+    android:layout_height="52dp" >
+
+    <ImageView
+        android:id="@+id/duoqu_header_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/duoqu_title_left_icon_back_light" />
+
+    <TextView
+        android:id="@+id/duoqu_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="51dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/duoqu_action_bar_title_text_color"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/duoqu_header_menu"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/duoqu_pop_menu"
+        android:visibility="invisible" />
+
+</RelativeLayout>

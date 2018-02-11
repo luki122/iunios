@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="view_filter"
+        aurora:auroratitle="@string/aurora_view_filter" />
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="account_management"
+        aurora:auroratitle="@string/aurora_account_management" />
+
+    <aurora.preference.AuroraListPreference
+        aurora:aurorakey="preferences_week_start_day"
+        aurora:auroradefaultValue="@string/preferences_week_start_day_default"
+        aurora:auroratitle="@string/aurora_view_firstday"
+        aurora:auroraentries="@array/preferences_week_start_day_labels"
+        aurora:auroraentryValues="@array/preferences_week_start_day_values"
+        aurora:auroradialogTitle="@string/aurora_view_firstday" />
+
+    <AuroraSwitchPreference
+        aurora:aurorakey="note_reminder_switch"
+        aurora:auroratitle="@string/aurora_note_reminder_switch"
+        aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/preferences_reminder_title">
+        <AuroraSwitchPreference
+            aurora:aurorakey="birthday_reminder_switch"
+            aurora:auroradefaultValue="true"
+
+            aurora:auroratitle="@string/aurora_birthday_reminder_switch" />
+
+        <!-- <AuroraPreferenceScreen
+             aurora:aurorakey="events_reminder"
+             aurora:auroratitle="@string/aurora_events_reminder" /> -->
+
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="preferences_default_reminder"
+            aurora:auroradefaultValue="@string/preferences_default_reminder_default"
+            aurora:auroratitle="@string/aurora_events_reminder"
+            aurora:auroraentries="@array/reminder_minutes_labels"
+            aurora:auroraentryValues="@array/preferences_default_reminder_values"
+            aurora:auroradialogTitle="@string/preferences_default_reminder_dialog" />
+        <!--  
+        <AuroraPreferenceScreen
+            aurora:aurorakey="todo_reminder"
+            aurora:auroratitle="@string/aurora_todo_reminder" />-->
+
+        <aurora.preference.AuroraRingtonePreference
+            aurora:aurorakey="preferences_alerts_ringtone"
+            aurora:auroratitle="@string/aurora_ring_picker"
+            aurora:auroraringtoneType="notification"
+            aurora:aurorashowSilent="false"
+            aurora:aurorashowDefault="false"
+            aurora:auroradefaultValue="content://settings/system/notification_sound" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:auroratitle="@string/preferences_period_title"
+        aurora:aurorakey="period_category" >
+
+        <AuroraPreferenceScreen
+            aurora:aurorakey="view_period"
+            aurora:auroratitle="@string/aurora_period_detail" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="clear_period_category"
+        aurora:auroratitle="  ">
+
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="clear_period"
+            aurora:auroratitle="@string/aurora_period_clear" />
+
+    </aurora.preference.AuroraPreferenceCategory>
+</aurora.preference.AuroraPreferenceScreen>

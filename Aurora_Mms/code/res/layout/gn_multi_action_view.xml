@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_custom_title_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageButton 
+        android:id="@+id/gn_action_view_back"
+        android:focusable="true"
+        style="?android:attr/actionModeCloseButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/actionBarItemBackground"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/gn_select_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/gn_tab_textcolor"
+        android:text="@string/gn_select_conversation_zore"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <CheckBox
+        android:id="@+id/gn_select_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dip"
+        android:paddingRight="@dimen/gn_checkbox_right"
+        android:focusable="false"
+        android:clickable="false"/>
+
+</LinearLayout>

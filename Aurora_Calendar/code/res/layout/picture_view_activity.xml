@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.aurora.commemoration.share.PicViewPager
+        android:id="@+id/pic_view_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/picbrowser_top_tool_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/back_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pic_view_go_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:duplicateParentState="true"
+                android:src="@drawable/pic_view_back_selector" />
+
+            <TextView
+                android:id="@+id/pic_view_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_commemoration_picture"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/set_to_commemoration"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingLeft="30dp"
+            android:paddingRight="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingStart="30dp"
+            android:scaleType="center"
+            android:src="@drawable/picture_set_to_commemoration_selector" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

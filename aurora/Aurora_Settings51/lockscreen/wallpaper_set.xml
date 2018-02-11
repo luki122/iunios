@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- time修改时间值，每次修改锁屏壁纸时都要更新此值，修改规则为当前“年月日” -->
+<wallpaper time="20150819">
+    <!-- 桌面壁纸信心设置，default_wallpaper默认壁纸 -->
+    <desktop>
+        <default_wallpaper>wallpaper_01.jpg</default_wallpaper>
+    </desktop>
+</wallpaper>

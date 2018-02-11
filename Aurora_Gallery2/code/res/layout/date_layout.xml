@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/date_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#353535"
+        android:textSize="28sp"
+        android:singleLine="true"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_marginLeft="15dp"
+         />
+    
+    <TextView android:id="@+id/date_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#5e5e5e"
+        android:layout_below="@+id/date_date"
+        android:textSize="11sp"
+        android:singleLine="true"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:layout_alignRight="@+id/date_date"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_fujian_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/id_fujian_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="13sp" 
+            android:textColor="@color/aurora_attchament_downloaded_textColor"
+            android:layout_marginLeft="17dp"/>
+
+        <ImageView
+            android:id="@+id/id_show"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/aurora_attachment_more"
+            android:paddingRight="12dp"
+            android:paddingLeft="15dp"/>
+    </RelativeLayout>
+
+  <!--   <com.aurora.email.widget.AuroraEmailListView
+        android:id="@+id/id_test_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="?android:attr/listDivider"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" /> -->
+	<com.aurora.email.widget.LinearLayoutForListView
+	    android:id="@+id/id_test_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:visibility="gone" />
+</LinearLayout>

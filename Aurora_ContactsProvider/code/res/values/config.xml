@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!--
+      Maximum dimension (height or width) of contact display photos or
+      photos from the social stream.
+    -->
+    <!-- Gionee:huangzy 20120615 modify for CR00624875 start -->
+    <!-- Gionee:huangzy 20120602 modify for CR00608714 start -->
+    <!-- Gionee fangbin 20120920 modified for CR00699195 start -->
+    <integer name="gn_config_max_display_photo_dim">1280</integer>
+    <!-- Gionee fangbin 20120920 modified for CR00699195 end -->
+    <integer name="config_max_display_photo_dim">256</integer>
+    <!-- Gionee:huangzy 20120602 modify for CR00608714 end -->
+    <!-- Gionee:huangzy 20120615 modify for CR00624875 end -->
+
+    <!-- Maximum dimension (height or width) of contact photo thumbnails -->
+    <integer name="config_max_thumbnail_photo_dim">200</integer>
+    <integer name="config_max_thumbnail_photo_dim_for_cts">96</integer>
+
+</resources>

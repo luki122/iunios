@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_of_listview"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/appIcon"
+        style="@style/app_icon_of_listview"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/autoStartSwitch"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/button"
+        android:text="@string/prohibit"
+        android:textColor="@color/btn_text_title_selector_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/autoStartSwitch"
+        android:layout_toRightOf="@id/appIcon"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:lines="1"
+        android:paddingLeft="12dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</RelativeLayout>

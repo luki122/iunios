@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/*
+* Copyright (C) 2011, The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<!-- Aurora liugj 2014-04-22 modified for ui -->
+<!-- Aurora liugj 2014-01-16 modified for aurora's new feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/simplePad"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:paddingLeft="@dimen/layout_item_padding_h"
+              android:paddingRight="@dimen/layout_item_padding_h"
+              android:paddingBottom="@dimen/layout_item_padding"
+              >
+	
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.android.calculator2.ColorButton
+            android:id="@+id/clear"
+            android:text="@string/operator_clear"
+            style="@style/button_small_style"
+            android:contentDescription="@string/operator_clear"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/del"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_del_nor"
+            android:contentDescription="@string/operator_del"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/percent"
+            android:text="@string/operator_percent"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_percent_nor"
+            android:contentDescription="@string/operator_percent"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/div"
+            android:text="@string/div"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_div_nor"
+            android:contentDescription="@string/divDesc"
+            />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/view_item_margin_v">
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit7"
+            android:text="@string/digit7"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit8"
+            android:text="@string/digit8"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit9"
+            android:text="@string/digit9"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/mul"
+            android:text="@string/mul"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_mul_nor"
+            android:contentDescription="@string/mulDesc"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/view_item_margin_v">
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit4"
+            android:text="@string/digit4"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit5"
+            android:text="@string/digit5"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit6"
+            android:text="@string/digit6"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/minus"
+            android:text="@string/minus"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_minus_nor"
+            android:contentDescription="@string/minusDesc"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/view_item_margin_v">
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit1"
+            android:text="@string/digit1"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit2"
+            android:text="@string/digit2"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit3"
+            android:text="@string/digit3"
+            style="@style/digit_button_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/plus"
+            android:text="@string/plus"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_plus_nor"
+            android:contentDescription="@string/plusDesc"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/view_item_margin_v">
+        <com.android.calculator2.ColorButton
+            android:id="@+id/digit0"
+            android:text="@string/digit0"
+            android:layout_weight="2"
+            style="@style/digit_button_0_style"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/dot"
+            android:text="@string/dot"
+            style="@style/digit_button_style"
+            android:layout_weight="3"
+            android:contentDescription="@string/dotDesc"
+            />
+        <com.android.calculator2.ColorButton
+            android:id="@+id/equal"
+            android:text="@string/equal"
+            style="@style/operator_button_style"
+            android:drawableLeft="@drawable/ic_equal"
+            android:layout_weight="3"
+            android:contentDescription="@string/equalDesc"
+            />
+    </LinearLayout>
+</LinearLayout>

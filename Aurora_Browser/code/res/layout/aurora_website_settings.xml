@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp" >
+
+            <!--
+            1.no-picture mode
+            2.night mode
+            -->
+
+            <RelativeLayout
+                android:id="@+id/rl_no_picture_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/aurora_setting_bar_height"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/aurora_setting_bar_top" >
+
+                <TextView
+                    style="@style/aurora_settting_bar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/no_picture_mode" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

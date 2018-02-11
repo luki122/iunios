@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="citynamecolor">#a4ffffff</color>
+    <color name="dateandtimecolor">#60ffffff</color>
+    <color name="weatherdetailcolor">#80ffffff</color>
+</resources>

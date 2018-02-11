@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+	 <objectAnimator
+	     android:duration="@integer/aurora_animation_duration_400"
+	     android:propertyName="fillColor"
+	     android:valueFrom="#0ebc7d"
+	     android:interpolator="@interpolator/answer_icon_color_interpolator"
+	     android:valueTo="#FFFFFF" />
+ </set>

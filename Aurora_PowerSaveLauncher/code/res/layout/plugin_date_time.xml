@@ -1,0 +1,55 @@
+<com.aurora.powersaver.launcher.DateTimeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white_text"
+            android:textSize="@dimen/plugin_date_view_font_time" />
+
+        <TextView
+            android:id="@+id/tv_am_pm_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_time"
+            android:layout_marginStart="@dimen/am_pm_left"
+            android:layout_toEndOf="@id/tv_time"
+            android:gravity="center"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/plugin_date_view_font_am_pm_zh"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_am_pm_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_time"
+            android:layout_marginStart="@dimen/am_pm_left"
+            android:layout_toEndOf="@id/tv_time"
+            android:gravity="center"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/plugin_date_view_font_am_pm_zh"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white_text"
+        android:textSize="@dimen/plugin_date_view_font_date" />
+
+</com.aurora.powersaver.launcher.DateTimeView>

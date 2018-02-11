@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">备忘录</string>
+    <string name="quick_record_entry_name">快速录音</string>
+    <string name="note_reminder">备忘录提醒</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+
+    <string name="note_channel">official</string>
+
+    <string name="image_not_found">图片丢失</string>
+    <string name="click_again_to_exit">再按一次，退出应用</string>
+    <string name="toast_no_network">无网络，请打开网络连接</string>
+    <string name="toast_network_error">网络错误，请稍候再试</string>
+    <string name="toast_no_new_version">已是最新版本</string>
+    <string name="toast_weibo_too_long">内容超过140个汉字</string>
+
+    <!-- 图片裁剪 -->
+    <string name="crop__saving">正在保存…</string>
+    <string name="crop__wait">请稍候…</string>
+    <string name="crop__pick_error">No image sources available</string>
+
+    <!-- 备忘管理 -->
+    <string name="note_manager">管理</string>
+    <string name="note_backup">备份</string>
+    <string name="note_backup_none">无可备份的数据</string>
+    <string name="note_backup_to">备份到</string>
+    <string name="note_backup_doing">正在备份，请稍候&#8230;</string>
+    <string name="note_backup_success">已备份到手机存储器</string>
+    <string name="note_backup_failed">备份失败，请重试</string>
+    <string name="note_restore">还原</string>
+    <string name="note_restore_none">暂无可还原的数据</string>
+    <string name="note_restore_choose">选择还原文件</string>
+    <string name="note_restore_doing">正在还原，请稍候&#8230;</string>
+    <string name="note_restore_success">还原成功</string>
+    <string name="note_restore_failed">还原失败，请重试</string>
+    <string name="note_about">关于IUNI备忘录</string>
+    <string name="note_share">分享给朋友</string>
+    <string name="note_share_weibo">分享到微博</string>
+    <string name="note_share_wx_timeline">分享到朋友圈</string>
+    <string name="note_share_wx_session">分享给微信好友</string>
+    <string name="note_share_weibo_content">我正在用IUNI备忘录，最优雅的记录工具。这里有便捷的记录方式，有精美的图文排版，还可以和朋友分享最美好的点点滴滴。点击链接下载 http://www.iunios.com/memo.shtml</string>
+    <string name="note_share_wx_title">你可能需要这样一个备忘录</string>
+    <string name="note_share_wx_summary">多样而不复杂的记录方式，精美的图文排版，还可以和朋友分享最美好的点点滴滴。</string>
+    <string name="note_share_to">分享到：</string>
+    <string name="note_share_send">发送</string>
+    <string name="note_check_update">检查更新</string>
+    <string name="note_know_more">了解IUNI</string>
+    <string name="note_copyright_notice">IUNI公司   版权所有</string>
+    <string name="note_copyright_notice_2">Copyright © 2013&#8211;2015 IUNI. All Rights Reserved</string>
+    <string name="note_check_doing">正在检查更新，请稍候&#8230;</string>
+    <string name="note_hava_new_version">检查到新版本</string>
+    <string name="note_express">对TA说</string>
+    <string name="note_auto_indent">首行缩进</string>
+    <string name="note_change_paper">更换纸张</string>
+
+    <!-- 更新版本 -->
+    <string name="dialog_update_title">应用更新</string>
+    <string name="dialog_update_ok">立即更新</string>
+
+    <!-- 下载推荐 -->
+    <string name="dialog_recommend_title">推荐</string>
+    <string name="dialog_recommend_message">IUNI备忘录还不错吧？\nIUNI OS还有更多应用等着你，两分钟带你体验完整的IUNI风格。</string>
+    <string name="dialog_recommend_choice_now">立即看看</string>
+    <string name="dialog_recommend_choice_latter">晚点再看</string>
+    <string name="dialog_recommend_choice_nolonger">坚决不看</string>
+
+    <string name="preset_chunjie_content">"To  亲朋好友：\n岁月可以褪去记忆，\n却褪不去我们一路留下的欢声笑语。\n祝你新春快乐，幸福美满。\n(写下想对TA说的话，点击分享按钮)\n\n                                                                       XXX"</string>
+    <string name="preset_qingrenjie_content">"To  TA：\n曾经，我们在同一片星空下，\n各自闪耀各自璀璨，\n也在同一段旅途中，\n各自曲折各自悲哀。\n\n如今，我们在同一个岁月里，\n一起绽放一起芬芳，\n面朝着同一个方向，\n梦有着同样的形状。\n\n我希望每一天，都能凝视你的双眼，\n因为它们闪烁着的，\n是最幸福的远方。\n(写下想对TA说的话，点击分享按钮)\n\n                                                                       XXX"</string>
+
+    <!-- 预置备忘录 -->
+    <string name="note_first">感谢使用 IUNI 备忘录。\n在这里，\n你所记录的每一个文字，都将凝聚成为我们追求极致的动力。\n你所拍摄的每一张照片，录制的每一段音频和视频，都将是 IUNI 备忘录最美妙的组成。\n也许，我们无法为你留住时间，\n但是，我们希望，能为你定格每一个有价值的瞬间。</string>
+    <string name="note_second">"                                                &#8212;&#8212;IUNI OS 团队"</string>
+    <string name="note_third">提示：从文件管理可查看备忘录中的附件\n\n具体路径为：手机存储/内部存储器/Note/，也可以直接从文件分类中查看。</string>
+
+    <!-- 海外版预置文本 -->
+    <string name="note_first_2">感谢使用备忘录。\n在这里，\n你所记录的每一个文字，都将凝聚成为我们追求极致的动力。\n你所拍摄的每一张照片，录制的每一段音频和视频，都将是备忘录最美妙的组成。\n也许，我们无法为你留住时间，\n但是，我们希望，能为你定格每一个有价值的瞬间。</string>
+
+    <!-- 预置标签 -->
+    <string name="label_meetting">会议记录</string>
+    <string name="label_life">生活琐事</string>
+    <string name="label_idea">改变世界的想法</string>
+
+    <!-- 标签 -->
+    <string name="note_label">标签</string>
+    <string name="note_add_label">新增标签</string>
+    <string name="note_add_label_notice">已存在同名标签，请重新添加。</string>
+    <string name="note_choose_label_notice">最多可选择两个标签</string>
+    <string name="note_delete_label_notice">确定删除此标签？</string>
+    <string name="note_modify_label_notice">已存在同名标签，请重新编辑。</string>
+    <string name="dialog_delete_label_title">删除此标签？</string>
+    <string name="dialog_delete_label_message">不会删除相关的备忘录</string>
+
+    <!-- 备忘录主界面 -->
+    <string name="note_title">备忘录</string>
+    <string name="note_searchview_hint_text">搜索备忘</string>
+    <string name="no_notes_hint">暂无备忘</string>
+    <string name="desc_having_sound">包含音频文件</string>
+    <string name="desc_image_border">图片边框</string>
+    <string name="desc_image_content">图片内容</string>
+    <string name="desc_video_play_icon">视频播放图标</string>
+    <string name="desc_video_content">视频内容截屏</string>
+    <string name="title_num_of_images">[<xliff:g id="NUM_OF_IMAGE">%s</xliff:g>张图片]</string>
+    <string name="title_num_of_videos">"[<xliff:g id="NUM_OF_VIDEO">%s</xliff:g>段视频]"</string>
+    <string name="title_num_of_sounds">"[<xliff:g id="NUM_OF_SOUND">%s</xliff:g>段音频]"</string>
+    <string name="no_match_note">无搜索结果</string>
+    <string name="dialog_delete_note_title">删除此备忘录？</string>
+    <string name="dialog_delete_note_message">是否删除该条备忘？</string>
+
+    <!-- 新建备忘录 -->
+    <string name="menu_tab_edit">编辑标签</string>
+    <string name="menu_tab_delete">删除标签</string>
+    <string name="new_note">新建备忘</string>
+    <string name="note_information">备忘详情</string>
+    <string name="new_note_pic_num">最多可插入10个图片</string>
+    <string name="new_note_video_num">最多可插入10个视频</string>
+    <string name="new_note_sound_num">最多可插入10个音频</string>
+    <string name="new_note_attachment_count_limit">最多可插入30个附件</string>
+    <string name="dialog_delete_image_title">删除此图片？</string>
+    <string name="dialog_delete_image_message">是否删除该图片？</string>
+    <string name="dialog_delete_audio_title">删除此音频？</string>
+    <string name="dialog_delete_audio_message">是否删除该音频？</string>
+    <string name="dialog_delete_video_title">删除此视频？</string>
+    <string name="dialog_delete_video_message">是否删除该视频？</string>
+    <string name="new_note_text_limit">超过字数限制</string>
+    <string name="new_note_on_loading">正在加载...</string>
+    <string name="new_note_gen_picture">正在生成图片，请稍候...</string>
+    <string name="new_note_add_reminder">添加提醒</string>
+    <string name="new_note_add_label">添加标签</string>
+    <string name="new_note_gen_pic_error_content_too_large">备忘录内容过长，无法生成</string>
+    <string name="new_note_gen_pic_error_unknow">生成图片失败</string>
+    <string name="first_use_quick_record_tip_1">这里是备忘录，快速录音将被保存在这里，你可以为录音加上文字注释。</string>
+    <string name="first_use_quick_record_tip_2">再添加一个录音，请点击下方的录音按钮。</string>
+    <string name="first_use_quick_record_tip_3">以后重听录音，请直接进入备忘录。</string>
+
+    <!-- 生成图片预览界面 -->
+    <string name="note_gen_picture">分享</string>
+    <string name="share_title">分享到</string>
+    <string name="save_to_gallery_success">图片已成功保存到相册</string>
+    <string name="save_to_gallery_failed">保存图片到相册失败</string>
+    <string name="sdcard_is_not_available">SD卡不可用</string>
+
+    <!-- 图片预览界面 -->
+    <string name="load_picture_error_io">加载图片失败</string>
+    <string name="load_picture_error_network">网络有问题，无法下载</string>
+    <string name="load_picture_error_decoding">图片无法显示</string>
+    <string name="load_picture_error_out_of_memory">图片太大无法显示</string>
+    <string name="load_picture_error_unknow">未知的错误</string>
+
+    <!-- 播放录音界面 -->
+    <string name="play_error">播放失败</string>
+    <string name="play_error_file_not_exist">文件不存在</string>
+    <string name="play_error_parse_file_failed">解析文件失败</string>
+    <string name="play_error_invalid_record_file">无效的录音文件</string>
+
+    <string name="play_file_name_label">正在播放:</string>
+    <string name="play_total_time_label">时长:</string>
+
+    <string name="cancel_record_title">此录音未保存，退出编辑？</string>
+    <string name="cancel_record_msg">本次录音将不保存。</string>
+    <string name="record_notification_title">录音正在运行</string>
+    <string name="record_notification_content">点击回到录音界面</string>
+
+    <!-- 添加或编辑备忘提醒时间界面 -->
+    <string name="delete_confirm_title">删除此备忘提醒？</string>
+    <string name="delete_confirm_message">确定删除备忘提醒吗？</string>
+    <string name="delete_confirm_ok_btn">退出</string>
+    <string name="delete_confirm_cancel_btn">取消</string>
+
+    <!-- 新浪微博分享界面 -->
+    <string name="share_sina_weibo_title">分享到新浪微博</string>
+    <string name="share_sina_weibo_right_menu_item">发送</string>
+    <string name="share_sina_weibo_menu_unbind">解除帐号绑定(%1$s)</string>
+    <string name="share_sina_weibo_hint">输入文字</string>
+    <string name="share_sina_weibo_sending">正在发送...</string>
+    <string name="share_sina_weibo_unbind_success">解除帐号绑定成功</string>
+    <string name="share_sina_weibo_unbind_error">解除帐号绑定失败，请重试</string>
+    <string name="share_sina_weibo_authorize_invalid_token">授权失败，请重试</string>
+    <string name="share_sina_weibo_authorize_cancel">授权已取消</string>
+    <string name="share_sina_weibo_no_network">请先打开网络连接</string>
+    <string name="share_sina_weibo_authorize_expire">授权已过期，请重新授权</string>
+    <string name="share_sina_weibo_send_success">微博发送成功</string>
+    <string name="share_sina_weibo_send_ongoing">微博仍在发送...</string>
+    <string name="share_sina_weibo_send_failed">微博发送失败，请重试</string>
+    <string name="share_sina_weibo_default_content">分享图片</string>
+    <string name="share_sina_weibo_is_sending">上次微博正在发送中，请稍候...</string>
+    <string name="share_sina_weibo_get_user_info">正在获取用户信息...</string>
+    <string name="share_sina_weibo_get_user_info_failed">获取用户信息失败</string>
+    <string name="share_sina_weibo_unbind_ongoing">解除帐号绑定，请稍侯...</string>
+    <string name="share_sina_weibo_image_too_large">图片大小超出限制，无法发送</string>
+
+    <!-- 微信分享反馈信息 -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- 共用的出错提示消息 -->
+    <string name="memory_is_not_enough">图片太大，请重试</string>
+    <string name="decode_bitmap_error">加载图片失败</string>
+    <string name="prepare_record_error">录音准备出错，请重试</string>
+
+    <!-- 检测SD -->
+    <string name="sd_space_not_enough">SD卡即将存满，请先清理再执行本操作</string>
+    <string name="sdcard_not_mounted">SD卡不存在，请插入SD卡。</string>
+
+    <string name="record_save">完成</string>
+    <string name="record_close">完成</string>
+    <string name="play_start_time">00:00:00</string>
+
+    <!-- menu -->
+    <string name="menu_add_reminder">添加提醒</string>
+    <string name="menu_mod_reminder">修改提醒</string>
+    <string name="menu_add_label">添加标签</string>
+    <string name="menu_mod_label">修改标签</string>
+    <string name="menu_gen_picture">分享</string>
+    <string name="menu_take_photo">拍照</string>
+    <string name="menu_take_video">录像</string>
+    <string name="menu_select_photo">从图库选取图片</string>
+    <string name="menu_select_video">从相册选取视频</string>
+    <string name="menu_remove_image">删除图片</string>
+    <string name="menu_view_image">浏览图片</string>
+    <string name="menu_crop_image">调整图片显示</string>
+
+    <!-- 下拉更新 -->
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="loading">加载中&#8230;</string>
+    <string name="pull_to_refresh_update">最近更新时间：</string>
+    <string name="all_loaded">数据加载完毕</string>
+    <string name="pull_to_rerefresh">下拉再次刷新</string>
+
+    <string name="enter_note_hit">输入备忘</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="delete">删除</string>
+    <string name="delete_reminder">删除提醒</string>
+    <string name="search_by_label">按标签查看</string>
+    <string name="note_label_separate">，</string>
+
+    <!-- Added on 2015-03-30 begin -->
+    <string name="share_weibo">微博</string>
+    <string name="share_weixin_friend">微信好友</string>
+    <string name="share_weixin">朋友圈</string>
+    <string name="share_qq_friend">QQ好友</string>
+    <string name="share_qq_zone">QQ空间</string>
+    <string name="share_more">更多</string>
+    <string name="share_activity_title">分享</string>
+    <!-- Added on 2015-03-30 end -->
+
+</resources>

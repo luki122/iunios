@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="photoeditor_name" msgid="4738587346771969697">&quot;Фотоателье&quot;</string>
+    <string name="loading_failure" msgid="7890360277163832130">&quot;Невозможно загрузить фото&quot;</string>
+    <string name="saving_failure" msgid="8229491575433743974">&quot;Невозможно сохранить редактированное фото&quot;</string>
+    <string name="photo_saved" msgid="6163006724627682202">&quot;Редактированное фото сохраняется в “<xliff:g id="FOLDER_NAME">%s</xliff:g>”&quot;</string>
+    <string name="discard_unsaved_photo" msgid="2353274490633681946">&quot;Отменить несохраненные изменения?&quot;</string>
+    <string name="yes" msgid="5402582493291792293">&quot;Да&quot;</string>
+    <string name="save" msgid="5516670392524294967">&quot;Сохранить&quot;</string>
+    <string name="autofix" msgid="1663414996270538748">&quot;Авто. исправить&quot;</string>
+    <string name="crop" msgid="7598378507763334041">&quot;Обрезать&quot;</string>
+    <string name="crossprocess" msgid="4173724489001742342">&quot;Проявка и печать пересечением&quot;</string>
+    <string name="documentary" msgid="50396326708699797">&quot;Документальный&quot;</string>
+    <string name="doodle" msgid="1686409894518940990">&quot;Каракули&quot;</string>
+    <string name="duotone" msgid="8145893940788467106">&quot;Два цвета&quot;</string>
+    <string name="facelift" msgid="6205748523156172637">&quot;Эффекты свещения лица&quot;</string>
+    <string name="facetan" msgid="4412831806626044111">&quot;Эффекты цвета загара лица&quot;</string>
+    <string name="filllight" msgid="2644989991700022526">&quot;Подсветка&quot;</string>
+    <string name="fisheye" msgid="6037488646928998921">&quot;Рыбий глаз&quot;</string>
+    <string name="flip" msgid="2357692401826287480">&quot;Перевернуть&quot;</string>
+    <string name="grain" msgid="7487585304579789098">&quot;Зерно ленты&quot;</string>
+    <string name="grayscale" msgid="7641563843060945228">&quot;Чёрно-белый&quot;</string>
+    <string name="accessibility_black_and_white" msgid="1156382046161392389">&quot;Чёрно-белый&quot;</string>
+    <string name="highlight" msgid="3902653944386623972">&quot;Выделение цветом&quot;</string>
+    <string name="lomoish" msgid="1270032154357186736">&quot;LOMO фасон&quot;</string>
+    <string name="negative" msgid="1985508917342811252">&quot;Anti-цвет&quot;</string>
+    <string name="posterize" msgid="4139212359561383385">&quot;Постеризация&quot;</string>
+    <string name="redeye" msgid="4958448806369928239">&quot;Красные глаза&quot;</string>
+    <string name="rotate" msgid="6607597269792373083">&quot;Поворот&quot;</string>
+    <string name="saturation" msgid="8621322012271169931">&quot;Насыщеность&quot;</string>
+    <string name="sepia" msgid="7978093531824705601">&quot;Темнобурный&quot;</string>
+    <string name="shadow" msgid="8235188588101973090">&quot;Тень&quot;</string>
+    <string name="sharpen" msgid="8449662378104403230">&quot;Острота&quot;</string>
+    <string name="straighten" msgid="5217801513491493491">&quot;Вытягивать&quot;</string>
+    <string name="temperature" msgid="1607987938521534517">&quot;Тёплый оттенок&quot;</string>
+    <string name="tint" msgid="154435943863418434">&quot;Закраска&quot;</string>
+    <string name="vignette" msgid="7648125924662648282">&quot;Виньетирование&quot;</string>
+    <string name="crop_tooltip" msgid="8794037869706891710">&quot;Тащить знак и обрезать фото&quot;</string>
+    <string name="doodle_tooltip" msgid="2902117272374362915">&quot;Рисовать на фото для каракули&quot;</string>
+    <string name="flip_tooltip" msgid="2700943256714731737">&quot;Тащить фото для переворачивания&quot;</string>
+    <string name="redeye_tooltip" msgid="4183695928490874014">&quot;Нажать для очистки красных глаз&quot;</string>
+    <string name="rotate_tooltip" msgid="7008602969130734229">&quot;Тащить фото для вращения&quot;</string>
+    <string name="straighten_tooltip" msgid="4846317027139212339">&quot;Тащить фото для вытягивания&quot;</string>
+    <string name="photoeditor_exposure" msgid="560535856805042987">&quot;Эффекты экспозиции&quot;</string>
+    <string name="photoeditor_color" msgid="834210916165605468">&quot;Эффекты цвета&quot;</string>
+    <string name="photoeditor_artistic" msgid="2810641816416597464">&quot;Искусственные эффекты&quot;</string>
+    <string name="photoeditor_fix" msgid="6441595584425037477">&quot;Исправить&quot;</string>
+    <string name="photoeditor_undo" msgid="4831462549862253564">&quot;Отмена&quot;</string>
+    <string name="photoeditor_redo" msgid="5999984591376273768">&quot;Переделать&quot;</string>
+</resources>

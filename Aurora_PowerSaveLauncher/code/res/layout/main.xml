@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/exit_view"
+        android:layout_width="@dimen/quit_icon_size"
+        android:layout_height="@dimen/quit_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/quit_ly_right"
+        android:layout_marginTop="@dimen/quit_ly_top"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quit_bg" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/date_widget"
+        layout="@layout/plugin_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exit_view"
+        android:layout_marginTop="@dimen/date_marginTop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/app2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/date_marginLeft"
+            android:layout_marginTop="@dimen/app_icon_margin_up"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/phone"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/call_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/call"
+                    android:textColor="@color/app_color" />
+
+                <TextView
+                    android:id="@+id/phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/hint_num_size"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sms"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginLeft="@dimen/icon_left"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:id="@+id/sms_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/message"
+                    android:textColor="@color/app_color" />
+
+                <TextView
+                    android:id="@+id/sms_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/hint_num_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginLeft="@dimen/icon_left"
+                android:background="?android:attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/alarm"
+                    android:textColor="@color/app_color" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/batter_text_bottom"
+            android:layout_marginTop="@dimen/time_textview_margin_top"
+            android:gravity="center"
+            android:textColor="@color/batter_text_color"
+            android:textSize="@dimen/battery_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

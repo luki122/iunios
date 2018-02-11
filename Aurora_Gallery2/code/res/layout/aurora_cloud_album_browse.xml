@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+   >
+	<!-- 
+ 	<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+          >
+		-->
+		<!-- 
+		 <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/aurora_listview_dividers" />
+		  -->
+	 <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+         android:layout_gravity="center"
+   		 android:gravity="center"
+   		 android:layout_below="@+id/divider"
+    	android:orientation="vertical" >
+        
+		   <RelativeLayout
+            android:id="@+id/aroura_cloud_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical" >
+		    <ImageView
+                android:id="@+id/album_cloud_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/cloud_icon"
+                />
+		          
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="38dp"
+                android:textColor="@color/aurora_local_album_item_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/album_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/album_title"
+                android:textColor="@color/aurora_cloud_numeber_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+            
+              <LinearLayout
+		        android:id="@+id/cloud_albums"
+		        android:layout_width="match_parent"
+		        android:layout_height="89dp"
+		        android:layout_marginBottom="2dp"
+		        android:orientation="horizontal" >
+		
+		        <ImageView
+		            android:id="@+id/cloud_first_img"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1"
+		            android:contentDescription="@string/albums"
+		            android:scaleType="centerCrop" />
+		
+		        <ImageView
+		            android:id="@+id/cloud_second_img"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="2dp"
+		            android:layout_weight="1"
+		            android:contentDescription="@string/albums"
+		            android:scaleType="centerCrop" />
+		
+		        <ImageView
+		            android:id="@+id/cloud_third_img"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="2dp"
+		            android:layout_weight="1"
+		            android:contentDescription="@string/albums"
+		            android:scaleType="centerCrop" />
+		
+		        <ImageView
+		            android:id="@+id/cloud_fourth_img"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_marginLeft="2dp"
+		            android:layout_weight="1"
+		            android:contentDescription="@string/albums"
+		            android:scaleType="centerCrop" />
+		    </LinearLayout>
+       </LinearLayout>
+
+        <ImageView
+            android:id="@+id/checkbox_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:paddingTop="6dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/aurora_check14"
+            android:visibility="gone" />
+        <!-- 
+    </FrameLayout>
+         -->
+     
+        <ImageView
+            android:id="@+id/checkbox_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:src="@drawable/aurora_check00"
+            android:visibility="gone" />
+
+</RelativeLayout>

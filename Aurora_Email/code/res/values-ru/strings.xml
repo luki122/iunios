@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="permission_read_attachment_label" msgid="9208086010625033590">&quot;Считывать вложение электропочты&quot;</string>
+    <string name="permission_read_attachment_desc" msgid="3394721085306308972">&quot;Допущено приложению считывать ваше вложение.&quot;</string>
+    <string name="permission_access_provider_label" msgid="378256653525377586">&quot;Визит на данные поставщика услуга электропочты&quot;</string>
+    <string name="permission_access_provider_desc" msgid="6296566558584670348">&quot;Допущено приложению считывать ваше вашу базу данных, включая полученные сообщения, отправленные сообщения, имя пользователя и пароль.&quot;</string>
+    <string name="app_name" msgid="5815426892327290362">&quot;Почта&quot;</string>
+<!--paul modify-->
+<string name="debug_title" msgid="5175710493691536719">&quot;Регулировать&quot;</string>
+    <string name="next_action" msgid="3931301986364184415">&quot;Следующий шаг&quot;</string>
+    <string name="okay_action" msgid="8365197396795675617">&quot;ОК&quot;</string>
+    <string name="cancel_action" msgid="6967435583794021865">&quot;Отмена&quot;</string>
+    <string name="previous_action" msgid="5181616311579820981">&quot;Предыдущий шаг&quot;</string>
+    <string name="done_action" msgid="7497990549515580249">&quot;Готово&quot;</string>
+    <string name="create_action" msgid="3062715563215392251">&quot;Новая почта&quot;</string>
+    <string name="quick_responses_empty_view" msgid="3960050972306132367">&quot;Не существует быстрого ответа.&quot;</string>
+    <string name="account_settings_action" msgid="4494079183315085171">&quot;Настройки аккаунта&quot;</string>
+    <string name="menu_folder_options" msgid="2871906096248843471">&quot;Параметры синхронизации&quot;</string>
+    <string name="status_network_error" msgid="2611654064403817391">&quot;Соединительная проблема.&quot;</string>
+  <plurals name="move_messages">
+    <item quantity="one" msgid="320885379869442589">&quot;Мобильная почта&quot;</item>
+    <item quantity="other" msgid="371256717624461324">&quot;Мобильная почта&quot;</item>
+  </plurals>
+    <string name="cannot_move_protocol_not_supported_toast" msgid="6558083148128616292">&quot;POP3 аккаунт не поддерживает мобильную почну.&quot;</string>
+    <string name="cannot_move_multiple_accounts_toast" msgid="7922594026384944163">&quot;Выбранные содержания включают почты многих аккаунта, поэтому невозможно перемещать.&quot;</string>
+    <string name="cannot_move_special_mailboxes_toast" msgid="7093107954841896970">&quot;Невозможно перемещать  почты из&quot;Черновиков&quot;,&quot;Входящих&quot;,&quot;Исходящих&quot;.&quot;</string>
+<!-- Aurora <shihao> <2014-11-03> for DrawLayout new Folder name -->
+<!--     
+    <string name="mailbox_name_display_drafts" msgid="4868718300700514319">"草稿"</string>
+    <string name="mailbox_name_display_trash" msgid="9139069064580630647">"已删除邮件"</string>
+    <string name="mailbox_name_display_sent" msgid="3426058998191869523">"已发送邮件"</string>
+    <string name="mailbox_name_display_junk" msgid="9046762505977999288">"垃圾邮件"</string>
+    <string name="mailbox_name_display_starred" msgid="7788694947644186069">"已加星标"</string>
+     -->
+<string name="mailbox_name_display_inbox" msgid="3542327124749861736">&quot;Входящие&quot;</string>
+    <string name="mailbox_name_display_outbox" msgid="2826214174661417662">&quot;Исходящие&quot;</string>
+    <string name="mailbox_name_display_drafts" msgid="4868718300700514319">&quot;Черновик&quot;</string>
+    <string name="mailbox_name_display_trash" msgid="9139069064580630647">&quot;Удалено&quot;</string>
+    <string name="mailbox_name_display_sent" msgid="3426058998191869523">&quot;Отправлено&quot;</string>
+    <string name="mailbox_name_display_junk" msgid="9046762505977999288">&quot;Спам&quot;</string>
+    <string name="mailbox_name_display_starred" msgid="7788694947644186069">&quot;Помеченные&quot;</string>
+    <string name="mailbox_name_display_unread" msgid="1015674989793998695">&quot;Не причитанные&quot;</string>
+    
+    <string name="account_folder_list_summary_inbox" msgid="7518263761297423255">&quot;Входящие&quot;</string>
+    <string name="account_folder_list_summary_starred" msgid="3134312269246375723">&quot;Помеченные содержания&quot;</string>
+    <string name="account_folder_list_summary_drafts" msgid="5514845993247300437">&quot;Черновик&quot;</string>
+    <string name="account_folder_list_summary_outbox" msgid="3059836696049399377">&quot;Исходящие&quot;</string>
+    <string name="mailbox_list_account_selector_combined_view" msgid="1556327299894225044">&quot;Комбинированные виды&quot;</string>
+    <string name="message_compose_fwd_header_fmt" msgid="5181300290654579434">\n\n&quot;-------- исходная почта --------\n тема：<xliff:g id="SUBJECT">%1$s</xliff:g>\n адресант：<xliff:g id="SENDER">%2$s</xliff:g>\n получатель：<xliff:g id="TO">%3$s</xliff:g>\n отправить дубликат：<xliff:g id="CC_0">%4$s</xliff:g>\n\n&quot;</string>
+    <string name="message_compose_insert_quick_response_list_title" msgid="5314107302508728189">&quot;Вставить быстрый ответ&quot;</string>
+    <string name="message_compose_insert_quick_response_menu_title" msgid="5817075097532919955">&quot;Вставить быстрый ответ&quot;</string>
+    <string name="message_view_attachment_background_load" msgid="7906875687519445185">&quot;Один или несколько вложений из почт переотправки нужно загрузить, и потом отправить.&quot;</string>
+    <string name="attachment_not_found" msgid="7155322700141145123">&quot;Невозможно загрузить вложение.&quot;</string>
+    <string name="message_decode_error" msgid="5016042255170947834">&quot;Ошибка при декодировании.&quot;</string>
+    <string name="forward_download_failed_ticker" msgid="6176608320359303255">&quot;Невозможно переслать одно или несколько вложений.&quot;</string>
+    <string name="forward_download_failed_title" msgid="6139701848515572511">&quot;Невозможно переслать вложение&quot;</string>
+    <string name="login_failed_ticker" msgid="2169365211566829350">&quot;<xliff:g id="ACCOUNT_NAME">%s</xliff:g>войти неудачно.&quot;</string>
+    <string name="login_failed_title" msgid="7624349996212476176">&quot;Недоступно войти&quot;</string>
+  <plurals name="message_view_attachment_bytes">
+    <item quantity="one" msgid="8914124732074848509">&quot;<xliff:g id="SIZE_IN_BYTES">%d</xliff:g> B&quot;</item>
+    <item quantity="other" msgid="4613385949384337840">&quot;<xliff:g id="SIZE_IN_BYTES">%d</xliff:g> B&quot;</item>
+  </plurals>
+  <plurals name="message_view_attachment_kilobytes">
+    <item quantity="one" msgid="869981846437074463">&quot;<xliff:g id="SIZE_IN_KILOBYTES">%d</xliff:g> KB&quot;</item>
+    <item quantity="other" msgid="8869993299924901593">&quot;<xliff:g id="SIZE_IN_KILOBYTES">%d</xliff:g> KB&quot;</item>
+  </plurals>
+  <plurals name="message_view_attachment_megabytes">
+    <item quantity="one" msgid="7527095670565758434">&quot;<xliff:g id="SIZE_IN_MEGABYTES">%d</xliff:g> MB&quot;</item>
+    <item quantity="other" msgid="4365876866570165282">&quot;<xliff:g id="SIZE_IN_MEGABYTES">%d</xliff:g> MB&quot;</item>
+  </plurals>
+  <plurals name="message_view_attachment_gigabytes">
+    <item quantity="one" msgid="6261986598249539093">&quot;<xliff:g id="SIZE_IN_GIGABYTES">%d</xliff:g> GB&quot;</item>
+    <item quantity="other" msgid="1041353825053598633">&quot;<xliff:g id="SIZE_IN_GIGABYTES">%d</xliff:g> GB&quot;</item>
+  </plurals>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model Title begin-->
+<!--  <string name="account_setup_basics_title" msgid="3578333196594678422">"帐户设置"</string> -->
+<string name="account_setup_basics_title" msgid="3578333196594678422">&quot;Войти&quot;</string>
+    <string name="account_setup_basics_title_add_account">Добавить аккаунт</string>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model Title end-->
+<string name="account_setup_basics_headline" msgid="6726590205905464015">&quot;Аккаунт электропочты&quot;</string>
+    <string name="accounts_welcome" msgid="8337750045270269649">&quot;Установите ваш аккаунт с несколько операцией.&quot;</string>
+    <string name="account_setup_basics_email_label" msgid="3454164053624112047">&quot;Адрес электропочты&quot;</string>
+    <string name="account_setup_basics_password_label" msgid="9133549799291519298">&quot;Пароль&quot;</string>
+    <string name="account_setup_basics_manual_setup_action" msgid="8053852205391155912">&quot;Ручные настройки&quot;</string>
+    <string name="account_setup_username_password_toast" msgid="3968270274727947460">&quot;Ввести действующий адрес и пароль электропочты.&quot;</string>
+    <string name="account_duplicate_dlg_title" msgid="8089732986912704425">&quot;Аккаунт повторяется&quot;</string>
+<!-- Aurora <shihao> <2014-10-29> begin -->
+<!--  <string name="account_duplicate_dlg_message_fmt" msgid="6447629283679935840">"帐户“<xliff:g id="DUPLICATE">%s</xliff:g>”已经使用了此用户名。"</string> -->
+<string name="account_duplicate_dlg_message_fmt" msgid="6447629283679935840">&quot;Аккаунт“<xliff:g id="DUPLICATE">%s</xliff:g>”существует&quot;</string>
+<!-- Aurora <shihao> <2014-10-29> end -->
+<string name="account_password_spaces_error" msgid="8928309156658903257">&quot;Существует один или несколько пробела в начале или конце пароля&quot; &quot;Многие сервер не поддерживает пароль с пробелами.&quot;</string>
+    <string name="account_setup_check_settings_retr_info_msg" msgid="4121970450267725664">&quot;Поиск информации аккаунта...&quot;</string>
+    <string name="account_setup_check_settings_check_incoming_msg" msgid="2869198335297585862">&quot;Удостоверение настройки сервера...&quot;</string>
+    <string name="account_setup_check_settings_check_outgoing_msg" msgid="4566131393776891419">&quot;Удостоверение настройки SMTP...&quot;</string>
+    <string name="account_setup_creating_account_msg" msgid="6235569720466839946">&quot;Создание аккаунта...&quot;</string>
+    <string name="account_setup_names_title" msgid="8483517350241119291">&quot;Настройки аккаунта&quot;</string>
+    <string name="account_setup_names_headline" msgid="914858472109729140">&quot;Установлен ваш аккаунт, можно получить и отправить почты!&quot;</string>
+    <string name="account_setup_names_account_name_label" msgid="8033895024273259196">&quot;Назовите аккаунт(выбранные)&quot;</string>
+    <string name="account_setup_names_user_name_label" msgid="8967410178488604770">&quot;Ваше имя (показанное в отправленном почте)&quot;</string>
+    <string name="account_setup_names_user_name_empty_error" msgid="6791427018325367364">&quot;Эта область ввода не может быть пустой.&quot;</string>
+    <string name="account_setup_account_type_title" msgid="7156551693961182124">&quot;Настройки аккаунта&quot;</string>
+    <string name="account_setup_account_type_headline" msgid="3574102329184831086">&quot;Тип аккаунта&quot;</string>
+    <string name="account_setup_account_type_instructions" msgid="114515540798408760">&quot;Какой тип этот аккаунт?&quot;</string>
+    <string name="account_setup_incoming_title" msgid="6796626791039136005">&quot;Настройки аккаунта&quot;</string>
+    <string name="account_setup_incoming_headline" msgid="6183711037633407184">&quot;Настройки приёмного сервера&quot;</string>
+    <string name="account_setup_incoming_username_label" msgid="5700581386104070302">&quot;Имя пользователя&quot;</string>
+    <string name="account_setup_incoming_password_label" msgid="6365327603172559859">&quot;Пароль&quot;</string>
+    <string name="account_setup_incoming_server_label" msgid="1480342966630002638">&quot;Сервер&quot;</string>
+    <string name="account_setup_incoming_port_label" msgid="8214738923690447796">&quot;Порт&quot;</string>
+    <string name="account_setup_incoming_security_label" msgid="2110260791086007424">&quot;Тип безопасности&quot;</string>
+    <string name="account_setup_incoming_security_none_label" msgid="8300169413118264895">&quot;Нет&quot;</string>
+    <string name="account_setup_incoming_security_ssl_trust_certificates_label" msgid="6151855090123117538">&quot;SSL/TLS（принимать все сертификаты）&quot;</string>
+    <string name="account_setup_incoming_security_ssl_label" msgid="2798501138420163861">&quot;SSL/TLS&quot;</string>
+    <string name="account_setup_incoming_security_tls_trust_certificates_label" msgid="6149084428423662620">&quot;STARTTLS（принимать все сертификаты）&quot;</string>
+    <string name="account_setup_incoming_security_tls_label" msgid="6573498431821879660">&quot;STARTTLS&quot;</string>
+    <string name="account_setup_incoming_delete_policy_label" msgid="9213590134693857912">&quot;Удалить электропочты из сервера&quot;</string>
+    <string name="account_setup_incoming_delete_policy_never_label" msgid="3222897501875871041">&quot;Никогда&quot;</string>
+    <string name="account_setup_incoming_delete_policy_delete_label" msgid="222216840911785631">&quot;При удалении из входящих&quot;</string>
+    <string name="account_setup_incoming_imap_path_prefix_label" msgid="401167247072926810">&quot;Префикс пути IMAP&quot;</string>
+    <string name="account_setup_incoming_imap_path_prefix_hint" msgid="9190845919067906033">&quot;Выбранные&quot;</string>
+    <string name="account_setup_outgoing_title" msgid="7208495965665711539">&quot;Настройки аккаунта&quot;</string>
+    <string name="account_setup_outgoing_headline" msgid="2025001060935366394">&quot;Настройки сервера отправления&quot;</string>
+    <string name="account_setup_outgoing_smtp_server_label" msgid="6035137446691195177">&quot;Сервер SMTP&quot;</string>
+    <string name="account_setup_outgoing_port_label" msgid="7573207437835827876">&quot;Порт&quot;</string>
+    <string name="account_setup_outgoing_security_label" msgid="911398071120720589">&quot;Тип безопасности&quot;</string>
+    <string name="account_setup_outgoing_require_login_label" msgid="7779484127897397562">&quot;Требуется войти&quot;</string>
+    <string name="account_setup_outgoing_username_label" msgid="3309680794731596981">&quot;Имя пользователя&quot;</string>
+    <string name="account_setup_outgoing_password_label" msgid="227844585493317550">&quot;Пароль&quot;</string>
+    <string name="account_setup_exchange_certificate_title" msgid="8473793588405277962">&quot;Сертификат клиента&quot;</string>
+    <string name="account_setup_exchange_select_certificate" msgid="1536103662037268683">&quot;Выбирать&quot;</string>
+    <string name="account_setup_exchange_use_certificate" msgid="8690682770083161349">&quot;Использовать сертификат клиента&quot;</string>
+    <string name="account_setup_exchange_remove_certificate" msgid="5633249155510301766">&quot;Удалить&quot;</string>
+    <string name="account_setup_exchange_no_certificate" msgid="1119542961954780872">&quot;Нет&quot;</string>
+    <string name="account_setup_exchange_device_id_label" msgid="1646827333223157658">&quot;ID мобильного устройства&quot;</string>
+    <string name="account_setup_options_title" msgid="9016600767888846051">&quot;Настройки аккаунта&quot;</string>
+    <string name="account_setup_options_headline" msgid="4181274232835368085">&quot;Выбор аккаунта&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_label" msgid="4824859792882810053">&quot;Частота проверки почты&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_never" msgid="287951859480505416">&quot;Никогда&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_push" msgid="5934525907736008673">&quot;Автоматически (push-сообщения)&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_5min" msgid="6388939895878539307">&quot;Каждые 5 минут&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_10min" msgid="5344463157247877480">&quot;Каждые 10 минут&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_15min" msgid="5052776740089741793">&quot;Каждые 15 минут&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_30min" msgid="1097088928685931864">&quot;Каждые 30 минут&quot;</string>
+    <string name="account_setup_options_mail_check_frequency_1hour" msgid="3767715356039692899">&quot;Ежечасно&quot;</string>
+    <string name="account_setup_options_notify_label" msgid="7046146571560728829">&quot;Уведомить меня при получении почты&quot;</string>
+    <string name="account_setup_options_sync_contacts_label" msgid="276492345599531778">&quot;Синхронизация контактов аккаунта&quot;</string>
+    <string name="account_setup_options_sync_calendar_label" msgid="3222151135467189411">&quot;Синхронизация календари аккаунта&quot;</string>
+    <string name="account_setup_options_sync_email_label" msgid="8585177128405004068">&quot;Синхронизация электропочты аккаунта&quot;</string>
+    <string name="account_setup_options_background_attachments_label" msgid="5247749298276451846">&quot;Авто. Загрузить вложения после подключения к  WLAN&quot;</string>
+    <string name="account_setup_failed_dlg_title" msgid="9083263347962940552">&quot;Невозможно выполнить&quot;</string>
+    <string name="account_setup_options_mail_window_label" msgid="7582247646138987328">&quot;Синхронизация почты в последние дни&quot;</string>
+    <string name="account_setup_options_mail_window_auto" msgid="4188895354366183790">&quot;Автоматически&quot;</string>
+    <string name="account_setup_options_mail_window_1day" msgid="7727436096227637646">&quot;Последний 1 день&quot;</string>
+    <string name="account_setup_options_mail_window_3days" msgid="1841106793912850270">&quot;Последние 3 дня&quot;</string>
+    <string name="account_setup_options_mail_window_1week" msgid="5804121771990249346">&quot;Последняя неделя&quot;</string>
+    <string name="account_setup_options_mail_window_2weeks" msgid="3583478100026382495">&quot;Последние 2 недели&quot;</string>
+    <string name="account_setup_options_mail_window_1month" msgid="4289585173153789717">&quot;Последний месяц&quot;</string>
+    <string name="account_setup_options_mail_window_all" msgid="5372861827683632364">&quot;Все&quot;</string>
+    <string name="account_setup_options_mail_window_default" msgid="2540360826995543134">&quot;Использовать настройки по умолчанию аккаунта&quot;</string>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model begin -->
+<!-- <string name="account_setup_failed_dlg_auth_message" msgid="426627755590431364">"用户名或密码不正确。"</string> -->
+<string name="account_setup_failed_dlg_auth_message" msgid="426627755590431364">&quot;Неправильно имя или пароль, или не открыть услуг IMAP&quot;</string>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model end -->
+<string name="account_setup_failed_dlg_auth_message_fmt" msgid="2081384892947238930">&quot;Войти неуспешно&quot; n(<xliff:g id="ERROR">%s</xliff:g>)&quot;</string>
+    <string name="account_setup_autodiscover_dlg_authfail_title" msgid="7365992662150541370">&quot;Ошибка при установлении аккаунта&quot;</string>
+    <string name="account_setup_autodiscover_dlg_authfail_message" msgid="8354874879956702097">&quot;Подтвердите настройки имени пользователей, пароли и аккаунта.&quot;</string>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model begin -->
+<!-- <string name="account_setup_failed_dlg_certificate_message" msgid="3836152264696108805">"无法安全地连接到服务器。"</string> -->
+<string name="account_setup_failed_dlg_certificate_message" msgid="3836152264696108805">&quot;Невозможно безопасно подключить к серверу, или не открыть услуг IMAP&quot;</string>
+<!-- Aurora <shihao> <2014-10-28> for New Login Model end -->
+<string name="account_setup_failed_dlg_certificate_message_fmt" msgid="2121921642915593041">&quot;Невозможно безопасно подключить к серверу.\ n（<xliff:g id="ERROR">%s</xliff:g>）&quot;</string>
+    <string name="account_setup_failed_certificate_required" msgid="2689944595775206006">&quot;Нужно сертификат клиента&quot; &quot;Подключить к серверу через сертификат клиента?&quot;</string>
+    <string name="account_setup_failed_certificate_inaccessible" msgid="3563840279690749547">&quot;Недействующий сертификат или недоступен.&quot;</string>
+    <string name="account_setup_failed_check_credentials_message" msgid="6531658092540248067">&quot;Сервер возвращает ответ, содержащий ошибочные данные. &quot;Проверите ваши имя пользователя и пароль, и попробуйте ещё раз.&quot;</string>
+    <string name="account_setup_failed_dlg_server_message" msgid="4942810054116129684">&quot;Невозможно подключить к серверу.&quot;</string>
+    <string name="account_setup_failed_dlg_server_message_fmt" msgid="2525425638303883232">&quot;Невозможно подключить к серверу.\ n（<xliff:g id="ERROR">%s</xliff:g>）&quot;</string>
+    <string name="account_setup_failed_tls_required" msgid="307030406688611327">&quot;Нужно TLS , но сервер не поддерживает TLS .&quot;</string>
+    <string name="account_setup_failed_auth_required" msgid="6799839150250217566">&quot;Сервер не поддерживает метод аутентификации.&quot;</string>
+    <string name="account_setup_failed_security" msgid="925820957665764964">&quot;Невозможно подключить к серверу из-за ошибки безопасности&quot;</string>
+    <string name="account_setup_failed_ioerror" msgid="7802604687451830378">&quot;Невозможно подключить к серверу.&quot;</string>
+    <string name="account_setup_failed_protocol_unsupported" msgid="4607759927226943569">&quot;Неправильно вели адрес сервера, или услуг электропочты не поддерживает   нужную версию сервера.&quot;</string>
+    <string name="account_setup_failed_access_denied" msgid="6835358740050287051">&quot;У вас нет права доступа синхронизации сервера. Связывайтесь с управителем сервер для большей подробности&quot;</string>
+    <string name="account_setup_security_required_title" msgid="1850321535870447468">&quot;Управление дистанционной безопасностью&quot;</string>
+    <string name="account_setup_security_policies_required_fmt" msgid="5410714107656671761">&quot;“<xliff:g id="SERVER">%s</xliff:g>”сервер просит у вас дистанционное управление несколько функцией безопасности устройства Android. &quot;Хотите выполнять настройки аккаунта?&quot;</string>
+    <string name="account_setup_failed_security_policies_unsupported" msgid="3210264746877120355">&quot;Ваши устройства Android не поддерживают функции безопасности, требованные сервером, включая：<xliff:g id="ERROR">%s</xliff:g>&quot;</string>
+    <string name="account_setup_username_uneditable_error" msgid="1618869759801584109">&quot;Невозможно изменить имя пользователя аккаунта. &quot;Нажать“добавить аккаунт” для добавления аккаунта с другим имени пользователей.&quot;</string>
+    <string name="disable_admin_warning" msgid="6196985268695592382">&quot;Предупреждение：отмена  права доступа электропочты в устройство будет удалить все связанные аккаунты, а также электропочты, контакты, повестки дня  и другие данные аккаунта.&quot;</string>
+    <string name="account_security_dialog_title" msgid="430041952584831904">&quot;Обновление безопасности&quot;</string>
+    <string name="account_security_dialog_content_fmt" msgid="8843806143923278214">&quot;<xliff:g id="ACCOUNT">%s</xliff:g> просит обновлять настройки безопасности.&quot;</string>
+    <string name="security_unsupported_ticker_fmt" msgid="5166579214529283975">&quot;Невозможно синхронизировать аккаунт “<xliff:g id="ACCOUNT">%s</xliff:g>” по требованию безопасности.&quot;</string>
+    <string name="security_needed_ticker_fmt" msgid="2120499087897133665">&quot;Аккаунту “<xliff:g id="ACCOUNT">%s</xliff:g>” нужно обновлять настройки безопасности.&quot;</string>
+    <string name="security_changed_ticker_fmt" msgid="2609435447352755285">&quot;Аккаунт “<xliff:g id="ACCOUNT">%s</xliff:g>” изменил настройки безопасности, пользователь ничего не нужно делать.&quot;</string>
+    <string name="security_notification_content_update_title" msgid="2429762903228690154">&quot;Нужно обновление безопасности&quot;</string>
+    <string name="security_notification_content_change_title" msgid="443490921895642130">&quot;Изменена политика безопасности&quot;</string>
+    <string name="security_notification_content_unsupported_title" msgid="7315219208043169233">&quot;Невозможно соответствовать требованию политики безопасности&quot;</string>
+    <string name="account_security_title" msgid="3511543138560418587">&quot;Безопасность устройства&quot;</string>
+    <string name="account_security_policy_explanation_fmt" msgid="6932627044314460766">&quot;“<xliff:g id="SERVER">%s</xliff:g>” сервер просит у вас дистанционное управление несколько функцией безопасности устройства Android.&quot;</string>
+    <string name="account_setup_failed_dlg_edit_details_action" msgid="5355993309841479360">&quot;Подробности редакции&quot;</string>
+    <string name="password_expire_warning_ticker_fmt" msgid="2459977229180023773">&quot;“<xliff:g id="ACCOUNT">%s</xliff:g>” просит изменить PIN или пароль блокировки экрана.&quot;</string>
+    <string name="password_expire_warning_content_title" msgid="7174669014074849304">&quot;Просрочит пароль блокировки экрана&quot;</string>
+    <string name="password_expired_ticker" msgid="4230570412974108968">&quot;Просрочены  PIN или пароль блокировки экрана.&quot;</string>
+    <string name="password_expired_content_title" msgid="4349518706602252979">&quot;Просрочен пароль блокировки экрана&quot;</string>
+    <string name="password_expire_warning_dialog_title" msgid="1687074175399798189">&quot;Просрочит пароль блокировки экрана&quot;</string>
+    <string name="password_expire_warning_dialog_content_fmt" msgid="4293446611405084436">&quot;Измените  PIN или пароль блокировки экрана как можно скорее, иначе система будет удалить данные <xliff:g id="ACCOUNT">%s</xliff:g> . Сразу изменить？&quot;</string>
+    <string name="password_expired_dialog_title" msgid="2186547998125938084">&quot;Просрочен пароль блокировки экрана&quot;</string>
+    <string name="password_expired_dialog_content_fmt" msgid="6538210092073931079">&quot;Данные <xliff:g id="ACCOUNT">%s</xliff:g>  уже удалены из устройства. Можете восстановить данные с изменением пароля и PIN блокировки экрана. Сразу изменить？&quot;</string>
+    <string name="account_settings_exit_server_settings" msgid="8006323251094711431">&quot;Покинуть не сохраненное изменение？&quot;</string>
+    <string name="account_settings_login_dialog_title" msgid="4024422579146302775">&quot;Невозможно войти&quot;</string>
+    <string name="account_settings_login_dialog_content_fmt" msgid="8849649646111167377">&quot;Имя пользователей или пароли <xliff:g id="ACCOUNT">%s</xliff:g> неправильные. Сразу возобновить？&quot;</string>
+    <string name="account_settings_login_dialog_reason_fmt" msgid="4266359321648406752">&quot;Невозможно войти <xliff:g id="ACCOUNT">%s</xliff:g>；подсказка сервера：<xliff:g id="REASON">%s</xliff:g>. Возобновить ваше имя пользователей и пароли?&quot;</string>
+    <string name="account_settings_background_attachments_label" msgid="2980317599840958688">&quot;Загрузка вложений&quot;</string>
+    <string name="account_settings_background_attachments_summary" msgid="5954218549226189376">&quot;Авто. Загрузить вложения последних почт через  WLAN&quot;</string>
+    <string name="account_settings_notify_label" msgid="1630001017303007974">&quot;Уведомление электропочты&quot;</string>
+    <string name="account_settings_summary" msgid="8403582255413830007">&quot;Частота синхронизации,  уведомление и т.д.&quot;</string>
+    <string name="account_settings_notify_summary" msgid="8134339460923068254">&quot;Уведомление при получении электропочты&quot;</string>
+    <string name="account_settings_mail_check_frequency_label" msgid="4322235101687302250">&quot;Частота синхронизации&quot;</string>
+    <string name="account_settings_incoming_label" msgid="7858928031806297542">&quot;Настройки приёма&quot;</string>
+    <string name="account_settings_incoming_summary" msgid="2923044634831881068">&quot;Настройки имени пользователей, пароля и других серверов приёма&quot;</string>
+    <string name="account_settings_outgoing_label" msgid="4464829249980026745">&quot;Настройки отправления&quot;</string>
+    <string name="account_settings_outgoing_summary" msgid="3572093624332724311">&quot;Настройки имени пользователей, пароля и других серверов отправления&quot;</string>
+    <string name="account_settings_enforced_label" msgid="7429582254433588882">&quot;Выбрана политика&quot;</string>
+    <string name="account_settings_enforced_summary" msgid="8140860420440447771">&quot;Нет&quot;</string>
+    <string name="account_settings_unsupported_label" msgid="1954091071454235577">&quot;Неподдерживаемые политики&quot;</string>
+    <string name="account_settings_unsupported_summary" msgid="2107633813351863608">&quot;Нет&quot;</string>
+    <string name="account_settings_retry_label" msgid="1104680719299842829">&quot;Попытка на синхронизацию&quot;</string>
+    <string name="account_settings_retry_summary" msgid="2703599639846201913">&quot;Трогать и синхронизировать аккаунт&quot;</string>
+    <string name="account_settings_description_label" msgid="8894815221204511715">&quot;Название аккаунта&quot;</string>
+    <string name="account_settings_name_label" msgid="8186406122590008449">&quot;Ник отправления почты&quot;</string>
+<!--paul modify-->
+<string name="account_settings_edit_quick_responses_label" msgid="3106019627675996480">&quot;Быстрый ответ&quot;</string>
+    <string name="account_settings_edit_quick_responses_summary" msgid="8056686122888722591">&quot;Редактировать часто вставленный текст при написании электронной почте&quot;</string>
+    <string name="account_settings_notifications" msgid="1042620094281375043">&quot;Настройки уведомления&quot;</string>
+    <string name="account_settings_data_usage" msgid="6669107430575866736">&quot;Использование данных&quot;</string>
+    <string name="account_settings_policies" msgid="6292833636418641840">&quot;Политика безопасности&quot;</string>
+    <string name="system_folders_title" msgid="2934406494244347991">&quot;Системные папки&quot;</string>
+    <string name="system_folders_trash_title" msgid="8470058000681188327">&quot;Удалена папка почты&quot;</string>
+    <string name="system_folders_trash_summary" msgid="1258919809198485244">&quot;Выберите удалённые почтовые папки в сервере&quot;</string>
+    <string name="system_folders_trash_dlg" msgid="4461220303400833402">&quot;Выберите удалённые почтовые папки в сервере&quot;</string>
+    <string name="system_folders_sent_title" msgid="4265722817877075367">&quot;Отправленные почтовые папки&quot;</string>
+    <string name="system_folders_sent_summary" msgid="5529250353569545181">&quot;Выберите отправленные почтовые папки в сервере&quot;</string>
+    <string name="system_folders_sent_dlg" msgid="7071006714702094762">&quot;Выберите отправленные почтовые папки в сервере&quot;</string>
+    <string name="edit_quick_response_dialog" msgid="6479106007607928450">&quot;Быстрый ответ&quot;</string>
+    <string name="save_action" msgid="1988862706623227093">&quot;Сохранить&quot;</string>
+    <string name="account_settings_sync_contacts_enable" msgid="1369272986009573218">&quot;Синхронизация контактов&quot;</string>
+    <string name="account_settings_sync_contacts_summary" msgid="816919452270997919">&quot;Синхронизация контактов аккаунта&quot;</string>
+    <string name="account_settings_sync_calendar_enable" msgid="6855333393468628003">&quot;Синхронизация календари&quot;</string>
+    <string name="account_settings_sync_calendar_summary" msgid="7606340353079301703">&quot;Синхронизация повестки аккаунта&quot;</string>
+    <string name="account_settings_sync_email_enable" msgid="3754115565685222477">&quot;Синхронизация электропочты&quot;</string>
+    <string name="account_settings_sync_email_summary" msgid="262964076412310990">&quot;Синхронизация электропочты аккаунта&quot;</string>
+    <string name="account_settings_vibrate_when_label" msgid="708477308761702671">&quot;Вибрация&quot;</string>
+    <string name="account_settings_ringtone" msgid="8229878374785575207">&quot;Выбирать звук&quot;</string>
+    <string name="account_settings_servers" msgid="4925493817981624242">&quot;Настройки сервера&quot;</string>
+    <string name="mailbox_settings_activity_title" msgid="4705845931573373274">&quot;Параметры синхронизации&quot;</string>
+    <string name="mailbox_settings_activity_title_with_mailbox" msgid="6485481250424219240">&quot;Параметры синхронизации（<xliff:g id="MAILBOXX_NAME">%s</xliff:g>）&quot;</string>
+    <string name="mailbox_settings_sync_enabled_label" msgid="1180866791599296994">&quot;Синхронизация этой папки&quot;</string>
+    <string name="mailbox_settings_sync_enabled_summary" msgid="345878979425044320">&quot;Загрузить почту после подключения к интернету&quot;</string>
+    <string name="mailbox_settings_mailbox_sync_window_label" msgid="851180833264474141">&quot;Синхронизация почты в последние дни&quot;</string>
+    <string name="prefDialogTitle_conversationListIcon" msgid="4601797400885989153">&quot;Аватар адресант&quot;</string>
+    <string name="provider_note_live" msgid="2995297671709325333">&quot;Только несколько аккаунта “Plus” поддерживает доступ  POP , и разрешить подключение приложений. &quot;Если невозможно войти при правильном адресе и пароле, то может быть не включить аккаунт“Plus” с расходами. Запустить браузер сети для получения права доступа в аккаунт электропочты.&quot;</string>
+    <string name="provider_note_t_online" msgid="1630642061431427894">&quot;Повещать сайт T-Online для создания пароля POP3 электропочты, перед установлением аккаунта электропочты.&quot;</string>
+    <string name="exchange_name" msgid="1190783774800310346">&quot;Компания&quot;</string>
+    <string name="exchange_name_alternate" msgid="5772529644749041052">&quot;Microsoft Exchange ActiveSync&quot;</string>
+    <string name="system_account_create_failed" msgid="3673792980526246177">&quot;Невозможно создать аккаунт, попробуйте ещё раз.&quot;</string>
+    <string name="device_admin_label" msgid="8680224994637869414">&quot;Электропочта&quot;</string>
+    <string name="device_admin_description" msgid="426727923791430306">&quot;Запустить политику безопасности указанного сервера&quot;</string>
+    <string name="settings_activity_title" msgid="5185915603716333904">&quot;Настройки&quot;</string>
+    <string name="header_label_general_preferences" msgid="8243724566056800991">&quot;Общие настройки&quot;</string>
+    <string name="general_preference_confirm_delete_label" msgid="1863245465244241907">&quot;Подтвердите перед удалением&quot;</string>
+    <string name="general_preference_confirm_delete_summary" msgid="6710240861010766643">&quot;Почта&quot;</string>
+    <string name="general_preference_confirm_send_label" msgid="4548277349553989930">&quot;Подтвердить перед отправлением&quot;</string>
+    <string name="general_preference_confirm_send_summary" msgid="2695471027185506093">&quot;Почта&quot;</string>
+    <string name="general_preference_text_zoom_label" msgid="4021955890499565713">&quot;Текстовой размер почты&quot;</string>
+  <string-array name="general_preference_text_zoom_summary_array">
+    <item msgid="4693576184223089069">&quot;Крохотный шрифт&quot;</item>
+    <item msgid="4415205108584620118">&quot;Маленький шрифт&quot;</item>
+    <item msgid="4550219696381691112">&quot;Нормальный шрифт&quot;</item>
+    <item msgid="6227813549949219991">&quot;Большой шрифт&quot;</item>
+    <item msgid="1197917420815786571">&quot;Крупный шрифт&quot;</item>
+  </string-array>
+    <string name="general_preference_text_zoom_dialog_title" msgid="7446841758331151643">&quot;Текстовой размер почты&quot;</string>
+    <string name="general_preference_text_zoom_tiny" msgid="2948174583663330937">&quot;Крохотный&quot;</string>
+    <string name="general_preference_text_zoom_small" msgid="6618520238223144876">&quot;Маленький&quot;</string>
+    <string name="general_preference_text_zoom_normal" msgid="1765540147950855479">&quot;Нормальный&quot;</string>
+    <string name="general_preference_text_zoom_large" msgid="6874323663381586918">&quot;Большой&quot;</string>
+    <string name="general_preference_text_zoom_huge" msgid="4270503132355963031">&quot;Крупный&quot;</string>
+    <string name="more_than_999" msgid="8704425397397918798">&quot;999+&quot;</string>
+    <string name="search_hint" msgid="2200412192574686497">&quot;Поиск почты&quot;</string>
+    <string name="policy_dont_allow_camera" msgid="5744573062306937302">&quot;Не разрешает пользоваться камеру устройства&quot;</string>
+    <string name="policy_require_password" msgid="7177274900480984702">&quot;Нужно пароль устройства&quot;</string>
+    <string name="policy_password_history" msgid="5743544498302303181">&quot;Ограничить повторное использование последнего пароля&quot;</string>
+    <string name="policy_password_expiration" msgid="1248123255253649199">&quot;Принудительный пароль  истекает через определённый период&quot;</string>
+    <string name="policy_screen_timeout" msgid="414869965358468080">&quot;Блокировки экрана неиспользуемого оборудования&quot;</string>
+    <string name="policy_calendar_age" msgid="627405158087482302">&quot;Ограничить число повестки в календари&quot;</string>
+    <string name="policy_email_age" msgid="7144148367145424963">&quot;Ограничить число синхронизационных почт&quot;</string>
+    <string name="quick_1" msgid="3426057697353380951">&quot;Большое спасибо!&quot;</string>
+    <string name="quick_2" msgid="4188036352885736617">&quot;По-моему, замечательно!&quot;</string>
+    <string name="quick_3" msgid="8061819976353395585">&quot;Я потом читаю почту и отдаю вам ответ позже.&quot;</string>
+    <string name="quick_4" msgid="3988974084396883051">&quot;Мы может устроить собрание для обсуждения этого вопроса&quot;</string>
+    <string name="require_manual_sync_message" msgid="7777357288642785955">&quot;При роуминге отключить функцию фоновой синхронизации  данной аккаунта.&quot;</string>
+    <string name="confirm_response" msgid="9151965975158906286">&quot;Отправление ответа...&quot;</string>
+    <string name="no_conversations" msgid="5559527390337162819">&quot;Нет почты.&quot;</string>
+    <string name="imap_name" msgid="5030473997603483793">&quot;IMAP&quot;</string>
+    <string name="pop3_name" msgid="4037602724794932807">&quot;POP3&quot;</string>
+    <string name="folder_picker_title" msgid="860241987640527156">&quot;Выбирать папки&quot;</string>
+    <string name="trash_folder_selection_title" msgid="8052880079616386185">&quot;Выбирать удаленные <xliff:g id="ACCOUNT">%s</xliff:g> папки почты в сервера&quot;</string>
+    <string name="sent_folder_selection_title" msgid="2668629667423320684">&quot;Выбирать отправленные <xliff:g id="ACCOUNT">%s</xliff:g> папки почты в сервера&quot;</string>
+    <string name="account_waiting_for_folders_msg" msgid="6504836014579036923">&quot;Загрузка список папки…&quot;</string>
+<!-- Aurora <shihao> <2014-10-27> for Domin not support this moment -->
+<string name="domin_not_support">Не поддерживает почту этого типа!</string>
+<!-- Aurora <shihao> <2014-10-27> for some prompt -->
+<string name="account_or_password_not_complete">Аккаунт или пароль не полный</string>
+    <string name="account_not_support_style">Аккаунт не соответствует тиру почты</string>
+    <string name="network_is_not_connection">Сеть недоступна</string>
+    <string name="aurora_account_input_hint">Ввести почтовый аккаунт</string>
+    <string name="aurora_passward_input_hint">Ввести почтовый пароль</string>
+    <string name="aurora_login_error_title">Войти ошибочно</string>
+    <string name="aurora_login_error_messae">Попробуйте следующие способы для решения：\n1.открыть услуг %1$s  почты QQ\n2. Повторно введите правильный пароль аккаунта</string>
+</resources>

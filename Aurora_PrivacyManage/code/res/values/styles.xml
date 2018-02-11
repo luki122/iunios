@@ -1,0 +1,87 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="Dialog" parent="android:style/Theme.Dialog">  
+       <item name="android:windowBackground">@android:color/transparent</item>  
+       <item name="android:windowNoTitle">true</item> 
+       <item name="android:windowIsFloating">true</item>  
+    </style>  
+
+    <!-- 标题栏textView -->
+	<style name="title_text_style">	     
+	     <item name="android:layout_width">wrap_content</item>
+	     <item name="android:layout_height">wrap_content</item>
+	     <item name="android:textSize">30sp</item>
+	     <item name="android:padding">12dp</item>
+	     <item name="android:gravity">center_vertical|left</item>
+	     <item name="android:textColor">@color/black</item>
+	 </style>	
+   
+   <!-- item button的属性 -->
+   <style name="preferences_item">				
+	     <item name="android:layout_width">fill_parent</item>
+	     <item name="android:layout_height">@dimen/preferences_item_height</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+	     <item name="android:paddingLeft">15dp</item>
+	     <item name="android:gravity">center_vertical|left</item>
+	     <item name="android:textColor">@drawable/prefer_text_title_selector_color</item>
+   </style>
+   
+   <!-- item right arrow的属性 16.3dp-->
+   <style name="item_right_arrow">	
+         <item name="android:layout_width">wrap_content</item>
+	     <item name="android:layout_height">wrap_content</item>
+	     <item name="android:layout_alignParentRight">true</item>
+	     <item name="android:layout_marginRight">15dp</item>
+	     <item name="android:layout_centerVertical">true</item>
+	     <item name="android:scaleType">center</item>
+	     <item name="android:src">@drawable/right_arrow</item>
+   </style>
+ 
+   <style name="aurora_switch">	
+	     <item name="android:layout_width">wrap_content</item>
+	     <item name="android:layout_height">wrap_content</item>
+   </style>
+   
+   <style name="text_title">	
+	     <item name="android:textColor">@color/black</item>
+	     <item name="android:textSize">17sp</item>
+   </style>
+   
+   <style name="text_of_preferences_item">	
+	     <item name="android:textColor">@color/black</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+   </style>
+   
+   <style name="text_selector_of_preferences_item">	
+	     <item name="android:textColor">@drawable/prefer_text_title_selector_color</item>
+	     <item name="android:textSize">@dimen/preferences_item_text_size</item>
+    </style>
+   
+ 
+   <style name="text_sub">	
+	     <item name="android:textColor">#7b7b7b</item>
+	     <item name="android:textSize">14sp</item>
+   </style>  
+   
+   <style name="button_text">				
+	     <item name="android:textColor">@drawable/btn_text_title_selector_color</item>
+	     <item name="android:textSize">18sp</item>     
+   </style>
+   
+   <style name="AnimBottom" parent="@android:style/Animation">  
+    	<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+	
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    
+    <style name="PrivacyManageActivityStyle" parent="com.aurora:style/Theme.aurora.Light">
+        <item name="com.aurora:actionBarRightWidgetBackground">@com.aurora:drawable/aurora_action_bar_widget_right_selector_dark</item>
+    </style>
+
+</resources>

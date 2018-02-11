@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!-- In-call UI -->
+    <color name="incall_callTypeSip">#99CE3F</color> <!-- green -->
+    <color name="incall_call_banner_background">#A0000000</color> <!-- semitransparent black -->
+    <color name="incall_secondary_info_background">#8033b5e5</color> <!-- semitransparent blueish grey -->
+    <color name="incall_call_banner_text_color">#FFFFFF</color> <!-- white -->
+
+
+    <!-- DTMF Dialer -->
+    <color name="dtmf_dialer_display_text">#FFFFFF</color> <!-- white -->
+
+
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#33B5E5</color>
+
+    <!-- Put on top of each photo, implying 80% darker than usual. -->
+    <color name="on_hold_dim_effect">#cc000000</color>
+
+    <!-- Used with some smaller texts in manage conference screen. -->
+    <color name="manage_conference_secondary_text_color">#888888</color>
+    <color name="aurora_dialpad_bg">#FF14cb9b</color>
+    <color name="aurora_dialpad_text_color">#FFFFFFFF</color>
+    <color name="sim_bg_color">#FFF0F5</color>
+    <color name="sim_title_color">#848484</color>
+    <color name="aurora_notification_text_color2">#50ffffff</color>
+    <color name="aurora_notification_divider_color">#33FFFFFF</color>
+    <color name="aurora_name_text_color">#FFFFFF</color>
+    <color name="aurora_number_text_color">#FFFFFF</color>
+    <color name="aurora_note_text_color">#FFFFFF</color>
+    <color name="aurora_green_text_color">#FF019c73</color>
+    <color name="aurora_fisrtcallinfo_text_color">#FF00FCFF</color>
+    <color name="aurora_float_bg_color">#CF000000</color>
+    <color name="aurora_end_call_color">#F64243</color>
+    <color name="aurora_end_call_press_color">#B22F2F</color>
+    <color name="aurora_phonebg_color">#4bcadd</color>
+    <color name="aurora_end_call_color_v2">#F64243</color>
+    <color name="aurora_button_color_v2">#FF414142</color>
+    
+    <color name="record_button_text_color">#0ebc7d</color>
+     <color name="aurora_green_color_v2">#0ebc7d</color>
+     
+         <color name="fab_bg_dialbutton">#0ebc7d</color>
+
+</resources>

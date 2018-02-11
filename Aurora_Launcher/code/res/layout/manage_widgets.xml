@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="#4a4d54" >
+
+        <TextView
+            android:id="@+id/widgets_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:drawableLeft="@drawable/manager_widgets_back"
+            android:drawablePadding="16dp"
+            android:gravity="bottom"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:text="@string/moveup_widgets"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_widget_list_scroll"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/whole_switch_parent"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@drawable/menu_item_select"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/whole_switch_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/moveup_widgets"
+                    android:textColor="#000000"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Switch
+                    android:id="@+id/whole_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textOff=""
+                    android:textOn=""
+                    android:clickable="false"
+                    android:background="@null"
+                     />
+
+                <TextView
+                    android:id="@+id/widgets_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/whole_switch_title"
+                    android:layout_below="@id/whole_switch_title"
+                    android:textColor="#99000000"
+                    android:textSize="14sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/widgets_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:paddingLeft="16dp"
+                android:text="@string/widgets_list_title"
+                android:gravity="center_vertical"
+                android:textColor="#99000000"
+                android:textSize="12sp" >
+            </TextView>
+
+            <ListView
+                android:id="@+id/widgets_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/widgets_manager_corner"
+                android:divider="@drawable/list_item_divider"
+                android:dividerHeight="@dimen/app_list_border_size"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

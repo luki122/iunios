@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">0dp</dimen>
+    
+    <dimen name="aurora_bottom_controls_height">47dp</dimen>
+    
+    <dimen name="preview_time_bottom">30dp</dimen>
+    <dimen name="preview_date_top">12dp</dimen>
+</resources>

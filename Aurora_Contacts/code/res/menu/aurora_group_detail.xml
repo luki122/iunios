@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+aurora:wangth 20130914 add
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<!--     <item
+        android:id="@+id/menu_add_member"
+        android:title="@string/aurora_group_detail_add_member"/> -->
+    
+    <item
+        android:id="@+id/menu_send_mms"
+        android:title="@string/aurora_group_detail_send_mms"/>
+    
+    <item
+        android:id="@+id/menu_edit_group"
+        android:title="@string/menu_editGroup"/>
+
+    <item
+        android:id="@+id/menu_delete_group"
+        android:title="@string/menu_deleteGroup"/>
+     
+</menu>

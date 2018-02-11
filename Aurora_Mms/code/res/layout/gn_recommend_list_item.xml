@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/gn_list_item_top_margin"
+    android:paddingBottom="@dimen/gn_list_item_bottom_margin"
+    android:paddingLeft="12dip"
+    android:paddingRight="@dimen/list_item_right_margin">
+
+    <TextView
+        android:id="@+id/recommend_body"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>
+

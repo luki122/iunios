@@ -1,0 +1,22 @@
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraPreferenceCategory>
+         <aurora.preference.AuroraSwitchPreference Aurora:aurorakey="wifi_auto_upgrade_key"
+          Aurora:auroratitle="@string/wifi_auto_upgrade" 
+         />
+         <aurora.preference.AuroraSwitchPreference Aurora:aurorakey="software_auto_update_tip_key"
+          Aurora:auroratitle="@string/software_auto_update_tip" 
+          Aurora:auroradefaultValue= "true"
+          
+         />
+    </AuroraPreferenceCategory>
+
+    <AuroraPreferenceCategory>
+        
+        <com.aurora.market.widget.AuroraMarketPreference Aurora:aurorakey="apps_update_ignored_key"
+             Aurora:auroratitle="@string/apps_update_ignored" />
+ 
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@com.aurora:dimen/status_bar_height"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.aurora.note.widget.WaveformViewForPlay
+            android:id="@+id/play_voice"
+            android:layout_width="@dimen/wave_form_view_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/play_waveform_margin_bottom" />
+
+        <com.aurora.note.widget.PlaySeekBar
+            android:id="@+id/play_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/play_seekbar_height"
+            android:maxHeight="@dimen/play_seekbar_height"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_gravity="bottom"
+            android:progressDrawable="@drawable/seekbar_img"
+            android:thumb="@drawable/play_seekbar_thumb2" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/play_file_info_padding_left"
+        android:paddingRight="@dimen/play_file_info_padding_left"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/play_activity2_text"
+            android:text="@string/play_file_name_label" />
+        <TextView
+            android:id="@+id/file_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/play_activity2_text" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/play_activity2_text"
+            android:text="@string/play_total_time_label" />
+        <TextView
+            android:id="@+id/total_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/play_activity2_text" />
+    </LinearLayout>
+    
+    <!--
+    <TextView
+        android:id="@+id/play_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/play_duration_margin_top"
+        android:layout_marginBottom="@dimen/play_time_margin_bottom"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#747474"
+        android:textSize="@dimen/record_duration_text_size"
+        android:text="@string/play_start_time" />
+    -->
+    <com.aurora.note.widget.ClockView
+        android:id="@+id/play_time_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/play_duration_margin_top"
+        android:layout_marginBottom="@dimen/play_time_margin_bottom"
+        android:layout_gravity="center_horizontal" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/play_button_bar_padding_left"
+        android:paddingRight="@dimen/play_button_bar_padding_right"
+        android:layout_marginBottom="@dimen/play_button_bar_margin_bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/mark_iv"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/record_mark_bg"
+            android:layout_height="@dimen/record_mark_or_stop_btn_height" />
+
+        <ImageView
+            android:id="@+id/start_iv"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/play_start_bg"
+            android:layout_height="@dimen/record_pause_or_start_btn_height" />
+        
+        <ImageView
+            android:id="@+id/pause_iv"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/play_pause_bg"
+            android:layout_height="@dimen/record_pause_or_start_btn_height" />
+        
+        <ImageView
+            android:id="@+id/animation_iv"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:layout_height="@dimen/record_pause_or_start_btn_height" />
+        
+        <ImageView
+            android:id="@+id/stop_iv"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/play_stop_bg"
+            android:layout_height="@dimen/record_mark_or_stop_btn_height" />
+    </LinearLayout>
+</LinearLayout>

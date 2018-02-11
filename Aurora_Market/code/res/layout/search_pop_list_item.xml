@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_page_textview_height"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical"
+    
+    >
+
+    <TextView android:id="@+id/pop_text"
+         android:layout_width="wrap_content"
+         android:layout_height="@dimen/search_page_list_item_height_40"
+         android:gravity="center_vertical"
+         android:layout_centerVertical="true"
+         android:textSize="@dimen/textsize_16"
+         android:textColor="@color/category_item_namecolor"
+         android:layout_marginLeft="@dimen/search_page_margin_23"
+         />
+
+</RelativeLayout>

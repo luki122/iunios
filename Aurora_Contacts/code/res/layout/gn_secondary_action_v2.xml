@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_secondary_action_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:descendantFocusability="afterDescendants"
+    android:paddingLeft="4dip"
+    android:gravity="center_vertical|right" >
+
+    <com.mediatek.contacts.widget.DontPressWithParentImageButton
+        android:id="@+id/secondary_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/gn_action_btn_min_height"
+        android:minWidth="@dimen/gn_action_btn_min_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_ab_dialer_holo_dark"
+        android:background="?attr/gn_dial_btn_call_small_bg"
+        android:focusable="false" />
+    
+</LinearLayout>

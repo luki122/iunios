@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+    
+    <TextView
+        android:id="@+id/action_mode_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="left|center_vertical"
+        android:text="@string/cancel"
+        android:textColor="@color/aurora_title_text_color"
+        android:textSize="30sp" />
+    
+    <TextView
+        android:id="@+id/action_mode_title"
+        style="@style/aurora_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:singleLine="true"
+         />
+    
+    <TextView
+        android:id="@+id/action_mode_selectall_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/aurora_titlebar_margin"
+        android:text="@string/select_all"
+        android:textColor="@color/aurora_title_text_color"
+        android:textSize="30sp" />
+</LinearLayout>

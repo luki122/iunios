@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:viewportHeight="66"
+    android:viewportWidth="66"
+    android:width="22dp" >
+        <path
+            android:name="aurora_actionbar_done"
+            android:fillColor="@color/progress_btn_second_color"
+            android:pathData="M28,6.08c14.91,0,27.031,12.604,27.031,27.514h9.625L53.75,44.441l-0.63,0.622L40.719,33.594l10.802-0.001
+	C51.521,20.877,40.716,9.107,28,9.112C15.285,9.118,4.04,19.873,4.037,33.109c-0.004,13.266,10.782,23.59,24.047,23.59
+	c6.616,0,12.614-2.833,16.933-7.186l2.063,2.647c-4.89,4.89-11.61,7.753-19.08,7.753c-14.91,0-27-11.923-27-26.833
+	S13.09,6.08,28,6.08z"
+            />
+
+</vector>

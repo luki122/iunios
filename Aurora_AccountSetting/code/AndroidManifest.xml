@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.auroraaccountsettings"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="50002001"
+    android:versionName="1.734">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:targetSdkVersion="22"
+        android:theme="@style/AuroraAccountTheme">
+        <!-- android:taskAffinity="com.android.settings
+        android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+        android:launchMode="singleTask"-->
+        <activity
+            android:name="com.aurora.auroraaccountsettings.AccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:label=""
+            android:launchMode="singleTop"
+            android:process="com.android.settings"
+
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.aurora.auroraaccountsettings.action.ACCOUNT_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AuroraSubSettings"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:launchMode="standard"
+            android:parentActivityName="AccountActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings"></activity>
+
+        <activity
+            android:name="com.aurora.auroraaccountsettings.AddAccountSettings"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/header_add_an_account"
+            android:parentActivityName="AccountActivity$ManageAccountsSettingsActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.aurora.auroraaccountsettings.ADD_ACCOUNT_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.aurora.auroraaccountsettings.ChooseAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/header_add_an_account"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings" />
+
+        <activity
+            android:name="com.aurora.auroraaccountsettings.SyncSettingsActivity"
+            android:label="@string/account_sync_settings_title"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.SYNC_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="AccountActivity$ManageAccountsSettingsActivity"
+            android:label="@string/account_sync_settings_title"
+            android:launchMode="standard"
+            android:parentActivityName="AccountActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="AccountActivity$AccountSyncSettingsActivity"
+            android:label="@string/account_sync_settings_title"
+            android:parentActivityName="AccountActivity"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.android.settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.ACCOUNT_SYNC_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.accounts.AccountSyncSettings" />
+            <meta-data
+                android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/account_settings" />
+        </activity>
+
+    </application>
+
+</manifest>

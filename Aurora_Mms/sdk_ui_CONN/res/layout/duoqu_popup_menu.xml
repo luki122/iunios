@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <!--
+        <TextView 
+	    android:id="@+id/duoqu_menu_reset"
+	    android:text="@string/duoqu_web_reset"
+	    android:textSize="12dp"
+	    android:gravity="center"
+	    android:layout_width="match_parent"
+		android:layout_height="36dp"
+		android:visibility="visible"/>
+        -->
+
+        <TextView
+            android:id="@+id/duoqu_menu_reload"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/duoqu_web_reload"
+            android:textColor="@color/duoqu_white"
+            android:textSize="12dp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/duoqu_menu_splitline1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/duoqu_white_transparent_30" />
+
+        <TextView
+            android:id="@+id/duoqu_menu_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/duoqu_web_feedback"
+            android:textColor="@color/duoqu_white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/duoqu_menu_splitline2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/duoqu_white_transparent_30"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/duoqu_menu_help"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/duoqu_web_help"
+            android:textColor="@color/duoqu_white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/duoqu_menu_splitline3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/duoqu_white_transparent_30"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/duoqu_menu_abourtus"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="@string/duoqu_web_aboutus"
+            android:textColor="@color/duoqu_white"
+            android:textSize="12dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

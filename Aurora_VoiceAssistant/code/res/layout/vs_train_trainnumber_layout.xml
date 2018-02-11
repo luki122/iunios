@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vr_train_trainnumber_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/vs_common_padding_bottom"
+    android:paddingRight="@dimen/vs_common_padding_right"
+    android:paddingTop="@dimen/vs_common_padding_top" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+<!--         android:background="@drawable/vs_question_structure_item_bg" -->
+
+        <LinearLayout
+            android:id="@+id/vr_trainnumber_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="7.0dip"
+            android:paddingRight="18.0dip"
+            android:paddingTop="2.0dip" >
+<!--             android:paddingLeft="14.0dip" -->
+<!--             android:background="@drawable/vs_stock_title" -->
+<!-- 			android:paddingTop="4.0dip" -->
+
+            <ImageView
+                android:id="@+id/trainnumber_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:contentDescription="@string/vs_airline_logo"
+                android:src="@drawable/vs_flight_train_normal" />
+<!--             	android:layout_width="25.0dip" -->
+<!--                 android:layout_height="25.0dip" -->
+
+            <TextView
+                android:id="@+id/train_number_textview"
+                style="@style/vs_flight_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.0dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/train_name_textview"
+                style="@style/vs_flight_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="6.0dip"
+                android:singleLine="true" />
+        </LinearLayout>
+<!-- 		shigq delete this -->
+<!--         <View style="@style/vs_train_type_divider" /> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="3.0dip"
+            android:paddingTop="13.0dip" >
+<!--             android:paddingLeft="18.0dip" -->
+<!-- android:paddingRight="18.0dip" -->
+<!--             android:paddingTop="10.0dip" -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/department_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="2.0dip"
+                    android:src="@drawable/vs_train_department_icon" />
+<!--                 shigq add android:padding="2.0dip" -->
+
+                <TextView
+                    android:id="@+id/train_departure_station_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/department_icon"
+                    android:padding="2.0dip"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/vs_black"
+                    android:textSize="14.0sp" />
+<!--                 ndroid:layout_width="56.0dip" -->
+<!--                 android:textColor="#ff000000" -->
+<!-- 					android:textSize="13.0sp" -->
+<!--                 android:padding="1.0dip" -->
+				
+<!-- 				shigq add this TextView to display "-" -->
+				<TextView
+				    android:id="@+id/dashed_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2.0dip"
+                    android:text="@string/vs_span"
+                    android:layout_toRightOf="@+id/train_departure_station_textview"
+                    android:textColor="@color/vs_news_content"
+                    android:textSize="14.0dip" />
+
+                <ImageView
+                    android:id="@+id/arrival_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="2.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_toRightOf="@+id/dashed_line"
+                    android:src="@drawable/vs_train_arrival_icon" />
+<!--                 shigq add android:padding="2.0dip" -->
+<!-- android:layout_toRightOf="@+id/train_departure_station_textview" -->
+
+                <TextView
+                    android:id="@+id/train_arrival_station_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/arrival_icon"
+                    android:padding="2.0dip"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/vs_black"
+                    android:textSize="14.0sp" />
+<!--                 android:layout_width="54.0dip" -->
+<!--                 android:textColor="#ff000000" -->
+<!-- 					android:textSize="13.0sp" -->
+<!--                 android:padding="1.0dip" -->
+
+                <LinearLayout
+                    android:id="@+id/vr_trainnumber_time_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/train_arrival_station_textview"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/train_departure_time_textview"
+                        style="@style/vs_flight_number_table_actical_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="2.0dip"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        style="@style/vs_flight_number_table_actical_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/train_arrival_time_textview"
+                        style="@style/vs_flight_number_table_actical_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center"
+                        android:padding="2.0dip"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="13.0dip" >
+<!--                 android:layout_marginBottom="16.0dip" -->
+<!--                 android:layout_marginTop="10.0dip" -->
+<!-- 				shigq add android:layout_marginLeft="3dp" android:layout_marginRight="4dp"-->
+
+                <TextView
+                    android:id="@+id/train_first_price_textview"
+                    style="@style/vs_flight_number_table_root"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/train_second_price_textview"
+                    style="@style/vs_flight_number_table_root"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/train_first_price_textview"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/train_spend_time_textview"
+                    style="@style/vs_flight_number_table_root"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/train_second_price_textview"
+                    android:gravity="right"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

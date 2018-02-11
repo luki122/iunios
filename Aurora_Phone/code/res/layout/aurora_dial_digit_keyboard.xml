@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- Dialpad in the Phone app. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aurora_dial_digit_keyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:id="@+id/aurora_one"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_1"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_2a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_two"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_2"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_2a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_three"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <TextView
+                android:id="@+id/num_area3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_3"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_3a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:id="@+id/aurora_four"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_4"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_4a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_five"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_5"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_5a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_six"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <TextView
+                android:id="@+id/num_area6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_6"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_6a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:id="@+id/aurora_seven"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_7"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_7a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_eight"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_8"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_8a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_nine"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <TextView
+                android:id="@+id/num_area9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_9"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_9a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF" >
+
+        <LinearLayout
+            android:id="@+id/aurora_star"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_areastar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_star"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_7a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_zero"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp" >
+
+            <TextView
+                android:id="@+id/num_area0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_0"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@drawable/svg_dial_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aurora_pound"
+            style="@style/AuroraDialtactsDialpadButtonStyle"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingRight="50dp" >
+
+            <TextView
+                android:id="@+id/num_areapound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/aurora_dtmf_pound"
+                android:textColor="#414142"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/num_9a"
+                android:textColor="#b2b2b2"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dial_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:background="#FFF"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/aurora_dialButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dial_oval_bg" >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/svg_dial_dial" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

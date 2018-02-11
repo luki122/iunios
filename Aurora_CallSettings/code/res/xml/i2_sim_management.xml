@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+
+     Redistribution and use in source and binary forms, with or without
+     modification, are permitted provided that the following conditions are
+     met:
+         * Redistributions of source code must retain the above copyright
+           notice, this list of conditions and the following disclaimer.
+         * Redistributions in binary form must reproduce the above
+           copyright notice, this list of conditions and the following
+           disclaimer in the documentation and/or other materials provided
+           with the distribution.
+         * Neither the name of The Linux Foundation nor the names of its
+           contributors may be used to endorse or promote products derived
+           from this software without specific prior written permission.
+
+     THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+     WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+     ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+     BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+     CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+     SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+     BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+     WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+     OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+
+     IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:phone="http://schemas.android.com/apk/res/com.aurora.callsetting" >
+
+    <AuroraPreferenceCategory
+        aurora:auroraicon="@drawable/sim1_icon"
+        aurora:aurorakey="sim_category_key_0"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_1" >
+        <com.aurora.callsetting.RadioPowerPreference
+            aurora:aurorakey="sim_enable_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sim_enable" />
+
+        <AuroraPreferenceScreen
+            aurora:aurorakey="button_carrier_sel_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/networks" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.aurora.callsetting.NetworkSetting"
+                android:targetPackage="com.aurora.callsetting" />
+        </AuroraPreferenceScreen>
+
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle"
+            aurora:auroraentries="@array/u5_preferred_network_mode_choices"
+            aurora:auroraentryValues="@array/u5_preferred_network_mode_values"
+            aurora:aurorakey="preferred_network_mode_list_key_0"
+            aurora:aurorasummary="@string/preferred_network_mode_summary"
+            aurora:auroratitle="@string/preferred_network_mode_title" />
+
+        <AuroraPreferenceScreen
+            aurora:aurorakey="preferred_network_mode_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/preferred_network_mode_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.aurora.callsetting.MSimPreferNetworkSettings"
+                android:targetPackage="com.aurora.callsetting" />
+        </AuroraPreferenceScreen>
+        <AuroraPreferenceScreen
+            aurora:aurorakey="button_apn_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/apn_settings" >
+            <intent
+                android:action="android.settings.APN_SETTINGS"
+                android:targetPackage="com.android.settings" />
+        </AuroraPreferenceScreen>
+
+        <AuroraSwitchPreference
+            aurora:aurorakey="button_roaming_key_0"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/roaming_disable"
+            aurora:aurorasummaryOn="@string/roaming_enable"
+            aurora:auroratitle="@string/roaming" />
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:auroraicon="@drawable/sim2_icon"
+        aurora:aurorakey="sim_category_key_1"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_2" >
+        <com.aurora.callsetting.RadioPowerPreference
+            aurora:aurorakey="sim_enable_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sim_enable" />
+
+        <AuroraPreferenceScreen
+            aurora:aurorakey="button_carrier_sel_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/networks" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.aurora.callsetting.NetworkSetting"
+                android:targetPackage="com.aurora.callsetting" />
+        </AuroraPreferenceScreen>
+
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle"
+            aurora:auroraentries="@array/u5_preferred_network_mode_choices"
+            aurora:auroraentryValues="@array/u5_preferred_network_mode_values"
+            aurora:aurorakey="preferred_network_mode_list_key_1"
+            aurora:aurorasummary="@string/preferred_network_mode_summary"
+            aurora:auroratitle="@string/preferred_network_mode_title" />
+
+        <AuroraPreferenceScreen
+            aurora:aurorakey="preferred_network_mode_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/preferred_network_mode_title" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.aurora.callsetting.MSimPreferNetworkSettings"
+                android:targetPackage="com.aurora.callsetting" />
+        </AuroraPreferenceScreen>
+        <AuroraPreferenceScreen
+            aurora:aurorakey="button_apn_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/apn_settings" >
+            <intent
+                android:action="android.settings.APN_SETTINGS"
+                android:targetPackage="com.android.settings" />
+        </AuroraPreferenceScreen>
+
+        <AuroraSwitchPreference
+            aurora:aurorakey="button_roaming_key_1"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/roaming_disable"
+            aurora:aurorasummaryOn="@string/roaming_enable"
+            aurora:auroratitle="@string/roaming" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

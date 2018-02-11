@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:orientation="vertical">
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/share_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/note_share_edit_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="top"
+        android:minLines="5"
+        android:lineSpacingExtra="@dimen/share_content_line_spacing_extra"
+        android:textCursorDrawable="@drawable/share_sina_content_cursor"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="16sp"
+        android:text="@string/note_share_weibo_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:text="@string/note_share_to" />
+
+        <ImageView
+            android:id="@+id/share_to_sina_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/picture_share_by_weibo_pressed" />
+
+        <ImageView
+            android:id="@+id/share_to_wx_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/picture_send_by_wx_normal" />
+
+        <ImageView
+            android:id="@+id/share_to_wx_timeline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/picture_share_by_wx_normal" />
+    </LinearLayout>
+</LinearLayout>

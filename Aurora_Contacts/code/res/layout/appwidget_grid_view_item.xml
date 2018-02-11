@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/listview_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    
+
+
+    
+     <aurora.widget.AuroraRoundedImageView
+        android:id="@+id/itemImage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/svg_dial_default_photo1" />
+     
+     
+
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:textColor="#737373"
+        android:textSize="10sp" />
+
+</LinearLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.aurora.commemoration.ui.RMViewPager
+        android:id="@+id/pic_view_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/remember_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <com.aurora.commemoration.widget.InfoView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_share"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/aurora_menu_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/back_ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pic_view_share_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:duplicateParentState="true"
+                android:src="@drawable/pic_view_back_selector" />
+
+            <TextView
+                android:id="@+id/pic_view_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:text="@string/note_gen_picture"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/save_to_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingLeft="30dp"
+            android:paddingRight="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingStart="30dp"
+            android:scaleType="center"
+            android:src="@drawable/picture_save_to_gallery_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/aurora_menu_bg"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/back_ly1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/pic_view_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:duplicateParentState="true"
+                android:src="@drawable/pic_view_back_selector" />
+
+            <TextView
+                android:id="@+id/pic_view_title_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:text="@string/commemoration_detail"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingLeft="30dp"
+            android:paddingRight="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+            android:paddingStart="30dp"
+            android:scaleType="center"
+            android:src="@drawable/aurora_share_selector" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pic_view_top_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_top_tool_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/edit_false"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/aurora_cancle"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/edit_true"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/aurora_comfirm"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.aurora.commemoration.widget.BottomToolLayout
+        android:id="@+id/pic_view_bottom_share"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_bottom_tool_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/aurora_menu_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:visibility="gone"
+        calendar:verticalSpace="10dp">
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/share_by_weibo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/picture_share_by_weibo_selector"
+            calendar:text="@string/share_weibo" />
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/send_by_wx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/picture_send_by_wx_selector"
+            calendar:text="@string/share_weixin_friend" />
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/share_by_wx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/picture_share_by_wx_selector"
+            calendar:text="@string/share_weixin" />
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/share_by_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/share_by_qq_selector"
+            calendar:text="@string/share_qq_friend" />
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/share_by_qzone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/share_by_qzone_selector"
+            calendar:text="@string/share_qq_zone" />
+
+        <com.aurora.commemoration.widget.BottomToolItem
+            android:id="@+id/share_more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            calendar:src="@drawable/share_more_selector"
+            calendar:text="@string/share_more" />
+    </com.aurora.commemoration.widget.BottomToolLayout>
+
+    <LinearLayout
+        android:id="@+id/pic_view_bottom_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picbrowser_bottom_tool_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/aurora_menu_bg"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/picture_edit_selector" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:src="@drawable/picture_delete_selector" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pic_view_bottom_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/aurora_menu_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/edit_add_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_reminder_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:enabled="false"
+                    android:text="@string/aurora_reminder_add"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/add_to_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:text="@string/aurora_add_to_schedule"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="83dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/edit_add_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="52dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="24dp"
+                    android:src="@drawable/right" />
+
+                <aurora.widget.AuroraSwitch
+                    android:id="@+id/edit_schedule_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:clickable="true"
+                    android:paddingRight="24dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/id_add"-->
+                <!--android:layout_width="72dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:src="@drawable/aurora_pic_custom_add" />-->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

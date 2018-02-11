@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+     Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+
+     Not a Contribution.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    aurora:auroratitle="@string/mobile_networks" >
+
+    <AuroraPreferenceCategory aurora:aurorapersistent="false" >
+        <AuroraPreferenceScreen
+            aurora:auroraicon="@drawable/sim1_icon"
+            aurora:aurorakey="sim_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sub1" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.phone.SimInfoEditorPreference"
+                android:targetPackage="com.android.phone" />
+        </AuroraPreferenceScreen>
+        <AuroraPreferenceScreen
+            aurora:auroraicon="@drawable/sim2_icon"
+            aurora:aurorakey="sim_2"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/sub2" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.phone.SimInfoEditorPreference"
+                android:targetPackage="com.android.phone" />
+        </AuroraPreferenceScreen>
+    </AuroraPreferenceCategory>
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim_3rd_support_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/third_sim_support" >
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/priority_sub_title"
+            aurora:aurorakey="priority_subscription"
+            aurora:auroratitle="@string/priority_sub_title" />
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/data_title"
+            aurora:aurorakey="data"
+            aurora:auroratitle="@string/data_title" />
+    </AuroraPreferenceCategory>
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim_data_support_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/mobile_data_title" >
+        <AuroraSwitchPreference
+            aurora:aurorakey="aurora_data_enabled_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/data_enabled" />
+
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle"
+            aurora:auroraentries="@array/u5_preferred_network_mode_choices"
+            aurora:auroraentryValues="@array/u5_preferred_network_mode_values"
+            aurora:aurorakey="preferred_network_mode_key"
+            aurora:aurorasummary="@string/preferred_network_mode_summary"
+            aurora:auroratitle="@string/preferred_network_mode_title" />
+        <AuroraListPreference
+            aurora:auroradialogTitle="@string/preferred_network_mode_dialogtitle"
+            aurora:auroraentries="@array/u5_cdma_preferred_network_mode_choices"
+            aurora:auroraentryValues="@array/u5_cdma_preferred_network_mode_values"
+            aurora:aurorakey="cdma_preferred_network_mode_key"
+            aurora:aurorasummary="@string/preferred_network_mode_summary"
+            aurora:auroratitle="@string/preferred_network_mode_title" />
+
+        <com.android.phone.Enhanced4GLteSwitchPreference
+            aurora:aurorakey="aurora_4g_enabled_key"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummary="@string/enhanced_4g_lte_mode_summary"
+            aurora:auroratitle="@string/enhanced_4g_lte_mode_title" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

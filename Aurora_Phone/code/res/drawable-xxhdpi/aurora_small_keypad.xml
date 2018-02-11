@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:viewportHeight="72"
+    android:viewportWidth="72"
+    android:width="24dp" >
+
+    <path
+        android:name="XMLID_1097_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path1" />
+    <path
+        android:name="XMLID_1026_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path2" />
+    <path
+        android:name="XMLID_1024_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path3" />
+    <path
+        android:name="XMLID_1022_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path4" />
+    <path
+        android:name="XMLID_1021_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path5" />
+    <path
+        android:name="XMLID_1020_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path6" />
+    <path
+        android:name="XMLID_226_"
+        android:fillColor="@color/aurora_small_button_color"
+        android:pathData="@string/aurora_small_keypad_path7" />
+
+</vector>

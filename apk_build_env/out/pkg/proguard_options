@@ -1,0 +1,78 @@
+# view res/layout/weather_citylist_fragment.xml #generated:20
+-keep class aurora.widget.AuroraActionBar { <init>(...); }
+
+# view res/layout/weather_citylist_fragment.xml #generated:26
+-keep class aurora.widget.AuroraListView { <init>(...); }
+
+# view res/layout/activity_aurora_weather_search_city.xml #generated:13
+-keep class aurora.widget.AuroraSearchView { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.aurora.weatherforecast.AuroraWeatherMain { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.aurora.weatherforecast.AuroraWeatherSearchCity { <init>(...); }
+
+# view AndroidManifest.xml #generated:61
+-keep class com.aurora.weatherforecast.AuroraWeatherWarnDeatilInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.aurora.weatherforecast.WeatherStartReciver { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.aurora.weatherwidget.WeatherWidgetProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.aurora.weatherwidget.WeatherWidgetService { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.baidu.location.f { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class datas.DynamicDeskIconBrocdcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class datas.DynamicDeskIconService { <init>(...); }
+
+# view res/layout/weather_citylist_fragment.xml #generated:38
+-keep class views.CircleImageView { <init>(...); }
+
+# view res/layout/weather_main_fragment_layout.xml #generated:35
+-keep class views.CircleIndexView { <init>(...); }
+
+# view res/layout/cityoptionview.xml #generated:42
+-keep class views.CityDateView { <init>(...); }
+
+# view res/layout/weather_main_fragment_layout.xml #generated:30
+-keep class views.CityOptionView { <init>(...); }
+
+# view res/layout/weather_main_view.xml #generated:17
+-keep class views.ForcastAndHoursView { <init>(...); }
+
+# view res/layout/forcast_hours_layout.xml #generated:7
+-keep class views.Forecast24hAirView { <init>(...); }
+
+# view res/layout/forcast_hours_layout.xml #generated:30
+-keep class views.ForecastContentView { <init>(...); }
+
+# view res/layout/cityoptionview.xml #generated:6
+-keep class views.OptionView { <init>(...); }
+
+# view res/layout/weather_citylist_fragment.xml #generated:2
+-keep class views.PinchRelativeLayout { <init>(...); }
+
+# view res/layout/weather_main_fragment_layout.xml #generated:12
+-keep class views.WeatherAnimSurfaceView { <init>(...); }
+
+# view res/layout/weather_main_view.xml #generated:12
+-keep class views.WeatherDetailsView { <init>(...); }
+
+# view res/layout/viewpagerview.xml #generated:2
+-keep class views.WeatherMainView { <init>(...); }
+
+# view res/layout/weather_main_fragment_layout.xml #generated:25
+-keep class views.WeatherViewPager { <init>(...); }
+
+# view res/layout/weather_bottom_container_layout.xml #generated:2
+-keep class views.WheatherBottomContainer { <init>(...); }
+

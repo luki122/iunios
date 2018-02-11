@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <FrameLayout 
+        android:id="@+id/scanning_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"/>
+        
+        <com.aurora.voiceassistant.view.ViewfinderView
+      		android:id="@+id/viewfinder_view"
+      		android:layout_width="fill_parent"
+      		android:layout_height="fill_parent"
+		    android:background="@color/vs_transparent"/>
+        <TextView 
+            android:id="@+id/tips"
+            style="@style/vs_barcode_scanning_tips_style" />
+        <aurora.widget.AuroraButton
+	            android:id="@+id/getphotos"
+	            style="@style/vs_barcode_scanning_getphotos_style"
+	            android:textSize="15sp"
+	            android:background="@drawable/vs_barcode_getphotos_style" />
+    </FrameLayout>
+    
+    <FrameLayout 
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/result_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/vs_barcode_result_text_height"
+	        android:layout_marginLeft="@dimen/vs_barcode_result_text_margin"
+	        android:layout_marginRight="@dimen/vs_barcode_result_text_margin"
+	        android:gravity="center"
+	        android:textSize="@dimen/vs_barcode_result_text_size"
+	        android:textColor="#FF000000" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <aurora.widget.AuroraButton
+	            android:id="@+id/addcontacts"
+	            style="@style/vs_barcode_result_layout_text_style"
+	            android:layout_marginBottom="16dp"
+	            android:text="@string/vs_barcode_add_contacts"
+	            android:visibility="gone" />
+            <aurora.widget.AuroraButton
+	            android:id="@+id/search"
+	            style="@style/vs_barcode_result_layout_text_style"
+	            android:layout_marginBottom="16dp"
+	            android:text="@string/vs_barcode_search" />
+        	<aurora.widget.AuroraButton
+	            android:id="@+id/share"
+	            style="@style/vs_barcode_result_layout_text_style"
+	            android:layout_marginBottom="18dp"
+	            android:text="@string/vs_barcode_share" />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/vcard_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vs_barcode_result_text_height"
+            android:layout_marginLeft="60dp"
+	        android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+<!--         	android:layout_marginLeft="@dimen/vs_barcode_result_text_margin" -->
+<!-- 	        android:layout_marginRight="@dimen/vs_barcode_result_text_margin" -->
+        </LinearLayout>
+    </FrameLayout>
+    
+</FrameLayout>

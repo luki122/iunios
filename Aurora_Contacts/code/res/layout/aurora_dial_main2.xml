@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- add by liyang 2016 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.survivingwithandroid.fab"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/dialpad_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <!-- The main contacts grid -->
+
+        <FrameLayout
+            android:id="@+id/auroratabwidget_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--
+             <com.android.contacts.activities.MainFragmentSurface
+            android:id="@+id/mainFragmentSurface"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:layout_centerHorizontal="true"  
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+        -->
+    </FrameLayout>
+
+<!--     <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" /> -->
+
+    <aurora.widget.floatactionbutton.FloatingActionButton
+        android:id="@+id/float_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fab_padding_bottom"
+        android:layout_marginRight="@dimen/fab_padding_right"
+        android:src="@drawable/svg_dial_keyguard"
+        android:visibility="gone" />
+
+</RelativeLayout>

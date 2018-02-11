@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/wifi_advanced_titlebar">
+
+    <!-- android:dependency="enable_wifi" -->
+    <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="notify_open_networks"
+            aurora:auroratitle="@string/aurora_wifi_notify_open_networks"
+            aurora:aurorapersistent="false" />
+            
+    <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="wifi_ap_auto_join_available"
+            aurora:auroratitle="@string/wifi_ap_auto_join_available"
+            aurora:aurorasummary="@string/wifi_ap_auto_join_available_summary"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="wifi_scan_always_available"
+            aurora:auroratitle="@string/wifi_scan_always_available"
+            aurora:aurorasummary="@string/wifi_scan_always_available_summary"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="sleep_policy"
+            aurora:auroratitle="@string/aurora_wifi_sleep_policy_title"
+            aurora:aurorapersistent="false"/>
+
+      <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="wifi_assistant"
+            aurora:auroratitle="@string/wifi_automatically_manage_title"
+            aurora:aurorapersistent="false" />
+	    
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="frequency_band"
+            aurora:auroratitle="@string/wifi_setting_frequency_band_title"
+            aurora:aurorasummary="@string/wifi_setting_frequency_band_summary"
+            aurora:aurorapersistent="false"
+            aurora:auroraentries="@array/wifi_frequency_band_entries"
+            aurora:auroraentryValues="@array/wifi_frequency_band_values" />
+
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="install_credentials"
+            aurora:auroratitle="@string/wifi_install_credentials"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="wifi_direct"
+            aurora:auroratitle="@string/wifi_menu_p2p"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="wps_push_button"
+            aurora:auroratitle="@string/wifi_menu_wps_pbc"
+            aurora:aurorapersistent="false" />
+
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="wps_pin_entry"
+            aurora:auroratitle="@string/wifi_menu_wps_pin"
+            aurora:aurorapersistent="false" />
+
+   <!--  aurora:auroralayout="@layout/mac_preference" -->
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="mac_address"
+            aurora:auroratitle="@string/wifi_advanced_mac_address_title"
+            aurora:aurorapersistent="false"
+            aurora:auroralayout="@layout/mac_preference" />
+
+    <aurora.preference.AuroraPreference
+            aurora:aurorakey="current_ip_address"
+            aurora:auroratitle="@string/wifi_advanced_ip_address_title"
+            aurora:auroralayout="@layout/wifi_advance_layout" />
+
+</aurora.preference.AuroraPreferenceScreen>   

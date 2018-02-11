@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="6.7dp"
+    android:height="8dp"
+    android:viewportWidth="20"
+    android:viewportHeight="24">
+
+    <path
+        android:name="XMLID_712_"
+        android:fillColor="@color/incoming_sim_color"
+        android:pathData="@string/incoming_sim_1_path" />
+</vector>

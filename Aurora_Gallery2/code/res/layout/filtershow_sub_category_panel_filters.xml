@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- //Aurora <SQF> <2014-6-4>  for NEW_UI begin -->
+<!-- ORIGINALLY: -->
+
+<!-- android:background="@color/filtershow_categoryview_background" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="76.5dp"
+			  android:background="#7f000000">
+
+    <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+        <!-- android:layout_height="@dimen/category_panel_height" -->
+        <com.android.gallery3d.filtershow.category.CategoryTrack
+                android:id="@+id/sub_category_listItems"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                custom:iconSize="@dimen/category_panel_icon_size"
+                android:divider="@android:color/transparent"
+                android:dividerPadding="8dip"
+                >
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_normal"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="9.5dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_normal"
+                	/>
+             
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_reversal"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_reversal"
+                	/>
+             
+             
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_crayon"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_crayon"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_fleeting_time"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_fleeting_time"
+                	/>
+             
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_cosmetology_backlight"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_cosmetology_backlight"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_japan_backlight"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_japan_backlight"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_cold_lomo"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_cold_lomo"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_sunset"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_sunset"
+                	/>
+			<com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_softpink"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_marginRight="9.5dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_softpink"
+                	/>
+			
+			
+			
+			
+			<!--these filter effects below work properly,  but not used currently -->
+			<!-- 
+			<com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_warm_lomo"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_warm_lomo"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_reflection"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_reflection"
+                	/>
+             <com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_light_beam"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_light_beam"
+                	/>
+			<com.android.gallery3d.filtershow.category.AuroraEffectView
+                 	android:id="@+id/sub_category_filters_snowflakes"
+					android:layout_width="48.5dp"
+                	android:layout_height="match_parent"
+                	android:layout_marginLeft="10dp"
+                	android:layout_marginRight="9.5dp"
+                	android:layout_gravity="center_vertical"
+                	custom:text="@string/aurora_effects_snowflakes"
+                	/>
+			-->
+			
+        </com.android.gallery3d.filtershow.category.CategoryTrack>
+
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+        android:id="@+id/progress_normal_text_button"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:text="@string/item_download"
+         />
+
+    <Button
+        android:id="@+id/progress_apply_text_button"
+         android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center" 
+        android:text="@string/item_apply"
+        android:visibility="gone"
+        />
+
+    <FrameLayout
+        android:id="@+id/progress_downloading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/aurora_progress_downloading" 
+             android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/aurora_progress_pause" 
+             android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/aurora_progress_downloaded" 
+             android:visibility="gone"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/aurora_progress_refresh" 
+             android:visibility="gone"
+            />
+
+        <aurora.widget.ProgressView
+            android:id="@+id/progress_pro_downloading"
+            android:layout_width="22dp"
+            android:layout_height="22dp" 
+             android:visibility="gone"
+            />
+    </FrameLayout>
+
+</merge>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.android.contacts.editor.GnRingtoneEditorView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_editor_item_minheight"
+    android:orientation="vertical">
+
+    <FrameLayout
+	    android:layout_width="0dip"
+	    android:layout_height="0dip"
+	    android:paddingLeft="@dimen/gn_contact_list_item_left_margin"
+	    android:paddingRight="@dimen/gn_contact_list_item_right_margin"
+	    android:focusable="false" >
+	    <TextView
+	        android:id="@+id/kind_title"
+	        style="@style/ContactListSeparatorTextViewStyle"
+	        android:text="@string/gn_ringtone_label"
+	        android:background="@null"
+	        android:singleLine="true"
+            android:ellipsize="end"
+	        android:paddingLeft="@dimen/gn_contact_list_item_headertext_left_margin"
+	        android:paddingRight="@dimen/gn_contact_list_item_headertext_left_margin" />
+	</FrameLayout>
+	
+    <FrameLayout 
+        android:id="@+id/ringtone_list_bg"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/aurora_kind_view_bg" >
+		    
+	        <TextView
+			    style="@style/editor_spinner_text_style"
+			    android:layout_width="@dimen/aurora_editor_type_label_width"
+			    android:layout_height="@dimen/aurora_editor_item_minheight"
+			    android:paddingLeft="@dimen/aurora_editor_item_padding_left"
+			    android:paddingRight="@dimen/aurora_editor_item_padding_left"
+			    android:singleLine="true"
+			    android:ellipsize="end"
+			    android:text="@string/gn_ringtone_label" />
+	
+	        <aurora.widget.AuroraButton
+		        android:id="@+id/ringtone_list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"		        
+		        android:drawableRight="@drawable/aurora_ic_arrow_right"
+		        android:minHeight="@dimen/editor_min_line_item_height"
+		        android:gravity="left|center_vertical"
+		        android:background="@null"
+		        android:paddingLeft="16dip"
+		        android:paddingRight="15dip"
+		        android:singleLine="true"
+		        android:focusable="true"
+		        android:clickable="false"
+		        android:textColor="@color/aurora_add_button_text_color"
+		        android:textSize="@dimen/aurora_editor_field_text_size"
+		        android:text="@string/gnDefaultLabel" />
+	    </LinearLayout>
+	</FrameLayout>
+
+</com.android.contacts.editor.GnRingtoneEditorView>

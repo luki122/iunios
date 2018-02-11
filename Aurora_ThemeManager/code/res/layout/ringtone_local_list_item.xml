@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="60dp"
+    android:minHeight="60dp" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-1dp"
+        android:id="@+id/linear">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ringtone_name"
+            android:textColor="@color/local_theme_item_name_title_color"
+            android:textSize="14sp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ringtone_duration"
+            android:textColor="#99414142"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_item_down_btn_height"
+        android:layout_gravity="center"
+        android:background="@drawable/button_download_apply"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/item_apply"
+        android:textColor="?attr/progressBtnMainColor"
+        android:textSize="@dimen/theme_list_item_download_btn_textsize" />
+    
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_alignStart="@id/linear"
+        android:layout_height="0.7dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/listDivider" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/scan_bt"
+        android:title="@string/bluetooth_search_for_devices"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/rename_bt"
+        android:title="@string/bluetooth_rename_device"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/received_files_bt"
+        android:title="@string/bluetooth_show_received_files"
+        android:showAsAction="never" />
+</menu>

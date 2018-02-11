@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<views.PinchRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+    <View
+        android:id="@+id/navigationbar_bg" 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_view_marginbottom"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"/>
+        
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_above="@id/navigationbar_bg">
+    	
+	    <aurora.widget.AuroraActionBar
+	        android:id="@+id/bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="53dp"
+	        android:gravity="center_vertical"
+	        />
+	    <aurora.widget.AuroraListView
+	        android:id="@+id/mAuroraListView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/bar"
+	        android:scrollbars="none" 
+	        android:divider="@android:color/transparent"
+	        android:fadingEdge="none"
+	        android:cacheColorHint="#00000000"
+	        android:overScrollMode="never"
+	        />
+	
+	    <views.CircleImageView
+	        android:id="@+id/cv_big_circle"
+	        android:layout_width="@dimen/citylist_item_icon_width"
+	        android:layout_height="@dimen/citylist_item_icon_width"
+	        android:src="@drawable/sunny_morning_thumb"
+	        android:visibility="invisible"
+	         />
+    </RelativeLayout>
+    
+</views.PinchRelativeLayout>

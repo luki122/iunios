@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-4 added for GIUI4.0 start
+ -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+   <aurora.widget.AuroraExpandableListView
+        android:id="@+id/group_expandable_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:drawSelectorOnTop="false"
+        android:scrollbarStyle="insideOverlay" />
+<!-- 
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/list"
+        android:visibility="gone">
+
+       <aurora.widget.AuroraButton android:id="@+id/sel_all_button"
+               android:layout_gravity="center_vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/select_all"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+       <aurora.widget.AuroraButton android:id="@+id/done_button"
+               android:layout_gravity="center_vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/gn_selected"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+      <aurora.widget.AuroraButton android:id="@+id/cancel_button"
+                android:layout_gravity="center_vertical"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.0"
+               android:text="@string/cancel"
+               android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+ -->
+    <LinearLayout
+        android:id="@+id/gn_group_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/gn_group_empty_text"
+            android:text="@string/group_list_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="77dip"
+            android:textColor="@color/gn_empty_text_color"
+            android:textSize="24sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+</LinearLayout>

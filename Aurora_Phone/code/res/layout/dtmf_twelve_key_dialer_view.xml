@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Onscreen in-call DTMF dialpad.  This element contains the grid of
+     DTMF buttons (dialpad.xml) along with a TextView showing
+     the digits you've typed.
+
+     When the user presses the "Dialpad" button, this UI appears in the
+     upper part of the in-call screen, covering up the "call card" area.
+     The regular in-call controls (i.e. the InCallTouchUi widget) are
+     still visible at the lower part of the screen.
+
+     This layout is inflated in place of dtmf_twelve_key_dialer_stub
+     in incall_touch_ui.xml. -->
+<com.android.phone.DTMFTwelveKeyDialerView
+    xmlns:android="http://schemas.android.com/apk/res/android"     
+    android:id="@+id/dtmf_twelve_key_dialer_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"    
+    android:visibility="gone"
+    >
+    
+         <RelativeLayout
+            android:id="@+id/bottomButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"    >
+             
+                <TextView
+			        android:id="@+id/dtmf_elapsedTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="34dp"
+			         android:layout_marginLeft="16dp"
+			         android:layout_alignParentLeft="true"
+			        android:singleLine="true"
+			         android:includeFontPadding="false"
+			        android:text="@string/onscreenShowDialpadText"
+			        android:textColor="#8d8d8e"
+			        android:textSize="@dimen/dtmf_time_size" />
+                
+                   <TextView
+			        android:id="@+id/dtmf_hold"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginTop="34dp"
+			         android:layout_marginRight="16dp"
+			        android:singleLine="true"
+			        android:includeFontPadding="false"
+			        android:text="@string/onHolding"
+			        android:textColor="#8d8d8e"
+			        android:textSize="@dimen/dtmf_time_size" />
+             </RelativeLayout>
+
+    <!-- Display of the digits you've typed so far.
+         This widget appears completely non-interactive to the user: you
+         can't edit or "hit backspace" since these are DTMF tones you've
+         already sent over the network.  But it's still an EditText rather
+         than a TextView because it needs to receive key events from a
+         hard keyboard, if present (see mDialerKeyListener). -->
+    <EditText
+        android:id="@+id/dtmfDialerField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/aurora_dtmf_edittext_margin_top"
+        android:layout_marginLeft="@dimen/dtmf_dialpad_text_margin_left"
+        android:layout_marginRight="@dimen/dtmf_dialpad_text_margin_right"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        android:scrollHorizontally="true"
+        android:textSize="@dimen/dtmf_dialpad_text_size"
+        android:gravity="center"
+        android:freezesText="true"
+        android:background="@null"
+        android:textColor="@color/aurora_button_color_v2"
+        android:focusableInTouchMode="false"
+        android:clickable="false"/>
+<View android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="1"/>
+
+    <!-- The dialpad itself -->
+    <include layout="@layout/dialpad" />
+    
+    <ImageView
+        android:id="@+id/dtmfdialpadButton"
+        android:layout_width="56.5dp"
+        android:layout_height="56.5dp"    
+        android:layout_gravity="bottom|center_horizontal"
+        android:scaleType="center"
+        android:layout_marginBottom="@dimen/aurora_dtmf_dialpad_margin_bottom"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/aurora_keypad_icon" />
+    
+    
+
+</com.android.phone.DTMFTwelveKeyDialerView>

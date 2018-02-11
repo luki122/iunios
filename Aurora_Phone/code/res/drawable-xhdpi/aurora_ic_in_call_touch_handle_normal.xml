@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20.7dp"
+    android:height="20.7dp"
+    android:viewportWidth="62"
+    android:viewportHeight="62">
+
+    <path
+        android:name="XMLID_11_"
+        android:fillColor="@color/aurora_white_color"
+        android:pathData="@string/aurora_ic_in_call_touch_handle_normal_path" />
+</vector>

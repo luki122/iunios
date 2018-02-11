@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/aurora_cinema_box_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/aurora_nav_tab_title" />
+
+    <ImageView
+        android:id="@+id/aurora_cinema_box_tab_mainwin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/aurora_nav_tab_content"
+        android:scaleType="matrix" />
+
+</RelativeLayout>

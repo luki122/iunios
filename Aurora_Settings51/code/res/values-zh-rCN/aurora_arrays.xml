@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aurora_wifi_sleep_policy_entries">
+        <item>始终连接</item>
+        <item>充电时保持连接</item>
+        <item>休眠时断开（会增加数据流量）</item>
+    </string-array>
+
+    <string-array name="aurora_wifi_sleep_policy_entries_wifi_only">
+        <item>始终连接</item>
+        <item>充电时保持连接</item>
+        <item>休眠时断开</item>
+    </string-array>
+<string-array name="aurora_screen_timeout_entries">
+        <item>15 秒</item>
+        <item>30 秒</item>
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>30 分钟</item>
+    </string-array>
+
+    <string-array name="aurora_screen_timeout_values" translatable="false">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+
+    <string-array name="aurora_screen_color_mode_entries">
+        <item>暖色</item>
+        <item>中性</item>
+        <item>冷色</item>
+    </string-array>
+
+    <string-array name="aurora_screen_color_mode_values" translatable="false">
+        <item>0</item>
+        <item>7</item>
+        <item>2</item>
+    </string-array>
+  </resources>

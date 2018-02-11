@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    xmlns:nanlus="http://schemas.android.com/apk/res/com.android.deskclock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="fill"
+    android:orientation="vertical" >
+
+    <!-- android:background="@drawable/stopwatch_bg" -->
+
+
+    <!-- Gionee <baorui><2013-04-25> modify for CR00799490 begin -->
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    -->
+
+    <FrameLayout
+        android:id="@+id/aurora_chronometer_container"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <!-- Gionee <baorui><2013-04-25> modify for CR00799490 end -->
+
+
+        <!-- Gionee <baorui><2013-04-25> modify for CR00799490 begin -->
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="@string/timer_title"
+                android:textColor="@color/gn_white"
+                android:textSize="@dimen/aurora_clock_actionbar_textsize"
+                   />
+            <!-- android:textSize="@com.aurora:dimen/aurora_action_bar_text_size" -->
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?com.aurora:attr/actionBarRightWidgetBackground"
+                android:scaleType="center"
+                android:src="@drawable/aurora_ringer_picker" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/chronomete_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/iv_set_margin_size"
+                android:singleLine="true"
+                android:textColor="@color/aurora_chronometer_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- Gionee <baorui><2013-04-25> modify for CR00799490 end -->
+
+        <LinearLayout
+            android:id="@+id/aurora_time_picker_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <aurora.widget.AuroraNumberPicker
+                android:id="@+id/aurora_time_picker_hour"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/aurora_chronometer_color"
+                nanlus:big_radius="289" />
+
+            <aurora.widget.AuroraNumberPicker
+                android:id="@+id/aurora_time_picker_minute"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="37dp" />
+
+            <aurora.widget.AuroraNumberPicker
+                android:id="@+id/aurora_time_picker_second"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="37dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/aurora_chronometer_Animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <com.aurora.AnimationView.AuroraHourGlassView
+                android:id="@+id/guangquan1"
+                android:layout_width="133dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="81dp" />
+
+            <ImageView
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="81dp"
+                android:background="@drawable/water" />
+
+            <FrameLayout
+                android:id="@+id/chronometer_time_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guangquan1"
+                android:layout_marginTop="33dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="95.5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/chronometer_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/aurora_chronometer_color"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:id="@+id/chronometer_time_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:paddingLeft="117.3dp"
+                    android:textColor="@color/aurora_chronometer_color"
+                    android:textSize="42sp" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/chronometer_afterstart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aurora_chronometer_container"
+        android:gravity="center"
+        android:splitMotionEvents="false" >
+
+        <!--
+        <Button
+            android:id="@+id/chronometer_start_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnStart"
+            android:textColor="@drawable/aurora_btn_text_color"
+            android:background="@drawable/aurora_round_button" 
+           />
+
+        <Button
+            android:id="@+id/chronometer_cancel_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnReset"
+            android:textColor="@drawable/aurora_btn_text_color"
+            android:background="@drawable/aurora_round_button"
+              android:layout_marginRight="@dimen/aurora_btn_margin" 
+         
+             />
+        
+        <Button
+            android:id="@+id/chronometer_restart_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnContinue"
+                     android:textColor="@drawable/aurora_btn_text_color"
+            android:visibility="gone"
+            android:clickable="true"
+               android:background="@drawable/aurora_round_button" 
+          />
+
+        <Button
+            android:id="@+id/chronometer_pause_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnPause"
+                     android:textColor="@drawable/aurora_btn_text_color"
+            android:visibility="gone"
+            android:clickable="true"
+               android:background="@drawable/aurora_round_button" 
+                />
+ 
+         <Button
+            android:id="@+id/chronometer_end_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnEnd"
+            android:textColor="@drawable/aurora_btn_text_color"
+            android:background="@drawable/aurora_round_button" 
+           />
+        -->
+
+        <RelativeLayout
+            android:id="@+id/chronometer_start_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/chronometer_start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aurora_round_button"
+                android:contentDescription="@string/btnStart"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/chronometer_start_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/btnStart"
+                android:textColor="@drawable/aurora_btn_text_color"
+                android:textSize="@dimen/round_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chronometer_cancel_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/chronometer_cancel_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="76.3dp"
+                android:background="@drawable/aurora_round_button"
+                android:contentDescription="@string/btnReset" />
+
+            <TextView
+                android:id="@+id/chronometer_cancel_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chronometer_cancel_btn"
+                android:layout_alignLeft="@id/chronometer_cancel_btn"
+                android:layout_alignRight="@id/chronometer_cancel_btn"
+                android:layout_alignTop="@id/chronometer_cancel_btn"
+                android:gravity="center"
+                android:text="@string/btnReset"
+                android:textColor="@drawable/aurora_btn_text_color"
+                android:textSize="@dimen/round_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chronometer_restart_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/chronometer_restart_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="76.3dp"
+                android:background="@drawable/aurora_round_button"
+                android:clickable="true"
+                android:contentDescription="@string/btnContinue" />
+
+            <TextView
+                android:id="@+id/chronometer_restart_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chronometer_restart_btn"
+                android:layout_alignLeft="@id/chronometer_restart_btn"
+                android:layout_alignRight="@id/chronometer_restart_btn"
+                android:layout_alignTop="@id/chronometer_restart_btn"
+                android:gravity="center"
+                android:text="@string/btnContinue"
+                android:textColor="@drawable/aurora_btn_text_color"
+                android:textSize="@dimen/round_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chronometer_pause_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/chronometer_pause_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="76.3dp"
+                android:background="@drawable/aurora_round_button"
+                android:clickable="true"
+                android:contentDescription="@string/btnPause" />
+
+            <TextView
+                android:id="@+id/chronometer_pause_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chronometer_pause_btn"
+                android:layout_alignLeft="@id/chronometer_pause_btn"
+                android:layout_alignRight="@id/chronometer_pause_btn"
+                android:layout_alignTop="@id/chronometer_pause_btn"
+                android:gravity="center"
+                android:text="@string/btnPause"
+                android:textColor="@drawable/aurora_btn_text_color"
+                android:textSize="@dimen/round_button_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chronometer_end_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/chronometer_end_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/aurora_round_button"
+                android:contentDescription="@string/btnEnd"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/chronometer_end_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/btnEnd"
+                android:textColor="@drawable/aurora_btn_text_color"
+                android:textSize="@dimen/round_button_text_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/chronometer_text_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </RelativeLayout>
+
+</RelativeLayout>

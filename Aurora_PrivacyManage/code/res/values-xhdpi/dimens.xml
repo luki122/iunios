@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="notification_text_title">16sp</dimen>
+    <dimen name="notification_text_content">14sp</dimen>
+
+</resources>

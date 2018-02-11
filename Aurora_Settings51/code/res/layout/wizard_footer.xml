@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/wizard_footer_bg"
+    android:orientation="vertical"
+    android:paddingLeft="41dp"
+    android:paddingRight="41dp">
+
+    <LinearLayout
+        android:id="@+id/iv_back"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wizard_arrow_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="@string/setup_wizard_next_button_label"
+            android:textColor="@color/skip_text_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wizard_arrow_front" />
+    </LinearLayout>
+
+</RelativeLayout>

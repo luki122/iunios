@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**gionee gaoj 2012-4-24 added for GIUI4.0 start
+ -->
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conversion_list_screen"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/gn_draft_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            
+            <TextView
+                android:id="@+id/gn_draft"
+                android:text="@string/gn_no_draft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="77dip"
+                android:textColor="@color/gn_empty_text_color"
+                android:textSize="24sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+        </LinearLayout>
+        <!-- gionee zhouyj 2012-05-17 modify for CR00601094 start -->
+        <aurora.widget.AuroraListView
+            android:id="@android:id/list"
+            style="?android:attr/listViewWhiteStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:drawSelectorOnTop="false"
+            android:scrollbarStyle="insideOverlay"
+            android:fadingEdgeLength="16dip"
+            android:fastScrollEnabled="true" />
+        <!-- gionee zhouyj 2012-05-17 modify for CR00601094 end -->
+    </FrameLayout>
+</RelativeLayout>

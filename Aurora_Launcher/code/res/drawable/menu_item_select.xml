@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/menu_focus_down" android:state_pressed="true"/>
+    <item android:drawable="@color/menu_focus_up" android:state_focused="true"/>
+    <item android:drawable="@color/menu_focus_normal"/>
+</selector> -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+  android:color="#14000000">
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="#FFFFFF" />
+    </shape>
+  </item>
+</ripple>

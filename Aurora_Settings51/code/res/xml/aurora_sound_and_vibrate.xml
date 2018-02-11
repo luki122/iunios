@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <!-- <aurora.preference.AuroraSwitchPreference -->
+    <!--
+      	<aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="sound_list"
+        aurora:auroratitle="@string/all_volume_title"/>
+    -->
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="other_sounds"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/all_volume_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.aurora.audioprofile.VolumeSetActivity"
+            android:targetPackage="com.android.settings" />
+    </aurora.preference.AuroraPreference>
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="mute_swich"
+        aurora:auroratitle="@string/silent_settings_title" />
+
+    <!--
+     <gn.com.android.audioprofile.AuroraVolumePreference  
+ 		aurora:aurorakey="volum_notify_seekbar"    
+        aurora:auroratitle="@string/volume_notification_description"
+      
+        />
+     <gn.com.android.audioprofile.AuroraVolumePreference  
+ 		aurora:aurorakey="volum_media_seekbar"    
+        aurora:auroratitle="@string/media_volume_title"
+     
+        />
+     <gn.com.android.audioprofile.AuroraVolumePreference  
+ 		aurora:aurorakey="volum_larm_seekbar"    
+        aurora:auroratitle="@string/alarm_title"        
+        />
+    -->
+
+
+    <!--
+      gn.com.android.audioprofile.DefaultRingtonePreference 
+      aurora:auroradialogTitle="测试"
+            aurora:auroraringtoneType="ringtone"
+    -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="ringtone_list"
+        aurora:auroratitle="@string/sound_category_calls_title" >
+        <com.aurora.audioprofile.AuroraRingtonePickerPreference
+            aurora:aurorakey="phone_ringtone"
+            aurora:aurorapersistent="false"
+            aurora:auroraringtoneType="ringtone"
+            aurora:auroratitle="@string/voice_call_title" />
+        <!--
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="mms_ringtone"
+            aurora:auroratitle="@string/gn_mms_ringtone"
+            
+            aurora:aurorapersistent="false"
+            />
+        -->
+        <com.aurora.audioprofile.AuroraRingtonePickerPreference
+            aurora:aurorakey="notifications_ringtone"
+            aurora:aurorapersistent="false"
+            aurora:auroraringtoneType="notification"
+            aurora:auroratitle="@string/notification_sound_title" />
+        <com.aurora.audioprofile.AuroraRingtonePickerPreference
+            aurora:aurorakey="sms_ringtone"
+            aurora:aurorapersistent="false"
+            aurora:auroraringtoneType="notification"
+            aurora:auroratitle="@string/sms_sound_title" />
+        <!--
+        <gn.com.android.audioprofile.AuroraRingtonePickerPreference
+          aurora:aurorakey="alarm_ringtone" 
+          aurora:auroratitle="@string/alarm_ring_title"
+          aurora:auroraringtoneType="alarm"
+          aurora:aurorapersistent="false"/>
+        -->
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <!--
+          <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="feedback_list"
+        aurora:auroratitle="@string/sound_and_system_feedback_category_title"/>
+    -->
+    <!--
+     <gn.com.android.audioprofile.AuroraDtmfSwitchPreference 
+            aurora:aurorakey="dtmf_tone" 
+            aurora:auroratitle="@string/dtmf_tone_enable_title"/>
+        <gn.com.android.audioprofile.AuroraSoundEffectsSwitchPreference 
+            aurora:aurorakey="sound_effects" 
+            aurora:auroratitle="@string/sound_effects_enable_title"/>
+        <gn.com.android.audioprofile.AuroraLockScreenSwitchPreference 
+            aurora:aurorakey="lock_sounds"
+            aurora:auroratitle="@string/lock_sounds_enable_title"/>
+        <gn.com.android.audioprofile.AuroraHapticFeedbackSwitchPreference 
+            aurora:aurorakey="haptic_feedback"
+            aurora:auroratitle="@string/touch_vibrate_feedback_title"/>
+    -->
+    <!--
+           <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="enable_dts"
+        aurora:auroratitle="@string/dts_pref_title" />
+    -->
+    <!--
+     	<aurora.preference.AuroraSwitchPreference 
+            aurora:aurorakey= "dtmf_tone" 
+            aurora:auroratitle= "@string/dtmf_tone_enable_title"
+            />
+    -->
+    <!--
+     	<aurora.preference.AuroraSwitchPreference 
+            aurora:aurorakey= "sound_effects"
+            aurora:auroratitle= "@string/sound_effects_enable_title"
+            />
+    -->
+    <!--
+     	<aurora.preference.AuroraSwitchPreference 
+            aurora:aurorakey= "lock_sounds"
+            aurora:auroratitle= "@string/lock_sounds_enable_title"
+            />
+    -->
+
+    <aurora.preference.AuroraPreference
+        aurora:aurorakey="other_sounds"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/other_sound_settings" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.aurora.audioprofile.OtherSoundActivity"
+            android:targetPackage="com.android.settings" />
+    </aurora.preference.AuroraPreference>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="vibrate_list"
+        aurora:auroratitle="@string/vibrate_title" />
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="vibrat_swich"
+        aurora:auroratitle="@string/vibrate_settings_title" />
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="haptic_feedback"
+        aurora:auroratitle="@string/touch_vibrate_feedback_title" />
+
+</aurora.preference.AuroraPreferenceScreen>

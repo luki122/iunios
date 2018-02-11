@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc.
+All Rights Reserved. -->
+<resources>
+    <dimen name="message_item_text_padding_left_right">12dip</dimen>
+    <dimen name="message_item_text_padding_top">5dip</dimen>
+
+    <dimen name="avatar_width_height">54dip</dimen>
+
+    <dimen name="input_text_height">48dip</dimen>
+    <dimen name="input_text_height_adjusted">8dip</dimen>
+    
+    <!--gionee gaoj 2013-3-11 added for CR00782858 start -->
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_bottom">6dip</dimen>
+    <!--gionee gaoj 2013-3-11 added for CR00782858 end -->
+    <dimen name="aurora_send_huge_leftpadding">10dip</dimen>
+    <dimen name="aurora_send_huge_rightpadding">4.25dip</dimen>
+    <dimen name="aurora_send_small_leftpadding">13dip</dimen>
+    <dimen name="aurora_send_small_rightpadding">7dip</dimen>
+    <dimen name="aurora_message_content_margin_top">16dip</dimen>
+    <dimen name="aurora_message_content_margin_bottom">13.6dip</dimen>
+    <!-- Aurora xuyong 2015-01-31 added for aurora's new feature start -->
+    <dimen name="aurora_ipop_bt_width">62dip</dimen>
+    <!-- Aurora xuyong 2015-01-31 added for aurora's new feature end -->
+    <dimen name="aurora_cl_top_padding">6.5dip</dimen>
+    <dimen name="aurora_cl_bottom_padding">10.1dip</dimen>
+    <dimen name="aurora_cl_batch_bottom_padding">26.1dip</dimen>
+    <dimen name="aurora_msg_left_margin">9dip</dimen>
+    <dimen name="aurora_attach_item_height">186dip</dimen>
+    <dimen name="aurora_attach_item_width">150dip</dimen>
+    <!-- Aurora xuyong 2015-12-11 added for N1 CTS test start -->
+    <dimen name="sys_auth_dlg_content_padding_bottom">15dp</dimen>
+    <dimen name="sys_auth_dlg_content_padding_top">18dp</dimen>
+    <dimen name="sys_auth_dlg_content_msg_linespacingextra">5dp</dimen>
+    <dimen name="sys_auth_dlg_checkbox_margin_top">15dp</dimen>
+    <!-- Aurora xuyong 2015-12-11 added for N1 CTS test end -->
+    <!-- aurora rom 2.0 new feature -->
+    <dimen name="aurora_fa_lmr">16dip</dimen>
+    <dimen name="aurora_fa_lmb">16dip</dimen>
+    <!-- Aurora xuyong 2015-12-08 added for aurora 2.0 new featture -->
+    <dimen name="aurora_list_horizontal_padding">16dip</dimen>
+    <dimen name="aurora_list_horizontal_margin">56dip</dimen>
+    <dimen name="aurora_personal_list_vertical_padding">16dip</dimen>
+    <dimen name="aurora_notification_list_vertical_padding">20dip</dimen>
+    <dimen name="aurora_conv_list_tag_text_size">10sp</dimen>
+    <dimen name="aurora_conv_list_snippet_text_size">14sp</dimen>
+    <dimen name="aurora_conv_list_snippet_linespace">8dp</dimen>
+    <dimen name="aurora_conv_list_title_text_size">16sp</dimen>
+    <dimen name="aurora_conv_personal_list_height">68dip</dimen>
+    <dimen name="aurora_conv_cb_margin">8dip</dimen>
+    <!-- Aurora xuyong 2015-12-11 added for aurora 2.0 new feature -->
+    <dimen name="aurora_conv_notification_padding">8dip</dimen>
+    <dimen name="aurora_conv_notification_title_height">48dip</dimen>
+    <dimen name="aurora_conv_notification_text_top_margin">20dip</dimen>
+    <dimen name="aurora_conv_notification_text_bottom_margin">6dip</dimen>
+    <dimen name="aurora_personal_avatar_size_length">40dip</dimen>
+    <dimen name="aurora_notification_avatar_size_length">32dip</dimen>
+    <dimen name="aurora_avatar_circle_depth">1dip</dimen>
+
+    <dimen name="aurora_notification_conv_divider_width">312dip</dimen>
+    <dimen name="aurora_personal_conv_divider_width">288dip</dimen>
+    <dimen name="aurora_conv_divider_height">1px</dimen>
+
+    <dimen name="aurora_widget_edit_bt_horizontal_margin">5dip</dimen>
+
+    <dimen name="aurora_widget_conv_title_text_size">13sp</dimen>
+    <dimen name="aurora_widget_conv_snippet_text_size">12sp</dimen>
+    <dimen name="aurora_widget_conv_tag_text_size">9sp</dimen>
+    <dimen name="aurora_widget_gradient_height">35dip</dimen>
+    <dimen name="aurora_widget_msg_edit_bt_height">33dip</dimen>
+    <dimen name="aurora_widget_tip_text_size">12sp</dimen>
+    <dimen name="aurora_widget_no_conv_tip_top_padding">116dp</dimen>
+
+    <dimen name="aurora_cmp_bt_width">64dp</dimen>
+    <dimen name="aurora_multi_msg_content_width">208dp</dimen>
+    <dimen name="aurora_msg_content_width">238dp</dimen>
+    <dimen name="aurora_cmp_bt_height">48dp</dimen>
+    <dimen name="aurora_sim_indi_size">30dp</dimen>
+    <dimen name="aurora_msg_content_margin_bottom">6dip</dimen>
+    <dimen name="aurora_msg_content_margin_top">6dip</dimen>
+    <dimen name="aurora_msg_divider_margin_top">5dip</dimen>
+    <dimen name="aurora_sim_indi_divider_margin_top">3dip</dimen>
+    <dimen name="aurora_send_sim_indi_size">44dip</dimen>
+
+    <dimen name="aurora_fold_indi_text_size">12sp</dimen>
+    <dimen name="aurora_msg_text_size">14sp</dimen>
+    <dimen name="aurora_msg_bg_radius">5dp</dimen>
+
+    <dimen name="aurora_checkbox_size">18dip</dimen>
+    <dimen name="aurora_attach_thumbnail_size">88dip</dimen>
+
+    <dimen name="aurora_mm_info_txt_size">14sp</dimen>
+
+    <dimen name="aurora_msg_time_txt_size">12sp</dimen>
+    <dimen name="aurora_msg_time_height">30dip</dimen>
+    <dimen name="aurora_msg_time_divider_size">48dip</dimen>
+
+    <dimen name="aurora_slide_index_txt_size">20sp</dimen>
+
+    <dimen name="aurora_attach_del_bt_size">18dip</dimen>
+
+    <dimen name="aurora_no_result_tip_top_margin">168dip</dimen>
+    <dimen name="aurora_no_result_tip_gap_size">12dip</dimen>
+    <dimen name="aurora_no_result_tip_txt_size">14dip</dimen>
+    <dimen name="aurora_title_name_txt_size">18sp</dimen>
+    <dimen name="aurora_title_number_txt_size">12sp</dimen>
+    <dimen name="aurora_title_layout_height">54dip</dimen>
+    <dimen name="aurora_xy_showmenu_width">52dp</dimen>
+    <dimen name="aurora_xy_showmenu_divider_margin">11.95dp</dimen>
+
+    <dimen name="aurora_xy_switch_right_margin">32dip</dimen>
+    <dimen name="aurora_xy_switch_top_margin">0.5dip</dimen>
+
+    <dimen name="aurora_slot_indi_margin">4dip</dimen>
+    <dimen name="aurora_slot_indi_padding">9dip</dimen>
+    <dimen name="aurora_slot_indi_bg_radius">2dp</dimen>
+
+    <dimen name="aurora_permission_dialog_margin">13dip</dimen>
+
+    <dimen name="aurora_identify_bt_radius">2dp</dimen>
+
+</resources>

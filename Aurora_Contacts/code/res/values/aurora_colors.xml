@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="aurora_empty_list_text_color">#0ebc7d</color>
+    <color name="aurora_editor_title_text_color">#414142</color>
+    <color name="aurora_editor_subtitle_text_color">#4D000000</color>
+    <color name="aurora_editor_subtitle_text_color_disable">#1E000000</color>
+    <color name="aurora_editor_item_gap_color">#1A000000</color>
+    <color name="aurora_contact_list_header_text_color">#8d8d8e</color>
+    <color name="aurora_group_entrance_focus_color">#3da0fd</color>
+
+    <color name="aurora_group_edit_ringtone_text_color">#7b7b7b</color>
+    
+    <color name="aurora_import_export_type_text_color">#14cb9b</color>
+    <color name="aurora_import_export_title_text_color">#000000</color>
+    <color name="aurora_import_export_subtitle_text_color">#7b7b7b</color>
+
+    <color name="aurora_list_view_delete_bg_color">#ff4444</color>
+    <color name="aurora_list_view_delete_text_color">#ffffff</color>
+
+    <color name="aurora_contact_alphabet_letter_color">#808080</color>
+
+    <!--aurora change liguangyu 20131113 start -->
+    <color name="aurora_empty_contact_text_color">#cccccc</color>
+    <color name="aurora_empty_dialpad_text_color">#cccccc</color>
+    <!--aurora change liguangyu 20131113 end -->
+    <color name="aurora_hightlight_contact_text_color">#f4752d</color>
+    <color name="aurora_editor_hint_text_color">#cdcdcd</color>
+    
+    <color name="aurora_dialpad_ontouch_color">#05a77d</color>    
+
+    <!-- aurora change zhouxiaobing 20130913 -->
+    <color name="aurora_dialpad_bg">#FF14cb9b</color>
+    <color name="aurora_dialpad_text_color">#FFFFFFFF</color>
+    <color name="aurora_dialpad_text_color_high_light">#80cdb9</color>
+    <drawable name="aurora_tab_sep">#FF272928</drawable>
+    <color name="aurora_editor_disable_click_color">#6b6b6b</color>
+    
+    <!--aurora add liguangyu 20131113 start -->
+    <color name="aurora_dialer_search_text_color">#B2383838</color> 
+    <!--aurora add liguangyu 20131113 end -->
+     
+    <!--aurora add liguangyu 20131113 start -->
+    <color name="aurora_seprate_line_color">#ffdddddd</color> 
+    <color name="aurora_seprate_line_color2">#66383838</color> 
+    <!--aurora add liguangyu 20131113 end -->
+    
+    <color name="aurora_calllog_list_text_color_edit_1">#FF8c8c8c</color> 
+    <color name="aurora_calllog_list_text_color_edit_2">#FF383838</color> 
+    <color name="aurora_calllog_list_text_color_edit_3">#FF868686</color> 
+    <color name="aurora_calllog_list_text_color_edit_reject">#b5b5b5</color> 
+
+    <color name="aurora_grouip_list_header_color">#9e9e9e</color>
+
+    <color name="aurora_reject_call_detail_header_bg">#de5b5b</color>
+    <color name="aurora_msim_tw_bg">#ebebeb</color>     
+    <color name="aurora_calllog_divider_color">#e9e9e9</color> 
+    <color name="aurora_calllog_missed_color2">#8d8d8e</color> 
+
+    <color name="aurora_privacy_contact_detail_header_color">#506482</color> 
+    
+    <color name="merge_contacts_finish">#9c9c9c</color>
+    <color name="merge_contacts_text_selected">#ffffff</color>
+    <color name="merge_contacts_text_unselected">#ffffff</color>
+    
+    <color name="detail_name_color">#ffffff</color>
+    <color name="detail_header_color">#14cb9b</color>
+    
+    <color name="aurora_search_matched_highlight">#0ebc7d</color>
+    <color name="aurora_anim_bg">#ffffff</color>
+    
+     <color name="aurora_header_name_bg">#ffffff</color>
+    
+      <!-- Color of the separator between entries in an ExpandingEntryCardView -->
+    <!-- Aurora xuyogn 2016-01-14 modified for aurora 2.0 new feature start -->
+    <color name="expanding_entry_card_item_separator_color">#17000000</color>
+    <!-- Aurora xuyogn 2016-01-14 modified for aurora 2.0 new feature end -->
+
+    <!-- Color of the text on an ExpandingEntryCard button -->
+    <color name="expanding_entry_card_button_text_color">#49aef7</color>
+
+    <!-- Background color for an ExpandingEntryCard -->
+    <color name="expanding_entry_card_background_color">#ffffff</color>
+    
+  <!-- Color of the margin for cards -->
+    <color name="card_margin_color">#f4f4f4</color>
+
+    <color name="call_arrow_green">#2aad6f</color>
+    <color name="call_arrow_red">#ff2e58</color>
+    
+     <color name="quickcontact_name_detail_background">#66000000</color>
+    <color name="quickcontact_entry_sub_header_text_color">#99414142</color>
+    <color name="quickcontact_entry_header_text_color">#FF414142</color>
+    
+    <!--  move by liguangyu -->
+    <color name="yulore_superyellowpage_list_bg">#fafafa</color>
+    
+    <color name="aurora_calllog_missed_color_v2">#f54242</color> 
+    <!-- Aurora xuyong 2016-01-13 added for aurora 2.0 new feature start -->
+    <color name="aurora_person_white_color">#ababab</color>
+    <!-- Aurora xuyong 2016-01-13 added for aurora 2.0 new feature end -->
+</resources>

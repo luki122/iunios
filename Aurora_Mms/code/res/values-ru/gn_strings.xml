@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+ <!-- GIONEE: luoguangming 2012.08.02 modify for "explay translate string CR00651738" begin-->
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 begin -->
+    <!--
+    <string name="gn_export_btn_text">Экспорт в телефон</string>
+    <string name="gn_import_btn_text">Импорт из телефона</string>
+    -->
+    <string name="gn_export_btn_text">Экспорт</string>
+    <string name="gn_import_btn_text">Импорт</string>
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 end -->
+ <!-- GIONEE: luoguangming 2012.08.02 modify for "explay translate string CR00651738"  end -->
+
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 begin -->
+    <string name="gn_chooser_external_sdcard">Карта памяти</string>
+    <string name="gn_chooser_internal_sdcard">Телефон</string>
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 end -->
+ <!-- GIONEE: luoguangming 2012.07.19 modify for "explay translate string CR00651738" begin-->
+    <!-- main tab string -->
+    <string name="tab_message">Сообщения</string>
+    <string name="tab_favorites">Избранные</string>  
+    <string name="tab_recommend">Рекомендованные</string>  
+    <string name="tab_draft">Черновики</string>
+    <string name="gn_no_draft">Нет черновиков</string>
+    <string name="tab_favorites_common_words">Шаблоны</string>
+    <string name="tab_favorites_msg_fav">Избранные</string>  
+    <string name="quick_text_header_text">Добавить шаблон</string>
+    <string name="quick_text_menu_forward">Отправить</string>
+    <string name="quick_text_menu_edit">Изменить</string>
+    <string name="quick_text_menu_delete">Удалить</string>
+    <string name="quick_text_header_text_edit">Изменить шаблон</string>
+    <string name="add_quick_text_cancel">Отмена</string>
+    <string name="delete_quick_text_title">Удалить</string>
+    <string name="delete_quick_text_confirm">Удалить сообщение?</string>
+    <string name="import_export_tip">Экспорт SMS</string>
+    <string name="import_export_next">Далее</string>
+    <string name="gn_sure_export_front">Экспортировать выбранные сообщения в?</string>
+    <string name="gn_sms_exporting">Экспорт SMS</string>
+    <string name="gn_export_success">Выполнено!</string>
+    <string name="gn_import_failed">Ошибка импорта!</string>
+    <string name="gn_search_hint">Поиск сообщений</string>
+    <string name="confirm_delete_all_dratfs">Удалить все черновики?</string>
+    <string name="delete_all_dratfs">Удалить все</string>
+    <string name="cancel_favorite">Удалить из избранных</string>  
+    <string name="gn_new_contact">Новый контакт</string>
+    <string name="gn_send_msg_received">Отправлено</string>
+    <string name="gn_draft_operation">Черновик</string>
+    <string name="gn_draft_operation_reason">Сохранить сообщение в Черновики?</string>
+    <string name="gn_draft_save">Сохр.</string>
+    <string name="gn_menu_edit_msg">Изменить</string>
+    <string name="gn_send_msg_sending">Отправка</string>
+    <string name="gn_pref_title_sms_delivery_reports">Отчет о доставке</string>
+    <string name="gn_pref_title_mms_read_reports">Отчет о прочтении</string>
+    <string name="gn_pref_title_mms_delivery_reports">Отчет о доставке</string>  
+    <string name="gn_select_attachment_contacts">Тел. книга</string>
+    <string name="gn_select_attachment_quick_text">Шаблоны</string>
+    <string name="gn_select_attachment_smiley">Смайлы</string>
+    <string name="gn_select_attachment_subject">Тема</string>
+    <string name="gn_select_attachment_gallery">Изображения</string>
+    <string name="gn_select_attachment_camera">Фотосъемка</string>
+    <string name="gn_select_attachment_video">Видео</string>
+    <string name="gn_select_attachment_record_video">Видеосъемка</string>
+    <string name="gn_select_attachment_sound">Аудио</string>
+    <string name="gn_select_attachment_record_audio">Запись аудио</string>
+    <string name="gn_select_attachment_slideshow">Слайдшоу</string>
+    <string name="gn_no_contacts">Нет контактов</string>
+    <string name="search_bar_hint">Поиск контактов</string>
+    <string name="tab_group_contact">Группы</string>
+    <string name="group_list_empty">Нет групп.</string>
+    <string name="gn_pref_title_other">Другие</string>
+    <string name="gn_pref_title_accessories_signature">Подпись</string>
+    <string name="gn_pref_summary_accessories_signature">Автодобавление подписи</string>
+    <string name="gn_pref_title_edit_accessories_signature">Изменить подпись</string>
+    <string name="gn_pref_summary_edit_accessories_signature">Нажмите для изменения</string>
+    <string name="gn_signature_dlg_title">Изменить подпись</string>
+    <string name="gn_signature_dlg_hint">Введите подпись</string>
+    <string name="gn_card_1_out">SIM1</string>
+    <string name="gn_card_2_out">SIM2</string>
+    <string name="gn_no_recent_contacts">Нет сообщений</string>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783" begin-->
+    <string name="gn_selected">Выбрано</string>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783"   end-->
+    <string name="cancel">Отмена</string>
+    <string name="gn_cancel_all_favorite_cancel_btn">Отмена</string>
+    <string name="gn_mms_pop_setting_title">Всплывающие окна</string>
+    <string name="gn_export_sms_to_sdcard2">Экспорт SMS на телефон</string>
+    <string name="gn_import_sms_from_sdcard"> Импорт SMS из телефона</string>
+    <string name="gn_sure_export">Экспортировать</string>
+    <string name="gn_import_cancel_title">Отмена</string>
+    <string name="lockpassword_cancel_label">Отмена</string>
+    <string name="gn_export_text">Экспорт</string>
+    <string name="gn_import_text">Импорт</string>
+    <string name="gn_sms_importing">Импорт SMS</string>
+    <string name="gn_import_success">Выполнено!</string>
+    <string name="gn_to_hint">Кому</string>
+    <string name="repeat_send_msg">Отправить повторно</string>
+    <string name="tab_recent_contact">Сообщения</string>
+    <string name="gn_draft_unknow_name">Неизвестно</string>
+    <string name="tab_contact">Тел. Книга</string>
+    <string name="recipient_title">Получатели（%1$s） </string>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783" begin-->
+    <string name="gn_last">"Последний "</string>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783"   end-->
+    <string name="gn_import_file">Файл</string>
+    <string name="gn_import_file_no_exists"> не существует!</string>
+    <string name="gn_select_conversation_more">Выбрано %1$s </string>
+    <string name="gn_import_export">Импорт/Экспорт SMS</string>
+    <string name="attachmentpicker">Сохранить вложение</string>
+    <string name="menu_encryption">Блокировка</string>
+    <string-array name="gn_conv_spinner_list">
+        <item >Все</item>
+        <item >Блокировка</item>
+    </string-array>
+    <string name="lockpassword_choose_your_password_header">Введите пароль </string>
+    <string name="lockpassword_continue_label">Далее </string>
+    <string name="lockpassword_password_too_short">Минимум %d символа</string>
+    <string name="lockpassword_press_continue">После ввода пароля нажмите далее</string>
+    <string name="lockpassword_confirm_your_password_header">Подтвердить</string>
+    <string name="lockpassword_ok_label">Подтвердить</string>  
+    <string name="lockpassword_confirm_passwords_dont_match">Пароли не совпадают </string>
+    <string name="no_encryption_conversations">Нет блокированных сообщений</string>  
+    <string name="gn_multi_encryption">Выбранные SMS были заблокированы</string>
+    <string name="gn_multi_dncryption">Выбранные SMS были заблокированы</string>
+    <string name="lockpassword_input_your_password">Введите пароль </string>
+    <string name="lockpattern_need_to_unlock_wrong">Попробуйте вновь:</string>
+    <string name="gn_no_star_contacts">Нет избранных</string>
+    <string name="save_att_success"> Вложение сохранено</string>
+    <!-- GIONEE: luoguangming 2012.07.19 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_add_to_contact">Добавить</string>
+    <string name="gn_check_contact">Проверить</string>
+    <string name="gn_copy_contact">Копировать</string>
+    <string name="gn_edit_contact">Изменить</string>
+    <string name="gn_mms_pop_no_response">Введите ответ! </string>
+    <string name="gn_contact_unit_name">Контакты</string>
+    <string name="gn_import_file_content_error"> Ошибка формата содержания！</string>
+    <string name="gn_exporting_back"> экспорт SMS</string>
+    <string name="gn_import_item">файл</string>
+    <string name="gn_sure_export_back">" ?"</string>
+    <string name="gn_import_file_empty"> пусто！</string>
+    <string name="gn_import_file_path_error"> ошибка пути！</string>
+    <string name="gn_export_item">сессия</string>
+    <string name="gn_import_export_sum">(Всего</string>
+    <string name="gn_import_export_piece">)</string>
+    <string name="gn_card_unknow_in">…SIM</string>
+    <string name="gn_card_unknow_out">…SIM</string>
+    <string name="gn_import_export_file_path">/backup/Sms/</string>
+    <string name="gn_sim_slot_1">1</string>
+    <string name="gn_sim_slot_2">2</string>
+    <string name="gn_card_2_in">SIM2</string>
+    <string name="gn_sim_slot_a">SIM1</string>
+    <string name="gn_card_a_out">SIM1</string>
+    <string name="gn_am">AM</string>
+    <string name="gn_midnight">AM</string>
+    <string name="gn_dawn">AM</string>
+    <string name="gn_add_to_bookmarks">Добавить в закладки</string>
+    <string name="gn_cancel_all_favorite_content">Удалить все избранные?</string>  
+    <string name="gn_confirm_delete_favorited_message">Удалить сообщение из избранных?</string>  
+    <string name="gn_confirm_delete_locked_favorited_message">Удалить блокированное сообщение из избранных?</string>  
+    <string name="gn_mms_pop_setting_summary">Автоуведомления</string>
+    <string name="gn_sim_slot_b">SIM2</string>
+    <string name="gn_card_b_out">SIM2</string>
+    <string name="gn_no_calllog">Нет записей</string>
+    <string name="gn_cancel_all_favorite">Удалить все избранные</string>  
+    <string name="gn_cancel_all_favorite_title">Удалить все избранные</string>  
+    <string name="gn_import_cancel">Отмена импорта!</string>  
+    <string name="gn_select_attach_take_photo">Съемка</string>
+    <string name="gn_phone_msg_count">Статистика</string>
+    <string name="gn_mms_pop_cv">Нажмите для просмотра</string>
+    <string name="gn_mms_pop_close">Закрыть</string>
+    <string name="gn_copy_text">Копировать текст</string>
+    <string name="gn_mms_pop_delete">Удалить</string>
+    <string name="gn_delete_unfavotite">Удалить избранные</string>  
+    <string name="gn_dail">Набор</string>
+    <string name="gn_no_export_sms">Нет SMS для экспорта!</string>
+    <string name="gn_menu_edit">Редактор</string>
+    <string name="gn_export_failed">Ошибка экспорта!</string>
+    <string name="gn_export_current_session">Экспорт</string>
+    <string name="gn_send_msg_failed">Ошибка</string>
+    <string name="gn_from">От</string>
+    <string name="gn_forward_prefix">Fwd:\u0020</string>
+    <string name="gn_unread_msg_count">Непрочитанные: </string>
+    <string name="gn_import_export_menu">Импорт/Экспорт</string>
+    <string name="gn_imported_file_names">Импортированные файлы:</string>
+    <string name="gn_importing">Импорт SMS, подождите...</string>
+    <string name="gn_import_current_file">Импорт</string>
+    <string name="gn_mms_pop_input">Введите сообщение</string>
+    <string name="gn_exporting_front">В</string>
+    <string name="gn_card_1_in">SIM1</string>
+    <string name="gn_card_a_in">SIM1</string>
+    <string name="gn_card_b_in">SIM2</string>
+    <string name="gn_mms">MMS</string>
+    <string name="gn_unload_mms">Загрузка MMS не завершена, попробуйте позже. </string>
+    <string name="gn_no_sdcard">Нет карты памяти!</string>
+    <string name="gn_cancel_all_favorite_ok">Ок</string>
+    <string name="gn_pm">PM</string>
+    <string name="gn_noon">PM</string>
+    <string name="gn_dusk">PM</string>
+    <string name="gn_night">PM</string>
+    <string name="gn_select_attach_picture">Изображения</string>
+    <string name="gn_prevent_disturb">Не прерывать</string>
+    <string name="gn_mms_pop_read">Читать</string>
+    <string name="gn_mms_pop_response">Ответ</string>
+    <string name="gn_sim_sms">SMS на SIM  </string>
+    <string name="gn_import_file_count">Выбрано</string>
+    <string name="gn_mms_pop_send">Отправить</string>
+    <string name="gn_send_email">Отправить E-mail</string>
+    <string name="gn_send_message">Отправить SMS</string>
+    <string name="gn_no_conversations">Нет бесед</string>
+    <string name="gn_delete_drafts_message">Все черновики будут удалены.</string>
+    <string name="gn_confirm_delete_message">Все сообщения будут удалены.</string>
+    <string name="gn_confirm_delete_conversation">Вся цепочка будет удалена.</string>
+    <string name="gn_confirm_dncryption">Некоторые сообщения не подверглись блокировке.</string>  
+    <string name="gn_confirm_encryption">Сообщения были заблокированы.</string>  
+    <string name="gn_sdcard_no_space">Недостаточно свободного места на карте памяти!</string>
+    <string name="gn_session_count">Количество бесед: </string>
+    <string name="gn_totle_msg_count">Всего сообщений: </string>
+    <string name="gn_unkonw_error">Неизвестная ошибка!</string>
+    <string name="gn_no_import_file">Нет текстовых файлов для импорта!</string>
+    <string name="gn_import_cancel_msg">Импортирование будет отменено</string>
+    <string name="gn_today">Сегодня</string>
+    <string name="gn_no_sim_card">Невозможно отправить! Нет SIM!</string>
+    <string name="gn_mms_pop_view">Просмотр</string>
+    <string name="gn_visit">Просмотр</string>
+    <string name="gn_yesterday">Вчера</string>
+    <string name="gn_call">Вызов</string>
+    <string name="gn_select_conversation_zore">Выбрано бесед: 0 </string>
+    <string name="gn_select_conversation_one">Выбрано бесед: 1 </string>
+    <string name="gn_copying">Копирование... </string>
+    <string name="gn_exchange">Экспорт</string>
+    <string name="gn_encryption">Блокировка</string>  
+    <string name="gn_export_sms_to_external_sdcard">Экспорт SMS на внешнюю память</string>
+    <string name="gn_export_sms_to_internal_sdcard">Экспорт SMS на внутреннюю память</string>
+    <string name="gn_loading">Загрузка...</string>
+    <string name="gn_date_format">ГГГГ/ММ/ДД</string>
+    <string-array name="gn_receiptors">
+        <item>Недавние контакты</item>
+        <item>Контакты</item>
+        <item>Группа</item>
+    </string-array>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783" begin-->
+    <string name="repeat_send_msg_btn_text">Отправить повторно</string>
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783"   end-->
+    <string name="add_to_favorite">Избранное SMS</string>  
+    <string name="dial_dialog_title">Выберите номер для набора:</string>  
+    <string name="delete_all_threads">Удалить все</string>  
+    <string name="add_recent_contacts">Добавить контакт</string>  
+    <string name="insert_contacts">Добавить контакт</string>  
+    <string name="no_contacts">Нет контактов</string>  
+    <string name="no_recent_contacts">Нет недавних контактов</string>  
+    <string name="title_add_receipents">Добавить контакты</string>  
+    <string name="select_group_contact_dlg_title">Выбрать контакт</string>  
+    <string name="no_mobile_numbers">Нет мобильных</string>  
+    <string name="contact_has_no_info">Нет информации о контакте</string>  
+    <string name="no_phone_numbers">Нет номеров</string>  
+    <string name="video_call_not_enabled">Видеовызов не может быть совершен</string>  
+    <string name="unsaved">Не сохранено</string>  
+    <string name="contacts_notes">Примечания:</string>  
+    <string name="contacts_website">Веб-сайт:</string>  
+    <string name="contacts_name">Имя:</string>  
+    <string name="delete_recent_contact">Удалить</string>  
+    <string name="calllog">Журнал вызовов</string>  
+    <string name="groups_coworker">Работа</string>  
+    <string name="groups_family">Семья</string>  
+    <string name="groups_friends">Друзья</string>  
+    <string name="groups_schoolmate">Одноклассники</string>  
+    <string name="groups_vip">VIP</string>  
+    <string name="showAllGroups">Все контакты</string>  
+    <string name="sim">SIM</string>  
+    <string name="recommend_humor_joke">Humor joke</string>  
+    <string name="recommend_love_joke">Love joke</string>  
+    <string name="recommend_school_joke">School joke</string>  
+    <string name="recommend_birthday_message">Birthday message</string>  
+    <string name="insert_sd_card">Вставьте карту памяти!</string>  
+    <string name="quick_text_edit_hint">Введите текст шаблона</string>  
+    <string name="add_quick_text_ok">Ок</string>  
+    <string name="favorite_display_name">Я</string>  
+    <string name="confirm_delete_dratf">Удалить черновик?</string>  
+    <string name="delete_dratf">Удалить черновик</string>  
+    <string name="title_attachments">Вложения</string>  
+    <string name="attach_size">размер:</string>  
+    <string name="save_att_failed">Ошибка сохранения вложений!</string>  
+    <string name="add_to_contact">Добавить к контакту</string>  
+    <string name="check_contact">Проверить контакт</string>  
+    <string name="wait_connecting">Подключение к сети…</string>  
+    <string name="wait_init">Инициализация данных, подождите…</string>  
+    <string name="gnSms_sim_management_title">Настройки Dual SIM</string>  
+    <string name="menu_gn_firewall_setting">Фаервол</string>  
+    <string name="mms_deliver_success_with_address">Сообщение отправлено %s</string>  
+    <string name="mms_deliver_success">Сообщение отправлено</string>  
+    <string name="mms_read_success_with_address">Сообщение прочитано %s</string>  
+    <string name="mms_read_success">Сообщение прочитано</string>  
+    <string name="freeze_format_with_bracket"> 
+        <font size="1\" color="#bebebe\"/>%1$s
+    </string>  
+    <string name="freeze_format"> 
+        <font size="1\" color="#bebebe\"/>%1$s
+    </string>  
+    <string name="message_too_big_for_recording">Сообщение слишком большое для добавления файла записи</string>  
+    <string name="lockpassword_password_too_long">Пароль не может быть длиннее %d символов</string>  
+    <string name="lockpassword_illegal_character">Пароль содержит недопустимый символ</string>  
+    <string name="lockpassword_password_requires_alpha">Пароль должен содержать, по крайней мере, одну букву</string>  
+    <string name="menu_decryption">Отменить блокировку</string>  
+    <string name="pref_security_settings_title">Настройки безопасности</string>  
+    <string name="pref_title_mms_encryption_setting">Настройки шифрования сессии</string>  
+    <string name="pref_summary_mms_encryption_setting">Использовать зашифрованную сессию</string>  
+    <string name="pref_title_mms_encryption_change">Изменить шифрование беседы</string>  
+    <string name="pref_summary_mms_encryption_change">Изменить или завершить защиту паролем</string>  
+    <string name="pref_title_mms_password_visible">Видимый пароль</string>  
+    <string name="pref_summary_mms_password_visible">При вводе пароль является видимым</string>  
+    <string name="pref_title_mms_password_clear">Очистить пароль</string>  
+    <string name="pref_summary_mms_password_clear">Защита пароля</string>  
+    <string name="pref_title_mms_password_change">Изменить пароль</string>  
+    <string name="pref_summary_mms_password_change">Изменить защиту паролем</string>  
+    <string name="pref_summary_mms_password_change_succeed">Пароль изменен</string>  
+    <string name="pref_summary_mms_password_clear_succeed">Пароль очищен</string>  
+    <string name="pref_summary_mms_password_setting_succeed">Пароль установлен</string>  
+    <string name="pick_contacts">Выбрать контакты</string>  
+    <string name="new_contact">Новый контакт</string>  
+    <string name="add_contact">Существующий</string>  
+    <string name="view_contact">Просмотр</string>  
+    <string name="edit_contact">Изменить</string>  
+    <string name="copy_contact">Копировать</string>  
+    <string name="set_top">Установить</string>  
+    <string name="copy_attachment_to">Копировать вложение на</string>  
+    <string name="gn_menu_delete">Удалить</string>  
+    <string name="gn_menu_star">Избранные</string>  
+    <string name="gn_menu_copy">Копировать</string>  
+    <string name="gn_menu_forward">Переслать</string>  
+    <string name="gn_selected_count">Выбрано %1$s</string>  
+    <string name="gn_menu_doctoran">Предотвратить отмену</string>  
+    <string name="gn_menu_blacklist">В черный список</string>  
+    <string name="gn_internal_sdcard_no_space">Недостаточно свободного места на внутренней памяти!</string>  
+    <string name="storage_has_no_space">Недостаточно места, освободите память!</string>  
+    <string name="sim1_notification_title">Звук уведомления SIM1</string>  
+    <string name="sim1_notification_summary">По умолчанию</string>  
+    <string name="sim2_notification_title">Звук уведомления SIM2</string>  
+    <string name="sim2_notification_summary">По умолчанию</string>  
+    <string name="notification_summary_silent">Без звука</string>  
+    <string name="loading_ringtone">Загрузка</string>  
+    <string name="gn_select_regularly_send_msg">Время</string>  
+    <string name="gn_dialog_title">Устан. время</string>  
+    <string name="date_time_set">Устан.</string>  
+    <string name="gn_will_send_time">Будет отправлено в %1$s</string>  
+    <string name="gn_time_early">Время вышло, переустановите</string>  
+    <string name="gn_select_attachment_geo_location">Местоположение</string>  
+    <string name="gn_location_loading">Загрузка, подождите…</string>  
+    <string name="gn_location_nogps_tip">GPS не включен</string>  
+    <string name="gn_location_tip_title">Подсказки</string>
+<!--Gionee xuming 2012-10-16 modified for CR00714546 start-->
+    <string name="gn_sending">Отправка</string>
+<!--Gionee xuming 2012-10-16 modified for CR00714546 end-->
+    <string name="sms_is_loading">Загрузка сообщения…</string> 
+    <string name="sms_has_deleted">Удалено сообщение</string> 
+    <string name="conversation_has_deleted">Удалена беседа</string> 
+    <string name="search_no_result">Нет результата поиска, соответствующего условию</string> 
+    <string name="copyto_phone_done">Уже скопировано на ваш телефон</string> 
+    <string name="copyto_phone_fail">Неуспешно скопировано, ваш телефон не поддерживает эту функцию</string> 
+    <string name="no_select_all">Выбирать обратно</string> 
+    <string name="gn_confirm_delete_all_messages">Вы уверены удалить всю информацию о нем?</string> 
+    <string name="gn_confirm_delete_messages">Вы уверены удалить выбранную информацию о нем?</string> 
+    <string name="aurora_has_no_attachment">"Нет хранимого вложения"</string> 
+    <string name="aurora_saving_attachments">"Сохранить вложение"</string> 
+    <string name="aurora_saving_error">"Ошибочно сохранено вложение"</string> 
+    <string name="aurora_saving_finished">"Удачно сохранено вложение"</string> 
+    <string name="aurora_storage_unavailable">"Внутреннее хранение пока не доступно"</string> 
+    <string name="aurora_image_saved">"Фотографии сохраняются под файл\"Внутреннее хранение / DCIM / MMS \""</string> 
+    <string name="aurora_video_saved">"Видео сохраняется под файл\"Внутреннее хранение / DCIM / MMS \""</string> 
+    <string name="aurora_other_saved">"Аудио сохраняется под файл\"Внутреннее хранение / Download\""</string> 
+    <string name="aurora_send_fail_title">"Не успешно отправить в нижеследующие контакты"</string> 
+    <string name="aurora_msg_count">
+    <xliff:g id="CUR">%d</xliff:g> 
+    （ 
+    <xliff:g id="TOT">%d</xliff:g> 
+    ） 
+    </string>
+    <string name="aurora_add_to_contact">"Добавить в существующий контакт"</string> 
+    <string name="aurora_created_contact">"Создать новый контакт"</string> 
+    <string name="aurora_dail">"Звонить"</string> 
+    <string name="aurora_attachments_picks">"Сохранить данное вложение"</string> 
+    <string name="aurora_send_msg">"Отправить сообщение"</string> 
+    <string name="aurora_send_mail">"Отправить по электронной почте"</string> 
+    <string name="aurora_view_contact">"Просмотр контакта"</string> 
+    <string name="aurora_msg_detail">"Полный текст сообщения"</string> 
+    <string name="aurora_msg_web_visit">"Обращение"</string> 
+    <string name="aurora_copy">"Копировать"</string> 
+    <string name="aurora_camera">"Камера"</string> 
+    <string name="aurora_record_video">"Снимать видео"</string> 
+    <string name="aurora_select_video">"Выбирать видео"</string> 
+    <string name="aurora_record_audio">"Запись"</string> 
+    <string name="aurora_select_audio">"Выбирать аудио"</string> 
+    <string name="aurora_select_ringtone">"Выбирать звонок"</string> 
+    <string name="aurora_multi_link_tag">"Выберите оперативное содержание"</string> 
+    <string name="auroa_sms_copy_done">Удачно скопировано</string> 
+    <string name="auroa_sms_copy_fail">Нет копированного содержания</string> 
+    <string name="aurora_show_detail">"Просмотр полного текста"</string> 
+    <string name="aurora_mms_size">
+    "Размер мультимедийных СМС： 
+    <xliff:g id="SIZE">%s</xliff:g> 
+    KB" 
+    </string>
+    <string name="aurora_recipients_number">
+    ", и другие 
+    <xliff:g id="SIZE">%s</xliff:g> 
+    " 
+    </string>
+    <string name="aurora_msg_resend_indi">Не удалось отправить информацию,вторично отправить？</string> 
+    <string name="aurora_msg_resend">Вторично отправить</string> 
+    <string name="aurora_phonenum_invalid">Не эффективный номер телефона</string> 
+    <string name="aurora_contact_tag_txt">Адресат：</string> 
+    <string name="ime_action_done">"Исполнение"</string> 
+    <string name="ime_action_next">"Следующий этап"</string> 
+    <string name="aurora_mms_sending">"В отправлении …"</string> 
+    <string name="aurora_mms_editing">"В редакции …"</string> 
+    <string name="aurora_dail_sim1f">Вызов SIM1(за последнее время )</string> 
+    <string name="aurora_dail_sim1">Вызов SIM1</string> 
+    <string name="aurora_dail_sim2f">Вызов SIM2(за последнее время )</string> 
+    <string name="aurora_dail_sim2">Вызов SIM2</string> 
+    <string name="aurora_sim1">SIM1</string> 
+    <string name="aurora_sim2">SIM2</string> 
+    <string name="aurora_add_black">"Добавить в чёрный список"</string> 
+    <string name="aurora_remove_black">"Вынести из чёрного списка"</string> 
+    <string name="aurora_resume_tag1">"Вы подтвердите вынести этот номер из чёрного списка"</string> 
+    <string name="aurora_resume_tag2">"А также восстановить запись перехвата"</string> 
+    <string name="aurora_delete_record_title">"Удалить запись"</string> 
+    <string name="aurora_delete_record_message">"Вы подтвердите удалить выбранную запись перехвата сообщения"</string> 
+    <string name="aurora_resume_title">"Восстановить сообщение"</string> 
+    <string name="aurora_resume_message">"Вы подтвердите восстановить выбранную запись в входящие"</string> 
+    <string name="aurora_back_sms">"Отправить сообщение в ответ"</string> 
+    <string name="aurora_not_reject_more">"Больше не перехватить"</string> 
+    <string name="aurora_not_reject_more_message">"Вы подтвердите больше не перехватить этот номер？"</string> 
+    <string name="aurora_resume_all">"Восстановить все записи в входящие"</string> 
+    <string name="aurora_black_adding">"В сохранении…"</string> 
+    <string name="aurora_black_resuming">"В восстановлении…"</string> 
+    <string name="aurora_add_blackname_more_toast">"Верхний предел выбора 100 человек, уменьшите выбранное число"</string> 
+    <string name="aurora_sms_center_summary">"Этот номер используется для отправки и получения сообщений, узнайте у своего оператора до изменения."</string> 
+    <string name="aurora_operator_cm">"China Mobile"</string> 
+    <string name="aurora_operator_cu">"China Unicom"</string> 
+    <string name="aurora_operator_ct">"China Telecom"</string> 
+    <string name="aurora_sms_center_modify">"Изменение"</string> 
+    <string name="aurora_sms_center_tip">"Номер центра сообщения"</string> 
+    <string name="aurora_msg_ops_tip">"Выберите беседы меньше 100"</string> 
+    <string name="aurora_privacy_msg_title">"Информация о конфиденциальности"</string>
+    <!-- Aurora xuyong 2015-04-11 added for aurora's new feature start -->
+    <string name="aurora_ipop_colon">":"</string>
+    <string name="aurora_ipop_suffix">"<xliff:g id="LEF">%d</xliff:g> сек."</string>
+    <string name="aurora_ipop_copy_done">"Удачно скопировано"</string>
+    <!-- Aurora xuyong 2015-04-11 added for aurora's new feature end -->
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="pref_key_contact_accounts"
+        aurora:auroratitle="@string/contacts_settings" >
+        
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_accounts"
+            aurora:auroratitle="@string/aurora_show_contacts_accounts">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.AuroraContactsAccountsActivity"/>
+        </aurora.preference.AuroraPreference>
+        
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_import_export"
+            aurora:auroratitle="@string/imexport_title">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.AuroraContactImportExportActivity"/>
+        </aurora.preference.AuroraPreference>
+        
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_merge_contact"
+            aurora:auroratitle="@string/gn_combine_contacts_title">
+           <!--  <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.MergableQueryActivity"/> -->
+        </aurora.preference.AuroraPreference>
+        
+        <!-- <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_sim_contact"
+            
+            aurora:auroratitle="@string/aurora_menu_sim_contacts">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.AuroraSimContactListActivity_3rd"/>
+        </aurora.preference.AuroraPreference>
+        
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_sim_contact_02"
+            
+            aurora:auroratitle="@string/aurora_menu_sim2_contacts">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.AuroraSimContactListActivity_3rd"/>
+        </aurora.preference.AuroraPreference> -->
+    </aurora.preference.AuroraPreferenceCategory>
+    
+     <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="phone_settings"
+        aurora:auroratitle="@string/phone_settings" >
+        
+          <aurora.preference.AuroraSwitchPreference
+              aurora:auroradefaultValue="false"
+              aurora:aurorakey="intelligent_alarm"
+              aurora:aurorapersistent="true"
+              aurora:aurorasummary="@string/intelligent_alarm_summary"
+              aurora:auroratitle="@string/intelligent_alarm" />
+                  
+          <aurora.preference.AuroraSwitchPreference
+              aurora:auroradefaultValue="true"
+              aurora:aurorakey="reverse_mute"
+              aurora:aurorapersistent="true"
+              aurora:aurorasummary="@string/reverse_mute_summary"
+              aurora:auroratitle="@string/reverse_mute" />
+         
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="call_waiting"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/call_waiting">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.phone"
+                android:targetClass="com.android.phone.MsimCallWaitingSettings"/>
+        </aurora.preference.AuroraPreference>
+         
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="incoming_call_switching"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/incoming_call_switching">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.phone"
+                android:targetClass="com.android.phone.MsimCallForwardSettings"/>
+        </aurora.preference.AuroraPreference>
+    </aurora.preference.AuroraPreferenceCategory>
+    
+<!--     <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="pref_key_contact_merge" >
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_merge_contact"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/gn_combine_contacts_title">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.contacts"
+                android:targetClass="com.android.contacts.activities.MergableQueryActivity"/>
+        </aurora.preference.AuroraPreference>
+    </aurora.preference.AuroraPreferenceCategory> -->
+   
+</aurora.preference.AuroraPreferenceScreen>

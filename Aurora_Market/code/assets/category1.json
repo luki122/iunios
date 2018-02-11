@@ -1,0 +1,126 @@
+{
+	"code":1,
+	"desc":"调用成功",
+	"categories":[
+		{
+			"id" : 1,
+			"type" : "APP",
+			"name" : "便捷生活",
+			"icon" : "http://img.wdjimg.com/mms/icon/v1/d/88/284be9818c96d58b3dab8aeb0df1a88d_78_78.png",
+			"parentId" : 0,
+			"subCategories":[
+				{
+					"id":101,
+					"type":"APP",
+					"name":"票务",
+					"parentId":1
+				},
+				{
+					"id":102,
+					"type":"APP",
+					"name":"美食",
+					"parentId":1
+				},
+				{
+					"id":103,
+					"type":"APP",
+					"name":"营业厅",
+					"parentId":1
+				}
+			]
+		},
+		{
+			"id" : 2,
+			"type" : "APP",
+			"name" : "新闻资讯",
+			"icon" : "http://img.wdjimg.com/mms/icon/v1/f/87/65e6c9793d93f0b96ce9c3dd096c487f_78_78.png",
+			"parentId":0,
+			"subCategories":[
+				{
+					"id":201,
+					"type":"APP",
+					"name":"新闻",
+					"parentId":2
+				},
+				{
+					"id":202,
+					"type":"APP",
+					"name":"杂志",
+					"parentId":2
+				},
+				{
+					"id":203,
+					"type":"APP",
+					"name":"报纸",
+					"parentId":2
+				}
+			]
+		},
+		{
+			"id" : 3,
+			"type" : "APP",
+			"name" : "通信聊天",
+			"icon" : "http://img.wdjimg.com/mms/icon/v1/8/2a/e2344c40f634e5ed6d72aece0bf702a8_78_78.png",
+			"parentId":0,
+			"subCategories":[
+				{
+					"id":301,
+					"type":"APP",
+					"name":"即时通讯",
+					"parentId":3
+				},
+				{
+					"id":302,
+					"type":"APP",
+					"name":"短信",
+					"parentId":3
+				},
+				{
+					"id":303,
+					"type":"APP",
+					"name":"电话",
+					"parentId":3
+				},
+				{
+					"id":304,
+					"type":"APP",
+					"name":"邮箱",
+					"parentId":3
+				}
+			]
+		},
+		{
+			"id" : 4,
+			"type" : "APP",
+			"name" : "网上购物",
+			"icon" : "http://img.wdjimg.com/mms/icon/v1/9/1c/b96a64e8b75c04df572d73b8430b01c9_78_78.png",
+			"parentId":0,
+			"subCategories":[
+				{
+					"id":401,
+					"type":"APP",
+					"name":"商城",
+					"parentId":4
+				},
+				{
+					"id":402,
+					"type":"APP",
+					"name":"团购",
+					"parentId":4
+				},
+				{
+					"id":403,
+					"type":"APP",
+					"name":"导购",
+					"parentId":4
+				},
+				{
+					"id":404,
+					"type":"APP",
+					"name":"比价",
+					"parentId":4
+				}
+			]
+		}
+	]
+}

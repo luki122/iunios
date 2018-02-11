@@ -1,0 +1,121 @@
+package com.android.settings.notification;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import aurora.preference.AuroraPreference;
+import com.android.settings.R;
+/*
+ * 下拉选择框
+ * */
+public class AuroraDropDownPreference extends AuroraPreference {
+	
+    private  Context mContext;
+    private  ArrayAdapter<String> mAdapter;
+    private  Spinner mSpinner;
+    private  ArrayList<Object> mValues = new ArrayList<Object>();
+
+    private Callback mCallback;
+	public AuroraDropDownPreference(Context context) {
+		super(context);
+		
+	}
+
+    public AuroraDropDownPreference(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        mContext = context;
+        mAdapter = new ArrayAdapter<String>(mContext,
+                R.layout.aurora_dropdown_preference);
+
+        mSpinner = new Spinner(mContext);
+
+        mSpinner.setVisibility(View.INVISIBLE);
+        mSpinner.setAdapter(mAdapter);
+        
+        mSpinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
+                setSelectedItem(position);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // noop
+            }
+        });
+        setPersistent(false);
+        setOnPreferenceClickListener(new OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(AuroraPreference preference) {
+                mSpinner.performClick();
+                return true;
+            }
+        });
+    }
+
+    public void setDropDownWidth(int dimenResId) {
+        mSpinner.setDropDownWidth(mContext.getResources().getDimensionPixelSize(dimenResId));
+    }
+
+    public void setCallback(Callback callback) {
+        mCallback = callback;
+    }
+
+    public void setSelectedItem(int position) {
+        final Object value = mValues.get(position);
+        if (mCallback != null && !mCallback.onItemSelected(position, value)) {
+            return;
+        }
+        mSpinner.setSelection(position);
+        setSummary(mAdapter.getItem(position));
+        final boolean disableDependents = value == null;
+        notifyDependencyChange(disableDependents);
+    }
+
+    public void setSelectedValue(Object value) {
+        final int i = mValues.indexOf(value);
+        if (i > -1) {
+            setSelectedItem(i);
+        }
+    }
+
+    public void addItem(int captionResid, Object value) {
+        addItem(mContext.getResources().getString(captionResid), value);
+    }
+
+    public void addItem(String caption, Object value) {
+        mAdapter.add(caption);
+        mValues.add(value);
+    }
+
+    public void clearItems(){
+        mAdapter.clear();
+        mValues.clear();
+    }
+
+    @Override
+    protected void onBindView(View view) {
+        super.onBindView(view);
+        if (view.equals(mSpinner.getParent())) return;
+        if (mSpinner.getParent() != null) {
+            ((ViewGroup)mSpinner.getParent()).removeView(mSpinner);
+        }
+        final ViewGroup vg = (ViewGroup)view;
+        vg.addView(mSpinner, 0);
+        final ViewGroup.LayoutParams lp = mSpinner.getLayoutParams();
+        lp.width = 0;
+        lp.height = 0;
+        mSpinner.setLayoutParams(lp);
+    }
+
+    public interface Callback {
+        boolean onItemSelected(int pos, Object value);
+    }
+}

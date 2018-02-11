@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/selected_date_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/selected_date_time_margin_top"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="@dimen/textsize_14" />
+
+    <com.aurora.note.widget.DateTimePickerView
+        android:id="@+id/date_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_date_time_tv"
+        android:layout_marginTop="@dimen/date_time_picker_margin_top"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/delete_reminder_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/aurora_ripple_selector"
+        android:gravity="center"
+        android:textColor="@color/note_delete_reminder_text_color"
+        android:textSize="@dimen/textsize_14"
+        android:text="@string/delete_reminder"
+        android:visibility="gone" />
+
+</RelativeLayout>

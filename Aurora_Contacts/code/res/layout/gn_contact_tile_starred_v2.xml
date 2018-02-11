@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    class="com.android.contacts.list.ContactTileStarredView"
+    android:background="@null"
+    android:paddingBottom="1dip"
+    android:paddingRight="1dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/contact_tile_layout"
+            android:layout_width="136dip"
+            android:layout_height="137dip" >
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="1dip"
+                class="com.android.contacts.list.ContactTileImageContainer" >
+
+                <ImageView
+                    android:id="@+id/contact_tile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </view>
+
+            <ImageView
+                android:id="@+id/gn_contacts_collect_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dip"
+                android:scaleType="centerCrop"
+                android:src="?attr/contacts_collect_icon" />
+
+            <View
+                android:id="@+id/contact_tile_push_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/contact_tile_push_state_bg"
+                android:focusable="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contact_tile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="3dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</view>

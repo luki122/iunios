@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="intelligent_reminder">智能提醒</string>
+    <string name="good_morning">早上好，新的一天开始了</string>
+    <string name="good_noon">中午好，补充精力迎接下午的挑战</string>
+    <string name="good_night">晚上好，卸下一天的辛劳放松下吧</string>
+    <string name="good_midnight">夜深了，早点睡觉第二天会更精神</string>
+
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    <string name="date_format">MMMM d, EEEE</string>
+
+    <string-array name="good_morning">
+        <item>起床之事，有心则起，无心则一睡不起</item>
+        <item>忽如一夜春风来，睡你大爷起来嗨！</item>
+        <item>封印▪解（掀被子）</item>
+        <item>摆驾...上朝...</item>
+        <item>起床啦～太阳公公要晒屁屁啦～</item>
+        <item>哦哈哟沟扎依吗诗~~O(∩_∩)O</item>
+    </string-array>
+
+    <string-array name="good_noon">
+        <item>人是铁，饭是钢，一顿不吃饿得慌</item>
+        <item>自古红蓝出cp，只是喂饭不搞基</item>
+        <item>不吃饭不舒服斯基</item>
+        <item>(\"▔□▔)中午吃饭去喽~~</item>
+        <item>中午要吃好一点！身体才好</item>
+        <item>移驾...用膳...</item>
+    </string-array>
+
+    <string-array name="good_night">
+        <item>晚间闲余出游，甚喜</item>
+        <item>小楼昨夜又东风，下班不挤不堵站路中</item>
+        <item>体术▪木叶旋风灰肥家</item>
+        <item>（*^＠^*）走起走起，出来浪~~</item>
+        <item>晚上好好放松下！把精气神恢复起来！</item>
+        <item>起驾...回宫...</item>
+    </string-array>
+
+    <string-array name="good_midnight">
+        <item>水遁▪睡觉zzZ</item>
+        <item>还不睡觉！明天还能不能起了！！</item>
+        <item>(～ o ～)~zZ 早点休息哦~~</item>
+        <item>洗梳...跪安...</item>
+    </string-array>
+
+</resources>

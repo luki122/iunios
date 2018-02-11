@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/cloud_operation_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/aurora_delete">
+    </item>
+    <!--
+    <item
+        android:id="@+id/cloud_operation_rename"
+        android:icon="@drawable/aurora_cloud_album_rename">
+    </item>
+    -->
+
+</menu>

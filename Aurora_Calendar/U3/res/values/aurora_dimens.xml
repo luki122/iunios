@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aurora_all_in_one_action_bar_date_size">18.3sp</dimen>
+    <dimen name="aurora_all_in_one_action_bar_margin_left">17dp</dimen>
+
+    <dimen name="aurora_actionbar_height">43dp</dimen>
+    <dimen name="aurora_month_header_height">27dp</dimen>
+    <dimen name="aurora_actionbar_more_margin_top">68dp</dimen>
+
+    <!-- event edit -->
+    <dimen name="aurora_event_edit_margin_bottom">32dp</dimen>
+    <dimen name="aurora_event_edit_item_padding_left">15dp</dimen>
+    <dimen name="aurora_event_edit_clock_margin_left">8dp</dimen>
+
+    <dimen name="aurora_event_edit_item_text_size">18sp</dimen>
+    <dimen name="aurora_event_edit_date_text_size">9sp</dimen>
+    <dimen name="aurora_event_edit_date_picker_hint_text_size">15sp</dimen>
+    <dimen name="aurora_event_edit_time_text_size">23sp</dimen>
+    <dimen name="aurora_event_edit_switch_text_size">8sp</dimen>
+
+    <dimen name="aurora_single_list_item_default_height">47dp</dimen>
+    <dimen name="aurora_double_list_item_default_height">71dp</dimen>
+
+</resources>

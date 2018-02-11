@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Clock Date Week font size -->
+    <dimen name="lock_screen_clock_size">246.5px</dimen>
+    <dimen name="lock_screen_date_size">54.5px</dimen>
+    <dimen name="lock_screen_week_size">48.5px</dimen>
+    <dimen name="lock_screen_week_width">49dip</dimen>
+
+    <dimen name="preview_time_bottom">74dp</dimen>
+    <dimen name="preview_date_top">12dp</dimen>
+    
+    <!-- shigq add start -->
+    <dimen name="nextday_preview_margin">22dp</dimen>
+    <dimen name="nextday_preview_clock_width">49.33dp</dimen>
+    <dimen name="nextday_preview_clock_divider">23dp</dimen>
+    <dimen name="nextday_preview_clock_left">62.67dp</dimen>
+    <dimen name="nextday_preview_clock_top">80.33dp</dimen>
+    <dimen name="nextday_preview_clock_margin_1dp">1dp</dimen>
+    <dimen name="nextday_preview_clock_margin_6dp">1dp</dimen>
+    <dimen name="nextday_preview_date_month_left">114dp</dimen>
+    <dimen name="nextday_preview_date_month_top">164.33dp</dimen>
+    <dimen name="nextday_preview_date_month_height">19dp</dimen>
+    <dimen name="nextday_preview_date_day_left">151dp</dimen>
+    <dimen name="nextday_preview_date_week_left">197dp</dimen>
+    <dimen name="nextday_preview_date_week_top">166dp</dimen>
+    <dimen name="nextday_preview_date_week_height">17dp</dimen>
+    <dimen name="nextday_preview_comment_shadow_top">600dp</dimen>
+    <dimen name="nextday_preview_comment_shadow_right">44dp</dimen>
+    <dimen name="nextday_preview_comment_shadow_bottom">620dp</dimen>
+    <dimen name="nextday_preview_comment_city_left">41.33dp</dimen>
+    <dimen name="nextday_preview_comment_city_top">593.67dp</dimen>
+    <dimen name="nextday_preview_comment_left">22dp</dimen>
+    <dimen name="nextday_preview_comment_top">614.67dp</dimen>
+    <dimen name="nextday_preview_logo_top">580.67dp</dimen>
+    <dimen name="nextday_preview_comment_text_size">12sp</dimen>
+    
+    <!-- shigq add end -->
+</resources>

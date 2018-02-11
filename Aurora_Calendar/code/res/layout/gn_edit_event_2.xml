@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  begin -->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+    android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+    android:orientation="vertical" >
+<!-- Gionee <jiating><2013-07-05> modify for CR00825949 begin -->    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" > 
+    <LinearLayout
+        android:id="@+id/gn_edit_event_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <!-- REPEATS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/repeats_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+            android:text="@string/repeats_label"
+            style="@style/GNSlidingTitleTextAppearance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_edit_event_content_single_bg"
+            android:paddingLeft="-100dp"  >
+ <!--Gionee <jiating><2013-06-21> modify for CR00828565 begin --> 
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/repeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Spinner.EditEvent_Value"
+                android:contentDescription="@string/accessibility_repeats"
+                android:prompt="@string/repeats_label"
+                aurora:auroraspinnerMode="dialog"
+                android:paddingLeft="-100dp" />
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 end -->
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_attendees_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+            android:minHeight="48dip"
+            android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+            android:text="@string/attendees_label"
+            style="@style/GNSlidingTitleTextAppearance" />
+ 
+        <!--<com.android.ex.chips.RecipientEditTextView
+            android:id="@+id/attendees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="2dip"
+            android:hint="@string/hint_attendees"
+            android:imeOptions="actionNext"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+            android:paddingRight="@dimen/gn_sliding_content_margin_left_or_right"
+            android:inputType="textEmailAddress|textMultiLine|textCapWords" />-->
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/description_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/description_title"
+                style="@style/GNSlidingTitleTextAppearance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                android:text="@string/hint_description" />
+
+        <aurora.widget.AuroraEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_description"
+            android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+            android:minHeight="48dip"
+            android:inputType="textAutoCorrect|textCapSentences|textMultiLine"
+            style="@style/GNTextAppearance.EditEvent_Value"
+            android:layout_below="@id/description_title"
+            android:paddingRight="@dimen/gn_sliding_content_margin_left_or_right"/>
+    </RelativeLayout> 
+
+    <!-- CALENDARS SELECTOR for new events -->
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/calendar_select_account_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendar_select_account_name"
+            android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+            android:text="@string/gn_edit_event_select_account_name"
+            android:textSize="@dimen/gn_sliding_title_text_size"
+            style="@style/GNSlidingTitleTextAppearance" />
+
+        <LinearLayout
+            android:id="@+id/calendar_selector_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_edit_event_content_single_bg"
+            android:focusable="true"
+            android:orientation="vertical" >
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 begin -->
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/calendars_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                aurora:auroraspinnerMode="dialog"
+                android:paddingRight="@dimen/gn_sliding_content_margin_left_or_right"
+                android:prompt="@string/edit_event_calendar_label" />
+            
+ <!--Gionee <jiating><2013-06-21> modify for CR00828565 end -->       
+       
+        </LinearLayout>
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 begin -->        
+           <!-- CALENDAR DISPLAY for existing events -->
+    <LinearLayout
+        android:id="@+id/calendar_group"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:minHeight="48dip"
+        android:focusable="true"
+        android:background="@drawable/gn_edit_event_content_single_bg"
+        >
+<!--Gionee <jiating><2013-06-21> modify for CR00828565 end -->  
+        <TextView
+            android:id="@+id/calendar_textview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/GNEditEventAccountDisplayNameText" />
+
+                <TextView
+                    android:id="@+id/calendar_textview_secondary"
+                    style="@style/GNEditEventContentAccountTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+<!-- Gionee <jiating><2013-07-05> modify for CR00825949 end -->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View end -->
+  <!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  begin -->

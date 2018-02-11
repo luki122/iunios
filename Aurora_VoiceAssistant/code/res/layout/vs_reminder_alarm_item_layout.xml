@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/vs_help_devider"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="61dp"
+    	android:orientation="horizontal"
+    	android:background="@drawable/vs_reminder_alarm_upper_bg_style">
+        <TextView 
+	        android:id="@+id/vs_reminder_alarm_item_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="11dp"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/vs_white"
+	        android:textSize="17sp"/>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:layout_marginRight="4dp"
+	        android:layout_weight="5">
+	        <TextView 
+		    	android:id="@+id/vs_reminder_alarm_item_time"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:gravity="center_horizontal|bottom"
+		        android:layout_marginBottom="-5dp"
+		        android:layout_weight="1"
+		        android:textColor="@color/vs_white"
+		        android:textSize="15sp"/>
+	        <TextView 
+	         	android:id="@+id/vs_reminder_alarm_item_type"
+	         	android:layout_width="match_parent"
+	         	android:layout_height="match_parent"
+	         	android:gravity="center_horizontal|top"
+	         	android:layout_marginTop="0dp"
+	         	android:layout_weight="1"
+	         	android:textColor="@color/vs_half_white"
+	         	android:textSize="10sp"/>
+	    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
