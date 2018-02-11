@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/account_info_logo_container_height"
+        android:background="@color/account_info_top_bg" >
+
+        <ImageView
+            android:id="@+id/account_icon_iv"
+            android:layout_width="@dimen/account_info_account_icon_width"
+            android:layout_height="@dimen/account_info_account_icon_width"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_account_icon" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+            <TextView
+                style="@style/Account.TextView.Header"
+                android:background="@color/account_info_item_header_bg"
+                android:text="@string/account_info_account_info" />
+
+            <View style="@style/Account.Line" />
+            -->
+
+            <LinearLayout
+                style="@style/Account.LinearLayout.AccountInfoContainer"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_account_id" />
+
+                <TextView
+                    android:id="@+id/account_id_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow.Invisible" />
+            </LinearLayout>
+
+            <View
+                style="@style/Account.Line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/account_nickname_ly"
+                style="@style/Account.LinearLayout.AccountInfoContainer" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_account_nickname" />
+
+                <TextView
+                    android:id="@+id/account_nickname_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow" />
+            </LinearLayout>
+
+            <View style="@style/Account.Line" />
+
+            <LinearLayout
+                android:id="@+id/account_pwd_ly"
+                style="@style/Account.LinearLayout.AccountInfoContainer" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_account_pwd" />
+
+                <TextView
+                    android:id="@+id/account_pwd_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent"
+                    android:password="true" />
+
+                <ImageView style="@style/Detail_Arrow" />
+            </LinearLayout>
+
+            <View style="@style/Account.Line" />
+
+            <LinearLayout
+                android:id="@+id/account_phone_ly"
+                style="@style/Account.LinearLayout.AccountInfoContainer" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_account_phone" />
+
+                <TextView
+                    android:id="@+id/account_phone_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow" />
+            </LinearLayout>
+
+            <View style="@style/Account.Line" />
+
+            <LinearLayout
+                android:id="@+id/account_email_ly"
+                style="@style/Account.LinearLayout.AccountInfoContainer" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_account_email" />
+
+                <TextView
+                    android:id="@+id/account_email_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow" />
+            </LinearLayout>
+
+            <View style="@style/Account.Line" />
+
+            <TextView
+                style="@style/Account.TextView.Header"
+                android:text="@string/account_info_storage"
+                android:visibility="gone" />
+
+            <View
+                style="@style/Account.Line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/Account.LinearLayout.AccountInfoContainer"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_storage_total" />
+
+                <TextView
+                    android:id="@+id/storage_total_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow.Invisible" />
+            </LinearLayout>
+
+            <View
+                style="@style/Account.Line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/Account.LinearLayout.AccountInfoContainer"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/Account.TextView.AccountInfoItemLabel"
+                    android:text="@string/account_info_storage_available" />
+
+                <TextView
+                    android:id="@+id/storage_available_tv"
+                    style="@style/Account.TextView.AccountInfoItemContent" />
+
+                <ImageView style="@style/Detail_Arrow.Invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/Account.Line"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="@style/Account.Button.Logout"
+        android:layout_marginBottom="@dimen/padding_17"
+        android:layout_marginLeft="@dimen/padding_15"
+        android:layout_marginRight="@dimen/padding_15"
+        android:layout_marginTop="@dimen/padding_17"
+        android:stateListAnimator="@null"
+        android:text="@string/account_info_logout" />
+
+</LinearLayout>

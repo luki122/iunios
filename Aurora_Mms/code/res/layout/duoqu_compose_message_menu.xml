@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- xiaoyuan/songzhirong 20150523 start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_bottom_menu"
+    android:layout_width="match_parent"
+    android:layout_height="61dip"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <!--<LinearLayout
+        android:id="@+id/layout_exchange"
+        android:visibility="gone"
+        android:layout_width="44dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_height="match_parent"
+        
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/duoqu_btn_menu"
+              />
+    </LinearLayout>-->
+    <ImageButton
+        android:id="@+id/layout_exchange"
+        android:layout_width="@dimen/aurora_xy_showmenu_width"
+        android:layout_height="@dimen/aurora_cmp_bt_height"
+        android:src="@drawable/aurora_hide_xymenu"
+        android:background="@drawable/aurora_ripple_bg"/>
+
+ 	<View
+        android:layout_width="0.05dip"
+        android:layout_height="match_parent"
+        android:background="@color/duoqu_border_color" />
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    </LinearLayout>
+<!-- xiaoyuan/songzhirong 20150523 start -->
+</LinearLayout>

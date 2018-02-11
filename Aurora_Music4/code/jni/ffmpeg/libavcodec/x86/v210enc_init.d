@@ -1,0 +1,12 @@
+libavcodec/x86/v210enc_init.o: libavcodec/x86/v210enc_init.c \
+ libavutil/x86/cpu.h config.h libavutil/cpu.h libavutil/attributes.h \
+ libavutil/cpu_internal.h libavutil/cpu.h libavcodec/v210enc.h \
+ libavutil/log.h libavutil/avutil.h libavutil/common.h \
+ libavutil/version.h libavutil/macros.h libavutil/avconfig.h \
+ libavutil/intmath.h libavutil/x86/intmath.h libavutil/mem.h \
+ libavutil/error.h libavutil/internal.h libavutil/timer.h libavutil/log.h \
+ libavutil/x86/timer.h libavutil/dict.h libavutil/pixfmt.h \
+ libavutil/old_pix_fmts.h libavutil/x86/emms.h libavutil/attributes.h \
+ libavutil/libm.h libavutil/intfloat.h libavutil/rational.h \
+ libavutil/mathematics.h libavutil/opt.h libavutil/samplefmt.h \
+ libavutil/pixfmt.h

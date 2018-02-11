@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <TextView
+        android:id="@+id/action_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="center"
+        android:gravity="right|center_vertical"
+        android:text="@string/clear_all"
+        android:background="?com.aurora:attr/actionBarRightWidgetBackground"
+        android:paddingLeft="@com.aurora:dimen/aurora_action_bar_margin_left"
+        android:paddingRight="@com.aurora:dimen/aurora_action_bar_margin_right"        
+        android:textColor="@com.aurora:color/aurora_action_bar_selectall_button_color"
+        android:textSize="@com.aurora:dimen/aurora_action_bar_btn_size" />
+
+</RelativeLayout>

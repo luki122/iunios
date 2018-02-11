@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_import_settings"
+        aurora:auroratitle="@string/aurora_import_title" >
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_import_sim"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/aurora_import_sim_title" />
+
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_import_sd"
+            aurora:aurorasummary="@string/aurora_import_sd_subtitle"
+            aurora:auroratitle="@string/aurora_import_sd_title" />
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_import_sd2"
+            aurora:aurorasummary="@string/aurora_import_sd2_subtitle"
+            aurora:auroratitle="@string/aurora_import_sd2_title" />  
+    </aurora.preference.AuroraPreferenceCategory>
+</aurora.preference.AuroraPreferenceScreen>

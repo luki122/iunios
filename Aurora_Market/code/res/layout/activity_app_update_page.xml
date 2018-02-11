@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_page_loading" />
+
+    <RelativeLayout android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_title_length_35"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/avail_update_num_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+            android:textColor="@color/app_item_namecolor"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/update_settings_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="@dimen/app_detail_page_margin_17"
+            android:paddingLeft="@dimen/app_detail_page_margin_17"
+            android:text="@string/app_update_settings"
+            android:textColor="@color/update_settings_color"
+            android:textSize="@dimen/textsize_14" 
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/update_all_apps_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingRight="@dimen/app_detail_page_margin_17"
+            android:paddingLeft="@dimen/app_detail_page_margin_17"
+            android:text="@string/update_all_apps"
+            android:textColor="@color/update_settings_color"
+            android:textSize="@dimen/textsize_14"
+            android:visibility="gone" 
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/no_match_note_text_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/upempty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+       <ImageView android:id="@+id/upempty_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/down_man_nodata_uxiaobei_margintop"
+             />
+        
+        <TextView
+            android:id="@+id/upempty_view"
+            android:layout_width="@dimen/app_update_empty_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/page_empty_update"
+            android:textSize="@dimen/textsize_16"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/down_man_nodata_text_margintop"
+            android:textColor="@color/down_man_nodata_text"
+            />
+    </LinearLayout>
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/avail_update_apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        aurora:auroraShowRubbishIcon ="false"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/download_footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_detail_page_footer_height"
+        android:layout_gravity="bottom" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/no_match_note_text_color" />
+
+        <ImageView
+            android:id="@+id/app_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/app_detail_page_margin_12"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+            android:layout_marginRight="@dimen/app_detail_page_margin_17"
+            android:layout_marginTop="@dimen/app_detail_page_margin_12"
+            android:background="@drawable/download_selector" />
+
+        <TextView
+            android:id="@+id/update_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/update_by_one_key"
+            android:textColor="@color/center_white"
+            android:textSize="@dimen/textsize_18" />
+    </FrameLayout>
+
+</LinearLayout>

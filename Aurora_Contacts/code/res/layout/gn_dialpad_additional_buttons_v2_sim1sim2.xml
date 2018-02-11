@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/gn_dialpad_additional_button_height"
+    android:orientation="horizontal" >
+    <!--GIONEE:lixiaohu 2012-10-18 modify for CR00688804 begin-->
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="3" >
+    <!--GIONEE:lixiaohu 2012-10-18 modify for CR00688804 end-->
+	    <ImageButton
+	        android:id="@+id/dialButtonLeft"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:scaleType="centerInside"
+	    	android:src="@drawable/ic_see_contacts_holo_dark"
+	    	android:background="@drawable/gn_btn_video_call_background"
+	    	android:onClick="onClick"
+	    	/>
+    </FrameLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1" >
+    	
+        <LinearLayout
+            android:id="@+id/underShowDialpadButton"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:gravity="center"  >
+	    	<!--GIONEE:liuying 2012-7-5 modify for CR00637517 start-->
+	    	<ImageButton
+	    	    android:id="@+id/dialButton"
+		        android:layout_width="0dip"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight="1"
+		    	android:scaleType="centerInside"
+		    	android:src="@drawable/gn_ic_dial_action_call_sim1"
+		    	android:background="@drawable/gn_btn_call" />
+	    	<ImageButton
+	    	    android:id="@+id/dialButton2"
+		        android:layout_width="0dip"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight="1"
+		    	android:scaleType="centerInside"
+		    	android:src="@drawable/gn_ic_dial_action_call_sim2"
+		    	android:background="@drawable/gn_btn_call" />			
+	    	<!--GIONEE:liuying 2012-7-5 modify for CR00637517 end-->
+		    <ImageButton
+		        android:id="@+id/dialButtonRight"
+		        android:layout_width="0dip"
+		    	android:layout_height="match_parent"
+		    	android:scaleType="centerInside"
+		    	android:layout_weight="1"		    	
+		    	android:background="@drawable/gn_btn_overflow_menu_background" />
+	    </LinearLayout>
+	    
+        <LinearLayout
+            android:id="@+id/showDialpadButton"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:gravity="center"
+	    	android:visibility="gone"
+	    	android:onClick="onClick"
+	    	android:background="@drawable/gn_dialpad_delete_btn_background" >
+		    
+            <TextView
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:text="@string/gn_dialpad"
+		    	android:drawableLeft="@drawable/ic_show_dialpad_holo_dark" />
+		</LinearLayout>
+        
+        
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/twoline_height"
+    android:minHeight="@dimen/twoline_height"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/list_primary_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+        android:maxEms="10"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+        android:gravity="center_vertical"
+        android:textColor="#8d8d8e"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_gap_height_maintext_and_subtext"
+        android:layout_below="@id/title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/list_secondary_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/sim"
+            android:layout_width="8.67dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:focusable="false"
+            android:src="@drawable/svg_dial_card1" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:text="@string/app_name"
+            android:textColor="#8d8d8e"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@com.aurora:dimen/aurora_list_content_layout_paddingtop"
+        android:background="@color/list_divider_color" />
+
+</RelativeLayout>

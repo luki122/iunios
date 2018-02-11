@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="33dp"
+    android:width="33dp"
+    android:viewportHeight="66"
+    android:viewportWidth="66"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="5.5"
+        android:translateY="7.5" >
+        <path
+            android:name="aurora_sent_icon_new"
+            android:fillColor="#b3b3b3"
+            android:pathData="M55.000,25.500 L-0.000,-0.000 L4.125,19.625 L30.625,25.500 L4.125,31.375 L-0.000,51.000 L55.000,25.500 Z" />
+    </group>
+
+</vector>

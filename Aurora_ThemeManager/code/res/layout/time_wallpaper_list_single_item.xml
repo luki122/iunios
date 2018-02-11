@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lockpaper_item_settings_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" >
+
+        <ImageView
+            android:id="@+id/lockpaper_item_title_color"
+            android:layout_width="3dip"
+            android:layout_height="23dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/lockpaper_item_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lockpaper_item_title_color"
+            android:layout_marginLeft="7dip"
+            android:layout_toRightOf="@+id/lockpaper_item_title_color"
+            android:text="@string/default_lockscreen_wallpaper_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lockpaper_item_title_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lockpaper_item_title_name"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/lockpaper_item_title_name"
+            android:gravity="bottom"
+            android:text="@string/group_num_type"
+            android:textColor="#FFCCCCCC"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/lockpaper_item_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/localwallpaper_apply" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="179dip"
+        android:layout_height="145dip"
+        android:layout_marginBottom="10dip" >
+
+        <com.aurora.internetimage.NetworkImageView
+            android:id="@+id/lockpaper_pre_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/lockpaper_pre_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dip"
+            android:text="@string/lockpaper_pre_null_str"
+            android:textColor="#FFCCCCCC"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        <!-- android:src="@drawable/data1" -->
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-09-13 created for aurora's new feature -->
+<!-- Aurora liugj 2013-10-12 modified for change AuroraCheckBoxPreference to AuroraSwitchPreference -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_import_settings"
+        aurora:auroratitle="@string/aurora_import_title" >
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_import_sim"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/aurora_import_sim_title" />
+
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_import_sd"
+            aurora:aurorasummary="@string/aurora_import_sd_subtitle"
+            aurora:auroratitle="@string/aurora_import_sd_title" />
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_import_sd2"
+            aurora:aurorasummary="@string/aurora_import_sd2_subtitle"
+            aurora:auroratitle="@string/aurora_import_sd2_title" />  <!-- aurora add zhouxiaobing 20131211 -->      
+    </aurora.preference.AuroraPreferenceCategory>
+    
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_key_export_settings"
+        aurora:auroratitle="@string/aurora_export_title" >
+        <aurora.preference.AuroraPreference
+            aurora:aurorakey="pref_key_export_sim"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/aurora_export_sim_title" />
+
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_export_sd"
+            aurora:aurorasummary="@string/aurora_export_sd_subtitle"
+            aurora:auroratitle="@string/aurora_export_sd_title" />
+        <aurora.preference.AuroraPreference
+            aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_export_sd2"
+            aurora:aurorasummary="@string/aurora_export_sd2_subtitle"
+            aurora:auroratitle="@string/aurora_export_sd2_title" /><!-- aurora add zhouxiaobing 20131211 -->
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

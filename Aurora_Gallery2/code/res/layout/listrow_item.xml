@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:id="@+id/row_item_container"
+    >
+    
+    <RelativeLayout android:id="@+id/mlistview_dategroup"
+	    android:layout_width="@dimen/date_layout_margin"
+	    android:layout_height="match_parent"
+	    android:visibility="invisible"
+	    android:orientation="vertical" >
+    
+        <LinearLayout android:id="@+id/date_da"
+            android:layout_width="@dimen/date_group"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="-4dp"
+	    android:layout_alignParentTop="true"
+	     android:orientation="horizontal"
+	     >
+	     	<TextView android:id="@+id/date_date"
+		        android:layout_width="@dimen/date_datawidth"
+		        android:layout_height="wrap_content"
+		        android:textColor="#000000"
+		        android:textSize="@dimen/date_textsize"
+		        android:singleLine="true"
+		        android:gravity="right|top"
+		     />
+	     	
+		     <TextView android:id="@+id/date_wenzi"
+		        android:layout_width="@dimen/wenzi_datawidth"
+		        android:layout_height="wrap_content"
+		        android:textColor="#000000"
+		        android:textSize="@dimen/wenzi_textsize"
+		        android:text="@string/date_day"
+		        android:singleLine="true"
+		        android:gravity ="right"
+		         />
+	     </LinearLayout>
+	    
+	    <TextView android:id="@+id/date_year"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#5e5e5e"
+	        android:layout_below="@+id/date_da"
+	        android:textSize="@dimen/year_textsize"
+	        android:singleLine="true"
+	        android:gravity="right|top"
+	        android:layout_marginTop="-6dp"
+	        android:layout_alignRight="@+id/date_da"
+	         />
+
+	</RelativeLayout>
+	
+    <!-- lory del 12.28 <View android:id="@+id/listview_leftspace"
+        android:layout_width="@dimen/grid_item_dater_space"
+	    android:layout_height="match_parent"
+	    
+	    /> -->
+    
+    <LinearLayout android:id="@+id/listview_rowitem"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal" 
+	        >
+        
+    </LinearLayout>
+
+</LinearLayout>

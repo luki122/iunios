@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tuya_id_head" type="id" />
+    <item name="tuya_id_content" type="id" />
+    <item name="tuya_id_footer" type="id" />
+    <item name="tuya_id_drop_image" type="id" />
+    <item name="tuya_id_save_image" type="id" />
+    <item name="tuya_id_undo" type="id" />
+    <item name="tuya_id_redo" type="id" />
+    <item name="tuya_id_circle" type="id" />
+    <item name="tuya_id_rectangle" type="id" />
+    <item name="tuya_id_pathline" type="id" />
+    <item name="tuya_id_arrow" type="id" />
+    <item name="tuya_id_mosaic" type="id" />
+    <item name="tuya_id_mosaic_content" type="id" />
+    <item name="tuya_id_paint_size_1" type="id" />
+    <item name="tuya_id_paint_size_2" type="id" />
+    <item name="tuya_id_paint_size_3" type="id" />
+    <item name="tuya_id_paint_color_red" type="id" />
+    <item name="tuya_id_paint_color_yellow" type="id" />
+    <item name="tuya_id_paint_color_green" type="id" />
+    <item name="tuya_id_paint_color_blue" type="id" />
+    <item name="tuya_id_paint_color_while" type="id" />
+    <item name="tuya_id_drawing_select_panel" type="id" />
+    <item name="tuya_id_paint_size_select_panel" type="id" />
+    <item name="tuya_id_paint_color_select_panel" type="id" />
+    <item name="tuya_id_mosaic_blur_select_panel" type="id" />
+    <item name="tuya_id_mosaic_blur_select_bar" type="id" />
+
+</resources>

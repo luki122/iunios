@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="66dp">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/notification_paddingleft"
+        android:src="@drawable/notify_icon" />
+    <!--    
+    <Button
+        android:id="@+id/keepBtn" android:visibility="invisible"
+        android:layout_width="52dp" android:layout_height="27dp"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="@dimen/notification_marginright"
+        android:layout_centerVertical="true" 
+        android:text="@string/keep" android:textColor="@drawable/btn_keep_privacy_text_selector_color"
+        android:textSize="16sp" android:background="@drawable/button_keep_privacy"/> 
+        
+    <Button
+        android:id="@+id/removeBtn" android:visibility="invisible"
+        android:layout_width="52dp" android:layout_height="27dp"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="@dimen/notification_marginright"
+        android:layout_centerVertical="true" 
+        android:text="@string/no_keep" android:textColor="@drawable/btn_remove_privacy_text_selector_color"
+        android:textSize="16sp" android:background="@drawable/button_remove_privacy"/>  -->
+
+    <ImageButton
+        android:id="@+id/keepBtn"
+        android:layout_width="46.75dp"
+        android:layout_height="25.75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/notification_marginright"
+        android:background="@drawable/switch_close"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/removeBtn"
+        android:layout_width="46.75dp"
+        android:layout_height="25.75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/notification_marginright"
+        android:background="@drawable/switch_open"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/notification_marginleft"
+        android:layout_marginRight="@dimen/notification_marginright"
+        android:layout_toLeftOf="@id/keepBtn"
+        android:layout_toRightOf="@id/Icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:textColor="@color/notification_title"
+            android:textSize="@dimen/notification_text_title" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/notification_installed_top"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            android:textColor="@color/notification_text"
+            android:textSize="@dimen/notification_text_content" />
+    </LinearLayout>
+
+</RelativeLayout>

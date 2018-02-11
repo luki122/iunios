@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+    <TextView 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textAppearance="?android:attr/textAppearanceMedium"
+    	android:textColor="?android:attr/textColorSecondary"
+    	android:text="@string/gn_no_visible_contacts"
+    	android:visibility="gone" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:gravity="center" >
+        <aurora.widget.AuroraButton
+            android:id="@+id/empty_view_add_contact"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/gn_new_contact_item"
+	    	android:minWidth="@dimen/gn_long_button_min_width"
+            android:minHeight="@dimen/gn_long_button_min_height"
+	    	android:onClick="onClick"/>
+    
+	    <aurora.widget.AuroraButton
+	        android:id="@+id/empty_view_imexport"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/gn_import_title"
+	    	android:layout_marginTop="5dip"
+	    	android:minWidth="@dimen/gn_long_button_min_width"
+            android:minHeight="@dimen/gn_long_button_min_height"
+	    	android:onClick="onClick"/>
+	    
+	    <aurora.widget.AuroraButton
+	        android:id="@+id/empty_view_gn_exchange"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/gn_import_from_cloud"
+	    	android:layout_marginTop="5dip"
+	    	android:minWidth="@dimen/gn_long_button_min_width"
+            android:minHeight="@dimen/gn_long_button_min_height"
+	    	android:onClick="onClick"/>
+	    
+    </LinearLayout>
+    
+    <!-- android:background="@drawable/gn_selectable_item_bg" -->
+    
+</LinearLayout>

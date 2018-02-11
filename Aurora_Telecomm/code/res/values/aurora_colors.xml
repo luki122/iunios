@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources> 
+       <!-- DTMF Dialer -->
+    <color name="dtmf_dialer_display_text">#FFFFFF</color> <!-- white -->
+    <color name="aurora_dialpad_bg">#FF14cb9b</color>
+    <color name="aurora_dialpad_text_color">#FFFFFFFF</color>
+    <color name="sim_bg_color">#FFF0F5</color>
+    <color name="sim_title_color">#848484</color>
+    <color name="aurora_notification_text_color2">#8a8a8a</color>
+    <color name="aurora_notification_divider_color">#33FFFFFF</color> 
+    <color name="aurora_name_text_color">#FFA4EEC2</color> 
+    <color name="aurora_number_text_color">#99A4EEC2</color>     
+    <color name="aurora_note_text_color">#4DA4EEC2</color>  
+    <color name="aurora_green_text_color">#FF019c73</color>  
+    <color name="aurora_fisrtcallinfo_text_color">#FF00FCFF</color>  
+</resources>

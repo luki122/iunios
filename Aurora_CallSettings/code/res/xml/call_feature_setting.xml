@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.aurora.callsetting"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/call_settings">
+
+    <AuroraPreferenceCategory
+        aurora:aurorakey="button_ringtone_category_key"
+        aurora:auroratitle="@string/preference_category_ringtone"
+        aurora:aurorapersistent="false">
+
+        <com.aurora.callsetting.DefaultRingtonePreference
+            aurora:aurorakey="button_ringtone_key"
+            aurora:auroratitle="@string/ringtone_title"
+            aurora:auroradialogTitle="@string/ringtone_title"
+            aurora:aurorapersistent="false"
+            aurora:auroraringtoneType="ringtone" />
+
+        <AuroraCheckBoxPreference
+            aurora:aurorakey="button_vibrate_on_ring"
+            aurora:auroratitle="@string/vibrate_on_ring_title"
+            aurora:aurorapersistent="false"
+            aurora:auroradefaultValue="false" />
+    </AuroraPreferenceCategory>
+
+ <!--  <AuroraPreferenceCategory
+      aurora:aurorakey="button_misc_category_key"
+      aurora:auroratitle="@string/other_settings"
+      aurora:aurorapersistent="false" /> -->
+
+  <AuroraPreferenceScreen
+      aurora:aurorakey="button_voicemail_category_key"
+      aurora:auroratitle="@string/voicemail"
+      aurora:aurorapersistent="false">
+      <AuroraListPreference
+          aurora:aurorakey="button_voicemail_provider_key"
+          aurora:auroratitle="@string/voicemail_provider"
+          aurora:aurorasummary="@string/sum_voicemail_choose_provider"
+          aurora:auroradefaultValue=""
+          aurora:aurorapersistent="true" />
+      <AuroraPreferenceScreen
+          aurora:aurorakey="button_voicemail_setting_key"
+          aurora:auroratitle="@string/voicemail_settings"
+          aurora:aurorapersistent="false">
+
+          <!-- Note for all com.aurora.callsetting.EditPhoneNumberPreference objects
+
+               The last several attributes are for use with the EditText field
+               in the dialog.  These attributes are forwarded to that field
+               when the edittext is created.  The attributes include:
+               1. android:singleLine
+               2. android:autoText
+               3. android:background -->
+
+          <com.aurora.callsetting.EditPhoneNumberPreference
+              aurora:aurorakey="button_voicemail_key"
+              aurora:auroratitle="@string/voicemail_settings_number_label"
+              aurora:aurorapersistent="false"
+              aurora:auroradialogTitle="@string/voicemail"
+              phone:confirmMode="confirm"
+              android:singleLine="true"
+              android:autoText="false" />
+      </AuroraPreferenceScreen>
+
+      <AuroraRingtonePreference
+          aurora:aurorakey="button_voicemail_notification_ringtone_key"
+          aurora:auroratitle="@string/voicemail_notification_ringtone_title"
+          aurora:aurorapersistent="true"
+          aurora:auroraringtoneType="notification"
+          aurora:auroradefaultValue="content://settings/system/notification_sound" />
+      <AuroraCheckBoxPreference
+          aurora:aurorakey="button_voicemail_notification_vibrate_key"
+          aurora:auroratitle="@string/voicemail_notification_vibrate_when_title"
+          aurora:aurorapersistent="true"
+          />
+  </AuroraPreferenceScreen>
+
+  <AuroraCheckBoxPreference
+      aurora:aurorakey="button_play_dtmf_tone"
+      aurora:auroratitle="@string/dtmf_tone_enable_title"
+      aurora:aurorapersistent="false"
+      aurora:auroradefaultValue="true" />
+<!--
+  <AuroraCheckBoxPreference
+      aurora:aurorakey="button_dialpad_autocomplete"
+      aurora:auroratitle="@string/dial_pad_autocomplete"
+      aurora:aurorapersistent="false"
+      aurora:auroradefaultValue="false" />
+--><!-- aurora change zhouxiaobing 20140512 for 4.4 build and the 4.4 phone is not have this-->
+  <AuroraPreferenceScreen
+      aurora:aurorakey="button_respond_via_sms_key"
+      aurora:auroratitle="@string/respond_via_sms_setting_title"
+      aurora:aurorasummary="@string/respond_via_sms_setting_summary"
+      aurora:aurorapersistent="false">
+      <intent
+          android:action="android.intent.action.MAIN"
+          android:targetPackage="com.aurora.callsetting"
+          android:targetClass="com.aurora.callsetting.RespondViaSmsManager$Settings" />
+  </AuroraPreferenceScreen>
+
+  <AuroraPreferenceScreen
+      aurora:aurorakey="button_fdn_key"
+      aurora:auroratitle="@string/fdn"
+      aurora:aurorapersistent="false">
+      <intent android:action="android.intent.action.MAIN"
+          android:targetPackage="com.aurora.callsetting"
+          android:targetClass="com.aurora.callsetting.FdnSetting" />
+  </AuroraPreferenceScreen>
+
+    <AuroraCheckBoxPreference
+        aurora:aurorakey="button_auto_retry_key"
+        aurora:auroratitle="@string/auto_retry_mode_title"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/auto_retry_mode_summary"/>
+
+    <AuroraListPreference
+        aurora:aurorakey="button_tty_mode_key"
+        aurora:auroratitle="@string/tty_mode_option_title"
+        aurora:aurorasummary="@string/tty_mode_option_summary"
+        aurora:aurorapersistent="false"
+        aurora:auroraentries="@array/tty_mode_entries"
+        aurora:auroraentryValues="@array/tty_mode_values"/>
+
+     <AuroraCheckBoxPreference
+        aurora:aurorakey="button_hac_key"
+        aurora:auroratitle="@string/hac_mode_title"
+        aurora:aurorapersistent="true"
+        aurora:aurorasummary="@string/hac_mode_summary"/>
+
+    <AuroraListPreference
+        aurora:aurorakey="button_dtmf_settings"
+        aurora:auroratitle="@string/dtmf_tones_title"
+        aurora:aurorasummary="@string/dtmf_tones_summary"
+        aurora:auroraentries="@array/dtmf_tone_entries"
+        aurora:auroraentryValues="@array/dtmf_tone_values"/>
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_gsm_more_expand_key"
+        aurora:auroratitle="@string/labelGSMMore"
+        aurora:aurorasummary="@string/sum_gsm_call_settings"
+        aurora:aurorapersistent="false">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.GsmUmtsCallOptions"/>
+    </AuroraPreferenceScreen>
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_cdma_more_expand_key"
+        aurora:auroratitle="@string/labelCDMAMore"
+        aurora:aurorasummary="@string/sum_cdma_call_settings"
+        aurora:aurorapersistent="false">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.aurora.callsetting"
+            android:targetClass="com.aurora.callsetting.CdmaCallOptions"/>
+    </AuroraPreferenceScreen>
+    
+    <!--aurora add liguangyu 20131128 start -->
+    <AuroraSwitchPreference 
+        aurora:aurorakey="aurora_overturn_mute_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_overturn_mute_switch"
+		aurora:auroratitle="@string/aurora_overturn_mute_title"
+		/>
+    <!--aurora add liguangyu 20131128 end -->
+     
+    <AuroraSwitchPreference 
+        aurora:aurorakey="aurora_incoming_touch_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_incoming_touch_switch"
+		aurora:auroratitle="@string/aurora_incoming_touch_title"
+		/>
+	
+    <!--  
+	<AuroraSwitchPreference 
+        aurora:aurorakey="aurora_proximty_sensor_switch" 
+        aurora:auroradefaultValue="@bool/aurora_def_proximity_sensor"
+		aurora:auroratitle="@string/aurora_proximity_sensor_title"/>
+		-->
+	
+		
+	<AuroraSwitchPreference 
+        aurora:aurorakey="aurora_ringer_switch" 
+        aurora:auroradefaultValue="@bool/aurora_ringer"
+        aurora:aurorasummary="@string/aurora_ringer_summary"
+		aurora:auroratitle="@string/aurora_ringer_title"/>
+	
+	
+</AuroraPreferenceScreen>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_widget_parent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip"
+    android:gravity="center_vertical"
+    >
+    <RelativeLayout 
+        android:id="@+id/gn_widget"
+        android:layout_width="match_parent"
+        android:layout_height="64dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:paddingLeft="12dip"
+        >
+        <TextView android:id="@+id/gn_widget_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="20dip"
+                android:gravity="bottom"
+                android:textColor="@color/gn_widget_subject_color"
+                android:shadowColor="@color/gn_widget_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                />
+        <ImageView android:id="@+id/gn_mms_icon"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="2dip"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@id/gn_widget_subject"
+                android:layout_alignWithParentIfMissing="true"
+                />
+        <TextView android:id="@+id/gn_widget_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/gn_widget_from_color"
+                android:shadowColor="@color/gn_widget_text_shadow_color"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/gn_mms_icon"
+                android:layout_above="@id/gn_widget_subject"
+                android:layout_alignWithParentIfMissing="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-4dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="25dip"
+                android:ellipsize="end"
+                />
+    </RelativeLayout>
+    
+    <aurora.widget.AuroraListView
+        android:id="@+id/gn_infozone_mms_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip" />
+</LinearLayout>

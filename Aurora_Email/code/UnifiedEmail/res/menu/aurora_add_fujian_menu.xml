@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/id_image_add"
+        android:title="@string/aurora_add_picture"
+        android:icon="@drawable/aurora_img_attachment"/>
+    <item
+        android:id="@+id/id_camera_add"
+        android:title="@string/aurora_add_camera"
+        android:icon="@drawable/aurora_camera_attachment"/>
+    <item
+        android:id="@+id/id_file_add"
+        android:title="@string/aurora_choose_file"
+        android:icon="@drawable/aurora_filemanager_attachment"/>
+
+</menu>

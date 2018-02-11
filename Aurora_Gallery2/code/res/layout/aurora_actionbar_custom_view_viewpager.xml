@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|center_vertical" >
+
+    <!-- android:layout_height="@com.aurora:dimen/aurora_action_bar_height" -->
+
+
+    <!--
+         <TextView android:id="@+id/local_photos"
+        	  android:layout_width="wrap_content"
+        	  android:layout_height="match_parent"
+        	  android:text="@string/aurora_album"
+        	  android:textSize="20sp"
+        	  android:textColor="@color/aurora_actionbar_local_photos_color"
+        	  android:layout_alignParentLeft="true"
+        	  android:layout_centerVertical="true"
+        	  android:paddingLeft="10dp"
+        	  android:gravity="center"/>
+    -->
+    
+    <TextView
+	        android:id="@+id/local_photos"
+	        android:text="@string/aurora_album"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:layout_gravity="center"
+	        android:layout_marginLeft="@com.aurora:dimen/aurora_title_padding_left"
+	        android:textColor="@color/aurora_actionbar_local_photos_color"
+	        android:gravity="center_vertical"
+	        android:textSize="@com.aurora:dimen/aurora_action_bar_text_size"
+	        android:maxWidth="@com.aurora:dimen/aurora_action_bar_title_maxwidth"
+	        android:singleLine="true" />
+
+    <!--
+    <LinearLayout android:id="@+id/aurora_baidu_cloud_album_container"
+        		android:layout_width="wrap_content"
+	        	android:layout_height="match_parent"
+	        	android:layout_toRightOf="@id/local_photos"
+	        	android:layout_centerVertical="true"
+	        	android:orientation="horizontal"
+	        	android:layout_marginLeft="12dp">
+        
+	   	<TextView android:id="@+id/aurora_baidu_cloud_album"
+	        	  android:layout_width="wrap_content"
+	        	  android:layout_height="match_parent"
+	        	  android:text="@string/aurora_cloud_album"
+	        	  android:paddingTop="5dp"
+	        	  android:textSize="16sp"
+	        	  android:textColor="@color/aurora_actionbar_cloud_album_color"
+	        	  android:gravity="center"/>
+	   	
+	   	<ImageView android:id="@+id/aurora_new_upload_red_dot"
+	   	    		android:layout_width="wrap_content"
+	        	  android:layout_height="wrap_content"
+	        	  android:src="@drawable/aurora_new_upload_red_dot"
+	        	  android:layout_marginTop="18dp"
+	        	  android:visibility="invisible">
+	   	</ImageView>
+   	</LinearLayout>
+    -->
+
+</RelativeLayout>

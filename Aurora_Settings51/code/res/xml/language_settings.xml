@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+		xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:aurorakey="language_keyboard_settings"
+        aurora:auroratitle="@string/language_keyboard_settings_title">
+	 <aurora.preference.AuroraPreferenceCategory
+            
+            aurora:auroratitle="@string/phone_language"/>
+
+    <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="phone_language"
+            aurora:auroratitle="@string/phone_language"
+            aurora:aurorafragment="com.android.settings.LocalePicker"
+            />
+
+    <!-- Spell checker preference title, summary and fragment will be set programmatically. -->
+    <!-- Note: Mark this as persistent="false" to remove unnecessarily saved shared preference.
+         See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
+
+   <!--  <aurora.preference.AuroraPreferenceScreen
+            android:key="spellcheckers_settings"
+            android:title="@string/spellcheckers_settings_title"
+
+            settings:keywords="@string/keywords_spell_checker"
+            aurora:aurorapersistent="false"
+            /> -->
+
+    <!-- User dictionary preference title and fragment will be set programmatically. -->
+    
+    <!-- delete this item by jiyouguang -->
+    <!-- <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorakey="key_user_dictionary_settings"
+            aurora:auroratitle="@string/user_dict_settings_title"
+            /> -->
+	<!-- end -->
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="keyboard_settings_category"
+            aurora:auroratitle="@string/keyboard_settings_category"
+            settings:keywords="@string/keywords_keyboard_and_ime">
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="current_input_method"
+                aurora:auroratitle="@string/current_input_method"
+                />
+        <!-- Enabled input method list will be populated programmatically here. -->
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="hard_keyboard"
+            aurora:auroratitle="@string/builtin_keyboard_settings_title"
+            aurora:aurorapersistent="false">
+        <!-- Additional preference screens are inserted here programmatically
+             with low order values to set the key map of each attached keyboard. -->
+    </aurora.preference.AuroraPreferenceCategory>
+
+    
+ 
+  <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="voice_category"
+            aurora:auroratitle="@string/voice_category" >
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="voice_input_settings"
+                aurora:auroratitle="@string/voice_input_settings_title"
+                settings:keywords="@string/keywords_voice_input"
+                aurora:aurorafragment="com.android.settings.voice.VoiceInputSettings"
+                />
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="tts_settings"
+                aurora:auroratitle="@string/tts_settings_title"
+                settings:keywords="@string/keywords_text_to_speech_output"
+                aurora:aurorafragment="com.android.settings.tts.TextToSpeechSettings"
+                />
+
+    </aurora.preference.AuroraPreferenceCategory> 
+
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="pointer_settings_category"
+            aurora:auroratitle="@string/pointer_settings_category">
+
+        <com.android.settings.PointerSpeedPreference
+                aurora:aurorakey="pointer_speed"
+                aurora:auroratitle="@string/pointer_speed"
+                aurora:auroradialogTitle="@string/pointer_speed"
+                />
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory aurora:aurorakey="game_controller_settings_category"
+            aurora:auroratitle="@string/game_controller_settings_category">
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="vibrate_input_devices"
+                aurora:auroratitle="@string/vibrate_input_devices"
+                aurora:aurorasummaryOn="@string/vibrate_input_devices_summary"
+                aurora:aurorasummaryOff="@string/vibrate_input_devices_summary"
+                aurora:aurorapersistent="false"/>
+    </aurora.preference.AuroraPreferenceCategory>
+</aurora.preference.AuroraPreferenceScreen>

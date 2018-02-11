@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rspxml_tainqi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical" >
+<!--                 android:layout_marginTop="16.5dip" -->
+<!--                 shigq add android:layout_marginRight="28dp" -->
+
+                <ImageView
+                    android:id="@+id/vr_weather_today_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vs_weather_duoyun_alarm"
+                    android:layout_marginTop="8dip" />
+<!--                 android:layout_marginRight="5.0dip" -->
+<!--                     android:scaleType="fitXY" -->
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dip"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dip"
+                android:gravity="left"
+                android:textColor="#ff585858"
+                android:textSize="20sp" />
+<!--             android:textColor="#ff858585" -->
+<!--                 android:textSize="28.5dip" -->
+            <TextView
+                android:id="@+id/today_tem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dip"
+                android:layout_marginLeft="1.0dip"
+                android:gravity="left"
+                android:textColor="#ff000000"
+                android:textSize="26sp" />
+<!--             android:layout_marginTop="3.7999878dip" -->
+<!-- android:textSize="36.5dip" -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dip"
+                    android:orientation="horizontal" >
+<!--                     android:layout_marginTop="3.7999878dip" -->
+                    <TextView
+                        android:id="@+id/today_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff8d8d8d"
+                        android:textSize="16sp" />
+                    <!--             android:textColor="#ff858585" -->
+<!--                     android:textSize="20.5dip" -->
+                    <TextView
+                        android:id="@+id/today_of_week_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="6.0dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#ff8d8d8d"
+                        android:textSize="16sp" />
+                    <!--             android:textColor="#ff858585" -->
+<!--                     android:textSize="20.5dip" -->
+                </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/vs_weather_6day_hline"
+        android:scaleType="fitXY" />
+<!--     android:layout_marginTop="7.1999817dip" -->
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center" >
+<!--         android:layout_marginLeft="12dp" -->
+<!-- 	    android:layout_marginRight="12dp" -->
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_1_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView
+                	android:id="@+id/tem1"
+                	style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date1"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week1"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/vs_weather_divider" />
+        
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_2_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView
+                    android:id="@+id/tem2"
+                    style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date2"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week2"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/vs_weather_divider" />
+        
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_3_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView
+                    android:id="@+id/tem3"
+                    style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date3"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week3"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/vs_weather_divider" />
+        
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_4_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView
+                    android:id="@+id/tem4"
+                    style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date4"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week4"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/vs_weather_divider" />
+        
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_5_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView
+                    android:id="@+id/tem5"
+                    style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date5"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week5"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+        <ImageView
+            style="@style/vs_weather_divider" />
+        
+        <LinearLayout
+            android:layout_width="56dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:layout_marginTop="8dp"
+	    	android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/vr_6_day_img"
+                    style="@style/vs_weather_imageview" />
+                <TextView 
+                	android:id="@+id/tem6"
+                    style="@style/vs_weather_temperature" />
+                <TextView
+                    android:id="@+id/date6"
+                    style="@style/vs_weather_date" />
+                <TextView
+                    android:id="@+id/week6"
+                    style="@style/vs_weather_week" />
+        </LinearLayout>
+        
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_menu_message"
+        android:title="@string/set_to_message_ringtonetype">
+    </item>
+    <item
+        android:id="@+id/aurora_menu_notification"
+        android:title="@string/set_to_notification_ringtonetype">
+    </item>
+    <item
+        android:id="@+id/aurora_menu_both"
+        android:title="@string/set_to_both">
+    </item>
+
+</menu>

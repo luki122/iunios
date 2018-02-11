@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <pengwei><2013-04-12> modify for DayView begin -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:color="@color/gn_text_day_listview_item_title_press"/>
+    <item android:color="@color/gn_text_day_agenda_title"></item>
+    <item android:state_focused="true" android:color="@color/gn_text_day_agenda_title"/>
+
+</selector>
+<!-- Gionee <pengwei><2013-04-12> modify for DayView end -->

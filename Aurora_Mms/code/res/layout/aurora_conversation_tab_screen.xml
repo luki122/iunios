@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gn_conv_frame_layout"
+    android:background="@android:color/white">
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/aurora_conv_tab"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        aurora:entriesTitle="@array/aurora_conv_type" />
+    <aurora.widget.floatactionbutton.FloatingActionButton
+        android:id="@+id/aurora_edit_msg_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/aurora_fa_lmr"
+        android:layout_marginBottom="@dimen/aurora_fa_lmb"
+        android:src="@drawable/aurora_edit_msg_src"/>
+
+</FrameLayout>

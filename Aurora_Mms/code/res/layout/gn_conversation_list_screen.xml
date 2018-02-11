@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012-5-10 added for GIUI4.0 start -->
+
+    <!--Gionee <gaoj> <2013-05-28> modify for CR00817770 begin  -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gn_conv_frame_layout"
+    android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--Gionee <gaoj> <2013-05-28> modify for CR00817770 end  -->
+     <TextView
+        android:id="@+id/gn_encryption_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gn_spinner_height"
+        android:text="@string/gn_encryption"
+        android:paddingLeft="@dimen/list_item_vertical_top_gap"
+        android:paddingTop="@dimen/list_item_contact_left_margin"
+        android:visibility="gone"/>
+
+    <aurora.widget.AuroraListView
+        android:id="@android:id/list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="16dip"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="insideOverlay" />
+
+    <LinearLayout
+        android:id="@+id/gn_conversation_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/no_conversations"
+            android:layout_marginTop="77dip"
+            android:textColor="@color/gn_empty_text_color"
+            android:textSize="24sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    <!-- Gionee <gaoj> <2013-05-28> modify for CR00817770 begin -->
+</LinearLayout>
+</FrameLayout>
+<!--  Gionee <gaoj> <2013-05-28> modify for CR00817770 end-->

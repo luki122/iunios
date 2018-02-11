@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="23dp"
+    android:maxHeight="23dp">
+    <ImageView
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/aurora_border_gradient_color"/>
+    <ImageView 
+        android:id="@+id/launch_accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/account_radio_button"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  
+    
+    <!-- Gionee xuhz 20120830 add for WBW6806 start -->
+    <dimen name="gn_dialpad_digits_container_height">48px</dimen>
+    <!-- Gionee xuhz 20120830 add for WBW6806 end -->
+    
+</resources>

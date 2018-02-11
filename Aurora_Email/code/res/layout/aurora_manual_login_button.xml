@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--     android:background="@drawable/aurora_manual_login_select" -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manual_login_bn"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/manual_login_bn_title"
+    android:textSize="14sp"
+    android:gravity="center_vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:clickable="true"
+    android:textColor="@color/manual_text_login" >
+</TextView>

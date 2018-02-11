@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.voiceassistant"
+    android:versionCode="1"
+    android:versionName="1.034"
+    android:sharedUserId="android.uid.systemui" >
+  <!--  android:sharedUserId="android.uid.system" -->  
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15"/>
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />   
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> 
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS"/> 
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />  
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="com.wowenwen.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="com.wowenwen.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="com.wowenwen.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/> 
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+     
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+  	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+  	
+  	<!-- add permission for message sending for Android5.0 -->
+  	<uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vs_icon"
+        android:label="@string/vs_app_name" >
+         
+        <!-- baidu location start -->        
+       <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+		<!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ExWYKlkVfuwILl1HfOgEbHFx" />
+		<!-- baidu location end -->
+        
+        <activity
+            android:name="com.aurora.voiceassistant.view.MainActivity"
+            android:theme="@style/vs_main_activity_style" 
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.DEFAULT" />
+               	<!-- 
+  				<category android:name="android.intent.category.LAUNCHER" />
+  				-->
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.aurora.voiceassistant.view.ViewimageActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name="com.aurora.voiceassistant.view.WebviewActivity"
+            android:screenOrientation="nosensor" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+         <activity
+            android:label="@string/vs_setting" 
+            android:theme="@style/appTheme"
+            android:name="com.aurora.voiceassistant.view.SettingActivity"
+            android:screenOrientation="nosensor" >
+        </activity>
+        
+        <activity
+            android:name="com.aurora.voiceassistant.view.SpeechActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Translucent">
+        </activity>
+        
+        <activity
+            android:name="com.aurora.voiceassistant.view.BarCodeMainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/vs_barcode_main_activity_style"
+            android:label="@string/vs_barcode_app_name" >
+        </activity>
+        		
+    </application>
+
+</manifest>

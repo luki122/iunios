@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:startOffset="@integer/how_enter_anim_duration"
+    android:duration="40"
+    android:fromAlpha="0"
+    android:interpolator="@android:anim/bounce_interpolator"
+    android:toAlpha="1" >
+
+</rotate>

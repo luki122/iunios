@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">AuroraAccountSettings</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_settings">&quot;Аккаунт&quot;</string>
+    <string name="aurora_account_category_title">Аккаунт</string>
+    <string name ="aurora_account_category_security_title">Настройки безопасности</string>
+    <string name="add_account_label" >&quot;Добавить аккаунт&quot;</string>
+    <string name="header_add_an_account" >&quot;Добавить аккаунт&quot;</string>
+     <string name="remove_account_label" >&quot;Удалить аккаунт&quot;</string>
+    <string name="sync_disabled">&quot;Выключена синхронизация&quot;</string>
+    <string name="sync_error" >&quot;Ошибка синхронизации&quot;</string>
+    <string name="sync_in_progress" >&quot;Нажать сразу синхронизацию \n синхронизация…&quot;</string>
+    <string name="account_sync_settings_title" >&quot;Синхронизация&quot;</string>
+    <string name="accessibility_sync_enabled" msgid="558480439730263116">&quot;Синхронизация включена&quot;</string>
+    <string name="accessibility_sync_disabled" msgid="1741194106479011384">&quot;Выключена синхронизация&quot;</string>
+    <string name="accessibility_sync_error" msgid="8703299118794272041">&quot;Ошибка синхронизации.&quot;</string>
+    <string name="sync_is_failing" msgid="1591561768344128377">&quot;Ошибка при синхронизации, сразу восстановиться.&quot;</string>
+    <string name="help_url_accounts" translatable="false"></string>
+<!-- <string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string> -->
+<string name="sync_item_title"><xliff:g id="authority" example="Calendar">%s</xliff:g></string>
+    <string name="lock_settings_picker_title" msgid="1095755849152582712">&quot;Выберите метод блокировки экрана&quot;</string>
+    <string name="sync_enabled" msgid="4551148952179416813">&quot;Синхронизация включена&quot;</string>
+    <string name="really_remove_account_title" msgid="8800653398717172460">&quot;Удалить аккаунт?&quot;</string>
+    <string name="really_remove_account_message" product="default" msgid="3483528757922948356">&quot;Удалить аккаунт- удалить все соответствующих почт, контактов или других данных.&quot;</string>
+    <string name="remove_account_failed" product="default" msgid="6217238709175617517">&quot;Несколько приложений нужен этот аккаунт. Нужно возвращаться к заводским настройкам(эта операция будет удалить все ваши личные данные) для удаления аккаунта. Вы можете выполнять операцию через &quot;настройки&quot;&gt;&quot;Резер. копирование и сброс&quot;.&quot;</string>
+    <string name="cant_sync_dialog_message" msgid="1938380442159016449">&quot;Сейчас, синхронизация этого пункта выключена. Включить синхронизацию и фоновые данные для изменения этой настройки.&quot;</string>
+    <string name="cant_sync_dialog_title" msgid="8923508322291625282">&quot;Невозможно синхронизация ручным&quot;</string>
+    <string name="finish_button_label" msgid="481587707657751116">&quot;Завершение&quot;</string>
+    <string name="sync_menu_sync_now" msgid="6154608350395805683">&quot;Сразу синхронизация&quot;</string>
+    <string name="sync_menu_sync_cancel" msgid="8292379009626966949">&quot;Отмена синхронизации&quot;</string>
+    <string name="last_synced" msgid="4242919465367022234">&quot;Нажать сразу синхронизацию \n время предыдущей синхронизации：<xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>&quot;</string>
+    <string name="auto_sync_start">&quot;Автосинхронизация включена&quot;</string>
+    <string name="sync_failed" msgid="1696499856374109647">&quot;Неудачна синхронизация&quot;</string>
+    <string name="sync_active" msgid="8476943765960863040">&quot;Синхронизация&quot;</string>
+    <string name="sync_one_time_sync" msgid="6766593624598183090">&quot;Трогать для срезу синхронизации(<xliff:g id="LAST_SYNC_TIME">%1$s</xliff:g>）&quot;</string>
+    <string name="sync_automatically" msgid="1682730255435062059">&quot;Автосинхронизация данных приложений&quot;</string>
+   
+    <string name="global_change_warning" product="default" msgid="2461264421590324675">&quot;Эта настройка влияет на все пользователи в телефоне.&quot;</string>
+
+</resources>

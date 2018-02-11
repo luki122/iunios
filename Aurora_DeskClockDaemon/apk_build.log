@@ -1,0 +1,43 @@
+ln: "../Aurora_DeskClockDaemon/Aurora_DeskClockDaemon_U5.mk" 与"Aurora_DeskClockDaemon_U5.mk" 为同一文件
+********GN_STATIC_JARS_PATH:/home/s/workspace1/apk_build_env/static_jars/2.0/mtk/5.1/7505
+********GN_JARS_PATH:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505
+[32mTarget[0m *******build_local_static_jar*******
+[32mTarget[0m *************build apk**************
+[32mTarget[0m R.java and Manifest.java
+/home/s/workspace1/apk_build_env/tools/5.1/aapt package --auto-add-overlay --extra-packages com.android.ex.chips -c xxhdpi -z -m -J /home/s/workspace1/apk_build_env/out/pkg/src -M ../Aurora_DeskClockDaemon/code/AndroidManifest.xml -P /home/s/workspace1/apk_build_env/out/pkg/public_resources.xml -S ../Aurora_DeskClockDaemon/code/res -A ../Aurora_DeskClockDaemon/code/assets -I /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/framework_res.apk -I /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/aurora-framework_res.apk -G /home/s/workspace1/apk_build_env/out/pkg/proguard_options --min-sdk-version 15 --target-sdk-version 15 --version-code 15
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+Warning: AndroidManifest.xml already defines versionCode (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines minSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+[32mTarget[0m transform_aidl_to_java
+[32mTarget[0m transform_logtags_to_java
+[32mTarget[0m transform_java_to_classes_jar
+/usr/bin/javac -J-Xmx512M -target 1.7 -Xmaxerrs 9999999 -encoding UTF-8 -g -bootclasspath /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/core/classes.jar -classpath /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/aurora-framework/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/mediatek-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/ims-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/javax.obex/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/apache-xml/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/core-junit/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/android.policy/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/framework/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/ext/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/mediatek-telephony-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/bouncycastle/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/mms-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/telephony-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/setup-wizard-navbar/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/conscrypt/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/services/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/voip-common/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/mediatek-framework/classes.jar:/home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/core-libart/classes.jar:/home/s/workspace1/apk_build_env/static_jars/2.0/mtk/5.1/7505/android-common/javalib.jar:/home/s/workspace1/apk_build_env/static_jars/2.0/mtk/5.1/7505/android-common-chips/javalib.jar:/home/s/workspace1/apk_build_env/static_jars/2.0/mtk/5.1/7505/android-support-v13/javalib.jar:/home/s/workspace1/apk_build_env/static_jars/2.0/mtk/5.1/7505/android-support-v4/javalib.jar -d /home/s/workspace1/apk_build_env/out/pkg/classes @/home/s/workspace1/apk_build_env/out/pkg/java-source-list-uniq
+[32mTarget[0m transform_jar_to_proguard
+[32mTarget[0m add assets to package
+/home/s/workspace1/apk_build_env/tools/5.1/aapt package --auto-add-overlay --extra-packages com.android.ex.chips -c xxhdpi -u -z -c zh_CN,en_US,ru_RU,ldpi,hdpi,mdpi,nodpi,xhdpi,xxhdpi,xxxhdpi -M ../Aurora_DeskClockDaemon/code/AndroidManifest.xml -S ../Aurora_DeskClockDaemon/code/res -A ../Aurora_DeskClockDaemon/code/assets -I /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/framework_res.apk -I /home/s/workspace1/apk_build_env/jars/2.0/mtk/5.1/7505/aurora-framework_res.apk --min-sdk-version 15 --target-sdk-version 15 --product default --version-code 15 -F /home/s/workspace1/apk_build_env/out/pkg/package.apk
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c ldpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c hdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c mdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c nodpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c ldpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c hdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c mdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c nodpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxhdpi-v4. Use --preferred-density instead.
+warning: ignoring flag -c xxxhdpi-v4. Use --preferred-density instead.
+Warning: AndroidManifest.xml already defines versionCode (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines minSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+Warning: AndroidManifest.xml already defines targetSdkVersion (in http://schemas.android.com/apk/res/android); using existing value in manifest.
+ '/home/s/workspace1/apk_build_env/out/pkg/classes.dex' as 'classes.dex'...
+[32mTarget[0m signatured apk
+[32mTarget[0m copy apk target
+"/home/s/workspace1/apk_build_env/out/pkg/package.apk" -> "/home/s/workspace1/apk_build_env/out/Aurora_DeskClockDaemon/Aurora_DeskClockDaemon.apk"
+/home/s/workspace1/apk_build_env/apk: 行 579: /home/s/workspace1/apk_build_env/Aurora_DeskClockDaemon_U5.mk: 没有那个文件或目录

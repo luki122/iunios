@@ -1,0 +1,22 @@
+# view AndroidManifest.xml #generated:16
+-keep class cn.com.xy.sms.sdk.MyApplication { <init>(...); }
+
+# view res/layout/duoqu_horz_table.xml #generated:2
+-keep class cn.com.xy.sms.sdk.ui.popu.widget.DuoquHorizItemTable { <init>(...); }
+
+# view res/layout/duoqu_bubble_bottom_two.xml #generated:2
+# view res/layout/duoqu_card_bubble_split.xml #generated:2
+# view res/layout/duoqu_code_body.xml #generated:2
+# view res/layout/duoqu_code_title_head.xml #generated:2
+# view res/layout/duoqu_train_body.xml #generated:2
+-keep class cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class cn.com.xy.sms.test.JiekouActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class cn.com.xy.sms.test.ResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class cn.com.xy.sms.test.SuanfaActivity { <init>(...); }
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- Gionee <wangguojing> <2013-08-10> add for CR00854573 begin -->
+    <string name="gn_enable_debug_title">Log 开关</string>
+    <string name="gn_enable_debug_dialog_title">选择开关</string>
+    <string name="gn_log_master_switch">总开关</string>
+    <string name="gn_log_verbose_switch">VERBOSE 级开关</string>
+    <string name="gn_log_debug_switch">DEBUG 级开关</string>
+    <string name="gn_log_info_switch">INFO 级开关</string>
+    <string name="gn_log_warn_switch">WARN 级开关</string>
+    <string name="gn_log_error_switch">ERROR 级开关</string>
+    <!-- Gionee <wangyaohui> <2013-05-30> add for CR00854573 end -->
+    
+</resources>

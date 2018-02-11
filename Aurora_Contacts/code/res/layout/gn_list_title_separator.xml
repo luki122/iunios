@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author: jialf
+    Description: added for CR00798010
+    Date:2013-04-16
+-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/gn_contact_list_item_left_margin"
+    android:paddingRight="@dimen/gn_contact_list_item_right_margin"
+    android:focusable="false">
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dip"/>
+</FrameLayout>

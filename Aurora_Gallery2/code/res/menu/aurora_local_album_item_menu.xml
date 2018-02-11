@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/operation_send"
+        android:icon="@com.aurora:drawable/aurora_bottombar_share_selector"
+        android:title="@string/aurora_share">
+    </item>
+    <item
+        android:id="@+id/operation_favorite"
+        android:icon="@com.aurora:drawable/aurora_bottombar_like_selector"
+        android:title="@string/aurora_favorite">
+    </item>
+    <item
+        android:id="@+id/operation_no_favorite"
+        android:icon="@com.aurora:drawable/aurora_bottombar_unlike_selector"
+        android:title="@string/aurora_cancel_favorite">
+    </item>
+      <item
+        android:id="@+id/operation_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/aurora_delete">
+    </item>
+    <item
+        android:id="@+id/operation_more"
+        android:icon="@com.aurora:drawable/aurora_bottombar_more_selector"
+        android:title="@string/aurora_more">
+    </item>
+
+</menu>

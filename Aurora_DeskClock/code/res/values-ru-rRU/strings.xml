@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+	 <string name="app_name">Часы</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Контактная информация 12333</string>
+    <string name="name">Контактная информация</string>
+    <string name="quxiao">Отмена</string>
+    <string name="setup">Настройка будильника</string>
+    <string name="sure">Готово</string>
+    <string name="fullscreenbg">Выключение</string>
+    
+    <string name="txtday">th</string>
+    <string name="app_widget_label">Дата</string> 
+    <string name="app_widget_label_time">Время</string> 
+    <string name="app_widget_label_analogclock">Часы</string> 
+    <string name="app_widget_title">Updates</string>  
+    <string name="app_widget_error_message">No messages, please check to login.</string>
+    <string name="onlyonce">Единовременно</string>
+    <string name="weekend">Выходные дни</string>
+    <string name="dontdisturb1">Во избежание тревоги соседей</string>
+    <string name="dontdisturb2">Выключить звук и усилить интенсивность </string>
+    <string name="weekday">Будние дни</string>
+    <string name="selfdefine">Пользовательская настройка</string>
+    <string name="officialweekday">Законный рабочий день(интеллектуально пропускать праздники и выходные дни)</string>
+    <string name="officialweekday2">Законный рабочий день</string>
+    <string name="choosealarm">Выбирать звук будильника</string>
+    <string name="nativitime">Местное стандартное время</string>
+    
+   	<string name="dayseven">Воскресенье</string>  
+	<string name="dayone">Понедельник</string>  
+	<string name="daytwo">Вторник</string>
+	<string name="daythree">Среда</string>  
+	<string name="dayfour">Четверг</string>   
+	<string name="dayfive">Пятница</string>  
+	<string name="daysix">Суббота</string>  
+	
+	<string name="notify_wakeup_notalarm">Сегодня молодец (молодца), встаёте без звука будильника</string>
+	<string name="notify_clicktoclosewakeupalarm">Нажать и закрыть близкий будильник </string>
+	<string name="selfdefinecycle">Определяемый период пользователем</string>
+	<string name="stillsleepfirst">Покачать телефон  и спать ещё на 10 минут</string>
+	<string name="stillsleepsecond">Покачать телефон и продолжать спать на 10 минут  </string>
+	<string name="stillsleepthird">Спать больше нельзя, вставать быстрее</string>
+	
+	<string name="currenttimetext">Текущее время</string>
+	<string name="deletealarm">Удалить будильник</string>
+	<string name="suretodeletealarm">Удалить будильник?</string>
+	<string name="hint">Указание</string>
+	<string name="ifgiveupchange">Покинуть изменения?</string>
+	
+	
+	<string name="worldtimeearly1" >&quot;Быстрее <xliff:g id="HOUR">%d</xliff:g> час <xliff:g id="MINUTE">%d</xliff:g> минута&quot;</string>
+	<string name="worldtimeearly2" >&quot;Быстрее <xliff:g id="HOUR">%d</xliff:g> час&quot;</string>
+	<string name="worldtimelate1" >&quot;Медленнее <xliff:g id="HOUR">%d</xliff:g> час <xliff:g id="MINUTE">%d</xliff:g> минута&quot;</string>
+	<string name="worldtimelate2" >&quot;Медленнее <xliff:g id="HOUR">%d</xliff:g> час&quot;</string>
+	<string name="worldtimesame" >&quot;Одинаковое время с нами&quot;</string>
+    
+    <string-array name="auto_silence_values" translatable="false">
+        <item>-1</item> <!-- Off -->
+<item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+     </string-array>
+    <string name="app_label" msgid="6674495003718166674">&quot;Часы&quot;</string>
+    <string name="alarm_list_title" msgid="7589940465292950600">&quot;Будильник&quot;</string>
+    <string name="add_alarm" msgid="5976616107390962899">&quot;Добавить будильник&quot;</string>
+    <string name="menu_desk_clock" msgid="3241995064554071588">&quot;Настольные часы&quot;</string>
+    <string name="menu_edit_alarm" msgid="7204602994918829751">&quot;Изменить настройку будильника&quot;</string>
+    <string name="delete_alarm" msgid="3457780990646206817">&quot;Отменить будильник&quot;</string>
+    <string name="enable_alarm" msgid="1834599140632142536">&quot;Пользоваться будильник&quot;</string>
+    <string name="disable_alarm" msgid="5889378670229554109">&quot;Приостановить  пользование будильника&quot;</string>
+    <string name="delete_alarm_confirm" msgid="4237696873219106907">&quot;Будет отменять будильник&quot;</string>
+    <string name="show_clock" msgid="8358759982675616915">&quot;Индицируемые будильник&quot;</string>
+    <string name="hide_clock" msgid="3217727306480505694">&quot;Скрывать будильник&quot;</string>
+    <string name="label" msgid="162189613902857319">&quot;Заметка&quot;</string>
+    <string name="default_label" msgid="5590025289805630372">&quot;Будильник&quot;</string>
+    <string name="set_alarm" msgid="9148359866152726808">&quot;Установить будильник&quot;</string>
+    <string name="alarm_vibrate" msgid="3476686921490362230">&quot;Вибрация&quot;</string>
+    <string name="alarm_repeat" msgid="7242985466344233206">&quot;Повторять&quot;</string>
+    <string name="alert" msgid="6539852766423700221">&quot;Звук&quot;</string>
+    <string name="time" msgid="8067216534232296518">&quot;Время&quot;</string>
+    <string name="alarm_alert_dismiss_text" msgid="4942914605480888820">&quot;Отмена&quot;</string>
+    <string name="alarm_alert_alert_silenced" msgid="7918075929961104202">&quot;Через менее одной минуты звучит будильник&quot;</string>
+    <string name="alarm_alert_snooze_text" msgid="1774416052207651584">&quot;Остановить и потом звучать&quot;</string>
+<!-- Gionee baorui 2013-01-17 modify for CR00765213 begin -->
+<!-- 
+    <string name="alarm_alert_snooze_set" msgid="656470966696912087">"暂停 <xliff:g id="MINUTES">%d</xliff:g> 分钟。"</string>
+    -->
+<string name="alarm_alert_snooze_set" msgid="656470966696912087">&quot;Остановить <xliff:g id="MINUTES">%d</xliff:g> минут&quot;</string>
+<!-- Gionee baorui 2013-01-17 modify for CR00765213 begin -->
+<!-- Gionee baorui 2013-01-17 modify for CR00764967 begin -->
+<!-- 
+    <string-array name="alarm_set">
+        <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+        <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+        <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+        <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+        <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+    -->
+<string-array name="alarm_set">
+        <item msgid="5163476010406761625">&quot;&quot;</item>
+        <item msgid="7110525731259629055">&quot;через <xliff:g id="DAYS">%1$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="7003982794086186185">&quot;через <xliff:g id="HOURS">%2$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="7311021123230077742">&quot;через <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="8431715191823114872">&quot;через <xliff:g id="MINUTES">%3$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="3244151088673185428">&quot;через <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="3663661342600168814">&quot;через <xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g> звучит будильник&quot;</item>
+        <item msgid="7779544127785487304">&quot;через <xliff:g id="DAYS">%1$s</xliff:g><xliff:g id="HOURS">%2$s</xliff:g><xliff:g id="MINUTES">%3$s</xliff:g> звучит будильник&quot;</item>
+    </string-array>
+<!-- Gionee baorui 2013-01-17 modify for CR00764967 end -->
+<string name="day" msgid="7984755014526510295">&quot;1 день&quot;</string>
+    <string name="days" msgid="2070509222727852210">&quot;<xliff:g id="DAYS">%s</xliff:g> дня&quot;</string>
+    <string name="hour" msgid="2546819039651509323">&quot;1 час&quot;</string>
+    <string name="hours" msgid="2071487018566991613">&quot;<xliff:g id="HOURS">%s</xliff:g> часов&quot;</string>
+    <string name="minute" msgid="2486157997434653710">&quot;1 минута&quot;</string>
+    <string name="minutes" msgid="6115838729146292526">&quot;<xliff:g id="MINUTES">%s</xliff:g> минут&quot;</string>
+    <string name="every_day" msgid="1058994798884544691">&quot;Ежедневно&quot;</string>
+    <string name="never" msgid="54104287800571769">&quot;Никогда нет&quot;</string>
+    <string name="day_concat" msgid="971998564991636532">&quot;,&quot;</string>
+    <string name="clock_instructions" msgid="3118560284915857690">&quot;Выбирать  показанный будильник.&quot;</string>
+    <string name="analog_gadget" msgid="1670505720837152766">&quot;Имитационный будильник&quot;</string>
+    <string name="settings" msgid="5849739030579520686">&quot;Настройка&quot;</string>
+    <string name="alarm_in_silent_mode_title" msgid="3892612644543516705">&quot;При беззвучном режиме будильник звучит&quot;</string>
+    <string name="alarm_in_silent_mode_summary" msgid="6042500263899922832">&quot;При беззвучном режиме будильник звучит&quot;</string>
+<!-- android jiating 20120528 begin -->
+<!--            <string name="snooze_duration_title" msgid="1471249885139952670">"再响间隔"</string> -->
+<string name="snooze_duration_title" msgid="1471249885139952670">&quot;Вздремнуть&quot;</string>
+<!-- android jiating 20120528 end -->
+<string-array name="snooze_duration_entries">
+        <item msgid="8337408933053603125">&quot;5 минут&quot;</item>
+        <item msgid="5294206441496024610">&quot;10 минут&quot;</item>
+        <item msgid="2165904039211935470">&quot;15 минут&quot;</item>
+        <item msgid="7248236967714374250">&quot;20 минут&quot;</item>
+        <item msgid="738394723625179423">&quot;25 минут&quot;</item>
+        <item msgid="1180222611308391616">&quot;30 минут&quot;</item>
+    </string-array>
+    <string-array name="snooze_duration_values">
+        <item msgid="3655014754453084122">&quot;5&quot;</item>
+        <item msgid="8939029597449573449">&quot;10&quot;</item>
+        <item msgid="3922647341176353315">&quot;15&quot;</item>
+        <item msgid="5821804105985044459">&quot;20&quot;</item>
+        <item msgid="6048861883552402852">&quot;25&quot;</item>
+        <item msgid="2740866721232379791">&quot;30&quot;</item>
+    </string-array>
+
+    <string name="auto_silence_title" msgid="8000666766495360928">&quot;Автоматически остановить будильник&quot;</string>
+    <string name="auto_silence_summary" msgid="5757272454196171758">&quot;Будильник будет остановить через <xliff:g id="MINUTES">%d</xliff:g> минут&quot;</string>
+    <string name="auto_silence_never" msgid="4302257878142130807">&quot;Закрыть&quot;</string>
+
+    <string-array name="auto_silence_entries">
+        <item msgid="7718972982871612080">&quot;Закрыть&quot;</item>
+        <item >&quot;1 минута&quot;</item>
+        <item msgid="5431906692406316549">&quot;5 минут&quot;</item>
+        <item msgid="7742728812068919959">&quot;10 минут&quot;</item>
+        <item msgid="2855948657259647629">&quot;15 минут&quot;</item>
+        <item msgid="6330196381284475079">&quot;20 минут&quot;</item>
+        <item msgid="7809240121716151904">&quot;25 минут&quot;</item>
+        <item msgid="2807487305575255986">&quot;30 минут&quot;</item>
+    </string-array>
+
+    <string name="done" msgid="6509722361933858451">&quot;Готово&quot;</string>
+    <string name="revert" msgid="9100911171235162926">&quot;Восстановить&quot;</string>
+    <string name="delete" msgid="5732434972457000541">&quot;Удалить будильник&quot;</string>
+    <string name="alarm_volume_title" msgid="8506245173912428522">&quot;Громкость будильника&quot;</string>
+    <string name="alarm_volume_summary" msgid="8957440373896242438">&quot;Установить громкость будильника&quot;</string>
+    <string name="silent_alarm_summary" msgid="8605302849408279221">&quot;Беззвучно&quot;</string>
+    <string name="alarm_notify_text" msgid="4146350965933990093">&quot;Остановить или закрыть будильник.&quot;</string>
+    <string name="alarm_notify_snooze_label" msgid="5404083762646377829">&quot;<xliff:g id="LABEL">%s</xliff:g>（остановлено）&quot;</string>
+    <string name="alarm_notify_snooze_text" msgid="8004830999152609519">&quot;Будильник будет <xliff:g id="TIME">%s</xliff:g>звучать, нажать и закрыть&quot;</string>
+<!--     <string name="volume_button_setting_title" msgid="6937131248843413357">"音量按钮"</string> -->
+<string name="volume_button_setting_title" msgid="6937131248843413357">&quot;Роль звуковой кнопки&quot;</string>
+    <string name="volume_button_dialog_title" msgid="8768042543750036853">&quot;Роль кнопки&quot;</string>
+    <string name="volume_button_setting_summary" msgid="4776447991226047070">&quot;Установить роль кнопок при звоне будильнике&quot;</string>
+
+    <string-array name="volume_button_setting_entries">
+        <item msgid="4520420953175098625">&quot;Нет&quot;</item>
+        <item msgid="7111908302622811168">&quot;Остановить&quot;</item>
+        <item msgid="8573552194573068996">&quot;Закрыть&quot;</item>
+    </string-array>
+    <string-array name="volume_button_setting_values">
+        <item msgid="4851033050639608752">&quot;0&quot;</item>
+        <item msgid="3204893476515513084">&quot;1&quot;</item>
+        <item msgid="7687709558968154577">&quot;2&quot;</item>
+    </string-array>
+
+    <string name="default_ringtone_setting_title" msgid="4549726190682964245">&quot;Установить мелодию по умолчанию&quot;</string>
+    <string name="alarm_button_description" msgid="740283647046258651">&quot;Будильник&quot;</string>
+    <string name="gallery_button_description" msgid="1151743663255257668">&quot;Альбом&quot;</string>
+    <string name="music_button_description" msgid="1626593420810117999">&quot;Музыка&quot;</string>
+    <string name="nightmode_button_description" msgid="990894208217576381">&quot;Потемнеть&quot;</string>
+    <string name="home_button_description" msgid="3383859096809056157">&quot;Стартер&quot;</string>
+    <string name="desk_clock_button_description" msgid="968868045496561043">&quot;Индикация часов&quot;</string>
+    <string name="battery_charging_level" msgid="4391767951302394083">&quot;<xliff:g id="NUMBER">%d</xliff:g><xliff:g id="PERCENT">%%</xliff:g>&quot;</string>
+    <string name="weather_fetch_failure" msgid="7517010911981312358">&quot;Информация о погоде в данный момент не доступно.&quot;</string>
+    <string name="menu_item_dock_settings" msgid="3524235151132971114">&quot;Подставная настройка&quot;</string>
+    <string name="alarm_klaxon_service_desc" msgid="2153290655559916468">&quot;Услуг по передачи звука будильник в  DeskClock.&quot;</string>
+    <string name="loading_ringtone" msgid="6523322777415268044">&quot;Загрузка звука...&quot;</string>
+    <string name="control_set_alarm" msgid="2194676418924016327">&quot;Установить будильник&quot;</string>
+    <string name="control_set_alarm_with_existing" msgid="1128169496817859490">&quot;Установленное время: <xliff:g id="TIME">%s</xliff:g>&quot;</string>
+<!-- android jiating 20120528 begin -->
+<string name="isDelete_select_alarm" msgid="2153290655559916468">Удалить выбранный будильник?</string>
+    <string name="alarm_delete_sure" msgid="2153290655559916468">ОК</string>
+    <string name="show_info_for_select" msgid="2153290655559916468">Выбранный</string>
+    <string name="show_info_for_select_count" msgid="2153290655559916468">Штука</string>
+    <string name="show_info_for_select_all" msgid="2153290655559916468">Все</string>
+    <string name="create_alarm" msgid="2153290655559916468">Добавить будильник</string>
+    <string name="all_selected" msgid="2153290655559916468">Выбирать всё</string>
+    <string name="no_alarm" msgid="2153290655559916468">Будильника нету, добавите!</string>
+    <string name="edite_alarm" msgid="2153290655559916468">Редактировать будильник</string>
+    <string name="android_delete_alarm" msgid="2153290655559916468">Удалить будильник</string>
+    <string name="all_unselected" msgid="2153290655559916468">Отменить всё</string>
+<!-- android jiating 20120528 end -->
+<!-- android lilg 20120601 add for stopwatch, chronometer start -->
+<string name="stopwatch">Секундомер</string>
+    <string name="btnMark">расчёт раз</string>
+    <string name="lightInfo">При расчёте времени экран светится</string>
+    <string name="chronometer">Таймер</string>
+    <string name="btnStart">Начать</string>
+    <string name="btnPause">Остановить</string>
+    <string name="btnGoon">Продолжить</string>
+    <string name="btnReset">Перестановка</string>
+    <string name="etHint">Уст. время:</string>
+    <string name="tvRing">Мелодия напоминания: доброе утро</string>
+    <string name="timeOut"> Время таймера вышло</string>
+    <string name="chronometer_alarm_alert_dismiss_text">ОК</string>
+    <string name="chronometer_alarm_alert_title">Указание</string>
+    <string name="world_time" msgid="2153290655559916468">Мировые часы</string>
+<!-- android lilg 20120601 add for stopwatch, chronometer end -->
+<!-- android yuchunfei 20120601 add start -->
+<string name="exists_already">Есть</string>
+    <string name="add_city">Добавить город</string>
+    <string name="search_city">Ввести город</string>
+    <string name="delete_city">Удалить</string>
+    <string name="delete_all_city">Удалить выбранный город?</string>
+    <string name="no_city">Города нету, добавите!</string>
+    <string name="world_search_no_city">Нет результатов</string>
+    <string name="default_ringtone">Мелодия по умолчанию</string>
+    <string name="world_time_morning">Первая половина дня</string>
+    <string name="world_time_afernoon">Вторая половина дня</string>
+<!-- android yuchunfei 20120601 add end -->
+<string name="chronometer_start_chronometer">Кружиться по часовой стрелке и назначить время</string>
+    <string name="chronometer_notify_alarm">Звук напоминания</string>
+    <string name="chronometer_alarm">Звук</string>
+    <string name="chronometer_screen_always_on">При расчёте времени экран светится</string>
+    
+    <string name="btnContinue">Продолжать</string>
+
+    <string name="power_on">&quot;Отменить и включить питание&quot;</string>
+	<string name="power_off">&quot;Отменить и отключить питание&quot;</string>
+	
+	<string name="alarm_upadate_data_menu">Время системы</string>
+<!-- gionee huangxiaochuan 20120719 add start -->
+<string name="stopWatchNotiTitle">Таймер</string>
+	<string name="stopWatchNotiText">Таймер работает</string>
+	<string name="chronometerNotiTitle">Калькулятор</string>
+	<string name="chronometerNotiText">Калькулятор работает</string>
+	<string name="toastAddalarm">Добавить будильник</string>
+	<string name="toastDeleteAlarm">Удалить будильник</string>
+	<string name="toastAddCity">Добавить город</string>
+	<string name="toastDeleteCity">Удалить город</string>
+	<string name="toastSortCity">Порядок</string>
+	<string name="toastSortCityOk">Готово</string>
+	<string name="toastSortCityCancel">Отмена</string>
+	<string name="titleSortCityBack">изменить порядок городов</string>
+	
+	<string name="alarm_notify_delay_text" >&quot;Продлить по умолчанию <xliff:g id="TIME">%s</xliff:g>и звучать&quot;</string>
+  	<string name="alarm_alert_delay_set" > &quot;Продлить по умолчанию<xliff:g id="MINUTES">%d</xliff:g> минут и звучать.&quot;</string>
+   	<string name="alarm_notify_delay_label" >&quot;<xliff:g id="LABEL">%s</xliff:g>（звучать по умолчанию）&quot;</string>
+
+   	
+   	<string name="chronometer_alart_title">Расчёт времени</string>
+   	<string name="chronometer_alart_title_hour">Час</string>
+   	<string name="chronometer_alart_title_minute">Минута</string>
+   	<string name="chronometer_alart_title_second">Секунда</string>
+<!-- gionee huangxiaochuan 20120719 add end -->
+<!-- Gionee baorui 2012-11-15 modify for CR00732943 begin -->
+<string name="no_set">Не установлено</string>
+<!-- Gionee baorui 2012-11-15 modify for CR00732943 end -->
+<!-- Gionee baorui 2012-12-16 modify for CR00733082 begin -->
+<string name="daysOfWeek">Вс. пн. вт. ср чт. пт. сб.</string>
+    <string name="btnOff">Закрыть</string>
+    <string name="off_power_on">Закрыть и выключить питание</string>
+    <string name="option">Выбор</string>
+    <string name="remove_alarm">Удалить</string>
+    <string name="alarms_remove">Удалить партией</string>
+    <string name="isDelete_the_alarm">Удалить будильник?</string>
+    <string name="delete_alarm_title">Удалить</string>
+    <string name="delete_the_city">Удалить город?</string>
+    <string name="vibrate_in_silent_mode_summary">При беззвучном режиме вибрация не доступа</string>
+    <string name="gn_chronometer_alarm_alert_title">Время до</string>
+<!-- Gionee baorui 2012-12-16 modify for CR00733082 end -->
+<!-- Gionee baorui 2013-01-15 modify for CR00762851 begin -->
+<string name="favorite_title">Обиходно</string>
+    <string name="menu_discard">Покинуть</string>
+    <string name="menu_done">Сохранить</string>
+    <string name="empty"></string>
+<!-- Gionee baorui 2013-01-15 modify for CR00762851 end -->
+<!-- Gionee <baorui><2013-03-15> modify for CR00784986 begin -->
+<string name="digital_gadget" msgid="2326954556720571358">&quot;Цифровой будильник&quot;</string>
+    <string name="alarm_deleted" msgid="5017075127290219443">&quot;Удалён будильник&quot;</string>
+<!-- Gionee <baorui><2013-03-15> modify for CR00784986 end -->
+<string-array name="weeked">
+     <item >&quot;Вс.&quot;</item>
+      <item >&quot;Пн.&quot;</item>
+      <item >&quot;Вт.&quot;</item>
+      <item >&quot;Ср.&quot;</item>
+      <item >&quot;Чт.&quot;</item>
+      <item >&quot;Пт.&quot;</item>  
+      <item >&quot;Сб.&quot;</item>  
+    </string-array>
+    <string name="alarmalertclose">Скользить наверх и закрыть будильник</string>
+     <string name="isshowofficeday">yes</string>
+    <string name="airplanemodeoff">Выключен режим полёта!</string>
+    <string name="appwidget_month">Месяц</string>
+    <string name="appwidget_date">День   </string>
+     
+    
+</resources>

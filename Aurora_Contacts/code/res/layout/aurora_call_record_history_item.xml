@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/double_list_item_height"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/double_list_item_height"
+        android:paddingBottom="@dimen/listitem_double_margin_bottom" >
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:maxWidth="240dp"
+        android:singleLine="true"
+               android:layout_marginTop="@dimen/listitem_double_margin_top"
+        android:textColor="@color/quickcontact_entry_header_text_color"
+        android:textSize="@com.aurora:dimen/aurora_list_singleline_text_size" />
+
+    <com.mediatek.contacts.widget.DontPressWithParentImageButton
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/aurora_record_detail"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:singleLine="true"
+        android:textColor="@color/quickcontact_entry_sub_header_text_color"
+        android:textSize="@dimen/sencond_line_text_size" />
+
+</RelativeLayout>

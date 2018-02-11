@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-06-19 added for aurora's multisim feature created -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="64dp" >
+    <!-- Aurora xuyong 2014-07-29 modifie for aurora's new feature start -->
+    <FrameLayout
+        android:id="@+id/aurora_notification_parent"
+        android:layout_width="66dp"
+        android:layout_height="match_parent"
+        >
+        <ImageView android:id="@+id/aurora_notification"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/aurora_multi_notification_icon"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+        />
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/aurora_notification_parent"
+        android:paddingRight="12dip">
+        <TextView
+            android:id="@+id/aurora_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:textColor="@color/aurora_multi_notify_title_color"
+            android:textSize="15sp"
+            />
+        <ImageView 
+            android:id="@+id/aurora_sim_thumb"
+            android:layout_width="11dip"
+            android:layout_height="13dip"
+            android:layout_alignBottom="@id/aurora_address"
+            android:layout_marginBottom="@dimen/list_sp_noti_margin_bottom"
+            android:layout_toRightOf="@id/aurora_address"
+            android:background="@null"
+            />
+        <TextView
+            android:id="@+id/aurora_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/aurora_address"
+            android:layout_marginBottom="@dimen/list_sw_margin_bottom"
+            android:textColor="@color/aurora_multi_notify_subject_color"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/aurora_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/aurora_multi_notify_subject_color"
+            android:textSize="12sp"
+            android:layout_marginTop="7dip"
+            android:layout_below="@id/aurora_address"
+            />
+    </RelativeLayout>
+   <!-- Aurora xuyong 2014-07-29 modifie for aurora's new feature end -->
+</RelativeLayout>

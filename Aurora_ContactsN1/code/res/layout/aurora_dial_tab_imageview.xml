@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.widget.AuroraAnimationImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dip"
+        android:layout_marginBottom="9dip"
+        android:paddingTop="9dip"
+        android:paddingBottom="10dip"
+        android:src="@drawable/aurora_tab_calllog"
+        aurora:playAnim="true"
+        />   

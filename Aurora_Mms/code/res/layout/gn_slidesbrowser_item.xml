@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<!-- Aurora xuyong 2013-12-30 modified for aurora's ne feature start -->
+<com.gionee.mms.ui.SlidesBrowserItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slides_browser_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+</com.gionee.mms.ui.SlidesBrowserItemView>
+<!-- Aurora xuyong 2013-12-30 modified for aurora's ne feature end -->

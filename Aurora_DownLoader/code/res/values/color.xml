@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#FFF000</color>
+    <color name="gray">#A6A6A0</color>
+    <color name="orange">#ff9900</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="red">#FF0000</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <drawable name="semi_black">#80000000</drawable>
+
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+    <color name="storage_category_text_color">#8e8e8e</color>
+    <color name="category_text_color">#ffffff</color>
+    <color name="category_small_text_color">#666666</color>
+    <color name="storage_info_text_color">#8a653d</color>
+    <color name="tab_item_color">#019c73</color>
+    <color name="listview_empty_color">#e6e6e6</color>
+    <color name="multi_select_title">#ffffffff</color>
+
+</resources>

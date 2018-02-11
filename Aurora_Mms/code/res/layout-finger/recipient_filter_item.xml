@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<!-- Aurora xuyong 2013-11-13 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2014-04-03 modified for aurora's new feature start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/aurora_personal_list_vertical_padding"
+        android:orientation="horizontal" >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:paddingTop="@dimen/aurora_personal_list_vertical_padding"
+            android:paddingBottom="@dimen/aurora_personal_list_vertical_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <aurora.widget.AuroraTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/aurora_conv_list_title_text_style" />
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <aurora.widget.AuroraTextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    style="@style/aurora_conv_list_snippet_text_style" />
+                <aurora.widget.AuroraTextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dip"
+                    style="@style/aurora_conv_list_snippet_text_style"
+                    android:singleLine="true" />
+<!-- Aurora xuyong 2014-04-03 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-11-13 modified for aurora's new feature end -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Aurora xuyong 2014-10-23 added for privacy feature start -->
+    <TextView 
+        android:id="@+id/aurora_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <!-- Aurora xuyong 2014-10-23 added for privacy feature end -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/aurora_divider_lan"/>
+    <!-- Aurora xuyong 2013-10-21 modified for bug #31 start -->
+<!--     <view xmlns:android="http://schemas.android.com/apk/res/android"
+        class="com.android.mms.ui.QuickContactDivot"
+        android:id="@+id/avatar"
+        position="left_upper"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/avatar_width_height"
+        android:layout_height="@dimen/avatar_width_height"
+        android:visibility="gone" /> -->
+    <!-- Aurora xuyong 2013-10-21 modified for bug #31 end -->
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gionee:lixiaohu 20121113 add for CR00725338 start -->
+    <dimen name="gn_contact_tile_shadowbox_height">40sp</dimen>
+    <!-- Gionee:lixiaohu 20121113 add for CR00725338 end -->
+    <!-- Gionee:huangzy 20120903 add for CR00680556 start -->
+    <dimen name="gn_prompt_section_font_size">40px</dimen> <!-- must be px -->
+    <dimen name="gn_section_font_size">12sp</dimen>
+    <dimen name="gn_wave_side_range">60dip</dimen>
+    <dimen name="gn_prompt_section_text_size">40sp</dimen>    
+    
+</resources>

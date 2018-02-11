@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aurora.change.view.PreviewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_alignParentTop="true"
+        layout="@layout/time_layout" />
+
+    <com.aurora.change.view.PreviewTimeView
+        android:id="@+id/preview_time"
+        android:layout_width="33dip"
+        android:layout_height="33dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/preview_time_bottom" />
+
+</com.aurora.change.view.PreviewLayout>

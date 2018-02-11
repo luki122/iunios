@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_tab_edit"
+        android:title="@string/menu_tab_edit"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_tab_delete"
+        android:title="@string/menu_tab_delete"
+        android:showAsAction="always|withText" />
+
+</menu>

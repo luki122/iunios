@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--       <color name="aurora_dim_foreground_primary_dark">#66444444</color>
+     <color name="list_item_background">#3da0fd</color>
+     <color name="list_item_text_summary">#7b7b7b</color>
+     <color name="transparent">#00000000</color> 
+     <color name="summary">#50ffffff</color>
+     
+     <color name="aurora_button_highlighted_color">#ff0ec16f</color>
+     <color name="okbutton_disable_color">#b7b7b7</color> -->
+      <color name="summary">#50ffffff</color>
+      <color name="aurora_button_highlighted_color">#ff0ec16f</color>
+        <color name="aurora_dim_foreground_primary_dark">#66444444</color>
+</resources>

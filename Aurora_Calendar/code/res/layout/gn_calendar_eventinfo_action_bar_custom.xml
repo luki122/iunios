@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 eventinfo actionbar View begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gn_all_in_one_title_bg"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gn_event_info_actionbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/gn_all_in_one_action_bar_select_date_on_off"
+        android:gravity="center_vertical"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gn_calendar_back_image" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/actionbar_note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/gn_event_info_actionbar_back"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/event_view"
+        style="@style/GNActionBarTitleTextAppearance" />
+
+</RelativeLayout><!-- Gionee <jiating> <2013-04-24> modify for CR00000000 eventinfo actionbar View end -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/finger_manager">
+
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="toggle_lock_switch"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/finger_lock_title" />
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:auroratitle="@string/finger_manager"
+        aurora:aurorakey="finger_cat">
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

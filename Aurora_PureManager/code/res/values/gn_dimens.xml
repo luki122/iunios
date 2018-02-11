@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="gn_action_bar_tab_textsize">14sp</dimen>
+    <dimen name="gn_font_size_padding">15dp</dimen>
+    <!--Gionee xiongjiaxin 2012-8-29 modified for CR00681080 start -->
+    <!--<dimen name="icon_width">130dp</dimen>
+    <dimen name="icon_height">130dp</dimen>-->
+    <!--Gionee xiongjiaxin 2012-8-29 modified for CR00681080 end -->
+
+    <!-- Gionee:zhang_xin 2013-01-16 add for CR00746738 start -->
+    <dimen name="gn_preference_fragment_padding_side">8dip</dimen>
+    <!-- Gionee:zhang_xin 2013-01-16 add for CR00746738 end -->
+    
+    <!-- Gionee chenml 2013-05-21 modify for CR00808680  begin -->
+    <dimen name="battery_history_textsize">22px</dimen>
+    <!-- Gionee chenml 2013-05-21 modify for CR00808680  end-->
+    <dimen name="empty_textview">120dp</dimen>
+
+    <!--Gionee <wangguojing> <2013-10-29> add for brush phone begin -->
+    <dimen name="preference_fragment_padding_side">16dp</dimen>
+    <!-- Gionee <wangguojing> <2013-10-29> add for brush phone end -->
+    
+    <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 begin -->
+    <dimen name="icon_listview_margin_right">16dp</dimen> 
+    <dimen name="actionbar_custom_padding">8dp</dimen>
+    <dimen name="listview_height">64dp</dimen> 
+     <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 begin -->
+    <dimen name="systemmanager_settings_rightmargin">9dp</dimen>
+    
+</resources>

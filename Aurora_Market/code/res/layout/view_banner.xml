@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@com.aurora:dimen/aurora_action_bar_search_view_height" />
+
+    <com.aurora.market.widget.FrameBannerView
+        android:id="@+id/banner_ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepgae_bannerview_height"
+        android:gravity="center"
+        android:scaleType="center" />
+
+    <include
+        android:id="@+id/banner_tab"
+        layout="@layout/view_app_tab" />
+    
+    <View
+        android:id="@+id/tab_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_grey" />
+
+</LinearLayout>

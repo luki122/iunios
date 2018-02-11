@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/fl_how_enter"
+        android:layout_width="@dimen/user_guide_anim_frame_width"
+        android:layout_height="@dimen/user_guide_anim_frame_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_picture_margin_top"
+        android:clipChildren="true" >
+
+        <ImageView
+            android:id="@+id/iv_how_enter_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/stars" />
+
+        <ImageView
+            android:id="@+id/iv_rocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="155dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/rocket" />
+
+        <ImageView
+            android:id="@+id/iv_planet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="85dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/planet1" />
+
+        <ImageView
+            android:id="@+id/iv_planet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172dp"
+            android:layout_marginTop="62dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/planet2" />
+
+        <ImageView
+            android:id="@+id/iv_handset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="33dp"
+            android:contentDescription="@string/null_description"
+            android:src="@drawable/handset"
+            android:transformPivotX="167dp"
+            android:transformPivotY="207dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_handset_privacy_entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/privacy_frame"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_sharp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_1"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_2"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_3"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_4"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_5"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_6"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="@string/sign_sharp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_text_banners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_how_enter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_userguide_bigtxt_to_picture"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_how_enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/how_enter"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <TextView
+            android:lineSpacingExtra="@dimen/userguide_textview_linespace"
+            android:id="@+id/tv_enter_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_userguide_smalltxt_to_bigtxt"
+            android:gravity="center_horizontal"
+            android:paddingEnd="17dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingStart="17dp"
+            android:text="@string/enter_method"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/knowledge_mapping_star_feature_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.5dip"
+        android:layout_marginLeft="12.5dip"
+        android:layout_marginRight="12.5dip"
+        android:layout_marginTop="8.5dip"
+        android:background="@drawable/vs_question_structure_item_bg"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.5dip"
+            android:layout_marginLeft="16.5dip"
+            android:layout_marginRight="18.5dip"
+            android:layout_marginTop="18.5dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/movie_poster_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12.5dip"
+                android:visibility="gone" >
+
+                <View
+                    android:id="@+id/movie_poster_frame_view"
+                    android:layout_width="96.5dip"
+                    android:layout_height="126.5dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/vs_knowledge_mapping_poster_frame_bg"
+                    android:padding="0.0dip" />
+
+                <ImageView
+                    android:id="@+id/movie_poster_imageview"
+                    android:layout_width="88.5dip"
+                    android:layout_height="118.5dip"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/star_feature_title_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0.0dip"
+                    android:textColor="#ff444444"
+                    android:textSize="16.5dip" />
+
+                <TextView
+                    android:id="@+id/star_feature_content_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.5dip"
+                    android:padding="0.0dip"
+                    android:textColor="#ff000000"
+                    android:textSize="16.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/star_feature_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="18.5dip"
+            android:layout_marginRight="18.5dip"
+            android:background="@drawable/vs_question_structure_divider"
+            android:padding="0.0dip" />
+
+        <LinearLayout
+            android:id="@+id/star_feature_search_more_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vs_search_more_bg_style"
+            android:orientation="vertical"
+            android:padding="0.0dip" >
+
+            <RelativeLayout
+                android:id="@+id/star_feature_search_more_relativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18.5dip"
+                android:layout_marginLeft="18.5dip"
+                android:layout_marginRight="18.5dip"
+                android:layout_marginTop="8.5dip"
+                android:padding="0.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/star_feature_search_more_imageview"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/star_feature_search_more_textview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0.0dip"
+                        android:text="@string/vs_moremsg"
+                        android:textColor="#ff858585"
+                        android:textSize="17.169983dip" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/star_feature_search_more_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/vs_question_structure_right_triangle" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

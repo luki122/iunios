@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/input_album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aurora_create_playlist_input_bg"
+        android:gravity="fill_horizontal|bottom"
+        android:inputType="textCapSentences"
+        android:maxLength="30"
+        android:focusable="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+        <requestFocus />
+    </aurora.widget.AuroraEditText>
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/input_error"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red" />
+
+</LinearLayout>

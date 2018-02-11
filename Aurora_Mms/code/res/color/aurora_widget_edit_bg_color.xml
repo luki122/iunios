@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2015-12-21 created for aurora 2.0 new feature -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/aurora_widget_msg_edit_bg_pressed_color" android:state_pressed="true"/>
+    <item android:color="@color/aurora_widget_msg_edit_bg_normal_color"/>
+</selector>

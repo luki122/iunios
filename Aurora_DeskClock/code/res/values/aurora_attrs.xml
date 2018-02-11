@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+	<declare-styleable name="hourglass_view"> 
+	<attr name="big_radius" format="integer" /> 
+	</declare-styleable> 
+</resources> 

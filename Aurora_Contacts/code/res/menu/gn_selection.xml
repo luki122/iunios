@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee zhouyj 2012-05-29 create for CR00601178 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/gn_multi_selection"
+        android:title="@string/select_all" />
+</menu>

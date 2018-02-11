@@ -1,0 +1,55 @@
+<!-- 
+文件名：aurora_do_not_disturb_settings.xml
+说明：勿扰模式设置布局文件
+修改记录：
+[1] 20160106 cretae by hujianwei
+ -->
+ 
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/do_not_disturb">
+
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="dnd_enable"
+        aurora:auroratitle="@string/dnd_enable"
+        aurora:aurorasummary="@string/dnd_summary"
+        aurora:aurorapersistent="false"/>     
+
+
+   
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="timing_enable_disturb"
+        aurora:auroratitle="@string/timing_enale"
+        aurora:aurorapersistent="false"/>     
+        
+    <com.android.settings.notification.AuroraDndTimingPickerPreference
+        aurora:aurorakey="timing_picker" 
+        aurora:auroralayout="@layout/aurora_dnd_timing_picker"
+        aurora:aurorapersistent="false"/>
+         
+    <aurora.preference.AuroraPreferenceCategory 
+        aurora:aurorakey="ringer_settings"
+        aurora:auroratitle="@string/zen_config_select"/>
+
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="ringer_enable"
+        aurora:auroradependency="dnd_enable"
+        aurora:auroratitle="@string/ringer_enable"
+        aurora:aurorapersistent="false"/>     
+    <com.android.settings.notification.AuroraDropDownPreference
+        aurora:aurorakey="allows_calls_from"
+        aurora:auroratitle="@string/alow_calls_from"
+        aurora:auroradependency="ringer_enable"
+        aurora:aurorapersistent="false" />
+    
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="repeated_calls_remind"
+        aurora:auroratitle="@string/repeated_calls_remind"
+        aurora:auroradependency="dnd_enable"
+        aurora:aurorasummary="@string/repeated_calls_summary"
+        aurora:aurorapersistent="false"/>     
+    
+     <aurora.preference.AuroraPreferenceCategory />
+        
+</aurora.preference.AuroraPreferenceScreen>

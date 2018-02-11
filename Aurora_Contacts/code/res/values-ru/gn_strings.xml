@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ 	<!-- GIONEE: luoguangming 2012.07.23 modify for "explay translate string CR00651738" begin-->
+  	<string name = "gn_phone_text">Телефон</string>
+	<string name="gn_phone_label">Телефон</string>
+	<string name="gn_account_phone" product="default">Только телефон</string>
+	<string name="gn_add_to_group">Добавить контакты</string>
+	<string name="gn_add">Добав.</string>
+	<string name="gn_menu_ringtone_set_batch">Установить рингтон</string>
+    <string name="gn_contactsFavoritesLabel">Избранные</string>  
+    <string name="gn_allcall_tab_label">Все вызовы</string>
+    <string name="gn_misscall_tab_label">Пропущенные</string>
+	<string name="gn_outgoingcall_tab_label">Исходящие</string>
+    <string name="gn_incomingcall_tab_label">Входящие</string>
+    <string name="gn_no_conditioned_contacts">Совпадений не найдено.</string>
+    <string name="gn_dialer_suggest_show">Поиск контактов по имени или номеру в журнале вызовов и тел.книге. Чтобы найти контакт под именем Иван, наберите 4225.</string>
+    <string name="gn_hint_findContacts">"Поиск по контактам:%d"</string>
+	<string name="gn_remove">Удал.</string>
+    <string name="gn_remove_from_favorite">Удалить из избранных</string>  
+    <string name="gn_add_to_favorite">Добавить в избранные</string>  
+    <string name="gn_save">Сохр.</string>  
+    <string name="gn_listCustomView">Изменить</string>  
+    <string name="gn_menu_delete_contact">Удалить контакты</string>  
+    <string name="gn_share_contact_label">Карта памяти</string>  
+    <string name="gn_noMergableContacts_msg">Нет повторяющихся контактов</string>  
+    <string name="gn_noMergableConfirmation_title">Нет одинаковых</string>  
+    <string name="gn_mergeContactsConfirmation">Объединить одинаковые контакты, сохраненные в телефоне?</string>  
+    <string name="gn_menu_merge_contacts">Объединить контакты</string>  
+    <string name="gn_mergeContactsConfirmation_title">Объединить контакты</string>  
+    <string name="gn_dialpad_add_exist_contact_item">Существующий</string>  
+    <string name="close">Закрыть</string>  
+    <!-- GIONEE: luoguangming 2012.07.23 modify for "explay translate string CR00651738"  end -->  
+    <string name="gn_no">"Нет"</string>  
+    <string name="gn_yes">"Да"</string>  
+    <string name="gn_mergeble">Найдено (%d) одинаковых контактов</string>  
+    <string name="gn_exportDirectoryName"></string>  
+    <!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->  
+    <!--
+	<string name="gn_people_count">Контакти: %1$d </string>
+	-->  
+    <string name="gn_people_count">Контакты: %1$d</string>  
+    <!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->  
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783" begin-->  
+    <string name="gn_set_star">Добавить в избранные</string>  
+    <!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783"   end-->  
+    <string name="gn_midnight">AM</string>  
+    <string name="gn_dawn">AM</string>  
+    <string name="gn_am">AM</string>  
+    <string name="gn_max_add_num">Максимум %d контактов за раз</string>  
+    <string name="gn_add_firewall">В черный список</string>  
+    <string name="gn_clearFrequentContactedConfirmation">Очистить часто набираемые?</string>  
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_clearAllCallLogConfirmation">Видалити всі записи?</string>
+	-->
+	<string name="gn_clearAllCallLogConfirmation">Очистить список вызовов?</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_clearSingleCallLogConfirmation">Удалить запись?</string>  
+	<string name="gn_stop_operate_confirm_msg">Завершити операцію?</string>
+    <string name="gn_email_2g_invalid">Невозможно сохранить E-mail на 2G SIM</string>  
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_menu_clear_frequent_contacted">Очистити список найчастіше викликаємих</string>
+	<string name="gn_clear_frequent_contacted_title">Очистити список найчастіше викликаємих</string>
+	<string name="gn_clearCallLogConfirmation_title">Очистити журнал викликів</string>
+	-->
+	<string name="gn_menu_clear_frequent_contacted">Удалить из избранных</string>
+	<string name="gn_clear_frequent_contacted_title">Удалить из избранных</string>
+	<string name="gn_clearCallLogConfirmation_title">Удалить из избранных?</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    	<string name="gn_dialog_new_group_account">Создать группу в аккаунте</string>  
+    	<string name="gn_gtl_type">Тип устройства</string>  
+	<string name="gn_calldetails_add_black_confirm">Додати номер у чорний список? </string>
+    	<string name="gn_edit_number_before_call">Изменить и вызвать</string>  
+	<string name="gn_stop_operate_title">Вихід</string>
+    	<string name="gn_ft_bt_result_fail">Ошибка</string>  
+    	<string name="gn_gbw_internal_v">Версия GN</string>  
+	<string name="gn_menu_gemini_sim_management">Настройки SIM</string>
+    	<string name="gn_hidden_number">Скрытый номер</string>  
+	<string name="gn_type_im_other">ІM</string>
+	<!-- GIONEE: luoguangming 2012.08.02 modify for "explay translate string CR00651738" begin-->
+	<!-- Gionee:linggz 2012-07-18 modify for CR00651374 begin -->
+	<!--
+	<string name="gn_menu_ip_dial_setting">Настройки ІP-викликів</string>
+	<string name="gn_usb_storage_text">Внутрішня пам\'ять</string>
+	-->
+	<string name="gn_menu_ip_dial_setting">Настройки IP-вызовов</string>
+	<string name="gn_usb_storage_text">Внутр. память</string>
+	<!-- Gionee:linggz 2012-07-18 modify for CR00651374 end -->
+	<!-- GIONEE: luoguangming 2012.08.02 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_lcd_type">Тип подсветки</string>  
+    <string name="gn_move_from_group">Удалить из группы</string>  
+    <string name="gn_expected_merge">Ожидаемые</string>  
+    <string name="gn_merge_finish_title">Объединение выполнено</string>  
+    <string name="gn_merge_stop_title">Объединение прервано</string>  
+    <string name="gn_merged_sum_msg">Объединено %1$d контактов</string>  
+    <string name="gn_mergingSameContacts_msg">Объединение повторяющихся контактов\nПодождите...</string>  
+    <string name="gn_ft_bt_result_no">Нет</string>  
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_new_contact_item">Новий контакт</string>
+	<string name="gn_dialpad_new_contact_item">Новий контакт</string>
+	-->
+	<string name="gn_new_contact_item">Новый контакт</string>
+	<string name="gn_dialpad_new_contact_item">Новый контакт</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_no_visible_contacts">Нет контактов</string>  
+    <string name="gn_ft_bt_result_success">Пропустить</string>  
+	<string name="gn_noon">PM</string>
+	<string name="gn_pm">PM</string>
+	<string name="gn_dusk">PM</string>
+	<string name="gn_night">PM</string>
+    <string name="gn_contactSavedNoNameError_Toast">Введите имя</string> 
+	<string name="gn_remove_star">Удалить из избранных</string>  
+    <string name="gn_phone_call_record_tile">Запись</string> 
+    <string name="gn_max_remove_num">Максимум %d контактов за раз</string> 
+	<string name="gn_sms">SMS</string>
+	<!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783" begin-->
+	<!--
+	<string name="gn_only_save_local_label">Зберегти в телефоні</string>
+	-->
+	<string name="gn_only_save_local_label">Телефон</string>
+	<!-- GIONEE: lujian 2012.08.03 modify for "FLY translate string to RUSSIA CR00663783"   end-->
+	<!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" begin-->
+	<string name="zzzzz_gn_group_phone">Телефон</string>
+	<!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" end-->
+	<string name="gn_mergable_query_stop_msg">Сканирование остановлено</string> 
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_searchContactsForMerge_msg">Сканування  контактів, що перериваються\nЗачекайте...</string>
+	<string name="gn_dialpad_send_message_item">Надіслати повідомлення</string>
+	-->
+	<string name="gn_searchContactsForMerge_msg">Сканирование контактов,\nподождите…</string>
+	<string name="gn_dialpad_send_message_item">Отправить SMS</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_start_merge">Объединение</string> 
+	<string name="gn_member_already_in_group">Контакт уже добавлен в группу.</string> 
+    <string name="gn_contacts_sms_tip">Подсказки</string>
+    <string name="gn_type">Тип</string> 
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_call_unconnected">Вимкнено</string>
+	-->
+	<string name="gn_call_unconnected">Нет подключения</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_unknow_contact">Неизвестный контакт</string> 
+    <string name="gn_select_conversation_more">Выбрано: %1$s</string>
+	<string name="gn_select_conversation_one">Выбрано: 1</string>
+    <string name="gn_exchange_contacts">Экспорт</string> 
+	<string name="gn_hour">год</string>
+ 	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_call_incoming_type">Вхідний</string>
+	<string name="gn_minute">хв</string>
+	<string name="gn_call_outgoing_type">Вихідний</string>
+	-->
+	<string name="gn_call_incoming_type">Входящий</string>
+	<string name="gn_minute">мин</string>
+	<string name="gn_call_outgoing_type">Исходящий</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+    <string name="gn_call_ring_times">Вызов</string> 
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738" begin-->
+	<!--
+	<string name="gn_second">з</string>
+	-->
+	<string name="gn_second">сек</string>
+	<!-- GIONEE: luoguangming 2012.08.03 modify for "explay translate string CR00651738"  end -->
+	<string name="gn_contact_name_too_long">Имя слишком длинное</string>  
+    <string name="gn_call_ring_unit">раз(а)</string>
+    <plurals name="gn_searchFoundContacts"> 
+        <item quantity="one">Найдено: 1</item>  
+        <item quantity="other">Найдено: 
+            <xliff:g id="COUNT">%d</xliff:g> 
+        </item> 
+    </plurals> 
+    <string name="internal_version">Внутренняя версия</string>  
+    <string name="external_version">Версия</string>  
+    <string name="isnull">Неизвестно</string>   
+    <string name="buildtime">Время создания</string>  
+
+    <string name="slot_a">Слот 1</string>  
+    <string name="slot_b">Слот 2</string>  
+    <string name="user_agent">UA</string>  
+    <string name="unicom_version">Версия прошивки</string>  
+
+    <string name="gn_clearSelectedCallLogConfirmation_title">Удалить выбранные записи</string>  
+    <string name="gn_clearSelectedCallLogConfirmation">Удалить выбранные записи?</string>  
+
+    <string name="gn_manual_combine">Объединить</string>
+    <string name="gn_manual_combine_abandon">Временно не обрабатывать </string>
+    <string name="gn_manual_combine_finish">Объединение завершено </string>
+    <string name="gn_mergeContacts_continue">Завершено объединение повторяющихся контактов!  Просмотреть другие повторяющиеся контакты? </string>
+    <string name="gn_mergeContacts_manual">В этом телефоне не обнаружены «полностью повторяющиеся контакты», провести объединение вручную?</string>
+    <string name="gn_manual_combine_no_content">Нет контактов, соответствующих условиям </string>
+    <string name="gn_combine_contacts_load">Поиск повторяющихся контактов </string>
+    <string name="gn_combine_contacts_merge_contact">Контакты объединяются </string>
+    <string name="gn_combine_contacts_title">Объединить контакты</string>  
+    <string name="gn_combine_contacts_sub_title">Найдено %1$d групп с одинаковыми контактами</string>  
+
+    <string name="unselect_all">Отменить выбор всего</string>  
+    <string name="select_all">Выбрать все</string>  
+ 
+    <string-array name="gn_call_log_type"> 
+        <item>Все вызовы</item>  
+        <item>Исходящие</item>  
+        <item>Входящие</item>  
+        <item>Пропущенные</item> 
+    </string-array>  
+    <string-array name="gn_call_log_type_empty"> 
+        <item>Нет вызовов</item>  
+        <item>Нет исходящих вызовов</item>  
+        <item>Нет входящих вызовов</item>  
+        <item>Нет пропущенных вызовов</item> 
+    </string-array>  
+    <string name="gn_paste">Вставить</string>  
+    <string name="gn_dialpad">Клавиши</string>  
+    <string name="gn_video_dial">Видеовызов</string>  
+    <string name="gn_selected_count">Выбрано %1$s</string>  
+    <string name="gn_menu_dialpad_title">Клавиши</string>  
+ 
+    <string name="delete_call_log">Очистить список вызовов</string>   
+  
+    <string name="delete">Удалить</string>  
+    <string name="contact_tel">Телефон</string>  
+
+    <string name="gn_favorite_widget_label">Избранные и часто набираемые</string>  
+    <string name="gn_widget_favorite_title">Избранные и часто набираемые</string>  
+    <string name="gn_widget_favorite_empty">Нет избранных и часто набираемых контактов</string>  
+    <string name="gn_widget_loading">Загрузка...</string>  
+    <string name="gn_contact_delete_all_tips">В фоновом режиме уже происходит удаление контактов. Завершите процесс, чтобы запустить новый.</string>  
+    <string name="gn_confirm_export_title">Экспорт</string>  
+    <string name="gn_confirm_export_message">Экспортировать контакты в файл 
+        <xliff:g id="vcard_filename">%s</xliff:g> ?
+    </string>  
+    <string name="gn_customer_service">Техническая поддержка</string>  
+    <string name="gn_clearSingleCallLogConfirmation_title">Удалить из списка вызовов</string>  
+    <string name="gn_add_blacklist">В черный список</string>  
+    <string name="gn_show_intercept_call">Отобр. отклоненные</string>  
+    <string name="gn_max_move_num">Максимум %d контактов за раз</string>  
+    <string name="gn_gallery_title">Галерея</string>  
+    <string name="gn_pick_photo_from_other_app">Выбрать фото из др.приложения</string>  
+    <string name="gn_gallery_photo_view_title">Фото абонента</string>  
+    <string name="gn_the_first_picture">Первое фото</string>  
+    <string name="gn_the_last_picture">Послед. фото</string>  
+    <string name="gn_apply">Применить</string>  
+    <string name="gn_set_picture_success">Выполнено</string>
+    <!-- GIONEE: lujian 2012.10.09 modify for "explay CR00709996" begin--> 
+    <string name="zzzzz_gn_menu_callNumber"><xliff:g id="name">%s</xliff:g></string>
+	<!-- GIONEE: lujian 2012.10.09 modify for "explay CR00709996"   end-->
+	
+    <string name="crop_picture">Обрезать изобр-е</string>  
+    <string name="cancel">Отмена</string>  
+    <string name="crop_save_text">Обрезать</string>  
+    <string name="crop_label">Обрезать изобр-е</string>  
+    <string name="reset">Сброс</string>  
+    <string name="load_failed">Ошибка загрузки</string>  
+    <!-- Gionee fangbin 20120716 added for CR00636040 start -->  
+    <string name="crop_failed">Недостаточно места, ошибка обрезания</string>  
+    <!-- Gionee fangbin 20120716 added for CR00636040 end -->  
+    <string name="croping_dialog">Изображение обрезается, подождите!</string>
+</resources>

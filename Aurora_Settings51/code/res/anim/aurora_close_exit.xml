@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Gionee <fenglp> 2013-05-28 add for CR00812456 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:zAdjustment="bottom">
+    <translate
+        android:duration="300"
+        android:fromXDelta="0"
+        android:toXDelta="50%p" />
+    <alpha
+        android:duration="300"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.3" />
+</set>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.note"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.aurora.note.NoteApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@com.aurora:style/Theme.aurora.Light">
+        <!-- 
+        <activity
+            android:name="com.aurora.note.NoteStartActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.aurora.note"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> -->
+
+        <activity
+            android:name="com.aurora.note.NoteMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.aurora.note"
+            android:screenOrientation="nosensor"
+            android:theme="@com.aurora:style/Theme.aurora.Light"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 腾讯QQ分享sdk要求配置的 begin -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103884260" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 腾讯QQ分享sdk要求配置的 end -->
+
+        <!-- 快速录音入口 -->
+        <activity
+            android:name="com.aurora.note.activity.record.QuickRecordEntryActivity"
+            android:label="@string/quick_record_entry_name"
+            android:icon="@drawable/quick_record_icon"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.aurora.note"   
+            android:screenOrientation="nosensor"
+            android:theme="@style/QuickRecordEntryActivity"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LabelTabActivity2"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".activity.NewNoteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:configChanges="screenSize"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.aurora.note.newnoteactivity"
+                    android:scheme="openewnote" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.manager.NoteManageActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".activity.manager.NoteAboutActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".activity.manager.NoteShareActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".activity.NotePaperChangeActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".activity.NotePaperViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <activity
+            android:name=".crop.CropImageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:hardwareAccelerated="false"
+            android:theme="@com.aurora:style/Theme.aurora" />
+
+        <activity
+            android:name=".activity.picbrowser.PictureViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:hardwareAccelerated="false"
+            android:theme="@style/picture_view" />
+
+        <activity
+            android:name=".activity.picbrowser.PicturePreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!--
+        <activity
+            android:name=".activity.record.PlayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        -->
+        <activity
+            android:name=".activity.record.PlayActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.record.RecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".activity.record.RecordActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.AddOrEditReminderActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".activity.LabelTabActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@com.aurora:style/Theme.aurora.Light" />
+
+        <activity
+            android:name=".sina.weibo.ShareSinaWeiboActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:hardwareAccelerated="false"
+            android:theme="@style/picture_view"
+            android:exported="true" />
+
+        <receiver android:name=".alarm.NoteAlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.aurora.note.NOTE_ALARM" />
+                <action android:name="com.aurora.note.NOTE_ALARM_CANCEL" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".activity.record.ProtectService" />
+
+    </application>
+
+</manifest>

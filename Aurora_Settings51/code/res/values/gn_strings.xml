@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <!--        //Gionee zjy 20120406 add for CR00564459 start   -->
+    <string name="gn_status_imei_slot">IMEI</string>  
+    <string name="gn_status_imei_sv_slot">IMEI SV</string>  
+    <!--        //Gionee zjy 20120406 add for CR00564459 end   -->
+    <string name="slotA">A</string>
+    <string name="slotB">B</string>
+    <!--penggangding add network speed notify  begin-->
+    <string name="pref_push_notify">Status Bar</string>
+    <string name="pref_push_network_speed_display">Network speed</string>
+    <!--penggangding add network speed notify  end-->
+
+    <!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 begin -->
+    <string name="schedule_airplane_on_off_settings_title">"Schedule airplane on/off"</string>
+    <string name="schedule_airplane_on_off_set">"Set schedule airplane mode on/off"</string>
+    <string name="schedule_airplane_on_set">"Set schedule airplane mode on"</string>
+    <string name="schedule_airplane_off_set">"Set schedule airplane mode off"</string>
+    <string-array name="alarm_set_airplane">
+        <item>This airplane mode on is set for less than 1 minute from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for less than 1 minute from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This airplane mode off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+    </string-array>
+
+    <!-- //Gionee <YangXiong><2011-07-05> modify for CR00282261 end -->
+
+    <!-- Gionee:niejn 20120523 add for CR00605063 begin -->
+    <string name="gn_title_font_category">Phone Font</string>
+    <!-- Gionee:niejn 20120523 add for CR00605063 end -->
+
+    <!-- Gionee:wangyaohui 20120522 modify for CR00607863 begin: add some string-->
+    <string name="okay_action">OK</string>  
+    <string name="cancel_action">Cancel</string>  
+    <string name="reset_warning">warning</string>
+    <!-- Gionee:wangyaohui 20120522 modify for CR00607863 end-->
+    
+    <!-- Gionee dengm 2012-05-03 added for CR00581649 start-->
+    <string name="gn_lockscreen_settings_title">Lockscreen</string>
+    <string name="gn_music_player_setting">Display music player</string>
+    <string name="gn_lunar_setting">Display lunar</string>
+    <string name="gn_missed_setting">Display missed info</string>
+    <string name="gn_torch_setting">Enable torch</string>
+    <!-- Gionee dengm 2012-07-30 changed for CR00658924 start-->
+    <string name="gn_open_torch">Wake up screen then long press volume down to open the torch</string>
+    <!-- Gionee dengm 2012-07-30 changed for CR00658924 end-->
+    <string name="gn_lockscreen_enable">Enable</string>
+    <!-- Gionee dengm 2012-05-03 added for CR00581649 end-->
+    <!-- Gionee dengm 2012-05-03 added for CR00622042 start-->
+    <string name="gn_timeout_close_torch">Automatic close torch</string>
+    <!-- Gionee dengm 2012-08-08 added for CR00672630 start-->
+    <string name="gn_not_close">0</string>
+    <!-- Gionee dengm 2012-08-08 added for CR00672630 start-->
+    <!-- Gionee dengm 2012-05-03 added for CR00622042 end-->
+
+    <!-- Gionee lihuafang 2012.05.17 add for CR00586039 begin -->
+    <string name="gn_custom_airplan_on">23, 0</string>
+    <string name="gn_custom_airplan_off">7, 0</string>
+    <!-- Gionee lihuafang 2012.05.17 add for CR00586039 end -->
+
+    <!-- Gionee:wangyaohui 20120620 add for CR00625357 begin -->
+    <string name="password_null">Passwd null,Please input again!</string>
+    <!-- Gionee:wangyaohui 20120620 add for CR00625357 end -->
+    
+    <!-- Gionee fangbin 20120629 added for CR00622030 start -->
+    <string name="gn_mms_ringtone">SMS tones</string>
+    <string name="gn_ringtone_notif">Ringtones and notification</string>
+    <!-- Gionee fangbin 20120629 added for CR00622030 end -->
+
+	<!--gionee Jingjc 20120629 modify for CR00632151 start -->
+    <string name="gn_date_and_time_settings_title">DATE TIME</string>
+	<string name="gn_zone_settings_title">ZONE</string>
+    <!--gionee Jingjc 20120629 modify for CR00632151 end -->
+    
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 start -->
+    <string name="default_ringtone">Default ringtone</string>
+    <string name="sim1_ringtone_title">SIM1 ringtone</string>
+    <string name="sim1_ringtone_summary">Default sound</string>
+    <string name="sim2_ringtone_title">SIM2 ringtone</string>
+    <string name="sim2_ringtone_summary">Default sound</string>
+    <string name="loading_ringtone">Loading the bell</string>
+    <string name="ringtone_silent_summary">Silent</string>
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+    
+    <!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push start  -->
+    <string name="notify_push">Message Push</string>
+    
+    <string name="notify_push_dlg_message">%1$s will push message for you，you can set it in settings</string>
+    <string name="notify_push_dlg_title">Push Promp</string>
+    <string name="notify_push_dlg_confirm">OK</string>
+    <string name="notify_push_dlg_deny">NO</string>
+    
+    <string name="pref_push_title">Message Push</string>
+    <string name="pref_push_summary">Allow app push message</string>
+    <string name="pref_push_noapp_summary">No application</string>
+    <string name="pref_app_on">Apps On</string>
+    <string name="pref_app_off">Apps Off</string>
+    <string name="pref_empty_promp">Empty</string>
+    <!-- GIONEE liuran 2012-8-12 add for CR00673475 notification && push end  --> 
+    <!-- Gionee zengxuanhui 20120825 add for CR00680570 begin -->   
+    <string name="flip_sounds_enable_title">Flip Sound</string>
+    <!-- Gionee zengxuanhui 20120825 add for CR00680570 end -->
+    
+    <!-- Gionee liuyanbo 2012-08-23 add for CR00680327 start -->
+    <string name="wifi_auto_notify">WLAN Auto Notify</string>
+    <!-- Checkbox summary for option to notify user when open networks are nearby -->
+    <string name="wifi_auto_notify_summary">Notify me when an open network is available</string>
+    <!-- Gionee liuyanbo 2012-08-23 add for CR00680327 end -->
+    
+    <!--Gionee lihq add for CR00682401 start-->
+    <string name="backup_restore_settings_title">System Backup</string>
+    <!--Gionee lihq add for CR00682401 end-->
+
+    <!-- GIONEE licheng Aug 23, 2012 add for CR00683085 start -->
+    <string name="powerprofile_settings_title">Power saving</string>
+    <!-- GIONEE licheng Sep 3, 2012 add for CR00683085 end -->
+
+    <!-- Gionee zengxuanhui 20120907 add for CR00688800 begin -->
+    <string name="data_usage_disable_mobile_title">Disable data usage</string>
+    <!-- Gionee zengxuanhui 20120907 add for CR00688800 end -->
+
+    <!-- Gionee qinkai 2012-09-12 added for CR00692242 start-->
+     <!-- for PCH Monitor warning message when cancel-->
+    <string name="pch_warning_message_cancel">Data speed will increase, but it will not be possible to receive calls on the other SIM during data connection. </string>
+    <!-- Gionee qinkai 2012-09-12 added for CR00692242 end-->
+
+    <!-- Gionee: 20120918 chenrui add for CR00696600 begin -->
+    <string name="gn_alert_miss_msg_title">Unread SMS ringtone</string>
+    <string name="gn_alert_miss_msg_summary">Repeat the unread SMS ringtone per 5 minutes</string>
+    <!-- Gionee: 20120918 chenrui add for CR00696600 end -->
+
+	<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+	<string name="lcm_acl_title">Adjust screen power use automaticly</string>
+	<string name="lcm_acl_summary">Save power by analysing screen and display brightness</string>
+	<!-- Gionee Jingjc 2012-9-18 add for CR00693470 start -->
+
+    <!-- Gionee: 20120926 chenrui add for CR00704898 begin -->
+    <string name="gn_alert_missed_title">Alert missed call &amp; SMS</string>
+    <string name="gn_alert_missed_summary">Blink screen backlight per 12 seconds</string>
+    <!-- Gionee: 20120926 chenrui add for CR00704898 end -->	
+    
+    <!-- Gionee fengjianyi 2012-09-28 add for CR00705430 start -->
+    <string name="secrets_keep_title">Privacy</string>
+    <string name="guest_mode">Guest mode</string>
+    <string name="guest_mode_summary"></string>
+    <string name="goto_guest_mode_warning">It will hide call logs, messages, albums, notes and prevent editing desktop, and can set password protection in "Settings" - "Security" ,are you sure to enter the guest mode?</string>
+    <!-- Gionee fengjianyi 2012-09-28 add for CR00705430 end -->
+    <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 begin -->
+    <string name="need_password">Enable password</string>
+    <string name="need_password_summary">Enter the password to turn off the guest mode</string>
+    <string name="alter_password">Alter password</string>
+    <string name="set_pass">Set password</string>
+    <string name="guest_pass_confirm">Exit guest mode</string>
+    <string name="guest_password_too_long">Password must be fewer than <xliff:g id="number" example="17">%d</xliff:g> digits.</string>
+    <string name="guest_password_too_short">Password must be at least %d digits</string>
+    <string name="comfirm_password">Confirm guest password</string>
+    <string name="choose_new_password_header">Choose your new password</string>
+    <string name="lockpassword_press_ok">Touch OK when done</string>
+    <string name="input_pass_wrong">Wrong password</string>
+    <string name="exit_pass">Stop using guest password</string>
+    <string name="open_pass">Use guest password</string>
+    <!-- Gionee <qiuxd> <2013-04-26> modify for CR00802506 end -->
+    
+   <!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 begin -->
+    <string name="hide_app">Hide app</string>
+    <string name="hide_app_summry">Hide checked the application when guest mode is enabled</string>
+    <string name="hide_app_toast">Not enter guest mode is turned on</string>
+    <string name="hide_app_title">Hide checked the application when guest mode is enabled</string>
+    <!-- Gionee <qiuxd> <2013-05-08> modify for CR00809610 end -->
+    
+    <!-- Gionee zengxuanhui 20121022 add for CR00716758 begin -->
+    <string name="haptic_vibration_title">Vibration effects</string>
+    <!-- Gionee zengxuanhui 20121022 add for CR00716758 end -->
+    <!--Gionee Jingjc 20121101 add for CR00722601 start-->
+    <string name="routine_vibrate_title">Routine vibrate</string>
+    <string name="dialpad_vibration_title">Dialpad vibrate</string>
+    <string name="lockscreen_vibration_title">Locking screen vibrate</string>
+    <string name="selectapp_vibration_title">select or delete Apps vibrate</string>
+    <!--Gionee Jingjc 20121101 add for CR00722601 end-->
+    <!-- Gionee zengxuanhui 20121123 add for CR00724044 begin -->
+    <string name="gn_rom_version">Gionee system version</string>
+    <!-- Gionee zengxuanhui 20121123 add for CR00724044 end -->
+    <!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 start -->
+    <string name="gn_settings_warning">Warning</string>
+    <!-- Gionee:zhang_xin 2012-12-18 add for CR00746738 end -->
+    
+    <!-- Gionee zengxuanhui 20130107 add for CR00755682 begin -->
+    <string name="sd_card_title">SD card</string>
+    <string name="phone_title">Phone capacity</string>
+    <string name="setup_sd_card">Setup SD card</string>
+    <string name="no_sd_card">No setup SD card</string>
+    <string name="setup_sd_card_summary">Inserted SD card for setup</string>
+    <string name="sd_card_capacity">Capacity</string>
+    <string name="sd_card_free">Free</string>
+    <string name="format_sd_card">Format SD card</string>
+    <string name="system_capacity">System capacity</string>
+    <string name="system_free">System free</string>
+    <string name="internal_capacity">Internal storage capacity</string>
+    <string name="internal_free">Internal storage free</string>
+    <string name="format_phone_capacity">Format phone</string>
+    <string name="total_capacity">Total capacity</string>
+    <string name="phone_free_title">Phone free</string>
+    <!-- Gionee zengxuanhui 20130107 add for CR00755682 end -->
+
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 start -->
+    <string name="gn_settings_common">Common Settings</string>
+    <string name="gn_settings_all">All Settings</string>
+    <!-- Gionee:zhang_xin 2013-02-01 add for CR00767874 end -->
+    <!-- Gionee <wangyaohui><2013-03-20> add for CR00786468 begin -->
+    <string name="date_time_24_hour_sample">13:00</string>
+    <string name="date_time_12_hour_sample">1:00 pm</string>
+    <!-- Gionee <wangyaohui><2013-03-20> add for CR00786468 end-->
+    
+     <!-- Gionee chenml 2013-04-10 add for CR00795467 begin-->
+    <string name="gn_button_light">Close Button Light</string>
+     <!-- Gionee chenml 2013-04-10 add for CR00795467 end-->
+     
+    <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 begin -->
+    <string name="gn_devices_title">Hardware information</string>
+    <string name="gn_devices_summary">CPU model, number of CPU cores, ect.</string>
+    <string name="gn_devices_cpu_title">CPU model</string>
+    <string name="gn_devices_cpu_core_title">Number of CPU cores</string>
+    <string name="gn_devices_cpu_core_summary_single">Single-core</string>
+    <string name="gn_devices_cpu_core_summary_dual">Dual-core</string>
+    <string name="gn_devices_cpu_core_summary_quad">Quad-core</string>
+    <string name="gn_devices_cpu_core_summary_six">Six-cores</string>
+    <string name="gn_devices_cpu_core_summary_eight">Eight-cores</string>
+    <string name="gn_devices_cpu_maxhz_title">CPU frequency</string>
+    <string name="gn_devices_cpu_maxhz_summary">%1$s Mhz</string>
+    <string name="gn_devices_phone_rom_memory_title">ROM</string>
+    <string name="gn_devices_phone_ram_memory_title">RAM</string>
+    <string name="gn_devices_screen_pixel_title">Screen resolution</string>
+    <string name="gn_devices_screen_size_title">Screen size</string>
+    <string name="gn_devices_screen_size_summary">%1$s Inch</string>
+    <!-- Gionee <zhang_xin><2013-04-13> add for CR00797488 end -->
+    
+    <!-- Gionee <chenml> <2013-04-26> add for CR00803315 begin -->
+    <string name="illustration">Large and extra large font is used only to dial, SMS and contacts app</string>
+    <!-- Gionee <chenml> <2013-04-26> add for CR00803315 end -->
+
+     <!-- Gionee <chenml> <2013-05-20> add for CR00817466 begin -->
+    <string name="gn_sound_control_title">Sound Control Profile</string>
+    <string name="gn_sound_control_calling">Incoming telegram</string>
+    <string name="gn_sound_control_calling_summary">Voice broadcast，Voice answer and Hang up</string>    
+    <string name="gn_sound_control_message">SMS</string>
+    <string name="gn_sound_control_message_summary">Voice broadcast，Voice reading and Callback</string>   
+    <string name="gn_sound_control_lockscreen">Open the application in lockscreeen </string>
+    <string name="gn_sound_control_lockscreen_summary">Open application interface by voice in lockscreen，such as open the Contacts</string>   
+    <string name="gn_sound_control_alarmclock">Alarm clock</string>
+    <string name="gn_sound_control_alarmclock_summary">The alarm rang ，close alarm or delay ring again by voice</string>      
+    <string name="gn_sound_control_dialog">Open the sound control profile ?</string> 
+    <string name="gn_sound_control_dialog_message">The sound and the ring of AudioProfile will become to the Voice broadcast after open the Sound Control Profile .</string>
+    <string name="not_alert_again">Not alert again</string>
+    <!-- Gionee <chenml> <2013-05-20> add for CR00817466 end -->
+
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 begin  -->
+    <string name="gn_suspend_button">Suspend button</string>
+    
+    <string name="gn_single_hand_operation">Single hand operation</string>
+    <string name="gn_phone_keyboard">Keyboard of dial and calling </string>
+    <string name="gn_phone_keyboard_summary">Adjusting keyboard position according to the handedness</string>
+    <string name="gn_input_method_keyboard">Inputmethod keyboard</string>
+    <string name="gn_input_method_keyboard_summary">Adjusting keyboard position according to the handedness</string>
+    <string name="gn_pattern_unlockscreen">Unlock pattern</string>
+    <string name="gn_pattern_unlockscreen_summary">Adjust the proportion of unlock pattern</string>  
+    <string name="gn_advance_setting">Advanced Settings</string>  
+    <string name="gn_small_screen_mode">Small screen mode</string>
+    <string name="gn_small_screen_mode_summary">Turn on and off via long press menu button </string>    
+    <string name="gn_screen_size">Screen size</string>
+    <string name="gn_screen_size_summary"><xliff:g id="SCREENSIZE_DESCRIPTION">%1$s</xliff:g></string>
+    <!-- Gionee chenml 2013-05-29 add for CR00821135 end  -->
+
+    <!--Gionee <xiaolin><2013-05-30> add for CR00820865 start -->  
+    <string name="scan_custom">Scan</string>
+    <string name="stop_custom">Stop</string>
+    <string name="cancel_custom">Cancel</string>
+    <!--Gionee <xiaolin><2013-05-30> add for CR00820865 end -->  
+
+    <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 begin -->
+    <string name="gn_fanfan_widget_auto_push">Lock screen push</string>
+    <!-- Gionee <wangyaohui><2013-05-30> add for CR00820909 end -->
+
+	<!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+    <string name="gn_respirationlamp_settings">LED light</string>
+    <string name="gn_respirationlamp_low_power">Low power remind</string>
+    <string name="gn_respirationlamp_low_power_summary">Flash red led when low power</string>
+    <string name="gn_respirationlamp_in_charge">Charging remind</string>
+    <string name="gn_respirationlamp_in_charge_summary">Keep led on when charing</string>
+    <string name="gn_respirationlamp_notification">Notification remind</string>
+    <string name="gn_respirationlamp_notification_summary">Flash when have missed calls / missed sms / other app\'s notification </string>
+    <string name="gn_respirationlamp_music">Music play</string>
+    <string name="gn_respirationlamp_music_summary">Flash each color for a song</string>
+    <string name="gn_respirationlamp_call">Call </string>
+    <string name="gn_respirationlamp_call_summary">Flah when incoming call</string>
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+
+    <string name="gemini_data_connection">Data connection</string>
+    <string name="gemini_sim_management_title">Dual SIM Setting</string>
+    <string name="gn_sound_and_vibrate">Sound and vibrate</string>
+    <string name="gn_smart_gesture">Smart gesture</string>
+
+    <!-- Main Settings screen setting option name to go into the power on&amp;off settings-->
+    
+    <string name="slot_status_title">"IMEI information"</string>
+    <string name="slot_status_summary">"IMEI relative information"</string> 
+    <!-- Add for Evdo signal strength -->
+    <string name="gn_bluetooth_stop_scan">"Stop search"</string>
+    <!-- Gionee <wangguojing> <2013-08-10> add for CR00854573 begin -->
+    <string name="gn_enable_debug_title">Log switchs</string>
+    <string name="gn_enable_debug_dialog_title">Select switchs</string>
+    <string name="gn_log_master_switch">Master switch</string>
+    <string name="gn_log_verbose_switch">VERBOSE switch</string>
+    <string name="gn_log_debug_switch">DEBUG switch</string>
+    <string name="gn_log_info_switch">INFO switch</string>
+    <string name="gn_log_warn_switch">WARN switch</string>
+    <string name="gn_log_error_switch">ERROR switch</string>
+    <!-- Gionee <wangyaohui> <2013-05-30> add for CR00854573 end -->
+
+    <!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 begin -->
+    <string name="gn_conv_popup_text1">unlock screen like this</string>
+    <string name="gn_conv_popup_text2">into guest mode</string>
+    <!-- Gionee <qiuxd> <2013-06-15> add for CR00826405 end -->
+    <!-- qy add 2014 07 29 begin -->
+
+    <string name = "virtual_key_setting_pref_title">"Virtual key"</string>
+    <string name = "virtual_key_setting_mode_left_pref_title">"Back key is on the left"</string>
+    <string name = "virtual_key_setting_mode_left_pref_summary">"The back key is on the left of the Home key,the menu key is on the right"</string>
+    <string name = "virtual_key_setting_mode_right_pref_title">"Back key is on the right"</string>
+    <string name = "virtual_key_setting_mode_right_pref_summary">"The back key is on the right of the Home key,the menu key is on the left"</string>
+    
+    <string name="aurora_log_onoff_title">IUNI Log Switch</string>
+    <string name= "aurora_dump_onoff_pref_title">DUMP Function Switch</string>
+    
+    <string name="okay_continue">OK</string>
+    <string name="okay_restore">OK</string>
+	<!-- qy add 2014 07 29 end -->
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="weekday">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期天</item>
+    </string-array>
+    <string-array name="month">
+        <item>1月%1$s日</item>
+        <item>2月%1$s日</item>
+        <item>3月%1$s日</item>
+        <item>4月%1$s日</item>
+        <item>5月%1$s日</item>
+        <item>6月%1$s日</item>
+        <item>7月%1$s日</item>
+        <item>8月%1$s日</item>
+        <item>9月%1$s日</item>
+        <item>10月%1$s日</item>
+        <item>11月%1$s日</item>
+        <item>12月%1$s日</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lockpaper_item_settings_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" >
+
+        <ImageView
+            android:id="@+id/lockpaper_item_title_color"
+            android:layout_width="3dip"
+            android:layout_height="23dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dip"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/lockpaper_item_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lockpaper_item_title_color"
+            android:layout_marginLeft="7dip"
+            android:layout_toRightOf="@+id/lockpaper_item_title_color"
+            android:text="@string/default_lockscreen_wallpaper_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lockpaper_item_title_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lockpaper_item_title_name"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/lockpaper_item_title_name"
+            android:gravity="bottom"
+            android:text="@string/group_num_type"
+            android:textColor="#FFCCCCCC"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/lockpaper_item_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/localwallpaper_apply" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="296dip"
+        android:layout_marginBottom="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/lockpaper_pre_img1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop" />
+            <!-- android:src="@drawable/data2" -->
+
+            <Space
+                android:layout_width="1dip"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/lockpaper_pre_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop" >
+                </ImageView>
+
+                <!--
+                 <Space
+                android:layout_width="match_parent"
+                android:layout_height="1dip" />
+                -->
+
+                <LinearLayout
+                    android:id="@+id/lockpaper_pre_ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dip"
+                    android:layout_weight="2"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lockpaper_pre_img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/lockpaper_pre_img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dip"
+                        android:layout_weight="1"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/lockpaper_pre_img5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dip"
+                        android:layout_weight="1"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lockpaper_pre_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dip"
+            android:text="@string/lockpaper_pre_null_str"
+            android:textColor="#FFCCCCCC"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

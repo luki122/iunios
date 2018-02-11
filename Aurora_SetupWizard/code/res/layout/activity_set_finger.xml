@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/bg" />
+    
+    <ImageView 
+        android:layout_width="232dp"
+        android:layout_height="169dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/finger_icon"/>
+    
+
+    <TextView
+        android:id="@+id/tv_finger_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:singleLine="true"
+        android:text="@string/finger_set_title"
+        android:textColor="@color/language_welcome"
+        android:textSize="21sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_finger_use"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_finger_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/finger_set_title"
+             android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:textColor="@color/language_welcome"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="16dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_finger_use"
+        android:layout_marginLeft="16dp"
+        android:background="#e5e5e5"/>
+    
+    <RelativeLayout
+        android:id="@+id/rl_finger_nouse"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_finger_use"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/finger_set_use"
+            android:singleLine="true"
+             android:layout_marginLeft="16dp"
+            android:textColor="@color/language_welcome"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_dontuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rl_finger_nouse"
+        android:layout_marginLeft="16dp"
+        android:background="#e5e5e5"/>
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" />
+
+</RelativeLayout>

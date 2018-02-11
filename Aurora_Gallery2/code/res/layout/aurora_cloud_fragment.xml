@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/album_background" >
+
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/pop_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pop_title"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:paddingTop="80dp"
+        android:headerDividersEnabled="true" />
+
+
+</RelativeLayout>

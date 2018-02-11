@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vs_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!--     android:layout_height="@dimen/vs_main_height" -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="91dp" >
+
+        <com.aurora.voiceassistant.view.CustomerScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always">
+
+            <LinearLayout
+                android:id="@+id/listoutline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:alpha="0">
+
+                <LinearLayout
+                    android:id="@+id/listcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+                <View
+                    android:id="@+id/fillview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.0dp"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </com.aurora.voiceassistant.view.CustomerScrollView>
+
+        <LinearLayout
+            android:id="@+id/speech_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/speech_tip_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vs_speech_tip_bg"
+                android:gravity="center"
+                android:textColor="@color/vs_white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/speech_tip_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/vs_speech_tip_i" />
+        </LinearLayout>
+
+        <!-- greeting -->
+        <LinearLayout
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:id="@+id/hello_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:text="@string/vs_greeting_morning"
+                android:textColor="@color/vs_greeting_fwhite"
+                android:textSize="33sp" />
+        </LinearLayout>
+
+        <!-- 气泡 -->
+        <LinearLayout
+            android:id="@+id/greeting_qp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:alpha="0.0"
+             >
+			<TextView
+		        android:layout_width="wrap_content"
+		        android:minWidth="95dp"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/vs_dialog_her_bg"
+		        android:textColor="@color/vs_black"
+		        android:textSize="16sp"
+		        android:gravity="center_vertical"
+		        android:layout_marginTop="12dp"
+		        android:layout_marginLeft="7dp"
+		        android:layout_marginRight="7dp"
+		         />
+        </LinearLayout>
+        
+      	<!--android:layout_marginTop="500dp" 加载...Loading...效果...android:layout_above="@id/normal_state" -->
+	    <com.aurora.voiceassistant.view.RequestAnimation
+	        android:id="@+id/request_ani"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:layout_marginTop="@dimen/vs_loading_ani">
+	    </com.aurora.voiceassistant.view.RequestAnimation>
+    </FrameLayout>
+
+    <!-- 语音话筒 -->
+    <RelativeLayout
+        android:id="@+id/normal_state"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+	    <Button
+	        android:id="@+id/barcode"
+	        android:layout_width="@dimen/vs_barcode_width"
+	        android:layout_height="@dimen/vs_barcode_height"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="11dp"
+	        android:layout_marginTop="@dimen/vs_barcode_margin_top"
+	        android:background="@drawable/vs_barcode_big_style"
+	        android:visibility="gone" />
+		<Button
+            android:id="@+id/btn_voice"
+			android:layout_width="@dimen/vs_voice_recording_button_width"
+            android:layout_height="@dimen/vs_voice_recording_button_height"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13.55dp"
+            android:background="@drawable/vs_mic_btn_style" />
+
+        <Button
+            android:id="@+id/to_input_btn"
+            android:layout_width="@dimen/vs_input_switch_button_width"
+            android:layout_height="@dimen/vs_input_switch_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/vs_margin_right_1"
+            android:layout_marginTop="@dimen/vs_margin_top_1"
+            android:background="@drawable/vs_input_btn_style" />
+<!--         android:layout_centerVertical="true" -->
+<!-- android:layout_marginRight="11dp" -->
+    </RelativeLayout>
+
+    <!-- 语音文字 -->
+    <RelativeLayout
+        android:id="@+id/input_state"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_to_mic"
+            android:layout_width="@dimen/vs_input_switch_button_width"
+            android:layout_height="@dimen/vs_input_switch_button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/vs_margin_left_1"
+            android:layout_marginTop="20.85dp"
+            android:background="@drawable/vs_mic_input_style" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vs_input_edit_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vs_input_bg" >
+
+        	<aurora.widget.AuroraEditText
+                android:id="@+id/edit_input"
+                style="@style/CutomEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/vs_input_edit_height"
+                android:background="@color/vs_transparent"
+                android:hint="@string/vs_input_text"
+                android:imeOptions="actionSend"
+                android:paddingBottom="@dimen/vs_padding_bottom_1"
+                android:paddingLeft="7dp"
+                android:singleLine="true"
+                android:textColor="@color/vs_white"
+                android:textColorHint="#55FFFFFF"
+                android:textSize="18sp"/>
+<!--             android:layout_width="250dp" -->
+<!-- android:paddingBottom="24dp" -->
+			<Button 
+			    android:id="@+id/barcode_small"
+			    android:layout_width="@dimen/vs_send_button_width"
+			    android:layout_height="@dimen/vs_send_button_height"
+			    android:layout_centerVertical="true"
+			    android:layout_marginTop="1dp"
+			    android:background="@drawable/vs_barcode_small_style"
+			    android:visibility="gone"/>
+			<ImageView 
+			    android:id="@+id/barcode_divide_line"
+			    android:layout_width="1dp"
+			    android:layout_height="18.5dp"
+			    android:layout_marginTop="5dp"
+			    android:layout_marginRight="8dp"
+			    android:layout_marginLeft="5dp"
+			    android:background="@color/vs_barcode_divide_line"
+			    android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="@dimen/vs_send_button_width"
+                android:layout_height="@dimen/vs_send_button_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/vs_send_btn_style" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.aurora.voiceassistant.view.CustomMenuProxy
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vs_custom_menu_proxy_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.aurora.voiceassistant.view.CustomMenuProxy>
+
+</RelativeLayout>

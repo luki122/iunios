@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/almanac_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lunar_date_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/gn_almanac_gap_date_field_lunar_date_bottom"
+        android:layout_marginTop="@dimen/gn_almanac_gap_date_field_lunar_date_top" >
+
+        <TextView
+            android:id="@+id/lunar_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/gn_almanac_text_size_lunar_date" />
+
+        <ImageView
+            android:id="@+id/lunar_date_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lunar_date"
+            android:layout_alignTop="@id/lunar_date"
+            android:layout_marginRight="@dimen/gn_almanac_gap_date_field_switch_date_button"
+            android:layout_toLeftOf="@id/lunar_date" />
+
+        <ImageView
+            android:id="@+id/lunar_date_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lunar_date"
+            android:layout_alignTop="@id/lunar_date"
+            android:layout_marginLeft="@dimen/gn_almanac_gap_date_field_switch_date_button"
+            android:layout_toRightOf="@id/lunar_date" />
+
+        <TextView
+            android:id="@+id/greg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lunar_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gn_almanac_gap_date_field_greg_date_top"
+            android:textSize="@dimen/gn_almanac_text_size_greg_date" />
+
+        <ImageView
+            android:id="@+id/timepick_indicate_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lunar_date"
+            android:layout_marginRight="@dimen/gn_almanac_gap_date_field_datepicker_indicate_distance_to_date"
+            android:layout_marginTop="@dimen/gn_almanac_gap_date_field_datepicker_indicate_top"
+            android:layout_toLeftOf="@id/greg_date" />
+
+        <ImageView
+            android:id="@+id/timepick_indicate_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lunar_date"
+            android:layout_marginLeft="@dimen/gn_almanac_gap_date_field_datepicker_indicate_distance_to_date"
+            android:layout_marginTop="@dimen/gn_almanac_gap_date_field_datepicker_indicate_top"
+            android:layout_toRightOf="@id/greg_date" />
+
+        <TextView
+            android:id="@+id/week_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/greg_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gn_almanac_gap_date_field_internal"
+            android:textSize="@dimen/gn_almanac_text_size_week_day" />
+
+        <TextView
+            android:id="@+id/chinese_era"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/week_day"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gn_almanac_gap_date_field_internal"
+            android:textSize="@dimen/gn_almanac_text_size_chinese_era" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/almanac_info_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/gn_almanac_gap_almanac_info_field_border"
+        android:layout_marginLeft="@dimen/gn_almanac_gap_almanac_info_field_border"
+        android:layout_marginRight="@dimen/gn_almanac_gap_almanac_info_field_border"
+        android:orientation="vertical" >
+
+        <!-- chinese horoscope icon -->
+
+        <ImageView
+            android:id="@+id/chinese_horoscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/gn_almanac_gap_chinese_era_chinese_horoscope_bottom"
+            android:layout_marginTop="@dimen/gn_almanac_gap_chinese_era_chinese_horoscope_top" />
+
+        <!-- good field -->
+
+        <RelativeLayout
+            android:id="@+id/today_good_field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/gn_almanac_separator_lr_margin"
+            android:layout_marginRight="@dimen/gn_almanac_separator_lr_margin"
+			 >
+            <View
+                android:id="@+id/separator_good"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gn_almanac_separator_height"
+                android:layout_alignParentBottom="true"   />
+            <ImageView
+                android:id="@+id/icon_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_above="@id/separator_good"
+                android:layout_marginBottom="@dimen/gn_almanac_separator_icon_margin_for_big_font"/>
+
+            <TextView
+                android:id="@+id/affair_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/separator_good"
+                android:layout_marginBottom="@dimen/gn_almanac_separator_icon_margin_for_big_font"
+                android:layout_marginLeft="@dimen/gn_almanac_gap_icon_and_text"
+                android:layout_toRightOf="@id/icon_good"
+                android:maxLines="3"
+                android:textSize="@dimen/gn_almanac_text_size_good_and_bad" />
+        </RelativeLayout>
+
+        <!-- bad field -->
+
+        <RelativeLayout
+            android:id="@+id/today_bad_field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/gn_almanac_separator_lr_margin"
+            android:layout_marginRight="@dimen/gn_almanac_separator_lr_margin"
+            android:layout_marginTop="@dimen/gn_almanac_gap_fitted_and_unfitted_for_big_font" >
+
+
+            <View
+                android:id="@+id/bad_division"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_alignParentTop="true" />
+            <View
+                android:id="@+id/separator_bad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gn_almanac_separator_height"
+                android:layout_alignParentBottom="true"/>
+            <ImageView
+                android:id="@+id/icon_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/gn_almanac_separator_icon_margin_for_big_font"
+                android:layout_above="@id/separator_bad" />
+
+
+
+            <TextView
+                android:id="@+id/affair_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/separator_bad"
+                android:layout_alignBottom="@id/separator_bad"
+                android:layout_marginBottom="@dimen/gn_almanac_separator_icon_margin_for_big_font"
+                android:layout_marginLeft="@dimen/gn_almanac_gap_icon_and_text"
+                android:layout_toRightOf="@id/icon_bad"
+                android:maxLines="3"
+                android:textSize="@dimen/gn_almanac_text_size_good_and_bad" />
+        </RelativeLayout>
+
+        <!-- more info field -->
+
+        <RelativeLayout
+            android:id="@+id/more_info_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gn_almanac_separator_lr_margin"
+            android:layout_marginRight="@dimen/gn_almanac_separator_lr_margin" >
+
+            <!-- chong title & content -->
+
+            <LinearLayout
+                android:id="@+id/more_info_field_chong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/gn_almanac_gap_top_more_info_items"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/more_info_title_chong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_chong"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_chong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </LinearLayout>
+
+            <!-- birth god title & content -->
+
+            <LinearLayout
+                android:id="@+id/more_info_field_birth_god"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/more_info_field_chong"
+                android:layout_marginTop="@dimen/gn_almanac_gap_top_more_info_items"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/more_info_title_birth_god"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_birth_god"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_birth_god"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </LinearLayout>
+
+            <!-- five elements title & content -->
+
+            <LinearLayout
+                android:id="@+id/more_info_field_five_elements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/more_info_field_birth_god"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/more_info_title_five_elements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_five_elements"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_five_elements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </LinearLayout>
+
+            <!-- pengzu bai ji title & content -->
+
+            <RelativeLayout
+                android:id="@+id/more_info_field_pengzu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/more_info_field_birth_god"
+                android:layout_marginTop="@dimen/gn_almanac_gap_top_more_info_items" >
+
+                <TextView
+                    android:id="@+id/more_info_title_pengzu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_pengzu"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_pengzu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/more_info_title_pengzu"
+                    android:layout_toRightOf="@id/more_info_title_pengzu"
+                    android:layout_marginLeft="@dimen/gn_almanac_gap_more_info_title_and_content"
+                    android:maxLines="2"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </RelativeLayout>
+            <!-- lucky fairy title & content -->
+
+            <RelativeLayout
+                android:id="@+id/more_info_field_lucky_fairy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/more_info_field_pengzu"
+                android:layout_marginTop="@dimen/gn_almanac_gap_top_more_info_items" >
+
+                <TextView
+                    android:id="@+id/more_info_title_lucky_fairy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_lucky_fairy"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_lucky_fairy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/more_info_title_lucky_fairy"
+                    android:layout_marginLeft="@dimen/gn_almanac_gap_more_info_title_and_content"
+                    android:layout_toRightOf="@id/more_info_title_lucky_fairy"
+                    android:maxLines="2"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </RelativeLayout>
+
+            <!-- evil spirit title & content -->
+
+            <RelativeLayout
+                android:id="@+id/more_info_field_evil_spirit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/more_info_field_lucky_fairy"
+                android:layout_marginTop="@dimen/gn_almanac_gap_top_more_info_items"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/more_info_title_evil_spirit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/almanac_more_title_evil_spirit"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_title"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/more_info_content_evil_spirit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/more_info_title_evil_spirit"
+                    android:layout_marginLeft="@dimen/gn_almanac_gap_more_info_title_and_content"
+                    android:layout_toRightOf="@id/more_info_title_evil_spirit"
+                    android:maxLines="2"
+                    android:textSize="@dimen/gn_almanac_text_size_more_info_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

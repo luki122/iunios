@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_item_height"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/app_item_icon_width_and_height"
+        android:layout_height="@dimen/app_item_icon_width_and_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/app_item_padding_top_and_bottom"
+        android:layout_marginLeft="@dimen/app_item_padding_left_and_right"
+        android:layout_marginRight="@dimen/app_item_icon_margin_right"
+        android:layout_marginTop="@dimen/app_item_padding_top_and_bottom"
+        android:src="@drawable/page_appicon_big" />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_item_appname_height"
+        android:layout_marginTop="@dimen/app_item_name_margin_top"
+        android:layout_toLeftOf="@+id/progressBtn"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/app_item_namecolor"
+        android:textSize="@dimen/textsize_16" />
+
+    <RatingBar
+        android:id="@+id/rb_score"
+        style="@style/myRatingBarSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_item_ratingbar_height"
+        android:layout_below="@+id/tv_appname"
+        android:layout_marginBottom="@dimen/app_item_ratingbar_margin_bottom"
+        android:layout_marginTop="@dimen/app_item_ratingbar_margin_top"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:isIndicator="true" />
+
+    <TextView
+        android:id="@+id/tv_download_count"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_item_count_height"
+        android:layout_below="@+id/rb_score"
+        android:layout_toLeftOf="@+id/progressBtn"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/app_item_count_size_color"
+        android:textSize="@dimen/textsize_12" />
+
+    <com.aurora.market.widget.ProgressBtn
+        android:id="@+id/progressBtn"
+        android:layout_width="@dimen/app_item_down_btn_container_width"
+        android:layout_height="@dimen/app_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

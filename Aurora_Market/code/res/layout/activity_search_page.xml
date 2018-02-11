@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    >
+    
+	 <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:orientation="vertical">
+	    
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/no_match_note_text_color" />
+	    
+	    <GridView android:id="@+id/recommend_grid"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:verticalSpacing="1px" 
+	        android:horizontalSpacing="1px"
+	        android:background="@color/line_grey"
+	        android:listSelector="@null"
+	        android:numColumns="3"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        />
+	   <LinearLayout android:layout_width="match_parent"
+	       android:layout_height="@dimen/search_page_grid_item_height_45"
+	       android:gravity="center"
+	       android:orientation="horizontal"
+	       >
+	       <LinearLayout android:id="@+id/design_award_view"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:gravity="center"
+	           android:background="@drawable/list_item_selector"
+               android:orientation="horizontal"
+	           >
+	           <ImageView 
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:background="@drawable/search_design_award_app"
+	               />
+	           
+	           <TextView 
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_marginLeft="@dimen/search_page_margin_5"
+	               android:textColor="@color/category_essen_normal"
+	               android:textSize="@dimen/textsize_16"
+	               android:text="@string/design_award_app"
+	               />
+	           
+	       </LinearLayout>
+	       
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/homgpage_tabview_line_margin_topbottom"
+            android:layout_marginTop="@dimen/homgpage_tabview_line_margin_topbottom"
+            android:layout_gravity="center"
+            android:background="@color/line_grey" />
+	       
+	       <LinearLayout  android:id="@+id/essential_view"
+	           android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:background="@drawable/list_item_selector"
+               android:orientation="horizontal"
+               >
+               
+               <ImageView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/search_essential_app"
+                   />
+               
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="@dimen/search_page_margin_5"
+                   android:textColor="@color/category_new_normal"
+                   android:textSize="@dimen/textsize_16"
+                   android:text="@string/essentail_app"
+                   />
+           </LinearLayout>
+	   </LinearLayout>
+	    
+	   <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/no_match_note_text_color" />
+	    
+	    <aurora.widget.AuroraListView
+	        android:id="@+id/search_history_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white"
+	        />
+	    
+	    <View android:id="@+id/layout_divider0"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/no_match_note_text_color"
+	         />
+	    
+	    <TextView android:id="@+id/clear_history_btn"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/search_page_textview_height"
+	        android:gravity="center"
+	        android:text="@string/clear_search_history"
+	        android:background="@drawable/list_item_selector"
+	        android:textColor="@color/app_item_count_size_color"
+	        android:textSize="@dimen/textsize_14"
+	        />
+	    
+	    <View 
+	        android:id="@+id/layout_divider"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/no_match_note_text_color" 
+	        android:visibility="gone"/>
+	    
+	    <View android:id="@+id/bottom_panel"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	         />
+     </LinearLayout>
+
+	 <View 
+        android:id="@+id/mark_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/alpha_10_white"
+        android:visibility="gone"
+        />
+</FrameLayout>

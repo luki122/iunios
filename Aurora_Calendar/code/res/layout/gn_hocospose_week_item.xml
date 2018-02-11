@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiating><2013-06-20> modify for CR00827812 begin -->
+<!-- Gionee <jiating><2013-05-29> modify for CR00000000 begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hocospose_info_loading_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/hocospose_info_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hocospose_info_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:text="@string/loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_content"
+        style="@style/GNHocosposeTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/get_horoscope_failed"
+        android:textColor="@color/gn_agenda_title_color" />
+
+
+
+    <ScrollView
+        android:id="@+id/gn_hocospose_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:animateLayoutChanges="true"
+       
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/hocospose_content"
+                style="@style/GNHocosposeTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:layout_marginTop="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/gn_agenda_title_color" />
+
+            <ImageView
+                android:id="@+id/tengxun_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/hocospose_content"
+                android:layout_marginTop="@dimen/gn_sliding_content_image_margin_left_or_right"
+                android:scaleType="matrix"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:src="@drawable/gn_hocospose_tengxun_image_on_off" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout> <!-- Gionee <jiating><2013-05-29> modify for CR00000000 end -->
+<!-- Gionee <jiating><2013-06-20> modify for CR00827812 end -->

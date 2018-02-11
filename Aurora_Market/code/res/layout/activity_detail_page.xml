@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailLayout"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_detail_page_header_height" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/app_detail_page_margin_10"
+                android:paddingTop="@dimen/app_detail_page_margin_10"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/app_pic_browse_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/app_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                     android:layout_width="match_parent"
+                     android:layout_height="1px"
+                     android:background="@color/line_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                    android:layout_marginTop="@dimen/app_detail_page_margin_12" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/app_title"
+                        android:textColor="@color/homepage_tabview_textcolor"
+                        android:text="@string/app_intro"
+                        android:textSize="@dimen/textsize_16" />
+
+                    <TextView
+                        android:id="@+id/view_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/app_detail_page_margin_17"
+                        android:text="@string/view_comment"
+                        android:textColor="@color/app_detail_page_text_color_2"
+                        android:textSize="@dimen/textsize_16"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                    android:layout_marginTop="@dimen/app_detail_page_margin_10" >
+
+                    <LinearLayout
+                        android:id="@+id/row0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_version"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <TextView
+                            android:id="@+id/developer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:text="@string/app_developer"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                        
+                        <TextView
+                            android:id="@+id/market_source"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:text="@string/app_source"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/row1"
+                        android:layout_width="@dimen/app_detail_page_textview_length"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/row0"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/version_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <TextView
+                            android:id="@+id/developer_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                        
+                        <TextView
+                            android:id="@+id/source_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/row2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/app_detail_page_margin_7"
+                        android:layout_toRightOf="@id/row1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/update_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_update_time"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:text="@string/app_category"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/row3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/app_detail_page_margin_17"
+                        android:layout_toRightOf="@id/row2"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/update_time_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <TextView
+                            android:id="@+id/category_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_detail_page_margin_4"
+                            android:textColor="@color/app_detail_page_text_color_1"
+                            android:textSize="@dimen/small_textsize" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/app_desc_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                    android:layout_marginBottom="@dimen/app_detail_page_margin_12"
+                    android:layout_marginRight="@dimen/app_detail_page_margin_17"
+                    android:layout_marginTop="@dimen/app_detail_page_margin_10" 
+                    >
+
+                    <com.aurora.market.ui.ExpandableTextView
+                        android:id="@+id/desc_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:duplicateParentState="true"
+                        android:gravity="top"
+                        android:lines="3"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/homepage_tabview_textcolor"
+                        android:textSize="@dimen/textsize_14"
+                        />
+
+                    <ImageView
+                        android:id="@+id/expand_more_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="@dimen/app_detail_page_margin_5"
+                        android:duplicateParentState="true"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_detail_page_footer_height" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/app_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_detail_page_header_height"
+        android:background="@color/header_white_transparent_bg" >
+
+        <ImageView
+            android:id="@+id/app_avatar"
+            android:layout_width="@dimen/app_detail_page_length_60"
+            android:layout_height="@dimen/app_detail_page_length_60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+            android:src="@drawable/page_appicon_big" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_12"
+            android:layout_marginTop="@dimen/app_detail_page_margin_15"
+            android:layout_toRightOf="@id/app_avatar"
+            android:text="@string/demo_app_name"
+            android:textColor="@color/homepage_tabview_textcolor"
+            android:textSize="@dimen/textsize_16" />
+
+        <RatingBar
+            android:id="@+id/app_rating"
+            style="@style/myRatingBarSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_name"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_12"
+            android:layout_marginTop="@dimen/app_detail_page_margin_6"
+            android:layout_toRightOf="@id/app_avatar"
+            android:isIndicator="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_rating"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_12"
+            android:layout_marginTop="@dimen/app_detail_page_margin_6"
+            android:layout_toRightOf="@id/app_avatar"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/download_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/download_count_str"
+                android:textColor="@color/app_detail_page_text_color_1"
+                android:textSize="@dimen/small_textsize" />
+
+            <TextView
+                android:id="@+id/app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/app_detail_page_margin_12"
+                android:text="@string/app_size_str"
+                android:textColor="@color/app_detail_page_text_color_1"
+                android:textSize="@dimen/small_textsize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="@dimen/app_detail_page_length_22"
+            android:layout_height="@dimen/app_detail_page_length_22"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/app_detail_page_margin_17"
+            android:layout_marginTop="@dimen/app_detail_page_margin_31"
+            android:clickable="true"
+            android:src="@drawable/page_share_selector"
+            android:visibility="gone"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_grey" 
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_detail_page_footer_height"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        >
+        <!-- Layout to show download button -->
+        <FrameLayout
+            android:id="@+id/download_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" 
+            android:visibility="gone">
+           <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="top"
+                android:background="@color/line_grey" />
+            <ImageView
+                android:id="@+id/download_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/app_detail_page_margin_12"
+                android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                android:layout_marginRight="@dimen/app_detail_page_margin_17"
+                android:layout_marginTop="@dimen/app_detail_page_margin_12"
+                android:background="@drawable/download_selector" />
+
+            <TextView
+                android:id="@+id/download_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="@string/app_download"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18" />
+        </FrameLayout>
+
+
+        <!-- Layout to show the progresss of download -->
+        <FrameLayout
+            android:id="@+id/download_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="top"
+                android:background="@color/line_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/cancel_download_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                    android:background="@drawable/cancel_download"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                   
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/dis_download_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/app_detail_page_margin_15"
+                        android:text="@string/download_process_tip"
+                        android:textSize="@dimen/textsize_12"
+                        android:textColor="@color/app_item_namecolor" />
+
+                    <ProgressBar
+                        android:id="@+id/download_progress_rate"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_marginTop="@dimen/app_detail_page_margin_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/padding_3"
+                        android:max="100"
+                        android:progress="0"
+                        android:layout_gravity="center_vertical"
+                    />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/redirect_download_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+                    android:layout_marginRight="@dimen/app_detail_page_margin_17"
+                    android:background="@drawable/redirect_download_manage"
+                    android:clickable="true" />
+            </LinearLayout>
+        </FrameLayout>
+        
+        <!--Layout to show install progress -->
+        <LinearLayout
+            android:id="@+id/download_btn_install"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="top"
+                android:background="@color/line_grey" />
+            <TextView
+                android:id="@+id/install_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/app_detail_page_margin_15"
+                android:text="@string/app_installing"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_12" />
+
+            <ImageView
+                android:id="@+id/download_install"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/padding_3"
+                android:layout_marginBottom="@dimen/app_detail_page_margin_34"
+                android:layout_marginTop="@dimen/app_detail_page_margin_5"
+                android:layout_marginLeft="@dimen/app_detail_page_margin_56"
+                android:layout_marginRight="@dimen/app_detail_page_margin_56"
+                android:background="@anim/waiting"
+                android:layout_gravity="center" />
+        </LinearLayout>
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:visibility="gone" 
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/loading_img"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+        
+        <TextView 
+            android:text="@string/app_detail_loading_text"
+            android:textSize="@dimen/textsize_14"
+            android:textColor="@color/app_item_count_size_color"
+            android:layout_marginTop="@dimen/search_page_margin_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    
+    <include layout="@layout/view_page_loading" />
+</FrameLayout>

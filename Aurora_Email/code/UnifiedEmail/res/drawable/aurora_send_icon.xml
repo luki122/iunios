@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/aurora_send_icon_disable2" />
+<!--     <item android:state_pressed="true" android:drawable="@drawable/aurora_send_icon_press" />
+    <item android:state_focused="true" android:drawable="@drawable/aurora_send_icon_press" /> -->
+    <item android:drawable="@drawable/aurora_send_icon_normal2" />
+</selector>

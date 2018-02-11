@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Author: jialf
+    Description: added for CR00798010
+    Date:2013-04-17
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ex="http://schemas.android.com/apk/res/com.android.contacts"
+    android:id="@+id/call_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >
+
+    <!--
+      The list view is under everything.
+      It contains a first header element which is hidden under the controls UI.
+      When scrolling, the controls move up until the name bar hits the top.
+    -->
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+    <!-- All the controls which are part of the pinned header are in this layout. -->
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="?attr/gn_call_detail_controls_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/contact_background_sizer"
+                android:layout_alignLeft="@id/contact_background_sizer"
+                android:layout_alignRight="@id/contact_background_sizer"
+                android:layout_alignTop="@id/contact_background_sizer" >
+
+                <ImageButton
+                    android:id="@+id/main_action_push_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_background_sizer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:paddingLeft="8dip" >
+
+                <QuickContactBadge
+                    android:id="@+id/contact_background"
+                    android:layout_width="@dimen/gn_contact_photo_size"
+                    android:layout_height="@dimen/gn_contact_photo_size"
+                    android:focusable="false"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dip" >
+
+                    <com.android.contacts.widget.GnTextView
+                        android:id="@+id/phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/number_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                
+                <ImageView
+                    android:id="@+id/iv_arrow_right" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"                    
+                    android:src="?attr/gn_ic_arrow_right"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/blue_separator"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="@android:color/holo_blue_light"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/photo_text_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:background="#7F000000"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/main_action"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/call_log_inner_margin"
+            android:layout_marginRight="@dimen/call_log_outer_margin"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_marginLeft="@dimen/call_detail_contact_name_margin"
+            android:layout_marginRight="@dimen/call_log_inner_margin"
+            android:gravity="center_vertical"
+            android:maxWidth="170dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?attr/call_log_primary_text_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/gn_strange_num_handler"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginBottom="10dip"
+            android:background="?attr/kind_editors_bg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/gn_strange_num_add_new_contact"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="?attr/gn_ic_add_contact" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="@string/gn_dialpad_new_contact_item"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="?android:attr/dividerVertical" />
+
+            <LinearLayout
+                android:id="@+id/gn_strange_num_add_to_contact"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="?attr/gn_ic_add_existing_contact" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dip"
+                    android:text="@string/gn_dialpad_add_exist_contact_item"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/call_and_sms_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip" >
+
+            <include layout="@layout/gn_call_and_sms_v3" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--
+         Used to hide the UI when playing a voicemail and the proximity sensor
+         is detecting something near the screen.
+    -->
+
+    <View
+        android:id="@+id/blank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:clickable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

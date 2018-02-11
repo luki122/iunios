@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2013, Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<!-- Gionee <lilg><2013-04-25> modify for Gionee widget begin -->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dip" >
+
+    <ImageView
+        android:id="@+id/today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dip"
+        android:scaleType="fitEnd"
+        android:src="@drawable/bg_today"/>
+
+    <TextView
+        android:id="@+id/event_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dip"
+        android:paddingRight="1dip"
+        android:gravity="right"
+        android:background="@drawable/event_count"
+        android:singleLine="true"
+        android:textSize="12px"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_count"
+        android:layout_marginTop="-12dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="24px" 
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/lunar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="14px"
+        android:textColor="@android:color/white" />"
+
+    <TextView
+        android:id="@+id/event_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lunar"
+        android:singleLine="true"
+        android:textSize="16px"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>
+-->
+<!-- Gionee <lilg><2013-04-25> modify for Gionee widget end -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip" >
+
+    <TextView
+        android:id="@+id/widget_other_month_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/widget_other_month_bg_color" />
+
+    <TextView
+        android:id="@+id/widget_current_month_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/widget_current_month_bg_color" />
+
+    <ImageView
+        android:id="@+id/widget_other_day_event_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gn_widget_other_day_event_bg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/widget_holiday_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/gn_widget_holiday_bg"
+        android:gravity="center"
+        android:text="@string/gn_week_text_holiday"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/widget_work_shift_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/gn_widget_work_shift_bg"
+        android:gravity="center"
+        android:text="@string/gn_week_text_work"
+        android:textColor="#ffffff"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/date_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gn_widget_day_background_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/gn_widget_line_v"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/gn_widget_line_v" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/gn_widget_line_h" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lunar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|top"
+                android:singleLine="true"
+                android:textSize="8sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

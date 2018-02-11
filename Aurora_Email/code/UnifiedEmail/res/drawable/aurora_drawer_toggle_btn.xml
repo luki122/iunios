@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 Google Inc.
+     Licensed to The Android Open Source Project.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:drawable="@drawable/aurora_drawer_toggle_btn_pressed" />
+    <item android:state_selected="true"
+          android:drawable="@drawable/aurora_drawer_toggle_btn_pressed" />
+    <item android:state_activated="true"
+          android:drawable="@drawable/aurora_drawer_toggle_btn_pressed" />
+    <item android:state_focused="true"
+          android:drawable="@drawable/aurora_drawer_toggle_btn_pressed" />
+    <item android:drawable="@drawable/aurora_drawer_toggle_btn_normal" />
+</selector> -->
+
+<!-- cjs modify   -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:width="22dp"
+    android:viewportHeight="60"
+    android:viewportWidth="60"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="9.5"
+        android:translateY="16" >
+        <path
+            android:name="aurora_img_attachment"
+            android:fillColor="#414142"
+            android:pathData="M-0.000,34.000 L-0.000,28.000 L47.000,28.000 L47.000,34.000 L-0.000,34.000 ZM-0.000,14.000 L47.000,14.000 L47.000,20.000 L-0.000,20.000 L-0.000,14.000 ZM-0.000,-0.000 L47.000,-0.000 L47.000,6.000 L-0.000,6.000 L-0.000,-0.000 Z" />
+    </group>
+
+</vector>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+ <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+<com.android.mms.ui.ImageAttachmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.mms"
+    android:id="@+id/gn_image_attachment_view_portrait"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="left"
+    >
+<!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+<!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature start -->
+    <RelativeLayout android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="6dip">
+<!-- Aurora xuyong 2013-10-24 deleted for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+        <com.aurora.mms.ui.AuroraRoundImageView
+            android:id="@+id/image_content"
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/aurora_attach_thumbnail_size"
+            android:layout_height="@dimen/aurora_attach_thumbnail_size"
+            app:corner_radius="@dimen/aurora_msg_bg_radius"
+            app:border_width="0dip"/>
+        <ImageButton
+            android:id="@+id/aurora_remove_bt"
+            android:layout_alignRight="@id/image_content"
+            android:layout_width="@dimen/aurora_attach_del_bt_size"
+            android:layout_height="@dimen/aurora_attach_del_bt_size"
+            android:src="@drawable/aurora_contact_delete_bt_src"
+            android:background="@null"
+            />
+        <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature end -->
+        <TextView android:id="@+id/media_size_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#88000000"
+            android:textColor="#ffffffff"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:layout_marginRight="5dip"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</com.android.mms.ui.ImageAttachmentView>

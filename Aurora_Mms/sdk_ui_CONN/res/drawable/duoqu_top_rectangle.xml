@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<corners 
+		android:topLeftRadius="6dp"
+		android:topRightRadius="6dp"/>
+
+	<!-- 这是半透明，还可以设置全透明，那就是白色边框的效果了 -->
+	<solid  
+        android:color="#20B2AA"/>   
+<!--    <solid  
+        android:color="#FF2e93e1"/> -->
+
+
+	
+
+</shape>

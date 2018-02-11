@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="recording_title">#00A0FF</color> <!-- blue -->
+    <color name="recording_date_added">#000000</color> <!-- black -->
+    <color name="recording_status">#00A0FF</color> <!-- blue -->
+    <color name="dial_suggest_zsf">#3E81D2</color>
+    <color name="edit_contacts_editview_hint">#B4B4B4</color>
+    <color name="gn_dial_fgspan_color">#006ADE</color>
+    <color name="gn_misscall_color">#f06872</color><!-- aurora change zhouxiaobing 20130919 -->
+    <color name="gn_account_selector_list_text1">#000000</color>
+    <color name="gn_account_selector_list_text2">#333333</color>
+    
+    <!-- gionee xuhz 20120525 add for CR00608271 start -->
+    <color name="gn_phone_disambig_item_text1">#000000</color>
+    <color name="gn_phone_disambig_item_text2">#333333</color>
+    <!-- gionee xuhz 20120525 add for CR00608271 end -->
+    
+    <!-- Gionee:huangzy 20120607 add for CR00614801 start -->
+    <color name="alphbetIndexView_prompt_section_light">#FF666666</color>
+    <color name="alphbetIndexView_enable_section_light">#FF888888</color>
+    <color name="alphbetIndexView_disable_section_light">#FFCCCCCC</color>
+    <color name="alphbetIndexView_showing_section_light">#0ebc7d</color>
+    
+    <color name="alphbetIndexView_prompt_section_dark">#FFFF9000</color>
+    <color name="alphbetIndexView_enable_section_dark">#FF999999</color>
+    <color name="alphbetIndexView_disable_section_dark">#FF444444</color>
+    <color name="alphbetIndexView_showing_section_dark">#FFFF9000</color>
+    <!-- Gionee:huangzy 20120607 add for CR00614801 end -->
+    
+    <!-- gionee xuhz 20120705 add for Light theme start -->
+<!--     <color name="gn_primary_text_color_light">#333333</color>
+    <color name="gn_secondary_text_color_light">#777777</color> -->
+    <!-- gionee xuhz 20120705 add for Light theme end -->
+    
+    <!-- gionee xuhz 20120710 add for CR00640208 start -->
+    <color name="gn_secondary_text_color_for_phonenumber">#323232</color>
+    <!-- gionee xuhz 20120710 add for CR00640208 end -->
+    
+    <!-- gionee xuhz 20121114 add for GIUI2.0 start -->
+    <color name="gn_quickcontact_tab_indicator">#FF9000</color>
+    <!-- gionee xuhz 20121114 add for GIUI2.0 end -->
+    
+    <color name="gn_people_app_theme_color">#f2f2f2</color>
+    
+    <drawable name="gn_screen_background_light">#FFEFEFEF</drawable>
+    
+    <!-- Gionee:huangzy 20130319 add for CR00786443 start -->
+    <color name="gn_search_matched_highlight">#FFFF9000</color>
+    <color name="gn_avatar_text_color_dark">#FF999999</color>
+    <color name="gn_avatar_text_color_light">#FFFFFFFF</color>
+    <color name="gn_dial_digits_text_color_dark">#FFFFFFFF</color>
+    <color name="gn_dial_digits_text_color_light">#FF000000</color>
+    <color name="gn_dial_digits_hint_color_dark">#FFAAAAAA</color>
+    <color name="gn_dial_digits_hint_color_light">#FF909090</color>
+    <color name="gn_empty_view_text_color_dark">#66FFFFFF</color>
+    <color name="gn_empty_view_text_color_light">#66444444</color>
+    <color name="gn_dial_qwert_text_color_dark">#FFFFFFFF</color>
+    <color name="gn_dial_qwert_text_color_light">#FF000000</color>
+    <color name="gn_dial_qwert_pop_text_color_dark">#FFFFFFFF</color>
+    <color name="gn_dial_qwert_pop_text_color_light">#FFFFFFFF</color>
+    <color name="gn_dial_number_area_text_color">#8d8d8e</color>
+    <color name="gn_sim_select_view_color">#FF555555</color>
+    <color name="gn_contacts_detail_name_text_color">#FFFFFFFF</color>
+    <color name="gn_tab_textcolor">#FFFFFFFF</color>
+    <color name="gn_call_log_text_color_primary_light">#FF444444</color>
+    <color name="gn_call_log_text_color_primary_dark">#FFFFFFFF</color>
+    <color name="gn_call_log_text_color_secondary_light">#FF666666</color>
+    <color name="gn_call_log_text_color_secondary_dark">#FFEEEEEE</color>
+	<color name="gn_call_log_filter_text_color">#FFFFFFFF</color>
+	<color name="gn_icon_text_text_color_light">#FF666666</color>
+	<color name="gn_icon_text_text_color_dark">#FFEEEEEE</color>
+	<color name="gn_call_detail_controls_background_dark">#FF1A1A1A</color>
+	<color name="gn_call_detail_controls_background_light">#FFF7F7F7</color>
+	<color name="gn_header_account_text_color">#FF777777</color>
+	<color name="gn_header_count_text_color">#FF777777</color>
+    <!-- Gionee:huangzy 20130319 add for CR00786443 end -->
+</resources>

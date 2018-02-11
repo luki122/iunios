@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    20130321 add for CR00787281  -->
+
+
+<!-- Layout parameters are set programmatically. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calllog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <include layout="@layout/aurora_wait_cursor" />
+
+        <aurora.widget.AuroraListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/h_diver"
+            android:dividerHeight="1px" />
+
+        <TextView
+            android:id="@+id/gn_calllog_empty_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/aurora_empty_contact_text_padding_top"
+            android:textColor="@color/aurora_empty_contact_text_color"
+            android:textSize="@dimen/aurora_empty_contact_text_size"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/footer_view" 
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/aurora_tab_height"
+		    android:background="#FFFFFF" >
+    </ImageView>
+    
+    <Button
+        android:id="@+id/aurora_calllog_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recentCalls_delete"
+        android:visibility="gone" />
+
+</LinearLayout>

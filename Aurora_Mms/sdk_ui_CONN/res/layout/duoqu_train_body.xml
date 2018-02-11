@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:duoqu="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/duoqu_drl_train_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <View
+        android:id="@+id/duoqu_center_line"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:id="@+id/duoqu_img_line"
+        android:layout_width="46dp"
+        android:layout_height="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/duoqu_img_line"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:paddingRight="1dp"
+        android:singleLine="true"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_time"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_city"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_time"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_train_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_date"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_seat_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/duoqu_base_train_number"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/duoqu_base_train_number"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/duoqu_base_depart_city"
+        android:layout_toRightOf="@id/duoqu_img_line"
+        android:paddingLeft="1dp" >
+
+        <TextView
+            android:id="@+id/duoqu_base_arrive_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/duoqu_head_title_text_color"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/duoqu_base_select_train_place"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_time"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/duoqu_base_depart_time"
+        android:layout_below="@+id/duoqu_base_arrive_city"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/duoqu_base_depart_date"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:textColor="@color/duoqu_head_title_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/duoqu_img_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:text="@string/duoqu_direction"
+        android:textSize="10dp" />
+
+</cn.com.xy.sms.sdk.ui.popu.widget.DuoquRelativeLayout>

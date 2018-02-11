@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="vibrate_list"
+        aurora:auroratitle="@string/ring_notice" />
+
+    <com.aurora.audioprofile.AuroraVolumePreference aurora:aurorakey="volum_ring_seekbar" />
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="vibrate_list"
+        aurora:auroratitle="@string/ring_alarm" />
+
+    <com.aurora.audioprofile.AuroraVolumePreference aurora:aurorakey="volum_alarm_seekbar" />
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="vibrate_list"
+        aurora:auroratitle="@string/ring_media" />
+
+    <com.aurora.audioprofile.AuroraVolumePreference aurora:aurorakey="volum_media_seekbar" />
+
+</aurora.preference.AuroraPreferenceScreen>

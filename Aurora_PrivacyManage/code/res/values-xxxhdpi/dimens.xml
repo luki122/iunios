@@ -1,0 +1,27 @@
+<resources>
+   <dimen name="main_activity_grid_item_text_margin">7dp</dimen>
+   <dimen name="preferences_item_height">43dp</dimen>
+   <dimen name="preferences_item_text_size">16sp</dimen>
+   <dimen name="list_header_padding_top">12dp</dimen>
+   <dimen name="list_header_padding_bottom">3dp</dimen>
+   <dimen name="list_header_text_size">16.25sp</dimen>
+   <dimen name="package_set_activity_title_text_size">16.25sp</dimen> 
+   <dimen name="main_act_big_text_size">18.5sp</dimen> 
+   <dimen name="main_act_small_text_size">16sp</dimen> 
+   <dimen name="main_act_flow_num_margin_right">73.935dp</dimen>  
+   <dimen name="main_act_enter_animation_size">278.87dp</dimen> 
+   <dimen name="main_act_second_view_width">231.87dp</dimen>
+   <dimen name="main_act_second_view_height">238.13dp</dimen>
+   <dimen name="main_act_third_view_size">213.38dp</dimen>
+   <dimen name="main_act_progress_view_size">213.66dp</dimen>   
+   <dimen name="notification_text_title">15sp</dimen>
+   <dimen name="notification_text_content">12sp</dimen>
+   <dimen name="notification_installed_top">4dp</dimen>
+   <dimen name="notification_downloading_right">2dp</dimen>
+   <dimen name="notification_marginright">14dp</dimen>
+   <dimen name="notification_marginleft">11dp</dimen>
+   <dimen name="notification_downloading_right1">2.5dp</dimen>
+   <dimen name="notification_paddingleft">12dp</dimen>
+   
+   <dimen name="height_userguide_smalltxt_to_bigtxt">6dp</dimen>
+</resources>

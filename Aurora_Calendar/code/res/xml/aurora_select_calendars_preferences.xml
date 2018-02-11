@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraSwitchPreference
+        aurora:aurorakey="local_calendar"
+        aurora:auroratitle="@string/aurora_local_calendar"
+        aurora:aurorapersistent="false" />
+
+</aurora.preference.AuroraPreferenceScreen>

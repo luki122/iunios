@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_menu_del"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/delete_string">
+    </item>
+</menu>

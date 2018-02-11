@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="add_to_favorite">收藏訊息</string>
+  <string name="cancel_favorite">取消收藏</string>
+  <string name="tab_message">訊息</string>
+  <string name="tab_favorites">收藏</string>
+  <string name="tab_recommend">推薦</string>
+  <string name="tab_draft">草稿</string>
+  <string name="tab_favorites_common_words">常用短語</string>
+  <string name="tab_favorites_msg_fav">訊息收藏</string>
+  <string name="gn_today">今天</string>
+  <string name="gn_yesterday">昨天</string>
+  <string name="gn_am">上午</string>
+  <string name="gn_pm">下午</string>
+  <string name="dial_dialog_title">選擇號碼撥出:</string>
+  <string name="delete_all_threads">刪除全部對話</string>
+  <string name="repeat_send_msg">重發</string>
+  <string name="gn_send_msg_failed">失敗</string>
+  <string name="gn_send_msg_received">送達</string>
+  <string name="gn_send_msg_sending">發送中</string>
+  <string name="add_recent_contacts">"添加收信人"</string>
+  <string name="insert_contacts">"插入連絡人"</string>
+  <string name="no_contacts">"連絡人為空"</string>
+  <string name="no_recent_contacts">"近期連絡人為空"</string>
+  <string name="group_list_empty">"群組連絡人為空"</string>
+  <string name="add_to_contact">添加到連絡人</string>
+  <string name="check_contact">查看連絡人</string>
+  <string name="no_mobile_numbers">"無手機號碼"</string>
+  <string name="no_phone_numbers">"無電話號碼"</string>
+  <string name="unsaved">"未保存"</string>
+  <string name="tab_recent_contact">"訊息""</string>
+  <string name="tab_contact">"連絡人"</string>
+  <string name="tab_group_contact">"群組"</string>
+  <string name="cancel">"取消"</string>
+  <string name="contacts_notes">"備註:"</string>
+  <string name="contacts_name">"姓名:"</string>
+  <string name="delete_recent_contact">"刪除此訊息記錄"</string>
+  <string name="groups_coworker">"同事"</string>
+  <string name="groups_family">"家人"</string>
+  <string name="groups_friends">"朋友"</string>
+  <string name="groups_schoolmate">"同學"</string>
+  <string name="groups_vip">"重要"</string>
+  <string name="showAllGroups">"所有連絡人"</string>
+  <string name="calllog">"通話記錄"</string>
+  <string name="recommend_humor_joke">幽默笑話</string>
+  <string name="recommend_love_joke">愛情笑話</string>
+  <string name="recommend_school_joke">校園笑話</string>
+  <string name="recommend_birthday_message">生日訊息</string>
+  <string name="insert_sd_card">請插入儲存卡!</string>
+  <string name="repeat_send_msg_btn_text">重發</string>
+  <string name="quick_text_header_text">新建常用短語</string>
+  <string name="quick_text_header_text_edit">編輯常用短語</string>
+  <string name="quick_text_edit_hint">輸入常用短語</string>
+  <string name="quick_text_menu_forward">轉發</string>
+  <string name="quick_text_menu_edit">編輯</string>
+  <string name="quick_text_menu_delete">刪除</string>
+  <string name="add_quick_text_ok">確定</string>
+  <string name="add_quick_text_cancel">取消</string>
+  <string name="delete_quick_text_title">刪除</string>
+  <string name="delete_quick_text_confirm">你確定刪除此消息？</string>
+  <string name="favorite_display_name">我</string>
+  <string name="confirm_delete_all_dratfs">你確定刪除所有草稿嗎？</string>
+  <string name="confirm_delete_dratf">你確定刪除此草稿嗎？</string>
+  <string name="delete_all_dratfs">刪除全部草稿</string>
+  <string name="delete_dratf">刪除</string>
+  <string name="gn_select_attachment_contacts">連絡人</string>
+  <string name="gn_select_attachment_quick_text">常用語</string>
+  <string name="gn_select_attachment_smiley">表情</string>
+  <string name="gn_select_attachment_subject">主題</string>
+  <string name="gn_select_attachment_gallery">照片</string>
+  <string name="gn_select_attachment_camera">拍攝照片</string>
+  <string name="gn_select_attachment_video">影像</string>
+  <string name="gn_select_attachment_record_video">拍攝影像</string>
+  <string name="gn_select_attachment_sound">音樂</string>
+  <string name="gn_select_attachment_record_audio">錄音</string>
+  <string name="gn_select_attachment_slideshow">幻燈片</string>
+  <string name="gn_select_attach_picture">照片</string>
+  <string name="gn_select_attach_take_photo">拍攝照片</string>
+  <string name="search_bar_hint">"搜索連絡人"</string>
+  <string name="title_attachments">保存列表</string>
+  <string name="attach_size">大小:</string>
+  <string name="save_att_success">附件保存成功</string>
+  <string name="save_att_failed">附件保存失敗!</string>
+  <string name="attachmentpicker">提取附件</string>
+  <string name="wait_connecting">連接網路中...</string>
+  <string name="wait_init">正在初始化，請稍候...</string>
+  <string name="gn_no_conversations">訊息列表為空</string>
+  <string name="gn_no_contacts">連絡人列表為空</string>
+  <string name="gn_no_recent_contacts">最近連絡人列表為空</string>
+  <string name="gn_no_calllog">通話記錄為空</string>
+  <string name="gn_no_draft">草稿箱為空</string>
+  <string name="gn_cancel_all_favorite">取消全部收藏</string>
+  <string name="gn_cancel_all_favorite_title">取消全部收藏</string>
+  <string name="gn_cancel_all_favorite_content">確定取消全部收藏 ?</string>
+  <string name="gn_cancel_all_favorite_ok">確定</string>
+  <string name="gn_cancel_all_favorite_cancel_btn">取消</string>
+  <string name="gn_confirm_delete_conversation">將會刪除整個對話</string>
+  <string name="gn_confirm_delete_message">將會刪除此訊息</string>
+  <string name="gn_delete_unfavotite">刪除收藏訊息</string>
+  <string name="gn_selected">選擇</string>
+  <string name="gn_copy_text">複製</string>
+  <string name="gnSms_sim_management_title">雙卡設置</string>
+  <string name="gn_prevent_disturb">防擾</string>
+  <string name="gn_dail">撥號</string>
+  <string name="gn_send_message">發送訊息</string>
+  <string name="gn_new_contact">新建連絡人</string>
+  <string name="gn_visit">訪問</string>
+  <string name="gn_add_to_bookmarks">收藏到書簽</string>
+  <string name="gn_send_email">發送郵件</string>
+  <string name="gn_draft_operation">草稿</string>
+  <string name="gn_draft_operation_reason">是否將此訊息保存到草稿箱？</string>
+  <string name="gn_draft_save">保存</string>
+  <string name="gn_draft_unknow_name">匿名</string>
+  <string name="menu_gn_firewall_setting">防擾管理</string>
+
+  <string name="gn_contact_unit_name">人</string>
+  <string name="gn_to_hint">收件人</string>
+  <string name="gn_from">來自</string>
+  <string name="mms_deliver_success_with_address">成功發送多媒體訊息給%s</string>
+  <string name="mms_deliver_success">多媒體訊息已發送成功</string>
+  <string name="mms_read_success_with_address">%s已閱讀多媒體訊息</string>
+  <string name="mms_read_success">多媒體訊息已被閱讀</string>
+    <!-- Gionee liuran 20110919 added for CR00368419 start -->
+    <string name="freeze_format_with_bracket">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+    <string name="freeze_format">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+    <!-- Gionee liuran 20110919 added for CR00368419 end -->
+
+  <!--  Gionee jialf 20110923 added for CR00377289 start -->
+    <string name = "gn_date_format">yyyy年MM月dd日</string>
+    <string name="gn_midnight">半夜</string>
+    <string name="gn_dawn">淩晨</string>
+    <string name="gn_noon">中午</string>
+    <string name="gn_dusk">傍晚</string>
+    <string name="gn_night">晚上</string>
+    <!--  Gionee jialf 20110923 added for CR00377289 end -->
+
+    <!-- Gionee fangbin 20110929 added for add exchange item of optionsMenu start-->
+    <!-- gionee lanwzh modify for CR00413060 20111026 begin-->
+    <string name="gn_exchange">易備份</string>
+    <!-- gionee lanwzh modify for CR00413060 20111026 end-->
+    <!-- Gionee fangbin 20110929 added for add exchange item of optionsMenu start-->
+
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 start-->
+    <string name="gn_add_to_contact"> 添加 </string>
+    <string name="gn_check_contact"> 查看 </string>
+    <string name="gn_edit_contact"> 編輯 </string>
+    <string name="gn_copy_contact"> 複製 </string>
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 end-->
+
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 begin-->
+    <string name="gn_confirm_delete_favorited_message">確定要刪除此收藏訊息嗎？</string>
+    <string name="gn_confirm_delete_locked_favorited_message">確定要刪除此鎖定及收藏訊息嗎？</string>
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 end-->
+
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 start-->
+    <string name="message_too_big_for_recording">該訊息太大，無法附加錄音。</string>
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 end-->
+
+    <!-- Gionee fangbin 20111108 added for CR00423903 start -->
+    <string name="gn_import_export_menu">導入/匯出</string>
+    <string name="gn_sim_sms">SIM卡訊息</string>
+    <!-- Gionee fangbin 20111108 added for CR00423903 end -->
+
+    <!-- Gionee fangbin 20111108 added for CR00423907 start -->
+    <string name="gn_import_export_file_path">/備份/訊息/</string>
+    <string name="gn_export_text">匯出</string>
+    <string name="gn_import_text">導入</string>
+    <string name="gn_sure_export">確定匯出</string>
+    <string name="gn_sure_export_front">您確定要將所選訊息匯出到 </string>
+    <string name="gn_sure_export_back"> 中嗎?</string>
+    <string name="gn_sms_importing">正在導入訊息資料</string>
+    <string name="gn_sms_exporting">正在匯出訊息資料</string>
+    <string name="gn_exporting_front">正在向 </string>
+    <string name="gn_exporting_back"> 匯出訊息數據</string>
+    <string name="gn_export_sms_to_sdcard2">匯出訊息到SD卡</string>
+    <string name="gn_import_sms_from_sdcard">從SD卡導入訊息</string>
+    <string name="gn_no_import_file">不存在可以導入的訊息檔!</string>
+    <string name="gn_no_export_sms">不存在可以匯出的訊息!</string>
+    <string name="gn_import_file_count">選擇了</string>
+    <string name="gn_import_current_file">正在導入第 </string>
+    <string name="gn_export_current_session">正在匯出第 </string>
+    <string name="gn_export_item"> 個會話</string>
+    <string name="gn_import_item"> 個文件</string>
+    <string name="gn_import_export_sum">(共 </string>
+    <string name="gn_import_export_piece"> 個)</string>
+    <string name="gn_import_cancel">取消導入!</string>
+    <string name="gn_import_failed">導入失敗！</string>
+    <string name="gn_import_success">導入完成！</string>
+    <string name="gn_import_file">導入文件 </string>
+    <string name="gn_import_file_path_error"> 路徑錯誤！</string>
+    <string name="gn_import_file_content_error"> 內容格式有錯誤！</string>
+    <string name="gn_import_file_no_exists"> 不存在！</string>
+    <string name="gn_import_file_empty"> 內容為空！</string>
+    <string name="gn_no_sdcard">沒有SD卡！</string>
+    <string name="gn_unkonw_error">存在未知錯誤！</string>
+    <string name="gn_imported_file_names">已導入文件:</string>
+    <string name="gn_export_failed">匯出失敗！</string>
+    <string name="gn_export_success">匯出完成！</string>
+    <string name="gn_importing">正在導入訊息，請稍等...</string>
+    <!-- Gionee fangbin 20111108 added for CR00423907 end -->
+
+    <!-- Gionee fangbin 20111114 added for CR00432868 start -->
+    <string name="gn_import_export">導入/匯出訊息</string>
+    <string name="gn_export_btn_text">匯出訊息</string>
+    <string name="gn_import_btn_text">導入訊息</string>
+    <string name="gn_last">上次</string>
+    <!-- Gionee fangbin 20111114 added for CR00432868 end -->
+    <!-- Gionee fangbin 20111124 added for CR00451398 start -->
+    <string name="gn_sdcard_no_space">SD卡剩餘空間不足!</string>
+    <!-- Gionee fangbin 20111124 added for CR00451398 end -->
+    <!-- Gionee fangbin 20111128 added for CR00448323 start -->
+    <string name="gn_import_cancel_title">取消</string>
+    <string name="gn_import_cancel_msg">將會取消此導入</string>
+    <!-- Gionee fangbin 20111128 added for CR00448323 end -->
+
+    <!-- Gionee jialf 20111201 added for CR00459866 start -->
+    <string name="gn_forward_prefix">轉發: </string>
+    <!-- Gionee jialf 20111201 added for CR00459866 end -->
+
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 start -->
+    <string name="gn_copying">正在複製... </string>
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 end -->
+
+    <!-- Gionee fangbin 20111206 added for CR00459773 start -->
+    <string name="gn_no_sim_card">無法發送，沒有SIM卡！</string>
+    <!-- Gionee fangbin 20111206 added for CR00459773 end -->
+
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 begin -->
+    <string name="gn_loading">正在加載...</string>
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 end -->
+
+    <!-- Gionee fangbin 20120201 added for CR00504516 start -->
+    <string name="gn_mms_pop_view">查看</string>
+    <string name="gn_mms_pop_delete">刪除</string>
+    <string name="gn_mms_pop_send">發送</string>
+    <string name="gn_mms_pop_read">已讀</string>
+    <string name="gn_mms_pop_input">輸入信息</string>
+    <string name="gn_mms_pop_cv">點擊查看</string>
+    <string name="gn_mms_pop_setting_title">訊息彈出窗通知</string>
+    <string name="gn_mms_pop_setting_summary">自動彈出視窗顯示訊息通知</string>
+    <!-- Gionee fangbin 20120201 added for CR00504516 end -->
+
+ <!--gionee gaoj 2012-2-10 add for CR00516171 start  -->
+    <string name="lockpassword_choose_your_password_header">"選擇您的密碼"</string>
+    <string name="lockpassword_confirm_your_password_header">"確認您的密碼"</string>
+    <string name="lockpassword_ok_label">"確定"</string>
+    <string name="lockpassword_confirm_passwords_dont_match">"密碼不匹配"</string>
+    <string name="lockpassword_continue_label">"繼續"</string>
+    <string name="lockpassword_cancel_label">"取消"</string>
+    <string name="lockpassword_password_too_short">"密碼必須至少包含 %d 個字元"</string>
+    <string name="lockpassword_password_too_long">"密碼不得超過 %d 個字元"</string>
+    <string name="lockpassword_illegal_character">"密碼包含非法字元"</string>
+    <string name="lockpassword_password_requires_alpha">"密碼中至少應包含一個字母"</string>
+    <string name="lockpassword_press_continue">"完成後按“繼續”"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"密碼錯誤，請重試"</string>
+    <string name="menu_encryption">"加密"</string>
+    <string name="menu_decryption">"取消加密"</string>
+    <string name="lockpassword_input_your_password">"輸入密碼"</string>
+    <string name="gn_call">"撥打"</string>
+    <string name="gn_encryption">"加密"</string>
+    <string name="gn_confirm_encryption">"此號碼的會話已被加密"</string>
+    <string name="gn_confirm_dncryption">"此號碼的會話已被取消加密"</string>
+
+    <string name="pref_security_settings_title">"安全設置"</string>
+    <string name="pref_title_mms_encryption_setting">"設置會話加密"</string>
+    <string name="pref_summary_mms_encryption_setting">"使用密碼加密會話"</string>
+    <string name="pref_title_mms_encryption_change">"更改會話加密"</string>
+    <string name="pref_summary_mms_encryption_change">"更改或停用密碼保護"</string>
+
+    <string name="pref_title_mms_password_visible">"密碼可見"</string>
+    <string name="pref_summary_mms_password_visible">"輸入時密碼可見"</string>
+
+    <string name="pref_title_mms_password_clear">"清除密碼"</string>
+    <string name="pref_summary_mms_password_clear">"停用密碼保護"</string>
+    <string name="pref_title_mms_password_change">"更改密碼"</string>
+    <string name="pref_summary_mms_password_change">"更改密碼保護"</string>
+    <string name="pref_summary_mms_password_change_succeed">"更改密碼成功"</string>
+    <string name="pref_summary_mms_password_clear_succeed">"清除密碼成功"</string>
+    <string name="pref_summary_mms_password_setting_succeed">"設置密碼成功"</string>
+    <!--gionee gaoj 2012-2-10 add for CR00516171 end  -->
+
+    <!-- Gionee fangbin 20120223 addded for CR00527995 start -->
+    <string name="gn_phone_msg_count">手機信息統計</string>
+    <string name="gn_unread_msg_count">未讀信息條數: </string>
+    <string name="gn_session_count">會話總個數: </string>
+    <string name="gn_totle_msg_count">信息總條數: </string>
+    <!-- Gionee fangbin 20120223 addded for CR00527995 end -->
+    
+    <!--gionee gaoj 2012-4-10 added for CR00555790 start  -->
+    <string name="pick_contacts">選擇連絡人</string>
+    <string name="recipient_title">寫新訊息（%1$s）</string>
+    <string name="new_contact">新增連絡人</string>
+    <string name="add_contact">添加到已有</string>
+    <string name="view_contact">查看</string>
+    <string name="edit_contact">編輯</string>
+    <string name="copy_contact">複製</string>
+    <string name="set_top">置頂</string>
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 start  -->
+    <string name="gn_select_conversation_one">選中了1個</string>
+    <string name="gn_select_conversation_more">已選中%1$s個</string>
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 end  -->
+    <string name="gn_pref_title_sms_delivery_reports">發送報告</string>
+    <string name="gn_pref_title_mms_read_reports">"已讀報告"</string>
+    <string name="gn_pref_title_mms_delivery_reports">"發送報告"</string>
+    <!--gionee gaoj 2012-4-10 added for CR00555790 end  -->
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 start -->
+    <string name="gn_pref_title_other">其他</string>
+    <string name="gn_pref_title_accessories_signature">附件簽名</string>
+    <string name="gn_pref_summary_accessories_signature">信息內容末尾自動添加簽名</string>
+    <string name="gn_pref_title_edit_accessories_signature">編輯簽名</string>
+    <string name="gn_pref_summary_edit_accessories_signature">點擊編輯簽名內容</string>
+    <string name="gn_signature_dlg_title">編輯簽名內容</string>
+    <string name="gn_signature_dlg_hint">輸入簽名內容</string>
+    <string name="gn_delete_drafts_message">將會刪除整個草稿</string>
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 end -->
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 start -->
+    <string name="gn_select_conversation_zore">已選中0個</string>
+    <string-array name="gn_receiptors">
+        <item >最近連絡</item>
+        <item >連絡人</item>
+        <item >群組</item>
+        <!--  not use star
+        <item >收藏</item>-->
+    </string-array>
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 end -->
+
+    <!-- Gionee fangbin 20120518 added for CR00596563 start -->
+    <string name="gn_mms_pop_close">關閉</string>
+    <string name="gn_mms_pop_response">回復</string>
+    <string name="gn_mms_pop_no_response">請輸入回復內容！</string>
+    <!-- Gionee fangbin 20120518 added for CR00596563 end -->
+    <!-- guoyangxu added for mtk-qcomm begin -->
+    <string name="url_dialog_choice_title">信息</string>
+    <string name="url_dialog_choice_message">是否打开浏览器?</string>
+    <!-- guoyangxu added for mtk-qcomm end -->
+
+    <!--gionee gaoj 2012-5-24 added for CR00588933 start  -->
+    <string name="gn_card_a_out">A卡去信</string>
+    <string name="gn_card_b_out">B卡去信</string>
+    <string name="gn_card_a_in">A卡來信</string>
+    <string name="gn_card_b_in">B卡來信</string>
+    <string name="gn_card_1_out">1卡去信</string>
+    <string name="gn_card_2_out">2卡去信</string>
+    <string name="gn_card_1_in">1卡來信</string>
+    <string name="gn_card_2_in">2卡來信</string>
+    <string name="gn_card_unknow_out">...卡去信</string>
+    <string name="gn_card_unknow_in">...卡來信</string>
+    <string name="gn_menu_edit">多選操作</string>
+    <string name="gn_menu_edit_msg">編輯訊息</string>
+    <string name="gn_unload_mms">多媒體訊息未下載完成，請稍後轉發.</string>
+    <string name="gn_search_hint">搜索訊息</string>
+    <!--gionee gaoj 2012-5-24 added for CR00588933 end  -->
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 start -->
+    <string name="gn_sim_slot_a">A</string>
+    <string name="gn_sim_slot_b">B</string>
+    <string name="gn_sim_slot_1">1</string>
+    <string name="gn_sim_slot_2">2</string>
+    <string name="import_export_tip">導出訊息到</string>
+    <string name="import_export_next">下一步</string>
+    <string name="gn_chooser_external_sdcard">SD卡</string>
+    <string name="gn_chooser_internal_sdcard">內部儲存器</string>
+    <string name="gn_export_sms_to_external_sdcard">導出訊息到SD卡</string>
+    <string name="gn_export_sms_to_internal_sdcard">導出訊息到內部儲存器</string>
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 end -->
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->
+    <string name="gn_mms">多媒體訊息</string>
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->
+    <!--gionee gaoj 2012-6-14 added for CR00623383 CR00623396 start  -->
+    <string-array name="gn_conv_spinner_list">
+        <item >全部</item>
+        <item >加密</item>
+    </string-array>
+    <string name="no_encryption_conversations">沒有加密信息</string>
+    <string name="gn_no_star_contacts">未收藏任何聯系人</string>
+    <!--gionee gaoj 2012-6-14 added for CR00623383 CR00623396 end  -->
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 start -->
+    <string name="gn_multi_encryption">所選號碼的全話已被加密</string>
+    <string name="gn_multi_dncryption">所選號碼的全話已被取消加密</string>
+    <string name="copy_attachment_to">保存附件到</string>
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 end -->
+
+    <!--gionee gaoj 2012-7-17 added for CR00628364 start  -->
+    <string name="gn_menu_delete">刪除</string>
+    <string name="gn_menu_star">收藏</string>
+    <string name="gn_menu_copy">複製</string>
+    <string name="gn_menu_forward">轉發</string>
+    <!-- gionee gaoj 2012-7-17 added for CR00628364 end  -->
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 start -->
+    <string name="gn_selected_count">已選中%1$s個</string>
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 end -->
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 start -->
+    <string name="gn_menu_doctoran">防打擾</string>
+    <string name="gn_menu_blacklist">加入黑名單</string>
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 end -->
+    
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 start -->
+    <string name="gn_internal_sdcard_no_space">內部儲存器剩餘空間不足!</string>
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 end -->
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 start -->
+    <string name="storage_has_no_space">"儲存空間不足，請釋放空間"</string>
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 end -->
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 begin -->
+    <string name="sim1_notification_title">卡槽1</string>
+    <string name="sim1_notification_summary">默認鈴聲</string>
+    <string name="sim2_notification_title">卡槽2</string>
+    <string name="sim2_notification_summary">默認鈴聲</string>
+    <string name="notification_summary_silent">靜音</string>
+    <string name="loading_ringtone">加載中</string>
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->
+    <!-- gionee gaoj 2012-8-8 added for  CR00623375 start -->
+    <string name="gn_select_regularly_send_msg">定時</string>
+    <string name="gn_dialog_title">設置時間</string>
+    <string name="date_time_set">設置</string>
+    <string name="gn_will_send_time">將於 %1$s 發送</string>
+    <string name="gn_time_early">時間早於現在，請您重新設置。</string>
+    <!-- gionee gaoj 2012-8-8 added for  CR00623375 end -->
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 start -->
+    <string name="gn_select_attachment_geo_location">地理位置</string>
+    <string name="gn_location_nonet">網路連接失敗，請檢查您的網路連接</string>
+    <string name="gn_location_loading">數據加載中，請稍後.....</string>
+    <string name="gn_location_nogps_tip">GPS沒有打開，打開GPS更精確</string>
+    <string name="gn_location_tip_title">流量提示</string>
+    <string name="gn_location_tip_body">您現在正在使用系統商網路，繼續操作可能會產生流量，具體費用請諮詢當地系統商</string>
+    <string name="gn_location_without_tip">下次不再提醒</string>
+    <string name="gn_location_know_it">知道了</string>
+    <string name="gn_location_others_poi">更多位置</string>
+    <string name="gn_location_error">抱歉，沒有加載到您的位置</string>
+    <string name="gn_location_no_others_poi">沒有更多位置</string>
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 end -->
+    <!--Gionee linggz 2012-09-03 add for CR00672099 begin-->
+    <string name="gn_last_export">上一次導出</string>
+    <string name="gn_last_import">上一次導入</string>
+    <!--Gionee linggz 2012-09-03 add for CR00672099 end-->
+    
+    <!-- Gionee fengjianyi 2012-09-12 add for CR00692545 start -->
+    <string name="gn_notify_message">"GPLUS智能手機提醒您，<xliff:g id="SIMID">%1$s</xliff:g>, <xliff:g id="ADDRESS">%2$s</xliff:g> ,給您來信."</string>
+    <string name="gn_sim_a">A卡</string>
+    <string name="gn_sim_b">B卡</string>
+    <string name="gn_last_nubmer">尾號</string>
+    <string name="gn_unknow_nubmer">的陌生號碼</string>
+    <!-- Gionee fengjianyi 2012-09-12 add for CR00692545 end -->
+    <!-- ginoee gaoj 2012-9-24 added for CR00693772 start -->
+    <string name="gn_sending">正在發送</string>
+    <!-- ginoee gaoj 2012-9-24 added for CR00693772 end -->
+     <!-- Gionee kangjiajia 2012-09-18 add for CR00710910 start -->
+    <string name="gn_try_luck">試試手氣</string>
+    <string name="gn_more">更多</string>
+    <string name="on_loadding">正在加載</string>
+    <string name="no_information">沒有此類訊息</string>
+    <string name="no_more_information">沒有更多訊息</string>
+    <string name="net_failed">網路連接失敗，請檢查網路</string>
+    <string name="request_timed_out_mms_online">網路不好，請重試</string>
+    <string name="gn_statement">免責聲明</string>
+    <string name="gn_statement_content">本公司提供的在線訊息由騰訊科技有限公司提供，任何單位或個人如認為在線短信的內容侵害您的版權，建議您與內容提供方聯系，本公司與上述內容無關，不承擔任何責任，對免責聲明的解釋、修改及更新權均屬于本公司所有。</string>
+    <!-- Gionee kangjiajia 2012-09-18 add for CR00710910 end -->
+    <!-- gionee zhouyj 2012-10-18 add for CR00710513 start  -->
+    <string name="gn_no_storage">SD卡不可用</string>
+    <!-- gionee zhouyj 2012-10-18 add for CR00710513 end  -->
+
+    <!-- gionee lwzh add for CR00714645 20121018 begin-->
+    <string name="gn_mms_updating">正在更新訊息，請稍等！</string>
+    <!-- gionee lwzh add for CR00714645 20121018 end-->
+</resources>

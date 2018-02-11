@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+        <!--Gionee zjy 20120321 add for CR00555135 start -->
+	<string name="internal_version">phiên bản nội bộ</string>
+	<string name="external_version">phiên bản</string>
+	<string name="isnull">Không biết</string>
+	<string name="close">Đóng</string>
+	<string name="buildtime">Xây dựng thời gian</string>
+	<string name="gn_gbw_internal_v" >phiên bản GN</string>
+        <string name = "gn_ft_bt_result_success">Thành công</string>
+        <string name = "gn_ft_bt_result_fail">Thất bại</string>
+        <string name = "gn_ft_bt_result_no">Không</string>
+        <!--Gionee zjy 20120321 add for CR00555135 start -->
+	<string name = "gn_phone_text">Điện thoại</string>
+	
+	<!-- Gionee:wangth 20120420 add for CR00576392 begin -->
+    <string name = "gn_usb_storage_text">Bộ nhớ trong</string>
+    <!-- Gionee:wangth 20120420 add end -->
+
+	<!-- Gionee baorui 2012-04-26 aad for CR00582516 begin -->
+    <string name="gn_exportDirectoryName"></string>
+    <!-- Gionee baorui 2012-04-26 aad for CR00582516 end -->
+
+	<!--Gionee lich 20120420 add for CR00576475 start -->
+    <string name="gn_yes">"Có"</string>
+    <string name="gn_no">"Không"</string>
+    <!--Gionee lich 20120420 add for CR00576475 end -->
+    
+    <!-- Gionee:wangth 20120423 add for CR00577037 begin -->
+    <string name = "gn_contact_name_too_long">Tên quá dài</string>
+    <!-- Gionee:wangth 20120423 add end -->
+	<string name="slotA_signal">1</string>
+	<string name="slotB_signal">2</string>
+	<string name="slot_a">SIM A </string>
+	<string name="slot_b">SIM B </string>
+
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 start-->
+    <string name = "user_agent">"Tác nhân người dùng"</string>
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 end-->
+
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 start-->
+    <string name = "unicom_version">"Phiên bản phần mềm"</string>
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 end-->
+    
+    <!--Gionee hzy start -->
+    <string name="gn_dialer_suggest_show">Tìm kiếm thông minh: dựa theo số điện thoại tương ứng với hồ sơ liên lạc, cũng có thể là tên liên lạc theo phiên âm Hán việt hoặc liên lạc ưa thích, chẳng hạn như: Hao YiYong, có thể là đầu vào 499, $H^ao $Y^i$Y^ong</string>
+    <string name="gn_no_conditioned_contacts">Liên hệ không phù hợp</string>
+    <string name="gn_dialpad_new_contact_item">Liên lạc mới</string>
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 start -->
+    <string name="gn_dialpad_add_exist_contact_item">Liên hệ hiện có</string>
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 end -->
+    <string name="gn_dialpad_send_message_item">Gửi tin nhắn</string>
+    <string name="gn_allcall_tab_label">Tất cả cuộc gọi</string>
+    <string name="gn_misscall_tab_label">Cuộc gọi nhỡ</string>    
+    
+    <string name="gn_clearCallLogConfirmation_title">Xóa nhật ký cuộc gọi</string>
+    <string name="gn_clearAllCallLogConfirmation">Bạn có chắc xóa tất cả cuộc gọi?</string>
+    <string name="gn_clearSingleCallLogConfirmation">Bạn có chắc xóa cuộc gọi này?</string>
+    <!--gionee xuhz 20120728 add for CR00658189 start  -->
+    <string name="gn_clearSingleCallLogConfirmation_title">Xóa bỏ khỏi nhật ký cuộc gọi</string>
+    <string name="gn_clearSelectedCallLogConfirmation_title">Xóa những cuộc gọi được chọn</string>
+    <string name="gn_clearSelectedCallLogConfirmation">Bạn có chắc xóa những cuộc gọi được chọn?</string>
+    <!--gionee xuhz 20120728 add for CR00658189 end  -->
+    
+    <string name="gn_hint_findContacts">"Tìm kiếm %d liên lạc"</string>
+    <string name="gn_listCustomView">Tùy chọn</string>
+    
+    <string name="gn_contactsFavoritesLabel">Yêu thích</string>
+    
+    <string name="gn_no_visible_contacts">Không có liên lạc</string>
+    <string name="gn_new_contact_item">Tạo mới</string>
+    <string name="gn_exchange_contacts">eSao lưu</string>
+    <!-- GIONEE: lujian 2012.08.14 modify for "FLY CR00674079" begin-->
+    <!--
+    <string name="gn_menu_merge_contacts">Merge Contacts</string>
+    <string name="gn_mergeContactsConfirmation">Merge the disrupted contacts which only save on your phone into one contact, take it?</string>
+    <string name="gn_mergeContactsConfirmation_title">Merge Contacts</string>
+    <string name="gn_searchContactsForMerge_msg">Scanning disrupted contacts\nPlease wait...</string>
+    <string name="gn_mergable_query_stop_msg">Scanning Disrupted</string>
+    <string name="gn_noMergableConfirmation_title">No Duplicate</string>
+    <string name="gn_noMergableContacts_msg">No duplicate contacts</string>
+    <string name="gn_mergingSameContacts_msg">Merging duplicate contacts\nPlease wait...</string>
+    <string name="gn_expected_merge">Merge Expected</string>
+    <string name="gn_mergeble">(%d) duplicate contacts found</string>
+    <string name="gn_manual_combine">Combine</string>
+    <string name="gn_combine_contacts_title">Combine contacts</string>
+    <string name="gn_combine_contacts_sub_title">found %1$d group(s) of same-name contacts</string>
+    <string name="gn_start_merge">Start Merge</string>
+    <string name="gn_merge_stop_title">Merge Interrupt</string>
+    <string name="gn_merge_finish_title">Merge Finsihed</string>
+    <string name="gn_merged_sum_msg">Merged %1$d contact(s)</string>
+    -->
+       
+    <string name="gn_menu_merge_contacts">Xóa liên lạc trùng</string>
+    <string name="gn_mergeContactsConfirmation">Xóa các liên lạc trùng lặp từ các liên lạc bị gián đoạn chỉ được lưu trên điện thoại vào một liên lạc, thực hiện không ?</string>
+    <string name="gn_mergeContactsConfirmation_title">Xóa các liên lạc trùng</string>
+    <string name="gn_searchContactsForMerge_msg">Đang tìm kiếm liên lạc bị gián đoạn\nVui lòng chờ...</string>
+    <string name="gn_mergable_query_stop_msg">Đang tìm kiếm liên lạc bị gián đoạn</string>
+    <string name="gn_noMergableConfirmation_title">Không trùng</string>
+    <string name="gn_noMergableContacts_msg">Không có liên lạc trùng</string>
+    <string name="gn_mergingSameContacts_msg">Xóa liên lạc trùng\nVui lòng chờ...</string>
+    <string name="gn_expected_merge">Xóa dự định</string>
+    <string name="gn_mergeble">(%d) Các liên lạc trùng được tìm thấy</string>
+    <string name="gn_manual_combine">Xóa</string>
+    <string name="gn_combine_contacts_title">Xóa liên lạc</string>
+    <string name="gn_combine_contacts_sub_title">tìm thấy%1$d nhóm(s) của các liên lạc giống nhau</string>
+    <string name="gn_start_merge">Bắt đầu xóa</string>
+    <string name="gn_merge_stop_title">Xóa gián đoạn</string>
+    <string name="gn_merge_finish_title">Xóa hoàn tất</string>
+    <string name="gn_merged_sum_msg">Xóa %1$d Liên lạc(s)</string>
+    <!-- GIONEE: lujian 2012.08.14 modify for "FLY CR00674079"   end-->
+    
+    <string name="gn_stop_operate_title">Thoát khỏi chương trình vận hành</string>
+    <string name="gn_stop_operate_confirm_msg">Bạn có chắc muốn thoát khỏi chương trình vận hành ？</string>
+    <string name="gn_type_im_other">IM</string>
+    <string name="gn_member_already_in_group">Liên lạc đã có trong nhóm này</string>    
+    
+	<string name="gn_dialog_new_group_account" msgid="2318032089273496830">Tạo nhóm theo tài khoản</string>
+	<string name="gn_account_phone" product="default">điện thoại</string>
+	
+	<string name="gn_menu_ringtone_set_batch">Cài đặt nhạc chuông hàng loạt</string>
+	
+	<string name="gn_people_count"><xliff:g id="count">%1$d</xliff:g> người</string>
+	<plurals name="gn_searchFoundContacts">
+	    <item quantity="one" msgid="4826918429708286628">" tìm thấy 1 "</item>
+	    <item quantity="other" msgid="7988132539476575389">"<xliff:g id="COUNT">%d</xliff:g> tìm thấy"</item>
+	</plurals>
+	
+	<string name="gn_add_to_favorite">Thêm vào ưa thích</string>
+	<string name="gn_remove_from_favorite">Xóa khỏi ưa thích</string>
+	
+	<string name="gn_edit_number_before_call">Chỉnh sửa trước khi quay số</string>
+	
+	<string name="gn_menu_ip_dial_setting">Cài đặt quay số IP</string>
+	<string name="gn_menu_gemini_sim_management">Cài đặt SIM</string>
+	
+	<string name="gn_menu_clear_frequent_contacted">Xóa cuộc gọi gần đây</string>
+	<string name="gn_clear_frequent_contacted_title">Xóa cuộc gọi gần đây</string>
+    <string name="gn_clearFrequentContactedConfirmation">Bạn có chắc xóa cuộc gọi gần đây không?</string>
+	
+	<string name="gn_phone_label">Điện thoại</string>
+	<string name="gn_only_save_local_label">Lưu trên điện thoại</string>
+	
+	<string name="gn_phone_call_record_tile">Đang ghi</string>
+	<string name="gn_outgoingcall_tab_label">Cuộc gọi đi</string>
+    <string name="gn_incomingcall_tab_label">Cuộc gọi đến</string>
+	<string name="gn_add_firewall">Thêm vào danh sách chặn</string>
+    <!-- Gionee:huangzy 20120806 add for CR00667827 start -->
+	<string name="gn_add_blacklist">Thêm vào danh sách chặn</string>
+	<string name="gn_show_intercept_call">Hiển thị cuộc gọi chặn</string>
+	<!-- Gionee:huangzy 20120806 add for CR00667827 end -->
+	
+	<string name="gn_menu_delete_contact">Xóa liên lạc</string>
+	
+	<string name="gn_call_outgoing_type">Cuộc gọi đi</string>
+	<string name="gn_call_incoming_type">Cuộc gọi đến</string>
+	<string name="gn_call_ring_times">chuông</string>
+	<string name="gn_call_ring_unit">lần</string>
+	<string name="gn_call_unconnected">Không liên lạc</string>
+	
+	<string name="gn_hour">h</string>
+	<string name="gn_minute">m</string>	
+	<string name="gn_second">giây</string>	
+	
+	<string name="gn_unknow_contact">Không rõ liên hệ</string>
+	
+	<string name="gn_contacts_sms_tip">Mẹo</string>
+    <string name="gn_calldetails_add_black_confirm">Bạn có muốn thêm số này vào danh sách chặn？</string>
+    
+    <!-- Gionee:huangzy 20120604 add for CR00616160 start -->
+    <string name="unselect_all">Bỏ chọn tất cả</string>
+	<string name="select_all">Chọn tất cả</string>	
+	<string name="gn_set_star">Thêm vào ưa thích</string>
+	<string name="gn_remove_star">Xóa khỏi ưa thích</string>
+	<string name="gn_add_to_group">Thêm vào nhóm</string>
+	<string name="gn_move_from_group">Xóa khỏi nhóm</string>	
+	<string name="gn_add">Thêm</string>
+	<string name="gn_remove">Xóa</string>
+	<!-- Gionee:huangzy 20120604 add for CR00616160 end -->
+	
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 start -->
+	<string name="gn_hidden_number">Ần số</string>
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 end -->
+	
+	<!-- Gionee:huangzy 20120621 add for CR00624998 start -->
+	<string name="gn_max_add_num">Thêm %d địa chỉ liên lạc nhiều nhất</string>
+	<string name="gn_max_remove_num">Xóa %d địa chỉ liên lạc nhiều nhất</string>
+	<!-- Gionee:huangzy 20120621 add for CR00624998 end -->
+	<string name="gn_save">Lưu</string>	
+
+	<!-- Gionee:huangzy 20120802 modify for CR00663548 start -->
+	<string-array name="gn_call_log_type">
+        <item>Tất cả cuộc gọi</item>
+        <item>Cuộc gọi đi</item>
+        <item>Cuộc gọi đến</item>
+        <item>Cuộc gọi nhỡ</item>
+    </string-array>
+    
+	<string-array name="gn_call_log_type_empty">
+        <item>Không có cuộc gọi nào</item>
+        <item>Không có cuộc gọi đi</item>
+        <item>Không có cuộc gọi đến</item>
+        <item>Không có cuộc gọi nhỡ</item>
+    </string-array>
+    <!-- Gionee:huangzy 20120802 modify for CR00663548 end -->
+    
+	<string name="gn_paste">Dán</string>
+	<string name="gn_dialpad">Hiển thị bàn phím số</string>
+	<string name="gn_video_dial">Gọi Video</string>
+	<string name="gn_selected_count">%1$s Được chọn</string>
+	
+	<string name="gn_menu_dialpad_title">Chuyển bàn phím số</string>
+    <!--Gionee hzy end -->
+
+    <!--GIONEE xuhz 20120522 add for CR00575945 start-->
+    <string name="gn_midnight">AM</string>
+    <string name="gn_dawn">AM</string>
+    <string name="gn_am">AM</string>
+    <string name="gn_noon">PM</string>
+    <string name="gn_pm">PM</string>
+    <string name="gn_dusk">PM</string>
+    <string name="gn_night">PM</string>
+    <!--GIONEE xuhz 20120522 add for CR00575945 end-->
+
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 begin -->
+    <string name="gn_contactSavedNoNameError_Toast">Xin vui lòng điền tên</string>
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 end -->
+    
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 begin -->
+    <string name="delete_call_log">Xóa cuộc gọi</string>
+    <string name="gn_select_conversation_one">Chọn 1 </string>
+    <string name="gn_select_conversation_more">Chọn %1$s </string>
+    <string name="delete">xóa</string>
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 end -->
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 start -->
+    <string name="contact_tel">Tel</string>
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 end -->
+    
+    <!-- Gionee qiuxd 20120612 add for CR00623811 start -->
+    <string name = "gn_lcd_type">Loại LCD</string>
+    <string name="gn_gtl_type">Loại thiết bị</string>
+    <string name="gn_type">Loại</string>
+    <!-- Gionee qiuxd 20120612 add for CR00623811 end -->
+
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->
+    <string name="gn_sms">SMS</string>
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->
+    
+    <!-- Gionee:wangth 20120702 add for CR00632662 begin -->
+    <string name = "gn_email_2g_invalid">Không thể lưu thư đến 2G SIM</string>
+    <!-- Gionee:wangth 20120702 add end -->
+    
+    <!-- gionee xuhz 20120613 add for CR00614793 start -->
+    <string name="gn_favorite_widget_label">Ưa thích &#38; liên lạc thường xuyên</string>
+    <string name="gn_widget_favorite_title">Ưa thích &#38; liên lạc thường xuyên</string>
+    <string name="gn_widget_favorite_empty">Không ưa thích và liên lạc thường xuyên</string>
+    <string name="gn_widget_loading">Đang tải\u2026</string>
+    <!-- gionee xuhz 20120613 add for CR00614793 end -->
+
+    <!-- Gionee:wangth 20120709 add for CR00640337 begin -->
+    <string name = "gn_share_contact_label">Lưu trữ</string>
+    <!-- Gionee:wangth 20120709 add end -->
+
+    <!-- Gionee:wangth 20120716 add for CR00647568 begin -->
+    <string name="gn_contact_delete_all_tips">"Có một liên lạc đã xóa đang chạy trong nền, nếu bạn muốn làm điều này, đầu tiên vui lòng thoát khỏi nó."</string>
+    <!-- Gionee:wangth 20120716 add for CR00647568 end -->
+    
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" begin-->
+    <string name="zzzzz_gn_group_phone">Điện thoại</string>
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364"   end-->
+    
+    <!-- gionee xuhz 20120728 add for CR00658189 start -->
+    <string name="gn_confirm_export_title">Xuất danh sách liên lạc</string>
+    <string name="gn_confirm_export_message">Bạn có chắc chắn xuất danh sách liên lạc của bạn vào tập tin: <xliff:g id="vcard_filename">%s</xliff:g> ?</string>
+    <!-- gionee xuhz 20120728 add for CR00658189 end -->
+    
+    <!-- gionee xuhz 20120803 modify for CR00663697 start -->
+    <string-array name="gn_gionee_number">
+        <item>4007796666</item>
+        <item>076982781000</item>
+        <item>076982782000</item>
+        <item>076982784000</item>
+        <item>076982785000</item>
+        <item>076982786000</item>
+        <item>076982787000</item>
+    </string-array>
+    <string name="gn_customer_service">dịch vụ chăm sóc khác hàng GIONEE </string>
+    <!-- gionee xuhz 20120803 modify for CR00663697 end -->
+    
+    <string-array name="gn_alphbet_index">
+        <item>#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>        
+    </string-array>
+
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 start -->
+    <string-array name="gn_alphbet_index_fly">
+        <item>#</item>
+        <item>A</item>
+        <item>C</item>
+        <item>E</item>
+        <item>G</item>
+        <item>I</item>
+        <item>K</item>
+        <item>M</item>
+        <item>O</item>
+        <item>R</item>
+        <item>T</item>
+        <item>V</item>
+        <item>X</item>
+        <item>Z</item>
+        <item>А</item>
+        <item>В</item>
+        <item>Е</item>
+        <item>Ж</item>
+        <item>И</item>
+        <item>М</item>
+        <item>П</item>
+        <item>Ф</item>
+        <item>Ц</item>
+        <item>Ш</item>
+        <item>Ы</item>
+        <item>Э</item>
+        <item>Я</item>           
+    </string-array>
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 end -->
+    
+    <!-- Gionee liming 2012-08-10 add for CR00672610 start -->
+    <string name="internal_contant_name">QMobile Support</string>
+    <string name="internal_contant_number">021-111225563</string>
+    <string name="internal_contant_email">null</string>
+    <!-- Gionee liming 2012-08-10 add for CR00672610 end -->
+    
+</resources>

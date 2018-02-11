@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2015-01-30 created for aurora's new feature -->
+<com.aurora.mms.ui.AuroraHotizontalListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.android.mms"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+    <com.aurora.mms.ui.AuroraRoundImageView
+        android:id="@+id/aurora_ai_image"
+        android:layout_width="@dimen/aurora_attach_item_width"
+        android:layout_height="@dimen/aurora_attach_item_height"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:scaleType="centerCrop"
+        app:corner_radius="0dip"
+        app:border_width="0dip"/>
+    <aurora.widget.AuroraCheckBox
+        android:id="@+id/aurora_ai_cb"
+        aurora:auroraRoundDrawable="true"
+        android:layout_width="@dimen/aurora_checkbox_size"
+        android:layout_height="@dimen/aurora_checkbox_size"
+        android:clickable="false"
+        android:focusable="false"
+        android:button="@*com.aurora:drawable/aurora_btn_check_material_anim"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="6dip"
+        android:layout_marginRight="6dip"
+        />
+</com.aurora.mms.ui.AuroraHotizontalListItem>

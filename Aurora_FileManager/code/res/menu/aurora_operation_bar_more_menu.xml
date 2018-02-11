@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/button_operation_send"
+        android:icon="@com.aurora:drawable/aurora_bottombar_share_selector">
+    </item>
+    <item
+        android:id="@+id/button_operation_copy"
+        android:icon="@com.aurora:drawable/aurora_bottombar_copy_selector">
+    </item>
+    <item
+        android:id="@+id/button_operation_move"
+        android:icon="@com.aurora:drawable/aurora_bottombar_cut_selector">
+    </item>
+    <item
+        android:id="@+id/button_operation_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector">
+    </item>
+    <item
+        android:id="@+id/button_operation_more"
+        android:icon="@com.aurora:drawable/aurora_bottombar_more_selector">
+    </item>
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aurora.change.view.TimeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical" 
+        android:layout_marginTop="80dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+             >
+
+            <com.aurora.change.view.ClockImageView
+                android:id="@+id/clock_image_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </com.aurora.change.view.ClockImageView>
+
+            <com.aurora.change.view.ClockImageView
+                android:id="@+id/clock_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp" >
+            </com.aurora.change.view.ClockImageView>                
+                
+            <com.aurora.change.view.ClockImageView
+                android:id="@+id/clock_image_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp" >
+            </com.aurora.change.view.ClockImageView>                
+
+            <com.aurora.change.view.ClockImageView
+                android:id="@+id/clock_image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp" >
+            </com.aurora.change.view.ClockImageView>
+
+            <com.aurora.change.view.ClockImageView
+                android:id="@+id/clock_image_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp" >
+            </com.aurora.change.view.ClockImageView>
+                
+        </LinearLayout>
+    
+        <LinearLayout
+            android:orientation="horizontal" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" 
+            android:layout_marginTop="@dimen/preview_date_top" >
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/date_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/lock_screen_date_size" />
+
+                <TextView
+                    android:id="@+id/date_div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/lock_screen_date_size" />
+
+                <TextView
+                    android:id="@+id/date_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/lock_screen_date_size" />
+
+            </LinearLayout>                    
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff"
+                android:textSize="@dimen/lock_screen_week_size" />
+
+            <TextView
+                android:id="@+id/alarm_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:drawablePadding="4dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#ffffffff"
+                android:textSize="17sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.aurora.change.view.TimeLayout>

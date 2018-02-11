@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="none_select">None Selected</string>
+     <string name="set_ringtone">Set ringtone</string>
+     <string name="vibrate_settings_title">Vibration</string>
+     <string name="aurora_sound_and_vibrate">Sound and Vibration</string>
+     
+         <string name="app_name">Sound and Vibration</string>
+    
+	
+    <string name="sound_category_notification_title" msgid="3502115998790286943">"Notification"</string>
+    <string name="sound_and_system_feedback_category_title" msgid="4399742321363475393">"Sound effect and system feedback"</string>
+ 
+  
+  
+    <string name="alarm_ring_title">Alarm tone</string>
+
+   
+    <string name="audio_profile_settings">"Personalized Profiles"</string>
+    <string name="audio_profile_settings_Edit">Personalized Profiles</string>
+
+   
+ 
+ 
+  
+    
+
+  
+  
+    
+
+   
+
+    <string name="restore_defaults">"Restore Default Settings"</string>
+    <string name="enable">"Enable"</string>
+	<string name="ringtone_tab_title">Select A Ringtone</string><!-- Sound and alerts settings --><string name="sound_settings_title" msgid="8735891486683305886">"Sound and Vibration"</string>
+   
+
+    
+    
+    
+
+    
+   
+    <string name="alarm_title">Alarm</string>
+    <string name="sms_sound_title">SMS ringtone</string>
+  
+    
+    
+   
+   
+   
+    <string name="dts_pref_title">"DTS Sound"</string>
+    
+    <string name="touch_vibrate_feedback_title">Vibrate on Tap</string>
+
+   
+    <string name="flip_sounds_enable_summary_on">Play sound when opening the lid to unlock</string>
+    <string name="flip_sounds_enable_summary_off">Play sound when opening the lid to unlock</string>
+    
+	
+	
+
+    
+    
+    <string name="other_ringtone_title">Other Ringtones</string>
+    
+
+    
+
+   
+   
+   
+   
+    
+ 
+    
+    
+   
+    
+    <string name="haptic_feedback_title">Vibration on Tap</string>
+    
+    
+  
+    
+    
+    <string name="ok">OK</string>
+    <string name="vibrate_basecall">Basecall</string>
+    <string name="vibrate_heartbeat">Heartbeat</string>
+    <string name="vibrate_jinglebell">Jinglebell</string>
+    <string name="vibrate_ticktock">Ticktock</string>
+    <string name="vibrate_path_error">Vibration mode profile exception</string>
+    <string name="general_vibrate_title">General Vibration</string>
+    <string name="ring_vibrate_title">Incoming Call Vibration</string>
+    <string name="mms_vibrate_title">SMS Vibration</string>
+    <string name="notification_vibrate_title">Notification Vibration</string>
+    <string name="notification_vibrate_summary">"Include vibration for SMS, mails and other notifications"</string><!-- Gionee <zengxuanhui> <2013-04-10> add for v4.9.2 end --><string name="gn_vc_dlg_title">Turn off the voice control mode?</string>
+    <string name="gn_vc_dlg_message"> You can set sound and vibration after closing sound control mode. Are you sure to turn off the voice control mode?</string>
+    <string name="gn_vc_dlg_check">"Don't prompt next time"</string><!-- Choice in the ringtone picker.  If chosen, the default ringtone will be used. --><string name="ringtone_default">Default Ringtone</string><!-- Choice in the notification sound picker.  If chosen, the default notification sound will be
+         used. --><string name="notification_sound_default">Default Notification Ringtone</string><!-- Choice in the alarm sound picker.  If chosen, the default alarm sound will be used. --><string name="alarm_sound_default">Default Alarm Tone</string>
+    <string name="Add_More_Ringtones">More Ringtones...</string>
+    <string name="aurora_empty_other_ringtone_text">No Other Ringtone</string>
+    <string name="internal_storage_disable">Internal Storage Unavailable</string>
+
+</resources>

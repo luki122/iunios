@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_grid_layout_button_width">103dip</dimen>
+    <dimen name="button_grid_layout_button_height">50dip</dimen>
+
+    <dimen name="dialpad_additional_button_width">106.3dip</dimen>
+    <dimen name="dialpad_additional_button_height">65dip</dimen>
+
+    <dimen name="dialer_search_list_view_min_height">173dip</dimen>
+    <dimen name="dialer_search_list_view_max_height">396dip</dimen>
+
+    <dimen name="dialpad_divider_height">24dip</dimen>
+    <dimen name="dialpad_divider_width">1dip</dimen>
+    
+    <!-- Gionee xuhz 20120830 add for WBW6806 start -->
+    <dimen name="gn_dialpad_additional_button_height">50px</dimen>
+    <dimen name="gn_dialpad_digits_container_height">48px</dimen>
+    <!-- Gionee xuhz 20120830 add for WBW6806 end -->
+    
+    <!-- gionee xuhz 20120925 add for CR00703546 start -->
+    <dimen name="gn_dialpad_sugest_text_size">15sp</dimen>
+    <!--  gionee xuhz 20120925 add for CR00703546 end -->
+    
+    <!--  add by liyang begin -->
+    <dimen name="double_list_item_height">68dp</dimen>
+    <dimen name="double_list_item_content_height">43dp</dimen>
+         <dimen name="listitem_double_margin_top">11dp</dimen>
+     <dimen name="listitem_double_margin_bottom">14dp</dimen>
+      <dimen name="listitem_double_name_width">215dp</dimen>
+      
+            <dimen name="double_list_item_name_text_color_with_photo">16sp</dimen>
+       <dimen name="double_list_item_data_text_color_with_photo">14sp</dimen>
+        <dimen name="single_list_item_name_text_size_with_photo">15sp</dimen>
+        <dimen name="single_list_item_height">56dp</dimen>
+        <dimen name="single_list_item_photo_size">38dp</dimen>
+        <dimen name="single_list_item_divider_margin_right">24dp</dimen>
+        <dimen name="single_list_item_photo_layout_size">70dp</dimen>
+        
+        <dimen name="calllog_date_margin_top">15dp</dimen>
+        <dimen name="calllog_expand_margin_bottom">17dp</dimen>
+        
+        <!--  add by liyang end -->
+</resources>

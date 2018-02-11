@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phone_ringtone_text"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:minHeight="28dp"
+    android:background="@com.aurora:color/window_background_color_default"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:text="@string/phone_ringtone"
+    android:textColor="#a0414142"
+    android:textSize="12sp" />
+
+    

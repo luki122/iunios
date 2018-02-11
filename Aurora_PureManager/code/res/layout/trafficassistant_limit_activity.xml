@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/net_flow_package_flow"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_totalflow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:background="#00ffffff"
+                android:numeric="integer"
+                android:lines="1"
+                android:maxLength="4"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/spinner_totalflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:dropDownVerticalOffset="14dp"
+                android:entries="@array/flow_unit" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#ECECEB" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FCFCFC"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/net_flow_used_flow"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_usedflow"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:background="#00ffffff"
+                android:numeric="integer"
+                android:lines="1"
+                android:maxLength="4"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/spinner_usedflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:dropDownVerticalOffset="14dp"
+                android:entries="@array/flow_unit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_month_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:background="#FCFCFC"
+            android:gravity="center_vertical"
+            android:paddingBottom="14dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="14dp" >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/net_flow_month_end_date"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_month_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="#a7a7a8"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="8dp"
+            android:background="#FCFCFC"
+            android:paddingBottom="8dp"
+            android:paddingTop="14dp" >
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/net_flow_warning_value"
+                android:textColor="#414142"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_percentvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv5"
+                android:textColor="#a7a7a8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv6"
+                android:layout_marginRight="10dp"
+                android:text="@string/percent" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_warningvalue"
+                android:layout_marginRight="2dp"
+                android:text="@string/brackets_left" />
+
+            <TextView
+                android:id="@+id/tv_warningvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_warningvalue_unit"
+                android:textColor="#a7a7a8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_warningvalue_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv8"
+                android:text="@string/net_flow_mb" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="2dp"
+                android:text="@string/brackets_right" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:max="100"
+                android:maxHeight="10dp"
+                android:minHeight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/traffic_ripple_button"
+        android:text="@string/net_flow_ok" />
+
+</RelativeLayout>

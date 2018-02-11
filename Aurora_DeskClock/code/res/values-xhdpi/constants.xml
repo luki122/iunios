@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <integer name="time_water_translation">-5</integer>
+       <integer name="lettertoast_ofy">390</integer>
+    
+</resources>

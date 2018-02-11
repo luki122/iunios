@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/bookmarks_bottom_menu_delete"
+        android:icon="@drawable/aurora_actionbar_delete"
+        />
+    <item 
+        android:id="@+id/bookmarks_bottom_menu_move"
+        android:icon="@drawable/aurora_actionbar_move"
+        />
+    <item 
+        android:id="@+id/bookmarks_bottom_menu_edit"
+        android:icon="@drawable/aurora_actionbar_edit"
+        />
+
+</menu>

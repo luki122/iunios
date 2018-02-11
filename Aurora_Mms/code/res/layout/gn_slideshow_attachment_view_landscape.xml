@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<com.android.mms.ui.SlideshowAttachmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_slideshow_attachment_view_landscape"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!-- This LinearLayout is used to push the send and edit button to the right of the
+         screen.
+    -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!-- This FrameLayout makes the play_slideshow_button on the top of slideshow
+             image and text, and puts the picture_frame exactly around the slideshow
+             image.
+        -->
+        <RelativeLayout android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.0">
+        <FrameLayout
+            android:layout_width="240dip"
+            android:layout_height="180dip"
+            android:layout_gravity="center"
+            android:background="@android:drawable/picture_frame" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/slideshow_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/slideshow_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/text_color_black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/play_slideshow_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:id="@+id/media_size_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#88000000"
+                        android:textColor="#ffffffff"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dip"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.android.mms.ui.SlideshowAttachmentView>

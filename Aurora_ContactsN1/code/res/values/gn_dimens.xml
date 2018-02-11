@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    
+    <!-- gionee xuhz 20120511 add for calllog fragment start-->
+    <dimen name="gn_call_log_inner_margin">2dip</dimen>
+ 
+    
+  
+    <dimen name="gn_call_log_name_textsize">20sp</dimen>
+    <dimen name="gn_call_log_number_textsize">12sp</dimen>
+ 
+    <dimen name="gn_call_log_calldate_textsize">12sp</dimen>
+    
+    
+    <!-- gionee huangzy 20121101 add for CR00717728 start-->
+    <!-- gionee xuhz 20120515 add for contact photo size start-->
+    <dimen name="gn_contact_photo_size">56dip</dimen>
+    <!-- gionee xuhz 20120515 add for contact photo size end-->
+    <!-- gionee huangzy 20121101 add for CR00717728 end-->
+    
+    <dimen name="gn_contact_tile_shadowbox_height">30sp</dimen>
+
+
+
+    
+    <!-- Gionee zhangxx 2012-05-25 add for CR00608764 begin -->
+    <dimen name="gn_text_size_smaller">12sp</dimen>
+    <!-- Gionee zhangxx 2012-05-25 add for CR00608764 end -->
+    
+    <!-- gionee xuhz 20120604 add for CR00614796 start-->
+    <dimen name="gn_add_button_left_image_padding">10dip</dimen>
+    <!-- gionee xuhz 20120604 add for CR00614796 end-->
+    
+    <dimen name="gn_contact_list_item_left_margin">0dip</dimen>
+    <dimen name="gn_contact_list_item_right_margin">0dip</dimen>
+    <dimen name="gn_contact_list_item_photo_left_gap">4dip</dimen>
+    <dimen name="gn_contact_tile_frequent_photo_left_margin">4.5dip</dimen>
+    <dimen name="gn_contact_list_item_headertext_left_margin">8dip</dimen>
+    <dimen name="gn_contact_list_item_name_left_margin">16dip</dimen>
+    <dimen name="gn_contact_list_item_checkbox_right_gap">24dip</dimen>
+    <dimen name="gn_detail_item_left_margin">7dip</dimen>
+    
+    
+    
+    <!-- gionee xuhz 20120803 add for CR00663387 start -->
+    <dimen name="gn_group_name_max_height">100dip</dimen>
+    <!-- gionee xuhz 20120803 add for CR00663387 end -->
+    
+    
+    <!-- ggkj2.0 -->
+    <dimen name="gn_dialpad_empty_view_padding_top">50dip</dimen>
+    
+    <!-- Top padding of the ListView in the contact tile list -->
+    
+    <dimen name="gn_editor_field_left_padding">8dip</dimen>
+    
+    <dimen name="gn_long_button_min_width">226dip</dimen>
+    <dimen name="gn_long_button_min_height">56dip</dimen>
+  
+    
+    <dimen name="gn_action_btn_min_height">48dip</dimen>
+    <dimen name="gn_action_btn_small_min_height">36dip</dimen>
+    <dimen name="gn_header_title_icon_size">22dip</dimen>
+    <dimen name="gn_list_item_min_height">64dip</dimen>
+    
+    <dimen name="gn_std_input_dialog_edit_text_height">48dip</dimen>   
+    <dimen name="gn_search_edit_text_size">16sp</dimen>
+    <dimen name="gn_photo_image_left_gap">4dip</dimen>
+    <dimen name="gn_photo_image_right_gap">4dip</dimen>
+    
+    <dimen name="gn_margin_left_between_views">4dip</dimen>
+    
+    <dimen name="gn_horizontal_divider_height">0.5dip</dimen>
+    
+    <dimen name="gn_empty_view_margin_top">77dip</dimen>
+
+    
+    <dimen name="gn_list_item_header_text_size">16sp</dimen>
+    
+    <dimen name="gn_contact_detail_list_item_max_type_width">80dip</dimen>
+    
+    <dimen name="gn_editor_min_edit_text_height">43dip</dimen>
+    
+    
+    <!-- Gionee:huangzy 20130325 remove for CR00788980 start -->
+    <dimen name="gn_dialpad_digits_text_size">45sp</dimen>
+    <dimen name="gn_dialpad_digits_text_size_min">36sp</dimen>
+    <dimen name="gn_dialpad_digits_text_size_delta">3sp</dimen>
+    <!-- Gionee:huangzy 20130325 remove for CR00788980 end -->
+    
+    <dimen name="gn_action_bar_title_size_primary">20sp</dimen>
+    
+
+    
+    <dimen name="gn_action_button_padding">8dp</dimen>
+    
+</resources>

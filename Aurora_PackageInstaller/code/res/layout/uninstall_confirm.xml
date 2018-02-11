@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+
+  Defines the layout of the confirmation screen that gets displayed when an
+  application is about to be uninstalled. Includes ok and cancel buttons
+  to let the uinstallation continue or abort.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:paddingBottom="8dip">
+
+        <!-- If an activity was specified, explains what package it's in. -->
+        <TextView
+            android:id="@+id/activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#333333" 
+            style="@style/padded"
+            android:visibility="gone" />
+
+        <!-- The snippet (title & icon) about the application being uninstalled. -->
+        <include
+            layout="@layout/app_details"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:id="@+id/uninstall_activity_snippet" />
+
+        <!-- uninstall application confirmation text -->
+        <TextView
+            android:id="@+id/uninstall_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#333333" 
+            android:layout_marginTop="10dp"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip" />
+
+    </LinearLayout>
+
+        <!-- gionee qiuxd 2013117 modify for CR00765187  drop attr android:divider="?android:attr/dividerHorizontal"  style="?android:attr/buttonBarStyle" 
+    alter android:paddingTop="16dip" to android:paddingTop="4dip"-->
+    <!-- OK confirm and cancel buttons.  -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:showDividers="beginning"
+            android:paddingTop="4dip">
+        
+        <TableLayout 
+            android:layout_width="match_parent"   
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingBottom="8dip">
+             <TableRow
+                   android:measureWithLargestChild="true"> 
+
+                <Button 
+                    android:id="@+id/cancel_button"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/cancel" 
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="1"
+                    android:textSize="19sp"/> 
+
+                <Button 
+                    android:id="@+id/ok_button"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/ok"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="4dip"
+                    android:textSize="19sp"/> 
+                </TableRow>   
+        </TableLayout> 
+    </LinearLayout>
+</LinearLayout>

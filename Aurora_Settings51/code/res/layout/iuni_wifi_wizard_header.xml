@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+        <!--Aurora <linchunhui> modify-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/bg" />
+    
+    <ImageView 
+        android:layout_width="232dp"
+        android:layout_height="169dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/wlan"/>
+    </RelativeLayout>
+
+
+        <!--ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:id="@+id/iv_icon"
+            android:src="@drawable/header_bg" /-->
+
+        <TextView
+            android:id="@+id/tv_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/wifi_setup_wizard_title"
+            android:layout_marginBottom="54dip"
+            android:textColor="#414142"
+            android:textSize="21sp" />
+
+</LinearLayout>

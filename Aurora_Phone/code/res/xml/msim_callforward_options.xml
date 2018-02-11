@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorakey="main"
+    aurora:auroratitle="@string/call_forwarding_settings" >
+
+    <AuroraPreferenceCategory
+        aurora:aurorakey="cdma_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_3" >
+        <AuroraPreference
+            aurora:aurorakey="button_cfu_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/cdma_labelCFU" />
+        <AuroraPreference
+            aurora:aurorakey="button_cfb_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/cdma_labelCFB" />
+        <AuroraPreference
+            aurora:aurorakey="button_cfnry_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/cdma_labelCFNRy" />
+        <AuroraPreference
+            aurora:aurorakey="button_cfnrc_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/cdma_labelCFNRc" />
+        <AuroraPreference
+            aurora:aurorakey="button_cfc_key"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/cdma_labelCFC" />
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim1_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_1" >
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFU"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfu_disabled"
+            android:summaryOn="@string/sum_cfu_enabled"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfu_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFU"
+            phone:confirmMode="activation"
+            phone:phoneslot="0"
+            phone:reason="unconditional"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFB"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfb_disabled"
+            android:summaryOn="@string/sum_cfb_enabled"
+            aurora:auroradependency="button_cfu_key_0"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfb_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFB"
+            phone:confirmMode="activation"
+            phone:phoneslot="0"
+            phone:reason="busy"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFNRy"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfnry_disabled"
+            android:summaryOn="@string/sum_cfnry_enabled"
+            aurora:auroradependency="button_cfu_key_0"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfnry_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFNRy"
+            phone:confirmMode="activation"
+            phone:phoneslot="0"
+            phone:reason="no_reply"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFNRc"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfnrc_disabled"
+            android:summaryOn="@string/sum_cfnrc_enabled"
+            aurora:auroradependency="button_cfu_key_0"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfnrc_key_0"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFNRc"
+            phone:confirmMode="activation"
+            phone:phoneslot="0"
+            phone:reason="not_reachable"
+            phone:serviceClass="voice" />
+    </AuroraPreferenceCategory>
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim2_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_2" >
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFU"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfu_disabled"
+            android:summaryOn="@string/sum_cfu_enabled"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfu_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFU"
+            phone:confirmMode="activation"
+            phone:phoneslot="1"
+            phone:reason="unconditional"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFB"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfb_disabled"
+            android:summaryOn="@string/sum_cfb_enabled"
+            aurora:auroradependency="button_cfu_key_1"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfb_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFB"
+            phone:confirmMode="activation"
+            phone:phoneslot="1"
+            phone:reason="busy"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFNRy"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfnry_disabled"
+            android:summaryOn="@string/sum_cfnry_enabled"
+            aurora:auroradependency="button_cfu_key_1"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfnry_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFNRy"
+            phone:confirmMode="activation"
+            phone:phoneslot="1"
+            phone:reason="no_reply"
+            phone:serviceClass="voice" />
+
+        <!-- See note on com.android.phone.EditPreference above -->
+        <com.android.phone.CallForwardEditPreference
+            android:autoText="false"
+            android:dialogMessage="@string/messageCFNRc"
+            android:singleLine="true"
+            android:summaryOff="@string/sum_cfnrc_disabled"
+            android:summaryOn="@string/sum_cfnrc_enabled"
+            aurora:auroradependency="button_cfu_key_1"
+            aurora:auroradialogTitle="@string/aurora_cf_dialog_title"
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cfnrc_key_1"
+            aurora:aurorapersistent="false"
+            aurora:auroratitle="@string/labelCFNRc"
+            phone:confirmMode="activation"
+            phone:phoneslot="1"
+            phone:reason="not_reachable"
+            phone:serviceClass="voice" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

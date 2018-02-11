@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/qrcode_image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aurora_scan_qrcode"
+        android:textColor="@color/aurora_editor_title_text_color"
+        android:textSize="14dp" >
+    </TextView>
+
+</FrameLayout>

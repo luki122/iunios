@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_of_listview"
+    android:layout_height="@dimen/height_60"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        style="@style/app_icon_of_listview"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/textInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/appIcon"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/add_auto_start_list_item_text_paddingleft" >
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:lines="1"
+            style="@com.aurora:style/TextAppearance.Aurora.Material.Content"/>
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/length_2dp"
+            android:gravity="left"
+            android:lines="1"
+            style="@com.aurora:style/TextAppearance.Aurora.Material.Second"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/listview_dividerheight"
+        android:layout_marginLeft="71.3dp"
+        android:background="@drawable/line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

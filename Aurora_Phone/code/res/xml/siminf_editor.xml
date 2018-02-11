@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorapersistent="false" >
+
+    <com.android.phone.RadioPowerPreference
+        aurora:aurorakey="sim_enable"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/xdivert_active" />
+
+    <com.android.phone.CustomEditPreference
+        android:maxLength="4"
+        android:singleLine="true"
+        aurora:auroradialogTitle="@string/siminfo_edit_name"
+        aurora:aurorakey="name"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unknown"
+        aurora:auroratitle="@string/siminfo_edit_name" />
+    <com.android.phone.CustomEditPreference
+        android:inputType="number|numberDecimal"
+        android:maxLength="14"
+        android:singleLine="true"
+        aurora:auroradialogTitle="@string/siminfo_edit_number"
+        aurora:aurorakey="number"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/unknown"
+        aurora:auroratitle="@string/siminfo_edit_number" />
+
+    <AuroraPreferenceScreen
+        aurora:aurorakey="operator"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/networks" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.phone.NetworkSetting"
+            android:targetPackage="com.android.phone" />
+    </AuroraPreferenceScreen>
+    
+    <AuroraPreferenceScreen
+        aurora:aurorakey="button_apn_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/apn_settings" >
+    </AuroraPreferenceScreen>
+    
+    <AuroraPreferenceScreen
+        aurora:aurorakey="stk"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/stk_title" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.stk.StkMain"
+            android:targetPackage="com.android.stk" />
+    </AuroraPreferenceScreen>
+
+</AuroraPreferenceScreen>

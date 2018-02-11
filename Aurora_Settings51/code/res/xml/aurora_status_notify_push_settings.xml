@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<aurora.preference.AuroraPreferenceScreen xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:auroratitle="@string/status_and_notify_push">
+
+
+    <!-- Aurora hujianwei 20160125 modify start -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_speed"
+        aurora:auroratitle="@string/notification_manage" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorafragment="com.android.settings.notification.AuroraDndSettingsFragment"
+        aurora:aurorakey="do_not_disturb"
+        aurora:auroratitle="@string/do_not_disturb" />
+    <!-- Aurora hujianwei 20160125 modify start -->
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorafragment="com.android.settings.notification.AuroraLockscreenNotify"
+        aurora:aurorakey="lockscreen_notify"
+        aurora:auroratitle="@string/lockscreen_notify" />
+    <aurora.preference.AuroraPreferenceScreen
+        aurora:aurorakey="notify_mgr"
+        aurora:auroratitle="@string/notify_mgr"/>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="pref_speed"
+        aurora:auroratitle="@string/pref_push_notify" />
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="display_digit_battery_precent"
+        aurora:auroratitle="@string/pref_digital_battery_percent_display" />
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="display_network_speed"
+        aurora:auroratitle="@string/pref_push_network_speed_display" />
+
+
+</aurora.preference.AuroraPreferenceScreen>

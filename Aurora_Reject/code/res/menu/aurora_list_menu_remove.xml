@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <item
+        android:id="@+id/no_reject_multi"
+        android:icon="@drawable/bottombar_icon_no_reject"
+        android:title="@string/release_reject">
+    </item> -->
+    <item
+        android:id="@+id/del"
+        android:icon="@com.aurora:drawable/aurora_bottombar_remove_selector"
+        android:title="@string/black_remove">
+    </item>
+
+</menu>

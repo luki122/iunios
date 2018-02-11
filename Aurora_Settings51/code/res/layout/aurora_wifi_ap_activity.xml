@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/aurora"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/wifi_section" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dip" />
+
+        <LinearLayout
+            android:id="@+id/info"
+            style="@style/wifi_section" />
+
+        <LinearLayout
+            android:id="@+id/type"
+            style="@style/wifi_section"
+            android:visibility="gone" >
+
+            <LinearLayout style="@style/aurora_wifi_item" >
+
+                <aurora.widget.AuroraTextView
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_ssid" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <aurora.widget.AuroraEditText
+                    android:id="@+id/ssid"
+                    style="@style/aurora_wifi_item_widget"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="32"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+
+            <LinearLayout
+                style="@style/aurora_wifi_item"
+                android:visibility="gone" >
+
+                <aurora.widget.AuroraTextView
+                    android:id="@+id/channel_text"
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_channel" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/channel"
+                    style="@style/aurora_wifi_item_widget"
+                    android:entries="@array/wifi_ap_security"
+                    android:prompt="@string/wifi_security" />
+            </LinearLayout>
+
+            <aurora.widget.AuroraTextView
+                android:id="@+id/width_text"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="@string/wifi_channel_width" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/channel_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/wifi_ap_channel_width"
+                android:prompt="@string/wifi_channel_width"
+                android:textAlignment="viewStart" />
+            
+            <LinearLayout style="@style/aurora_wifi_item" >
+
+                <aurora.widget.AuroraTextView
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_security" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <aurora.widget.AuroraSpinner
+                    android:id="@+id/security"
+                    style="@style/aurora_wifi_item_widget"
+                    android:entries="@array/wifi_ap_security"
+                    android:prompt="@string/wifi_security"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fields"
+            style="@style/wifi_section"
+            android:visibility="gone" >
+             
+             <LinearLayout style="@style/aurora_wifi_item" >
+
+                <aurora.widget.AuroraTextView
+                    style="@style/aurora_wifi_item_label"
+                    android:text="@string/wifi_password" />
+
+                <View style="@style/aurora_baseline_vertical" />
+
+                <aurora.widget.AuroraEditText
+                    android:id="@+id/password"
+                    style="@style/aurora_wifi_item_widget"
+                    android:imeOptions="flagForceAscii"
+                    android:maxLength="63"
+                    android:password="true"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View style="@style/aurora_baseline_horizontal" />
+
+            <aurora.widget.AuroraTextView
+                android:id="@+id/hint"
+                style="@style/wifi_item_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="8dip"
+                android:visibility="gone"
+                android:text="@string/credentials_password_too_short" />
+
+            <aurora.widget.AuroraCheckBox
+                android:id="@+id/show_password"
+                style="@style/wifi_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_show_password" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/aurora_wifi_item"
+            android:visibility="gone" >
+
+            <aurora.widget.AuroraTextView
+                style="@style/aurora_wifi_item_label"
+                android:text="@string/wifi_ap_max_connection_title" />
+
+            <View style="@style/aurora_baseline_vertical" />
+
+            <aurora.widget.AuroraSpinner
+                android:id="@+id/max_connection_num"
+                style="@style/aurora_wifi_item_widget"
+                android:entries="@array/wifi_ap_max_connection_entries"
+                android:prompt="@string/wifi_ap_max_connection_title"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wifi_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="#FF909090" />
+
+            <aurora.widget.AuroraTextView
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="@string/wifi_ap_reset_OOB_title" />
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/reset_oob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/wifi_ap_reset_OOB" />
+
+            <aurora.widget.AuroraTextView
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:text="@string/wifi_ap_max_connection_title" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

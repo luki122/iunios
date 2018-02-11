@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <!-- Gionee:jialinfeng 20110624 added for message box begin -->  
+    <!-- Gionee jialf 20110907 modified for CR00362165 -->  
+    <string name="add_to_favorite">Message en  préféré</string>  
+    <string name="cancel_favorite">Annuler les préférèes</string>  
+    <!-- main tab string -->  
+    <string name="tab_message">Messages</string>  
+    <string name="tab_favorites">Préfèrés</string>  
+    <string name="tab_recommend">Conseil</string>  
+    <string name="tab_draft">Brouillon</string>  
+    <string name="tab_favorites_common_words">Configurations vocales</string>  
+    <string name="tab_favorites_msg_fav">Envoyer message au numero des préférés</string>  
+    <!-- Gionee time format -->  
+    <string name="gn_today">Aujourd\'hui</string>  
+    <string name="gn_yesterday">Hier</string>  
+    <string name="gn_am">AM</string>  
+    <string name="gn_pm">P.M.</string>  
+    <string name="dial_dialog_title">Choisissez le numero pour composer :</string>  
+    <string name="delete_all_threads">Supprimez tous</string>  
+    <string name="repeat_send_msg">Renvoyez</string>  
+    <string name="gn_send_msg_failed">Échoué</string>  
+    <!-- gionee lanwzh modify for  CR00396868 20111015 begin -->  
+    <string name="gn_send_msg_received">Envoyé</string>  
+    <!-- gionee lanwzh modify for  CR00396868 20111015 end -->  
+    <string name="gn_send_msg_sending">Envoi</string>  
+    <!-- Gionee:jialinfeng 20110624 added for message box end -->  
+    <!-- Gionee lanwzh 20110714 add for feature_add_contact CR00291840 begin -->  
+    <string name="add_recent_contacts">Ajoutez le contact</string>  
+    <string name="insert_contacts">Insérez le contact</string>  
+    <string name="no_contacts">Aucun contacts</string>  
+    <string name="no_recent_contacts">Aucun contacts récents</string>  
+    <string name="title_add_receipents">Ajoutez les contacts</string>  
+    <string name="group_list_empty">Aucun groupe</string>  
+    <string name="select_group_contact_dlg_title">Sélectionner un groupe de contacts</string>  
+    <string name="no_mobile_numbers"> aucun numero de tèlèphone</string>  
+    <string name="contact_has_no_info">Aucune information sur contact</string>  
+    <string name="no_phone_numbers"> aucun numéro de téléphone portable</string>  
+    <string name="video_call_not_enabled">Appel visuel non permis</string>  
+    <string name="unsaved">non sauvegardè</string>  
+    <string name="tab_recent_contact">Message</string>  
+    <string name="tab_contact">Contacts</string>  
+    <string name="tab_group_contact">Groupe</string>  
+    <string name="cancel">Annulation</string>  
+    <string name="contacts_notes">Notes :</string>  
+    <string name="contacts_website">Site Web :</string>  
+    <string name="contacts_name">Prènom</string>  
+    <!-- Gionee lanwzh modified for CR00385257 20111010 begin -->  
+    <string name="delete_recent_contact">Suppression</string>  
+    <!-- Gionee lanwzh modified for CR00385257 20111010 end -->  
+    <string name="calllog">Registre d\'appels</string>  
+    <string name="groups_coworker">Collègue</string>  
+    <string name="groups_family">Famille</string>  
+    <string name="groups_friends">Amis</string>  
+    <string name="groups_schoolmate">Camarade de classe</string>  
+    <string name="groups_vip">VIP</string>  
+    <string name="showAllGroups">Tous les contacts</string>  
+    <string name="sim">SIM</string>  
+    <!-- Gionee lanwzh 20110714 add for feature_add_contact CR00291840 end -->  
+    <!-- Gionee jialf 20110720 add for recommend messages -->  
+    <string name="recommend_humor_joke">etiquette humouristique</string>  
+    <string name="recommend_love_joke">etiquette humouristique sur l\' amour</string>  
+    <string name="recommend_school_joke">Plaisanterie d\'école</string>  
+    <string name="recommend_birthday_message">Message d\'anniversaire</string>  
+    <!-- Gionee lanwzh 20110801 add for CR00303983  begin -->  
+    <string name="insert_sd_card">Veuillez insérer la carte SD</string>  
+    <!-- Gionee lanwzh 20110801 add for CR00303983  end -->  
+    <string name="repeat_send_msg_btn_text">Répétition</string>  
+    <string name="quick_text_header_text">Nouveau texte rapide</string>  
+    <string name="quick_text_header_text_edit">modifier le texte rapide</string>  
+    <string name="quick_text_edit_hint">Texte rapide d\'entrée</string>  
+    <string name="quick_text_menu_forward">joindre</string>  
+    <string name="quick_text_menu_edit">modifier</string>  
+    <string name="quick_text_menu_delete">Suppression</string>  
+    <string name="add_quick_text_ok">OK</string>  
+    <string name="add_quick_text_cancel">Annulation</string>  
+    <string name="delete_quick_text_title">Suppression</string>  
+    <string name="delete_quick_text_confirm">Êtes-vous sûr de supprimer ce message ?</string>  
+    <string name="favorite_display_name">Je</string>  
+    <!-- Gionee lanwzh 20110803 add for CR00319810  begin -->  
+    <!-- gionee:gaojt 2011-11-07 modify CR00413105 start -->  
+    <string name="confirm_delete_all_dratfs">Êtes-vous sûr de supprimer tous les brouillons?</string>  
+    <string name="confirm_delete_dratf">Êtes-vous sûr de supprimer ce brouillon ?</string>  
+    <!-- gionee:gaojt 2011-11-07 modify CR00413105 end -->  
+    <string name="delete_all_dratfs">Supprimez tous</string>  
+    <string name="delete_dratf">eliminer brouillon</string>  
+    <!-- Gionee lanwzh 20110803 add for CR00319810  end -->  
+    <!-- Gionee jipengfei 20110806 add for CR00324849 begin -->  
+    <string name="gn_select_attachment_contacts">Contacts</string>  
+    <string name="gn_select_attachment_quick_text">Textes rapides</string>  
+    <string name="gn_select_attachment_smiley">Émoticônes</string>  
+    <string name="gn_select_attachment_subject">Sujet</string>  
+    <string name="gn_select_attachment_gallery">Images</string>  
+    <string name="gn_select_attachment_camera">Image de capture</string>  
+    <string name="gn_select_attachment_video">Vidéo</string>  
+    <string name="gn_select_attachment_record_video">Vidéo de capture</string>  
+    <string name="gn_select_attachment_sound">Audio</string>  
+    <string name="gn_select_attachment_record_audio">Audio record</string>  
+    <string name="gn_select_attachment_slideshow">Présentation diapositive</string>  
+    <!-- Gionee jipengfei 20110806 add for CR00324849 end -->  
+    <!-- Gionee lanwzh 20110808 add for CR00327520 end -->  
+    <string name="gn_select_attach_picture">Images</string>  
+    <string name="gn_select_attach_take_photo">Image de capture</string>  
+    <!-- Gionee jipengfei 20110808 add for CR00327520 end -->  
+    <!-- Gionee lanwzh 20110809 add for CR00319970  begin -->  
+    <string name="search_bar_hint">rechercher contatcs</string>  
+    <!-- Gionee lanwzh 20110809 add for CR00319970  end -->  
+    <!-- Gionee lanwzh 20110810 add for CR00320012  begin -->  
+    <string name="title_attachments">pièces jointes</string>  
+    <string name="attach_size">taille :</string>  
+    <string name="save_att_failed">impossible sauvegarder les pièces jointes</string>  
+    <string name="save_att_success">pièces jointes sauvegardèes</string>  
+    <string name="attachmentpicker">choisir pièce jointe</string>  
+    <!-- Gionee lanwzh 20110810 add for CR00320012  end -->  
+    <!-- Gionee liuran 20110810 add for CR00344553  start -->  
+    <string name="add_to_contact">Ajoutez au contact</string>  
+    <string name="check_contact">selectionner le contact</string>  
+    <!-- Gionee liuran 20110810 add for CR00344553  start -->  
+    <!-- Gionee jialf 20110822 added for CR00344530 start -->  
+    <string name="wait_connecting">Réseau se reliant…</string>  
+    <string name="wait_init">Données d\'Init, attendre svp…</string>  
+    <string name="gn_no_conversations">liste conversation sms vide</string>  
+    <string name="gn_no_contacts">liste contacts vide</string>  
+    <string name="gn_no_recent_contacts">liste contacts recents vide</string>  
+    <string name="gn_no_calllog">registre d\'appels vide</string>  
+    <string name="gn_no_draft">liste brouillon vide</string>  
+    <!-- Gionee jialf 20110822 added for CR00344530 end -->  
+    <!-- Gionee jialf 20110823 added for CR00344655 start-->  
+    <string name="gn_cancel_all_favorite">annuler tous les prèfèrès</string>  
+    <string name="gn_cancel_all_favorite_title">annuler tous les prèfèrès</string>  
+    <string name="gn_cancel_all_favorite_content">voulez-vous annuler tous les prèfèrès?</string>  
+    <string name="gn_cancel_all_favorite_ok">OK</string>  
+    <string name="gn_cancel_all_favorite_cancel_btn">Annulation</string>  
+    <string name="gn_confirm_delete_conversation">l\'entière discussion sera supprimée.</string>  
+    <string name="gn_confirm_delete_message">Le message entier sera supprimé.</string>  
+    <string name="gn_delete_unfavotite">eliminer messages prèfèrès</string>  
+    <!-- Gionee jialf 20110823 added for CR00344655 end-->  
+    <!-- Gionee lanwzh 20110822 add for CR00344579  begin -->  
+    <string name="gn_selected">Choisi</string>  
+    <!-- Gionee lanwzh 20110822 add for CR00344579  end -->  
+    <!-- Gionee lanwzh 20110824 add for CR00345010  begin -->  
+    <string name="gn_copy_text">Copiez le texte</string>  
+    <!-- Gionee lanwzh 20110824 add for CR00345010  end -->  
+    <!-- Gionee fangbin 2011.8.24 added for CR00346739 start -->  
+    <string name="gnSms_sim_management_title">configurer Dual SIM</string>  
+    <!-- Gionee fangbin 2011.8.24 added for CR00346739 end -->  
+    <!-- Gionee fangbin 2011.8.26 modified for CR00353574 start -->  
+    <string name="gn_prevent_disturb">empecher facteur de derangement</string>  
+    <!-- Gionee fangbin 2011.8.26 modified for CR00353574 end -->  
+    <!-- Gionee fangbin 2011.8.27 modified for CR00353574 start -->  
+    <!-- Gionee lidw change for CR00466863 start -->  
+    <string name="gn_dail">composer</string>  
+    <!-- Gionee lidw change for CR00466863 end -->  
+    <string name="gn_send_message">Envoyez le message</string>  
+    <string name="gn_new_contact">Nouveau contact</string>  
+    <string name="gn_visit">Visite</string>  
+    <string name="gn_add_to_bookmarks">Ajoutez aux marques pages</string>  
+    <string name="gn_send_email">Envoyez l\'email</string>  
+    <!-- Gionee fangbin 2011.8.27 modified for CR00353574 end -->  
+    <!-- Gionee lanwzh 20110829 add for CR00319810 begin -->  
+    <string name="gn_draft_operation">brouillon</string>  
+    <string name="gn_draft_operation_reason">voulez-vous sauvegarder ce message en brouillon?</string>
+    <string name="gn_draft_save">sauvegarder</string>  
+    <string name="gn_draft_unknow_name">inconnu</string>  
+    <!-- Gionee lanwzh 20110829 add for CR00319810 end -->  
+    <!-- Gionee fangbin 2011.8.31 added for CR00357401 start -->  
+    <string name="menu_gn_firewall_setting">Firewall</string>  
+    <!-- Gionee fangbin 2011.8.31 added for CR00357401 end -->  
+    <!-- Gionee jipengfei 20110903 add for CR00361478 begin -->  
+    <string name="gn_contact_unit_name">contacts</string>  
+    <!-- Gionee jipengfei 20110903 add for CR00361478 end -->  
+    <!-- Gionee lanwzh 20110909 add for CR00362174 begin -->  
+    <string name="gn_to_hint">À</string>  
+    <!-- Gionee lanwzh 20110903 add for CR00362174 end -->  
+    <!-- Gionee fangbin 2011.9.9 added for CR00327774 start -->  
+    <string name="gn_from">De</string>  
+    <!-- Gionee fangbin 2011.9.9 added for CR00327774 end -->  
+    <!-- Gionee lanwzh 20110913 add for CR00301798 begin -->  
+    <string name="mms_deliver_success_with_address">Message envoyé par %s</string>  
+    <string name="mms_deliver_success">Le message a été envoyé</string>  
+    <string name="mms_read_success_with_address">message lu par %s</string>  
+    <string name="mms_read_success">message lu</string>  
+    <!-- Gionee lanwzh 20110913 add for CR00301798 begin -->  
+    <!-- Gionee liuran 20110919 added for CR00368419 start -->  
+    <string name="freeze_format_with_bracket"> 
+        <font/>%1$s
+    </string>  
+    <string name="freeze_format"> 
+        <font/>%1$s
+    </string>  
+    <!-- Gionee liuran 20110919 added for CR00368419 end -->  
+    <!--  Gionee jialf 20110923 added for CR00377289 start -->  
+    <string name="gn_midnight">AM</string>  
+    <string name="gn_dawn">AM</string>  
+    <string name="gn_noon">P.M.</string>  
+    <string name="gn_dusk">P.M.</string>  
+    <string name="gn_night">P.M.</string>  
+    <!--  Gionee jialf 20110923 added for CR00377289 end -->  
+    <!-- gionee zhouyj 2012-07-2 modify for CR00632672 start -->  
+    <string name="gn_exchange">eBackup</string>  
+    <!-- gionee zhouyj 2012-07-2 modify for CR00632672 end -->  
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 start -->  
+    <string name="gn_add_to_contact">Ajoutez</string>  
+    <string name="gn_check_contact">Contrôle</string>  
+    <string name="gn_edit_contact">modifier</string>  
+    <string name="gn_copy_contact">Copie</string>  
+    <!-- gionee gaoj 2011-10-14 added for  CR00363039 end -->  
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 begin-->  
+    <string name="gn_confirm_delete_favorited_message">voulez-vous supprimer ce message des prèfèrès?</string>  
+    <string name="gn_confirm_delete_locked_favorited_message">voulez-vous supprimer ce message bloqué des prèfèrès?</string>  
+    <!-- Gionee zhangxx 2011-10-24 add for CR00389035 end-->  
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 start-->  
+    <string name="message_too_big_for_recording">Le message est trop grand pour joindre un enregistrement.</string>  
+    <!-- gionee gaoj 2011-10-29 added for CR00413446 end-->  
+    <!-- gionee tianyr 2011-11-07 added for CR00427015 start-->  
+    <!-- gionee tianyr 2011-11-07 added for CR00427015 end-->  
+    <!-- Gionee fangbin 20111108 added for CR00423903 start -->  
+    <string name="gn_import_export_menu">Importation/exportation</string>  
+    <string name="gn_sim_sms">sms sur ls SIM</string>  
+    <!-- Gionee fangbin 20111108 added for CR00423903 end -->  
+    <!-- Gionee fangbin 20111108 added for CR00423907 start -->  
+    <string name="gn_import_export_file_path">/backup/Sms/</string>  
+    <string name="gn_export_text">Exportation</string>  
+    <string name="gn_import_text">Importation</string>  
+    <string name="gn_sure_export">Confirmez l\'exportation</string>  
+    <string name="gn_sure_export_front">voulez-vous exporter ce message selectionnè</string>  
+    <string name="gn_sure_export_back">ici à l\'interieur?</string>  
+    <string name="gn_sms_importing">Importation desdonnées de SMS</string>  
+    <string name="gn_sms_exporting">Exportation des données de SMS</string>  
+    <string name="gn_exporting_front">c\'est pour</string>  
+    <string name="gn_exporting_back">données de SMS d\'exportation</string>  
+    <string name="gn_export_sms_to_sdcard2">Exportation SMS vers la carte SD</string>  
+    <string name="gn_import_sms_from_sdcard">Importation SMS en provenance de carte SD</string>  
+    <string name="gn_no_import_file">aucun SMS à importer</string>  
+    <string name="gn_no_export_sms">aucun SMS à exporter</string>  
+    <string name="gn_import_file_count">Choisi</string>  
+    <string name="gn_import_current_file">Importation de la section</string>  
+    <string name="gn_export_current_session">Exportation de la section </string>  
+    <string name="gn_export_item">session</string>  
+    <string name="gn_import_item">fichier</string>  
+    <string name="gn_import_export_sum">(Un total de</string>  
+    <string name="gn_import_export_piece">)</string>  
+    <string name="gn_import_cancel">annuler l\'importation !</string>  
+    <string name="gn_import_failed">Import failed！</string>  
+    <string name="gn_import_success">Importation complétée!</string>  
+    <string name="gn_import_file">importe fichier</string>  
+    <string name="gn_import_file_path_error">path error！</string>  
+    <string name="gn_import_file_content_error">content format error！</string>  
+    <string name="gn_import_file_no_exists">not exist！</string>  
+    <string name="gn_import_file_empty">is empty！</string>  
+    <string name="gn_no_sdcard">No SD card！</string>  
+    <string name="gn_unkonw_error">There is an unknown error！</string>  
+    <string name="gn_imported_file_names">fichiers importès</string>  
+    <string name="gn_export_failed">Export Failed！</string>  
+    <string name="gn_export_success">Exportation complétée!</string>  
+    <string name="gn_importing">importation sms attendre svp...</string>  
+    <!-- Gionee fangbin 20111108 added for CR00423907 end -->  
+    <!-- Gionee fangbin 20111114 added for CR00432868 start -->  
+    <string name="gn_import_export">Importation/exportationSMS</string>  
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 begin -->  
+    <string name="gn_export_btn_text">Exportation</string>  
+    <string name="gn_import_btn_text">Importation</string>  
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 end -->  
+    <string name="gn_last">dernier</string>  
+    <!-- Gionee fangbin 20111114 added for CR00432868 end -->  
+    <!-- Gionee wangxin 20111122 added for CR00385359 start -->  
+    <string name="gn_date_format">yyyy年MM月dd日</string>  
+    <!-- Gionee wangxin 20111122 added for CR00385359 end -->  
+    <!-- Gionee fangbin 20111124 added for CR00451398 start -->  
+    <string name="gn_sdcard_no_space">L\'espace restant de la carte SD n\'est pas assez !</string>  
+    <!-- Gionee fangbin 20111124 added for CR00451398 end -->  
+    <!-- Gionee fangbin 20111128 added for CR00448323 start -->  
+    <string name="gn_import_cancel_title">Annulation</string>  
+    <string name="gn_import_cancel_msg">Cette importation sera annulèe</string>  
+    <!-- Gionee fangbin 20111128 added for CR00448323 end -->  
+    <!-- Gionee jialf 20111201 added for CR00459866 start -->  
+    <string name="gn_forward_prefix">FWD : \ u0020</string>  
+    <!-- Gionee jialf 20111201 added for CR00459866 end -->  
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 start -->  
+    <string name="gn_copying">copie…</string>  
+    <!-- Gionee zhangxx 2011-12-05 added for CR00462100 end -->  
+    <!-- Gionee fangbin 20111206 added for CR00459773 start -->  
+    <string name="gn_no_sim_card">impossible d\'envoyer, aucune carte de SIM !</string>  
+    <!-- Gionee fangbin 20111206 added for CR00459773 end -->  
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 begin -->  
+    <string name="gn_loading">chargement…</string>  
+    <!-- Gionee zhangxx 2012-01-04 add for CR00483740 end -->  
+    <!-- Gionee fangbin 20120201 added for CR00504516 start -->  
+    <string name="gn_mms_pop_view">Vue</string>  
+    <string name="gn_mms_pop_delete">Suppression</string>  
+    <string name="gn_mms_pop_send">Envoyez</string>  
+    <string name="gn_mms_pop_read">Lire</string>  
+    <string name="gn_mms_pop_input">Message d\'entrée</string>  
+    <string name="gn_mms_pop_cv">cliquer pour visualiser</string>  
+    <string name="gn_mms_pop_setting_title">notifie une fenêtre d\'informations popup</string>  
+    <string name="gn_mms_pop_setting_summary">Note d\'information automatique d\'affichage popup</string>  
+    <!-- Gionee fangbin 20120201 added for CR00504516 end -->  
+    <!--gionee gaoj 2012-2-22 add for CR00527686 start  -->  
+    <string name="lockpassword_choose_your_password_header">Choisissez votre mot de passe</string>  
+    <string name="lockpassword_confirm_your_password_header">Confirmez votre mot de passe</string>  
+    <string name="lockpassword_ok_label">Confirmez</string>  
+    <string name="lockpassword_confirm_passwords_dont_match">Le mot de passe ne correspond pas</string>  
+    <string name="lockpassword_continue_label">Continuez à</string>  
+    <string name="lockpassword_cancel_label">Annulation</string>  
+    <string name="lockpassword_password_too_short">Le mot de passe doit être au moins % de caractères</string>  
+    <string name="lockpassword_password_too_long">Le mot de passe peut être plus que % de caractères</string>  
+    <string name="lockpassword_illegal_character">Le mot de passe contient un caractère non valable</string>  
+    <string name="lockpassword_password_requires_alpha">Le mot de passe doit contenir au moins une lettre</string>  
+    <string name="lockpassword_press_continue">appuyer continuer à la fin</string>  
+    <string name="lockpattern_need_to_unlock_wrong">Désolé, essayer encore :</string>  
+    <string name="menu_encryption">codifier</string>  
+    <string name="menu_decryption">annuler les codes</string>  
+    <string name="lockpassword_input_your_password">Mot de passe d\'entrée</string>  
+    <string name="gn_call">appel</string>  
+    <string name="gn_encryption">code</string>  
+    <string name="gn_confirm_encryption">Le numero de conversation a été cripté</string>  
+    <string name="gn_confirm_dncryption">code annulé</string>  
+    <string name="pref_security_settings_title">configuration sècuritè</string>  
+    <string name="pref_title_mms_encryption_setting">configurer code section</string>  
+    <string name="pref_summary_mms_encryption_setting">utiliser mot de code</string>  
+    <string name="pref_title_mms_encryption_change">modifier le code de la conversation</string>  
+    <string name="pref_summary_mms_encryption_change">Changez ou terminez la protection par mot de passe</string>  
+    <string name="pref_title_mms_password_visible">Mot de passe visible</string>  
+    <string name="pref_summary_mms_password_visible">Quand le mot de passe d\'entrée est visiblet</string>  
+    <string name="pref_title_mms_password_clear">effacer mot de passe</string>  
+    <string name="pref_summary_mms_password_clear">suspension du mot de passe de protection</string>  
+    <string name="pref_title_mms_password_change">Changez votre mot de passe</string>  
+    <string name="pref_summary_mms_password_change">Changez mot de passe de protection</string>  
+    <string name="pref_summary_mms_password_change_succeed">Changement réussi du mot de passe</string>  
+    <string name="pref_summary_mms_password_clear_succeed">elimination mot de passe reussite</string>  
+    <string name="pref_summary_mms_password_setting_succeed">configuration mot de passe rèussite</string>  
+    <!--gionee gaoj 2012-2-22 add for CR00527686 end  -->  
+    <!-- Gionee fangbin 20120223 addded for CR00527995 start -->  
+    <string name="gn_phone_msg_count">Statistiques de l\'information de téléphone portable</string>  
+    <string name="gn_unread_msg_count">Messages non lus</string>  
+    <string name="gn_session_count">nombre de conversation</string>  
+    <string name="gn_totle_msg_count">messages totales :</string>  
+    <!-- Gionee fangbin 20120223 addded for CR00527995 end -->  
+    <!--gionee gaoj 2012-4-10 added for CR00555790 start  -->  
+    <string name="pick_contacts">Choisissez les contacts</string>  
+    <string name="recipient_title">recipients（%1$s）</string>  
+    <string name="new_contact">Nouveau contact</string>  
+    <string name="add_contact">Pour\'ajouter à ceux dèjà existamts</string>  
+    <string name="view_contact">vue</string>  
+    <string name="edit_contact">modifier</string>  
+    <string name="copy_contact">copie</string>  
+    <string name="set_top">set top</string>  
+    <string name="gn_select_conversation_one">choisi 1 conversation</string>  
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 start  -->  
+    <string name="gn_select_conversation_more">%1$s choisi</string>  
+    <!--gionee zhouyj 2012-05-16 modify for CR00555790 end  -->  
+    <string name="gn_pref_title_sms_delivery_reports">Rapport de reception</string>  
+    <string name="gn_pref_title_mms_read_reports">Rapport de confirmation lecture</string>  
+    <string name="gn_pref_title_mms_delivery_reports">Rapport de reception</string>  
+    <!--gionee gaoj 2012-4-10 added for CR00555790 end  -->  
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 start -->  
+    <string name="gn_pref_title_other">autres</string>  
+    <string name="gn_pref_title_accessories_signature">Signature</string>  
+    <string name="gn_pref_summary_accessories_signature">ajouter automatiquement pour la signature</string>  
+    <string name="gn_pref_title_edit_accessories_signature">modifier la signature</string>  
+    <string name="gn_pref_summary_edit_accessories_signature">Tapez pour modifier</string>  
+    <string name="gn_signature_dlg_title">modifier la signature</string>  
+    <string name="gn_signature_dlg_hint">signature d\'entrée</string>  
+    <string name="gn_delete_drafts_message">Le message de brouillon sera supprimé.</string>  
+    <!-- gionee zhouyj 2012-05-17 add for CR00601523 end -->  
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 start -->  
+    <string name="gn_select_conversation_zore">choisi 0 conversations</string>  
+    <string-array name="gn_receiptors"> 
+        <item>Groupe récent decontacts de contacts </item>  
+        <item>Groupe récent decontacts de contacts </item>  
+        <item>Groupe récent decontacts de contacts </item>  
+        <!--  not use star
+        <item >Star</item>--> 
+    </string-array>  
+    <!-- gionee gaoj 2012-5-18 modified for CR00601632 end -->  
+    <!-- Gionee fangbin 20120518 added for CR00596563 start -->  
+    <string name="gn_mms_pop_close">Fin</string>  
+    <string name="gn_mms_pop_response">Réponse</string>  
+    <string name="gn_mms_pop_no_response">Veuillez écrire la réponse !</string>  
+    <!-- Gionee fangbin 20120518 added for CR00596563 end -->  
+    <!--gionee gaoj 2012-5-24 added for CR00588933 start  -->  
+    <string name="gn_card_a_out">Sim 1 fiable</string>  
+    <string name="gn_card_b_out">Sim 2 fiable</string>  
+    <string name="gn_card_a_in">Une lettre entrante Sim 1</string>  
+    <string name="gn_card_b_in">sms entrant sur SIM2</string>  
+    <string name="gn_card_1_out">Sim 1 fiable</string>  
+    <string name="gn_card_2_out">Sim 2 fiable</string>  
+    <string name="gn_card_1_in">1 lettre entrante Sim 1</string>  
+    <string name="gn_card_2_in">lettre entrante Sim 2</string>  
+    <string name="gn_card_unknow_out">Sim fiable</string>  
+    <string name="gn_card_unknow_in">… lettre entrante</string>  
+    <string name="gn_menu_edit">Rédacteur</string>  
+    <string name="gn_menu_edit_msg"> rédacteur de message</string>  
+    <string name="gn_unload_mms">Le téléchargement de MMS pas accompli, prière de faire suivre plus tard.</string>  
+    <string name="gn_search_hint">chercher les messages</string>  
+    <!--gionee gaoj 2012-5-24 added for CR00588933 end  -->  
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 start -->  
+    <string name="gn_sim_slot_a">1</string>  
+    <string name="gn_sim_slot_b">2</string>  
+    <string name="gn_sim_slot_1">1</string>  
+    <string name="gn_sim_slot_2">2</string>  
+    <string name="import_export_tip">expoter sms</string>  
+    <string name="import_export_next">suivant</string>  
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 begin -->  
+    <string name="gn_chooser_external_sdcard">mèmoire sd</string>  
+    <string name="gn_chooser_internal_sdcard">Mémoire de téléphone</string>  
+    <!-- Gionee:linggz 2012-07-18 modify for CR00651374 end -->  
+    <!-- gionee zhouyj 2012-7-18 modify for CR00651374 end -->  
+    <string name="gn_export_sms_to_external_sdcard">exporter SMS sur mèmoire SD</string>  
+    <string name="gn_export_sms_to_internal_sdcard">exporter SMS sur mèmoire SD</string>  
+    <!-- gionee zhouyj 2012-05-29 add for CR00601094 end -->  
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->  
+    <string name="gn_mms">MMS</string>  
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->  
+    <!-- gionee gaoj 2012-6-14 added for CR00623383 CR00623396 start -->  
+    <string-array name="gn_conv_spinner_list"> 
+        <item>Tout le chiffrage</item>  
+        <item>Tout le chiffrage</item> 
+    </string-array>  
+    <string name="no_encryption_conversations">« Aucune conversation CRIPTèE »</string>  
+    <string name="gn_no_star_contacts">Liste des contacts prèfèrès vide</string>  
+    <!-- gionee gaoj 2012-6-14 added for CR00623383 CR00623396 end -->  
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 start -->  
+    <string name="gn_multi_encryption">les messages choisis ont étè criptès</string>  
+    <string name="gn_multi_dncryption">les messages choisis ont étè criptès</string>  
+    <string name="copy_attachment_to">copiez pièce jointe en</string>  
+    <!--gionee zhouyj 2012-06-15 add for CR00623385 end -->  
+    <!--gionee gaoj 2012-7-17 added for CR00628364 start   -->  
+    <string name="gn_menu_delete">eliminer</string>  
+    <string name="gn_menu_star">prèfèrès</string>  
+    <string name="gn_menu_copy">copie</string>  
+    <string name="gn_menu_forward">devier</string>  
+    <!-- gionee gaoj 2012-7-17 added for CR00628364 end -->  
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 start -->  
+    <string name="gn_selected_count">Choisissez %1$s</string>  
+    <!-- gionee zhouyj 2012-07-31 add for CR00662942 end -->  
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 start -->  
+    <string name="gn_menu_doctoran">Empêchez dérangenent</string>  
+    <string name="gn_menu_blacklist">Joignez la liste noire</string>  
+    <!-- gionee gaoj 2012-8-7 added for CR00671408 end -->  
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 start -->  
+    <string name="gn_internal_sdcard_no_space">L\'espace restant de mèmoire interne n\'est pas assez !</string>  
+    <!-- gionee zhouyj 2012-08-07 add for CR00667794 end -->  
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 start -->  
+    <string name="storage_has_no_space">mèmoire pleine, libèrer espace en mèmoire</string>  
+    <!-- gionee zhouyj 2012-08-07 add for CR00664063 end -->  
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 begin -->  
+    <string name="sim1_notification_title">ton notification Sim1</string>  
+    <string name="sim1_notification_summary">ton prèdefini</string>  
+    <string name="sim2_notification_title">ton notifications Sim 2</string>  
+    <string name="sim2_notification_summary">ton prèdefini</string>  
+    <string name="notification_summary_silent">silencieux</string>  
+    <string name="loading_ringtone">Chargement du ton</string>  
+    <!-- Gionee zengxuanhui 20120809 add for CR00672106 end -->  
+    <!-- gionee gaoj 2012-8-8 added for CR00623375  start -->  
+    <string name="gn_select_regularly_send_msg">cronomètre</string>  
+    <string name="gn_dialog_title">configurer horaire</string>  
+    <string name="date_time_set">configurer</string>  
+    <string name="gn_will_send_time">sera envoyè en %1$s</string>  
+    <string name="gn_time_early">l\'horaire configurè est precedent à celui actuel , le configurer de nouveau</string>  
+    <!-- gionee gaoj 2012-8-8 added for  CR00623375 end -->  
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 start -->  
+    <string name="gn_select_attachment_geo_location">Position géographique</string>  
+    <string name="gn_location_nonet">No connection avilable，set network please！</string>  
+    <string name="gn_location_loading">chargement…attendent svp</string>  
+    <string name="gn_location_nogps_tip">GPS ne s\'ouvre pas .l\'ouvertutre du GPS pourrait augmenter la precision</string>  
+    <string name="gn_location_tip_title">cacher GPRS</string>  
+    <string name="gn_location_tip_body">vous utilisez un reseau online, en continuant l\'operation cela pourrait comporter des frais de trafic HTTP,pour plus d\infos consulter les operateurs locaux</string>  
+    <string name="gn_location_without_tip">ne plus demander</string>  
+    <string name="gn_location_know_it">infos</string>  
+    <string name="gn_location_others_poi">Point d\'intérêt</string>  
+    <string name="gn_location_error">Sorry，not loading your location</string>  
+    <string name="gn_location_no_others_poi">Il n\'y a aucun point d\'intérêt</string>  
+    <!-- gionee zhouyj 2012-08-16 add for CR00678252 end -->  
+    <!-- Gionee qinkai 2012-10-25 modified for CR00714684 start -->
+    <string name="gn_select_attachment_insert_gps_coordinates">Coordonnées GPS</string>  
+    <!-- Gionee qinkai 2012-10-25 modified for CR00714684 end -->
+    <string name="gn_attach_gps">Introduire les coordonnèes GPS</string>  
+    <string name="gn_loading_gps">Tèlèchargement coordonnèes GPS , attendre svp…</string>  
+    <string name="gn_avalid_location">Donnèes dernier fix non disponibles impossible introduire les coordonnèes.</string>  
+    <string name="gn_delivery_report_at">à</string>  
+    <string name="gn_last_export">Dernière exportation</string>  
+    <string name="gn_last_import">Dernière importation</string>  
+    <string name="gn_sending">Envoyant</string>  
+    <string name="gn_mms_enable_gps">Activer service GPS pour obtenir la position ?</string>
+</resources>

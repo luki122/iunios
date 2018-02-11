@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aurora.filemanager"
+    android:versionCode="2"
+    android:versionName="2.160325" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false"
+        android:xlargeScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 从命名下载模块文件需要 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/><!--5.0 写外置存储权限  -->
+    <!--  -->
+    <application
+        android:name="com.aurora.filemanager.FileApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:persistent="false"
+        android:theme="@style/myTheme" >
+        <activity
+            android:name="com.aurora.filemanager.FileExplorerTabActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" > <!-- adjustPan不能修改 会导致搜索框动画异常 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- APP公共入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="vnd.android.cursor.dir/image" />
+            </intent-filter>
+            <!-- APP公共入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <!-- 内部APP获取文官图片分类单张图片入口 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.SINGLE_GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <!-- 内部APP获取文官图片分类多张图片入口 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.MORE_GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+            <!-- APP公共入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <!-- APP公共入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/image" />
+            </intent-filter>
+            <!-- 相册、拨号 入口 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- 内部APP 从文件路径获取文件 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.FILE_GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.aurora.filemanager.AuroraStorageDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.privacymanage.PrivacyBroadcastReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.aurora.privacymanage.SWITCH_ACCOUNT" />
+            </intent-filter>
+            <intent-filter android:priority="1000" >
+                <action android:name="com.aurora.privacymanage.DELETE_ACCOUNT" />
+            </intent-filter>
+        </receiver>
+
+        <activity-alias
+            android:name="@string/privacy_more"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:enabled="true"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:targetActivity="com.aurora.filemanager.FileExplorerTabActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+
+            <!-- 内部APP获取文官图片分类多张图片入口 添加隐私图片 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.MORE_PRI_GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <!-- 内部APP获取文官视频分类多视频入口  添加隐私视频 -->
+            <intent-filter>
+                <action android:name="com.aurora.filemanager.MORE_VIDEO_GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="@string/activity_picture"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:enabled="true"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/pri_picture"
+            android:label="@string/label_picture"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:targetActivity="com.aurora.filemanager.FileExplorerTabActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity-alias>
+        <activity-alias
+            android:name="@string/activity_video"
+            android:enabled="true"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/pri_video"
+            android:label="@string/label_video"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:targetActivity="com.aurora.filemanager.FileExplorerTabActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity-alias>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5594970467e58ee91c003d6f" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.gionee.mms.importexport.GnImageTextButton
+            android:id="@+id/exportBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/exportBtn_height"
+            android:layout_marginLeft="@dimen/exportBtn_magin"
+            android:layout_marginRight="@dimen/exportBtn_magin"
+            android:layout_marginTop="@dimen/exportBtn_top"
+            android:gravity="center"
+            android:text="@string/gn_export_btn_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.gionee.mms.importexport.GnImageTextButton
+            android:id="@+id/importBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/exportBtn_height"
+            android:layout_marginLeft="@dimen/exportBtn_magin"
+            android:layout_marginRight="@dimen/exportBtn_magin"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:text="@string/gn_import_btn_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</LinearLayout>

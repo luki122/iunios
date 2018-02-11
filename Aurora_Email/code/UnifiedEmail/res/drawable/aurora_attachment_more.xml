@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/aurora_attachment_more_press" />
+    <item android:state_focused="true" android:drawable="@drawable/aurora_attachment_more_press" />
+    <item android:drawable="@drawable/aurora_attachment_more_normal" />
+</selector>

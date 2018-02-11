@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- gionee gaoj 2012-5-10 added for GIUI4.0 start -->
+
+<resources>
+    <color name="pinned_header_background">#ff202020</color>
+    <color name="gn_color_translucent">#00FFFFFF</color>
+    <color name="gn_color_black">#FF000000</color>
+    <color name="gn_color_white">#FFFFFFFF</color>
+    <color name="gn_color_gray">#FF303030</color>
+    <color name="gn_hint_light">#808080</color>
+    <color name="gn_dark_color_bg">#66ffffff</color>
+
+    <!--gionee gaoj 2013-3-11 added for CR00782858 start -->    
+    <color name="widget_sender_text_color_read">#555555</color>
+    <color name="widget_sender_text_color_unread">#333333</color>
+    <color name="widget_subject_text_color_read">#777777</color>
+    <color name="widget_subject_text_color_unread">#555555</color>
+    <!--gionee gaoj 2013-3-11 added for CR00782858 end -->
+    
+    <!--gionee gaoj 2013-3-21 added for CR00787217 start  -->
+    <color name="gn_title_name_color">#ffffffff</color>
+    
+    <color name="gn_msg_body_send_color_white">#ffffffff</color>
+    <color name="gn_msg_body_recv_color_white">#ffffffff</color>
+    <color name="gn_msg_body_faile_color_white">#ffffffff</color>
+    <color name="gn_msg_simcard_color_white">#ffeeeeee</color>
+    <color name="gn_msg_repeat_color_white">#ffeeeeee</color>
+    <color name="gn_msg_text_count_color_white">#ffeeeeee</color>
+    
+    <color name="gn_msg_body_send_color_dark">#ff444444</color>
+    <color name="gn_msg_body_recv_color_dark">#ff444444</color>
+    <color name="gn_msg_body_faile_color_dark">#ffadadad</color>
+    <color name="gn_msg_simcard_color_dark">#ff666666</color>
+    <color name="gn_msg_repeat_color_dark">#ff666666</color>
+    <color name="gn_msg_text_count_color_dark">#ff666666</color>
+    
+    <color name="gn_empty_text_color">#66444444</color>
+    <color name="gn_sim_select_view_color">#555555</color>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <color name="gn_tab_textcolor">#ff333333</color>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <!-- gionee gaoj 2013-3-21 added for CR00787217 end -->
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 start -->
+    <color name="alphbetIndexView_prompt_section_light">#FF666666</color>
+    <color name="alphbetIndexView_enable_section_light">#FF888888</color>
+    <color name="alphbetIndexView_disable_section_light">#FFCCCCCC</color>
+    <color name="alphbetIndexView_showing_section_light">#FFFF9000</color>
+    <color name="alphbetIndexView_prompt_section_dark">#FFFF9000</color>
+    <color name="alphbetIndexView_enable_section_dark">#FF999999</color>
+    <color name="alphbetIndexView_disable_section_dark">#FF444444</color>
+    <color name="alphbetIndexView_showing_section_dark">#FFFF9000</color>
+    <!-- Gionee <zhouyj> <2013-04-17> add for CR00798863 end -->
+    <!-- Gionee <zhouyj> <2013-05-23> add for CR00799376 begin -->
+    <color name="gn_primary_text_light">#ff000000</color>
+    <color name="gn_holo_blue_dark">#ff0099cc</color>
+    <color name="gn_gray_color">#ff888888</color>
+    <!-- Gionee <zhouyj> <2013-05-23> add for CR00799376 end -->
+
+    <!--Gionee <gaoj> <2013-05-28> add for CR00817770 begin  -->
+    <color name="gn_hide_encry_pop_text_color">#222222</color>
+    <!--Gionee <gaoj> <2013-05-28> add for CR00817770 end  -->
+    
+    <!--gionee <gaoj> <2013-06-19> add for CR00826240 begin  -->
+    <color name="gn_widget_from_color">#ffffff</color>
+    <color name="gn_widget_subject_color">#ccffffff</color>
+    <color name="gn_widget_text_shadow_color">#20000000</color>
+    <!--gionee <gaoj> <2013-06-19> add for CR00826240 end  -->
+</resources>

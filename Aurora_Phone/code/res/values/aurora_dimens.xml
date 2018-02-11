@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="aurora_dtmf_dialpad_text_margin_top">70dp</dimen>
+    <dimen name="aurora_callcard_padding_top">0dp</dimen>
+
+    <dimen name="aurora_point_radius_touch">35.3dp</dimen>
+    <dimen name="aurora_point_touch_gap">13.3dp</dimen>
+    <dimen name="aurora_point_radius">7dp</dimen>
+    <dimen name="aurora_glowpadview_inner_radius">30.75dip</dimen>
+    <dimen name="aurora_glowpadview_target_placement_radius">106dip</dimen>
+    <dimen name="aurora_glowpadview_out_ringer_diameter">212dip</dimen>
+    <dimen name="aurora_glowpadview_target_radius_differ">10dip</dimen>
+    <dimen name="incoming_call_photo_height_real_v2">100dp</dimen>
+    <dimen name="incoming_call_photo_height_v2">128dp</dimen>
+    <dimen name="incoming_call_photo_top_magin_v2">31dp</dimen>
+    <dimen name="aurora_call_name_text_size">26sp</dimen>
+    <dimen name="aurora_call_area_text_size">14sp</dimen>
+    <dimen name="glowpadview_glow_radius">35dip</dimen>
+    <dimen name="glowpadview_snap_margin">40dp</dimen>
+    <dimen name="name_move_distance_v2">-64dp</dimen>
+    <dimen name="photo_move_distance_v2">-28.5dp</dimen>
+
+    <integer name="aurora_animation_duration">300</integer>
+
+    <dimen name="aurora_button_margin_v2">58dp</dimen>
+    <dimen name="aurora_button_text_size_v2">12sp</dimen>
+    <dimen name="aurora_handle_item_radius">36dp</dimen>
+    <dimen name="aurora_handle_point_radius">4dp</dimen>
+    <dimen name="aurora_dtmf_button_margin">50.875dp</dimen>
+    <dimen name="aurora_dtmf_button_margin_bottom">16.25dp</dimen>
+
+    <dimen name="aurora_call_info_margin">15dp</dimen>
+    
+  <dimen name="aurora_glow_anim_internal_ring_radius_start">19dp</dimen>
+   <dimen name="aurora_glow_anim_internal_ring_radius_end">46.3dp</dimen>
+  <dimen name="aurora_glow_anim_out_ring_radius_start">26.7dp</dimen>
+   <dimen name="aurora_glow_anim_out_ring_radius_end">51dp</dimen>
+   <dimen name="aurora_ringing_target_move_1">26.7dp</dimen>
+   <dimen name="aurora_ringing_target_move_2">16.7dp</dimen>
+      <dimen name="aurora_point_move">10dp</dimen>
+    <dimen name="incallbutton_move_when_show_dtmf">33.3dp</dimen>
+    <dimen name="time_movex_when_show_dtmf">140dp</dimen>
+    <dimen name="time_movey_when_show_dtmf">316dp</dimen>
+ 
+     <dimen name="dialpad_move_when_show_dtmf">15.3dp</dimen>
+     <integer name="aurora_animation_duration_160">160</integer>
+       <integer name="aurora_animation_duration_240">240</integer>
+         <integer name="aurora_animation_duration_360">360</integer>
+     <integer name="aurora_animation_duration_400">400</integer>
+     <integer name="aurora_animation_duration_500">500</integer>
+     
+     <dimen name="float_icon_width">23.3dp</dimen>
+     <dimen name="float_margin_top">6dp</dimen>
+     <dimen name="dtmf_time_size">14sp</dimen>
+     
+     <dimen name="first_callerinfo_top">30dip</dimen>    
+     <dimen name="second_callerinfo_top">102dip</dimen>
+     <dimen name="incall_button_margin">44.6dip</dimen>
+     <dimen name="incall_button_height">48dip</dimen>
+     <dimen name="noti_icon_margin_left">12dip</dimen>
+     <dimen name="noti_icon_margin_right">14dip</dimen>
+     <dimen name="noti_icon_width">38dip</dimen>
+</resources>

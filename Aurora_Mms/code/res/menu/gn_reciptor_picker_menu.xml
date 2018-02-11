@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-10 added for GIUI4.1 start
+ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/gn_select_done"
+        android:title="@string/done"
+        android:showAsAction="always"/>
+</menu>

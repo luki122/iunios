@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearby_shop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/nearby_shop_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nearby_shop_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/nearby_shop_top_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:orientation="horizontal" >
+				<!-- android:layout_marginTop="9dp" -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="left|center"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/nearby_shop_place_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="12"
+                        android:singleLine="true"
+                        android:text="@string/vs_myaddress"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nearby_shop_type_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#ff000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                
+                <Spinner 
+                    android:id="@+id/vs_spinner"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:prompt="@string/vs_pricemin"
+                    android:spinnerMode="dropdown"
+                    android:dropDownWidth="match_parent"
+                    android:background="@drawable/vs_nearby_shop_spinner_selector"
+                    android:popupBackground="@color/vs_transparent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/nearby_shop_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp" >
+    </LinearLayout>
+
+   
+	<!-- 更多... -->
+      <LinearLayout
+          android:id="@+id/nearby_shop_search_more_linearlayout"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/vs_search_more_bg_style"
+          android:orientation="vertical">
+        
+           <TextView
+               android:id="@+id/nearby_shop_search_more_textview"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/vs_mores"
+               android:textColor="#ff767474"
+               android:textSize="15sp"
+               android:layout_marginTop="14dp" 
+               android:layout_marginBottom="4dp"
+               android:gravity="center"/>
+<!--            android:layout_marginTop="16dp" -->
+<!-- android:layout_marginBottom="11dp" -->
+      </LinearLayout>
+
+
+</LinearLayout>

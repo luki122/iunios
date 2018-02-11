@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/citydateviewlinear"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView 
+        android:id="@+id/citytextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/citynamesize"
+        android:textColor="@color/citynamecolor"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/loading"/>
+    <TextView 
+        android:id="@+id/dateandtimetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dateandtimesize"
+        android:textColor="@color/dateandtimecolor"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:text="@string/inactive_network"
+        />
+</LinearLayout>

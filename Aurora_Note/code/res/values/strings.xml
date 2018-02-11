@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Note</string>
+    <string name="quick_record_entry_name">Recorder</string>
+    <string name="note_reminder">Memo Reminder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="note_channel">official</string>
+
+    <string name="image_not_found">Image not found</string>
+    <string name="click_again_to_exit">Click again to exit</string>
+    <string name="toast_no_network">No network. Please turn on the network connection.</string>
+    <string name="toast_network_error">Network error. Please try again later.</string>
+    <string name="toast_no_new_version">You have the latest updates.</string>
+    <string name="toast_weibo_too_long">The content exceeds the limit of 140 characters</string>
+
+    <!-- 图片裁剪 -->
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+
+    <!-- 备忘管理 -->
+    <string name="note_manager">Management</string>
+    <string name="note_backup">Backups</string>
+    <string name="note_backup_none">No backup data</string>
+    <string name="note_backup_to">Backup to</string>
+    <string name="note_backup_doing">Backing up, please wait&#8230;</string>
+    <string name="note_backup_success">Successfully backup to the phone memory</string>
+    <string name="note_backup_failed">Backup failed. Please try again</string>
+    <string name="note_restore">Restore</string>
+    <string name="note_restore_none">No restoration data</string>
+    <string name="note_restore_choose">Choose restoration file</string>
+    <string name="note_restore_doing">Restoring, please wait&#8230;</string>
+    <string name="note_restore_success">Successfully restored</string>
+    <string name="note_restore_failed">Restoration failed. Please try again</string>
+    <string name="note_about">About IUNI Memo</string>
+    <string name="note_share">Share with friends</string>
+    <string name="note_share_weibo">Share on Weibo</string>
+    <string name="note_share_wx_timeline">Share on the Moment</string>
+    <string name="note_share_wx_session">Share with WeChat friends</string>
+    <string name="note_share_weibo_content">I\'m using IUNI Memo, the most elegant tool for record. It is easy to use with fine graphic layout. You can share with friends the happy memories. Click http://www.iunios.com/memo.shtml to download</string>
+    <string name="note_share_wx_title">It may be what you want</string>
+    <string name="note_share_wx_summary">Featuring ease of use, diversity and fine graphic layout, it can help you share with friends the happy memories.</string>
+    <string name="note_share_to">Share to:</string>
+    <string name="note_share_send">Send</string>
+    <string name="note_check_update">Check for updates</string>
+    <string name="note_know_more">Learn more about IUNI</string>
+    <string name="note_copyright_notice">IUNI. All Rights Reserved</string>
+    <string name="note_copyright_notice_2">Copyright © 2013&#8211;2015 IUNI. All Rights Reserved</string>
+    <string name="note_check_doing">Checking for update, please wait&#8230;</string>
+    <string name="note_hava_new_version">Find updates.</string>
+    <string name="note_express">To him/her</string>
+    <string name="note_auto_indent">Auto indent</string>
+    <string name="note_change_paper">Change Paper</string>
+
+    <!-- 更新版本 -->
+    <string name="dialog_update_title">Updates</string>
+    <string name="dialog_update_ok">Update now</string>
+
+    <!-- 下载推荐 -->
+    <string name="dialog_recommend_title">Recommendation</string>
+    <string name="dialog_recommend_message">IUNI Memo, an awesome tool, right?\nThere are lots of applications for you in IUNI OS. Experiencing IUNI style just needs two minutes.</string>
+    <string name="dialog_recommend_choice_now">Try it now</string>
+    <string name="dialog_recommend_choice_latter">Try it later</string>
+    <string name="dialog_recommend_choice_nolonger">Never</string>
+
+    <string name="preset_chunjie_content">"To my friends:\nYears of memories may fade,\nbut not the laughter we left.\nWish you a happy New Year as well as a happy life.\n(Write down what you want to say to him/her and click the &quot;Share&quot; button)\n\n                                                                       XXX"</string>
+    <string name="preset_qingrenjie_content">"To him/her:\nOnce upon a time,\nwe were shining under the same sky,\nand experiencing ups and downs \nin the same journey.\n\nNow, we are letting our own light shine together, \nand striving for the same goal \nand the same dream.\n\nI hope every day to look into your eyes, twinkling with happiness.\n(Write down what you want to say to him/her and click the &quot;Share&quot; button)\n\n                                                                       XXX"</string>
+
+    <!-- 预置备忘录 -->
+    <string name="note_first">Welcome to IUNI Note.\nHere,\nevery text you recorded will drive us to pursue perfection.\nEvery photo you shoot, every piece of audio and video you record will be the most wonderful parts of IUNI Note.\nPerhaps, we cannot keep time for you,\nbut we hope to freeze every valuable moment.</string>
+    <string name="note_second">"                                              &#8212;&#8212;IUNI OS team"</string>
+    <string name="note_third">Tip: You can view the attachments of memos in File Manager.\n\nPath: Phone Storage/Internal Storage/Note/. You can also view them directly in file sorting.</string>
+
+    <!-- 海外版预置文本 -->
+    <string name="note_first_2">Welcome to Note.\nHere,\nevery text you recorded will drive us to pursue perfection.\nEvery photo you shoot, every piece of audio and video you record will be the most wonderful parts of Note.\nPerhaps, we cannot keep time for you,\nbut we hope to freeze every valuable moment.</string>
+
+    <!-- 预置标签 -->
+    <string name="label_meetting">Works</string>
+    <string name="label_life">Life</string>
+    <string name="label_idea">Big ideas</string>
+
+    <!-- 标签 -->
+    <string name="note_label">Tag</string>
+    <string name="note_add_label">New Tag</string>
+    <string name="note_add_label_notice">Tag with the same name already exists. Add a different one.</string>
+    <string name="note_choose_label_notice">Allows to choose up to two tags</string>
+    <string name="note_delete_label_notice">Are you sure to remove this tag?</string>
+    <string name="note_modify_label_notice">Tag with the same name already exists. Try again.</string>
+    <string name="dialog_delete_label_title">Remove this tag?</string>
+    <string name="dialog_delete_label_message">Removing a tag will not delete any memo.</string>
+
+    <!-- 备忘录主界面 -->
+    <string name="note_title">Memo</string>
+    <string name="note_searchview_hint_text">Search Memo</string>
+    <string name="no_notes_hint">No memo</string>
+    <string name="desc_having_sound">Contains audio files</string>
+    <string name="desc_image_border">Image Frame</string>
+    <string name="desc_image_content">Image Content</string>
+    <string name="desc_video_play_icon">Playback Icon</string>
+    <string name="desc_video_content">Video Content</string>
+    <string name="title_num_of_images">[<xliff:g id="NUM_OF_IMAGE">%s</xliff:g> images]</string>
+    <string name="title_num_of_videos">[<xliff:g id="NUM_OF_VIDEO">%s</xliff:g> videos]</string>
+    <string name="title_num_of_sounds">[<xliff:g id="NUM_OF_SOUND">%s</xliff:g> audios]</string>
+    <string name="no_match_note">No Match</string>
+    <string name="dialog_delete_note_title">Delete this memo?</string>
+    <string name="dialog_delete_note_message">Delete this memo?</string>
+
+    <!-- 新建备忘录 -->
+    <string name="menu_tab_edit">Edit Tag</string>
+    <string name="menu_tab_delete">Remove Tag</string>
+    <string name="new_note">New Memo</string>
+    <string name="note_information">Memo Details</string>
+    <string name="new_note_pic_num">Allows to insert up to 10 images</string>
+    <string name="new_note_video_num">Allows to insert up to 10 videos</string>
+    <string name="new_note_sound_num">Allows to insert up to 10 audios</string>
+    <string name="new_note_attachment_count_limit">Allows to insert up to 30 attachments</string>
+    <string name="dialog_delete_image_title">Delete this image?</string>
+    <string name="dialog_delete_image_message">Delete this image?</string>
+    <string name="dialog_delete_audio_title">Delete this audio?</string>
+    <string name="dialog_delete_audio_message">Delete this audio?</string>
+    <string name="dialog_delete_video_title">Delete this video?</string>
+    <string name="dialog_delete_video_message">Delete this video?</string>
+    <string name="new_note_text_limit">Word count limit exceeded</string>
+    <string name="new_note_on_loading">Loading&#8230;</string>
+    <string name="new_note_gen_picture">Generating image, please wait&#8230;</string>
+    <string name="new_note_add_reminder">Add Reminder</string>
+    <string name="new_note_add_label">Add Tag</string>
+    <string name="new_note_gen_pic_error_content_too_large">Too much content. Failed to generate image.</string>
+    <string name="new_note_gen_pic_error_unknow">Failed to generate image</string>
+    <string name="first_use_quick_record_tip_1">Quick recording will be saved here in memo, you can add some description.</string>
+    <string name="first_use_quick_record_tip_2">If you need to create more recordings, please press record button at the bottom.</string>
+    <string name="first_use_quick_record_tip_3">Please open memo directly if you want to relisten the recordings later.</string>
+
+    <!-- 生成图片预览界面 -->
+    <string name="note_gen_picture">Share</string>
+    <string name="share_title">Share</string>
+    <string name="save_to_gallery_success">Image successfully saved to the album</string>   
+    <string name="save_to_gallery_failed">Failed to save image to the album</string>
+    <string name="sdcard_is_not_available">SD card available</string>
+
+    <!-- 图片预览界面 -->
+    <string name="load_picture_error_io">Failed to load image</string>
+    <string name="load_picture_error_network">Unable to download due to network problem</string>
+    <string name="load_picture_error_decoding">Image cannot be displayed</string>
+    <string name="load_picture_error_out_of_memory">Image is too large to display</string>
+    <string name="load_picture_error_unknow">Unknown error</string>
+
+    <!-- 播放录音界面 -->
+    <string name="play_error">Failed to play</string>
+    <string name="play_error_file_not_exist">File does not exist</string>
+    <string name="play_error_parse_file_failed">Failed to Parse file</string>
+    <string name="play_error_invalid_record_file">Invalid recording</string>
+
+    <string name="play_file_name_label">Playing: </string>
+    <string name="play_total_time_label">Duration: </string>
+
+    <string name="cancel_record_title">Abandon Recording?</string>
+    <string name="cancel_record_msg">Recording will not be saved</string>
+    <string name="record_notification_title">Recording</string>
+    <string name="record_notification_content">Tap to back to record</string>
+
+    <!-- 添加或编辑备忘提醒时间界面 -->
+    <string name="delete_confirm_title">Delete memo reminder?</string>
+    <string name="delete_confirm_message">Are you sure to delete memo reminder?</string>
+    <string name="delete_confirm_ok_btn">Abandon</string>
+    <string name="delete_confirm_cancel_btn">Cancel</string>
+
+    <!-- 新浪微博分享界面 -->
+    <string name="share_sina_weibo_title">Share to Sina Weibo</string>
+    <string name="share_sina_weibo_right_menu_item">Send</string>
+    <string name="share_sina_weibo_menu_unbind">Unlink Account(%1$s)</string>
+    <string name="share_sina_weibo_hint">Enter text</string>
+    <string name="share_sina_weibo_sending">Posting&#8230;</string>
+    <string name="share_sina_weibo_unbind_success">Account unlinked successfully</string>
+    <string name="share_sina_weibo_unbind_error">Account linking failed, please try again</string>
+    <string name="share_sina_weibo_authorize_invalid_token">Authorization failed, please try again</string>
+    <string name="share_sina_weibo_authorize_cancel">Authorization canceled</string>
+    <string name="share_sina_weibo_no_network">Enable network connection first</string>
+    <string name="share_sina_weibo_authorize_expire">License has expired, please re-authorization</string>
+    <string name="share_sina_weibo_send_success">Microblog sent successfully</string>
+    <string name="share_sina_weibo_send_ongoing">Still posting microblog&#8230;</string>
+    <string name="share_sina_weibo_send_failed">Posting microblog failed, please try again</string>
+    <string name="share_sina_weibo_default_content">Share image</string>
+    <string name="share_sina_weibo_is_sending">Still posting previous microblog, please wait&#8230;</string>
+    <string name="share_sina_weibo_get_user_info">Retrieving user information&#8230;</string>
+    <string name="share_sina_weibo_get_user_info_failed">Failed to retrieve user information</string>
+    <string name="share_sina_weibo_unbind_ongoing">Unlinking account, please wait&#8230;</string>
+    <string name="share_sina_weibo_image_too_large">Image size exceeds the limit, unable to post</string>
+
+    <!-- 微信分享反馈信息 -->
+    <string name="errcode_success">Send success</string>
+    <string name="errcode_cancel">Send a cancellation</string>
+    <string name="errcode_deny">Send rejected</string>
+    <string name="errcode_unknown">Send a return</string>
+
+    <!-- 共用的出错提示消息 -->
+    <string name="memory_is_not_enough">Image size is too large, please try again</string>
+    <string name="decode_bitmap_error">Failed to load image</string>
+    <string name="prepare_record_error">Recording preparation error, please try again</string>
+
+    <!-- 检测SD -->
+    <string name="sd_space_not_enough">Running out of space on SD card. Clean up before performing this operation</string>
+    <string name="sdcard_not_mounted">SD card is not present. Insert the SD card.</string>
+
+    <string name="record_save">Save</string>
+    <string name="record_close">Close</string>
+    <string name="play_start_time">00:00:00</string>
+
+    <!-- menu -->
+    <string name="menu_add_reminder">Add Reminder</string>
+    <string name="menu_mod_reminder">Modify Reminder</string>
+    <string name="menu_add_label">Add Tag</string>
+    <string name="menu_mod_label">Modify Tag</string>
+    <string name="menu_gen_picture">Share</string>
+    <string name="menu_take_photo">Photograph</string>
+    <string name="menu_take_video">Record</string>
+    <string name="menu_select_photo">Select Image</string>
+    <string name="menu_select_video">Select Video</string>
+    <string name="menu_remove_image">Remove Image</string>
+    <string name="menu_view_image">View Image</string>
+    <string name="menu_crop_image">Crop Image</string>
+
+    <!-- 下拉更新 -->
+    <string name="pull_to_refresh_pull_label">Pull to refresh</string>
+    <string name="pull_to_refresh_release_label">Release to refresh</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="pull_to_refresh_update">Updated:</string>
+    <string name="all_loaded">All data is loaded</string>
+    <string name="pull_to_rerefresh">Pull to refresh again</string>
+
+    <string name="enter_note_hit">Enter memo</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="delete_reminder">Delete Reminder</string>
+    <string name="search_by_label">View by tag</string>
+    <string name="note_label_separate">,</string>
+
+    <!-- Added on 2015-03-30 begin -->
+    <string name="share_weibo">Weibo</string>
+    <string name="share_weixin_friend">WeChat friends</string>
+    <string name="share_weixin">Moment</string>
+    <string name="share_qq_friend">QQ friends</string>
+    <string name="share_qq_zone">QQ Zone</string>
+    <string name="share_more">More</string>
+    <string name="share_activity_title">Share</string>
+    <!-- Added on 2015-03-30 end -->
+
+</resources>

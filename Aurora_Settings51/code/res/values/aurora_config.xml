@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.config begin -->
+    <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_voice_capable">true</bool>
+    <bool name="config_intrusiveNotificationLed">false</bool>
+    <bool name="config_dreamsEnabledByDefault">true</bool>
+    <bool name="config_dreamsActivatedOnDockByDefault">true</bool>
+    <bool name="config_dreamsActivatedOnSleepByDefault">false</bool>
+    <bool name="config_wimaxEnabled">false</bool>
+    <bool name="config_cellBroadcastAppLinks">false</bool>
+
+    <!-- If the mobile hotspot feature requires provisioning, a package name and class name
+        can be provided to launch a supported application that provisions the devices.
+
+        Example Usage:
+
+        String[] appDetails = getStringArray(R.array.config_mobile_hotspot_provision_app);
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName(appDetails[0], appDetails[1]);
+        startActivityForResult(intent, 0);
+
+        public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+            super.onActivityResult(requestCode, resultCode, intent);
+            if (requestCode == 0) {
+                if (resultCode == Activity.RESULT_OK) {
+                    //Mobile hotspot provisioning successful
+                } else {
+                    //Mobile hotspot provisioning failed
+                }
+            }
+
+        See src/com/android/settings/TetherSettings.java for more details.
+        -->
+    <!-- The first element is the package name and the second element is the class name
+         of the provisioning app -->
+    <string-array translatable="false" name="config_mobile_hotspot_provision_app">
+    <!--
+        <item>com.example.provisioning</item>
+        <item>com.example.provisioning.Activity</item>
+    -->
+    </string-array>
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.config end -->
+</resources>

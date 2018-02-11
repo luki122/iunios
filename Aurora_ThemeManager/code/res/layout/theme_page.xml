@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="false"
+        android:divider="@null"
+        android:cacheColorHint="#ff0000"
+        android:paddingLeft="@dimen/theme_main_padding"
+        android:paddingRight="@dimen/theme_main_padding" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/has_not_network_layout" />
+    <!-- <LinearLayout
+        android:id="@+id/no_network_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <Button
+            android:id="@+id/btn_no_network"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_net_work" />
+    </LinearLayout>
+ -->
+</FrameLayout>

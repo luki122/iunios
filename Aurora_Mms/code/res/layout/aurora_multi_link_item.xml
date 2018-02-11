@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-10-14 added for auror's new feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/linkname"
+        android:textColor="@color/aurora_menu_item_title_change_color"
+        android:text="@string/aurora_created_contact"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@color/aurora_menu_item_select"
+        android:layout_width="match_parent"
+        android:layout_height="47dip"/>
+</LinearLayout>

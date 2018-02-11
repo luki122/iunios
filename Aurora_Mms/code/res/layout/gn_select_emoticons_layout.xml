@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+ <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.android.mms">
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <com.gionee.mms.slide.GnIconTextGridPageSlideShower
+            android:id="@+id/gn_slide_category_emoticons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                    >
+                    <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+                    <com.gionee.mms.slide.GnViewSlideIndicator
+                            android:id="@+id/gn_slide_indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="0dip"
+                            android:layout_marginBottom="18dip"
+                            android:layout_alignParentBottom="true"
+                            android:visibility="gone"
+                            />
+                         <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+                        
+                    <com.gionee.mms.slide.GnViewSlideShower
+                            android:id="@+id/gn_slide_shower"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/gn_slide_indicator"
+                                    />
+                </RelativeLayout>
+            </com.gionee.mms.slide.GnIconTextGridPageSlideShower>
+    </FrameLayout> 
+</LinearLayout>

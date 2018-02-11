@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- android:layout_height="@dimen/call_log_list_item_height" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_two_line_height"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/listitem_double_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/double_list_item_name_text_style_with_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/aurora_sim_icon"
+                android:layout_width="@dimen/aurora_sim_icon_width"
+                android:layout_height="@dimen/aurora_sim_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/call_log_count_margin_left"
+                android:src="@drawable/svg_dial_card1" />
+
+            <ImageView
+                android:id="@+id/gn_phone_record_play_icon"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="@dimen/call_log_count_margin_left"
+                android:src="@drawable/gn_play_call_record_light" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/number"
+            style="@style/double_list_item_data_text_style_with_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/listitem_double_margin_bottom"
+             />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/quickcontact_entry_header_text_color"
+        android:textSize="@dimen/calllog_duration_text_size" />
+
+        <ImageView
+            android:id="@+id/call_type_icon"
+            android:layout_width="8dp"
+            android:layout_height="10dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/duration"
+            android:layout_toStartOf="@+id/text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/h_diver" />
+
+</LinearLayout>

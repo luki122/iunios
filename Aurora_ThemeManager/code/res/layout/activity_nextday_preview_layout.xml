@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/nextday_wallpaper_preview"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    
+    <ImageView 
+        android:id="@+id/mask_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:visibility="gone"/>
+    
+    <ProgressBar 
+        android:id="@+id/loading_progressbar"
+        style="@android:style/Widget.ProgressBar.Large.Inverse"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    
+    <RelativeLayout 
+        android:id="@+id/nextday_wallpaper_preview_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <include
+        	layout="@layout/nextday_time_layout" />
+        
+        <RelativeLayout 
+            android:id="@+id/nextday_wallpaper_preview_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone">
+            <ImageView 
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/nextday_preview_margin"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/nextday_vendor_logo"/>
+            <TextView 
+                android:id="@+id/comment_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"/>
+            <!-- <TextView 
+                android:id="@+id/author_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/logo"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"/>
+            <TextView 
+                android:id="@+id/author_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/author_name"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"/> -->
+            <TextView 
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="@dimen/nextday_preview_margin"
+                android:paddingLeft="@dimen/nextday_preview_margin"
+                android:paddingRight="@dimen/nextday_preview_margin"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="#50000000"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/to_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/nextday_wallpaper_preview_back_style"
+        android:visibility="gone"/>
+    
+    <RelativeLayout 
+        android:id="@+id/nextday_wallpaper_preview_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <LinearLayout 
+            android:id="@+id/control_area"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:background="#80000000">
+            <aurora.widget.AuroraAnimationImageView 
+                android:id="@+id/to_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/nextday_wallpaper_preview_save_style"/>
+            <aurora.widget.AuroraAnimationImageView 
+                android:id="@+id/to_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/nextday_wallpaper_preview_set_style"/>
+            <aurora.widget.AuroraAnimationImageView 
+                android:id="@+id/to_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/nextday_wallpaper_preview_share_style"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/control_area"
+            android:gravity="center"
+            android:background="#80000000">
+            <LinearLayout 
+                android:id="@+id/to_check_layout"
+                android:layout_width="55dp"
+                android:layout_height="match_parent">
+                <CheckBox 
+	                android:id="@+id/to_check"
+	                style="@style/custom_checkbox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:gravity="center"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginLeft="28dp"
+	                android:checked="false"/>
+            </LinearLayout>
+            <!-- <CheckBox 
+                android:id="@+id/to_check"
+                style="@style/custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:checked="false"/> -->
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="@string/nextday_wallpaper_preview_control_check_text"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

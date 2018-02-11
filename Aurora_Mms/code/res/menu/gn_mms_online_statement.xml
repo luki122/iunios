@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/refresh_menu"
+        android:title="@string/gn_refresh_menu"
+        android:showAsAction="always"
+        />
+    <item 
+        android:id="@+id/statement"
+        android:title="@string/gn_statement"
+        android:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/record_activity_height"
+    android:background="@drawable/record_activity_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView style="@style/record_activity_text"
+        android:id="@+id/duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/record_time_padding_left"
+        android:paddingRight="@dimen/record_time_padding_right"
+        android:text="@string/play_start_time" />
+
+    <View
+        android:id="@+id/animation"
+        android:layout_width="0dip"
+        android:layout_height="@dimen/record_animation_view_height"
+        android:layout_weight="1" />
+
+    <TextView style="@style/record_activity_text"
+        android:id="@+id/complete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingLeft="@dimen/record_complete_padding_left"
+        android:paddingRight="@dimen/record_complete_padding_right"
+        android:gravity="center_vertical"
+        android:textColor="@color/play_complete_text"
+        android:text="@string/record_save" />
+
+</LinearLayout>

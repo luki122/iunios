@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/language_bg_color" >
+
+    <TextView
+        android:id="@+id/tv_wel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:gravity="center"
+        android:text="@string/language_wel"
+        android:textColor="@color/language_font_color"
+        android:textSize="39sp" />
+
+   <LinearLayout
+        android:id="@+id/ll_wv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wel"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp" >
+
+  <com.aurora.setupwizard.view.LocalePicker
+      android:id="@+id/locale_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:minHeight="100dp" />
+
+     
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/ll_wv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        style="@style/next_style"
+         />
+
+    <LinearLayout
+        android:id="@+id/ll_exigency_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/enxigency_call_bg"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/exigency_call"
+            android:textColor="@color/language_font_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

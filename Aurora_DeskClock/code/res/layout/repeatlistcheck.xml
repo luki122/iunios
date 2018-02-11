@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/popupback" >
+
+     <Button 
+         android:id="@+id/onlyonce"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/setlistheight"
+		 android:gravity="center"
+         android:text="@string/onlyonce"
+         android:textSize="18sp"
+         android:textColor="@color/repeatcolor1"
+         android:background="#00000000"/>
+     <Button 
+         android:id="@+id/everyday"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/setlistheight"
+		 android:gravity="center"
+         android:text="@string/every_day"
+         android:textSize="18sp"
+         android:textColor="@color/repeatcolor1"
+         android:background="#00000000"/>
+     <Button 
+         android:id="@+id/weekday"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/setlistheight"
+		 android:gravity="center"
+         android:text="@string/weekday"
+         android:textSize="18sp"
+         android:textColor="@color/repeatcolor1"
+         android:background="#00000000"/>
+     <Button 
+         android:id="@+id/officialweekday"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/setlistheight"
+		 android:gravity="center"
+         android:text="@string/officialweekday"
+         android:textSize="18sp"
+         android:textColor="@color/repeatcolor1"
+         android:background="#00000000"/>
+     <Button 
+         android:id="@+id/selfdefine"
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/setlistheight"
+		 android:gravity="center"
+         android:text="@string/selfdefine"
+         android:textSize="18sp"
+         android:textColor="@color/repeatcolor1"
+         android:background="#00000000"/>
+
+</LinearLayout>

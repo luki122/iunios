@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="top">0dp</dimen>
+    <dimen name="offset_x_base">17dp</dimen>
+    <dimen name="offset_x">0dp</dimen>
+    <dimen name="offset_y">0dp</dimen>
+    <dimen name="date_marginTop">2dp</dimen>
+    <dimen name="app_marginBottom">103dp</dimen>
+    
+    
+    <dimen name="plugin_date_view_font_time">74sp</dimen>
+    <dimen name="plugin_date_view_font_date">16sp</dimen>
+    <dimen name="quit_text_size">11sp</dimen>
+    <dimen name="plugin_date_view_font_date_margin_left">10dp</dimen>
+    <dimen name="plugin_date_view_font_time_margin_left">0dp</dimen>
+    
+    <dimen name="app_icon_margin_left">43dp</dimen>
+    <dimen name="app_icon_margin_left1">74dp</dimen>
+    <dimen name="app_icon_margin_up">40dp</dimen>
+    <dimen name="app_icon_margin_up1">60dp</dimen>
+	
+    <dimen name="date_marginLeft">68dp</dimen>
+    <dimen name="exit_view_margin_top">5dp</dimen>
+    <dimen name="time_textview_margin_top">78dp</dimen>
+    <dimen name="hours_num_margin_top">1dp</dimen>
+    <dimen name="mins_num_margin_top">1dp</dimen>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+    <dimen name="plugin_date_view_font_am_pm_zh">14sp</dimen>
+    <dimen name="plugin_date_view_font_am_pm_en">48dp</dimen>
+    <dimen name="num_size">14dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="colon_margin">8dp</dimen>
+    <dimen name="icon_left">40dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="quit_margin_bt">14dp</dimen>
+    <dimen name="battery_text_size">12sp</dimen>
+    <dimen name="batter_text_bottom">20dp</dimen>
+    <dimen name="hint_num_size">10sp</dimen>
+    <dimen name="date_view_marginTop">6dp</dimen>
+    <dimen name="am_pm_left">8dp</dimen>
+    <dimen name="quit_icon_left">12dp</dimen>
+    <dimen name="quit_ly_top">2dp</dimen>
+    <dimen name="quit_ly_right">16dp</dimen>
+    <dimen name="quit_icon_size">44dp</dimen>
+    <dimen name="am_pm_bottom">16dp</dimen>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end-->
+	
+</resources>

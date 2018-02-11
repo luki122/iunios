@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="4dp">
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/tabwidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        aurora:textSize = "@dimen/main_activity_memory_text_size"
+        aurora:cursorWidth="@dimen/tab_curser_width"
+        aurora:cursorColor="@color/tab_text_focus_color" />
+</RelativeLayout>

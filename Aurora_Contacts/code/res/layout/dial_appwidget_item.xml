@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#FFF"
+     >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="54.5dp"
+        android:layout_height="54.5dp"
+        android:src="@drawable/svg_dial_default_photo1" />
+
+   <TextView
+            android:id="@+id/appwidget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_marginTop="6dp" />
+
+</LinearLayout>

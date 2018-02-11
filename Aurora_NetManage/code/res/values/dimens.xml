@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="preferences_item_height">47dp</dimen>
+    <dimen name="preferences_item_text_size">17sp</dimen>
+    <dimen name="preferences_item_sub_text_size">14sp</dimen>
+    <dimen name="list_header_padding_top">10dp</dimen>
+    <dimen name="list_header_padding_bottom">3.3dp</dimen>
+    <dimen name="list_header_text_size">18sp</dimen>
+    <dimen name="package_set_activity_title_text_size">18sp</dimen> 
+    <dimen name="main_act_big_text_size">22sp</dimen> 
+    <dimen name="main_act_small_text_size">16sp</dimen> 
+    <dimen name="main_act_num_to_flow_mb_distance">12dp</dimen> 
+    <dimen name="main_act_flow_num_margin_right">82.935dp</dimen>   
+    <dimen name="main_act_enter_animation_size">296.67dp</dimen> 
+    <dimen name="main_act_second_view_width">246.67dp</dimen>
+    <dimen name="main_act_second_view_height">253.33dp</dimen>
+    <dimen name="main_act_third_view_size">227dp</dimen>
+    <dimen name="main_act_progress_view_size">227.3dp</dimen> 
+    <dimen name="hint_big_text_size">24sp</dimen> 
+</resources>

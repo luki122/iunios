@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-03-04 modified for aurora's new featrue start -->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColorHighlight="#00ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:autoLink="none"
+    android:linksClickable="true"
+    android:ellipsize="end"
+    android:gravity="left"
+    android:maxWidth="400dip"
+    android:paddingLeft="52dip"
+    android:textSize="@dimen/aurora_msg_text_size"
+    android:textColor="@color/aurora_msg_rec_text_color"
+    android:visibility="gone" />
+<!-- Aurora xuyong 2014-03-04 modified for aurora's new featrue end -->

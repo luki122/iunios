@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-20 created for aurora's new feature -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_attach_record_audio"
+        android:title="@string/aurora_record_audio">
+    </item>
+    <!-- Aurora liugj 2013-10-30 modified for bug-322 start -->
+    <!-- <item
+        android:id="@+id/aurora_attach_select_ringtone"
+        android:title="@string/aurora_select_ringtone">
+    </item> -->
+    <!-- Aurora liugj 2013-10-30 modified for bug-322 end -->
+    <item
+        android:id="@+id/aurora_attach_select_audio"
+        android:title="@string/aurora_select_audio">
+    </item>
+</menu>

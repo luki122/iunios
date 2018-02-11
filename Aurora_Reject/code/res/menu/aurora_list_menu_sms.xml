@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/showSms"
+        android:icon="@com.aurora:drawable/aurora_bottombar_resume_selector"
+        android:title="@string/recover_sms">
+    </item>
+    <item
+        android:id="@+id/delSms"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/del">
+    </item>
+
+</menu>

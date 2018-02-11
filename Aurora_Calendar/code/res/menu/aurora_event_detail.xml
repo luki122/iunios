@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/event_edit"
+        android:showAsAction="withText|always"
+        android:title="@string/edit_label"/>
+    <item
+        android:id="@+id/event_delete"
+        android:showAsAction="withText|always"
+        android:title="@string/delete_label"/>
+
+</menu>

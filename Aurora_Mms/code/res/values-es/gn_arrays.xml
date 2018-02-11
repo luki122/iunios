@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<resources>
+    <string-array name="planets">
+        <item>Phone</item>
+        <item>SIM</item>
+    </string-array>
+    <string-array name="blade_full_sections">
+        <item>#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>        
+    </string-array>
+    
+    <string-array name="blade_replaced_sections">
+        <item>#</item>
+        <item>A</item>
+        <item>-</item>
+        <item>C</item>
+        <item>-</item>
+        <item>E</item>
+        <item>-</item>
+        <item>G</item>
+        <item>-</item>
+        <item>I</item>
+        <item>-</item>
+        <item>K</item>
+        <item>-</item>
+        <item>M</item>
+        <item>-</item>
+        <item>O</item>
+        <item>-</item>
+        <item>Q</item>
+        <item>-</item>
+        <item>S</item>
+        <item>-</item>
+        <item>U</item>
+        <item>-</item>
+        <item>W</item>
+        <item>-</item>
+        <item>Y</item>
+        <item>Z</item>        
+    </string-array>
+    
+    <integer-array name="blade_section_baselines">
+        <item>21</item>
+        <item>37</item>
+        <item>49</item>
+        <item>65</item>
+        <item>77</item>
+        <item>93</item>
+        <item>105</item>
+        <item>121</item>
+        <item>133</item>
+        <item>149</item>
+        <item>161</item>
+        <item>177</item>
+        <item>189</item>
+        <item>205</item>
+        <item>217</item>
+        <item>233</item>
+        <item>245</item>
+        <item>261</item>
+        <item>273</item>
+        <item>289</item>
+        <item>301</item>
+        <item>317</item>
+        <item>329</item>
+        <item>345</item>
+        <item>357</item>
+        <item>373</item>
+        <item>389</item>
+    </integer-array>
+    
+    <integer-array name="blade_indicator_tops">
+        <item>8</item>
+        <item>24</item>
+        <item>36</item>
+        <item>52</item>
+        <item>64</item>
+        <item>80</item>
+        <item>92</item>
+        <item>108</item>
+        <item>120</item>
+        <item>136</item>
+        <item>148</item>
+        <item>164</item>
+        <item>176</item>
+        <item>192</item>
+        <item>204</item>
+        <item>220</item>
+        <item>232</item>
+        <item>248</item>
+        <item>260</item>
+        <item>276</item>
+        <item>288</item>
+        <item>304</item>
+        <item>316</item>
+        <item>332</item>
+        <item>344</item>
+        <item>360</item>
+        <item>376</item>
+    </integer-array>
+</resources>
+

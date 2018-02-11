@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="aurora_searchview_hint" >Search email</string>
+    <string name="aurora_account_settings_delete">Delete account</string>
+    <string name="aurora_account_settings_add">New account</string>
+    <string name="aurora_account_settings">Account</string>
+    
+    <string name="aurora_mail_check_frequency_push">Automatic (Push)</string>
+    <string name="aurora_mail_check_frequency_5min">Every 5 minutes</string>
+    <string name="aurora_mail_check_frequency_15min">Every 15 minutes</string>
+    <string name="aurora_mail_check_frequency_30min">Every 30 minutes</string>
+    <string name="aurora_mail_check_frequency_1hour">Every hour</string>
+    <string name="aurora_mail_check_frequency_2hour">Every 2 hours</string>
+    <string name="aurora_mail_check_frequency_5hour">Every 5 hours</string>
+    <string name="aurora_check_frequency_label">Inbox checking frequency</string>
+    <string name="aurora_default_signatrue">Sent via GiONEE</string>
+    
+    <!-- Aurora shihao add for manual_setttings_login -->
+    <string name="aurora_server_type">Server Type</string>
+    <string name="aurora_email_account">Account</string>
+    <string name="aurora_recerver_server">Receive Server</string>
+    <string name="aurora_sent_server">Sent Server</string>
+    
+    <string name="aurora_email_server">Server</string>
+    <string name="aurora_email_account">Account</string>
+    <string name="aurora_email_password">Password</string>
+    <string name="aurora_email_port">Port</string>
+    <string name="aurora_email_ssl">SSL</string>
+    
+    <string name="aurora_login_need_manual_setup">Your accounts need to manually configure the server, do you want to continue?</string>
+    <string name="aurora_manual_login_goon_button">Continue</string>
+    <string name="aurora_manual_login_info_error">Your accounts information is not complete!</string>
+    
+    <string name="aurora_account_setup_failed_dlg_auth_message">"Username or password is incorrect,or %1$s service is not open"</string>
+    <string name="aurora_account_manual_setup">Manually configure the mail server</string>
+    
+    <!-- Aurora shihao add for notification_ringtone 20150402 -->
+    <string name="aurora_email_notification">Notification</string>
+    <string name="aurora_email_notification_ringtone">Ringtone</string>
+    <string name="aurora_email_notifi_ringtone_title">Notification ringtone</string>
+</resources>

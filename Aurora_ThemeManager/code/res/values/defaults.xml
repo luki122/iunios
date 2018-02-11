@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <bool name="default_circle_indicator_snap">false</bool>
+</resources>

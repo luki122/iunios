@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.android.contacts.editor.RawContactEditorView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingTop="0dip" >
+
+    <LinearLayout
+        android:id="@+id/stub_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/aurora_editor_margin_left"
+        android:paddingRight="@dimen/aurora_editor_margin_right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include
+            android:id="@+id/edit_photo"
+            layout="@layout/aurora_item_photo_editor" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/aurora_editor_margin_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical" >
+
+                <include
+                    layout="@layout/gn_editor_account_header_with_dropdown"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/edit_name"
+                    layout="@layout/structured_name_editor_view" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/aurora_editor_item_gap_color" />
+
+                <include
+                    android:id="@+id/edit_phonetic_name"
+                    layout="@layout/phonetic_name_editor_view"
+                    android:visibility="gone" />
+            </LinearLayout>
+            
+            <include layout="@layout/aurora_save_to" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/aurora_editor_margin_left"
+        android:paddingRight="@dimen/aurora_editor_margin_right" >
+
+        <LinearLayout
+            android:id="@+id/sect_fields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <aurora.widget.AuroraButton
+            android:id="@+id/button_add_field"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_add_button_height"
+            android:textSize="12sp"
+            android:text="@string/add_field" />
+        
+        <aurora.widget.AuroraButton
+            android:id="@+id/button_add_exist_contact"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/aurora_menu_add_exist_contact"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.android.contacts.editor.RawContactEditorView>

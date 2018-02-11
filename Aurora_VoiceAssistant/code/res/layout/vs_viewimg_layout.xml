@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8c000000"
+    android:id="@+id/imgview" >
+    
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/viewPager"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"/> 
+        
+   <LinearLayout  
+     android:id="@+id/title_bar"  
+     android:layout_width="match_parent"  
+     android:layout_height="55dp"  
+     android:orientation="horizontal"
+     android:gravity="center_vertical"
+     android:background="#ff000000" 
+     android:visibility="gone"
+     android:layout_marginTop="-55dp">  
+     
+       <ImageView 
+           android:id ="@+id/imgview_title_back"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/vs_imgview_title_back"/>
+       <TextView
+           android:id ="@+id/imgview_title_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/vs_white"
+           android:textSize="21sp"
+           android:layout_marginLeft="-5dp"/>
+  </LinearLayout> 
+        
+    <RelativeLayout  
+        android:id="@+id/imgview_bottom"
+        android:layout_width="match_parent"  
+        android:layout_height="47dp" 
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#ff000000"
+        android:visibility="gone"
+        android:layout_marginBottom="-47dp">  
+        
+        <aurora.widget.AuroraAnimationImageView
+	        android:id="@+id/save_btn"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:scaleType="center"
+			android:background="@drawable/vs_imgview_save"/>
+    </RelativeLayout>  
+    
+    
+    
+    <RelativeLayout  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">  
+        
+       <ImageView 
+           android:id ="@+id/imageview_anim"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+    </RelativeLayout>  
+    
+</FrameLayout>
+

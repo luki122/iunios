@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee gaoj 2012 4-18 added for CR00555790 start
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/delete"
+          android:title="@string/delete"
+          android:showAsAction="always" />
+    
+    <item android:id="@+id/encryption"
+          android:title="@string/menu_encryption"
+          android:visible="false"
+          android:showAsAction="always" />
+</menu>

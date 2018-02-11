@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@color/white"
+    android:padding="@dimen/padding_17" >
+
+    <com.aurora.account.widget.ClearableEditText
+        android:id="@+id/account_cet"
+        style="@style/Account.TextView.Login"
+        android:background="@drawable/common_edittext_bg_top_selector"
+        android:maxLength="@integer/account_max_length" />
+
+    <com.aurora.account.widget.ClearableEditText
+        android:id="@+id/password_cet"
+        style="@style/Account.TextView.Login"
+        android:background="@drawable/common_edittext_bg_bottom_selector"
+        android:hint="@string/validate_pwd_pwd_hint"
+        android:inputType="textPassword"
+        android:maxLength="@integer/password_max_length" />
+    
+    <include layout="@layout/error_info_layout" />
+
+    <TextView
+        style="@style/Account_TextView_Tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_14"
+        android:text="@string/validate_pwd_tips" />
+
+    <!--
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <Button style="@style/Account.Button.Next"
+        android:id="@+id/btn_next" />
+    -->
+
+</LinearLayout>

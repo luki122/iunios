@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/pop_image"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9.6dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/aurora_album"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:textSize="16.67sp"
+        android:textColor="@color/aurora_cloud_pop_text_color"
+        android:layout_toRightOf="@+id/pop_image" />
+
+</merge>

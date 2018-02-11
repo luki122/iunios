@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_month_agenda_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/gn_day_listview_item" >
+    
+    <View 
+        android:id="@+id/month_agenda_start_line"
+        android:layout_width="4dp"
+        android:layout_height="40dp"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        
+        android:background="@color/gn_bg_month_agenda_start_line"
+        />
+    
+    <TextView 
+        android:id="@+id/month_agenda_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/month_agenda_start_line"
+        android:layout_marginLeft="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/gn_day_listview_item_title"
+        android:gravity="top|left"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    
+    <TextView
+        android:id="@+id/month_agenda_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/month_agenda_start_line"
+        android:layout_toRightOf="@id/month_agenda_start_line"
+        android:layout_marginLeft="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/gn_day_listview_item_time"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+</RelativeLayout>

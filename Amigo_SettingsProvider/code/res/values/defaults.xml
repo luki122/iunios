@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 start -->
+    <string name="zzzzz_gn_def_flip_on_sound" translatable="false">/system/media/audio/ui/FlipOn.ogg</string>
+    <string name="zzzzz_gn_def_flip_off_sound" translatable="false">/system/media/audio/ui/FlipOff.ogg</string>
+    <!-- Gionee fengjianyi 2012-08-22 add for CR00673800 end -->
+    
+    <!-- Gionee:zhang_xin 2012-12-09 add for start -->
+    <bool name="def_gn_power_saver">false</bool>
+    <!-- Gionee:zhang_xin 2012-12-09 add for end -->
+    
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 begin -->
+    <integer name="def_gn_font_size">0</integer>
+    <!-- Gionee <zhang_xin><2013-03-26> add for CR00788411 end -->
+    
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 begin -->
+    <bool name="def_haptic_vibration">true</bool>
+    <!-- gionee zengxuanhui 20121022 add for CR00716758 end -->
+    
+    <!--Gionee Jingjc 20121101 add for CR00722601 start-->
+    <bool name="def_switch_vibration">true</bool>
+    <bool name="def_dialpad_vibration">true</bool>
+    <bool name="def_lockscreen_vibration">true</bool>
+    <bool name="def_selectapp_vibration">true</bool>
+    <!--Gionee Jingjc 20121101 add for CR00722601 end -->
+    
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 begin-->
+    <bool name="def_ring_vibration">true</bool>
+    <bool name="def_mms_vibration">true</bool>
+    <bool name="def_notification_vibration">true</bool>
+    <!--Gionee <zengxuanhui> <2013-04-26> add for CR00797390 end-->
+    
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 begin -->
+    <bool name="def_fanfan_widget">false</bool>
+    <!-- Gionee <wangyaohui><2013-05-30> add for R00820909 end -->
+
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 begin -->
+    <bool name="def_respirationlamp_low_power">true</bool>
+    <bool name="def_respirationlamp_in_charge">true</bool>
+    <bool name="def_respirationlamp_notification">true</bool>
+    <bool name="def_respirationlamp_music">true</bool>
+    <bool name="def_respirationlamp_call">true</bool>
+    <!-- Gionee <wangyaohui><2013-06-05> add for CR00823496 end -->
+
+   <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 begin -->
+    <bool name="def_ssg_switch">false</bool>
+    <bool name="def_dg_switch">false</bool>
+    <bool name="def_ssg_auto_dial">false</bool>
+    <bool name="def_ssg_call_access">false</bool>
+    <bool name="def_ssg_delay_alarm">true</bool>
+    <bool name="def_ssg_switch_screen">false</bool>
+    <bool name="def_sdg_call_access">false</bool>
+    <bool name="def_sdg_browse_photos">false</bool>
+    <bool name="def_sdg_video_progress">false</bool>
+    <bool name="def_sdg_video_volume">false</bool>
+    <bool name="def_sdg_video_pause">false</bool>
+    <bool name="def_ssg_delay_alarm_show">true</bool>
+    <bool name="def_sdg_browse_photos_show">true</bool>
+
+    <bool name="def_sound_control_switch">false</bool>
+    <bool name="def_sound_control_calling">true</bool>
+    <bool name="def_sound_control_message">true</bool>
+    <bool name="def_sound_control_lockscreen">false</bool>
+    <bool name="def_sound_control_alarmclock">false</bool>
+
+    <bool name="def_guest_mode">false</bool>
+    <bool name="def_first_open_guest_mode">false</bool>
+    <bool name="def_guest_pass_enable">false</bool>
+    <string name="zzzzz_gn_def_guest_pass" translatable="false"></string>
+    <!-- Gionee <wangguojing> <2013-08-19> add for CR00823496 end -->
+
+    <integer name="def_flip_answer_call_default">1</integer>
+    <integer name="def_flip_hangup_call_default">1</integer>
+
+    <bool name="def_button_light_state_default">false</bool>
+
+    <bool name="def_wifi_auto_notify_default">false</bool>
+
+    <bool name="def_align_wake_default">true</bool>
+
+    <!-- gionee wangyaohui 20120614 modify for CR00616258 begin -->
+    <!--
+    <integer name="def_screen_off_timeout">60000</integer>
+    -->
+    <integer name="def_screen_off_timeout">30000</integer>
+    <!-- gionee wangyaohui 20120614 modify for CR00616258 end-->
+
+    <!-- alart miss msg -->
+    <bool name="gn_def_alert_miss_msg">false</bool>
+    <!-- alart miss msg every 5 minutes -->
+    <integer name="gn_def_alert_miss_msg_interval">5</integer>
+
+    <!-- Gionee Jingjc 2012-09-16 add for CR00693470 start -->
+    <bool name="def_auto_lcm_acl">true</bool>
+    <!-- Gionee Jingjc 2012-09-16 add for CR00693470 end -->
+
+    <string name="def_alarm_ring" translatable="false">content://media/internal/audio/media/5</string>
+
+    <string name="def_ringtone2" translatable="false"></string>
+    <string name="def_mms" translatable="false"></string>
+    <string name="def_mms2" translatable="false"></string>
+    
+    <string name="def_theme_package_name" translatable="false">theme</string>
+    <integer name="def_theme_check_package">0</integer>
+    <bool name="def_suspend_button">false</bool>
+    
+    <bool name="def_phone_keyboard">false</bool>
+    <bool name="def_input_method_keyboard">false</bool>
+    <bool name="def_pattern_unlockscreen">false</bool>
+    <bool name="def_small_screen_mode">false</bool>
+    <bool name="def_screen_size">false</bool>
+    
+    <!--Gionee <chenml> <2013-09-25> add for CR00906622 begin-->
+    <bool name="def_sound_control_open_remind">false</bool>
+    <bool name="def_sound_control_close_remind">false</bool>
+    <!--Gionee <chenml> <2013-09-25> add for CR00906622 begin-->
+
+    <!--Gionee <wangguojing> <2013-10-11> add for GPS Optimization begin-->
+    <bool name="def_gps_prompt_remind">true</bool>
+    <!--Gionee <wangguojing> <2013-10-11> add for GPS Optimization end-->
+
+    <!--Gionee <wangguojing> <2013-10-11> add for CR00922210 begin-->
+    <bool name="def_sdg_del_photos">false</bool>
+    <bool name="def_sdg_task_control">false</bool>
+    <bool name="def_ssg_doubleclick_wake">true</bool>
+    <bool name="def_ssg_doubleclick_wake_show">true</bool>
+      <!--Gionee <chenml> <2014-06-18> add for CR01272876 begin  -->
+    <bool name="def_ssg_doubleclick_wake_other">true</bool>
+      <!--Gionee <chenml> <2014-06-18> add for CR01272876 end  -->
+    <!--Gionee <wangguojing> <2013-10-11> add for CR00922210 end-->
+    
+    <!-- Gionee <bug> <wangyaohui> <2013-10-24> modify for CR00933322 begin -->
+    <bool name="def_fast_operation">false</bool>
+    <string name="def_fast_operation_up_app" translatable="false">com.android.camera/com.android.camera.CameraLauncher</string>
+    <string name="def_fast_operation_right_app" translatable="false">com.tencent.mm/com.tencent.mm.ui.LauncherUI</string>
+    <!-- Gionee <bug> <wangyaohui> <2013-10-24> modify for CR00933322 begin -->
+
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 begin-->
+    <string name="def_virtual_display_devices" translatable="false">0</string>
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 end-->
+    
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 begin-->
+    <bool name="def_glove_patterns">false</bool>
+    <!--Gionee <wangguojing> <2013-10-24> add for CR00933390 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-02> add for CR00943428 begin-->
+    <bool name="def_voice_wake_switch">false</bool>
+    <bool name="def_voice_wake_remind">false</bool>
+    <bool name="def_voice_wake_word">false</bool>
+    <!--Gionee <wangguojing> <2013-11-02> add for CR00943428 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00942651 begin-->
+    <bool name="def_lcd_effect_adjust">false</bool>
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00942651 end-->
+    
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00944538 begin-->
+    <bool name="def_show_powersave_dialog">false</bool>
+    <!--Gionee <wangguojing> <2013-11-04> add for CR00944538 end-->
+    
+    <!--Gionee <wangguojing> <2013-12-23> add for CR00989512 begin-->
+    <bool name="def_international_roaming_switch">false</bool>
+    <!--Gionee <wangguojing> <2013-12-23> add for CR00989512 end-->
+    <!--Gionee <wangguojing> <2013-12-26> add for CR00992408 begin-->
+    <integer name="def_lcd_color_value">0</integer>
+    <!--Gionee <wangguojing> <2013-12-26> add for CR00992408 end-->
+    <!--Gionee <wangguojing> <2013-12-27> add for CR00993259 begin-->
+    <bool name="def_rotate_camera_open_app">true</bool>
+    <bool name="def_user_experience">false</bool>
+    <!--Gionee <wangguojing> <2013-12-27> add for CR00993259 end-->
+    <!--Gionee <wangguojing> <2013-12-30> add for CR00997383 begin-->
+    <integer name="def_dial_sound_type">0</integer>
+    <!--Gionee <wangguojing> <2013-12-30> add for CR00997383 end-->
+    <!-- Gionee <huangyuncai> <2014-03-04> add for CR01087530 begin-->
+    <integer name="def_notification_disable_reminder">0</integer>
+    <integer name="def_network_speed_display">0</integer>
+    <!-- Gionee <huangyuncai> <2014-03-04> add for CR01087530 end-->
+    <!-- Gionee <chenml> <2014-05-04> add for CR01215994 begin-->
+    <bool name="def_silent_mode">false</bool>
+    <integer name="def_last_volume">12</integer>
+    <integer name="def_volume_music">12</integer>
+    <!-- Gionee <chenml> <2014-05-04> add for CR01215994 end-->
+    <!-- Gionee <wangguojing> <2014-05-19> add for CR01257437 begin-->
+    <bool name="def_adjust_screen_tone">true</bool>
+    <!-- Gionee <wangguojing> <2014-05-19> add for CR01257437 begin-->
+    <!-- Gionee <wangguojing> <2014-05-29> add for CR01272670 begin-->
+    <bool name="def_user_experience_remind">false</bool>
+    <!-- Gionee <wangguojing> <2014-05-29> add for CR01272670 end-->
+    <!-- Gionee <wangguojing> <2014-09-18> add for CR01386770 begin-->
+    <bool name="def_aal_cabc_backup">true</bool>    
+    <!-- Gionee <wangguojing> <2014-09-18> add for CR01386770 end-->
+    
+    <!--Gionee <chenml> <2014-09-25> add for CR01387135 begin-->
+    <string name="def_key_ringtone_data" translatable="false">/system/media/audio/ringtones/AmigoTune.ogg</string>
+    <string name="def_key_ringtone2_data" translatable="false">/system/media/audio/ringtones/AmigoTune.ogg</string>
+    <string name="def_key_notification_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_mms_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_mms2_data" translatable="false">/system/media/audio/notifications/Crystal.ogg</string>
+    <string name="def_key_video_data" translatable="false">/system/media/audio/ringtones/AmigoTune.ogg</string>
+    <!--Gionee <chenml> <2014-09-25> add for CR01387135 end-->
+    <!--Gionee <chenml> <2014-09-29> modify for CR001392602 begin-->
+    <integer name="def_is_new_ssg">0</integer>
+    <integer name="def_is_psensor_browse_dg">0</integer>
+    <integer name="def_is_psensor_ctrl_video_dg">0</integer>
+    <integer name="def_sdg_browse_photos_psensor">1</integer>
+    <integer name="def_sdg_browse_photos_show_psensor">0</integer>
+    <integer name="def_sdg_video_pause_psensor">1</integer>
+    <integer name="def_sdg_video_pause_show_psensor">0</integer>
+    <!--Gionee <chenml> <2014-09-29> modify for CR001392602 end-->           
+    <!--Gionee <wangguojing> <2014-10-17> add for CR01397189 begin-->
+    <integer name="def_is_vibration_alert_on">0</integer>
+    <integer name="def_ssg_vibration_alert">0</integer>
+    <integer name="def_ssg_vibration_alert_show">0</integer>
+    <!--Gionee <wangguojing> <2014-10-17> add for CR01397189 end-->
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 begin-->
+    <integer name="def_virtual_key_value">1</integer>
+    <!--Gionee <wangguojing> <2014-10-28> add for CR01403182 end-->
+
+    <!--Gionee <wangguojing> <2014-11-04> add for CR01406835 begin-->
+    <string name="def_black_gesture_e" translatable="false">1:com.android.browser/com.android.browser.GNBrowserActivity</string>
+    <string name="def_black_gesture_u_right" translatable="false">1:com.android.camera/com.android.camera.CameraLauncher</string>
+    <string name="def_black_gesture_m" translatable="false">1:com.android.music/com.android.music.MusicScanResultActivity</string>
+    <string name="def_black_gesture_triangular" translatable="false"></string>
+    <string name="def_black_gesture_up_slide" translatable="false"></string>
+    <string name="def_black_gesture_down_slide" translatable="false"></string>
+    <string name="def_black_gesture_default" translatable="false"></string>
+    <bool name="def_is_new_black_gesture_on">false</bool>
+
+    <bool name="def_ssg_smart_light_screen">false</bool>
+    <bool name="def_ssg_smart_light_screen_show">false</bool>
+    <bool name="def_is_smart_light_screen_on">false</bool>
+    <!--Gionee <wangguojing> <2014-11-04> add for CR01406835 end-->
+
+    <!--Gionee <wangguojing> <2014-11-17> add for CR01412715 begin-->
+    <bool name="def_sdg_light_screen">true</bool>
+    <bool name="def_sdg_light_screen_show">false</bool>
+    <bool name="def_is_sdg_light_screen_on">false</bool>
+
+    <bool name="def_sdg_unlock">true</bool>
+    <bool name="def_sdg_unlock_show">false</bool>
+    <bool name="def_is_sdg_unlock_on">false</bool>
+
+    <bool name="def_sdg_desktop_slide">true</bool>
+    <bool name="def_sdg_desktop_slide_show">false</bool>
+    <bool name="def_is_sdg_desktop_slide_on">false</bool>
+    <!--Gionee <wangguojing> <2014-11-17> add for CR01412715 end-->
+    <bool name="def_amigo_silent_switch">false</bool>
+    <bool name="def_amigo_vibration_switch">true</bool>
+
+    <bool name="def_lockscreen_access">false</bool>
+    <bool name="def_applications_access">true</bool>
+    <integer name="def_black_gesture_config_value">7</integer>
+    
+    <bool name="def_timing_zen_mode">false</bool>
+    <string name="def_zen_mode_days" translatable="false">days:1,2,3,4,5,6,7</string>
+    <integer name="def_zen_mode_condition_index">0</integer>
+
+    <bool name="def_control_center_switch">true</bool>
+    <bool name="def_skylight_switch">true</bool>
+
+    <bool name="def_sdg_switch_music">false</bool>
+    <bool name="def_is_sdg_switch_music_on">false</bool>
+    
+    <bool name="def_sdg_reader">false</bool>
+    <bool name="def_is_sdg_reader_on">false</bool>
+    
+    <bool name="def_blackgesture_support_doublefinger">true</bool>
+
+    <bool name="def_is_fast_camera_on">false</bool>
+    <integer name="def_low_battery_alert_value">15</integer>
+    <bool name="def_is_glove_patterns_on">true</bool>
+    <bool name="def_is_mtk_ipo_on">false</bool>
+    <!--Gionee <lizhipeng> <2015-07-11> add for CR01518122 begin-->
+    <bool name="def_custom_gesture_switch">false</bool>
+    <string name="def_custom_gesture_value" translatable="false"></string>
+    <!--Gionee <lizhipeng> <2015-09-11> add for CR01518122 end-->
+    <bool name="def_is_vibration_effect_on">false</bool>
+    <string name="def_vibration_effect_name" translatable="false">NOTIFICATION_GENERAL</string>
+    
+    <bool name="def_is_remove_wifi_display">false</bool>
+	<!--Gionee <lizhipeng> <2015-07-11> add for CR01527696 begin-->
+    <bool name="def_8605_gesture_switch">false</bool>
+    <!--Gionee <lizhipeng> <2015-09-11> add for CR01527696 end-->
+
+    <string name="def_wirte_diag_config" translatable="false">diag,serial_smd,rmnet_bam,adb</string>
+    
+<!--       Gionee <chenml> <2015-08-19> add for CR01540669 begin -->
+    <string name="def_tranferdata_progress" translatable="false">null</string>
+    <bool name="def_is_exsit_tranferdata" >false</bool>
+<!--    Gionee <chenml> <2015-08-19> add for CR01540669 end -->
+    <bool name="def_is_exist_private_space" >false</bool> 
+    
+     <bool name="def_is_exist_default_storage" >false</bool> 
+     <bool name="def_is_exist_home_key_settings" >false</bool> 
+     <integer name="def_home_key_value">2</integer>
+     
+     <bool name="def_fingerprint_is_front" >false</bool> 
+     <bool name="def_is_screen_saving_on" >true</bool> 
+     
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aurora_agenda_item_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="22dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/aurora_agenda_create_event"
+        android:drawablePadding="9dp"
+        android:textColor="@color/action_bar_date_text_color_press"
+        android:textSize="15sp"
+        android:text="@string/aurora_create_agenda" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/horizontal_divider" />
+</LinearLayout>

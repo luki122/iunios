@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.android.auroramusic.widget.AuroraAnimationImageView
+            android:id="@+id/image_player_album"
+            android:layout_width="288dp"
+            android:layout_height="288dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/aurora_animation_imageview_margintop"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/image_player_control"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image_player_album"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <com.android.auroramusic.widget.AuroraImageButton
+                android:id="@+id/song_player_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.android.auroramusic.widget.AuroraImageButton
+                android:id="@+id/ringer_player_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.android.auroramusic.widget.AuroraImageButton
+                android:id="@+id/artist_player_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.android.auroramusic.widget.AuroraImageButton
+                android:id="@+id/download_player_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <com.android.auroramusic.widget.AuroraImageButton
+                android:id="@+id/sound_player_control"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_player_anim"
+        android:layout_width="288dp"
+        android:layout_height="288dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/aurora_animation_imageview_margintop"
+        android:scaleType="centerCrop" />
+    <!-- android:src="@drawable/default_album_bg" -->
+
+</FrameLayout>

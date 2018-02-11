@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="aurora_chronometer_pick_ringer_title">计时器铃声</string>
+    <string name="btnEnd">完成</string>
+       	<string name="label_hour">时</string>
+   	<string name="label_minute">分</string>
+   	<string name="label_second">秒</string>
+   	<string name="timer_title">计时器</string>
+    <string name="stop_watch_title">秒表</string>
+</resources>

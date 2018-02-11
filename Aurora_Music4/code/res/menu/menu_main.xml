@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <item android:id="@+id/aurora_storage_setting"
+        android:title="@string/aurora_storage_setting"/>  
+    
+    <item 
+        android:id="@+id/aurora_net_setting"
+        android:title="@string/aurora_net_setting"/>
+    
+    <item
+        android:id="@+id/aurora_close"
+        android:title="@string/aurora_close_on_time">
+    </item>
+    <item
+        android:id="@+id/aurora_exit"
+        android:title="@string/aurora_exit">
+    </item>
+
+</menu>

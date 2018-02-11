@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <!-- contacts editor -->
+    <dimen name="aurora_editor_margin_right">17dip</dimen>
+    <dimen name="aurora_editor_margin_left">17dip</dimen>
+    
+    <dimen name="aurora_editor_contact_photo_size">67dip</dimen>
+    
+    <dimen name="aurora_editor_field_margin">15dip</dimen>
+    <dimen name="aurora_editor_field_left_padding">15dip</dimen>
+    
+    <dimen name="aurora_editor_items_gap">@com.aurora:dimen/aurora_settings_item_divider_height</dimen>
+
+    <dimen name="aurora_editor_item_minheight">@com.aurora:dimen/aurora_list_singleline_height</dimen>
+    <dimen name="aurora_editor_type_label_width">103dip</dimen>
+    <dimen name="aurora_editor_item_padding_left">15dip</dimen>
+	
+    <dimen name="aurora_add_button_margin_top">28dip</dimen>
+    <dimen name="aurora_add_button_margin_bottom">64dip</dimen>
+	
+    <dimen name="aurora_add_button_image_padding_right">10dip</dimen>
+    <dimen name="aurora_add_button_text_size">20sp</dimen>
+    <dimen name="aurora_editor_field_text_size">18sp</dimen>
+    
+    <dimen name="aurora_editor_text_padding1">@com.aurora:dimen/aurora_settings_item_divider_height</dimen>
+    <dimen name="aurora_editor_text_padding2">@com.aurora:dimen/aurora_settings_item_divider_height</dimen>
+    <dimen name="aurora_editor_text_margin1">1dip</dimen>
+    <dimen name="aurora_edit_content_top_marg">5dp</dimen>
+    
+    <!-- contacts detail -->
+    <dimen name="aurora_detail_item_padding_top">14dip</dimen>
+    <dimen name="aurora_detail_item_padding_bottom">13dip</dimen>
+    <dimen name="aurora_detail_organization_padding_top">14dip</dimen>
+    <dimen name="aurora_detail_organization_padding_bottom">13dip</dimen>
+    <dimen name="aurora_detail_item_padding_left">32dip</dimen>
+    <dimen name="aurora_detail_contact_photo_container_size">94dip</dimen>
+    <dimen name="aurora_detail_contact_photo_size">86dip</dimen>
+    <dimen name="aurora_detail_item_subtitle_text_size">15sp</dimen>
+    <dimen name="aurora_detail_header_name_width">144dip</dimen>
+    <dimen name="aurora_detail_name_star_width">180dip</dimen>
+    
+    <!-- call detail -->
+    <dimen name="aurora_icon_text_margin">5.3dip</dimen>
+
+   <!-- contacts list header -->
+    <dimen name="aurora_group_entrance_left_margin">17dp</dimen>
+    <dimen name="aurora_group_entrance_right_margin">18dp</dimen>
+
+    <dimen name="aurora_sim_icon_gap_right">40dp</dimen>
+
+    <dimen name="aurora_two_lines_list_view_item_height">71dp</dimen>
+    <dimen name="aurora_single_line_list_view_item_hight">@com.aurora:dimen/aurora_list_singleline_height</dimen>
+
+    <dimen name="aurora_group_entrance_title_size">18sp</dimen>
+    <dimen name="aurora_contact_list_header_text_size">16sp</dimen>
+    <dimen name="aurora_group_browse_list_title_text_size">@com.aurora:dimen/aurora_list_singleline_text_size</dimen>
+    <dimen name="aurora_group_browse_list_count_text_size">@com.aurora:dimen/aurora_list_singleline_text_size</dimen>
+
+    <dimen name="aurora_contact_list_item_header_padding_left">17dp</dimen>
+    <dimen name="aurora_contact_list_item_name_left_margin">17dp</dimen>
+
+    <dimen name="aurora_alphbet_index_right_margin">9dp</dimen>
+    <dimen name="aurora_alphbet_index_star_font_size">13.3sp</dimen>
+    <dimen name="aurora_alphbet_index_font_size">13.3sp</dimen>
+    <dimen name="aurora_alphbet_prompt_text_font_size">10sp</dimen>
+    <dimen name="aurora_alphbet_height">449dp</dimen>
+    <dimen name="aurora_alphbet_margin_top_max">53dp</dimen>
+    <dimen name="aurora_alphbet_margin_top_min">49dp</dimen>
+
+    <dimen name="aurora_between_group_title_and_count_dp">6dp</dimen>
+
+    <dimen name="aurora_edit_group_margin_top">28.7dp</dimen>
+    <dimen name="aurora_edit_group_title_width">100dp</dimen>
+
+
+    
+    <dimen name="aurora_contact_max_name_width">306dp</dimen>
+    <dimen name="aurora_empty_contact_text_padding_top">176dp</dimen>
+    <dimen name="aurora_empty_contact_button_padding_top">117dp</dimen>
+    <dimen name="aurora_empty_contact_text_size">22sp</dimen>
+    
+
+    <dimen name="aurora_list_item_driver_hight">1px</dimen>
+
+    <dimen name="aurora_list_item_delete_back_width">49dp</dimen>
+    <dimen name="aurora_list_item_double_delete_back_width">72dp</dimen>
+    
+    
+    <dimen name="aurora_call_log_animate_move_length_1">27.3dp</dimen>
+    <dimen name="aurora_call_log_animate_move_length_2">23.3dp</dimen>
+
+    <dimen name="aurora_alphbet_index_prompt_view_top">236dp</dimen>
+    <dimen name="aurora_alphbet_index_prompt_view_left">151.6dp</dimen>
+
+    <dimen name="aurora_zoom_clip_radius">167dp</dimen>
+    <dimen name="aurora_zoom_clip_ccy">229dp</dimen>
+    
+    <dimen name="aurora_list_view_left_margin">17dp</dimen>
+    <dimen name="aurora_call_log_text_width">244.3dp</dimen>
+    <dimen name="aurora_call_log_count_margin">3dp</dimen>
+    <dimen name="aurora_tab_height">47dp</dimen>
+
+
+    <dimen name="aurora_goto_search_hight">42dp</dimen>
+
+    <dimen name="aurora_call_record_tv_w">143dip</dimen>
+    <dimen name="aurora_dialpad_digits_height">71dip</dimen>
+    <dimen name="aurora_dialpad_digits_margin_top">10dip</dimen>
+    <dimen name="aurora_dialpad_digits_size">45sp</dimen>
+    <dimen name="aurora_dialpad_area_size">15sp</dimen>
+    <dimen name="aurora_call_sms_margin_right">0dp</dimen>
+    <dimen name="aurora_second_action_height">76dp</dimen>
+    <integer name="common_anim_duration">250</integer>
+    <dimen name="aurora_dialpad_height">320dp</dimen>
+    <item name="aurora_dialpad_bg_scale_Y" type="dimen" format="float">1.775</item>
+    
+    <dimen name="aurora_call_date_margin_right">17dip</dimen>
+    <dimen name="aurora_call_date_text_size">12sp</dimen>
+    <dimen name="namecount_margin_top">14dp</dimen>
+    <dimen name="aurora_sim_icon_margin_right">8dp</dimen>
+    <dimen name="aurora_name_text_size">18sp</dimen>
+    <dimen name="sencond_line_container_margin_left">0dp</dimen>
+    <dimen name="sencond_line_container_margin_top">6.3dp</dimen>
+    <dimen name="aurora_call_type_padding_right">5dp</dimen>
+    <dimen name="sencond_line_text_size">12sp</dimen>
+    
+    <dimen name="dialer_search_list_item_height">76dp</dimen>
+    <dimen name="dialer_search_paddingLeft">17dp</dimen>
+    <dimen name="dialer_search_name_text_size">18sp</dimen>
+    <dimen name="dialer_search_number_and_name_margin_top">0dp</dimen>
+    <dimen name="dialer_search_number_margin_top">7dp</dimen>
+    <dimen name="dialer_search_number_text_size">12sp</dimen>
+    <dimen name="dialer_search_area_margin_top">7.3dp</dimen>
+    
+    <dimen name="call_log_date_margin_right">50.3dp</dimen>
+    <dimen name="call_log_date_text_size">12sp</dimen>
+    <dimen name="call_log_first_margin_top">14dp</dimen>
+    <dimen name="call_log_sim_margin_right">8dp</dimen>
+    <dimen name="call_log_name_text_size">18sp</dimen>
+    <dimen name="call_log_count_margin_left">3dp</dimen>
+    <dimen name="call_log_count_text_size">14sp</dimen>
+    <dimen name="call_log_second_margin_left">0dp</dimen>
+    <dimen name="call_log_second_margin_top">6.3dp</dimen>
+    <dimen name="call_log_type_padding_right">5dp</dimen>
+    <dimen name="call_log_second_text_size">12sp</dimen>
+    <dimen name="yellow_margin_top">0dp</dimen>
+    
+</resources> 

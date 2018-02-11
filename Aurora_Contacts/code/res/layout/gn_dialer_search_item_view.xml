@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.widget.GnDialerSearchItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primary_action_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/listChoiceBackgroundIndicator"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/gn_list_item_min_height" >
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gn_horizontal_divider_height"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/quick_contact_photo_container" 
+        layout="@layout/gn_quick_contact_photo_container"/>
+
+    <include
+        android:id="@+id/gn_secondary_action_container"
+        layout="@layout/gn_secondary_action_v2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/gn_secondary_action_container"
+        android:layout_toRightOf="@id/quick_contact_photo_container"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.android.contacts.widget.GnTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="?attr/gn_super_call_log_primary_text_color"
+            android:textSize="@dimen/gn_call_log_name_textsize" />
+
+        <TextView
+            android:id="@+id/pinyin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="?attr/gn_super_call_log_secondary_text_color"
+            android:textSize="@dimen/gn_call_log_number_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="?attr/gn_super_call_log_secondary_text_color"
+                android:textSize="@dimen/gn_call_log_number_textsize" />
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gn_margin_left_between_views"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="?attr/gn_super_call_log_secondary_text_color"
+                android:textSize="@dimen/gn_call_log_calldate_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gn_horizontal_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/listDivider"
+        android:focusable="false" />
+
+</com.android.contacts.widget.GnDialerSearchItemView>

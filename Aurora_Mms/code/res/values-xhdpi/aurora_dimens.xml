@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="aurora_personal_avatar_size_length">40dip</dimen>
+    <dimen name="aurora_notification_avatar_size_length">32dip</dimen>
+    <dimen name="aurora_conv_list_title_text_size">16sp</dimen>
+    <dimen name="aurora_conv_list_snippet_text_size">14sp</dimen>
+    <dimen name="aurora_conv_list_snippet_linespace">8dp</dimen>
+    <dimen name="aurora_conv_personal_list_height">68dip</dimen>
+    <dimen name="aurora_personal_list_vertical_padding">16dip</dimen>
+    <dimen name="aurora_conv_notification_title_height">48dip</dimen>
+    <dimen name="aurora_conv_notification_text_top_margin">20dip</dimen>
+    <dimen name="aurora_conv_notification_text_bottom_margin">6dip</dimen>
+    <dimen name="aurora_msg_text_size">14sp</dimen>
+    <dimen name="aurora_title_name_txt_size">18sp</dimen>
+    <dimen name="aurora_title_number_txt_size">12sp</dimen>
+    <dimen name="aurora_msg_time_txt_size">12sp</dimen>
+    <dimen name="aurora_title_layout_height">54dip</dimen>
+
+    <dimen name="list_conv_purpose_margin_bottom">1dip</dimen>
+
+    <dimen name="aurora_list_conv_cb_tm">18dip</dimen>
+    <dimen name="aurora_list_notify_conv_cb_tm">14dip</dimen>
+    <dimen name="aurora_list_cb_lm">34dip</dimen>
+</resources>

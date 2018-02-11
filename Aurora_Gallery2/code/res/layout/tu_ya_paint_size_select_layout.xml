@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.gallery3d.plugin.tuYa.ui.PaintSizeSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/tuya_id_paint_size_select_panel"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@id/tuya_id_paint_size_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tu_ya_drawable_paint_size_1"
+            android:tint="@color/tu_ya_cols_paint_size_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_paint_size_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tu_ya_drawable_paint_size_2"
+            android:tint="@color/tu_ya_cols_paint_size_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/tuya_id_paint_size_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tu_ya_drawable_paint_size_3"
+            android:tint="@color/tu_ya_cols_paint_size_select" />
+    </LinearLayout>
+
+</com.android.gallery3d.plugin.tuYa.ui.PaintSizeSelectView>

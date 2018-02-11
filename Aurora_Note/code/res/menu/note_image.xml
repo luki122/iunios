@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_remove_image"
+        android:title="@string/menu_remove_image"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_view_image"
+        android:title="@string/menu_view_image"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_crop_image"
+        android:title="@string/menu_crop_image"
+        android:showAsAction="always|withText" />
+</menu>

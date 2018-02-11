@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+    
+    <View
+        android:id="@+id/weather_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <views.WeatherAnimSurfaceView 
+        android:id="@+id/weather_animview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/WeatherAnimViewHeight"
+        android:visibility="visible"
+        />
+	
+<!--  <android.support.v4.view.ViewPager
+        android:id="@+id/weatherviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        /> -->
+    
+   <views.WeatherViewPager
+        android:id="@+id/weatherviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        />
+    <views.CityOptionView
+        android:id="@+id/cityoptionview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <views.CircleIndexView
+        android:id="@+id/circleindexview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/main_view_marginbottom" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="@string/action_settings"
+        android:layout_height="@dimen/main_view_marginbottom"
+        android:layout_alignParentBottom="true"
+        android:background="#08ffffff"
+        android:src="@drawable/bottom_divider"
+        android:scaleType="fitStart"
+        android:gravity="top"
+        android:id="@+id/bottom_bg"/> 
+        
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bottom"
+               android:id="@+id/iv_bottom"
+               android:layout_above="@id/bottom_bg"/>
+              <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_divider" 
+                android:layout_above="@id/circleindexview"
+                />
+                            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_divider" 
+                android:layout_above="@id/iv_bottom"
+                />
+</RelativeLayout>

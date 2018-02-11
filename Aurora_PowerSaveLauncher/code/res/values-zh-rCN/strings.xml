@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">省电桌面</string>
+    <string name="exit_string">退出</string>
+    <string name="ok_string">确定</string>
+    <string name="cancel_string">取消</string>
+    <string name="exit_msg">退出超长待机模式？</string>
+    <string name="exit_msg1">手机正在充电,是否确定退出极致省电模式?</string>
+    <string name="can_use_time">可待机:</string>
+    <string name="need_charging_time">充电还需:%s</string>
+    <string name="power_cannotget">无法预估</string>
+    <string name="power_hours">小时</string>
+    <string name="power_minutes">分钟</string>
+    <string name="is_charging_now">充电中</string>
+    <string name="charged_completely">充电完毕</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 begin-->
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <!--Gionee <yangxinruo> <2015-07-31> add for CR01529084 end--> 
+</resources>

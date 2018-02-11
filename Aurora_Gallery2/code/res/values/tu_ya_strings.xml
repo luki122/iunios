@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tuya_st_app_name">Doodle</string>
+    <string name="tuya_st_drop_image">Drop</string>
+    <string name="tuya_st_save_image">Save</string>
+    <string name="tuya_st_circle">Circle</string>
+    <string name="tuya_st_rectangle">Rectangle</string>
+    <string name="tuya_st_arrow">Arrow</string>
+    <string name="tuya_st_pathline">Paintbrush</string>
+    <string name="tuya_st_mosaic">Mosaic</string>
+    <string name="tuya_st_msg_loading">Loading...</string>
+    <string name="tuya_st_msg_load_fail">Load Fail</string>
+    <string name="tuya_st_msg_save">Save...</string>
+    <string name="tuya_st_msg_memory_full_failed_save">Memory full and failed to save.</string>
+    <string name="tuya_st_msg_failed_to_save">Failed to save</string>
+    <string name="tuya_st_msg_save_content">Save current Annotate?</string>
+    <string name="tuya_st_msg_nonsupport">The current format does not support Annotate</string>
+
+</resources>

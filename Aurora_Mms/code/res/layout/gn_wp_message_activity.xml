@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-4-26 added for GIUI4.0 start
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <view class="com.android.mms.ui.WPMessageListView"
+            style="?android:attr/listViewWhiteStyle"
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.0"
+            android:transcriptMode="alwaysScroll"
+            android:smoothScrollbar="true"
+            android:stackFromBottom="true"
+            android:visibility="gone"
+            android:fadingEdge="none"
+            android:layout_marginBottom="1dip"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:scrollbarStyle="insideOverlay"
+            android:paddingBottom="@dimen/input_text_height_adjusted"
+            />
+    </LinearLayout>
+</LinearLayout>
+

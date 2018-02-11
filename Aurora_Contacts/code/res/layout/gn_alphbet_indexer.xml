@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ex="http://schemas.android.com/apk/res/com.android.contacts"    
+    android:layout_width="match_parent"
+	android:layout_height="@dimen/aurora_alphbet_height"
+	android:layout_marginTop="26dp" >
+	
+    <TextView 
+        android:id="@+id/gn_first_char_prompt_tv"
+        android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_alignParentTop="true"
+ 		android:layout_centerHorizontal="true"
+ 		android:gravity="center"
+ 		android:textColor="?attr/promptSectionColor"
+ 		android:textSize="@dimen/gn_prompt_section_text_size"
+ 		android:background="?attr/promptBgRes"
+ 		android:layout_marginTop="80dip"
+ 		android:visibility="gone" />
+
+    <view class="com.android.contacts.widget.AlphbetIndexView"
+ 		android:id="@+id/gn_alphbet_indexer"
+ 		android:layout_width="90dip"
+ 		android:layout_height="match_parent"
+ 		android:paddingRight="8dp"
+ 		android:layout_alignParentRight="true"
+ 		ex:sectionFontSize="@dimen/gn_section_font_size"
+ 		ex:promptSectionFontSize="@dimen/gn_prompt_section_font_size"
+ 		ex:waveSideRange="@dimen/gn_wave_side_range" />
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temperature_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/weatherdetail_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/detailsviewmarginbottom" >
+
+        <TextView
+            android:id="@+id/weatherdetailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/unknown"
+            android:textColor="@color/weatherdetailcolor"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/temperature_point_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/weatherdetailtext"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/weatherdetailtext"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/temperature_point_small_detail" />
+
+
+    </RelativeLayout>
+            <TextView
+            android:id="@+id/tv_warn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.4"
+            android:drawableLeft="@drawable/warn_small_icon"
+            android:drawablePadding="4dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="6dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" 
+            android:layout_marginBottom="@dimen/warn_detailsviewmarginbottom"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            />
+
+    <RelativeLayout
+        android:id="@+id/temperature_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/weatherdetail_rela"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp" >
+
+        <ImageView
+            android:id="@+id/temperature_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/temprature_minus"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/temperature_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/temperature_minus"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="1dp"
+            android:scaleType="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/temperature_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/temperature_1"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/temperature_1"
+            android:contentDescription="@string/app_name"
+            android:paddingLeft="3dp"
+            android:scaleType="center"
+            android:src="@drawable/default_temperature" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/temperature_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/temperature_rela"
+        android:layout_gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/temperature_rela"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/temperature_point"
+        android:visibility="gone" />
+
+</RelativeLayout>

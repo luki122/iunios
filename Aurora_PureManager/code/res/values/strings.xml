@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="comma">，</string>
+    <string name="colon">：</string>  
+    <string name="app_name">纯净管家</string>
+    <string name="app_num">款应用</string>
+    <string name="user_app">个人应用</string>
+    <string name="sys_app">系统应用</string>
+    <string name="app_manage">应用管理</string>
+    <string name="pure_manage">纯净后台</string>
+    <string name="jurisdiction_manage">权限管理</string>
+    <string name="powersave_manage">省电管理</string>
+    <string name="manage_optimize">点击优化</string>
+    
+    <string name="recom_optimal">个应用推荐优化</string>
+    <string name="already_optimal">已经优化应用</string>
+    <string name="jurisdiction_num">项权限</string>
+    <string name="need_close_permisson_num">项可关闭</string>
+    <string name="need_open_permisson_num">项可打开</string>
+    
+    <string name="choice_sort_way">选择排序方式</string>
+    
+    <string name="permission_control">管理应用权限</string>
+    <string name="auto_start_prohibit">杜绝应用自启</string>
+    
+    
+    <string name="auto_start_manage">自启管理</string>
+    <string name="app_uninstall">应用卸载</string>
+    <string name="app_freezeon">应用冻结</string>
+    <string name="def_soft_manage">默认应用</string>
+    <string name="no_set_num">%1$s项未设置</string>
+    
+    <string name="storage_not_available">存储器不可用</string>  
+    
+    <string name="cancel">取消</string>
+    <string name="no_longer_hint">不再提示</string>
+    <string name="stop">停止</string>
+    <string name="force_stop_dlg_title">强行停止此应用？</string>
+    <string name="force_stop_dlg_text">可能会导致其出现异常</string>
+    <string name="sure">确定</string>
+    <string name="no_danger_permission_app">无涉及敏感权限应用</string>
+    <string name="text_no_app_has_permission">无涉及该权限的应用</string>
+    <string name="has_no_trust_permission">"无涉及隐私和安全的相关权限"</string>
+    <string name="text_no_privacy_has_permission">"暂无涉及权限相关应用"</string>
+    <string name="app_permission_count">"涉及<xliff:g>%1$s</xliff:g>项隐私和安全的权限"</string>
+	<string name="itrust">"信任应用"</string>
+	<string name="itrust_second">"开启后，允许应用使用所有权限"</string>
+
+    <string name="permission_important">"重要"</string>
+    <string name="text_load">加载中&#8230;</string>
+    <string name="text_allow">允许</string>
+    <string name="text_forbidden">禁止</string>
+    <string name="text_ask">询问</string>
+    <string name="perm_default">默认</string>
+     <string name="permlab_readMms">"读取您的彩信"</string>
+    <string name="permlab_writeMms">"写入/删除您的彩信"</string>
+    <string name="perm_send_mms">"发送彩信"</string>
+    
+    <string name="browser">浏览器</string>
+     <string name="music">音乐</string>
+    <string name="dial">拨号</string>
+    <string name="dial_time">通话</string>
+    <string name="msg">短信</string>
+    <string name="camera">相机</string>
+    <string name="gallery">图库</string>
+    <string name="launcher">桌面</string>
+    <string name="init">初始化</string>
+    <string name="contacts">联系人</string>
+    <string name="video">视频</string>
+    <string name="ebook">电子书</string>
+    <string name="crop">裁剪</string>
+    
+    <string name="recommend_use">"(推荐使用)"</string>
+    <string name="permission_grade">"权限信任等级"</string>
+    
+    <string name="storager">"内存"</string>
+    <string name="internal_storager">"本机内存"</string>
+    <string name="sd_storager">"SD卡内存"</string>
+    <string name="already_user">"已用"</string>
+    
+    <string name="no_auto_start_app_hint_title">无自启动应用</string> 
+    <string name="auto_start_app_num">个应用会自启动</string>
+    <string name="auto_start_app_hint">开启后，允许应用在开机时自动运行</string>
+    <string name="what_is_auto_start">什么是自启动？</string>
+    <string name="auto_start_explain">部分应用会通过在后台自动启动的形式保证可及时向用户推送消息（如即时通讯应用），但一些不必要的应用申请了自启动权限会令系统更耗电和耗内存</string>
+    <string name="prohibit">禁用</string>
+    <string name="forbit_auto_start">禁用自启动</string>
+    <string name="are_you_sure_forbit_auto_start">是否禁用该应用的自启动行为？</string>
+    <string name="add">添加</string>
+    <string name="added">已添加</string>
+    <string name="no_app_for_add">无可添加应用</string> 
+    <string name="add_auto_start_app">添加自启动应用</string>
+    <string name="no_app_for_uninstall">无可卸载应用</string>
+    <string name="no_app_for_freezed">无可冻结应用</string>
+    <string name="freeze_app_hint">应用冻结后将无法开启，请解冻后再使用</string>
+    <string name="no_freeze_app">未冻结应用</string>
+    <string name="text_freeze_btn">"未冻结"</string>
+    <string name="text_freezed_btn">"已冻结"</string>
+    
+    <string name="input_method">输入法</string>
+    <string name="left_brackets">（</string>
+    <string name="right_brackets">）</string>
+    <string name="no_set_item">无可设置项</string>
+    <string name="not_set">未设置</string>
+    <string name="system">系统</string>
+    <string name="alread_clear">已清空</string>
+    <string name="def_setting">的默认设置</string>
+    <string name="please_wait_init">正在初始化，请等待...</string>
+    
+    <string name="no_user_app">无应用</string>
+    <string name="necessary_app">必备应用</string>
+    <string name="phone_memory">手机存储</string>
+    <string name="sd_card">SD卡</string>
+    <string name="sys_subgroup">系统组件</string>
+    <string name="running_proc">正在运行</string>
+    <string name="app_list">应用列表</string>
+    <string name="memory_details">内存详情：%1$s/%2$s</string>
+    <string name="memory_percent">已使用%1$s</string>
+    <string name="end_run">结束运行</string>
+    <string name="uninstall">卸载</string>
+    <string name="uninstall_app">卸载应用</string>
+    <string name="network_2G_3G">数据网络联网</string>
+    <string name="arrow_auto_start">允许自启动</string>
+    <string name="default_set">默认设置</string>
+    <string name="app_permission">应用权限</string>
+    <string name="clear">清除</string>
+    <string name="app_detail">应用详情</string>
+    <string name="app_not_install">应用未安装</string>
+    <string name="disable">停用</string>
+    <string name="start">启用</string>
+    <string name="clear_sucess">清除成功</string>
+    <string name="app_disable_dlg_title">停用此内置应用？</string>
+    <string name="app_disable_dlg_text">可能会导致相关应用出现异常</string>
+    <string name="move_app_failed_dlg_title">"无法移动应用</string>
+    <string name="insufficient_storage">存储空间不足。</string>
+    <string name="does_not_exist">应用不存在。</string>
+    <string name="app_forward_locked">应用受版权保护。</string>
+    <string name="invalid_location">安装位置无效。</string>
+    <string name="system_package">无法在外部介质上安装系统更新。</string>
+    <string name="move_app">移动</string>
+    <string name="move_app_to_internal">移至手机内存</string>
+    <string name="move_app_to_sdcard">移至 SD 卡</string>
+    <string name="moving">正在移动...</string>
+    
+    <string name="total_size">总计</string> 
+    <string name="app_size">应用大小</string>
+    <string name="user_data">用户数据</string>
+    <string name="app_cache">应用缓存</string>
+    <string name="clear_data_dlg_title">删除此应用的数据？</string>
+    <string name="clear_data_dlg_text">此应用的所有文件、设置、帐户、数据库等将被删除</string>
+    <string name="clear_cache">清理此应用的缓存数据？</string>
+    <string name="move_sucess">移动成功</string>
+    <string name="alread_save">已节省</string>
+    <string name="memery_size">内存空间</string>
+    <string name="version">软件版本</string>
+    
+    <string name="percent">"%"</string>
+    
+    <string name="traffic_manage">联网权限</string>
+    <string name="traffic_rank">流量排行</string>
+    <string name="traffic_prohibit">实时把握流量详情</string>
+    <string name="traffic_tips">允许应用使用移动数据</string>
+    <string name="process_kernel_labels">Android OS</string>
+    <string name="data_usage_uninstalled_apps_users">已删除的应用和用户</string>
+    <string name="data_usage_uninstalled_apps">已删除的应用</string>
+    <string name="running_process_item_user_label">用户：%1$s</string>
+    <string name="tether_settings_title_all">网络共享与便携式热点</string>
+    <string name="tether_settings_title_wifi">便携式热点</string>
+    <string name="tether_settings_title_usb_bluetooth">网络共享</string>
+    <string name="tether_settings_title_usb">USB 共享网络</string>
+    <string name="tether_settings_title_bluetooth">蓝牙共享网络</string>
+    <string name="data_usage_app_restricted">受限</string>
+    <string name="traffic_week">本周流量</string>
+    <string name="traffic_month">本月流量</string>
+    <string name="traffic_week_no">本周未使用流量</string>
+    <string name="traffic_month_no">本月未使用流量</string>
+    
+     <array name="traffic_rank_titles">
+        <item>本周</item>
+        <item>本月</item>
+    </array>
+    
+    <array name="titles">
+        <item>软件耗电</item>
+        <item>硬件耗电</item>
+    </array>
+
+    <string name="volume_summery">电量</string>
+    <string name="volume_usage">可待机时间</string>
+    <string name="battery_percent">电量百分比</string>
+    <string name="battery_order">耗电排行</string>
+    <string name="soft_consume">软件耗电</string>
+    <string name="hardware_consume">硬件耗电</string>
+
+    <string name="power_consumption_tab_title">更多耗电详情</string>
+    <string name="power_consumption_detail">耗电详情</string>
+    <string name="process_kernel_label">Android OS</string>
+    <string name="process_mediaserver_label">媒体服务器</string>
+    <string name="battery_level_tab_title">电池电量</string>
+    <string name="power_usage_not_available">无法获取电池使用数据</string>
+    <string name="power_screen">屏幕</string>
+    <string name="power_cell">手机射频</string>
+    <string name="power_wifi">WLAN</string>
+    <string name="power_idle">手机待机</string>
+    <string name="standby">待机</string>
+    <string name="power_gps">GPS</string>
+    <string name="power_sensors">其他（各种传感器）</string>
+    <string name="power_bluetooth">蓝牙</string>
+    <string name="usage_description">说明</string>
+    <string name="shotcut_operation">快捷操作</string>
+    <string name="airplane">飞行模式</string>
+    <string name="data_conn">数据连接</string>
+    <string name="display">显示</string>
+
+    <string name="battery_info_status_label" msgid="8109155295509700309">"电池状态："</string>
+    <string name="battery_info_power_label" msgid="7465140230991349382">"是否已插电："</string>
+    <string name="battery_info_scale_label" msgid="3649763192389778437">"电池电量："</string>
+    <string name="battery_info_level_label" msgid="8706526709307788737">"电池电量："</string>
+    <string name="battery_info_health_label" msgid="6416051542741886958">"电池运行状况："</string>
+    <string name="battery_info_technology_label" msgid="788304533220748681">"电池技术："</string>
+    <string name="battery_info_voltage_label" msgid="8971764146757637863">"电池电压："</string>
+    <string name="battery_info_voltage_units" msgid="8658490792208288107">"mV"</string>
+    <string name="battery_info_temperature_label" msgid="1968383098818648037">"电池温度："</string>
+    <string name="battery_info_temperature_units" msgid="9098950587249987550">"° C"</string>
+    <string name="battery_info_uptime" msgid="5548545143573527992">"启动后的时间："</string>
+    <string name="battery_info_awake_battery" msgid="2557725975486185849">"使用电池电量的未休眠时间："</string>
+    <string name="battery_info_awake_plugged" msgid="176716874713478188">"充电时的唤醒时间："</string>
+    <string name="battery_info_screen_on" msgid="376277447175613889">"屏幕开启时间："</string>
+    <string name="battery_info_status_unknown" msgid="196130600938058547">"未知"</string>
+    <string name="battery_info_status_charging" msgid="1705179948350365604">"正在充电"</string>
+    <string name="battery_info_status_charging_ac" msgid="2909861890674399949">"正在通过交流电源充电"</string>
+    <string name="battery_info_status_charging_usb" msgid="2207489369680923929">"正在通过USB充电"</string>
+    <string name="battery_info_status_charging_wireless" msgid="3574032603735446573">"正在进行无线充电"</string>
+    <string name="battery_info_status_discharging" msgid="310932812698268588">"未在充电"</string>
+    <string name="battery_info_status_not_charging" msgid="2820070506621483576">"未在充电"</string>
+    <string name="battery_info_status_full" msgid="2824614753861462808">"电量充足"</string>
+    <string name="battery_info_power_unplugged" msgid="5987246575519551081">"未插电"</string>
+    <string name="battery_info_power_ac" msgid="6808516193001604634">"交流电"</string>
+    <string name="battery_info_power_usb" msgid="8012931702516331797">"USB"</string>
+    <string name="battery_info_power_wireless" msgid="6819163295739305097">"无线"</string>
+    <string name="battery_info_power_ac_usb" msgid="6777734146838328688">"交流电 + USB"</string>
+    <string name="battery_info_power_unknown" msgid="7344115502868899881">"未知"</string>
+    <string name="battery_info_health_unknown" msgid="5664295556921944255">"未知"</string>
+    <string name="battery_info_health_good" msgid="8070356565806711806">"正常"</string>
+    <string name="battery_info_health_overheat" msgid="8442959549291368806">"过热"</string>
+    <string name="battery_info_health_dead" msgid="1725917445762829059">"没电"</string>
+    <string name="battery_info_health_over_voltage" msgid="2420269351664490121">"过电压"</string>
+    <string name="battery_info_health_unspecified_failure" msgid="6347021103185471590">"未知错误"</string>
+    <string name="battery_info_health_cold" msgid="3835692786176707318">"电量低"</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="go_to_baterry">进入电源管理</string>
+    <string name="auto_sleep">自动休眠</string>
+    <string name="open_auto_sleep">已开启自动休眠</string>
+    <string name="long_lift_standby">超长待机</string>
+    <string name="consume_rank">耗电排行</string>
+    <string name="power_manager">省电管理</string>
+    <string name="auto_sleep_header_text">智能模式下手机处于锁屏时，开启的应用将不被休眠。</string>
+    <string name="power_ranking_noname">Android后台</string>
+    <string name="power_phone">语音通话</string>
+    <!--<string name="percentage"><![CDATA[<xliff:g id=\"NUMBER\">%.1f</xliff:g>%%]]></string>-->
+    <string name="percentage"><xliff:g id="NUMBER">%.1f</xliff:g>%%</string>
+    <string name="itel_save">智能省电</string>
+    <string name="intel_save_info">根据电量调节硬件设置以提升续航能力</string>
+    <string name="can_ongoing">\?</string>
+    <string name="ongong_time">62</string>
+    <string name="standby_big_text">该模式仅提供以下功能</string>
+    <string name="phone_text">电话功能</string>
+    <string name="sms_text">短信功能</string>
+    <string name="alarm_text">闹钟功能</string>
+    <string name="enter_super_text">进入超长待机模式</string>
+    <string name="software_consume_header_text">软件耗电:</string>
+    <string name="hardware_consume_header_text">硬件耗电:</string>
+    <string name="percent_sym">%</string>
+    <string name="is_charging">正在充电</string>
+    <string name="is_full">已充满</string>
+    <string name="open">open</string>
+    <string name="service">service</string>
+    <string name="kill">kill</string>
+    <string name="intel_mode">延长待机时间</string>
+    <string name="pure_soft_num_hint">禁止后台自启应用</string>
+    <string name="stop_wake">禁止唤醒</string>
+    <string name="open_stop_wake">已开启禁止唤醒</string>
+    <string name="stop_wake_detail">开启后禁止被其他应用唤醒，省电省流量</string>
+    <string name="open_stop_wake_detail">该应用将不会被其他应用唤醒</string>
+    <string name="auto_sleep_detail">锁屏一段时间后被自动清理，保持内存充足</string>
+    <string name="open_auto_sleep_detail">该应用将在锁屏一段时间后被自动清理</string>
+    <string name="auto_start">应用自启</string>
+    <string name="auto_start_detail">禁止应用开机自启及后台自启</string>
+    <string name="close_auto_start_detail">该应用将不会开机自启及后台自启</string>
+    <string name="app_setting">应用设置</string>
+    <string name="setting">设置</string>
+    <string name="soft_version">软件版本:</string>
+    <string name="long_lift_standby_detail">仅提供电话、短信、时钟基本功能</string>
+    <string name="pure_install">纯净安装</string>
+    <string name="pure_install_info">开启后会对新安装的软件进行智能处理.禁止应用开机启动及后台自启,并根据使用情况进行休眠处理.</string>
+    <string name="pure_app_tips">应用已净化</string>
+    <string name="pure_app">款</string>
+    <string name="stop_auto_start">禁止自启</string>
+    <string name="open_auto_start">已开启禁止自启</string>
+    <string name="detail_usage_summery">详细使用情况</string>
+    <string name="wakeup_record">唤醒记录</string>
+    <string name="no_wakeup_record">暂无唤醒记录</string>
+    <string name="open_stop_wakeup_warning">开启禁止唤醒功能可能会影响源应用的使用体验,是否开启该功能</string>
+
+    <string name="cpu_total_time">CPU总使用时间</string>
+    <string name="cpu_foreground">CPU（前台）</string>
+    <string name="wakeup_time">保持唤醒时间</string>
+    <string name="gps_time">GPS</string>
+    <string name="ems_received">接收的移动数据包</string>
+    <string name="ems_send">发送的移动数据包</string>
+    <string name="wlan_received">接受的WLAN数据包</string>
+    <string name="wlan_send">发送的WLAN数据包</string>
+    <string name="total_power">计算出的耗电量</string>
+    <string name="running_time">已运行时间</string>
+    <string name="wait_note1">开启或退出超长待机模式需要花费一些时间\n请耐心等待</string>
+    <string name="power_warning">电池电量低，还剩<xliff:g>%1$s</xliff:g>，是否切换至超长待机模式</string>
+    <string name="switch_string">切换</string>
+    
+    <string name="net_flow_manage">流量管理</string>
+    <string name="net_flow_set_flow_package">设置流量套餐</string>
+    <string name="net_flow_rank">流量排行</string>
+    <string name="net_flow_permission">联网权限</string>
+    <string name="net_flow_package_flow">套餐流量：</string>
+    <string name="net_flow_used_flow">已用流量：</string>
+    <string name="net_flow_month_end_date">套餐月结日</string>
+    <string name="net_flow_warning_value">预警值</string>
+    <string name="net_flow_ok">确定</string>
+    <string name="net_flow_month_of_date">每月%1$s日</string>
+    <string name="net_flow_set">流量设置</string>
+    
+    <string name="net_flow_gb">GB</string>
+    <string name="net_flow_mb">MB</string>
+    <string name="net_flow_kb">KB</string>
+    <string name="net_flow_used">已用</string>
+    <string name="net_flow_remainder">剩余</string>
+   	<string name="net_flow_exceed">超出</string>
+    <string name="traffic_remainder_to_end">还有%1$s天月结</string>
+    <string name="traffic_set_card">设为流量卡</string>
+    <string name="traffic_set_card_ok">已设为流量卡</string>
+   	
+   	<string name="tabbar_name1">卡槽1</string>
+    <string name="tabbar_name2">卡槽2</string> 
+    
+    <string name="no_card_warning">没有SIM卡</string>
+    <string name="brackets_left">(</string>
+    <string name="brackets_right">)</string>
+    <string name="info_save_error_no_flow_input">请输入每月流量限制 </string>
+    
+    <string name="mobile_data_stop_title">流量提醒</string>
+    <string name="mobile_data_stop_content">流量已用完，关闭移动数据？</string>
+    <string name="action_restart">取消</string>
+    <string name="action_stop">关闭</string>
+    <string name="popup_notification_title">未设置流量套餐</string>
+    <string name="popup_notification_ticker_title">当前流量未设置套餐保护</string>
+    <string name="notification_warn_exceed_warning_title">流量套餐红色警告</string>
+    <string name="notification_warn_exceed_warning_content">流量已达到警告值，触摸可查看使用情况</string>
+    <string name="dialog_change_gprsdefautlsim_title">要把流量卡切换为SIM卡%1$s吗？</string>
+    <string name="dialog_change_gprsdefautlsim_msg">最多可能需要1分钟</string>
+    <string name="dialog_change_gprsdefaultsim_wait">请稍候</string>
+    <string name="super_mode_hint_text">该模式下仅提供电话、短信、闹钟功能\n该模式可能导致部分桌面插件消失</string>
+    <string name="smart_open_hint">智能省电已开启</string>
+    <string name="smart_close_hint">智能省电未开启</string>
+    
+    <!-- PermissionFirstControlActivity -->
+    <string name="notification_alow_send">允许发送通知</string>
+    <string name="pure_setting">纯净设置</string>
+    <string name="permission_setting_num">权限设置（%1$s）</string>
+
+</resources>

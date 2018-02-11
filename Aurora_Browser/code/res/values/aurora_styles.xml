@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <style name="aurora_settting_bar_text">	
+	     <item name="android:textColor">@drawable/aurora_setting_bar_text_color_selector</item>
+	     <item name="android:textSize">@dimen/aurora_setting_text_size</item>
+    </style>
+</resources>

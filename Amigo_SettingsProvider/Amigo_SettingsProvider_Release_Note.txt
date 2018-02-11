@@ -1,0 +1,27 @@
+==================
+Build Notes
+==================
+1.版本目的:
+修改bug
+2.功能变更:
+无
+3.重点测试的问题:
+无
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/Amigo_SettingsProvider/Amigo_SettingsProvider_01_V2.0.0.x.zip
+
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+CR01511884      Resolved   wanggj     【重点问题】驱动：必现 T4033版本未恢复出厂写diag接口，PC端无端口显示(恢复出厂后正常)
+CR01531683      Opened     wanggj     在设置中选择振动效果时，点击每个效果就会振动。如果当前一次振动没结束时，就返回上一级菜单，振动就要中断停止
+Tag url: http://192.168.110.97/svn/Amigo_SettingsProvider/tags/Amigo_SettingsProvider_01_V2.0.0.x
+Previous tag: Amigo_SettingsProvider_01_V2.0.0.w
+Code difference: svn diff -r 394:391 http://192.168.110.97/svn/Amigo_SettingsProvider/trunk
+

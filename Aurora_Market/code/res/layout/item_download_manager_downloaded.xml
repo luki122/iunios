@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/down_man_item_height"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/normal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/down_man_item_height" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/down_man_item_icon_width_and_height"
+            android:layout_height="@dimen/down_man_item_icon_width_and_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/down_man_item_padding_top_and_bottom"
+            android:layout_marginTop="@dimen/down_man_item_padding_top_and_bottom"
+            android:src="@drawable/page_appicon_small" />
+
+        <com.aurora.market.widget.ProgressBtn
+            android:id="@+id/progressBtn"
+            android:layout_width="@dimen/app_item_down_btn_container_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tv_appname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/down_man_item_appname_height"
+            android:layout_marginLeft="@dimen/down_man_item_center_margin"
+            android:layout_marginTop="@dimen/down_man_item_padding_top"
+            android:layout_toLeftOf="@+id/progressBtn"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/app_item_namecolor"
+            android:textSize="@dimen/textsize_16" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/down_man_item_status_height"
+            android:layout_below="@+id/tv_appname"
+            android:layout_marginBottom="@dimen/down_man_item_padding_top_and_bottom"
+            android:layout_marginLeft="@dimen/down_man_item_center_margin"
+            android:layout_marginTop="@dimen/down_man_item_status_margin_top"
+            android:layout_toLeftOf="@+id/progressBtn"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/down_man_item_status_text"
+            android:textSize="@dimen/textsize_12" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/view_download_man_footer" />
+
+</LinearLayout>

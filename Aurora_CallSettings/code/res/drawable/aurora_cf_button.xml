@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"
+          android:drawable="@drawable/aurora_call_forward_icon_press" />
+    
+    <item android:state_enabled="false"
+          android:drawable="@drawable/aurora_call_forward_icon_disabled" /> 
+
+    <item
+        android:drawable="@drawable/aurora_call_forward_icon" />
+
+</selector>

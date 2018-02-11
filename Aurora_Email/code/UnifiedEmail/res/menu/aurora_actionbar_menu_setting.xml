@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- android:icon="@drawable/aurora_actionbar_menu_setting" -->
+    <item
+        android:id="@+id/aurora_actionbar_menu_setting"
+        android:title="@string/aurora_actionbar_menu_setting">
+    </item>
+</menu>

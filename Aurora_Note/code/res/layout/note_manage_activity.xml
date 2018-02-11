@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/note_auto_indent"
+            android:textColor="@color/note_main_text_color"
+            android:textSize="14sp" />
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/auto_indent_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/backup_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="14sp"
+        android:text="@string/note_backup" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:background="@color/note_main_bg_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/restore_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="14sp"
+        android:text="@string/note_restore" />
+
+    <TextView
+        android:id="@+id/about_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="14sp"
+        android:text="@string/note_about"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/share_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="14sp"
+        android:text="@string/note_share" />
+
+    <TextView
+        android:id="@+id/express_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/aurora_ripple_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="14sp"
+        android:text="@string/note_express" />
+</LinearLayout>

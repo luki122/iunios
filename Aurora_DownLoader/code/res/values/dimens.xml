@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <integer name="list_item">174</integer>
+
+    <dimen name="list_item_dp">57dp</dimen>
+    <dimen name="list_title_max_length">233dp</dimen>
+    <dimen name="list_title_min_length">116dp</dimen>
+    <dimen name="frist_bottom">565dp</dimen>
+
+</resources>

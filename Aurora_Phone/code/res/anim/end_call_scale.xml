@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially" >
+
+    <set>
+        <objectAnimator
+            android:duration="@integer/aurora_animation_duration_160"
+            android:interpolator="@interpolator/answer_icon_scale1_interpolator"
+            android:propertyName="scaleY"
+            android:valueFrom="1"
+            android:valueTo="1.15" />
+        <objectAnimator
+            android:duration="@integer/aurora_animation_duration_160"
+            android:interpolator="@interpolator/answer_icon_scale1_interpolator"
+            android:propertyName="scaleX"
+            android:valueFrom="1"
+            android:valueTo="1.15" />
+    </set>
+    
+        <set>
+        <objectAnimator
+            android:duration="@integer/aurora_animation_duration_240"
+            android:interpolator="@interpolator/answer_icon_scale1_interpolator"
+            android:propertyName="scaleY"
+            android:valueFrom="1.15"
+            android:valueTo="1" />
+        <objectAnimator
+            android:duration="@integer/aurora_animation_duration_240"
+            android:interpolator="@interpolator/answer_icon_scale1_interpolator"
+            android:propertyName="scaleX"
+            android:valueFrom="1.15"
+            android:valueTo="1" />
+    </set>
+
+</set>

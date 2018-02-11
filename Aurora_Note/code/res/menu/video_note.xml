@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/action_take_video"
+        android:title="@string/menu_take_video"
+        android:showAsAction="always|withText" />
+    <item
+        android:id="@+id/action_select_video"
+        android:title="@string/menu_select_video"
+        android:showAsAction="always|withText" />
+
+</menu>

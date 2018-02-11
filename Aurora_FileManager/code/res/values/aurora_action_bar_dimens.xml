@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="aurora_more_menu_item_height">48dp</dimen>
+    <dimen name="aurora_menu_item_height">45dp</dimen>
+    <dimen name="aurora_menu_item_text_size">20sp</dimen>
+    <dimen name="aurora_chart_margin_top">12dp</dimen>
+    <dimen name="aurora_chart_margin_left">30dp</dimen>
+    <dimen name="aurora_storage_title_margin_left">7dp</dimen>
+    <dimen name="aurora_storage_title_layout_margin_top">7.6dp</dimen>
+    <dimen name="folder_icon_preview_item_padding">10dp</dimen>
+    <dimen name="folder_icon_preview_size">60dp</dimen>
+    <dimen name="folder_icon_preview_padding">10dp</dimen>
+    <dimen name="folder_preview_size">150dp</dimen>
+    <dimen name="folder_preview_padding">10dp</dimen>
+    <dimen name="aurora_pic_brower_item_height">159.5dp</dimen>
+    <dimen name="aurora_pic_brower_item_width">159.5dp</dimen>
+    <dimen name="aurora_pic_brower_item_divider">0.6dp</dimen>
+    <dimen name="aurora_pic_brower_item_image_height">77.25dp</dimen>
+    <dimen name="aurora_pic_brower_item_margin_left">5dp</dimen>
+    <dimen name="aurora_pic_brower_item_margin_bottom">22.5dp</dimen>
+    <dimen name="aurora_pic_brower_item_margin_top">22.5dp</dimen>
+    <dimen name="aurora_pic_brower_list_view_width">324dp</dimen>
+    <dimen name="aurora_pic_brower_list_view_margin_top">27dp</dimen>
+    <dimen name="aurora_file_manager_title_max_size">270dp</dimen>
+    <dimen name="aurora_file_manager_pic_list_margin">11dp</dimen>
+    <dimen name="aurora_file_manager_pic_list_margin_2">4dp</dimen>
+
+</resources>

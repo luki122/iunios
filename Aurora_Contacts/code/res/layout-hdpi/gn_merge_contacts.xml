@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <aurora.widget.AuroraListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:layout_weight="1">
+    </aurora.widget.AuroraListView>
+    
+    <!-- <View
+        android:id="@+id/btn_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:background="?android:attr/dividerHorizontal" /> -->
+
+	<LinearLayout
+        android:id="@+id/buttonbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gn_action_button_padding"
+        android:orientation="horizontal" >
+        <aurora.widget.AuroraButton
+        android:id="@+id/merge_contacts_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/aurora_editor_item_minheight"
+        android:background="@drawable/aurora_kind_view_bg"           
+        android:text="@string/gn_start_merge"
+        android:onClick="onClick" 
+        android:visibility="gone"/>
+    </LinearLayout>
+    
+    
+<!--     <LinearLayout
+        android:id="@+id/merge_contacts_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:paddingTop="2.5dip"
+        android:gravity="center"
+        style="@android:style/ButtonBar">
+
+        <aurora.widget.AuroraButton android:id="@+id/merge_contacts_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:text="@string/gn_start_merge"
+            android:onClick="onClick"/>
+
+    </LinearLayout> -->
+
+</LinearLayout>

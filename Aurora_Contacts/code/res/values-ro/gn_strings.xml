@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+        <!--Gionee zjy 20120321 add for CR00555135 start -->
+	<string name="internal_version">Versiune internă</string>
+	<string name="external_version">Versiune</string>
+	<string name="isnull">Necunoscut</string>
+	<string name="close">Închideți</string>
+	<string name="buildtime">Oră creare</string>
+	<string name="gn_gbw_internal_v" >Versiune Allview</string>
+        <string name = "gn_ft_bt_result_success">Reușit</string>
+        <string name = "gn_ft_bt_result_fail">Eșuat</string>
+        <string name = "gn_ft_bt_result_no">Nu</string>
+        <!--Gionee zjy 20120321 add for CR00555135 start -->
+	<string name = "gn_phone_text">Telefon</string>
+	
+	<!-- Gionee:wangth 20120420 add for CR00576392 begin -->
+    <string name = "gn_usb_storage_text">Memorie internă</string>
+    <!-- Gionee:wangth 20120420 add end -->
+
+	<!-- Gionee baorui 2012-04-26 aad for CR00582516 begin -->
+    <string name="gn_exportDirectoryName"></string>
+    <!-- Gionee baorui 2012-04-26 aad for CR00582516 end -->
+
+	<!--Gionee lich 20120420 add for CR00576475 start -->
+    <string name="gn_yes">"da"</string>
+    <string name="gn_no">"nu"</string>
+    <!--Gionee lich 20120420 add for CR00576475 end -->
+
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" begin-->
+    <string name="zzzzz_gn_group_phone">Phone</string>
+    <!-- GIONEE: lujian 2012.08.09 modify for "FLY translate string to RUSSIA CR00672364" end-->
+
+    <!-- Gionee:wangth 20120423 add for CR00577037 begin -->
+    <string name = "gn_contact_name_too_long">numele este prea lung</string>
+    <!-- Gionee:wangth 20120423 add end -->
+	<string name="slotA_signal">1</string>
+	<string name="slotB_signal">2</string>
+	<string name="slot_a">SIM A </string>
+	<string name="slot_b">SIM B </string>
+
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 start-->
+    <string name = "user_agent">"User Agent"</string>
+    <!--GIONEE licheng May 8, 2012 add for CR00594200 end-->
+
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 start-->
+    <string name = "unicom_version">"Versiune Software"</string>
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 end-->
+    
+    <!--Gionee hzy start -->
+    <!--Gionee:guoxiaotian 20120919 modify start for CR00696413-->
+    <string name="gn_dialer_suggest_show">Căutare inteligentă: Contactul căutat poate fi găsit formând primele cifre ale numărului alocat acestuia sau tastând numele utilizand cifrele corespunzatoare fiecarei litere</string>
+    <!--Gionee:guoxiaotian 20120919 modify start for CR00696413-->
+    <string name="gn_no_conditioned_contacts">Niciun contact condiționat</string>
+    <string name="gn_dialpad_new_contact_item">Contact nou</string>
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 start -->
+    <string name="gn_dialpad_add_exist_contact_item">Contact existent</string>
+    <!-- Gionee:huangzy 20120627 modify for CR00626760 end -->
+    <string name="gn_dialpad_send_message_item">Expediere mesaj</string>
+    <string name="gn_allcall_tab_label">Toate apelurile</string>
+    <string name="gn_misscall_tab_label">Apeluri pierdute</string>    
+    
+    <string name="gn_clearCallLogConfirmation_title">Șterge istoric apel</string>
+    <string name="gn_clearAllCallLogConfirmation">Sunteți sigur că doriți ștergerea tututor înregistrărilor?</string>
+    <string name="gn_clearSingleCallLogConfirmation">Sunteți sigur că doriți ștergerea acestei înregistrări?</string>
+    <!--gionee xuhz 20120728 add for CR00658189 start  -->
+    <string name="gn_clearSingleCallLogConfirmation_title">Remove from call log</string>
+    <string name="gn_clearSelectedCallLogConfirmation_title">Delete the selected records</string>
+    <string name="gn_clearSelectedCallLogConfirmation">Are you sure to delete the selected records?</string>
+    <!--gionee xuhz 20120728 add for CR00658189 end  -->
+    <string name="gn_hint_findContacts">"căutare %d contacte"</string>
+    <string name="gn_listCustomView">Personalizat</string>
+    
+    <string name="gn_contactsFavoritesLabel">Favorite</string>
+    
+    <string name="gn_no_visible_contacts">Niciun contact</string>
+    <string name="gn_new_contact_item">Contact nou</string>
+    <string name="gn_exchange_contacts">Copie de rezervă</string>
+    
+	<string name="gn_menu_merge_contacts">Îmbinare contacte</string>
+    <string name="gn_mergeContactsConfirmation">Îmbinare contacte întrerupte care pot fi salvate în telefon intr-un singur contact , agreați?</string>
+    <string name="gn_mergeContactsConfirmation_title">Îmbinare contacte</string>
+    <string name="gn_searchContactsForMerge_msg">Scanare contacte întrerupte\nAșteptați...</string>
+    <string name="gn_mergable_query_stop_msg">Scanare întrerupte</string>
+    <string name="gn_noMergableConfirmation_title">Niciun duplicat</string>
+    <string name="gn_noMergableContacts_msg">Niciun contact duplicat</string>
+    <string name="gn_mergingSameContacts_msg">Îmbinare contacte duplicate\nAșteptați...</string>
+    <string name="gn_expected_merge">Îmbinare preconizată</string>
+    <string name="gn_mergeble">(%d) contacte duplicate găsite</string>
+    <string name="gn_start_merge">Pornire îmbinare</string>
+    <string name="gn_merge_stop_title">Îmbinare întreruptă</string>
+    <string name="gn_merge_finish_title">Îmbinare finalizată</string>
+    <string name="gn_merged_sum_msg">Îmbinare %1$d contact(e)</string>
+    <string name="gn_stop_operate_title">Ieșire operație</string>
+    <string name="gn_stop_operate_confirm_msg">Sunteți sigur că doriți să ieșiți din operație？</string>
+    <string name="gn_type_im_other">IM</string>
+    <string name="gn_member_already_in_group">Contactul există deja în acest grup</string>    
+    
+	<string name="gn_dialog_new_group_account" msgid="2318032089273496830">Creare grup in cont</string>
+	<string name="gn_account_phone" product="default">Numai telefon</string>
+	
+	<string name="gn_menu_ringtone_set_batch">Setare sonerieîn serie</string>
+	
+	<string name="gn_people_count"><xliff:g id="count">%1$d</xliff:g> contacte</string>
+	<plurals name="gn_searchFoundContacts">
+	    <item quantity="one" msgid="4826918429708286628">" 1 găsit"</item>
+	    <item quantity="other" msgid="7988132539476575389">"<xliff:g id="COUNT">%d</xliff:g> găsite"</item>
+	</plurals>
+	
+	<string name="gn_add_to_favorite">Adăugare la favorite</string>
+	<string name="gn_remove_from_favorite">Ștergere din favorite</string>
+	
+	<string name="gn_edit_number_before_call">Editare înaintea apelării</string>
+	
+	<string name="gn_menu_ip_dial_setting">Setări apel IP</string>
+	<string name="gn_menu_gemini_sim_management">Setări SIM</string>
+	
+	<string name="gn_menu_clear_frequent_contacted">Ștergere apeluri frecvente</string>
+	<string name="gn_clear_frequent_contacted_title">Ștergere apeluri frecvente</string>
+    <string name="gn_clearFrequentContactedConfirmation">Sunteți sigur că doriți să ștergeți apelurile frecvente?</string>
+	
+	<string name="gn_phone_label">Telefon</string>
+	<string name="gn_only_save_local_label">Salvare numai pe telefon</string>
+	
+	<string name="gn_phone_call_record_tile">Înregistrare</string>
+	<string name="gn_outgoingcall_tab_label">Apeluri expediate</string>
+    <string name="gn_incomingcall_tab_label">Apeluri primite</string>
+    <!-- Gionee:huangzy 20120806 add for CR00667827 start -->
+	<string name="gn_add_blacklist">Adăugare la lista neagră</string>
+	<!-- Gionee:huangzy 20120806 add for CR00667827 end -->
+	
+	<string name="gn_menu_delete_contact">Ștergere contacte</string>
+	
+	<string name="gn_call_outgoing_type">expediate</string>
+	<string name="gn_call_incoming_type">primite</string>
+	<string name="gn_call_ring_times">apeluri</string>
+	<string name="gn_call_ring_unit">apeluri</string>
+	<string name="gn_call_unconnected">Neconectat</string>
+	
+	<string name="gn_hour">o</string>
+	<string name="gn_minute">m</string>	
+	<string name="gn_second">s</string>	
+	
+	<string name="gn_unknow_contact">Contact necunoscut</string>
+	
+	<string name="gn_contacts_sms_tip">Tip</string>
+    <string name="gn_calldetails_add_black_confirm">Doriți adăugarea acestui număr în lista neagră？</string>
+    
+    <!-- Gionee:huangzy 20120604 add for CR00616160 start -->
+    <string name="unselect_all">Deselectare totală</string>
+	<string name="select_all">Selectare totală</string>	
+	<string name="gn_set_star">Adăugare la favorite</string>
+	<string name="gn_remove_star">Ștergere din favorite</string>
+	<string name="gn_add_to_group">Adăugare la grup</string>
+	<string name="gn_move_from_group">Ștergere din grup</string>	
+	<string name="gn_add">Adăugare</string>
+	<string name="gn_remove">Șterge</string>
+	<!-- Gionee:huangzy 20120604 add for CR00616160 end -->
+	
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 start -->
+	<string name="gn_hidden_number">Ascunde număr</string>
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 end -->
+	
+	<!-- Gionee:huangzy 20120621 add for CR00624998 start -->
+	<string name="gn_max_add_num">Adaugă contacte %d o dată cel puțin</string>
+	<string name="gn_max_remove_num">Șterge contacte %d o dată cel puțin</string>
+	<!-- Gionee:huangzy 20120621 add for CR00624998 end -->
+	<!-- Gionee:huangzy 20120815 add for CR00664358 start -->
+	<string name="gn_max_move_num">A maximum of %d contacts per time</string>
+	<!-- Gionee:huangzy 20120815 add for CR00664358 end -->
+	<!-- Gionee:guoxiaotian 20120926 modify for CR00704266 start -->
+	<string name="gn_save">Save</string>	
+	<!-- Gionee:huangzy 20120802 modify for CR00663548 start -->
+	<string-array name="gn_call_log_type">
+        <item>Toate apelurile</item>
+        <item>Apeluri expediate</item>
+        <item>Apeluri primite</item>
+        <item>Apeluri pierdute</item>
+    </string-array>
+    
+	<string-array name="gn_call_log_type_empty">
+        <item>No calls</item>
+        <item>No Outgoing</item>
+        <item>NO Received</item>
+        <item>No Missed</item>
+    </string-array>
+    <!-- Gionee:huangzy 20120802 modify for CR00663548 end -->
+    <!-- Gionee:guoxiaotian 20120926 modify for CR00704266 end -->
+	<string name="gn_paste">Paste</string>
+	<string name="gn_dialpad">Tastatură</string>
+	<string name="gn_video_dial">Video Dial</string>
+	<string name="gn_selected_count">%1$s Selected</string>
+	
+	<string name="gn_menu_dialpad_title">Go DialPad</string>
+	<string name="gn_hot_lines_label">Hot Lines</string>
+    <!--Gionee hzy end -->
+
+    <!--GIONEE xuhz 20120522 add for CR00575945 start-->
+    <string name="gn_midnight">AM</string>
+    <string name="gn_dawn">AM</string>
+    <string name="gn_am">AM</string>
+    <string name="gn_noon">PM</string>
+    <string name="gn_pm">PM</string>
+    <string name="gn_dusk">PM</string>
+    <string name="gn_night">PM</string>
+    <!--GIONEE xuhz 20120522 add for CR00575945 end-->
+
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 begin -->
+    <string name="gn_contactSavedNoNameError_Toast">Introduceți numele</string>
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 end -->
+    
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 begin -->
+    <string name="delete_call_log">Ștergere istoric apeluri</string>
+    <string name="gn_select_conversation_one">alege 1 </string>
+    <string name="gn_select_conversation_more">ales %1$s </string>
+    <string name="delete">șterge</string>
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 end -->
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 start -->
+    <string name="contact_tel">Tel</string>
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 end -->
+    
+    <!-- Gionee qiuxd 20120612 add for CR00623811 start -->
+    <string name = "gn_lcd_type">Tip ecran</string>
+    <string name="gn_gtl_type">Tip dispozitiv</string>
+    <string name="gn_type">Tip</string>
+    <!-- Gionee qiuxd 20120612 add for CR00623811 end -->
+
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->
+    <string name="gn_sms">SMS</string>
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->
+    
+    <!-- Gionee:wangth 20120702 add for CR00632662 begin -->
+    <string name = "gn_email_2g_invalid">Nu se poate salva adresă email în SIM card</string>
+    <!-- Gionee:wangth 20120702 add end -->
+    
+    <!-- gionee xuhz 20120613 add for CR00614793 start -->
+    <string name="gn_favorite_widget_label">Favorite &#38; Contacte frecvente</string>
+    <string name="gn_widget_favorite_title">Favorite &#38; Contacte frecvente</string>
+    <string name="gn_widget_favorite_empty">Nu există favorite și contacte frecvente</string>
+    <string name="gn_widget_loading">Se încarcă\u2026</string>
+    <!-- gionee xuhz 20120613 add for CR00614793 end -->
+    <!-- Gionee:wangth 20120709 add for CR00640337 begin -->
+    <string name = "gn_share_contact_label">Memorie</string>
+    <!-- Gionee:wangth 20120709 add end -->
+
+    <!-- Gionee:wangth 20120716 add for CR00647568 begin -->
+    <string name="gn_contact_delete_all_tips">"Deja ștergerea de contacte funcționează în background . Dacă doriți asta ,anulați ștergea mai întâi."</string>
+    <!-- Gionee:wangth 20120716 add for CR00647568 end -->
+    <!-- gionee xuhz 20120728 add for CR00658189 start -->
+    <string name="gn_confirm_export_title">Export contacte</string>
+    <string name="gn_confirm_export_message">Sunteți sigur că doriți să exportați lista de contacte în fișierul : <xliff:g id="vcard_filename">%s</xliff:g> ?</string>
+    <!-- gionee xuhz 20120728 add for CR00658189 end -->
+    
+    <!-- gionee xuhz 20120803 modify for CR00663697 start -->
+    <string-array name="gn_gionee_number">
+        <item>0040268336663</item>
+        <item>076982781000</item>
+        <item>076982782000</item>
+        <item>0040788340903</item>
+        <item>076982785000</item>
+        <item>076982786000</item>
+        <item>076982787000</item>
+    </string-array>
+    <string name="gn_customer_service">Allview Service Clienți</string>
+    <!-- gionee xuhz 20120803 modify for CR00663697 end -->
+    
+    <string-array name="gn_alphbet_index">
+        <item>#</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>        
+    </string-array>
+
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 start -->
+    <string-array name="gn_alphbet_index_fly">
+        <item>#</item>
+        <item>A</item>
+        <item>C</item>
+        <item>E</item>
+        <item>G</item>
+        <item>I</item>
+        <item>K</item>
+        <item>M</item>
+        <item>O</item>
+        <item>R</item>
+        <item>T</item>
+        <item>V</item>
+        <item>X</item>
+        <item>Z</item>
+        <item>А</item>
+        <item>В</item>
+        <item>Е</item>
+        <item>Ж</item>
+        <item>И</item>
+        <item>М</item>
+        <item>П</item>
+        <item>Ф</item>
+        <item>Ц</item>
+        <item>Ш</item>
+        <item>Ы</item>
+        <item>Э</item>
+        <item>Я</item>           
+    </string-array>
+    <!-- Gionee lixiaohu 20120810 add for CR00654788 end -->
+
+    <!-- gionee xuhz 20120812 add for GIUI4.3 start -->
+    <string name="gn_gallery_title">Allview Galerie</string>
+    <string name="gn_pick_photo_from_other_app">Preluare fișier din altă aplicație</string>
+    <string name="gn_gallery_photo_view_title">Allview imagine contact</string>
+    <string name="gn_the_first_picture">Prima imagine</string>
+    <string name="gn_the_last_picture">Ultima imagine</string>
+    <string name="gn_apply">Aplică</string>
+    <string name="gn_set_picture_success">Setare imagine contact realizată</string>
+    <!-- gionee xuhz 20120912 add for GIUI4.3 end -->
+
+    <!-- GIONEE huyuke 20120824 add for CR00680819 begin -->
+    <string name="gn_device_status_dlg_title">Stare </string>
+    <string name="gn_x_misc_status_normal">Normal</string>
+    <string name="gn_x_misc_status_locked">Blocat</string>
+    <string name="gn_x_misc_status_unkown">Necunoscut</string>
+    <!-- GIONEE huyuke 20120824 add for CR00680819 end -->
+  
+   <!-- Gionee liming 2012-06-05 add for CR00623425 start -->
+    <string name="gn_sales_num">număr:</string>
+    <string name="gn_sales_time">durată(min):</string>
+    <string name="gn_sales_switch">schimbare</string>
+    <string name="gn_sales_save">salvare</string>
+    <string name="gn_sales_exit">ieșire</string>
+    <!-- Gionee liming 2012-06-05 add for CR00623425 end -->
+</resources>

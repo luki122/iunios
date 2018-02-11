@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="pref_clear_record_of_input"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/record_of_input" />
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="pref_clear_record_of_browse"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/record_of_browse" />
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="false"
+        aurora:aurorakey="pref_clear_password_of_account"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/password_of_account" />
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="pref_clear_buffered_page"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/buffered_page" />
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="false"
+        aurora:aurorakey="pref_clear_cookies"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/cookies" />
+    <AuroraCheckBoxPreference
+        aurora:auroradefaultValue="false"
+        aurora:aurorakey="pref_clear_geo_authorization"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/geo_authorization" />
+
+    <aurora.preference.AuroraPreferenceCategory>
+        <AuroraPreference
+            aurora:auroralayout="@layout/aurora_pref_text_clear_data"
+            aurora:auroradialogMessage="@string/ask_if_clear_or_not"
+            aurora:aurorakey="pref_clear_data_dialog"
+            aurora:auroratitle="@string/clear_data" />
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_secondary_action_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:descendantFocusability="afterDescendants"
+    android:paddingLeft="4dip"
+    android:gravity="center_vertical|right" >
+    <!-- <View
+        android:id="@+id/divider"
+        android:layout_width="1px"
+        android:layout_height="@dimen/call_log_call_action_size"
+        android:layout_gravity="center_vertical"
+        android:background="?android:attr/listDivider" /> -->
+        
+    <CheckBox
+        android:id="@+id/gn_list_item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/gn_call_log_check_right_padding"
+        android:clickable="false"
+        android:focusable="false"
+        android:padding="8dip"
+        android:visibility="gone" />
+
+    <com.mediatek.contacts.widget.DontPressWithParentImageButton
+        android:id="@+id/secondary_action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/gn_action_btn_min_height"
+        android:minWidth="@dimen/gn_action_btn_min_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_ab_dialer_holo_dark"
+        android:background="?attr/gn_dial_btn_call_small_bg"
+        android:focusable="false" />
+    
+    <!-- android:background="?android:attr/selectableItemBackground" -->
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+        <!--Gionee zjy 20120321 add for CR00555135 start -->
+	<string name="internal_version">内部版本</string>
+	<string name="external_version">版本編號</string>
+	<string name="isnull">未知</string>
+	<string name="close">關閉</string>
+	<string name="buildtime">建立時間</string>
+	<string name="gn_gbw_internal_v" >GN版本編號</string>
+	<string name = "gn_ft_bt_result_success">通過</string>
+        <string name = "gn_ft_bt_result_fail">失敗</string>
+        <string name = "gn_ft_bt_result_no">未檢測</string>
+        <!--Gionee zjy 20120321 add for CR00555135 end -->
+        
+    <!--Gionee hzy start -->
+    <string name="gn_dialer_suggest_show">智能撥號&#160;&#160;:&#160;&#160;&#160;&#160;&#160;可根據電話碼搜尋出電話紀錄，也可依聯絡人名稱的拼音或首位字母匹配，例如：好易用, 可輸入 499, $H^ao $Y^i$Y^ong</string>
+    <string name="gn_no_conditioned_contacts">沒有符合條件的聯絡人</string>
+    <string name="gn_dialpad_new_contact_item">"新增聯絡人"</string>
+    <string name="gn_dialpad_add_exist_contact_item">"新增到已有"</string>
+    <string name="gn_dialpad_send_message_item">"發送訊息"</string>
+    <string name="gn_allcall_tab_label">"全部通話"</string>
+    <string name="gn_misscall_tab_label">"未接來電"</string>    
+    
+    <string name="gn_clearCallLogConfirmation_title">"清除通話紀錄"</string>
+    <string name="gn_clearAllCallLogConfirmation">"您確定要清除通話紀錄嗎？"</string>
+    <string name="gn_clearSingleCallLogConfirmation">"您確定要刪除此組通話紀錄嗎？"</string>
+    <!--gionee xuhz 20120728 add for CR00658189 start  -->
+    <string name="gn_clearSingleCallLogConfirmation_title">"從通話記錄中刪除"</string>
+    <string name="gn_clearSelectedCallLogConfirmation_title">"刪除所選記錄"</string>
+    <string name="gn_clearSelectedCallLogConfirmation">"您確定要刪除所選通話紀錄嗎？"</string>
+    <!--gionee xuhz 20120728 add for CR00658189 end  -->
+    <string name="gn_hint_findContacts">"搜尋 %d 位聯絡人"</string>
+    <string name="gn_listCustomView">"自訂"</string>
+    
+    <string name="gn_contactsFavoritesLabel">"電話簿"</string>
+    
+    <string name="gn_no_visible_contacts">沒有聯絡人</string>
+    <string name="gn_new_contact_item">"新增聯絡人"</string>
+    <string name="gn_exchange_contacts">易備份</string>
+    
+    <string name="gn_menu_merge_contacts">合併聯絡人</string>
+    <string name="gn_mergeContactsConfirmation">刪除同一帳戶下的聯絡人，只保留一筆記錄(不處理SIM卡上的聯絡人)，要合併嗎？</string>
+    <string name="gn_mergeContactsConfirmation_title">合併聯絡人</string>
+    <string name="gn_searchContactsForMerge_msg">正在搜尋聯絡人\n請稍後&#8230;</string>
+    <string name="gn_mergable_query_stop_msg">搜尋中斷</string>
+    <string name="gn_noMergableConfirmation_title">無重複</string>
+    <string name="gn_noMergableContacts_msg">無重複聯絡人</string>
+    <string name="gn_mergingSameContacts_msg">正在刪除重複聯絡人\n請稍後&#8230;</string>
+    <string name="gn_mergeble">發現重複記錄(%d)筆</string>
+    <string name="gn_manual_combine">手動合併</string>
+	<string name="gn_combine_contacts_title">合併聯絡人</string>
+	<string name="gn_combine_contacts_sub_title">發現姓名相同聯絡人%1$d組</string>
+    <string name="gn_start_merge">開始合併</string>
+    <string name="gn_merge_stop_title">合併中斷</string>
+    <string name="gn_merge_finish_title">合併完成</string>
+    <string name="gn_merged_sum_msg">已刪除%1$d位重複的聯絡人</string>
+    <string name="gn_stop_operate_title">退出操作</string>
+    <string name="gn_stop_operate_confirm_msg">確定要退出當前操作？</string>
+    <string name="gn_type_im_other" msgid="5669407180177236769">"其他"</string>
+	<string name="gn_member_already_in_group">"此聯絡人已在該群組"</string>
+    
+	<string name="gn_dialog_new_group_account" msgid="2318032089273496830">"新增群組到"</string>
+	<string name="gn_account_phone" product="default">"話機 (僅保存在話機中)"</string>
+	
+	<string name="gn_menu_ringtone_set_batch">批量設置鈴聲</string>
+	
+	<string name="gn_people_count"><xliff:g id="count">%1$d</xliff:g> 人</string>
+	<plurals name="gn_searchFoundContacts">
+	    <item quantity="one" msgid="4826918429708286628">"搜尋到 1 個聯絡人"</item>
+	    <item quantity="other" msgid="7988132539476575389">"搜尋到 <xliff:g id="COUNT">%d</xliff:g> 個聯絡人"</item>
+	</plurals>
+	
+	<string name="gn_add_to_favorite">新增到收藏</string>
+	<string name="gn_remove_from_favorite">從收藏中移除</string>
+	
+	<string name="gn_edit_number_before_call">撥號之前編輯號碼</string>
+	
+	<string name="gn_menu_ip_dial_setting">IP撥號設置</string>
+	<string name="gn_menu_gemini_sim_management">雙卡設置</string>
+	
+	<string name="gn_menu_clear_frequent_contacted">刪除經常通話記錄</string>
+	<string name="gn_clear_frequent_contacted_title">"刪除經常通話記錄"</string>
+    <string name="gn_clearFrequentContactedConfirmation">"確定要刪除經常通話記錄嗎？"</string>
+	
+	<string name="gn_phone_label">話機</string>
+	<string name="gn_only_save_local_label">僅保存在話機中</string>
+	
+	<string name="gn_phone_call_record_tile">通話錄音</string>
+	<string name="gn_outgoingcall_tab_label">"已撥電話"</string>
+    <string name="gn_incomingcall_tab_label">"已接電話"</string>
+    <!-- Gionee:huangzy 20120806 add for CR00667827 start -->
+	<string name="gn_add_blacklist">加入黑名單</string>
+	<string name="gn_show_intercept_call">防擾</string>
+	<!-- Gionee:huangzy 20120806 add for CR00667827 start -->
+	
+	<string name="gn_menu_delete_contact">刪除聯絡人</string>
+	
+	<string name="gn_call_outgoing_type">撥出</string>
+	<string name="gn_call_incoming_type">撥入</string>
+	<string name="gn_call_ring_times">響鈴</string>
+	<string name="gn_call_ring_unit">聲</string>
+	<string name="gn_call_unconnected">未接通</string>
+	
+	<string name="gn_hour">小時</string>
+	<string name="gn_minute">分</string>	
+	<string name="gn_second">秒</string>
+	
+	<string name="gn_unknow_contact">未知聯絡人</string>
+	
+	<string name="gn_contacts_sms_tip">提示</string>
+	<string name="gn_calldetails_add_black_confirm">是否把當前號碼加入“防擾管理”黑名單？</string>
+
+	<!-- Gionee:huangzy 20120604 add for CR00616160 start -->	
+	<string name="unselect_all">全不選</string>
+	<string name="select_all">全選</string>
+	<string name="gn_add">新增</string>
+	<string name="gn_remove">移除</string>
+	<string name="gn_set_star">加入收藏</string>
+	<string name="gn_remove_star">移除收藏</string>
+	<string name="gn_add_to_group">加入群组</string>
+	<string name="gn_move_from_group">移除群组</string>
+	<!-- Gionee:huangzy 20120604 add for CR00616160 end -->
+	
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 start -->
+	<string name="gn_hidden_number">未知號碼</string>
+	<!-- Gionee:huangzy 20120612 modify for CR00614326 end -->
+	
+	<!-- Gionee:huangzy 20120621 add for CR00624998 start -->
+	<string name="gn_max_add_num">一次最多只可添加%d人</string>
+	<string name="gn_max_remove_num">一次最多只可移除%d人</string>
+	<!-- Gionee:huangzy 20120621 add for CR00624998 end -->
+	<!-- Gionee:huangzy 20120815 add for CR00664358 start -->
+	<string name="gn_max_move_num">一次最多只可移動%d人</string>
+	<!-- Gionee:huangzy 20120815 add for CR00664358 end -->
+	<string name="gn_save">保存</string>
+
+	<string-array name="gn_call_log_type">
+        <item>全部通話</item>
+        <item>已撥電話</item>
+        <item>已接電話</item>
+        <item>未接來電</item>
+    </string-array>
+    
+	<string-array name="gn_call_log_type_empty">
+        <item>沒有通話記錄</item>
+        <item>沒有已撥記錄</item>
+        <item>沒有已接記錄</item>
+        <item>沒有未接記錄</item>
+    </string-array>
+    <!-- Gionee futao 20120827 modify for Taiwawn project CR00680815  -->
+	<string name="gn_paste">貼上</string>
+	<string name="gn_dialpad">撥號盤</string>
+	<string name="gn_video_dial">視頻撥號</string>
+	<string name="gn_selected_count">已選中%1$s個</string>
+	
+	<string name="gn_menu_dialpad_title">撥號盤</string>
+    <!--Gionee hzy end -->
+    
+    <string name = "gn_phone_text">手機</string>
+
+	<!-- Gionee baorui 2012-04-26 add for CR00582516 begin -->
+	<string name="gn_exportDirectoryName"></string>
+	<!-- Gionee baorui 2012-04-26 add for CR00582516 end -->
+    
+    <!-- Gionee:wangth 20120420 add for CR00576392 begin -->
+    <string name = "gn_usb_storage_text">內部記憶體</string>
+    <!-- Gionee:wangth 20120420 add end -->
+
+    <!--Gionee lich 20120420 add for CR00576475 start -->
+    <string name="gn_yes">"是"</string>
+    <string name="gn_no">"否"</string>
+	<!--Gionee lich 20120420 add for CR00576475 end -->
+	
+    <!-- Gionee:wangth 20120423 add for CR00577037 begin -->
+    <string name = "gn_contact_name_too_long">名字過長</string>
+    <!-- Gionee:wangth 20120423 add end -->
+    
+	<string name="slot_a">"A卡 "</string>
+	<string name="slot_b">"B卡 "</string>
+
+	<!--GIONEE licheng May 9, 2012 add for CR00594200 start-->
+    <string name = "unicom_version">"軟體版本"</string>
+    <!--GIONEE licheng May 9, 2012 add for CR00594200 end-->
+
+    <!--GIONEE xuhz 20120522 add for CR00575945 start-->
+    <string name="gn_midnight">半夜</string>
+    <string name="gn_dawn">凌晨</string>
+    <string name="gn_am">上午</string>
+    <string name="gn_noon">中午</string>
+    <string name="gn_pm">下午</string>
+    <string name="gn_dusk">傍晚</string>
+    <string name="gn_night">晚上</string>
+    <!--GIONEE xuhz 20120522 add for CR00575945 end-->
+
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 begin -->
+    <string name="gn_contactSavedNoNameError_Toast">請填寫聯絡人姓名</string>
+    <!-- Gionee zhangxx 2012-05-23 add for CR00605159 end -->
+    
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 begin -->
+    <string name="delete_call_log">"刪除通話記錄"</string>
+    <string name="gn_select_conversation_one">已選中1個</string>
+    <string name="gn_select_conversation_more">已選中%1$s個</string>
+    <string name="delete">"删除"</string>
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 end -->
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 start -->
+    <string name="contact_tel">電話</string>
+    <!-- gionee zhouyj 2012-05-30 add for CR00611506 end -->
+    
+    <!-- Gionee qiuxd 20120612 add for CR00623811  start -->
+    <string name = "gn_lcd_type">LCD類型</string>
+    <string name="gn_gtl_type">器件類型</string>
+    <string name="gn_type">類型</string>
+    <!-- Gionee qiuxd 20120612 add for CR00623811 end -->
+    
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 start -->
+    <string name="gn_sms">簡訊</string>
+    <!-- gionee gaoj 2012-7-1 add for CR00632178 end -->
+    
+    <!-- Gionee:wangth 20120702 add for CR00632662 begin -->
+    <string name = "gn_email_2g_invalid">不能將電子郵箱儲存至該SIM卡</string>
+    <!-- Gionee:wangth 20120702 add end -->
+    
+    <!-- gionee xuhz 20120613 add for CR00614793 start -->
+    <string name="gn_favorite_widget_label">收藏 &#38; 常用聯絡人</string>
+    <string name="gn_widget_favorite_title">收藏 &#38; 常用聯絡人</string>
+    <string name="gn_widget_favorite_empty">没有收藏和常用聯絡人</string>
+    <string name="gn_widget_loading">正在加載...</string>
+    <!-- gionee xuhz 20120613 add for CR00614793 end -->
+
+    <!-- Gionee:wangth 20120709 add for CR00640337 begin -->
+    <string name = "gn_share_contact_label">存儲空間</string>
+    <!-- Gionee:wangth 20120709 add end -->
+
+    <!-- Gionee:wangth 20120716 add for CR00647568 begin -->
+    <string name="gn_contact_delete_all_tips">"已經有刪除程式在後台運行，在取消該程式之前，無法再發起新的相關操作。"</string>
+    <!-- Gionee:wangth 20120716 add for CR00647568 end -->
+    
+    <!-- gionee xuhz 20120728 add for CR00658189 start -->
+    <string name="gn_confirm_export_title">"匯出聯絡人"</string>
+    <string name="gn_confirm_export_message">"您確定將您的聯絡人清單匯出至：<xliff:g id="VCARD_FILENAME">%s</xliff:g> 中嗎？"</string>
+    <!-- gionee xuhz 20120728 add for CR00658189 end -->
+    
+    <string name="gn_share_contacts_limit">"可選取並分享的聯絡人在2000名以內"</string> 
+    <string name="gn_delete_contacts_limit">"可選取並刪除的聯絡人在2000名以內"</string>
+    
+    <string name="crop_picture">裁剪圖片</string>
+    <string name="cancel">取消</string>
+    <string name="crop_save_text">裁剪</string>
+    <string name="crop_label">裁剪圖片</string>
+    <string name="reset">重置</string>
+    <string name="load_failed">圖片加載失敗</string>
+    <!-- Gionee fangbin 20120716 added for CR00636040 start -->
+    <string name="crop_failed">空間不足，裁剪失敗！</string>
+    <!-- Gionee fangbin 20120716 added for CR00636040 end -->
+    <string name="croping_dialog">圖片裁剪中，請稍等！</string>
+    <!-- Gionee fangbin 20120912 added for CR00687307 start -->
+    <string name="outofmemory_error">裁剪失敗！內存不足，請釋放資源。</string>
+    <!-- Gionee fangbin 20120912 added for CR00687307 end -->
+</resources>

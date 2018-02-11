@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.aurora.change.view.CropViewPager
+        android:id="@+id/wallpaper_crop_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout 
+        android:id="@+id/wallpaper_crop_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/progress_btn_gradient_bg_in_preview"
+        android:layout_gravity="bottom"
+        >
+        <aurora.widget.AuroraAnimationImageView 
+            android:id="@+id/wallpaper_crop_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_previous"
+              android:background="?android:attr/selectableItemBackgroundBorderless"
+            />
+        <aurora.widget.AuroraAnimationImageView 
+            android:id="@+id/wallpaper_crop_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_next"
+              android:background="?android:attr/selectableItemBackgroundBorderless"
+            />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="aurora_searchview_hint" >Поиск почты</string>
+    <string name="aurora_account_settings_delete">Удалить аккаунт</string>
+    <string name="aurora_account_settings_add">Добавить аккаунт</string>
+    <string name="aurora_account_settings">Аккаунт</string>
+    
+    <string name="aurora_mail_check_frequency_push">Автоматически （push-уведомления）</string>
+    <string name="aurora_mail_check_frequency_5min">Каждые 5 минут</string>
+    <string name="aurora_mail_check_frequency_15min">Каждые 15 минут</string>
+    <string name="aurora_mail_check_frequency_30min">Каждые 30 минут</string>
+    <string name="aurora_mail_check_frequency_1hour">Каждые 1 час</string>
+    <string name="aurora_mail_check_frequency_2hour">Каждые 2 часа</string>
+    <string name="aurora_mail_check_frequency_5hour">Каждые 5 часов</string>
+    <string name="aurora_check_frequency_label">Получить регулярно</string>
+    <string name="aurora_default_signatrue">Отправить из IUNI OS</string>
+    
+    <!-- Aurora shihao add for manual_setttings_login -->
+    <string name="aurora_server_type">Тип сервера </string>
+    <string name="aurora_email_account_1">Аккаунт электронной почты</string>
+    <string name="aurora_recerver_server">Сервер получения </string>
+    <string name="aurora_sent_server">Сервер отправки</string>
+    
+    <string name="aurora_email_server">Сервер </string>
+    <string name="aurora_email_account">Аккаунт </string>
+    <string name="aurora_email_password">Пароль </string>
+    <string name="aurora_email_port">Порт</string>
+    
+    <string name="aurora_login_need_manual_setup">Аккаунт электронной почты в который Вы вошли, требует ручной настройки сервера, продолжить или нет? </string>
+    <string name="aurora_manual_login_goon_button">Продолжить </string>
+    <string name="aurora_manual_login_info_error">Информация о Вашем аккаунте заполнена не полностью!</string>
+    
+    <string name="aurora_account_setup_failed_dlg_auth_message">&quot;Неправильное имя пользователя или пароль, или %1$s сервер не запущен&quot;</string>
+    <string name="aurora_account_manual_setup">Ручная настройка сервера электронной почты </string>
+    <!-- Aurora shihao add for notification_ringtone 20150402 -->
+    <string name="aurora_email_notification">Уведомление </string>
+    <string name="aurora_email_notification_ringtone">Сигнал </string>
+    <string name="aurora_email_notifi_ringtone_title">Уведомление и сигнал </string>
+</resources>

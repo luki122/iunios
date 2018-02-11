@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="id" name="add_menu">false</item>
+<item type="id" name="action_bar_menu">false</item>
+<item type="id" name="action_bottom_bar_menu">false</item>
+<item type="id" name="all_app_action_bar_item">false</item>
+<item type="id" name="add_privacy_action_bar_item">false</item>
+</resources>

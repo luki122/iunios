@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_pic_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/big_pic_bottom_padding"
+            android:paddingTop="@dimen/big_pic_top_padding"
+            android:src="@drawable/iuni_puremanage_doze_png_preview" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/gray_text_space"
+            android:text="@string/super_mode_hint_text"
+            android:textColor="@color/gray_text1"
+            android:textSize="@dimen/textsize_12" />
+
+        <TextView
+            android:id="@+id/standby_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_48"
+            android:gravity="center_horizontal"
+            android:textColor="@color/big_text_color"
+            android:textSize="@dimen/textsize_11" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/middle_msg_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_pic_ly"
+        android:layout_marginBottom="@dimen/big_text_top"
+        android:layout_marginTop="@dimen/big_text_top"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/big_text_left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/standby_big_text"
+            android:textColor="@color/big_text_color"
+            android:textSize="@dimen/big_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_16"
+            android:text="@string/phone_text"
+            android:textColor="@color/middle_text_color"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle_text_top"
+            android:text="@string/sms_text"
+            android:textColor="@color/middle_text_color"
+            android:textSize="@dimen/middle_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/middle_text_top"
+            android:text="@string/alarm_text"
+            android:textColor="@color/middle_text_color"
+            android:textSize="@dimen/middle_text_size" />
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_grey_1" />
+
+        <TextView
+            android:id="@+id/enter_super_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/enter_super_text"
+            android:textColor="@color/enter_super_text_color"
+            android:textSize="@dimen/middle_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

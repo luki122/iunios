@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/operation_shield"
+        android:icon="@com.aurora:drawable/aurora_bottombar_shield_selector"
+        android:title="@string/aurora_shield">
+    </item>
+    <item
+        android:id="@+id/operation_delete"
+        android:icon="@com.aurora:drawable/aurora_rubbish_selector"
+        android:title="@string/delete">
+    </item>
+
+</menu>

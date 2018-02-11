@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="33dp"
+    android:paddingTop="@dimen/aurora_detail_rowpadding">
+
+    <TextView
+        android:id="@+id/addressitem_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/aurora_detail_itemheight"
+        android:singleLine="true"
+        android:background="@drawable/message_compose_address_item_btn_selector"
+        android:gravity="center_vertical"
+        style="@style/AuroraDetailsValueStyle"
+        android:layout_marginRight="@dimen/aurora_detail_text_margin"/>
+
+</FrameLayout>

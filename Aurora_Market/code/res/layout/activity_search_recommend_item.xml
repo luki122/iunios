@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/grid_item_selector"
+    >
+    <ImageView android:id="@+id/rec_app_avatar"
+        android:layout_width="@dimen/search_page_height_20"
+        android:layout_height="@dimen/search_page_height_20"
+        android:layout_marginTop="@dimen/search_page_margin_24"
+        android:layout_marginBottom="@dimen/search_page_margin_24"
+        android:layout_marginLeft="@dimen/app_detail_page_margin_17"
+        android:layout_marginRight="@dimen/search_page_margin_5"
+        android:layout_centerVertical="true"
+        android:src="@drawable/grid_item_default_app_avatar"
+        />
+    <TextView android:id="@+id/rec_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_page_margin_24"
+        android:layout_marginBottom="@dimen/search_page_margin_24"
+        android:layout_toRightOf="@id/rec_app_avatar"
+        android:textSize="@dimen/textsize_16"
+        android:textColor="@color/general_btn_text"
+        android:paddingLeft="@dimen/padding_2"
+        android:paddingRight="@dimen/padding_5"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    
+</RelativeLayout>

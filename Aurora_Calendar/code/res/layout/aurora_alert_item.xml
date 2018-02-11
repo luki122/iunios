@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dip">
+
+    <TextView 
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dip"
+        android:layout_marginRight="35dip"
+        android:layout_marginTop="14dip"
+        android:drawableStart="@drawable/aurora_agenda_icon_normal"
+        android:drawablePadding="10dip"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/alert_item_title_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="47.6dip"
+        android:layout_below="@id/event_title"
+        android:layout_marginTop="5.3dip"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/alert_item_summary_text_color"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/repeat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/when"
+        android:layout_marginLeft="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dip"
+        android:src="@drawable/ic_repeat_dark"
+        android:focusable="false"
+        android:clickable="false" />
+</RelativeLayout>

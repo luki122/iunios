@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+     android:icon="@drawable/ic_menu_add"
+-->
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+    <!--  ACCOUNTS section -->
+    <header
+        aurora:auroraid="@+id/account_settings"
+        aurora:auroratitle="@string/account_settings" />
+
+    <header
+        aurora:auroraicon="@drawable/aurora_add_account"
+        aurora:auroraid="@+id/account_add"
+        aurora:auroratitle="@string/add_account_label">
+        <intent android:action="android.settings.ADD_ACCOUNT_SETTINGS" />
+
+    </header>
+
+</preference-headers><!--
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/aurora_account_settings_title"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">      
+        
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorakey="account_add"
+                aurora:auroratitle="@string/aurora_add_account_title">
+                <intent android:action="android.settings.ADD_ACCOUNT_SETTINGS" />
+        </aurora.preference.AuroraPreferenceScreen>
+
+        
+
+</aurora.preference.AuroraPreferenceScreen>
+ -->

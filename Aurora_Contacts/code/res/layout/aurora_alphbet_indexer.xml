@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ex="http://schemas.android.com/apk/res/com.android.contacts"    
+    android:layout_width="match_parent"
+	android:layout_height="@dimen/aurora_alphbet_height"
+	android:layout_marginTop="@dimen/aurora_alphbet_margin_top_min" >
+
+    <view class="com.android.contacts.widget.AlphbetIndexView"
+ 		android:id="@+id/gn_alphbet_indexer"
+ 		android:layout_width="90dip"
+ 		android:layout_height="match_parent"
+ 		android:paddingRight="@dimen/aurora_alphbet_index_right_margin"
+ 		android:layout_alignParentRight="true"
+ 		ex:sectionFontSize="@dimen/gn_section_font_size"
+ 		ex:promptSectionFontSize="@dimen/gn_prompt_section_font_size"
+ 		ex:waveSideRange="@dimen/gn_wave_side_range" />
+</RelativeLayout>

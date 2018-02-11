@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IUNI wolfu  add 20140611 start-->
+<resources>
+    <!-- Aurora <likai> add begin -->
+    <string-array name="aurora_wifi_sleep_policy_entries">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never(increases data usage)</item>
+    </string-array>
+
+    <string-array name="aurora_wifi_sleep_policy_entries_wifi_only">
+        <item>Always</item>
+        <item>Only when plugged in</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="aurora_screen_timeout_entries">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <!-- Add begin by aurora.jiangmx  -->
+    <string-array name="iuni_support_language" translatable="false">
+        <item>zh</item>
+        <item>en</item>
+    </string-array>
+    
+    <string-array name="iuni_support_country" translatable="false">
+        <item>CN</item>
+        <item>US</item>
+    </string-array>
+    
+        <!-- Locales in this list are displayed with the corresponding
+         name from special_locale_names instead of using the name
+         from Locale.getDisplayName(). -->
+    <string-array translatable="false" name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+
+    <string-array translatable="false" name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+    
+    <!-- Add end -->
+    
+    <string-array name="aurora_screen_timeout_values" translatable="false">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+
+    <string-array name="aurora_font_size_entries">
+        <item>small</item>
+        <item>default</item>
+        <item>middle</item>
+        <item>big</item>
+    </string-array>
+
+    <string-array name="aurora_font_size_values" translatable="false">
+        <item>0.9</item>
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>1.2</item>
+    </string-array>
+    <!-- Aurora <likai> add end -->
+
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for numPad begin -->
+    <!-- list of 3- or 4-letter mnemonics for a 10-key numeric keypad -->
+    <string-array translatable="false" name="lockscreen_num_pad_klondike">
+        <item></item><!-- 0 -->
+        <item></item><!-- 1 -->
+        <item>ABC</item><!-- 2 -->
+        <item>DEF</item><!-- 3 -->
+        <item>GHI</item><!-- 4 -->
+        <item>JKL</item><!-- 5 -->
+        <item>MNO</item><!-- 6 -->
+        <item>PQRS</item><!-- 7 -->
+        <item>TUV</item><!-- 8 -->
+        <item>WXYZ</item><!-- 9 -->
+    </string-array>
+    <!-- Aurora <zhang_xin> <2013-12-16> modify for numPad end -->
+
+    <string-array name="aurora_screen_color_mode_entries">
+        <item>warm</item>
+        <item>neutral</item>
+        <item>cool</item>
+    </string-array>
+
+    <string-array name="aurora_screen_color_mode_values" translatable="false">
+        <item>0</item>
+        <item>7</item>
+        <item>2</item>
+    </string-array>
+    
+    </resources>
+<!-- IUNI wolfu  add 20140611 end-->

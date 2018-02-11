@@ -1,0 +1,21 @@
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/aurora_color_weekness_assistant">
+
+    <aurora.preference.AuroraSwitchPreference 
+        aurora:aurorakey="color_weekness_key"
+        aurora:auroratitle="@string/aurora_color_weekness_assistant_open"
+        aurora:aurorasummary="@string/accessibility_display_daltonizer_preference_subtitle"
+        aurora:aurorapersistent="false"/>     
+
+    <aurora.preference.AuroraListPreference
+        aurora:auroraentries="@array/daltonizer_type_entries"
+        aurora:auroraentryValues="@array/daltonizer_type_values"
+        aurora:aurorakey="color_weekness_type"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="%s"
+        aurora:auroradependency="color_weekness_key"
+        aurora:auroratitle="@string/aurora_color_weekness_assistant_mode" />
+</aurora.preference.AuroraPreferenceScreen>

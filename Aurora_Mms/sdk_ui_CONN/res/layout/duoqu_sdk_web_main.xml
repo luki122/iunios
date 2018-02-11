@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/duoqu_black2"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/duoqu_header"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" >
+
+        <ImageView
+            android:id="@+id/duoqu_header_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/duoqu_title_left_icon_back_light" />
+
+        <TextView
+            android:id="@+id/duoqu_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="51dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/duoqu_action_bar_title_text_color"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/duoqu_header_menu"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/duoqu_pop_menu" />
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/duoqu_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/duoqu_header"
+        android:visibility="visible" >
+    </RelativeLayout>
+ <ProgressBar
+        android:id="@+id/duoqu_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/duoqu_progress_bar_states"
+        android:layout_below="@id/duoqu_header"
+        android:visibility="gone" />
+   <!--  <RelativeLayout
+        android:id="@+id/duoqu_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/duoqu_header"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/duoqu_bar"
+            style="@style/myProgressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminateOnly="true" />
+
+        
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/duoqu_bar"
+            android:text="@string/duoqu_loading"
+            android:textSize="13sp"
+            />
+       
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/duoqu_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/duoqu_header"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/duoqu_error_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/duoqu_header"
+        android:background="@color/duoqu_white"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/duoqu_network_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@color/duoqu_white" >
+
+            <ImageView
+                android:id="@+id/duoqu_img_woring"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/duoqu_nonetwork" />
+
+            <TextView
+                android:id="@+id/duoqu_error_lable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/duoqu_img_woring"
+                android:text="@string/duoqu_web_network_fail"
+                android:textColor="#f26d4e"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/duoqu_error_lable1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="34dp"
+                android:text="@string/duoqu_web_network_setting"
+                android:textColor="#a3a3a3"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:id="@+id/duoqu_img_next"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/duoqu_networksetting" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="60dp"
+            android:background="#e6e6e6" />
+    </RelativeLayout>
+
+</RelativeLayout>

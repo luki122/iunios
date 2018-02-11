@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#00000000"
+    android:gravity="center_vertical">
+    
+    <com.aurora.worldtime.AnalogClocks
+        android:id="@+id/anologclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" /> 
+    <ImageView
+        android:id="@+id/dayornight" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/day"
+        android:scaleType="center"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/dayornight"
+        android:id="@+id/world_time_linear"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp" >
+
+        <TextView
+            android:id="@+id/tv_world_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:textColor="@color/gn_white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_world_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="1.2dp"
+            android:paddingLeft="4dp"
+            android:textColor="@color/sometransparent"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/world_time_linear"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true" >
+    
+	    <TextView
+	        android:id="@+id/tv_world_city"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:ellipsize="marquee"
+	        android:marqueeRepeatLimit="marquee_forever"
+	        android:singleLine="true"
+	        android:textSize="14sp"                         
+	        android:textColor="@color/gn_white"/>
+	
+	    <TextView
+	        android:id="@+id/tv_world_year"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp" 
+	        android:textColor="@color/sometransparent"/>
+    </LinearLayout>
+</RelativeLayout>

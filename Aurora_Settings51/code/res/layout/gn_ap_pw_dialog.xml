@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1dip"
+    android:layout_height="1dip"
+    android:paddingLeft="1dip"
+    android:paddingRight="1dip">
+</LinearLayout>

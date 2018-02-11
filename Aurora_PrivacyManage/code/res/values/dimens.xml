@@ -1,0 +1,45 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="preferences_item_height">47dp</dimen>
+    <dimen name="preferences_item_text_size">17sp</dimen>
+    <dimen name="preferences_item_sub_text_size">14sp</dimen>
+    <dimen name="list_header_padding_top">10dp</dimen>
+    <dimen name="list_header_padding_bottom">3.3dp</dimen>
+    <dimen name="list_header_text_size">18sp</dimen>
+    <dimen name="package_set_activity_title_text_size">18sp</dimen>
+    <dimen name="main_act_big_text_size">22sp</dimen>
+    <dimen name="main_act_small_text_size">16sp</dimen>
+    <dimen name="main_act_num_to_flow_mb_distance">12dp</dimen>
+    <dimen name="main_act_flow_num_margin_right">82.935dp</dimen>
+    <dimen name="main_act_enter_animation_size">296.67dp</dimen>
+    <dimen name="main_act_second_view_width">246.67dp</dimen>
+    <dimen name="main_act_second_view_height">253.33dp</dimen>
+    <dimen name="main_act_third_view_size">227dp</dimen>
+    <dimen name="main_act_progress_view_size">227.3dp</dimen>
+    <dimen name="hint_big_text_size">24sp</dimen>
+    <dimen name="notification_text_title">16sp</dimen>
+    <dimen name="notification_text_content">14sp</dimen>
+    <dimen name="notification_installed_top">3dp</dimen>
+    <dimen name="notification_marginright">12dp</dimen>
+    <dimen name="notification_marginleft">9dp</dimen>
+    <dimen name="notification_downloading_right">0dp</dimen>
+    <dimen name="notification_downloading_right1">0dp</dimen>
+    <dimen name="notification_paddingleft">11dp</dimen>
+
+    <integer name="how_enter_anim_duration">800</integer>
+
+    <dimen name="user_guide_anim_frame_width">240dp</dimen>
+    <dimen name="user_guide_anim_frame_height">240dp</dimen>
+    <dimen name="activity_picture_margin_top">16.7dp</dimen>
+    <dimen name="activity_picture_create_ok_margin_top">68.7dp</dimen>
+    
+    <!-- new requirement: 2015-1-9 Vulcan Yang -->
+    <dimen name="information_banner_height_general">20dp</dimen>
+    <dimen name="height_userguide_bigtxt_to_picture">22dp</dimen>
+    <dimen name="height_userguide_smalltxt_to_bigtxt">6dp</dimen>
+    <dimen name="userguide_textview_linespace">5dp</dimen>
+
+</resources>

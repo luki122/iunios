@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/aurora_img_attachment_press" />
+    <item android:state_focused="true" android:drawable="@drawable/aurora_img_attachment_press" />
+    <item android:drawable="@drawable/aurora_img_attachment_normal" />
+</selector> -->
+
+<!-- cjs modify -->
+
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="22dp"
+    android:width="22dp"
+    android:viewportHeight="60"
+    android:viewportWidth="60"
+     >
+
+    <group
+        android:name="aurora_actionbar_back_group"
+        android:translateX="7.03"
+        android:translateY="8" >
+        <path
+            android:name="aurora_img_attachment"
+            android:fillColor="#676768"
+            android:pathData="M45.925,40.173 L45.925,3.826 C45.925,1.722 44.203,0.000 42.099,0.000 L3.839,0.000 C1.735,0.000 0.013,1.722 0.013,3.826 L0.013,40.173 C0.013,42.278 1.735,43.999 3.839,43.999 L42.099,43.999 C44.203,43.999 45.925,42.278 45.925,40.173 ZM11.491,26.874 L20.647,34.453 L30.195,22.000 L41.142,36.970 L4.795,36.970 L11.491,26.874 Z" />
+    </group>
+
+</vector>

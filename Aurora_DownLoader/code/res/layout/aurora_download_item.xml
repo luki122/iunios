@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/download_icon"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/download_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="9dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/download_icon"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="9dp"
+        android:singleLine="true"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/download_icon"
+        android:layout_marginLeft="160dp"
+        android:singleLine="true"
+        android:textSize="10sp" />
+
+    <ProgressBar
+        android:id="@+id/download_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1.7dp"
+        android:layout_below="@+id/download_title"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9.6dp"
+        android:layout_toLeftOf="@+id/download_control"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/modified_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_title"
+        android:layout_gravity="left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/totalSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_title"
+        android:layout_gravity="left"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/modified_time"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textSize="10sp" />
+
+    <com.aurora.downloader.widget.DownloadButton
+        android:id="@+id/download_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:scaleType="fitCenter" />
+
+</merge>

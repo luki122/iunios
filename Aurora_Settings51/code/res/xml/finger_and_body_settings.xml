@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+	xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+        aurora:auroratitle="@string/dashboard_action_body">
+
+
+    <aurora.preference.AuroraPreferenceCategory
+            aurora:aurorakey="system_category"
+            >
+
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.accessibility.CaptionPropertiesFragment"
+            aurora:aurorakey="captioning_preference_screen"
+            />
+
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragment"
+            aurora:aurorakey="screen_magnification_preference_screen"
+            />
+
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_large_text_preference"
+                aurora:aurorapersistent="false"/>
+
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_high_text_contrast_preference"
+                aurora:aurorasummary="@string/experimental_preference"
+                aurora:aurorapersistent="false"/>
+	<!--  modify by jiyouguang -->
+        <aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_power_button_ends_call_preference"
+                aurora:aurorapersistent="false"/>
+	<!-- end  -->
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_lock_screen_rotation_preference"
+                aurora:aurorapersistent="false"/>
+
+<!--         <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="toggle_speak_password_preference"
+                aurora:auroratitle="@string/accessibility_toggle_speak_password_preference_title"
+                aurora:aurorapersistent="false"/> -->
+
+        <aurora.preference.AuroraPreferenceScreen
+                aurora:aurorafragment="com.android.settings.accessibility.ToggleGlobalGesturePreferenceFragment"
+                aurora:aurorakey="enable_global_gesture_preference_screen"
+                />
+
+<!--         <aurora.preference.AuroraPreferenceScreen aurora:aurorakey="tts_settings_preference"
+                aurora:aurorafragment="com.android.settings.tts.TextToSpeechSettings"
+                aurora:auroratitle="@string/tts_settings_title"/>
+
+        <aurora.preference.AuroraListPreference aurora:aurorakey="select_long_press_timeout_preference"
+                aurora:auroratitle="@string/accessibility_long_press_timeout_preference_title"
+                aurora:auroraentries="@array/long_press_timeout_selector_titles"
+                aurora:auroraentryValues="@array/long_press_timeout_selector_values"
+                aurora:aurorapersistent="false"/> -->
+
+        <!-- M: mediatek add this for ipo settings -->
+        <aurora.preference.AuroraCheckBoxPreference
+                aurora:aurorakey="ipo_setting"
+                aurora:aurorapersistent="false" />
+        
+       <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="three_fingers_screenshots"
+            aurora:auroratitle="@string/accessibility_screen_three_fingers_screenshots"
+            aurora:aurorapersistent="false" 
+            aurora:aurorasummary="@string/three_finger_screen_shots_summary"
+            />
+      <!--  add by jiyouguang --> 
+  		<aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="toggle_twice_click_screen_awake_preference"
+                aurora:auroratitle="@string/accessibility_twice_click_screen_awake_prerefence_title"
+                aurora:aurorasummary="@string/double_click_wake_up_summary"
+                aurora:aurorapersistent="false"/>
+  		
+  	<aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="somatosensory_music"
+            aurora:auroratitle="@string/accessibility_screen_music_control_prerefence_title"
+            aurora:aurorapersistent="false" 
+            aurora:aurorasummary="@string/somatosensory_music_control_summary"/>
+  	
+  	<aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="somatosensory_pause"
+            aurora:auroratitle="@string/accessibility_screen_somatosensory_smart_pause"
+            aurora:aurorasummary="@string/smart_stop_summary"
+            aurora:aurorapersistent="false"
+            />
+  	
+  	<aurora.preference.AuroraSwitchPreference
+                aurora:aurorakey="glove"
+                aurora:auroratitle="@string/accessibility_glove_title"
+                aurora:aurorasummary="@string/glove_mode_summary"
+                aurora:aurorapersistent="false"/>
+     <!--    add end  -->
+    </aurora.preference.AuroraPreferenceCategory>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="display_category"
+      >
+        <aurora.preference.AuroraSwitchPreference
+            aurora:aurorakey="toggle_inversion_preference"
+           
+            aurora:aurorapersistent="false" />
+        <aurora.preference.AuroraPreferenceScreen
+            aurora:aurorafragment="com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment"
+            aurora:aurorakey="daltonizer_preference_screen"
+           />
+        
+
+        
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

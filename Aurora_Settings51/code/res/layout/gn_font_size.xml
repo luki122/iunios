@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="1"   
+    	android:layout_marginTop="5dip"
+    	android:orientation="vertical" >
+    
+		<ImageSwitcher
+			android:id="@+id/gn_font_size_imageswitcher"
+			android:layout_width="match_parent"
+			android:layout_height="0dip"		       			       
+			android:layout_weight="1"/>
+    
+	     <LinearLayout
+		android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical"	>     
+		    <TextView 
+		        android:id="@+id/font_illustration"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dip"		        
+		        android:text="@string/illustration"/>
+		    <ImageView 
+		        android:id="@+id/gn_font_size_text"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"		       
+		        android:layout_marginTop="10dip"
+		        android:src="@drawable/gn_font_size_text" />		          
+	  	 </LinearLayout>
+	  	 
+	    <FrameLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ImageView 
+	            android:id="@+id/gn_font_size_seekbar_bg"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/gn_font_size_padding"
+	            android:layout_marginRight="@dimen/gn_font_size_padding"
+	            android:layout_gravity="center"
+	            android:src="@drawable/gn_font_seekbar_bg"/>
+	        <SeekBar
+	            android:id="@+id/gn_font_size_seekbar"
+	            style="@style/GnFontSizeSeekBar"
+	            android:layout_gravity="center_vertical"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </FrameLayout>
+	     	    
+  	</LinearLayout> 
+  
+	<View
+      android:layout_width="match_parent"		
+      android:layout_height="40dip"/>
+	    <!-- Gionee <chenml> <2013-08-23> modify for CR00857897 begin  -->
+    <LinearLayout
+      style="@style/SecurityPreferenceButtonContainer"
+      android:orientation="horizontal">        
+        <Button 
+            android:id="@+id/gn_font_size_btn_cancel"
+            style="@style/SecurityPreferenceButton"
+            android:layout_marginLeft="8dp"
+            android:text="@android:string/cancel"/>
+        <Button 
+            android:id="@+id/gn_font_size_btn_ok"
+            style="@style/SecurityPreferenceButton"
+            android:layout_marginRight="8dp"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+        <!-- Gionee <chenml> <2013-08-23> modify for CR00857897 end  -->
+</LinearLayout>

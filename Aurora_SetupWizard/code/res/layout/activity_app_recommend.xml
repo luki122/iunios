@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/bg" />
+    
+    <ImageView 
+        android:layout_width="253dp"
+        android:layout_height="224dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/apk_recommend"/>
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="@string/app_recommend"
+        android:singleLine="true"
+        android:textColor="@color/language_welcome"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_complete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="@string/pm_recommend"
+        android:textColor="@color/app_reson_color"
+        android:textSize="11sp" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" />
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/tv_recommend"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/apk_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:text="@string/app_ls_info"
+                android:textColor="@color/app_reson_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:layout_marginRight="16dp"
+                android:text="@string/select_all"
+                android:textColor="@color/next_"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:layout_below="@id/rl_header"
+            android:background="#e5e5e5" />
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/lv_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider"
+            android:scrollbars="none"
+            android:divider="@null"
+            >
+        </aurora.widget.AuroraListView>
+    </RelativeLayout>
+
+</RelativeLayout>

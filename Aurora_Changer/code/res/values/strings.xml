@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wallpaper Settings</string>
+    <string name="group_num_type">P</string>
+    <string name="sdcard_change_name">change</string>
+    <string name="lockscreen_wallpaper">Time Lockscreen</string>
+    <string name="desktop_wallpaper">Desktop Wallpaper</string>
+    <string name="default_lockscreen_wallpaper_name">Timely</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_next">Next</string>
+    <string name="setting_wallpaper">Saving...</string>
+    <string name="lockpaper_set_success">Successfully set the lockscreen wallpaper </string>
+    <string name="wallpaper_set_success">Successfully set. The wallpaper has been replaced.</string>
+    <string name="wallpaper_set_failed">Failed to set.The picture is missing or damaged.</string>
+	<string name="set_wallpaper_failed">Setting Wallpaper failed</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    
+    <string name="select_all">Select All</string>
+    <string name="no_select_all">Unselect</string>
+    <string name="confirm_dialog_title">Delete Prompt</string>
+    <string name="confirm_delete_selected_message">Are you sure you want to delete the selected picture?</string>
+    <string name="confirm_ok">OK</string>
+    <string name="confirm_cancel">Cancel</string>
+    <string name="wallpaper_is_deleting">Deleting...</string>
+    <string name="delete_success">Deleted successfully</string>
+    <string name="delete_failed">Failed to delete</string>
+
+    <string name="wallpaper_settings_video">"com.mediatek.vlw"</string>
+    <string name="wallpaper_settings_samsung">"com.sec.android.app.wallpaperchooser"</string>
+    <string name="wallpaper_settings_live">"com.android.wallpaper.livepicker"</string>
+    <string name="lockpaper_pre_null_str">Loading exception of picture</string>
+    <string name="wallpaper_crop_title">Move or zoom picture</string>
+    <string name="wallpaper_crop_ok">Save</string>
+    <string name="wallpaper_crop_del">Delete</string>
+    <string name="wallpaper_crop_custom_name">Custom series</string>
+    <string name="wallpaper_crop_cancel_title">Note</string>
+    <string name="wallpaper_crop_cancel_msg">Do you want to discard the clipping you have done?</string>
+    <string name="wallpaper_crop_del_msg">Do you want to delete current wallpaper series?</string>
+    <string name="wallpaper_select_max_toast">Regular lockscreen supports up to 12 pictures</string>
+    <string name="wallpaper_crop_sdcard_error">SD card is abnormal, please re-add</string>
+    
+    <string name="dialog_title">Note</string>
+    <string name="image_loading">Loading picture...</string>
+    <string name="image_too_small">Sorry, the pixel of the selected picture is too low and not suitable to be set as a wallpaper.</string>
+    <string name="image_load_failed">Picture failed to load, please reselect a picture</string>
+    <string name="wallpaper_setting">Setting wallpaper...</string>
+    
+    <!-- shigq add start -->
+    <string name="lockscreen_city">City</string>
+    <string name="lockscreen_cute">Cute</string>
+    <string name="lockscreen_dream">Dream</string>
+    <string name="lockscreen_elegant">Elegant</string>
+    <string name="lockscreen_fascinating">Fascinating</string>
+    <string name="lockscreen_misspuff">MissPuff</string>
+    <string name="lockscreen_timely">Timely</string>
+    <string name="nextday_wallpaper_name">Wallpaper Push</string>
+    <string name="nextday_wallpaper_name_logo">Nextday</string>
+    <string name="nextday_wallpaper_setting_dialog_title">Wallpaper Push</string>
+    <string name="nextday_wallpaper_setting_dialog_message">On lock screen automatically pushed Wallpaper every day from NextDay Featured Photo？</string>
+    <string name="nextday_wallpaper_setting_dialog_tips">Wi-Fi at only push, do not consume data</string>
+    <string name="nextday_wallpaper_loading_dialog_title">Tips</string>
+    <string name="nextday_wallpaper_loading_dialog_message">Currently using a mobile data network, whether to download high-definition picture？</string>
+    <string name="nextday_wallpaper_loading_dialog_tips">Ignore this reminder</string>
+    <string name="nextday_wallpaper_loading_dialog_cancel">Cancel</string>
+    <string name="nextday_wallpaper_loading_dialog_confirm">Continue</string>
+    <string name="nextday_wallpaper_loading_dialog_mobile_message">Currently using a mobile data network, view the wallpaper will consume data traffic, whether to continue to view?</string>
+	<string name="nextday_wallpaper_loading_dialog_mobile_cancel">Cancel</string>
+	<string name="nextday_wallpaper_loading_dialog_mobile_confirm">Continue</string>
+    <string name="nextday_wallpaper_loading_without_network">Please connect to the network after the download HD image</string>
+    <string name="nextday_wallpaper_loading_completed">This wallpaper has been downloaded to the SD card directory IUNI_Wallpaper, can go directly to the file manager view.</string>
+    <string name="nextday_wallpaper_loading_failed">Wallpapers download failed.</string>
+    <string name="set_wallpaper_tips">Lockscreen settings</string>
+    <string name="set_wallpaper_content">The current series is set for the lock screen, at the same time push wallpaper canceled?</string>
+    <string name="share_wallpaper">Share</string>
+    <string name="share_wallpaper_loading_tips">Picture Loading ...</string>
+    <string name="nextday_wallpaper_preview_control_check_text">Retains the date and copywriting</string>
+    <!-- shigq add end -->
+</resources>

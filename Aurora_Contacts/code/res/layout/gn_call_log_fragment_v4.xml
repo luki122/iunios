@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+
+   20130321 add for CR00787281 
+
+-->
+
+<!-- Layout parameters are set programmatically. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calllog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/calllog_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gn_call_log_switch_header_height"
+        android:gravity="center">
+
+    <aurora.widget.AuroraButton
+        android:id="@+id/gn_all_call_log_type"
+        android:layout_width="@dimen/gn_call_log_switch_button_weight"
+        android:layout_height="@dimen/gn_call_log_switch_button_height"
+        android:text="@string/gn_allcall_tab_label"
+        android:textColor="@color/gn_call_log_filter_text_color"
+        android:textSize="@dimen/gn_call_log_switch_button_text_size"
+        />
+    
+    <aurora.widget.AuroraButton
+        android:id="@+id/gn_missing_call_log_type"
+        android:layout_width="@dimen/gn_call_log_switch_button_weight"
+        android:layout_height="@dimen/gn_call_log_switch_button_height"
+        android:text="@string/gn_misscall_tab_label"
+        android:textColor="@color/gn_call_log_filter_text_color"
+        android:textSize="@dimen/gn_call_log_switch_button_text_size"
+        />
+    
+    </LinearLayout> 
+    
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+    >
+        <include layout="@layout/gn_wait_cursor"/>
+        
+        <aurora.widget.AuroraListView android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+        
+        <TextView 
+            android:id="@+id/gn_calllog_empty_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/gn_dialpad_empty_view_padding_top"
+            android:textColor="?attr/empty_view_text_color"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+        />
+            
+    </FrameLayout>
+</LinearLayout>

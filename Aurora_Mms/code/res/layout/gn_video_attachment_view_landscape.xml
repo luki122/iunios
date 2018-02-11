@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<com.android.mms.ui.VideoAttachmentView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gn_video_attachment_view_landscape"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="left"
+    >
+
+    <RelativeLayout
+        android:gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+            
+         <TextView android:id="@+id/media_size_info"
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                
+                    android:background="#88000000"
+                    android:textColor="#ffffffff"
+                    android:textSize="11sp" 
+                    android:textStyle="bold"
+                    android:paddingLeft="3dip" 
+                    android:paddingRight="3dip"  
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dip"/>
+    </RelativeLayout>
+</com.android.mms.ui.VideoAttachmentView>

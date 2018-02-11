@@ -1,0 +1,10 @@
+<resources>
+
+    <dimen name="reminder_widget_width">328dp</dimen>
+    <dimen name="reminder_widget_height">128dp</dimen>
+    <dimen name="reminder_widget_title_width">216dp</dimen>
+    <dimen name="reminder_widget_title_height">32dp</dimen>
+    <dimen name="reminder_widget_bg_top_height">96dp</dimen>
+    <dimen name="reminder_widget_corner_radius">4dp</dimen>
+
+</resources>

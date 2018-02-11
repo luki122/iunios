@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+    android:layout_width="fill_parent"
+    android:layout_height="28dp"
+    android:animateLayoutChanges="true">
+    
+   
+    
+    <RelativeLayout android:id="@+id/progress_container"
+       			  android:layout_width="fill_parent"
+    			  android:layout_height="28dp"
+    			  android:layout_centerVertical="true">
+        
+        <TextView android:id="@+id/up_dowload_list_gap_ok"
+            	  android:layout_width="wrap_content"
+            	  android:layout_height="wrap_content"
+            	  android:textSize="12sp"
+            	    android:gravity="left"
+            	    android:layout_marginLeft="20dp"
+            	    android:layout_centerVertical="true"
+            	  android:text="@string/aurora_cloud_list_upload_ok"
+        		  android:textColor="#989898"/>
+        
+      
+        
+        <TextView android:id="@+id/up_dowload_list_gap_click"
+            	  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:layout_alignParentRight="true"
+        		  android:layout_centerVertical="true"
+        		  android:textSize="12sp"
+        		  android:layout_marginRight="13dp"
+        		  android:text="@string/aurora_cloud_list_upload_clean"
+        		  android:textColor="@color/aurora_upload_dowload_list_text"/>
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

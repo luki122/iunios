@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<com.aurora.launcher.Folder
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:launcher="http://schemas.android.com/apk/res/com.aurora.launcher"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    >
+
+    <com.aurora.launcher.FolderEditText
+        android:id="@+id/folder_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/usedittext_hightlight"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/folder_margin_buttom"
+        android:imeOptions="flagNoExtractUi"/>
+<!--         android:hint="@string/folder_hint_text" -->
+<!--         android:textColorHint="#FFFFFF" -->
+    <com.aurora.launcher.FolderWorkspace
+        android:id="@+id/folder_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/folder_padding"
+        android:paddingRight="@dimen/folder_padding"
+        android:paddingTop="@dimen/folder_content_top_padding"
+        android:paddingBottom="@dimen/folder_content_buttom_padding"
+        android:cacheColorHint="#ff333333"
+        android:hapticFeedbackEnabled="false"
+        launcher:widthGap="@dimen/folder_width_gap"
+        launcher:heightGap="@dimen/folder_height_gap"
+        launcher:cellWidth="@dimen/folder_cell_width"
+        launcher:cellHeight="@dimen/folder_cell_height" />
+
+    <com.aurora.launcher.FolderPageIndicator  
+		android:id="@+id/folder_indicator"  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:paddingTop="@dimen/folder_indicator_padding"
+		android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible"
+	/> 
+	
+</com.aurora.launcher.Folder>

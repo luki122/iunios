@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Gionee:zhang_xin 2013-01-11 add for CR00746738 start-->
+    <color name="gn_text_color">#ffff9000</color>
+    <!--Gionee:zhang_xin 2013-01-11 add for CR00746738 end-->
+    <!-- Gionee chenml 2013-04-15 modify for CR00796148 begin -->
+    <color name="gn_user_dictionary_empty">#55444444</color>
+    <!-- Gionee chenml 2013-04-15 modify for CR00796148 end -->
+
+    <!-- Gionee <zhang_xin><2013-04-09> add for CR00794646 begin -->
+    <color name="gn_tab_color">#ffffffff</color>
+    <!-- Gionee <zhang_xin><2013-04-09> add for CR00794646 end -->
+</resources>

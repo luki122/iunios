@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="aurora_searchview_hint" >搜索郵件</string>
+    <string name="aurora_account_settings_delete">刪除賬號</string>
+    <string name="aurora_account_settings_add">添加賬號</string>
+    <string name="aurora_account_settings">賬號</string>
+    
+    <string name="aurora_mail_check_frequency_push">自動（推送）</string>
+    <string name="aurora_mail_check_frequency_5min">每5分鐘</string>
+    <string name="aurora_mail_check_frequency_15min">每15分鐘</string>
+    <string name="aurora_mail_check_frequency_30min">每30分鐘</string>
+    <string name="aurora_mail_check_frequency_1hour">每1小時</string>
+    <string name="aurora_mail_check_frequency_2hour">每2小時</string>
+    <string name="aurora_mail_check_frequency_5hour">每5小時</string>
+    <string name="aurora_check_frequency_label">定時收取</string>
+    
+    <!-- Aurora shihao add for manual_setttings_login -->
+    <string name="aurora_server_type">服務器類型</string>
+    <string name="aurora_email_account">郵箱帳號</string>
+    <string name="aurora_recerver_server">收件服務器</string>
+    <string name="aurora_sent_server">發件服務器</string>
+    
+    <string name="aurora_email_server">服務器</string>
+    <string name="aurora_email_account">帳  號</string>
+    <string name="aurora_email_password">密  碼</string>
+    <string name="aurora_email_port">端  口</string>
+    
+    <string name="aurora_login_need_manual_setup">您登錄的郵件帳號需要手動配置服務器，是否繼續？</string>
+    <string name="aurora_manual_login_goon_button">繼續</string>
+    <string name="aurora_manual_login_info_error">您的賬戶信息未填寫完整!</string>
+    
+    <string name="aurora_account_setup_failed_dlg_auth_message">"用戶名或密碼不正確,或%1$s服務未開啓"</string>
+    <string name="aurora_account_manual_setup">手動配置郵件服務器</string>
+    
+    <!-- Aurora shihao add for notification_ringtone 20150402 -->
+    <string name="aurora_email_notification">通知</string>
+    <string name="aurora_email_notification_ringtone">鈴聲</string>
+    <string name="aurora_email_notifi_ringtone_title">通知鈴聲</string>
+</resources>

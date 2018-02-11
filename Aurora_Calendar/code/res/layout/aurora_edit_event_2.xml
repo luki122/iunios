@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee <jiangxiao> <2013-07-04> add for CR00833163  begin -->
+<!-- Gionee <jiating> <2013-04-24> modify for CR00000000 editevent View begin -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/gn_sliding_content_margin_left_or_right"
+    android:layout_marginRight="@dimen/gn_sliding_content_margin_left_or_right"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gn_edit_event_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- REPEATS -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:focusable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/repeats_label"
+                    style="@style/GNSlidingTitleTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/gn_edit_event_item_margion_bottom"
+                    android:text="@string/repeats_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_edit_event_content_single_bg"
+                    android:paddingLeft="-100dp" >
+
+                    <!-- Gionee <jiating><2013-06-21> modify for CR00828565 begin -->
+
+                    <aurora.widget.AuroraSpinner
+                        android:id="@+id/repeats"
+                        style="@style/TextAppearance.Spinner.EditEvent_Value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/accessibility_repeats"
+                        android:paddingLeft="-100dp"
+                        android:prompt="@string/repeats_label"
+                        aurora:auroraspinnerMode="dialog" />
+                    <!-- Gionee <jiating><2013-06-21> modify for CR00828565 end -->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_attendees_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gn_edit_event_item_margion_top"
+                android:minHeight="48dip"
+                android:orientation="vertical" >
+
+                <!--
+            <com.android.ex.chips.RecipientEditTextView
+            android:id="@+id/attendees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="2dip"
+            android:hint="@string/hint_attendees"
+            android:imeOptions="actionNext"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:paddingLeft="@dimen/gn_sliding_content_margin_left_or_right"
+            android:paddingRight="@dimen/gn_sliding_content_margin_left_or_right"
+            android:inputType="textEmailAddress|textMultiLine|textCapWords" />
+                -->
+            </LinearLayout>
+        </LinearLayout>  
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-17 modified for aurora's new feature start -->
+<!-- Aurora xuyong 2013-09-20 modified for aurora's new feature start -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+        <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature start -->
+    <aurora.widget.AuroraTextView
+        android:id="@+id/contact_item"
+        android:layout_marginLeft="8dip"
+        android:layout_marginTop="1.8dip"
+        android:layout_marginBottom="3.6dip"
+        android:maxWidth="245dip"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="wrap_content" 
+        android:layout_height="match_parent"/>
+    <!-- Aurora xuyong 2014-04-02 modified for aurora's new feature end -->
+    <ImageButton
+        android:id="@+id/contact_item_delte_bt"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/aurora_contact_delete_bt_src"
+        android:background="@null"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        />
+</LinearLayout>
+    <!-- Aurora xuyong 2013-09-20 modified for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-09-17 modified for aurora's new feature end -->
+<!-- Aurora xuyong 2013-09-13 modified for aurora's new feature end -->

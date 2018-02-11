@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+ <!-- Aurora xuyong 2013-10-11 modified for aurora's new feature start -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:orientation="vertical"
+    android:id="@+id/mms_download_controls" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="14dip"
+    android:paddingRight="14dip"
+    android:paddingTop="11dip"
+    android:paddingBottom="11dip"
+    android:background="@drawable/aurora_msg_receive_bg">
+    
+    <TextView 
+        android:layout_gravity="left" 
+        android:id="@+id/aurora_mms_size"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        style="@style/aurora_msg_rec_text_style"
+        android:gravity="center"
+        android:visibility="gone"/>
+                
+    <TextView 
+        android:layout_gravity="left" 
+        android:id="@+id/aurora_mms_date_unu"
+        android:visibility="gone"
+        style="@style/aurora_msg_rec_text_style"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" />
+    
+    <TextView 
+        android:layout_gravity="center" 
+        android:id="@+id/gn_btn_download_msg"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/download"/>
+                
+    <TextView 
+        android:layout_gravity="center" 
+        android:id="@+id/gn_label_downloading"
+        android:visibility="gone" 
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:text="@string/downloading" />
+    
+    
+    <ProgressBar 
+        android:id="@+id/aurora_mms_download_prg"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:max="100"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+        
+</LinearLayout>
+<!-- Aurora xuyong 2013-10-11 added for aurora's new feature end -->

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Aurora <likai> add begin -->
+    <string name="aurora_advanced_settings_title">Advanced</string>
+    <string name="aurora_wifi_settings_title">WLAN</string>
+    <string name="aurora_wifi_connect_ssid">Connected<xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+    <string name="aurora_no_connect_ssid">Closed</string>
+    <string name="aurora_wifi_list">WLAN list</string>
+    <string name="tether_settings_title_wifi_header">Shared Hot</string>
+    <string name="aurora_wifi_success_forget_message">Ignored<xliff:g id="WIFI_SSID">%1$s</xliff:g></string>
+    <string name="aurora_wifi_notify_open_networks">Network notification</string>
+    <string name="aurora_wifi_sleep_policy_title">Active WLAN</string>
+    <string name="aurora_proxy_hostname_label">Host name</string>
+    <string name="aurora_proxy_port_label">Port</string>
+    <string name="aurora_proxy_exclusionlist_label">No proxy Site</string>
+    <string name="aurora_display_brightness">Automatic brightness</string>
+    <string name="aurora_display_screen_saving">Screen Saving</string>
+    <string name="aurora_display_system">System</string>
+    <string name="aurora_display_screen_timeout">Sleep </string>
+    <string name="aurora_display_screen_timeout_summary">After <xliff:g id="timeout_description">%1$s</xliff:g> of inactivity</string>
+    <string name="aurora_display_screen_timeout_one">15s</string>
+    <string name="aurora_display_screen_timeout_two">30s</string>
+    <string name="aurora_display_screen_timeout_three">1 min</string>
+    <string name="aurora_display_screen_timeout_four">2 min</string>
+    <string name="aurora_display_screen_timeout_five">5 min</string>
+    <string name="aurora_display_screen_timeout_six">10 min</string>
+    <string name="aurora_display_screen_timeout_seven">30 min</string>
+    <string name="aurora_display_font_size">font size</string>
+    <string name="aurora_display_font_size_small">Small</string>
+    <string name="aurora_display_font_size_normal">Normal</string>
+    <string name="aurora_display_font_size_medium">Large</string>
+    <string name="aurora_display_font_size_large">Huge</string>
+    <string name="aurora_display_button_light">Button light </string>
+    <string name="aurora_language_settings">Language &amp; input</string>
+    <string name="aurora_language_title">System Language</string>
+    <string name="aurora_language_category_title">Language</string>
+    <string name="aurora_language_picker_title">Language</string>
+    <string name="aurora_inputmethod_picker_title">Default Input Method</string>
+    <string name="aurora_wireless_settings_title">Connection</string>
+    <string name="aurora_location_settings_title">Location service</string>
+    <string name="aurora_sim_settings_title">SIM Toolkit</string>
+    <string name="aurora_application_settings_title">Apps</string>
+    <string name="aurora_battery_settings_title">Battery </string>
+    <string name="aurora_account_settings_title">Account</string>
+    <string name="aurora_add_account_title">Add Account</string>
+    <string name="aurora_tether_settings_title">Tethering portable hotspot</string>
+    <string name="aurora_usb_tether_text">USB tethering</string>
+    <string name="aurora_bluetooth_tether_text">Bluetooth tethering</string>
+    <!-- Aurora <likai> add end -->
+
+    <string name="battery_percent">Battery Percentage</string>
+
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.string begin -->
+    <string name="aurora_report">Report</string>
+    <string name="aurora_megabyteShort">MB</string>
+    <string name="aurora_gigabyteShort">GB</string>
+    <string name="aurora_wifi_tether_configure_ssid_default" translatable="false">AndroidAP</string>
+    <string name="clearDefaultHintMsg">Clear Default setting in “System settings”&gt;“Application”&gt;“Download”</string>
+    <string name="bugreport_title">Take bug report</string>
+    <string name="bugreport_message">It will gather information about the current state of the equipment information, and send by e-mail. Generate error report to ready to send needed a little time from the beginning, please wait patiently.</string>
+    <string name="ringtone_silent">none</string>
+    <string name="ringtone_unknown">Unkown Ringtone</string>
+    <string name="ssl_certificate">Certification</string>
+    <string name="fast_scroll_alphabet"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.string end -->
+
+    <string name="wifi_proxy_settings_none">None</string>
+    <string name="wifi_proxy_settings_manual">Manual</string>
+    <string name="wifi_ip_settings_dhcp">DHCP</string>
+    <string name="wifi_ip_settings_static">Static</string>
+    <string name="wifi_info_modify">Discard</string>
+    <string name="wifi_info_modify_message">Discard Your Changes?</string>
+    <string name="ignore_wifi_ap">Ignore the AP</string>
+    <string name="accessibility_twice_click_screen_awake_prerefence_title">Double click Wakeup</string>
+    <string name="accessibility_screen_pick_take_prerefence_title">Black screen capture</string>
+    <string name="accessibility_screen_music_control_prerefence_title">Black screen Music control</string>
+    <string name="accessibility_screen_somatosensory_smart_pause">Somatosensory Smart Pause</string>
+    <string name="accessibility_screen_three_fingers_screenshots">Three Fingers Screenshots</string>
+    <string name="accessibility_glove_title">Glove patterns</string>
+    <string name="somatosensory_music_control_summary">Under lock screen picture on the screen left and right to switch songs, circle pause / play songs</string>
+    <string name="screen_pick_take_summary"> Draw C shape to Snapshot when lock screen.</string>
+
+    <!-- Bootanimation settings -->
+    <skip />
+    <!-- Bootanimation settings screen, section header for settings related to bootanimation -->
+    <string name="set_bootanimation_success">Boot screen setup is complete</string>
+    <string name="set_bootanimation_first">Please set the boot screen</string>
+    <string name="photograph_bootanimation">Photograph</string>
+    <string name="album_bootanimation">Album</string>
+    <string name="bootanimation_settings">Bootanimation</string>
+    <string name="set_bootanimation_settings">Adjusting the picture</string>
+    <string name="bootanimation_reset">Bootanimation has been reset</string>
+    <string name="share_bootanimation">Share</string>
+    <string name="scan_bootanimation">Scan</string>
+    <string name="change_bootanimation">Change</string>
+    <string name="set_bootanimation">Set now</string>
+    <string name="reset_bootanimation">Reset</string>
+    <string name="sign_bootanimation">I AM UNIQUE</string>
+    <string name="input_exceed_limit">Words have exceed the limit！</string>
+    <string name="input_type_limit">Password can only be numbers, letters ！</string>
+
+    <!-- Aurora liugj 2013-10-22 modified for aurora's new feature start -->
+    <string name="bluetooth_open_scan">"Discoverable"</string>
+    <string name="bluetooth_turned_on">"Opened"</string>
+    <string name="bluetooth_paired">"Paired"</string>
+    <string name="bluetooth_name_save">"Save"</string>
+    <string name="bluetooth_title_device_name">"My device name"</string>
+    <string name="bluetooth_device_name_not_empty">"Device name can't empty"</string>
+    <string name="bluetooth_device_name_not_space">"Device name can't contain space"</string>
+    <string name="bluetooth_title_unpair">"Unpair"</string>
+    <string name="bluetooth_unpair_dialog_text">"Are you sure unpair with “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”？"</string>
+    <string name="bluetooth_unpair_toast_ok">"Successful unpair with “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”"</string>
+    <string name="bluetooth_unpair_toast_fail">"Failed unpair with “<xliff:g id="DEVICE_NAME">%1$s</xliff:g>”"</string>
+    <!-- Aurora liugj 2013-10-22 modified for aurora's new feature end -->
+
+    <string name="internal_storage_format">"Format internal storage"</string>
+    <string name="internal_storage_format_summary">"Clear all data in the internal storage"</string>
+    <string name="apn_add">Add access points</string>
+    <string name="apn_add_message">"Are you sure you want to cancel adding the access points?"</string>
+    <string name="aurora_apn_add_message">"Discard your changes?"</string>
+    <string name="apn_edit_message">"Are you sure you want to cancel modifying the access points?"</string>
+    <string name="remove_apn_label">Remove Access Point</string>
+    <string name="apn_ok">OK</string>
+    <string name="aurora_apn_ok">Discard</string>
+    <string name="apn_cancel">Cancel</string>
+    <string name="master_clear_confirm">"Your phone is about to be restored to factory state. This operation cannot be undone. Please confirm again!"</string>
+    <string name="aurora_internal_storage">"Internal storage"</string>
+    <string name="testing_log_onoff">"Log"</string>
+    <string name="battery_usage_hint">Battery status</string>
+    <string name="factory_settings_title">"Samsung's original functions"</string>
+    <string name="smart_screen_settings_title">"Smart Screen"</string>
+    <string name="smart_screen_settings_summary">"Use intelligent face detection function"</string>
+    <string name="screen_mode_settings_title">"Screen Mode"</string>
+    <string name="screen_mode_settings_summary">"Select Screen Mode"</string>
+    <string name="power_save_mode_settings_title">"Power Saving Mode"</string>
+    <string name="select_save_data_title">"Select the data to delete"</string>
+    <string name="delete_app_title">"Remove applications"</string>
+    <string name="delete_app_summary">"Remove all the applications already installed."</string>
+    <string name="format_sdcard_title">"Format the internal storage card"</string>
+    <string name="start_factory_alterdlg_summary_none">"Do you want to clear user data? Note: This operation cannot be undone after confirmation!"</string>
+    <string name="start_factory_alterdlg_summary_delapp">"Do you want to clear user data and remove all applications? Note: This operation cannot be undone after confirmation!"</string>
+    <string name="start_factory_alterdlg_summary_sdcard">"Do you want to clear user data and format the internal storage? Note: This operation cannot be undone after confirmation!"</string>
+    <string name="start_factory_alterdlg_summary_delappandsdcard">"Do you want to clear all user data on the phone? Note: This operation cannot be undone after confirmation!"</string>
+    <string name="format_sdcard_summary">"Clear all data on the SD card, such as music and photos."</string>
+    <string name="factory_defalut_tip">"This operation will clear all data on the storage device of your phone, including:"</string>
+    <string name="factory_defalut_tip_account"><li>"Your Google Account"</li></string>
+    <string name="factory_defalut_system_applay_tip"><li>"System and application data &amp; settings"</li></string>
+    <string name="total_size">"Total "</string>
+    <string name="avail_size">"Available "</string>
+
+    <!-- Aurora <zhang_xin> <2013-12-10> add for choose password begin -->
+    <string name="unlock_set_unlock_mode_digit">Digit Password</string>
+    <string name="unlock_set_unlock_digit_title">Digit Password</string>
+    <string name="unlock_set_unlock_digit_summary">Enter Digit</string>
+    <string name="lockpassword_choose_your_digit_header">Choose your digit</string>
+    <string name="lockpassword_confirm_your_digit_header">Confirm your digit</string>
+    <string name="lockpassword_choose_your_digit_title">"Choose your digit</string>
+    <string name="lockpassword_confirm_digit_title">Confirm your digit</string>
+    <string name="lockpassword_confirm_digit_header">Confirm your digit</string>
+    <string name="lockpassword_digit_recently_used">Device administrator doesn\'t allow using a recent Digit.</string>
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="lockpassword_again_confirm_passwords_dont_match">"Password wrong"</string>
+    <!-- Aurora <zhang_xin> <2013-12-10> add for choose password end -->
+
+
+    <!-- Aurora <zhang_xin> <2013-12-10> add for choose password end -->
+    <!-- qy begin -->
+    <string name="format_title">"Format"</string>
+    <string name="format_message">"Formatting the internal storage will clear all files. The operation cannot be undone. Do you want to continue?"</string>
+    <string name="clear_sd_card_message">"All files will be cleared. This operation cannot be undone. Do you want to continue?"</string>
+    <string name="format_cancel">"Cancel"</string>
+    <string name="format_continue">Continue</string>
+    <string name="format_ok">Format</string>
+    <string name="clear_ok">Clear</string>
+    <string name="clear_complete">Clearing completed</string>
+    <string name="format_confirm_message">"Please reconfirm the formatting operation. It cannot be stopped after beginning."</string>
+    <string name="clear_sd_card_confirm_message">"Please reconfirm the clearing operation. It cannot be stopped after beginning."</string>
+    <string name="aurora_no_add_account">No account to add</string>
+    <string name="font_bold_pref_title">Bold</string>
+    <string name="font_bold_message">The system needs to be started to apply bold font. Do you want to restart?</string>
+    <string name="ok_font_bold_bt">OK</string>
+    <string name="cancel_font_bold_bt">Cancel</string>
+    <string name="font_bold_dlg_title">Loading...</string>
+    <string name="font_bold_dlg_msg">Please wait...</string>
+    <string name="start_serivce_pref_title">"Enable Service"</string>
+    <string name="enable_com">COM Port Debug</string>
+    <string name="enable_com_summary">COM Port Debug after connected with USB </string>
+    <string name="usb_adb">USB Debug</string>
+    <string name="factory_defalut_download_tip"><li>"Downloaded applications"</li></string>
+    <string name="factory_defalut_music_tip"><li>"Musics"</li></string>
+    <string name="factory_defalut_photo_tip"><li>"Photos"</li></string>
+    <string name="factory_defalut_others_tip"><li>"Other user data"</li></string>
+    <string name="start_factory_defalut_title">"Start restoring"</string>
+    <string name="start_factory_alterdlg_title">"Do you want to reset it?"</string>
+    <string name="start_factory_alterdlg_summary">"Do you want to clear all personal information and downloaded applications? Note: this action cannot be undone!"</string>
+    <string name="factory_defalut_tip_2">"To clear pictures, music, and other user data, select the checkbox below, including:"</string>
+    <string name="clear_multi_user_data_tip">"Erase Phone Storage"</string>
+    <string name="factory_defalut_vedio_tip"><li>"Videos"</li></string>
+    <string name="factory_defalut_others_use_tip"><li>"Generated data when using the phone"</li></string>
+    <!-- qy end -->
+
+
+    <!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. start -->
+    <string name="aurora_settings_sim_card_management">SIM Card Management</string>
+
+    <!-- Aurora Steve.tang, add for sim card lock settings -->
+    <string name="sim01_lock_settings_category">"Set up SIM card one lock"</string>
+    <string name="sim02_lock_settings_category">"Set up SIM card two lock"</string>
+    <string name="sim01_lock_settings_title">"SIM1 card lock settings"</string>
+    <string name="sim02_lock_settings_title">"SIM2 card lock settings"</string>
+    <string name="aurora_sim_01_settings_title">SIM1 Toolkit</string>
+    <string name="aurora_sim_02_settings_title">SIM2 Toolkit</string>
+    <!-- add by steve.tang 2014-05-30 add for multi sim, sim tool kit. end -->
+
+
+    <!-- add by steve.tang 2014-06-09 add for art mode. start -->
+    <string name="enable_art">ART Mode</string>
+    <!-- string name="select_runtime_warning_message">Reboot to change runtime from <xliff:g id="old" example="libdvm.so">%1$s</xliff:g> to <xliff:g id="new" example="libart.so">%2$s</xliff:g>?</string -->
+    <string name="select_runtime_warning_message">Reboot to change runtime to art mode，Continue？</string>
+    <string name="leave_art_runtime_warning_message">Reboot to change runtime from art mode，Continue？</string>
+    <!-- add by steve.tang 2014-06-09 add for art mode. end -->
+
+    <string name="android_system_power_pref_title">"Android System"</string>
+
+    <!-- add by hanpingjiang 2014-07-01 add for volume -->
+    <string name="otg_progress_unmounting">"Unmounting OTG storage..."</string>
+    <string name="sd_progress_unmounting">"Unmounting SD storage..."</string>
+    <string name="in_progress_unmounting">"Unmounting Internal storage..."</string>
+    <string name="progress_nomediapresent">No removable media present</string>
+    <string name="otg_progress_erasing">"Erasing OTG storage..."</string>
+    <string name="sd_progress_erasing">"Erasing SD storage..."</string>
+    <string name="in_progress_erasing">"Erasing Internal storage..."</string>
+    <string name="media_bad_removal">"Device was removed before being unmounted."</string>
+    <string name="otg_media_checking">"OTG Device is currently being checked."</string>
+    <string name="sd_media_checking">"SD card is currently being checked."</string>
+    <string name="in_media_checking">"Internal storage is currently being checked."</string>
+    <string name="media_removed">"Device has been removed."</string>
+    <string name="otg_media_shared">"OTG Device is currently in use by a computer."</string>
+    <string name="sd_media_shared">"SD card is currently in use by a computer."</string>
+    <string name="in_media_shared">"Internal storage is currently in use by a computer."</string>
+    <string name="media_unknown_state">"External media in unknown state."</string>
+    <string name="format_error">"Couldn\'t erase."</string>
+    <string name="art_title">"change runtime"</string>
+
+    <!-- add by hanpingjiang 2014-08-24 add for Storage -->
+    <string name="clear_sd_card">Clear SD card</string>
+    <string name="otg_card_title">OTG storage</string>
+    <string name="clear_otg_card">Clear OTG storage</string>
+
+    <!-- add begin by aurora.jiangmx -->
+    <string name="virtual_keyboard_switch_title">Hide navigation bar</string>
+    <string name="virtual_keyboard_switch_summary">To hide navigation bar, swipe down from it in portrait mode. To restore, swipe up from screen bottom</string>
+    <string name="personal_space">Personal Space</string>
+    <string name="login_status_yes">Is logged in</string>
+    <string name="login_status_no">Not Login</string>
+    <string name="somatosensory">Somatosensory</string>
+    <!-- add end -->
+
+
+    <!-- add by gary.gou -->
+    <string name="aurora_factory_settings_title">"original functions"</string>
+    <string name="aurora_oneplus_factory_settings_title">"1+ original functions"</string>
+    <string name="aurora_find7_factory_settings_title">"Find7 original functions"</string>
+    <string name="smart_apperceive_control_settings">Gesture &amp; motion</string>
+    <string name="aurora_light_calibration">"Light calibration"</string>
+    <string name="aurora_calibration_title">"calibration"</string>
+    <string name="aurora_calibration_summary">"Do it indoor (No direct sunlight )"</string>
+    <string name="aurora_calibration_dialog_tip">"Calibrating"</string>
+    <string name="aurora_calibration_failed">"Calibration failed, retry?"</string>
+    <string name="unlock_set_unlock_off_title_summary">Press the Power key to unlock</string>
+    <string name="breathing_LED_settings_title">Easy light</string>
+    <string name="breathing_LED_settings_inform_title">Notifications</string>
+    <string name="breathing_LED_settings_inform_summary">"When screen is off , LED will light up if you've got missed calls, unread messages or notifications"</string>
+    <string name="breathing_LED_settings_low_power_title">Low battery</string>
+    <string name="breathing_LED_settings_low_power_summary">When screen is off , LED will light up if only 10% battery is left</string>
+    <string name="breathing_LED_settings_charge_title">Charging</string>
+    <string name="breathing_LED_settings_charge_summary">When screen is off , LED will light up if the device is connected to charger</string>
+    <string name="ssl_security_certificate">Security certificate</string>
+    <string name="issued_to">Issued to:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="common_name">Common name:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="org_name">Organization:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="org_unit">Organizational unit:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="issued_by">Issued by:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="validity_period">Validity:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="issued_on">Issued on:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="expires_on">Expires on:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="serial_number">Serial number:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="fingerprints">Fingerprints:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="sha256_fingerprint">SHA-256 fingerprint:</string>
+    <!-- Label for an information field on an SSL Certificate Dialog -->
+    <string name="sha1_fingerprint">SHA-1 fingerprint:</string>
+
+    <!-- Wifi settings cooper  penggangding -->
+    <string name="wifi_operator_connect">Connect</string>
+    <string name="wifi_operator_save">Save</string>
+    <string name="wifi_operator_forget">Forget</string>
+    <string name="wifi_operator_modify">Modify</string>
+    <string name="aurora_wifi_tether_text">Portable WLAN hotspot</string>
+    <string name="aurora_wifi_tether_configure_ap">Set up WLAN hotspot</string>
+    <string name="wifi_modify">Modify</string>
+
+    <!-- add by jiyouguang begin -->
+    <string name="feed_back">User feedback</string>
+    <string name="privider_sup">Advice</string>
+    <string name="back_pro">Feedbackprob</string>
+    <string name="pro_discrible">Pro_Description</string>
+    <string name="pro_discrible_detail">Please describe your problem in detail...</string>
+    <string name="coms_contact">Contact</string>
+    <string name="contact_detail">If convenient, please leave your QQ or telephone to facilitate our follow-up...</string>
+    <string name="recommend_drawings">BRIEF proposal</string>
+    <string name="note">Note: This function will consume a certain data traffic in the network to allow use of the environment!</string>
+    <string name="commit">Submit</string>
+    <string name="provide_advice">Advice</string>
+    <string name="feedback_the_problem">Feedback_prob</string>
+    <string name="Problem_Description">ProblemDescription</string>
+    <string name="Proposal">We love to hear your suggestion</string>
+    <string name="limit_chinese_number">The number of characters can not be more than one hundred</string>
+    <string name="limit_contentid_number">The number of characters can not be more than fifty</string>
+    <string name="submit">Submit</string>
+    <string name="cancal">Cancel</string>
+    <string name="feed_back_summury">You have content that is not submitted will be lost after leaving the content, whether to continue?</string>
+    <string name="upload">Upload Information</string>
+    <string name="upload_info">Information is uploaded to the server</string>
+    <string name="suggest_discrible">Please fill out the suggestion of the description</string>
+    <string name="feedback_discrible">Please fill out the feedback problem description</string>
+    <string name="contantid">Please leave contact information</string>
+    <string name="uploaded_server">To submit your feedback</string>
+    <string name="unUpload_server">Your feedback uncommitted success</string>
+    <string name="uploading_dialog">Submit your feedback and model information related to our servers, continue?</string>
+    <string name="network_unConnect">The network is not connected</string>
+    <!-- add by jiyouguang end -->
+
+    <string name="status_and_notify_push">Status Bar  &amp;  notification manager</string>
+
+    <string name="pref_digital_battery_percent_display">Show percentage of Charge</string>
+    <string name="lockscreen_notify_settings">Lock screen notifications setting</string>
+    <string name="lockscreen_notify">Lock screen notifications</string>
+    <string name="lockscreen_showall">Show all notifications </string>
+    <string name="lockscreen_showall_summary">All the notification will be showed on the lockscreen.User can turn on / off the notification details of individual apps</string>
+    <string name="lockscreen_notshow">Don\'t show notifications</string>
+    <string name="lockscreen_notshow_summary">Don\'t show any notification on the screen.Only unlock the screen could check the notification</string>
+    <string name="lockscreen_hidenotifydetail">Hide notification details</string>
+    <string name="lockscreen_hidenotifydetail_summary">Only show the app\'s name of notification on the lockscreen</string>
+    <string name="application_notify_mgr">Notification manager of application </string>
+    <string name="notify_mgr">Notification manager</string>
+
+
+     <string name ="lockscreen_show">Allow notifications</string>
+    <string name ="lockscreen_show_summary">Turn off the switch can block all notifications from the application</string>
+    <string name ="lockscreen_notify_shwo_detail">Show notification details on lock screen</string>
+    <string name ="lockscreen_notify_shwo_detail_summary">After activating PIN lock screen or pattern lock screen will show notification details on lock screen</string>
+    
+    <string name="software_version">Version:</string>
+    <string name="app_total_size">Total:</string>
+    
+    <string name="format_otg_title">Format OTG</string>
+    <string name="format_otg_summary">Erase OTG storage</string>
+    
+      <string name="no_third_app">No application</string>
+      
+    <string name="confirm_format_msg">Please confirm  again,you can\'t stop formatting</string>
+    <string name="comfirm_format_button_text">Format</string>
+    
+    <string name="format_sd_card_dialog_title">Format the SD-Card</string>
+    <string name="format_otg_dialog_title">Format the USB storage devices</string>
+    
+    
+    <string name="continue_format_storage">Continue</string>
+    <!-- add by jiyouguang -->
+    <string name="i_know">Got it</string>
+    <string name="i_guide">Slide up  from the bottom of the \nscreen can activate toggle</string>
+    <!-- end -->
+    <!-- aurora hujianwei add for security settings 20150805 -->
+    <string name="lock_title" >Securing your phone</string>
+    <string name="lock_intro_message" >Protect your phone from unauthorized use by creating a personal screen unlock pattern. Slide your finger to connect at least four dots in any order on the next screen. \n\nReady to start? Touch Next.</string>
+    <string name="aurora_display_screen_saving_detail">Automatically adapt backlight to save power</string>
+    <!-- aurora hujianwei add for security settings 20150805 -->    
+    <string name="dashboard_title_fingerprints">Security</string>
+    <string name="dashboard_action_body">Acess</string>
+    <string name="more_network_settings">More Network</string>
+    <string name="security">Security</string>
+    <string name="self_ringtone">Self ringtone</string>
+    <string name="system_ringtone">System ringtone</string>
+
+    <string name="do_not_disturb">Don\'t Disturb</string>
+    <string name="dnd_enable">Immediately enable</string>
+    <string name="dnd_summary">Do not disturb mode, call and message will not be ringing and vibration</string>
+    <string name="timing_enale">timing enable</string>
+    <string name="repeated_calls_remind">Repeated calls to remind</string>
+    <string name="repeated_calls_summary">Repeat calls within five minutes will not be limited</string>
+    <string name="calls_white_list">Calls whitelist</string>
+    <string name="calls_with_no_limit">Calls will not be limited</string>
+    <string name="no_whitelist">No Contacts</string>
+    <string name="calls_whitelist">Incoming call white list</string>
+
+    <string name="wifi_change_password">Modify password</string> 
+    <string name="aurora_location_service">Location Service</string> 
+    
+    <string name="wallpaper_setting_title">Wallpaper</string>
+    <string name="theme_setting_title">Theme</string>
+    <string name="time_wallpaper_setting_title">LockScreen</string>
+    <string name="wechat_set">Wechat sett</string>
+    <string name="use_dual_wechat">use dual wechat</string>
+    <string name="use_dual_wechat_summery">use dual wechat at same time</string>
+    <string name="use_dual_wechat_info">can not use the same account in dual wechat</string>
+    <string name="no_wechat">you have not install wechat</string>
+    <string name="wechat_install">wechat install info</string>
+    <string name="wechat_install_title">open the dual wechat?</string>
+    <string name="wechat_install_message">Can also be opened in the settings</string>
+    <string name="query_hint">Query Settings Page</string>
+</resources>

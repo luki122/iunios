@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/more_actions_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/aurora_actionbar_more_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/show_or_hide_period"
+            android:layout_width="94dp"
+            android:layout_height="45dp"
+            android:background="@drawable/aurora_agenda_item_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="@string/aurora_period_show" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="#eeeeee" />
+
+        <Button
+            android:id="@+id/remember_day_entry"
+            android:layout_width="94dp"
+            android:layout_height="45dp"
+            android:background="@drawable/aurora_agenda_item_bg"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="@string/remember_title" />
+	</LinearLayout>	    	        
+</FrameLayout>

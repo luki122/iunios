@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_update_list_item_height"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@+id/upmarket_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/app_avatar"
+            android:layout_width="@dimen/app_item_icon_width_and_height"
+            android:layout_height="@dimen/app_item_icon_width_and_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/app_detail_page_margin_12"
+            android:layout_marginTop="@dimen/app_detail_page_margin_12"
+            android:src="@drawable/page_appicon_big" />
+
+        <LinearLayout
+            android:id="@+id/app_info_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/app_detail_page_margin_12"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/avail_upate_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_item_text1_height"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_16"
+                />
+
+            <TextView
+                android:id="@+id/avail_version_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_item_text2_height"
+                android:layout_marginTop="@dimen/app_detail_page_margin_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" 
+                />
+
+            <TextView
+                android:id="@+id/avail_app_size"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_item_text2_height"
+                android:layout_marginTop="@dimen/app_detail_page_margin_5"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" 
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/up_market_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_update_length_28"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/app_update_selector"
+            android:gravity="center"
+            android:paddingLeft="@dimen/app_update_padding_8"
+            android:paddingRight="@dimen/app_update_padding_8"
+            android:layout_marginRight="@dimen/app_detail_page_margin_17"
+            android:text="@string/restore_update_app"
+            android:textColor="@color/up_market_btn_color"
+            android:visibility="gone" />
+
+        <com.aurora.market.widget.ProgressBtn
+            android:id="@+id/progressBtn"
+            android:layout_width="@dimen/app_item_down_btn_container_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</RelativeLayout>

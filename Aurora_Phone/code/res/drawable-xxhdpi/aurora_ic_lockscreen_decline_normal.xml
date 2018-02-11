@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="90"
+    android:viewportHeight="90">
+
+    <path
+        android:name="XMLID_902_"
+        android:fillColor="@color/end_call_color"
+        android:pathData="@string/aurora_ic_lockscreen_decline_normal_path" />
+</vector>

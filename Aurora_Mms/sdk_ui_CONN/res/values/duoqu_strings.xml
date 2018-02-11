@@ -1,0 +1,75 @@
+<resources>
+
+    <string name="app_name">newSmsSdk</string>
+    <string name="duoqu_open_net">访问网址</string>
+    <string name="duoqu_reply_sms">回复短信</string>
+    <string name="duoqu_forword_sms">转发短信</string>
+    <string name="duoqu_call_phone">拨打电话</string>
+    <string name="duoqu_open_text">打开原文</string>
+    <string name="duoqu_send_email">发送邮件</string>
+    <string name="duoqu_open_map">打开地图</string>
+    <string name="duoqu_chonzhi">充值</string>
+    <string name="duoqu_call">来电</string>
+    <string name="duoqu_harass">骚扰电话</string>
+    <string name="duoqu_unknownumber">未知电话</string>
+    <string name="tip_services_provide">米佳信析宝提供服务</string>
+    <string name="tip_data_source">数据来源百度地图</string>
+    <string name="tip_load_more">点击加载更多数据</string>
+    <string name="tip_loading">加载中...</string>
+    <string name="duoqu_calls_reminder_discern_call">来电识别</string>
+    <string name="duoqu_calls_reminder_side_phone_num">电话号码</string>
+    <string name="duoqu_calls_frequency">来电次数</string>
+    <string name="duoqu_calls_calltime">来电时间</string>
+    <string name="duoqu_calls_last_calltime">末次时间</string>
+    <string name="duoqu_calls_sideattribution">对方归属地</string>
+    <string name="duoqu_calls_ownstate">来电时状态</string>
+    <string name="duoqu_calls_sidestate">对方状态</string>
+    <string name="duoqu_calls_callingtime">呼叫时间</string>
+    <string name="duoqu_no_train_info">暂无{0}到站信息选择</string>
+    <string name="duoqu_select_destination">选择目的地</string>
+    <string name="duoqu_cancel">取消</string>
+    <string name="duoqu_confirm">确定</string>
+    <string name="duoqu_direction">开往</string>
+    <string name="duoqu_filght">飞往</string>
+    <string name="duoqu_double_line">— —</string>
+    <string name="duoqu_double_line_en">- -</string>
+    <string name="duoqu_double_line_an">--:--</string>
+    <string name="duoqu_web_not_find_page">找不到网页</string>
+    <string name="duoqu_tip_false">缺少参数，无法打开百度地图</string>
+    <string name="duoqu_tip_duoqu_name">多趣</string>
+    <string name="duoqu_web_network_fail">网络失效了，打开网络看看</string>
+    <string name="duoqu_web_network_setting">网络设置</string>
+    <string name="duoqu_web_loading">Loading</string>
+    <string name="duoqu_defult_gray_text">未知</string>
+    <string name="duoqu_loading">正在加载,请稍后...</string>
+    <string name="duoqu_web_reload">刷新</string>
+    <string name="duoqu_web_feedback">反馈</string>
+    <string name="duoqu_web_help">帮助</string>
+    <string name="duoqu_web_aboutus">服务说明</string>
+    <string name="duoqu_web_reset">解除默认选择</string>
+    <string name="duoqu_popmenu_content">解除默认服务选择后，您可重新选择所需的服务应用</string>
+    <string name="duoqu_dialog_content">解除默认服务选择后，您可重新选择所需的服务应用</string>
+    <string name="duoqu_dialog_title">提示</string>
+    <string name="duoqu_web_close">关闭</string>
+    <string name="duoqu_delete">删除</string>
+    <string name="duoqu_delete_eg">delete</string>
+    <string name="duoqu_has_read">已读</string>
+    <string name="duoqu_am">上午</string>
+    <string name="duoqu_pm">下午</string>
+    <!-- 附近网点 -->
+    <string name="duoqu_nearby_point_list_title">附近网点</string>
+    <string name="duoqu_tip_services_provide">米佳信析宝提供服务</string>
+    <string name="duoqu_tip_data_source">数据来源百度地图</string>
+    <string name="duoqu_tip_load_more">点击加载更多数据</string>
+    <string name="duoqu_tip_loading">加载中...</string>
+    <string name="duoqu_tip_nearby_point_loading">附近网点加载中...</string>
+    <string name="duoqu_tip_nearby_point_not_find">没有找到相关结果！</string>
+    <string name="duoqu_tip_nearby_point_refresh"><u>刷新试试</u></string>
+    <string name="duoqu_tip_nearby_point_network_lose">对不起，网络出错了，轻触屏幕重新加载</string>
+    <string name="duoqu_errortext">找不到网页，请您检查当前网络是否通畅!</string>
+    <string name="duoqu_tip_gps_closed_error">亲，数据获取失败，可能是您未开启定位哦~</string>
+
+    <!-- notification -->
+    <string name="duqou_mark_btn_name">标为已读</string>
+
+</resources>

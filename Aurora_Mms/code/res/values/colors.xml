@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- Activity background color -->
+    <drawable name="class_zero_background">#7f040000</drawable>
+
+    <!-- text color -->
+    <drawable name="text_color_red">#ffff4444</drawable>
+    <drawable name="text_color_black">#ff000000</drawable>
+    <color name="text_hairline">#ff838383</color>
+    <color name="list_background">#fff1f1f1</color>
+
+    <!-- Chat "sent time" text background -->
+    <color name="timestamp_color">#bf000000</color>
+
+    <!-- the background color used for unread conversation -->
+    <color name="unread_bgcolor">#ffffffff</color>
+    <color name="read_bgcolor">#ffeeeeee</color>
+    <!-- MTK resource -->
+    <!-- Widget background -->
+    <drawable name="white_background">#ffffffff</drawable>
+    <color name="siminfo_color">#ffffffff</color>
+    <!-- Aurora xuyong 2013-09-26 added for aurora.s new feature start-->
+    <color name="aurora_menu_item_selected_color">#3DA0FD</color>
+    <color name="aurora_menu_item_color">#FFFFFF</color>
+    <!-- Aurora xuyong 2013-10-12 added for aurora's new feature start -->
+    <color name="aurora_grid_item_selected_color">#fafafa</color>
+    <color name="aurora_grid_item_color">#FFFFFF</color>
+    <!-- Aurora xuyong 2013-10-12 added for aurora's new feature end -->
+    <!-- Aurora xuyong 2013-09-26 added for aurora.s new feature end -->
+    <color name="aurora_link_normal_color">#ff3578d3</color>
+    <color name="aurora_link_pressed_color">#7f3578d3</color>
+    <color name="aurora_multi_notify_subject_color">#50ffffff</color>
+    <color name="aurora_multi_notify_title_color">#ffffff</color>
+</resources>

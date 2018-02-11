@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:id="@+id/search_and_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_edit_group_margin_top"
+            android:background="@color/contact_list_header_background_color"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/aurora_list_header_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/myself_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/myself"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/photo_ll0"
+            style="@style/single_list_item_photo_style" >
+
+            <aurora.widget.AuroraRoundedImageView
+                android:id="@+id/myself_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aurora_group_icon" />
+        </RelativeLayout>
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/myself_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/photo_ll0"
+            android:gravity="center_vertical"
+            android:text="@string/visiting_card_title"
+            android:textColor="#414142"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_list_item_driver_hight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/h_diver" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/aurora_group_entrance"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/single_list_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/photo_ll"
+            style="@style/single_list_item_photo_style" >
+
+            <aurora.widget.AuroraRoundedImageView
+                android:id="@+id/aurora_enter_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aurora_group_icon" />
+        </RelativeLayout>
+
+        <aurora.widget.AuroraTextView
+            android:id="@+id/group_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/photo_ll"
+            android:gravity="center_vertical"
+            android:text="@string/aurora_group_title"
+             style="@style/double_list_item_name_text_style_with_photo" />
+    </RelativeLayout>
+
+</LinearLayout>

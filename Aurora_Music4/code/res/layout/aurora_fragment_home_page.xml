@@ -1,0 +1,22 @@
+<!--
+@author chenhl  
+create time: 20140616
+-->
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.auroramusic.widget.AuroraViewPager
+        android:id="@+id/id_container"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+-->
+
+<com.android.auroramusic.widget.AuroraViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

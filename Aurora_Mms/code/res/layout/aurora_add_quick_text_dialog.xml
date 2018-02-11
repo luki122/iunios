@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-11 created for aurora's new feature -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <aurora.widget.AuroraEditText
+        android:id="@+id/add_quick_text_content"
+        android:scrollbars="vertical"
+        android:layout_height="28dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="66dip"
+        android:layout_marginRight="66dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="38dip"
+        android:paddingLeft="5dp"
+        android:hint="@string/quick_text_edit_hint"
+        android:singleLine="false"
+        android:maxLength="20"
+        android:autoText="false"
+        android:capitalize="none"
+        android:textCursorDrawable="@null"
+        android:gravity="center_vertical"
+        android:background="@drawable/aurora_scroll_bg_selector"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+</LinearLayout>

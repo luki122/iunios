@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/duoqu_drop_notify_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/duoqu_notification_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/duoqu_notification_padding_bottom"
+    android:paddingLeft="@dimen/duoqu_notification_padding_left"
+    android:paddingRight="@dimen/duoqu_notification_padding_right"
+    android:paddingTop="@dimen/duoqu_notification_padding_top" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/duoqu_notification_body_bg_width"
+        android:layout_height="@dimen/duoqu_notification_body_bg_height"
+        android:background="@color/duoqu_notification_body_bg_color"
+        >
+
+        <ImageView
+            android:id="@+id/duoqu_logo_img"
+            android:layout_width="@dimen/duoqu_notification_logo_width"
+            android:layout_height="@dimen/duoqu_notification_logo_heigh"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/duoqu_notification_logo_left_margin"
+            android:layout_marginRight="@dimen/duoqu_notification_logo_right_margin"
+            android:layout_marginTop="@dimen/duoqu_notification_logo_top_margin"
+             />
+
+        <LinearLayout 
+            android:id="@+id/duoqu_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/duoqu_logo_img"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/duoqu_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/duoqu_notification_title_color"
+                android:textSize="@dimen/duoqu_notification_title_size" />
+
+            <TextView
+                android:id="@+id/duoqu_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/duoqu_notification_subtitle_left_margin"
+                android:layout_marginTop="@dimen/duoqu_notification_subtitle_top_margin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/duoqu_notification_subtitle_color"
+                android:textSize="@dimen/duoqu_notification_subtitle_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/duoqu_sms_receive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/duoqu_notification_time_left_margin"
+            android:layout_marginRight="@dimen/duoqu_notification_time_right_margin"
+            android:layout_marginTop="@dimen/duoqu_notification_time_top_margin"
+            android:textColor="@color/duoqu_notification_time_color"
+            android:textSize="@dimen/duoqu_notification_time_size"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/duoqu_drop_btn_ll"
+        android:layout_width="@dimen/duoqu_notification_bottom_bg_width"
+        android:layout_height="@dimen/duoqu_notification_bottom_bg_height"
+        android:background="@color/duoqu_notification_bottom_bg_color"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/duoqu_drop_split_line"
+            android:layout_width="@dimen/duoqu_notification_line_width"
+            android:layout_height="@dimen/duoqu_notification_line_height"
+            android:layout_marginLeft="@dimen/duoqu_notification_line_left_margin"
+            android:layout_marginRight="@dimen/duoqu_notification_line_right_margin"
+            android:layout_marginTop="@dimen/duoqu_notification_line_top_margin"
+            android:background="@color/duoqu_notification_line_color"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/duoqu_drop_btn_one_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/duoqu_notification_btn_left_margin"
+            android:layout_marginTop="@dimen/duoqu_notification_btn_top_margine"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/duoqu_drop_btn_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/duoqu_notification_btn_color"
+                android:textSize="@dimen/duoqu_notification_btn_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/duoqu_notification_line_sec_width"
+            android:layout_height="@dimen/duoqu_notification_line_sec_height"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/duoqu_notification_line_top_margin"
+            android:background="@color/duoqu_notification_line_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/duoqu_drop_btn_two_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/duoqu_notification_btn_sec_left_margin"
+            android:layout_marginTop="@dimen/duoqu_notification_btn_sec_top_margin"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/duoqu_drop_btn_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/duoqu_notification_btn_sec_color"
+                android:textSize="@dimen/duoqu_notification_btn_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

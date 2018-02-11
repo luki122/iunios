@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_dp" >
+
+    <ImageView
+        android:id="@+id/file_image"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/privacy_video" />
+
+    <TextView
+        android:layout_toRightOf="@+id/file_image"
+        android:id="@+id/file_name"
+        style="@style/aurora_file_name_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:singleLine="true"
+        android:text="@string/p_video" />
+
+    <TextView
+        android:id="@+id/file_num"
+        style="@style/aurora_file_other_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/rigth_icon"/>
+
+    <ImageView
+        android:id="@+id/rigth_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/category_icon_goto_fileview_page" />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.aurora.market"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@com.aurora:dimen/aurora_action_bar_search_view_height"
+        android:background="@drawable/bg_main_tab" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/homepage_main_tab_height_max" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/homepage_name_tab_range"
+            android:background="@drawable/bg_main_tab" />
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main_tab"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <com.aurora.market.widget.MainTabItemView
+                android:id="@+id/mtiv_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android_custom:tab_img="@drawable/icon_new_selector"
+                android_custom:tab_text="@string/tab_new"
+                android_custom:tab_text_hor="@string/tab_new" />
+
+            <com.aurora.market.widget.MainTabItemView
+                android:id="@+id/mtiv_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android_custom:tab_img="@drawable/icon_special_selector"
+                android_custom:tab_text="@string/tab_special"
+                android_custom:tab_text_hor="@string/tab_special" />
+
+            <com.aurora.market.widget.MainTabItemView
+                android:id="@+id/mtiv_ranking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android_custom:tab_img="@drawable/icon_ranking_selector"
+                android_custom:tab_text="@string/tab_ranking"
+                android_custom:tab_text_hor="@string/tab_ranking" />
+
+            <com.aurora.market.widget.MainTabItemView
+                android:id="@+id/mtiv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android_custom:tab_img="@drawable/icon_category_selector"
+                android_custom:tab_text="@string/tab_category"
+                android_custom:tab_text_hor="@string/tab_category" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

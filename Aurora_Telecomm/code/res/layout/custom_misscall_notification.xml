@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?> <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="64dp" > 
+
+
+                  
+    
+        <FrameLayout
+         android:id="@+id/image_container"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" 
+        android:layout_gravity="center_vertical"
+        >
+    <ImageView  
+        android:id="@+id/image" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+                  /> 
+	    <ImageView  
+	        android:id="@+id/private_image" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"	        
+	        android:background="@drawable/private_noti_icon"
+	        android:visibility="gone" 
+	                  /> 
+    </FrameLayout>
+   
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="@dimen/miss_noti_width" 
+        android:layout_height="wrap_content" 
+        android:layout_toRightOf="@id/image_container" 
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+        
+          <LinearLayout
+		        android:id="@+id/first_line"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"       
+		        android:orientation="horizontal"
+		        android:gravity="center_vertical">
+       		 <TextView  
+		        android:id="@+id/title" 
+		        android:layout_width="wrap_content" 
+		        android:textColor="@color/aurora_dialpad_text_color"
+		        android:textSize="15sp"
+		        android:layout_height="wrap_content"  /> 
+		        			    
+		     <ImageView android:id="@+id/aurora_sim_slot"
+		        android:layout_marginLeft="6dp"
+		        android:layout_width="11dp"
+		        android:layout_height="12.75dp"
+		        android:src="@drawable/sim_noti_11"
+		        />     
+		 </LinearLayout>
+    
+	       
+	    <TextView  
+	        android:id="@+id/text" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:textColor="@color/aurora_notification_text_color2"
+	        android:singleLine="true"
+	        android:maxWidth="140dp"
+	        android:layout_marginTop="7dp"
+		    android:textSize="12sp" /> 
+
+    </LinearLayout>
+ 
+        
+     <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/aurora_ic_text_holo_dark_button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/sms"
+        android:layout_marginRight="21dp"
+        android:visibility="@integer/aurora_misscall_action"
+        android:layout_centerHorizontal="true"/>
+     
+
+     
+      <ImageView
+        android:id="@+id/divider"
+        android:layout_width="1px"
+        android:layout_height="22.7dp"
+        android:layout_toLeftOf="@id/sms"
+        android:layout_marginRight="18dp"
+        android:layout_centerVertical="true"
+        android:visibility="@integer/aurora_misscall_action"
+        android:background="@color/aurora_notification_divider_color" /> 
+        
+      <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/aurora_stat_sys_phone_call_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:id="@+id/dial"
+        android:contentDescription="@string/endcall"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout> 

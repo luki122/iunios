@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/file_image"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="9dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/modified_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:layout_gravity="left"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:layout_gravity="left"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/modified_time"
+        android:gravity="left"
+        android:singleLine="true" />
+    
+
+</merge>

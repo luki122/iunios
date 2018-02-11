@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorakey="main"
+    aurora:auroratitle="@string/labelCW" >
+
+    <AuroraPreferenceCategory
+        aurora:aurorakey="cdma_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_3" >
+        <AuroraSwitchPreference
+            aurora:aurorakey="cdma_button_cw_key"
+            aurora:aurorapersistent="true"
+            aurora:aurorasummaryOff="@string/sum_cw_disabled"
+            aurora:aurorasummaryOn="@string/sum_cw_enabled"
+            aurora:auroratitle="@string/labelCW" />
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim1_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_1" >
+        <com.android.phone.CallWaitingCheckBoxPreference
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cw_key_0"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/sum_cw_disabled"
+            aurora:aurorasummaryOn="@string/sum_cw_enabled"
+            aurora:auroratitle="@string/labelCW"
+            phone:icon_slot="0" />
+    </AuroraPreferenceCategory>
+    
+    <AuroraPreferenceCategory
+        aurora:aurorakey="sim2_category_key"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/sub_2" >
+        <com.android.phone.CallWaitingCheckBoxPreference
+            aurora:auroraenabled="false"
+            aurora:aurorakey="button_cw_key_1"
+            aurora:aurorapersistent="false"
+            aurora:aurorasummaryOff="@string/sum_cw_disabled"
+            aurora:aurorasummaryOn="@string/sum_cw_enabled"
+            aurora:auroratitle="@string/labelCW"
+            phone:icon_slot="1" />
+    </AuroraPreferenceCategory>
+
+</AuroraPreferenceScreen>

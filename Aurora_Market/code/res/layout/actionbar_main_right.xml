@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/download_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actionbar_main_right_ripple"
+    android:focusable="true"
+    >
+    <ImageView android:id="@+id/actionbar_main_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/header_set_normal"
+        android:layout_marginRight="@dimen/search_page_margin_12"
+        android:layout_marginLeft="@dimen/search_page_margin_12"
+        android:focusable="true"
+        />
+
+    
+       <ImageView android:id="@+id/actionbar_main_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@drawable/actionbar_right_red"
+        android:layout_marginRight="@dimen/search_page_margin_10"
+        android:layout_marginTop="@dimen/search_page_margin_9"
+        android:visibility="gone"
+        android:focusable="true"
+        />
+    
+</FrameLayout>

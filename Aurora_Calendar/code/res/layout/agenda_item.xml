@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Gionee <jiating> <2013-04-18> modify for new agenda view begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/min_height_agenda_item"
+    android:layout_gravity="center_vertical"
+     >
+<RelativeLayout  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:id="@+id/agenda_content"
+    android:layout_centerInParent="true"
+    >
+    <com.android.calendar.ColorChipView
+        android:id="@+id/agenda_item_color"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dip"
+        android:layout_alignBottom="@+id/agenda_item_text_container"
+        android:layout_alignTop="@+id/agenda_item_text_container"
+        android:gravity="center_vertical"
+         />
+
+    <LinearLayout
+        android:id="@+id/agenda_item_text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="@dimen/agenda_item_right_margin"
+        android:layout_toRightOf="@id/agenda_item_color"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+<!--Gionee <jiating><2013-06-22> modify for CR00828906 begin  -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            style="@style/GNEditEventContentTextAppearance"/>
+
+        <TextView
+            android:id="@+id/when"
+            style="@style/GNAgendaTimeTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+             />
+<!--Gionee <jiating><2013-06-22> modify for CR00828906 end  -->
+    </LinearLayout>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gn_listdiver" />
+
+ 
+
+</RelativeLayout><!-- use RelativeLayout instead of  </GridLayout> -->
+
+<!-- Gionee <jiating> <2013-04-18> modify for new agenda view end -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/power_item_middle_height"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/traffic_ripple_button"
+        android:descendantFocusability="blocksDescendants" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_large"/>
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/switch_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_large"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/switch_action"
+            android:layout_toRightOf="@id/icon"
+            android:paddingLeft="@dimen/padding_large"
+            android:textColor="@color/permission_detail_item_text"
+            android:textSize="@dimen/textsize_14" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/listview_dividerheight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/line"/>
+    </RelativeLayout>
+
+</RelativeLayout>

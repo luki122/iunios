@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="90"
+    android:viewportHeight="90">
+
+    <path
+        android:name="XMLID_65_"
+        android:fillColor="@color/aurora_small_button_checked_color"
+        android:pathData="@string/aurora_ic_lockscreen_answer_normal_path"/>
+</vector>

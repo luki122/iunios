@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <com.aurora.svgview.PathView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pathView"
+            android:layout_marginTop="@dimen/finger_icon_top"
+            android:layout_width="@dimen/id_icon_width"
+            android:layout_height="@dimen/id_icon_height"
+            app:pathColor="@color/finger_id_blue"
+            app:svg="@raw/finger"
+            app:pathWidth="5"/>
+
+        <TextView
+            android:id="@+id/msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comfirm_finger_text"
+            android:textSize="@dimen/dialog_msg_size"
+            android:textColor="@color/dialog_msg_color"
+            android:layout_marginTop="@dimen/finger_confirm_text_top"
+            android:layout_marginBottom="@dimen/finger_confirm_text_bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

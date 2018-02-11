@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="language_wel">欢迎</string>
+    <string name="exigency_call">紧急呼叫</string>
+    <string name="skip">跳过</string>
+    <string name="finish">完成</string>
+    <string name="next">下一步</string>
+    <string name="inputmethod_info">默认输入法</string>
+    <!-- <string name="complete_title">设置完成</string> -->
+    <string name="complete_title">开启全新IUNI OS</string>
+    <string name="first_page_info">开始使用IUNI OS2.0</string>
+    <string name="complete_text1">您的手机已经设置完成</string>
+    <string name="complete_text2">可以使用</string>
+    <string name="scma_insert_sim_card">请插入SIM卡</string>
+    <string name="scma_insert_sim_card_info">请按照手机附带说明书中的操作方法插入 SIM 卡。</string>
+
+    <!-- 指纹相关 -->
+    <string name="finger_use">使用指纹</string>
+    <string name="finger_set_title">使用指纹</string>
+    <string name="finger_set_use">暂不使用</string>
+
+    <!-- 应用推荐 -->
+    <string name="app_recommend">推荐应用</string>
+    <string name="pre">上一步</string>
+    <string name="begin_use">开始使用</string>
+    <string name="anzhuang">安装</string>
+    <string name="pm_recommend">产品经理kinki为您推荐</string>
+    <string name="app_ls_info">免流量安装</string>
+    <string name="select_all">全选</string>
+    <string name="app_skip">跳过</string>
+    <string name="scma_insert_sim_card_info_1">请按照手机附带说明书中的操作方法</string>
+    <string name="scma_insert_sim_card_info_2">插入 SIM 卡</string>
+    <string name="complete_text">手机已经设置完成,可以开始使用</string>
+    
+<!--     完成页 -->
+    <string name="complete_info">实用体贴的功能 灵动清新的体验\n细节之中 始见初心</string>
+	<string name="complete_play_text">探索新功能</string>
+</resources>

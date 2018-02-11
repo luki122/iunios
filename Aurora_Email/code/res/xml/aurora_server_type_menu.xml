@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/aurora_server_type_imap"
+        android:title="@string/imap_name">
+    </item>
+    
+    <item
+        android:id="@+id/aurora_server_type_pop"
+        android:title="@string/pop3_name">
+    </item>
+</menu>

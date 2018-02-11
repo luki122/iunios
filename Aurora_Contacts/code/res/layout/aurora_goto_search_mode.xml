@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/goto_search_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@com.aurora:drawable/aurorasearchviewbarbackground" >
+
+        <aurora.widget.AuroraTextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="@string/aurora_searchview_hint"
+            android:textColor="#cbcbcb"
+            android:textSize="15sp"
+            android:paddingLeft="39dp"
+            android:gravity="center_vertical" />
+
+</RelativeLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goto_search_mode"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#FFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/search" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/search_icon"
+            android:gravity="center_vertical"
+            android:text="@string/aurora_searchview_hint"
+            android:textColor="#1E000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

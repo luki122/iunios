@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/layout"
+            android:layout_width="89.1dp"
+            android:layout_height="89.1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/album_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/ingest_sorting"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/checkbox_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:src="@drawable/aurora_check14"
+            android:paddingBottom="4dp"
+        	android:paddingRight="4dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/checkbox_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+        	android:paddingRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/ingest_sorting"
+            android:scaleType="center"
+            android:src="@drawable/aurora_check00"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

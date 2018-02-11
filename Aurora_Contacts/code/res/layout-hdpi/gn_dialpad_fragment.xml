@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dialpad_horizontal_margin"
+    android:paddingRight="@dimen/dialpad_horizontal_margin"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+        	
+        	<TextView
+        	    android:id="@+id/sugest_view" 
+        	    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentTop="true"
+        		android:layout_alignParentBottom="true"
+        		android:paddingLeft="30dp"
+        		android:paddingRight="30dp"
+        		android:gravity="left|center_vertical"
+        		android:textSize="@dimen/gn_dialpad_sugest_text_size" />
+        	<TextView
+        	    android:id="@+id/no_match_view" 
+        	    android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentTop="true"
+        		android:layout_alignParentBottom="true"        		
+            	android:paddingLeft="15dp"
+        		android:paddingRight="15dp"
+        		android:gravity="center"
+        		android:textAppearance="?android:attr/textAppearanceMedium"
+        		android:text="@string/gn_no_conditioned_contacts"
+        		android:textColor="?android:attr/textColorSecondary"
+        		android:visibility="gone" />        
+            <include
+                android:id="@+id/take_strange_num"
+                layout="@layout/gn_strange_num_button_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+        		android:layout_alignParentBottom="true"             
+                android:visibility="gone" />
+	        
+            <TextView
+                 android:id="@+id/num_area"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginLeft="8dip"
+                 android:gravity="bottom"
+                 android:focusable="false" />
+            
+        </RelativeLayout>
+        
+        <aurora.widget.AuroraListView
+       		android:id="@+id/list_view"
+       		android:layout_width="match_parent"
+       		android:layout_height="match_parent"
+       		android:layout_marginLeft="@dimen/dialer_search_outer_margin"
+       		android:layout_marginRight="@dimen/dialer_search_outer_margin"
+       		android:scrollbarStyle="outsideOverlay"
+       		android:divider="@null"
+       		/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/key_layout"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"    	
+    	>
+      <!-- Gionee qiuxd 201206115 modify for CR00625423 start -->
+      <!-- change android:layout_height="65px" to android:layout_height="@dimen/gn_dialpad_digits_container_height"-->
+    	<FrameLayout
+	        android:id="@+id/digits_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/gn_dialpad_digits_container_height"
+	        android:layout_marginTop="@dimen/dialpad_vertical_margin"
+	        android:gravity="center"
+	        android:background="@drawable/gn_digits_container_bg" >
+      <!-- Gionee qiuxd 201206115 modify for CR00625423 end -->
+    	    <LinearLayout 
+    	        android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:gravity="bottom">
+    	        <View
+			        android:id="@+id/divider"
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/gn_dialpad_vertical_margin"
+			        android:background="#66000000"/>
+    	    </LinearLayout>
+	
+	        <com.android.contacts.dialpad.DigitsEditText
+	            android:id="@+id/digits"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="left"
+	            android:gravity="left|center_vertical"
+	            android:textAppearance="@style/DialtactsDigitsTextAppearance"
+	            android:singleLine="true"
+	            android:textColor="?android:attr/textColorPrimary"
+	            android:nextFocusRight="@+id/deleteButton"
+	            android:background="@android:color/transparent" 
+	            android:paddingLeft="4dip"
+	            android:paddingRight="48dip"/>
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal"
+	            android:layout_gravity="right">   
+	            
+		        <ImageButton 
+		             android:id="@+id/deleteButton"
+		             android:layout_width="48dip"
+		             android:layout_height="match_parent"
+		             android:layout_gravity="right"
+		             android:background="@drawable/gn_dialpad_delete_btn_background"
+		             android:contentDescription="@string/description_delete_button"
+		             android:nextFocusLeft="@id/digits"
+		             android:src="@drawable/ic_dial_action_delete" />
+                <!-- Gionee:huangzy 20120611 modify for CR00623367 start -->		        
+		        <ImageButton 
+		             android:id="@+id/gn_dialpadButton"
+		             android:layout_width="48dip"
+		             android:layout_height="match_parent"
+		             android:layout_gravity="right"
+		             android:background="@drawable/gn_dialpad_delete_btn_background"
+		             android:contentDescription="@string/description_delete_button"
+		             android:nextFocusLeft="@id/digits"
+		             android:src="@drawable/ic_show_dialpad_holo_dark"
+		             android:visibility="gone"/>
+		        <!-- Gionee:huangzy 20120611 modify for CR00623367 end -->
+	        </LinearLayout>
+	    </FrameLayout>
+    	
+    	<!-- Keypad section -->
+	    <com.mediatek.contacts.widget.ButtonGridLayout
+	        android:id="@+id/dialpad"
+	        android:layout_width="match_parent"
+	        android:layout_height="336dip"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="5dip"
+	        android:background="@android:color/transparent"/>
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/gn_dialpad_vertical_margin"
+	        android:background="@drawable/gn_dialpad_divider"	        
+	        />
+      <!-- Gionee qiuxd 201206115 modify for CR00625423 start -->
+      <!-- change android:layout_height="70px" to android:layout_height="@dimen/gn_dialpad_additional_button_height"-->
+        <com.mediatek.contacts.widget.DialpadAdditionalButtons
+	        android:id="@+id/dialpadAdditionalButtons"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/gn_dialpad_additional_button_height"	        
+	        android:background="@android:color/transparent" />
+      <!-- Gionee qiuxd 201206115 modify for CR00625423 end -->
+    </LinearLayout>
+
+    
+    
+    <!-- "Dialpad chooser" UI, shown only when the user brings up the
+         Dialer while a call is already in progress.
+         When this UI is visible, the other Dialer elements
+         (the textfield/button and the dialpad) are hidden. -->
+    <aurora.widget.AuroraListView android:id="@+id/dialpadChooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+    />
+
+</LinearLayout>

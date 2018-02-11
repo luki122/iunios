@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 begin -->
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_menu_trash_holo_dark"
+        android:showAsAction="always"
+        android:title="@string/delete"/>
+    <!-- Gionee baorui 2012-05-18 modify for CR00601552 end -->
+
+</menu>

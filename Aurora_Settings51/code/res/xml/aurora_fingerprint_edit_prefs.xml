@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aurora.preference.AuroraPreferenceScreen xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="edit_cat">
+
+    </aurora.preference.AuroraPreferenceCategory>
+
+</aurora.preference.AuroraPreferenceScreen>

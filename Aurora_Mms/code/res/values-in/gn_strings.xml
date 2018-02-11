@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    
+    
+    <string name="add_to_favorite">Favorit pesan</string>
+    <string name="cancel_favorite">Batal favorit</string>
+
+    
+    <string name="tab_message">Pesan</string>
+    <string name="tab_favorites">Favorit</string>
+    <string name="tab_recommend">Merekomendasikan</string>
+    <!--Gionee: tangzepeng 2012-10-19 modify for CR00715892 beign-->
+    <string name="tab_draft">Konsep</string>
+    <!--Gionee: tangzepeng 2012-10-19 modify for CR00715892 end-->
+
+    <string name="tab_favorites_common_words">Kata-kata umum</string>
+    <string name="tab_favorites_msg_fav">Pesan favorit</string>
+
+    
+    <string name="gn_today">Hari ini</string>
+    <string name="gn_yesterday">Kemarin</string>
+
+    <string name="gn_am">PM</string>
+    <string name="gn_pm">PM</string>
+
+    <string name="dial_dialog_title">Pilih nomor panggil:</string>
+
+    <string name="delete_all_threads">Hapus semua</string>
+
+    <string name="repeat_send_msg">Kirim ulang</string>
+    <string name="gn_send_msg_failed">Gagal</string>
+    
+    <string name="gn_send_msg_received">Terkirim</string>
+    
+    <string name="gn_send_msg_sending">Mengirim</string>
+
+    
+
+    
+    <string name="add_recent_contacts">Tambah kontak</string>
+    <string name="insert_contacts">Sisipkan kontak</string>
+    <string name="no_contacts">Tidak ada kontak</string>
+    <string name="no_recent_contacts">Tidak ada kontak terakhir</string>
+    <string name="title_add_receipents">Menambahkan kontak</string>
+    <string name="group_list_empty">Daftar grup kosong!</string>
+    <string name="select_group_contact_dlg_title">Pilih kontak grup</string>
+    <string name="no_mobile_numbers">Tidak memiliki nomor ponsel</string>
+    <string name="contact_has_no_info">Info kontak kosong</string>
+    <string name="no_phone_numbers">Apakah ada nomor telepon</string>
+    <string name="video_call_not_enabled">Panggilan video tidak diaktifkan</string>
+    <string name="unsaved">Belum disimpan</string>
+    <string name="tab_recent_contact">Pesan</string>
+    <string name="tab_contact">Kontak</string>
+    <string name="tab_group_contact">Kelompok</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="contacts_notes">Catatan:</string>
+    <string name="contacts_website">Website:</string>
+    <string name="contacts_name">Nama:</string>
+    
+    <string name="delete_recent_contact">Hapus</string>
+    
+    <string name="calllog">Log Panggilan</string>
+    <string name="groups_coworker">Rekan kerja</string>
+    <string name="groups_family">Keluarga</string>
+    <string name="groups_friends">Teman</string>
+    <string name="groups_schoolmate">Teman sesekolah</string>
+    <string name="groups_vip">VIP</string>
+    <string name="showAllGroups">Semua Kontak</string>
+    <string name="sim">SIM</string>
+    
+
+    
+    <string name="recommend_humor_joke">Humor lelucon</string>
+    <string name="recommend_love_joke">Cinta lelucon</string>
+    <string name="recommend_school_joke">Sekolah lelucon</string>
+    <string name="recommend_birthday_message">Ulang pesan</string>
+
+    
+    <string name="insert_sd_card">Silahkan Masukkan kartu SD!</string>
+    
+
+    <string name="repeat_send_msg_btn_text">Ulangi</string>
+    <string name="quick_text_header_text">Baru cepat teks</string>
+    <string name="quick_text_header_text_edit">Mengedit teks cepat</string>
+    <string name="quick_text_edit_hint">Masukan cepat teks</string>
+    <string name="quick_text_menu_forward">Maju</string>
+    <string name="quick_text_menu_edit">Mengedit</string>
+    <string name="quick_text_menu_delete">Hapus</string>
+    <string name="add_quick_text_ok">OK</string>
+    <string name="add_quick_text_cancel">Membatalkan</string>
+    <string name="delete_quick_text_title">Hapus</string>
+    <string name="delete_quick_text_confirm">Apakah Anda yakin untuk menghapus pesan ini?</string>
+    <string name="favorite_display_name">Saya</string>
+
+    
+    
+    <string name="confirm_delete_all_dratfs">Apakah Anda yakin untuk menghapus semua konsep?</string>
+    <string name="confirm_delete_dratf">Apakah Anda yakin untuk menghapus konsep ini?</string>
+    
+    <string name="delete_all_dratfs">Hapus semua</string>
+    <string name="delete_dratf">Hapus draf</string>
+    
+
+    
+    <string name="gn_select_attachment_contacts">Kontak</string>
+    <string name="gn_select_attachment_quick_text">Cepat Teks</string>
+    <string name="gn_select_attachment_smiley">Emoticons</string>
+    <string name="gn_select_attachment_subject">Subjek</string>
+    <string name="gn_select_attachment_gallery">Gambar</string>
+    <string name="gn_select_attachment_camera">Foto</string>
+    <string name="gn_select_attachment_video">Video</string>
+    <string name="gn_select_attachment_record_video">Video capture</string>
+    <string name="gn_select_attachment_sound">Audio</string>
+    <string name="gn_select_attachment_record_audio">Merekam audio</string>
+    <string name="gn_select_attachment_slideshow">Slideshow</string>
+    
+
+    
+    <string name="gn_select_attach_picture">Gambar</string>
+    <string name="gn_select_attach_take_photo">Menangkap gambar</string>
+    
+
+    
+    <string name="search_bar_hint">Cari Kontak</string>
+    
+
+    
+    <string name="title_attachments"> Lampiran</string>
+    <string name="attach_size"> Ukuran:</string>
+    <string name="save_att_failed"> Gagal menyimpan lampiran!</string>
+    <string name="save_att_success"> Lampiran telah disimpan</string>
+    <string name="attachmentpicker">Pilih lampiran</string>
+    
+
+    
+    <string name="add_to_contact"> Tambah ke kontak</string>
+    <string name="check_contact"> Periksa kontak</string>
+    
+    
+    <string name="wait_connecting">Menghubungkan jaringan ...</string>
+    <string name="wait_init">Data init, silahkan menunggu ...</string>
+    <string name="gn_no_conversations">Percakapan sms kosong</string>
+    <string name="gn_no_contacts">Kontak kosong</string>
+    <string name="gn_no_recent_contacts">Kontak terakhir kosong</string>
+    <string name="gn_no_calllog">Log panggilan kosong</string>
+    <string name="gn_no_draft">Draft kotak kosong</string>
+    
+
+    
+    <string name="gn_cancel_all_favorite">Membatalkan semua favorit</string>
+    <string name="gn_cancel_all_favorite_title">Membatalkan semua favorit</string>
+    <string name="gn_cancel_all_favorite_content">Apakah Anda yakin untuk membatalkan semua favorit?</string>
+    <string name="gn_cancel_all_favorite_ok">OK</string>
+    <string name="gn_cancel_all_favorite_cancel_btn">Membatalkan</string>
+    <string name="gn_confirm_delete_conversation">Seluruh thread akan dihapus.</string>
+    <string name="gn_confirm_delete_message">Seluruh pesan akan dihapus.</string>
+    <string name="gn_delete_unfavotite">Hapus pesan favorit</string>
+    
+
+     
+     <string name="gn_selected">Telah memilih</string>
+     
+
+     
+     <string name="gn_copy_text">Salin teks</string>
+     
+     
+     <string name="gnSms_sim_management_title">Kartu ganda pengaturan</string>
+     
+     
+     <string name="gn_prevent_disturb">Mencegah mengganggu</string>
+     
+     
+     
+     <string name="gn_dail">Dail</string>
+     
+     <string name="gn_send_message">Kirim pesan</string>
+     <string name="gn_new_contact">Kontak baru</string>
+     <string name="gn_visit">Kunjungi</string>
+     <string name="gn_add_to_bookmarks">Tambahkan ke bookmark</string>
+     <string name="gn_send_email">Kirim e-mail</string>
+     
+
+     <!--Gionee: tangzepeng 2012-10-19 modify for CR00715892 begin-->
+     <string name="gn_draft_operation">Konsep</string>
+     <string name="gn_draft_operation_reason">Jika Anda ingin menyimpan pesan ini untuk menyusun kotak?</string>
+     <string name="gn_draft_save">Simpan</string>
+     <string name="gn_draft_unknow_name">Tidak diketahui</string>
+     <!--Gionee: tangzepeng 2012-10-19 modify for CR00715892 end-->
+     
+     <string name="menu_gn_firewall_setting">Fire Wall</string>
+     
+
+     
+    <string name="gn_unsuport_file_format">Format file yang tidak didukung</string>
+    
+
+    
+    <string name="gn_contact_unit_name"> kontak(s)</string>
+    
+
+    
+    <string name="gn_to_hint">Untuk</string>
+    
+
+    
+    <string name="gn_from">Dari</string>
+    
+
+    
+    <string name="mms_deliver_success_with_address">Pesan dikirim oleh% s</string>
+    <string name="mms_deliver_success">Pesan telah dikirim</string>
+    <string name="mms_read_success_with_address">Pesan readed oleh% s</string>
+    <string name="mms_read_success">Pesan sudah dibaca</string>
+    
+
+    
+  <!--  <string name="freeze_format_with_bracket">
+<font size="1\">%1$s(%2$d):</font>%3$s</string>
+    <string name="freeze_format">
+<font size="1\">%1$s:</font>%2$s</string>    -->
+    <string name="freeze_format_with_bracket">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+    <string name="freeze_format">&lt;font size=\"1\" color=\"#bebebe\" &gt;&lt;/font&gt;%1$s</string>
+
+    
+    <string name="gn_midnight">PM</string>
+    <string name="gn_dawn">PM</string>
+    <string name="gn_noon">PM</string>
+    <string name="gn_dusk">PM</string>
+    <string name="gn_night">PM</string>
+    
+
+    
+    <string name="gn_exchange">Pertukaran</string>
+    
+    
+    
+    <string name="gn_add_to_contact"> Tambahkan</string>
+    <string name="gn_check_contact"> Periksa</string>
+    <string name="gn_edit_contact"> Mengedit</string>
+    <string name="gn_copy_contact"> Salinan</string>
+    
+    
+    
+    <string name="gn_confirm_delete_favorited_message">Apakah Anda yakin ingin menghapus pesan ini favorited?</string>
+    <string name="gn_confirm_delete_locked_favorited_message">Apakah Anda yakin ingin menghapus pesan ini terkunci dan favorited?</string>
+      
+    
+     
+    <string name="message_too_big_for_recording">Pesan terlalu besar untuk melampirkan rekaman.</string>
+     
+
+    
+    
+
+    
+    <string name="gn_import_export_menu">Impor/Ekspor</string>
+    <string name="gn_sim_sms">Kartu SIM SMS</string>
+    
+
+    
+    <string name="gn_import_export_file_path">/backup/Sms/</string>
+    <string name="gn_export_text">Ekspor</string>
+    <string name="gn_import_text">Impor</string>
+    <string name="gn_sure_export">Konfirmasi Ekspor</string>
+    <string name="gn_sure_export_front">Tentu Anda ingin mengekspor pesan yang dipilih untuk</string>
+    <string name="gn_sure_export_back"> di dalamnya?</string>
+    <string name="gn_sms_importing">Mengimpor Data SMS</string>
+    <string name="gn_sms_exporting">Mengekspor Data SMS</string>
+    <string name="gn_exporting_front">Apakah untuk</string>
+    <string name="gn_exporting_back"> Data ekspor SMS</string>
+    <string name="gn_export_sms_to_sdcard">Ekspor SMS ke kartu SD</string>
+    <string name="gn_import_sms_from_sdcard">Impor SMS dari kartu SD</string>
+    <string name="gn_no_import_file">Tidak ada file teks dapat diimpor!</string>
+    <string name="gn_no_export_sms">Tidak ada SMS yang dapat diekspor!</string>
+    <string name="gn_import_file_count">Dipilih</string>
+    <string name="gn_import_current_file">Mengimpor bagian</string>
+    <string name="gn_export_current_session">Mengekspor bagian</string>
+    <string name="gn_export_item"> sesi</string>
+    <string name="gn_import_item"> file yang</string>
+    <string name="gn_import_export_sum">(A total of </string>
+    <string name="gn_import_export_piece">)</string>
+    <string name="gn_import_cancel">Batal impor!</string>
+    <string name="gn_import_failed">Impor gagal!</string>
+    <string name="gn_import_success">Impor selesai!</string>
+    <string name="gn_import_file">Impor file</string>
+    <string name="gn_import_file_path_error"> kesalahan jalan!</string>
+    <string name="gn_import_file_content_error"> Format konten kesalahan!</string>
+    <string name="gn_import_file_no_exists"> tidak ada!</string>
+    <string name="gn_import_file_empty"> kosong!</string>
+    <string name="gn_no_sdcard">Tidak ada SD card!</string>
+    <string name="gn_unkonw_error">Ada kesalahan yang tidak diketahui!</string>
+    <string name="gn_imported_file_names">Impor file:</string>
+    <string name="gn_export_failed">Ekspor Gagal!</string>
+    <string name="gn_export_success">Ekspor lengkap!</string>
+    <string name="gn_importing">Mengimpor SMS, harap tunggu ...</string>
+    
+
+    
+    <string name="gn_import_export">Impor/Ekspor SMS</string>
+    <string name="gn_export_btn_text">Ekspor ke kartu SD</string>
+    <string name="gn_import_btn_text">Impor dari SD card</string>
+    <string name="gn_last">Terakhir</string>
+    
+
+    
+    <string name="gn_date_format">yyyy年MM月dd日</string>
+    
+    
+    <string name="gn_sdcard_no_space">Ruang yang tersisa Kartu SD adalah tidak cukup!</string>
+    
+    
+    <string name="gn_import_cancel_title">Membatalkan</string>
+    <string name="gn_import_cancel_msg">Impor ini akan dibatalkan</string>
+    
+    
+    
+    <string name="gn_forward_prefix">Fwd:\u0020</string>
+    
+    
+    
+    <string name="gn_copying">copying... </string>
+    
+
+    
+    <string name="gn_no_sim_card">Unable to send, there is no SIM card!</string>
+
+    <!--Gionee: tangzepeng 2012-10-19 add for CR00715892 begin-->
+    <string-array name="gn_conv_spinner_list">
+        <item >Semua</item>
+        <item >Enkripsi</item>
+    </string-array>
+
+    <string name="gn_search_hint">Mencari Pesan</string>
+    <string name="gn_selected_count">Pilih %1$s </string>
+   
+    <string name="pref_security_settings_title">Pengaturan keamanan</string>
+    <string name="pref_title_mms_encryption_setting">Pengaturan sesi enkripsi</string>
+    <string name="pref_summary_mms_encryption_setting">Gunakan kata sandi sesi enkripsi</string>
+    <string name="gn_pref_title_other">Lainnya</string>
+    <string name="gn_pref_title_accessories_signature">Tanda tangan</string>
+    <string name="gn_pref_summary_accessories_signature">Tambahkan tanda tangan otomatis</string>
+    <string name="gn_pref_title_edit_accessories_signature">Ubah Tanda tangan</string>
+    <string name="gn_pref_summary_edit_accessories_signature">Pilih untuk mengubah</string>
+    <string name="gn_pref_title_sms_delivery_reports">Laporan pengiriman</string>
+    <string name="gn_pref_title_mms_delivery_reports">Laporan pengiriman</string>
+    <string name="lockpassword_choose_your_password_header">Pilih katasandi anda</string>
+    <string name="lockpassword_continue_label">Lanjut ke</string>
+    <string name="lockpassword_cancel_label">Batal</string>
+    <string name="lockpassword_confirm_your_password_header">Konfirmasikan kata sandi Anda</string>
+    <string name="lockpassword_ok_label">Konfirmasi</string>
+    <string name="lockpassword_confirm_passwords_dont_match">Kata sandi tidak cocok</string>
+    <string name="lockpassword_password_too_short">Kata sandi harus setidaknya %d karakter</string>
+    <string name="lockpassword_press_continue">Tekan Lanjut ketika selesai</string>
+    <string name="menu_encryption">Enkripsi</string>
+    <string name="menu_decryption">Batalkan enkripsi</string>
+    
+      <!--Gionee: tangzepeng 2012-10-19 add for CR00715892 end-->
+</resources>

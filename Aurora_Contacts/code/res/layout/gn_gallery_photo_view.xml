@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gionee xuhz 20120812 add for GIUI4.3 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="2dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gn_display_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dip"
+        android:orientation="horizontal" >
+        <aurora.widget.AuroraButton
+            android:id="@+id/gn_set_contact_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="@string/gn_apply" />
+    </LinearLayout>
+</LinearLayout>

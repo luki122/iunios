@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/dialog_btn_bg_color" android:state_selected="true"><shape>
+            <corners android:radius="0dp" />
+        </shape></item>
+    <item android:drawable="@color/dialog_btn_bg_color" android:state_pressed="true"><shape>
+            <corners android:radius="0dp" />
+        </shape></item>
+    <item><shape>
+            <corners android:radius="0dp" />
+        </shape></item>
+
+</selector>

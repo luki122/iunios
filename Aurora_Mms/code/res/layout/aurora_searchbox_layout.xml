@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora liugj 2013-10-10 created for aurora's new feature -->
+<!-- Aurora liugj 2013-10-17 modified for aurora's new feature start -->
+<!-- Aurora liugj 2014-02-07 modified for xuqiu:searchview scroll with listview start -->
+<!-- Aurora xuyong 2014-06-06 modified for UI changed start -->
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/conversation_header_searchbox"
+        android:layout_width="fill_parent"
+        android:layout_height="@com.aurora:dimen/aurora_search_view_hight"
+        android:gravity="center_vertical"
+        android:paddingLeft="39dp"
+        android:textColor="@com.aurora:color/aurora_textcolor_hint"
+        android:textSize="15sp"
+        android:text="@string/gn_search_hint"
+        android:background="@drawable/aurora_searchview_bg" />
+<!-- Aurora xuyong 2014-06-06 modified for UI changed end -->

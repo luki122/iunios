@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:background="@color/month_day_bg_color">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/horizontal_divider_special" />
+
+        <TextView
+            android:id="@+id/period_title"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:textColor="#b2b2b3"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/horizontal_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/period_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+ 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="74dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/period_start"
+                    android:layout_width="145dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/aurora_btn_blue"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="@string/aurora_period_start" />
+
+                <Button
+                    android:id="@+id/period_finish"
+                    android:layout_width="145dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/aurora_btn_grey"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="@string/aurora_period_finish" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/period_explanation"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="36dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/aurora_period_water_drop_2"
+                    android:drawablePadding="3dp"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:text="@string/aurora_period_yj" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="23dp"
+                    android:drawableLeft="@drawable/aurora_period_flower"
+                    android:drawablePadding="3dp"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:text="@string/aurora_period_pl" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="23dp"
+                    android:drawableLeft="@drawable/aurora_period_leaf"
+                    android:drawablePadding="3dp"
+                    android:textColor="#666666"
+                    android:textSize="12sp"
+                    android:text="@string/aurora_period_sy" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/aurora_arrow_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_above="@id/period_explanation"
+                android:background="@color/horizontal_divider_special" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

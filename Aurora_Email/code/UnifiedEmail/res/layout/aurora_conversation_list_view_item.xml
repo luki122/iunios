@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/aurora_conv_list_item_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_move_to_inbox"
+            android:textSize="15sp"
+            android:textColor="#5c5c5c"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/aurora_conv_list_item_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/menu_move_to_inbox"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+    </LinearLayout>
+    
+    
+    <TextView
+            android:id="@+id/aurora_conv_list_item_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_move_to_inbox"
+            android:drawableRight="@drawable/ic_attachment_holo_light"
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+    
+    <TextView
+            android:id="@+id/aurora_conv_list_item_snippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:text="@string/menu_move_to_inbox"
+			android:textSize="13sp"
+            android:textColor="#A2A2A2"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+</LinearLayout>

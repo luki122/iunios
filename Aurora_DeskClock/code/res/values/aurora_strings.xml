@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="aurora_colon">:</string>
+<string name="aurora_chronometer_pick_ringer_title">Timer Ringtones</string>
+    <string name="btnEnd">End</string>
+     <string name="label_hour">H</string>
+   	<string name="label_minute">M</string>
+   	<string name="label_second">S</string>
+   	<string name="timer_title">Timer</string>
+    <string name="stop_watch_title">Stop Watch</string>
+</resources>

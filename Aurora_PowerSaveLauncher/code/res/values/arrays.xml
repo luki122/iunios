@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="weekday">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+    <string-array name="month">
+        <item>Jan %1$s</item>
+        <item>Feb %1$s</item>
+        <item>Mar %1$s</item>
+        <item>Apr %1$s</item>
+        <item>May %1$s</item>
+        <item>June %1$s</item>
+        <item>July %1$s</item>
+        <item>Aug %1$s</item>
+        <item>Sep %1$s</item>
+        <item>Oct %1$s</item>
+        <item>Nov %1$s</item>
+        <item>Dec %1$s</item>
+    </string-array>
+
+</resources>

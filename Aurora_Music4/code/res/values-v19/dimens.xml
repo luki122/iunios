@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="aurora_actionbar_text_size_1">20sp</dimen>
+    <dimen name="aurora_actionbar_text_size_2">16sp</dimen>
+    <dimen name="aurora_custom_bar_width">32dp</dimen>
+    <dimen name="aurora_custom_bar_title">20sp</dimen>
+    <dimen name="aurora_backview_height">7.3dp</dimen>
+    <dimen name="aurora_backview_width">8dp</dimen>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/aurora_empty_contact_text"
+            style="@com.aurora:style/AuroraPromptTextViewStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/empty_text"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/aurora_group_entrance_left_margin"
+            android:paddingRight="@dimen/aurora_group_entrance_left_margin"
+            android:paddingTop="@dimen/aurora_empty_contact_button_padding_top" >
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/empty_view_import_from_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/aurora_import_sim_title"
+                style="@com.aurora:style/AuroraPromptButton"
+                android:visibility="invisible" />
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/empty_view_import_from_sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_view_import_from_sim"
+                android:layout_marginTop="@dimen/aurora_editor_items_gap"
+                android:text="@string/aurora_menu_import"
+                style="@com.aurora:style/AuroraPromptButton" />
+
+            <aurora.widget.AuroraButton
+                android:id="@+id/empty_view_import_from_acount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_view_import_from_sdcard"
+                android:layout_marginTop="@dimen/aurora_editor_items_gap"
+                android:text="@string/aurora_menu_sync"
+                style="@com.aurora:style/AuroraPromptButton" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

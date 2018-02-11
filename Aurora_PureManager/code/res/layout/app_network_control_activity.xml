@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/NoAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f6f6f6"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="167.3dp"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/hint_big_text_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/HaveAppLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <!-- <LinearLayout
+            android:id="@+id/textInfoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/title_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="17dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="@string/auto_start_app_hint"
+                android:textColor="@color/uninstall_list_item_text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/exclamationImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/exclamation_icon" />
+        </LinearLayout> -->
+
+        <aurora.widget.AuroraListView
+            android:id="@+id/ListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/textInfoLayout"
+            android:divider="@null"
+        	android:dividerHeight="@dimen/zero_dp"
+            android:fadingEdge="none"
+            android:focusable="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

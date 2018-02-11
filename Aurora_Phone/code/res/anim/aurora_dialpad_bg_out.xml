@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shareInterpolator="false" android:zAdjustment="normal">
+      
+    	<scale 
+	        android:fromYScale="1.2" 
+	        android:toYScale="2.0"
+	        android:pivotX="50%"
+	        android:pivotY="100%"
+	        android:fromXScale="1.0"
+	        android:toXScale="1.0"
+	        android:interpolator="@interpolator/dtmf_bg_out_interpolator"
+	        android:duration="@integer/aurora_animation_duration_500"/>
+    	
+	        
+</set>

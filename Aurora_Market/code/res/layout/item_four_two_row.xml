@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/homepage_item_padding_top" >
+
+    <RelativeLayout
+        android:id="@+id/more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/homepage_item_title_padding_bottom"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/app_item_padding_left_and_right"
+        android:paddingRight="@dimen/app_item_padding_left_and_right" >
+
+        <TextView
+            android:id="@+id/tv_app_type_name"
+            android:layout_width="@dimen/special_item_tip_text_width"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/item_head_name_color"
+            android:textSize="@dimen/textsize_18" />
+
+        <TextView
+            android:id="@+id/tv_showall"
+            android:layout_width="@dimen/special_item_tip_text_showall_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_arrow"
+            android:gravity="end"
+            android:text="@string/apecial_show_all"
+            android:textColor="@color/item_head_more_color"
+            android:textSize="@dimen/special_item_tip_text_showall_textsize" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/special_item_tip_text_arrow_margin_left"
+            android:src="@drawable/icon_more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/app1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_item_height"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/app_item_padding_left_and_right"
+            android:paddingRight="@dimen/app_item_padding_left_and_right" >
+
+            <ImageView
+                android:id="@+id/iv_icon1"
+                android:layout_width="@dimen/app_item_icon_width_and_height"
+                android:layout_height="@dimen/app_item_icon_width_and_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/app_item_padding_top_and_bottom"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/app_item_padding_top_and_bottom"
+                android:src="@drawable/page_appicon_big" />
+
+            <TextView
+                android:id="@+id/tv_appname1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_appname_height"
+                android:layout_marginTop="@dimen/app_item_name_margin_top"
+                android:layout_toRightOf="@+id/iv_icon1"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_16" />
+
+            <RatingBar
+                android:id="@+id/rb_score1"
+                style="@style/myRatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_ratingbar_height"
+                android:layout_below="@+id/tv_appname1"
+                android:layout_marginBottom="@dimen/app_item_ratingbar_margin_bottom"
+                android:layout_marginTop="@dimen/app_item_ratingbar_margin_top"
+                android:layout_toRightOf="@+id/iv_icon1"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tv_download_count1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_count_height"
+                android:layout_below="@+id/rb_score1"
+                android:layout_toRightOf="@+id/iv_icon1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/app2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_item_height"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/app_item_padding_left_and_right" >
+
+            <ImageView
+                android:id="@+id/iv_icon2"
+                android:layout_width="@dimen/app_item_icon_width_and_height"
+                android:layout_height="@dimen/app_item_icon_width_and_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/app_item_padding_top_and_bottom"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/app_item_padding_top_and_bottom"
+                android:src="@drawable/page_appicon_big" />
+
+            <TextView
+                android:id="@+id/tv_appname2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_appname_height"
+                android:layout_marginTop="@dimen/app_item_name_margin_top"
+                android:layout_toRightOf="@+id/iv_icon2"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_16" />
+
+            <RatingBar
+                android:id="@+id/rb_score2"
+                style="@style/myRatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_ratingbar_height"
+                android:layout_below="@+id/tv_appname2"
+                android:layout_marginBottom="@dimen/app_item_ratingbar_margin_bottom"
+                android:layout_marginTop="@dimen/app_item_ratingbar_margin_top"
+                android:layout_toRightOf="@+id/iv_icon2"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tv_download_count2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_count_height"
+                android:layout_below="@+id/rb_score2"
+                android:layout_toRightOf="@+id/iv_icon2"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/app3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_item_height"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/app_item_padding_left_and_right"
+            android:paddingRight="@dimen/app_item_padding_left_and_right" >
+
+            <ImageView
+                android:id="@+id/iv_icon3"
+                android:layout_width="@dimen/app_item_icon_width_and_height"
+                android:layout_height="@dimen/app_item_icon_width_and_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/app_item_padding_top_and_bottom"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/app_item_padding_top_and_bottom"
+                android:src="@drawable/page_appicon_big" />
+
+            <TextView
+                android:id="@+id/tv_appname3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_appname_height"
+                android:layout_marginTop="@dimen/app_item_name_margin_top"
+                android:layout_toRightOf="@+id/iv_icon3"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_16" />
+
+            <RatingBar
+                android:id="@+id/rb_score3"
+                style="@style/myRatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_ratingbar_height"
+                android:layout_below="@+id/tv_appname3"
+                android:layout_marginBottom="@dimen/app_item_ratingbar_margin_bottom"
+                android:layout_marginTop="@dimen/app_item_ratingbar_margin_top"
+                android:layout_toRightOf="@+id/iv_icon3"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tv_download_count3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_count_height"
+                android:layout_below="@+id/rb_score3"
+                android:layout_toRightOf="@+id/iv_icon3"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/app4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_item_height"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/app_item_padding_left_and_right" >
+
+            <ImageView
+                android:id="@+id/iv_icon4"
+                android:layout_width="@dimen/app_item_icon_width_and_height"
+                android:layout_height="@dimen/app_item_icon_width_and_height"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/app_item_padding_top_and_bottom"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="@dimen/app_item_padding_top_and_bottom"
+                android:src="@drawable/page_appicon_big" />
+
+            <TextView
+                android:id="@+id/tv_appname4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_appname_height"
+                android:layout_marginTop="@dimen/app_item_name_margin_top"
+                android:layout_toRightOf="@+id/iv_icon4"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/app_item_namecolor"
+                android:textSize="@dimen/textsize_16" />
+
+            <RatingBar
+                android:id="@+id/rb_score4"
+                style="@style/myRatingBarSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/app_item_ratingbar_height"
+                android:layout_below="@+id/tv_appname4"
+                android:layout_marginBottom="@dimen/app_item_ratingbar_margin_bottom"
+                android:layout_marginTop="@dimen/app_item_ratingbar_margin_top"
+                android:layout_toRightOf="@+id/iv_icon4"
+                android:isIndicator="true" />
+
+            <TextView
+                android:id="@+id/tv_download_count4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_item_count_height"
+                android:layout_below="@+id/rb_score4"
+                android:layout_toRightOf="@+id/iv_icon4"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/app_item_count_size_color"
+                android:textSize="@dimen/textsize_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/item_gap_color"
+        android:paddingTop="20dp" />
+
+</LinearLayout>

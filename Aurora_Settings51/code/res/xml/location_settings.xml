@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    aurora:aurorakey="location_settings"
+    aurora:auroratitle="@string/location_settings_title"
+    settings:keywords="@string/keywords_location" > 
+    
+    <!-- Aurora hujianwei 2016015 modify for location service start -->
+    <aurora.preference.AuroraSwitchPreference
+        aurora:aurorakey="location_toggle"
+        aurora:aurorapersistent="false"
+        aurora:auroratitle="@string/aurora_location_service" >
+    </aurora.preference.AuroraSwitchPreference>
+
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="aurora_location_mode"
+        aurora:auroratitle="@string/aurora_location_mode" />
+
+    <com.android.settings.location.RadioButtonPreference
+        aurora:aurorakey="high_accuracy"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/location_mode_high_accuracy_description"
+        aurora:auroratitle="@string/location_mode_high_accuracy_title" />
+    <com.android.settings.location.RadioButtonPreference
+        aurora:aurorakey="battery_saving"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/location_mode_battery_saving_description"
+        aurora:auroratitle="@string/location_mode_battery_saving_title" />
+    <com.android.settings.location.RadioButtonPreference
+        aurora:aurorakey="sensors_only"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummary="@string/location_mode_sensors_only_description"
+        aurora:auroratitle="@string/location_mode_sensors_only_title" />
+    <!-- Aurora hujianwei 2016015 modify for location service end -->
+
+
+    <!-- This preference category gets removed if there is no managed profile -->
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="managed_profile_location_category"
+        aurora:auroratitle="@string/managed_profile_location_category" >
+        <aurora.preference.AuroraPreference
+            aurora:auroraenabled="false"
+            aurora:aurorakey="managed_profile_location_switch"
+            aurora:aurorapersistent="false"
+            aurora:auroraselectable="false"
+            aurora:aurorasummary="@string/managed_profile_location_switch_lockdown"
+            aurora:auroratitle="@string/managed_profile_location_switch_title" />
+    </aurora.preference.AuroraPreferenceCategory>
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="recent_location_requests"
+        aurora:auroratitle="@string/location_category_recent_location_requests" />
+    <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="location_services"
+        aurora:auroratitle="@string/location_category_location_services" />
+
+</aurora.preference.AuroraPreferenceScreen>

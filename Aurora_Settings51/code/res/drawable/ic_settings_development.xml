@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/dash_category_icon_size"
+    android:viewportHeight="72"
+    android:viewportWidth="72"
+    android:width="@dimen/dash_category_icon_size" >
+
+    <group
+        android:translateX="10"
+        android:translateY="20.5" >
+        <path
+            android:fillColor="@color/dash_catetory_icon_color"
+            android:pathData="M19.240,27.383 L7.280,15.500 L19.240,3.617 L15.600,-0.000 L-0.000,15.500 L15.600,31.000 L19.240,27.383 ZM32.760,27.383 L44.720,15.500 L32.760,3.617 L36.400,-0.000 L52.000,15.500 L36.400,31.000 L32.760,27.383 Z"
+            />
+    </group>
+
+</vector>

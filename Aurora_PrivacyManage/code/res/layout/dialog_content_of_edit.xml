@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent" 
+       android:layout_height="wrap_content">
+       <FrameLayout 
+        android:id="@+id/aurora_contentPanel"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">     
+        <aurora.widget.AuroraEditText 
+              android:id="@+id/edit"
+              android:minHeight="@dimen/preferences_item_height"
+		      android:layout_height="wrap_content" android:layout_width="fill_parent"
+		      android:layout_marginTop="22dp" android:layout_marginBottom="22dp"
+			  android:layout_gravity="center_horizontal" 
+			  android:enabled="true" android:hint="@string/have_new_system_msg"			  
+			  android:paddingLeft="10dp"
+			  style="@style/text_title" android:background="@drawable/edit_text_bg"/> 
+    </FrameLayout>
+</FrameLayout>

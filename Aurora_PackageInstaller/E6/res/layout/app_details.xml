@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+Defines the layout of the application snippet that appears on top of the
+installation screens
+-->
+<!-- The snippet about the application - title, icon, description.  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_snippet"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/upLayout" 
+        android:layout_width="wrap_content" android:layout_height="80dp"
+        android:layout_alignParentBottom="true" >
+	    <ImageView
+            android:id="@+id/app_icon"
+            android:layout_marginLeft="16dp"
+	        android:layout_width="40dip" android:layout_height="40dip"
+	        android:background="@color/transparent"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="left"
+	        android:layout_centerVertical="true"
+	        android:scaleType="centerCrop"/>
+	    <TextView 
+	        android:id="@+id/app_name"
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textSize="24sp"
+	        android:textColor="#333333"
+	        android:layout_toRightOf="@id/app_icon"
+	        android:singleLine="true"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="12dip"
+	        android:ellipsize="end"/>
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:layout_alignParentBottom="true" />
+    
+    <FrameLayout      
+        android:id="@+id/top_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp" android:layout_marginRight="17dp"
+        android:layout_alignParentBottom="true">            
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            style="@android:style/Widget.ProgressBar.Horizontal" 
+            android:layout_width="match_parent"
+            android:background="@drawable/progress_1"
+            android:indeterminateDrawable="@anim/waiting"     
+            android:layout_height="1.7dp" />  
+    </FrameLayout>
+    
+</RelativeLayout>
+

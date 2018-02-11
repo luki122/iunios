@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/vs_offline_air_plane_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+		android:layout_marginRight="11dp"
+        android:orientation="vertical"
+        android:background="@drawable/vs_help_bg"
+        android:visibility="gone">
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vs_offline_airplane_mode_height"
+            android:layout_marginLeft="11dp"
+			android:layout_marginRight="11dp"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/vs_offline_airplane_mode"
+                android:textSize="18sp"
+                android:textColor="@color/vs_white"/>
+            <aurora.widget.AuroraSwitch
+                android:id="@+id/vs_offline_airplane_mode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/vs_offline_calling_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+		android:layout_marginRight="11dp"
+        android:orientation="vertical"
+        android:background="@drawable/vs_help_bg"
+        android:visibility="gone">
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/vs_offline_sending_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+		android:layout_marginRight="11dp"
+        android:orientation="vertical"
+        android:background="@drawable/vs_help_bg"
+        android:visibility="gone">
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/vs_offline_contacts_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="11dp"
+		android:layout_marginRight="11dp"
+        android:orientation="vertical"
+        android:background="@drawable/vs_help_bg"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+</LinearLayout>

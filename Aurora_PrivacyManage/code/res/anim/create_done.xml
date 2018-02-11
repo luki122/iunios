@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list 
+    xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:oneshot="true"    >
+    <item android:drawable="@drawable/create_done_anim_img_01"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_02"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_03"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_04"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_05"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_06"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_07"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_08"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_09"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_10"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_11"   android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_12"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_13"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_14"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_15"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_16"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_17"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_18"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_19"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_20"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_21"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_22"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_23"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_24"    android:duration="40"    />
+    <item android:drawable="@drawable/create_done_anim_img_25"    android:duration="40"    />
+
+</animation-list>

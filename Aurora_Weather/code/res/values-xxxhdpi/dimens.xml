@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_view_marginbottom">40dp</dimen>
+    <dimen name="detailsviewmarginbottom">336dp</dimen>
+    
+    <dimen name="warn_detailsviewmarginbottom">300dp</dimen>
+    
+    <dimen name="widget_diagonal_line_margintop">33dp</dimen>
+    <dimen name="widget_diagonal_line_marginright">60dp</dimen>
+</resources>

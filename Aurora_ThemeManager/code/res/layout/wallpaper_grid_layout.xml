@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/goto_shop_layout" />
+	
+	  <TextView 
+        android:id="@+id/goto_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="@com.aurora:dimen/aurora_list_singleline_height"
+        android:gravity="center_vertical"
+        android:textColor="@com.aurora:color/aurora_list_textcolor"
+        android:textSize="@com.aurora:dimen/aurora_list_singleline_text_size"
+        android:text="@string/network_time_wallpaper"
+        android:background="@com.aurora:drawable/aurora_list_selector_light"
+        android:paddingLeft="16dp"
+        android:clickable="true"
+        android:layout_marginBottom="8dp"
+        />
+	
+    <GridView
+        android:id="@+id/wallpaper_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdgeLength="0dp"
+        android:columnWidth="120dp"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <color name="font_color">#000</color>
+    <color name="top_font_color">#fff</color>
+    <color name="translate_color">#0000</color>
+    <color name="moviebar_bg_color">#66000000</color>
+    <color name="aurora_no_pic_txt_color">#ffcccccc</color>
+    <color name="aurora_header_txt_color">#696e7a</color>    
+    <color name="aurora_ripple_material_light">#14ffffff</color>
+    <color name="aurora_title_normal">#666666</color>
+    <color name="aurora_title_highlight">#49aef7</color>
+    <!-- //Aurora <SQF> <2014-06-10>  for NEW_UI begin -->
+    <color name="image_show_bg_color">#FF0F0F0F</color> <!-- #FF191919 -->
+	<!-- //Aurora <SQF> <2014-06-10>  for NEW_UI end -->
+    
+    
+    <!-- //Aurora <SQF> <2014-09-16>  for NEW_UI begin -->
+    <color name="aurora_effect_view_default_image_bgcolor">#7f0F0F0F</color> <!-- #FF191919 -->
+    
+    <color name="custom_action_bar_btn_pressed_color">#019c73</color><!-- main_hue -->
+    
+    <color name="aurora_upload_download_progress_text">#999999</color>
+    <color name="aurora_upload_download_file_name">#545454</color>
+    
+    <color name="aurora_actionbar_local_photos_color">#414142</color>
+    <color name="aurora_actionbar_cloud_album_color">#898989</color>
+	<!-- //Aurora <SQF> <2014-09-16>  for NEW_UI end -->
+	
+	<!--add By JXH 2015-4-27 start -->
+	<color name="aurora_cloud_actionbar_color">#6a6a6a</color>
+	<color name="aurora_cloud_actionbar_not_available">#898989</color>
+	<color name="aurora_cloud_album_title_color">#c7c7c7</color>
+	<color name="aurora_cloud_album_num_color">#FFFFFF</color>
+	<color name="aurora_cloud_create_album_color">#999999</color>
+	<color name="aurora_cloud_album_sub_title_color">#D8D8D8</color>
+	<color name="aurora_cloud_pop_title_color">#000000</color>
+	<color name="aurora_cloud_pop_text_color">#272928</color>
+	<color name="aurora_cloud_pop_btn_press_color">#ff6141</color>
+	<color name="aurora_cloud_pop_btn_normal_color">#f1f1f1</color>
+	<color name="aurora_cloud_progress_status_color">#545454</color>
+	<color name="aurora_cloud_empty_text_color">#828282</color>
+	<color name="aurora_local_album_item_title_color">#696e7a</color>
+	<color name="aurora_cloud_empty_text_color_new_ui">#cccccc</color>
+	<!--add By JXH 2015-4-27 end -->
+
+	<!--add By wenyongzhe 2015-10-10  -->
+	<color name="aurora_RoundProgressBar_roundColor">#545454</color>
+	<color name="aurora_RoundProgressBar_roundProgressColor">#828282</color>
+	<color name="aurora_tab_cursorColor">#696e7a</color>
+	<color name="aurora_upload_dowload_list_text">#49aef7</color>
+	
+	<!--add by JXH 2016-1-8 begin  -->
+	<color name="aurora_listview_dividers">#f2f2f2f2</color>
+	
+	<!-- wenyongzhe -->
+	<color name="aurora_cloud_numeber_text">#7f696e7a</color>
+	<color name="aurora_cloud_login_text_able">#ffffffff</color>
+	<color name="aurora_cloud_login_text_disable">#4c414142</color>
+		<color name="aurora_white">#ffffffff</color>
+				<color name="aurora_null">#00000000</color>
+</resources>

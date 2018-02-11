@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2013, Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="336dp"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <!-- Gionee <lilg><2013-04-22> modify for Gionee widget begin -->
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header">
+
+        <ImageButton
+            android:id="@+id/go_to_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/today_normal"
+            android:background="@drawable/background_selector" />
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="8dip"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true" />
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:id="@+id/refreshing"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="9dip"
+            android:layout_alignParentRight="true" />
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refresh_normal"
+            android:background="@drawable/background_selector" />
+
+        <ImageButton
+            android:id="@+id/add_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:layout_toLeftOf="@+id/refresh"
+            android:src="@drawable/add_event_normal"
+            android:background="@drawable/background_selector" />
+
+        <Button
+            android:id="@+id/choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="140dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="-5dip"
+            android:layout_toLeftOf="@+id/add_event"
+            style="@android:style/Widget.Holo.Spinner"
+            android:gravity="center"
+            android:textSize="28px"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+    -->
+    <!-- Gionee <lilg><2013-04-22> modify for Gionee widget end -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gn_widget_head_bg" >
+
+        <ImageButton
+            android:id="@+id/widget_goto_last_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gn_widget_title_background_selector"
+            android:src="@drawable/gn_widget_left" />
+
+        <LinearLayout
+            android:id="@+id/widget_layout_year_and_month"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/gn_widget_title_background_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/widget_text_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="#666666"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/widget_text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:textColor="#666666"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/widget_goto_next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/gn_widget_title_background_selector"
+            android:src="@drawable/gn_widget_right" />
+    </RelativeLayout>
+
+    <!-- Gionee <lilg><2013-04-22> modify for Gionee widget begin -->
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:background="@drawable/bg_date"
+        android:orientation="vertical"
+        android:paddingTop="5dip" >
+
+        <GridView
+            android:id="@+id/week_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:numColumns="7" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="2dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/div_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/week_number"
+                android:layout_width="20dip"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/div_v" />
+
+            <GridView
+                android:id="@+id/date_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="5dip"
+                android:numColumns="7" />
+        </LinearLayout>
+    </LinearLayout>
+    -->
+    <!-- Gionee <lilg><2013-04-22> modify for Gionee widget end -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gn_widget_bg_day"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/week_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <aurora.widget.AuroraListView
+                android:id="@+id/week_number"
+                android:layout_width="20dip"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/date_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

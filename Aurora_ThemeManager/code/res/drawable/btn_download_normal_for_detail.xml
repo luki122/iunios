@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/btn_download_normal_height"
+    android:width="@dimen/btn_download_normal_width"
+    android:viewportHeight="60"
+    android:viewportWidth="60"
+     >
+
+    <group
+        android:translateX="12.48"
+        android:translateY="12.48" >
+        <path
+            android:fillColor="?attr/progressBtnMainColor"
+            android:pathData="M42.000,19.000 L30.000,19.000 L29.993,0.026 L11.987,0.003 L12.000,19.000 L-0.000,19.000 L21.000,39.000 L42.000,19.000 ZM0.008,45.000 L0.008,50.987 L42.003,50.987 L42.003,45.000 L0.008,45.000 Z"/>
+    </group>
+
+</vector>

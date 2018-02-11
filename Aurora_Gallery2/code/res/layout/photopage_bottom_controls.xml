@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora <zhanggp> <2013-12-06> modified for gallery begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/photopage_bottom_controls"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/translate_color"
+        android:visibility="gone">
+	<View
+		android:id="@+id/photopage_bottom_control_bgView"
+		android:background="@drawable/aurora_photo_menu_bg"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:visibility="gone" />
+	<LinearLayout
+	  	android:id="@+id/photopage_bottom_images"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:paddingTop="20dp"
+	        android:visibility="gone">
+	       
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/photopage_bottom_control_share"
+	                android:src="@com.aurora:drawable/aurora_bottombar_share_selector"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:scaleType="center"
+		            android:theme="@style/AppThemeSVG"
+		            android:background="@drawable/ripple"
+	                android:visibility="gone"/>
+	       
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/photopage_bottom_control_favorite"
+	                 android:src="@com.aurora:drawable/aurora_bottombar_like_selector"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:theme="@style/AppThemeSVG"
+		            android:background="@drawable/ripple"
+		            android:scaleType="center"
+	                android:visibility="gone"/>
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/photopage_bottom_control_unfavorite"
+	                android:src="@com.aurora:drawable/aurora_bottombar_unlike_selector"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:theme="@style/AppThemeSVG"
+		            android:background="@drawable/ripple"
+		            android:scaleType="center"
+	                android:visibility="gone"/>
+	         <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/photopage_bottom_control_delete"
+	                android:src="@com.aurora:drawable/aurora_rubbish_selector"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:gravity="center"
+		            android:theme="@style/AppThemeSVG"
+		            android:background="@drawable/ripple"
+		            android:scaleType="center"
+	                android:visibility="gone"/>
+	        <aurora.widget.AuroraAnimationImageView
+	                android:id="@+id/photopage_bottom_control_edit_more"
+	                android:src="@com.aurora:drawable/aurora_bottombar_more_selector"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1.0"
+		            android:theme="@style/AppThemeSVG"
+		            android:background="@drawable/ripple"
+		            android:gravity="center"
+		            android:scaleType="center"
+	                android:visibility="gone"/>
+     </LinearLayout>
+</RelativeLayout>
+<!-- Aurora <zhanggp> <2013-12-06> modified for gallery end -->

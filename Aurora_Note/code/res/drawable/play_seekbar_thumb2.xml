@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is the thumb on the seek bar. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+    <size android:width="@dimen/play_seekbar_thumb_width" android:height="@dimen/play_seekbar_height" />
+    <solid android:color="@color/transparent" />
+</shape>

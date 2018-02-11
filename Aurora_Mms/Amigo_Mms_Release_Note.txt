@@ -1,0 +1,30 @@
+==================
+Build Notes
+==================
+1.版本目的:
+-
+2.功能变更:
+-
+3.重点测试的问题:
+-
+4.应用数据库是否改变:
+No
+
+==================
+Release Location
+==================
+/software_release/Applications/Aurora_Mms/Aurora_Mms_V4.8.9_V4.8.9.u.zip
+==================
+CR List
+==================
+[Repository Url]: http://192.168.110.97/svn/Aurora_Mms/trunk
+CR00838644	Opened	Android 新功能	gaoj	Aurora_Mms初步测试Bug。	svn revision(99)
+CR00868179	Coded	Android 新功能	guoyx	【Aurora信息模块】修改体感拨号Aurora接口	svn revision(100)
+CR00868270	Coded	Android 新功能	guoyx	【Aurora信息模块】智能引导、加密拿捏，修改Aurora接口	svn revision(101)
+Tag url: http://192.168.110.97/svn/Aurora_Mms/tags/Aurora_Mms_V4.8.9_V4.8.9.u
+Previous tag: Aurora_Mms_V4.8.9_V4.8.9.t
+Code difference: svn diff -r 101:98 http://192.168.110.97/svn/Aurora_Mms/trunk
+==================
+make sonar URL:
+http://ss.alm.gionee.com/sonar/dashboard/index/gionee.app:Aurora_Mms 
+==================

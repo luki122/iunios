@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_text_title">15sp</dimen>
+    <dimen name="notification_text_content">12sp</dimen>
+    <dimen name="notification_installed_top">3dp</dimen>
+    <dimen name="notification_marginright">12dp</dimen>
+    <dimen name="notification_downloading_right">0dp</dimen>
+    <dimen name="notification_downloading_right1">0dp</dimen>
+    <dimen name="notification_paddingleft">11dp</dimen>
+    <dimen name="app_detail_pic_browse">214dp</dimen>
+    <dimen name="app_item_appname_height">20.5dp</dimen>
+</resources>

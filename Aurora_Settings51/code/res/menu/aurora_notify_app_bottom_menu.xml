@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/show"
+        android:icon="@drawable/show_notification" />
+        <!--android:title="@string/app_notifications_switch_label" /-->
+    <item
+        android:id="@+id/not_show"
+        android:icon="@drawable/no_show_notification" />
+        <!--android:title="@string/app_notifications_switch_label_not" /-->
+</menu>

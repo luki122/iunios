@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <aurora.widget.AuroraTabWidget
+        android:id="@+id/tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        aurora:cursorColor="@color/power_green"
+        aurora:cursorHeight="@dimen/cursor_height"
+        aurora:cursorWidth="@dimen/cursor_width"
+        aurora:entriesTitle="@array/titles"
+        aurora:textFocusColor="@color/power_green"
+        aurora:textNormalColor="@color/power_green"
+        aurora:textSize="@dimen/cursor_item_text_size" />
+
+</LinearLayout>

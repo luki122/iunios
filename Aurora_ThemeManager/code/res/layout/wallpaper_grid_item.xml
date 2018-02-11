@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:minHeight="210dp"
+    android:maxHeight="210dp">
+	
+	<!-- Aurora liugj 2014-07-30 modified for desktop_wallpaper rebuild start -->
+    <ImageView android:id="@+id/item_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/item_default_bg_normal"/>
+	<!-- Aurora liugj 2014-07-30 modified for desktop_wallpaper rebuild end -->
+    <ImageView android:id="@+id/item_selected"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        	android:background="#80000000"
+            android:visibility="gone"
+            android:src="@drawable/local_wallpaper_apply_check_svg"
+            android:scaleType="center"/>
+    
+    <ImageView android:id="@+id/item_check_mengban"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:background="#80000000"/>
+    
+    <ImageView android:id="@+id/item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/source_select_checkbox_choosed"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right|bottom"/>
+	
+</FrameLayout>

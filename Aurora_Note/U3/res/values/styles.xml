@@ -1,0 +1,85 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="picture_view" parent="android:style/Theme.NoTitleBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- 上传ProgressDialog的样式 -->
+    <style name="upload_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    
+    <style name="upload_progressDialog" parent="@style/upload_Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="Note">
+    </style>
+    
+    <style name="QuickRecordEntryActivity" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    
+    <style name="Note.VerticalLine">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">@dimen/new_note_menu_ver_line_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/new_note_menu_bar_vertical_sep_line</item>
+    </style>
+    
+    <style name="new_note_menu_item">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    
+    <style name="new_note_reminder_label_text">
+        <item name="android:textColor">@color/new_note_label_reminder_text_color</item>
+        <item name="android:textSize">@dimen/new_note_reminder_textsize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="record_activity_text">
+        <item name="android:textColor">#bebebe</item>
+        <item name="android:textSize">@dimen/textsize_17</item>
+        <!--
+        <item name="android:textStyle">bold</item>
+        -->
+    </style>
+    
+    <style name="play_activity_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#5f5f5f</item>
+        <item name="android:textSize">@dimen/play_text_size</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="play_activity2_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#bebebe</item>
+        <item name="android:textSize">@dimen/textsize_12</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+     <style name="loading_head" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@anim/search_loading</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="AppLaucherTheme" parent="@com.aurora:style/Theme.aurora.Light">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

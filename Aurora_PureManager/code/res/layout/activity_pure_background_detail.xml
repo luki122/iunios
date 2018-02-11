@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/big_gray_bg"
+    android:orientation="vertical">
+    
+    <com.aurora.puremanager.view.AppDetailInfoView
+        android:id="@+id/app_detail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/appdetailInfolayout_marginbottom"
+        android:layout_marginTop="@dimen/length_4dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/auto_start_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_60"
+            android:descendantFocusability="blocksDescendants"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/auto_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/height_14"
+                android:text="@string/stop_auto_start"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Content" />
+
+            <TextView
+                android:id="@+id/tv_auto_start_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_start"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/auto_start_detail"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Second" />
+
+            <Switch
+                android:id="@+id/auto_start_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/list_left_right_margin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/listview_dividerheight"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/stop_wake_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_60"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/stop_wake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/height_14"
+                android:text="@string/stop_wake"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Content" />
+
+            <TextView
+                android:id="@+id/tv_stop_wake_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stop_wake"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/stop_wake_detail"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Second" />
+
+            <Switch
+                android:id="@+id/stop_wake_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/list_left_right_margin" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/listview_dividerheight"
+            android:background="@drawable/line" />
+
+        <RelativeLayout
+            android:id="@+id/auto_sleep_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_60"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/auto_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/height_14"
+                android:text="@string/auto_sleep"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Content" />
+
+            <TextView
+                android:id="@+id/tv_auto_sleep_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_sleep"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="@string/auto_sleep_detail"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Second" />
+
+            <Switch
+                android:id="@+id/auto_sleep_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/list_left_right_margin" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/listview_dividerheight"
+            android:background="@drawable/line" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_activity_maincircle_layout_height"
+        android:background="@color/main_activity_bg_color" >
+
+        <com.aurora.puremanager.view.MainCircleLayout
+            android:id="@+id/mainCircleLayout"
+            android:layout_width="@dimen/main_activity_maincircle_height"
+            android:layout_height="@dimen/main_activity_maincircle_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/main_activity_maincircle_margintop" >
+
+            <LinearLayout
+                android:id="@+id/circleNumLayout"
+                android:layout_width="@dimen/main_activity_circlenum_layout"
+                android:layout_height="@dimen/main_activity_circlenum_layout"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <!-- 内存使用率 -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="@dimen/main_activity_circlenum_text_margintop" >
+
+                    <com.aurora.puremanager.view.RiseNumberTextView
+                        android:id="@+id/appsNumOfA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_66" />
+
+                    <TextView
+                        android:id="@+id/mem_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/appsNumOfA"
+                        android:layout_marginLeft="@dimen/padding_large"
+                        android:layout_marginTop="@dimen/padding_large"
+                        android:text="@string/percent"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/main_activity_percent_text_size" />
+                </RelativeLayout>
+
+                <!-- 内存显示 -->
+
+                <TextView
+                    android:id="@+id/memory_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/leftLayout_padding_left"
+                    android:textColor="@color/main_activity_memory_text_color"
+                    android:textSize="@dimen/main_activity_memory_text_size" />
+            </LinearLayout>
+
+            <com.aurora.puremanager.view.CircleView
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/main_activity_circleview_height" />
+        </com.aurora.puremanager.view.MainCircleLayout>
+
+        <Button
+            android:id="@+id/men_optimize"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/main_activity_clear_btn_margintop"
+            android:background="@drawable/button"
+            android:text="@string/manage_optimize"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/main_activity_memory_text_size" />
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/main_activity_gridview_spacing"
+        android:numColumns="1"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/main_activity_gridview_spacing" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/note_about_logo" />
+
+    <TextView
+        android:id="@+id/note_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="43dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#9c7f70"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/check_update"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/aurora_frame_list_top_background_light"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:drawableEnd="@drawable/note_arrow_right"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="18sp"
+        android:text="@string/note_check_update" />
+
+    <TextView
+        android:id="@+id/know_more"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/aurora_frame_list_bottom_background_light"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:drawableEnd="@drawable/note_arrow_right"
+        android:textColor="@color/note_main_text_color"
+        android:textSize="18sp"
+        android:text="@string/note_know_more" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:textColor="#d2c7c3"
+        android:textSize="10sp"
+        android:text="@string/note_copyright_notice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="51dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#cdbcb1"
+        android:textSize="9sp"
+        android:text="@string/note_copyright_notice_2" />
+</LinearLayout>

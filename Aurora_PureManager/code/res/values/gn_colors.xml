@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--Gionee:zhang_xin 2013-01-11 add for CR00746738 start-->
+    <color name="gn_text_color">#ffff9000</color>
+    <!--Gionee:zhang_xin 2013-01-11 add for CR00746738 end-->
+    <!-- Gionee chenml 2013-04-15 modify for CR00796148 begin -->
+    <color name="gn_user_dictionary_empty">#55444444</color>
+    <!-- Gionee chenml 2013-04-15 modify for CR00796148 end -->
+
+    <!-- Gionee <zhang_xin><2013-04-09> add for CR00794646 begin -->
+    <color name="gn_tab_color">#ffffffff</color>
+    <!-- Gionee <zhang_xin><2013-04-09> add for CR00794646 end -->
+
+    <!-- Gionee <huangyc> 2014-01-06 add for CR01003459 begin -->
+    <color name="gn_tab_indicator_color">#50ffffff</color>
+    <color name="gn_empty_text_color">#cdd0d3</color>
+    <color name="gn_grep_text_color">#66000000</color>
+    <!-- Gionee <huangyc> 2014-01-06 add for CR01003459 end -->
+    
+    <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 begin -->
+    <color name="detail_selecet">#ff222222</color>
+    <color name="detail_un_selecet">#ffaaaaaa</color>
+    <color name="divider_color_permission">#f2f1f1</color>
+    <!-- Gionee <chenml> <2014-07-29> modify for CR01325889 end -->
+    
+    <!--Gionee <wangguojing> <2014-09-29> add for CR01390707 begin-->
+    <color name="memory_system_used">#3DADED</color>
+    <color name="memory_phone_data">#E28566</color>
+    <color name="memory_free">#D2D2D2</color>
+    <color name="memory_external_used">#8FE266</color>
+    <!--Gionee <wangguojing> <2014-09-29> add for CR01390707 end-->
+    <!-- Gionee <qiuxd> <2013-06-17> add for CR00826405 begin -->
+    <color name="gn_hide_encry_pop_text_color">#222222</color>
+    <!-- Gionee <qiuxd> <2013-06-17> add for CR00826405 end -->
+    <color name="gn_actionbar_color">#404040</color>
+    <color name="gn_background_color">#fdfdfd</color>
+    <color name="gn_text_description">#cc000000</color>
+    <color name="amigo_separate_view_color">#50808080</color>
+
+    <color name="perms_costs_money">#fff4511e</color>
+    <color name="background_install_app_detail">#404040</color>
+
+
+    <color name="setup_lock_pattern_view_regular_color_dark">#ffbdbdbd</color>
+    <color name="setup_lock_pattern_view_regular_color_light">@color/lock_pattern_view_regular_color</color>
+    <color name="setup_lock_pattern_view_success_color_dark">#ff84ffff</color>
+    <color name="setup_lock_pattern_view_success_color_light">@color/setup_wizard_color_accent_light</color>
+    <color name="setup_lock_pattern_view_error_color_dark">#fff44336</color>
+    <color name="setup_lock_pattern_view_error_color_light">@color/lock_pattern_view_error_color</color>
+    <color name="empty_text_color_primary">#cccccc</color>
+
+
+</resources>

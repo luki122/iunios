@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/nearby_shop_item_layout">
+     
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:id="@+id/nearby_shop_item_linearlayout" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="1dp" >
+<!--         android:layout_marginTop="16dp" -->
+<!-- android:layout_marginBottom="10dp" -->
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:id="@+id/nearby_shop_top_linearlayout"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            <LinearLayout 
+                android:orientation="horizontal" 
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" >
+                
+                <ImageView 
+                     android:layout_width="wrap_content" 
+                     android:layout_height="wrap_content" 
+                     android:layout_marginLeft="13dp"
+                     android:layout_marginTop="3dp"
+                     android:background="@drawable/vs_nearby_shop_position_empty_bg"  />
+<!--                 shigq add android:layout_marginTop="3dp" -->
+<!-- android:layout_marginLeft="12dp" -->
+                
+                <LinearLayout 
+                    android:orientation="vertical" 
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+<!--                     android:layout_marginLeft="10dp" -->
+                    <TextView
+                         android:textSize="15sp" 
+                         android:textColor="#ff000000" 
+                         android:id="@+id/shop_name_textview" 
+                         android:layout_width="match_parent" 
+                         android:layout_height="wrap_content" 
+                         android:singleLine="true"/>
+                    <LinearLayout 
+                        android:orientation="horizontal" 
+                        android:layout_width="match_parent" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="2dp">
+<!--                         shigq add android:layout_marginLeft="2dp" -->
+                        <RatingBar 
+                            android:id="@+id/shop_rating_ratingbar" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:numStars="5" 
+                            android:rating="3.0" 
+                            android:stepSize="0.5" 
+                            android:isIndicator="true"
+                            style="@style/vs_shopRatingBar"/>
+<!--                        android:layout_marginTop="4.8299866dip" -->
+                        <TextView 
+                            android:textSize="13sp" 
+                            android:textColor="#ff8d8d8d" 
+                            android:id="@+id/shop_average_peopensity_textview"
+                            android:layout_width="match_parent" 
+                            android:layout_height="wrap_content" 
+                            android:singleLine="true"
+                            android:layout_marginLeft="17dp" />
+<!--                         android:layout_marginLeft="10dp" -->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                android:orientation="horizontal" 
+                android:layout_width="match_parent"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="16dp" 
+                 android:layout_marginTop="6dp">
+                <TextView 
+                    android:textSize="11sp" 
+                    android:textColor="#ffa3a3a3" 
+                    android:layout_gravity="left|center" 
+                    android:id="@+id/shop_distance_textview" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:singleLine="true" 
+                    android:maxLength="12" />
+                <TextView 
+                    android:textSize="11sp" 
+                    android:textColor="#ffa3a3a3" 
+                    android:layout_gravity="center" 
+                    android:id="@+id/shop_tags_textview" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true" 
+                    android:maxLength="30" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+<!--     shigq delete -->
+<!--     <View  -->
+<!--         android:id="@+id/nearby_shop_divider"  -->
+<!--         android:background="@drawable/vs_question_structure_divider"  -->
+<!--         android:padding="0.0dip"  -->
+<!--         android:layout_width="fill_parent"  -->
+<!--         android:layout_height="0.5dip"  -->
+<!--         android:layout_marginLeft="18.5dip"  -->
+<!--         android:layout_marginRight="18.5dip" /> -->
+<!-- 	shigq delete -->
+    
+    <!-- exp item -->
+    <LinearLayout 
+        android:id="@+id/nearby_shop_exp_item" 
+	    android:orientation="vertical" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:visibility="gone">
+	    <RelativeLayout 
+	        android:orientation="horizontal" 
+	        android:id="@+id/shop_location_relativelayout" 
+	        android:background="@drawable/vs_nearby_shop_expand_bg_normal" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="46.5dip" 
+	        android:layout_marginLeft="16dp" 
+	        android:layout_marginRight="16dp" 
+	        android:layout_marginBottom="2.5dip">
+	        <ImageView 
+	            android:id="@+id/shop_location_imageview" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="14dip" 
+	            android:layout_marginTop="16dip" 
+	            android:src="@drawable/vs_nearby_shop_location_icon" />
+<!-- 	        android:layout_marginTop="14.5dip"  -->
+<!-- android:layout_marginLeft="16.5dip"  -->
+	        <TextView 
+	            android:textSize="12.5dip" 
+	            android:textColor="#ff444444" 
+	            android:id="@+id/shop_location_textview" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="17dip" 
+	            android:layout_marginLeft="6.5dip" 
+	            android:layout_marginRight="16.5dip" 
+	            android:singleLine="true" 
+	            android:maxLength="30" 
+	            android:layout_toRightOf="@+id/shop_location_imageview" />
+<!-- 	        android:layout_marginTop="14.5dip"  -->
+	        <ImageView 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="17.169983dip" 
+	            android:layout_marginRight="10.5dip" 
+	            android:src="@drawable/vs_nearby_shop_right_triangle_icon" 
+	            android:layout_alignParentRight="true" />
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:orientation="horizontal" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="16dp" 
+	        android:layout_marginRight="16dp" 
+	        android:layout_marginBottom="2.5dip">
+	        <RelativeLayout 
+	            android:orientation="horizontal" 
+	            android:id="@+id/shop_line_end_relativelayout" 
+	            android:background="@drawable/vs_nearby_shop_expand_bg_normal" 
+	            android:padding="0.0dip" android:layout_width="fill_parent" 
+	            android:layout_height="46.5dip" 
+	            android:layout_marginRight="1.25dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/shop_line_end_imageview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="16dip"
+	                android:layout_marginLeft="16.5dip" 
+	                android:src="@drawable/vs_nearby_shop_line_end_icon" />
+<!-- 	            android:layout_marginTop="16.5dip"  -->
+	            <TextView 
+	                android:textSize="12.5dip" 
+	                android:textColor="#ff444444" 
+	                android:id="@+id/shop_line_end_textview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="17dip"
+	                android:layout_marginLeft="6.5dip" 
+	                android:text="@string/vs_toend" 
+	                android:singleLine="true" 
+	                android:maxLength="30" 
+	                android:layout_toRightOf="@+id/shop_line_end_imageview" />
+<!-- 	            android:layout_marginTop="14.5dip"  -->
+	            <ImageView 
+	                android:id="@+id/shop_line_end_right_triangle_imageview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="18dp" 
+	                android:layout_marginRight="10.5dip"
+	                android:src="@drawable/vs_nearby_shop_right_triangle_icon" 
+	                android:layout_alignParentRight="true" />
+<!-- 	            android:layout_marginTop="17.169983dip"  -->
+	        </RelativeLayout>
+	        <RelativeLayout 
+	            android:orientation="horizontal" 
+	            android:id="@+id/shop_line_start_relativelayout" 
+	            android:background="@drawable/vs_nearby_shop_expand_bg_normal" 
+	            android:padding="0.0dip" 
+	            android:layout_width="fill_parent" 
+	            android:layout_height="46.5dip" 
+	            android:layout_marginLeft="1.25dip" 
+	            android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/shop_line_start_imageview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginLeft="16.5dip" 
+	                android:layout_marginTop="16dp" 
+	                android:src="@drawable/vs_nearby_shop_line_start_icon" />
+<!-- 	            android:layout_marginTop="16.5dip"  -->
+	            <TextView 
+	                android:textSize="12.5dip" 
+	                android:textColor="#ff444444" 
+	                android:id="@+id/shop_line_start_textview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginLeft="6.5dip" 
+	                android:layout_marginTop="17dip" 
+	                android:text="@string/vs_tostart" 
+	                android:singleLine="true" 
+	                android:maxLength="30" 
+	                android:layout_toRightOf="@+id/shop_line_start_imageview" />
+<!-- 	            android:layout_marginTop="14.5dip" -->
+	            <ImageView 
+	                android:id="@+id/shop_line_start_right_triangle_imageview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="18dip" 
+	                android:layout_marginRight="10.5dip" 
+	                android:src="@drawable/vs_nearby_shop_right_triangle_icon" 
+	                android:layout_alignParentRight="true" />
+<!-- 	            android:layout_marginTop="17.169983dip"  -->
+	        </RelativeLayout>
+	    </LinearLayout>
+	    <RelativeLayout 
+	        android:orientation="horizontal" 
+	        android:id="@+id/shop_telephone_relativelayout" 
+	        android:background="@drawable/vs_nearby_shop_expand_bg_normal" 
+	        android:padding="0.0dip" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="46.5dip" 
+	        android:layout_marginLeft="16dp" 
+	        android:layout_marginRight="16dp" 
+	        android:layout_marginBottom="2.5dip">
+	        <ImageView 
+	            android:id="@+id/shop_telephone_imageview" 
+	            android:layout_width="wrap_content"
+	             android:layout_height="wrap_content" 
+	             android:layout_marginLeft="16dip" 
+	             android:layout_marginTop="16.5dip" 
+	             android:src="@drawable/vs_nearby_shop_telephone_icon" />
+<!-- 	        android:layout_marginLeft="16.5dip"  -->
+	        <TextView 
+	            android:textSize="12.5dip" 
+	            android:textColor="#ff444444" 
+	            android:id="@+id/shop_telephone_textview" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginLeft="6.5dip" 
+	            android:layout_marginTop="17dip" 
+	            android:layout_marginRight="16.5dip" 
+	            android:singleLine="true" 
+	            android:layout_toRightOf="@+id/shop_telephone_imageview" />
+<!-- 	        ndroid:layout_marginTop="14.5dip"  -->
+	        <ImageView 
+	            android:id="@+id/shop_telephone_right_triangle_imageview" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="16.5dip" 
+	            android:layout_marginRight="10.5dip"
+	            android:src="@drawable/vs_nearby_shop_right_triangle_icon" 
+	            android:layout_alignParentRight="true" />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:id="@+id/shop_recomment_dish_relativelayout" 
+	        android:background="@null" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="16dp" 
+	        android:layout_marginRight="16dp" 
+	        android:layout_marginBottom="2.5dip">
+	        <LinearLayout 
+	            android:orientation="horizontal" 
+	            android:id="@+id/shop_recomment_dish_first_line_linearlayout" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content">
+	            <TextView 
+	                android:textSize="12.5dip" 
+	                android:textColor="#ff444444" 
+	                android:id="@+id/shop_recomment_dish_lable_textview"
+	                 android:layout_width="wrap_content" 
+	                 android:layout_height="wrap_content" 
+	                 android:layout_marginLeft="2.5dip" 
+	                 android:layout_marginTop="12.5dip" 
+	                 android:text="@string/vs_recomment" 
+	                 android:singleLine="true" 
+	                 android:maxLength="30" />
+	            <TextView 
+	                android:textSize="12.5dip" 
+	                android:textColor="#ff444444" 
+	                android:id="@+id/shop_recomment_dish_first_textview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginLeft="6.5dip" 
+	                android:layout_marginTop="12.5dip" />
+	        </LinearLayout>
+	    </RelativeLayout>
+	    <LinearLayout 
+	        android:orientation="horizontal" 
+	        android:id="@+id/shop_function_linearlayout" 
+	        android:background="@null" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="34.5dip" 
+	        android:layout_marginLeft="16dp"
+	         android:layout_marginRight="16dp" 
+	         android:layout_marginBottom="8.5dip">
+	        <RelativeLayout 
+	            android:orientation="horizontal"
+	             android:id="@+id/shop_telephone_save_relativelayout" 
+	             android:layout_width="fill_parent" 
+	             android:layout_height="fill_parent" 
+	             android:layout_marginTop="8.5dip" 
+	             android:layout_weight="1.0">
+	            <LinearLayout 
+	                android:gravity="center" 
+	                android:orientation="horizontal"
+	                 android:id="@+id/shop_telephone_save_linearlayout" 
+	                 android:layout_width="fill_parent" 
+	                 android:layout_height="fill_parent">
+	                <ImageView 
+	                    android:id="@+id/shop_telephone_save_imageview" 
+	                    android:layout_width="wrap_content" 
+	                    android:layout_height="wrap_content" 
+	                    android:src="@drawable/vs_nearby_shop_telephone_save_icon" />
+	                <TextView 
+	                    android:textSize="12.5dip" 
+	                    android:textColor="#ff444444" 
+	                    android:id="@+id/shop_telephone_save_textview" 
+	                    android:layout_width="wrap_content" 
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginLeft="6.5dip" 
+	                    android:layout_marginTop="1dip" 
+	                    android:text="@string/vs_tsave" 
+	                    android:singleLine="true" 
+	                    android:maxLength="30" />
+<!-- 	                shigq add android:layout_marginTop="1dip"  -->
+	            </LinearLayout>
+	            <LinearLayout 
+	                android:layout_gravity="right" 
+	                android:orientation="vertical" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="fill_parent" 
+	                android:layout_alignParentRight="true">
+	                <ImageView 
+	                    android:background="#ffe2e2e2" 
+	                    android:paddingTop="12.5dip"
+	                    android:layout_width="1dip" 
+	                    android:layout_height="fill_parent" />
+	            </LinearLayout>
+	        </RelativeLayout>
+	        <RelativeLayout
+	             android:orientation="horizontal"
+	              android:layout_width="fill_parent" 
+	              android:layout_height="fill_parent"
+	               android:layout_marginTop="8.5dip" 
+	               android:layout_weight="1.0">
+	            <LinearLayout
+	                 android:gravity="center"
+	                  android:orientation="horizontal"
+	                   android:id="@+id/shop_forward_message_linearlayout" 
+	                   android:layout_width="fill_parent" 
+	                   android:layout_height="fill_parent">
+	                <ImageView 
+	                    android:id="@+id/shop_forward_message_imageview" 
+	                    android:layout_width="wrap_content"
+	                     android:layout_height="wrap_content" 
+	                     android:src="@drawable/vs_nearby_shop_forward_message_icon" />
+	                <TextView
+	                     android:textSize="12.5dip" 
+	                     android:textColor="#ff444444"
+	                      android:id="@+id/shop_forward_message_textview" 
+	                      android:layout_width="wrap_content" 
+	                      android:layout_height="wrap_content" 
+	                      android:layout_marginTop="1dip" 
+	                      android:layout_marginLeft="6.5dip" 
+	                      android:text="@string/vs_forwardmsg" 
+	                      android:singleLine="true" 
+	                      android:maxLength="30" />
+<!-- 	                shigq add android:layout_marginTop="1dip"  -->
+	            </LinearLayout>
+	            <LinearLayout 
+	                android:layout_gravity="right"
+	                 android:orientation="vertical" 
+	                 android:layout_width="wrap_content" 
+                 	android:layout_height="fill_parent" 
+	                 android:layout_alignParentRight="true">
+	                <ImageView 
+	                    android:background="#ffe2e2e2"
+	                     android:paddingTop="12.5dip" 
+	                     android:layout_width="1dip" 
+	                     android:layout_height="fill_parent" />
+	            </LinearLayout>
+	        </RelativeLayout>
+	        <LinearLayout 
+	            android:gravity="center" 
+	            android:orientation="horizontal" 
+	            android:id="@+id/shop_more_info_linearlayout"
+	             android:layout_width="fill_parent" 
+	             android:layout_height="fill_parent" 
+	             android:layout_marginTop="8.5dip" 
+	             android:layout_weight="1.0">
+	            <ImageView 
+	                android:id="@+id/shop_more_info_imageview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:src="@drawable/vs_nearby_shop_more_info_icon" />
+	            <TextView 
+	                android:textSize="12.5dip" 
+	                android:textColor="#ff444444" 
+	                android:id="@+id/shop_more_info_textview" 
+	                android:layout_width="wrap_content" 
+	                android:layout_height="wrap_content" 
+	                android:layout_marginTop="1dip" 
+	                android:layout_marginLeft="6.5dip" 
+	                android:text="@string/vs_more" 
+	                android:singleLine="true" 
+	                android:maxLength="30" />
+<!-- 	            shigq add android:layout_marginTop="1dip"  -->
+	        </LinearLayout>
+	    </LinearLayout>
+	</LinearLayout>
+ 
+    
+</LinearLayout>

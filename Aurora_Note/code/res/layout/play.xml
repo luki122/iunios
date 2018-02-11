@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/play_activity_height"
+    android:background="@drawable/record_activity_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/pause_iv"
+        android:layout_width="@dimen/play_start_width"
+        android:layout_height="@dimen/play_start_height"
+        android:layout_marginLeft="@dimen/play_start_margin_left"
+        android:layout_marginRight="@dimen/play_start_margin_right"
+        android:src="@drawable/play_start_selector"
+        android:scaleType="center" />
+
+    <RelativeLayout
+        android:id="@+id/progress_rl"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <SeekBar
+            android:id="@+id/playing_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_8"
+            android:paddingRight="@dimen/padding_8"
+            android:thumbOffset="@dimen/play_seekbar_thumb_offset"
+            android:thumb="@drawable/play_seekbar_thumb"
+            android:progressDrawable="@drawable/seekbar_img" />
+
+        <TextView style="@style/play_activity_text"
+            android:id="@+id/play_time_tv"
+            android:layout_alignLeft="@id/playing_progress"
+            android:paddingLeft="@dimen/padding_8"
+            android:layout_marginTop="@dimen/play_time_tv_margin_top"
+            android:text="@string/play_start_time" />
+
+        <TextView style="@style/play_activity_text"
+            android:id="@+id/total_time_tv"
+            android:layout_alignRight="@id/playing_progress"
+            android:layout_alignBottom="@id/play_time_tv"
+            android:paddingRight="@dimen/padding_8"
+            android:text="@string/play_start_time" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/complete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/play_complete_padding_left"
+        android:paddingRight="@dimen/play_complete_padding_right"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="@dimen/padding_5"
+        android:textSize="@dimen/textsize_17"
+        android:textColor="@color/play_complete_text"
+        android:text="@string/record_close" />
+
+</LinearLayout>

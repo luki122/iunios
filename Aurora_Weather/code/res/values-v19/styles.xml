@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="com.aurora:style/Theme.aurora.Light">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!-- Status Bar -->
+        <!--  <item name="android:windowTranslucentStatus">true</item>-->
+        <!-- Navigation Bar -->
+        <!-- <item name="android:windowTranslucentNavigation">true</item> -->
+        
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>

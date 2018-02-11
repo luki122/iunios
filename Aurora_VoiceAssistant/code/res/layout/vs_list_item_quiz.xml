@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="right|center" >    
+		
+	<TextView
+        android:id="@+id/quiz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/vs_white"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:background="@drawable/vs_dialog_me_bg_style"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"/>
+</LinearLayout>

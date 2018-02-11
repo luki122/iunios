@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sync_setting_guide_top_bg"
+        android:paddingBottom="@dimen/switch_container_margin_top"
+        android:paddingTop="@dimen/sync_setting_padding_top"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/module_vp"
+            android:layout_width="fill_parent"
+            android:layout_height="360dp" />
+
+        <com.aurora.account.widget.PageIndicator
+            android:id="@+id/page_pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View style="@style/Account.Line" android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:id="@+id/sync_or_not_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/switch_container_height"
+        android:paddingEnd="@dimen/switch_padding_end"
+        android:paddingStart="@dimen/switch_padding_start" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enable_sync"
+                android:textColor="@color/black"
+                android:textSize="@dimen/switch_title_text_size" />
+
+            <TextView
+                android:id="@+id/details_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:text="@string/enable_sync_desc"
+                android:textColor="#5d5d5d"
+                android:textSize="@dimen/switch_desc_text_size" />
+        </LinearLayout>
+
+        <aurora.widget.AuroraSwitch
+            android:id="@+id/sync_or_not_as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" />
+    </RelativeLayout>
+    
+    <View style="@style/Account.Line" />
+
+    <Button
+        android:id="@+id/action_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_15"
+        android:layout_marginStart="@dimen/padding_15"
+        android:layout_marginTop="@dimen/action_btn_margin_top" />
+
+</LinearLayout>

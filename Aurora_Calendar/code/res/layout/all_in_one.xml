@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@com.aurora:dimen/status_bar_height" >
+
+    <RelativeLayout
+        android:id="@+id/all_in_one_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/all_in_one_action_bar"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            layout="@layout/aurora_all_in_one_action_bar" />
+
+        <TextView
+            android:id="@+id/home_time"
+            android:layout_width="match_parent"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/all_in_one_action_bar"
+            android:background="@color/gn_bg_month_header"
+            android:gravity="center_vertical|right"
+            android:paddingRight="8dp"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <!--
+            android:paddingRight="8dip"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/calendar_date_banner_background"
+        -->
+
+        <FrameLayout
+            android:id="@+id/main_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/home_time" />
+        <!-- android:layout_below="@id/all_in_one_action_bar" -->
+
+        <FrameLayout
+            android:id="@+id/secondary_pane"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <aurora.widget.floatactionbutton.FloatingActionButton
+        android:id="@+id/create_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/aurora_create_event" />
+
+    <!--
+         The views after this are retained to prevent crashes.
+        TODO: Remove if the app can handle them not being there.
+    -->
+
+    <View
+        android:id="@+id/mini_month_container"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/mini_month"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/calendar_list"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:visibility="gone" />
+
+</FrameLayout>

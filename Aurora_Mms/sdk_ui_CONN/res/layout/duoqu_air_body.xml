@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingBottom="6dp"
+    android:paddingRight="10dp" >
+
+    <View
+        android:id="@+id/duoqu_center_line"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_city"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxEms="3"
+        android:singleLine="true"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_airport"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/duoqu_base_depart_city"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_airport"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_depart_date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_time"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_flight_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/duoqu_base_depart_date"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/duoqu_base_select_flight_number"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/duoqu_base_flight_number"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/duoqu_base_flight_number"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/duoqu_img_line"
+        android:layout_width="58dp"
+        android:layout_height="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_city"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxEms="3"
+        android:singleLine="true"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/duoqu_base_depart_airport"
+        android:layout_below="@+id/duoqu_base_arrive_city"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/duoqu_base_depart_time"
+        android:layout_below="@+id/duoqu_base_arrive_city"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_arrive_date"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/duoqu_base_depart_date"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/duoqu_base_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/duoqu_img_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:text="@string/duoqu_filght"
+        android:textSize="10dp" />
+
+</RelativeLayout>

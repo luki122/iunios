@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+   <aurora.preference.AuroraListPreference
+        aurora:auroradefaultValue="default"
+        aurora:auroraentries="@array/preference_key_change_home_page"
+        aurora:auroraentryValues="@array/preference_value_change_home_page"
+        aurora:aurorakey="preferences_key_change_home_page"
+        aurora:auroratitle="@string/change_home_page" />
+   
+       <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="pref_remember_submited_form"
+        aurora:auroratitle="@string/remember_submited_form" />
+    <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="pref_remember_password"
+        aurora:auroratitle="@string/remember_password" />
+
+</aurora.preference.AuroraPreferenceScreen>

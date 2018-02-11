@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/wallpaper_crop_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </android.support.v4.view.ViewPager> -->
+    <com.aurora.change.view.CropViewPager
+        android:id="@+id/wallpaper_crop_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout 
+        android:id="@+id/wallpaper_crop_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/crop_wallpaper_bottom_color"
+        android:layout_gravity="bottom"
+        >
+        <!-- <ImageView 
+            android:id="@+id/wallpaper_crop_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_previous"
+            />
+        <ImageView 
+            android:id="@+id/wallpaper_crop_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_next"
+            /> -->
+        <aurora.widget.AuroraAnimationImageView 
+            android:id="@+id/wallpaper_crop_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_previous"
+            />
+        <aurora.widget.AuroraAnimationImageView 
+            android:id="@+id/wallpaper_crop_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/wallpaper_crop_next"
+            />
+    </LinearLayout>
+
+</FrameLayout>

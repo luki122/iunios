@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:paddingLeft="17dp" android:paddingRight="17dp"
+    android:background="@color/white">
+    <!-- 套餐包月流量 begin-->
+    <TextView
+         android:layout_width="wrap_content" android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/list_header_padding_top"
+         android:gravity="left" android:paddingLeft="3dp"  android:lines="1"
+         android:text="@string/monthly_flow"
+         android:textColor="@color/info_text_color"  
+         android:textSize="@dimen/package_set_activity_title_text_size"/>
+    
+    <RelativeLayout 
+        android:id="@+id/flowLayout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginTop="10dp" android:background="@drawable/item_of_alone_bg">      
+       <aurora.widget.AuroraEditText
+	        android:id="@+id/flowEditText" 
+	        android:layout_width="fill_parent" android:layout_height="47dp" 
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:lines="1" android:inputType="number"
+	        android:background="#00ffffff"
+	        android:numeric="integer" android:maxLength="4"
+	        style="@style/text_title"/>     
+        <aurora.widget.AuroraSpinner
+	        android:id="@+id/flowUnitSpinner" 
+	        android:layout_width="90dp" android:layout_height="47dp" 
+	        android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <!-- 套餐包月流量 end-->
+    
+    <!-- 套餐月结日 begin-->
+    <TextView
+        android:layout_marginTop="@dimen/list_header_padding_top"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    android:gravity="left|center_vertical" android:paddingLeft="3dp" android:lines="1"
+	    android:text="@string/month_end_date"
+	    android:textColor="@color/info_text_color"  
+	    android:textSize="@dimen/package_set_activity_title_text_size"/>
+	<FrameLayout
+	    android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    <aurora.widget.AuroraNumberPicker
+			android:id="@+id/aurora_minute"
+			android:background="@null"
+			android:layout_width="80dip"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:focusable="true"
+			android:focusableInTouchMode="true"/>    
+	</FrameLayout>    
+
+    <!-- 套餐月结日 end-->
+</LinearLayout>

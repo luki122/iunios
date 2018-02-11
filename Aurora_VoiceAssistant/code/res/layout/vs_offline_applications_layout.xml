@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.aurora.voiceassistant.view.CustomAppsContainer 
+        android:id="@+id/vs_offline_apps_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="12dp"
+		android:layout_marginRight="12dp">
+        
+    </com.aurora.voiceassistant.view.CustomAppsContainer>
+
+</LinearLayout>

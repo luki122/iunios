@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/aurora_details_move_to"
+        android:title="@string/aurora_listitem_slide_right_move_to">
+    </item>
+	
+<!--     <item android:id="@+id/aurora_new_email_notification"
+        android:title="@string/aurora_newemail_notification"/> -->
+    
+    <item android:id="@+id/aurora_backup_to_calendar"
+        android:title="@string/aurora_backup_to_calendar">
+    </item>
+</menu>

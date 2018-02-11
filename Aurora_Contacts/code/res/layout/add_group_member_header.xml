@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_group_member"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/single_list_item_height"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+
+
+        <ImageView
+            style="@style/dial_search_footer_image_style"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/svg_dial_add_contact" />
+
+        <TextView
+            style="@style/dial_search_footer_text_style"
+            android:text="@string/add_member" />
+
+
+</LinearLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/add_group_member"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/single_list_item_height" >
+
+    <ImageView
+        android:id="@+id/photo_ll"
+        style="@style/single_list_item_photo_style"
+        android:src="@drawable/svg_dial_add_contact" />
+
+    <TextView
+        style="@style/double_list_item_name_text_style_with_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/photo_ll"
+        android:text="@string/add_member" />
+
+</RelativeLayout>

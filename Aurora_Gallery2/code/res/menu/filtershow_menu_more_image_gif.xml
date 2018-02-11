@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+      <item
+          android:id="@+id/aurora_album_page_move"
+          android:title="@string/aurora_album_page_move"/>
+     <item
+          android:id="@+id/aurora_album_page_set_for"
+          android:title="@string/aurora_album_page_set_for"/>
+     <item
+          android:id="@+id/aurora_album_page_slide_play"
+          android:title="@string/aurora_album_page_slide_play"/>
+     <item
+          android:id="@+id/aurora_album_page_detail"
+          android:title="@string/aurora_album_page_detail"/>
+</menu>

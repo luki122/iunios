@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item
+        android:id="@+id/pop_detail"
+        android:title="@string/pop_detail"/>
+     <item
+        android:id="@+id/pop_sendsms"
+        android:title="@string/pop_sendsms"/>
+     <item
+        android:id="@+id/pop_copy"
+        android:title="@string/pop_copy"/>
+     <item
+        android:id="@+id/pop_delete"
+        android:title="@string/pop_delete"/>
+ 
+</menu>
+

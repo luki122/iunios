@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--gionee gaoj 2012-5-10 added for GIUI4.0 start
+ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/select_done"
+          android:title="@string/copy_to_sdcard"
+          android:showAsAction="always"/>
+</menu>

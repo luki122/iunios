@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+
+    <TextView 
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:paddingRight="@com.aurora:dimen/aurora_action_bar_margin_right"
+    	android:paddingLeft="@com.aurora:dimen/aurora_action_bar_margin_right" 
+    	android:layout_gravity="right|center_vertical"		
+    	android:gravity="center"   	
+    	android:text="@string/bluetooth_name_save"
+        android:textColor="#46A9EC"
+        android:textSize="@com.aurora:dimen/aurora_action_bar_text_size"
+        />  
+    
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="28dp"
+    android:viewportHeight="84"
+    android:viewportWidth="84"
+    android:width="28dp" >
+
+    <group
+        android:name="rotationGroup"
+        android:pivotX="42"
+        android:pivotY="42" >
+        <path
+            android:name="end_call_path"
+            android:fillColor="@color/aurora_white_color"
+            android:pathData="@string/end_call_button_path" />
+    </group>
+
+</vector>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/iv_header_img"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        android:src="@drawable/language_header" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:text="@string/language_wel"
+        android:textColor="@color/language_welcome"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:singleLine="true"
+        android:text="@string/first_page_info"
+        android:textColor="@color/language_welcome"
+        android:textSize="14sp" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/footer" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/lv_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="90dp"
+        android:divider="#e5e5e5"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+</RelativeLayout>

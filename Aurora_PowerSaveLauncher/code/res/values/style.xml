@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Variant of the material (dark) theme with no action bar. -->
+    <style name="Theme" parent="@android:style/Theme.DeviceDefault.Wallpaper.NoTitleBar">
+        <!--<item name="android:windowAnimationStyle">@style/noAnimation</item>-->
+    </style>
+
+</resources>

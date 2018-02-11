@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- month agenda remember day -->
+    <string name="aurora_remember_day_past"><xliff:g id="NAME">%s</xliff:g>已经<xliff:g id="DAYS">%s</xliff:g>天</string>
+    <string name="aurora_remember_day_futrue"><xliff:g id="NAME">%s</xliff:g>还有<xliff:g id="DAYS">%s</xliff:g>天</string>
+
+    <!-- period -->
+    <string name="aurora_period_show">大姨妈</string>
+    <string name="aurora_remember_day_show">纪念日</string>
+    <string name="aurora_period_hide">隐藏大姨妈</string>
+    <string name="aurora_period_clear">清除大姨妈数据</string>
+    <string name="aurora_period_clear_message">清除大姨妈数据后，您的历史数据将会被删除，确定继续？</string>
+    <string name="aurora_period_clear_ok">清除完成</string>
+    <string name="aurora_period_add_new">“经期开始”日期为<xliff:g id="DATE">%s</xliff:g>?</string>
+    <string name="aurora_period_start_update">将“经期开始”日期修改为<xliff:g id="DATE">%s</xliff:g>?</string>
+    <string name="aurora_period_finish_update">“经期结束”日期为<xliff:g id="DATE">%s</xliff:g>?</string>
+    <string name="aurora_period_title">无预计开始日期</string>
+    <string name="aurora_period_title_2"><xliff:g id="DATE">%s</xliff:g>开始</string>
+    <string name="aurora_period_title_3">预计下次开始日期<xliff:g id="DATE">%s</xliff:g></string>
+    <string name="aurora_period_summary">经期第<xliff:g id="DAYS">%s</xliff:g>天</string>
+    <string name="aurora_period_summary_2">还剩<xliff:g id="DAYS">%s</xliff:g>天</string>
+    <string name="aurora_period_summary_3">推迟<xliff:g id="DAYS">%s</xliff:g>天</string>
+    <string name="aurora_period_start">经期开始</string>
+    <string name="aurora_period_finish">经期结束</string>
+    <string name="aurora_period_yj">月经期</string>
+    <string name="aurora_period_pl">排卵日</string>
+    <string name="aurora_period_sy">受孕期</string>
+    <string name="aurora_period_explanation">名词解释</string>
+    <string name="aurora_period_yjq">月经期：</string>
+    <string name="aurora_period_yjq_ex">即可以指女性一次月经的行径时间，也可指月经的周期。\n</string>
+    <string name="aurora_period_plr">排卵日：</string>
+    <string name="aurora_period_plr_ex">月经正常的情况下，女性排卵期是从下次月经第一天开始算，倒数14天为排卵日。\n</string>
+    <string name="aurora_period_syq">受孕期：</string>
+    <string name="aurora_period_syq_ex">排卵日的前5天和后4天，连同排卵日在内共10天为排卵期，此阶段更容易受孕。\n</string>
+    <string name="aurora_period_yjq_next">下次月经期预测。</string>
+    <string name="aurora_period_notice">备注：大姨妈助手对经期和受孕期预测可能会有不准确，因此不能应用于预防以外怀孕。若要预测排卵期，根据下一周期预计开始时间前14天进行计算。预测的准确性取决于很多因素，包括周期长度的规律性、实际的排卵时间，以及在该日历中记录了多少个周期。</string>
+
+    <!-- event edit -->
+    <string name="aurora_event_edit_name_hint">Event Title</string>
+    <string name="aurora_event_calendar_account">Account</string>
+
+    <string name="aurora_event_edit_open">Open</string>
+    <string name="aurora_event_edit_close">Close</string>
+    <string name="aurora_event_edit_repeat_title">Cycle</string>
+    <string name="aurora_does_not_repeat">Does not repeat</string>
+    <string name="aurora_every_weekday">Every weekday</string>
+    <string name="aurora_event_edit_description_hint">Remark</string>
+    <string name="aurora_event_edit_cancel">Discard</string>
+    <string name="aurora_event_edit_cancel_info">Discard the changes you\&apos;ve made?</string>
+    <string name="aurora_event_edit_save_no_title">Enter a Event title</string>
+
+    <!-- event detail -->
+    <string name="aurora_event_detail_whenfirst">From <xliff:g id="DATES">%s</xliff:g></string>
+    <string name="aurora_weekly">Weekly (<xliff:g id="DAYS_OF_WEEK">%s</xliff:g>)</string>
+    <string name="aurora_monthly_on_day_count">Monthly (the <xliff:g id="ORDINAL_NUMBER">%1$s</xliff:g> <xliff:g id="DAY_OF_WEEK">%2$s</xliff:g>)</string>
+    <string name="aurora_monthly_on_day">Monthly (<xliff:g id="DAY_OF_MONTH">%s</xliff:g>)</string>
+    <string name="aurora_event_detail_title">Event Details</string>
+    <string name="aurora_delete_event_dialog">Delete this Event?</string>
+    <string name="aurora_delete_event_toast">Delete successfully!</string>
+    <string name="aurora_event_detail_separator">|</string>
+    <string name="aurora_event_detail_no_description">(No remark)</string>
+    <string name="aurora_when_start">Start</string>
+    <string name="aurora_when_end">End</string>
+    <string name="aurora_date_format">yyyy.MM.dd</string>
+
+    <!-- calendar setting -->
+    <string name="aurora_menu_setting">Settings</string>
+    <string name="aurora_view_filter">Calendar Display Filter</string>
+    <string name="aurora_period_detail">Detail settings</string>
+    <string name="aurora_account_management">Calendar Account Management</string>
+    <string name="aurora_view_firstday">Starting Day</string>
+    <string name="aurora_note_reminder_switch">Display Memo</string>
+    <string name="aurora_birthday_reminder_switch">Birthday Reminder</string>
+    <string name="aurora_events_reminder">Remind In Advance</string>
+    <string name="aurora_todo_reminder">To-do Reminder Time</string>
+    <string name="aurora_ring_picker">Reminder Ringtone</string>
+    <string name="aurora_default_ring">Default</string>
+
+    <string name="aurora_happy_day">Holiday Plan</string>
+    <string name="aurora_lunar_calendar">Lunar Calendar</string>
+    <string name="aurora_festival_day">Holidays</string>
+    <string name="aurora_work_hard">Event Mark</string>
+
+    <string name="preferences_period_title">大姨妈设置</string>
+    <string name="period_time">5</string>
+    <string name="period_time_title">经期长度</string>
+    <string name="period_cycle">28</string>
+    <string name="period_cycle_title">周期长度</string>
+    <string name="period_prompt">您的月经通常持续几天？</string>
+    <string name="period_cycle_prompt">月经周期以月经第一天为周期的开始，到下次月经来为止。周期的长短因人而异，约为21&#8211;36天不等，默认周期28天。</string>
+
+    <!-- month view -->
+    <string name="aurora_legal_holiday">Holiday</string>
+    <string name="aurora_legal_workday">Workday</string>
+    <string name="aurora_term_qingming">Tomb Sweeping Day</string>
+    <string name="aurora_agenda">Event</string>
+    <string name="aurora_no_agenda">No Event</string>
+    <string name="aurora_create_agenda">Create Event</string>
+    <string name="aurora_birthday_reminder">Birthday Reminder</string>
+    <string name="aurora_birthday_only_one"><xliff:g id="NAME">%s</xliff:g>\&apos;s birthday today</string>
+    <string name="aurora_birthday_have_other">Birthday of <xliff:g id="NAME">%s</xliff:g>, <xliff:g id="NUMBER">%d</xliff:g> in total</string>
+    <string name="aurora_birthday_wish">Click to send a warm blessing</string>
+    <string name="aurora_wish_birthday">Birthday Wishes</string>
+    <string name="aurora_happy_birthday">Happy Birthday</string>
+    <string name="aurora_agenda_reminder_open">Reminder turned on</string>
+    <string name="aurora_agenda_reminder_close">Reminder turned off</string>
+
+    <!-- birthday info -->
+    <string name="aurora_birthday_info">Birthday Details</string>
+    <string name="aurora_birthday_today">on birthday today</string>
+    <string name="aurora_birthday_notice">You have <xliff:g id="NUMBER">%d</xliff:g> friend(s) in total</string>
+    <string name="aurora_birthday_content"><xliff:g id="NUMBER">%d</xliff:g>-year-old birthday</string>
+
+    <!-- select calendars -->
+    <string name="aurora_local_calendar">Local Calendar</string>
+
+    <!-- delete event -->
+    <string name="aurora_delete_recurring_event">Delete this recurring event?</string>
+    <string name="aurora_delete">Delete</string>
+
+    <!-- 生成图片预览界面 -->
+    <string name="note_gen_picture">Share</string>
+    <string name="share_title">Share</string>
+    <string name="save_to_gallery_success">Image successfully saved to the album</string>
+    <string name="save_to_gallery_failed">Failed to save image to the album</string>
+    <string name="sdcard_is_not_available">SD card available</string>
+
+    <!-- 图片预览界面 -->
+    <string name="load_picture_error_io">Failed to load image</string>
+    <string name="load_picture_error_network">Unable to download due to network problem</string>
+    <string name="load_picture_error_decoding">Image cannot be displayed</string>
+    <string name="load_picture_error_out_of_memory">Image is too large to display</string>
+    <string name="load_picture_error_unknow">Unknown error</string>
+
+    <!-- 微信分享反馈信息 -->
+    <string name="errcode_success">Send success</string>
+    <string name="errcode_cancel">Send a cancellation</string>
+    <string name="errcode_deny">Send rejected</string>
+    <string name="errcode_unknown">Send a return</string>
+
+    <!-- 新浪微博分享界面 -->
+    <string name="share_sina_weibo_title">Share to Sina Weibo</string>
+    <string name="share_sina_weibo_right_menu_item">Send</string>
+    <string name="share_sina_weibo_menu_unbind">Unlink Account(%1$s)</string>
+    <string name="share_sina_weibo_hint">Enter text</string>
+    <string name="share_sina_weibo_sending">Posting&#8230;</string>
+    <string name="share_sina_weibo_unbind_success">Account unlinked successfully</string>
+    <string name="share_sina_weibo_unbind_error">Account linking failed, please try again</string>
+    <string name="share_sina_weibo_authorize_invalid_token">Authorization failed, please try again</string>
+    <string name="share_sina_weibo_authorize_cancel">Authorization canceled</string>
+    <string name="share_sina_weibo_no_network">Enable network connection first</string>
+    <string name="share_sina_weibo_authorize_expire">License has expired, please re-authorization</string>
+    <string name="share_sina_weibo_send_success">Microblog sent successfully</string>
+    <string name="share_sina_weibo_send_ongoing">Still posting microblog&#8230;</string>
+    <string name="share_sina_weibo_send_failed">Posting microblog failed, please try again</string>
+    <string name="share_sina_weibo_default_content">Share image</string>
+    <string name="share_sina_weibo_is_sending">Still posting previous microblog, please wait&#8230;</string>
+    <string name="share_sina_weibo_get_user_info">Retrieving user information&#8230;</string>
+    <string name="share_sina_weibo_get_user_info_failed">Failed to retrieve user information</string>
+    <string name="share_sina_weibo_unbind_ongoing">Unlinking account, please wait&#8230;</string>
+    <string name="share_sina_weibo_image_too_large">Image size exceeds the limit, unable to post</string>
+
+    <!-- 共用的出错提示消息 -->
+    <string name="memory_is_not_enough">Image size is too large, please try again</string>
+    <string name="decode_bitmap_error">Failed to load image</string>
+    <string name="prepare_record_error">Recording preparation error, please try again</string>
+
+    <!-- Added on 2015-03-30 begin -->
+    <string name="share_weibo">Weibo</string>
+    <string name="share_weixin_friend">WeChat friends</string>
+    <string name="share_weixin">Moment</string>
+    <string name="share_qq_friend">QQ friends</string>
+    <string name="share_qq_zone">QQ Zone</string>
+    <string name="share_more">More</string>
+    <string name="share_activity_title">Share</string>
+    <!-- Added on 2015-03-30 end -->
+
+    <!-- remember day-->
+    <string name="remember_title">IUNI时光</string>
+    <string name="aurora_remember_past">已经</string>
+    <string name="aurora_remember_future">还有</string>
+    <string name="aurora_remember_choose">全选</string>
+    <string name="aurora_remember_choose_reverse">反选</string>
+    <string name="aurora_remember_delete_message">确定要删除吗？</string>
+    <string name="aurora_remember_delete_cur">你确定要删除该条记录吗？</string>
+    <string name="aurora_comfirm">确定</string>
+    <string name="aurora_cancle">取消</string>
+    <string name="aurora_save">保存</string>
+    <string name="aurora_cancle_save">不保存</string>
+    <string name="aurora_remember_title_hint">纪念日标题</string>
+    <string name="aurora_remember_day">\n天</string>
+    <string name="aurora_remember_empty">" "</string>
+    <string name="aurora_reminder_add">添加提醒</string>
+    <string name="aurora_add_to_schedule">添加到每日日程</string>
+    <string name="delete_reminder">删除提醒</string>
+    <string name="reminder">提示</string>
+    <string name="delete_confirm_message">确定删除纪念日提醒吗？</string>
+    <string name="delete">删除</string>
+    <string name="give_up_confirm_message">要放弃编辑该纪念日吗？</string>
+    <string name="aurora_remember_edit_save_no_title">请输入纪念日标题</string>
+    <string name="empty_reminder">null</string>
+    <string name="aurora_remember_empty_hint">暂无记录</string>
+    <string name="aurora_remember_day_1">天</string>
+    <string name="commemoration_detail">纪念日详情</string>
+    <string name="set_commemoration_picture">自定义背景图</string>
+    <string name="set_bg_prompt">提示</string>
+    <string name="set_bg_general">正在生成背景图...</string>
+
+</resources>

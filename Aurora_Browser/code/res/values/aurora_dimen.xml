@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="aurora_setting_text_size">17sp</dimen>
+    <dimen name="aurora_setting_bar_height">47dp</dimen>
+    <dimen name="aurora_browser_titlebar_height">55dp</dimen>
+    <dimen name="aurora_browser_toolbar_height">47dp</dimen>
+
+    <!--
+     <dimen name="aurora_tab_thumbnail_width">328dp</dimen>
+     <dimen name="aurora_tab_thumbnail_height">640dp</dimen>
+    -->
+
+    <dimen name="aurora_tab_thumbnail_width">328dp</dimen>
+    <dimen name="aurora_tab_thumbnail_height">532dp</dimen>
+
+    <!-- size of the title of the nav tab -->
+    <dimen name="aurora_nav_tab_width">328dp</dimen>
+    <dimen name="aurora_nav_tab_titleheight">43dp</dimen>
+
+    <!-- size of the main window of the nav tab -->
+    <dimen name="aurora_nav_tab_mainwin_height">180dp</dimen>
+
+</resources>

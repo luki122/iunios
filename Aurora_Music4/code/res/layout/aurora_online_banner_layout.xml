@@ -1,0 +1,11 @@
+<com.android.auroramusic.widget.AuroraLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+
+    <ImageView 
+        android:id="@+id/aurora_img"
+        android:layout_width="336dp"
+        android:layout_height="133dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aurora_online_music_defualt"/>
+</com.android.auroramusic.widget.AuroraLinearLayout>

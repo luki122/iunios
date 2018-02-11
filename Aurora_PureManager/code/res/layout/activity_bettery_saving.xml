@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/battery_pic_height"
+        android:background="@color/power_green">
+
+        <LinearLayout
+            android:id="@+id/battery_pic_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/battery_pic_left"
+            android:layout_marginTop="@dimen/battery_pic_top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/battery_icon_width"
+                android:layout_height="@dimen/battery_icon_height"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/battery_bg_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/iunios_pure_manage_doze" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/battery_icon_dynamic"
+                    android:layout_height="@dimen/battery_icon_total_height"
+                    android:layout_alignBottom="@id/battery_bg_icon"
+                    android:layout_marginBottom="@dimen/battery_icon_margin"
+                    android:layout_marginLeft="@dimen/battery_icon_margin"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/battery_usb_hint_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/hint" />
+
+                    <ImageView
+                        android:id="@+id/battery_icon_dynamic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/usb_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/iuni_puremanage_doze_png_usb" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/battery_text_left"
+            android:layout_marginTop="@dimen/battery_text_top"
+            android:layout_toRightOf="@+id/battery_pic_left"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/percent_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_66" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/percent_top"
+                android:layout_toRightOf="@id/percent_tv"
+                android:text="@string/percent_sym"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_20" />
+
+            <TextView
+                android:id="@+id/hint_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/percent_tv"
+                android:layout_marginLeft="@dimen/length_4dp"
+                android:layout_marginTop="@dimen/length_2dp"
+                android:text="@string/can_ongoing"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/battery_usage_item_height"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray_line_power" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/standby_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/battery_usage_item_top1"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/battery_usage_item_text_big" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/standby_time_tv"
+                        android:layout_marginTop="@dimen/battery_usage_item_top2"
+                        android:gravity="center_horizontal"
+                        android:text="@string/standby"
+                        android:textColor="@color/battery_usage_item_text_color_middle"
+                        android:textSize="@dimen/battery_usage_item_text_middle"/>
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_line_power" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dial_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/battery_usage_item_top1"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/battery_usage_item_text_big" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/dial_time_tv"
+                        android:layout_marginTop="@dimen/battery_usage_item_top2"
+                        android:gravity="center_horizontal"
+                        android:text="@string/dial_time"
+                        android:textColor="@color/battery_usage_item_text_color_middle"
+                        android:textSize="@dimen/battery_usage_item_text_middle" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_line_power" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/video_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/battery_usage_item_top1"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/battery_usage_item_text_big" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/video_time_tv"
+                        android:layout_marginTop="@dimen/battery_usage_item_top2"
+                        android:gravity="center_horizontal"
+                        android:text="@string/video"
+                        android:textColor="@color/battery_usage_item_text_color_middle"
+                        android:textSize="@dimen/battery_usage_item_text_middle"/>
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_line_power"
+                        android:textSize="@dimen/battery_usage_item_text_middle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/music_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/battery_usage_item_top1"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/battery_usage_item_text_big" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/music_time_tv"
+                        android:layout_marginTop="@dimen/battery_usage_item_top2"
+                        android:gravity="center_horizontal"
+                        android:text="@string/music"
+                        android:textColor="@color/battery_usage_item_text_color_middle"
+                        android:textSize="@dimen/battery_usage_item_text_middle" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/gray_line_power" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_4dp" />-->
+
+        <RelativeLayout
+            android:id="@+id/mode_switch_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/power_item_big_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/intel_doze_icon"
+                android:layout_width="@dimen/list_icon_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/list_icon_left"
+                android:layout_marginRight="@dimen/list_icon_left"
+                android:src="@drawable/iuni_puremanage_doze_icon_doze" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/power_item_portrait_margin"
+                android:layout_toRightOf="@id/intel_doze_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/itel_save"
+                    android:lines="1"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/intel_save_info"
+                    android:layout_marginTop="@dimen/main_activity_grid_item_text_margin"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Second" />
+            </LinearLayout>
+
+            <aurora.widget.AuroraSwitch
+                android:id="@+id/mode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/height_16"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gray_line_left_margin"
+            android:background="@color/gray_line" />
+
+        <RelativeLayout
+            android:id="@+id/long_stand_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/power_item_big_height"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/long_stand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/list_icon_left"
+                android:layout_marginRight="@dimen/list_icon_right"
+                android:src="@drawable/iuni_puremanage_doze_icon_longlife" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/power_item_portrait_margin"
+                android:layout_toRightOf="@id/long_stand_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/long_lift_standby"
+                    android:lines="1"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Content" />
+
+                <TextView
+                    android:id="@+id/long_stand_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_activity_grid_item_text_margin"
+                    android:gravity="center_vertical"
+                    android:text="@string/long_lift_standby_detail"
+                    style="@com.aurora:style/TextAppearance.Aurora.Material.Second"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gray_line_left_margin"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:id="@+id/consume_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/power_item_middle_height"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/list_icon_left"
+                android:layout_marginRight="@dimen/list_icon_right"
+                android:src="@drawable/iuni_puremanage_doze_icon_ranking" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/consume_rank"
+                android:lines="1"
+                style="@com.aurora:style/TextAppearance.Aurora.Material.Content"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/gray_line_left_margin"
+            android:background="@color/gray_line" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">		
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout	    
+           android:layout_width="fill_parent" android:layout_height="wrap_content"
+           android:paddingLeft="17dp" android:paddingRight="17dp"
+           android:orientation="vertical">		    
+		   <RelativeLayout
+               android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:layout_marginTop="12dp"
+               android:paddingLeft="15dp" 
+               android:paddingTop="10dp" android:paddingBottom="10dp"        
+               android:background="@drawable/item_of_alone_bg">
+		       <LinearLayout
+			        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			        android:layout_centerVertical="true"	        
+			        android:orientation="vertical">
+			        <TextView
+			              android:layout_width="wrap_content" android:layout_height="wrap_content"
+			              android:gravity="left" android:lines="1"
+			              android:textColor="@drawable/prefer_text_title_selector_color"
+			              android:textSize="15sp"
+			              android:text="@string/auto_flow_correction"/>
+			        <TextView
+			              android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			              android:layout_marginTop="2dp"
+			              android:gravity="left" android:lines="1" 
+			              android:textColor="@drawable/prefer_text_sub_selector_color"
+			              android:textSize="11.3sp"
+			              android:text="@string/auto_send_free_SMS_correcting_flow"/>     
+			    </LinearLayout> 
+			    <aurora.widget.AuroraSwitch 
+				    android:id="@+id/flowCorrectionSwitch"
+				    style="@style/aurora_switch"
+				    android:layout_alignParentRight ="true" android:layout_marginRight="15dp"
+					android:layout_centerVertical="true" android:clickable="true"/> 	
+		   </RelativeLayout>
+		   	
+		   <TextView
+		       android:layout_width="wrap_content" android:layout_height="wrap_content"
+		       android:layout_marginTop="18dp"
+		       android:textColor="@color/info_text_color"  android:textSize="@dimen/list_header_text_size"
+		       android:text="@string/sim_card_package"/>	
+		   
+		   <RelativeLayout
+		       android:id="@+id/provinceLayout"
+		       android:layout_marginTop="10dp"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_up">
+  			   <TextView
+				   android:text="@string/province"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>  
+				       
+		       <ImageView android:id="@+id/provinceGoImg" style="@style/item_right_arrow"/> 
+		       
+		       <TextView
+				    android:id="@+id/provinceText"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_centerVertical="true" 
+				    android:layout_toLeftOf="@id/provinceGoImg" android:layout_marginRight="9dp"
+                    android:maxWidth="159dip" android:singleLine="true"
+			        android:textColor="@drawable/prefer_text_sub_selector_gray_color"
+                    android:textSize="@com.aurora:dimen/aurora_preference_summary_text_size"
+                    android:ellipsize="end" android:fadingEdge="horizontal"  />			       
+		   </RelativeLayout>
+		    
+		   <RelativeLayout
+		       android:id="@+id/operatorsLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_middle">
+		       <TextView
+		            android:text="@string/operators"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_centerVertical="true"
+				    style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/>  
+				      
+ 			   <ImageView android:id="@+id/operatorsGoImg" style="@style/item_right_arrow"/> 
+ 			   
+ 			   <TextView
+				    android:id="@+id/operatorsText"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_centerVertical="true" 
+				    android:layout_toLeftOf="@id/operatorsGoImg" android:layout_marginRight="9dp"
+                    android:maxWidth="159dip" android:singleLine="true"
+			        android:textColor="@drawable/prefer_text_sub_selector_gray_color"
+                    android:textSize="@com.aurora:dimen/aurora_preference_summary_text_size"
+                    android:ellipsize="end" android:fadingEdge="horizontal"/>	
+		    </RelativeLayout>
+		   		    
+		    <RelativeLayout
+		       android:id="@+id/brandLayout"
+		       android:layout_width="fill_parent" android:layout_height="@dimen/preferences_item_height"
+		       android:background="@drawable/item_of_bottom">
+  			   <TextView
+				   android:text="@string/package_type"
+				   android:layout_width="wrap_content" android:layout_height="wrap_content"
+				   android:layout_centerVertical="true"
+				   style="@style/text_selector_of_preferences_item" android:paddingLeft="15dp"/> 
+				         
+		       <ImageView android:id="@+id/brandGoImg" style="@style/item_right_arrow"/> 
+		       
+		       <TextView
+				    android:id="@+id/brandText"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_centerVertical="true" 
+				    android:layout_toLeftOf="@id/brandGoImg" android:layout_marginRight="9dp"
+                    android:maxWidth="159dip" android:singleLine="true"
+			        android:textColor="@drawable/prefer_text_sub_selector_gray_color"
+                    android:textSize="@com.aurora:dimen/aurora_preference_summary_text_size"
+                    android:ellipsize="end" android:fadingEdge="horizontal" />
+		   </RelativeLayout>
+		   
+		    <RelativeLayout
+		       android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:id="@+id/AutoCorrectionBtn"
+					android:text="@string/now_auto_correction" 
+					style="@style/preferences_item"
+					android:background="@drawable/item_of_alone"/>    
+		       <ImageView style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		    
+		   <RelativeLayout
+		       android:layout_marginTop="14dp"
+		       android:layout_width="fill_parent" android:layout_height="wrap_content">
+		       <Button
+					android:id="@+id/manualCorrectionBtn"
+					android:text="@string/manual_correction" 
+					style="@style/preferences_item"
+					android:background="@drawable/item_of_alone"/>    
+		       <ImageView style="@style/item_right_arrow"/> 
+		   </RelativeLayout>
+		 		   
+       </LinearLayout> 	
+    </ScrollView>
+</RelativeLayout>

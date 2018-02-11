@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+     xmlns:aurora="http://schemas.android.com/apk/res/com.aurora"
+     aurora:auroratitle="@string/additional_gsm_call_settings">
+
+    <com.android.phone.CLIRListPreference
+        aurora:aurorakey="button_clir_key"
+        aurora:auroratitle="@string/labelCallerId"
+        aurora:aurorapersistent="false"
+        aurora:auroradefaultValue="DEFAULT"
+        aurora:auroraentries="@array/clir_display_values"
+        aurora:auroraentryValues="@array/clir_values"
+        aurora:auroradialogTitle="@string/labelCallerId"
+        aurora:aurorasummary="@string/sum_loading_settings"
+        aurora:auroraenabled="false"/>
+
+    <com.android.phone.CallWaitingCheckBoxPreference
+        aurora:aurorakey="button_cw_key"
+        aurora:auroratitle="@string/labelCW"
+        aurora:aurorapersistent="false"
+        aurora:aurorasummaryOn="@string/sum_cw_enabled"
+        aurora:aurorasummaryOff="@string/sum_cw_disabled"
+        aurora:auroraenabled="false"/>
+</AuroraPreferenceScreen>

@@ -1,0 +1,130 @@
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:splitMotionEvents="false" > -->
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:splitMotionEvents="false" >
+
+        <com.android.auroramusic.widget.AuroraMusicImageView
+            android:id="@+id/aurora_recommend_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_recommend_toplayout_height"
+            android:layout_marginBottom="@dimen/aurora_my_music_page_zoom_size"
+            android:layout_marginTop="@dimen/aurora_my_music_page_zoom_size"
+            android:background="@drawable/aurora_img_recommend_bg"
+            android:scaleType="centerCrop" />
+
+        <com.android.auroramusic.widget.AuroraMusicImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_recommend_toplayout_height"
+            android:layout_marginBottom="@dimen/aurora_my_music_page_zoom_size"
+            android:layout_marginTop="@dimen/aurora_my_music_page_zoom_size"
+            android:background="@drawable/aurora_recomlsit_bottom_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/aurora_netplaylist_bottombg"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/aurora_splite_line" />
+
+            <LinearLayout
+                android:id="@+id/aurora_headbar_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/aurora_playmode_height"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/aurora_id_collection_song_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aurora_recommend_bg"
+                    android:clickable="true" >
+
+                    <Button
+                        android:id="@+id/aurora_id_collection_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/aurora_recommend_collection_btn"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="@string/aurora_collect_playlist2"
+                        android:textColor="@color/aurora_nettrackbtn_text"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/aurora_vertical_line2" />
+
+                <FrameLayout
+                    android:id="@+id/aurora_id_download_song_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aurora_recommend_bg"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/aurora_id_download_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/aurora_recommend_download_btn"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="@string/aurora_all_download"
+                        android:textColor="@color/aurora_nettrackbtn_text"
+                        android:textSize="14sp" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/aurora_vertical_line2" />
+
+                <FrameLayout
+                    android:id="@+id/aurora_id_share_single_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/aurora_recommend_bg"
+                    android:clickable="true" >
+
+                    <Button
+                        android:id="@+id/aurora_id_share_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/aurora_recommend_decription_btn"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="@string/aurora_decription"
+                        android:textColor="@color/aurora_nettrackbtn_text"
+                        android:textSize="14sp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+<!-- </LinearLayout> -->

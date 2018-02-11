@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.contacts.calllog.GnCallLogListItemViewV2 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/primary_action_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/listChoiceBackgroundIndicator"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/gn_list_item_min_height" >
+
+    <include
+        android:id="@+id/quick_contact_photo_container" 
+        layout="@layout/gn_quick_contact_photo_container"/>
+
+    <include
+        android:id="@+id/gn_secondary_action_container"
+        layout="@layout/gn_secondary_action" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/quick_contact_photo_container"
+        android:layout_toLeftOf="@id/gn_secondary_action_container"
+        android:layout_toRightOf="@id/quick_contact_photo_container"
+        android:orientation="horizontal" >
+
+        <com.android.contacts.widget.GnTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?attr/gn_super_call_log_primary_text_color" />
+
+        <com.android.contacts.widget.GnTextView
+            android:id="@+id/call_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gn_margin_left_between_views"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?attr/gn_super_call_log_primary_text_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/call_type"
+        android:layout_width="@dimen/gn_call_log_type_icon_size_v3"
+        android:layout_height="@dimen/gn_call_log_type_icon_size_v3"
+        android:layout_alignBottom="@id/quick_contact_photo_container"
+        android:layout_toRightOf="@id/quick_contact_photo_container"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/call_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/quick_contact_photo_container"
+        android:layout_toLeftOf="@id/gn_secondary_action_container"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?attr/gn_super_call_log_secondary_text_color" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/quick_contact_photo_container"
+        android:layout_toLeftOf="@id/call_date"
+        android:layout_toRightOf="@id/call_type"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?attr/gn_super_call_log_secondary_text_color"
+        android:textSize="@dimen/gn_call_log_number_textsize_v3"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/quick_contact_photo_container"
+        android:layout_toLeftOf="@id/call_date"
+        android:layout_toRightOf="@id/call_type"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?attr/gn_super_call_log_secondary_text_color" />
+
+</com.android.contacts.calllog.GnCallLogListItemViewV2>

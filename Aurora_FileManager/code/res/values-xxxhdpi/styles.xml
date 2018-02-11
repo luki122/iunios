@@ -1,0 +1,64 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="LeftGnCategoryStyle">
+        <item name="android:layout_width">163.3dp</item>
+        <item name="android:layout_height">96.6dp</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="LightCategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_text_color</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">27dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+    </style>
+
+    <style name="NumberLightCategoryButtonTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/category_text_color</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="RightGnCategoryStyle">
+        <item name="android:layout_width">163.3dp</item>
+        <item name="android:layout_height">96.6dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="singlepie_rele">
+        <item name="android:layout_marginTop">17dp</item>
+    </style>
+
+    <style name="strong_free">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+   
+
+    <style name="storageDetail">
+        <item name="android:layout_marginTop">@dimen/storagedetail_linear</item>
+        <item name="android:layout_marginLeft">33dp</item>
+    </style>
+
+    <style name="AuroraStorageCenterTextStyle_free" parent="AuroraStorageCenterTextStyle">
+        <item name="android:layout_marginLeft">13dp</item>
+    </style>
+    <style name="hs_text">
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="hs_l">
+        <item name="android:layout_height">@dimen/list_top_navigation_scroll_pane</item>
+    </style>
+
+</resources>

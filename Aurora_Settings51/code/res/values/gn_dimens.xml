@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="gn_action_bar_tab_textsize">14sp</dimen>
+    <dimen name="gn_font_size_padding">15dp</dimen>
+    <!--Gionee xiongjiaxin 2012-8-29 modified for CR00681080 start -->
+    <dimen name="icon_width">32dip</dimen>
+    <dimen name="icon_height">32dip</dimen>
+    <!--Gionee xiongjiaxin 2012-8-29 modified for CR00681080 end -->
+
+    <!-- Gionee:zhang_xin 2013-01-16 add for CR00746738 start -->
+    <dimen name="gn_preference_fragment_padding_side">8dip</dimen>
+    <!-- Gionee:zhang_xin 2013-01-16 add for CR00746738 end -->
+    
+    <!-- Gionee chenml 2013-05-21 modify for CR00808680  begin -->
+    <dimen name="battery_history_textsize">22px</dimen>
+    <!-- Gionee chenml 2013-05-21 modify for CR00808680  end-->
+
+    <!-- Aurora <likai> add begin -->
+    <dimen name="list_separator_height">14dip</dimen>
+    <!-- Aurora <likai> add end -->
+
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.dimen begin -->
+    <dimen name="preference_fragment_padding_bottom">0dp</dimen>
+    <dimen name="preference_fragment_padding_side">16dp</dimen>
+    <!-- Aurora <likai> <2013-10-31> com.android.internal.R.dimen end -->
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2014-07-18 created for bug #6626 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <aurora.widget.AuroraListView
+        android:id="@+id/reject_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="16dip"
+        android:scrollbars="vertical" />
+    <LinearLayout
+        android:id="@+id/aurora_conversation_reject_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:id="@+id/aurora_reject_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_conversations"
+            android:gravity="center_horizontal"
+            style="@com.aurora:style/AuroraPromptTextViewStyle"
+            />
+    </LinearLayout>
+</FrameLayout>

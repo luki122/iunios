@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/album_background" >
+
+    <aurora.widget.AuroraTextView
+        android:id="@+id/pop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:paddingLeft="17dp"
+        android:textColor="@color/aurora_cloud_pop_title_color"
+        android:textSize="16sp" />
+
+    <aurora.widget.AuroraListView
+        android:id="@+id/pop_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pop_title"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+
+    <LinearLayout
+        android:id="@+id/pop_temp_linear"
+        android:layout_width="match_parent"
+        android:layout_height="59.3dp"
+        android:layout_below="@+id/pop_listView"
+        android:layout_marginLeft="69.6dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/pop_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:button="@drawable/aurora_cloud_pop_checkbox" />
+
+        <aurora.widget.AuroraTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/aurora_checkbox_string" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pop_cancel"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/pop_temp_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/aurora_cloud_pop_btn"
+        android:text="@string/cancel"
+        android:textColor="@color/aurora_cloud_pop_btn_press_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

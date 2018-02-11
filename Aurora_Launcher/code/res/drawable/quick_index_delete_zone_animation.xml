@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!--   
+    根标签为animation-list，其中oneshot代表着是否只展示一遍，设置为false会不停的循环播放动画  
+    根标签下，通过item标签对动画中的每一个图片进行声明  
+    android:duration 表示展示所用的该图片的时间长度  
+ -->  
+<animation-list  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:oneshot="true"  
+  >  
+     <item android:drawable="@drawable/quick_delete_00" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_01" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_02" android:duration="10"></item>
+   <!--  <item android:drawable="@drawable/quick_delete_03" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_04" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_05" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_06" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_07" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_08" android:duration="10"></item>
+   <!--  <item android:drawable="@drawable/quick_delete_09" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_10" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_11" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_12" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_13" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_14" android:duration="10"></item>
+    <!-- <item android:drawable="@drawable/quick_delete_15" android:duration="10"></item> -->
+    <item android:drawable="@drawable/quick_delete_16" android:duration="10"></item>
+</animation-list>  

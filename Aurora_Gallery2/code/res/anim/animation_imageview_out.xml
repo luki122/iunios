@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+<!-- 
+    <item
+        android:drawable="@drawable/aurora_check14"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check13"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check12"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check11"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check10"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check09"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check08"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check07"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check06"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check05"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check04"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check03"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check02"
+        android:duration="20"/>
+    <item
+        android:drawable="@drawable/aurora_check01"
+        android:duration="20"/>
+         -->
+    <item
+        android:drawable="@drawable/aurora_check00"
+        android:duration="20"/>
+
+</animation-list>

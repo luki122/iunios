@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aurora xuyong 2013-09-13 created for aurora's new feature -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+        android:state_pressed="false"
+        android:drawable="@drawable/aurora_insert_attach" />
+   <item
+        android:state_pressed="true"
+        android:drawable="@drawable/aurora_insert_attach" />
+</selector>

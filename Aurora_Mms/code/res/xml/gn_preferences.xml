@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--gionee gaoj 2012-3-29 added for CR00555790 start
+/*
+ */
+-->
+<!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora">
+<!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_sms_storage_title"
+                      aurora:aurorakey="pref_key_storage_settings">
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_storage_status"
+                      aurora:aurorapersistent="false"
+                      aurora:aurorasummary="@string/pref_title_storage_status"
+                      aurora:auroratitle="@string/pref_title_storage_status" />
+     <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_auto_delete"
+                      aurora:aurorasummary="@string/pref_summary_auto_delete"
+                      aurora:auroratitle="@string/pref_title_auto_delete" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_sms_delete_limit"
+                      aurora:auroradependency="pref_key_auto_delete"
+                      aurora:aurorapersistent="false"
+                      aurora:aurorasummary="@string/pref_summary_delete_limit"
+                      aurora:auroratitle="@string/pref_title_sms_delete" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_mms_delete_limit"
+                      aurora:auroradependency="pref_key_auto_delete"
+                      aurora:aurorapersistent="false"
+                      aurora:aurorasummary="@string/pref_summary_delete_limit"
+                      aurora:auroratitle="@string/pref_title_mms_delete" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_sms_settings_title"
+                      aurora:aurorakey="pref_key_sms_settings" >
+    <aurora.preference.AuroraSwitchPreference
+                      aurora:aurorakey="pref_key_sms_delivery_reports"
+                      aurora:aurorasummary="@string/pref_summary_sms_delivery_reports"
+                      aurora:auroratitle="@string/gn_pref_title_sms_delivery_reports" />
+    <!-- Aurora liugj 2013-09-13 added for aurora's new feature start -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_sms_service_center"
+                      aurora:aurorasummary="@string/sms_service_center"
+                      aurora:auroratitle="@string/sms_service_center" />
+    <!-- Aurora liugj 2013-09-13 added for aurora's new feature end -->
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_manage_sim_messages"
+                      aurora:aurorasummary="@string/pref_summary_manage_sim_messages"
+                      aurora:auroratitle="@string/pref_title_manage_sim_messages" />
+    <!-- Aurora liugj 2013-09-13 deleted for aurora's new feature start -->
+    <!-- <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_sms_service_center"
+                      aurora:aurorasummary="@string/sms_service_center"
+                      aurora:auroratitle="@string/sms_service_center" /> -->
+    <!-- Aurora liugj 2013-09-13 deleted for aurora's new feature end -->
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="pref_key_sms_save_location"
+            aurora:auroratitle="@string/sms_save_location"
+            aurora:auroradefaultValue="Phone"
+            aurora:auroraentries="@array/pref_sms_save_location_choices"
+            aurora:auroraentryValues="@array/pref_sms_save_location_values"
+            aurora:auroradialogTitle="@string/sms_save_location" 
+            aurora:aurorasummary="@string/sms_save_location"/>
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="pref_key_sms_input_mode"
+            aurora:auroratitle="@string/sms_input_mode_title"
+            aurora:auroradefaultValue="Automatic"
+            aurora:auroraentries="@array/pref_sms_input_mode_choice"
+            aurora:auroraentryValues="@array/pref_sms_input_mode_values"
+            aurora:auroradialogTitle="@string/sms_input_mode_dialog_title" 
+            aurora:aurorasummary="@string/sms_input_mode_summary"/>
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_forward_with_sender"
+                      aurora:aurorasummary="@string/sms_forward_setting_summary"
+                      aurora:auroratitle="@string/sms_forward_setting" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_mms_settings_title"
+                      aurora:aurorakey="pref_key_mms_settings">
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_mms_delivery_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_delivery_reports"
+                      aurora:auroratitle="@string/gn_pref_title_mms_delivery_reports" />
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_mms_enable_to_send_delivery_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_enable_to_send_delivery_reports"
+                      aurora:auroratitle="@string/pref_title_mms_enable_to_send_delivery_reports" />
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_mms_read_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_read_reports"
+                      aurora:auroratitle="@string/gn_pref_title_mms_read_reports" />
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_mms_auto_reply_read_reports"
+                      aurora:aurorasummary="@string/pref_summary_mms_auto_reply_read_reports"
+                      aurora:auroratitle="@string/pref_title_mms_auto_reply_read_reports"/>
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature start -->
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_mms_auto_retrieval"
+                      aurora:auroratitle="@string/pref_title_mms_auto_retrieval"
+                      aurora:aurorasummary="@string/pref_summary_mms_auto_retrieval" />
+    <!-- Aurora liugj 2013-09-13 modified for aurora's new feature end -->
+    <aurora.preference.AuroraSwitchPreference android:layout="?android:attr/preferenceLayoutChild"
+                        aurora:auroradependency="pref_key_mms_auto_retrieval"
+                        aurora:auroradefaultValue="false"
+                        aurora:aurorakey="pref_key_mms_retrieval_during_roaming"
+                        aurora:auroratitle="@string/pref_title_mms_retrieval_during_roaming"
+                        aurora:aurorasummary="@string/pref_summary_mms_retrieval_during_roaming" />
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="pref_key_mms_creation_mode"
+            aurora:auroratitle="@string/pref_title_mms_creation_mode"
+            aurora:auroradefaultValue="FREE"
+            aurora:auroraentries="@array/pref_mms_creation_mode_choices"
+            aurora:auroraentryValues="@array/pref_mms_creation_mode_values"
+            aurora:auroradialogTitle="@string/pref_title_mms_creation_mode" 
+            aurora:aurorasummary="@string/pref_summary_mms_creation_mode"/>
+   <aurora.preference.AuroraListPreference
+            aurora:aurorakey="pref_key_mms_size_limit"
+            aurora:auroratitle="@string/pref_title_mms_size_limit"
+            aurora:auroradialogTitle="@string/pref_title_mms_size_limit"
+            aurora:aurorasummary="@string/pref_summary_mms_size_limit"
+            aurora:auroradefaultValue="300"
+            aurora:auroraentries="@array/pref_mms_size_limit_choices"
+            aurora:auroraentryValues="@array/pref_mms_size_limit_values"/>
+    <aurora.preference.AuroraListPreference
+            aurora:aurorakey="pref_key_mms_priority"
+            aurora:auroratitle="@string/mms_priority_label"
+            aurora:auroradialogTitle="@string/mms_priority_label"
+            aurora:aurorasummary="@string/mms_priority_label"
+            aurora:auroradefaultValue="Normal"
+            aurora:auroraentries="@array/pref_key_mms_priority_choices"
+            aurora:auroraentryValues="@array/pref_key_mms_priority_values"/>
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/sms_service_center"
+             aurora:aurorakey="pref_aurora_key_sms_service_center">
+       <com.aurora.mms.ui.AuroraSmsCenterPreference aurora:aurorakey="pref_key_sms_center_sim1"/>
+       <com.aurora.mms.ui.AuroraSmsCenterPreference aurora:aurorakey="pref_key_sms_center_sim2"/>
+       <aurora.preference.AuroraPreference 
+                      aurora:aurorasummary="@string/aurora_sms_center_summary" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_notification_settings_title"
+        aurora:aurorakey="pref_key_notification_settings">
+    <aurora.preference.AuroraSwitchPreference aurora:aurorakey="pref_key_enable_notifications"
+                        aurora:auroratitle="@string/pref_title_notification_enabled"
+                        aurora:aurorasummary="@string/pref_summary_notification_enabled"
+                        aurora:auroradefaultValue="true" />
+    <!-- Gionee zengxuanhui 20120802 modify for CR00659107 begin -->
+    <com.gionee.mms.ui.MmsRingtonePreference
+                        aurora:auroradependency="pref_key_enable_notifications"
+                        aurora:aurorakey="pref_key_ringtone"
+                        aurora:auroratitle="@string/pref_title_notification_ringtone"
+                        aurora:auroraringtoneType="notification"
+                        aurora:aurorapersistent="false"/>
+    <!-- Gionee zengxuanhui 20120802 modify for CR00659107 end -->
+    <aurora.preference.AuroraSwitchPreference aurora:aurorakey="pref_key_enable_pop_notifications"
+                        aurora:auroratitle="@string/gn_mms_pop_setting_title"
+                        aurora:aurorasummary="@string/gn_mms_pop_setting_summary"
+                        aurora:auroradefaultValue="false" />
+  </aurora.preference.AuroraPreferenceCategory>
+
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_security_settings_title"
+                      aurora:aurorakey="pref_key_enable_encryption">
+  <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_mms_encryption_setting"
+                      aurora:auroratitle="@string/pref_title_mms_encryption_setting"
+                      aurora:aurorasummary="@string/pref_summary_mms_encryption_setting" />
+  </aurora.preference.AuroraPreferenceCategory>
+  <!-- 
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/cell_broadcast_title">
+     <aurora.preference.AuroraPreference
+        aurora:aurorakey="pref_key_cell_broadcast"
+        aurora:auroratitle="@string/cell_broadcast"
+        aurora:aurorasummary="@string/cell_broadcast_settings"
+        aurora:aurorapersistent="false">
+    </Preference>
+  </aurora.preference.AuroraPreferenceCategory> -->
+  
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/pref_title_wappush_settings"
+                      aurora:aurorakey="pref_key_wappush_settings" >
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="true"
+                      aurora:aurorakey="pref_key_wappush_enable"
+                      aurora:aurorasummary="@string/pref_summary_wappush_enable"
+                      aurora:auroratitle="@string/pref_title_wappush_enable" />            
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_wappush_sl_autoloading"
+                      aurora:auroradependency="pref_key_wappush_enable"
+                      aurora:aurorasummary="@string/pref_summary_wappush_sl_autoloading"
+                      aurora:auroratitle="@string/pref_title_wappush_sl_autoloading" />
+  </aurora.preference.AuroraPreferenceCategory>
+
+    <!-- Gionee <zhouyj> <2013-05-09> add for CR00810588 begin -->
+    <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/gn_pref_title_voice_setting"
+        aurora:aurorakey="pref_key_voice_setting" >
+        <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_voice_read"
+            aurora:auroratitle="@string/gn_pref_title_voice_read"
+            aurora:aurorasummary="@string/gn_pref_title_voice_read_detail" />
+        
+        <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+            aurora:aurorakey="pref_key_voice_input"
+            aurora:auroratitle="@string/gn_pref_title_voice_input"
+            aurora:aurorasummary="@string/gn_pref_title_voice_input_detail" />
+    </aurora.preference.AuroraPreferenceCategory>
+    <!-- Gionee <zhouyj> <2013-05-09> add for CR00810588 end -->
+    
+  <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/gn_pref_title_other"
+                      aurora:aurorakey="pref_key_others" >
+    <aurora.preference.AuroraSwitchPreference aurora:auroradefaultValue="false"
+                      aurora:aurorakey="pref_key_accessories_signature"
+                      aurora:aurorasummary="@string/gn_pref_summary_accessories_signature"
+                      aurora:auroratitle="@string/gn_pref_title_accessories_signature" />
+    <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_edit_signature"
+                      aurora:auroradependency="pref_key_accessories_signature"
+                      aurora:aurorasummary="@string/gn_pref_summary_edit_accessories_signature"
+                      aurora:auroratitle="@string/gn_pref_title_edit_accessories_signature" />
+  </aurora.preference.AuroraPreferenceCategory>
+  
+  <!--gionee gaoj 2013-2-19 adde for CR00771935 start  -->
+  <aurora.preference.AuroraPreferenceCategory
+        aurora:aurorakey="gn_key_photo_style_options"
+        aurora:auroratitle="@string/gn_preference_displayOptions">
+        <aurora.preference.AuroraListPreference
+            aurora:aurorakey="photoStyle"
+            aurora:auroratitle="@string/gn_photo_style_options"
+            aurora:auroraentries="@array/gn_entries_list_photo_options"
+            aurora:auroraentryValues="@array/gn_entryvalues_list_photo_options"
+            aurora:auroradialogTitle="@string/gn_photo_style_options"
+            aurora:auroradefaultValue="@string/gn_photo_style_options_default_value" />
+    </aurora.preference.AuroraPreferenceCategory>
+  <!--gionee gaoj 2013-2-19 adde for CR00771935 end  -->
+  
+    <!-- Gionee fangbin 20120223 addded for CR00527995 start -->
+    <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/gn_phone_msg_count"
+            aurora:aurorakey="gn_phone_msg_stats">
+        <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_msg_unread"
+            aurora:auroratitle="@string/gn_unread_msg_count"/>
+        <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_session_count"
+            aurora:auroratitle="@string/gn_session_count"/>
+        <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_msg_total_count"
+            aurora:auroratitle="@string/gn_totle_msg_count"/>
+    </aurora.preference.AuroraPreferenceCategory>
+    <!-- Gionee fangbin 20120223 addded for CR00527995 end -->
+    <aurora.preference.AuroraPreferenceCategory aurora:auroratitle="@string/restore_default"
+            aurora:aurorakey="gn_restore_default">
+        <aurora.preference.AuroraPreference aurora:aurorakey="pref_key_restore_default"
+            aurora:auroratitle="@string/restore_default"/>
+    </aurora.preference.AuroraPreferenceCategory>
+</aurora.preference.AuroraPreferenceScreen>
+

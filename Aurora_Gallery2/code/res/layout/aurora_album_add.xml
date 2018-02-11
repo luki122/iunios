@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/aurora_album_add_liner"
+    android:gravity="center" >
+
+    <ImageButton
+        android:id="@+id/aurora_album_add"
+        android:layout_width="wrap_content"
+        android:layout_height="@com.aurora:dimen/aurora_action_bar_height"
+        android:layout_gravity="center_vertical"
+        android:background="@com.aurora:drawable/aurora_action_bar_widget_right_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+        android:paddingRight="@com.aurora:dimen/aurora_action_bar_title_margin_left"
+        android:scaleType="center"
+        android:src="@com.aurora:drawable/aurora_action_bar_add" />
+
+</LinearLayout>

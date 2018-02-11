@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.incallui"
+    xmlns:prvandroid="http://schemas.android.com/apk/prv/res/android"
+    android:id="@+id/inCallTouchUi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/incalltouchui_padding_bottom" >
+
+
+    <com.android.incallui.SlideView2
+        android:id="@+id/incomingCallWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/slideview_padding_bottom"
+        android:splitMotionEvents="false"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/incomingcall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/huadongjie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/incomingcall_margin_bottom" >
+
+                <com.android.incallui.SlideTextView
+                    android:id="@+id/huadongjieting"
+                    android:layout_width="@dimen/aurora_sliderview_width"
+                    android:layout_height="@dimen/aurora_sliderview_height"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/text_fuhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dip"
+                    android:layout_toRightOf="@id/huadongjieting"
+                    android:background="@drawable/right_arrow2" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/huadongjie"
+                android:layout_centerHorizontal="true"
+                android:text="@string/huadongjujie"
+                android:textColor="#80FFFFFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </com.android.incallui.SlideView2>
+      
+      <com.android.incallui.GlowPadView
+        android:id="@+id/OriginIncomingCallWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/aurora_glowview_margin_bottom"
+        android:layout_marginTop="0dip"
+        android:gravity="top"
+        android:visibility="gone"
+        prvandroid:directionDescriptions="@array/incoming_call_widget_2way_direction_descriptions"
+        prvandroid:feedbackCount="1"
+        prvandroid:firstItemOffset="0"
+        prvandroid:glowRadius="@dimen/aurora_glowpadview_glow_radius"
+        prvandroid:handleDrawable="@drawable/aurora_ic_in_call_touch_handle_normal"
+        prvandroid:innerRadius="@dimen/aurora_glowpadview_inner_radius"
+        prvandroid:outerRadius="@dimen/aurora_glowpadview_target_placement_radius"
+        prvandroid:outerRingDrawable="@drawable/ic_lockscreen_outerring"
+        prvandroid:pointDrawable="@drawable/aurora_incoming_touch"
+        prvandroid:snapMargin="@dimen/aurora_glowpadview_snap_margin"
+        prvandroid:targetDescriptions="@array/incoming_call_widget_2way_target_descriptions"
+        prvandroid:targetDrawables="@array/aurora_incoming_call_widget_2way_targets"
+        prvandroid:vibrationDuration="20" /> 
+
+    <TextView
+        android:id="@+id/slidedowntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/aurora_slidedowntext_margin_bottom"
+        android:text="@string/slide_down_answer"
+        android:textColor="#cbdedf"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/smsrespond_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/smsrespond1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_2"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_canned_response_3"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/smsrespond4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/aurora_sms_reject_item_bg"
+            android:gravity="center_vertical|center_horizontal"
+            android:maxLines="1"
+            android:text="@string/respond_via_sms_custom_message"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/call_waiting_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/call_waiting_margin_bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_hold"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_hide_keypad"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hold_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/answer_callwaiting_hold"
+                android:layout_alignRight="@id/answer_callwaiting_hold"
+                android:layout_alignTop="@id/answer_callwaiting_hold"
+                android:layout_marginTop="6.8dp"
+                android:gravity="center"
+                android:text="@string/description_target_answer"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hold_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/answer_callwaiting_hold"
+                android:layout_alignLeft="@id/answer_callwaiting_hold"
+                android:layout_alignRight="@id/answer_callwaiting_hold"
+                android:layout_marginBottom="3.4dp"
+                android:gravity="center"
+                android:text="@string/aurora_answer_call_waiting_hold"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_hangup"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_hide_keypad"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hangup_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/answer_callwaiting_hangup"
+                android:layout_alignRight="@id/answer_callwaiting_hangup"
+                android:layout_alignTop="@id/answer_callwaiting_hangup"
+                android:layout_marginTop="6.8dp"
+                android:gravity="center"
+                android:text="@string/description_target_answer"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_hangup_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/answer_callwaiting_hangup"
+                android:layout_alignLeft="@id/answer_callwaiting_hangup"
+                android:layout_alignRight="@id/answer_callwaiting_hangup"
+                android:layout_marginBottom="3.4dp"
+                android:gravity="center"
+                android:text="@string/aurora_answer_call_waiting_hangup"
+                android:textColor="@color/aurora_dialpad_bg"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp" >
+
+            <ImageView
+                android:id="@+id/answer_callwaiting_end"
+                android:layout_width="282dip"
+                android:layout_height="@dimen/end_view_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/aurora_end_call"
+                android:contentDescription="@string/description_target_answer" />
+
+            <TextView
+                android:id="@+id/answer_callwaiting_end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/aurora_end_call_waiting"
+                android:textColor="@color/aurora_dialpad_text_color"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

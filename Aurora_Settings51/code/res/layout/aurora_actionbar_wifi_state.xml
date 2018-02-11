@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <!-- Aurora penggangding 2014-08-15 begin-->
+     <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="12dp"
+        android:textSize="@com.aurora:dimen/aurora_action_bar_text_size" />
+     <!-- Aurora penggangding 2014-08-15 end-->
+</LinearLayout>

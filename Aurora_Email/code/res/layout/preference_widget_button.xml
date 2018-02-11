@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	   <RelativeLayout
+	   		 xmlns:android="http://schemas.android.com/apk/res/android"
+	   		 android:id="@+id/deleteAccountLayout"
+	       android:layout_width="fill_parent" 
+	       android:layout_height="wrap_content">
+
+	      <Button
+				android:id="@+id/deleteAccount"
+				android:layout_marginTop="28dp"
+				android:text="@string/aurora_account_settings_delete" 
+				android:layout_width="fill_parent"
+				android:layout_height="47dp"
+				android:textSize="18sp"
+        android:textColor="#ff4444"/>    
+	   </RelativeLayout>

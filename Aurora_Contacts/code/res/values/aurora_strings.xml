@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="aurora_group_title">My Group</string>
+    <string name="visiting_card_title">My Visiting Card</string>
+    <string name="aurora_starred_contacts_header">Starred contacts</string>
+    <string name="contacts_count">102 Contacts</string>
+    <string name="myself_title">Myself</string>
+    <string name="aurora_menu_import">Import</string>
+    <string name="aurora_menu_import_contacts">Import contacts</string>
+    <string name="aurora_menu_export">Export contacts</string>
+    <string name="aurora_menu_sync">Sync</string>
+    <string name="aurora_searchview_hint">Search contacts</string>
+<string name="aurora_editor_group_info">Edit group Info</string>
+    <string name="aurora_group_no_group">Ungrouped</string>
+    <string name="aurora_group_family">Family</string>
+    <string name="aurora_group_friend">Friend</string>
+    <string name="aurora_group_classmate">Classmate</string>
+    <string name="aurora_group_colleague">Colleague</string>
+    <string name="aurora_group_attribution">Location</string>
+    <string name="aurora_group_company">Company</string>
+    <string name="aurora_group_recently_added">Recently added</string>
+    <string name="aurora_left_kuohao">(</string>
+    <string name="aurora_right_kuohao">)</string>
+
+    <string name="aurora_edit_group_name_title">Name</string>
+    <string name="aurora_edit_group_name_hint">Enter the name</string>
+    <string name="aurora_edit_group_ring_title">Ringtone</string>
+    <string name="aurora_edit_group_ring_hint">Default</string>
+    <string name="aurora_group_detail_send_mms">Bulk SMS</string>
+    <string name="aurora_group_detail_add_member">Add member</string>
+
+    <string name="aurora_add_star">Starred</string>
+    <string name="aurora_remove_star">Unstarred</string>
+    
+    <string name="aurora_address_hint">Address</string><!-- 电话号类型 --><string name="telType_Moblie">Mobile</string>
+    <string name="telType_Home">Home</string>
+    <string name="telType_Work">Office</string>
+    <string name="telType_Fax">Office Fax</string>
+    <string name="telType_Main">Telephone</string>
+    <string name="telType_FaxHome">Home Fax</string>
+    <string name="telType_Pager">Pager</string>
+
+    <string name="telType_custom">Custom</string>
+    <string name="othertype">Other</string><!--IM--><string name="imType_Aim">AIM</string>
+    <string name="imType_Yahoo">Yahoo</string>
+    <string name="imType_Skype">Skype</string>
+    <string name="imType_Qq">QQ</string>
+    <string name="imType_GooleTalk">Google Talk</string>
+    <string name="imType_Icq">ICQ</string>
+    <string name="imType_Jabber">Jabber</string>
+    <string name="imType_Msn">MSN</string><!--关系--><string name="relation_assitant">Assistant</string>
+    <string name="relation_brother">Brothers</string>
+    <string name="relation_child">Children</string>
+    <string name="relation_dom_partner">Roommate</string>
+    <string name="relation_father">Father</string>
+    <string name="relation_mother">Mother</string>
+    <string name="relation_friend">Friends</string>
+    <string name="relation_manager">Manager</string>
+    <string name="relation_parent">Parents</string>
+    <string name="relation_partner">Partners</string>
+    <string name="relation_referred">Referrals</string>
+    <string name="relation_relative">Relatives</string>
+    <string name="relation_sistert">Sisters</string>
+    <string name="relation_spouse">Spouse</string>
+
+    <!-- 邮箱地址类型 -->
+    <string name="emailType_Work">Work</string>
+    <string name="emailType_Private">Home</string>
+
+    <!-- 地址类型 -->
+    <string name="addressType_Company">Work</string>
+    <string name="addressType_Home">Home</string>
+    
+    <string name="add_fields_more">Add more information</string>
+    
+    <string name="aurora_phone_hint_text">Enter the number</string>
+    <string name="aurora_email_hint_text">Enter the email address</string>
+    <string name="aurora_address_hint_text">Enter the address</string>
+    <string name="aurora_company_hint_text">Enter the company name</string>
+    <string name="aurora_position_hint_text">Enter the title</string>
+    <string name="aurora_note_hint_text">Enter remarks</string>
+    <string name="aurora_group_create">Add Group</string>
+
+    <!-- contact detail -->
+    <string name="aurora_menu_edit">Edit</string>
+    <string name="aurora_menu_delete">Delete</string>
+    <string name="aurora_menu_share_contact">Send this business card</string>
+
+    <!-- call log -->
+    <string name="aurora_recentCallsLabel">&quot;Recents&quot;</string>
+
+    <!-- call detail -->
+    <string name="aurora_unknow_source_calllog">From Mars</string>
+    <string name="aurora_menu_delete_calllog">Delete call records</string>
+    <string name="aurora_menu_add_exist_contact">Add to existing contact</string>
+
+    <!-- contact import export -->
+    <string name="aurora_import_export">Import/Export</string>
+    <string name="aurora_import_title">Import</string>
+    <string name="aurora_export_title">Export</string>
+
+    <string name="aurora_menu_sim_contacts">Contacts on SIM card</string>
+    <string name="aurora_menu_sim1_contacts">Contacts on SIM card 1</string>
+    <string name="aurora_menu_sim2_contacts">Contacts on SIM card 2</string>
+    <string name="aurora_loading_sim_contacts_title">&quot;Reading contacts on SIM card&quot;</string>
+    <string name="aurora_empty_contact_text">No Contact</string>
+
+    <string name="aurora_sd_not_ready">Internal Storage Unavailable!</string>
+    <string name="aurora_sd_is_full">Internal storage is full!</string>
+    <string name="aurora_sim_not_ready_tip">No SIM card was detected</string>
+    
+    <string name="aurora_import_sim_title">Import from SIM card</string>
+    <string name="aurora_import_sd_title">Import from internal storage</string>   
+    <string name="aurora_import_sd_subtitle">Import vCard files from internal device</string>
+    
+    <string name="aurora_export_sim_title">Export to SIM card</string>
+    <string name="aurora_export_sd_title">Export to internal storage</string>
+    <string name="aurora_export_sd_subtitle">Export contacts to vCard</string>
+    
+    <string name="aurora_export_contact_to_sim">Exporting contacts to SIM card</string>
+    <string name="aurora_import_confirm_message"><xliff:g id="VCARD_FILENAME">%s</xliff:g> found, import?</string>
+
+    <plurals name="aurora_import_contact">
+    <item quantity="one" msgid="5517063038754171134">&quot;Importing 1 contact&quot;</item>
+    <item quantity="other" msgid="3852668542926965042">&quot;Importing <xliff:g id="COUNT">%d</xliff:g> contacts&quot;</item>
+    </plurals>
+
+    <string name="aurora_delete_group_dialog_message">Delete group？</string>
+    <string name="aurora_delete_group_toast">&quot;Group ‘<xliff:g id="GROUP_LABEL">%1$s</xliff:g>’ deleted&quot;</string>
+    <string name="aurora_remove_group_member_message">&quot;Remove ‘<xliff:g id="MEMBER_NAME">%s</xliff:g>’ from ‘<xliff:g id="GROUP_LABEL">%s</xliff:g>’？&quot;</string>
+    <string name="aurora_remove_group_member_message_multi">&quot;Remove ‘<xliff:g id="MEMBER_NAME">%s</xliff:g>’ contact(s) from ‘<xliff:g id="GROUP_LABEL">%s</xliff:g>’？&quot;</string>
+    <string name="aurora_remove_group_one_toast">&quot; ‘<xliff:g id="GROUP_LABEL">%1$s</xliff:g>’ has been deleted&quot;</string>
+    <string name="aurora_remove_star_message">&quot;Unstar ‘<xliff:g id="GROUP_LABEL">%1$s</xliff:g>’？&quot;</string>
+    <string name="aurora_remove_star_title">Unstar</string>
+    <string name="aurora_removeing">Removing...</string>
+    <string name="aurora_remove_group_member_toast"><xliff:g id="MEMBER_NAME">%s</xliff:g> contact(s) removed</string>
+   <!--  <string name="aurora_add_group_member_toast"><xliff:g id="MEMBER_NAME">%s</xliff:g> contact(s) added to group &quot;<xliff:g id="GROUP_LABEL">%s</xliff:g>&quot;</string> -->
+<string name="aurora_add_group_member_toast">Added<xliff:g id="MEMBER_NAME">%s</xliff:g>Contacts</string>
+    <plurals name="aurora_delete_contact">
+    <item quantity="one" msgid="5517063038754171134">&quot;Deleting 1 contact&quot;</item>
+    <item quantity="other" msgid="3852668542926965042">&quot;Deleting <xliff:g id="COUNT">%d</xliff:g> contacts&quot;</item>
+    </plurals>
+
+    <string name="aurora_sim_no_contact_message">No contact entry on SIM card</string>
+    <string name="aurora_find_sim_contacts_message">&quot;Found <xliff:g id="GROUP_LABEL">%1$s</xliff:g> contact(s) on the SIM card, import?&quot;</string>
+    <string name="aurora_sim_contact_import_start_toast">Contacts on the SIM card contacts will be imported later</string>
+    <string name="aurora_sim_contact_import_end_toast">Contacts imported successfully</string>
+    <string name="aurora_delete_one_contact_message">&quot;Delete ‘<xliff:g id="GROUP_LABEL">%1$s</xliff:g>’？&quot;</string>
+    <string name="aurora_delete_one_contact_toast">&quot; ‘<xliff:g id="GROUP_LABEL">%1$s</xliff:g>’ deleted&quot;</string>
+    <string name="aurora_remove_starred_toast">&quot;Unstarred&quot;</string>
+
+    <string name="aurora_rename_group_toast">&quot;A group with the same name already exists.  Please give a new name for the group&quot;</string>
+    <string name="aurora_add_group_more_toast">&quot;Up to 100. Reduce selected contacts&quot;</string>
+    <string name="aurora_save_group_dialog_title">&quot;Saving&quot;</string>
+
+    <string name="aurora_search_continue">&quot;Continue&quot;</string>
+    <string name="aurora_search_continue_mutil">&quot;Continue (<xliff:g id="CON_LABEL">%s</xliff:g>)</string>
+    
+    <string name="aurora_start_daoru">Importing contacts in the background</string>
+    <string name="aurora_end_daoru">Contacts imported successfully</string>
+    <string name="aurora_start_daochu">Exporting contacts in the background</string>
+    <string name="aurora_end_daochu">All contacts have been exported</string>
+    <string name="aurora_daochu_dao_sim"><xliff:g id="GROUP_LABEL">%1$s</xliff:g> contacts exported to SIM card</string>
+    <string name="aurora_daochu_sim_full">SIM card is full, unable to export to the SIM card</string>
+    <string name="aurora_daochu_sim_full2">SIM card is full. Contacts exporting ended</string>
+    <string name="aurora_daochu_sim_full3">SIM card is full</string>
+    <string name="aurora_daochu_sim_error">Fault occurs when exporting to the SIM card, unable to operate.</string>
+    <string name="aurora_daochu_daoru_ing">Contacts importing/exporting is in progress. Please operate after importing/exporting completes.</string>
+    <string name="aurora_contacts_setting">Phone and Contact settings</string>
+    <string name="aurora_sim_no_contacts">No contact on the SIM card</string>
+    
+    <string name="aurora_import_sd2_title">Import from SD card</string>   
+    <string name="aurora_import_sd2_subtitle">Import vCard files from SD card</string>
+    <string name="aurora_export_sd2_title">Export to SD Card</string>
+    <string name="aurora_export_sd2_subtitle">Export contacts to vCard files on the SD card</string>
+    <string name="aurora_no_sd2_insert">No SD card was detected</string>
+    <string name="aurora_sd2_name">SD card</string>
+    <string name="aurora_sim_nocontacts_notice">Note</string>
+
+    <string name="aurora_contacts_accounts">Account group</string>
+    <string name="aurora_show_contacts_accounts">Accounts group to display</string>
+    <string name="aurora_contacts_account_phone">Local contacts</string>
+    
+    <string name="aurora_local_group_show">Local Groups</string>
+    <string name="aurora_no_group_show">No group to display</string>
+    <string name="aurora_no_contacts_show">No contact to display</string>
+    <string name="aurora_to_contacts_accounts">Set Account</string>
+
+    <string name="aurora_export_to_sim_meg">Do you want to export all contacts to the SIM card?</string>
+    <string name="aurora_export_no_contact">No contact to export</string>
+    <string name="aurora_export_to_sim_error">Unable to export to the SIM card</string>
+    
+    <string name="aurora_deleting_contacts_toast">Deleting contacts in the background, please wait.</string>
+
+    <string name="aurora_save_to">Location</string>
+    <string name="aurora_save_to_local">Local</string>
+    <string name="aurora_save_to_sim">SIM card</string>
+    <string name="aurora_save_to_google">Google</string>
+    <string name="aurora_daoru_confirm_gaddsa">Import <xliff:g id="VCARD_FILENAME">%s</xliff:g>?</string>
+    <string name="aurora_edit_name_hint">Enter the name</string>    
+    <string name="aurora_service_number">Service number</string>
+
+    <string name="aurora_add_mms_more_toast">&quot;Maximum number (100) of bulk SMS contacts exceeded. Reduce selected contacts&quot;</string>
+
+    <string name="aurora_group_mms_more_toast">&quot;Maximum number (100) of bulk SMS contacts exceeded&quot;</string>
+
+    <string name="aurora_add_mms_attachment_more_toast">&quot;Maximum number (1000) exceeded. Reduce selected contacts&quot;</string>
+    
+    <string name="aurora_no_contacts_to_sim">&quot;No contact to be exported to the SIM card now&quot;</string>
+    <string name="aurora_cannot_importcontacts">&quot;Unable to import contacts&quot;</string>
+
+    <string name="aurora_call_record">&quot;Call recording&quot;</string>
+    <string name="aurora_auto_record">&quot;Auto recording&quot;</string>
+    <string name="aurora_record_history">&quot;Records&quot;</string>
+    <string name="aurora_record_close">&quot;No&quot;</string>
+    <string name="aurora_record_all_contacts">&quot;All&quot;</string>
+    <string name="aurora_record_select_contact">&quot;Selected contacts&quot;</string>
+    <string name="aurora_record_select_contact_toast"><xliff:g id="count">%s</xliff:g> contacts have been added to the list of automatic recording</string>
+    <string name="aurora_auto_recording">&quot;Adding, please wait&quot;</string>
+    <string name="aurora_auto_recording_remove">&quot;Removing, please wait&quot;</string>
+    <string name="aurora_remove_auto_record_message">&quot;Remove &quot;<xliff:g id="MEMBER_NAME">%s</xliff:g>&quot;？&quot;</string>
+    <string name="aurora_remove_auto_record_message_multi">&quot;Remove selected contacts?&quot;</string>
+    <string name="aurora_remove_auto_record_toast_multi">&quot;<xliff:g id="MEMBER_NAME">%s</xliff:g> contacts removed&quot;</string>
+
+    <string name="aurora_slot_0">SIM1</string>
+    <string name="aurora_slot_1">SIM2</string>
+    <string name="aurora_recent_call">&quot;(Last)&quot;</string>
+    <string name="aurora_sim_not_ready">&quot;SIM card is not ready. Please check and try again&quot;</string>
+
+    <string name="aurora_add_blackname_more_toast">&quot;Maximum number (100) exceeded. Reduce selected contacts&quot;</string>
+
+    <string name="aurora_reject_marks">" marks"</string>
+    <string name="aurora_reject_from_sogou">"from sogou "</string>
+    <string name="aurora_reject_user_mark">"marked"</string>
+    <string name="aurora_add_to_black">"Add to black"</string>
+    <string name="aurora_reject_call_detail_title">"Intercept Details"</string>
+    <string name="aurora_remove_from_black">"Remove from black"</string>
+    <string name="black_remove">Remove</string>
+    <string name="black_remove_all">Remove all</string>
+    <string name="confirm_remove">Remove from black？</string>
+    <string name="confirm_remove_all">Remove from black？</string>
+    <string name="recover_black_phone">Recovery records</string>
+    <string name="add_number_mark_menu">Mark strange number</string>
+    <string name="add_number_mark">Mark strange number</string>
+    <string name="edit_number_mark">Modify number mark</string>
+    <string name="up_mark">Mark will up</string>
+    <string name="new_mark">New mark</string>
+    <string name="mark_content_exist">Mark is existing, Please change！</string>
+    <string name="aurora_no_mark">no mark</string>
+    <string name="aurora_mark_error">name is error</string>
+    <string name="aurora_calllog_loading">Slide Down To Loading More Call Logs</string>
+
+    <string name="aurora_call_record_history_path">CallRecording</string>
+    <string name="no_call_record_history">No record</string>
+    <string name="call_record_detail_title">Record Details</string>
+    <string name="call_record_message_time">Time：</string>
+    <string name="call_record_message_size">Size：</string>
+    <string name="call_record_message_path">Location：Storage/Internal/Storage/CallRecording/</string>
+    <string name="call_record_delete_title">Delete record</string>
+    <string name="call_record_delete_all_title">Delete All record</string>    
+    <string name="call_record_delete_message">Are you sure to delete the selected record(s)?</string>
+     <string name="call_record_delete_all_message">Are you sure to delete all record(s)?</string>
+
+    <string name="aurora_privacy_contacts_lable">Contacts</string>
+    <string name="aurora_privacy_contacts">Privacy contacts</string>
+    <string name="aurora_no_privacy_contacts">Add contacts to protect private communications</string>
+    <string name="aurora_add_privacy_contacts_from_exists">Select from contact list</string>
+    <string name="aurora_new_privacy_contacts">Add directly</string>
+    <string name="aurora_remove_privacy_contact_title">Remove private contacts</string>
+    <string name="aurora_remove_one_privacy_contact_message">"Are you sure to restore “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” and  related communications to regular contents?"</string>
+    <string name="aurora_remove_privacy_contact_check_box_text">Delete them at the same time</string>
+    <string name="aurora_privacy_contacts_tixing_title">Notice</string>
+    <string name="aurora_privacy_contacts_tixing_message">To make your privacy safer, please go setting the private calls and messages.</string>
+    <string name="aurora_privacy_contacts_tixing_cancle">Not now</string>
+    <string name="aurora_privacy_contacts_ok">Go setting</string>
+
+    
+    <string name="private_incoming_call">Privacy ringcall</string>
+    <string name="private_sms_notification">Privacy SMS Notification</string>
+    <string name="private_sms_notification_summary">Switch on or off notification</string>
+    <string name="private_notification_text">Notification Text</string>
+    <string name="private_notification_text_summary">New system message</string>
+    <string name="private_incoming_call_title">Privacy SMS and Calls</string>
+    <string name="private_incoming_noti1_title">Ringing：</string>
+    <string name="private_incoming_noti1_summary">The contact name shows as "UNKNOWN"</string>
+    <string name="private_miss_noti1_title">Missed：</string>
+    <string name="private_miss_noti1_summary">Show notification message as set</string>
+    <string name="private_calllog_noti1_title">Call log：</string>
+    <string name="private_calllog_noti1_summary">Not show call logs of the privacy contacts</string>
+    <string name="private_incoming_noti2_summary">Auto hangup</string>
+    <string name="private_incoming_noti2_title">Notification hint：</string>
+    <string name="private_noti_radio1_title">Auto hangup + notification</string>
+    <string name="private_noti_radio2_title">Answer + notification</string>
+    <string name="aurora_remove_private_calllog_message_multi">Are you sure to delete call log？</string>
+    <string name="aurora_remove_private_calllog_toast_multi">Already deleted %s call logs</string>
+    <string name="aurora_remove_private_calllog_title">Delete call log</string>
+    <string name="aurora_remove_private_calllog_contact_message">Are you sure to restore call logs?</string>
+    <string name="aurora_remove_privacy_calllog_check_box_text">Delete call log either？</string>
+    <string name="aurora_remove_private_calllog_over_toast">Call logs have been deleted</string>
+    <string name="aurora_private_removing_title">Deleting...</string>
+    <string name="aurora_no_privacy_calllog">No calllog</string>
+    <string name="aurora_no_privacy_call_contacts">No privacy contacts</string>
+    <string name="private_call_log">Privacy call</string>
+    <string name="private_call_log_lable">Calls</string>
+
+    <string name="aurora_input_continue">Continue input please</string>
+    <string name="aurora_local_number">local number</string>
+    <string name="aurora_ready_searching_vcard">Ready to scan storage, it may take a few minutes</string>
+    
+       <!-- Content description for the transparent views around the visible section of QuickContacts.
+         Clicking this view causes Quick Contacts to close. [CHAR LIMIT=NONE] -->
+    <string name="quickcontact_transparent_view_description">Click to return to previous screen</string>
+        <!-- When a contact has no data, we prompt the user to add an email for the contact. [CHAR LIMIT=40] -->
+    <string name="quickcontact_add_email">Add email</string>
+    
+      <!-- Button Label to see more on an ExpandingEntryCardView [CHAR LIMIT=40] -->
+    <string name="expanding_entry_card_view_see_more">See more</string>
+    <!-- Button Label to see less on an ExpandingEntryCardView [CHAR LIMIT=40] -->
+    <string name="expanding_entry_card_view_see_less">See less</string>
+    <!-- Button Label to see all on an ExpandingEntryCardView [CHAR LIMIT=40] -->
+    <string name="expanding_entry_card_view_see_all">See all</string>
+    
+      <!-- Menu item used to create a contact shortcut when viewing contact details. [CHAR LIMIT=30] -->
+    <string name="menu_create_contact_shortcut">Place on Home screen</string>
+    
+      <!-- Content description for directions secondary button [CHAR LIMIT=NONE] -->
+    <string name="content_description_directions">directions to location</string>
+    
+
+    <!-- Timestamp string for interactions from yesterday. [CHAR LIMIT=40] -->
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <!-- Timestamp string for interactions from today. [CHAR LIMIT=40] -->
+    <string name="today">Today</string>
+    <!-- Text for an event starting on the current day with a start and end time.
+         For ex, "Today at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <string name="today_at_time_fmt">"Today at <xliff:g id="time_interval">%s</xliff:g>"</string>
+    <!-- Text for an event starting on the next day with a start and end time.
+         For ex, "Tomorrow at 5:00pm-6:00pm" [CHAR LIMIT=NONE] -->
+    <string name="tomorrow_at_time_fmt">"Tomorrow at <xliff:g id="time_interval">%s</xliff:g>"</string>
+    <!-- Format string for a date and time description.  For ex:
+         "April 19, 2012, 3:00pm - 4:00pm" [CHAR LIMIT=NONE] -->
+    <string name="date_time_fmt">"<xliff:g id="date">%s</xliff:g>, <xliff:g id="time_interval">%s</xliff:g>"</string>
+    <!-- Title for untitled calendar interactions [CHAR LIMIT=40] -->
+    <string name="untitled_event">(Untitled event)</string>
+
+    <!-- Name of the button in the date/time picker to accept the date/time change [CHAR LIMIT=15] -->
+    <string name="date_time_set">Set</string>
+    
+    <!-- Header for the IM entry [CHAR LIMIT=40] -->
+    <string name="header_im_entry">IM</string>
+    <!-- Header for the Organization entry [CHAR LIMIT=40] -->
+    <string name="header_organization_entry">Organization</string>
+    <!-- Header for the Nickname entry [CHAR LIMIT=40] -->
+    <string name="header_nickname_entry">Nickname</string>
+    <!-- Header for the Note entry [CHAR LIMIT=40] -->
+    <string name="header_note_entry">Note</string>
+    <!-- Header for the Website entry [CHAR LIMIT=40] -->
+    <string name="header_website_entry">Website</string>
+    <!-- Header for the Event entry [CHAR LIMIT=40] -->
+    <string name="header_event_entry">Event</string>
+    <!-- Header for the Relation entry [CHAR LIMIT=40] -->
+    <string name="header_relation_entry">Relation</string>
+    
+    
+      <!-- Content description for recent sms interaction [CHAR LIMIT=NONE] -->
+    <string name="content_description_recent_sms">recent sms. <xliff:g id="message_details">%s</xliff:g>. click to respond</string>
+    
+      <!-- Header for the Relation entry [CHAR LIMIT=NONE] -->
+    <string name="content_description_recent_call_type_incoming">incoming</string>
+    <!-- Header for the Relation entry [CHAR LIMIT=NONE] -->
+    <string name="content_description_recent_call_type_outgoing">outgoing</string>
+    <!-- Header for the Relation entry [CHAR LIMIT=NONE] -->
+    <string name="content_description_recent_call_type_missed">missed</string>
+    
+        <!-- Content description for recent sms interaction [CHAR LIMIT=NONE] -->
+    <string name="content_description_recent_call">recent call. <xliff:g id="call_details">%s</xliff:g>. click to call back</string>
+    
+       <!-- Prefix for messages that you sent [CHAR LIMIT=40] -->
+    <string name="message_from_you_prefix">You: <xliff:g id="sms_body">%s</xliff:g></string>
+    
+      <!-- Message displayed in a toast after you create a contact shortcut in the launcher [CHAR LIMIT=NONE]-->
+    <string name="createContactShortcutSuccessful">Contact widget added to Home screen.</string>
+    
+     <!-- The menu item to add the the currently viewed contact to your contacts [CHAR LIMIT=30] -->
+    <string name="menu_add_contact">Add to contacts</string>
+    
+        <!-- Description of what happens when you click on the unstar MenuItem. [CHAR LIMIT=NONE] -->
+    <string name="description_action_menu_remove_star">Removed from favorites</string>
+    <!-- Description of what happens when you click on the star MenuItem. [CHAR LIMIT=NONE] -->
+    <string name="description_action_menu_add_star">Added to favorites</string>
+    
+    <!-- When a contact has no data, we prompt the user to add a phone number for the contact. [CHAR LIMIT=40] -->
+    <string name="quickcontact_add_phone_number">Add phone number</string>
+ 
+     <!-- Title of recent card. [CHAR LIMIT=60] -->
+    <string name="recent_card_title">Recent</string>
+
+    <!-- Title of recent card. [CHAR LIMIT=40] -->
+    <string name="about_card_title">About</string>
+
+    <!-- Title of sms action entry. [CHAR LIMIT=60] -->
+    <string name="send_message">Send message</string>
+    
+     <string name="unknown_contact">Unknown Contact</string>
+      <string name="single_contact_delete_summary">Also delete Cloud Data</string>
+     <string name="add_contact_to_black_title">Add To Black</string>
+      <string name="remove_contact_from_black_title">Remove from Black</string>
+      
+      <string name="contacts_settings">Contacts Settings</string>
+      <string name="phone_settings">Phone Settings</string>
+      
+      <string name="reverse_mute">Overturn To Mute</string>
+      <string name="intelligent_alarm">Smart Ringer</string>
+      <string name="call_waiting">Call Waiting</string>
+      <string name="incoming_call_switching">Call Forward</string>
+      <string name="confirm_add">Ok</string>      
+      <string name="intelligent_alarm_summary">The Ringer is fade-in and fade-out</string>
+      <string name="reverse_mute_summary">Overturn The Phone To Slience Ringer</string>
+      <string name="clear_all">Clear</string>      
+      
+        <string name="aurora_contactSavedNoNumberError_Toast">Please fill number</string>
+       <string name="add_black_message">Can restore from reject module</string>    
+       <string name="add_black_action">Add</string>    
+        
+        <string name="aurora_menu_share_qrcode">Send this business card use Qrcode</string>
+        <string name="aurora_scan_qrcode">Scan QR code to add contact</string>
+
+        <!-- add by liyang begin -->
+    <string name="name">韩梅梅</string>
+    <string name="nullname">" "</string>
+    <string name="time">下午 12:30</string>
+    <string name="number">+86 134 5875 45651</string>
+    <string name="area">广东深圳</string>
+    <string name="count">(3)</string>
+    <string name="date1">10月27日</string>
+    <string name="areatxt">广东深圳</string>
+    <string name="text1">134 7627 1466</string>
+    <string name="sogoutext_divider">|</string>
+    <string name="sogoutext">疑似诈骗</string>
+    
+    <string name="pop_detail">Details</string>
+    <string name="pop_sendsms">Send SMS</string>
+    <string name="pop_copy">Copy to dialpad</string>
+    <string name="pop_delete">Delete calllogs</string>
+    <string name="pop_newcontact">New contact</string>
+    <string name="pop_record">Calls record</string>
+    <string name="pop_setting">Settings</string>
+    <string name="blacklist">BlackList</string>
+    <string name="add_member">Add members</string>
+    <string name="sendsms">Send SMS</string>
+    <string name="choose_sim1">SIM 1</string>
+    <string name="choose_sim2">SIM 2</string>
+    <string name="choose_sim_title">Select Card</string>
+    <string name="choose_sim_setdefault">Set Default Card</string>
+    <string name="dial_appproviderwidget_title">Usual Contacts</string>
+    <string name="no_usual_contacts">No Usual Contacts</string>
+
+    <string-array name="tabwidget_titles">
+        <item>CallLogs</item>
+        <item>Contacts</item>
+    </string-array>
+
+    <string name="empty_view_text">No Usual Contacts</string>
+    <string name="no_calllog_title">No CallLogs</string>
+        <string name="selected_total_num">Selected <xliff:g id="total">%d</xliff:g> items</string>
+    <string name="selectAll">SelectAll</string>
+    <string name="dialpad_title">Dialpad</string>
+    <string name="search_contacts">Search Contacts</string>
+    <string name="remove_group_member">Remove from group</string>
+    <string name="remove_group_member_for_record">Remove</string>
+    <string name="add_to_group">Add to group</string>
+    <string name="empty_contacts_tips">Set invisible contacts.</string>
+         <string name="today_string">Today</string>
+     <string name="yesterday_string">Yesterday</string>
+     <string name="formatPattern3">MM-dd</string>
+     <string name="formatPattern4">yyyy-MM-dd</string>
+     <string name="isdealing">Dealing...</string>
+     <string name="aurora_editor_event_day">Event day</string>
+    <!-- add by liyang end -->
+</resources>

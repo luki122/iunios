@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/aurora_address_height" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/contact_newly"
+            android:layout_width="@dimen/aurora_compose_titlewidth"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/aurora_compose_margin"
+            android:text="@string/string_newly_contact"
+            android:textSize="11sp"
+            android:textColor="#aaaaaa"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/contact_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aurora_address_height"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:textColor="#808080"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

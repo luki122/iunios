@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Clock Date Week font size -->
+    <dimen name="lock_screen_clock_size">328.5px</dimen>
+    <dimen name="lock_screen_date_size">72.5px</dimen>
+    <dimen name="lock_screen_week_size">64.5px</dimen>
+    
+    <dimen name="preview_time_bottom">50dp</dimen>
+    <dimen name="preview_date_top">15dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aurora.preference.AuroraPreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aurora="http://schemas.android.com/apk/res/com.aurora" >
+
+    <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="festival_display"
+        aurora:auroraicon="@drawable/aurora_festival_display_icon"
+        aurora:auroratitle="@string/aurora_festival_day" />
+    <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="happy_display"
+        aurora:auroraicon="@drawable/aurora_happy_display_icon"
+        aurora:auroratitle="@string/aurora_happy_day" />
+    <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="lunar_display"
+        aurora:auroraicon="@drawable/aurora_lunar_display_icon"
+        aurora:auroratitle="@string/aurora_lunar_calendar" />
+    <AuroraSwitchPreference
+        aurora:auroradefaultValue="true"
+        aurora:aurorakey="work_display"
+        aurora:auroraicon="@drawable/aurora_work_display_icon"
+        aurora:auroratitle="@string/aurora_work_hard" />
+
+</aurora.preference.AuroraPreferenceScreen>

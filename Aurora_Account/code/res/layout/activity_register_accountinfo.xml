@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_17" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/register_set_head_width_height"
+        android:layout_height="@dimen/register_set_head_width_height"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/icon_set_head_selector" />
+
+    <LinearLayout
+        style="@style/Account_Layout_Item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_icon"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/common_bg_alone_normal" >
+
+        <com.aurora.account.widget.ClearableEditText
+            android:id="@+id/cet_nickname"
+            style="@style/Account_ClearableEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/register_create_nickname" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_focus_selector"
+        android:text="@string/register_save"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

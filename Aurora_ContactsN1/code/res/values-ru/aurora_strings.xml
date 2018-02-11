@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="aurora_group_title">Группирование</string>
+    <string name="aurora_starred_contacts_header">Избранные контакты</string>
+    <string name="aurora_menu_import">Импорт контактов</string>
+    <string name="aurora_menu_export">Экспорт контактов</string>
+    <string name="aurora_menu_sync">Синхронизация с облаком </string>
+    <string name="aurora_searchview_hint">Поиск контактов</string>
+
+    <string name="aurora_group_no_group">Не группированный</string>
+    <string name="aurora_group_attribution">Место подчинения</string>
+    <string name="aurora_group_company">Компания</string>
+    <string name="aurora_group_recently_added">Недавно добавленные</string>
+    <string name="aurora_left_kuohao">(</string>
+    <string name="aurora_right_kuohao">)</string>
+
+    <string name="aurora_edit_group_name_title">Название группы</string>
+    <string name="aurora_edit_group_name_hint">Введите название</string>
+    <string name="aurora_edit_group_ring_title">Сигнал группы</string>
+    <string name="aurora_group_detail_send_mms">Отпр. Групповое сообщение</string>
+    <string name="aurora_group_detail_add_member">Добавить членов</string>
+
+    <string name="aurora_add_star">Добавлено в избранный</string>
+    <string name="aurora_remove_star">Удалено из избранного</string>
+    
+    <string name="aurora_address_hint">Адрес</string>
+<!-- 电话号类型 -->
+<string name="telType_Moblie">Телефон</string>
+    <string name="telType_Home">Домашний</string>
+    <string name="telType_Work">Рабочий</string>
+    <string name="telType_Fax">Рабочий факс</string>
+    <string name="telType_Main">Сервер</string>
+    <string name="telType_FaxHome">Домашний факс</string>
+    <string name="telType_Pager">Пейджер</string>
+
+    <string name="telType_custom">По умолчанию</string>
+    <string name="othertype">Другие</string>
+<!--IM-->
+<string name="imType_Aim">AIM</string>
+    <string name="imType_Yahoo">Yahoo</string>
+    <string name="imType_Skype">Skype</string>
+    <string name="imType_Qq">QQ</string>
+    <string name="imType_GooleTalk">Google Talk</string>
+    <string name="imType_Icq">ICQ</string>
+    <string name="imType_Jabber">Jabber</string>
+    <string name="imType_Msn">MSN</string>
+<!--关系-->
+<string name="relation_assitant">Помощник</string>
+    <string name="relation_brother">Братья</string>
+    <string name="relation_child">Ребёнок</string>
+    <string name="relation_dom_partner">Сожитель</string>
+    <string name="relation_father">Отец</string>
+    <string name="relation_mother">Мать</string>
+    <string name="relation_friend">Друзья</string>
+    <string name="relation_manager">Директор</string>
+    <string name="relation_parent">Родители</string>
+    <string name="relation_partner">Партнёр</string>
+    <string name="relation_referred">Реферлы</string>
+    <string name="relation_relative">Родственники</string>
+    <string name="relation_sistert">Сестра</string>
+    <string name="relation_spouse">Супруга</string>
+<!-- 邮箱地址类型 -->
+<string name="emailType_Work">Организация</string>
+    <string name="emailType_Private">Семья</string>
+<!-- 地址类型 -->
+<string name="addressType_Company">Компания</string>
+    <string name="addressType_Home">Дом</string>
+    
+    <string name="add_fields_more">Добавить больше информации</string>
+    
+    <string name="aurora_address_hint_text">Введите адрес</string>
+    <string name="aurora_company_hint_text">Введите компанию</string>
+    <string name="aurora_position_hint_text">Введите пост</string>
+    <string name="aurora_note_hint_text">Введите примечание</string>
+    <string name="aurora_group_create">Добавить группу</string>
+<!-- contact detail -->
+<string name="aurora_menu_edit">Редактировать</string>
+    <string name="aurora_menu_delete">Удалить</string>
+    <string name="aurora_menu_share_contact">Отправить контакты</string>
+<!-- call log -->
+<string name="aurora_recentCallsLabel">&quot;Список вызовов&quot;</string>
+<!-- call detail -->
+<string name="aurora_unknow_source_calllog">С Марс</string>
+    <string name="aurora_menu_delete_calllog">Удалить списка вызовов</string>
+    <string name="aurora_menu_add_exist_contact">Добавить к контактам</string>
+<!-- contact import export -->
+<string name="aurora_import_export">Импорт/экспорт контактов</string>
+    <string name="aurora_import_title">Импорт</string>
+    <string name="aurora_export_title">Экспорт</string>
+
+    <string name="aurora_menu_sim_contacts">Контакт SIM </string>
+    <string name="aurora_menu_sim1_contacts">Контакт SIM 1</string>
+    <string name="aurora_menu_sim2_contacts">Контакт SIM 2</string>
+    <string name="aurora_loading_sim_contacts_title">“Чтение контактов  SIM” </string>
+    <string name="aurora_empty_contact_text">Нет контактов</string>
+
+    <string name="aurora_sim_not_ready_tip">SIM-карта не обнаружена</string>
+    
+    <string name="aurora_import_sim_title">Импорт с SIM-корты</string>
+    <string name="aurora_import_sd_title">Импорт с внутренней памяти</string>   
+    <string name="aurora_import_sd_subtitle">Импорт файлов vCard с устройства хранения</string>
+    
+    <string name="aurora_export_sim_title">Импорт  на SIM</string>
+    <string name="aurora_export_sd_title">Импорт  на внутреннюю память</string>
+    <string name="aurora_export_sd_subtitle">Импорт  на внутреннюю память в формате файла vCard</string>
+    
+    <string name="aurora_export_contact_to_sim">Импорт  на SIM</string>
+    <string name="aurora_import_confirm_message">Обнаружено <xliff:g id="VCARD_FILENAME">%s</xliff:g>, импорт?</string>
+
+
+
+    <string name="aurora_delete_group_dialog_message">&quot;Удалить группу“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” ?&quot;</string>
+    <string name="aurora_delete_group_toast">&quot;Удалена группа“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>”&quot;</string>
+    <string name="aurora_remove_group_member_message">&quot;Удалить“<xliff:g id="MEMBER_NAME">%s</xliff:g>”  с “<xliff:g id="GROUP_LABEL">%s</xliff:g>”?”</string>
+    <string name="aurora_remove_group_member_message_multi">&quot;Удалено “<xliff:g id="MEMBER_NAME">%s</xliff:g>” контактов с <xliff:g id="GROUP_LABEL">%s</xliff:g>?”</string>
+    <string name="aurora_remove_group_one_toast">&quot;Удалено “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” &quot;</string>
+    <string name="aurora_remove_star_message">Отменить избранные “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>”?</string>
+    <string name="aurora_remove_star_title">Отменить избранные</string>
+    <string name="aurora_removeing">Удаление</string>
+    <string name="aurora_remove_group_member_toast">“Удалено &quot;<xliff:g id="MEMBER_NAME">%s</xliff:g>&apos;&apos; контактов из группы <xliff:g id="GROUP_LABEL">%s</xliff:g>”</string>
+    <string name="aurora_add_group_member_toast"><xliff:g id="MEMBER_NAME">%s</xliff:g> контактов добавлено в группу “<xliff:g id="GROUP_LABEL">%s</xliff:g>”</string>
+
+  
+
+    <string name="aurora_find_sim_contacts_message">&quot;Обнаружено <xliff:g id="GROUP_LABEL">%1$s</xliff:g> контактов, импортировать?&quot;</string>
+    <string name="aurora_delete_one_contact_message">&quot;Удалить “<xliff:g id="GROUP_LABEL">%1$s</xliff:g>” ?&quot;</string>
+    <string name="aurora_delete_one_contact_toast">&quot;Удалено“<xliff:g id="GROUP_LABEL">%1$s</xliff:g>”&quot;</string>
+    <string name="aurora_remove_starred_toast">&quot;Отменено избранное&quot;</string>
+
+    <string name="aurora_rename_group_toast">&quot;Одноименные группы, введите новое название&quot;</string>
+    <string name="aurora_add_group_more_toast">&quot;Предел выбора-100 человек, уменьшите выбранное число&quot;</string>
+    <string name="aurora_save_group_dialog_title">&quot;Сохранение&quot;</string>
+
+    <string name="aurora_search_continue">&quot;Продолжать&quot;</string>
+    
+    <string name="aurora_start_daoru">Фоновый импорт контактов </string>
+    <string name="aurora_end_daoru">Удачно импортированы</string>
+    <string name="aurora_start_daochu">Фоновый экспорт контактов </string>
+    <string name="aurora_end_daochu">Удачно экспортированы </string>
+    <string name="aurora_daochu_dao_sim">Экспортированы <xliff:g id="GROUP_LABEL">%1$s</xliff:g> контактов на sim</string>
+    <string name="aurora_daochu_sim_full">SIM заполнена, невозможно экспортировать</string>
+    <string name="aurora_daochu_sim_full2">SIM заполнена, закончен экспорт </string>
+    <string name="aurora_daochu_sim_full3">SIM заполнена</string>
+    <string name="aurora_daochu_sim_error">Ошибка при экспорте, невозможно экспорт на SIM</string>
+    <string name="aurora_daochu_daoru_ing">Импорт/экспорт контактов, выполнять операцию после импорта/экспорта</string>
+    <string name="aurora_contacts_setting">Настройка контактов</string>
+    <string name="aurora_sim_no_contacts">Нет контактов на SIM</string>
+    
+    <string name="aurora_import_sd2_title">Импорт с SIM</string>   
+    <string name="aurora_import_sd2_subtitle">Импорт файлов vCard с SD карты </string>
+    <string name="aurora_export_sd2_title">Экспорт на SD карту</string>
+    <string name="aurora_export_sd2_subtitle">Экспорт  на внутреннюю память в формате файла vCard</string>
+    <string name="aurora_no_sd2_insert">Не обнаружена SD карта</string>
+    <string name="aurora_sd2_name">SD карта</string>
+    <string name="aurora_sim_nocontacts_notice">Уведомление</string>
+
+    <string name="aurora_contacts_accounts">Группа аккаунтов контактов</string>
+    <string name="aurora_show_contacts_accounts">Показанные группы контактов</string>
+    <string name="aurora_contacts_account_phone">Местные контакты</string>
+    
+    <string name="aurora_local_group_show">Местные группы</string>
+    <string name="aurora_no_group_show">Нет показанных групп контактов</string>
+    <string name="aurora_no_contacts_show">Нет показанных контактов</string>
+    <string name="aurora_to_contacts_accounts">Установить аккаунт контактов</string>
+
+    <string name="aurora_export_to_sim_meg">Экспортировать все контакты на SIM карту?</string>
+    <string name="aurora_export_to_sim_error">Невозможно экспортировать на SIM карту</string>
+    
+    <string name="aurora_deleting_contacts_toast">Фоновое удаление контактов, подождите</string>
+
+    <string name="aurora_save_to">Местоположение</string>
+    <string name="aurora_save_to_local">Местный</string>
+    <string name="aurora_save_to_sim">SIM карта</string>
+    <string name="aurora_daoru_confirm_gaddsa">Импортировать <xliff:g id="VCARD_FILENAME">%s</xliff:g>?</string>
+    <string name="aurora_edit_name_hint">Введите имя</string>    
+    <string name="aurora_service_number">Номер услуга</string>
+
+    <string name="aurora_add_mms_more_toast">&quot;Превышает предела группового сообщений – 100 человек, уменьшите выбранное число&quot;</string>
+
+    <string name="aurora_group_mms_more_toast">&quot;Сумма группы превышает предела группового сообщений – 100 человек&quot;</string>
+
+    <string name="aurora_add_mms_attachment_more_toast">&quot;Превышает предела – 1000 человек, уменьшите выбранное число&quot;</string>
+    
+    <string name="aurora_no_contacts_to_sim">&quot;Некому можно быть импортировано на SIM&quot;</string>
+    <string name="aurora_cannot_importcontacts">&quot;Невозможно импортировать контакты&quot;</string>
+
+    <string name="aurora_call_record">&quot;Записи вызовов&quot;</string>
+    <string name="aurora_auto_record">&quot;Авто.записи&quot;</string>
+    <string name="aurora_record_history">&quot;Исторические записи&quot;</string>
+    <string name="aurora_record_close">&quot;Закрыть&quot;</string>
+    <string name="aurora_record_all_contacts">&quot;Все вызовы&quot;</string>
+    <string name="aurora_record_select_contact">&quot;Указанные контакты&quot;</string>
+    <string name="aurora_auto_recording">&quot;Добавление, подождите&quot;</string>
+    <string name="aurora_auto_recording_remove">&quot;Удаление, подождите&quot;</string>
+    <string name="aurora_remove_auto_record_message">&quot;Удалить “<xliff:g id="MEMBER_NAME">%s</xliff:g>”? &quot;</string>
+    <string name="aurora_remove_auto_record_message_multi">&quot;Удалить выбранные контакты?&quot;</string>
+    <string name="aurora_remove_auto_record_toast_multi">&quot;Удалено<xliff:g id="MEMBER_NAME">%s</xliff:g>  контактов&quot;</string>
+
+    <string name="aurora_recent_call">&quot;(Последние)&quot;</string>
+    <string name="aurora_sim_not_ready">&quot;SIM не готова, попробуйте после проверки&quot;</string>
+
+    <string name="aurora_add_blackname_more_toast">&quot;Предел выбора-100 человек, уменьшите выбранное число&quot;</string>
+
+    <string name="aurora_reject_call_detail_title">&quot;Подробности перехвата вызовов&quot;</string>
+    <string name="aurora_reject_marks">&quot;Помечены&quot;</string>
+    <string name="aurora_reject_from_sogou">&quot;Из приложения номеров sogou &quot;</string>
+    <string name="aurora_reject_user_mark">&quot;Помечено&quot;</string>
+    <string name="aurora_add_to_black">&quot;Добавить в чёрный список&quot;</string>
+    <string name="aurora_remove_from_black">&quot;Удалить из чёрного списка&quot;</string>
+    <string name="black_remove">Удалить из чёрного списка</string>
+    <string name="black_remove_all">Удалить всё из чёрного списка</string>
+    <string name="confirm_remove">Удалить из чёрного списка?</string>
+    <string name="confirm_remove_all">Удалить все номера из чёрного списка?</string>
+    <string name="recover_black_phone">И восстановить список перехвата</string>
+    <string name="add_number_mark">Отметить номер</string>
+    <string name="edit_number_mark">Изменить заметки номера</string>
+    <string name="up_mark">Заметки будут закачивать, чтобы помочь другим</string>
+    <string name="new_mark">Добавить новые слова</string>
+    <string name="mark_content_exist">Существуют слова!</string>
+    <string name="aurora_no_mark">Нет заметки</string>
+    <string name="aurora_mark_error">Аномалия формы названия</string>
+
+    <string name="no_call_record_history">Нет записей вызовов</string>
+    <string name="call_record_detail_title">Подробности записей</string>
+    <string name="call_record_message_time">Время：</string>
+    <string name="call_record_message_size">Размер файла：</string>
+    <string name="call_record_message_path">Путь：память телефона/внутреннее хранение/CallRecording/</string>
+    <string name="call_record_delete_title">Удалить выбранные записи</string>
+    <string name="call_record_delete_message">Удалить выбранные записи вызовов?</string>
+
+    <string name="aurora_privacy_contacts_lable">контакты</string>
+    <string name="aurora_privacy_contacts">Личные контакты</string>
+    <string name="aurora_no_privacy_contacts">Добавить личные контакты для  защиты сообщений и вызова</string>
+    <string name="aurora_add_privacy_contacts_from_exists">Добавить из контактов</string>
+    <string name="aurora_new_privacy_contacts">Добавить ручным</string>
+    <string name="aurora_remove_privacy_contact_title">Удалить личные контакты</string>
+    <string name="aurora_remove_one_privacy_contact_message">&quot;Восстановить &quot;<xliff:g id="GROUP_LABEL">%1$s</xliff:g>&quot; и личный список вызовов в общие содержания?&quot;</string>
+    <string name="aurora_remove_privacy_contact_check_box_text">И удалить контакт и список вызовов</string>
+    <string name="aurora_privacy_contacts_tixing_title">Уведомление</string>
+    <string name="aurora_privacy_contacts_tixing_message">Установить метод уведомления личных вызовов и сообщений для безопасности.</string>
+    <string name="aurora_privacy_contacts_tixing_cancle">Не установить</string>
+    <string name="aurora_privacy_contacts_ok">Установить</string>
+    
+    <string name="private_incoming_call">Личные вызовы</string>
+    <string name="private_incoming_noti1_title">Вызов：</string>
+    <string name="private_incoming_noti1_summary">Название контактна показано как“ неизвестно“</string>
+    <string name="private_miss_noti1_title">Пропущено：</string>
+    <string name="private_miss_noti1_summary">Уведомить в строке установленные слова</string>
+    <string name="private_calllog_noti1_title">Список вызов：</string>
+    <string name="private_calllog_noti1_summary">Не показать список личных контактов</string>
+    <string name="private_incoming_noti2_summary">Нет звонка, и авто. выключить</string>
+    <string name="private_incoming_noti2_title">Уведомление в строке：</string>
+    <string name="private_noti_radio1_title">Авто. выключить+уведомление в строке</string>
+    <string name="private_noti_radio2_title">Ответить+уведомление пропущенных в строке</string>
+    <string name="private_call_log">Личный вызов</string>
+    <string name="private_call_log_lable">вызов</string>
+
+    <!-- The previous lines are provided and maintained by Mediatek Inc. -->
+    <string name="aurora_local_number">Локальные номера </string>
+</resources>

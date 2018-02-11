@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string-array name="daysChinese">  
+		<item>Sunday</item>  
+		<item>Monday</item>  
+		<item>Tuesday</item>
+		<item>Wednesday</item>  
+		<item>Thursday</item>
+		<item>Friday</item> 
+		<item>Saturday</item>  
+	</string-array>
+	
+	<string-array name="daysEnglish">  
+		<item>Sunday</item>  
+		<item>Monday</item>  
+		<item>Tuesday</item>
+		<item>Wednesday</item>  
+		<item>Thursday</item>
+		<item>Friday</item> 
+		<item>Saturday</item>  
+	</string-array>
+
+	<string-array name="monthsEnglish">  
+		<item>January</item>  
+		<item>February</item>  
+		<item>March</item>
+		<item>April</item>  
+		<item>May</item>   
+		<item>June</item>  
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>  
+		<item>October</item>   
+		<item>November</item>  
+		<item>December</item>  
+	</string-array>
+	
+	<string-array name="themonthday">  
+		<item>st</item>  
+		<item>nd</item>
+		<item>rd</item>
+		<item>th</item>  
+	</string-array>
+	
+</resources>

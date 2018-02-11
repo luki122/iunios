@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/button_operation_rename"
+        android:layout_width="112dp"
+        android:layout_height="@com.aurora:dimen/aurora_action_bottom_bar_height"
+        android:background="@drawable/aurora_operation_more_background_change"
+        android:gravity="center"
+        android:text="@string/operation_rename"
+        android:textColor="@color/aurora_operation_more_title_change_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/button_operation_rename_down_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center" >
+
+        <View
+            android:layout_width="95dp"
+            android:layout_height="0.3dp"
+            android:layout_gravity="center"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button_operation_info"
+        android:layout_width="112dp"
+        android:layout_height="@com.aurora:dimen/aurora_action_bottom_bar_height"
+        android:background="@drawable/aurora_operation_more_background_change"
+        android:gravity="center"
+        android:text="@string/operation_info"
+        android:textColor="@color/aurora_operation_more_title_change_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/aurora_add_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/button_operation_info_down_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="95dp"
+                android:layout_height="0.3dp"
+                android:layout_gravity="center"
+                android:background="#cccccc" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_operation_add"
+            android:layout_width="112dp"
+            android:layout_height="@com.aurora:dimen/aurora_action_bottom_bar_height"
+            android:background="@drawable/aurora_operation_more_background_change"
+            android:gravity="center"
+            android:textColor="@color/aurora_operation_more_title_change_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

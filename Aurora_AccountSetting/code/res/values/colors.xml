@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dash_category_finger_add_icon_color">#4a4d54</color>
+    <color name="action_bar_widget_color">#ffffff</color>
+    <color name="big_text_color">#414142</color>
+    <color name="desc_text_color">#8d8d8d</color>
+    <color name="white">#ffffffff</color>
+
+</resources>
